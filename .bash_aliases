@@ -37,7 +37,7 @@ alias hwork="cd /home/viresh/work/repos/devel/linux/"
 alias hara="cd /home/viresh/work/repos/ara/linux"
 alias hgbus="cd /home/viresh/work/repos/ara/greybus/"
 alias hgspec="cd /home/viresh/work/repos/ara/greybus-spec/"
-alias hmodule="cd /home/viresh/work/repos/module/"
+alias hmodule="cd /home/viresh/work/repos/tools/module/"
 
 #alias proxy='export http_proxy=http://viresh:@lps5.dlh.st.com:80'
 #alias sproxy='export https_proxy=https://viresh:@lps5.dlh.st.com:80'

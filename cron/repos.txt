@@ -1,2 +1,4 @@
 work/repos/devel/linux
-work/repos/devel/module
+work/repos/tools/module
+work/repos/tools/cpufreq-tests
+work/repos/tools/isolation

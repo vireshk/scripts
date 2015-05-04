@@ -10,12 +10,12 @@ update_repo()
 	echo "Entering "$PWD
 	if [ $2 ]; then
 		echo "xyz"
-#		git add .
-#		git commit -s -m "updates"
+		git add .
+		git commit -s -m "updates"
 	fi
 
 	echo "abc"
-#	git push --mirror bkp
+	git push --mirror bkp
 	echo ""
 }
 

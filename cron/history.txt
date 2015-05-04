@@ -1,45 +1,17 @@
  
-Mon May  4 15:16:48 IST 2015
+Mon May  4 15:48:09 IST 2015
 
 Entering /home/viresh/work/repos/devel/linux
 abc
 
-Entering /home/viresh/work/repos/devel/module
+Entering /home/viresh/work/repos/tools/module
+abc
+
+Entering /home/viresh/work/repos/tools/cpufreq-tests
+abc
+
+Entering /home/viresh/work/repos/tools/isolation
 abc
 
 Entering /home/viresh/scripts
 xyz
-abc
-
-
-
- 
-Mon May  4 15:16:53 IST 2015
-
-Entering /home/viresh/work/repos/devel/linux
-abc
-
-Entering /home/viresh/work/repos/devel/module
-abc
-
-Entering /home/viresh/scripts
-xyz
-abc
-
-
-
- 
-Mon May  4 15:16:54 IST 2015
-
-Entering /home/viresh/work/repos/devel/linux
-abc
-
-Entering /home/viresh/work/repos/devel/module
-abc
-
-Entering /home/viresh/scripts
-xyz
-abc
-
-
-

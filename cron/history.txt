@@ -34,3 +34,28 @@ Entering /home/viresh/work/repos/tools/cpufreq-tests
 Entering /home/viresh/work/repos/tools/isolation
 
 Entering /home/viresh/scripts
+[master 2f71f8bf3100] updates
+ 2 files changed, 20 insertions(+), 3 deletions(-)
+
+
+
+ 
+Mon May  4 15:54:27 IST 2015
+
+Entering /home/viresh/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/viresh/work/repos/tools/module
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/viresh/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/viresh/work/repos/tools/isolation
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/viresh/scripts

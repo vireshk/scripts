@@ -13,7 +13,7 @@ update_repo()
 		git commit -s -m "updates"
 	fi
 
-	git push --mirror bkp >> $file
+	git push --mirror bkp &>> $file
 	echo ""
 }
 

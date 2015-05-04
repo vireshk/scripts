@@ -1,0 +1,181 @@
+# Asciidoc snippets
+snippet date
+	`system("date +%Y-%m-%d")`
+
+# Emphasize
+snippet '
+	'${1:Emphasize}' ${2}
+
+# Bold
+snippet *
+	*${1:Bold}* ${2}
+
+# Mono
+snippet +
+	+${1:Mono}+ ${2}
+
+# Superscript
+snippet ^
+	^${1:Superscript}^ ${2}
+
+# Subscript
+snippet ~
+	~${1:Subscript}~ ${2}
+
+# Heading 0 (Title)
+snippet h0
+	= ${1:Title }=
+	${2}
+
+# Heading 1
+snippet h1
+	== ${1:Heading 1} ==
+	${2}
+
+# Heading 2
+snippet h2
+	=== ${1:Heading 2} ===
+	${2}
+
+# Heading 3
+snippet h3
+	==== ${1:Heading 3} ====
+	${2}
+
+# Heading 4
+snippet h4
+	===== ${1:Heading 4} =====
+	${2}
+
+# note
+snippet note
+	[Note]
+	1: ${1:Note}
+
+# tip
+snippet tip
+	[Tip]
+	1: ${1:Tip}
+
+# comment
+snippet bcomment
+	//////////////////////////////////////////////////
+	${1:Comment Block}
+	//////////////////////////////////////////////////
+	${2}
+
+# comment
+snippet blist
+	--------------------------------------------------
+	${1:Listing Block}
+	--------------------------------------------------
+	${2}
+
+# quote
+snippet bquote
+	[quote, ${1:Sir Arthur Conan Doyle}, ${2:The Adventures of Sherlock Holmes}]
+	____________________________________________________________________
+	${3:As he spoke there was the sharp sound of horses}
+	____________________________________________________________________
+	${4}
+
+# example
+snippet bexample
+	.${1:An example}
+	=====================================================================
+	${2:Example}
+	=====================================================================
+	${3}
+
+# note block
+snippet bnote
+	[NOTE]
+	.${1:A NOTE admonition block}
+	=====================================================================
+	${2:A note block}
+	=====================================================================
+	${3}
+
+snippet question
+	[qanda]
+	${1:Question one}::
+	${2:Answer one}.
+	${3}
+
+snippet glossary
+	[glossary]
+	${1:A glossary term}::
+		${2:The corresponding definition}.
+	${3}
+
+snippet bibl
+	[bibliography]
+	.${1:Optional list title}
+	- [[[${2:refernce}]]] ${3: Reference Details}
+	${4}
+
+snippet listc
+	1. ${1:List item one}.
+	+
+	${2:list continuation}
+	+
+	-----------------
+	${3:ls *.sh}
+	-----------------
+	+
+	${4:List item continued with a third paragraph}
+	2. ${5:List item one}.
+
+# macros
+snippet inc
+	include::${1:chapt1.txt}[${2:tabsize=2}]
+	${3}
+
+snippet mail
+	mailto:${1:nobody@st.com}[${2:email nobody}]
+	${3}
+
+snippet link
+	link::${1:file}#${2:id}[${3:caption}]
+	${4}
+
+snippet http
+	http://${1:www.st.com}[${2:ST Micro}]
+	${3}
+
+snippet image
+	.${1:Title}
+	image::${2:target}[${3:attributes}]
+	${4}
+
+# table
+snippet table
+	.${1:An example table}
+	[width="50%", options="header", frame="topbot", cols="3*<10%,80%"]
+	|====================================================================
+	| ${2:Column 1} | ${3:Columns 2} | ${4:Column 3} | ${5:Column 4}
+	| ${6}         |           |          |
+	|====================================================================
+
+snippet filter
+	.Code filter example
+	[code, c]
+	----------------------------------------------
+	int main(int argc, const char *argv[])
+	{
+		return 0;
+	}
+	----------------------------------------------
+
+snippet dia
+	[dia, ${1:infile.dia}, ${2:outfile.png}, ${3:x480}]
+	-------------------------------
+	-------------------------------
+	${4}
+
+
+snippet ditaa
+	["ditaa", "${1:images/outfile.png}"]
+	-------------------------------
+	-------------------------------
+	${2}

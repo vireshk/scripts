@@ -1,0 +1,31 @@
+[user]
+	name = Viresh Kumar
+	email = viresh.kumar@linaro.org
+[sendemail]
+	smtpserver = /usr/bin/msmtp
+        smtpserverport = 25
+        smtpuser = viresh.kumar
+#	smtpencryption = tls
+	multiedit = false
+#	smtppass = ""
+	aliasesfile = /home/viresh/scripts/.git_aliases
+	aliasfiletype = mutt
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[core]
+	editor = "vim -c 'setlocal spell'"
+	gitproxy = none for "arm.com"
+	abbrev = 12
+#	gitproxy = ~/gitproxy.sh
+#	gitproxy = gitproxy-socat
+[receive]
+	autogc = false
+[diff "default"]
+        xfuncname = "^[[:alpha:]$_].*[^:]$"
+[pretty]
+	fixes = Fixes: %h (\"%s\")
+	onelin = %h (\"%s\")
+[push]
+	default = simple

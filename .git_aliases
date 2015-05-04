@@ -1,0 +1,28 @@
+alias amit	Amit Kucheria <amit.kucheria@linaro.org>
+alias arvind	Arvind Chauhan <arvind.chauhan@arm.com>
+alias bhat	Srivatsa Bhat <srivatsa@mit.edu>
+alias daniel	Daniel Lezcano <daniel.lezcano@linaro.org>
+alias fw	Frederic Weisbecker <fweisbec@gmail.com>
+alias ingo	Ingo Molnar <mingo@redhat.com>
+alias kevin	Kevin Hilman <khilman@linaro.org>
+alias peterz	Peter Zijlstra <peterz@infradead.org>
+alias preeti	Preeti U Murthy <preeti@linux.vnet.ibm.com>
+alias rafael	Rafael Wysocki <rjw@rjwysocki.net>
+alias tglx	Thomas Gleixner <tglx@linutronix.de>
+alias viresh	Viresh Kumar <viresh.kumar@linaro.org>
+alias greg	Greg Kroah-Hartman <greg@kroah.com>
+alias gregl	Greg Kroah-Hartman <gregkh@google.com>
+alias santosh	Santosh Shukla <santosh.shukla@linaro.org>
+alias alex	Alex Elder <elder@linaro.org>
+alias johan	Johan Hovold <johan@hovoldconsulting.com>
+
+alias armsoc	arm@kernel.org
+alias lakml	linux-arm-kernel@lists.infradead.org
+alias linaro	linaro-kernel@lists.linaro.org
+alias lkml	linux-kernel@vger.kernel.org
+alias lng	linaro-networking@linaro.org
+alias pdsw	pdsw-power-team@arm.com
+alias pm	linux-pm@vger.kernel.org
+alias spear	spear-devel@list.st.com
+alias ara	projectara-software-dev@linaro.org
+alias arak	project-ara-kernel@lists.linaro.org

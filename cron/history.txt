@@ -15,3 +15,22 @@ abc
 
 Entering /home/viresh/scripts
 xyz
+[master 847d712a7192] updates
+ 4 files changed, 24 insertions(+), 50 deletions(-)
+ rewrite cron/history.txt (80%)
+abc
+
+
+
+ 
+Mon May  4 15:50:42 IST 2015
+
+Entering /home/viresh/work/repos/devel/linux
+
+Entering /home/viresh/work/repos/tools/module
+
+Entering /home/viresh/work/repos/tools/cpufreq-tests
+
+Entering /home/viresh/work/repos/tools/isolation
+
+Entering /home/viresh/scripts

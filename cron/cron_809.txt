@@ -1,0 +1,2 @@
+0 0 * * * /data/csd_sw/spear/documentation/scripts/update_git.sh
+0 0 * * 0 /data/csd_sw/spear/disk_usage/disk_usage.sh

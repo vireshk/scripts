@@ -1,0 +1,168 @@
+#======================================================#
+# Boring details
+set realname ="Viresh Kumar"
+set from = viresh.kumar@linaro.org
+set use_from = yes
+set envelope_from ="yes"
+set sendmail="/usr/bin/msmtp"
+
+# If not set in environment variables:
+set spoolfile =/home/viresh/work/mail/me
+#set spoolfile =/var/mail/viresh
+
+#======================================================#
+# Folders
+set folder="~/work/mail"	# Mailboxes in here
+set record="+sent"		# where to store sent messages
+set postponed="+draft"	# where to store draft messages
+set move=no			# Don't move mail from the spool.
+
+#======================================================#
+# Watch these mailboxes for new mail:
+# mailboxes ! +sent
+mailboxes +me +ara +ara/list +ara/jira \
+	+linaro +linaro/kernel +linaro/y2038 +linaro/dev +linaro/payslip +linaro/build +linaro/moderator \
+	+linaro/everyone +linaro/wiki +linaro/android +linaro/announce +linaro/lng +linaro/pmwg \
+	+linaro/releases +linaro/switchers +linaro/toolchain +linaro/tech +linaro/conf \
+	+sent +draft +inbox +lwn +linux-pm
+#mailboxes ! +Fetchmail +slrn +mutt
+set sort_browser=alpha		# Sort mailboxes by alpha(bet)
+
+#======================================================#
+# Order of headers and what to show
+hdr_order Date: From: User-Agent: X-Mailer \
+	To: Cc: Reply-To: Subject:
+ignore *
+unignore Date: From: User-Agent: X-Mailer \
+	 To: Cc: Reply-To: Subject:
+
+#======================================================#
+# which editor do you want to use?
+# vim of course!
+#set editor="vim"
+set editor="vim -c 'set spell tw=70 et' '+/^$' "
+set edit_headers		# See the headers when editing
+
+## Use a signature
+set signature="~/.signature"
+
+#======================================================#
+# Aliases
+
+set sort_alias=alias		# sort aliases in alpha order by alias name
+
+#======================================================#
+# Odds and ends
+set markers		# mark wrapped lines of text in the pager with a +
+set smart_wrap		# Don't wrap mid-word
+set pager_context=5	# Retain 5 lines of previous page when scrolling.
+set status_on_top	# Status bar on top.
+push <show-version>	# Shows mutt version at startup
+
+#======================================================#
+# Macros
+macro index,pager I '<shell-escape> fetchmail -k <enter>'
+macro index b '<enter-command>toggle sidebar_visible<enter><refresh>'
+macro pager b '<enter-command>toggle sidebar_visible<enter><redraw-screen>'
+
+#======================================================#
+# Colors
+color normal	 black default
+color attachment yellow default
+color hdrdefault cyan default
+color indicator black cyan
+color markers	brightred default
+color quoted	green default
+color signature cyan default
+color status	brightgreen default
+color tilde	blue default
+color tree	red default
+#color body	brightred black [\-\.+_a-zA-Z0-9]+@[\-\.a-zA-Z0-9]+
+#color body	brightblue black (https?|ftp)://[\-\.,/%~_:?&=\#a-zA-Z0-9]+
+
+color index	red	default		"~D(!~p|~p)"	# deleted
+color index	blue	default		"~N"		# new messages
+color index	blue	default		"~O"		# old messages
+color index	blue	default		"~U"		# unread messages
+color index	blue	default		"~v~(~N|~O)"	# collapsed thread with some unread
+
+# for reading patches
+color header	green	default ^From:
+color header	cyan	default ^To:
+color header	cyan	default ^Reply-To:
+color header	cyan	default ^Cc:
+color header	blue	default ^Subject:
+
+color body red		default "^-.*"
+color body green	default "^[+].*"
+color body green	default "^>.*"
+color body red		default "^> ?>.*"
+color body cyan		default "^> ?> ?>.*"
+color body blue		default "^> ?> ?> ?>.*"
+color body yellow	default "^> ?> ?> ?> ?>.*"
+color body cyan		default "^diff --git.*"
+color body cyan		default "^index [a-f0-9].*"
+
+# for highlighting hyperlinks
+color body brightred default "http://.*"
+color body brightred default "https://.*"
+color body brightred default "ftp://.*"
+
+
+#======================================================#
+# Looks
+set date_format="!%d-%m-%y, %H:%M"
+set index_format="%4C %Z %d %-25.25n (%M) %s"
+
+folder-hook . "exec collapse-all"
+set sort=threads
+set sort_aux=last-date-received
+unset mark_old
+set menu_scroll          # scroll menu a page on last line
+set pager_stop           # don't go to next message at end of message
+
+#======================================================#
+# Sidebar
+color sidebar_new yellow default 
+set sidebar_width=25
+set sidebar_visible=yes
+set sidebar_delim='|'
+set sidebar_sort=no
+
+# ctrl-n, ctrl-p to select next, prev folder # ctrl-o to open selected folder
+bind index \CP sidebar-prev
+bind index \CN sidebar-next
+bind index \CO sidebar-open
+bind pager \CP sidebar-prev
+bind pager \CN sidebar-next
+bind pager \CO sidebar-open
+
+#=======================================================#
+# Shortcuts
+bind pager <space> next-page
+bind pager <up> previous-line
+bind pager <down> next-line
+bind pager <left> exit
+bind pager <right> view-attachments
+bind pager <esc> exit
+bind attach <left> exit
+bind attach <right> view-attach
+bind index <right> display-message
+bind index <left> display-message
+bind browser <right> select-entry
+bind browser <left> exit
+
+#======================================================#
+# Sending mails
+my_hdr Bcc: Viresh Kumar <viresh.kumar@linaro.org>
+set autoedit
+set include
+set beep_new             # beep on new message
+macro index ",1" "<enter-command>set editor=\"editlabel append "pen"\"\n\
+<edit><sync-mailbox><next-undeleted>\
+<enter-command>set editor=vim\n"
+
+macro index ",2" "<enter-command>set editor=\"editlabel append "rev"\"\n\
+<edit><sync-mailbox><next-undeleted>\
+<enter-command>set editor=vim\n"
+

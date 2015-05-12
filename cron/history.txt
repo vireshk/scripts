@@ -88,3 +88,56 @@ post-git trigger: updating grokmirror
 Everything up-to-date
 
 Entering /home/viresh/scripts
+[master 9f654eac0f70] updates
+ 1 file changed, 29 insertions(+)
+post-git trigger: updating grokmirror
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/scripts
+   c5123cac5405..9f654eac0f70  master -> master
+   2f71f8bf3100..c5123cac5405  bkp/master -> bkp/master
+
+
+
+ 
+Tue May 12 16:09:44 IST 2015
+
+Entering /home/viresh/work/repos/devel/linux
+post-git trigger: updating grokmirror
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git
+ + da963b79c2ba...2cd5ef3ac83b cpufreq/core/sysfs-v3 -> cpufreq/core/sysfs-v3 (forced update)
+   90fcbfc03585..e2ca4e747ca3  opp/v2 -> opp/v2
+ + da963b79c2ba...2cd5ef3ac83b armcpufreq/cpufreq/core/sysfs-v3 -> armcpufreq/cpufreq/core/sysfs-v3 (forced update)
+ + 105b72ac333d...c5ce14b22482 lnext/akpm -> lnext/akpm (forced update)
+ + e4f123a44d5f...a9b1aa8a803d lnext/akpm-base -> lnext/akpm-base (forced update)
+ + c9256b89d921...cab98a65216d lnext/master -> lnext/master (forced update)
+   61f06db00e06..d9cee5d4f66e  lnext/stable -> lnext/stable
+ - [deleted]                   myko/timer/migrate-running-timer
+   5ebe6afaf005..0e1dc4274828  origin/HEAD -> origin/HEAD
+   5ebe6afaf005..0e1dc4274828  origin/master -> origin/master
+   61f8ff693923..3349fb64b292  pm/acpi-battery -> pm/acpi-battery
+   3a75ef0c788f..a00212e21928  pm/acpi-doc -> pm/acpi-doc
+   4990141496b8..622532bb2fad  pm/acpi-pnp -> pm/acpi-pnp
+   9e8ce4b96b78..2c62e8492ed7  pm/acpi-resources -> pm/acpi-resources
+ + 0a30f82b1078...f214e445b392 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 55737960ba15...f214e445b392 pm/linux-next -> pm/linux-next (forced update)
+   50904a7ddd1c..030bbdbf4c83  pm/master -> pm/master
+ * [new branch]                bkp/exynos/cpufreq -> bkp/exynos/cpufreq
+ * [new tag]                   next-20150506 -> next-20150506
+ * [new tag]                   pm+acpi-4.1-rc3 -> pm+acpi-4.1-rc3
+
+Entering /home/viresh/work/repos/tools/module
+post-git trigger: updating grokmirror
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/module
+ - [deleted]                   origin/HEAD
+ - [deleted]                   origin/master
+
+Entering /home/viresh/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/viresh/work/repos/tools/isolation
+post-git trigger: updating grokmirror
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/isolation
+ - [deleted]                   origin/HEAD
+ - [deleted]                   origin/master
+
+Entering /home/viresh/scripts

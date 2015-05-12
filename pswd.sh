@@ -1,1 +1,2 @@
-/home/viresh/all/home/criticalinfo/pswd.sh
+#!/bin/bash
+echo `cat ~/.password`

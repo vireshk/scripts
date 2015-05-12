@@ -1,0 +1,1 @@
+0 13 * * 1-5 /media/L/SPEAr/documentation/scripts/pull.sh

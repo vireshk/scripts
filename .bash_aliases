@@ -7,6 +7,10 @@ umask 002
 #export PS1="\[\e]0;\u@\h: \a\]${debian_chroot:+($debian_chroot)}\u@\h:\$ "
 export PS1="$ "
 
+# mail
+export MAIL=/var/mail/viresh
+alias muttman="zcat /usr/share/doc/mutt/manual.txt.gz | sensible-pager"
+
 # toolchains
 PATH="/home/viresh/work/repos/tools/toolchain/gcc-linaro-4.9-2015.02-x86_64_aarch64-linux-gnu/bin:/home/viresh/work/repos/tools/toolchain/gcc-linaro-4.9-2015.02-x86_64_arm-linux-gnueabihf/bin:/usr/bin:$PATH"
 
@@ -24,7 +28,7 @@ ARMV8C="CROSS_COMPILE=ccache aarch64-linux-gnu-"
 
 #For Local PC
 export SUDO_ASKPASS=~/scripts/pswd.sh
-export GOPATH=~/gocode/
+export GOPATH=~/work/bin/gocode/
 alias msudo="sudo -A"
 alias minstall="msudo apt-get install"
 alias home="cd /home/viresh/work/repos"

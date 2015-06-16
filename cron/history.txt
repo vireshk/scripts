@@ -141,3 +141,64 @@ To ssh://git@git.linaro.org/people/viresh.kumar/backup/isolation
  - [deleted]                   origin/master
 
 Entering /home/viresh/scripts
+[master 9a5f86e46e9e] updates
+ 14 files changed, 437 insertions(+), 4 deletions(-)
+ create mode 100644 .fetchmailrc
+ rewrite .msmtprc (100%)
+ mode change 120000 => 100644
+ create mode 100644 .muttrc
+ create mode 120000 .password
+ create mode 100644 .procmailrc
+ create mode 100644 .signature
+ create mode 100644 cron/cron_809.txt
+ create mode 100644 cron/cron_mypc.txt
+ create mode 100755 dlna-file-perm.sh
+ rewrite pswd.sh (100%)
+ mode change 120000 => 100755
+post-git trigger: updating grokmirror
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/scripts
+   9f654eac0f70..9a5f86e46e9e  master -> master
+   c5123cac5405..9f654eac0f70  bkp/master -> bkp/master
+
+
+
+ 
+Tue Jun 16 19:45:38 IST 2015
+
+Entering /home/viresh/work/repos/devel/linux
+ 
+Tue Jun 16 20:36:50 IST 2015
+
+Entering /home/viresh/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 6bf01e11432c...199997318f5d bkp/clkevt/migrate-to-new-per-state-api -> bkp/clkevt/migrate-to-new-per-state-api (forced update)
+ - [deleted]                   bkp/cpufreq/core/sysfs-v3
+ + e2ca4e747ca3...b02fa2efa08a bkp/opp/v2 -> bkp/opp/v2 (forced update)
+ - [deleted]                   bkp/tick/oneshot-stopped
+ * [new branch]                bkp/clkevt/clocksource/set-state -> bkp/clkevt/clocksource/set-state
+ * [new branch]                bkp/cpufreq/gov-locking -> bkp/cpufreq/gov-locking
+ * [new branch]                bkp/cpufreq/gov-locking-timer -> bkp/cpufreq/gov-locking-timer
+ * [new branch]                bkp/cpufreq/governor-fixes-v4 -> bkp/cpufreq/governor-fixes-v4
+ * [new branch]                bkp/exynos/working/4.1-rc7 -> bkp/exynos/working/4.1-rc7
+ * [new branch]                bkp/marvell -> bkp/marvell
+
+Entering /home/viresh/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/viresh/work/repos/tools/cpufreq-tests
+ssh: connect to host git.linaro.org port 22: Connection timed out
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/viresh/work/repos/tools/isolation
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/viresh/scripts

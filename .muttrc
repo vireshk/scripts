@@ -21,10 +21,10 @@ set move=no			# Don't move mail from the spool.
 # Watch these mailboxes for new mail:
 # mailboxes ! +sent
 mailboxes +me +ara +ara/list +ara/jira \
-	+linaro +linaro/kernel +linaro/y2038 +linaro/dev +linaro/payslip +linaro/build +linaro/moderator \
+	+linaro +inbox +linaro/kernel +linaro/y2038 +linaro/dev +linaro/payslip +linaro/build +linaro/kernelci +linaro/moderator \
 	+linaro/everyone +linaro/wiki +linaro/android +linaro/announce +linaro/lng +linaro/pmwg \
 	+linaro/releases +linaro/switchers +linaro/toolchain +linaro/tech +linaro/conf \
-	+sent +draft +inbox +lwn +linux-pm
+	+sent +draft +lwn +linux-pm +korg
 #mailboxes ! +Fetchmail +slrn +mutt
 set sort_browser=alpha		# Sort mailboxes by alpha(bet)
 
@@ -61,9 +61,29 @@ push <show-version>	# Shows mutt version at startup
 
 #======================================================#
 # Macros
-macro index,pager I '<shell-escape> fetchmail -k <enter>'
-macro index b '<enter-command>toggle sidebar_visible<enter><refresh>'
-macro pager b '<enter-command>toggle sidebar_visible<enter><redraw-screen>'
+macro index,pager I '<shell-escape> fetchmail <enter>'
+#macro index,pager I '<shell-escape> fetchmail -k <enter>'
+macro index \|	'<collapse-all>'
+macro index \\	'<collapse-thread>'
+
+# Labels to mark messages pen,imp
+macro index ",1" "<enter-command>set editor=\"~/scripts/editlabel append "pen"\"\n\
+<edit><sync-mailbox><next-undeleted>\
+<enter-command>set editor=vim\n"
+
+macro index ".1" "<enter-command>set editor=\"~/scripts/editlabel remove "pen"\"\n\
+<edit><sync-mailbox><next-undeleted>\
+<enter-command>set editor=vim\n"
+
+macro index ",2" "<enter-command>set editor=\"~/scripts/editlabel append "imp"\"\n\
+<edit><sync-mailbox><next-undeleted>\
+<enter-command>set editor=vim\n"
+
+macro index ".2" "<enter-command>set editor=\"~/scripts/editlabel remove "imp"\"\n\
+<edit><sync-mailbox><next-undeleted>\
+<enter-command>set editor=vim\n"
+
+macro index \Cy "<limit>~y " "Limit view to label"
 
 #======================================================#
 # Colors
@@ -80,17 +100,18 @@ color tree	red default
 #color body	brightred black [\-\.+_a-zA-Z0-9]+@[\-\.a-zA-Z0-9]+
 #color body	brightblue black (https?|ftp)://[\-\.,/%~_:?&=\#a-zA-Z0-9]+
 
-color index	red	default		"~D(!~p|~p)"	# deleted
+color index	yellow	default		"~P"		# From me
 color index	blue	default		"~N"		# new messages
 color index	blue	default		"~O"		# old messages
 color index	blue	default		"~U"		# unread messages
 color index	blue	default		"~v~(~N|~O)"	# collapsed thread with some unread
+color index	red	default		"~D(!~p|~p)"	# deleted
 
 # for reading patches
-color header	green	default ^From:
-color header	cyan	default ^To:
+color header	red	default ^From:
+color header	yellow	default ^To:
 color header	cyan	default ^Reply-To:
-color header	cyan	default ^Cc:
+color header	yellow	default ^Cc:
 color header	blue	default ^Subject:
 
 color body red		default "^-.*"
@@ -112,11 +133,11 @@ color body brightred default "ftp://.*"
 #======================================================#
 # Looks
 set date_format="!%d-%m-%y, %H:%M"
-set index_format="%4C %Z %d %-25.25n (%M) %s"
+set index_format="%4C %Z %d %-25.25n (%M) %?y?[%.20Y] ?%s"
 
 folder-hook . "exec collapse-all"
 set sort=threads
-set sort_aux=last-date-received
+set sort_aux=last-date-sent
 unset mark_old
 set menu_scroll          # scroll menu a page on last line
 set pager_stop           # don't go to next message at end of message
@@ -130,12 +151,12 @@ set sidebar_delim='|'
 set sidebar_sort=no
 
 # ctrl-n, ctrl-p to select next, prev folder # ctrl-o to open selected folder
-bind index \CP sidebar-prev
-bind index \CN sidebar-next
-bind index \CO sidebar-open
-bind pager \CP sidebar-prev
-bind pager \CN sidebar-next
-bind pager \CO sidebar-open
+bind index,pager \CP sidebar-prev
+bind index,pager \CN sidebar-next
+bind index,pager \CO sidebar-open
+
+macro index b '<enter-command>toggle sidebar_visible<enter><refresh>'
+macro pager b '<enter-command>toggle sidebar_visible<enter><redraw-screen>'
 
 #=======================================================#
 # Shortcuts
@@ -158,11 +179,13 @@ my_hdr Bcc: Viresh Kumar <viresh.kumar@linaro.org>
 set autoedit
 set include
 set beep_new             # beep on new message
-macro index ",1" "<enter-command>set editor=\"editlabel append "pen"\"\n\
-<edit><sync-mailbox><next-undeleted>\
-<enter-command>set editor=vim\n"
+#macro index     ",s"    "<pipe-message>(formail -rkt; cat /home/viresh/mutt/template/ack.tmpl) |vim<enter>"
 
-macro index ",2" "<enter-command>set editor=\"editlabel append "rev"\"\n\
-<edit><sync-mailbox><next-undeleted>\
-<enter-command>set editor=vim\n"
+#======================================================#
+auto_view text/html
 
+#======================================================#
+# Contacts
+set query_command="goobook query '%s'"
+bind editor <Tab> complete-query
+macro index,pager a "<pipe-message>goobook add<return>" "add the sender address to Google contacts"

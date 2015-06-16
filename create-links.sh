@@ -33,7 +33,7 @@ ln -s ~/all/home/scripts/.vimrc ~/.vimrc
 ln -s ~/all/home/scripts/.xchat2 ~/.xchat2
 
 # mails
-ln -s ~/all/home/scripts/.msmtprc ~/.msmtprc
-ln -s ~/all/home/scripts/.fetchmailrc ~/.fetchmailrc
+ln -s ~/all/home/criticalinfo/.msmtprc ~/.msmtprc
+ln -s ~/all/home/criticalinfo/.fetchmailrc ~/.fetchmailrc
 ln -s ~/all/home/scripts/.procmailrc ~/.procmailrc
 ln -s ~/all/home/scripts/.muttrc ~/.muttrc

@@ -7,6 +7,9 @@ umask 002
 #export PS1="\[\e]0;\u@\h: \a\]${debian_chroot:+($debian_chroot)}\u@\h:\$ "
 export PS1="$ "
 
+# git
+PATH="/home/viresh/work/repos/tools/git/contrib/workdir/:$PATH"
+
 # mail
 export MAIL=/var/mail/viresh
 alias muttman="zcat /usr/share/doc/mutt/manual.txt.gz | sensible-pager"
@@ -15,8 +18,11 @@ alias muttman="zcat /usr/share/doc/mutt/manual.txt.gz | sensible-pager"
 PATH="/home/viresh/work/repos/tools/toolchain/gcc-linaro-4.9-2015.02-x86_64_aarch64-linux-gnu/bin:/home/viresh/work/repos/tools/toolchain/gcc-linaro-4.9-2015.02-x86_64_arm-linux-gnueabihf/bin:/usr/bin:$PATH"
 
 # Nuttx
-PATH="/home/viresh/work/repos/ara/gcc-arm-none-eabi-4_8-2014q3/bin:$PATH"
+PATH="/home/viresh/work/repos/ara/tools/gcc-arm-none-eabi-4_8-2014q3/bin:$PATH"
 PATH="/home/viresh/work/repos/ara/manifesto:$PATH"
+alias nvim="vim -c 'set expandtab' -c 'set shiftwidth=4'"
+export GBDIR=~/work/repos/ara/greybus
+
 # icdiff
 PATH="/home/viresh/work/repos/tools/icdiff:$PATH"
 
@@ -36,11 +42,15 @@ alias hlng="cd /home/viresh/work/repos/lng/lng.git"
 alias htools="cd /home/viresh/work/repos/tools"
 alias htest="cd /home/viresh/work/repos/tools/test-definitions/"
 alias hjunk="cd /home/viresh/junk/"
+alias haastha="cd /home/viresh/junk/aastha"
 alias hisol="cd /home/viresh/work/repos/tools/isolation/"
 alias hwork="cd /home/viresh/work/repos/devel/linux/"
 alias hara="cd /home/viresh/work/repos/ara/linux"
 alias hgbus="cd /home/viresh/work/repos/ara/greybus/"
 alias hgspec="cd /home/viresh/work/repos/ara/greybus-spec/"
+alias hgbsim="cd /home/viresh/work/repos/ara/gbsim/"
+alias hmfesto="cd /home/viresh/work/repos/ara/manifesto/"
+alias hnuttx="cd /home/viresh/work/repos/ara/nuttx/"
 alias hmodule="cd /home/viresh/work/repos/tools/module/"
 
 #alias proxy='export http_proxy=http://viresh:@lps5.dlh.st.com:80'
@@ -71,9 +81,9 @@ alias dtb='$vcompile dtb'
 alias dtbs='$vcompile dtbs'
 alias lbuild='$vcompile lbuild'
 alias testlinaro='lbuild tc2 ubuntu noblconf; lbuild tc2; build x86'
-alias aramodule='make -C /home/viresh/work/repos/ara/bmarvell M=`pwd` ARCH=arm64 CROSS_COMPILE="ccache aarch64-linux-gnu-" modules'
-alias aramodulee='make -C /home/viresh/work/repos/devel/bexynos M=`pwd` ARCH=arm modules'
-alias aramodulex='make CROSS_COMPILE='
+alias aramodule='make -C /home/viresh/work/repos/ara/bmarvell M=`pwd` ARCH=arm64 CROSS_COMPILE="ccache aarch64-linux-gnu-" modules CONFIG_DEBUG_SECTION_MISMATCH=y'
+alias aramodulee='make -C /home/viresh/work/repos/devel/bexynos M=`pwd` ARCH=arm modules CONFIG_DEBUG_SECTION_MISMATCH=y'
+alias aramodulex='make CROSS_COMPILE= CONFIG_DEBUG_SECTION_MISMATCH=y'
 alias arainsmod="msudo insmod greybus.ko; msudo insmod gb-phy.ko; msudo insmod gb-es1.ko"
 alias ararmmod=" msudo rmmod gb_es1; msudo rmmod gb_phy; msudo rmmod greybus;"
 alias aranuttx="cd nuttx; make distclean; cd tools; ./configure.sh bdb/apb1; cd ../; make; cd ../"

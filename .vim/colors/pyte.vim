@@ -89,4 +89,5 @@ hi DiffText guifg=NONE guibg=#f0c8c8 gui=italic,bold
 hi DiffAdd guifg=NONE guibg=#c0e0d0 gui=italic,bold
 hi DiffDelete guifg=NONE guibg=#f0e0b0 gui=italic,bold
 
-
+hi clear SpellBad
+hi SpellBad cterm=bold,underline ctermfg=red 

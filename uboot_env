@@ -1,0 +1,45 @@
+ARNDALE5250 # print
+bootargs=console=tty0 console=ttySAC2,115200n8 no_console_suspend drm_kms_helper.edid_firmware=edid-1920x1080.fw  root=UUID=0fbd430c-cf94-449c-b186-42261b428049 rootwait ro mac=02:b5:cf:14:91:e3 earlyprint
+k=ttySAC2,115200n8 mac=02:b5:cf:14:91:e3 mac=02:b5:cf:14:91:e3 mac=02:b5:cf:14:91:e3
+bootcmd=tftp 0x40007000 bexynos_uImage; fatload mmc 0:2 0x42000000 uInitrd; tftp 0x41f00000 bexynos.dtb; bootm 0x40007000 0x42000000 0x41f00000
+bootcmd_bkp=fatload mmc 0:2 0x40007000 uImage; fatload mmc 0:2 0x42000000 uInitrd; fatload mmc 0:2 0x41f00000 board.dtb; bootm 0x40007000 0x42000000 0x41f00000
+bootdelay=1
+ethact=asx0
+ethaddr=02:b5:cf:14:91:e3
+fdt_high=0xffffffff
+fileaddr=41F00000
+filesize=7
+gatewayip=192.168.0.1
+initrd_high=0xffffffff
+ipaddr=192.168.0.243
+netmask=255.255.255.0
+preboot=usb start
+serverip=192.168.0.8
+stderr=serial
+stdin=serial
+stdout=serial
+usbethaddr=02:b5:cf:14:91:e3
+
+
+
+
+setenv bootargs="console=tty0 console=ttySAC2,115200n8 no_console_suspend drm_kms_helper.edid_firmware=edid-1920x1080.fw  root=UUID=0fbd430c-cf94-449c-b186-42261b428049 rootwait ro mac=02:b5:cf:14:91:e3 earlyprintk=ttySAC2,115200n8 mac=02:b5:cf:14:91:e3 mac=02:b5:cf:14:91:e3 mac=02:b5:cf:14:91:e3"
+setenv bootcmd "tftp 0x40007000 bexynos_uImage; fatload mmc 0:2 0x42000000 uInitrd; tftp 0x41f00000 bexynos.dtb; bootm 0x40007000 0x42000000 0x41f00000"
+setenv bootcmd_bkp "fatload mmc 0:2 0x40007000 uImage; fatload mmc 0:2 0x42000000 uInitrd; fatload mmc 0:2 0x41f00000 board.dtb; bootm 0x40007000 0x42000000 0x41f00000"
+setenv bootdelay 1
+setenv gatewayip 192.168.0.1
+setenv ipaddr 192.168.0.243
+setenv serverip 192.168.0.8
+ethact=asx0
+ethaddr=02:b5:cf:14:91:e3
+fdt_high=0xffffffff
+fileaddr=41F00000
+filesize=7
+initrd_high=0xffffffff
+netmask=255.255.255.0
+preboot=usb start
+stderr=serial
+stdin=serial
+stdout=serial
+usbethaddr=02:b5:cf:14:91:e3
+

@@ -6,6 +6,11 @@ LOGFILE=$HOME/.procmaillog		# Keep a log for troubleshooting.
 
 # Recipes
 
+#mark sent mail as read
+:0 fh
+* ^From:.*viresh\.kumar@linaro\.org
+| formail -I"Status: R"
+
 # Payslips
 :0:
 * ^From:.*gayle\.carberry@linaro\.org
@@ -14,7 +19,7 @@ linaro/payslip
 
 # ara/jira
 :0:
-* ^(From|To|Cc):.*jira@projectara\.atlassian\.net
+* ^(From|To|Cc):.*(jira@projectara\.atlassian\.net|review@projectara-review\.linaro\.org)
 ara/jira
 
 # me
@@ -25,7 +30,7 @@ me
 #==============LINARO==================================#
 # ARA:
 :0:
-* ^(From|To|Cc):.*(projectara-software-dev@linaro\.org|project-ara-internal@linaro\.org|project-ara-kernel@lists\.linaro\.org)
+* ^(From|To|Cc):.*(projectara-software-dev@linaro\.org|project-ara-internal@linaro\.org|project-ara-kernel@lists\.linaro\.org|ara-all@projectara\.com)
 ara/list
 
 # Y2038
@@ -37,6 +42,11 @@ linaro/y2038
 :0:
 * ^(To|Cc):.*kernel-build-reports@lists\.linaro\.org
 linaro/build
+
+# kernelci-bot
+:0:
+* ^(From):.*bot@kernelci\.org
+linaro/kernelci
 
 # moderator
 :0:
@@ -90,7 +100,7 @@ linaro/lng
 
 # pmwg
 :0:
-* ^(To|Cc):.*(linaro-pm-wg@lists\.launchpad\.net OR private-pmwg@linaro\.org)
+* ^(To|Cc):.*(linaro-pm-wg@lists\.launchpad\.net|private-pmwg@linaro\.org|private-big-little@linaro\.org)
 linaro/pmwg
 
 # releases
@@ -109,9 +119,9 @@ linaro/switchers
 linaro/toolchain
 
 # wiki
-:0:
-* ^Subject:.*[Blueprint
-linaro/wiki
+#:0:
+#* ^Subject:.*[Blueprint
+#linaro/wiki
 
 #===============OTHERS=================================#
 # linux-pm
@@ -123,6 +133,11 @@ linux-pm
 :0:
 * ^(To|Cc):.*lwn@lwn\.net
 lwn
+
+# lwn
+:0:
+* ^(To|Cc):.*users@linux\.kernel\.org
+korg
 
 
 # Everything else to inbox

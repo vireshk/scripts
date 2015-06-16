@@ -147,6 +147,7 @@ set ic
 set shiftwidth=8
 set textwidth=80
 au FileType gitcommit set textwidth=72
+au FileType diff set textwidth=72
 set hls
 
 set autoindent smartindent              " turn on auto/smart indenting
@@ -172,7 +173,7 @@ au FileType h match error /\s\+$\|\%>80v.\+\|[ ][ ]\+\|\n\n\n\+\|,[^ ]\|^[ ]\+[^
 au FileType h highlight error ctermbg=red guibg=red ctermfg=blue guifg=blue
 au FileType sh match error /\s\+$\|\%>80v.\+\|[ ][ ]\+\|\n\n\n\+\|,[^ ]\|^[ ]\+[^\*]\|(\s\+\|\s\+)/
 au FileType sh highlight error ctermbg=red guibg=red ctermfg=blue guifg=blue
-"setlocal spell spelllang=en_us
+set spell spelllang=en_us
 
 match none
 
@@ -194,7 +195,7 @@ set pastetoggle=<F2>
 " set asciidoc filetype for all *.txt files
 "autocmd BufNewFile,BufRead *.txt set filetype=asciidoc
 
-" confiugre vim for asciidoc
+" configure vim for asciidoc
 au FileType asciidoc set expandtab
 au filetype asciidoc set tabstop=4
 
@@ -204,3 +205,9 @@ au FileType asciidoc set flp=^\\s*\\d\\+[\\]:.)}\\t]\\s*\\\|^\\s*\\*\\+\\s*
 au FileType asciidoc set formatoptions=tqlno
 au FileType asciidoc set comments=
 set guifont=Monospace\ 12
+
+" Commit Tags
+:let @a = "Acked-by: Viresh Kumar <viresh.kumar@linaro.org>"
+:let @r = "Reviewed-by: Viresh Kumar <viresh.kumar@linaro.org>"
+:let @s = "Signed-off-by: Viresh Kumar <viresh.kumar@linaro.org>"
+:let @t = "Tested-by: Viresh Kumar <viresh.kumar@linaro.org>"

@@ -1,0 +1,87 @@
+From viresh  Fri Aug 28 15:29:37 2015
+Delivered-To: viresh.kumar@linaro.org
+Received: from gmail-pop.l.google.com [74.125.200.109]
+	by linux with POP3 (fetchmail-6.3.26)
+	for <viresh@localhost> (single-drop); Fri, 28 Aug 2015 15:29:37 +0530 (IST)
+Received: by 10.31.160.193 with SMTP id j184csp493474vke;
+        Fri, 28 Aug 2015 02:59:15 -0700 (PDT)
+X-Received: by 10.152.120.198 with SMTP id le6mr4687157lab.38.1440755955052;
+        Fri, 28 Aug 2015 02:59:15 -0700 (PDT)
+Return-Path: <jhovold@gmail.com>
+Received: from mail-la0-x229.google.com (mail-la0-x229.google.com. [2a00:1450:4010:c03::229])
+        by mx.google.com with ESMTPS id jb6si5304328lbc.40.2015.08.28.02.59.13
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 28 Aug 2015 02:59:14 -0700 (PDT)
+Received-SPF: pass (google.com: domain of jhovold@gmail.com designates 2a00:1450:4010:c03::229 as permitted sender) client-ip=2a00:1450:4010:c03::229;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of jhovold@gmail.com designates 2a00:1450:4010:c03::229 as permitted sender) smtp.mailfrom=jhovold@gmail.com;
+       dkim=pass header.i=@gmail.com
+Received: by laba3 with SMTP id a3so29146952lab.1;
+        Fri, 28 Aug 2015 02:59:13 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=sender:from:to:cc:subject:date:message-id;
+        bh=0xPeJ7zy7RpEspmKs5uv6rwkHB9/j54d/Ov2wudyyc4=;
+        b=i3oLDEdV1YuuAgySg0fmptcyFoc36KYfG3FEZ3BYgj3gBR0smqASAu+3BklaAkQIId
+         ZoT6LfC8Uig8swyJRfZqc0qmMpFzoaGfuQ0usLmCaAe7J8PMLEktSm6xHMkhSwLcFcqp
+         36olmJq3FQx+zb/XLlE2bEfQoHOp8uiDAZPn5fo3ignuSqrXTo2KfyI3aphvVh8WEaKI
+         L2rXub5KeOiHt3PK5Y0tXcRs+6UkJ6vu6l13I1fh7Fg3SqDrDCAG5exV/hy8uQAqAIpW
+         Upj8PmoEQ2yRYRcKJ142z2JwoEq2wLkm+11ov/QMtQd3ZPdyyuWbSaV1FvReq+K9TNtU
+         QXvA==
+X-Received: by 10.112.219.70 with SMTP id pm6mr4305118lbc.41.1440755953585;
+        Fri, 28 Aug 2015 02:59:13 -0700 (PDT)
+Return-Path: <jhovold@gmail.com>
+Received: from xi.terra (c-6e8ce655.013-278-6d6c6d10.cust.bredbandsbolaget.se. [85.230.140.110])
+        by smtp.gmail.com with ESMTPSA id u3sm1271383laj.31.2015.08.28.02.59.12
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 28 Aug 2015 02:59:12 -0700 (PDT)
+Sender: Johan Hovold <jhovold@gmail.com>
+Received: from johan by xi.terra with local (Exim 4.85)
+	(envelope-from <johan@xi.terra>)
+	id 1ZVGRH-0004RJ-Jk; Fri, 28 Aug 2015 11:59:15 +0200
+From: Johan Hovold <johan@hovoldconsulting.com>
+To: Greg Kroah-Hartman <gregkh@google.com>,
+	Alex Elder <elder@linaro.org>
+Cc: viresh.kumar@linaro.org,
+	project-ara-kernel@lists.linaro.org,
+	Johan Hovold <johan@hovoldconsulting.com>
+Subject: [PATCH] firmware: fix potential stack corruption
+Date: Fri, 28 Aug 2015 11:58:24 +0200
+Message-Id: <1440755904-17021-1-git-send-email-johan@hovoldconsulting.com>
+X-Mailer: git-send-email 2.4.6
+Content-Length: 1059
+Lines: 32
+
+Use snprintf when generating the firmware name to avoid stack corruption
+if the fixed-size buffer overflows.
+
+Note that the current buffer size appears to expect 16-bit ids while
+the they are actually 32-bit, something which could trigger the
+corruption.
+
+Signed-off-by: Johan Hovold <johan@hovoldconsulting.com>
+---
+ firmware.c | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+
+diff --git a/firmware.c b/firmware.c
+index 13efaabb891b..e888b7ae4c59 100644
+--- a/firmware.c
++++ b/firmware.c
+@@ -38,9 +38,10 @@ static int download_firmware(struct gb_firmware *firmware, u8 stage)
+ 	 *
+ 	 * XXX Name it properly..
+ 	 */
+-	sprintf(firmware_name, "ara:%04x:%04x:%04x:%04x:%04x.fw", intf->unipro_mfg_id,
+-		intf->unipro_prod_id, intf->ara_vend_id, intf->ara_prod_id,
+-		stage);
++	snprintf(firmware_name, sizeof(firmware_name),
++		 "ara:%04x:%04x:%04x:%04x:%04x.fw",
++		 intf->unipro_mfg_id, intf->unipro_prod_id,
++		 intf->ara_vend_id, intf->ara_prod_id, stage);
+ 
+ 	return request_firmware(&firmware->fw, firmware_name, &connection->dev);
+ }
+-- 
+2.4.6
+

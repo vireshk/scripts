@@ -1,0 +1,3 @@
+~/scripts/mutt/scripts/clean
+~/scripts/mutt/scripts/mail-to-mbox
+~/scripts/mutt/scripts/git-apply-incoming

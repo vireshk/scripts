@@ -24,13 +24,24 @@ ara/jira
 
 # me
 :0:
-* ^(From|To|Cc):.*viresh
+* ^(From|To|Cc):.*(viresh\.kumar@linaro\.org|viresh\.nitj@gmail\.com|vireshk@kernel\.org|viresh\.linux@gmail\.com)
+me
+#
+# me - spear-heroes 
+:0:
+* ^(From|To|Cc):.*spear-heroes@googlegroups.com
 me
 
+
 #==============LINARO==================================#
+# ARA/kernel:
+:0:
+* ^(From|To|Cc):.*(project-ara-kernel@lists\.linaro\.org)
+ara/patches
+
 # ARA:
 :0:
-* ^(From|To|Cc):.*(projectara-software-dev@linaro\.org|project-ara-internal@linaro\.org|project-ara-kernel@lists\.linaro\.org|ara-all@projectara\.com)
+* ^(From|To|Cc):.*(projectara-software-dev@linaro\.org|project-ara-internal@linaro\.org|ara-all@projectara\.com|linaro@projectara.com)
 ara/list
 
 # Y2038

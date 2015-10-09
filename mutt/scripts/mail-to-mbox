@@ -1,0 +1,2 @@
+formail -cds ~/scripts/mutt/scripts/procmail -
+ls -l ~/scripts/mutt/incoming/

@@ -174,6 +174,7 @@ au FileType h highlight error ctermbg=red guibg=red ctermfg=blue guifg=blue
 au FileType sh match error /\s\+$\|\%>80v.\+\|[ ][ ]\+\|\n\n\n\+\|,[^ ]\|^[ ]\+[^\*]\|(\s\+\|\s\+)/
 au FileType sh highlight error ctermbg=red guibg=red ctermfg=blue guifg=blue
 set spell spelllang=en_us
+highlight SpellCap term=reverse ctermbg=white gui=undercurl guisp=lightyellow
 
 match none
 
@@ -211,3 +212,4 @@ set guifont=Monospace\ 12
 :let @r = "Reviewed-by: Viresh Kumar <viresh.kumar@linaro.org>"
 :let @s = "Signed-off-by: Viresh Kumar <viresh.kumar@linaro.org>"
 :let @t = "Tested-by: Viresh Kumar <viresh.kumar@linaro.org>"
+:let @p = "-------------------------8<-------------------------"

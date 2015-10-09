@@ -23,6 +23,9 @@ elif [ $2 = s3 ]; then
 elif [ $2 = s6 ]; then
 	dir=../b6xx/
 	cfg=spear6xx_
+elif [ $2 = ep93xx ]; then
+	dir=../ep93xx/
+	cfg=ep93xx_
 elif [ $2 = s13 ]; then
 	dir=../b13xx/
 	cfg=spear13xx_
@@ -101,6 +104,7 @@ if [ ! -z $isdebug ]; then
 	echo ""
 fi
 
+echo $mk
 bimage="$mk $IMAGE"
 
 echo ""

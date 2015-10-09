@@ -45,12 +45,6 @@ alias hjunk="cd /home/viresh/junk/"
 alias haastha="cd /home/viresh/junk/aastha"
 alias hisol="cd /home/viresh/work/repos/tools/isolation/"
 alias hwork="cd /home/viresh/work/repos/devel/linux/"
-alias hara="cd /home/viresh/work/repos/ara/linux"
-alias hgbus="cd /home/viresh/work/repos/ara/greybus/"
-alias hgspec="cd /home/viresh/work/repos/ara/greybus-spec/"
-alias hgbsim="cd /home/viresh/work/repos/ara/gbsim/"
-alias hmfesto="cd /home/viresh/work/repos/ara/manifesto/"
-alias hnuttx="cd /home/viresh/work/repos/ara/nuttx/"
 alias hmodule="cd /home/viresh/work/repos/tools/module/"
 
 #alias proxy='export http_proxy=http://viresh:@lps5.dlh.st.com:80'
@@ -134,6 +128,38 @@ mymini() { sudo -A minicom -w panda -D /dev/ttyUSB$1; }
 
 # ccache
 export USE_CCACHE=1
+
+alias myfetch="fetchmail -d 60 -L ~/.fetchmaillog"
+
+# ARA
+alias hara="cd /home/viresh/work/repos/ara/linux"
+alias hgbus="cd /home/viresh/work/repos/ara/greybus/"
+alias hgspec="cd /home/viresh/work/repos/ara/greybus-spec/"
+alias hgbsim="cd /home/viresh/work/repos/ara/gbsim/"
+alias hmfesto="cd /home/viresh/work/repos/ara/manifesto/"
+alias hbootrom="cd /home/viresh/work/repos/ara/bootrom"
+alias hnuttx="cd /home/viresh/work/repos/ara/nuttx/"
+
+export JKB_ROOT=~/work/repos/ara/jetson-kernel-build
+export HKB_ROOT=~/work/repos/ara/helium-kernel-build
+export BOOTROM_TOOLS=~/work/repos/ara/bootrom-tools
+alias aramodulej="make ARCH=arm CROSS_COMPILE=\"ccache $JKB_ROOT/arm-eabi-4.8/bin/arm-eabi-\" KERNELDIR=$JKB_ROOT/kernel-out EXTRA_CFLAGS+=-fno-pic; rm $JKB_ROOT/boot-files/ramdisk/lib/modules/*; cp *.ko $JKB_ROOT/boot-files/ramdisk/lib/modules/"
+alias aramoduleh="make ARCH=arm64 CROSS_COMPILE=$HKB_ROOT/aarch64-linux-android-4.8/bin/aarch64-linux-android- KERNELDIR=$HKB_ROOT/kernel-out EXTRA_CFLAGS+=-fno-pic; msudo rm $HKB_ROOT/boot-files/ramdisk/lib/modules/*; cp $HKB_ROOT/boot-files/galcore.ko $HKB_ROOT/boot-files/ramdisk/lib/modules/galcore.ko; cp *.ko $HKB_ROOT/boot-files/ramdisk/lib/modules/; sudo -A chmod 644 $HKB_ROOT/boot-files/ramdisk/lib/modules/*; sudo -A chown root:root $HKB_ROOT/boot-files/ramdisk/lib/modules/*"
+alias makejetson="export PATH=$JKB_ROOT/arm-eabi-4.8/bin:$PATH; export CROSS_COMPILE=\"ccache $JKB_ROOT/arm-eabi-4.8/bin/arm-eabi-\"; export KERNEL_DIR=$JKB_ROOT/tegra; cd $JKB_ROOT; clear;pwd;cd tegra; make ARCH=arm KCFLAGS="-fno-pic" O=../kernel-out defconfig tegra12_android_hdmi-primary_defconfig; make -j8 ARCH=arm KCFLAGS="-fno-pic" O=../kernel-out zImage-dtb > /dev/null; cp ../kernel-out/arch/arm/boot/zImage-dtb ../boot-files/zImage"
+alias ramj="cd $JKB_ROOT/boot-files/ramdisk; find . | cpio -o -H newc | gzip > ../ramdisk.gz; cd ..; ../bin/mkbootimg --kernel zImage --ramdisk ramdisk.gz --base 0x80000000 --kernel_offset 0x01000000 --ramdisk_offset 0x02100000 --tags_offset 0x02000000 --pagesize 2048 --cmdline \"androidboot.hardware=jetson vmalloc=384M androidboot.selinux=permissive\" -o newboot.img"
+alias ramh="cd $HKB_ROOT/boot-files/ramdisk; find . | cpio -o -H newc | gzip > ../ramdisk.gz; cd ..; ../bin/mkbootimg --kernel Image --ramdisk ramdisk.gz --base 0x01200000 --kernel_offset 0x00080000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --cmdline \"androidboot.selinux=permissive usbcore.autosuspend=-1 firmware_class.path=/data/firmware\" --pagesize 2048 -o newboot.img"
+alias flashjetson="cd $JKB_ROOT/boot-files; msudo fastboot flash boot newboot.img"
+alias flashhelium="cd $HKB_ROOT/boot-files; msudo fastboot flash dtb dtb; msudo fastboot flash boot newboot.img"
+alias findtftf="grep Reset_Handler ~/work/repos/ara/nuttx/build/ara-bridge-es2-debug-generic/image/System.map"
+maketftfj() { cd $JKB_ROOT/boot-files/ramdisk/lib/firmware/; $BOOTROM_TOOLS/create-tftf -v --elf ~/work/repos/ara/nuttx/build/ara-bridge-es2-debug-generic/image/nuttx --unipro-mfg 0x0126 --unipro-pid 0x1000 --ara-stage 2 --start 0x$1; }
+maketftfh() { cd $HKB_ROOT/boot-files/ramdisk/lib/firmware/; $BOOTROM_TOOLS/create-tftf -v --elf ~/work/repos/ara/nuttx/build/ara-bridge-es2-debug-generic/image/nuttx --unipro-mfg 0x0126 --unipro-pid 0x1000 --ara-stage 2 --start 0x$1; }
+
+# firmware
+alias flashapb1="hnuttx; truncate -s 2M build/ara-bridge-es2-debug-apbridgea/image/nuttx.bin; msudo flashrom  --programmer dediprog -w build/ara-bridge-es2-debug-apbridgea/image/nuttx.bin;"
+alias flashapb2="hnuttx; truncate -s 2M build/ara-bridge-es2-debug-generic/image/nuttx.bin; msudo flashrom  --programmer dediprog -w build/ara-bridge-es2-debug-generic/image/nuttx.bin;"
+alias flashbootrom="hbootrom; truncate -s 2M build/bootrom.bin; msudo flashrom  --programmer dediprog -w build/bootrom.bin;"
+alias flashsvc="hnuttx; arm-none-eabi-gdb build/ara-svc-bdb2a/image/nuttx"
+alias jtagbdb="JLinkGDBServer -device STM32F417IG"
 
 # go to linux on shell startup
 hwork

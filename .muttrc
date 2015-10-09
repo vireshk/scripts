@@ -10,6 +10,8 @@ set sendmail="/usr/bin/msmtp"
 set spoolfile =/home/viresh/work/mail/me
 #set spoolfile =/var/mail/viresh
 
+source ~/.gpgrc
+
 #======================================================#
 # Folders
 set folder="~/work/mail"	# Mailboxes in here
@@ -20,13 +22,19 @@ set move=no			# Don't move mail from the spool.
 #======================================================#
 # Watch these mailboxes for new mail:
 # mailboxes ! +sent
-mailboxes +me +ara +ara/list +ara/jira \
+mailboxes +me +ara +ara/patches +ara/list +ara/jira \
 	+linaro +inbox +linaro/kernel +linaro/y2038 +linaro/dev +linaro/payslip +linaro/build +linaro/kernelci +linaro/moderator \
 	+linaro/everyone +linaro/wiki +linaro/android +linaro/announce +linaro/lng +linaro/pmwg \
 	+linaro/releases +linaro/switchers +linaro/toolchain +linaro/tech +linaro/conf \
 	+sent +draft +lwn +linux-pm +korg
 #mailboxes ! +Fetchmail +slrn +mutt
 set sort_browser=alpha		# Sort mailboxes by alpha(bet)
+
+# ============================== #
+# Tricks
+set sleep_time=0
+#set header_cache=~/scripts/mutt/cache/headers # where to store the headers
+#set message_cachedir=~/scripts/mutt/cache/bodies # where to store the bodies
 
 #======================================================#
 # Order of headers and what to show
@@ -81,9 +89,30 @@ macro index ",2" "<enter-command>set editor=\"~/scripts/editlabel append "imp"\"
 
 macro index ".2" "<enter-command>set editor=\"~/scripts/editlabel remove "imp"\"\n\
 <edit><sync-mailbox><next-undeleted>\
-<enter-command>set editor=vim\n"
+<enter-command>set editor=vim\n" "test"
 
-macro index \Cy "<limit>~y " "Limit view to label"
+macro index,pager ",0" "<enter-command>set editor=\"vim -c 'set spell tw=70 et' '+/^$'"\n
+
+# ctrl+y: show pending, ctrl+a: show all
+macro index \Cy "<limit>~y pen\n" "Limit view to label"
+macro index \Ca "<limit>all\n<collapse-all>" "Limit view to label"
+
+
+#-----------------------------------------#
+# Save patches
+
+#macro index (t '<tag-entry>~/scripts/mutt/scripts/mail-to-mbox^M'  "Dumps tagged patches into ~/scripts/mutt/incoming/*.mbox"
+#macro index (a '<tag-entry>~/scripts/mutt/scripts/git-apply-incoming^M'  "git am ~/scripts/mutt/incoming/*.mbox"
+#macro index (g '<tag-entry>~/scripts/mutt/scripts/git-apply^M'  "git am tagged patches"
+#macro index ,t '<pipe-entry>~/scripts/mutt/scripts/mail-to-mbox^M'  "Dumps currently viewed patch into ~/scripts/mutt/incoming/*.mbox"
+#macro index ,g '<pipe-entry>~/scripts/mutt/scripts/git-apply^M' "git am currently viewed patch"
+#macro index ,r '<pipe-entry>~/scripts/mutt/scripts/clean^M' "git-reset --hard origin"
+
+macro index,pager \Ch '<pipe-entry>~/scripts/mutt/scripts/procmail^M' "output git patches"
+macro index,pager ,r '<pipe-entry>rm -f ~/scripts/mutt/incoming/*.mbox^M'  "Nukes all ~/scripts/mutt/incoming/" 
+macro index,pager ,l '<pipe-entry>ls -ltr ~/scripts/mutt/incoming/^M'  "ls -l ~/scripts/mutt/incoming/"         
+macro index,pager ,a '<pipe-entry>~/scripts/mutt/scripts/git-apply-incoming^M' "Apply all patches"
+
 
 #======================================================#
 # Colors
@@ -137,7 +166,7 @@ set index_format="%4C %Z %d %-25.25n (%M) %?y?[%.20Y] ?%s"
 
 folder-hook . "exec collapse-all"
 set sort=threads
-set sort_aux=last-date-sent
+set sort_aux=last-date-received
 unset mark_old
 set menu_scroll          # scroll menu a page on last line
 set pager_stop           # don't go to next message at end of message
@@ -189,3 +218,9 @@ auto_view text/html
 set query_command="goobook query '%s'"
 bind editor <Tab> complete-query
 macro index,pager a "<pipe-message>goobook add<return>" "add the sender address to Google contacts"
+
+#====================3
+# Bacup
+#
+# text/html;                      lynx %s; nametemplate=%s.html
+# text/html;                      lynx -dump %s; nametemplate=%s.html; copiousoutput

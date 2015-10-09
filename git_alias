@@ -1,3 +1,4 @@
+#!/bin/bash
 alias gb='git branch'
 alias gba='gb -a'
 alias gco='git checkout'
@@ -9,12 +10,14 @@ alias gdc='git diff --cached'
 alias gc='git cherry-pick'
 alias gl='git log '
 alias glo='gl --oneline'
+alias glome='glo --author=viresh'
 alias glor='glo --reverse'
 alias gloo='gl --pretty=onelin'
 alias glf='gl --pretty=fixes'
 alias gls='gl --stat'
-alias glsp='gl --stat -p'
-alias glspr='gl --stat -p --reverse'
+alias glsp='gls -p'
+alias glspr='glsp --reverse'
+alias glspme='glsp --author=viresh'
 alias gs='git status'
 alias gsh='git show --stat -p'
 alias gca='git commit --amend'
@@ -61,6 +64,7 @@ alias acpatcha='../../devel/linux/scripts/checkpatch.pl --strict *.patch'
 alias cpatcha='cpatch *.patch'
 alias gpatch='git format-patch -C -M --thread=shallow'
 alias gpatchc='gpatch --cover-letter'
+gpatchcs() { gpatchc --subject-prefix="PATCH V$1" $2; }
 alias ph='gpatch HEAD^'
 phc() { gpatch $1^..$1; }
 rpull() { git request-pull remotes/linux-linaro/linux-linaro-core-tracking git://git.linaro.org/arm/big.LITTLE/mp.git $1 > ../pull.txt; gvim ../pull.txt; }
@@ -78,8 +82,11 @@ alias linaroclrrebase='/home/viresh/scripts/linarorebase.sh clear_rebase'
 alias linaropush='/home/viresh/scripts/linarorebase.sh push'
 alias linarostat='/home/viresh/scripts/linarorebase.sh stat'
 alias linarocheck='/home/viresh/scripts/linarorebase.sh check'
-alias mypatchcountrank='gl --no-merges --format="%aN" v3.12..lnext/master | sort | uniq -ic| sort -nr | less'
-alias mypatchcount='glo  --author=viresh --no-merges origin/master | wc -l'
+#alias mypatchcountrank='gl --no-merges --format="%aN" v3.12..lnext/master | sort | uniq -ic| sort -nr | less'
+#alias mypatchcount='glo  --author=viresh --no-merges origin/master | wc -l'
+mypatch() { glo  --author=viresh --no-merges $1 ; }
+mypatchcount() { glo  --author=viresh --no-merges $1 | wc -l; }
+mypatchcountrank() { gl --no-merges --format="%aN" $1..$2 | sort | uniq -ic| sort -nr | less; }
 
 #Other tools
 alias myspatch='echo "spatch -in_place -include_headers -sp_file setmode.cocci -dir drivers/"'
@@ -92,3 +99,4 @@ alias gitmailsched='gitmaillinaro --cc lkml --to ingo --to peterz'
 alias gitmailtimer='gitmaillinaro --cc lkml --to tglx --cc fw'
 alias gitmailara='gitmail --to gregl --to alex --cc ara'
 alias gitmailarak='gitmail --to gregl --to alex --cc arak'
+alias prepcclist='cat 00* | grep Cc | cut -f 2 -d : | sort | uniq > ~/scripts/mycoverletterlist.txt'

@@ -10,6 +10,8 @@
 #	smtppass = ""
 	aliasesfile = /home/viresh/scripts/.git_aliases
 	aliasfiletype = mutt
+
+	#cccmd = ~/scripts/cccmd
 [color]
 	diff = auto
 	status = auto

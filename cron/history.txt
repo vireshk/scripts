@@ -202,3 +202,54 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/viresh/scripts
+[master 8e7afeafc62b] updates
+ 18 files changed, 556 insertions(+), 85 deletions(-)
+ delete mode 100644 .fetchmailrc
+ create mode 100644 .goobookrc
+ create mode 100644 .lbdb/lbdbrc
+ create mode 100644 .lbdb/ldap.rc
+ create mode 100644 .mailcap
+ delete mode 100644 .msmtprc
+ create mode 100755 .netrc
+ create mode 100644 cron/.gitpush.sh.swp
+ create mode 100755 editlabel
+ create mode 100644 mutt/template/ack.tmpl
+ create mode 100644 uboot_env
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/scripts
+   9a5f86e46e9e..8e7afeafc62b  master -> master
+   9f654eac0f70..9a5f86e46e9e  bkp/master -> bkp/master
+
+
+
+ 
+Thu Oct  8 23:05:36 IST 2015
+
+Entering /home/viresh/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+ 
+Fri Oct  9 11:26:40 IST 2015
+
+Entering /home/viresh/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/viresh/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/viresh/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/viresh/work/repos/tools/isolation
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/viresh/scripts

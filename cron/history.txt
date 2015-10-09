@@ -253,3 +253,65 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/viresh/scripts
+[master 22c5d33da451] updates
+ 24 files changed, 364 insertions(+), 26 deletions(-)
+ create mode 100755 cccmd
+ delete mode 100644 cron/.gitpush.sh.swp
+ create mode 100644 mutt/cache/bodies
+ create mode 100644 mutt/cache/headers
+ create mode 100644 mutt/incoming/.procmaillog
+ create mode 100644 mutt/incoming/PATCH_firmware_fix_potential_stack_corruption.mbox
+ create mode 100755 mutt/scripts/clean
+ create mode 100755 mutt/scripts/git-apply
+ create mode 100755 mutt/scripts/git-apply-incoming
+ create mode 100755 mutt/scripts/mail-to-mbox
+ create mode 100755 mutt/scripts/procmail
+ create mode 100644 mutt/scripts/procmailrc
+ create mode 100644 mycoverletterlist.txt
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/scripts
+   8e7afeafc62b..22c5d33da451  master -> master
+   9a5f86e46e9e..8e7afeafc62b  bkp/master -> bkp/master
+
+
+
+ 
+Fri Oct  9 11:30:39 IST 2015
+
+Entering /home/viresh/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 9aaaa4a28cbe...2ce0626fda6b bkp/cpufreq/gov-locking -> bkp/cpufreq/gov-locking (forced update)
+ * [new branch]                bkp/bkp/exynos/ara-make-dep -> bkp/bkp/exynos/ara-make-dep
+ * [new branch]                bkp/bkp/exynos/cpufreq-4.2 -> bkp/bkp/exynos/cpufreq-4.2
+ * [new branch]                bkp/bkp/exynos/working/4.1-rc7 -> bkp/bkp/exynos/working/4.1-rc7
+ * [new branch]                bkp/bkp/lng/isolation-3.14 -> bkp/bkp/lng/isolation-3.14
+ * [new branch]                bkp/bkp/lng/vanila-spurious-tests -> bkp/bkp/lng/vanila-spurious-tests
+ * [new branch]                bkp/cpufreq/get-rate-api -> bkp/cpufreq/get-rate-api
+ * [new branch]                bkp/cpufreq/get-rate-api-v1 -> bkp/cpufreq/get-rate-api-v1
+ * [new branch]                bkp/opp/multi-regulator -> bkp/opp/multi-regulator
+ * [new branch]                bkp/opp/multi-regulator-v1 -> bkp/opp/multi-regulator-v1
+ * [new branch]                bkp/opp/multi-regulator-v2 -> bkp/opp/multi-regulator-v2
+ * [new branch]                bkp/opp/multi-regulator-v3 -> bkp/opp/multi-regulator-v3
+ * [new branch]                bkp/opp/supported-hw-prop-name -> bkp/opp/supported-hw-prop-name
+ * [new branch]                bkp/opp/supported-hw-prop-name-v1 -> bkp/opp/supported-hw-prop-name-v1
+ * [new branch]                bkp/trivial/unlikely-is-err -> bkp/trivial/unlikely-is-err
+
+Entering /home/viresh/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/viresh/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/viresh/work/repos/tools/isolation
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/viresh/scripts

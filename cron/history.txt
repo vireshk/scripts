@@ -315,3 +315,66 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/viresh/scripts
+[master ddade49babb6] updates
+ 1 file changed, 62 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/scripts
+   22c5d33da451..ddade49babb6  master -> master
+   8e7afeafc62b..22c5d33da451  bkp/master -> bkp/master
+
+
+
+ 
+Tue Oct 20 06:59:06 IST 2015
+
+Entering /home/viresh/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 2ce0626fda6b...24639c4c2eba cpufreq/gov-locking -> cpufreq/gov-locking (forced update)
+ + 13f695a5211c...610411dd6d62 opp/multi-regulator -> opp/multi-regulator (forced update)
+ + 96b5fa8a5f2e...5dd05e5159c7 opp/multi-regulator-v3 -> opp/multi-regulator-v3 (forced update)
+ + 3667769d0c2f...123bfd25c743 armcpufreq/cpufreq/gov-locking -> armcpufreq/cpufreq/gov-locking (forced update)
+ + 8e3ee384efc2...469a43705f52 lnext/akpm -> lnext/akpm (forced update)
+ + 611edd894ff4...ca9cc74867db lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 15e5b1b566ed...565e6168f262 lnext/master -> lnext/master (forced update)
+   f6702681a0af..c6fa8e6de3dc  lnext/stable -> lnext/stable
+   c6fa8e6de3dc..25cb62b76430  origin/HEAD -> origin/HEAD
+   c6fa8e6de3dc..25cb62b76430  origin/master -> origin/master
+   b7a4f7ff7f83..62fcce91049a  pm/acpica -> pm/acpica
+ + 86f44c95db48...c6240328e702 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 86f44c95db48...c6240328e702 pm/linux-next -> pm/linux-next (forced update)
+   049e6dde7e57..7379047d5585  pm/master -> pm/master
+   1f0bd44e9374..8e601a9f97a0  pm/pm-cpufreq -> pm/pm-cpufreq
+   4184a8fc57a4..d61e87ac5329  pm/pm-devfreq -> pm/pm-devfreq
+   f33b77408a91..a98f1b78ecf3  pm/pm-domains -> pm/pm-domains
+ * [new branch]                cpufreq/policy_under_cpufreq -> cpufreq/policy_under_cpufreq
+ * [new branch]                opp/multi-regulator-v3-with-debugfsbkp -> opp/multi-regulator-v3-with-debugfsbkp
+ * [new branch]                armcpufreq/cpufreq/policy_under_cpufreq -> armcpufreq/cpufreq/policy_under_cpufreq
+ * [new branch]                drivers/compress-next -> drivers/compress-next
+ * [new branch]                drivers/driver-core-linus -> drivers/driver-core-linus
+ * [new branch]                drivers/driver-core-next -> drivers/driver-core-next
+ * [new branch]                drivers/driver-core-testing -> drivers/driver-core-testing
+ * [new branch]                drivers/master -> drivers/master
+ * [new tag]                   next-20151009 -> next-20151009
+ * [new tag]                   pm+acpi-4.3-rc5 -> pm+acpi-4.3-rc5
+ * [new tag]                   pm+acpi-4.3-rc6 -> pm+acpi-4.3-rc6
+ * [new tag]                   v4.3-rc5 -> v4.3-rc5
+
+Entering /home/viresh/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/viresh/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/viresh/work/repos/tools/isolation
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/viresh/scripts

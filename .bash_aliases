@@ -158,7 +158,8 @@ maketftfh() { cd $HKB_ROOT/boot-files/ramdisk/lib/firmware/; $BOOTROM_TOOLS/crea
 alias flashapb1="hnuttx; truncate -s 2M build/ara-bridge-es2-debug-apbridgea/image/nuttx.bin; msudo flashrom  --programmer dediprog -w build/ara-bridge-es2-debug-apbridgea/image/nuttx.bin;"
 alias flashapb2="hnuttx; truncate -s 2M build/ara-bridge-es2-debug-generic/image/nuttx.bin; msudo flashrom  --programmer dediprog -w build/ara-bridge-es2-debug-generic/image/nuttx.bin;"
 alias flashbootrom="hbootrom; truncate -s 2M build/bootrom.bin; msudo flashrom  --programmer dediprog -w build/bootrom.bin;"
-alias flashsvc="hnuttx; arm-none-eabi-gdb build/ara-svc-bdb2a/image/nuttx"
+alias flashsvcjtag="hnuttx; arm-none-eabi-gdb build/ara-svc-bdb2a/image/nuttx"
+flashsvc() { hnuttx; msudo stm32ld /dev/ttyUSB$1 115200 build/ara-svc-bdb2a/image/nuttx; }
 alias jtagbdb="JLinkGDBServer -device STM32F417IG"
 
 # go to linux on shell startup

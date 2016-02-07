@@ -438,3 +438,66 @@ Please make sure you have the correct access rights
 and the repository exists.
 
 Entering /home/vireshk/scripts
+[master 972b81c39843] updates
+ 1 file changed, 60 insertions(+)
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions 0770 for '/home/vireshk/.ssh/id_rsa' are too open.
+It is required that your private key files are NOT accessible by others.
+This private key will be ignored.
+Load key "/home/vireshk/.ssh/id_rsa": bad permissions
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Sun Feb  7 13:26:43 IST 2016
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+ 
+Sun Feb  7 13:52:27 IST 2016
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 3218bdb98592...602164ffb67f bkp/bkp/exynos/ara-make-dep -> bkp/bkp/exynos/ara-make-dep (forced update)
+ + 24639c4c2eba...18bc77ae5622 bkp/cpufreq/gov-locking -> bkp/cpufreq/gov-locking (forced update)
+ * [new branch]                bkp/bkp/cpufreq/core/locking -> bkp/bkp/cpufreq/core/locking
+ * [new branch]                bkp/clkevt/oneshot-stopped -> bkp/clkevt/oneshot-stopped
+ * [new branch]                bkp/cpufreq/governor-kobject -> bkp/cpufreq/governor-kobject
+ * [new branch]                bkp/cpufreq/governor-kobject-test -> bkp/cpufreq/governor-kobject-test
+ * [new branch]                bkp/cpufreq/masks -> bkp/cpufreq/masks
+ * [new branch]                bkp/cpufreq/rafael-cleanups -> bkp/cpufreq/rafael-cleanups
+ * [new branch]                bkp/cpufreq/rafael-updates -> bkp/cpufreq/rafael-updates
+ * [new branch]                bkp/master -> bkp/master
+ * [new branch]                bkp/opp/next -> bkp/opp/next
+ * [new branch]                bkp/opp/regulator-v4 -> bkp/opp/regulator-v4
+ * [new branch]                bkp/opp/set-rate -> bkp/opp/set-rate
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/cpufreq-tests
+   af5c563efd3c..d148c5b462e4  bkp/master -> bkp/master
+   af5c563efd3c..d148c5b462e4  origin/HEAD -> origin/HEAD
+   af5c563efd3c..d148c5b462e4  origin/master -> origin/master
+
+Entering /home/vireshk/work/repos/tools/isolation
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

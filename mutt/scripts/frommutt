@@ -1,0 +1,1 @@
+formail -cds $HOME/scripts/mutt/scripts/procmail -

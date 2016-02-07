@@ -208,8 +208,8 @@ au FileType asciidoc set comments=
 set guifont=Monospace\ 12
 
 " Commit Tags
-:let @a = "Acked-by: Viresh Kumar <viresh.kumar@linaro.org>"
-:let @r = "Reviewed-by: Viresh Kumar <viresh.kumar@linaro.org>"
-:let @s = "Signed-off-by: Viresh Kumar <viresh.kumar@linaro.org>"
-:let @t = "Tested-by: Viresh Kumar <viresh.kumar@linaro.org>"
-:let @p = "-------------------------8<-------------------------"
+:let @a = "\nAcked-by: Viresh Kumar <viresh.kumar@linaro.org>\n"
+:let @r = "\nReviewed-by: Viresh Kumar <viresh.kumar@linaro.org>\n"
+:let @s = "\nSigned-off-by: Viresh Kumar <viresh.kumar@linaro.org>\n"
+:let @t = "\nTested-by: Viresh Kumar <viresh.kumar@linaro.org>\n"
+:let @p = "\n-------------------------8<-------------------------\n"

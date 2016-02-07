@@ -8,7 +8,7 @@
 #	smtpencryption = tls
 	multiedit = false
 #	smtppass = ""
-	aliasesfile = /home/viresh/scripts/.git_aliases
+	aliasesfile = /home/vireshk/scripts/.git_aliases
 	aliasfiletype = mutt
 
 	cccmd = ~/scripts/cccmd
@@ -28,6 +28,8 @@
         xfuncname = "^[[:alpha:]$_].*[^:]$"
 [pretty]
 	fixes = Fixes: %h (\"%s\")
-	onelin = %h (\"%s\")
+	onelin = commit %h (\"%s\")
 [push]
 	default = simple
+[http]
+	cookiefile = /home/vireshk/.gitcookies

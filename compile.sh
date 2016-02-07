@@ -8,7 +8,8 @@ vmlinuxpath="vmlinux"
 carch=arm
 basecfg="scripts/kconfig/merge_config.sh linaro/configs/linaro-base.conf"
 IMAGE=zImage
-CROSS_COMPILE="ccache arm-linux-gnueabihf-"
+CROSS_COMPILE="arm-linux-gnueabihf-"
+#CROSS_COMPILE='"ccache arm-linux-gnueabihf-"'
 
 if [ -f linaro/configs/vdebug.conf ]; then
 	basecfg="$basecfg linaro/configs/vdebug.conf"
@@ -77,7 +78,8 @@ elif [ $2 = marvell ]; then
 elif [ $2 = x86 ]; then
 	dir=../bx86/
 	cfg=x86_64_
-	CROSS_COMPILE="ccache "
+#	CROSS_COMPILE="\"ccache gcc\""
+	CROSS_COMPILE=
 	carch="x86"
 	IMAGE=
 else
@@ -92,7 +94,7 @@ fi
 
 #mk="make ARCH=$carch O=$dir -j4"
 #mk="ARCH=$carch O=$dir -j4"
-mk="make ARCH=$carch O=$dir -j4 $FLAGS CONFIG_DEBUG_SECTION_MISMATCH=y"
+mk="make ARCH=$carch O=$dir -j4 $FLAGS CROSS_COMPILE=$CROSS_COMPILE CONFIG_DEBUG_SECTION_MISMATCH=y"
 
 if [ ! -z $isdebug ]; then
 	echo ""
@@ -104,8 +106,8 @@ if [ ! -z $isdebug ]; then
 	echo ""
 fi
 
-echo $mk
 bimage="$mk $IMAGE"
+echo $bimage
 
 echo ""
 echo "Start operation: $1 for machine $cfg"

@@ -86,3 +86,18 @@ From viresh  Fri Jun 19 17:19:30 2015
 From viresh  Mon Jul 27 17:59:01 2015
  Subject: [PATCH V2 0/9] CPUFreq: governors: further cleanups
   Folder: PATCH_V2_0-9_CPUFreq_governors_further_cleanups.mbox		   2483
+From vireshk  Sat Jan 30 10:31:29 2016
+ Subject: [PATCH 2/3] cpufreq: intel_pstate: Replace timers with utilization up
+  Folder: PATCH_2-3_cpufreq_intel_pstate_Replace_timers_with_utilizati	   9329
+From vireshk  Wed Feb  3 06:45:37 2016
+ Subject: [Update][PATCH 3/3] cpufreq: governor: Replace timers with utilizatio
+  Folder: UpdatePATCH_3-3_cpufreq_governor_Replace_timers_with_utiliza	   2178
+From rafael.j.wysocki@intel.com  Thu Feb  4 09:45:41 2016
+ Subject: [PATCH] cpufreq: governor: Replace timers with utilization update cal
+  Folder: PATCH_cpufreq_governor_Replace_timers_with_utilization_updat	  13875
+From vireshk  Sat Jan 30 10:31:29 2016
+ Subject: [PATCH 1/3] cpufreq: Add a mechanism for registering utilization upda
+  Folder: PATCH_1-3_cpufreq_Add_a_mechanism_for_registering_utilizatio	   7922
+From vireshk  Fri Feb  5 07:27:01 2016
+ Subject: [PATCH 3/3 v3] cpufreq: governor: Replace timers with utilization upd
+  Folder: PATCH_3-3_v3_cpufreq_governor_Replace_timers_with_utilizatio	  16759

@@ -15,6 +15,7 @@ alias gregl	Greg Kroah-Hartman <gregkh@google.com>
 alias santosh	Santosh Shukla <santosh.shukla@linaro.org>
 alias alex	Alex Elder <elder@linaro.org>
 alias johan	Johan Hovold <johan@hovoldconsulting.com>
+alias sboyd	Stephen Boyd <sboyd@codeaurora.org>
 
 alias armsoc	arm@kernel.org
 alias lakml	linux-arm-kernel@lists.infradead.org

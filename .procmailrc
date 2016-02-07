@@ -1,7 +1,7 @@
 # Environment variable assignments
 PATH=/bin:/usr/bin:/usr/local/bin
 VERBOSE=off				# Turn on for verbose log
-MAILDIR=$HOME/all/home/work/mail	# Where Procmail recipes deliver
+MAILDIR=$HOME/work/mail	# Where Procmail recipes deliver
 LOGFILE=$HOME/.procmaillog		# Keep a log for troubleshooting.
 
 # Recipes
@@ -24,7 +24,7 @@ ara/jira
 
 # me
 :0:
-* ^(From|To|Cc):.*(viresh\.kumar@linaro\.org|viresh\.nitj@gmail\.com|vireshk@kernel\.org|viresh\.linux@gmail\.com)
+* ^(From|To|Cc):.*(viresh\.kumar@linaro\.org|viresh\.nitj@gmail\.com|vireshk@kernel\.org|viresh\.linux@gmail\.com|kumar_viresh@projectara\.com)
 me
 #
 # me - spear-heroes 
@@ -41,7 +41,7 @@ ara/patches
 
 # ARA:
 :0:
-* ^(From|To|Cc):.*(projectara-software-dev@linaro\.org|project-ara-internal@linaro\.org|ara-all@projectara\.com|linaro@projectara.com)
+* ^(From|To|Cc):.*(projectara-software-dev@linaro\.org|project-ara-internal@linaro\.org|ara-all@projectara\.com|linaro@projectara.com|ara-eng-external@google\.com)
 ara/list
 
 # Y2038

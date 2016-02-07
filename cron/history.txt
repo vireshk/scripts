@@ -1,19 +1,19 @@
  
 Mon May  4 15:48:09 IST 2015
 
-Entering /home/viresh/work/repos/devel/linux
+Entering /home/vireshk/work/repos/devel/linux
 abc
 
-Entering /home/viresh/work/repos/tools/module
+Entering /home/vireshk/work/repos/tools/module
 abc
 
-Entering /home/viresh/work/repos/tools/cpufreq-tests
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
 abc
 
-Entering /home/viresh/work/repos/tools/isolation
+Entering /home/vireshk/work/repos/tools/isolation
 abc
 
-Entering /home/viresh/scripts
+Entering /home/vireshk/scripts
 xyz
 [master 847d712a7192] updates
  4 files changed, 24 insertions(+), 50 deletions(-)
@@ -25,15 +25,15 @@ abc
  
 Mon May  4 15:50:42 IST 2015
 
-Entering /home/viresh/work/repos/devel/linux
+Entering /home/vireshk/work/repos/devel/linux
 
-Entering /home/viresh/work/repos/tools/module
+Entering /home/vireshk/work/repos/tools/module
 
-Entering /home/viresh/work/repos/tools/cpufreq-tests
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
 
-Entering /home/viresh/work/repos/tools/isolation
+Entering /home/vireshk/work/repos/tools/isolation
 
-Entering /home/viresh/scripts
+Entering /home/vireshk/scripts
 [master 2f71f8bf3100] updates
  2 files changed, 20 insertions(+), 3 deletions(-)
 
@@ -42,23 +42,23 @@ Entering /home/viresh/scripts
  
 Mon May  4 15:54:27 IST 2015
 
-Entering /home/viresh/work/repos/devel/linux
+Entering /home/vireshk/work/repos/devel/linux
 post-git trigger: updating grokmirror
 Everything up-to-date
 
-Entering /home/viresh/work/repos/tools/module
+Entering /home/vireshk/work/repos/tools/module
 post-git trigger: updating grokmirror
 Everything up-to-date
 
-Entering /home/viresh/work/repos/tools/cpufreq-tests
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
 post-git trigger: updating grokmirror
 Everything up-to-date
 
-Entering /home/viresh/work/repos/tools/isolation
+Entering /home/vireshk/work/repos/tools/isolation
 post-git trigger: updating grokmirror
 Everything up-to-date
 
-Entering /home/viresh/scripts
+Entering /home/vireshk/scripts
 [master c5123cac5405] updates
  2 files changed, 26 insertions(+), 1 deletion(-)
 post-git trigger: updating grokmirror
@@ -71,23 +71,23 @@ To ssh://git@git.linaro.org/people/viresh.kumar/backup/scripts
  
 Mon May  4 15:55:44 IST 2015
 
-Entering /home/viresh/work/repos/devel/linux
+Entering /home/vireshk/work/repos/devel/linux
 post-git trigger: updating grokmirror
 Everything up-to-date
 
-Entering /home/viresh/work/repos/tools/module
+Entering /home/vireshk/work/repos/tools/module
 post-git trigger: updating grokmirror
 Everything up-to-date
 
-Entering /home/viresh/work/repos/tools/cpufreq-tests
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
 post-git trigger: updating grokmirror
 Everything up-to-date
 
-Entering /home/viresh/work/repos/tools/isolation
+Entering /home/vireshk/work/repos/tools/isolation
 post-git trigger: updating grokmirror
 Everything up-to-date
 
-Entering /home/viresh/scripts
+Entering /home/vireshk/scripts
 [master 9f654eac0f70] updates
  1 file changed, 29 insertions(+)
 post-git trigger: updating grokmirror
@@ -100,7 +100,7 @@ To ssh://git@git.linaro.org/people/viresh.kumar/backup/scripts
  
 Tue May 12 16:09:44 IST 2015
 
-Entering /home/viresh/work/repos/devel/linux
+Entering /home/vireshk/work/repos/devel/linux
 post-git trigger: updating grokmirror
 To ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git
  + da963b79c2ba...2cd5ef3ac83b cpufreq/core/sysfs-v3 -> cpufreq/core/sysfs-v3 (forced update)
@@ -124,23 +124,23 @@ To ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git
  * [new tag]                   next-20150506 -> next-20150506
  * [new tag]                   pm+acpi-4.1-rc3 -> pm+acpi-4.1-rc3
 
-Entering /home/viresh/work/repos/tools/module
+Entering /home/vireshk/work/repos/tools/module
 post-git trigger: updating grokmirror
 To ssh://git@git.linaro.org/people/viresh.kumar/backup/module
  - [deleted]                   origin/HEAD
  - [deleted]                   origin/master
 
-Entering /home/viresh/work/repos/tools/cpufreq-tests
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
 post-git trigger: updating grokmirror
 Everything up-to-date
 
-Entering /home/viresh/work/repos/tools/isolation
+Entering /home/vireshk/work/repos/tools/isolation
 post-git trigger: updating grokmirror
 To ssh://git@git.linaro.org/people/viresh.kumar/backup/isolation
  - [deleted]                   origin/HEAD
  - [deleted]                   origin/master
 
-Entering /home/viresh/scripts
+Entering /home/vireshk/scripts
 [master 9a5f86e46e9e] updates
  14 files changed, 437 insertions(+), 4 deletions(-)
  create mode 100644 .fetchmailrc
@@ -165,11 +165,11 @@ To ssh://git@git.linaro.org/people/viresh.kumar/backup/scripts
  
 Tue Jun 16 19:45:38 IST 2015
 
-Entering /home/viresh/work/repos/devel/linux
+Entering /home/vireshk/work/repos/devel/linux
  
 Tue Jun 16 20:36:50 IST 2015
 
-Entering /home/viresh/work/repos/devel/linux
+Entering /home/vireshk/work/repos/devel/linux
 post-git trigger: updating grokmirror
 Updating local grokmirror with changes on master
 To ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git
@@ -184,24 +184,24 @@ To ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git
  * [new branch]                bkp/exynos/working/4.1-rc7 -> bkp/exynos/working/4.1-rc7
  * [new branch]                bkp/marvell -> bkp/marvell
 
-Entering /home/viresh/work/repos/tools/module
+Entering /home/vireshk/work/repos/tools/module
 post-git trigger: updating grokmirror
 Updating local grokmirror with changes on master
 Everything up-to-date
 
-Entering /home/viresh/work/repos/tools/cpufreq-tests
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
 ssh: connect to host git.linaro.org port 22: Connection timed out
 fatal: Could not read from remote repository.
 
 Please make sure you have the correct access rights
 and the repository exists.
 
-Entering /home/viresh/work/repos/tools/isolation
+Entering /home/vireshk/work/repos/tools/isolation
 post-git trigger: updating grokmirror
 Updating local grokmirror with changes on master
 Everything up-to-date
 
-Entering /home/viresh/scripts
+Entering /home/vireshk/scripts
 [master 8e7afeafc62b] updates
  18 files changed, 556 insertions(+), 85 deletions(-)
  delete mode 100644 .fetchmailrc
@@ -226,33 +226,33 @@ To ssh://git@git.linaro.org/people/viresh.kumar/backup/scripts
  
 Thu Oct  8 23:05:36 IST 2015
 
-Entering /home/viresh/work/repos/devel/linux
+Entering /home/vireshk/work/repos/devel/linux
 post-git trigger: updating grokmirror
 Updating local grokmirror with changes on master
  
 Fri Oct  9 11:26:40 IST 2015
 
-Entering /home/viresh/work/repos/devel/linux
+Entering /home/vireshk/work/repos/devel/linux
 post-git trigger: updating grokmirror
 Updating local grokmirror with changes on master
 Everything up-to-date
 
-Entering /home/viresh/work/repos/tools/module
+Entering /home/vireshk/work/repos/tools/module
 post-git trigger: updating grokmirror
 Updating local grokmirror with changes on master
 Everything up-to-date
 
-Entering /home/viresh/work/repos/tools/cpufreq-tests
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
 post-git trigger: updating grokmirror
 Updating local grokmirror with changes on master
 Everything up-to-date
 
-Entering /home/viresh/work/repos/tools/isolation
+Entering /home/vireshk/work/repos/tools/isolation
 post-git trigger: updating grokmirror
 Updating local grokmirror with changes on master
 Everything up-to-date
 
-Entering /home/viresh/scripts
+Entering /home/vireshk/scripts
 [master 22c5d33da451] updates
  24 files changed, 364 insertions(+), 26 deletions(-)
  create mode 100755 cccmd
@@ -279,7 +279,7 @@ To ssh://git@git.linaro.org/people/viresh.kumar/backup/scripts
  
 Fri Oct  9 11:30:39 IST 2015
 
-Entering /home/viresh/work/repos/devel/linux
+Entering /home/vireshk/work/repos/devel/linux
 post-git trigger: updating grokmirror
 Updating local grokmirror with changes on master
 To ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git
@@ -299,22 +299,22 @@ To ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git
  * [new branch]                bkp/opp/supported-hw-prop-name-v1 -> bkp/opp/supported-hw-prop-name-v1
  * [new branch]                bkp/trivial/unlikely-is-err -> bkp/trivial/unlikely-is-err
 
-Entering /home/viresh/work/repos/tools/module
+Entering /home/vireshk/work/repos/tools/module
 post-git trigger: updating grokmirror
 Updating local grokmirror with changes on master
 Everything up-to-date
 
-Entering /home/viresh/work/repos/tools/cpufreq-tests
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
 post-git trigger: updating grokmirror
 Updating local grokmirror with changes on master
 Everything up-to-date
 
-Entering /home/viresh/work/repos/tools/isolation
+Entering /home/vireshk/work/repos/tools/isolation
 post-git trigger: updating grokmirror
 Updating local grokmirror with changes on master
 Everything up-to-date
 
-Entering /home/viresh/scripts
+Entering /home/vireshk/scripts
 [master ddade49babb6] updates
  1 file changed, 62 insertions(+)
 post-git trigger: updating grokmirror
@@ -328,7 +328,7 @@ To ssh://git@git.linaro.org/people/viresh.kumar/backup/scripts
  
 Tue Oct 20 06:59:06 IST 2015
 
-Entering /home/viresh/work/repos/devel/linux
+Entering /home/vireshk/work/repos/devel/linux
 post-git trigger: updating grokmirror
 Updating local grokmirror with changes on master
 To ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git
@@ -362,19 +362,19 @@ To ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git
  * [new tag]                   pm+acpi-4.3-rc6 -> pm+acpi-4.3-rc6
  * [new tag]                   v4.3-rc5 -> v4.3-rc5
 
-Entering /home/viresh/work/repos/tools/module
+Entering /home/vireshk/work/repos/tools/module
 post-git trigger: updating grokmirror
 Updating local grokmirror with changes on master
 Everything up-to-date
 
-Entering /home/viresh/work/repos/tools/cpufreq-tests
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
 post-git trigger: updating grokmirror
 Updating local grokmirror with changes on master
 Everything up-to-date
 
-Entering /home/viresh/work/repos/tools/isolation
+Entering /home/vireshk/work/repos/tools/isolation
 post-git trigger: updating grokmirror
 Updating local grokmirror with changes on master
 Everything up-to-date
 
-Entering /home/viresh/scripts
+Entering /home/vireshk/scripts

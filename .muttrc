@@ -116,7 +116,8 @@ macro index,pager ,a '<pipe-entry>~/scripts/mutt/scripts/git-apply-incoming^M' "
 
 #======================================================#
 # Colors
-color normal	 black default
+ color normal	 black default
+# color normal	 white default
 color attachment yellow default
 color hdrdefault cyan default
 color indicator black cyan
@@ -184,8 +185,8 @@ bind index,pager \CP sidebar-prev
 bind index,pager \CN sidebar-next
 bind index,pager \CO sidebar-open
 
-#macro index b '<enter-command>toggle sidebar_visible<enter><refresh>'
-#macro pager b '<enter-command>toggle sidebar_visible<enter><redraw-screen>'
+macro index z '<enter-command>toggle sidebar_visible<enter><refresh>'
+macro pager z '<enter-command>toggle sidebar_visible<enter><redraw-screen>'
 
 #=======================================================#
 # Shortcuts

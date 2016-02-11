@@ -77,7 +77,8 @@ alias dtbs='$vcompile dtbs'
 alias lbuild='$vcompile lbuild'
 alias testlinaro='lbuild tc2 ubuntu noblconf; lbuild tc2; build x86'
 alias aramodule='make C=2 -C /home/vireshk/work/repos/ara/bmarvell M=`pwd` ARCH=arm64 CROSS_COMPILE="ccache aarch64-linux-gnu-" modules CONFIG_DEBUG_SECTION_MISMATCH=y'
-alias aramodulee='make C=2 -C /home/vireshk/work/repos/devel/bexynos M=`pwd` ARCH=arm CROSS_COMPILE="arm-linux-gnueabihf-" modules CONFIG_DEBUG_SECTION_MISMATCH=y'
+alias aramodulee='make -C /home/vireshk/work/repos/devel/bexynos M=`pwd` ARCH=arm CROSS_COMPILE="arm-linux-gnueabihf-" modules'
+#alias aramodulee='make C=2 -C /home/vireshk/work/repos/devel/bexynos M=`pwd` ARCH=arm CROSS_COMPILE="arm-linux-gnueabihf-" modules CONFIG_DEBUG_SECTION_MISMATCH=y'
 alias aramodulex='make C=2 CROSS_COMPILE= CONFIG_DEBUG_SECTION_MISMATCH=y'
 alias arainsmod="msudo insmod greybus.ko; msudo insmod gb-phy.ko; msudo insmod gb-es1.ko"
 alias ararmmod=" msudo rmmod gb_es1; msudo rmmod gb_phy; msudo rmmod greybus;"

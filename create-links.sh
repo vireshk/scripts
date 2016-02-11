@@ -66,6 +66,7 @@ ln -s ~/all/scripts/autostart/gnome-terminal.desktop ~/.config/autostart/gnome-t
 ln -s ~/all/scripts/autostart/google-chrome-stable.desktop ~/.config/autostart/google-chrome-stable.desktop
 ln -s ~/all/scripts/autostart/skype.desktop ~/.config/autostart/skype.desktop
 ln -s ~/all/scripts/autostart/vlc.desktop ~/.config/autostart/vlc.desktop
+ln -s ~/all/scripts/autostart/xchat.desktop ~/.config/autostart/xchat.desktop
 
 # Install packages
 sudo apt-get install asciidoc python-pip python-dev build-essential python-rbtools

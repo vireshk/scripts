@@ -1,17 +1,21 @@
 # replace all ~/home directories with ours
 # standard directories
-rm -rf ~/Desktop ~/Downloads ~/Documents ~/Music ~/Public
-ln -s /media/psf/Home/Desktop ~/Desktop
-ln -s /media/psf/Home/Downloads ~/Downloads
-ln -s /media/psf/Home/Documents ~/Documents
-ln -s /media/psf/Home/Public ~/Public
+rm -rf ~/Pictures ~/Videos ~/Templates ~/Desktop ~/Downloads ~/Documents ~/Music ~/Public
+ln -s ~/all/Pictures ~/Pictures
+ln -s ~/all/Videos ~/Videos
+ln -s ~/all/Templates ~/Templates
+ln -s ~/all/Desktop ~/Desktop
+ln -s ~/all/Music ~/Music
+ln -s ~/all/Downloads ~/Downloads
+ln -s ~/all/Documents ~/Documents
+ln -s ~/all/Public ~/Public
 
 # my directories
-ln -s /media/psf/Home/me ~/me
-ln -s /media/psf/Home/me/songs ~/Music
-ln -s /media/psf/Home/me/pics ~/Pictures/pics
-ln -s /media/psf/Home/me/movies/torrent\ movies ~/Videos/movies
-ln -s /media/psf/Home/viresh/junk ~/junk
+ln -s ~/all/me ~/me
+ln -s ~/all/me/songs ~/Music
+ln -s ~/all/me/pics ~/Pictures/pics
+ln -s ~/all/me/movies/torrent\ movies ~/Videos/movies
+ln -s ~/all/junk ~/junk
 ln -s ~/all/scripts ~/scripts
 ln -s ~/all/work ~/work
 
@@ -46,17 +50,6 @@ ln -s ~/all/scripts/.procmailrc ~/.procmailrc
 ln -s ~/all/scripts/.procmaillog ~/.procmaillog
 ln -s ~/all/scripts/.muttrc ~/.muttrc
 
-# tftp
-sudo apt-get install xinetd tftpd tftp
-sudo mkdir /tftpboot
-sudo chmod -R 777 /tftpboot
-sudo chown -R nobody /tftpboot
-sudo ln -s ~/scripts/tftp /etc/xinetd.d/tftp
-sudo service xinetd restart
-sudo /etc/init.d/xinetd restart
-sudo ln -s ~/work/repos/devel/bexynos/arch/arm/boot/uImage /tftpboot/bexynos_uImage
-sudo ln -s ~/work/repos/devel/bexynos/arch/arm/boot/dts/exynos5250-arndale.dtb /tftpboot/bexynos.dtb
-
 # minidlna
 sudo ln -s ~/all/scripts/minidlna.conf /etc/minidlna.conf
 
@@ -67,7 +60,6 @@ ln -s ~/all/scripts/autostart/google-chrome-stable.desktop ~/.config/autostart/g
 ln -s ~/all/scripts/autostart/skype.desktop ~/.config/autostart/skype.desktop
 ln -s ~/all/scripts/autostart/vlc.desktop ~/.config/autostart/vlc.desktop
 ln -s ~/all/scripts/autostart/xchat.desktop ~/.config/autostart/xchat.desktop
-
-# Install packages
-sudo apt-get install asciidoc python-pip python-dev build-essential python-rbtools
-pip install -U RBTools
+ln -s ~/all/criticalinfo/.gnupg ~/.gnupg
+ln -s ~/all/criticalinfo/.ssh ~/.ssh
+ln -s ~/all/criticalinfo/.xchat2 ~/.xchat2

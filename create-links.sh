@@ -12,9 +12,9 @@ ln -s ~/all/Public ~/Public
 
 # my directories
 ln -s ~/all/me ~/me
-ln -s ~/all/me/songs ~/Music
-ln -s ~/all/me/pics ~/Pictures/pics
-ln -s ~/all/me/movies/torrent\ movies ~/Videos/movies
+#ln -s ~/all/me/songs ~/Music
+#ln -s ~/all/me/pics ~/Pictures/pics
+#ln -s ~/all/me/movies/torrent\ movies ~/Videos/movies
 ln -s ~/all/junk ~/junk
 ln -s ~/all/scripts ~/scripts
 ln -s ~/all/work ~/work
@@ -22,7 +22,7 @@ ln -s ~/all/work ~/work
 # Take care of files now
 ln -s ~/all/scripts/.bash_aliases ~/.bash_aliases
 ln -s ~/all/scripts/.gitconfig ~/.gitconfig
-ln -s ~/all/scripts/.gnupg ~/.gnupg
+ln -s ~/all/criticalinfo/.gnupg ~/.gnupg
 ln -s ~/all/scripts/.goobookrc ~/.goobookrc
 ln -s ~/all/scripts/.netrc ~/.netrc
 ln -s ~/all/scripts/.lbdb ~/.lbdb
@@ -32,13 +32,13 @@ ln -s ~/all/scripts/.minirc.tc2 ~/.minirc.tc2
 ln -s ~/all/criticalinfo/.password ~/.password
 #ln -s ~/all/work/mail/spool/viresh /var/mail/viresh
 ln -s ~/all/scripts/.Skype ~/.Skype
-ln -s ~/all/scripts/.ssh ~/.ssh
+ln -s ~/all/criticalinfo/.ssh ~/.ssh
 ln -s ~/all/scripts/.signature ~/.signature
 #ln -s ~/all/scripts/.thunderbird ~/.thunderbird
 #ln -s ~/all/scripts/vim ~/vim
 ln -s ~/all/scripts/.vim ~/.vim
 ln -s ~/all/scripts/.vimrc ~/.vimrc
-ln -s ~/all/scripts/.xchat2 ~/.xchat2
+ln -s ~/all/criticalinfo/.xchat2 ~/.xchat2
 
 # mails
 ln -s ~/all/criticalinfo/.msmtprc ~/.msmtprc
@@ -60,6 +60,3 @@ ln -s ~/all/scripts/autostart/google-chrome-stable.desktop ~/.config/autostart/g
 ln -s ~/all/scripts/autostart/skype.desktop ~/.config/autostart/skype.desktop
 ln -s ~/all/scripts/autostart/vlc.desktop ~/.config/autostart/vlc.desktop
 ln -s ~/all/scripts/autostart/xchat.desktop ~/.config/autostart/xchat.desktop
-ln -s ~/all/criticalinfo/.gnupg ~/.gnupg
-ln -s ~/all/criticalinfo/.ssh ~/.ssh
-ln -s ~/all/criticalinfo/.xchat2 ~/.xchat2

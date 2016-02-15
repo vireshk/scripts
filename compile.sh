@@ -224,3 +224,9 @@ else
 	echo "$1: is an invalid argument"
 	exit
 fi
+
+# HACK
+if [ $2 = exynos ]; then
+	cp /home/vireshk/work/repos/devel/bexynos/arch/arm/boot/uImage /tftpboot/bexynos_uImage
+	cp /home/vireshk/work/repos/devel/bexynos/arch/arm/boot/dts/exynos5250-arndale.dtb /tftpboot/bexynos.dtb
+fi

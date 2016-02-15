@@ -51,6 +51,8 @@ alias hmodule="cd /home/vireshk/work/repos/tools/module/"
 #alias proxy='export http_proxy=http://viresh:@lps5.dlh.st.com:80'
 #alias sproxy='export https_proxy=https://viresh:@lps5.dlh.st.com:80'
 
+updatepkglist() { echo "$*" >> ~/scripts/pkglist-install; }
+
 source /home/vireshk/scripts/git_alias
 alias linarogit='ssh viresh.kumar@git.linaro.org'
 alias sshlinaro='echo "scp test.txt  viresh.kumar@git.linaro.org:/home/vireshk/work"'
@@ -172,4 +174,3 @@ PATH="/usr/lib/ccache:$PATH"
 # go to linux on shell startup
 hwork
 clear
-

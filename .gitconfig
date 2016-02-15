@@ -11,6 +11,7 @@
 	aliasesfile = /home/vireshk/scripts/.git_aliases
 	aliasfiletype = mutt
 
+	tocmd = ~/scripts/tocmd
 	cccmd = ~/scripts/cccmd
 [color]
 	diff = auto

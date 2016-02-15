@@ -2710,3 +2710,1329 @@ From vireshk  Thu Feb 11 21:30:30 2016
 From vireshk  Thu Feb 11 21:35:52 2016
  Subject: Re: [PATCH v2] SW-1271: greybus-spec: define PowerMon SVC operations
   Folder: ara/list							  31727
+From vireshk  Fri Feb 12 08:50:17 2016
+ Subject: [PATCH] PM / OPP: Fix NULL pointer dereference when no regulator is
+  Folder: me								   5042
+From vireshk  Fri Feb 12 08:50:17 2016
+ Subject: Re: [PATCH V2] greybus-spec: Control Protocol: add interface and
+  Folder: ara/patches							  36851
+From vireshk  Fri Feb 12 08:50:18 2016
+ Subject: [PATCH v3] SW-1271: greybus-spec: define Power Monitor SVC operations
+  Folder: ara/list							  17344
+From vireshk  Fri Feb 12 08:50:19 2016
+ Subject: Re: [PATCH-v2 00/20] SW2596/2711: arche-platform: Add operational
+  Folder: ara/patches							  14087
+From vireshk  Fri Feb 12 08:50:19 2016
+ Subject: Re: [PATCH-v2 0/8] usb3613/apb: Kernel changes in sync with
+  Folder: ara/patches							   9788
+From vireshk  Fri Feb 12 08:50:20 2016
+ Subject: Re: ES3 Switchover
+  Folder: ara/list							   9399
+From vireshk  Fri Feb 12 08:50:21 2016
+ Subject: Re: [PATCH V2] greybus-spec: Control Protocol: add interface and
+  Folder: ara/patches							  39516
+From vireshk  Fri Feb 12 08:50:21 2016
+ Subject: Re: [PATCH V2] greybus-spec: Control Protocol: add interface and
+  Folder: ara/patches							  38400
+From vireshk  Fri Feb 12 08:50:22 2016
+ Subject: Re: [PATCH 0/3] cpufreq: Replace timers with utilization update
+  Folder: me								   5720
+From vireshk  Fri Feb 12 08:50:23 2016
+ Subject: Daily Smoke test results with DB3 and build # 223, 02/11
+  Folder: ara/list							 727186
+From vireshk  Fri Feb 12 08:50:24 2016
+ Subject: [PATCH v8 1/3] cpufreq: Add mechanism for registering utilization upd
+  Folder: me								  10779
+From vireshk  Fri Feb 12 08:50:25 2016
+ Subject: Re: [PATCH] arm64: reenable interrupt when handling ptrace breakpoint
+  Folder: linaro/kernel							  14537
+From vireshk  Fri Feb 12 08:50:25 2016
+ Subject: Re: [PATCH 0/3] cpufreq: Replace timers with utilization update
+  Folder: me								   3254
+From vireshk  Fri Feb 12 08:50:26 2016
+ Subject: Re: [PATCH 0/3] cpufreq: Replace timers with utilization update callb
+  Folder: me								   5159
+From vireshk  Fri Feb 12 08:50:27 2016
+ Subject: Re: [PATCH] arm64: use raw_smp_processor_id in stack backtrace dump
+  Folder: linaro/kernel							   9222
+From vireshk  Fri Feb 12 08:50:32 2016
+ Subject: Re: [PATCH 0/3] cpufreq: Replace timers with utilization update
+  Folder: me								   3075
+From vireshk  Fri Feb 12 08:50:33 2016
+ Subject: No software IPT meeting today
+  Folder: ara/list							   6676
+From vireshk  Fri Feb 12 08:50:33 2016
+ Subject: Re: [PATCH 0/3] cpufreq: Replace timers with utilization update callb
+  Folder: me								   6952
+From vireshk  Fri Feb 12 08:50:34 2016
+ Subject: Re: [PATCH 0/3] cpufreq: Replace timers with utilization update
+  Folder: me								   5000
+From vireshk  Fri Feb 12 08:50:35 2016
+ Subject: Re: [PATCH 0/3] cpufreq: Replace timers with utilization update callb
+  Folder: me								   5136
+From vireshk  Fri Feb 12 08:50:35 2016
+ Subject: Re: [PATCH v9 04/13] task_isolation: add initial support
+  Folder: me								  16261
+From vireshk  Fri Feb 12 08:50:37 2016
+ Subject: Re: [PATCH v8 04/14] task_isolation: add initial support
+  Folder: me								  15510
+From vireshk  Fri Feb 12 08:50:38 2016
+ Subject: DB3.5 adb reboot?
+  Folder: ara/patches							   6939
+From vireshk  Fri Feb 12 08:50:38 2016
+ Subject: ES3 audio module works in ES3 frame
+  Folder: ara/list							   7321
+From vireshk  Fri Feb 12 08:50:39 2016
+ Subject: Re: ES3 audio module works in ES3 frame
+  Folder: ara/list							   6787
+From vireshk  Fri Feb 12 08:50:39 2016
+ Subject: Re: DB3.5 adb reboot?
+  Folder: ara/patches							   7135
+From vireshk  Fri Feb 12 08:50:40 2016
+ Subject: Re: ES3 audio module works in ES3 frame
+  Folder: ara/list							   7973
+From vireshk  Fri Feb 12 08:50:41 2016
+ Subject: Re: ES2 audio module works in ES3 frame (was: ES3 audio module works
+  Folder: ara/list							   7359
+From vireshk  Fri Feb 12 08:50:41 2016
+ Subject: Daily Smoke test results with EVT1.5 SKU:B and build # 223, 2/11
+  Folder: ara/list							  93267
+From vireshk  Fri Feb 12 08:50:42 2016
+ Subject: Re: ES3 audio module works in ES3 frame
+  Folder: ara/list							   7718
+From vireshk  Fri Feb 12 08:50:43 2016
+ Subject: Re: ES3 audio module works in ES3 frame
+  Folder: ara/list							   9989
+From vireshk  Fri Feb 12 08:50:43 2016
+ Subject: Re: ES3 audio module works in ES3 frame
+  Folder: ara/list							  12427
+From vireshk  Fri Feb 12 08:50:44 2016
+ Subject: Daily Smoke test results with EVT1.2 and build # 223, 2/11
+  Folder: ara/list							  89730
+From vireshk  Fri Feb 12 08:50:45 2016
+ Subject: Re: [PATCH 0/3] cpufreq: Replace timers with utilization update callb
+  Folder: me								   8390
+From vireshk  Fri Feb 12 08:50:45 2016
+ Subject: Re: ES2 audio module works in ES3 frame (was: ES3 audio module works
+  Folder: ara/list							   9629
+From vireshk  Fri Feb 12 08:50:46 2016
+ Subject: Re: ES2 audio module works in ES3 frame
+  Folder: ara/list							   7766
+From vireshk  Fri Feb 12 08:50:46 2016
+ Subject: Re: [PATCH] PM / OPP: Fix NULL pointer dereference crash when
+  Folder: me								   4897
+From vireshk  Fri Feb 12 08:50:47 2016
+ Subject: Re: [PATCH] PM / OPP: Fix NULL pointer dereference when no regulator
+  Folder: me								   4969
+From vireshk  Fri Feb 12 08:50:49 2016
+ Subject: Re: [PATCH V3 00/16] PM / OPP: Introduce APIs to transition OPPs
+  Folder: me								   6171
+From vireshk  Fri Feb 12 08:50:49 2016
+ Subject: RE: FW image version
+  Folder: me								   9531
+From vireshk  Fri Feb 12 08:50:51 2016
+ Subject: Re: ES3 audio module works in ES3 frame
+  Folder: ara/list							  12774
+From vireshk  Fri Feb 12 08:50:51 2016
+ Subject: Re: ES3 audio module works in ES3 frame
+  Folder: ara/list							  16176
+From vireshk  Fri Feb 12 08:50:52 2016
+ Subject: [Confluence] Recommended in Confluence for Viresh Kumar - Feb 11,
+  Folder: me								  68699
+From vireshk  Fri Feb 12 08:50:53 2016
+ Subject: Re: ES3 audio module works in ES3 frame
+  Folder: ara/list							  15848
+From vireshk  Fri Feb 12 08:50:53 2016
+ Subject: Re: ES2 audio module works in ES3 frame
+  Folder: ara/list							  11762
+From vireshk  Fri Feb 12 08:50:54 2016
+ Subject: Re: ES2 audio module works in ES3 frame
+  Folder: ara/list							   7667
+From vireshk  Fri Feb 12 08:50:55 2016
+ Subject: Re: ES2 audio module works in ES3 frame
+  Folder: ara/list							   8171
+From vireshk  Fri Feb 12 08:50:55 2016
+ Subject: [PATCH] arm64: make irq_stack_ptr more robust
+  Folder: linaro/kernel							   8296
+From vireshk  Fri Feb 12 08:50:56 2016
+ Subject: Re: [PATCH V5 0/6] cpufreq: Locking fixes and cleanups
+  Folder: me								   3269
+From vireshk  Fri Feb 12 08:50:56 2016
+ Subject: S2L protocol coding?
+  Folder: me								   4162
+From vireshk  Fri Feb 12 08:50:57 2016
+ Subject: Re: ES3 module firmware images, where are they?
+  Folder: ara/list							  10142
+From vireshk  Fri Feb 12 08:50:57 2016
+ Subject: RE: [PATCH v6 0/3] cpufreq: Replace timers with utilization update ca
+  Folder: me								   5861
+From vireshk  Fri Feb 12 08:50:58 2016
+ Subject: master build: 0 failures 5 warnings (v4.5-rc3-83-gc05235d)
+  Folder: linaro/build							   8457
+From vireshk  Fri Feb 12 08:50:59 2016
+ Subject: [IMP] Gerrit Reviews
+  Folder: ara/list							   7332
+From vireshk  Fri Feb 12 08:50:59 2016
+ Subject: Re: ES3 module firmware images, where are they?
+  Folder: ara/list							   7858
+From vireshk  Fri Feb 12 08:51:00 2016
+ Subject: Re: ES3 module firmware images, where are they?
+  Folder: ara/list							   9625
+From vireshk  Fri Feb 12 08:51:01 2016
+ Subject: Re: ES3 module firmware images, where are they?
+  Folder: ara/list							  11422
+From vireshk  Fri Feb 12 08:51:01 2016
+ Subject: Re: [PATCH v6 0/3] cpufreq: Replace timers with utilization update ca
+  Folder: me								   7325
+From vireshk  Fri Feb 12 08:51:02 2016
+ Subject: Re: S2L protocol coding?
+  Folder: me								   1400
+From vireshk  Fri Feb 12 08:51:02 2016
+ Subject: Re: cc-list for sending patches to lkml
+  Folder: me								   7532
+From vireshk  Fri Feb 12 08:51:03 2016
+ Subject: Tirtha is OOO next week
+  Folder: ara/list							   8104
+From vireshk  Fri Feb 12 08:51:04 2016
+ Subject: Re: cc-list for sending patches to lkml
+  Folder: me								   4416
+From vireshk  Fri Feb 12 08:51:04 2016
+ Subject: Daily Smoke test results with EVT1.2 and demo build # 44, 2/11
+  Folder: ara/list							 114762
+From vireshk  Fri Feb 12 08:51:05 2016
+ Subject: RE: [PATCH v6 0/3] cpufreq: Replace timers with utilization update ca
+  Folder: me								   4988
+From vireshk  Fri Feb 12 08:51:06 2016
+ Subject: [PATCH 1/3] SW-2583: bcl: enable bcl framework and current limiter
+  Folder: ara/patches							   7098
+From vireshk  Fri Feb 12 08:51:07 2016
+ Subject: [PATCH 2/3] SW-2583: PMI8994: DT: Remove TOP configuration pmi8994
+  Folder: ara/patches							   8405
+From vireshk  Fri Feb 12 08:51:08 2016
+ Subject: [PATCH 3/3] SW-2583: bcl: DT: enable pmi8994 fuel gauge driver
+  Folder: ara/patches							   8738
+From vireshk  Fri Feb 12 08:51:08 2016
+ Subject: Re: [PATCH v6 0/3] cpufreq: Replace timers with utilization update ca
+  Folder: me								   5961
+From vireshk  Fri Feb 12 08:51:09 2016
+ Subject: Re: Daily Smoke test results with DB3.5 and build # 224, 2/11
+  Folder: ara/list							  70978
+From vireshk  Fri Feb 12 08:51:09 2016
+ Subject: Re: cc-list for sending patches to lkml
+  Folder: me								   4615
+From vireshk  Fri Feb 12 09:50:00 2016
+ Subject: Re: [IMP] Gerrit Reviews
+  Folder: ara/list							   7765
+From vireshk  Fri Feb 12 09:50:01 2016
+ Subject: Notification: Time sheets @ Fri Feb 12, 2016 10am - 11am (viresh.kuma
+  Folder: me								  12067
+From vireshk  Fri Feb 12 10:38:58 2016
+ Subject: Re: Fwd: i7 assembled cpu proposal
+  Folder: me								   1230
+From vireshk  Fri Feb 12 10:41:08 2016
+ Subject: Re: Request for buying a desktop (if possible)
+  Folder: me								   1570
+From vireshk  Fri Feb 12 10:46:27 2016
+ Subject: Re: Request for buying a desktop (if possible)
+  Folder: me								   2561
+From vireshk  Fri Feb 12 10:56:05 2016
+ Subject: Re: [IMP] Gerrit Reviews
+  Folder: ara/list							   7331
+From vireshk  Fri Feb 12 11:08:54 2016
+ Subject: Re: [PATCH v3 0/4]  greybus-spec: start writing hotplug appendix
+  Folder: ara/list							   8078
+From vireshk  Fri Feb 12 11:12:06 2016
+ Subject: Re: [PATCH] SW-2944: build: fix a package conflict
+  Folder: ara/list							   7566
+From vireshk  Fri Feb 12 11:15:20 2016
+ Subject: Re: [PATCH 0/5] greybus: add device prefix to messages
+  Folder: ara/patches							   6266
+From vireshk  Fri Feb 12 11:17:28 2016
+ Subject: Re: [PATCH] bundle: remove private data field
+  Folder: me								   4365
+From vireshk  Fri Feb 12 11:17:29 2016
+ Subject: Re: [PATCH] raw: fix memory leak on disconnect
+  Folder: me								   4272
+From vireshk  Fri Feb 12 11:28:12 2016
+ Subject: Re: [PATCH V2 Resend 0/5] Implement continuous splash
+  Folder: ara/patches							   6619
+From vireshk  Fri Feb 12 11:30:21 2016
+ Subject: Re: [PATCH 1/3] SW-2583: bcl: enable bcl framework and current
+  Folder: ara/patches							   6637
+From vireshk  Fri Feb 12 11:50:40 2016
+ Subject: Re: [IMP] Gerrit Reviews
+  Folder: ara/list							 120704
+From vireshk  Fri Feb 12 11:51:46 2016
+ Subject: Re: Test Applications Progress
+  Folder: me								   2430
+From vireshk  Fri Feb 12 12:01:24 2016
+ Subject: Re: [PATCH-v2 1/8] driver core: device.h: add RW and RO attribute
+  Folder: ara/patches							   8470
+From vireshk  Fri Feb 12 12:01:26 2016
+ Subject: Re: [PATCH] cpufreq: Avoid unnecessary locking in show() and store()
+  Folder: me								   3074
+From vireshk  Fri Feb 12 12:03:34 2016
+ Subject: Re: [PATCH v1 1/1] dmaengine: dw: disable BLOCK IRQs for non-cyclic
+  Folder: me								   2162
+From vireshk  Fri Feb 12 12:05:44 2016
+ Subject: Re: schedfreq call
+  Folder: me								   1849
+From vireshk  Fri Feb 12 12:12:08 2016
+ Subject: Re: [PATCH-v2 10/20] SW-2596/2711: arche-apb-ctrl: Add device
+  Folder: ara/patches							   9098
+From vireshk  Fri Feb 12 12:14:17 2016
+ Subject: Re: [PATCH-v2 14/20] SW-2596/2711: arche-apb-ctrl: Rename internal
+  Folder: ara/patches							   7724
+From vireshk  Fri Feb 12 12:14:18 2016
+ Subject: Re: FW image version
+  Folder: me								   2944
+From vireshk  Fri Feb 12 12:18:35 2016
+ Subject: Re: [PATCH-v2 15/20] SW-2596/2711: arche-platform: Introduce apb_ops
+  Folder: ara/patches							  18009
+From vireshk  Fri Feb 12 12:18:36 2016
+ Subject: Re: [PATCH-v2 16/20] SW-2596/2711: arche-platform: Cancel
+  Folder: ara/patches							   6638
+From vireshk  Fri Feb 12 12:27:11 2016
+ Subject: Re: [PATCH-v2 1/8] driver core: device.h: add RW and RO attribute
+  Folder: ara/patches							   8438
+From vireshk  Fri Feb 12 12:33:38 2016
+ Subject: Re: ES3 Switchover
+  Folder: me								   1962
+From vireshk  Fri Feb 12 12:34:43 2016
+ Subject: Re: [IMP] Gerrit Reviews
+  Folder: ara/list							   7775
+From vireshk  Fri Feb 12 12:40:06 2016
+ Subject: **NEEDS ACTION**: Epic Clean-up by all teams
+  Folder: ara/list							 391053
+From vireshk  Fri Feb 12 12:42:16 2016
+ Subject: Re: [PATCH-v2 15/20] SW-2596/2711: arche-platform: Introduce apb_ops
+  Folder: ara/patches							  18297
+From vireshk  Fri Feb 12 12:42:17 2016
+ Subject: Re: [IMP] Gerrit Reviews
+  Folder: ara/list							   9893
+From vireshk  Fri Feb 12 12:43:22 2016
+ Subject: Re: [PATCH-v2 14/20] SW-2596/2711: arche-apb-ctrl: Rename internal
+  Folder: ara/patches							   7874
+From vireshk  Fri Feb 12 12:43:23 2016
+ Subject: Re: [PATCH-v2 16/20] SW-2596/2711: arche-platform: Cancel
+  Folder: ara/patches							   6627
+From vireshk  Fri Feb 12 12:45:34 2016
+ Subject: Re: [IMP] Gerrit Reviews
+  Folder: ara/list							   9691
+From vireshk  Fri Feb 12 12:46:38 2016
+ Subject: Re: [IMP] Gerrit Reviews
+  Folder: ara/list							  10751
+From vireshk  Fri Feb 12 12:56:20 2016
+ Subject: RE: [PATCH v6 0/3] cpufreq: Replace timers with utilization update ca
+  Folder: me								   4642
+From vireshk  Fri Feb 12 13:18:51 2016
+ Subject: Re: [IMP] Gerrit Reviews
+  Folder: ara/list							  12280
+From vireshk  Fri Feb 12 13:33:50 2016
+ Subject: =?utf-8?q?1_linaro-kernel_moderator_request=28s=29_waiting?=
+  Folder: linaro/moderator						   4870
+From vireshk  Fri Feb 12 13:45:35 2016
+ Subject: next-20160212 build: 2 failures 13 warnings (next-20160212)
+  Folder: linaro/build							  15806
+From vireshk  Fri Feb 12 14:13:24 2016
+ Subject: Re: [PATCH V3 6/9] lights: Break light setup into two parts
+  Folder: me								   3822
+From vireshk  Fri Feb 12 14:53:00 2016
+ Subject: [Y2038] [RFC v2] vfs 64 bit time transition proposals
+  Folder: linaro/y2038							   9396
+From vireshk  Fri Feb 12 15:06:49 2016
+ Subject: NEEDS ACTION ***:Identify Epic Contents for Feature Complete
+  Folder: ara/list							 341877
+From vireshk  Fri Feb 12 15:06:51 2016
+ Subject: [Y2038] [RFC v2a 00/12] vfs 64 bit time transition proposal
+  Folder: linaro/y2038							   9968
+From vireshk  Fri Feb 12 15:06:52 2016
+ Subject: [Y2038] [RFC v2a 02/12] fs: cifs: Change cifs_fscache_inode_auxdata
+  Folder: linaro/y2038							   7911
+From vireshk  Fri Feb 12 15:07:55 2016
+ Subject: [Y2038] [RFC v2a 01/12] vfs: Add vfs_time abstractions
+  Folder: linaro/y2038							   7603
+From vireshk  Fri Feb 12 15:07:56 2016
+ Subject: [Y2038] [RFC v2a 03/12] fs: cifs: Change cifs_fattr timestamps data
+  Folder: linaro/y2038							  13080
+From vireshk  Fri Feb 12 15:07:56 2016
+ Subject: [Y2038] [RFC v2a 04/12] fs: cifs: Make cnvrtDosUnixTm() y2038 safe
+  Folder: linaro/y2038							   7697
+From vireshk  Fri Feb 12 15:07:57 2016
+ Subject: [Y2038] [RFC v2a 05/12] fs: cifs: Use vfs_time_get_real_* time
+  Folder: linaro/y2038							   7998
+From vireshk  Fri Feb 12 15:07:58 2016
+ Subject: [Y2038] [RFC v2a 06/12] fs: btrfs: Change btrfs_inode.i_otime to
+  Folder: linaro/y2038							   7295
+From vireshk  Fri Feb 12 15:07:58 2016
+ Subject: [Y2038] [RFC v2a 07/12] fs: btrfs: Use vfs_time data type for
+  Folder: linaro/y2038							   7197
+From vireshk  Fri Feb 12 15:09:03 2016
+ Subject: [Y2038] [RFC v2a 08/12] fs: btrfs: Change timespec data types to
+  Folder: linaro/y2038							  10035
+From vireshk  Fri Feb 12 15:09:04 2016
+ Subject: [Y2038] [RFC v2a 09/12] fs: ceph: Change encode and decode
+  Folder: linaro/y2038							   7780
+From vireshk  Fri Feb 12 15:09:05 2016
+ Subject: [Y2038] [RFC v2a 11/12] net: ceph: use vfs_time data type instead
+  Folder: linaro/y2038							   8875
+From vireshk  Fri Feb 12 15:09:05 2016
+ Subject: Re: [PATCH V3 6/9] lights: Break light setup into two parts
+  Folder: me								   7356
+From vireshk  Fri Feb 12 15:09:06 2016
+ Subject: [Y2038] [RFC v2a 12/12] fs: xfs: change inode times to use vfs_time
+  Folder: linaro/y2038							   9015
+From vireshk  Fri Feb 12 15:09:07 2016
+ Subject: [Y2038] [RFC v2a 10/12] fs: ceph: Replace timespec data type with
+  Folder: linaro/y2038							  20804
+From vireshk  Fri Feb 12 15:18:42 2016
+ Subject: [Y2038] [RFC v2b 0/5] vfs 64 bit time transition proposal
+  Folder: linaro/y2038							   8038
+From vireshk  Fri Feb 12 15:18:43 2016
+ Subject: [Y2038] [RFC v2b 1/5] vfs: Add vfs_time accessors
+  Folder: linaro/y2038							   7298
+From vireshk  Fri Feb 12 15:19:47 2016
+ Subject: [Y2038] [RFC v2b 2/5] fs: cifs: Use vfs_time accessors
+  Folder: linaro/y2038							  12281
+From vireshk  Fri Feb 12 15:19:48 2016
+ Subject: [Y2038] [RFC v2b 3/5] fs: btrfs: Use vfs_time accessors
+  Folder: linaro/y2038							   8989
+From vireshk  Fri Feb 12 15:20:52 2016
+ Subject: [Y2038] [RFC v2b 4/5] fs: ceph: Use vfs timestamp accessors
+  Folder: linaro/y2038							  25372
+From vireshk  Fri Feb 12 15:20:53 2016
+ Subject: [Y2038] [RFC v2b 5/5] fs: xfs: change inode times to use vfs_time
+  Folder: linaro/y2038							   9007
+From vireshk  Fri Feb 12 15:24:05 2016
+ Subject: [Y2038] [RFC v2c 0/8] vfs 64 bit time transition proposal
+  Folder: linaro/y2038							  10041
+From vireshk  Fri Feb 12 15:25:09 2016
+ Subject: [Y2038] [RFC v2c 1/8] vfs: Add vfs_time abstractions
+  Folder: linaro/y2038							   7872
+From vireshk  Fri Feb 12 15:25:09 2016
+ Subject: [Y2038] [RFC v2c 2/8] fs: cifs: Change auxdata to struct timespec64
+  Folder: linaro/y2038							   9274
+From vireshk  Fri Feb 12 15:26:14 2016
+ Subject: [Y2038] [RFC v2c 3/8] fs: cifs: Change cifs_fattr timestamps data
+  Folder: linaro/y2038							  18311
+From vireshk  Fri Feb 12 15:26:15 2016
+ Subject: [Y2038] [RFC v2c 4/8] fs: cifs: Make cnvrtDosUnixTm() y2038 safe
+  Folder: linaro/y2038							   7697
+From vireshk  Fri Feb 12 15:26:16 2016
+ Subject: [Y2038] [RFC v2c 5/8] fs: btrfs: Change btrfs_inode.i_otime to
+  Folder: linaro/y2038							   8504
+From vireshk  Fri Feb 12 15:26:16 2016
+ Subject: [Y2038] [RFC v2c 6/8] fs: btrfs: Use vfs timestamp abstraction
+  Folder: linaro/y2038							  10872
+From vireshk  Fri Feb 12 15:27:21 2016
+ Subject: [Y2038] [RFC v2c 7/8] fs: ceph: Use vfs timestamp abstraction
+  Folder: linaro/y2038							  38418
+From vireshk  Fri Feb 12 15:27:22 2016
+ Subject: [Y2038] [RFC v2c 8/8] fs: xfs: change inode times to use vfs_time
+  Folder: linaro/y2038							   8602
+From vireshk  Fri Feb 12 15:43:19 2016
+ Subject: Re: Request for buying a desktop (if possible)
+  Folder: me								  10773
+From vireshk  Fri Feb 12 15:55:00 2016
+ Subject: Re: [PATCH V3 6/9] lights: Break light setup into two parts
+  Folder: me								   2965
+From vireshk  Fri Feb 12 15:59:18 2016
+ Subject: Re: [PATCH V3 6/9] lights: Break light setup into two parts
+  Folder: me								   6215
+From vireshk  Fri Feb 12 16:01:27 2016
+ Subject: Re: Test Applications Progress
+  Folder: me								   7954
+From vireshk  Fri Feb 12 16:08:54 2016
+ Subject: [PATCH V4 0/8] greybus: Convert few more drivers to bundle drivers
+  Folder: me								   2005
+From vireshk  Fri Feb 12 16:08:55 2016
+ Subject: [PATCH V4 1/8] raw: Use consistent label names in connection_init()
+  Folder: me								   2326
+From vireshk  Fri Feb 12 16:08:56 2016
+ Subject: [PATCH V4 2/8] raw: Don't use (possibly) uninitialized raw->device in
+  Folder: me								   3762
+From vireshk  Fri Feb 12 16:08:57 2016
+ Subject: [PATCH V4 3/8] raw: convert to bundle driver
+  Folder: me								   6875
+From vireshk  Fri Feb 12 16:08:58 2016
+ Subject: [PATCH V4 4/8] loopback: convert to bundle driver
+  Folder: me								   8256
+From vireshk  Fri Feb 12 16:10:04 2016
+ Subject: [PATCH V4 5/8] lights: Break light setup into two parts
+  Folder: me								   4725
+From vireshk  Fri Feb 12 16:10:04 2016
+ Subject: [PATCH V4 6/8] lights: convert to bundle driver
+  Folder: me								   5958
+From vireshk  Fri Feb 12 16:10:05 2016
+ Subject: [PATCH V4 7/8] power_supply: Break supply setup into two parts
+  Folder: me								   4405
+From vireshk  Fri Feb 12 16:10:06 2016
+ Subject: [PATCH V4 8/8] power_supply: convert to bundle driver
+  Folder: me								   6212
+From vireshk  Fri Feb 12 16:17:33 2016
+ Subject: Re: ldr instruction selection in the aarch64 backend
+  Folder: linaro/toolchain						  17082
+From vireshk  Fri Feb 12 16:58:56 2016
+ Subject: Re: [PATCH-v2 10/20] SW-2596/2711: arche-apb-ctrl: Add device pointer
+  Folder: ara/patches							  21413
+From vireshk  Fri Feb 12 17:16:11 2016
+ Subject: =?utf-8?q?linaro-kernel_post_from_customerservice=40fuelcards=2E?=
+  Folder: linaro/moderator						  87152
+From vireshk  Fri Feb 12 17:29:01 2016
+ Subject: Daily Smoke test results with DB3 and build # 226, 02/12
+  Folder: ara/list							 240832
+From vireshk  Fri Feb 12 17:50:29 2016
+ Subject: Daily patch verification - Feb 12
+  Folder: ara/list							  11358
+From vireshk  Fri Feb 12 17:56:56 2016
+ Subject: Re: Request for buying a desktop (if possible)
+  Folder: me								   4291
+From vireshk  Fri Feb 12 18:04:27 2016
+ Subject: [PATCH V2 0/2] greubus-spec: SVC Protocol: add interface power enable
+  Folder: ara/patches							   6172
+From vireshk  Fri Feb 12 18:05:33 2016
+ Subject: [PATCH V2 1/2] greybus-spec: SVC Protocol: add interface power enable
+  Folder: ara/patches							  17314
+From vireshk  Fri Feb 12 18:05:34 2016
+ Subject: [PATCH V2 2/2] greybus-spec: SVC Protocol: add interface reference
+  Folder: ara/patches							  22099
+From vireshk  Fri Feb 12 18:05:35 2016
+ Subject: [PATCH] ARM: dts: arche: switch DB3.5 boards to command mode panel
+  Folder: ara/patches							   5640
+From vireshk  Fri Feb 12 18:07:43 2016
+ Subject: [PATCH] manifest: Parse cports (within a bundle) in the order from ma
+  Folder: me								   2538
+From vireshk  Fri Feb 12 18:10:58 2016
+ Subject: New procedure for remounting system partition as RW
+  Folder: ara/list							   7339
+From vireshk  Fri Feb 12 18:12:03 2016
+ Subject: Re: Request for buying a desktop (if possible)
+  Folder: me								   1801
+From vireshk  Fri Feb 12 18:17:26 2016
+ Subject: Re: [PATCH] ARM: dts: arche: switch DB3.5 boards to command mode pane
+  Folder: ara/patches							  10313
+From vireshk  Fri Feb 12 18:22:45 2016
+ Subject: Re: Request for buying a desktop (if possible)
+  Folder: me								   5281
+From vireshk  Fri Feb 12 18:28:08 2016
+ Subject: Re: Request for buying a desktop (if possible)
+  Folder: me								   2868
+From vireshk  Fri Feb 12 18:43:07 2016
+ Subject: [PATCH] greybus: Add S2 Loader bundle driver
+  Folder: me								  25474
+From vireshk  Fri Feb 12 18:44:14 2016
+ Subject: Re: [PATCH] greybus: Add S2 Loader bundle driver
+  Folder: me								   1378
+From vireshk  Fri Feb 12 18:45:21 2016
+ Subject: [PATCH v9 1/3] cpufreq: Add mechanism for registering utilization upd
+  Folder: me								  12002
+From vireshk  Fri Feb 12 18:48:35 2016
+ Subject: Re: [PATCH] cpufreq: Avoid unnecessary locking in show() and store()
+  Folder: me								   5973
+From vireshk  Fri Feb 12 18:51:47 2016
+ Subject: Re: [Tech] Workspace BoF session at BKK16
+  Folder: linaro/tech							   8163
+From vireshk  Fri Feb 12 19:02:33 2016
+ Subject: [PATCH 2/2] cpufreq: governor: Avoid atomic operations in hot paths
+  Folder: me								   6107
+From vireshk  Fri Feb 12 19:02:33 2016
+ Subject: [PATCH 1/2] cpufreq: governor: Simplify gov_cancel_work() slightly
+  Folder: me								   3633
+From vireshk  Fri Feb 12 19:02:34 2016
+ Subject: [PATCH 0/2] cpufreq: governor: Optimize work queuing in ondemand/cons
+  Folder: me								   2506
+From vireshk  Fri Feb 12 19:10:04 2016
+ Subject: Re: [PATCH v6 0/3] cpufreq: Replace timers with utilization update ca
+  Folder: me								   5842
+From vireshk  Fri Feb 12 19:14:21 2016
+ Subject: Re: [PATCH 0/3] cpufreq: Replace timers with utilization update callb
+  Folder: me								   5536
+From vireshk  Fri Feb 12 19:19:44 2016
+ Subject: Re: [PATCH] arm64: make irq_stack_ptr more robust
+  Folder: linaro/kernel							   7719
+From vireshk  Fri Feb 12 19:25:05 2016
+ Subject: Re: [PATCH] manifest: Parse cports (within a bundle) in the order
+  Folder: me								   5864
+From vireshk  Fri Feb 12 19:27:15 2016
+ Subject: Re: [kernel.org users] Maintenance Feb 12,
+  Folder: korg								   7829
+From vireshk  Fri Feb 12 19:28:21 2016
+ Subject: Re: [Y2038] [RFC v2b 3/5] fs: btrfs: Use vfs_time accessors
+  Folder: linaro/y2038							   5441
+From vireshk  Fri Feb 12 19:31:33 2016
+ Subject: Re: Dont use FLASH script with --newpartition on EVT1.x
+  Folder: ara/list							  13357
+From vireshk  Fri Feb 12 19:34:46 2016
+ Subject: Re: [Y2038] [RFC v2] vfs 64 bit time transition proposals
+  Folder: linaro/y2038							   8290
+From vireshk  Fri Feb 12 19:34:47 2016
+ Subject: Re: [PATCH 0/3] cpufreq: Replace timers with utilization update
+  Folder: me								   4394
+From vireshk  Fri Feb 12 19:34:48 2016
+ Subject: Re: New procedure for remounting system partition as RW
+  Folder: ara/list							   6934
+From vireshk  Fri Feb 12 19:41:13 2016
+ Subject: Re: [PATCH 0/3] cpufreq: Replace timers with utilization update
+  Folder: me								   3505
+From vireshk  Fri Feb 12 19:57:16 2016
+ Subject: Re: [PATCH] manifest: Parse cports (within a bundle) in the order
+  Folder: me								   6793
+From vireshk  Fri Feb 12 19:57:16 2016
+ Subject: Re: New procedure for remounting system partition as RW
+  Folder: ara/list							   9329
+From vireshk  Fri Feb 12 20:11:13 2016
+ Subject: build error in "healthd" while building sdk add on
+  Folder: ara/patches							   9582
+From vireshk  Fri Feb 12 20:17:39 2016
+ Subject: Re: New procedure for remounting system partition as RW
+  Folder: ara/list							   7602
+From vireshk  Fri Feb 12 20:18:44 2016
+ Subject: Re: [PATCH v3 0/4] greybus-spec: start writing hotplug appendix
+  Folder: ara/list							   7875
+From vireshk  Fri Feb 12 20:19:49 2016
+ Subject: Re: [PATCH 0/3] cpufreq: Replace timers with utilization update callb
+  Folder: me								   6925
+From vireshk  Fri Feb 12 20:29:29 2016
+ Subject: [JIRA] (SW-1290) Extend Greybus SVC Protocol to include switch
+  Folder: ara/jira							  26793
+From vireshk  Fri Feb 12 20:32:46 2016
+ Subject: Re: build error in "healthd" while building sdk add on
+  Folder: ara/patches							  10824
+From vireshk  Fri Feb 12 20:33:50 2016
+ Subject: [JIRA] (SW-1229) Greybus Control Protocol
+  Folder: ara/jira							  28195
+From vireshk  Fri Feb 12 20:34:55 2016
+ Subject: [JIRA] (SW-1229) Greybus Control Protocol
+  Folder: ara/jira							  26774
+From vireshk  Fri Feb 12 20:34:56 2016
+ Subject: [JIRA] (SW-1229) Greybus Control Protocol
+  Folder: ara/jira							  28561
+From vireshk  Fri Feb 12 20:34:57 2016
+ Subject: Re: **NEEDS ACTION**: Epic Clean-up by all teams
+  Folder: ara/list							 393283
+From vireshk  Fri Feb 12 20:36:03 2016
+ Subject: Re: **NEEDS ACTION**: Epic Clean-up by all teams
+  Folder: ara/list							 394182
+From vireshk  Fri Feb 12 20:54:16 2016
+ Subject: Re: Linaro and Google Summer of Code, 2016
+  Folder: linaro/everyone						   6319
+From vireshk  Fri Feb 12 20:55:19 2016
+ Subject: [GIT PULL] [lsk-v3.14-android] linaro-android-3.14 topic branch
+  Folder: linaro/kernel							  13565
+From vireshk  Fri Feb 12 20:57:31 2016
+ Subject: Re: build error in "healthd" while building sdk add on
+  Folder: ara/patches							  10055
+From vireshk  Fri Feb 12 21:03:57 2016
+ Subject: Re: Dont use FLASH script with --newpartition on EVT1.x
+  Folder: ara/list							  14377
+From vireshk  Fri Feb 12 21:09:18 2016
+ Subject: Re: [PATCH] ARM: dts: arche: switch DB3.5 boards to command mode pane
+  Folder: ara/patches							   7701
+From vireshk  Fri Feb 12 21:20:04 2016
+ Subject: Re: [PATCH] ARM: dts: arche: switch DB3.5 boards to command mode pane
+  Folder: ara/patches							   8069
+From vireshk  Fri Feb 12 21:25:24 2016
+ Subject: RE: FW image version
+  Folder: me								   4767
+From vireshk  Fri Feb 12 21:28:39 2016
+ Subject: Re: [PATCH] cpufreq: Avoid unnecessary locking in show() and store()
+  Folder: me								   1468
+From vireshk  Fri Feb 12 21:31:52 2016
+ Subject: Re: [PATCH 0/3] cpufreq: Replace timers with utilization update callb
+  Folder: me								   5468
+From vireshk  Fri Feb 12 21:39:22 2016
+ Subject: Re: [PATCH] cpufreq: Avoid unnecessary locking in show() and store()
+  Folder: me								   3789
+From vireshk  Fri Feb 12 21:46:51 2016
+ Subject: Re: [PATCH 0/3] cpufreq: Replace timers with utilization update callb
+  Folder: me								   5723
+From vireshk  Fri Feb 12 21:49:02 2016
+ Subject: Re: Dont use FLASH script with --newpartition on EVT1.x
+  Folder: ara/list							  16045
+From vireshk  Fri Feb 12 21:49:03 2016
+ Subject: [PATCH V2] manifest: Parse cports (within a bundle) in the order from
+  Folder: me								   2852
+From vireshk  Fri Feb 12 21:51:11 2016
+ Subject: Re: [PATCH] cpufreq: Avoid unnecessary locking in show() and store()
+  Folder: me								   2311
+From vireshk  Fri Feb 12 21:58:45 2016
+ Subject: Re: [PATCH V2] manifest: Parse cports (within a bundle) in the order
+  Folder: me								   5743
+From vireshk  Fri Feb 12 22:05:12 2016
+ Subject: Re: [PATCH-v2 15/20] SW-2596/2711: arche-platform: Introduce apb_ops
+  Folder: ara/patches							  19271
+From vireshk  Fri Feb 12 22:06:18 2016
+ Subject: Re: [PATCH-v2 14/20] SW-2596/2711: arche-apb-ctrl: Rename internal
+  Folder: ara/patches							   8508
+From vireshk  Fri Feb 12 22:07:24 2016
+ Subject: Re: [PATCH-v2 16/20] SW-2596/2711: arche-platform: Cancel
+  Folder: ara/patches							   7160
+From vireshk  Fri Feb 12 22:07:24 2016
+ Subject: Re: [PATCH-v2 10/20] SW-2596/2711: arche-apb-ctrl: Add device
+  Folder: ara/patches							  11780
+From vireshk  Fri Feb 12 22:14:54 2016
+ Subject: How should I apply a patch? - Re: [PATCH] greybus: Add S2 Loader
+  Folder: me								  87663
+From vireshk  Fri Feb 12 22:19:14 2016
+ Subject: Re: How should I apply a patch? - Re: [PATCH] greybus: Add S2 Loader
+  Folder: me								  36981
+From vireshk  Fri Feb 12 22:22:27 2016
+ Subject: Re: How should I apply a patch? - Re: [PATCH] greybus: Add S2 Loader
+  Folder: me								 102190
+From vireshk  Fri Feb 12 22:24:39 2016
+ Subject: Re: [PATCH 0/3] cpufreq: Replace timers with utilization update callb
+  Folder: me								   6337
+From vireshk  Fri Feb 12 22:33:14 2016
+ Subject: RE: [PATCH 0/3] cpufreq: Replace timers with utilization update callb
+  Folder: me								   5695
+From vireshk  Fri Feb 12 22:33:15 2016
+ Subject: Re: S2L protocol coding?
+  Folder: me								   6512
+From vireshk  Fri Feb 12 22:37:33 2016
+ Subject: Re: S2L protocol coding?
+  Folder: me								   7491
+From vireshk  Fri Feb 12 22:39:42 2016
+ Subject: Re: S2L protocol coding?
+  Folder: me								   5370
+From vireshk  Fri Feb 12 23:00:08 2016
+ Subject: Re: [kernel.org users] Maintenance Feb 12,
+  Folder: korg								   7990
+From vireshk  Fri Feb 12 23:00:09 2016
+ Subject: Re: S2L protocol coding?
+  Folder: me								   8949
+From vireshk  Fri Feb 12 23:04:29 2016
+ Subject: RE: [PATCH v6 0/3] cpufreq: Replace timers with utilization update ca
+  Folder: me								   5863
+From vireshk  Fri Feb 12 23:06:39 2016
+ Subject: [ACTIVITY] 08 - 12 February
+  Folder: linaro/toolchain						   6280
+From vireshk  Fri Feb 12 23:09:53 2016
+ Subject: Re: [PATCH] arm64: make irq_stack_ptr more robust
+  Folder: linaro/kernel							   9950
+From vireshk  Fri Feb 12 23:12:04 2016
+ Subject: Re: [PATCH] arm64: make irq_stack_ptr more robust
+  Folder: linaro/kernel							   4798
+From vireshk  Fri Feb 12 23:14:12 2016
+ Subject: Re: [PATCH] arm64: make irq_stack_ptr more robust
+  Folder: linaro/kernel							   6677
+From vireshk  Fri Feb 12 23:19:36 2016
+ Subject: Re: NEEDS ACTION ***:Identify Epic Contents for Feature Complete
+  Folder: ara/list							 343108
+From vireshk  Fri Feb 12 23:25:00 2016
+ Subject: Re: [PATCH] arm64: make irq_stack_ptr more robust
+  Folder: linaro/kernel							  10543
+From vireshk  Fri Feb 12 23:41:08 2016
+ Subject: [JIRA] (SW-357) Define Greybus bridge ASIC firmware/manifest
+  Folder: ara/jira							  28297
+From vireshk  Fri Feb 12 23:44:22 2016
+ Subject: Re: S2L protocol coding?
+  Folder: me								   9717
+From vireshk  Fri Feb 12 23:49:46 2016
+ Subject: [PATCH] arm64: remove redundant preempt.h
+  Folder: linaro/kernel							   6309
+From vireshk  Sat Feb 13 00:07:57 2016
+ Subject: [PATCH] lib/Kconfig: make PREEMPT_COUNT depend on PREEMPT in
+  Folder: linaro/kernel							   6363
+From vireshk  Sat Feb 13 00:20:47 2016
+ Subject: Daily Smoke test results with EVT1.5 SKU:B and build # 226, 2/12
+  Folder: ara/list							 102593
+From vireshk  Sat Feb 13 00:21:52 2016
+ Subject: Re: [PATCH] trace, kasan: silence Kasan warning in check_stack
+  Folder: linaro/kernel							   8730
+From vireshk  Sat Feb 13 01:06:40 2016
+ Subject: Re: [PATCH] trace, kasan: silence Kasan warning in check_stack
+  Folder: linaro/kernel							   5476
+From vireshk  Sat Feb 13 01:17:20 2016
+ Subject: Re: [PATCH] trace, kasan: silence Kasan warning in check_stack
+  Folder: linaro/kernel							   7224
+From vireshk  Sat Feb 13 01:20:35 2016
+ Subject: [PATCH] SW-2596/2711: arche-platform: Cancel delayed_work in driver
+  Folder: ara/patches							   6439
+From vireshk  Sat Feb 13 01:30:12 2016
+ Subject: Re: [GIT PULL] [lsk-v3.14-android] linaro-android-3.14 topic branch
+  Folder: linaro/kernel							   7311
+From vireshk  Sat Feb 13 01:31:17 2016
+ Subject: Re: [LSK-v4.1 PATCH] ARM: 8464/1: Update all mm structures with
+  Folder: linaro/kernel							   7502
+From vireshk  Sat Feb 13 02:06:29 2016
+ Subject: Re: S2L protocol coding?
+  Folder: me								   9378
+From vireshk  Sat Feb 13 02:19:18 2016
+ Subject: Viresh, here's what you missed from Sachin Pandhare on Google+
+  Folder: me								   9505
+From vireshk  Sat Feb 13 02:20:25 2016
+ Subject: Daily Smoke test results with EVT1.2 and build # 226, 2/12
+  Folder: ara/list							  89575
+From vireshk  Sat Feb 13 02:22:33 2016
+ Subject: Daily Smoke test result with DB3.5 build # 227, 2/12
+  Folder: ara/list							   7465
+From vireshk  Sat Feb 13 02:36:28 2016
+ Subject: master build: 0 failures 5 warnings (v4.5-rc3-205-g5952cc7)
+  Folder: linaro/build							   8327
+From vireshk  Sat Feb 13 02:38:36 2016
+ Subject: Re: [ANN] patches.linaro.org upgrade
+  Folder: linaro/dev							   5310
+From vireshk  Sat Feb 13 02:39:41 2016
+ Subject: [v2 PATCH] trace, kasan: silence Kasan warning in check_stack
+  Folder: linaro/kernel							   9098
+From vireshk  Sat Feb 13 02:50:22 2016
+ Subject: =?utf-8?q?Bounce_action_notification?=
+  Folder: linaro/moderator						  11404
+From vireshk  Sat Feb 13 02:54:39 2016
+ Subject: Re: [PATCH] SW-2469: arche-common: Disable APB2 from DT for all
+  Folder: ara/patches							   7909
+From vireshk  Sat Feb 13 02:58:57 2016
+ Subject: Re: New procedure for remounting system partition as RW
+  Folder: ara/list							   7582
+From vireshk  Sat Feb 13 03:05:27 2016
+ Subject: [PATCH-v3 00/19] SW2596/2711: arche-platform: Add operational state
+  Folder: ara/patches							  12290
+From vireshk  Sat Feb 13 03:05:28 2016
+ Subject: [PATCH-v3 01/19] SW-2596/2711: arche-platform: make apb_state common
+  Folder: ara/patches							   8388
+From vireshk  Sat Feb 13 03:05:29 2016
+ Subject: [PATCH-v3 03/19] SW-2596/2711: arche-platform: Rename cleanup fn to
+  Folder: ara/patches							   7127
+From vireshk  Sat Feb 13 03:05:30 2016
+ Subject: [PATCH-v3 02/19] SW-2596/2711: arche-platform: Introduce coldboot_seq
+  Folder: ara/patches							   9756
+From vireshk  Sat Feb 13 03:05:31 2016
+ Subject: [PATCH-v3 04/19] SW-2596/2711: arche-platform: Add state variable to
+  Folder: ara/patches							   7857
+From vireshk  Sat Feb 13 03:06:36 2016
+ Subject: [PATCH-v3 05/19] SW-2596/2711: arche-platform: Pull wake/detect low
+  Folder: ara/patches							   6981
+From vireshk  Sat Feb 13 03:06:37 2016
+ Subject: [PATCH-v3 06/19] SW-2596/2711: arche_platform: Add sysfs to allow
+  Folder: ara/patches							  10009
+From vireshk  Sat Feb 13 03:06:38 2016
+ Subject: [PATCH-v3 07/19] SW-2596/2711: arche-platform: Introduce FW_FLASHING
+  Folder: ara/patches							   8938
+From vireshk  Sat Feb 13 03:06:39 2016
+ Subject: [PATCH-v3 08/19] SW-2596/2711: arche-apb-ctrl: Re-arrange init
+  Folder: ara/patches							  12808
+From vireshk  Sat Feb 13 03:06:40 2016
+ Subject: [PATCH-v3 09/19] SW-2596/2711: arche-apb-ctrl: Rename init_seq and
+  Folder: ara/patches							   9608
+From vireshk  Sat Feb 13 03:06:41 2016
+ Subject: [PATCH-v3 10/19] SW-2596/2711: arche-apb-ctrl: Set default state
+  Folder: ara/patches							   6482
+From vireshk  Sat Feb 13 03:06:41 2016
+ Subject: [PATCH-v3 11/19] SW-2596/2711: arche-apb-ctrl: Pass only
+  Folder: ara/patches							   8707
+From vireshk  Sat Feb 13 03:06:42 2016
+ Subject: [PATCH-v3 13/19] SW-2596/2711: arche-apb-ctrl: Introduce ara,
+  Folder: ara/patches							  11156
+From vireshk  Sat Feb 13 03:06:43 2016
+ Subject: [PATCH-v3 12/19] SW-2596/2711: arche-apb-ctrl: Add sysfs to allow
+  Folder: ara/patches							  12308
+From vireshk  Sat Feb 13 03:06:44 2016
+ Subject: [PATCH-v3 14/19] SW-2596/2711: arche-apb-ctrl: Rename internal
+  Folder: ara/patches							  10431
+From vireshk  Sat Feb 13 03:07:50 2016
+ Subject: [PATCH-v3 15/19] SW-2596/2711: arche-apb-ctrl: Export operational fns
+  Folder: ara/patches							   8121
+From vireshk  Sat Feb 13 03:07:51 2016
+ Subject: [PATCH-v3 16/19] SW-2596/2711: arche-platform: Fix boot,
+  Folder: ara/patches							  13211
+From vireshk  Sat Feb 13 03:07:52 2016
+ Subject: [PATCH-v3 18/19] SW-2596/2711: arche-apb-ctrl: Do not export any gpio
+  Folder: ara/patches							   7515
+From vireshk  Sat Feb 13 03:07:52 2016
+ Subject: [PATCH-v3 17/19] SW-2596/2711: arche-platform: Do not export any gpio
+  Folder: ara/patches							   7835
+From vireshk  Sat Feb 13 03:07:53 2016
+ Subject: [PATCH-v3 19/19] SW-2596/2711: arche-platform: Control usb3613 from
+  Folder: ara/patches							   9387
+From vireshk  Sat Feb 13 03:08:57 2016
+ Subject: Re: New procedure for remounting system partition as RW
+  Folder: ara/list							   9792
+From vireshk  Sat Feb 13 03:14:20 2016
+ Subject: [RESEND PATCH] SW-2469: arche-common: Disable APB2 from DT for all
+  Folder: ara/patches							   7147
+From vireshk  Sat Feb 13 03:17:32 2016
+ Subject: Re: New procedure for remounting system partition as RW
+  Folder: ara/list							   7655
+From vireshk  Sat Feb 13 03:20:47 2016
+ Subject: Re: New procedure for remounting system partition as RW
+  Folder: ara/list							  11342
+From vireshk  Sat Feb 13 03:22:55 2016
+ Subject: Re: New procedure for remounting system partition as RW
+  Folder: ara/list							   7413
+From vireshk  Sat Feb 13 03:25:04 2016
+ Subject: Re: New procedure for remounting system partition as RW
+  Folder: ara/list							   8772
+From vireshk  Sat Feb 13 03:27:12 2016
+ Subject: Re: New procedure for remounting system partition as RW
+  Folder: ara/list							  14316
+From vireshk  Sat Feb 13 03:27:13 2016
+ Subject: Re: ES3 audio module works in ES3 frame
+  Folder: ara/list							  20381
+From vireshk  Sat Feb 13 03:42:11 2016
+ Subject: Re: New procedure for remounting system partition as RW
+  Folder: ara/list							  19042
+From vireshk  Sat Feb 13 03:50:43 2016
+ Subject: Re: New procedure for remounting system partition as RW
+  Folder: ara/list							   9212
+From vireshk  Sat Feb 13 03:59:16 2016
+ Subject: Re: [ANN] patches.linaro.org upgrade
+  Folder: linaro/dev							   7340
+From vireshk  Sat Feb 13 04:00:20 2016
+ Subject: Re: [RESEND PATCH] SW-2469: arche-common: Disable APB2 from DT for
+  Folder: ara/patches							   8122
+From vireshk  Sat Feb 13 04:45:06 2016
+ Subject: Re: [PATCH 0/3] cpufreq: Replace timers with utilization update callb
+  Folder: me								   6649
+From vireshk  Sat Feb 13 04:45:07 2016
+ Subject: [PATCH v2] SW-2977: ARM: dts: arche: switch DB3.5 boards to command
+  Folder: ara/patches							   7143
+From vireshk  Sat Feb 13 04:48:19 2016
+ Subject: Re: [PATCH 0/3] cpufreq: Replace timers with utilization update callb
+  Folder: me								   6551
+From vireshk  Sat Feb 13 04:51:32 2016
+ Subject: Re: [PATCH v2] SW-2977: ARM: dts: arche: switch DB3.5 boards to
+  Folder: ara/patches							   7487
+From vireshk  Sat Feb 13 04:52:37 2016
+ Subject: Re: [PATCH v6 0/3] cpufreq: Replace timers with utilization update ca
+  Folder: me								   6998
+From vireshk  Sat Feb 13 05:10:44 2016
+ Subject: Re: New procedure for remounting system partition as RW
+  Folder: ara/list							  11028
+From vireshk  Sat Feb 13 05:21:24 2016
+ Subject: [PATCH] mm/Kconfig: remove redundant arch depend for memory hotplug
+  Folder: linaro/kernel							   6137
+From vireshk  Sat Feb 13 05:37:33 2016
+ Subject: Re: ES3 audio module works in ES3 frame
+  Folder: ara/list							  12429
+From vireshk  Sat Feb 13 05:37:34 2016
+ Subject: Re: S2L protocol coding?
+  Folder: me								   7473
+From vireshk  Sat Feb 13 05:41:53 2016
+ Subject: Re: [PATCH v2] SW-2977: ARM: dts: arche: switch DB3.5 boards to
+  Folder: ara/patches							   6659
+From vireshk  Sat Feb 13 05:47:16 2016
+ Subject: Balbir Singh added you on Google+
+  Folder: me								  13205
+From vireshk  Sat Feb 13 05:58:02 2016
+ Subject: Re: [RESEND PATCH] SW-2469: arche-common: Disable APB2 from DT for
+  Folder: ara/patches							   6851
+From vireshk  Sat Feb 13 06:00:10 2016
+ Subject: Re: [RESEND PATCH] SW-2469: arche-common: Disable APB2 from DT for
+  Folder: ara/patches							   7184
+From vireshk  Sat Feb 13 06:09:52 2016
+ Subject: Re: [PATCH v3 RESEND 0/2] greybus-spec: start writing hotplug
+  Folder: ara/list							   7206
+From vireshk  Sat Feb 13 06:21:41 2016
+ Subject: [ACTIVITY]
+  Folder: linaro/toolchain						   5535
+From vireshk  Sat Feb 13 06:32:25 2016
+ Subject: Re: ES3 audio module works in ES3 frame
+  Folder: ara/list							  13985
+From vireshk  Sat Feb 13 06:37:49 2016
+ Subject: master build: 0 failures 5 warnings (v4.5-rc3-216-g29f1bf3)
+  Folder: linaro/build							   8281
+From vireshk  Sat Feb 13 07:00:22 2016
+ Subject: Re: ES3 audio module works in ES3 frame
+  Folder: ara/list							   8496
+From vireshk  Sat Feb 13 07:49:39 2016
+ Subject: Re: [Y2038] [RFC v2b 5/5] fs: xfs: change inode times to use
+  Folder: linaro/y2038							   5298
+From vireshk  Sat Feb 13 08:19:35 2016
+ Subject: Re: How should I apply a patch? - Re: [PATCH] greybus: Add S2 Loader
+  Folder: me								   1558
+From vireshk  Sat Feb 13 08:20:41 2016
+ Subject: Correct ddbl1_product_id value for ES3 modules
+  Folder: ara/list							   7177
+From vireshk  Sat Feb 13 08:35:41 2016
+ Subject: Re: Correct ddbl1_product_id value for ES3 modules
+  Folder: ara/list							  10638
+From vireshk  Sat Feb 13 08:45:19 2016
+ Subject: Re: Correct ddbl1_product_id value for ES3 modules
+  Folder: ara/list							  12767
+From vireshk  Sat Feb 13 09:07:50 2016
+ Subject: Re: Correct ddbl1_product_id value for ES3 modules
+  Folder: ara/list							  14122
+From vireshk  Sat Feb 13 09:36:39 2016
+ Subject: [PATCH 0/5] BCL: Add support for low state-of-charge mitigation
+  Folder: ara/patches							   7727
+From vireshk  Sat Feb 13 09:36:40 2016
+ Subject: [PATCH 1/5] SW-2700: bcl: remove needless variable use in psy callbac
+  Folder: ara/patches							   7488
+From vireshk  Sat Feb 13 09:36:41 2016
+ Subject: [PATCH 2/5] SW-2583: bcl: connect bcl to arche fuel gauge
+  Folder: ara/patches							   8588
+From vireshk  Sat Feb 13 09:36:42 2016
+ Subject: [PATCH 5/5] SW-2583: bcl: DT bindings: add documentation for
+  Folder: ara/patches							   7100
+From vireshk  Sat Feb 13 09:36:43 2016
+ Subject: [PATCH 3/5] SW-2583: bq27xxx: add support to register psy supplicants
+  Folder: ara/patches							   8890
+From vireshk  Sat Feb 13 09:36:43 2016
+ Subject: [PATCH 4/5] SW-2583: bq27xxx: DT: Add bcl as supplicant to main
+  Folder: ara/patches							   9074
+From vireshk  Sat Feb 13 10:07:45 2016
+ Subject: master build: 0 failures 5 warnings (v4.5-rc3-221-g0cbb0b9)
+  Folder: linaro/build							   8347
+From vireshk  Sat Feb 13 10:12:03 2016
+ Subject: Re: Correct ddbl1_product_id value for ES3 modules
+  Folder: ara/list							  15184
+From vireshk  Sat Feb 13 10:28:03 2016
+ Subject: Re: Frame ID and Interface Numbering Proposal
+  Folder: me								   7295
+From vireshk  Sat Feb 13 12:25:44 2016
+ Subject: Re: [PATCH 0/5] BCL: Add support for low state-of-charge mitigation
+  Folder: ara/patches							   7017
+From vireshk  Sat Feb 13 12:29:00 2016
+ Subject: Re: [Y2038] [RFC v2] vfs 64 bit time transition proposals
+  Folder: linaro/y2038							  10116
+From vireshk  Sat Feb 13 12:32:14 2016
+ Subject: Re: [Y2038] [RFC v2b 3/5] fs: btrfs: Use vfs_time accessors
+  Folder: linaro/y2038							   6474
+From vireshk  Sat Feb 13 12:35:26 2016
+ Subject: Re: [PATCH-v3 03/19] SW-2596/2711: arche-platform: Rename cleanup fn
+  Folder: ara/patches							   7236
+From vireshk  Sat Feb 13 12:45:03 2016
+ Subject: Re: [PATCH] greybus: Add S2 Loader bundle driver
+  Folder: me								   7377
+From vireshk  Sat Feb 13 13:24:51 2016
+ Subject: Pratyush Anand Thakur invited you to Qemu for ARM64
+  Folder: me								  14307
+From vireshk  Sat Feb 13 13:31:15 2016
+ Subject: =?utf-8?q?2_linaro-kernel_moderator_request=28s=29_waiting?=
+  Folder: linaro/moderator						   5122
+From vireshk  Sat Feb 13 13:40:52 2016
+ Subject: Re: [PATCH-v3 03/19] SW-2596/2711: arche-platform: Rename cleanup fn
+  Folder: ara/patches							   7404
+From vireshk  Sat Feb 13 14:20:18 2016
+ Subject: Re: [PATCH-v3 03/19] SW-2596/2711: arche-platform: Rename cleanup fn
+  Folder: ara/patches							   7799
+From vireshk  Sat Feb 13 15:04:55 2016
+ Subject: URGENT: Macbook Repair
+  Folder: me								   1857
+From vireshk  Sat Feb 13 16:38:29 2016
+ Subject: Re: [PATCH V4 2/8] raw: Don't use (possibly) uninitialized
+  Folder: me								   4730
+From vireshk  Sat Feb 13 17:18:24 2016
+ Subject: Re: [PATCH V4 3/8] raw: convert to bundle driver
+  Folder: me								   9415
+From vireshk  Sat Feb 13 17:20:32 2016
+ Subject: [Y2038] [RFC v2] vfs 64 bit time transition proposals
+  Folder: linaro/y2038							   6734
+From vireshk  Sat Feb 13 17:24:49 2016
+ Subject: [Y2038] [RFC v2] vfs 64 bit time transition proposals
+  Folder: linaro/y2038							   6729
+From vireshk  Sat Feb 13 17:30:08 2016
+ Subject: Re: [PATCH V4 4/8] loopback: convert to bundle driver
+  Folder: me								   4501
+From vireshk  Sat Feb 13 17:42:54 2016
+ Subject: Re: [PATCH] lib/Kconfig: make PREEMPT_COUNT depend on PREEMPT in
+  Folder: linaro/kernel							   5066
+From vireshk  Sat Feb 13 20:21:25 2016
+ Subject: Re: [Y2038] [RFC v2b 5/5] fs: xfs: change inode times to use
+  Folder: linaro/y2038							   6756
+From vireshk  Sat Feb 13 21:44:14 2016
+ Subject: Re: [PATCH V4 7/8] power_supply: Break supply setup into two parts
+  Folder: me								   4801
+From vireshk  Sat Feb 13 21:44:15 2016
+ Subject: Re: [PATCH V4 5/8] lights: Break light setup into two parts
+  Folder: me								   4783
+From vireshk  Sat Feb 13 21:58:11 2016
+ Subject: Re: Qemu for ARM64
+  Folder: me								  10117
+From vireshk  Sat Feb 13 22:03:34 2016
+ Subject: Re: Qemu for ARM64
+  Folder: me								  10108
+From vireshk  Sat Feb 13 22:05:45 2016
+ Subject: Re: Qemu for ARM64
+  Folder: me								  10064
+From vireshk  Sat Feb 13 22:07:54 2016
+ Subject: Updated link
+  Folder: me								   6575
+From vireshk  Sun Feb 14 00:52:03 2016
+ Subject: master build: 0 failures 5 warnings (v4.5-rc3-228-ge835a65)
+  Folder: linaro/build							   8341
+From vireshk  Sun Feb 14 01:36:56 2016
+ Subject: Re: Dont use FLASH script with --newpartition on EVT1.x
+  Folder: ara/list							  18473
+From vireshk  Sun Feb 14 02:35:40 2016
+ Subject: Re: Test module that I use for bridged phy
+  Folder: ara/list							  39593
+From vireshk  Sun Feb 14 03:39:49 2016
+ Subject: Re: [Y2038] [RFC v2a 11/12] net: ceph: use vfs_time data type
+  Folder: linaro/y2038							   8311
+From vireshk  Sun Feb 14 04:29:04 2016
+ Subject: v3.2.77 build: 2 failures 32 warnings (v3.2.77)
+  Folder: linaro/build							  20673
+From vireshk  Sun Feb 14 05:47:22 2016
+ Subject: [Y2038] Timestamp bugs in the news
+  Folder: linaro/y2038							   5516
+From vireshk  Sun Feb 14 05:54:48 2016
+ Subject: Re: Dont use FLASH script with --newpartition on EVT1.x
+  Folder: ara/list							  16885
+From vireshk  Sun Feb 14 05:58:02 2016
+ Subject: master build: 0 failures 5 warnings (v4.5-rc3-237-g4617c22)
+  Folder: linaro/build							   8358
+From vireshk  Sun Feb 14 05:59:06 2016
+ Subject: Re: [PATCH/RFC] SW-1345: camera: Add CSI configuration parameters
+  Folder: ara/patches							   9346
+From vireshk  Sun Feb 14 06:03:24 2016
+ Subject: [PATCH v2 0/4] Camera: Fix various configure streams issues
+  Folder: ara/patches							   6640
+From vireshk  Sun Feb 14 06:03:24 2016
+ Subject: [PATCH v2 1/4] camera: Factorize link power mode configuration code
+  Folder: ara/patches							  12039
+From vireshk  Sun Feb 14 06:03:25 2016
+ Subject: [PATCH v2 2/4] camera: Clean up when AP link power mode configuration
+  Folder: ara/patches							   6724
+From vireshk  Sun Feb 14 06:03:26 2016
+ Subject: [PATCH v2 3/4] camera: Set power mode after configuring streams
+  Folder: ara/patches							   9446
+From vireshk  Sun Feb 14 06:04:31 2016
+ Subject: [PATCH v2 4/4] camera: Don't configure CSI TX in test only mode
+  Folder: ara/patches							   8036
+From vireshk  Sun Feb 14 06:04:32 2016
+ Subject: Re: [PATCH/RFC 0/4] Camera: Fix various configure streams issues
+  Folder: ara/patches							   8030
+From vireshk  Sun Feb 14 06:19:30 2016
+ Subject: Re: Test module that I use for bridged phy
+  Folder: ara/list							  42288
+From vireshk  Sun Feb 14 07:17:18 2016
+ Subject: Re: [Y2038] [RFC v2a 11/12] net: ceph: use vfs_time data type
+  Folder: linaro/y2038							  13140
+From vireshk  Sun Feb 14 07:26:59 2016
+ Subject: [PATCH] ENG-618: camera: Stop the CSI transceiver before the camera
+  Folder: ara/patches							   9080
+From vireshk  Sun Feb 14 07:33:27 2016
+ Subject: Re: [PATCH] ENG-618: camera: Stop the CSI transceiver before the
+  Folder: ara/patches							   9830
+From vireshk  Sun Feb 14 07:35:38 2016
+ Subject: Re: [Y2038] [RFC v2a 11/12] net: ceph: use vfs_time data type
+  Folder: linaro/y2038							   6453
+From vireshk  Sun Feb 14 07:41:00 2016
+ Subject: Re: [PATCH] PCI: layerscape: add ls2085a compatible
+  Folder: linaro/kernel							   7814
+From vireshk  Sun Feb 14 09:22:57 2016
+ Subject: master build: 0 failures 5 warnings (v4.5-rc3-253-g2f2e9f2)
+  Folder: linaro/build							   8323
+From vireshk  Sun Feb 14 09:40:10 2016
+ Subject: SW OPS REVIEW: Slides Update for Software Ops Meeting (2/16)
+  Folder: ara/list							  13264
+From vireshk  Sun Feb 14 10:27:22 2016
+ Subject: [next] Odroid XU3 boot fail after cpufreq: dt: Use
+  Folder: me								   9154
+From vireshk  Sun Feb 14 10:32:48 2016
+ Subject: Boot aarch64 with Qemu
+  Folder: me								  18540
+From vireshk  Sun Feb 14 10:53:20 2016
+ Subject: Re: [next] Odroid XU3 boot fail after cpufreq: dt: Use
+  Folder: me								   3224
+From vireshk  Sun Feb 14 11:18:00 2016
+ Subject: Re: [next] Odroid XU3 boot fail after cpufreq: dt: Use
+  Folder: me								   6402
+From vireshk  Sun Feb 14 11:37:19 2016
+ Subject: [next] Odroid XU3 easily over-heats
+  Folder: me								   6186
+From vireshk  Sun Feb 14 11:43:44 2016
+ Subject: Re: Validate OPPv2 on LSK 3.18/4.1
+  Folder: me								   4883
+From vireshk  Sun Feb 14 12:54:58 2016
+ Subject: master build: 0 failures 5 warnings (v4.5-rc3-258-g7686e3c)
+  Folder: linaro/build							   8343
+From vireshk  Sun Feb 14 13:10:06 2016
+ Subject: [lkp] [cpufreq] f86900d952: 660.6%
+  Folder: me								  29772
+From vireshk  Sun Feb 14 13:31:38 2016
+ Subject: =?utf-8?q?2_linaro-kernel_moderator_request=28s=29_waiting?=
+  Folder: linaro/moderator						   5121
+From vireshk  Sun Feb 14 19:21:29 2016
+ Subject: Re: Test module that I use for bridged phy
+  Folder: ara/list							  45854
+From vireshk  Mon Feb 15 02:31:57 2016
+ Subject: Re: [Y2038] [RFC v2a 11/12] net: ceph: use vfs_time data type
+  Folder: linaro/y2038							  11134
+From vireshk  Mon Feb 15 04:53:07 2016
+ Subject: master build: 0 failures 5 warnings (v4.5-rc3-300-g102a92c)
+  Folder: linaro/build							   8467
+From vireshk  Mon Feb 15 06:14:19 2016
+ Subject: [ACTIVITY] 8 - 12 Feb 2016
+  Folder: linaro/toolchain						   5861
+From vireshk  Mon Feb 15 06:39:04 2016
+ Subject: [GIT PULL] nohz: Tick dependency mask
+  Folder: me								   6387
+From vireshk  Mon Feb 15 06:51:58 2016
+ Subject: [PATCH 8/9] cpufreq: ondemand: Simplify conditionals in od_dbs_timer(
+  Folder: me								   3919
+From vireshk  Mon Feb 15 06:51:59 2016
+ Subject: [PATCH 7/9] cpufreq: governor: Move rate_mult to struct policy_dbs
+  Folder: me								   7801
+From vireshk  Mon Feb 15 06:52:00 2016
+ Subject: [PATCH 9/9] cpufreq: governor: Use microseconds in sample delay compu
+  Folder: me								   8137
+From vireshk  Mon Feb 15 06:52:01 2016
+ Subject: [PATCH 6/9] cpufreq: governor: Reset sample delay in store_sampling_r
+  Folder: me								   4324
+From vireshk  Mon Feb 15 06:52:01 2016
+ Subject: [PATCH 5/9] cpufreq: governor: Get rid of the ->gov_check_cpu callbac
+  Folder: me								  10978
+From vireshk  Mon Feb 15 06:52:02 2016
+ Subject: [PATCH 4/9] cpufreq: governor: Clean up load-related computations
+  Folder: me								   4119
+From vireshk  Mon Feb 15 06:52:03 2016
+ Subject: [PATCH 3/9] cpufreq: governor: Fix nice contribution computation in d
+  Folder: me								   3643
+From vireshk  Mon Feb 15 06:52:04 2016
+ Subject: [PATCH 2/9] cpufreq: governor: Avoid atomic operations in hot paths
+  Folder: me								   6790
+From vireshk  Mon Feb 15 06:52:05 2016
+ Subject: [PATCH 1/9] cpufreq: governor: Simplify gov_cancel_work() slightly
+  Folder: me								   3708
+From vireshk  Mon Feb 15 06:52:06 2016
+ Subject: [PATCH 0/9] cpufreq governor improvements
+  Folder: me								   2876
+From vireshk  Mon Feb 15 08:22:53 2016
+ Subject: v4.5-rc4 build: 0 failures 5 warnings (v4.5-rc4)
+  Folder: linaro/build							   8223
+From vireshk  Mon Feb 15 08:33:37 2016
+ Subject: [Y2038] [PATCH] include: ceph: Fix encode and decode type
+  Folder: linaro/y2038							   8609
+From vireshk  Mon Feb 15 09:00:19 2016
+ Subject: Re: [PATCH v6] clk: mediatek: Export CPU mux clocks for CPU frequency
+  Folder: linaro/kernel							   8500
+From vireshk  Mon Feb 15 10:01:14 2016
+ Subject: Re: build error in "healthd" while building sdk add on
+  Folder: ara/patches							  11314
+From vireshk  Mon Feb 15 10:10:50 2016
+ Subject: Re: build error in "healthd" while building sdk add on
+  Folder: ara/patches							   7567
+From vireshk  Mon Feb 15 10:22:39 2016
+ Subject: [PATCH] PM / OPP: Initialize u_volt_min/max to a valid value
+  Folder: me								   4792
+From vireshk  Mon Feb 15 10:27:56 2016
+ Subject: [BUG]: get-maintainers unable to respect parenthesis in subsystem nam
+  Folder: me								   2143
+From vireshk  Mon Feb 15 10:48:48 2016
+ Subject: [PATCH V5] raw: convert to bundle driver
+  Folder: me								   7039
+From vireshk  Mon Feb 15 10:59:29 2016
+ Subject: Re: [next] Odroid XU3 easily over-heats
+  Folder: me								   1982
+From vireshk  Mon Feb 15 11:01:37 2016
+ Subject: [ACTIVITY] 08 - 12 February
+  Folder: linaro/toolchain						   5876
+From vireshk  Mon Feb 15 11:11:13 2016
+ Subject: Re: [PATCH 1/9] cpufreq: governor: Simplify gov_cancel_work()
+  Folder: me								   3159
+From vireshk  Mon Feb 15 11:13:22 2016
+ Subject: Re: [BUG]: get-maintainers unable to respect parenthesis in
+  Folder: me								   5153
+From vireshk  Mon Feb 15 11:15:30 2016
+ Subject: [PATCH-v3 0/5] usb3613/apb: Kernel changes in sync with
+  Folder: ara/patches							   7530
+From vireshk  Mon Feb 15 11:15:31 2016
+ Subject: [PATCH-v3 1/5] SW-2596/2711: ARM: dts: arche: apb: Set usb3613 to
+  Folder: ara/patches							   6677
+From vireshk  Mon Feb 15 11:15:32 2016
+ Subject: [PATCH-v3 2/5] SW-2596/2711: ARM: dts: arche: Introduce ara,
+  Folder: ara/patches							   6843
+From vireshk  Mon Feb 15 11:16:37 2016
+ Subject: [PATCH-v3 3/5] SW-2596/2711: usb: misc: usb3613: Return if already in
+  Folder: ara/patches							   6874
+From vireshk  Mon Feb 15 11:16:38 2016
+ Subject: [PATCH-v3 4/5] SW-2596/2711: usb: misc: usb3613: Remove APB device
+  Folder: ara/patches							  11331
+From vireshk  Mon Feb 15 11:16:39 2016
+ Subject: [PATCH-v3 5/5] SW-2596/2711: usb: misc: usb3613: Add exported fn to
+  Folder: ara/patches							   9860
+From vireshk  Mon Feb 15 11:47:36 2016
+ Subject: Re: [PATCH 2/9] cpufreq: governor: Avoid atomic operations in hot
+  Folder: me								   3946
+From vireshk  Mon Feb 15 12:06:52 2016
+ Subject: Re: [next] Odroid XU3 easily over-heats
+  Folder: me								   5135
+From vireshk  Mon Feb 15 12:07:58 2016
+ Subject: Re: [BUG]: get-maintainers unable to respect parenthesis in
+  Folder: me								   2121
+From vireshk  Mon Feb 15 12:17:44 2016
+ Subject: [Weekly] 08-12 February 2016
+  Folder: linaro/toolchain						   6636
+From vireshk  Mon Feb 15 12:28:29 2016
+ Subject: Re: URGENT: Macbook Repair
+  Folder: me								   2571
+From vireshk  Mon Feb 15 12:33:51 2016
+ Subject: master build: 0 failures 5 warnings (v4.5-rc4-14-g1926e54)
+  Folder: linaro/build							   8319
+From vireshk  Mon Feb 15 12:42:25 2016
+ Subject: Re: [PATCH] ARM: drop unused Makefile.boot of Multiplatform SoCs
+  Folder: me								   4768
+From vireshk  Mon Feb 15 13:06:57 2016
+ Subject: Re: [BUG]: get-maintainers unable to respect parenthesis in
+  Folder: me								   4064
+From vireshk  Mon Feb 15 13:31:34 2016
+ Subject: =?utf-8?q?2_linaro-kernel_moderator_request=28s=29_waiting?=
+  Folder: linaro/moderator						   5118
+From vireshk  Mon Feb 15 13:45:28 2016
+ Subject: [Camera Firmware] Camera difference between ES2 to ES3
+  Folder: ara/list							1747267
+From vireshk  Mon Feb 15 13:48:43 2016
+ Subject: Re: [BUG]: get-maintainers unable to respect parenthesis in
+  Folder: me								   2623
+From vireshk  Mon Feb 15 13:50:53 2016
+ Subject: Re: [PATCH 2/9] cpufreq: governor: Avoid atomic operations in hot
+  Folder: me								   2195
+From vireshk  Mon Feb 15 13:58:22 2016
+ Subject: Issues with cc-cmd
+  Folder: me								   2556
+From vireshk  Mon Feb 15 13:58:23 2016
+ Subject: Re: [PATCH V5] raw: convert to bundle driver
+  Folder: me								   4720
+From vireshk  Mon Feb 15 13:59:30 2016
+ Subject: Re: [PATCH 3/9] cpufreq: governor: Fix nice contribution computation
+  Folder: me								   1938
+From vireshk  Mon Feb 15 14:00:36 2016
+ Subject: Re: [PATCH V5] raw: convert to bundle driver
+  Folder: me								   1820
+From vireshk  Mon Feb 15 14:01:40 2016
+ Subject: Re: [BUG]: get-maintainers unable to respect parenthesis in
+  Folder: me								   4928
+From vireshk  Mon Feb 15 14:03:49 2016
+ Subject: Re: [PATCH 4/9] cpufreq: governor: Clean up load-related computations
+  Folder: me								   1761
+From vireshk  Mon Feb 15 14:14:30 2016
+ Subject: Re: [BUG]: get-maintainers unable to respect parenthesis in
+  Folder: me								   2105
+From vireshk  Mon Feb 15 14:16:39 2016
+ Subject: Re: cc-list for sending patches to lkml
+  Folder: me								   5301
+From vireshk  Mon Feb 15 14:23:03 2016
+ Subject: Re: [PATCH 5/9] cpufreq: governor: Get rid of the ->gov_check_cpu
+  Folder: me								   2930
+From vireshk  Mon Feb 15 14:24:09 2016
+ Subject: Re: [PATCH 6/9] cpufreq: governor: Reset sample delay in
+  Folder: me								   1996
+From vireshk  Mon Feb 15 14:27:23 2016
+ Subject: Re: [PATCH 7/9] cpufreq: governor: Move rate_mult to struct
+  Folder: me								   2225
+From vireshk  Mon Feb 15 14:28:27 2016
+ Subject: Re: [PATCH 8/9] cpufreq: ondemand: Simplify conditionals in
+  Folder: me								   1701
+From vireshk  Mon Feb 15 14:29:33 2016
+ Subject: Re: [PATCH 9/9] cpufreq: governor: Use microseconds in sample delay
+  Folder: me								   1952
+From vireshk  Mon Feb 15 14:34:56 2016
+ Subject: Re: [Y2038] [PATCH] include: ceph: Fix encode and decode type
+  Folder: linaro/y2038							   7494
+From vireshk  Mon Feb 15 14:37:05 2016
+ Subject: New FDK repo with ES3 test module issue
+  Folder: ara/list							   8179
+From vireshk  Mon Feb 15 14:42:25 2016
+ Subject: Re: [PATCH V5] greybus-spec: Extend control protocol to include
+  Folder: me								   3246
+From vireshk  Mon Feb 15 14:44:33 2016
+ Subject: next-20160215 build: 3 failures 14 warnings (next-20160215)
+  Folder: linaro/build							  16922
+From vireshk  Mon Feb 15 14:56:18 2016
+ Subject: [ACTIVITY] 8th - 12th February
+  Folder: linaro/toolchain						   6897
+From vireshk  Mon Feb 15 15:09:05 2016
+ Subject: [SVC] Question about DME peer get function in Greybus SVC
+  Folder: ara/list							  14063

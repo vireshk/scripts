@@ -8,5 +8,5 @@ fi
 if [ $1 == "0000-cover-letter.patch" ]; then
 	cat ~/scripts/mycoverletterlist.txt
 else
-	scripts/get_maintainer.pl $1 | sort
+	scripts/get_maintainer.pl --nogit --nogit-fallback --norolestats --nom --nor $1
 fi

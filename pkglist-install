@@ -69,3 +69,10 @@ python-sphinx
 u-boot-tools
 input-utils
 vino
+graphviz
+ncurses-dev
+flex
+bison
+gperf
+gpm:i386
+libelf-dev

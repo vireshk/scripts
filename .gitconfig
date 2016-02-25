@@ -11,8 +11,9 @@
 	aliasesfile = /home/vireshk/scripts/.git_aliases
 	aliasfiletype = mutt
 
-	tocmd = ~/scripts/tocmd
-	cccmd = ~/scripts/cccmd
+# Moved to kernel-specific git config only.
+#	tocmd = ~/scripts/tocmd
+#	cccmd = ~/scripts/cccmd
 [color]
 	diff = auto
 	status = auto

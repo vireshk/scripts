@@ -22,7 +22,14 @@ PATH="/home/vireshk/work/repos/ara/tools/gcc-arm-none-eabi-4_8-2014q3/bin:$PATH"
 PATH="/home/vireshk/work/repos/ara/manifesto:$PATH"
 PATH="/home/vireshk/work/repos/ara/db3/bin:$PATH"
 alias nvim="vim -c 'set expandtab' -c 'set shiftwidth=4'"
+
+# gbsim-qemu
 export GBDIR=~/work/repos/ara/greybus
+export GBSIMDIR=~/work/repos/ara/gbsim
+export BR2_EXTERNAL=~/work/repos/ara/ara_buildroot_x86_64
+alias myqemu="hara; cd buildroot; qemu-system-x86_64 -M pc -kernel output/images/bzImage -drive file=output/images/rootfs.ext2,if=ide -append \"root=/dev/sda console=ttyS0,115200\" -net nic,model=rtl8139 -net user -nographic -s"
+alias myqemugbsim="hara; cd buildroot; make gbsim-dirclean; make gbsim; make"
+alias myqemugbus="hara; cd buildroot; make greybus-dirclean; make greybus; make"
 
 # icdiff
 PATH="/home/vireshk/work/repos/tools/icdiff:$PATH"
@@ -55,6 +62,8 @@ updatepkglist() { echo "$*" >> ~/scripts/pkglist-install; }
 
 source /home/vireshk/scripts/git_alias
 alias linarogit='ssh viresh.kumar@git.linaro.org'
+alias sshbbone="ssh root@192.168.0.4"
+scpexynosgbus() { cd /home/vireshk/work/repos/ara/greybus/; scp *.ko root@192.168.0.$1:/home/linaro/greybus; }
 alias sshlinaro='echo "scp test.txt  viresh.kumar@git.linaro.org:/home/vireshk/work"'
 alias lmc="echo sudo -A linaro-media-create --mmc /dev/sdb --dev arndale --hwpack-force-yes --hwpack /home/vireshk/work/boards/arndale/hwpack_linaro-arndale_20140417-630_armhf_supported.tar.gz --binary /home/vireshk/work/rootfs/linaro/linaro-saucy-developer-20140410-652.tar.gz"
 
@@ -144,6 +153,7 @@ alias hgbsim="cd /home/vireshk/work/repos/ara/gbsim/"
 alias hmfesto="cd /home/vireshk/work/repos/ara/manifesto/"
 alias hbootrom="cd /home/vireshk/work/repos/ara/bootrom"
 alias hnuttx="cd /home/vireshk/work/repos/ara/nuttx/"
+alias hqemu="cd /home/vireshk/work/repos/ara/buildroot"
 
 export BOOTROM_TOOLS=~/work/repos/ara/bootrom-tools
 alias findtftf="grep Reset_Handler ~/work/repos/ara/nuttx/build/ara-bridge-debug-generic/image/System.map | cut -f 1 -d \" \""

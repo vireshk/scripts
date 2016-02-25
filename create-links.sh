@@ -1,6 +1,6 @@
 # replace all ~/home directories with ours
 # standard directories
-rm -rf ~/Pictures ~/Videos ~/Templates ~/Desktop ~/Downloads ~/Documents ~/Music ~/Public
+rm -rf ~/Pictures ~/Videos ~/Templates ~/Desktop ~/Downloads ~/Documents ~/Music ~/Public ~/.ssh
 ln -s ~/all/Pictures ~/Pictures
 ln -s ~/all/Videos ~/Videos
 ln -s ~/all/Templates ~/Templates

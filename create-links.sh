@@ -43,13 +43,13 @@ ln -s ~/all/criticalinfo/.goobook_auth.json ~/.goobook_auth.json
 
 # mails
 ln -s ~/all/criticalinfo/.msmtprc ~/.msmtprc
-ln -s ~/all/criticalinfo/.fetchmailrc ~/.fetchmailrc
-ln -s ~/all/criticalinfo/.fetchids ~/.fetchids
-ln -s ~/all/criticalinfo/.fetchmaillog ~/.fetchmaillog
-ln -s ~/all/criticalinfo/.fetchmail.pid ~/.fetchmail.pid
-ln -s ~/all/scripts/.procmailrc ~/.procmailrc
-ln -s ~/all/scripts/.procmaillog ~/.procmaillog
-ln -s ~/all/scripts/.muttrc ~/.muttrc
+ln -s ~/all/scripts/mutt/scripts/.fetchmailrc ~/.fetchmailrc
+ln -s ~/all/scripts/mutt/scripts/.fetchids ~/.fetchids
+ln -s ~/all/scripts/mutt/scripts/.fetchmaillog ~/.fetchmaillog
+ln -s ~/all/scripts/mutt/scripts/.fetchmail.pid ~/.fetchmail.pid
+ln -s ~/all/scripts/mutt/scripts/.procmailrc ~/.procmailrc
+ln -s ~/all/scripts/mutt/scripts/.procmaillog ~/.procmaillog
+ln -s ~/all/scripts/mutt/scripts/.muttrc ~/.muttrc
 
 # minidlna
 sudo ln -s ~/all/scripts/minidlna.conf /etc/minidlna.conf

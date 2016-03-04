@@ -136,6 +136,7 @@ scpfrom() { scp -r root@10.162.5.15:/work/trace/$1 /home/vireshk/junk; }
 
 alias startvnc="vncviewer 10.162.5.156:1"
 alias sshminicom="ssh user@10.162.5.156"
+alias mypicupload="trickle -s -u 2048 -d 2048 firefox"
 alias mydump="arm-linux-gnueabihf-objdump -r -S -l --disassemble"
 mymini() { sudo -A minicom -w panda -D /dev/ttyUSB$1; }
 

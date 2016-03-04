@@ -1,2 +1,2 @@
-aptitude update && cat pkglist-install | xargs sudo aptitude install -y
+sudo aptitude update && cat pkglist-install | xargs sudo aptitude install -y
 pip install -U RBTools

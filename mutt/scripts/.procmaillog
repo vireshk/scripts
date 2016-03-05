@@ -7609,3 +7609,231 @@ From vireshk  Sat Feb  6 08:35:07 2016
 From vireshk  Sat Feb  6 09:38:25 2016
  Subject: [PATCH 3/3 v4] cpufreq: governor: Replace timers with utilization upd
   Folder: me								  17707
+From vireshk  Sat Mar  5 08:43:35 2016
+ Subject: [PATCH v2] thermal: add temperature sensor support for tango SoC
+  Folder: me								   6577
+From vireshk  Sat Mar  5 08:43:37 2016
+ Subject: Re: [PATCH v2 10/10] cpufreq: schedutil: New governor based on
+  Folder: me								   4984
+From vireshk  Sat Mar  5 08:43:39 2016
+ Subject: Re: [Y2038] [PATCH] vfs: Add support to check max and min inode
+  Folder: linaro/y2038							   7484
+From vireshk  Sat Mar  5 08:43:41 2016
+ Subject: [PATCH] SW-3349: camera: disable E2EFC on CSI connection
+  Folder: ara/patches							   5920
+From vireshk  Sat Mar  5 08:43:44 2016
+ Subject: Re: [PATCH] SW-3349: camera: disable E2EFC on CSI connection
+  Folder: ara/patches							   6676
+From vireshk  Sat Mar  5 08:43:46 2016
+ Subject: Re: [PATCH v10 11/12] arm64: factor work_pending state machine to C
+  Folder: me								   5637
+From vireshk  Sat Mar  5 08:43:48 2016
+ Subject: Change in vendor...bootrom-tools[arche-6.0]: SW-3040: FW Version: Add
+  Folder: me								   6937
+From vireshk  Sat Mar  5 08:43:51 2016
+ Subject: Re: [Y2038] [PATCH] vfs: Add support to check max and min inode
+  Folder: linaro/y2038							  12589
+From vireshk  Sat Mar  5 08:43:53 2016
+ Subject: Re: [PATCH] SW-3349: camera: disable E2EFC on CSI connection
+  Folder: ara/patches							   5711
+From vireshk  Sat Mar  5 08:43:55 2016
+ Subject: Re: [PATCH 00/11] Add TimeSync and frame-time to greybus
+  Folder: ara/patches							   9050
+From vireshk  Sat Mar  5 08:43:57 2016
+ Subject: Change in vendor...bootrom-tools[arche-6.0]: SW-3040: FW Version: Add
+  Folder: me								   6816
+From vireshk  Sat Mar  5 08:43:59 2016
+ Subject: [ACTIVITY] 29 Feb -- 04 Mar
+  Folder: linaro/toolchain						   5234
+From vireshk  Sat Mar  5 08:44:02 2016
+ Subject: Re: [PATCH v2] SW-3377: mdss: add function for read manufacturer ID
+  Folder: ara/patches							   7360
+From vireshk  Sat Mar  5 08:44:04 2016
+ Subject: Daily Smoke test results with EVT1.5 SKU:B and build # 286 with es2
+  Folder: ara/list							  96885
+From vireshk  Sat Mar  5 08:44:08 2016
+ Subject: Re: Daily Smoke test results with EVT1.5 SKU:B and build # 286 with
+  Folder: ara/list							  96512
+From vireshk  Sat Mar  5 08:44:11 2016
+ Subject: Re: Daily Smoke test results with EVT1.5 SKU:B and build # 286 with
+  Folder: ara/list							  97330
+From vireshk  Sat Mar  5 08:44:14 2016
+ Subject: Re: [PATCH] SW-3349: camera: disable E2EFC on CSI connection
+  Folder: ara/patches							   5594
+From vireshk  Sat Mar  5 08:44:15 2016
+ Subject: RE: panel DSI dts settings question
+  Folder: ara/patches							   8373
+From vireshk  Sat Mar  5 08:44:17 2016
+ Subject: [PATCH] SW-3244: ARM: dts: arche: evt2: apb: change apb2 pwr-off-gpio
+  Folder: ara/patches							   6041
+From vireshk  Sat Mar  5 08:44:19 2016
+ Subject: Re: [PATCH 00/11] Add TimeSync and frame-time to greybus
+  Folder: ara/patches							   9400
+From vireshk  Sat Mar  5 08:44:22 2016
+ Subject: [ACTIVITY]
+  Folder: linaro/toolchain						   4794
+From vireshk  Sat Mar  5 08:44:24 2016
+ Subject: [PATCH 0/5] greybus-spec: build fixes
+  Folder: ara/patches							   6077
+From vireshk  Sat Mar  5 08:44:26 2016
+ Subject: [PATCH 1/5] SW-3431: make: add singlehtml help message
+  Folder: ara/patches							   5751
+From vireshk  Sat Mar  5 08:44:27 2016
+ Subject: [PATCH 2/5] SW-3431: html: fix compilation of spec with python 3
+  Folder: ara/patches							  14553
+From vireshk  Sat Mar  5 08:44:29 2016
+ Subject: [PATCH 3/5] SW-3431: python3: fix unicode handle
+  Folder: ara/patches							   6095
+From vireshk  Sat Mar  5 08:44:31 2016
+ Subject: [PATCH 4/5] SW-3431: latexpdf: fix spanning row
+  Folder: ara/patches							   5925
+From vireshk  Sat Mar  5 08:44:33 2016
+ Subject: [PATCH 5/5] SW-3431: latexpdf: remove setup numfig_format
+  Folder: ara/patches							   6312
+From vireshk  Sat Mar  5 08:44:35 2016
+ Subject: [PATCH v2 0/5] Aux charger hotplug fixes
+  Folder: ara/patches							   6718
+From vireshk  Sat Mar  5 08:44:37 2016
+ Subject: [PATCH v2 1/5] SW-3440: bq2426x: Dont fail if batt detect gpio is not
+  Folder: ara/patches							   6525
+From vireshk  Sat Mar  5 08:44:39 2016
+ Subject: [PATCH v2 2/5] SW-3440: bq27xxx: Make sure to add OF node for power
+  Folder: ara/patches							   6515
+From vireshk  Sat Mar  5 08:44:41 2016
+ Subject: [PATCH v2 3/5] SW-3440: bq27xxx: Make sure most status changes
+  Folder: ara/patches							   7940
+From vireshk  Sat Mar  5 08:44:44 2016
+ Subject: [PATCH v2 5/5] SW-3440: battery: DT: add aux batt->charger dependency
+  Folder: ara/patches							  10241
+From vireshk  Sat Mar  5 08:44:45 2016
+ Subject: [PATCH v2 4/5] SW-3440: bq2426x: Fix charger hotplug without a batt
+  Folder: ara/patches							  13882
+From vireshk  Sat Mar  5 08:44:46 2016
+ Subject: Re: [PATCH v10 11/12] arm64: factor work_pending state machine to C
+  Folder: me								  12025
+From vireshk  Sat Mar  5 08:44:47 2016
+ Subject: [ACTIVITY] 29 February-4 March 2016
+  Folder: linaro/toolchain						   4918
+From vireshk  Sat Mar  5 08:44:48 2016
+ Subject: Re: [PATCH v3 9/10] cpufreq: sched: Re-introduce
+  Folder: me								   4789
+From vireshk  Sat Mar  5 08:44:50 2016
+ Subject: Re: [PATCH v2 2/5] SW-3440: bq27xxx: Make sure to add OF node for
+  Folder: ara/patches							   6880
+From vireshk  Sat Mar  5 08:44:52 2016
+ Subject: Re: [PATCH v2 3/5] SW-3440: bq27xxx: Make sure most status changes
+  Folder: ara/patches							   8313
+From vireshk  Sat Mar  5 08:44:53 2016
+ Subject: Re: [PATCH v2 5/5] SW-3440: battery: DT: add aux batt->charger
+  Folder: ara/patches							  10721
+From vireshk  Sat Mar  5 08:44:55 2016
+ Subject: Re: [PATCH v3 9/10] cpufreq: sched: Re-introduce cpufreq_update_util(
+  Folder: me								   5168
+From vireshk  Sat Mar  5 08:44:56 2016
+ Subject: Change in vendor...bootrom-tools[arche-6.0]: SW-3040: FW Version: Add
+  Folder: me								  20501
+From vireshk  Sat Mar  5 08:44:58 2016
+ Subject: Change in vendor...bootrom[arche-6.0]: SW-3040: FW Version: Add FW
+  Folder: me								  14222
+From vireshk  Sat Mar  5 08:45:00 2016
+ Subject: Re: [PATCH v3 9/10] cpufreq: sched: Re-introduce cpufreq_update_util(
+  Folder: me								   5633
+From vireshk  Sat Mar  5 08:45:02 2016
+ Subject: Re: [PATCH v2 6/10] cpufreq: Support for fast frequency switching
+  Folder: me								   5603
+From vireshk  Sat Mar  5 08:45:05 2016
+ Subject: [JIRA] (SW-3040) FW version information in TFTF
+  Folder: ara/jira							  27946
+From vireshk  Sat Mar  5 08:45:08 2016
+ Subject: Re: [PATCH v2 6/10] cpufreq: Support for fast frequency switching
+  Folder: me								   6405
+From vireshk  Sat Mar  5 08:45:10 2016
+ Subject: Re: [PATCH v2 6/10] cpufreq: Support for fast frequency switching
+  Folder: me								   6539
+From vireshk  Sat Mar  5 08:45:12 2016
+ Subject: Re: Daily Smoke test results with EVT1.5 SKU:B and build # 286 with
+  Folder: ara/list							  96605
+From vireshk  Sat Mar  5 08:45:15 2016
+ Subject: [PATCH V2 0/5] EVT2 pinmux changes
+  Folder: ara/patches							   6782
+From vireshk  Sat Mar  5 08:45:17 2016
+ Subject: [PATCH V2 3/5] SW-3244: ARM: dts: arche: evt2: apb: change apb2
+  Folder: ara/patches							   6234
+From vireshk  Sat Mar  5 08:45:19 2016
+ Subject: [PATCH V2 2/5] SW-3244: ARM: dts: arche: evt2: apb: change apb1
+  Folder: ara/patches							   6550
+From vireshk  Sat Mar  5 08:45:21 2016
+ Subject: [PATCH V2 1/5] SW-3244: dts: evt2: backlight: remove module port #5
+  Folder: ara/patches							   8209
+From vireshk  Sat Mar  5 08:45:23 2016
+ Subject: [PATCH V2 4/5] SW-3244: ARM: dts: arche: evt2: svc: SVC_RESET pin
+  Folder: ara/patches							   5860
+From vireshk  Sat Mar  5 08:45:25 2016
+ Subject: [PATCH V2 5/5] SW-3244: ARM: dts: arche: evt2: usb: add tusb320 typec
+  Folder: ara/patches							   7923
+From vireshk  Sat Mar  5 08:45:27 2016
+ Subject: Re: [PATCH v2 6/10] cpufreq: Support for fast frequency switching
+  Folder: me								   6157
+From vireshk  Sat Mar  5 08:45:29 2016
+ Subject: Re: Daily Smoke test results with EVT1.5 SKU:B and build # 286 with
+  Folder: ara/list							  98488
+From vireshk  Sat Mar  5 08:45:31 2016
+ Subject: EVT1.5 Test Daughter board block Diagram - Invitation to edit
+  Folder: ara/list							  12123
+From vireshk  Sat Mar  5 08:45:33 2016
+ Subject: Re: [PATCH v2 6/10] cpufreq: Support for fast frequency switching
+  Folder: me								   7457
+From vireshk  Sat Mar  5 08:45:35 2016
+ Subject: Re: Battery info class
+  Folder: ara/list							   9712
+From vireshk  Sat Mar  5 08:45:37 2016
+ Subject: Re: [PATCH v2 6/10] cpufreq: Support for fast frequency switching
+  Folder: me								   5765
+From vireshk  Sat Mar  5 08:45:39 2016
+ Subject: Re: [PATCH v2 6/10] cpufreq: Support for fast frequency switching
+  Folder: me								   5009
+From vireshk  Sat Mar  5 08:45:41 2016
+ Subject: Soliciting feedback on Loopback Test V1 daughter board implementation
+  Folder: ara/list							   8567
+From vireshk  Sat Mar  5 08:45:43 2016
+ Subject: Re: [PATCH v2 6/10] cpufreq: Support for fast frequency switching
+  Folder: me								   6906
+From vireshk  Sat Mar  5 08:45:44 2016
+ Subject: Re: [PATCH v2] SW-3452: power_supply: add changed psy to
+  Folder: ara/patches							   6851
+From vireshk  Sat Mar  5 08:45:46 2016
+ Subject: Re: [PATCH V2 0/5] EVT2 pinmux changes
+  Folder: ara/patches							   6451
+From vireshk  Sat Mar  5 08:45:49 2016
+ Subject: Re: [PATCH V2 0/5] EVT2 pinmux changes
+  Folder: ara/patches							   6724
+From vireshk  Sat Mar  5 08:45:50 2016
+ Subject: Re: [PATCH v2 0/5] Aux charger hotplug fixes
+  Folder: ara/patches							   6096
+From vireshk  Sat Mar  5 08:45:52 2016
+ Subject: Re: [PATCH V2 0/5] EVT2 pinmux changes
+  Folder: ara/patches							   6988
+From vireshk  Sat Mar  5 08:45:54 2016
+ Subject: Reminder for Linaro Connect Bangkok 2016 (BKK16)
+  Folder: me								 197161
+From vireshk  Sat Mar  5 08:45:57 2016
+ Subject: Daily Smoke test results with DB3.5 and build # 287 with ES2 and ES3
+  Folder: ara/list							  38698
+From vireshk  Sat Mar  5 08:46:03 2016
+ Subject: Re: Daily Smoke test results with DB3.5 and build # 287 with ES2 and
+  Folder: ara/list							 134335
+From vireshk  Sat Mar  5 08:46:04 2016
+ Subject: Re: [PATCH] SW-3459: ARM: dts: arche: remove unused rf.dtsi file
+  Folder: ara/patches							   5862
+From vireshk  Sat Mar  5 08:46:05 2016
+ Subject: Re: [PATCH v2 0/5]: SW-2874: connection: add CSD connection flag
+  Folder: ara/patches							   8548
+From vireshk  Sat Mar  5 08:46:06 2016
+ Subject: Re: [PATCH] SW-3349: camera: disable E2EFC on CSI connection
+  Folder: ara/patches							   5492
+From vireshk  Sat Mar  5 08:46:07 2016
+ Subject: [PATCH]: SW-2700: properly annotate struct
+  Folder: ara/patches							   5896
+From vireshk  Sat Mar  5 08:48:52 2016
+ Subject: Re: [PATCH]: SW-2700: properly annotate struct
+  Folder: me								   2034

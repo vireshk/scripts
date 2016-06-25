@@ -122,3 +122,244 @@ From vireshk  Wed Feb 10 12:30:35 2016
 From vireshk  Thu Feb 18 16:37:12 2016
  Subject: CPUfreq lockdep issue
   Folder: CPUfreq_lockdep_issue.mbox					   5230
+From vireshk  Fri Apr  1 08:58:25 2016
+ Subject: [PATCH V4 2/2] SW-1271: svc: add AP power measurements debugfs suppor
+  Folder: PATCH_V4_2-2_SW-1271_svc_add_AP_power_measurements_debugfs_s	  16308
+From vireshk  Fri Apr  1 08:58:24 2016
+ Subject: [PATCH V4 1/2] SW-1271: svc: add Interface power measurements support
+  Folder: PATCH_V4_1-2_SW-1271_svc_add_Interface_power_measurements_su	  13733
+From vireshk  Wed Apr  6 08:25:12 2016
+ Subject: [PATCH V6 1/2] SW-1271: svc: add Interface power measurements support
+  Folder: PATCH_V6_1-2_SW-1271_svc_add_Interface_power_measurements_su	  14210
+From vireshk  Wed Apr  6 08:25:13 2016
+ Subject: [PATCH 2/2] SW-1271: svc: add AP power measurements debugfs support
+  Folder: PATCH_2-2_SW-1271_svc_add_AP_power_measurements_debugfs_supp	  17025
+From vireshk  Wed Apr 20 08:58:22 2016
+ Subject: [RFC 1/3] Revert "SW-4096: arche-platform: Power-off unipro subsystem
+  Folder: RFC_1-3_Revert_SW-4096_arche-platform_Power-off_unipro_subsy	   6124
+From vireshk  Wed Apr 20 08:58:23 2016
+ Subject: [RFC 2/3] Revert "SW-4096: svc watchdog: Disable watchdog upon enteri
+  Folder: RFC_2-3_Revert_SW-4096_svc_watchdog_Disable_watchdog_upon_en	   6214
+From vireshk  Wed Apr 20 08:58:24 2016
+ Subject: [RFC 3/3] SW-4096: arche-platform: Add pm suspend resume ops
+  Folder: RFC_3-3_SW-4096_arche-platform_Add_pm_suspend_resume_ops.mbo	   8574
+From vireshk  Wed Apr 20 08:58:20 2016
+ Subject: [RFC] SW-4096: usb3613: Add i2c pm suspend resume ops
+  Folder: RFC_SW-4096_usb3613_Add_i2c_pm_suspend_resume_ops.mbox	   5404
+From vireshk  Fri Apr 22 08:28:27 2016
+ Subject: [PATCH] SW-3511: Define Component Authentication Protocol
+  Folder: PATCH_SW-3511_Define_Component_Authentication_Protocol.mbox	  39025
+From vireshk  Thu Apr 21 14:34:41 2016
+ Subject: [PATCH v2] cpufreq: rockchip: Use generic platdev driver
+  Folder: PATCH_v2_cpufreq_rockchip_Use_generic_platdev_driver.mbox	   4655
+From vireshk  Thu Apr 28 18:33:44 2016
+ Subject: [PATCH-v7 01/12] SW-2847: gpbridge: implement gpbridge "bus" logic
+  Folder: PATCH-v7_01-12_SW-2847_gpbridge_implement_gpbridge_bus_logic	  13534
+From vireshk  Thu Apr 28 18:33:45 2016
+ Subject: [PATCH-v7 02/12] SW-2847: gpbridge: Add gpbridge driver init/exit hel
+  Folder: PATCH-v7_02-12_SW-2847_gpbridge_Add_gpbridge_driver_init-exi	   4599
+From vireshk  Thu Apr 28 18:33:46 2016
+ Subject: [PATCH-v7 03/12] SW-2847: connection: export gb_connection_disable_rx
+  Folder: PATCH-v7_03-12_SW-2847_connection_export_gb_connection_disab	   4333
+From vireshk  Thu Apr 28 18:33:47 2016
+ Subject: [PATCH-v7 04/12] SW-2847: UART: convert to a gpbridge driver
+  Folder: PATCH-v7_04-12_SW-2847_UART_convert_to_a_gpbridge_driver.mbo	  14682
+From vireshk  Thu Apr 28 18:33:48 2016
+ Subject: [PATCH-v7 05/12] SW-2847: PWM: convert to a gpbridge driver
+  Folder: PATCH-v7_05-12_SW-2847_PWM_convert_to_a_gpbridge_driver.mbox	   9562
+From vireshk  Thu Apr 28 18:33:49 2016
+ Subject: [PATCH-v7 06/12] SW-2847: I2C: convert to a gpbridge driver
+  Folder: PATCH-v7_06-12_SW-2847_I2C_convert_to_a_gpbridge_driver.mbox	  10913
+From vireshk  Thu Apr 28 18:33:49 2016
+ Subject: [PATCH-v7 07/12] SW-2847: GPIO: convert to a gpbridge driver
+  Folder: PATCH-v7_07-12_SW-2847_GPIO_convert_to_a_gpbridge_driver.mbo	  14192
+From vireshk  Thu Apr 28 18:33:50 2016
+ Subject: [PATCH-v7 08/12] SW-2847: SDIO: convert to a gpbridge driver
+  Folder: PATCH-v7_08-12_SW-2847_SDIO_convert_to_a_gpbridge_driver.mbo	  11202
+From vireshk  Thu Apr 28 18:33:51 2016
+ Subject: [PATCH-v7 09/12] SW-2847: SPI: convert to a gpbridge driver
+  Folder: PATCH-v7_09-12_SW-2847_SPI_convert_to_a_gpbridge_driver.mbox	  10634
+From vireshk  Thu Apr 28 18:33:51 2016
+ Subject: [PATCH-v7 09/12] SW-2847: SPI: convert to a gpbridge driver
+  Folder: PATCH-v7_09-12_SW-2847_SPI_convert_to_a_gpbridge_driver.mbox	  10634
+From vireshk  Thu Apr 28 18:33:51 2016
+ Subject: [PATCH-v7 09/12] SW-2847: SPI: convert to a gpbridge driver
+  Folder: PATCH-v7_09-12_SW-2847_SPI_convert_to_a_gpbridge_driver.mbox	  10634
+From vireshk  Thu Apr 28 18:33:52 2016
+ Subject: [PATCH-v7 10/12] SW-2847: USB: convert to a gpbridge driver
+  Folder: PATCH-v7_10-12_SW-2847_USB_convert_to_a_gpbridge_driver.mbox	  10696
+From vireshk  Thu Apr 28 18:33:53 2016
+ Subject: [PATCH-v7 11/12] SW-2847: Documentation: Add sysfs information about 
+  Folder: PATCH-v7_11-12_SW-2847_Documentation_Add_sysfs_information_a	   4578
+From vireshk  Thu Apr 28 18:33:54 2016
+ Subject: [PATCH-v7 12/12] SW-2700: uart: Kill reference_count hack
+  Folder: PATCH-v7_12-12_SW-2700_uart_Kill_reference_count_hack.mbox	   6433
+From vireshk  Fri Apr 29 14:53:10 2016
+ Subject: [PATCH v2 1/2][UPDATE] PM / OPP: add non-OF versions of dev_pm_opp_{c
+  Folder: PATCH_v2_1-2UPDATE_PM_OPP_add_non-OF_versions_of_dev_pm_opp_	   2679
+From foo@bar  Fri Apr 29 14:53:54 2016
+  Folder: .mbox								   8058
+From vireshk  Fri Apr 29 14:53:10 2016
+ Subject: [PATCH v2 1/2][UPDATE] PM / OPP: add non-OF versions of dev_pm_opp_{c
+  Folder: PATCH_v2_1-2UPDATE_PM_OPP_add_non-OF_versions_of_dev_pm_opp_	   2679
+From foo@bar  Fri Apr 29 14:54:35 2016
+  Folder: .mbox								   8058
+From vireshk  Thu May  5 14:34:39 2016
+ Subject: [PATCH v8 01/12] SW-2847: gpbridge: implement gpbridge "bus" logic
+  Folder: PATCH_v8_01-12_SW-2847_gpbridge_implement_gpbridge_bus_logic	  18362
+From vireshk  Thu May  5 14:35:44 2016
+ Subject: [PATCH v8 02/12] SW-2847: gpbridge: Add gpbridge driver init/exit  he
+  Folder: PATCH_v8_02-12_SW-2847_gpbridge_Add_gpbridge_driver_init-exi	   6295
+From vireshk  Thu May  5 14:35:45 2016
+ Subject: [PATCH v8 03/12] SW-2847: connection: export  gb_connection_disable_r
+  Folder: PATCH_v8_03-12_SW-2847_connection_export_gb_connection_disab	   5923
+From vireshk  Thu May  5 14:35:45 2016
+ Subject: [PATCH v8 05/12] SW-2847: PWM: convert to a gpbridge driver
+  Folder: PATCH_v8_05-12_SW-2847_PWM_convert_to_a_gpbridge_driver.mbox	  12980
+From vireshk  Thu May  5 14:35:46 2016
+ Subject: [PATCH v8 04/12] SW-2847: UART: convert to a gpbridge driver
+  Folder: PATCH_v8_04-12_SW-2847_UART_convert_to_a_gpbridge_driver.mbo	  19688
+From vireshk  Thu May  5 14:35:47 2016
+ Subject: [PATCH v8 06/12] SW-2847: I2C: convert to a gpbridge driver
+  Folder: PATCH_v8_06-12_SW-2847_I2C_convert_to_a_gpbridge_driver.mbox	  14829
+From vireshk  Thu May  5 14:35:48 2016
+ Subject: [PATCH v8 07/12] SW-2847: GPIO: convert to a gpbridge driver
+  Folder: PATCH_v8_07-12_SW-2847_GPIO_convert_to_a_gpbridge_driver.mbo	  19243
+From vireshk  Thu May  5 14:35:48 2016
+ Subject: [PATCH v8 08/12] SW-2847: SDIO: convert to a gpbridge driver
+  Folder: PATCH_v8_08-12_SW-2847_SDIO_convert_to_a_gpbridge_driver.mbo	  15197
+From vireshk  Thu May  5 14:36:54 2016
+ Subject: [PATCH v8 09/12] SW-2847: SPI: convert to a gpbridge driver
+  Folder: PATCH_v8_09-12_SW-2847_SPI_convert_to_a_gpbridge_driver.mbox	  14424
+From vireshk  Thu May  5 14:36:55 2016
+ Subject: [PATCH v8 10/12] SW-2847: USB: convert to a gpbridge driver
+  Folder: PATCH_v8_10-12_SW-2847_USB_convert_to_a_gpbridge_driver.mbox	  14514
+From vireshk  Thu May  5 14:36:56 2016
+ Subject: [PATCH v8 11/12] SW-2847: Documentation: Add sysfs information about 
+  Folder: PATCH_v8_11-12_SW-2847_Documentation_Add_sysfs_information_a	   6322
+From vireshk  Thu May  5 14:34:40 2016
+ Subject: [PATCH v8 12/12] SW-2700: uart: Kill reference_count hack
+  Folder: PATCH_v8_12-12_SW-2700_uart_Kill_reference_count_hack.mbox	   6707
+From vireshk  Fri Apr 22 08:28:27 2016
+ Subject: [PATCH] SW-3511: Define Component Authentication Protocol
+  Folder: PATCH_SW-3511_Define_Component_Authentication_Protocol.mbox	  39048
+From vireshk  Wed Apr 20 08:58:22 2016
+ Subject: [RFC 1/3] Revert "SW-4096: arche-platform: Power-off unipro subsystem
+  Folder: RFC_1-3_Revert_SW-4096_arche-platform_Power-off_unipro_subsy	   6166
+From vireshk  Wed Apr 20 08:58:23 2016
+ Subject: [RFC 2/3] Revert "SW-4096: svc watchdog: Disable watchdog upon enteri
+  Folder: RFC_2-3_Revert_SW-4096_svc_watchdog_Disable_watchdog_upon_en	   6256
+From vireshk  Wed Apr 20 08:58:24 2016
+ Subject: [RFC 3/3] SW-4096: arche-platform: Add pm suspend resume ops
+  Folder: RFC_3-3_SW-4096_arche-platform_Add_pm_suspend_resume_ops.mbo	   8629
+From vireshk  Sat May  7 11:14:58 2016
+ Subject: [RFC 2/5] SW-1151: greybus: bundle: add bundle pm support
+  Folder: RFC_2-5_SW-1151_greybus_bundle_add_bundle_pm_support.mbox	   8732
+From vireshk  Sat May  7 11:14:59 2016
+ Subject: [RFC 3/5] SW-1151: greybus: control: add pm runtime support
+  Folder: RFC_3-5_SW-1151_greybus_control_add_pm_runtime_support.mbox	   7658
+From vireshk  Sat May  7 11:15:01 2016
+ Subject: [RFC 5/5] SW-1151: greybus: audio: add pm runtime support
+  Folder: RFC_5-5_SW-1151_greybus_audio_add_pm_runtime_support.mbox	   8822
+From vireshk  Sat May  7 11:15:00 2016
+ Subject: [RFC 4/5] SW-1151: greybus: interface: add pm runtime support
+  Folder: RFC_4-5_SW-1151_greybus_interface_add_pm_runtime_support.mbo	  13051
+From vireshk  Sat May  7 11:14:59 2016
+ Subject: [RFC 1/5] SW-1151: greybus: add pm runtime support
+  Folder: RFC_1-5_SW-1151_greybus_add_pm_runtime_support.mbox		  21483
+From vireshk  Fri May 13 11:27:04 2016
+ Subject: [PATCH V9 0/8] Greybus: Firmware Protocols
+  Folder: PATCH_V9_0-8_Greybus_Firmware_Protocols.mbox			   7172
+From vireshk  Sun May 15 22:57:42 2016
+ Subject: [JIRA] (SW-5363) FDK shouldn't enforce name of the .tftf and .ffff  p
+  Folder: JIRA_SW-5363_FDK_shouldn't_enforce_name_of_the_.tftf_and_.ff	  28156
+From vireshk  Sat May 14 23:29:15 2016
+ Subject: [PATCH 4/5] cpufreq: Split cpufreq_governor() into simpler functions
+  Folder: PATCH_4-5_cpufreq_Split_cpufreq_governor__into_simpler_funct	   8699
+From vireshk  Sat May 14 23:29:17 2016
+ Subject: [PATCH 3/5] cpufreq: governor: Simplify performance and powersave gov
+  Folder: PATCH_3-5_cpufreq_governor_Simplify_performance_and_powersav	   4154
+From vireshk  Sat May 14 23:29:18 2016
+ Subject: [PATCH 2/5] cpufreq: governor: Check transition latecy at init time o
+  Folder: PATCH_2-5_cpufreq_governor_Check_transition_latecy_at_init_t	   3860
+From vireshk  Sat May 14 23:29:19 2016
+ Subject: [PATCH 1/5] cpufreq: governor: CPUFREQ_GOV_LIMITS never fails
+  Folder: PATCH_1-5_cpufreq_governor_CPUFREQ_GOV_LIMITS_never_fails.mb	   3605
+From vireshk  Sat May 14 23:29:16 2016
+ Subject: [PATCH 5/5] cpufreq: governor: Get rid of governor events
+  Folder: PATCH_5-5_cpufreq_governor_Get_rid_of_governor_events.mbox	  20473
+From vireshk  Fri May 13 07:25:23 2016
+ Subject: [PATCH 1/2] cpufreq: governor: CPUFREQ_GOV_POLICY_EXIT never fails
+  Folder: PATCH_1-2_cpufreq_governor_CPUFREQ_GOV_POLICY_EXIT_never_fai	   4876
+From vireshk  Fri May 13 07:25:24 2016
+ Subject: [PATCH 2/2] cpufreq: governor: CPUFREQ_GOV_STOP never fails
+  Folder: PATCH_2-2_cpufreq_governor_CPUFREQ_GOV_STOP_never_fails.mbox	   5260
+From vireshk  Thu May 19 07:19:02 2016
+ Subject: [PATCH] cpufreq: Drop the 'initialized' field from struct cpufreq_gov
+  Folder: PATCH_cpufreq_Drop_the_'initialized'_field_from_struct_cpufr	  10302
+From vireshk  Wed May 25 07:20:35 2016
+ Subject: [PATCH] SW-5494: Fix loopback app after rename to gpphy
+  Folder: PATCH_SW-5494_Fix_loopback_app_after_rename_to_gpphy.mbox	  11866
+From vireshk  Thu May 26 16:53:58 2016
+ Subject: [greybus-spec][PATCH v3] SW-5128: hardware model: define the Bundle p
+  Folder: greybus-specPATCH_v3_SW-5128_hardware_model_define_the_Bundl	   9999
+From vireshk  Wed May 11 08:23:41 2016
+ Subject: [RFC V2 1/4] SW-1151: greybus: core: config pm runtime
+  Folder: RFC_V2_1-4_SW-1151_greybus_core_config_pm_runtime.mbox	  14071
+From vireshk  Wed May 11 08:23:44 2016
+ Subject: [RFC V2 3/4] SW-1151: greybus: interface: add pm runtime support
+  Folder: RFC_V2_3-4_SW-1151_greybus_interface_add_pm_runtime_support.	  13235
+From vireshk  Wed May 11 08:23:43 2016
+ Subject: [RFC V2 4/4] SW-1151: greybus: audio: add pm runtime support
+  Folder: RFC_V2_4-4_SW-1151_greybus_audio_add_pm_runtime_support.mbox	   7472
+From vireshk  Wed May 11 08:23:42 2016
+ Subject: [RFC V2 2/4] SW-1151: greybus: bundle: add bundle pm support
+  Folder: RFC_V2_2-4_SW-1151_greybus_bundle_add_bundle_pm_support.mbox	  10824
+From vireshk  Wed Jun  1 16:05:26 2016
+ Subject: [PATCH 0/8] cpufreq: cleanups and reorganization
+  Folder: PATCH_0-8_cpufreq_cleanups_and_reorganization.mbox		   2734
+From vireshk  Wed Jun  1 16:10:58 2016
+ Subject: [PATCH V2 0/2] cpufreq: Use sorted frequency tables
+  Folder: PATCH_V2_0-2_cpufreq_Use_sorted_frequency_tables.mbox		   2771
+From vireshk  Thu Jun  2 19:35:46 2016
+ Subject: [PATCH V2 0/6] cpufreq: cleanups and reorganization
+  Folder: PATCH_V2_0-6_cpufreq_cleanups_and_reorganization.mbox		   2602
+From vireshk  Fri Jun  3 10:59:05 2016
+ Subject: [PATCH V3 0/8] cpufreq: cleanups and reorganization
+  Folder: PATCH_V3_0-8_cpufreq_cleanups_and_reorganization.mbox		   2702
+From vireshk  Fri Jun  3 10:59:05 2016
+ Subject: [PATCH V3 0/8] cpufreq: cleanups and reorganization
+  Folder: PATCH_V3_0-8_cpufreq_cleanups_and_reorganization.mbox		   2702
+From vireshk  Thu Jun  2 19:49:40 2016
+ Subject: [PATCH 00/11] cpufreq: Keep policy->freq_table sorted
+  Folder: PATCH_00-11_cpufreq_Keep_policy->freq_table_sorted.mbox	   4501
+From vireshk  Wed Apr 20 08:58:22 2016
+ Subject: [RFC 1/3] Revert "SW-4096: arche-platform: Power-off unipro subsystem
+  Folder: RFC_1-3_Revert_SW-4096_arche-platform_Power-off_unipro_subsy	   6166
+From vireshk  Wed Apr 20 08:58:22 2016
+ Subject: [RFC 1/3] Revert "SW-4096: arche-platform: Power-off unipro subsystem
+  Folder: RFC_1-3_Revert_SW-4096_arche-platform_Power-off_unipro_subsy	   6166
+From vireshk  Wed Apr 20 08:58:23 2016
+ Subject: [RFC 2/3] Revert "SW-4096: svc watchdog: Disable watchdog upon enteri
+  Folder: RFC_2-3_Revert_SW-4096_svc_watchdog_Disable_watchdog_upon_en	   6256
+From vireshk  Wed Apr 20 08:58:24 2016
+ Subject: [RFC 3/3] SW-4096: arche-platform: Add pm suspend resume ops
+  Folder: RFC_3-3_SW-4096_arche-platform_Add_pm_suspend_resume_ops.mbo	   8629
+From vireshk  Sat Jun 11 07:46:38 2016
+ Subject: Re: firmware protocol issue
+  Folder: Re_firmware_protocol_issue.mbox				   8106
+From vireshk  Sat Jun 11 07:46:38 2016
+ Subject: Re: firmware protocol issue
+  Folder: Re_firmware_protocol_issue.mbox				   8106
+From vireshk  Thu Jun 16 08:00:09 2016
+ Subject: [PATCH 1/3] SW-6135: timesync: Fix transitions to the INACTIVE state
+  Folder: PATCH_1-3_SW-6135_timesync_Fix_transitions_to_the_INACTIVE_s	   6832
+From vireshk  Thu Jun 16 08:00:10 2016
+ Subject: [PATCH 2/3] SW-6135: timesync: Rework timesync removal serialization 
+  Folder: PATCH_2-3_SW-6135_timesync_Rework_timesync_removal_serializa	   7262
+From vireshk  Fri May 27 10:28:23 2016
+ Subject: [RFC V2] SW-5652: Documentation: Add new syfs file 'power_state' for 
+  Folder: RFC_V2_SW-5652_Documentation_Add_new_syfs_file_'power_state'	   2978
+From vireshk  Fri Jun 24 07:58:50 2016
+ Subject: [PATCH] SW-6595: connection: switch to using spin_lock_irqsave/spin_l
+  Folder: PATCH_SW-6595_connection_switch_to_using_spin_lock_irqsave-s	  10387

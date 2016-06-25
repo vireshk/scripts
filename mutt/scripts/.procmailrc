@@ -24,7 +24,7 @@ ara/jira
 
 # me
 :0:
-* ^(From|To|Cc):.*(viresh\.kumar@linaro\.org|viresh\.nitj@gmail\.com|vireshk@kernel\.org|viresh\.linux@gmail\.com|kumar_viresh@projectara\.com)
+* ^(From|To|Cc):.*(viresh\.kumar@linaro\.org|viresh\.nitj@gmail\.com|vireshk@kernel\.org|viresh\.linux@gmail\.com|kumar_viresh@projectara\.com|viresh\.kumar@linaro\.com)
 me
 #
 # me - spear-heroes 
@@ -41,7 +41,7 @@ ara/patches
 
 # ARA:
 :0:
-* ^(From|To|Cc):.*(projectara-software-dev@linaro\.org|project-ara-internal@linaro\.org|ara-all@projectara\.com|linaro@projectara.com|ara-eng-external@google\.com)
+* ^(From|To|Cc):.*(projectara-software-dev@linaro\.org|project-ara-internal@linaro\.org|ara-all@projectara\.com|linaro@projectara.com|ara-eng-external@google\.com|project-ara-security@leaflabs\.com)
 ara/list
 
 # Y2038

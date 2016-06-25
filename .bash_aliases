@@ -8,6 +8,7 @@ umask 002
 export PS1="$ "
 
 # git
+source /home/vireshk/scripts/git_alias
 PATH="/home/vireshk/work/repos/tools/git/contrib/workdir/:$PATH"
 
 # mail
@@ -18,21 +19,25 @@ alias muttman="zcat /usr/share/doc/mutt/manual.txt.gz | sensible-pager"
 PATH="/home/vireshk/work/repos/tools/toolchain/gcc-linaro-4.9-2015.02-x86_64_aarch64-linux-gnu/bin:/home/vireshk/work/repos/tools/toolchain/gcc-linaro-4.9-2015.02-x86_64_arm-linux-gnueabihf/bin:/usr/bin:$PATH"
 
 # Nuttx
+export PFDK="/home/vireshk/work/repos/ara/arche/vendor/google/unipro-firmware"
 PATH="/home/vireshk/work/repos/ara/tools/gcc-arm-none-eabi-4_8-2014q3/bin:$PATH"
-PATH="/home/vireshk/work/repos/ara/manifesto:$PATH"
-PATH="/home/vireshk/work/repos/ara/db3/bin:$PATH"
+PATH="$PFDK/manifesto:$PATH"
 alias nvim="vim -c 'set expandtab' -c 'set shiftwidth=4'"
 
 # gbsim-qemu
 export GBDIR=~/work/repos/ara/greybus
-export GBSIMDIR=~/work/repos/ara/gbsim
+export GBSIMDIR="/home/vireshk/work/repos/ara/arche/vendor/google/arche/tools/gbsim"
+export ARCH_ROOT=~/work/repos/ara/arche/
 export BR2_EXTERNAL=~/work/repos/ara/ara_buildroot_x86_64
-alias myqemu="hara; cd buildroot; qemu-system-x86_64 -M pc -kernel output/images/bzImage -drive file=output/images/rootfs.ext2,if=ide -append \"root=/dev/sda console=ttyS0,115200\" -net nic,model=rtl8139 -net user -nographic -s"
-alias myqemugbsim="hara; cd buildroot; make gbsim-dirclean; make gbsim; make"
-alias myqemugbus="hara; cd buildroot; make greybus-dirclean; make greybus; make"
+alias myqemu="hqemu; qemu-system-x86_64 -M pc -kernel output/images/bzImage -drive file=output/images/rootfs.ext2,if=ide -append \"root=/dev/sda console=ttyS0,115200\" -net nic,model=rtl8139 -net user -nographic -s"
+alias myqemugbsim="hqemu; make gbsim-dirclean; make gbsim; make"
+alias myqemugbus="hqemu; make greybus-dirclean; make greybus; make"
 
 # icdiff
 PATH="/home/vireshk/work/repos/tools/icdiff:$PATH"
+
+#repo
+PATH="/home/vireshk/work/repos/ara/tools/bin:$PATH"
 
 # coccinelle
 # PATH="/home/vireshk/work/repos/tools/cocci-bin:$PATH"
@@ -46,7 +51,6 @@ export GOPATH=~/work/bin/gocode/
 alias msudo="sudo -A"
 alias minstall="msudo apt-get install"
 alias home="cd /home/vireshk/work/repos"
-alias hlng="cd /home/vireshk/work/repos/lng/lng.git"
 alias htools="cd /home/vireshk/work/repos/tools"
 alias htest="cd /home/vireshk/work/repos/tools/test-definitions/"
 alias hjunk="cd /home/vireshk/junk/"
@@ -55,17 +59,13 @@ alias hisol="cd /home/vireshk/work/repos/tools/isolation/"
 alias hwork="cd /home/vireshk/work/repos/devel/linux/"
 alias hmodule="cd /home/vireshk/work/repos/tools/module/"
 
-#alias proxy='export http_proxy=http://viresh:@lps5.dlh.st.com:80'
-#alias sproxy='export https_proxy=https://viresh:@lps5.dlh.st.com:80'
-
 updatepkglist() { echo "$*" >> ~/scripts/pkglist-install; }
 
-source /home/vireshk/scripts/git_alias
 alias linarogit='ssh viresh.kumar@git.linaro.org'
 alias sshbbone="ssh root@192.168.0.4"
 scpexynosgbus() { cd /home/vireshk/work/repos/ara/greybus/; scp *.ko root@192.168.0.$1:/home/linaro/greybus; }
 alias sshlinaro='echo "scp test.txt  viresh.kumar@git.linaro.org:/home/vireshk/work"'
-alias lmc="echo sudo -A linaro-media-create --mmc /dev/sdb --dev arndale --hwpack-force-yes --hwpack /home/vireshk/work/boards/arndale/hwpack_linaro-arndale_20140417-630_armhf_supported.tar.gz --binary /home/vireshk/work/rootfs/linaro/linaro-saucy-developer-20140410-652.tar.gz"
+alias lmc="echo msudo -A linaro-media-create --mmc /dev/sdb --dev arndale --hwpack-force-yes --hwpack /home/vireshk/work/boards/arndale/hwpack_linaro-arndale_20140417-630_armhf_supported.tar.gz --binary /home/vireshk/work/rootfs/linaro/linaro-saucy-developer-20140410-652.tar.gz"
 
 #get scanner URI "hp-makeuri 192.168.1.105"
 alias mscan="xsane hpaio:/net/Deskjet_4510_series?ip=192.168.0.8"
@@ -86,19 +86,16 @@ alias build='$vcompile build'
 alias dtb='$vcompile dtb'
 alias dtbs='$vcompile dtbs'
 alias lbuild='$vcompile lbuild'
-alias testlinaro='lbuild tc2 ubuntu noblconf; lbuild tc2; build x86'
-alias aramodule='make C=2 -C /home/vireshk/work/repos/ara/bmarvell M=`pwd` ARCH=arm64 CROSS_COMPILE="ccache aarch64-linux-gnu-" modules CONFIG_DEBUG_SECTION_MISMATCH=y'
+
+alias aramodule='make -C /home/vireshk/work/repos/ara/arche/out/target/product/arche/obj/KERNEL_OBJ M=`pwd` ARCH=arm64 CROSS_COMPILE=/home/vireshk/work/repos/ara/arche/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android- KCFLAGS=-mno-android'
 alias aramodulee='make -C /home/vireshk/work/repos/devel/bexynos M=`pwd` ARCH=arm CROSS_COMPILE="arm-linux-gnueabihf-" modules'
-#alias aramodulee='make C=2 -C /home/vireshk/work/repos/devel/bexynos M=`pwd` ARCH=arm CROSS_COMPILE="arm-linux-gnueabihf-" modules CONFIG_DEBUG_SECTION_MISMATCH=y'
-alias aramodulex='make C=2 CROSS_COMPILE= CONFIG_DEBUG_SECTION_MISMATCH=y'
+alias aramodulex='make C=2 CROSS_COMPILE= CONFIG_DEBUG_SECTION_MISMATCH=y check'
 alias arainsmod="msudo insmod greybus.ko; msudo insmod gb-phy.ko; msudo insmod gb-es1.ko"
 alias ararmmod=" msudo rmmod gb_es1; msudo rmmod gb_phy; msudo rmmod greybus;"
-alias aranuttx="cd nuttx; make distclean; cd tools; ./configure.sh bdb/apb1; cd ../; make; cd ../"
-#alias testlinaro='lbuild tc2; lbuild u85; build x86'
+alias aranuttx="hnuttx; cd nuttx; make distclean; cd tools; ./configure.sh bdb/apb1; cd ../; make; cd ../"
 
-alias cptc2='cp ../btc2/arch/arm/boot/zImage /media/vireshk/VEMSD/SOFTWARE/kernel.bin; cp ../btc2/arch/arm/boot/dts/vexpress-v2p-ca15_a7.dtb /media/vireshk/VEMSD/SOFTWARE/tc2.dtb; sync'
 alias cppanda='cp ../bpanda/arch/arm/boot/uImage /media/viresh/boot/uImage; cp ../bpanda/arch/arm/boot/omap4-panda.dtb /media/viresh/boot/board.dtb; sync'
-alias cppandaa='cppanda; module panda; sudo make ARCH=arm O=../bpanda INSTALL_MOD_PATH=/media/viresh/rootfs/ modules_install; sudo make ARCH=arm O=../bpanda INSTALL_FW_PATH=/media/viresh/rootfs/lib/firmware/ firmware_install; sync'
+alias cppandaa='cppanda; module panda; msudo make ARCH=arm O=../bpanda INSTALL_MOD_PATH=/media/viresh/rootfs/ modules_install; msudo make ARCH=arm O=../bpanda INSTALL_FW_PATH=/media/viresh/rootfs/lib/firmware/ firmware_install; sync'
 alias bkpexynos='cp /media/viresh/boot/uImage /media/viresh/boot/uImage_bkp; cp /media/viresh/boot/board.dtb /media/viresh/boot/board_bkp.dtb; sync'
 alias restoreexynos='cp /media/viresh/boot/uImage_bkp /media/viresh/boot/uImage; cp /media/viresh/boot/board_bkp.dtb /media/viresh/boot/board.dtb; sync'
 alias cpexynos='bkpexynos; cp ../bexynos/arch/arm/boot/uImage /media/viresh/boot/uImage; cp ../bexynos/arch/arm/boot/dts/exynos5250-arndale.dtb /media/viresh/boot/board.dtb; sync'
@@ -114,31 +111,26 @@ alias imagemyx86='make O=../bx86 CROSS_COMPILE=ccache -j \`getconf _NPROCESSORS_
 alias imagemyx86deb='make O=../bx86 CROSS_COMPILE=ccache -j \`getconf _NPROCESSORS_ONLN\` deb-pkg LOCALVERSION=-custom'
 
 #Compiling module
-alias makemod='make clean;make -C ~/work/kernel/mywork/btc2/ M=\`pwd\` ARCH=arm modules'
-
-alias installx86='make O=../bx86 CROSS_COMPILE=ccache -j \`getconf _NPROCESSORS_ONLN\`  LOCALVERSION=-custom > /dev/null; sudo -A make O=../bx86 CROSS_COMPILE=ccache -j \`getconf _NPROCESSORS_ONLN\`  LOCALVERSION=-custom modules_install; sudo -A make O=../bx86 CROSS_COMPILE=ccache -j \`getconf _NPROCESSORS_ONLN\`  LOCALVERSION=-custom install'
+alias installx86='make O=../bx86 CROSS_COMPILE=ccache -j \`getconf _NPROCESSORS_ONLN\`  LOCALVERSION=-custom > /dev/null; msudo -A make O=../bx86 CROSS_COMPILE=ccache -j \`getconf _NPROCESSORS_ONLN\`  LOCALVERSION=-custom modules_install; msudo -A make O=../bx86 CROSS_COMPILE=ccache -j \`getconf _NPROCESSORS_ONLN\`  LOCALVERSION=-custom install'
 
 #fixes
 alias fixsound1="pulseaudio -k"
 alias fixsound2="pactl load-module module-bluetooth-discover"
 alias fixmail="~/scripts/mailvialinaro.sh"
-alias fixmouse="sudo -A rmmod usbhid && sudo modprobe usbhid"
-alias fixvbox="sudo -A /etc/init.d/vboxdrv setup"
+alias fixmouse="msudo -A rmmod usbhid && msudo modprobe usbhid"
+alias fixvbox="msudo -A /etc/init.d/vboxdrv setup"
 
 #others
-#alias uprvi="sudo /home/vireshk/work/utils/ARM/DS-5/bin/rviusbserver"
+#alias uprvi="msudo /home/vireshk/work/utils/ARM/DS-5/bin/rviusbserver"
 #alias utorrent="utserver -settingspath /home/vireshk/tools/utorrent-server-v3_0/"
 
-#wine
-alias ie6="~/.wine/drive_c/Program\ Files\ \(x86\)/Internet\ Explorer/iexplore.exe"
-alias picasa="~/.wine/drive_c/Program\ Files\ \(x86\)/Google/Picasa3/Picasa3.exe"
 scpfrom() { scp -r root@10.162.5.15:/work/trace/$1 /home/vireshk/junk; }
 
 alias startvnc="vncviewer 10.162.5.156:1"
 alias sshminicom="ssh user@10.162.5.156"
 alias mypicupload="trickle -s -u 2048 -d 2048 firefox"
 alias mydump="arm-linux-gnueabihf-objdump -r -S -l --disassemble"
-mymini() { sudo -A minicom -w panda -D /dev/ttyUSB$1; }
+mymini() { msudo -A minicom -w panda -D /dev/ttyUSB$1; }
 
 # ccache
 export USE_CCACHE=1
@@ -147,41 +139,51 @@ alias myfetch="fetchmail -d 60 -L ~/.fetchmaillog"
 
 # ARA
 alias hara="cd /home/vireshk/work/repos/ara"
-alias hdb3="cd /home/vireshk/work/repos/ara/db3/kernel-only"
 alias hgbus="cd /home/vireshk/work/repos/ara/greybus/"
 alias hgspec="cd /home/vireshk/work/repos/ara/greybus-spec/"
-alias hgbsim="cd /home/vireshk/work/repos/ara/gbsim/"
-alias hmfesto="cd /home/vireshk/work/repos/ara/manifesto/"
-alias hbootrom="cd /home/vireshk/work/repos/ara/bootrom"
-alias hnuttx="cd /home/vireshk/work/repos/ara/nuttx/"
 alias hqemu="cd /home/vireshk/work/repos/ara/buildroot"
 
-export BOOTROM_TOOLS=~/work/repos/ara/bootrom-tools
+alias hfdko="cd /home/vireshk/work/repos/ara/ara-fdk"
+alias hmfestoo="hfdk; cd manifesto"
+alias hbootromo="hfdk; cd bootrom"
+alias hnuttxo="hfdk; cd nuttx"
+
+alias hfdk="cd $PFDK"
+alias hfdkr="cd $PFDK/ara-module-fdk"
+alias hmfesto="hfdk; cd manifesto"
+alias hbootrom="hfdk; cd bootrom"
+alias hnuttx="hfdk; cd nuttx"
+alias hgbsim="cd $GBSIMDIR"
+
+alias harche="cd /home/vireshk/work/repos/ara/arche"
+alias harchegbus="cd /home/vireshk/work/repos/ara/arche/external/greybus"
+alias harchek="cd /home/vireshk/work/repos/ara/arche/kernel/arche/"
+
+#export BOOTROM_TOOLS=~/work/repos/ara/ara-fdk/bootrom-tools/
 alias findtftf="grep Reset_Handler ~/work/repos/ara/nuttx/build/ara-bridge-debug-generic/image/System.map | cut -f 1 -d \" \""
+alias findtftfs2l="grep Reset_Handler $PFDK/bootrom/build/System.map | tr -s \" \" | cut -d \" \" -f 2"
 
 # firmware
-alias flashapb1="hnuttx; truncate -s 2M build/ara-bridge-es2-debug-apbridgea/image/nuttx.bin; msudo flashrom  --programmer dediprog -w build/ara-bridge-es2-debug-apbridgea/image/nuttx.bin;"
-alias flashapb2="hnuttx; truncate -s 2M build/ara-bridge-es2-debug-generic/image/nuttx.bin; msudo flashrom  --programmer dediprog -w build/ara-bridge-es2-debug-generic/image/nuttx.bin;"
-alias flashbootrom="hbootrom; truncate -s 2M build/bootrom.bin; msudo flashrom  --programmer dediprog -w build/bootrom.bin;"
-alias flashsvcjtag="hnuttx; arm-none-eabi-gdb build/ara-svc-bdb2a/image/nuttx"
-flashsvc() { hnuttx; msudo stm32ld /dev/ttyUSB$1 115200 build/ara-svc-bdb2a/image/nuttx; }
-alias jtagbdb="JLinkGDBServer -device STM32F417IG"
+alias buildarchek="harche; rm -f out/target/product/arche/obj/KERNEL_OBJ/vmlinux*; source build/envsetup.sh; lunch full_arche-userdebug; make -j8 bootimage"
+alias buildarchekl="harche; source build/envsetup.sh; lunch full_arche-userdebug; make -j8 bootimage"
+alias buildarche="harche; ~/scripts/ara_make.sh greybus bootimage"
 
-#db3
-alias flashdb3="hdb3; msudo fastboot flash boot out/dist/newboot.img; msudo fastboot reboot"
-#alias flashnuttxhdb3="hnuttx; adb push build/ara-svc-db3/image/nuttx.bin /data/nuttx-svc-db3.bin; adb push build/ara-bridge-es2-debug-apbridgea/image/nuttx.bin /data/nuttx-apb1-db3.bin; hdb3; adb push ../nop-loop.bin /data/nuttx-apb2-db3.bin"
-#alias flashnuttxhdb3apb2="hnuttx; adb push build/ara-svc-db3/image/nuttx.bin /data/nuttx-svc-db3.bin; adb push build/ara-bridge-es2-debug-apbridgea/image/nuttx.bin /data/nuttx-apb1-db3.bin; adb push build/ara-bridge-es2-debug-generic/image/nuttx.bin /data/nuttx-apb2-db3.bin; hdb3; adb push ../scripts/update-nuttx.sh /data/update-nuttx.sh"
-alias flashnuttxhdb3="hnuttx; adb push build/ara-svc-db3/image/nuttx.bin /data/nuttx-svc-db3.bin; adb push build/ara-bridge-debug-apbridgea/image/nuttx.bin /data/nuttx-apb1-db3.bin; hdb3; adb push ../nop-loop.bin /data/nuttx-apb2-db3.bin"
-alias flashnuttxhdb3apb2="hnuttx; adb push build/ara-svc-db3/image/nuttx.bin /data/nuttx-svc-db3.bin; adb push build/ara-bridge-debug-apbridgea/image/nuttx.bin /data/nuttx-apb1-db3.bin; adb push build/ara-bridge-debug-generic/image/nuttx.bin /data/nuttx-apb2-db3.bin; hdb3; adb push ../scripts/update-nuttx.sh /data/update-nuttx.sh"
-alias flashdb3bootrom="hbootrom; truncate -s 2M build/bootrom.bin; adb push build/bootrom.bin /data/nuttx-apb2-db3.bin"
-alias flashtftfdb3="hnuttx; $BOOTROM_TOOLS/create-tftf -v --elf build/ara-bridge-debug-generic/image/nuttx --no-hamming-balance --unipro-mfg 0x0126 --unipro-pid 0x1000 --ara-vid 0x0123 --ara-pid 0x0456 --ara-stage 2 --start 0x\`findtftf\`; adb push ara*.tftf /data/firmware; rm ara*.tftf"
-#alias flashtftfdb3="hnuttx; $BOOTROM_TOOLS/create-tftf -v --elf build/ara-bridge-debug-generic/image/nuttx --no-hamming-balance --unipro-mfg 0x0126 --unipro-pid 0x1000 --ara-vid 0xfedc0123 --ara-pid 0xfba90456 --ara-stage 2 --start 0x\`findtftf\`; adb push ara*.tftf /data/firmware; rm ara*.tftf"
-alias aramoduledb3='make C=2 -j16 CROSS_COMPILE=/home/vireshk/work/repos/ara/db3/kernel-only/aarch64-linux-android-4.9/bin/aarch64-linux-android- ARCH=arm64 KERNELDIR=/home/vireshk/work/repos/ara/db3/kernel-only/out/arche-6.0 EXTRA_CFLAGS+=-fno-pic CONFIG_DEBUG_SECTION_MISMATCH=y'
-#alias pushmodulesdb3="hgbus; adb push greybus.ko /data/modules/; adb push gb-phy.ko /data/modules/;adb push gb-es2.ko /data/modules/; adb push gb-db3.ko /data/modules/; hdb3; adb push ../scripts/aramodule /data/aramodule"
-alias pushmodulesdb3="hgbus; for i in \`ls *.ko\`; do adb push \$i /data/modules/; done; adb push lsgb /; hdb3; adb push ../scripts/aramodule /data/aramodule"
+alias buildarchea="harche; source build/envsetup.sh; lunch full_arche-userdebug; make -j16"
+
+alias flasharche="harche; msudo fastboot flash boot out/target/product/arche/boot.img; msudo fastboot reboot"
+alias aramodulearche='make C=2 -j16 CROSS_COMPILE=/home/vireshk/work/repos/ara/arche/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android- ARCH=arm64 KERNELDIR=/home/vireshk/work/repos/ara/arche/out/target/product/arche/obj/KERNEL_OBJ/ EXTRA_CFLAGS+=-fno-pic CONFIG_DEBUG_SECTION_MISMATCH=y'
+
+alias makes2lpkg="hbootrom; make clean; ./configure; make APPLICATION=s2loader; $BOOTROM_TOOLS/bin/create-tftf -v --elf build/bootrom --unipro-mfg 0x0126 --unipro-pid 0x1002 --ara-vid 0xfffe0001 --ara-pid 0xff980067 --type s2fw --start \`findtftfs2l\`;"
+alias makes2lpkgaudio="hbootrom; make clean; ./configure; make APPLICATION=s2loader; $BOOTROM_TOOLS/bin/create-tftf -v --elf build/bootrom --unipro-mfg 0x0126 --unipro-pid 0x1002 --ara-vid 0xfffe0001 --ara-pid 0xffed0012 --type s2fw --start \`findtftfs2l\`;"
+
+myeject() { adb shell "echo $1 > /sys/bus/greybus/devices/1-svc/intf_eject"; }
 
 PATH="/usr/lib/ccache:$PATH"
 
+# gitolite sync
+alias gitolitesyncko="hwork; ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/linux.git linus; ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/linux.git next; ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/pm.git linus; ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/pm.git next;"
+alias gitolitesynclo="hwork; ssh git@git.linaro.org track fetch people/viresh.kumar/linux lnext; ssh git@git.linaro.org track fetch people/viresh.kumar/linux linus; ssh git@git.linaro.org track fetch people/viresh.kumar/mylinux lnext; ssh git@git.linaro.org track fetch people/viresh.kumar/mylinux linus; ssh git@git.linaro.org track fetch people/viresh.kumar/backup/linux lnext; ssh git@git.linaro.org track fetch people/viresh.kumar/backup/linux linus;"
+
 # go to linux on shell startup
 hwork
-clear
+#clear

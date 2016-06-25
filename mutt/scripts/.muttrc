@@ -23,7 +23,7 @@ set move=no			# Don't move mail from the spool.
 # Watch these mailboxes for new mail:
 # mailboxes ! +sent
 mailboxes +me +ara +ara/patches +ara/list +ara/jira \
-	+linaro +inbox +linaro/kernel +linaro/y2038 +linaro/dev +linaro/payslip +linaro/build +linaro/kernelci +linaro/moderator \
+	+inbox +linaro +linaro/kernel +linaro/y2038 +linaro/dev +linaro/payslip +linaro/build +linaro/kernelci +linaro/moderator \
 	+linaro/everyone +linaro/wiki +linaro/android +linaro/announce +linaro/lng +linaro/pmwg \
 	+linaro/releases +linaro/switchers +linaro/toolchain +linaro/tech +linaro/conf \
 	+sent +draft +lwn +linux-pm +korg
@@ -212,7 +212,8 @@ set beep_new             # beep on new message
 #macro index     ",s"    "<pipe-message>(formail -rkt; cat /home/vireshk/mutt/template/ack.tmpl) |vim<enter>"
 
 #======================================================#
-auto_view text/html
+#auto_view text/html
+set mailcap_path = ~/.mutt_mailcap
 
 #======================================================#
 # Contacts
@@ -221,7 +222,7 @@ bind editor <Tab> complete-query
 macro index,pager a "<pipe-message>goobook add<return>" "add the sender address to Google contacts"
 
 #====================3
-# Bacup
+# Backup
 #
 # text/html;                      lynx %s; nametemplate=%s.html
 # text/html;                      lynx -dump %s; nametemplate=%s.html; copiousoutput

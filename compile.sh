@@ -24,6 +24,9 @@ elif [ $2 = s3 ]; then
 elif [ $2 = s6 ]; then
 	dir=../b6xx/
 	cfg=spear6xx_
+elif [ $2 = mvebu ]; then
+	dir=../mvebu/
+	cfg=mvebu_v7_
 elif [ $2 = ep93xx ]; then
 	dir=../ep93xx/
 	cfg=ep93xx_
@@ -54,6 +57,11 @@ elif [ $2 = panda4 ]; then
 elif [ $2 = panda ]; then
 	dir=../bpanda/
 	cfg=omap2plus_
+elif [ $2 = pxa ]; then
+	dir=../pxa/
+	cfg=pxa_
+	IMAGE=uImage
+	FLAGS="LOADADDR=0x40008000"
 elif [ $2 = exynos ]; then
 	dir=../bexynos/
 	cfg=exynos_
@@ -199,7 +207,7 @@ elif [ $1 = "build" -o $1 = "lbuild" ]; then
 elif [ $1 = "dtb" ]; then
 	$isdebug $mk $3".dtb"
 elif [ $1 = "dtbs" ]; then
-	$isdebug $mk dtbs
+	$isdebug $mk W=1 dtbs
 elif [ $1 = "dtimage" ]; then
 	if [ $3 ]; then
 		DTB=$3

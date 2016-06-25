@@ -1,6 +1,6 @@
 #!/bin/bash
 
-RESULT=$(grep -e "Acked-by" -e "Suggested-by:" -e "Reviewed-by:" -e "Signed-off-by:" -e "Tested-by:" -e "Reported-by:" -e "Cc:" -e "Reported-and-tested-by:" $1 | cut -f 2 -d ':')
+RESULT=$(grep -e "^Acked-by" -e "^Suggested-by:" -e "^Reviewed-by:" -e "^Signed-off-by:" -e "^Tested-by:" -e "^Reported-by:" -e "^Cc:" -e "^Reported-and-tested-by:" $1 | cut -f 2 -d ':')
 if [ "$RESULT" != "" ]; then
 	echo "$RESULT"
 fi

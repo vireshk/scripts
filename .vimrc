@@ -171,8 +171,8 @@ au FileType c match error /\s\+$\|\%>80v.\+\|[ ][ ]\+\|\n\n\n\+\|,[^ ]\|^[ ]\+[^
 au FileType c highlight error ctermbg=red guibg=red ctermfg=blue guifg=blue
 au FileType h match error /\s\+$\|\%>80v.\+\|[ ][ ]\+\|\n\n\n\+\|,[^ ]\|^[ ]\+[^\*]\|(\s\+\|\s\+)/
 au FileType h highlight error ctermbg=red guibg=red ctermfg=blue guifg=blue
-au FileType sh match error /\s\+$\|\%>80v.\+\|[ ][ ]\+\|\n\n\n\+\|,[^ ]\|^[ ]\+[^\*]\|(\s\+\|\s\+)/
-au FileType sh highlight error ctermbg=red guibg=red ctermfg=blue guifg=blue
+"au FileType sh match error /\s\+$\|\%>80v.\+\|[ ][ ]\+\|\n\n\n\+\|,[^ ]\|^[ ]\+[^\*]\|(\s\+\|\s\+)/
+"au FileType sh highlight error ctermbg=red guibg=red ctermfg=blue guifg=blue
 set spell spelllang=en_us
 highlight SpellCap term=reverse ctermbg=white gui=undercurl guisp=lightyellow
 
@@ -212,4 +212,5 @@ set guifont=Monospace\ 12
 :let @r = "\nReviewed-by: Viresh Kumar <viresh.kumar@linaro.org>\n"
 :let @s = "\nSigned-off-by: Viresh Kumar <viresh.kumar@linaro.org>\n"
 :let @t = "\nTested-by: Viresh Kumar <viresh.kumar@linaro.org>\n"
+:let @d = "	pr_info(\"%s: %d\\n\", __func__, __LINE__);\n"
 :let @p = "\n-------------------------8<-------------------------\n"

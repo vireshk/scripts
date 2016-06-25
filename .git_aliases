@@ -1,18 +1,14 @@
 alias amit	Amit Kucheria <amit.kucheria@linaro.org>
-alias arvind	Arvind Chauhan <arvind.chauhan@arm.com>
-alias bhat	Srivatsa Bhat <srivatsa@mit.edu>
 alias daniel	Daniel Lezcano <daniel.lezcano@linaro.org>
 alias fw	Frederic Weisbecker <fweisbec@gmail.com>
 alias ingo	Ingo Molnar <mingo@redhat.com>
 alias kevin	Kevin Hilman <khilman@linaro.org>
 alias peterz	Peter Zijlstra <peterz@infradead.org>
-alias preeti	Preeti U Murthy <preeti@linux.vnet.ibm.com>
 alias rafael	Rafael Wysocki <rjw@rjwysocki.net>
 alias tglx	Thomas Gleixner <tglx@linutronix.de>
 alias viresh	Viresh Kumar <viresh.kumar@linaro.org>
 alias greg	Greg Kroah-Hartman <gregkh@linuxfoundation.org>
 alias gregl	Greg Kroah-Hartman <gregkh@google.com>
-alias santosh	Santosh Shukla <santosh.shukla@linaro.org>
 alias alex	Alex Elder <elder@linaro.org>
 alias johan	Johan Hovold <johan@hovoldconsulting.com>
 alias sboyd	Stephen Boyd <sboyd@codeaurora.org>

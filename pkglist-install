@@ -76,3 +76,5 @@ bison
 gperf
 gpm:i386
 libelf-dev
+dwarves
+mscgen

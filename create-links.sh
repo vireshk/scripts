@@ -40,6 +40,7 @@ ln -s ~/all/scripts/.signature ~/.signature
 ln -s ~/all/scripts/.vim ~/.vim
 ln -s ~/all/scripts/.vimrc ~/.vimrc
 ln -s ~/all/criticalinfo/.xchat2 ~/.xchat2
+ln -s ~/all/criticalinfo/hexchat ~/.config/hexchat
 ln -s ~/all/criticalinfo/.goobook_auth.json ~/.goobook_auth.json
 
 # mails

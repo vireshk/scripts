@@ -214,3 +214,47 @@ set guifont=Monospace\ 12
 :let @t = "\nTested-by: Viresh Kumar <viresh.kumar@linaro.org>\n"
 :let @d = "	pr_info(\"%s: %d\\n\", __func__, __LINE__);\n"
 :let @p = "\n-------------------------8<-------------------------\n"
+
+
+
+" Folder specific tab setting
+function! _SetNuttXCodingRules ()
+    " function arguments are vertically aligned
+    setlocal cino=(0
+endfunction
+
+augroup ft_nuttx
+    au!
+    " directory specials
+    au BufNewFile,BufRead *nuttx*  call _SetNuttXCodingRules ()
+    au BufNewFile,BufRead *fdk*    call _SetNuttXCodingRules ()
+augroup END
+
+function! _SetLinuxCodingRules ()
+    " everything is hard tab
+    setlocal shiftwidth=8
+    setlocal tabstop=8
+    setlocal noexpandtab
+    " case labels are not indented
+    setlocal cino=:0
+endfunction
+
+augroup ft_linux
+    au!
+    " directory specials
+"    au BufNewFile,BufRead */linux*      call _SetLinuxCodingRules ()
+"    au BufNewFile,BufRead */klibc*      call _SetLinuxCodingRules ()
+"    au BufNewFile,BufRead */uclibc*     call _SetLinuxCodingRules ()
+"    au BufNewFile,BufRead */musl*       call _SetLinuxCodingRules ()
+"    au BufNewFile,BufRead */external/greybus*  call _SetLinuxCodingRules ()
+"    au BufNewFile,BufRead */zephyr*  call _SetLinuxCodingRules ()
+augroup END
+
+function! _SetMakefile()
+    setlocal noexpandtab                " real tabs for Makefiles
+endfunction
+
+augroup ft_make
+    au!
+    au FileType make call _SetMakefile()
+augroup END

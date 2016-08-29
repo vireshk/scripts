@@ -1,14 +1,15 @@
 # replace all ~/home directories with ours
 # standard directories
-rm -rf ~/Pictures ~/Videos ~/Templates ~/Desktop ~/Downloads ~/Documents ~/Music ~/Public ~/.ssh
-ln -s ~/all/Pictures ~/Pictures
-ln -s ~/all/Videos ~/Videos
-ln -s ~/all/Templates ~/Templates
-ln -s ~/all/Desktop ~/Desktop
-ln -s ~/all/Music ~/Music
-ln -s ~/all/Downloads ~/Downloads
-ln -s ~/all/Documents ~/Documents
-ln -s ~/all/Public ~/Public
+#rm -rf ~/Pictures ~/Videos ~/Templates ~/Desktop ~/Downloads ~/Documents ~/Music ~/Public ~/.ssh
+rm -rf ~/.ssh
+#ln -s ~/all/Pictures ~/Pictures
+#ln -s ~/all/Videos ~/Videos
+#ln -s ~/all/Templates ~/Templates
+#ln -s ~/all/Desktop ~/Desktop
+#ln -s ~/all/Music ~/Music
+#ln -s ~/all/Downloads ~/Downloads
+#ln -s ~/all/Documents ~/Documents
+#ln -s ~/all/Public ~/Public
 
 # my directories
 ln -s ~/all/me ~/me
@@ -53,6 +54,8 @@ ln -s ~/all/scripts/mutt/scripts/.muttrc ~/.muttrc
 
 # minidlna
 sudo ln -s ~/all/scripts/minidlna.conf /etc/minidlna.conf
+
+[ -d ~/.config/autostart ] || mkdir ~/.config/autostart
 
 # autostart
 ln -s ~/all/scripts/autostart/bootup.sh.desktop ~/.config/autostart/bootup.sh.desktop

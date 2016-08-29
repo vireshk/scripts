@@ -109,6 +109,8 @@ check_base_root() {
         assign ARCHE_ROOT ${_script_path}/
     fi
     assign PATH ${_script_path}:${PATH}
+    assign KERNEL_SRC_DIR ${ARCHE_ROOT}/kernel/arche/
+    assign OUTPUT_ARCHE ${ARCHE_ROOT}/out/target/product/arche/
 }
 
 check_options() {
@@ -116,7 +118,7 @@ check_options() {
     while getopts "$optspec" optchar; do
         case "${optchar}" in
             j)
-                if ! [[ "${OPTARG}" =~ ^[0-9]+$ ]]; then 
+                if ! [[ "${OPTARG}" =~ ^[0-9]+$ ]]; then
                     print_die "ERROR: number of make jobs is not a valid number"
                 else
                     make_arg_jobs=${OPTARG}
@@ -187,7 +189,7 @@ check_options() {
     else
 	sub_cmds=${cmd_type}
     fi
-    
+
     print_green "Using the following configuration: \ \n\tcommands: ${sub_cmds}"
 
     [[ -n ${make_arg_jobs} ]] && assign MAKEJOBS $make_arg_jobs && return
@@ -203,12 +205,12 @@ check_options() {
 
 handle_flashboot()
 {
-    [[ -z ${android_build_path} ]] && android_build_path=../arche_${build_number}/target/product/arche/
+    [[ -z ${android_build_path} ]] && android_build_path=images/arche_${build_number}/target/product/arche/
     [[ ! -d ${android_build_path} ]] && print_fatal "Android Build Path not found"
-    
-    cp ./out/target/product/arche/boot.img ${android_build_path}
+
+    cp ${OUTPUT_ARCHE}/boot.img ${android_build_path}
     pushd ${android_build_path} > /dev/null
-    sudo ./flash_all.sh bootchain boot reboot
+    sudo ./flasharche.py --reboot boot
     # this is not working as expected...keep the flash_all
     # python2 sudo ./flasharche.py bootchain boot reboot
     popd > /dev/null
@@ -216,43 +218,43 @@ handle_flashboot()
 
 handle_bootimage()
 {
-KMOD_SIG_ALL=`cat out/target/product/arche/obj/KERNEL_OBJ/.config | grep CONFIG_MODULE_SIG_ALL | cut -d'=' -f2`;
-KMOD_SIG_HASH=`cat out/target/product/arche/obj/KERNEL_OBJ/.config | grep CONFIG_MODULE_SIG_HASH | cut -d'=' -f2 | sed 's/\"//g'`;
+KMOD_SIG_ALL=`cat ${OUTPUT_ARCHE}/obj/KERNEL_OBJ/.config | grep CONFIG_MODULE_SIG_ALL | cut -d'=' -f2`;
+KMOD_SIG_HASH=`cat ${OUTPUT_ARCHE}/obj/KERNEL_OBJ/.config | grep CONFIG_MODULE_SIG_HASH | cut -d'=' -f2 | sed 's/\"//g'`;
 
 if [ \"\$KMOD_SIG_ALL\" = \"y\" ] && [ -n \"\$KMOD_SIG_HASH\" ]; then
-	echo \"Signing kernel module: \" `basename out/target/product/arche/obj/external/greybus/greybus.ko`;
-	MODSECKEY=out/target/product/arche/obj/KERNEL_OBJ/signing_key.priv;
-	MODPUBKEY=out/target/product/arche/obj/KERNEL_OBJ/signing_key.x509;
-	cp out/target/product/arche/obj/external/greybus/greybus.ko out/target/product/arche/obj/external/greybus/greybus.ko.unsigned;
-	perl ./kernel/scripts/sign-file \$KMOD_SIG_HASH \$MODSECKEY \$MODPUBKEY out/target/product/arche/obj/external/greybus/greybus.ko;
+	echo \"Signing kernel module: \" `basename ${OUTPUT_ARCHE}/obj/external/greybus/greybus.ko`;
+	MODSECKEY=${OUTPUT_ARCHE}/obj/KERNEL_OBJ/signing_key.priv;
+	MODPUBKEY=${OUTPUT_ARCHE}/obj/KERNEL_OBJ/signing_key.x509;
+	cp ${OUTPUT_ARCHE}/obj/external/greybus/greybus.ko out/target/product/arche/obj/external/greybus/greybus.ko.unsigned;
+	perl ./kernel/scripts/sign-file \$KMOD_SIG_HASH \$MODSECKEY \$MODPUBKEY ${OUTPUT_ARCHE}/obj/external/greybus/greybus.ko;
 fi;
 
-echo "target Prebuilt: greybus.ko (out/target/product/arche/obj/DLKM/greybus.ko_intermediates/greybus.ko)"
-mkdir -p out/target/product/arche/obj/DLKM/greybus.ko_intermediates/
-out/host/linux-x86/bin/acp -fp out/target/product/arche/obj/external/greybus/greybus.ko out/target/product/arche/obj/DLKM/greybus.ko_intermediates/greybus.ko
+echo "target Prebuilt: greybus.ko (${OUTPUT_ARCHE}/obj/DLKM/greybus.ko_intermediates/greybus.ko)"
+mkdir -p ${OUTPUT_ARCHE}/obj/DLKM/greybus.ko_intermediates/
+out/host/linux-x86/bin/acp -fp ${OUTPUT_ARCHE}/obj/external/greybus/greybus.ko out/target/product/arche/obj/DLKM/greybus.ko_intermediates/greybus.ko
 
-echo "Install: out/target/product/arche/root/lib/modules/greybus.ko"
-mkdir -p out/target/product/arche/root/lib/modules/
-out/host/linux-x86/bin/acp -fp out/target/product/arche/obj/DLKM/greybus.ko_intermediates/greybus.ko out/target/product/arche/root/lib/modules/greybus.ko
-ko=`find out/target/product/arche/obj/external/greybus -type f -name "*.ko"`;\
-for i in $ko; do /home/vireshk/work/repos/ara/arche/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-strip --strip-unneeded $i;\
-mv $i out/target/product/arche/root/lib/modules/; done;
+echo "Install: ${OUTPUT_ARCHE}/root/lib/modules/greybus.ko"
+mkdir -p ${OUTPUT_ARCHE}/root/lib/modules/
+out/host/linux-x86/bin/acp -fp ${OUTPUT_ARCHE}/obj/DLKM/greybus.ko_intermediates/greybus.ko out/target/product/arche/root/lib/modules/greybus.ko
+ko=`find ${ARCHE_ROOT}/external/greybus -type f -name "*.ko"`;\
+for i in $ko; do ${ARCHE_ROOT}/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-strip --strip-unneeded $i;\
+mv $i ${OUTPUT_ARCHE}/root/lib/modules/; done;
 
-echo "Target ram disk: out/target/product/arche/ramdisk.img"
-out/host/linux-x86/bin/mkbootfs -d out/target/product/arche/system out/target/product/arche/root | out/host/linux-x86/bin/minigzip > out/target/product/arche/ramdisk.img
+echo "Target ram disk: ${OUTPUT_ARCHE}/ramdisk.img"
+out/host/linux-x86/bin/mkbootfs -d ${OUTPUT_ARCHE}/system out/target/product/arche/root | out/host/linux-x86/bin/minigzip > out/target/product/arche/ramdisk.img
 
-echo "Target boot image: out/target/product/arche/boot.img"
-out/host/linux-x86/bin/mkbootimg  --kernel out/target/product/arche/kernel --ramdisk out/target/product/arche/ramdisk.img --cmdline "console=ttyHSL0,115200,n8 androidboot.selinux=permissive androidboot.console=ttyHSL0 androidboot.hardware=arche user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 boot_cpus=0-5 firmware_class.path=/data/firmware" --base 0x00000000 --pagesize 4096  --output out/target/product/arche/boot.img
+echo "Target boot image: ${OUTPUT_ARCHE}/boot.img"
+out/host/linux-x86/bin/mkbootimg  --kernel ${OUTPUT_ARCHE}/kernel --ramdisk out/target/product/arche/ramdisk.img --cmdline "console=ttyHSL0,115200,n8 androidboot.selinux=permissive androidboot.console=ttyHSL0 androidboot.hardware=arche user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 boot_cpus=0-5 firmware_class.path=/data/firmware" --base 0x00000000 --pagesize 4096  --output out/target/product/arche/boot.img
 
-out/host/linux-x86/bin/boot_signer /boot out/target/product/arche/boot.img build/target/product/security/verity.pk8 build/target/product/security/verity.x509.pem out/target/product/arche/boot.img
-size=$(for i in out/target/product/arche/boot.img; do stat --format "%s" "$i" | tr -d '\n'; echo +; done; echo 0); total=$(( $( echo "$size" ) )); printname=$(echo -n "out/target/product/arche/boot.img" | tr " " +); img_blocksize=135168; twoblocks=$((img_blocksize * 2)); onepct=$(((((69206016 / 100) - 1) / img_blocksize + 1) * img_blocksize)); reserve=$((twoblocks > onepct ? twoblocks : onepct)); maxsize=$((69206016 - reserve)); echo "$printname maxsize=$maxsize blocksize=$img_blocksize total=$total reserve=$reserve"; if [ "$total" -gt "$maxsize" ]; then echo "error: $printname too large ($total > [69206016 - $reserve])"; false; elif [ "$total" -gt $((maxsize - 32768)) ]; then echo "WARNING: $printname approaching size limit ($total now; limit $maxsize)"; fi 
+out/host/linux-x86/bin/boot_signer /boot ${OUTPUT_ARCHE}/boot.img build/target/product/security/verity.pk8 build/target/product/security/verity.x509.pem out/target/product/arche/boot.img
+size=$(for i in ${OUTPUT_ARCHE}/boot.img; do stat --format "%s" "$i" | tr -d '\n'; echo +; done; echo 0); total=$(( $( echo "$size" ) )); printname=$(echo -n "out/target/product/arche/boot.img" | tr " " +); img_blocksize=135168; twoblocks=$((img_blocksize * 2)); onepct=$(((((69206016 / 100) - 1) / img_blocksize + 1) * img_blocksize)); reserve=$((twoblocks > onepct ? twoblocks : onepct)); maxsize=$((69206016 - reserve)); echo "$printname maxsize=$maxsize blocksize=$img_blocksize total=$total reserve=$reserve"; if [ "$total" -gt "$maxsize" ]; then echo "error: $printname too large ($total > [69206016 - $reserve])"; false; elif [ "$total" -gt $((maxsize - 32768)) ]; then echo "WARNING: $printname approaching size limit ($total now; limit $maxsize)"; fi
 }
 
 make_()
 {
     cmd=$1
 
-    MAKE="make -j ${MAKEJOBS} -C kernel O=../out/target/product/arche/obj/KERNEL_OBJ ARCH=arm64 CROSS_COMPILE=aarch64-linux-android- "
+    MAKE="make -j ${MAKEJOBS} -C kernel/arche O=${OUTPUT_ARCHE}/obj/KERNEL_OBJ ARCH=arm64 CROSS_COMPILE=aarch64-linux-android- "
 
     ${MAKE} ${cmd}
 }
@@ -265,13 +267,18 @@ handle_headers_install()
 
 handle_kernel()
 {
-    [[ -f ./out/target/product/arche/obj/KERNEL_OBJ/.config ]] && make_ "oldconfig" || make_ "arche_defconfig"
+    [[ -f ${OUTPUT_ARCHE}/obj/KERNEL_OBJ/.config ]] && make_ "oldconfig" || make_ "arche_defconfig"
 
     make_ "KCFLAGS=-mno-android"
 
-    echo "target Prebuilt:  (out/target/product/arche/kernel)"
-    mkdir -p out/target/product/arche/
-    out/host/linux-x86/bin/acp -fp out/target/product/arche/obj/KERNEL_OBJ/arch/arm64/boot/Image.gz-dtb out/target/product/arche/kernel
+    echo "target Prebuilt:  (${OUTPUT_ARCHE}/kernel)"
+    mkdir -p ${OUTPUT_ARCHE}/
+    out/host/linux-x86/bin/acp -fp ${OUTPUT_ARCHE}/obj/KERNEL_OBJ/arch/arm64/boot/Image.gz-dtb out/target/product/arche/kernel
+}
+
+handle_menuconfig()
+{
+    make_ "KCFLAGS=-mno-android menuconfig"
 }
 
 handle_modules()
@@ -281,16 +288,16 @@ handle_modules()
 
 handle_modules_install()
 {
-    make -j $MAKEJOBS -C kernel O=../out/target/product/arche/obj/KERNEL_OBJ INSTALL_MOD_PATH=../../system INSTALL_MOD_STRIP=1 ARCH=arm64 CROSS_COMPILE=aarch64-linux-android- modules_install
+    make -j $MAKEJOBS -C ${KERNEL_SRC_DIR} O=${OUTPUT_ARCHE}/obj/KERNEL_OBJ INSTALL_MOD_PATH=../../system INSTALL_MOD_STRIP=1 ARCH=arm64 CROSS_COMPILE=aarch64-linux-android- modules_install
 
 }
 
 handle_greybus()
 {
-    mkdir -p out/target/product/arche/obj/external/greybus
-    cp -f external/greybus/Makefile out/target/product/arche/obj/external/greybus/Kbuild
+    mkdir -p ${OUTPUT_ARCHE}/obj/external/greybus
+    cp -f external/greybus/Makefile ${OUTPUT_ARCHE}/obj/external/greybus/Kbuild
 
-    make -j $MAKEJOBS -C kernel M=../external/greybus O=../out/target/product/arche/obj/KERNEL_OBJ ARCH=arm64 CROSS_COMPILE=aarch64-linux-android- KCFLAGS=-mno-android modules
+    make -j $MAKEJOBS -C ${KERNEL_SRC_DIR} M=${ARCHE_ROOT}/external/greybus O=${OUTPUT_ARCHE}/obj/KERNEL_OBJ ARCH=arm64 CROSS_COMPILE=aarch64-linux-android- KCFLAGS=-mno-android modules
 }
 
 setup_env()

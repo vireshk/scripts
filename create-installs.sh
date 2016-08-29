@@ -9,4 +9,4 @@ sudo ln -s ~/work/repos/devel/bexynos/arch/arm/boot/uImage /tftpboot/bexynos_uIm
 sudo ln -s ~/work/repos/devel/bexynos/arch/arm/boot/dts/exynos5250-arndale.dtb /tftpboot/bexynos.dtb
 
 # Install packages
-pip install -U RBTools
+# pip install -U RBTools

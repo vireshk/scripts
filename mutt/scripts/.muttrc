@@ -163,7 +163,8 @@ color body brightred default "ftp://.*"
 #======================================================#
 # Looks
 set date_format="!%d-%m-%y, %H:%M"
-set index_format="%4C %Z %d %-25.25n (%M) %?y?[%.20Y] ?%s"
+set index_format="%Z %d %-25.25n (%M) %?y?[%.20Y] ?%s"
+# set index_format="%4C %Z %d %-25.25n (%M) %?y?[%.20Y] ?%s"
 
 folder-hook . "exec collapse-all"
 set sort=threads
@@ -175,7 +176,7 @@ set pager_stop           # don't go to next message at end of message
 #======================================================#
 # Sidebar
 color sidebar_new yellow default 
-set sidebar_width=25
+set sidebar_width=18
 set sidebar_visible=yes
 set sidebar_delim='|'
 set sidebar_sort=no

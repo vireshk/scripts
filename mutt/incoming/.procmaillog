@@ -363,3 +363,24 @@ From vireshk  Fri May 27 10:28:23 2016
 From vireshk  Fri Jun 24 07:58:50 2016
  Subject: [PATCH] SW-6595: connection: switch to using spin_lock_irqsave/spin_l
   Folder: PATCH_SW-6595_connection_switch_to_using_spin_lock_irqsave-s	  10387
+From vireshk  Mon Jun 27 11:19:56 2016
+ Subject: [PATCH V4 2/2] SW-5652: interface: Add 'power_state' sysfs file
+  Folder: PATCH_V4_2-2_SW-5652_interface_Add_'power_state'_sysfs_file.	   4961
+From vireshk  Thu Jun 16 10:11:41 2016
+ Subject: [PATCH V2 1/2] SW-3514: Add Component Authentication Protocol support
+  Folder: PATCH_V2_1-2_SW-3514_Add_Component_Authentication_Protocol_s	  23720
+From vireshk  Thu Jun 16 10:12:02 2016
+ Subject: [PATCH V2 2/2] SW-3514: Documentation: Document Authentication interf
+  Folder: PATCH_V2_2-2_SW-3514_Documentation_Document_Authentication_i	  11950
+From vireshk  Tue Jun 21 13:46:38 2016
+ Subject: [PATCH V2 3/4] SW-2655: i2c-dev: don't get i2c adapter via i2c_dev
+  Folder: PATCH_V2_3-4_SW-2655_i2c-dev_don't_get_i2c_adapter_via_i2c_d	   2169
+From vireshk  Tue Jun 21 13:46:39 2016
+ Subject: [PATCH V2 4/4] SW-2655: i2c-dev: Don't block the adapter from unregis
+  Folder: PATCH_V2_4-4_SW-2655_i2c-dev_Don't_block_the_adapter_from_un	   6110
+From vireshk  Wed Jul  6 11:29:06 2016
+ Subject: Re: [Query] Preemption (hogging) of the work handler
+  Folder: Re_Query_Preemption_hogging_of_the_work_handler.mbox		   7072
+From vireshk  Wed Jul  6 11:29:06 2016
+ Subject: Re: [Query] Preemption (hogging) of the work handler
+  Folder: Re_Query_Preemption_hogging_of_the_work_handler.mbox		   7072

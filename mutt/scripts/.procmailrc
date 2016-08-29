@@ -41,7 +41,7 @@ ara/patches
 
 # ARA:
 :0:
-* ^(From|To|Cc):.*(projectara-software-dev@linaro\.org|project-ara-internal@linaro\.org|ara-all@projectara\.com|linaro@projectara.com|ara-eng-external@google\.com|project-ara-security@leaflabs\.com)
+* ^(From|To|Cc):.*(projectara-software-dev@linaro\.org|project-ara-internal@linaro\.org|ara-all@projectara\.com|linaro@projectara.com|ara-eng-external@google\.com|project-ara-security@leaflabs\.com|ara-sw-core-external@google\.com)
 ara/list
 
 # Y2038

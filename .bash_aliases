@@ -19,14 +19,15 @@ alias muttman="zcat /usr/share/doc/mutt/manual.txt.gz | sensible-pager"
 PATH="/home/vireshk/work/repos/tools/toolchain/gcc-linaro-4.9-2015.02-x86_64_aarch64-linux-gnu/bin:/home/vireshk/work/repos/tools/toolchain/gcc-linaro-4.9-2015.02-x86_64_arm-linux-gnueabihf/bin:/usr/bin:$PATH"
 
 # Nuttx
-export PFDK="/home/vireshk/work/repos/ara/arche/vendor/google/unipro-firmware"
+#
+export PFDK="/home/vireshk/work/repos/ara/arche/vendor/google_devices/gmp/unipro-firmware"
 PATH="/home/vireshk/work/repos/ara/tools/gcc-arm-none-eabi-4_8-2014q3/bin:$PATH"
 PATH="$PFDK/manifesto:$PATH"
 alias nvim="vim -c 'set expandtab' -c 'set shiftwidth=4'"
 
 # gbsim-qemu
 export GBDIR=~/work/repos/ara/greybus
-export GBSIMDIR="/home/vireshk/work/repos/ara/arche/vendor/google/arche/tools/gbsim"
+export GBSIMDIR="/home/vireshk/work/repos/ara/arche/vendor/google_devices/gmp/arche/tools/gbsim"
 export ARCH_ROOT=~/work/repos/ara/arche/
 export BR2_EXTERNAL=~/work/repos/ara/ara_buildroot_x86_64
 alias myqemu="hqemu; qemu-system-x86_64 -M pc -kernel output/images/bzImage -drive file=output/images/rootfs.ext2,if=ide -append \"root=/dev/sda console=ttyS0,115200\" -net nic,model=rtl8139 -net user -nographic -s"
@@ -54,6 +55,7 @@ alias home="cd /home/vireshk/work/repos"
 alias htools="cd /home/vireshk/work/repos/tools"
 alias htest="cd /home/vireshk/work/repos/tools/test-definitions/"
 alias hjunk="cd /home/vireshk/junk/"
+alias hmdownload="cd /home/vireshk/mdownload"
 alias haastha="cd /home/vireshk/junk/aastha"
 alias hisol="cd /home/vireshk/work/repos/tools/isolation/"
 alias hwork="cd /home/vireshk/work/repos/devel/linux/"
@@ -63,6 +65,7 @@ updatepkglist() { echo "$*" >> ~/scripts/pkglist-install; }
 
 alias linarogit='ssh viresh.kumar@git.linaro.org'
 alias sshbbone="ssh root@192.168.0.4"
+alias sshdesktop="ssh vireshk@192.168.0.2"
 scpexynosgbus() { cd /home/vireshk/work/repos/ara/greybus/; scp *.ko root@192.168.0.$1:/home/linaro/greybus; }
 alias sshlinaro='echo "scp test.txt  viresh.kumar@git.linaro.org:/home/vireshk/work"'
 alias lmc="echo msudo -A linaro-media-create --mmc /dev/sdb --dev arndale --hwpack-force-yes --hwpack /home/vireshk/work/boards/arndale/hwpack_linaro-arndale_20140417-630_armhf_supported.tar.gz --binary /home/vireshk/work/rootfs/linaro/linaro-saucy-developer-20140410-652.tar.gz"
@@ -130,6 +133,8 @@ alias startvnc="vncviewer 10.162.5.156:1"
 alias sshminicom="ssh user@10.162.5.156"
 alias mypicupload="trickle -s -u 2048 -d 2048 firefox"
 alias mydump="arm-linux-gnueabihf-objdump -r -S -l --disassemble"
+alias myaradump="harche; /home/vireshk/work/repos/ara/arche/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-objdump -r -S -l --disassemble out/target/product/arche/obj/KERNEL_OBJ/drivers/cpufreq/cpufreq.o"
+
 mymini() { msudo -A minicom -w panda -D /dev/ttyUSB$1; }
 
 # ccache
@@ -142,11 +147,6 @@ alias hara="cd /home/vireshk/work/repos/ara"
 alias hgbus="cd /home/vireshk/work/repos/ara/greybus/"
 alias hgspec="cd /home/vireshk/work/repos/ara/greybus-spec/"
 alias hqemu="cd /home/vireshk/work/repos/ara/buildroot"
-
-alias hfdko="cd /home/vireshk/work/repos/ara/ara-fdk"
-alias hmfestoo="hfdk; cd manifesto"
-alias hbootromo="hfdk; cd bootrom"
-alias hnuttxo="hfdk; cd nuttx"
 
 alias hfdk="cd $PFDK"
 alias hfdkr="cd $PFDK/ara-module-fdk"
@@ -164,11 +164,13 @@ alias findtftf="grep Reset_Handler ~/work/repos/ara/nuttx/build/ara-bridge-debug
 alias findtftfs2l="grep Reset_Handler $PFDK/bootrom/build/System.map | tr -s \" \" | cut -d \" \" -f 2"
 
 # firmware
-alias buildarchek="harche; rm -f out/target/product/arche/obj/KERNEL_OBJ/vmlinux*; source build/envsetup.sh; lunch full_arche-userdebug; make -j8 bootimage"
-alias buildarchekl="harche; source build/envsetup.sh; lunch full_arche-userdebug; make -j8 bootimage"
+alias sourcearche="harche; source build/envsetup.sh; lunch full_arche-userdebug"
+alias buildarchek="sourcearche; rm -f out/target/product/arche/obj/KERNEL_OBJ/vmlinux*; make -j8 bootimage"
+alias buildarchekl="sourcearche; make -j8 bootimage"
 alias buildarche="harche; ~/scripts/ara_make.sh greybus bootimage"
+alias buildkarche="harche; ~/scripts/ara_make.sh kernel greybus bootimage"
 
-alias buildarchea="harche; source build/envsetup.sh; lunch full_arche-userdebug; make -j16"
+alias buildarchea="sourcearche; make -j16"
 
 alias flasharche="harche; msudo fastboot flash boot out/target/product/arche/boot.img; msudo fastboot reboot"
 alias aramodulearche='make C=2 -j16 CROSS_COMPILE=/home/vireshk/work/repos/ara/arche/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android- ARCH=arm64 KERNELDIR=/home/vireshk/work/repos/ara/arche/out/target/product/arche/obj/KERNEL_OBJ/ EXTRA_CFLAGS+=-fno-pic CONFIG_DEBUG_SECTION_MISMATCH=y'

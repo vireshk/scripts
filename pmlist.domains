@@ -1,0 +1,2 @@
+gitmailpm --cc "Rob Herring <robh+dt@kernel.org>" --cc "Mark Rutland <mark.rutland@arm.com>" --cc "Kevin Hilman <khilman@baylibre.com>" --cc "Ulf Hansson <ulf.hansson@linaro.org>" --cc vingu --cc "Lina Iyer <lina.iyer@linaro.org>" --cc devicetree@vger.kernel.org --cc "Stephen Boyd <sboyd@codeaurora.org>" --cc "Nayak Rajendra <rnayak@codeaurora.org>"
+

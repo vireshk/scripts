@@ -1,0 +1,40 @@
+From vireshk  Thu Jan  5 08:17:41 2017
+Delivered-To: viresh.kumar@linaro.org
+Received: from gmail-pop.l.google.com [74.125.200.108] 	by vireshk-i7 with POP3 (fetchmail-6.3.26) 	for <vireshk@localhost> (single-drop); Thu, 05 Jan 2017 08:17:41 +0530 (IST)
+Received: by 10.36.99.13 with SMTP id j13csp8880767itc;         Wed, 4 Jan 2017 07:34:22 -0800 (PST)
+X-Received: by 10.176.2.14 with SMTP id 14mr45033891uas.8.1483544062515;         Wed, 04 Jan 2017 07:34:22 -0800 (PST)
+Return-Path: <claudio@evidence.eu.com>
+Received: from mail-ua0-x22c.google.com (mail-ua0-x22c.google.com. [2607:f8b0:400c:c08::22c])         by mx.google.com with ESMTPS id e8si18101905uae.131.2017.01.04.07.34.22         for <viresh.kumar@linaro.org>         (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);         Wed, 04 Jan 2017 07:34:22 -0800 (PST)
+Received-SPF: neutral (google.com: 2607:f8b0:400c:c08::22c is neither permitted nor denied by domain of claudio@evidence.eu.com) client-ip=2607:f8b0:400c:c08::22c;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@evidence-eu-com.20150623.gappssmtp.com;        spf=neutral (google.com: 2607:f8b0:400c:c08::22c is neither permitted nor denied by domain of claudio@evidence.eu.com) smtp.mailfrom=claudio@evidence.eu.com
+Received: by mail-ua0-x22c.google.com with SMTP id i68so248663430uad.0         for <viresh.kumar@linaro.org>; Wed, 04 Jan 2017 07:34:22 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=evidence-eu-com.20150623.gappssmtp.com; s=20150623;         h=mime-version:from:date:message-id:subject:to;         bh=xUqPP8i4TQy7Rj/yj77z++gRcTr7uCrio7fPKwrjMKo=;         b=q+k0rqv8s27eMSILWZbh14vpn4ZvuqYP3AR/wm2nTfwLKg19iBG8/aUXqfPSgGhYOb          ROmFauEzb6c9To9vBY+CjvYF060PaHpM0ndqkDQYiHC1K/6V8ZZJ4kr9w9hmQqbnpTlK          5x8aCrBiK6dYTUsC/+0eojOh1fGsgGsAsdNypi5fDmbTn3Je8pfFX3PJ/MeQ4MGQ0mRA          GNoSPIDKRYgNxjUSBwC5xBFg7VpC1BXUCM1z/ZXXC21JcBm0TLJuPr7HRHxiuRK9NLPF          WwaFxo1u+aXqRqPrA+yNWy+Lje1yj4REUAcc9DL12xDcpuPihvLY3Ev4rTaAQVbgeY6K          DSgQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=1e100.net; s=20161025;         h=x-gm-message-state:mime-version:from:date:message-id:subject:to;         bh=xUqPP8i4TQy7Rj/yj77z++gRcTr7uCrio7fPKwrjMKo=;         b=bnGNL0DTg6WA32tCSCgmmHH+bYGBpI/zbZf5bajw8ObL17wop2zLqFDdDVrPiEjrUI          WXxzg59M0Be/t2x1/sbY5clY+x8QlXHLYOuDiTZ5FH6WTJBDoBkBjLsuXwbUXhn9xVGI          Ed+77f4h1jjns1UAucSSMSFk6E6sdn2DNHj9ONrLpiBxO2A9h3QsmtVtWx1WsNwKJdCP          WA39MeO/8i1hiGU4xA0t7u6x1WD6Iq2lx/rvzfr/iYBOSBjfNhpaOugqVT8SXShbQQa1          8d7MSPZF1hooVn9fmekr3b3WTrt2WzhqigA3sM6b02nd6R2Kfc+gP3QrNXWtqwYguXZK          kzBg==
+X-Gm-Message-State: AIkVDXKqsmbvmFm7ZNWeV+O27F0iFWJ1mcs0wRMUo6t+bVX/AMYnlGSvry+3mBtwXbfFCaRUmuvoJ3ycBKNWzA==
+X-Received: by 10.159.51.18 with SMTP id o18mr43085347uab.14.1483544061976;  Wed, 04 Jan 2017 07:34:21 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.103.125.4 with HTTP; Wed, 4 Jan 2017 07:34:21 -0800 (PST)
+From: Claudio Scordino <claudio@evidence.eu.com>
+Date: Wed, 4 Jan 2017 16:34:21 +0100
+Message-ID: <CAGWmfYqyL_k=agceKyoD=_zsdmnEk-dQ7tVPjHZtvzMM2RC3iw@mail.gmail.com>
+Subject: [PATCH] schedutil documentation
+To: rafael.j.wysocki@intel.com, viresh.kumar@linaro.org,  	Peter Zijlstra <peterz@infradead.org>
+Content-Type: text/plain; charset=UTF-8
+
+Dear guys,
+
+apparently the documentation about cpufreq is partially outdated;
+moreover the schedutil governor is not even mentioned.
+
+This (trivial) patch makes the documentation a bit more realistic by
+removing the outdated parts and at least mentioning schedutil. If it's
+not appropriate, please consider spending a bit of your time updating
+the existing documentation.
+
+Best regards and wishes for 2017.
+
+            Claudio
+
+
+
+

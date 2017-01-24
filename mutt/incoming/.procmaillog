@@ -384,3 +384,51 @@ From vireshk  Wed Jul  6 11:29:06 2016
 From vireshk  Wed Jul  6 11:29:06 2016
  Subject: Re: [Query] Preemption (hogging) of the work handler
   Folder: Re_Query_Preemption_hogging_of_the_work_handler.mbox		   7072
+From vireshk  Tue Aug 30 21:10:43 2016
+ Subject: Re: Build failure after sync today
+  Folder: Re_Build_failure_after_sync_today.mbox			  17082
+From vireshk  Tue Mar  1 12:16:23 2016
+ Subject: Re: [PATCH 01/16] PM / OPP: Add 'supply-names' binding
+  Folder: Re_PATCH_01-16_PM_OPP_Add_'supply-names'_binding.mbox		   2162
+From viresh  Fri Sep 11 17:32:57 2015
+ Subject: [PATCH 01/16] PM / OPP: Add 'supply-names' binding
+  Folder: PATCH_01-16_PM_OPP_Add_'supply-names'_binding.mbox		   2600
+From foo@bar  Wed Sep 21 15:11:44 2016
+  Folder: .mbox								   3173
+From viresh  Fri Sep 11 17:32:57 2015
+ Subject: [PATCH 01/16] PM / OPP: Add 'supply-names' binding
+  Folder: PATCH_01-16_PM_OPP_Add_'supply-names'_binding.mbox		   2600
+From foo@bar  Wed Sep 21 15:38:38 2016
+  Folder: .mbox								   3173
+From viresh  Fri Sep 11 17:32:57 2015
+ Subject: [PATCH 01/16] PM / OPP: Add 'supply-names' binding
+  Folder: PATCH_01-16_PM_OPP_Add_'supply-names'_binding.mbox		   2600
+From foo@bar  Wed Sep 21 15:40:04 2016
+  Folder: .mbox								   3173
+From vireshk  Tue Oct 11 17:57:21 2016
+ Subject: [PATCH] cpufreq: skip invalid entries when searching the frequency
+  Folder: PATCH_cpufreq_skip_invalid_entries_when_searching_the_freque	   4155
+From vireshk  Tue Oct  4 17:27:29 2016
+ Subject: [PATCH 0/8] PM / OPP: Multiple regulator support
+  Folder: PATCH_0-8_PM_OPP_Multiple_regulator_support.mbox		   3326
+From vireshk  Fri Sep 16 08:57:56 2016
+ Subject: [PATCH V2 3/3] mfd: wm8994-core: Don't use managed regulator bulk get
+  Folder: PATCH_V2_3-3_mfd_wm8994-core_Don't_use_managed_regulator_bul	   8966
+From vireshk  Fri Sep 16 08:57:56 2016
+ Subject: [PATCH V2 3/3] mfd: wm8994-core: Don't use managed regulator bulk get
+  Folder: PATCH_V2_3-3_mfd_wm8994-core_Don't_use_managed_regulator_bul	   8966
+From vireshk  Tue Nov 29 08:19:31 2016
+ Subject: Re: [PATCH] PM / OPP: Allow inactive opp_device to be present in dev 
+  Folder: Re_PATCH_PM_OPP_Allow_inactive_opp_device_to_be_present_in_d	  13508
+From vireshk  Wed Nov 30 16:21:38 2016
+ Subject: [PATCH V5] PM / OPP: Pass opp_table to dev_pm_opp_put_regulator()
+  Folder: PATCH_V5_PM_OPP_Pass_opp_table_to_dev_pm_opp_put_regulator_.	   8808
+From vireshk  Fri Dec  2 14:30:56 2016
+ Subject: Re: [PATCH] devfreq: rk3399_dmc: Don't use OPP structures outside of 
+  Folder: Re_PATCH_devfreq_rk3399_dmc_Don't_use_OPP_structures_outside	   4391
+From vireshk  Thu Jan  5 08:17:41 2017
+ Subject: [PATCH] schedutil documentation
+  Folder: PATCH_schedutil_documentation.mbox				   3788
+From claudio@evidence.eu.com  Thu Jan  5 09:04:13 2017
+ Subject: [PATCH] cpufreq: update documentation
+  Folder: PATCH_cpufreq_update_documentation.mbox			   9505

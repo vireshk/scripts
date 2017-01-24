@@ -426,3 +426,231 @@ index 5b6ad31403a5..5c3781a79d31 100644
 -- 
 1.9.1
 
+From foo@bar  Wed Sep 21 15:11:44 2016
+Cc: Mark Brown <broonie@kernel.org>
+Cc: devicetree@vger.kernel.org
+Signed-off-by: Viresh Kumar <viresh.kumar@linaro.org>
+
+---
+ Documentation/devicetree/bindings/opp/opp.txt | 26 +++++++++++++++++++-------
+ 1 file changed, 19 insertions(+), 7 deletions(-)
+
+diff --git a/Documentation/devicetree/bindings/opp/opp.txt b/Documentation/devicetree/bindings/opp/opp.txt
+index 0cb44dc21f97..8759bc4783ed 100644
+--- a/Documentation/devicetree/bindings/opp/opp.txt
++++ b/Documentation/devicetree/bindings/opp/opp.txt
+@@ -69,6 +69,13 @@ This describes the OPPs belonging to a device. This node can have following
+ - compatible: Allow OPPs to express their compatibility. It should be:
+   "operating-points-v2".
+ 
++- supply-names: This is a required property, only if multiple supplies are
++  available for the device. Otherwise it is optional.
++
++  This list is used to pass names of all the device supplies. The order of names
++  present here is important, as that should match the order in which values are
++  present in 'opp-microvolt' and 'opp-microamp' properties.
++
+ - OPP nodes: One or more OPP nodes describing voltage-current-frequency
+   combinations. Their name isn't significant but their phandle can be used to
+   reference an OPP.
+@@ -97,8 +104,8 @@ properties.
+   Single entry is for target voltage and three entries are for <target min max>
+   voltages.
+ 
+-  Entries for multiple regulators must be present in the same order as
+-  regulators are specified in device's DT node.
++  Entries for multiple regulators must be present in the same order as their
++  names are present in 'supply-names' property of the opp-table.
+ 
+ - opp-microamp: The maximum current drawn by the device in microamperes
+   considering system specific parameters (such as transients, process, aging,
+@@ -107,10 +114,12 @@ properties.
+ 
+   Should only be set if opp-microvolt is set for the OPP.
+ 
+-  Entries for multiple regulators must be present in the same order as
+-  regulators are specified in device's DT node. If this property isn't required
+-  for few regulators, then this should be marked as zero for them. If it isn't
+-  required for any regulator, then this property need not be present.
++  Entries for multiple regulators must be present in the same order as their
++  names are present in 'supply-names' property of the opp-table.
++
++  If this property isn't required for few regulators, then this should be marked
++  as zero for them. If it isn't required for any regulator, then this property
++  need not be present.
+ 
+ - clock-latency-ns: Specifies the maximum possible transition latency (in
+   nanoseconds) for switching to this OPP from any other OPP.
+@@ -369,13 +378,16 @@ Example 4: Handling multiple regulators
+ 			compatible = "arm,cortex-a7";
+ 			...
+ 
+-			cpu-supply = <&cpu_supply0>, <&cpu_supply1>, <&cpu_supply2>;
++			vcc0-supply = <&cpu_supply0>;
++			vcc1-supply = <&cpu_supply1>;
++			vcc2-supply = <&cpu_supply2>;
+ 			operating-points-v2 = <&cpu0_opp_table>;
+ 		};
+ 	};
+ 
+ 	cpu0_opp_table: opp_table0 {
+ 		compatible = "operating-points-v2";
++		supply-names = "vcc0", "vcc1", "vcc2";
+ 		opp-shared;
+ 
+ 		opp00 {
+-- 
+2.4.0
+
+From foo@bar  Wed Sep 21 15:38:38 2016
+Cc: Mark Brown <broonie@kernel.org>
+Cc: devicetree@vger.kernel.org
+Signed-off-by: Viresh Kumar <viresh.kumar@linaro.org>
+
+---
+ Documentation/devicetree/bindings/opp/opp.txt | 26 +++++++++++++++++++-------
+ 1 file changed, 19 insertions(+), 7 deletions(-)
+
+diff --git a/Documentation/devicetree/bindings/opp/opp.txt b/Documentation/devicetree/bindings/opp/opp.txt
+index 0cb44dc21f97..8759bc4783ed 100644
+--- a/Documentation/devicetree/bindings/opp/opp.txt
++++ b/Documentation/devicetree/bindings/opp/opp.txt
+@@ -69,6 +69,13 @@ This describes the OPPs belonging to a device. This node can have following
+ - compatible: Allow OPPs to express their compatibility. It should be:
+   "operating-points-v2".
+ 
++- supply-names: This is a required property, only if multiple supplies are
++  available for the device. Otherwise it is optional.
++
++  This list is used to pass names of all the device supplies. The order of names
++  present here is important, as that should match the order in which values are
++  present in 'opp-microvolt' and 'opp-microamp' properties.
++
+ - OPP nodes: One or more OPP nodes describing voltage-current-frequency
+   combinations. Their name isn't significant but their phandle can be used to
+   reference an OPP.
+@@ -97,8 +104,8 @@ properties.
+   Single entry is for target voltage and three entries are for <target min max>
+   voltages.
+ 
+-  Entries for multiple regulators must be present in the same order as
+-  regulators are specified in device's DT node.
++  Entries for multiple regulators must be present in the same order as their
++  names are present in 'supply-names' property of the opp-table.
+ 
+ - opp-microamp: The maximum current drawn by the device in microamperes
+   considering system specific parameters (such as transients, process, aging,
+@@ -107,10 +114,12 @@ properties.
+ 
+   Should only be set if opp-microvolt is set for the OPP.
+ 
+-  Entries for multiple regulators must be present in the same order as
+-  regulators are specified in device's DT node. If this property isn't required
+-  for few regulators, then this should be marked as zero for them. If it isn't
+-  required for any regulator, then this property need not be present.
++  Entries for multiple regulators must be present in the same order as their
++  names are present in 'supply-names' property of the opp-table.
++
++  If this property isn't required for few regulators, then this should be marked
++  as zero for them. If it isn't required for any regulator, then this property
++  need not be present.
+ 
+ - clock-latency-ns: Specifies the maximum possible transition latency (in
+   nanoseconds) for switching to this OPP from any other OPP.
+@@ -369,13 +378,16 @@ Example 4: Handling multiple regulators
+ 			compatible = "arm,cortex-a7";
+ 			...
+ 
+-			cpu-supply = <&cpu_supply0>, <&cpu_supply1>, <&cpu_supply2>;
++			vcc0-supply = <&cpu_supply0>;
++			vcc1-supply = <&cpu_supply1>;
++			vcc2-supply = <&cpu_supply2>;
+ 			operating-points-v2 = <&cpu0_opp_table>;
+ 		};
+ 	};
+ 
+ 	cpu0_opp_table: opp_table0 {
+ 		compatible = "operating-points-v2";
++		supply-names = "vcc0", "vcc1", "vcc2";
+ 		opp-shared;
+ 
+ 		opp00 {
+-- 
+2.4.0
+
+From foo@bar  Wed Sep 21 15:40:04 2016
+Cc: Mark Brown <broonie@kernel.org>
+Cc: devicetree@vger.kernel.org
+Signed-off-by: Viresh Kumar <viresh.kumar@linaro.org>
+
+---
+ Documentation/devicetree/bindings/opp/opp.txt | 26 +++++++++++++++++++-------
+ 1 file changed, 19 insertions(+), 7 deletions(-)
+
+diff --git a/Documentation/devicetree/bindings/opp/opp.txt b/Documentation/devicetree/bindings/opp/opp.txt
+index 0cb44dc21f97..8759bc4783ed 100644
+--- a/Documentation/devicetree/bindings/opp/opp.txt
++++ b/Documentation/devicetree/bindings/opp/opp.txt
+@@ -69,6 +69,13 @@ This describes the OPPs belonging to a device. This node can have following
+ - compatible: Allow OPPs to express their compatibility. It should be:
+   "operating-points-v2".
+ 
++- supply-names: This is a required property, only if multiple supplies are
++  available for the device. Otherwise it is optional.
++
++  This list is used to pass names of all the device supplies. The order of names
++  present here is important, as that should match the order in which values are
++  present in 'opp-microvolt' and 'opp-microamp' properties.
++
+ - OPP nodes: One or more OPP nodes describing voltage-current-frequency
+   combinations. Their name isn't significant but their phandle can be used to
+   reference an OPP.
+@@ -97,8 +104,8 @@ properties.
+   Single entry is for target voltage and three entries are for <target min max>
+   voltages.
+ 
+-  Entries for multiple regulators must be present in the same order as
+-  regulators are specified in device's DT node.
++  Entries for multiple regulators must be present in the same order as their
++  names are present in 'supply-names' property of the opp-table.
+ 
+ - opp-microamp: The maximum current drawn by the device in microamperes
+   considering system specific parameters (such as transients, process, aging,
+@@ -107,10 +114,12 @@ properties.
+ 
+   Should only be set if opp-microvolt is set for the OPP.
+ 
+-  Entries for multiple regulators must be present in the same order as
+-  regulators are specified in device's DT node. If this property isn't required
+-  for few regulators, then this should be marked as zero for them. If it isn't
+-  required for any regulator, then this property need not be present.
++  Entries for multiple regulators must be present in the same order as their
++  names are present in 'supply-names' property of the opp-table.
++
++  If this property isn't required for few regulators, then this should be marked
++  as zero for them. If it isn't required for any regulator, then this property
++  need not be present.
+ 
+ - clock-latency-ns: Specifies the maximum possible transition latency (in
+   nanoseconds) for switching to this OPP from any other OPP.
+@@ -369,13 +378,16 @@ Example 4: Handling multiple regulators
+ 			compatible = "arm,cortex-a7";
+ 			...
+ 
+-			cpu-supply = <&cpu_supply0>, <&cpu_supply1>, <&cpu_supply2>;
++			vcc0-supply = <&cpu_supply0>;
++			vcc1-supply = <&cpu_supply1>;
++			vcc2-supply = <&cpu_supply2>;
+ 			operating-points-v2 = <&cpu0_opp_table>;
+ 		};
+ 	};
+ 
+ 	cpu0_opp_table: opp_table0 {
+ 		compatible = "operating-points-v2";
++		supply-names = "vcc0", "vcc1", "vcc2";
+ 		opp-shared;
+ 
+ 		opp00 {
+-- 
+2.4.0
+

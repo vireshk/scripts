@@ -16,7 +16,7 @@ export MAIL=/var/mail/viresh
 alias muttman="zcat /usr/share/doc/mutt/manual.txt.gz | sensible-pager"
 
 # toolchains
-PATH="/home/vireshk/work/repos/tools/toolchain/gcc-linaro-4.9-2015.02-x86_64_aarch64-linux-gnu/bin:/home/vireshk/work/repos/tools/toolchain/gcc-linaro-4.9-2015.02-x86_64_arm-linux-gnueabihf/bin:/usr/bin:$PATH"
+PATH="/home/vireshk/work/repos/tools/toolchain/gcc-linaro-4.9-2015.05-x86_64_aarch64-linux-gnu/bin:/home/vireshk/work/repos/tools/toolchain/gcc-linaro-4.9-2015.02-x86_64_arm-linux-gnueabihf/bin:/usr/bin:$PATH"
 
 # Nuttx
 #
@@ -53,6 +53,9 @@ alias msudo="sudo -A"
 alias minstall="msudo apt-get install"
 alias home="cd /home/vireshk/work/repos"
 alias htools="cd /home/vireshk/work/repos/tools"
+alias hboards="cd /home/vireshk/work/repos/tools/boards"
+alias hwa="cd /home/vireshk/work/repos/tools/workload-automation"
+alias hhikey="cd /home/vireshk/work/repos/tools/boards/hikey"
 alias htest="cd /home/vireshk/work/repos/tools/test-definitions/"
 alias hjunk="cd /home/vireshk/junk/"
 alias hmdownload="cd /home/vireshk/mdownload"
@@ -185,6 +188,21 @@ PATH="/usr/lib/ccache:$PATH"
 # gitolite sync
 alias gitolitesyncko="hwork; ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/linux.git linus; ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/linux.git next; ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/pm.git linus; ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/pm.git next;"
 alias gitolitesynclo="hwork; ssh git@git.linaro.org track fetch people/viresh.kumar/linux lnext; ssh git@git.linaro.org track fetch people/viresh.kumar/linux linus; ssh git@git.linaro.org track fetch people/viresh.kumar/mylinux lnext; ssh git@git.linaro.org track fetch people/viresh.kumar/mylinux linus; ssh git@git.linaro.org track fetch people/viresh.kumar/backup/linux lnext; ssh git@git.linaro.org track fetch people/viresh.kumar/backup/linux linus;"
+
+# qcom-board: skales
+PATH="$htools/skales:$PATH"
+alias qcomdtimg="hwork; cd ../qcom/; /home/vireshk/work/repos/tools/skales/dtbTool -o dt.img -s 2048 arch/arm64/boot/dts/qcom/"
+alias qcomimg="hwork; cd ../qcom/; /home/vireshk/work/repos/tools/skales/mkbootimg --kernel arch/arm64/boot/Image --ramdisk /home/vireshk/work/repos/tools/boards/qcom-820c/initrd.img-* --output boot-db820c.img --dt dt.img --pagesize 2048 --base 0x80000000 --cmdline \"root=/dev/sda9 rw rootwait console=ttyMSM0,115200n8\""
+alias qcomboot="hwork; cd ../qcom/; msudo fastboot boot boot-db820c.img"
+alias qcomupdate="hwork; nimage qcom; dtbs qcom; qcomdtimg; qcomimg; qcomboot"
+alias qcomflash="hwork; cd ../qcom/; msudo fastboot flash boot boot-db820c.img"
+
+alias updatehikey="hhikey; msudo cp ~/work/repos/devel/bhikey/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb boot-fat/hi6220-hikey.dtb; msudo cp ~/work/repos/devel/bhikey/arch/arm64/boot/Image boot-fat/kernel; sync; msudo fastboot flash boot boot_fat.uefi.img"
+alias flashhikey="hhikey; msudo fastboot flash boot boot_fat.uefi.img"
+alias moounthikey="hhikey; msudo mount -o loop,rw,sync boot_fat.uefi.img boot-fat"
+
+# Android
+export ANDROID_HOME=/home/vireshk/Android/Sdk
 
 # go to linux on shell startup
 hwork

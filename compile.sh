@@ -20,64 +20,79 @@ if [ ! $2 ]; then
 	exit
 elif [ $2 = s3 ]; then
 	dir=../b3xx/
-	cfg=spear3xx_
+	cfg=spear3xx_defconfig
 elif [ $2 = s6 ]; then
 	dir=../b6xx/
-	cfg=spear6xx_
+	cfg=spear6xx_defconfig
 elif [ $2 = mvebu ]; then
 	dir=../mvebu/
-	cfg=mvebu_v7_
+	cfg=mvebu_v7_defconfig
 elif [ $2 = ep93xx ]; then
 	dir=../ep93xx/
-	cfg=ep93xx_
+	cfg=ep93xx_defconfig
 elif [ $2 = s13 ]; then
 	dir=../b13xx/
-	cfg=spear13xx_
+	cfg=spear13xx_defconfig
 elif [ $2 = mp ]; then
 	dir=../bmp/
-	cfg=vexpress_tc2_mp_
+	cfg=vexpress_tc2_mp_defconfig
 elif [ $2 = bliks ]; then
 	dir=../bbliks/
-	cfg=vexpress_bL_
+	cfg=vexpress_bL_defconfig
 elif [ $2 = blmp ]; then
 	dir=../bblmp/
-	cfg=vexpress_bL_mp_
+	cfg=vexpress_bL_mp_defconfig
 elif [ $2 = iks ]; then
 	dir=../biks/
-	cfg=vexpress_tc2_iks_
+	cfg=vexpress_tc2_iks_defconfig
 elif [ $2 = tc2 ]; then
 	dir=../btc2/
-	cfg=vexpress_
+	cfg=vexpress_defconfig
 elif [ $2 = u85 ]; then
 	dir=../bu8500/
-	cfg=u8500_
+	cfg=u8500_defconfig
 elif [ $2 = panda4 ]; then
 	dir=../bpanda4/
-	cfg=omap4plus_
+	cfg=omap4plus_defconfig
 elif [ $2 = panda ]; then
 	dir=../bpanda/
-	cfg=omap2plus_
+	cfg=omap2plus_defconfig
 elif [ $2 = pxa ]; then
 	dir=../pxa/
-	cfg=pxa_
+	cfg=pxa_defconfig
 	IMAGE=uImage
 	FLAGS="LOADADDR=0x40008000"
 elif [ $2 = exynos ]; then
 	dir=../bexynos/
-	cfg=exynos_
+	cfg=exynos_defconfig
 	IMAGE=uImage
 	FLAGS="LOADADDR=0x40008000"
 elif [ $2 = odoroid ]; then
 	dir=../bodoroid/
-	cfg=exynos_
+	cfg=exynos_defconfig
 	IMAGE=
 	DTB=exynos5420-arndale-octa
 elif [ $2 = tegra ]; then
 	dir=../btegra/
-	cfg=tegra_
+	cfg=tegra_defconfig
+elif [ $2 = hikey ]; then
+	dir=../bhikey/
+	cfg="hikey_defconfig"
+	CROSS_COMPILE="aarch64-linux-gnu-"
+	carch="arm64"
+	IMAGE=
+#	IMAGE=Image-dtb
+elif [ $2 = qcom ]; then
+	dir=../qcom/
+	cfg="defconfig distro.config"
+	CROSS_COMPILE="aarch64-linux-gnu-"
+	carch="arm64"
+#	FLAGS="KCFLAGS=-fno-pic TEXT_OFFSET=0x00280000"
+#	FLAGS="KCFLAGS=-fno-pic TEXT_OFFSET=0x0080000"
+	IMAGE=
 elif [ $2 = marvell ]; then
 	dir=../bmarvell/
-	cfg=
+	cfg=defconfig
 	CROSS_COMPILE="ccache aarch64-linux-gnu-"
 	carch="arm64"
 #	FLAGS="KCFLAGS=-fno-pic TEXT_OFFSET=0x00280000"
@@ -85,7 +100,7 @@ elif [ $2 = marvell ]; then
 	IMAGE=
 elif [ $2 = x86 ]; then
 	dir=../bx86/
-	cfg=x86_64_
+	cfg=x86_64_defconfig
 #	CROSS_COMPILE="\"ccache gcc\""
 	CROSS_COMPILE=
 	carch="x86"
@@ -127,10 +142,10 @@ if [ $1 = "clean" ]; then
 elif [ $1 = "mrproper" ]; then
 	$isdebug $mk mrproper
 elif [ $1 = "config" ]; then
-	$isdebug $mk $cfg"defconfig"
+	$isdebug $mk $cfg
 elif [ $1 = "sconfig" ]; then
 	$isdebug $mk savedefconfig
-	cp $dir/defconfig arch/arm/configs/$cfg"defconfig"
+	cp $dir/defconfig arch/arm/configs/$cfg
 elif [ $1 = "image" ]; then
 	$isdebug $bimage
 elif [ $1 = "nimage" ]; then
@@ -140,15 +155,15 @@ elif [ $1 = "menu" ]; then
 elif [ $1 = "module" ]; then
 	$isdebug $mk modules
 elif [ $1 = "configimage" ]; then
-	$isdebug $mk $cfg"defconfig"
+	$isdebug $mk $cfg
 	$isdebug $bimage > /dev/null
 elif [ $1 = "build" -o $1 = "lbuild" ]; then
 	# $isdebug $mk clean > /dev/null
 
 	#build config fragment
 	if [ $1 != "lbuild" ]; then
-		echo $cfg"defconfig"
-		$isdebug $mk $cfg"defconfig" > /dev/null
+		echo $cfg
+		$isdebug $mk $cfg > /dev/null
 	else
 		# save & restore .cscope
 		if [ ! -z cscope.out ]; then
@@ -161,13 +176,13 @@ elif [ $1 = "build" -o $1 = "lbuild" ]; then
 			if [ -f linaro/configs/vexpress.conf ]; then
 				basecfg="$basecfg linaro/configs/vexpress.conf"
 			else
-				basecfg="$basecfg arch/arm/configs/"$cfg"defconfig"
+				basecfg="$basecfg arch/arm/configs/"$cfg
 			fi
 		elif [ $2 = exynos ]; then
 			if [ -f linaro/configs/arndale.conf ]; then
 				basecfg="$basecfg linaro/configs/arndale.conf"
 			else
-				basecfg="$basecfg arch/arm/configs/"$cfg"defconfig"
+				basecfg="$basecfg arch/arm/configs/"$cfg
 			fi
 		fi
 

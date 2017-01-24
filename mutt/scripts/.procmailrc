@@ -22,6 +22,12 @@ linaro/payslip
 * ^(From|To|Cc):.*(jira@projectara\.atlassian\.net|review@projectara-review\.linaro\.org)
 ara/jira
 
+# pmwg-weeklies
+:0:
+* ^(To|Cc):.*(private-pmwg@lists\.linaro\.org)
+* ^(Subject):.*\[pmwg-weekly\]
+linaro/pmwg
+
 # me
 :0:
 * ^(From|To|Cc):.*(viresh\.kumar@linaro\.org|viresh\.nitj@gmail\.com|vireshk@kernel\.org|viresh\.linux@gmail\.com|kumar_viresh@projectara\.com|viresh\.kumar@linaro\.com)
@@ -36,13 +42,23 @@ me
 #==============LINARO==================================#
 # ARA/kernel:
 :0:
-* ^(From|To|Cc):.*(project-ara-kernel@lists\.linaro\.org)
+* ^(From|To|Cc):.*(project-ara-kernel@lists\.linaro\.org|greybus-dev@lists\.linaro\.org)
 ara/patches
 
 # ARA:
 :0:
 * ^(From|To|Cc):.*(projectara-software-dev@linaro\.org|project-ara-internal@linaro\.org|ara-all@projectara\.com|linaro@projectara.com|ara-eng-external@google\.com|project-ara-security@leaflabs\.com|ara-sw-core-external@google\.com)
 ara/list
+
+# EAS
+:0:
+* ^(To|Cc):.*(eas-dev@lists\.linaro\.org)
+linaro/eas
+
+# Schedtools
+:0:
+* ^(To|Cc):.*(sched-tools@lists\.linaro.org)
+linaro/schedtools
 
 # Y2038
 :0:
@@ -111,7 +127,7 @@ linaro/lng
 
 # pmwg
 :0:
-* ^(To|Cc):.*(linaro-pm-wg@lists\.launchpad\.net|private-pmwg@linaro\.org|private-big-little@linaro\.org)
+* ^(To|Cc):.*(linaro-pm-wg@lists\.launchpad\.net|private-pmwg@linaro\.org|private-big-little@linaro\.org|private-pmwg@lists\.linaro\.org)
 linaro/pmwg
 
 # releases
@@ -128,6 +144,13 @@ linaro/switchers
 :0:
 * ^(To|Cc):.*linaro-toolchain@lists\.linaro\.org
 linaro/toolchain
+
+# others
+:0:
+* ^(To|Cc):.*(lava-lab-team@linaro\.org|employees@linaro\.org)
+linaro/misc
+
+
 
 # wiki
 #:0:

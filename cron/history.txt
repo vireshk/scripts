@@ -535,3 +535,37 @@ To ssh://git@git.linaro.org/people/viresh.kumar/backup/vireshk-linux
  * [new branch]                bkp/master -> bkp/master
 
 Entering /home/vireshk/scripts
+[master c1e23e7e53cf] updates
+ 5 files changed, 43 insertions(+), 3 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/scripts
+   9c5aa90c1b26..c1e23e7e53cf  master -> master
+ + 320567dd5c43...9c5aa90c1b26 bkp/master -> bkp/master (forced update)
+ * [new branch]                mac/master -> mac/master
+
+
+
+ 
+Tue Jan 24 11:04:07 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+ 
+Tue Jan 24 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

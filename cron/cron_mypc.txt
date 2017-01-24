@@ -1,1 +1,2 @@
-0 13 * * 1-5 /media/L/SPEAr/documentation/scripts/pull.sh
+# m h  dom mon dow   command
+0 13 * * 1-5 /home/vireshk/scripts/cron/gitpush.sh

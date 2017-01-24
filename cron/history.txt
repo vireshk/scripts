@@ -511,3 +511,27 @@ To ssh://git@git.linaro.org/people/viresh.kumar/backup/scripts
 
 
 
+ 
+Tue Jan 24 10:52:29 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+ 
+Tue Jan 24 11:01:13 IST 2017
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/vireshk-linux
+ * [new branch]                bkp/master -> bkp/master
+
+Entering /home/vireshk/scripts

@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
-<config version="1.0" serial="12491" timestamp="1484653180.366">
+<config version="1.0" serial="12507" timestamp="1485414725.45">
   <Lib>
     <Account>
       <Credentials3>2D02CCF9749A9936996552A66D866F0D7644B01CEBCB553D81FCD8AC47358C573DEFBF774520B551E8C6935B93CBB826486E89D162C17A2DF54492C01174CF716951595DBE92B1C14C86059B2E9923F66C076F5208B3D88D5141E266A8AD346202692ED7FFC67655C5C16985D58C18454D80E7D5114E0BF17CB4B3AA0414AB8727F7D626A2A875AC1F3523B7A2EEEC052898E3C33747ADF5FCF566E1A8B80B974B524F047580E484DC3D7CBF8297807CE7488881AF427CB4AA174CD4681C78E2A1911DF1128C07EF5EAB5624E5256DCE1764277E6238EE9B2C3E3D28677E59EF173698FD0D6F0F7721D38043EF5E1F94DBED11E924D57943865B51EAC9656738C6AB1B7C947956C731DDE9E3FBD2B1051EDAD125ED13C5A96C3EC5239C1C709E887BC384E23A6D54CEA3DEFFF7E359EF9177E4075EF1405123AEB3E8327765DF9585C6586B3161545A67A1535E3BE7D0C4D299873F329C48BC5599A5BEDBCCA06C648BA4898BB45DE1050366706800621FD1368F6EF354DE49ED0EA75DE3659E39CF20A2778472719FC6191C013E3407BB63EB74CCD0DD7D24AFAF82C10207208B0DFE3B68827B4BD282C22663C91CFE183A35A101E0BA62AAAE1109CDED5728E8871E70A536DC6367B9EC1075DEE2F1D4FEBE3473A65EFE75424B203406F4D5556BE5CC109418124A58C069F2301BC7A8B5FECDE311CCE66B6BDAF60D1D70593E7AAA2C1023F890CEAE30063F1AE40E0E94B8242E70AB6F44AE96F416FF83C797575B1BACF02B2FB95856A8F3702883A3B6E9030F5236532E651D84D3B1E40D4B454E1F5FBF4A04C7803F742ADC010B483A2F93AB06660AD57B8CB1257D</Credentials3>
       <IdleTimeForAway>300</IdleTimeForAway>
       <IdleTimeForNA>1800</IdleTimeForNA>
-      <LastUsed>1484043703</LastUsed>
+      <LastUsed>1485343092</LastUsed>
       <LocalData>4215</LocalData>
       <Migration>63</Migration>
       <OMigration>1</OMigration>
@@ -114,19 +114,19 @@
     </Contacts>
     <Conversation>
       <ConversationStatistics>
-        <ConnectivityTimeStamp>1484625016</ConnectivityTimeStamp>
-        <TimeStamp>1484625016</TimeStamp>
+        <ConnectivityTimeStamp>1485343107</ConnectivityTimeStamp>
+        <TimeStamp>1485343107</TimeStamp>
       </ConversationStatistics>
       <CreationTimestampFixed>1</CreationTimestampFixed>
       <DupeLegacyDeleted2>1</DupeLegacyDeleted2>
       <GivenDisplaynameFixed>1</GivenDisplaynameFixed>
       <GroupChatStatisticsEvent>
-        <TimeStamp>1484648518</TimeStamp>
+        <TimeStamp>1485343107</TimeStamp>
       </GroupChatStatisticsEvent>
       <IsBlockedFixed>1</IsBlockedFixed>
       <LastMessageIdFixed3>1</LastMessageIdFixed3>
       <PermanenceFixed>1</PermanenceFixed>
-      <PruningHorizon>1484043703</PruningHorizon>
+      <PruningHorizon>1485343092</PruningHorizon>
       <RecentlyLiveTimeout>0</RecentlyLiveTimeout>
       <UpdateConversationsInboxMessageIdFromLastMessage>1</UpdateConversationsInboxMessageIdFromLastMessage>
     </Conversation>
@@ -145,16 +145,16 @@
       <NewThreadAllowed>1</NewThreadAllowed>
       <P2PMigrationAllowed>0</P2PMigrationAllowed>
       <ProtocolToUse>24</ProtocolToUse>
-      <RecentConnectionInfo>db5-s.gateway.messenger.live.com@2017-01-12T02:52:09Z,db5-s.gateway.messenger.live.com@2017-01-13T02:57:32Z,db5-s.gateway.messenger.live.com@2017-01-14T10:37:22Z,db5-s.gateway.messenger.live.com@2017-01-16T02:56:43Z,db5-s.gateway.messenger.live.com@2017-01-17T02:49:56Z,</RecentConnectionInfo>
-      <RecentConversationsSyncState>1b28943d605401000000000000000000004910c61c9e4020ba0b0000007669726573682e6e69746ae8bff8883f010000029f430afa570100003abdeea858010000791f7bb05801000034bf54aa59010000029f430afa570100003abdeea858010000791f7bb05801000034bf54aa5901000001000000000000000034bf54aa590100000128943d605401000034bf54aa59010000029f430afa570100003abdeea858010000791f7bb05801000034bf54aa59010000000000000000000000000000</RecentConversationsSyncState>
+      <RecentConnectionInfo>db5-s.gateway.messenger.live.com@2017-01-14T10:37:22Z,db5-s.gateway.messenger.live.com@2017-01-16T02:56:43Z,db5-s.gateway.messenger.live.com@2017-01-17T02:49:56Z,db5-s.gateway.messenger.live.com@2017-01-25T11:19:33Z,db5-s.gateway.messenger.live.com@2017-01-26T03:19:20Z,</RecentConnectionInfo>
+      <RecentConversationsSyncState>1b28943d605401000000000000000000004910c61c9e4020ba0b0000007669726573682e6e69746ae8bff8883f01000002791f7bb05801000034bf54aa59010000cdcc3eac590100003fe6c8d85901000002791f7bb05801000034bf54aa59010000cdcc3eac590100003fe6c8d8590100000100000000000000003fe6c8d8590100000128943d60540100003fe6c8d85901000002791f7bb05801000034bf54aa59010000cdcc3eac590100003fe6c8d859010000000000000000000000000000</RecentConversationsSyncState>
     </MSNPCore>
     <Notification>
       <LastID>1000000300</LastID>
-      <LastPoll>1484535320</LastPoll>
-      <LastSearch>1484653054</LastSearch>
+      <LastPoll>1485343100</LastPoll>
+      <LastSearch>1485411113</LastSearch>
     </Notification>
     <PM>
-      <pslut>1484297859</pslut>
+      <pslut>1485343092</pslut>
     </PM>
     <ProfilePopulated>1</ProfilePopulated>
     <PropsManager>
@@ -171,17 +171,17 @@
     <StatsSender>
       <Phase2>
         <LastCollect>1479353155</LastCollect>
-        <ProposedDelivery>1484372759</ProposedDelivery>
+        <ProposedDelivery>1485482279</ProposedDelivery>
         <SendSequence>158</SendSequence>
       </Phase2>
-      <SubmitID>2211</SubmitID>
+      <SubmitID>2215</SubmitID>
       <Type2SubmitID>
-        <_1>2199</_1>
+        <_1>2203</_1>
         <_43>13</_43>
       </Type2SubmitID>
     </StatsSender>
     <table_insert_history>
-      <eb92d225ef1d7012f8255c1aa27e31f2f1ebd4040f17d8b7cf615529f3df96cb>1484729372 59554:21600:1484642972 40704:21600:1484642972 50380:21600:1484642972 2147485230:86400:1484637060</eb92d225ef1d7012f8255c1aa27e31f2f1ebd4040f17d8b7cf615529f3df96cb>
+      <f283f4b9d30c37327cf372de87430f6a1602d8867fa5d525e9890c4760b85275>1485494329 59554:21600:1485400792 40704:21600:1485400792 50380:21600:1485400792 2147485230:86400:1485343128</f283f4b9d30c37327cf372de87430f6a1602d8867fa5d525e9890c4760b85275>
     </table_insert_history>
   </Lib>
   <UI>

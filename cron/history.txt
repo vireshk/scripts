@@ -716,3 +716,32 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 1d40cf5fad6c] updates
+ 13 files changed, 679 insertions(+), 29 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/scripts
+   683f0b46e362..1d40cf5fad6c  master -> master
+   03f3e2d55c19..683f0b46e362  bkp/master -> bkp/master
+
+
+
+ 
+Thu Feb  2 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

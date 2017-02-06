@@ -775,3 +775,76 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 785d261c6adb] updates
+ 18 files changed, 687 insertions(+), 24 deletions(-)
+ delete mode 100644 .Skype/viresh.nitj/chatsync/a2/a268328dfe61f48c.dat
+ create mode 100644 .Skype/viresh.nitj/chatsync/cd/cd28dcf992a9bca8.dat
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/scripts
+   ea1b17ddac5e..785d261c6adb  master -> master
+   1d40cf5fad6c..ea1b17ddac5e  bkp/master -> bkp/master
+
+
+
+ 
+Mon Feb  6 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+remote: error: By default, deleting the current branch is denied, because the next        
+remote: error: 'git clone' won't result in any file checked out, causing confusion.        
+remote: error:         
+remote: error: You can set 'receive.denyDeleteCurrent' configuration variable to        
+remote: error: 'warn' or 'ignore' in the remote repository to allow deleting the        
+remote: error: current branch, with or without a warning message.        
+remote: error:         
+remote: error: To squelch this message, you can set it to 'refuse'.        
+remote: error: refusing to delete the current branch: refs/heads/master        
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   cpufreq/documentation
+ + b3c4f2b6a811...7f98fb4956a7 cpufreq/remote-wakeup -> cpufreq/remote-wakeup (forced update)
+ + f275c1181ea5...05bbc7ad440b cpufreq/remote-wakeup-hikey -> cpufreq/remote-wakeup-hikey (forced update)
+ + 1b91d4c81b9e...d2cece406af9 cpufreq/remote-wakeup-hikey-vanila -> cpufreq/remote-wakeup-hikey-vanila (forced update)
+ + 1b91d4c81b9e...d2cece406af9 jstultz/dev/hikey-mainline-WIP -> jstultz/dev/hikey-mainline-WIP (forced update)
+ + ed559caec74d...bfbcf642df17 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 0ea7febc7c4f...fd4c9e3a71b4 pm/linux-next -> pm/linux-next (forced update)
+ * [new branch]                bkp/board/820c -> bkp/board/820c
+ * [new branch]                bkp/cpufreq/documentation -> bkp/cpufreq/documentation
+ * [new branch]                bkp/cpufreq/interactive-debug -> bkp/cpufreq/interactive-debug
+ * [new branch]                bkp/cpufreq/interactive-idle-notifier-v1 -> bkp/cpufreq/interactive-idle-notifier-v1
+ * [new branch]                bkp/cpufreq/interactive-idle-notifier-v2 -> bkp/cpufreq/interactive-idle-notifier-v2
+ * [new branch]                bkp/cpufreq/interactive-orig -> bkp/cpufreq/interactive-orig
+ * [new branch]                bkp/cpufreq/interactive-v2 -> bkp/cpufreq/interactive-v2
+ * [new branch]                bkp/cpufreq/remote-wakeup -> bkp/cpufreq/remote-wakeup
+ * [new branch]                bkp/cpufreq/remote-wakeup-hikey -> bkp/cpufreq/remote-wakeup-hikey
+ * [new branch]                bkp/cpufreq/remote-wakeup-hikey-vanila -> bkp/cpufreq/remote-wakeup-hikey-vanila
+ * [new branch]                bkp/cpufreq/testsuite -> bkp/cpufreq/testsuite
+ * [new branch]                bkp/hikey/aosp/4.4 -> bkp/hikey/aosp/4.4
+ * [new branch]                bkp/hikey/mainline -> bkp/hikey/mainline
+ * [new branch]                bkp/opp/genpd-bindings -> bkp/opp/genpd-bindings
+ * [new branch]                bkp/opp/genpd-bindings-v1 -> bkp/opp/genpd-bindings-v1
+ * [new branch]                bkp/opp/genpd-bkp -> bkp/opp/genpd-bkp
+ * [new branch]                bkp/opp/genpd-reorder -> bkp/opp/genpd-reorder
+ * [new branch]                bkp/opp/genpd-reorder-4.9 -> bkp/opp/genpd-reorder-4.9
+ * [new branch]                pmko/cpufreq/remote-wakeup -> pmko/cpufreq/remote-wakeup
+ ! [remote rejected]           master (deletion of the current branch prohibited)
+error: failed to push some refs to 'ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git'
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

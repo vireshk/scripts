@@ -1,3 +1,4 @@
+work/repos/devel/linux
 work/repos/tools/module
 work/repos/tools/cpufreq-tests
 work/repos/tools/vireshk-linux

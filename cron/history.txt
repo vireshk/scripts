@@ -848,3 +848,66 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master b15385c07f7f] updates
+ 4 files changed, 1442 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/scripts
+   785d261c6adb..b15385c07f7f  master -> master
+   ea1b17ddac5e..785d261c6adb  bkp/master -> bkp/master
+
+
+
+ 
+Tue Feb  7 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+remote: error: By default, deleting the current branch is denied, because the next        
+remote: error: 'git clone' won't result in any file checked out, causing confusion.        
+remote: error:         
+remote: error: You can set 'receive.denyDeleteCurrent' configuration variable to        
+remote: error: 'warn' or 'ignore' in the remote repository to allow deleting the        
+remote: error: current branch, with or without a warning message.        
+remote: error:         
+remote: error: To squelch this message, you can set it to 'refuse'.        
+remote: error: refusing to delete the current branch: refs/heads/master        
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git
+   7f98fb4956a7..976c1827f5e7  cpufreq/remote-wakeup -> cpufreq/remote-wakeup
+   05bbc7ad440b..b3fb361ecb1e  cpufreq/remote-wakeup-hikey -> cpufreq/remote-wakeup-hikey
+ - [deleted]                   bkp/cpufreq/documentation
+ + b3c4f2b6a811...7f98fb4956a7 bkp/cpufreq/remote-wakeup -> bkp/cpufreq/remote-wakeup (forced update)
+ + f275c1181ea5...05bbc7ad440b bkp/cpufreq/remote-wakeup-hikey -> bkp/cpufreq/remote-wakeup-hikey (forced update)
+ + 1b91d4c81b9e...d2cece406af9 bkp/cpufreq/remote-wakeup-hikey-vanila -> bkp/cpufreq/remote-wakeup-hikey-vanila (forced update)
+ + 2361296903e9...46c3b4fb2482 lnext/akpm -> lnext/akpm (forced update)
+ + 1bd307b2f892...4acbcfd19d6d lnext/akpm-base -> lnext/akpm-base (forced update)
+ + f37208bc3c9c...ce05054690c4 lnext/master -> lnext/master (forced update)
+   0263d4ebd94b..a572a1b99948  lnext/stable -> lnext/stable
+   566cf877a1fc..d5adbfcd5f7b  pm/master -> pm/master
+   ff7e593c9cf3..cbf304e420da  pm/pm -> pm/pm
+   778935778c3b..a9306a636314  pm/pm-core-fixes -> pm/pm-core-fixes
+ + 7a72b8775225...fd4c9e3a71b4 pm/testing -> pm/testing (forced update)
+ * [new branch]                cpufreq/fixes -> cpufreq/fixes
+ * [new branch]                pm/pm-cpufreq-fixes -> pm/pm-cpufreq-fixes
+ * [new tag]                   next-20170206 -> next-20170206
+ * [new tag]                   pm-4.10-rc8 -> pm-4.10-rc8
+ ! [remote rejected]           master (deletion of the current branch prohibited)
+error: failed to push some refs to 'ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git'
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

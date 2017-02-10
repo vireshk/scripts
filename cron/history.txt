@@ -1024,3 +1024,61 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 324fec6189bd] updates
+ 3 files changed, 805 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/scripts
+   6517313e96d3..324fec6189bd  master -> master
+   5bc7dc15bb16..6517313e96d3  bkp/master -> bkp/master
+
+
+
+ 
+Fri Feb 10 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+remote: error: By default, deleting the current branch is denied, because the next        
+remote: error: 'git clone' won't result in any file checked out, causing confusion.        
+remote: error:         
+remote: error: You can set 'receive.denyDeleteCurrent' configuration variable to        
+remote: error: 'warn' or 'ignore' in the remote repository to allow deleting the        
+remote: error: current branch, with or without a warning message.        
+remote: error:         
+remote: error: To squelch this message, you can set it to 'refuse'.        
+remote: error: refusing to delete the current branch: refs/heads/master        
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 2346377692b8...45f3f1f2dd69 cpufreq/rate_limit -> cpufreq/rate_limit (forced update)
+ + dbf06ebd47b3...5ee1cdd46962 opp/genpd-reorder -> opp/genpd-reorder (forced update)
+ + 5f668b3c088e...c7fd8a3f970f bkp/cpufreq/fixes -> bkp/cpufreq/fixes (forced update)
+ - [deleted]                   bkp/opp/genpd-bkp
+ + e3e597021e12...dbf06ebd47b3 bkp/opp/genpd-reorder -> bkp/opp/genpd-reorder (forced update)
+ - [deleted]                   bkp/opp/genpd-reorder-4.9
+ + df6cdea2871b...a818559a1469 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   9e59f4fae681..a818559a1469  pm/linux-next -> pm/linux-next
+ + fe29478f6117...b95e125b7a29 pmlo/opp/genpd-performance-state -> pmlo/opp/genpd-performance-state (forced update)
+ * [new branch]                bkp/cpufreq/rate_limit -> bkp/cpufreq/rate_limit
+ * [new branch]                bkp/cpufreq/rate_limit_hikey -> bkp/cpufreq/rate_limit_hikey
+ * [new branch]                bkp/opp/genpd-reorder-v1 -> bkp/opp/genpd-reorder-v1
+ * [new branch]                bkp/opp/genpd-reorder-v2 -> bkp/opp/genpd-reorder-v2
+ ! [remote rejected]           master (deletion of the current branch prohibited)
+error: failed to push some refs to 'ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git'
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

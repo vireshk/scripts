@@ -1082,3 +1082,53 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 12666cbd3d3a] updates
+ 3 files changed, 749 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/scripts
+   324fec6189bd..12666cbd3d3a  master -> master
+   6517313e96d3..324fec6189bd  bkp/master -> bkp/master
+
+
+
+ 
+Mon Feb 13 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+remote: error: By default, deleting the current branch is denied, because the next        
+remote: error: 'git clone' won't result in any file checked out, causing confusion.        
+remote: error:         
+remote: error: You can set 'receive.denyDeleteCurrent' configuration variable to        
+remote: error: 'warn' or 'ignore' in the remote repository to allow deleting the        
+remote: error: current branch, with or without a warning message.        
+remote: error:         
+remote: error: To squelch this message, you can set it to 'refuse'.        
+remote: error: refusing to delete the current branch: refs/heads/master        
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 2346377692b8...45f3f1f2dd69 bkp/cpufreq/rate_limit -> bkp/cpufreq/rate_limit (forced update)
+ + dbf06ebd47b3...5ee1cdd46962 bkp/opp/genpd-reorder -> bkp/opp/genpd-reorder (forced update)
+   34e00accf612..7089db84e356  origin/HEAD -> origin/HEAD
+   34e00accf612..7089db84e356  origin/master -> origin/master
+ * [new tag]                   v4.10-rc8 -> v4.10-rc8
+ ! [remote rejected]           master (deletion of the current branch prohibited)
+error: failed to push some refs to 'ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git'
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -1132,3 +1132,57 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master ba463d919484] updates
+ 3 files changed, 764 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/scripts
+   12666cbd3d3a..ba463d919484  master -> master
+   324fec6189bd..12666cbd3d3a  bkp/master -> bkp/master
+
+
+
+ 
+Tue Feb 14 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+remote: error: By default, deleting the current branch is denied, because the next        
+remote: error: 'git clone' won't result in any file checked out, causing confusion.        
+remote: error:         
+remote: error: You can set 'receive.denyDeleteCurrent' configuration variable to        
+remote: error: 'warn' or 'ignore' in the remote repository to allow deleting the        
+remote: error: current branch, with or without a warning message.        
+remote: error:         
+remote: error: To squelch this message, you can set it to 'refuse'.        
+remote: error: refusing to delete the current branch: refs/heads/master        
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git
+ + fa37acc7426c...9a77de40b821 lnext/akpm -> lnext/akpm (forced update)
+ + cc5504278e7b...883c7d2526e4 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + eb60f01302b2...b48396223723 lnext/master -> lnext/master (forced update)
+   d5adbfcd5f7b..7089db84e356  lnext/stable -> lnext/stable
+ + a818559a1469...d594aa42fee4 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + a818559a1469...98032088d80f pm/linux-next -> pm/linux-next (forced update)
+   d5adbfcd5f7b..7089db84e356  pm/master -> pm/master
+ + fd4c9e3a71b4...a818559a1469 pm/testing -> pm/testing (forced update)
+ * [new tag]                   next-20170214 -> next-20170214
+ ! [remote rejected]           master (deletion of the current branch prohibited)
+error: failed to push some refs to 'ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git'
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

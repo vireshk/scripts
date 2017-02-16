@@ -1224,3 +1224,44 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master db1e74153f49] updates
+ 5 files changed, 693 insertions(+), 3 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/scripts
+   ef9d5b0220ed..db1e74153f49  master -> master
+   ba463d919484..ef9d5b0220ed  bkp/master -> bkp/master
+
+
+
+ 
+Thu Feb 16 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git
+ + c36367e08469...1f6035de3b74 cpufreq/rate_limit -> cpufreq/rate_limit (forced update)
+ + 45f3f1f2dd69...c36367e08469 bkp/cpufreq/rate_limit -> bkp/cpufreq/rate_limit (forced update)
+ + eb862848df53...7089db84e356 bkp/master -> bkp/master (forced update)
+ + d594aa42fee4...cae6ae8d19b6 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 98032088d80f...4e628fac3887 pm/linux-next -> pm/linux-next (forced update)
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+ssh: connect to host git.linaro.org port 22: Connection timed out
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

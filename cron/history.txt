@@ -1265,3 +1265,39 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 2b021c75488b] updates
+ 3 files changed, 726 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/scripts
+   db1e74153f49..2b021c75488b  master -> master
+   ef9d5b0220ed..db1e74153f49  bkp/master -> bkp/master
+
+
+
+ 
+Fri Feb 17 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git
+ + c36367e08469...1f6035de3b74 bkp/cpufreq/rate_limit -> bkp/cpufreq/rate_limit (forced update)
+   4e628fac3887..64c41b5173b0  pm/linux-next -> pm/linux-next
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

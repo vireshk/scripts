@@ -1301,3 +1301,46 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master e8634af19535] updates
+ 5 files changed, 1148 insertions(+)
+ create mode 100644 mutt/incoming/Sched-tools_PATCH_v2_rtapp_Add_broader_support_for_specifying_
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/scripts
+   2b021c75488b..e8634af19535  master -> master
+   db1e74153f49..2b021c75488b  bkp/master -> bkp/master
+
+
+
+ 
+Tue Feb 21 14:21:20 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+ssh: Could not resolve hostname git.linaro.org: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/module
+ssh: Could not resolve hostname git.linaro.org: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+ssh: Could not resolve hostname git.linaro.org: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+ssh: Could not resolve hostname git.linaro.org: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/scripts

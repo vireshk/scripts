@@ -111,3 +111,10 @@ alias gitmailtimer='gitmaillinaro --cc lkml --to tglx --cc fw --cc vingu'
 alias gitmailara='gitmail --to gregl --cc ara'
 alias gitmailarak='gitmail --to gregl --cc arak'
 alias prepcclist='cat 00* | grep Cc | cut -f 2 -d : | sort | uniq > ~/scripts/mycoverletterlist.txt'
+
+
+# fetch remotes
+alias gitsyncpmko='ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/pm.git next;ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/pm.git linus;'
+alias gitsynclko='ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/linux.git next;ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/linux.git linus;'
+alias gitsyncpmlo='ssh git@git.linaro.org track fetch people/viresh.kumar/linux.git next;ssh git@git.linaro.org track fetch people/viresh.kumar/linux.git linus;'
+alias gitsyncllo='ssh git@git.linaro.org track fetch people/viresh.kumar/mylinux.git next;ssh git@git.linaro.org track fetch people/viresh.kumar/mylinux.git linus;'

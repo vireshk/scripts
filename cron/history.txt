@@ -1344,3 +1344,74 @@ Please make sure you have the correct access rights
 and the repository exists.
 
 Entering /home/vireshk/scripts
+[master de8bc0ed2aa8] updates
+ 3 files changed, 1152 insertions(+)
+ssh: Could not resolve hostname git.linaro.org: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Wed Feb 22 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 1f6035de3b74...925d8ea8faa0 cpufreq/rate_limit -> cpufreq/rate_limit (forced update)
+ + 976c1827f5e7...4195db81cb00 cpufreq/remote-wakeup -> cpufreq/remote-wakeup (forced update)
+ + 5ee1cdd46962...911f8a3a804e opp/genpd-reorder -> opp/genpd-reorder (forced update)
+ + 9a77de40b821...616a11e2fecf lnext/akpm -> lnext/akpm (forced update)
+ + 883c7d2526e4...11ed444b7132 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + b48396223723...b349d1bbdc9e lnext/master -> lnext/master (forced update)
+   7089db84e356..137d01df511b  lnext/stable -> lnext/stable
+   7089db84e356..c470abd4fde4  origin/HEAD -> origin/HEAD
+   7089db84e356..c470abd4fde4  origin/master -> origin/master
+   0389227dde3a..ac18c0c4e2b1  pm/acpi -> pm/acpi
+   9f9a35a7b654..d222678426fa  pm/acpi-apei -> pm/acpi-apei
+   1ef356681ef4..0c6543f6cda4  pm/acpi-bus -> pm/acpi-bus
+   f9151fcfcdfc..ecb10b694b72  pm/acpi-button -> pm/acpi-button
+   eab05ec38073..c3a696b6e8f8  pm/acpi-ec -> pm/acpi-ec
+   8fc85c6ad849..febf2407418a  pm/acpi-processor -> pm/acpi-processor
+   2c85025c75df..cbc00c1310d3  pm/acpi-sleep -> pm/acpi-sleep
+   7a37052adb5e..097472134851  pm/acpica -> pm/acpica
+   cae6ae8d19b6..a9925f4fc34b  pm/bleeding-edge -> pm/bleeding-edge
+   ee39222d4583..d3e1b617ae20  pm/device-properties -> pm/device-properties
+   64c41b5173b0..14a05f0baaf1  pm/linux-next -> pm/linux-next
+   cbf304e420da..eee77a8a0d26  pm/pm -> pm/pm
+   05a926227742..09bb6e93956a  pm/pm-core -> pm/pm-core
+   1443ebbacfd7..20bb5505e96f  pm/pm-cpufreq -> pm/pm-cpufreq
+   404ea9f1a792..37efa4b41ffb  pm/pm-cpuidle -> pm/pm-cpuidle
+   32dd77316997..23b017a623a0  pm/pm-devfreq -> pm/pm-devfreq
+   ab51e6ba0059..16d0bf188210  pm/pm-domains -> pm/pm-domains
+   e231f8d7ed9a..0764c604c812  pm/pm-opp -> pm/pm-opp
+   034e7906211c..e84b4a84e52d  pm/pm-qos -> pm/pm-qos
+   e326ce013a8e..00bb39988297  pm/pm-sleep -> pm/pm-sleep
+   af1e45e6ab5f..48385dd7400e  pm/pm-tools -> pm/pm-tools
+ + a818559a1469...14a05f0baaf1 pm/testing -> pm/testing (forced update)
+ * [new branch]                pmko/genpd-cleanups -> pmko/genpd-cleanups
+ * [new tag]                   acpi-4.11-rc1 -> acpi-4.11-rc1
+ * [new tag]                   device-properties-4.11-rc1 -> device-properties-4.11-rc1
+ * [new tag]                   next-20170220 -> next-20170220
+ * [new tag]                   pm-4.11-rc1 -> pm-4.11-rc1
+ * [new tag]                   v4.10 -> v4.10
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

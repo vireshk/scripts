@@ -1415,3 +1415,41 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 91eddeedd047] updates
+ 4 files changed, 685 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/scripts
+   e8634af19535..91eddeedd047  master -> master
+   2b021c75488b..e8634af19535  bkp/master -> bkp/master
+
+
+
+ 
+Thu Feb 23 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 911f8a3a804e...2780323935f3 opp/genpd-reorder -> opp/genpd-reorder (forced update)
+ + 1f6035de3b74...925d8ea8faa0 bkp/cpufreq/rate_limit -> bkp/cpufreq/rate_limit (forced update)
+ + 976c1827f5e7...4195db81cb00 bkp/cpufreq/remote-wakeup -> bkp/cpufreq/remote-wakeup (forced update)
+ + 5ee1cdd46962...911f8a3a804e bkp/opp/genpd-reorder -> bkp/opp/genpd-reorder (forced update)
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

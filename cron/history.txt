@@ -1492,3 +1492,48 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master e9fcc58649e2] updates
+ 3 files changed, 625 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/scripts
+   07696e5b3d30..e9fcc58649e2  master -> master
+   91eddeedd047..07696e5b3d30  bkp/master -> bkp/master
+
+
+
+ 
+Mon Feb 27 14:04:10 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 4195db81cb00...665f07a0a608 cpufreq/remote-wakeup -> cpufreq/remote-wakeup (forced update)
+ - [deleted]                   opp/genpd-bindings
+ - [deleted]                   opp/genpd-bindings-v1
+ - [deleted]                   opp/genpd-reorder
+ + 2780323935f3...6a8daa616f44 bkp/opp/genpd-reorder -> bkp/opp/genpd-reorder (forced update)
+   c470abd4fde4..e5d56efc97f8  origin/HEAD -> origin/HEAD
+   c470abd4fde4..e5d56efc97f8  origin/master -> origin/master
+ - [deleted]                   pmko/genpd-cleanups
+ + 5be1dfe983d6...d6a703e223e8 pmlo/opp/genpd-performance-state -> pmlo/opp/genpd-performance-state (forced update)
+ * [new branch]                opp/genpd-pstate -> opp/genpd-pstate
+ * [new branch]                opp/genpd-reorder-v3 -> opp/genpd-reorder-v3
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -77,7 +77,7 @@ linaro/kernelci
 
 # moderator
 :0:
-* ^(To|Cc):.*(linaro-dev-owner@lists\.linaro\.org|linaro-kernel-owner@lists\.linaro\.org)
+* ^(To|Cc):.*(linaro-dev-owner@lists\.linaro\.org|linaro-kernel-owner@lists\.linaro\.org|greybus-dev-owner@lists\.linaro\.org)
 linaro/moderator
 
 # Everyone

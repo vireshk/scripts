@@ -1537,3 +1537,49 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master fd942fcb70ef] updates
+ 3 files changed, 738 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/scripts
+   e9fcc58649e2..fd942fcb70ef  master -> master
+   07696e5b3d30..e9fcc58649e2  bkp/master -> bkp/master
+
+
+
+ 
+Tue Feb 28 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 665f07a0a608...00745ec1c977 cpufreq/remote-wakeup -> cpufreq/remote-wakeup (forced update)
+ + b3fb361ecb1e...0909fd36a921 cpufreq/remote-wakeup-hikey -> cpufreq/remote-wakeup-hikey (forced update)
+ + 4195db81cb00...665f07a0a608 bkp/cpufreq/remote-wakeup -> bkp/cpufreq/remote-wakeup (forced update)
+ - [deleted]                   bkp/opp/genpd-bindings
+ - [deleted]                   bkp/opp/genpd-bindings-v1
+ - [deleted]                   bkp/opp/genpd-reorder
+   e797cb39b1b8..69ab64c2a0f5  jstultz/dev/hi3660-aosp -> jstultz/dev/hi3660-aosp
+ + d2cece406af9...abc4cb38dfb9 jstultz/dev/hikey-mainline-WIP -> jstultz/dev/hikey-mainline-WIP (forced update)
+ * [new branch]                cpufreq/remote-wakeup-hikey-old -> cpufreq/remote-wakeup-hikey-old
+ * [new branch]                bkp/opp/genpd-pstate -> bkp/opp/genpd-pstate
+ * [new branch]                bkp/opp/genpd-reorder-v3 -> bkp/opp/genpd-reorder-v3
+ * [new branch]                jstultz/dev/hikey-4.10 -> jstultz/dev/hikey-4.10
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

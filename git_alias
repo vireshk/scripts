@@ -105,11 +105,10 @@ alias myspatch='echo "spatch -in_place -include_headers -sp_file setmode.cocci -
 alias gitmail='git send-email *.patch'
 alias gitmaillinaro='gitmail --cc linaro'
 alias gitmailpm='gitmaillinaro --to rafael --cc pm --cc lkml --cc vingu'
-alias gitmailopp='gitmaillinaro --to rafael --cc pm --cc lkml --cc sboyd --cc "Nishanth Menon <nm@ti.com>" --cc vingu'
+alias gitmailopp='gitmailpm --cc sboyd --cc "Nishanth Menon <nm@ti.com>"'
 alias gitmailsched='gitmaillinaro --cc lkml --to ingo --to peterz --cc vingu'
+alias gitmailschedutil='gitmailpm --to ingo --to peterz --cc vingu'
 alias gitmailtimer='gitmaillinaro --cc lkml --to tglx --cc fw --cc vingu'
-alias gitmailara='gitmail --to gregl --cc ara'
-alias gitmailarak='gitmail --to gregl --cc arak'
 alias prepcclist='cat 00* | grep Cc | cut -f 2 -d : | sort | uniq > ~/scripts/mycoverletterlist.txt'
 
 

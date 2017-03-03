@@ -1661,3 +1661,50 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 6a324cbc8327] updates
+ 10 files changed, 775 insertions(+), 635 deletions(-)
+ delete mode 100644 mutt/incoming/PATCH_cpufreq_update_documentation.mbox
+ create mode 100644 mutt/incoming/PATCH_fix_schedutil_rt.mbox
+ delete mode 100644 mutt/incoming/PATCH_schedutil_documentation.mbox
+ delete mode 100644 mutt/incoming/Re_PATCH_devfreq_rk3399_dmc_Don't_use_OPP_structures_outside_of_RCU_locks.mbox
+ delete mode 100644 mutt/incoming/Sched-tools_PATCH_v2_rtapp_Add_broader_support_for_specifying_
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/scripts
+   0e9cce433095..6a324cbc8327  master -> master
+   c1f0413275c9..0e9cce433095  bkp/master -> bkp/master
+
+
+
+ 
+Fri Mar  3 13:08:54 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+ssh: Could not resolve hostname git.linaro.org: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/module
+ssh: Could not resolve hostname git.linaro.org: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+ssh: Could not resolve hostname git.linaro.org: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+ssh: Could not resolve hostname git.linaro.org: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/scripts

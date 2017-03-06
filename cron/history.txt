@@ -1708,3 +1708,72 @@ Please make sure you have the correct access rights
 and the repository exists.
 
 Entering /home/vireshk/scripts
+[master e0096dd8ecbc] updates
+ 3 files changed, 709 insertions(+)
+ssh: Could not resolve hostname git.linaro.org: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Mon Mar  6 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   cpufreq/fixes
+ - [deleted]                   cpufreq/interactive-debug
+ - [deleted]                   cpufreq/interactive-idle-notifier-v1
+ - [deleted]                   cpufreq/interactive-idle-notifier-v2
+ - [deleted]                   cpufreq/interactive-orig
+ - [deleted]                   cpufreq/interactive-v2
+ + b878b8733439...c2d50b8ba1c7 cpufreq/remote-wakeup -> cpufreq/remote-wakeup (forced update)
+ - [deleted]                   cpufreq/testsuite
+ + 616a11e2fecf...de91776547c1 lnext/akpm -> lnext/akpm (forced update)
+ + 11ed444b7132...522d9ee18773 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + b349d1bbdc9e...9d51244afbfc lnext/master -> lnext/master (forced update)
+   137d01df511b..c1ae3cfa0e89  lnext/stable -> lnext/stable
+   e5d56efc97f8..c1ae3cfa0e89  origin/HEAD -> origin/HEAD
+   e5d56efc97f8..c1ae3cfa0e89  origin/master -> origin/master
+   ac18c0c4e2b1..0cb3b79efabd  pm/acpi -> pm/acpi
+   d222678426fa..41139ac3cd76  pm/acpi-apei -> pm/acpi-apei
+ + b0ba0266f530...d440e59b49f5 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + b485f1586a7c...d0c92db75694 pm/linux-next -> pm/linux-next (forced update)
+   786856b6d111..c1ae3cfa0e89  pm/master -> pm/master
+   eee77a8a0d26..9b5e9cb164ee  pm/pm -> pm/pm
+   09bb6e93956a..35bfa99e81f4  pm/pm-core -> pm/pm-core
+   20bb5505e96f..c3a49c899121  pm/pm-cpufreq -> pm/pm-cpufreq
+   37efa4b41ffb..de09cdd09fa1  pm/pm-cpuidle -> pm/pm-cpuidle
+   16d0bf188210..2da835452a08  pm/pm-domains -> pm/pm-domains
+   0764c604c812..28db0c7b1c7f  pm/pm-opp -> pm/pm-opp
+   e84b4a84e52d..d08d1b27fe2a  pm/pm-qos -> pm/pm-qos
+   00bb39988297..2872de1382a7  pm/pm-sleep -> pm/pm-sleep
+   48385dd7400e..6bff9c609f3d  pm/pm-tools -> pm/pm-tools
+ * [new branch]                bkp/cpufreq/interactive-idle-notifier-v2 -> bkp/cpufreq/interactive-idle-notifier-v2
+ * [new branch]                bkp/cpufreq/schedutil-cleanup -> bkp/cpufreq/schedutil-cleanup
+ * [new tag]                   acpi-extra-4.11-rc1 -> acpi-extra-4.11-rc1
+ * [new tag]                   next-20170306 -> next-20170306
+ * [new tag]                   pm-extra-4.11-rc1 -> pm-extra-4.11-rc1
+ * [new tag]                   pm-turbostat-4.11-rc1 -> pm-turbostat-4.11-rc1
+ * [new tag]                   v4.11-rc1 -> v4.11-rc1
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -137,6 +137,7 @@ alias sshminicom="ssh user@10.162.5.156"
 alias mypicupload="trickle -s -u 2048 -d 2048 firefox"
 alias mydump="arm-linux-gnueabihf-objdump -r -S -l --disassemble"
 alias myaradump="harche; /home/vireshk/work/repos/ara/arche/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-objdump -r -S -l --disassemble out/target/product/arche/obj/KERNEL_OBJ/drivers/cpufreq/cpufreq.o"
+alias mydump64="aarch64-linux-gnu-objdump -r -S -l --disassemble"
 
 mymini() { msudo -A minicom -w panda -D /dev/ttyUSB$1; }
 

@@ -113,11 +113,11 @@ alias cleana='$vcompile clean 3; $vcompile clean 6; $vcompile clean 13;'
 alias configa='$vcompile config 3; $vcompile config 6; $vcompile config 13;'
 alias imagea='$vcompile nimage 3 & $vcompile nimage 6 & $vcompile nimage 13&'
 alias builda='cleana configa imagea'
-alias imagemyx86='make O=../bx86 CROSS_COMPILE=ccache -j \`getconf _NPROCESSORS_ONLN\` LOCALVERSION=-custom'
-alias imagemyx86deb='make O=../bx86 CROSS_COMPILE=ccache -j \`getconf _NPROCESSORS_ONLN\` deb-pkg LOCALVERSION=-custom'
+alias imagemyx86='make O=../bx86 CROSS_COMPILE= -j8 LOCALVERSION=-custom > /dev/null'
+alias imagemyx86deb='make O=../bx86 CROSS_COMPILE= -j8 deb-pkg LOCALVERSION=-custom'
 
 #Compiling module
-alias installx86='make O=../bx86 CROSS_COMPILE=ccache -j \`getconf _NPROCESSORS_ONLN\`  LOCALVERSION=-custom > /dev/null; msudo -A make O=../bx86 CROSS_COMPILE=ccache -j \`getconf _NPROCESSORS_ONLN\`  LOCALVERSION=-custom modules_install; msudo -A make O=../bx86 CROSS_COMPILE=ccache -j \`getconf _NPROCESSORS_ONLN\`  LOCALVERSION=-custom install'
+alias installx86='imagemyx86; msudo -A make O=../bx86 CROSS_COMPILE=ccache -j8  LOCALVERSION=-custom modules_install; msudo -A make O=../bx86 CROSS_COMPILE=ccache -j8 LOCALVERSION=-custom install'
 
 #fixes
 alias fixsound1="pulseaudio -k"

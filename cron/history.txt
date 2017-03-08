@@ -1819,3 +1819,53 @@ Please make sure you have the correct access rights
 and the repository exists.
 
 Entering /home/vireshk/scripts
+[master 063f863f5009] updates
+ 3 files changed, 607 insertions(+)
+ssh: Could not resolve hostname git.linaro.org: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Wed Mar  8 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git
+ + c2d50b8ba1c7...55ed2b59a5e0 cpufreq/remote-wakeup -> cpufreq/remote-wakeup (forced update)
+ + 639aad743bac...f3dd7333b28e cpufreq/schedutil-cleanup -> cpufreq/schedutil-cleanup (forced update)
+ - [deleted]                   bkp/cpufreq/fixes
+ - [deleted]                   bkp/cpufreq/interactive-debug
+ - [deleted]                   bkp/cpufreq/interactive-idle-notifier-v1
+ - [deleted]                   bkp/cpufreq/interactive-idle-notifier-v2
+ - [deleted]                   bkp/cpufreq/interactive-orig
+ - [deleted]                   bkp/cpufreq/interactive-v2
+ + b878b8733439...c2d50b8ba1c7 bkp/cpufreq/remote-wakeup -> bkp/cpufreq/remote-wakeup (forced update)
+ - [deleted]                   bkp/cpufreq/testsuite
+ + d440e59b49f5...f6e94575c0ee pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   d0c92db75694..f6e94575c0ee  pm/linux-next -> pm/linux-next
+ + 14a05f0baaf1...f6e94575c0ee pm/testing -> pm/testing (forced update)
+ * [new branch]                cpufreq/schedutil-cleanup-perf -> cpufreq/schedutil-cleanup-perf
+ * [new branch]                cpufreq/schedutil-original-perf -> cpufreq/schedutil-original-perf
+ * [new branch]                bkp/bkp/cpufreq/interactive-idle-notifier-v2 -> bkp/bkp/cpufreq/interactive-idle-notifier-v2
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

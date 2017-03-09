@@ -1869,3 +1869,46 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master d618be32997b] updates
+ 6 files changed, 657 insertions(+), 3 deletions(-)
+ create mode 100644 .bash_aliases.swp
+ create mode 100644 .compile.sh.swp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/scripts
+   53b666141b3b..d618be32997b  master -> master
+   6a324cbc8327..53b666141b3b  bkp/master -> bkp/master
+
+
+
+ 
+Thu Mar  9 14:41:53 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 925d8ea8faa0...8ae8af9aea79 cpufreq/rate_limit -> cpufreq/rate_limit (forced update)
+ + 55ed2b59a5e0...c057eade3026 cpufreq/remote-wakeup -> cpufreq/remote-wakeup (forced update)
+ + f3dd7333b28e...8ae8af9aea79 cpufreq/schedutil-cleanup -> cpufreq/schedutil-cleanup (forced update)
+ + c2d50b8ba1c7...55ed2b59a5e0 bkp/cpufreq/remote-wakeup -> bkp/cpufreq/remote-wakeup (forced update)
+ + 639aad743bac...f3dd7333b28e bkp/cpufreq/schedutil-cleanup -> bkp/cpufreq/schedutil-cleanup (forced update)
+ * [new branch]                bkp/cpufreq/schedutil-cleanup-perf -> bkp/cpufreq/schedutil-cleanup-perf
+ * [new branch]                bkp/cpufreq/schedutil-original-perf -> bkp/cpufreq/schedutil-original-perf
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -117,7 +117,7 @@ alias imagemyx86='make O=../bx86 CROSS_COMPILE= -j8 LOCALVERSION=-custom > /dev/
 alias imagemyx86deb='make O=../bx86 CROSS_COMPILE= -j8 deb-pkg LOCALVERSION=-custom'
 
 #Compiling module
-alias installx86='imagemyx86; msudo -A make O=../bx86 CROSS_COMPILE=ccache -j8  LOCALVERSION=-custom modules_install; msudo -A make O=../bx86 CROSS_COMPILE=ccache -j8 LOCALVERSION=-custom install'
+alias installx86='imagemyx86; msudo -A make O=../bx86 CROSS_COMPILE= -j8  LOCALVERSION=-custom modules_install; msudo -A make O=../bx86 CROSS_COMPILE= -j8 LOCALVERSION=-custom install'
 
 #fixes
 alias fixsound1="pulseaudio -k"

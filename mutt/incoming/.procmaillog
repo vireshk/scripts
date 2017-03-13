@@ -442,3 +442,6 @@ From vireshk  Thu Mar  2 08:27:04 2017
 From vireshk  Thu Mar  2 08:27:04 2017
  Subject: [PATCH] fix schedutil rt
   Folder: PATCH_fix_schedutil_rt.mbox					   4364
+From vireshk  Fri Mar 10 08:30:47 2017
+ Subject: [PATCH v2] cpufreq: qoriq: enhance bus frequency calculation
+  Folder: PATCH_v2_cpufreq_qoriq_enhance_bus_frequency_calculation.mbo	  12302

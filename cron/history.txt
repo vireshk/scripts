@@ -1960,3 +1960,51 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 0e75965e8f42] updates
+ 11 files changed, 641 insertions(+), 27 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/scripts
+   91e87b1e3635..0e75965e8f42  master -> master
+   d618be32997b..91e87b1e3635  bkp/master -> bkp/master
+
+
+
+ 
+Mon Mar 13 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 093c45a7fcd3...3c5a25edd384 opp/genpd-pstate -> opp/genpd-pstate (forced update)
+ + c057eade3026...245a1a2b8f5b bkp/cpufreq/remote-wakeup -> bkp/cpufreq/remote-wakeup (forced update)
+ + de91776547c1...28415881a8fc lnext/akpm -> lnext/akpm (forced update)
+ + 522d9ee18773...e766a98118fe lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 9d51244afbfc...5be4921c9958 lnext/master -> lnext/master (forced update)
+   c1ae3cfa0e89..ea6200e84182  lnext/stable -> lnext/stable
+   c1ae3cfa0e89..4495c08e8472  origin/HEAD -> origin/HEAD
+   c1ae3cfa0e89..4495c08e8472  origin/master -> origin/master
+ + f6e94575c0ee...b63bb7839e70 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + f6e94575c0ee...4495c08e8472 pm/linux-next -> pm/linux-next (forced update)
+   c1ae3cfa0e89..4495c08e8472  pm/master -> pm/master
+ + f6e94575c0ee...4495c08e8472 pm/testing -> pm/testing (forced update)
+ * [new tag]                   next-20170310 -> next-20170310
+ * [new tag]                   v4.11-rc2 -> v4.11-rc2
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

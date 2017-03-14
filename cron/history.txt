@@ -2008,3 +2008,44 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master aca6d5794d5c] updates
+ 18 files changed, 713 insertions(+), 100 deletions(-)
+ delete mode 100644 mutt/incoming/PATCH_fix_schedutil_rt.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/scripts
+   0e75965e8f42..aca6d5794d5c  master -> master
+   91e87b1e3635..0e75965e8f42  bkp/master -> bkp/master
+
+
+
+ 
+Tue Mar 14 14:51:25 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 3c5a25edd384...6f6f85779aeb opp/genpd-pstate -> opp/genpd-pstate (forced update)
+ + 093c45a7fcd3...3c5a25edd384 bkp/opp/genpd-pstate -> bkp/opp/genpd-pstate (forced update)
+ + b63bb7839e70...6f363dc7426a pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   4495c08e8472..678f97155a0f  pm/linux-next -> pm/linux-next
+   4495c08e8472..678f97155a0f  pm/testing -> pm/testing
+ * [new branch]                thermal/cooling -> thermal/cooling
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

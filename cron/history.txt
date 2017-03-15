@@ -2049,3 +2049,44 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master a7c715f2b8a4] updates
+ 12 files changed, 673 insertions(+), 22 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/scripts
+   aca6d5794d5c..a7c715f2b8a4  master -> master
+   0e75965e8f42..aca6d5794d5c  bkp/master -> bkp/master
+
+
+
+ 
+Wed Mar 15 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git
+   99cc71f22d04..f1ab0d4f9aa7  thermal/cooling -> thermal/cooling
+ + 3c5a25edd384...6f6f85779aeb bkp/opp/genpd-pstate -> bkp/opp/genpd-pstate (forced update)
+   6f363dc7426a..a32d3eb54f9b  pm/bleeding-edge -> pm/bleeding-edge
+ + 678f97155a0f...cf83901fc00d pm/testing -> pm/testing (forced update)
+ + 70610212c4f3...f6fd5fb42daa pmko/cpufreq/remote-wakeup -> pmko/cpufreq/remote-wakeup (forced update)
+ * [new branch]                bkp/thermal/cooling -> bkp/thermal/cooling
+ * [new branch]                pmko/thermal/cooling -> pmko/thermal/cooling
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

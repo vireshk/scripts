@@ -2216,3 +2216,50 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master de42d667c7e5] updates
+ 11 files changed, 752 insertions(+), 36 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   006d1af7a79f..de42d667c7e5  master -> master
+   c0f5dd81f596..006d1af7a79f  bkp/master -> bkp/master
+
+
+
+ 
+Tue Mar 21 15:30:53 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 7a6684128e9f...96b7044b50a3 opp/genpd-pstate -> opp/genpd-pstate (forced update)
+ + bb7238001d97...7a6684128e9f bkp/opp/genpd-pstate -> bkp/opp/genpd-pstate (forced update)
+ + 28415881a8fc...1847a50f13d8 lnext/akpm -> lnext/akpm (forced update)
+ + e766a98118fe...b8b0d50af82d lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 5be4921c9958...50eff530518a lnext/master -> lnext/master (forced update)
+   ea6200e84182..97da3854c526  lnext/stable -> lnext/stable
+ + ddf8a5414ed5...b2bb75efed4b pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + ddf8a5414ed5...40ae5fc6240c pm/linux-next -> pm/linux-next (forced update)
+   4495c08e8472..97da3854c526  pm/master -> pm/master
+ + d6a703e223e8...9d5fb0b66c1c pmlo/opp/genpd-performance-state -> pmlo/opp/genpd-performance-state (forced update)
+ * [new tag]                   next-20170320 -> next-20170320
+ * [new tag]                   next-20170321 -> next-20170321
+ * [new tag]                   v4.11-rc3 -> v4.11-rc3
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

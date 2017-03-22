@@ -2263,3 +2263,42 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 8199a3ba6857] updates
+ 17 files changed, 1197 insertions(+), 24 deletions(-)
+ create mode 100644 mutt/incoming/PATCH_cpufreq_Restore_policy_min-max_limits_on_CPU_online.mbox
+ create mode 100644 mutt/incoming/Re_RFCPATCH_2-2_cpufreq_schedutil_Force_max_frequency_on_busy_CPUs.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   de42d667c7e5..8199a3ba6857  master -> master
+   006d1af7a79f..de42d667c7e5  bkp/master -> bkp/master
+
+
+
+ 
+Wed Mar 22 13:00:02 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 7a6684128e9f...96b7044b50a3 bkp/opp/genpd-pstate -> bkp/opp/genpd-pstate (forced update)
+   b2bb75efed4b..20e95785cc39  pm/bleeding-edge -> pm/bleeding-edge
+   7eed09880a1a..fca22800e1aa  pm/testing -> pm/testing
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

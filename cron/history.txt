@@ -2471,3 +2471,398 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 39ce691e2cc8] updates
+ 15 files changed, 839 insertions(+), 36 deletions(-)
+ rewrite .Skype/shared_dynco/dc.db-journal (100%)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   38302b369a7b..39ce691e2cc8  master -> master
+   8199a3ba6857..38302b369a7b  bkp/master -> bkp/master
+
+
+
+ 
+Mon Apr 10 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+Traceback (most recent call last):
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>
+    print(get_groups(sys.argv[1]))
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 72, in get_groups
+    headers=headers)
+  File "/usr/lib/python2.7/httplib.py", line 1017, in request
+    self._send_request(method, url, body, headers)
+  File "/usr/lib/python2.7/httplib.py", line 1050, in _send_request
+    self.putheader(hdr, value)
+  File "/usr/lib/python2.7/httplib.py", line 995, in putheader
+    raise ValueError('Invalid header value %r' % (one_value,))
+ValueError: Invalid header value 'Basic Z2l0LmxpbmFyby5vcmc6bFpkQ3VwQ3Axd3RlNHh5Y0NtZG0=\n'
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 72, in get_groups        
+remote:     headers=headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1017, in request        
+remote:     self._send_request(method, url, body, headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1050, in _send_request        
+remote:     self.putheader(hdr, value)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 995, in putheader        
+remote:     raise ValueError('Invalid header value %r' % (one_value,))        
+remote: ValueError: Invalid header value 'Basic Z2l0LmxpbmFyby5vcmc6bFpkQ3VwQ3Axd3RlNHh5Y0NtZG0=\n'        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 72, in get_groups        
+remote:     headers=headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1017, in request        
+remote:     self._send_request(method, url, body, headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1050, in _send_request        
+remote:     self.putheader(hdr, value)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 995, in putheader        
+remote:     raise ValueError('Invalid header value %r' % (one_value,))        
+remote: ValueError: Invalid header value 'Basic Z2l0LmxpbmFyby5vcmc6bFpkQ3VwQ3Axd3RlNHh5Y0NtZG0=\n'        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 72, in get_groups        
+remote:     headers=headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1017, in request        
+remote:     self._send_request(method, url, body, headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1050, in _send_request        
+remote:     self.putheader(hdr, value)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 995, in putheader        
+remote:     raise ValueError('Invalid header value %r' % (one_value,))        
+remote: ValueError: Invalid header value 'Basic Z2l0LmxpbmFyby5vcmc6bFpkQ3VwQ3Axd3RlNHh5Y0NtZG0=\n'
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 72, in get_groups        
+remote:     headers=headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1017, in request        
+remote:     self._send_request(method, url, body, headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1050, in _send_request        
+remote:     self.putheader(hdr, value)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 995, in putheader        
+remote:     raise ValueError('Invalid header value %r' % (one_value,))        
+remote: ValueError: Invalid header value 'Basic Z2l0LmxpbmFyby5vcmc6bFpkQ3VwQ3Axd3RlNHh5Y0NtZG0=\n'        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 72, in get_groups        
+remote:     headers=headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1017, in request        
+remote:     self._send_request(method, url, body, headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1050, in _send_request        
+remote:     self.putheader(hdr, value)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 995, in putheader        
+remote:     raise ValueError('Invalid header value %r' % (one_value,))        
+remote: ValueError: Invalid header value 'Basic Z2l0LmxpbmFyby5vcmc6bFpkQ3VwQ3Axd3RlNHh5Y0NtZG0=\n'        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 72, in get_groups        
+remote:     headers=headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1017, in request        
+remote:     self._send_request(method, url, body, headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1050, in _send_request        
+remote:     self.putheader(hdr, value)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 995, in putheader        
+remote:     raise ValueError('Invalid header value %r' % (one_value,))        
+remote: ValueError: Invalid header value 'Basic Z2l0LmxpbmFyby5vcmc6bFpkQ3VwQ3Axd3RlNHh5Y0NtZG0=\n'        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 72, in get_groups        
+remote:     headers=headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1017, in request        
+remote:     self._send_request(method, url, body, headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1050, in _send_request        
+remote:     self.putheader(hdr, value)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 995, in putheader        
+remote:     raise ValueError('Invalid header value %r' % (one_value,))        
+remote: ValueError: Invalid header value 'Basic Z2l0LmxpbmFyby5vcmc6bFpkQ3VwQ3Axd3RlNHh5Y0NtZG0=\n'
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 72, in get_groups        
+remote:     headers=headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1017, in request        
+remote:     self._send_request(method, url, body, headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1050, in _send_request        
+remote:     self.putheader(hdr, value)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 995, in putheader        
+remote:     raise ValueError('Invalid header value %r' % (one_value,))        
+remote: ValueError: Invalid header value 'Basic Z2l0LmxpbmFyby5vcmc6bFpkQ3VwQ3Axd3RlNHh5Y0NtZG0=\n'
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 72, in get_groups        
+remote:     headers=headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1017, in request        
+remote:     self._send_request(method, url, body, headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1050, in _send_request        
+remote:     self.putheader(hdr, value)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 995, in putheader        
+remote:     raise ValueError('Invalid header value %r' % (one_value,))        
+remote: ValueError: Invalid header value 'Basic Z2l0LmxpbmFyby5vcmc6bFpkQ3VwQ3Axd3RlNHh5Y0NtZG0=\n'        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 72, in get_groups        
+remote:     headers=headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1017, in request        
+remote:     self._send_request(method, url, body, headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1050, in _send_request        
+remote:     self.putheader(hdr, value)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 995, in putheader        
+remote:     raise ValueError('Invalid header value %r' % (one_value,))        
+remote: ValueError: Invalid header value 'Basic Z2l0LmxpbmFyby5vcmc6bFpkQ3VwQ3Axd3RlNHh5Y0NtZG0=\n'
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 72, in get_groups        
+remote:     headers=headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1017, in request        
+remote:     self._send_request(method, url, body, headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1050, in _send_request        
+remote:     self.putheader(hdr, value)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 995, in putheader        
+remote:     raise ValueError('Invalid header value %r' % (one_value,))        
+remote: ValueError: Invalid header value 'Basic Z2l0LmxpbmFyby5vcmc6bFpkQ3VwQ3Axd3RlNHh5Y0NtZG0=\n'        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 72, in get_groups        
+remote:     headers=headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1017, in request        
+remote:     self._send_request(method, url, body, headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1050, in _send_request        
+remote:     self.putheader(hdr, value)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 995, in putheader        
+remote:     raise ValueError('Invalid header value %r' % (one_value,))        
+remote: ValueError: Invalid header value 'Basic Z2l0LmxpbmFyby5vcmc6bFpkQ3VwQ3Axd3RlNHh5Y0NtZG0=\n'        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 72, in get_groups        
+remote:     headers=headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1017, in request        
+remote:     self._send_request(method, url, body, headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1050, in _send_request        
+remote:     self.putheader(hdr, value)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 995, in putheader        
+remote:     raise ValueError('Invalid header value %r' % (one_value,))        
+remote: ValueError: Invalid header value 'Basic Z2l0LmxpbmFyby5vcmc6bFpkQ3VwQ3Axd3RlNHh5Y0NtZG0=\n'        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 72, in get_groups        
+remote:     headers=headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1017, in request        
+remote:     self._send_request(method, url, body, headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1050, in _send_request        
+remote:     self.putheader(hdr, value)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 995, in putheader        
+remote:     raise ValueError('Invalid header value %r' % (one_value,))        
+remote: ValueError: Invalid header value 'Basic Z2l0LmxpbmFyby5vcmc6bFpkQ3VwQ3Axd3RlNHh5Y0NtZG0=\n'        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 72, in get_groups        
+remote:     headers=headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1017, in request        
+remote:     self._send_request(method, url, body, headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1050, in _send_request        
+remote:     self.putheader(hdr, value)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 995, in putheader        
+remote:     raise ValueError('Invalid header value %r' % (one_value,))        
+remote: ValueError: Invalid header value 'Basic Z2l0LmxpbmFyby5vcmc6bFpkQ3VwQ3Axd3RlNHh5Y0NtZG0=\n'        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 72, in get_groups        
+remote:     headers=headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1017, in request        
+remote:     self._send_request(method, url, body, headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1050, in _send_request        
+remote:     self.putheader(hdr, value)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 995, in putheader        
+remote:     raise ValueError('Invalid header value %r' % (one_value,))        
+remote: ValueError: Invalid header value 'Basic Z2l0LmxpbmFyby5vcmc6bFpkQ3VwQ3Axd3RlNHh5Y0NtZG0=\n'        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 72, in get_groups        
+remote:     headers=headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1017, in request        
+remote:     self._send_request(method, url, body, headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1050, in _send_request        
+remote:     self.putheader(hdr, value)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 995, in putheader        
+remote:     raise ValueError('Invalid header value %r' % (one_value,))        
+remote: ValueError: Invalid header value 'Basic Z2l0LmxpbmFyby5vcmc6bFpkQ3VwQ3Axd3RlNHh5Y0NtZG0=\n'        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 72, in get_groups        
+remote:     headers=headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1017, in request        
+remote:     self._send_request(method, url, body, headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1050, in _send_request        
+remote:     self.putheader(hdr, value)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 995, in putheader        
+remote:     raise ValueError('Invalid header value %r' % (one_value,))        
+remote: ValueError: Invalid header value 'Basic Z2l0LmxpbmFyby5vcmc6bFpkQ3VwQ3Axd3RlNHh5Y0NtZG0=\n'        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 72, in get_groups        
+remote:     headers=headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1017, in request        
+remote:     self._send_request(method, url, body, headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1050, in _send_request        
+remote:     self.putheader(hdr, value)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 995, in putheader        
+remote:     raise ValueError('Invalid header value %r' % (one_value,))        
+remote: ValueError: Invalid header value 'Basic Z2l0LmxpbmFyby5vcmc6bFpkQ3VwQ3Axd3RlNHh5Y0NtZG0=\n'        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 72, in get_groups        
+remote:     headers=headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1017, in request        
+remote:     self._send_request(method, url, body, headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1050, in _send_request        
+remote:     self.putheader(hdr, value)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 995, in putheader        
+remote:     raise ValueError('Invalid header value %r' % (one_value,))        
+remote: ValueError: Invalid header value 'Basic Z2l0LmxpbmFyby5vcmc6bFpkQ3VwQ3Axd3RlNHh5Y0NtZG0=\n'        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 72, in get_groups        
+remote:     headers=headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1017, in request        
+remote:     self._send_request(method, url, body, headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1050, in _send_request        
+remote:     self.putheader(hdr, value)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 995, in putheader        
+remote:     raise ValueError('Invalid header value %r' % (one_value,))        
+remote: ValueError: Invalid header value 'Basic Z2l0LmxpbmFyby5vcmc6bFpkQ3VwQ3Axd3RlNHh5Y0NtZG0=\n'        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 72, in get_groups        
+remote:     headers=headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1017, in request        
+remote:     self._send_request(method, url, body, headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1050, in _send_request        
+remote:     self.putheader(hdr, value)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 995, in putheader        
+remote:     raise ValueError('Invalid header value %r' % (one_value,))        
+remote: ValueError: Invalid header value 'Basic Z2l0LmxpbmFyby5vcmc6bFpkQ3VwQ3Axd3RlNHh5Y0NtZG0=\n'        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 72, in get_groups        
+remote:     headers=headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1017, in request        
+remote:     self._send_request(method, url, body, headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1050, in _send_request        
+remote:     self.putheader(hdr, value)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 995, in putheader        
+remote:     raise ValueError('Invalid header value %r' % (one_value,))        
+remote: ValueError: Invalid header value 'Basic Z2l0LmxpbmFyby5vcmc6bFpkQ3VwQ3Axd3RlNHh5Y0NtZG0=\n'        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 72, in get_groups        
+remote:     headers=headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1017, in request        
+remote:     self._send_request(method, url, body, headers)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 1050, in _send_request        
+remote:     self.putheader(hdr, value)        
+remote:   File "/usr/lib/python2.7/httplib.py", line 995, in putheader        
+remote:     raise ValueError('Invalid header value %r' % (one_value,))        
+remote: ValueError: Invalid header value 'Basic Z2l0LmxpbmFyby5vcmc6bFpkQ3VwQ3Axd3RlNHh5Y0NtZG0=\n'        
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 8d09bb82b533...62813c68d43f sched/cleanup -> sched/cleanup (forced update)
+ + 1847a50f13d8...e7bdf14d8df7 lnext/akpm -> lnext/akpm (forced update)
+ + b8b0d50af82d...d391b372d44b lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 50eff530518a...5efce1428912 lnext/master -> lnext/master (forced update)
+   97da3854c526..977674c06b18  lnext/stable -> lnext/stable
+   69eea5a4ab9c..39da7c509acf  origin/HEAD -> origin/HEAD
+   69eea5a4ab9c..39da7c509acf  origin/master -> origin/master
+   0cb3b79efabd..dc752d54fd3a  pm/acpi -> pm/acpi
+ + ece10f1a2e51...d8472bee68e8 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   d3e1b617ae20..e48174779440  pm/device-properties -> pm/device-properties
+ + 00fd799df64a...d8472bee68e8 pm/linux-next -> pm/linux-next (forced update)
+   97da3854c526..39da7c509acf  pm/master -> pm/master
+   8b766e05d8ec..46e1d5e972db  pm/pm -> pm/pm
+ + fca22800e1aa...d8472bee68e8 pm/testing -> pm/testing (forced update)
+ * [new branch]                opp/rename -> opp/rename
+ * [new branch]                bkp/sched/cleanup -> bkp/sched/cleanup
+ * [new tag]                   acpi-4.11-rc5 -> acpi-4.11-rc5
+ * [new tag]                   acpi-4.11-rc6 -> acpi-4.11-rc6
+ * [new tag]                   next-20170407 -> next-20170407
+ * [new tag]                   pm-4.11-rc4 -> pm-4.11-rc4
+ * [new tag]                   pm-4.11-rc5 -> pm-4.11-rc5
+ * [new tag]                   v4.11-rc4 -> v4.11-rc4
+ * [new tag]                   v4.11-rc5 -> v4.11-rc5
+ * [new tag]                   v4.11-rc6 -> v4.11-rc6
+
+Entering /home/vireshk/work/repos/tools/module
+Traceback (most recent call last):
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>
+    print(get_groups(sys.argv[1]))
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 72, in get_groups
+    headers=headers)
+  File "/usr/lib/python2.7/httplib.py", line 1017, in request
+    self._send_request(method, url, body, headers)
+  File "/usr/lib/python2.7/httplib.py", line 1050, in _send_request
+    self.putheader(hdr, value)
+  File "/usr/lib/python2.7/httplib.py", line 995, in putheader
+    raise ValueError('Invalid header value %r' % (one_value,))
+ValueError: Invalid header value 'Basic Z2l0LmxpbmFyby5vcmc6bFpkQ3VwQ3Axd3RlNHh5Y0NtZG0=\n'
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+Traceback (most recent call last):
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>
+    print(get_groups(sys.argv[1]))
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 72, in get_groups
+    headers=headers)
+  File "/usr/lib/python2.7/httplib.py", line 1017, in request
+    self._send_request(method, url, body, headers)
+  File "/usr/lib/python2.7/httplib.py", line 1050, in _send_request
+    self.putheader(hdr, value)
+  File "/usr/lib/python2.7/httplib.py", line 995, in putheader
+    raise ValueError('Invalid header value %r' % (one_value,))
+ValueError: Invalid header value 'Basic Z2l0LmxpbmFyby5vcmc6bFpkQ3VwQ3Axd3RlNHh5Y0NtZG0=\n'
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+Traceback (most recent call last):
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>
+    print(get_groups(sys.argv[1]))
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 72, in get_groups
+    headers=headers)
+  File "/usr/lib/python2.7/httplib.py", line 1017, in request
+    self._send_request(method, url, body, headers)
+  File "/usr/lib/python2.7/httplib.py", line 1050, in _send_request
+    self.putheader(hdr, value)
+  File "/usr/lib/python2.7/httplib.py", line 995, in putheader
+    raise ValueError('Invalid header value %r' % (one_value,))
+ValueError: Invalid header value 'Basic Z2l0LmxpbmFyby5vcmc6bFpkQ3VwQ3Axd3RlNHh5Y0NtZG0=\n'
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

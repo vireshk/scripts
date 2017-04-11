@@ -110,7 +110,7 @@ alias gitmailsched='gitmaillinaro --cc lkml --to ingo --to peterz --cc vingu'
 alias gitmailschedutil='gitmailpm --to ingo --to peterz --cc vingu'
 alias gitmailtimer='gitmaillinaro --cc lkml --to tglx --cc fw --cc vingu'
 alias prepcclist='cat 00* | grep Cc | cut -f 2 -d : | sort | uniq > ~/scripts/mycoverletterlist.txt'
-alias gitmailgenpd='gitmailopp --to ulf.hansson@linaro.org --to "Kevin Hilman <khilman@linaro.org>" --cc "robh+dt@kernel.org" --cc lina.iyer@linaro.org --cc rnayak@codeaurora.org'
+alias gitmailgenpd='gitmailopp --to ulf.hansson@linaro.org --to "Kevin Hilman <khilman@kernel.org>" --cc "robh+dt@kernel.org" --cc lina.iyer@linaro.org --cc rnayak@codeaurora.org'
 
 
 # fetch remotes

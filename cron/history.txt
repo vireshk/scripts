@@ -2941,3 +2941,43 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master d930029c3ce8] updates
+ 20 files changed, 702 insertions(+), 32 deletions(-)
+ delete mode 100644 .Skype/viresh.nitj/chatsync/8d/8d454affde49ccc6.dat
+ delete mode 100644 .Skype/viresh.nitj/chatsync/bd/bd8802a1dc6610f0.dat
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   279ae895e736..d930029c3ce8  master -> master
+   39ce691e2cc8..279ae895e736  bkp/master -> bkp/master
+
+
+
+ 
+Wed Apr 12 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 5ce1fbbc7cd3...70e7c7ee1372 opp/rename -> opp/rename (forced update)
+ + 8d09bb82b533...62813c68d43f bkp/sched/cleanup -> bkp/sched/cleanup (forced update)
+   d8472bee68e8..67bf262affff  pm/bleeding-edge -> pm/bleeding-edge
+ * [new branch]                bkp/opp/rename -> bkp/opp/rename
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

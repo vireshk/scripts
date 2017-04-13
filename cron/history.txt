@@ -2981,3 +2981,83 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 2d2df5140263] updates
+ 16 files changed, 633 insertions(+), 24 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   d930029c3ce8..2d2df5140263  master -> master
+   279ae895e736..d930029c3ce8  bkp/master -> bkp/master
+
+
+
+ 
+Thu Apr 13 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 62813c68d43f...8a71d48c5a07 sched/cleanup -> sched/cleanup (forced update)
+ + 57676b8e5f4e...bfad1588b454 thermal/cooling -> thermal/cooling (forced update)
+ + 5ce1fbbc7cd3...70e7c7ee1372 bkp/opp/rename -> bkp/opp/rename (forced update)
+ + e7bdf14d8df7...188c9f0729d4 lnext/akpm -> lnext/akpm (forced update)
+ + d391b372d44b...b94a9e11c451 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 5efce1428912...f4fa27cbc0b6 lnext/master -> lnext/master (forced update)
+   977674c06b18..b9b3322f13f3  lnext/stable -> lnext/stable
+   39da7c509acf..b9b3322f13f3  origin/HEAD -> origin/HEAD
+   39da7c509acf..b9b3322f13f3  origin/master -> origin/master
+   9908f0103652..6061efb6ee6f  tip/WIP.x86/fpu -> tip/WIP.x86/fpu
+ + 1a880ce1bfa2...d31bf8595853 tip/auto-latest -> tip/auto-latest (forced update)
+   fc69910f329d..854fbd6e5f60  tip/core-urgent-for-linus -> tip/core-urgent-for-linus
+   fc69910f329d..854fbd6e5f60  tip/core/urgent -> tip/core/urgent
+   d1eb98143c56..79a21d572cf6  tip/efi-urgent-for-linus -> tip/efi-urgent-for-linus
+   b3879a4d3a31..e69176d68d26  tip/efi/core -> tip/efi/core
+   79a21d572cf6..6f6266a56130  tip/efi/urgent -> tip/efi/urgent
+   920c634aff6c..a89eae62254e  tip/irq-urgent-for-linus -> tip/irq-urgent-for-linus
+   920c634aff6c..7bf8222b9bd0  tip/irq/urgent -> tip/irq/urgent
+   bf7b3ac2e36a..def34eaae5ce  tip/locking/core -> tip/locking/core
+   17fcbd590d0c..093b995e3b55  tip/locking/urgent -> tip/locking/urgent
+ + 7923939b4399...5aee78a73ea6 tip/master -> tip/master (forced update)
+   267dd0a07eef..a8d11cd0714f  tip/perf/core -> tip/perf/core
+   a01851faab4b..0718b3340684  tip/perf/urgent -> tip/perf/urgent
+   5204bf17031b..32b40a82e844  tip/ras/core -> tip/ras/core
+   2317d5f1c349..658b299580da  tip/sched-urgent-for-linus -> tip/sched-urgent-for-linus
+   15ff991e8047..717a94b5fc70  tip/sched/core -> tip/sched/core
+   2317d5f1c349..658b299580da  tip/sched/urgent -> tip/sched/urgent
+   33d8c15559df..8d09617b076f  tip/timers-urgent-for-linus -> tip/timers-urgent-for-linus
+   016da20148a1..5fc63f957732  tip/timers/core -> tip/timers/core
+   33d8c15559df..8d09617b076f  tip/timers/urgent -> tip/timers/urgent
+   065aeb892391..2b0a44309a90  tip/tip -> tip/tip
+   6bce725a78de..6b1cc946ddfc  tip/x86-urgent-for-linus -> tip/x86-urgent-for-linus
+   f25d38475519..b5effd3815cc  tip/x86/asm -> tip/x86/asm
+   79d243a04215..4729277156cf  tip/x86/boot -> tip/x86/boot
+   07d495dae207..352ef03ca0ad  tip/x86/cleanups -> tip/x86/cleanups
+   6415813bae75..b6466d53afdb  tip/x86/cpu -> tip/x86/cpu
+   ef37bc361442..84bbabc3a452  tip/x86/mm -> tip/x86/mm
+   2f2a033fb581..d4d969909bef  tip/x86/platform -> tip/x86/platform
+   d582799fe5de..f3e4559781bf  tip/x86/process -> tip/x86/process
+   26a37ab319a2..7f00f388712b  tip/x86/urgent -> tip/x86/urgent
+ * [new branch]                tip/WIP.sched/cpusallowed -> tip/WIP.sched/cpusallowed
+ * [new branch]                tip/WIP.x86/mm -> tip/WIP.x86/mm
+ * [new branch]                tip/ras-urgent-for-linus -> tip/ras-urgent-for-linus
+ * [new branch]                tip/ras/urgent -> tip/ras/urgent
+ * [new branch]                tip/x86-mm-for-xen -> tip/x86-mm-for-xen
+ * [new tag]                   next-20170413 -> next-20170413
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

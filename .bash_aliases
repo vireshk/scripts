@@ -186,10 +186,6 @@ myeject() { adb shell "echo $1 > /sys/bus/greybus/devices/1-svc/intf_eject"; }
 
 PATH="/usr/lib/ccache:$PATH"
 
-# gitolite sync
-alias gitolitesyncko="hwork; ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/linux.git linus; ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/linux.git next; ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/pm.git linus; ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/pm.git next;"
-alias gitolitesynclo="hwork; ssh git@git.linaro.org track fetch people/viresh.kumar/linux lnext; ssh git@git.linaro.org track fetch people/viresh.kumar/linux linus; ssh git@git.linaro.org track fetch people/viresh.kumar/mylinux lnext; ssh git@git.linaro.org track fetch people/viresh.kumar/mylinux linus; ssh git@git.linaro.org track fetch people/viresh.kumar/backup/linux lnext; ssh git@git.linaro.org track fetch people/viresh.kumar/backup/linux linus;"
-
 # qcom-board: skales
 PATH="$htools/skales:$PATH"
 alias qcomdtimg="hwork; cd ../qcom/; /home/vireshk/work/repos/tools/skales/dtbTool -o dt.img -s 2048 arch/arm64/boot/dts/qcom/"

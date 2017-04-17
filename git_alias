@@ -118,3 +118,6 @@ alias gitsyncpmko='ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/
 alias gitsynclko='ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/linux.git next;ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/linux.git linus;'
 alias gitsyncpmlo='ssh git@git.linaro.org track fetch people/viresh.kumar/linux.git next;ssh git@git.linaro.org track fetch people/viresh.kumar/linux.git linus;'
 alias gitsyncllo='ssh git@git.linaro.org track fetch people/viresh.kumar/mylinux.git next;ssh git@git.linaro.org track fetch people/viresh.kumar/mylinux.git linus;'
+alias gitsyncko="hwork; gitsyncpmko; gitsynclko"
+alias gitsynclo="hwork; gitsyncpmlo; gitsyncllo"
+

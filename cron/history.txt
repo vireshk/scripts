@@ -3098,3 +3098,145 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master f160547434e0] updates
+ 13 files changed, 1237 insertions(+), 44 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   a98d10a15614..f160547434e0  master -> master
+   2d2df5140263..a98d10a15614  bkp/master -> bkp/master
+
+
+
+ 
+Tue Apr 18 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 245a1a2b8f5b...b695a5d4032d cpufreq/remote-wakeup -> cpufreq/remote-wakeup (forced update)
+ + bfad1588b454...908063832c26 thermal/cooling -> thermal/cooling (forced update)
+ - [deleted]                   arm-soc/brcm/dts
+ - [deleted]                   arm-soc/brcm/soc
+ - [deleted]                   arm-soc/clkevt/set-state
+ - [deleted]                   arm-soc/depends/clk-rk3368
+ - [deleted]                   arm-soc/ep93xx/cleanup
+ - [deleted]                   arm-soc/ep93xx/defconfig
+   47295aa4380d..e2647b6de724  arm-soc/fixes -> arm-soc/fixes
+ + 1898311a5910...2b31ad3e57b2 arm-soc/for-next -> arm-soc/for-next (forced update)
+ - [deleted]                   arm-soc/lpc18xx/dt
+   d770e558e219..4495c08e8472  arm-soc/master -> arm-soc/master
+ - [deleted]                   arm-soc/mvebu/cleanup
+ - [deleted]                   arm-soc/mvebu/config
+   7e5308be4c07..cd2f0d0d403b  arm-soc/mvebu/dt -> arm-soc/mvebu/dt
+   b790c2cab5ca..e1c98a272082  arm-soc/next/arm64 -> arm-soc/next/arm64
+ - [deleted]                   arm-soc/next/cleanup
+   ea7b44b6e957..4a85aae62c4b  arm-soc/next/defconfig -> arm-soc/next/defconfig
+   18eb5e9fb293..3ed0b8a76a6d  arm-soc/next/drivers -> arm-soc/next/drivers
+   af3761246c18..3f5099f0c767  arm-soc/next/dt -> arm-soc/next/dt
+   d7030a08f6b0..b69bad75a840  arm-soc/next/soc -> arm-soc/next/soc
+ - [deleted]                   arm-soc/omap/dt
+ - [deleted]                   arm-soc/renesas/cleanup
+   7bf46d0be278..d01ff1899221  arm-soc/renesas/dt -> arm-soc/renesas/dt
+ - [deleted]                   arm-soc/renesas/pm-domain
+ - [deleted]                   arm-soc/rockchip/dts
+ - [deleted]                   arm-soc/rockchip/soc
+ + 62813c68d43f...8a71d48c5a07 bkp/sched/cleanup -> bkp/sched/cleanup (forced update)
+ + 57676b8e5f4e...bfad1588b454 bkp/thermal/cooling -> bkp/thermal/cooling (forced update)
+   b9b3322f13f3..4f7d029b9bf0  origin/HEAD -> origin/HEAD
+   b9b3322f13f3..4f7d029b9bf0  origin/master -> origin/master
+   dc752d54fd3a..f83e13f94e14  pm/acpi -> pm/acpi
+ + 67bf262affff...5fae30625a7a pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + d8472bee68e8...8f506e0faf4e pm/linux-next -> pm/linux-next (forced update)
+   39da7c509acf..4f7d029b9bf0  pm/master -> pm/master
+   46e1d5e972db..66803c946ee6  pm/pm -> pm/pm
+ + d8472bee68e8...8f506e0faf4e pm/testing -> pm/testing (forced update)
+ + 57676b8e5f4e...908063832c26 pmko/thermal/cooling -> pmko/thermal/cooling (forced update)
+   0dad3a3014a0..94380da2765a  tip/WIP.hotplug -> tip/WIP.hotplug
+ + 4ba98c7ec409...39da7c509acf tip/WIP.sched/cpusallowed -> tip/WIP.sched/cpusallowed (forced update)
+ + d31bf8595853...83b76b052af3 tip/auto-latest -> tip/auto-latest (forced update)
+   79a21d572cf6..6f6266a56130  tip/efi-urgent-for-linus -> tip/efi-urgent-for-linus
+   a89eae62254e..75eb5e1e7b4e  tip/irq-urgent-for-linus -> tip/irq-urgent-for-linus
+   45e5202213ae..382bd4de6182  tip/irq/core -> tip/irq/core
+   7bf8222b9bd0..75eb5e1e7b4e  tip/irq/urgent -> tip/irq/urgent
+   def34eaae5ce..59cd42c29618  tip/locking/core -> tip/locking/core
+ + 5aee78a73ea6...e9768edd1420 tip/master -> tip/master (forced update)
+   a01851faab4b..f2200ac31130  tip/perf-urgent-for-linus -> tip/perf-urgent-for-linus
+   a8d11cd0714f..fd583ad1563b  tip/perf/core -> tip/perf/core
+   0718b3340684..f2200ac31130  tip/perf/urgent -> tip/perf/urgent
+   32b40a82e844..9ea74f7c70cd  tip/ras/core -> tip/ras/core
+   717a94b5fc70..73810a069120  tip/sched/core -> tip/sched/core
+   5fc63f957732..2886a734081e  tip/timers/core -> tip/timers/core
+   2b0a44309a90..be9adbe4cbbc  tip/tip -> tip/tip
+   6b1cc946ddfc..7f00f388712b  tip/x86-urgent-for-linus -> tip/x86-urgent-for-linus
+   b5effd3815cc..f26dee15103f  tip/x86/asm -> tip/x86/asm
+   352ef03ca0ad..0ccecd95e797  tip/x86/cleanups -> tip/x86/cleanups
+   b6466d53afdb..c238f2343441  tip/x86/cpu -> tip/x86/cpu
+   84bbabc3a452..ace2fb5a8b65  tip/x86/mm -> tip/x86/mm
+   7f00f388712b..34a477e5297c  tip/x86/urgent -> tip/x86/urgent
+ * [new branch]                opp/rename-armsoc -> opp/rename-armsoc
+ * [new branch]                arm-soc/amlogic/defconfig -> arm-soc/amlogic/defconfig
+ * [new branch]                arm-soc/amlogic/drivers -> arm-soc/amlogic/drivers
+ * [new branch]                arm-soc/broadcom/defconfig -> arm-soc/broadcom/defconfig
+ * [new branch]                arm-soc/broadcom/defconfig64 -> arm-soc/broadcom/defconfig64
+ * [new branch]                arm-soc/broadcom/drivers -> arm-soc/broadcom/drivers
+ * [new branch]                arm-soc/broadcom/dt -> arm-soc/broadcom/dt
+ * [new branch]                arm-soc/broadcom/dt-fixes -> arm-soc/broadcom/dt-fixes
+ * [new branch]                arm-soc/broadcom/dt64 -> arm-soc/broadcom/dt64
+ * [new branch]                arm-soc/broadcom/maintainers -> arm-soc/broadcom/maintainers
+ * [new branch]                arm-soc/broadcom/soc -> arm-soc/broadcom/soc
+ * [new branch]                arm-soc/davinci/defconfig -> arm-soc/davinci/defconfig
+ * [new branch]                arm-soc/davinci/dt -> arm-soc/davinci/dt
+ * [new branch]                arm-soc/davinci/soc -> arm-soc/davinci/soc
+ * [new branch]                arm-soc/drivers/reset -> arm-soc/drivers/reset
+ * [new branch]                arm-soc/gemeni/multiplatform -> arm-soc/gemeni/multiplatform
+ * [new branch]                arm-soc/gemini/dts -> arm-soc/gemini/dts
+ * [new branch]                arm-soc/gemini/dts-2 -> arm-soc/gemini/dts-2
+ * [new branch]                arm-soc/gemini/soc -> arm-soc/gemini/soc
+ * [new branch]                arm-soc/mvebu/defconfig64 -> arm-soc/mvebu/defconfig64
+ * [new branch]                arm-soc/mvebu/dt64 -> arm-soc/mvebu/dt64
+ * [new branch]                arm-soc/mvebu/soc -> arm-soc/mvebu/soc
+ * [new branch]                arm-soc/next/dt64 -> arm-soc/next/dt64
+ * [new branch]                arm-soc/next/fixes-non-critical -> arm-soc/next/fixes-non-critical
+ * [new branch]                arm-soc/next/tee -> arm-soc/next/tee
+ * [new branch]                arm-soc/omap/dt-v2 -> arm-soc/omap/dt-v2
+ * [new branch]                arm-soc/omap/fixes -> arm-soc/omap/fixes
+ * [new branch]                arm-soc/omap/soc -> arm-soc/omap/soc
+ * [new branch]                arm-soc/oxnas/soc -> arm-soc/oxnas/soc
+ * [new branch]                arm-soc/renesas/arm64-defconfig -> arm-soc/renesas/arm64-defconfig
+ * [new branch]                arm-soc/renesas/drivers -> arm-soc/renesas/drivers
+ * [new branch]                arm-soc/renesas/dt-bindings -> arm-soc/renesas/dt-bindings
+ * [new branch]                arm-soc/renesas/dt64 -> arm-soc/renesas/dt64
+ * [new branch]                arm-soc/rockchip/dt64 -> arm-soc/rockchip/dt64
+ * [new branch]                arm-soc/rockchip/dt64-2 -> arm-soc/rockchip/dt64-2
+ * [new branch]                arm-soc/rockchip/dts32 -> arm-soc/rockchip/dts32
+ * [new branch]                arm-soc/shared/dt-symlinks -> arm-soc/shared/dt-symlinks
+ * [new branch]                arm-soc/tee/initial-merge -> arm-soc/tee/initial-merge
+ * [new branch]                arm-soc/to-build -> arm-soc/to-build
+ * [new branch]                arm-soc/uniphier/dt -> arm-soc/uniphier/dt
+ * [new branch]                arm-soc/uniphier/dt64 -> arm-soc/uniphier/dt64
+ * [new tag]                   acpi-4.11-rc7 -> acpi-4.11-rc7
+ * [new tag]                   armsoc-arm64 -> armsoc-arm64
+ * [new tag]                   armsoc-dt64 -> armsoc-dt64
+ * [new tag]                   armsoc-fixes-nc -> armsoc-fixes-nc
+ * [new tag]                   armsoc-for-linus -> armsoc-for-linus
+ * [new tag]                   pm-4.11-rc7 -> pm-4.11-rc7
+ * [new tag]                   v4.11-rc7 -> v4.11-rc7
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

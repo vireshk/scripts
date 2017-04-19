@@ -3240,3 +3240,52 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 50591fc1ce86] updates
+ 13 files changed, 629 insertions(+), 24 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   f160547434e0..50591fc1ce86  master -> master
+   a98d10a15614..f160547434e0  bkp/master -> bkp/master
+
+
+
+ 
+Wed Apr 19 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   cpufreq/masks
+ - [deleted]                   cpufreq/rate_limit
+ - [deleted]                   cpufreq/rate_limit_hikey
+ - [deleted]                   opp/rename
+ - [deleted]                   opp/rename-armsoc
+ + 908063832c26...56b3e4d42097 thermal/cooling -> thermal/cooling (forced update)
+ + 245a1a2b8f5b...b695a5d4032d bkp/cpufreq/remote-wakeup -> bkp/cpufreq/remote-wakeup (forced update)
+ + bfad1588b454...908063832c26 bkp/thermal/cooling -> bkp/thermal/cooling (forced update)
+ + 5fae30625a7a...28abb3cf6b22 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   8f506e0faf4e..66f49b3b5e1d  pm/linux-next -> pm/linux-next
+   8f506e0faf4e..66f49b3b5e1d  pm/testing -> pm/testing
+ + 908063832c26...56b3e4d42097 pmko/thermal/cooling -> pmko/thermal/cooling (forced update)
+ * [new branch]                thermal/cooling-v2 -> thermal/cooling-v2
+ * [new branch]                thermal/cooling-v3 -> thermal/cooling-v3
+ * [new branch]                bkp/opp/rename-armsoc -> bkp/opp/rename-armsoc
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

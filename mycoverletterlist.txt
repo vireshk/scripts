@@ -1,0 +1,19 @@
+Chanwoo Choi <cw00.choi@samsung.com>
+MyungJoo Ham <myungjoo.ham@samsung.com>
+Kyungmin Park <kyungmin.park@samsung.com>
+Kukjin Kim <kgene@kernel.org>
+Krzysztof Kozlowski <krzk@kernel.org>
+Javier Martinez Canillas <javier@osg.samsung.com>
+Viresh Kumar <vireshk@kernel.org>
+Nishanth Menon <nm@ti.com>
+Stephen Boyd <sboyd@codeaurora.org>
+"Benoît Cousson" <bcousson@baylibre.com>
+Tony Lindgren <tony@atomide.com>
+Rob Herring <robh+dt@kernel.org>
+Mark Rutland <mark.rutland@arm.com>
+Daniel Mack <daniel@zonque.org>
+Haojian Zhuang <haojian.zhuang@gmail.com>
+Robert Jarzmik <robert.jarzmik@free.fr>
+Maxime Ripard <maxime.ripard@free-electrons.com>
+Chen-Yu Tsai <wens@csie.org>
+Masahiro Yamada <yamada.masahiro@socionext.com>

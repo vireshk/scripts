@@ -3343,3 +3343,116 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 2eadc472e13a] updates
+ 12 files changed, 916 insertions(+), 34 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   537ad536266b..2eadc472e13a  master -> master
+   50591fc1ce86..537ad536266b  bkp/master -> bkp/master
+
+
+
+ 
+Fri Apr 21 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   opp/rename
+   8a71d48c5a07..7361f65ca7a0  sched/cleanup -> sched/cleanup
+   2b31ad3e57b2..6f714927c553  arm-soc/for-next -> arm-soc/for-next
+   e1c98a272082..98e53cfaf755  arm-soc/next/arm64 -> arm-soc/next/arm64
+   4a85aae62c4b..ad8618cb9c2e  arm-soc/next/defconfig -> arm-soc/next/defconfig
+   3ed0b8a76a6d..d12523f14ed6  arm-soc/next/drivers -> arm-soc/next/drivers
+   3f5099f0c767..28a59b6166d3  arm-soc/next/dt -> arm-soc/next/dt
+   9720a9a31dda..d0815dfd91e7  arm-soc/next/dt64 -> arm-soc/next/dt64
+   6b62a0077b83..c58ab5376a0f  arm-soc/next/fixes-non-critical -> arm-soc/next/fixes-non-critical
+   b69bad75a840..17e310b8eef5  arm-soc/next/soc -> arm-soc/next/soc
+ + 96b7044b50a3...858a5a834d3e bkp/opp/genpd-pstate -> bkp/opp/genpd-pstate (forced update)
+ + 672d15d4749f...7370e0f939cf lnext/akpm -> lnext/akpm (forced update)
+ + 7daf4980b87d...87777a3777d9 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 3ea52566d0f7...2fbd8a8f1141 lnext/master -> lnext/master (forced update)
+ * [new branch]                opp/rename-sun8i -> opp/rename-sun8i
+ * [new branch]                opp/rename-v11 -> opp/rename-v11
+ * [new branch]                arm-soc/alpine/dt -> arm-soc/alpine/dt
+ * [new branch]                arm-soc/amlogic/dt64 -> arm-soc/amlogic/dt64
+ * [new branch]                arm-soc/aspeed/defconfig -> arm-soc/aspeed/defconfig
+ * [new branch]                arm-soc/aspeed/dt -> arm-soc/aspeed/dt
+ * [new branch]                arm-soc/at91/dt -> arm-soc/at91/dt
+ * [new branch]                arm-soc/at91/soc -> arm-soc/at91/soc
+ * [new branch]                arm-soc/davinci/defconfig2 -> arm-soc/davinci/defconfig2
+ * [new branch]                arm-soc/davinci/drivers -> arm-soc/davinci/drivers
+ * [new branch]                arm-soc/davinci/dt2 -> arm-soc/davinci/dt2
+ * [new branch]                arm-soc/davinci/soc2 -> arm-soc/davinci/soc2
+ * [new branch]                arm-soc/davinci/soc3 -> arm-soc/davinci/soc3
+ * [new branch]                arm-soc/drivers/isct-clock -> arm-soc/drivers/isct-clock
+ * [new branch]                arm-soc/drivers/reset2 -> arm-soc/drivers/reset2
+ * [new branch]                arm-soc/drivers/scpi -> arm-soc/drivers/scpi
+ * [new branch]                arm-soc/dt/include-paths -> arm-soc/dt/include-paths
+ * [new branch]                arm-soc/hisi/dt64 -> arm-soc/hisi/dt64
+ * [new branch]                arm-soc/hisi/soc -> arm-soc/hisi/soc
+ * [new branch]                arm-soc/imx/defconfig -> arm-soc/imx/defconfig
+ * [new branch]                arm-soc/imx/drivers -> arm-soc/imx/drivers
+ * [new branch]                arm-soc/imx/dt -> arm-soc/imx/dt
+ * [new branch]                arm-soc/imx/dt64 -> arm-soc/imx/dt64
+ * [new branch]                arm-soc/imx/soc -> arm-soc/imx/soc
+ * [new branch]                arm-soc/keystone/pm -> arm-soc/keystone/pm
+ * [new branch]                arm-soc/mvebu/defconfig2 -> arm-soc/mvebu/defconfig2
+ * [new branch]                arm-soc/mvebu/dt2 -> arm-soc/mvebu/dt2
+ * [new branch]                arm-soc/mvebu/dt3 -> arm-soc/mvebu/dt3
+ * [new branch]                arm-soc/mvevu/dt64 -> arm-soc/mvevu/dt64
+ * [new branch]                arm-soc/omap/defconfig -> arm-soc/omap/defconfig
+ * [new branch]                arm-soc/omap/dt2 -> arm-soc/omap/dt2
+ * [new branch]                arm-soc/qcom/arm64 -> arm-soc/qcom/arm64
+ * [new branch]                arm-soc/qcom/defconfig -> arm-soc/qcom/defconfig
+ * [new branch]                arm-soc/qcom/drivers -> arm-soc/qcom/drivers
+ * [new branch]                arm-soc/qcom/dt -> arm-soc/qcom/dt
+ * [new branch]                arm-soc/renesas/dt2 -> arm-soc/renesas/dt2
+ * [new branch]                arm-soc/renesas/dt64-2 -> arm-soc/renesas/dt64-2
+ * [new branch]                arm-soc/renesas/sysc -> arm-soc/renesas/sysc
+ * [new branch]                arm-soc/rockchip/dt2 -> arm-soc/rockchip/dt2
+ * [new branch]                arm-soc/rockchip/dt64-3 -> arm-soc/rockchip/dt64-3
+ * [new branch]                arm-soc/samsung/defconfig -> arm-soc/samsung/defconfig
+ * [new branch]                arm-soc/samsung/drivers -> arm-soc/samsung/drivers
+ * [new branch]                arm-soc/samsung/dt -> arm-soc/samsung/dt
+ * [new branch]                arm-soc/samsung/dt64 -> arm-soc/samsung/dt64
+ * [new branch]                arm-soc/samsung/soc64 -> arm-soc/samsung/soc64
+ * [new branch]                arm-soc/socfpga/defconfig -> arm-soc/socfpga/defconfig
+ * [new branch]                arm-soc/socfpga/dt -> arm-soc/socfpga/dt
+ * [new branch]                arm-soc/sti/dt -> arm-soc/sti/dt
+ * [new branch]                arm-soc/stm32/defconfig -> arm-soc/stm32/defconfig
+ * [new branch]                arm-soc/stm32/dt -> arm-soc/stm32/dt
+ * [new branch]                arm-soc/stm32/soc -> arm-soc/stm32/soc
+ * [new branch]                arm-soc/sunxi/config64 -> arm-soc/sunxi/config64
+ * [new branch]                arm-soc/sunxi/core -> arm-soc/sunxi/core
+ * [new branch]                arm-soc/sunxi/defconfig -> arm-soc/sunxi/defconfig
+ * [new branch]                arm-soc/sunxi/dt -> arm-soc/sunxi/dt
+ * [new branch]                arm-soc/sunxi/dt-h3 -> arm-soc/sunxi/dt-h3
+ * [new branch]                arm-soc/sunxi/dt-h5 -> arm-soc/sunxi/dt-h5
+ * [new branch]                arm-soc/sunxi/dt64 -> arm-soc/sunxi/dt64
+ * [new branch]                arm-soc/tegra/dt-bindings -> arm-soc/tegra/dt-bindings
+ * [new branch]                arm-soc/tegra/dt64 -> arm-soc/tegra/dt64
+ * [new branch]                arm-soc/tegra/misc -> arm-soc/tegra/misc
+ * [new branch]                arm-soc/tegra/soc -> arm-soc/tegra/soc
+ * [new branch]                arm-soc/zte/dt64 -> arm-soc/zte/dt64
+ * [new branch]                bkp/opp/rename -> bkp/opp/rename
+ * [new tag]                   next-20170420 -> next-20170420
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

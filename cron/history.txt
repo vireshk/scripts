@@ -3456,3 +3456,58 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 3eb3ababf2f0] updates
+ 14 files changed, 858 insertions(+), 57 deletions(-)
+ rewrite mycoverletterlist.txt (100%)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   2eadc472e13a..3eb3ababf2f0  master -> master
+   537ad536266b..2eadc472e13a  bkp/master -> bkp/master
+
+
+
+ 
+Mon Apr 24 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   bkp/opp/rename
+   8a71d48c5a07..7361f65ca7a0  bkp/sched/cleanup -> bkp/sched/cleanup
+ + 7370e0f939cf...a55dddf57c2d lnext/akpm -> lnext/akpm (forced update)
+ + 87777a3777d9...cea6f90c1005 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 2fbd8a8f1141...26e01a6fde25 lnext/master -> lnext/master (forced update)
+   005882e53d62..160062e19001  lnext/stable -> lnext/stable
+   f61143c45077..5a7ad1146caa  origin/HEAD -> origin/HEAD
+   f61143c45077..5a7ad1146caa  origin/master -> origin/master
+   f83e13f94e14..fe8c470ab87d  pm/acpi -> pm/acpi
+   44a2f58368a9..f67071bb0295  pm/bleeding-edge -> pm/bleeding-edge
+ + 44a2f58368a9...5afb26e519e8 pm/linux-next -> pm/linux-next (forced update)
+   44a2f58368a9..0a6c34df1d3f  pm/testing -> pm/testing
+ * [new branch]                bkp/opp/rename-sun8i -> bkp/opp/rename-sun8i
+ * [new branch]                bkp/opp/rename-v11 -> bkp/opp/rename-v11
+ * [new branch]                pm/s2idle-dell-test -> pm/s2idle-dell-test
+ * [new tag]                   acpi-4.11-final -> acpi-4.11-final
+ * [new tag]                   next-20170421 -> next-20170421
+ * [new tag]                   v4.11-rc8 -> v4.11-rc8
+
+Entering /home/vireshk/work/repos/tools/module
+ssh: connect to host git.linaro.org port 22: Connection timed out
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -3511,3 +3511,48 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master edf274502714] updates
+ 15 files changed, 857 insertions(+), 44 deletions(-)
+ rewrite .Skype/shared_dynco/dc.db-journal (100%)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   3eb3ababf2f0..edf274502714  master -> master
+   2eadc472e13a..3eb3ababf2f0  bkp/master -> bkp/master
+
+
+
+ 
+Tue Apr 25 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 7361f65ca7a0...14318e90275b sched/cleanup -> sched/cleanup (forced update)
+ + 56b3e4d42097...6a883ddf73cd thermal/cooling -> thermal/cooling (forced update)
+ + a55dddf57c2d...501f6bae69f8 lnext/akpm -> lnext/akpm (forced update)
+ + cea6f90c1005...3518e7429c1f lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 26e01a6fde25...ee91aaf669ac lnext/master -> lnext/master (forced update)
+   160062e19001..e0f4e0134a79  lnext/stable -> lnext/stable
+ + 56b3e4d42097...6a883ddf73cd pmko/thermal/cooling -> pmko/thermal/cooling (forced update)
+ * [new branch]                opp/genpd-pstate-only-opp -> opp/genpd-pstate-only-opp
+ * [new branch]                lko/sched/cleanup -> lko/sched/cleanup
+ * [new tag]                   next-20170424 -> next-20170424
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

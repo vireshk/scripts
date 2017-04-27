@@ -110,14 +110,14 @@ alias gitmailsched='gitmaillinaro --cc lkml --to ingo --to peterz --cc vingu'
 alias gitmailschedutil='gitmailpm --to ingo --to peterz --cc vingu'
 alias gitmailtimer='gitmaillinaro --cc lkml --to tglx --cc fw --cc vingu'
 alias prepcclist='cat 00* | grep Cc | cut -f 2 -d : | sort | uniq > ~/scripts/mycoverletterlist.txt'
-alias gitmailgenpd='gitmailopp --to ulf.hansson@linaro.org --to "Kevin Hilman <khilman@kernel.org>" --cc "robh+dt@kernel.org" --cc lina.iyer@linaro.org --cc rnayak@codeaurora.org'
+alias gitmailgenpd='gitmailopp --to ulf.hansson@linaro.org --to "Kevin Hilman <khilman@kernel.org>" --cc "robh+dt@kernel.org" --cc lina.iyer@linaro.org --cc rnayak@codeaurora.org --cc sudeep.holla@arm.com'
 
 
 # fetch remotes
-alias gitsyncpmko='ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/pm.git next;ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/pm.git linus;'
-alias gitsynclko='ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/linux.git next;ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/linux.git linus;'
-alias gitsyncpmlo='ssh git@git.linaro.org track fetch people/viresh.kumar/linux.git next;ssh git@git.linaro.org track fetch people/viresh.kumar/linux.git linus;'
-alias gitsyncllo='ssh git@git.linaro.org track fetch people/viresh.kumar/mylinux.git next;ssh git@git.linaro.org track fetch people/viresh.kumar/mylinux.git linus;'
+alias gitsyncpmko='ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/pm.git lnext;ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/pm.git linus;'
+alias gitsynclko='ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/linux.git lnext;ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/linux.git linus;'
+alias gitsyncpmlo='ssh git@git.linaro.org track fetch people/viresh.kumar/linux.git lnext;ssh git@git.linaro.org track fetch people/viresh.kumar/linux.git linus;'
+alias gitsyncllo='ssh git@git.linaro.org track fetch people/viresh.kumar/mylinux.git lnext;ssh git@git.linaro.org track fetch people/viresh.kumar/mylinux.git linus;'
 alias gitsyncko="hwork; gitsyncpmko; gitsynclko"
 alias gitsynclo="hwork; gitsyncpmlo; gitsyncllo"
 

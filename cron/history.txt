@@ -3556,3 +3556,37 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 57bb52521f8a] updates
+ 12 files changed, 791 insertions(+), 24 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   edf274502714..57bb52521f8a  master -> master
+   3eb3ababf2f0..edf274502714  bkp/master -> bkp/master
+
+
+
+ 
+Wed Apr 26 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+packet_write_wait: Connection to 54.255.12.173 port 22: Broken pipe
+fatal: The remote end hung up unexpectedly
+fatal: The remote end hung up unexpectedly
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

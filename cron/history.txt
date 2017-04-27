@@ -3590,3 +3590,75 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 9df84e57f8b9] updates
+ 12 files changed, 1111 insertions(+), 42 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   57bb52521f8a..9df84e57f8b9  master -> master
+   edf274502714..57bb52521f8a  bkp/master -> bkp/master
+
+
+
+ 
+Thu Apr 27 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + ef12c7d9b50c...1ea24baaf2bd opp/genpd-pstate-only-opp -> opp/genpd-pstate-only-opp (forced update)
+ + 14318e90275b...92efa63aa8df sched/cleanup -> sched/cleanup (forced update)
+ + 501f6bae69f8...b7796f38de8a lnext/akpm -> lnext/akpm (forced update)
+ + 3518e7429c1f...b7841c431755 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + ee91aaf669ac...e0a8aa40bd2c lnext/master -> lnext/master (forced update)
+   e0f4e0134a79..ea839b41744d  lnext/stable -> lnext/stable
+   5a7ad1146caa..f83246089ca0  origin/HEAD -> origin/HEAD
+   5a7ad1146caa..f83246089ca0  origin/master -> origin/master
+   489384c1ebd2..ffe944dc96e1  pm/bleeding-edge -> pm/bleeding-edge
+ + 9d5fb0b66c1c...c4bd28f77cd1 pmlo/opp/genpd-performance-state -> pmlo/opp/genpd-performance-state (forced update)
+ + 94380da2765a...f61143c45077 tip/WIP.hotplug -> tip/WIP.hotplug (forced update)
+   a99cde438de0..1e1c48e6befc  tip/WIP.timers -> tip/WIP.timers
+ + 83b76b052af3...715571d7e27a tip/auto-latest -> tip/auto-latest (forced update)
+   a8709fa4a06d..d160a727c40e  tip/core/rcu -> tip/core/rcu
+   e69176d68d26..197decefdb79  tip/efi/core -> tip/efi/core
+   75eb5e1e7b4e..b72f8051f34b  tip/irq-urgent-for-linus -> tip/irq-urgent-for-linus
+   382bd4de6182..8ada00a650ec  tip/irq/core -> tip/irq/core
+   75eb5e1e7b4e..b72f8051f34b  tip/irq/urgent -> tip/irq/urgent
+ + e9768edd1420...d02c59825bbf tip/master -> tip/master (forced update)
+   fd583ad1563b..fd7647979a39  tip/perf/core -> tip/perf/core
+   cc66afea58f8..0dc9c639e655  tip/ras-urgent-for-linus -> tip/ras-urgent-for-linus
+   9ea74f7c70cd..c6a9583fb41c  tip/ras/core -> tip/ras/core
+   cc66afea58f8..0dc9c639e655  tip/ras/urgent -> tip/ras/urgent
+   73810a069120..21173d0b4d2a  tip/sched/core -> tip/sched/core
+   b18cc3de00ec..77c60400c82b  tip/smp/hotplug -> tip/smp/hotplug
+   2886a734081e..b94bf594cf8e  tip/timers/core -> tip/timers/core
+   8d09617b076f..ea839b41744d  tip/timers/urgent -> tip/timers/urgent
+   be9adbe4cbbc..bd04fbd5c9a6  tip/tip -> tip/tip
+   bc465aa9d045..098991fccfc7  tip/tmp.tmp -> tip/tmp.tmp
+   f26dee15103f..262fa734a002  tip/x86/asm -> tip/x86/asm
+   4729277156cf..fba4f472b33a  tip/x86/boot -> tip/x86/boot
+   9190e21780df..2c4fd1ac3ff1  tip/x86/build -> tip/x86/build
+   c238f2343441..4797b7dfdfcf  tip/x86/cpu -> tip/x86/cpu
+   c470abd4fde4..c0edbd4a1693  tip/x86/irq -> tip/x86/irq
+   ace2fb5a8b65..dbd68d8e84c6  tip/x86/mm -> tip/x86/mm
+   34a477e5297c..a5859c6d7b61  tip/x86/urgent -> tip/x86/urgent
+ * [new branch]                opp/genpd-pstate-v6 -> opp/genpd-pstate-v6
+ * [new tag]                   next-20170426 -> next-20170426
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

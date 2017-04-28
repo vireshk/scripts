@@ -3662,3 +3662,55 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master ec56c8a1ad52] updates
+ 9 files changed, 218 insertions(+), 21 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   9df84e57f8b9..ec56c8a1ad52  master -> master
+   57bb52521f8a..9df84e57f8b9  bkp/master -> bkp/master
+
+
+
+ 
+Fri Apr 28 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 92efa63aa8df...11f4823b743e sched/cleanup -> sched/cleanup (forced update)
+ + 17744bd24fe9...1ea24baaf2bd bkp/opp/genpd-pstate-only-opp -> bkp/opp/genpd-pstate-only-opp (forced update)
+ + 14318e90275b...92efa63aa8df bkp/sched/cleanup -> bkp/sched/cleanup (forced update)
+ + 0ed37b9761e5...492e0fb3d014 jstultz/dev/3.10-hissc-driver -> jstultz/dev/3.10-hissc-driver (forced update)
+   69ab64c2a0f5..8cd554230532  jstultz/dev/hi3660-aosp -> jstultz/dev/hi3660-aosp
+ + abc4cb38dfb9...57bcd942842d jstultz/dev/hikey-mainline-WIP -> jstultz/dev/hikey-mainline-WIP (forced update)
+ + b7796f38de8a...ffa6a9cc4e2c lnext/akpm -> lnext/akpm (forced update)
+ + b7841c431755...f03ee1b7f153 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + e0a8aa40bd2c...3dcee15bbb5e lnext/master -> lnext/master (forced update)
+   ea839b41744d..ea3a8596a0b3  lnext/stable -> lnext/stable
+   f83246089ca0..8b5d11e4b095  origin/HEAD -> origin/HEAD
+   f83246089ca0..8b5d11e4b095  origin/master -> origin/master
+   d160a727c40e..96fd20cf3f16  tip/core/rcu -> tip/core/rcu
+   d02c59825bbf..8bd462ee4aac  tip/master -> tip/master
+ * [new branch]                bkp/opp/genpd-pstate-v6 -> bkp/opp/genpd-pstate-v6
+ * [new branch]                jstultz/dev/hikey-mainline-newmali -> jstultz/dev/hikey-mainline-newmali
+ * [new branch]                jstultz/upstream/fbhelper_deferred -> jstultz/upstream/fbhelper_deferred
+ * [new tag]                   next-20170427 -> next-20170427
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

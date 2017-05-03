@@ -3766,3 +3766,44 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 757df4126c5c] updates
+ 16 files changed, 763 insertions(+), 32 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   c37913d4341f..757df4126c5c  master -> master
+   ec56c8a1ad52..c37913d4341f  bkp/master -> bkp/master
+
+
+
+ 
+Wed May  3 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + a1117a57fad3...0727eed336a5 lnext/akpm -> lnext/akpm (forced update)
+ + bf5a22fb40a0...09b041b70d66 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + bedb13bc9b20...b211a48feef6 lnext/master -> lnext/master (forced update)
+   97ce89f8a4eb..5fab10041b43  lnext/stable -> lnext/stable
+   7c8c03bfc7b9..89c9fea3c803  origin/HEAD -> origin/HEAD
+   7c8c03bfc7b9..89c9fea3c803  origin/master -> origin/master
+ * [new tag]                   next-20170502 -> next-20170502
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -3882,3 +3882,48 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 469ac52bd9e9] updates
+ 11 files changed, 587 insertions(+), 35 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   2da9490b4555..469ac52bd9e9  master -> master
+   a55d3aa201c2..2da9490b4555  bkp/master -> bkp/master
+
+
+
+ 
+Mon May  8 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + a5c5de8b6188...d51e44cdf96d lnext/akpm -> lnext/akpm (forced update)
+ + c6f24f7f6f0c...3b938c4641b3 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + ef57eb19c96f...9e597e815f68 lnext/master -> lnext/master (forced update)
+   1684096b1ed8..4ac4d584886a  lnext/stable -> lnext/stable
+   a1be8edda4fe..13e098814037  origin/HEAD -> origin/HEAD
+   a1be8edda4fe..13e098814037  origin/master -> origin/master
+ + be607ffc3058...ccf2fa035533 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + a061321a7e70...c2d1a8fd16dc pm/linux-next -> pm/linux-next (forced update)
+   a351e9b9fc24..c58d4055c054  pm/master -> pm/master
+ + 40ea222787c3...ff3fafdecfc4 pm/testing -> pm/testing (forced update)
+ * [new tag]                   next-20170505 -> next-20170505
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

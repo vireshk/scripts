@@ -4119,3 +4119,51 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master e475f67227db] updates
+ 12 files changed, 648 insertions(+), 42 deletions(-)
+ create mode 100644 .Skype/viresh.nitj/chatsync/8a/8aa00015089cb034.dat
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   19d1be853027..e475f67227db  master -> master
+   c061e3e1a5af..19d1be853027  bkp/master -> bkp/master
+
+
+
+ 
+Mon May 15 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 7e54987b050e...c4fbb30cd3f6 sched/cleanup -> sched/cleanup (forced update)
+ + d51e44cdf96d...743b721f9999 lnext/akpm -> lnext/akpm (forced update)
+ + 3b938c4641b3...acae430ffae7 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 9e597e815f68...8785ded64cfb lnext/master -> lnext/master (forced update)
+   4ac4d584886a..09d79d103371  lnext/stable -> lnext/stable
+   854fbd6e5f60..5ea30e4e5804  tip/core-urgent-for-linus -> tip/core-urgent-for-linus
+   b72f8051f34b..9459a04b6a5a  tip/irq/urgent -> tip/irq/urgent
+   c11b6b78c62a..9358d8aec262  tip/master -> tip/master
+   f2200ac31130..88b0193d9418  tip/perf-urgent-for-linus -> tip/perf-urgent-for-linus
+   8d09617b076f..f63d947c1673  tip/timers-urgent-for-linus -> tip/timers-urgent-for-linus
+ + de8333a2b1db...bd04fbd5c9a6 tip/tip -> tip/tip (forced update)
+   88d879d29f9c..fb8fb46c5628  tip/x86-urgent-for-linus -> tip/x86-urgent-for-linus
+ * [new tag]                   next-20170512 -> next-20170512
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -4167,3 +4167,46 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master e56c208769ee] updates
+ 14 files changed, 831 insertions(+), 27 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   e475f67227db..e56c208769ee  master -> master
+   19d1be853027..e475f67227db  bkp/master -> bkp/master
+
+
+
+ 
+Tue May 16 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 858a5a834d3e...b37480061a9c opp/genpd-pstate -> opp/genpd-pstate (forced update)
+ - [deleted]                   opp/genpd-pstate-only-opp
+   c4fbb30cd3f6..e6dfadfa6e7a  sched/cleanup -> sched/cleanup
+ + 7e54987b050e...c4fbb30cd3f6 bkp/sched/cleanup -> bkp/sched/cleanup (forced update)
+ + 6da298aa4690...45973eae26b1 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 0c47322aa0dd...eac94524b023 pm/linux-next -> pm/linux-next (forced update)
+   dc9edaab90de..2ea659a9ef48  pm/master -> pm/master
+ + 7c873b04c181...1b9c82421b7e pm/s2idle-dell-test -> pm/s2idle-dell-test (forced update)
+ + c4c9fa045c32...547e2117403b pm/testing -> pm/testing (forced update)
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -102,7 +102,8 @@ mypatchcountrank() { gl --no-merges --format="%aN" $1..$2 | sort | uniq -ic| sor
 alias myspatch='echo "spatch -in_place -include_headers -sp_file setmode.cocci -dir drivers/"'
 
 # Gitmail
-alias gitmail='git send-email *.patch'
+alias gitmail='git send-email *.patch --cc viresh'
+alias gitmailsuppress='git send-email *.patch --suppress-cc=all'
 alias gitmaillinaro='gitmail --cc linaro'
 alias gitmailpm='gitmaillinaro --to rafael --cc pm --cc lkml --cc vingu'
 alias gitmailopp='gitmailpm --cc sboyd --cc "Nishanth Menon <nm@ti.com>"'

@@ -206,7 +206,7 @@ export ANDROID_HOME=/home/vireshk/Android/Sdk
 export JIRA_USERNAME="Viresh.kumar@linaro.org"
 export JIRA_PASSWORD=`cat ~/all/criticalinfo/.password`
 PATH="/home/vireshk/work/repos/tools/jipdate/:$PATH"
-alias updatejira="hjunk; cd jira; jipdate.py -q --all -f status.txt"
+alias updatejira="hjunk; cd jira; jipdate.py -q --all -f pmwg-weekly-status.txt"
 
 # go to linux on shell startup
 hwork

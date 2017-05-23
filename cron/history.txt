@@ -4394,3 +4394,42 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master e4ba9095a97f] updates
+ 18 files changed, 891 insertions(+), 56 deletions(-)
+ delete mode 100644 .Skype/viresh.nitj/chatsync/8a/8aa00015089cb034.dat
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   2c822869e765..e4ba9095a97f  master -> master
+   8465aacf924e..2c822869e765  bkp/master -> bkp/master
+
+
+
+ 
+Tue May 23 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 0f03d6255117...83fe554179c4 opp/genpd-pstate -> opp/genpd-pstate (forced update)
+ + b60963dc6922...c6304f1f8414 sched/cpufreq-hooks-hikey -> sched/cpufreq-hooks-hikey (forced update)
+   6a883ddf73cd..eff10695c92f  thermal/cooling -> thermal/cooling
+ * [new branch]                bkp/sched/cpufreq-hooks-hikey -> bkp/sched/cpufreq-hooks-hikey
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

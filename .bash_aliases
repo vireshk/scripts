@@ -71,7 +71,7 @@ alias sshbbone="ssh root@192.168.0.4"
 alias sshdesktop="ssh vireshk@192.168.0.2"
 scpexynosgbus() { cd /home/vireshk/work/repos/ara/greybus/; scp *.ko root@192.168.0.$1:/home/linaro/greybus; }
 alias sshlinaro='echo "scp test.txt  viresh.kumar@git.linaro.org:/home/vireshk/work"'
-alias lmc="echo msudo -A linaro-media-create --mmc /dev/sdb --dev arndale --hwpack-force-yes --hwpack /home/vireshk/work/boards/arndale/hwpack_linaro-arndale_20140417-630_armhf_supported.tar.gz --binary /home/vireshk/work/rootfs/linaro/linaro-saucy-developer-20140410-652.tar.gz"
+alias lmc="echo msudo linaro-media-create --mmc /dev/sdb --dev arndale --hwpack-force-yes --hwpack /home/vireshk/work/boards/arndale/hwpack_linaro-arndale_20140417-630_armhf_supported.tar.gz --binary /home/vireshk/work/rootfs/linaro/linaro-saucy-developer-20140410-652.tar.gz"
 
 #get scanner URI "hp-makeuri 192.168.1.105"
 alias mscan="xsane hpaio:/net/Deskjet_4510_series?ip=192.168.0.8"
@@ -113,18 +113,23 @@ alias cleana='$vcompile clean 3; $vcompile clean 6; $vcompile clean 13;'
 alias configa='$vcompile config 3; $vcompile config 6; $vcompile config 13;'
 alias imagea='$vcompile nimage 3 & $vcompile nimage 6 & $vcompile nimage 13&'
 alias builda='cleana configa imagea'
-alias imagemyx86='make O=../bx86 CROSS_COMPILE= -j8 LOCALVERSION=-custom > /dev/null'
-alias imagemyx86deb='make O=../bx86 CROSS_COMPILE= -j8 deb-pkg LOCALVERSION=-custom'
 
-#Compiling module
-alias installx86='imagemyx86; msudo -A make O=../bx86 CROSS_COMPILE= -j8  LOCALVERSION=-custom modules_install; msudo -A make O=../bx86 CROSS_COMPILE= -j8 LOCALVERSION=-custom install'
+alias x86imagename="custom"
+alias configx86="cp /boot/config-`uname -r` ../bx86/.config; yes '' | make O=../bx86 oldconfig;"
+alias imagex86='make O=../bx86 CROSS_COMPILE= -j8 LOCALVERSION=-$x86imagename'
+alias modulesx86='imagex86 modules'
+alias modulesinstallx86='imagex86 modules_install > /dev/null'
+alias imageinstallx86='imagex86 install > /dev/null'
+alias imagex86deb='imagex86 deb-pkg'
+alias installx86='imageinstallx86; modulesinstallx86'
+#alias installx86='imagex86; msudo make O=../bx86 CROSS_COMPILE= -j8  LOCALVERSION=-custom modules_install; msudo make O=../bx86 CROSS_COMPILE= -j8 LOCALVERSION=-custom install'
 
 #fixes
 alias fixsound1="pulseaudio -k"
 alias fixsound2="pactl load-module module-bluetooth-discover"
 alias fixmail="~/scripts/mailvialinaro.sh"
-alias fixmouse="msudo -A rmmod usbhid && msudo modprobe usbhid"
-alias fixvbox="msudo -A /etc/init.d/vboxdrv setup"
+alias fixmouse="msudo rmmod usbhid && msudo modprobe usbhid"
+alias fixvbox="msudo /etc/init.d/vboxdrv setup"
 
 #others
 #alias uprvi="msudo /home/vireshk/work/utils/ARM/DS-5/bin/rviusbserver"
@@ -139,7 +144,7 @@ alias mydump="arm-linux-gnueabihf-objdump -r -S -l --disassemble"
 alias myaradump="harche; /home/vireshk/work/repos/ara/arche/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-objdump -r -S -l --disassemble out/target/product/arche/obj/KERNEL_OBJ/drivers/cpufreq/cpufreq.o"
 alias mydump64="aarch64-linux-gnu-objdump -r -S -l --disassemble"
 
-mymini() { msudo -A minicom -w panda -D /dev/ttyUSB$1; }
+mymini() { msudo minicom -w panda -D /dev/ttyUSB$1; }
 
 # ccache
 export USE_CCACHE=1
@@ -181,8 +186,6 @@ alias aramodulearche='make C=2 -j16 CROSS_COMPILE=/home/vireshk/work/repos/ara/a
 
 alias makes2lpkg="hbootrom; make clean; ./configure; make APPLICATION=s2loader; $BOOTROM_TOOLS/bin/create-tftf -v --elf build/bootrom --unipro-mfg 0x0126 --unipro-pid 0x1002 --ara-vid 0xfffe0001 --ara-pid 0xff980067 --type s2fw --start \`findtftfs2l\`;"
 alias makes2lpkgaudio="hbootrom; make clean; ./configure; make APPLICATION=s2loader; $BOOTROM_TOOLS/bin/create-tftf -v --elf build/bootrom --unipro-mfg 0x0126 --unipro-pid 0x1002 --ara-vid 0xfffe0001 --ara-pid 0xffed0012 --type s2fw --start \`findtftfs2l\`;"
-
-myeject() { adb shell "echo $1 > /sys/bus/greybus/devices/1-svc/intf_eject"; }
 
 PATH="/usr/lib/ccache:$PATH"
 

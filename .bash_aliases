@@ -114,15 +114,13 @@ alias configa='$vcompile config 3; $vcompile config 6; $vcompile config 13;'
 alias imagea='$vcompile nimage 3 & $vcompile nimage 6 & $vcompile nimage 13&'
 alias builda='cleana configa imagea'
 
-alias x86imagename="custom"
+# x86 specific installation
+export X86IMAGENAME="custom"
 alias configx86="cp /boot/config-`uname -r` ../bx86/.config; yes '' | make O=../bx86 oldconfig;"
-alias imagex86='make O=../bx86 CROSS_COMPILE= -j8 LOCALVERSION=-$x86imagename'
-alias modulesx86='imagex86 modules'
-alias modulesinstallx86='imagex86 modules_install > /dev/null'
-alias imageinstallx86='imagex86 install > /dev/null'
+alias imagex86="make O=../bx86 LOCALVERSION=-$X86IMAGENAME CROSS_COMPILE= -j8 > /dev/null"
+alias modulesx86='imagex86 modules > /dev/null'
 alias imagex86deb='imagex86 deb-pkg'
-alias installx86='imageinstallx86; modulesinstallx86'
-#alias installx86='imagex86; msudo make O=../bx86 CROSS_COMPILE= -j8  LOCALVERSION=-custom modules_install; msudo make O=../bx86 CROSS_COMPILE= -j8 LOCALVERSION=-custom install'
+alias installx86="imagex86; modulesx86; msudo make O=../bx86 CROSS_COMPILE= -j8 LOCALVERSION=-$X86IMAGENAME modules_install; msudo make O=../bx86 CROSS_COMPILE= -j8 LOCALVERSION=-$X86IMAGENAME install;"
 
 #fixes
 alias fixsound1="pulseaudio -k"

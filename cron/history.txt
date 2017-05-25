@@ -4889,3 +4889,51 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 177b572973f7] updates
+ 15 files changed, 1494 insertions(+), 35 deletions(-)
+ create mode 100644 .bash_aliases.swp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   3f516f80883e..177b572973f7  master -> master
+   e4ba9095a97f..3f516f80883e  bkp/master -> bkp/master
+
+
+
+ 
+Thu May 25 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 8951a9a86655...83e8361fb446 sched/cleanup -> sched/cleanup (forced update)
+ + 7669a8ccdb8f...8951a9a86655 bkp/sched/cleanup -> bkp/sched/cleanup (forced update)
+ + c6304f1f8414...aee71034a8db bkp/sched/cpufreq-hooks-hikey -> bkp/sched/cpufreq-hooks-hikey (forced update)
+ - [deleted]                   bkp/thermal/cooling
+ - [deleted]                   bkp/thermal/cooling-v2
+ - [deleted]                   bkp/thermal/cooling-v3
+ + 7ac392c8f83e...434f8a93f327 lnext/akpm -> lnext/akpm (forced update)
+ + 0d2d8302a869...76da9e76cf4b lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 3433eca2d0cd...eb60b8cf83fe lnext/master -> lnext/master (forced update)
+   56fff1bb0f31..2426125ab4eb  lnext/stable -> lnext/stable
+ * [new branch]                test -> test
+ * [new branch]                bkp/sched/tick-cpufreq -> bkp/sched/tick-cpufreq
+ * [new tag]                   next-20170525 -> next-20170525
+
+Entering /home/vireshk/work/repos/tools/module
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -1,1 +1,3 @@
 scripts
+work/repos/tools/module
+work/repos/tools/vireshk-linux

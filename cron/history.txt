@@ -4937,3 +4937,40 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 7d5b72b87f6e] updates
+ 19 files changed, 702 insertions(+), 54 deletions(-)
+ rewrite .Skype/viresh.nitj/bistats.db-journal (63%)
+ delete mode 100644 .Skype/viresh.nitj/statistics.db-journal
+ delete mode 100644 .bash_aliases.swp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   177b572973f7..7d5b72b87f6e  master -> master
+   3f516f80883e..177b572973f7  bkp/master -> bkp/master
+
+
+
+ 
+Fri May 26 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   83e8361fb446..d0dea54d409d  sched/cleanup -> sched/cleanup
+ + 8951a9a86655...83e8361fb446 bkp/sched/cleanup -> bkp/sched/cleanup (forced update)
+ + 434f8a93f327...927322ba1d53 lnext/akpm -> lnext/akpm (forced update)
+ + 76da9e76cf4b...f1dba7f7fb66 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + eb60b8cf83fe...494a19b0aa3c lnext/master -> lnext/master (forced update)
+   2426125ab4eb..be941bf2e6a3  lnext/stable -> lnext/stable
+   08332893e37a..be941bf2e6a3  origin/HEAD -> origin/HEAD
+   08332893e37a..be941bf2e6a3  origin/master -> origin/master
+ * [new branch]                bkp/test -> bkp/test
+ * [new tag]                   next-20170526 -> next-20170526
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

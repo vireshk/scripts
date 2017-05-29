@@ -4974,3 +4974,64 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master bff8f9ee9fff] updates
+ 18 files changed, 652 insertions(+), 48 deletions(-)
+ create mode 100644 .Skype/viresh.nitj/statistics.db-journal
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   7d5b72b87f6e..bff8f9ee9fff  master -> master
+   177b572973f7..7d5b72b87f6e  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+[master c0dacbca401e] updates
+ 12 files changed, 3554 insertions(+), 4 deletions(-)
+ create mode 100644 performance/.perf-results-tick2.txt.swp
+ create mode 100644 performance/.perf-results.txt.swp
+ rename performance/{scheduler-test.txt => list.txt} (100%)
+ create mode 100644 performance/old/perf-results-vanila.txt
+ create mode 100644 performance/old/perf-results.txt
+ create mode 100644 performance/old/scheduler-test-patched.txt
+ create mode 100644 performance/old/scheduler-test-vanila.txt
+ create mode 100644 performance/perf-results-tick1.txt
+ create mode 100644 performance/perf-results-tick2.txt
+ create mode 100644 performance/perf-results-vanila.txt
+ create mode 100644 performance/perf-results.txt
+ rename performance/{scheduler-test.sh => perf-test.sh} (79%)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/vireshk-linux
+   081fdc1f5e1b..c0dacbca401e  master -> master
+
+
+
+ 
+Mon May 29 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   83e8361fb446..d0dea54d409d  bkp/sched/cleanup -> bkp/sched/cleanup
+ + 927322ba1d53...9a7d622dea1d lnext/akpm -> lnext/akpm (forced update)
+ + f1dba7f7fb66...cf1fdd138131 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 494a19b0aa3c...62d5d7921010 lnext/master -> lnext/master (forced update)
+   be941bf2e6a3..249f1efd8e3d  lnext/stable -> lnext/stable
+   be941bf2e6a3..5ed02dbb4974  origin/HEAD -> origin/HEAD
+   be941bf2e6a3..5ed02dbb4974  origin/master -> origin/master
+ * [new tag]                   next-20170529 -> next-20170529
+ * [new tag]                   v4.12-rc3 -> v4.12-rc3
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -115,10 +115,10 @@ alias gitmailgenpd='gitmailopp --to ulf.hansson@linaro.org --to "Kevin Hilman <k
 
 
 # fetch remotes
-alias gitsyncpmko='ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/pm.git lnext;ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/pm.git linus;'
-alias gitsynclko='ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/linux.git lnext;ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/linux.git linus;'
+alias gitsyncpmko='ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/pm.git next;ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/pm.git linus;'
+alias gitsynclko='ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/linux.git next;ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/linux.git linus;'
 alias gitsyncpmlo='ssh git@git.linaro.org track fetch people/viresh.kumar/linux.git lnext;ssh git@git.linaro.org track fetch people/viresh.kumar/linux.git linus;'
 alias gitsyncllo='ssh git@git.linaro.org track fetch people/viresh.kumar/mylinux.git lnext;ssh git@git.linaro.org track fetch people/viresh.kumar/mylinux.git linus;'
-alias gitsyncko="hwork; gitsyncpmko; gitsynclko"
-alias gitsynclo="hwork; gitsyncpmlo; gitsyncllo"
+alias gitsyncko="cd /home/vireshk/work/repos/devel/linux/; gitsyncpmko gitsynclko"
+alias gitsynclo="cd /home/vireshk/work/repos/devel/linux/; gitsyncpmlo gitsyncllo"
 

@@ -5109,3 +5109,54 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master ce67885c56bd] updates
+ 19 files changed, 638 insertions(+), 37 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   20f300940f25..ce67885c56bd  master -> master
+   bff8f9ee9fff..20f300940f25  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+[master c7359350554e] updates
+ 7 files changed, 112879 insertions(+)
+ create mode 100644 performance/dft-0.dat
+ create mode 100644 performance/dft-0.txt
+ create mode 100644 performance/dft-1.dat
+ create mode 100644 performance/dft-1.txt
+ create mode 100644 performance/perf-trace-0.txt
+ create mode 100644 performance/perf-trace-1.txt
+ create mode 100755 performance/runme-trace.sh
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/vireshk-linux
+   176d052c3af0..c7359350554e  master -> master
+   c0dacbca401e..176d052c3af0  bkp/master -> bkp/master
+
+
+
+ 
+Wed May 31 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + d0dea54d409d...0b9ad56b0680 bkp/sched/cleanup -> bkp/sched/cleanup (forced update)
+ + db6833e4c14d...f2b0224da6ea pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   0afe06aa8b1a..0ab35512dd7c  pm/linux-next -> pm/linux-next
+ + ae929de34c9c...f2b0224da6ea pm/testing -> pm/testing (forced update)
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

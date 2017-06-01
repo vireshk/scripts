@@ -5160,3 +5160,114 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 1368ba232ccb] updates
+ 24 files changed, 600 insertions(+), 30 deletions(-)
+ delete mode 100644 .Skype/shared_dynco/dc.db-journal
+ delete mode 100644 .Skype/shared_dynco/dc.lock
+ delete mode 100644 .Skype/shared_httpfe/queue.lock
+ delete mode 100644 .Skype/viresh.nitj/bistats.db-journal
+ delete mode 100644 .Skype/viresh.nitj/bistats.lock
+ delete mode 100644 .Skype/viresh.nitj/keyval.lock
+ delete mode 100644 .Skype/viresh.nitj/main.db-journal
+ delete mode 100644 .Skype/viresh.nitj/main.lock
+ delete mode 100644 .Skype/viresh.nitj/msn.db-journal
+ delete mode 100644 .Skype/viresh.nitj/msn.lock
+ delete mode 100644 .Skype/viresh.nitj/statistics.db-journal
+ delete mode 100644 .Skype/viresh.nitj/statistics.lock
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   ce67885c56bd..1368ba232ccb  master -> master
+   20f300940f25..ce67885c56bd  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+[master 91171f7dc929] updates
+ 49 files changed, 1249470 insertions(+), 1 deletion(-)
+ create mode 100755 performance/stats-averages.sh
+ create mode 100755 performance/stats.sh
+ rename performance/{ => trace-29-may-17}/dft-0.dat (100%)
+ rename performance/{ => trace-29-may-17}/dft-0.txt (100%)
+ rename performance/{ => trace-29-may-17}/dft-1.dat (100%)
+ rename performance/{ => trace-29-may-17}/dft-1.txt (100%)
+ create mode 100644 performance/trace-29-may-17/junk1
+ create mode 100644 performance/trace-29-may-17/junk2
+ create mode 100644 performance/trace-29-may-17/junk3
+ rename performance/{ => trace-29-may-17}/perf-trace-0.txt (100%)
+ rename performance/{ => trace-29-may-17}/perf-trace-1.txt (100%)
+ create mode 100644 performance/trace-29-may-17/tasks
+ create mode 100644 performance/trace-30-may-17-relocate-trace-power/dft-0.dat
+ create mode 100644 performance/trace-30-may-17-relocate-trace-power/dft-0.txt
+ create mode 100644 performance/trace-30-may-17-relocate-trace-power/dft-1.dat
+ create mode 100644 performance/trace-30-may-17-relocate-trace-power/dft-1.txt
+ create mode 100644 performance/trace-30-may-17-relocate-trace-power/junk-0
+ create mode 100644 performance/trace-30-may-17-relocate-trace-power/junk-01
+ create mode 100644 performance/trace-30-may-17-relocate-trace-power/junk-1
+ create mode 100644 performance/trace-30-may-17-relocate-trace-power/junk-11
+ create mode 100644 performance/trace-30-may-17-relocate-trace-power/junk1
+ create mode 100644 performance/trace-30-may-17-relocate-trace-power/junk2
+ create mode 100644 performance/trace-30-may-17-relocate-trace-power/junk3
+ create mode 100644 performance/trace-30-may-17-relocate-trace-power/perf-trace-0.txt
+ create mode 100644 performance/trace-30-may-17-relocate-trace-power/perf-trace-1.txt
+ create mode 100644 performance/trace-30-may-17-relocate-trace-power/tasks
+ create mode 100644 performance/trace-30-may-17-relocate-trace/dft-0.dat
+ create mode 100644 performance/trace-30-may-17-relocate-trace/dft-0.txt
+ create mode 100644 performance/trace-30-may-17-relocate-trace/dft-1.dat
+ create mode 100644 performance/trace-30-may-17-relocate-trace/dft-1.txt
+ create mode 100644 performance/trace-30-may-17-relocate-trace/junk-0
+ create mode 100644 performance/trace-30-may-17-relocate-trace/junk-1
+ create mode 100644 performance/trace-30-may-17-relocate-trace/junk1
+ create mode 100644 performance/trace-30-may-17-relocate-trace/junk2
+ create mode 100644 performance/trace-30-may-17-relocate-trace/junk3
+ create mode 100644 performance/trace-30-may-17-relocate-trace/perf-trace-0.txt
+ create mode 100644 performance/trace-30-may-17-relocate-trace/perf-trace-1.txt
+ create mode 100644 performance/trace-30-may-17-relocate-trace/tasks
+ create mode 100644 performance/trace-31-may-17-relocate-trace-all/.dft-0.txt.swp
+ create mode 100644 performance/trace-31-may-17-relocate-trace-all/dft-0.dat
+ create mode 100644 performance/trace-31-may-17-relocate-trace-all/dft-0.txt
+ create mode 100644 performance/trace-31-may-17-relocate-trace-all/dft-1.dat
+ create mode 100644 performance/trace-31-may-17-relocate-trace-all/dft-1.txt
+ create mode 100644 performance/trace-31-may-17-relocate-trace-all/junk2
+ create mode 100644 performance/trace-31-may-17-relocate-trace-all/junk3
+ create mode 100644 performance/trace-31-may-17-relocate-trace-all/perf-trace-0.txt
+ create mode 100644 performance/trace-31-may-17-relocate-trace-all/perf-trace-1.txt
+ create mode 100755 performance/trace-31-may-17-relocate-trace-all/stats.sh
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/vireshk-linux
+   c7359350554e..91171f7dc929  master -> master
+   176d052c3af0..c7359350554e  bkp/master -> bkp/master
+
+
+
+ 
+Thu Jun  1 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + c1cb76efd7bf...a2b5ab95a774 sched/tick-cpufreq -> sched/tick-cpufreq (forced update)
+ + 9a7d622dea1d...a7e75ca7307f lnext/akpm -> lnext/akpm (forced update)
+ + cf1fdd138131...5f6e1344a031 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 62d5d7921010...f2882f46b623 lnext/master -> lnext/master (forced update)
+   249f1efd8e3d..f511c0b17b08  lnext/stable -> lnext/stable
+   3f173bde7e43..d602fb684494  origin/HEAD -> origin/HEAD
+   3f173bde7e43..d602fb684494  origin/master -> origin/master
+   5319e6846cf0..45b317b48988  tip/master -> tip/master
+ + 99fa871820cf...7c25904508af tip/timers/nohz -> tip/timers/nohz (forced update)
+   8fcc9bc3eaa2..5b8b9cf76add  tip/x86/boot -> tip/x86/boot
+ * [new tag]                   next-20170531 -> next-20170531
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

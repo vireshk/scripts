@@ -5369,3 +5369,59 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 98be71dcb506] updates
+ 17 files changed, 698 insertions(+), 47 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   06a2283e17c0..98be71dcb506  master -> master
+   1368ba232ccb..06a2283e17c0  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+[master 3cc21570f6d9] updates
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/vireshk-linux
+   590f569c8069..3cc21570f6d9  master -> master
+   91171f7dc929..590f569c8069  bkp/master -> bkp/master
+
+
+
+ 
+Mon Jun  5 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   851500eed510..8041a965fcca  cpufreq/latency -> cpufreq/latency
+   0b9ad56b0680..634ab5916879  bkp/sched/cleanup -> bkp/sched/cleanup
+ + a2b5ab95a774...b3a96d619a4c bkp/sched/tick-cpufreq -> bkp/sched/tick-cpufreq (forced update)
+ + 3fda3dcb7fb3...4864da1c7bd1 lnext/akpm -> lnext/akpm (forced update)
+ + f0c4ed82073a...1bc60b48157f lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 3ab334ebe84e...8adac2641862 lnext/master -> lnext/master (forced update)
+   d602fb684494..9ea15a59c39d  lnext/stable -> lnext/stable
+   3b1e342be265..3c2993b8c614  origin/HEAD -> origin/HEAD
+   3b1e342be265..3c2993b8c614  origin/master -> origin/master
+   e3170cc04d7c..603191302540  pm/acpi -> pm/acpi
+   bb47e964175e..bb5710e72c21  pm/pm -> pm/pm
+ * [new branch]                sched/cpufreq-timing -> sched/cpufreq-timing
+ * [new branch]                bkp/cpufreq/latency -> bkp/cpufreq/latency
+ * [new tag]                   acpi-4.12-rc4 -> acpi-4.12-rc4
+ * [new tag]                   next-20170602 -> next-20170602
+ * [new tag]                   pm-4.12-rc4 -> pm-4.12-rc4
+ * [new tag]                   v4.12-rc4 -> v4.12-rc4
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

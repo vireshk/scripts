@@ -5425,3 +5425,177 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master fb391f727910] updates
+ 16 files changed, 736 insertions(+), 38 deletions(-)
+ delete mode 100644 .Skype/viresh.nitj/statistics.db-journal
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   98be71dcb506..fb391f727910  master -> master
+   06a2283e17c0..98be71dcb506  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+[master 1e9307cf0187] updates
+ 97 files changed, 3127592 insertions(+)
+ create mode 100644 performance/test-01-june-hooks-timings/dft-0.dat
+ create mode 100644 performance/test-01-june-hooks-timings/dft-0.txt
+ create mode 100644 performance/test-01-june-hooks-timings/dft-1.dat
+ create mode 100644 performance/test-01-june-hooks-timings/dft-1.txt
+ create mode 100644 performance/test-01-june-hooks-timings/junk1
+ create mode 100644 performance/test-01-june-hooks-timings/junk2
+ create mode 100644 performance/test-01-june-hooks-timings/junk3
+ create mode 100755 performance/test-01-june-hooks-timings/parse.sh
+ create mode 100755 performance/test-01-june-hooks-timings/runme-trace.sh
+ create mode 100644 performance/test-5-june-timings-nogroup/cpu0
+ create mode 100644 performance/test-5-june-timings-nogroup/cpu1
+ create mode 100644 performance/test-5-june-timings-nogroup/cpu2
+ create mode 100644 performance/test-5-june-timings-nogroup/cpu3
+ create mode 100644 performance/test-5-june-timings-nogroup/cpu4
+ create mode 100644 performance/test-5-june-timings-nogroup/cpu5
+ create mode 100644 performance/test-5-june-timings-nogroup/cpu6
+ create mode 100644 performance/test-5-june-timings-nogroup/cpu7
+ create mode 100644 performance/test-5-june-timings-nogroup/dft-0.dat
+ create mode 100644 performance/test-5-june-timings-nogroup/dft-0.txt
+ create mode 100644 performance/test-5-june-timings-nogroup/junk-0-1
+ create mode 100644 performance/test-5-june-timings-nogroup/junk-0-2
+ create mode 100644 performance/test-5-june-timings-nogroup/junk-0-3
+ create mode 100644 performance/test-5-june-timings-nogroup/junk-0-4
+ create mode 100644 performance/test-5-june-timings-nogroup/junk-1-1
+ create mode 100644 performance/test-5-june-timings-nogroup/junk-1-2
+ create mode 100644 performance/test-5-june-timings-nogroup/junk-1-3
+ create mode 100644 performance/test-5-june-timings-nogroup/junk-1-4
+ create mode 100644 performance/test-5-june-timings-nogroup/junk-2-1
+ create mode 100644 performance/test-5-june-timings-nogroup/junk-2-2
+ create mode 100644 performance/test-5-june-timings-nogroup/junk-2-3
+ create mode 100644 performance/test-5-june-timings-nogroup/junk-2-4
+ create mode 100644 performance/test-5-june-timings-nogroup/junk-3-1
+ create mode 100644 performance/test-5-june-timings-nogroup/junk-3-2
+ create mode 100644 performance/test-5-june-timings-nogroup/junk-3-3
+ create mode 100644 performance/test-5-june-timings-nogroup/junk-3-4
+ create mode 100644 performance/test-5-june-timings-nogroup/junk-4-1
+ create mode 100644 performance/test-5-june-timings-nogroup/junk-4-2
+ create mode 100644 performance/test-5-june-timings-nogroup/junk-4-3
+ create mode 100644 performance/test-5-june-timings-nogroup/junk-4-4
+ create mode 100644 performance/test-5-june-timings-nogroup/junk-5-1
+ create mode 100644 performance/test-5-june-timings-nogroup/junk-5-2
+ create mode 100644 performance/test-5-june-timings-nogroup/junk-5-3
+ create mode 100644 performance/test-5-june-timings-nogroup/junk-5-4
+ create mode 100644 performance/test-5-june-timings-nogroup/junk-6-1
+ create mode 100644 performance/test-5-june-timings-nogroup/junk-6-2
+ create mode 100644 performance/test-5-june-timings-nogroup/junk-6-3
+ create mode 100644 performance/test-5-june-timings-nogroup/junk-6-4
+ create mode 100644 performance/test-5-june-timings-nogroup/junk-7-1
+ create mode 100644 performance/test-5-june-timings-nogroup/junk-7-2
+ create mode 100644 performance/test-5-june-timings-nogroup/junk-7-3
+ create mode 100644 performance/test-5-june-timings-nogroup/junk-7-4
+ create mode 100755 performance/test-5-june-timings-nogroup/parse.sh
+ create mode 100755 performance/test-5-june-timings-nogroup/runme-trace.sh
+ create mode 100644 performance/test-5-june-timings/cpu0
+ create mode 100644 performance/test-5-june-timings/cpu1
+ create mode 100644 performance/test-5-june-timings/cpu2
+ create mode 100644 performance/test-5-june-timings/cpu3
+ create mode 100644 performance/test-5-june-timings/cpu4
+ create mode 100644 performance/test-5-june-timings/cpu5
+ create mode 100644 performance/test-5-june-timings/cpu6
+ create mode 100644 performance/test-5-june-timings/cpu7
+ create mode 100644 performance/test-5-june-timings/dft-0.dat
+ create mode 100644 performance/test-5-june-timings/dft-0.txt
+ create mode 100644 performance/test-5-june-timings/junk-0-1
+ create mode 100644 performance/test-5-june-timings/junk-0-2
+ create mode 100644 performance/test-5-june-timings/junk-0-3
+ create mode 100644 performance/test-5-june-timings/junk-0-4
+ create mode 100644 performance/test-5-june-timings/junk-1-1
+ create mode 100644 performance/test-5-june-timings/junk-1-2
+ create mode 100644 performance/test-5-june-timings/junk-1-3
+ create mode 100644 performance/test-5-june-timings/junk-1-4
+ create mode 100644 performance/test-5-june-timings/junk-2-1
+ create mode 100644 performance/test-5-june-timings/junk-2-2
+ create mode 100644 performance/test-5-june-timings/junk-2-3
+ create mode 100644 performance/test-5-june-timings/junk-2-4
+ create mode 100644 performance/test-5-june-timings/junk-3-1
+ create mode 100644 performance/test-5-june-timings/junk-3-2
+ create mode 100644 performance/test-5-june-timings/junk-3-3
+ create mode 100644 performance/test-5-june-timings/junk-3-4
+ create mode 100644 performance/test-5-june-timings/junk-4-1
+ create mode 100644 performance/test-5-june-timings/junk-4-2
+ create mode 100644 performance/test-5-june-timings/junk-4-3
+ create mode 100644 performance/test-5-june-timings/junk-4-4
+ create mode 100644 performance/test-5-june-timings/junk-5-1
+ create mode 100644 performance/test-5-june-timings/junk-5-2
+ create mode 100644 performance/test-5-june-timings/junk-5-3
+ create mode 100644 performance/test-5-june-timings/junk-5-4
+ create mode 100644 performance/test-5-june-timings/junk-6-1
+ create mode 100644 performance/test-5-june-timings/junk-6-2
+ create mode 100644 performance/test-5-june-timings/junk-6-3
+ create mode 100644 performance/test-5-june-timings/junk-6-4
+ create mode 100644 performance/test-5-june-timings/junk-7-1
+ create mode 100644 performance/test-5-june-timings/junk-7-2
+ create mode 100644 performance/test-5-june-timings/junk-7-3
+ create mode 100644 performance/test-5-june-timings/junk-7-4
+ create mode 100755 performance/test-5-june-timings/parse.sh
+ create mode 100755 performance/test-5-june-timings/runme-trace.sh
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/vireshk-linux
+   3cc21570f6d9..1e9307cf0187  master -> master
+   590f569c8069..3cc21570f6d9  bkp/master -> bkp/master
+
+
+
+ 
+Tue Jun  6 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 634ab5916879...d01041abad8d sched/cleanup -> sched/cleanup (forced update)
+ - [deleted]                   sched/cpufreq-hooks-hikey
+ + 5f8fbbd123a8...8d4a54e45766 sched/cpufreq-timing -> sched/cpufreq-timing (forced update)
+   851500eed510..8041a965fcca  bkp/cpufreq/latency -> bkp/cpufreq/latency
+ + 4864da1c7bd1...6a8182eaab1d lnext/akpm -> lnext/akpm (forced update)
+ + 1bc60b48157f...8d8e6d294a00 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 8adac2641862...f0090bfcf11a lnext/master -> lnext/master (forced update)
+   9ea15a59c39d..125f42b0e226  lnext/stable -> lnext/stable
+   3c2993b8c614..ba7b2387ad23  origin/HEAD -> origin/HEAD
+   3c2993b8c614..ba7b2387ad23  origin/master -> origin/master
+ + f2b0224da6ea...d58c8da72b1a pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 0ab35512dd7c...0fb21b0c59e3 pm/linux-next -> pm/linux-next (forced update)
+   5ed02dbb4974..3c2993b8c614  pm/master -> pm/master
+ + f2b0224da6ea...79e49bdf6c0b pm/testing -> pm/testing (forced update)
+   a351e9b9fc24..f2c45807d399  tip/WIP.timers -> tip/WIP.timers
+ + 8e3c0499d0c9...894645be751b tip/auto-latest -> tip/auto-latest (forced update)
+   6f6266a56130..7425826f4f7a  tip/efi-urgent-for-linus -> tip/efi-urgent-for-linus
+   197decefdb79..bb817bef3b19  tip/efi/core -> tip/efi/core
+   5a29ef220988..04c848d39879  tip/irq/core -> tip/irq/core
+   59cd42c29618..e58e871becec  tip/locking/core -> tip/locking/core
+ + 45b317b48988...486b6bc62151 tip/master -> tip/master (forced update)
+   45aea3216788..9b01d43170aa  tip/sched/core -> tip/sched/core
+   49dfe2a67797..e5aeee51f6b4  tip/smp/hotplug -> tip/smp/hotplug
+   dc434e056fe1..40da1b11f01e  tip/smp/urgent -> tip/smp/urgent
+   f822798e3ced..f2c45807d399  tip/timers/core -> tip/timers/core
+   7c25904508af..f99973e18b65  tip/timers/nohz -> tip/timers/nohz
+   43fe8b8eb81e..ff86bf0c65f1  tip/timers/urgent -> tip/timers/urgent
+   702644ec1cab..c08d517480ea  tip/x86-urgent-for-linus -> tip/x86-urgent-for-linus
+   5b8b9cf76add..28be1b454c2b  tip/x86/boot -> tip/x86/boot
+   e73ad5ff2f76..d6e41f1151fe  tip/x86/mm -> tip/x86/mm
+ - [deleted]                   tip/x86/ras
+   8c9b9d87b855..855615eee9b1  tip/x86/timers -> tip/x86/timers
+   5d9070b1f0fc..ae1d557d8f30  tip/x86/urgent -> tip/x86/urgent
+ * [new branch]                sched/testing -> sched/testing
+ * [new branch]                bkp/sched/cpufreq-timing -> bkp/sched/cpufreq-timing
+ * [new tag]                   next-20170605 -> next-20170605
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

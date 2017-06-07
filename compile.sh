@@ -9,6 +9,7 @@ carch=arm
 basecfg="scripts/kconfig/merge_config.sh linaro/configs/linaro-base.conf"
 IMAGE=zImage
 CROSS_COMPILE="arm-linux-gnueabihf-"
+MISMATCH="CONFIG_DEBUG_SECTION_MISMATCH=y"
 #CROSS_COMPILE='"ccache arm-linux-gnueabihf-"'
 
 if [ -f linaro/configs/vdebug.conf ]; then
@@ -115,6 +116,8 @@ elif [ $2 = x86 ]; then
 	cfg=x86_64_defconfig
 #	CROSS_COMPILE="\"ccache gcc\""
 	CROSS_COMPILE=
+	MISMATCH=
+	FLAGS="LOCALVERSION=-custom"
 	carch="x86"
 	IMAGE=
 else
@@ -129,7 +132,7 @@ fi
 
 #mk="make ARCH=$carch O=$dir -j4"
 #mk="ARCH=$carch O=$dir -j4"
-mk="make ARCH=$carch O=$dir -j4 $FLAGS CROSS_COMPILE=$CROSS_COMPILE CONFIG_DEBUG_SECTION_MISMATCH=y"
+mk="make ARCH=$carch O=$dir -j8 $FLAGS CROSS_COMPILE=$CROSS_COMPILE $MISMATCH"
 
 if [ ! -z $isdebug ]; then
 	echo ""
@@ -166,6 +169,8 @@ elif [ $1 = "menu" ]; then
 	$isdebug $mk menuconfig
 elif [ $1 = "module" ]; then
 	$isdebug $mk modules
+elif [ $1 = "nmodule" ]; then
+	$isdebug $mk modules > /dev/null
 elif [ $1 = "configimage" ]; then
 	$isdebug $mk $cfg
 	$isdebug $bimage > /dev/null

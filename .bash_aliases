@@ -120,7 +120,7 @@ alias configx86="cp /boot/config-`uname -r` ../bx86/.config; yes '' | make O=../
 alias imagex86="make O=../bx86 LOCALVERSION=-$X86IMAGENAME CROSS_COMPILE= -j8 > /dev/null"
 alias modulesx86='imagex86 modules > /dev/null'
 alias imagex86deb='imagex86 deb-pkg'
-alias installx86="imagex86; modulesx86; msudo make O=../bx86 CROSS_COMPILE= -j8 LOCALVERSION=-$X86IMAGENAME modules_install; msudo make O=../bx86 CROSS_COMPILE= -j8 LOCALVERSION=-$X86IMAGENAME install;"
+alias installx86="nimage x86; nmodule x86; msudo make O=../bx86 CROSS_COMPILE= -j8 LOCALVERSION=-$X86IMAGENAME modules_install; msudo make O=../bx86 CROSS_COMPILE= -j8 LOCALVERSION=-$X86IMAGENAME install;"
 
 #fixes
 alias fixsound1="pulseaudio -k"

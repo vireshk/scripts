@@ -463,3 +463,9 @@ From vireshk  Tue Mar 21 07:43:53 2017
 From vireshk  Wed Apr 26 16:28:04 2017
  Subject: [PATCH V6 0/9] PM / Domains: Implement domain performance states
   Folder: PATCH_V6_0-9_PM_Domains_Implement_domain_performance_states.	   9058
+From vireshk  Wed Jun  7 15:27:49 2017
+ Subject: Re: [RFC] sched: fair: Don't update CPU frequency too frequently
+  Folder: Re_RFC_sched_fair_Don't_update_CPU_frequency_too_frequently.	   4272
+From vireshk  Thu Jun  1 17:04:49 2017
+ Subject: [RFC] sched: fair: Don't update CPU frequency too frequently
+  Folder: RFC_sched_fair_Don't_update_CPU_frequency_too_frequently.mbo	   7999

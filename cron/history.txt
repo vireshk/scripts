@@ -5654,3 +5654,59 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master c89aa11b75ed] updates
+ 26 files changed, 633 insertions(+), 43 deletions(-)
+ delete mode 100644 .Skype/shared_dynco/dc.db-journal
+ delete mode 100644 .Skype/shared_dynco/dc.lock
+ delete mode 100644 .Skype/shared_httpfe/queue.lock
+ delete mode 100644 .Skype/viresh.nitj/bistats.db-journal
+ delete mode 100644 .Skype/viresh.nitj/bistats.lock
+ delete mode 100644 .Skype/viresh.nitj/keyval.lock
+ delete mode 100644 .Skype/viresh.nitj/main.db-journal
+ delete mode 100644 .Skype/viresh.nitj/main.lock
+ delete mode 100644 .Skype/viresh.nitj/msn.db-journal
+ delete mode 100644 .Skype/viresh.nitj/msn.lock
+ delete mode 100644 .Skype/viresh.nitj/statistics.db-journal
+ delete mode 100644 .Skype/viresh.nitj/statistics.lock
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   286564be5598..c89aa11b75ed  master -> master
+   fb391f727910..286564be5598  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+[master 82a740433487] updates
+ 4 files changed, 418 insertions(+), 6776 deletions(-)
+ rewrite performance/perf-results-tick3.txt (98%)
+ rewrite performance/perf-results-vanila3.txt (98%)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/vireshk-linux
+   1e9307cf0187..82a740433487  master -> master
+
+
+
+ 
+Thu Jun  8 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   d01041abad8d..51d16da57d9a  bkp/sched/cleanup -> bkp/sched/cleanup
+   4e0006c923e3..a3fbe689d516  pm/bleeding-edge -> pm/bleeding-edge
+ + 07080015eb23...dd5f3b05c77a pm/s2idle-dell-test -> pm/s2idle-dell-test (forced update)
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

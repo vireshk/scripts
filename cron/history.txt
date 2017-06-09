@@ -5710,3 +5710,61 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 644e986e3171] updates
+ 25 files changed, 725 insertions(+), 32 deletions(-)
+ create mode 100644 .Skype/shared_dynco/dc.db-journal
+ create mode 100644 .Skype/shared_dynco/dc.lock
+ create mode 100644 .Skype/shared_httpfe/queue.lock
+ create mode 100644 .Skype/viresh.nitj/bistats.db-journal
+ create mode 100644 .Skype/viresh.nitj/bistats.lock
+ create mode 100644 .Skype/viresh.nitj/keyval.lock
+ create mode 100644 .Skype/viresh.nitj/main.db-journal
+ create mode 100644 .Skype/viresh.nitj/main.lock
+ create mode 100644 .Skype/viresh.nitj/msn.db-journal
+ create mode 100644 .Skype/viresh.nitj/msn.lock
+ create mode 100644 .Skype/viresh.nitj/statistics.db-journal
+ create mode 100644 .Skype/viresh.nitj/statistics.lock
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   c89aa11b75ed..644e986e3171  master -> master
+   286564be5598..c89aa11b75ed  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/vireshk-linux
+   1e9307cf0187..82a740433487  bkp/master -> bkp/master
+
+
+
+ 
+Fri Jun  9 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 83fe554179c4...595069a8be21 opp/genpd-pstate -> opp/genpd-pstate (forced update)
+ + c0ba5a82ffeb...8423b477026d sched/testing -> sched/testing (forced update)
+ - [deleted]                   test
+ + a3fbe689d516...3b94ab8f15b5 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   bb5710e72c21..fbd78afe34d9  pm/pm -> pm/pm
+ + dd5f3b05c77a...8f3ac7396d04 pm/s2idle-dell-test -> pm/s2idle-dell-test (forced update)
+ * [new tag]                   pm-4.12-rc5 -> pm-4.12-rc5
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -14,6 +14,7 @@ alias glome='glo --author=viresh'
 alias glor='glo --reverse'
 alias gloo='gl --pretty=onelin'
 alias glf='gl --pretty=fixes'
+glfs() { glf $1 | head -1; }
 alias gls='gl --stat'
 alias glsp='gls -p'
 alias glspr='glsp --reverse'

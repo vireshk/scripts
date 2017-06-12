@@ -5768,3 +5768,69 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master cd4e203111c7] updates
+ 17 files changed, 699 insertions(+), 29 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   644e986e3171..cd4e203111c7  master -> master
+   c89aa11b75ed..644e986e3171  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+[master 12e021fbd8fc] updates
+ 13 files changed, 97048 insertions(+)
+ create mode 100644 performance/test-8-june-util-deltas/.cpu0.swp
+ create mode 100644 performance/test-8-june-util-deltas/cpu0
+ create mode 100644 performance/test-8-june-util-deltas/cpu1
+ create mode 100644 performance/test-8-june-util-deltas/cpu2
+ create mode 100644 performance/test-8-june-util-deltas/cpu3
+ create mode 100644 performance/test-8-june-util-deltas/cpu4
+ create mode 100644 performance/test-8-june-util-deltas/cpu5
+ create mode 100644 performance/test-8-june-util-deltas/cpu6
+ create mode 100644 performance/test-8-june-util-deltas/cpu7
+ create mode 100644 performance/test-8-june-util-deltas/dft-0.dat
+ create mode 100644 performance/test-8-june-util-deltas/dft-0.txt
+ create mode 100755 performance/test-8-june-util-deltas/parse.sh
+ create mode 100755 performance/test-8-june-util-deltas/runme-trace.sh
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/vireshk-linux
+   82a740433487..12e021fbd8fc  master -> master
+
+
+
+ 
+Mon Jun 12 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   595069a8be21..ea81bc2e25b3  opp/genpd-pstate -> opp/genpd-pstate
+ + 8423b477026d...03adc9462308 sched/testing -> sched/testing (forced update)
+ + 83fe554179c4...595069a8be21 bkp/opp/genpd-pstate -> bkp/opp/genpd-pstate (forced update)
+ + c0ba5a82ffeb...8423b477026d bkp/sched/testing -> bkp/sched/testing (forced update)
+ - [deleted]                   bkp/test
+ + 98c21a634f70...2da9378d531f lnext/akpm -> lnext/akpm (forced update)
+ + ef8b3f1b3e0f...22827b2ad71c lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 19ce14199afd...fc11440fe18e lnext/master -> lnext/master (forced update)
+   ba7b2387ad23..aea4156c3086  lnext/stable -> lnext/stable
+   b29794ec95c6..32c1431eea48  origin/HEAD -> origin/HEAD
+   b29794ec95c6..32c1431eea48  origin/master -> origin/master
+ * [new branch]                cpufreq/sutil-freq-dec -> cpufreq/sutil-freq-dec
+ * [new tag]                   next-20170609 -> next-20170609
+ * [new tag]                   v4.12-rc5 -> v4.12-rc5
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

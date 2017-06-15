@@ -5928,3 +5928,73 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master dc47033106d4] updates
+ 14 files changed, 588 insertions(+), 46 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   040771bf8d5d..dc47033106d4  master -> master
+   8015bcd90421..040771bf8d5d  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Thu Jun 15 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 03adc9462308...3fb89afc96d1 sched/testing -> sched/testing (forced update)
+ + b459da088f25...130eb0a04829 bkp/opp/genpd-pstate -> bkp/opp/genpd-pstate (forced update)
+   603191302540..9522933454f4  pm/acpi -> pm/acpi
+ + 462b4fdaee40...662c5b4a9844 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   fbd78afe34d9..f63e4f7d4179  pm/pm -> pm/pm
+ + 9f02ad5fe5ae...8c318dae8d90 pm/s2idle-dell-test -> pm/s2idle-dell-test (forced update)
+ + 0b1b39910ed0...662c5b4a9844 pm/testing -> pm/testing (forced update)
+ + 894645be751b...bba019aec007 tip/auto-latest -> tip/auto-latest (forced update)
+   20652ed6e44f..567b64aaefc4  tip/core/rcu -> tip/core/rcu
+   7425826f4f7a..792ef14df5c5  tip/efi-urgent-for-linus -> tip/efi-urgent-for-linus
+   7425826f4f7a..792ef14df5c5  tip/efi/urgent -> tip/efi/urgent
+   2c4569ca2698..fa07ab72cbb0  tip/irq/urgent -> tip/irq/urgent
+   e58e871becec..018956d6419b  tip/locking/core -> tip/locking/core
+ + 486b6bc62151...bcae80bb0f74 tip/master -> tip/master (forced update)
+   6e30437bd42c..47c1ded7fef1  tip/perf-urgent-for-linus -> tip/perf-urgent-for-linus
+   36cc2b9222b5..d0fabd1cb8b7  tip/perf/core -> tip/perf/core
+   6e30437bd42c..47c1ded7fef1  tip/perf/urgent -> tip/perf/urgent
+   3e4f7a4956e5..8affb06737ae  tip/rcu-urgent-for-linus -> tip/rcu-urgent-for-linus
+   3e4f7a4956e5..8affb06737ae  tip/rcu/urgent -> tip/rcu/urgent
+   9b01d43170aa..ebfa4c02fa48  tip/sched/core -> tip/sched/core
+   8663effb24f9..252d2a4117bc  tip/sched/urgent -> tip/sched/urgent
+   dc434e056fe1..40da1b11f01e  tip/smp-urgent-for-linus -> tip/smp-urgent-for-linus
+   e5aeee51f6b4..57de72125d34  tip/smp/hotplug -> tip/smp/hotplug
+   f2c45807d399..938e7cf2d569  tip/timers/core -> tip/timers/core
+   f99973e18b65..d4af6d933ccf  tip/timers/nohz -> tip/timers/nohz
+   ff86bf0c65f1..94114c367553  tip/timers/urgent -> tip/timers/urgent
+   c08d517480ea..5b0bc9ac2ce4  tip/x86-urgent-for-linus -> tip/x86-urgent-for-linus
+   d6e41f1151fe..8624c1f66f0f  tip/x86/mm -> tip/x86/mm
+   855615eee9b1..b1b4f2fe6839  tip/x86/timers -> tip/x86/timers
+   ae1d557d8f30..d9ee35acfabb  tip/x86/urgent -> tip/x86/urgent
+ * [new tag]                   acpi-4.12-rc6 -> acpi-4.12-rc6
+ * [new tag]                   pm-4.12-rc6 -> pm-4.12-rc6
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

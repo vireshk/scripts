@@ -5998,3 +5998,56 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 6238ac1ab667] updates
+ 16 files changed, 784 insertions(+), 46 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   dc47033106d4..6238ac1ab667  master -> master
+   040771bf8d5d..dc47033106d4  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+[master e9554e79008c] updates
+ 12 files changed, 443761 insertions(+), 793731 deletions(-)
+ rewrite performance/test-8-june-util-deltas/cpu0 (78%)
+ rewrite performance/test-8-june-util-deltas/cpu1 (81%)
+ rewrite performance/test-8-june-util-deltas/cpu2 (80%)
+ rewrite performance/test-8-june-util-deltas/cpu3 (79%)
+ rewrite performance/test-8-june-util-deltas/cpu4 (75%)
+ rewrite performance/test-8-june-util-deltas/cpu5 (81%)
+ rewrite performance/test-8-june-util-deltas/cpu6 (80%)
+ rewrite performance/test-8-june-util-deltas/cpu7 (69%)
+ rewrite performance/test-8-june-util-deltas/dft-0.txt (60%)
+ create mode 100644 performance/test-8-june-util-deltas/version
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/vireshk-linux
+   e748e647cecd..e9554e79008c  master -> master
+
+
+
+ 
+Fri Jun 16 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 03adc9462308...3fb89afc96d1 bkp/sched/testing -> bkp/sched/testing (forced update)
+ + 662c5b4a9844...b0168158180a pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   b94dd9cfc5db..1e0afde20ced  pm/linux-next -> pm/linux-next
+ + 662c5b4a9844...b0168158180a pm/testing -> pm/testing (forced update)
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

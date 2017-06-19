@@ -6051,3 +6051,49 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 0c027cf7e897] updates
+ 16 files changed, 694 insertions(+), 30 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   6238ac1ab667..0c027cf7e897  master -> master
+   dc47033106d4..6238ac1ab667  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+[master 3a0a289a42aa] updates
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 performance/test-8-june-util-deltas/.cpu0.swp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/vireshk-linux
+   e9554e79008c..3a0a289a42aa  master -> master
+   e748e647cecd..e9554e79008c  bkp/master -> bkp/master
+
+
+
+ 
+Mon Jun 19 13:00:02 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 2da9378d531f...0de51ddf2e64 lnext/akpm -> lnext/akpm (forced update)
+ + 22827b2ad71c...e992d979e369 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + fc11440fe18e...82341321f25c lnext/master -> lnext/master (forced update)
+   aea4156c3086..a090bd4ff838  lnext/stable -> lnext/stable
+ * [new tag]                   next-20170616 -> next-20170616
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

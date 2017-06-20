@@ -6097,3 +6097,50 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 8bdab6c3dea0] updates
+ 13 files changed, 767 insertions(+), 37 deletions(-)
+ rewrite .Skype/shared_dynco/dc.db-journal (100%)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   0c027cf7e897..8bdab6c3dea0  master -> master
+   6238ac1ab667..0c027cf7e897  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+[master 3c17fc970379] updates
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 performance/test-8-june-util-deltas/.cpu0.swp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/vireshk-linux
+   3a0a289a42aa..3c17fc970379  master -> master
+   e9554e79008c..3a0a289a42aa  bkp/master -> bkp/master
+
+
+
+ 
+Tue Jun 20 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   3fb89afc96d1..ca3275479166  sched/testing -> sched/testing
+ + b0168158180a...7176ce17f21d pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 1e0afde20ced...621dcf456c1f pm/linux-next -> pm/linux-next (forced update)
+   32c1431eea48..41f1830f5a7a  pm/master -> pm/master
+ + b0168158180a...7176ce17f21d pm/testing -> pm/testing (forced update)
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

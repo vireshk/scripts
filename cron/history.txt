@@ -6144,3 +6144,55 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master d7ca7c70d6fe] updates
+ 11 files changed, 751 insertions(+), 24 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   8bdab6c3dea0..d7ca7c70d6fe  master -> master
+   0c027cf7e897..8bdab6c3dea0  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/vireshk-linux
+   3a0a289a42aa..3c17fc970379  bkp/master -> bkp/master
+
+
+
+ 
+Wed Jun 21 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 130eb0a04829...ef638f672a53 opp/genpd-pstate -> opp/genpd-pstate (forced update)
+ + ca3275479166...d01041abad8d sched/testing -> sched/testing (forced update)
+   3fb89afc96d1..ca3275479166  bkp/sched/testing -> bkp/sched/testing
+ + 0de51ddf2e64...503bb5a4cc9a lnext/akpm -> lnext/akpm (forced update)
+ + e992d979e369...7a4f10bbb1a2 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 82341321f25c...ac1d73c21fc1 lnext/master -> lnext/master (forced update)
+   a090bd4ff838..41f1830f5a7a  lnext/stable -> lnext/stable
+   32c1431eea48..9705596d08ac  origin/HEAD -> origin/HEAD
+   32c1431eea48..9705596d08ac  origin/master -> origin/master
+ + 2294aa0a760c...795e17c6c6c9 pmlo/opp/genpd-performance-state -> pmlo/opp/genpd-performance-state (forced update)
+ * [new branch]                arm/topology -> arm/topology
+ * [new tag]                   next-20170620 -> next-20170620
+ * [new tag]                   v4.12-rc6 -> v4.12-rc6
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -6196,3 +6196,64 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 09929865c66e] updates
+ 14 files changed, 1069 insertions(+), 39 deletions(-)
+ create mode 100644 .Skype/viresh.nitj/chatsync/b0/b02b405c1cf14297.dat
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   d7ca7c70d6fe..09929865c66e  master -> master
+   8bdab6c3dea0..d7ca7c70d6fe  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Thu Jun 22 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   cpufreq/sutil-freq-dec
+ + ef638f672a53...f4c335123a42 opp/genpd-pstate -> opp/genpd-pstate (forced update)
+ - [deleted]                   opp/genpd-pstate-v6
+ - [deleted]                   opp/genpd-reorder-v1
+ - [deleted]                   opp/genpd-reorder-v2
+ - [deleted]                   opp/genpd-reorder-v3
+ - [deleted]                   opp/rename-sun8i
+ + 1f1298a16c9e...31dd4526b397 opp/rename-v11 -> opp/rename-v11 (forced update)
+ - [deleted]                   sched/tick-cpufreq
+ + 130eb0a04829...ef638f672a53 bkp/opp/genpd-pstate -> bkp/opp/genpd-pstate (forced update)
+ + ca3275479166...d01041abad8d bkp/sched/testing -> bkp/sched/testing (forced update)
+ + 503bb5a4cc9a...d577aec412ad lnext/akpm -> lnext/akpm (forced update)
+ + 7a4f10bbb1a2...1396d22f18fe lnext/akpm-base -> lnext/akpm-base (forced update)
+ + ac1d73c21fc1...be285968cc91 lnext/master -> lnext/master (forced update)
+   41f1830f5a7a..9705596d08ac  lnext/stable -> lnext/stable
+ + 7176ce17f21d...7340cd089831 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   621dcf456c1f..3d9172dd269c  pm/linux-next -> pm/linux-next
+ + 7176ce17f21d...74f4f11ed29b pm/testing -> pm/testing (forced update)
+ * [new branch]                cpufreq/remote-wakeup-policy -> cpufreq/remote-wakeup-policy
+ * [new branch]                device/boot-constraints -> device/boot-constraints
+ * [new branch]                bkp/arm/topology -> bkp/arm/topology
+ * [new tag]                   next-20170621 -> next-20170621
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

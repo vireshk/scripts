@@ -6257,3 +6257,60 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master d46237a02444] updates
+ 11 files changed, 715 insertions(+), 21 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   09929865c66e..d46237a02444  master -> master
+   d7ca7c70d6fe..09929865c66e  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Fri Jun 23 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   bkp/cpufreq/sutil-freq-dec
+ + ef638f672a53...f4c335123a42 bkp/opp/genpd-pstate -> bkp/opp/genpd-pstate (forced update)
+ - [deleted]                   bkp/opp/genpd-pstate-v6
+ - [deleted]                   bkp/opp/genpd-reorder-v1
+ - [deleted]                   bkp/opp/genpd-reorder-v2
+ - [deleted]                   bkp/opp/genpd-reorder-v3
+ - [deleted]                   bkp/opp/rename-sun8i
+ + 1f1298a16c9e...31dd4526b397 bkp/opp/rename-v11 -> bkp/opp/rename-v11 (forced update)
+ - [deleted]                   bkp/sched/tick-cpufreq
+ + d577aec412ad...5586d9d57065 lnext/akpm -> lnext/akpm (forced update)
+ + 1396d22f18fe...c01dc14a8633 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + be285968cc91...09c17284731e lnext/master -> lnext/master (forced update)
+   9705596d08ac..48b6bbef9a17  lnext/stable -> lnext/stable
+ + 7340cd089831...8c51355de988 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   3d9172dd269c..6b1386dcf341  pm/linux-next -> pm/linux-next
+ + 74f4f11ed29b...6b1386dcf341 pm/testing -> pm/testing (forced update)
+ * [new branch]                bkp/cpufreq/remote-wakeup-policy -> bkp/cpufreq/remote-wakeup-policy
+ * [new branch]                bkp/device/boot-constraints -> bkp/device/boot-constraints
+ * [new tag]                   next-20170622 -> next-20170622
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

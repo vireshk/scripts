@@ -6363,3 +6363,55 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master c3cb9de7ecab] updates
+ 13 files changed, 921 insertions(+), 47 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   09aa6ee12065..c3cb9de7ecab  master -> master
+   d46237a02444..09aa6ee12065  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Jun 28 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 841f7b443288...17d58976526d device/boot-constraints -> device/boot-constraints (forced update)
+ + 49121c2925a6...7199675116c3 bkp/arm/topology -> bkp/arm/topology (forced update)
+   41f1830f5a7a..841f7b443288  bkp/device/boot-constraints -> bkp/device/boot-constraints
+ + 851500eed510...cec900045f75 jstultz/dev/hikey-mainline-WIP -> jstultz/dev/hikey-mainline-WIP (forced update)
+   9705596d08ac..da8b14e45c8b  origin/HEAD -> origin/HEAD
+   9705596d08ac..da8b14e45c8b  origin/master -> origin/master
+ + 832777b9f94d...de3ef1eb1cd0 pm/acpi-pm-test -> pm/acpi-pm-test (forced update)
+ + 1f4ef8ecf930...d630c57245dc pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + ee4096aeeb66...9b87b566ba4b pm/linux-next -> pm/linux-next (forced update)
+ + ee4096aeeb66...9f63fa0d62a9 pm/testing -> pm/testing (forced update)
+ * [new branch]                test -> test
+ * [new branch]                bkp/device/boot-constraints-with-classes -> bkp/device/boot-constraints-with-classes
+ * [new branch]                jstultz/dev/hikey960-rebase-4.9 -> jstultz/dev/hikey960-rebase-4.9
+ * [new tag]                   v4.12-rc7 -> v4.12-rc7
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

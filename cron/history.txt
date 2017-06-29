@@ -6415,3 +6415,85 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 0e084826d41f] updates
+ 12 files changed, 649 insertions(+), 24 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   c3cb9de7ecab..0e084826d41f  master -> master
+   09aa6ee12065..c3cb9de7ecab  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Thu Jun 29 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   cpufreq/latency
+ + b695a5d4032d...02817ab97631 cpufreq/remote-wakeup -> cpufreq/remote-wakeup (forced update)
+ + 40ead927e4cc...84e1ebf8e720 cpufreq/remote-wakeup-policy -> cpufreq/remote-wakeup-policy (forced update)
+ + 17d58976526d...d934b447d83f device/boot-constraints -> device/boot-constraints (forced update)
+   bae4c7f2a223..4e6bee65c56a  aosp/android-3.10 -> aosp/android-3.10
+ - [deleted]                   aosp/android-3.14
+   c9c8070a2da2..be671c7e1745  aosp/android-3.18 -> aosp/android-3.18
+ - [deleted]                   aosp/android-3.4
+ - [deleted]                   aosp/android-4.1
+   ff458c4fca97..25152dbcc1e5  aosp/android-4.4 -> aosp/android-4.4
+ - [deleted]                   aosp/android-4.4.y
+   182c86e660da..1c84a81b50d1  aosp/android-trusty-3.18 -> aosp/android-trusty-3.18
+ - [deleted]                   aosp/deprecated/experimental/android-3.10
+ - [deleted]                   aosp/deprecated/experimental/android-3.10-rc5
+ - [deleted]                   aosp/deprecated/experimental/android-3.14
+ - [deleted]                   aosp/deprecated/experimental/android-3.18
+ - [deleted]                   aosp/deprecated/experimental/android-3.8
+ - [deleted]                   aosp/deprecated/experimental/android-3.9
+ - [deleted]                   aosp/deprecated/experimental/android-3.9-rc2
+ - [deleted]                   aosp/deprecated/experimental/android-3.9-rc7
+ - [deleted]                   aosp/experimental/android-4.1
+ + 5e501df400d3...0193b0b61b53 aosp/experimental/android-4.4-llvm -> aosp/experimental/android-4.4-llvm (forced update)
+ + 841f7b443288...17d58976526d bkp/device/boot-constraints -> bkp/device/boot-constraints (forced update)
+ + d630c57245dc...ada57e8e271d pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 9b87b566ba4b...e0f80a699d1a pm/linux-next -> pm/linux-next (forced update)
+ + 9f63fa0d62a9...6474f749e562 pm/testing -> pm/testing (forced update)
+ * [new branch]                cpufreq/dynamic-latency -> cpufreq/dynamic-latency
+ * [new branch]                cpufreq/transition-latency -> cpufreq/transition-latency
+ * [new branch]                aosp/android-4.4-n -> aosp/android-4.4-n
+ * [new branch]                aosp/android-4.4-n-release -> aosp/android-4.4-n-release
+ * [new branch]                aosp/android-4.9 -> aosp/android-4.9
+ * [new branch]                aosp/android-trusty-4.9 -> aosp/android-trusty-4.9
+ * [new branch]                aosp/deprecated/android-3.14 -> aosp/deprecated/android-3.14
+ * [new branch]                aosp/deprecated/android-3.4 -> aosp/deprecated/android-3.4
+ * [new branch]                aosp/deprecated/android-4.1 -> aosp/deprecated/android-4.1
+ * [new branch]                aosp/deprecated/android-4.4.y -> aosp/deprecated/android-4.4.y
+ * [new branch]                aosp/experimental/android-4.4-eas -> aosp/experimental/android-4.4-eas
+ * [new branch]                aosp/experimental/android-4.9 -> aosp/experimental/android-4.9
+ * [new branch]                aosp/upstream-linux-3.18.y -> aosp/upstream-linux-3.18.y
+ * [new branch]                aosp/upstream-linux-4.4.y -> aosp/upstream-linux-4.4.y
+ * [new branch]                aosp/upstream-linux-4.9.y -> aosp/upstream-linux-4.9.y
+ * [new branch]                bkp/test -> bkp/test
+ * [new tag]                   v4.4.49-cts-pass -> v4.4.49-cts-pass
+ * [new tag]                   v4.4.54-cts-pass -> v4.4.54-cts-pass
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

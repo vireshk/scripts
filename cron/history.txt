@@ -6497,3 +6497,57 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master dfabebbf0d6f] updates
+ 13 files changed, 897 insertions(+), 35 deletions(-)
+ create mode 100644 mutt/incoming/RFC_0-9_cpufreq_schedutil_Allow_remote_wakeups.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   0e084826d41f..dfabebbf0d6f  master -> master
+   c3cb9de7ecab..0e084826d41f  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Fri Jun 30 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 5781e0b831e9...b917cb8b8512 cpufreq/transition-latency -> cpufreq/transition-latency (forced update)
+ - [deleted]                   bkp/cpufreq/latency
+ + b695a5d4032d...02817ab97631 bkp/cpufreq/remote-wakeup -> bkp/cpufreq/remote-wakeup (forced update)
+ + 40ead927e4cc...84e1ebf8e720 bkp/cpufreq/remote-wakeup-policy -> bkp/cpufreq/remote-wakeup-policy (forced update)
+ + 17d58976526d...d934b447d83f bkp/device/boot-constraints -> bkp/device/boot-constraints (forced update)
+ + 5586d9d57065...1a0df77cd27e lnext/akpm -> lnext/akpm (forced update)
+ + c01dc14a8633...d6cbe934ceb5 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 09c17284731e...3fb8ba638d53 lnext/master -> lnext/master (forced update)
+   48b6bbef9a17..3c2bfbaadff6  lnext/stable -> lnext/stable
+ + ada57e8e271d...c4fbd39fc717 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + e0f80a699d1a...0491dac9f1c9 pm/linux-next -> pm/linux-next (forced update)
+ + 6474f749e562...94f28c05d45b pm/testing -> pm/testing (forced update)
+ * [new branch]                bkp/cpufreq/dynamic-latency -> bkp/cpufreq/dynamic-latency
+ * [new branch]                bkp/cpufreq/transition-latency -> bkp/cpufreq/transition-latency
+ * [new tag]                   next-20170629 -> next-20170629
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

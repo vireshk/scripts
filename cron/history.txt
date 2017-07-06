@@ -6670,3 +6670,51 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 3b5d3291bd26] updates
+ 13 files changed, 659 insertions(+), 28 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   c1d66cdb99c9..3b5d3291bd26  master -> master
+   95fc5d262384..c1d66cdb99c9  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Thu Jul  6 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + d934b447d83f...dab615582781 bkp/device/boot-constraints -> bkp/device/boot-constraints (forced update)
+   da8b14e45c8b..9b51f04424e1  origin/HEAD -> origin/HEAD
+   da8b14e45c8b..9b51f04424e1  origin/master -> origin/master
+   e4330d8bf669..03471c06d02f  pm/acpi -> pm/acpi
+   3a355360331f..e9a867cd13cb  pm/bleeding-edge -> pm/bleeding-edge
+   c0bc126f97fb..6f7da290413b  pm/master -> pm/master
+   f63e4f7d4179..8f8e5c3e2796  pm/pm -> pm/pm
+ * [new tag]                   acpi-4.13-rc1 -> acpi-4.13-rc1
+ * [new tag]                   pm-4.13-rc1 -> pm-4.13-rc1
+ * [new tag]                   v4.12 -> v4.12
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

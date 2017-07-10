@@ -6757,3 +6757,46 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 7b223d959315] updates
+ 11 files changed, 834 insertions(+), 35 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   bd17239af9cd..7b223d959315  master -> master
+   3b5d3291bd26..bd17239af9cd  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon Jul 10 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + a50f5ccd1437...bf3fe6d61d62 device/boot-constraints -> device/boot-constraints (forced update)
+ + dab615582781...a50f5ccd1437 bkp/device/boot-constraints -> bkp/device/boot-constraints (forced update)
+ + e9a867cd13cb...b2b1a8da85dd pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 3a355360331f...9f11765f6370 pm/linux-next -> pm/linux-next (forced update)
+   6f7da290413b..eceeae414edc  pm/master -> pm/master
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

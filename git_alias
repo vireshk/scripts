@@ -103,15 +103,14 @@ mypatchcountrank() { gl --no-merges --format="%aN" $1..$2 | sort | uniq -ic| sor
 alias myspatch='echo "spatch -in_place -include_headers -sp_file setmode.cocci -dir drivers/"'
 
 # Gitmail
-alias gitmail='git send-email *.patch --cc viresh'
-alias gitmailsuppress='git -c sendemail.tocmd=true send-email *.patch --suppress-cc=all --cc viresh'
+alias gitmail='git send-email *.patch --cc vireshk'
+alias gitmailsuppress='git -c sendemail.tocmd=true send-email *.patch --suppress-cc=all --cc vireshk'
 alias gitmaillinaro='gitmail --cc linaro'
 alias gitmailpm='gitmail --to rafael --cc pm --cc vingu'
 alias gitmailopp='gitmailpm --cc sboyd --cc "Nishanth Menon <nm@ti.com>"'
 alias gitmailsched='gitmail --cc lkml --to ingo --to peterz --cc vingu'
 alias gitmailschedutil='gitmailpm --to ingo --to peterz --cc vingu'
 alias gitmailtimer='gitmail --cc lkml --to tglx --cc fw --cc vingu'
-alias prepcclist='cat 00* | grep Cc | cut -f 2 -d : | sort | uniq > ~/scripts/mycoverletterlist.txt'
 alias gitmailgenpd='gitmailopp --to ulf.hansson@linaro.org --to "Kevin Hilman <khilman@kernel.org>" --cc "robh+dt@kernel.org" --cc lina.iyer@linaro.org --cc rnayak@codeaurora.org --cc sudeep.holla@arm.com'
 
 

@@ -1,3 +1,6 @@
 #!/bin/bash
-
-scripts/get_maintainer.pl --nogit --nogit-fallback --norolestats --pattern-depth=1 --nol $1
+if [ $1 == "0000-cover-letter.patch" ]; then
+	~/scripts/coverlettercmd "TO"
+else
+	~/scripts/_tocmd $1
+fi

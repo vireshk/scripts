@@ -6800,3 +6800,48 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master a2f16d758d9f] updates
+ 24 files changed, 1054 insertions(+), 73 deletions(-)
+ delete mode 100644 .Skype/viresh.nitj/chatsync/b0/b02b405c1cf14297.dat
+ copy cccmd => _cccmd (59%)
+ create mode 100755 _tocmd
+ rewrite cccmd (84%)
+ create mode 100755 coverlettercmd
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   7b223d959315..a2f16d758d9f  master -> master
+   bd17239af9cd..7b223d959315  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Tue Jul 11 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + bf3fe6d61d62...df65df7ba3a5 device/boot-constraints -> device/boot-constraints (forced update)
+ + a50f5ccd1437...bf3fe6d61d62 bkp/device/boot-constraints -> bkp/device/boot-constraints (forced update)
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -6845,3 +6845,51 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master ea576552f093] updates
+ 12 files changed, 748 insertions(+), 29 deletions(-)
+ create mode 100644 .Skype/viresh.nitj/chatsync/d5/d5bed3c6939149a9.dat
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   a2f16d758d9f..ea576552f093  master -> master
+   7b223d959315..a2f16d758d9f  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Jul 12 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + df65df7ba3a5...3b5b0e789b72 device/boot-constraints -> device/boot-constraints (forced update)
+ + bf3fe6d61d62...df65df7ba3a5 bkp/device/boot-constraints -> bkp/device/boot-constraints (forced update)
+   03471c06d02f..f19e80b39480  pm/acpi -> pm/acpi
+   e48174779440..6a71d8d77795  pm/device-properties -> pm/device-properties
+   eceeae414edc..548aa0e3c516  pm/master -> pm/master
+   8f8e5c3e2796..15d56b3921d2  pm/pm -> pm/pm
+ * [new tag]                   acpi-extra-4.13-rc1 -> acpi-extra-4.13-rc1
+ * [new tag]                   devprop-4.13-rc1 -> devprop-4.13-rc1
+ * [new tag]                   pm-extra-4.13-rc1 -> pm-extra-4.13-rc1
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -15,6 +15,9 @@ alias sboyd	Stephen Boyd <sboyd@codeaurora.org>
 alias vingu	Vincent Guittot <vincent.guittot@linaro.org>
 alias juri	Juri Lelli <Juri.Lelli@arm.com>
 alias robin	Robin Randhawa <robin.randhawa@arm.com>
+alias robh	Rob Herring <robh+dt@kernel.org>
+alias broonie	Mark Brown <broonie@kernel.org>
+alias rnayak	Rajendra Nayak <rnayak@codeaurora.org>
 
 alias armsoc	arm@kernel.org
 alias lakml	linux-arm-kernel@lists.infradead.org

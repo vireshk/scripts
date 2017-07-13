@@ -9,12 +9,8 @@ FILE="/tmp/tocclist.txt"
 for f in *.patch
 do
 	if [ $f != "0000-cover-letter.patch" ]; then
-		if [ $1 == "TO" ];
-		then
-			~/scripts/_tocmd  $f >> $FILE
-		else
-			~/scripts/_cccmd $f --nol >> $FILE
-		fi
+		~/scripts/_tocmd  $f >> $FILE
+		~/scripts/_cccmd $f >> $FILE
 	fi
 done
 

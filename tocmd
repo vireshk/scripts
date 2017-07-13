@@ -1,6 +1,4 @@
 #!/bin/bash
-if [ $1 == "0000-cover-letter.patch" ]; then
-	~/scripts/coverlettercmd "TO"
-else
+if [ $1 != "0000-cover-letter.patch" ]; then
 	~/scripts/_tocmd $1
 fi

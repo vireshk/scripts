@@ -6942,3 +6942,45 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master edd783ab1cb9] updates
+ 17 files changed, 910 insertions(+), 50 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   21d9f68d9dfd..edd783ab1cb9  master -> master
+   ea576552f093..21d9f68d9dfd  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon Jul 17 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 84e1ebf8e720...33b5fdb5c349 bkp/cpufreq/remote-wakeup-policy -> bkp/cpufreq/remote-wakeup-policy (forced update)
+ + b917cb8b8512...b2343dced853 bkp/cpufreq/transition-latency -> bkp/cpufreq/transition-latency (forced update)
+ + 3b5b0e789b72...9c8640c29338 bkp/device/boot-constraints -> bkp/device/boot-constraints (forced update)
+ * [new branch]                bkp/cpufreq/remote-wakeup-policy-bkp -> bkp/cpufreq/remote-wakeup-policy-bkp
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

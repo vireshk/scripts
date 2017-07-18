@@ -6984,3 +6984,68 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master a40be4c00333] updates
+ 11 files changed, 1029 insertions(+), 27 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   edd783ab1cb9..a40be4c00333  master -> master
+   21d9f68d9dfd..edd783ab1cb9  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Tue Jul 18 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   arm/topology
+ - [deleted]                   cpufreq/remote-wakeup
+ - [deleted]                   cpufreq/remote-wakeup-hikey
+ - [deleted]                   cpufreq/remote-wakeup-hikey-old
+ - [deleted]                   cpufreq/remote-wakeup-hikey-vanila
+ - [deleted]                   cpufreq/remote-wakeup-policy-bkp
+ + b2343dced853...485e173646ff cpufreq/transition-latency -> cpufreq/transition-latency (forced update)
+ - [deleted]                   opp/rename-v11
+ + d01041abad8d...4927469221fa test -> test (forced update)
+ + 1a0df77cd27e...a4e08d11a2dc lnext/akpm -> lnext/akpm (forced update)
+ + d6cbe934ceb5...6cb3a150393f lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 3fb8ba638d53...ac3a2daf1218 lnext/master -> lnext/master (forced update)
+   3c2bfbaadff6..cb8c65ccff7f  lnext/stable -> lnext/stable
+   3b06b1a7448e..cb8c65ccff7f  origin/HEAD -> origin/HEAD
+   3b06b1a7448e..cb8c65ccff7f  origin/master -> origin/master
+   f19e80b39480..9636603da3c3  pm/acpi -> pm/acpi
+ + 752d5ef980cc...7d71a49525ed pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   6a71d8d77795..e8158b486d5f  pm/device-properties -> pm/device-properties
+ + a2b313034fc5...7d71a49525ed pm/linux-next -> pm/linux-next (forced update)
+   548aa0e3c516..5771a8c08880  pm/master -> pm/master
+   15d56b3921d2..6df609b24b23  pm/pm -> pm/pm
+ + 627cf6b5c075...7d71a49525ed pm/testing -> pm/testing (forced update)
+ * [new tag]                   acpi-fixes-4.13-rc1 -> acpi-fixes-4.13-rc1
+ * [new tag]                   devprop-fix-4.13-rc1 -> devprop-fix-4.13-rc1
+ * [new tag]                   next-20170718 -> next-20170718
+ * [new tag]                   pm-fixes-4.13-rc1 -> pm-fixes-4.13-rc1
+ * [new tag]                   v4.13-rc1 -> v4.13-rc1
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

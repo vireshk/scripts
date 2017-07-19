@@ -7049,3 +7049,59 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 693d60d60b96] updates
+ 13 files changed, 769 insertions(+), 25 deletions(-)
+ rewrite .Skype/shared_dynco/dc.db-journal (100%)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   a40be4c00333..693d60d60b96  master -> master
+   edd783ab1cb9..a40be4c00333  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Jul 19 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 485e173646ff...f696de665701 cpufreq/transition-latency -> cpufreq/transition-latency (forced update)
+ - [deleted]                   bkp/arm/topology
+ - [deleted]                   bkp/cpufreq/remote-wakeup
+ - [deleted]                   bkp/cpufreq/remote-wakeup-hikey
+ - [deleted]                   bkp/cpufreq/remote-wakeup-hikey-old
+ - [deleted]                   bkp/cpufreq/remote-wakeup-hikey-vanila
+ - [deleted]                   bkp/cpufreq/remote-wakeup-policy-bkp
+ + b2343dced853...485e173646ff bkp/cpufreq/transition-latency -> bkp/cpufreq/transition-latency (forced update)
+ - [deleted]                   bkp/opp/rename-v11
+ + d01041abad8d...4927469221fa bkp/test -> bkp/test (forced update)
+ - [deleted]                   pmko/cpufreq/interactive
+ - [deleted]                   pmko/cpufreq/interactive-idle-notifier
+ - [deleted]                   pmko/cpufreq/interactive-orig
+ - [deleted]                   pmko/cpufreq/remote-wakeup
+ - [deleted]                   pmko/sched/relocate-util-handlers
+ - [deleted]                   pmlo/cpufreq/remote-wakeup
+ * [new branch]                pmko/cpufreq/transition-latency -> pmko/cpufreq/transition-latency
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

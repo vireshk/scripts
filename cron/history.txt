@@ -7359,3 +7359,58 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 9c815d300ae0] updates
+ 11 files changed, 1011 insertions(+), 27 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   1ec5c1d38f98..9c815d300ae0  master -> master
+   693d60d60b96..1ec5c1d38f98  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Fri Jul 21 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + f696de665701...a30f2bdc311a cpufreq/transition-latency -> cpufreq/transition-latency (forced update)
+ + 4927469221fa...f0cd77ded512 test -> test (forced update)
+ - [deleted]                   bkp/cpufreq/remote-wakeup-policy
+ + f4c335123a42...568f9774e25e bkp/opp/genpd-pstate -> bkp/opp/genpd-pstate (forced update)
+ + a4e08d11a2dc...a3c289d2980e lnext/akpm -> lnext/akpm (forced update)
+ + 6cb3a150393f...8c1f47f17e3f lnext/akpm-base -> lnext/akpm-base (forced update)
+ + ac3a2daf1218...f80addb9cf6c lnext/master -> lnext/master (forced update)
+   cb8c65ccff7f..e06fdaf40a5c  lnext/stable -> lnext/stable
+ + 7d71a49525ed...297b8abfae13 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 7d71a49525ed...064dba0dd86d pm/linux-next -> pm/linux-next (forced update)
+   6df609b24b23..ffa64d5e0d2f  pm/pm -> pm/pm
+ + 7d71a49525ed...efdface21151 pm/testing -> pm/testing (forced update)
+ + f696de665701...a30f2bdc311a pmko/cpufreq/transition-latency -> pmko/cpufreq/transition-latency (forced update)
+ * [new branch]                bkp/cpufreq/remote-wakeup -> bkp/cpufreq/remote-wakeup
+ * [new branch]                bkp/opp/genpd-pstate-bkp -> bkp/opp/genpd-pstate-bkp
+ * [new tag]                   next-20170720 -> next-20170720
+ * [new tag]                   pm-4.13-rc2 -> pm-4.13-rc2
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

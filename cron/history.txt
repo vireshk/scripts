@@ -7454,3 +7454,46 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master b50ffd96cd25] updates
+ 11 files changed, 625 insertions(+), 37 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   459cec0d5052..b50ffd96cd25  master -> master
+   9c815d300ae0..459cec0d5052  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Tue Jul 25 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 33b5fdb5c349...f124c51f17e2 cpufreq/remote-wakeup -> cpufreq/remote-wakeup (forced update)
+ + 568f9774e25e...1362b2cedf4d opp/genpd-pstate -> opp/genpd-pstate (forced update)
+ + 297b8abfae13...061db250ffac pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   064dba0dd86d..694e73ba4521  pm/linux-next -> pm/linux-next
+ + efdface21151...694e73ba4521 pm/testing -> pm/testing (forced update)
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

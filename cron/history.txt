@@ -7497,3 +7497,51 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master a1b6c77a3ee8] updates
+ 11 files changed, 523 insertions(+), 17 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   b50ffd96cd25..a1b6c77a3ee8  master -> master
+   459cec0d5052..b50ffd96cd25  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Jul 26 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 9c8640c29338...5f9a5b4a9eff device/boot-constraints -> device/boot-constraints (forced update)
+ + 33b5fdb5c349...f124c51f17e2 bkp/cpufreq/remote-wakeup -> bkp/cpufreq/remote-wakeup (forced update)
+ + 568f9774e25e...1362b2cedf4d bkp/opp/genpd-pstate -> bkp/opp/genpd-pstate (forced update)
+   cb8c65ccff7f..fd2b2c57ec20  origin/HEAD -> origin/HEAD
+   cb8c65ccff7f..fd2b2c57ec20  origin/master -> origin/master
+ + 061db250ffac...81d6a7058159 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 694e73ba4521...63dff82ea88d pm/linux-next -> pm/linux-next (forced update)
+   5771a8c08880..520eccdfe187  pm/master -> pm/master
+ + 694e73ba4521...63dff82ea88d pm/testing -> pm/testing (forced update)
+ * [new tag]                   v4.13-rc2 -> v4.13-rc2
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -7545,3 +7545,53 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 4e019fb9edf5] updates
+ 11 files changed, 637 insertions(+), 29 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   a1b6c77a3ee8..4e019fb9edf5  master -> master
+   b50ffd96cd25..a1b6c77a3ee8  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Thu Jul 27 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + f124c51f17e2...6fda1a9d96ec cpufreq/remote-wakeup -> cpufreq/remote-wakeup (forced update)
+ + 5f9a5b4a9eff...633f12d3fa1d device/boot-constraints -> device/boot-constraints (forced update)
+ + 9c8640c29338...5f9a5b4a9eff bkp/device/boot-constraints -> bkp/device/boot-constraints (forced update)
+ + 4f324076254a...50d24c0a1af4 lko/device/boot-constraints -> lko/device/boot-constraints (forced update)
+ + a3c289d2980e...84940f8830a2 lnext/akpm -> lnext/akpm (forced update)
+ + 8c1f47f17e3f...a6411154840e lnext/akpm-base -> lnext/akpm-base (forced update)
+ + f80addb9cf6c...1b70c7afdb40 lnext/master -> lnext/master (forced update)
+   e06fdaf40a5c..25f6a53799d6  lnext/stable -> lnext/stable
+ + 81d6a7058159...0fdd33896c55 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   63dff82ea88d..8cea06058893  pm/linux-next -> pm/linux-next
+   63dff82ea88d..6a7e72a623cf  pm/testing -> pm/testing
+ * [new tag]                   next-20170726 -> next-20170726
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

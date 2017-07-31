@@ -7644,3 +7644,54 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 4a2a28c89317] updates
+ 16 files changed, 1600 insertions(+), 435 deletions(-)
+ delete mode 100644 mutt/incoming/PATCH_V4_0-3_sched_cpufreq_Allow_remote_callbacks.mbox
+ delete mode 100644 mutt/incoming/RFC_0-9_cpufreq_schedutil_Allow_remote_wakeups.mbox
+ delete mode 100644 mutt/incoming/Re_PATCH_RFC_v4_cpufreq_schedutil_Make_iowait_boost_more_energy_efficient.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   1dffa5d8c7ea..4a2a28c89317  master -> master
+   4e019fb9edf5..1dffa5d8c7ea  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon Jul 31 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + d3a179d76dd5...a6678c7ed1a7 device/boot-constraints -> device/boot-constraints (forced update)
+ + 1362b2cedf4d...cea8773f32a5 opp/genpd-pstate -> opp/genpd-pstate (forced update)
+ + 6fda1a9d96ec...f8d79e203961 bkp/cpufreq/remote-wakeup -> bkp/cpufreq/remote-wakeup (forced update)
+ + 633f12d3fa1d...d3a179d76dd5 bkp/device/boot-constraints -> bkp/device/boot-constraints (forced update)
+ + 916ac689ee42...05e74a0a4b04 lko/device/boot-constraints -> lko/device/boot-constraints (forced update)
+ + 8a5f8e8c77ad...41a515dd28ac pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 3f4240280943...976b5064109d pm/linux-next -> pm/linux-next (forced update)
+   520eccdfe187..0a07b238e5f4  pm/master -> pm/master
+ + 2a90068d880e...976b5064109d pm/testing -> pm/testing (forced update)
+ * [new branch]                opp/genpd-pstate-bkp2 -> opp/genpd-pstate-bkp2
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -7695,3 +7695,65 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master c69c505f2c17] updates
+ 17 files changed, 802 insertions(+), 70 deletions(-)
+ delete mode 100644 .Skype/viresh.nitj/chatsync/d5/d5bed3c6939149a9.dat
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   4a2a28c89317..c69c505f2c17  master -> master
+   1dffa5d8c7ea..4a2a28c89317  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Tue Aug  1 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + a6678c7ed1a7...001d6539834a device/boot-constraints -> device/boot-constraints (forced update)
+ - [deleted]                   device/boot-constraints-with-classes
+ + cea8773f32a5...ac21e8770757 opp/genpd-pstate -> opp/genpd-pstate (forced update)
+ + d3a179d76dd5...a6678c7ed1a7 bkp/device/boot-constraints -> bkp/device/boot-constraints (forced update)
+ + 1362b2cedf4d...cea8773f32a5 bkp/opp/genpd-pstate -> bkp/opp/genpd-pstate (forced update)
+ - [deleted]                   drivers/compress-next
+   9ffecb102835..5771a8c08880  drivers/driver-core-linus -> drivers/driver-core-linus
+   c23fe83138ed..1af824f085e8  drivers/driver-core-next -> drivers/driver-core-next
+   c23fe83138ed..1af824f085e8  drivers/driver-core-testing -> drivers/driver-core-testing
+   9ffecb102835..5771a8c08880  drivers/master -> drivers/master
+ + 05e74a0a4b04...9cf7c673a364 lko/device/boot-constraints -> lko/device/boot-constraints (forced update)
+ + 84940f8830a2...ea19a624ef52 lnext/akpm -> lnext/akpm (forced update)
+ + a6411154840e...c2462fbaf5da lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 1b70c7afdb40...742f220ee69c lnext/master -> lnext/master (forced update)
+   25f6a53799d6..16f73eb02d7e  lnext/stable -> lnext/stable
+ + 41a515dd28ac...cbef54cc3f0d pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 976b5064109d...48851d0f2b7a pm/linux-next -> pm/linux-next (forced update)
+   0a07b238e5f4..16f73eb02d7e  pm/master -> pm/master
+ + 976b5064109d...48851d0f2b7a pm/testing -> pm/testing (forced update)
+ * [new branch]                bkp/opp/genpd-pstate-bkp2 -> bkp/opp/genpd-pstate-bkp2
+ * [new branch]                drivers/bind_unbind -> drivers/bind_unbind
+ * [new tag]                   next-20170731 -> next-20170731
+ * [new tag]                   v4.13-rc3 -> v4.13-rc3
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

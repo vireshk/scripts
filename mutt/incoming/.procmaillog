@@ -481,3 +481,6 @@ From vireshk  Wed Jul 12 10:30:47 2017
 From vireshk  Wed Jul 26 14:54:05 2017
  Subject: [PATCH V4 0/3] sched: cpufreq: Allow remote callbacks
   Folder: PATCH_V4_0-3_sched_cpufreq_Allow_remote_callbacks.mbox	   6362
+From vireshk  Thu Jul 27 15:32:51 2017
+ Subject: [PATCH v5 1/1] PM / OPP: Fix get sharing cpus when hotplug is used
+  Folder: PATCH_v5_1-1_PM_OPP_Fix_get_sharing_cpus_when_hotplug_is_use	   7597

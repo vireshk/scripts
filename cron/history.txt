@@ -7807,3 +7807,47 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master ca51029d906d] updates
+ 12 files changed, 752 insertions(+), 39 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   e6b14ad7ee06..ca51029d906d  master -> master
+   c69c505f2c17..e6b14ad7ee06  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Thu Aug  3 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   cpufreq/remote-wakeup
+ + fbd987a13c63...45a3406145fb opp/genpd-pstate -> opp/genpd-pstate (forced update)
+ + 001d6539834a...adfa38a71afe bkp/device/boot-constraints -> bkp/device/boot-constraints (forced update)
+ + ac21e8770757...fbd987a13c63 bkp/opp/genpd-pstate -> bkp/opp/genpd-pstate (forced update)
+ + 22408f346660...f58fd4bbde2f pmlo/opp/genpd-performance-state -> pmlo/opp/genpd-performance-state (forced update)
+ * [new branch]                cpufreq/schedutil -> cpufreq/schedutil
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

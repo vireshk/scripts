@@ -7851,3 +7851,56 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 3722f4234172] updates
+ 16 files changed, 1403 insertions(+), 33 deletions(-)
+ create mode 100644 mutt/incoming/PATCH_V8_0-6_PM_Domains_Power_domain_performance_states.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   ca51029d906d..3722f4234172  master -> master
+   e6b14ad7ee06..ca51029d906d  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Fri Aug  4 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + d9bb9b0ffe31...0f424a6fdfd6 cpufreq/schedutil -> cpufreq/schedutil (forced update)
+ + adfa38a71afe...a4924409284f device/boot-constraints -> device/boot-constraints (forced update)
+ + 45a3406145fb...725a09fbb6b6 opp/genpd-pstate -> opp/genpd-pstate (forced update)
+ - [deleted]                   bkp/cpufreq/remote-wakeup
+ + fbd987a13c63...45a3406145fb bkp/opp/genpd-pstate -> bkp/opp/genpd-pstate (forced update)
+ + 826f3fe04979...a4c65052c69c lko/device/boot-constraints -> lko/device/boot-constraints (forced update)
+ + ea19a624ef52...751242aecbe3 lnext/akpm -> lnext/akpm (forced update)
+ + c2462fbaf5da...e4a5d595602f lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 742f220ee69c...f87166b09521 lnext/master -> lnext/master (forced update)
+   16f73eb02d7e..4d3f5d04d69e  lnext/stable -> lnext/stable
+ + f58fd4bbde2f...cf84d9584abd pmlo/opp/genpd-performance-state -> pmlo/opp/genpd-performance-state (forced update)
+ * [new branch]                arm/configs -> arm/configs
+ * [new branch]                bkp/cpufreq/schedutil -> bkp/cpufreq/schedutil
+ * [new tag]                   next-20170803 -> next-20170803
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

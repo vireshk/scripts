@@ -7904,3 +7904,56 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 0eec2861e566] updates
+ 13 files changed, 674 insertions(+), 42 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   3722f4234172..0eec2861e566  master -> master
+   ca51029d906d..3722f4234172  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Tue Aug  8 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + d9bb9b0ffe31...0f424a6fdfd6 bkp/cpufreq/schedutil -> bkp/cpufreq/schedutil (forced update)
+ + adfa38a71afe...a4924409284f bkp/device/boot-constraints -> bkp/device/boot-constraints (forced update)
+ + 45a3406145fb...725a09fbb6b6 bkp/opp/genpd-pstate -> bkp/opp/genpd-pstate (forced update)
+   fd2b2c57ec20..623ce3456671  origin/HEAD -> origin/HEAD
+   fd2b2c57ec20..623ce3456671  origin/master -> origin/master
+   f6248dd88dba..3de559d4df54  pm/acpi -> pm/acpi
+ + d064b8f9bae0...577b3ed7691f pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + f023a6edf7a5...577b3ed7691f pm/linux-next -> pm/linux-next (forced update)
+   16f73eb02d7e..aae4e7a8bc44  pm/master -> pm/master
+   ffa64d5e0d2f..78aa904a773b  pm/pm -> pm/pm
+ + f023a6edf7a5...577b3ed7691f pm/testing -> pm/testing (forced update)
+ * [new branch]                bkp/arm/configs -> bkp/arm/configs
+ * [new tag]                   acpi-4.13-rc4 -> acpi-4.13-rc4
+ * [new tag]                   pm-4.13-rc4 -> pm-4.13-rc4
+ * [new tag]                   v4.13-rc4 -> v4.13-rc4
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

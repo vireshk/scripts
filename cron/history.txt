@@ -7957,3 +7957,51 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 3ded97c8bad5] updates
+ 12 files changed, 1180 insertions(+), 42 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   0eec2861e566..3ded97c8bad5  master -> master
+   3722f4234172..0eec2861e566  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Aug  9 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   a4924409284f..0ebe17f17376  device/boot-constraints -> device/boot-constraints
+ + 751242aecbe3...9aad4075c6dc lnext/akpm -> lnext/akpm (forced update)
+ + e4a5d595602f...6d969380609c lnext/akpm-base -> lnext/akpm-base (forced update)
+ + f87166b09521...c0b96dbc8cf2 lnext/master -> lnext/master (forced update)
+   4d3f5d04d69e..aae4e7a8bc44  lnext/stable -> lnext/stable
+   623ce3456671..bfa738cf3dfa  origin/HEAD -> origin/HEAD
+   623ce3456671..bfa738cf3dfa  origin/master -> origin/master
+   577b3ed7691f..041712e6eb85  pm/bleeding-edge -> pm/bleeding-edge
+ * [new branch]                cpufreq/fastfix -> cpufreq/fastfix
+ * [new tag]                   next-20170808 -> next-20170808
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

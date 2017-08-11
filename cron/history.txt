@@ -8247,3 +8247,73 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master bd112321ed65] updates
+ 17 files changed, 1092 insertions(+), 48 deletions(-)
+ create mode 100644 .Skype/viresh.nitj/chatsync/45/45a2d7d667cbcdf9.dat
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   f46233006616..bd112321ed65  master -> master
+   3ded97c8bad5..f46233006616  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Fri Aug 11 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   cpufreq/dynamic-latency
+ + a30f2bdc311a...ee4d9632f599 cpufreq/transition-latency -> cpufreq/transition-latency (forced update)
+ - [deleted]                   hikey/aosp/4.4
+ - [deleted]                   hikey/mainline
+ - [deleted]                   opp/genpd-pstate-bkp
+ - [deleted]                   opp/genpd-pstate-bkp2
+ - [deleted]                   sched/cleanup
+ - [deleted]                   sched/cpufreq-timing
+ - [deleted]                   sched/testing
+ - [deleted]                   test
+ - [deleted]                   bkp/cpufreq/fastfix
+ + 0f424a6fdfd6...2a395ea76235 bkp/cpufreq/schedutil -> bkp/cpufreq/schedutil (forced update)
+ + 9aad4075c6dc...e61fbc7dbf5e lnext/akpm -> lnext/akpm (forced update)
+ + 6d969380609c...e979f97de38a lnext/akpm-base -> lnext/akpm-base (forced update)
+ + c0b96dbc8cf2...b23cb848c79c lnext/master -> lnext/master (forced update)
+   aae4e7a8bc44..8d31f80eb388  lnext/stable -> lnext/stable
+ + 13d6487e2122...cb1f72adba5b pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   f5133732b52c..769bd6cd3dda  pm/linux-next -> pm/linux-next
+   f5133732b52c..769bd6cd3dda  pm/testing -> pm/testing
+ + f74b4d835d21...3a9914d62551 tip/auto-latest -> tip/auto-latest (forced update)
+   bc2eecd7ecce..ef0758dd0fd7  tip/locking/core -> tip/locking/core
+ + b34b84af65d7...f7952f129bf4 tip/master -> tip/master (forced update)
+   c3a3800fe46f..82119cbe8e1e  tip/perf/core -> tip/perf/core
+   38115f2f8cec..9b231d9f47c6  tip/perf/urgent -> tip/perf/urgent
+   dbe04493eddf..1e58565e6d14  tip/sched/core -> tip/sched/core
+   99504819fc64..01651324edad  tip/x86/asm -> tip/x86/asm
+   4d8a991d460d..e20f7e5e7243  tip/x86/build -> tip/x86/build
+   4d8a991d460d..2b83809a5e6d  tip/x86/cpu -> tip/x86/cpu
+   5b395e2be6c4..2ffd9e33ce4a  tip/x86/platform -> tip/x86/platform
+   bb68cfe2f5a7..10e66760fa8e  tip/x86/urgent -> tip/x86/urgent
+ * [new tag]                   next-20170810 -> next-20170810
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -8317,3 +8317,57 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 4d4fb551b88d] updates
+ 13 files changed, 821 insertions(+), 28 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   bd112321ed65..4d4fb551b88d  master -> master
+   f46233006616..bd112321ed65  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Aug 16 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 2a395ea76235...97f63cfc4216 cpufreq/schedutil -> cpufreq/schedutil (forced update)
+ - [deleted]                   bkp/cpufreq/dynamic-latency
+ + a30f2bdc311a...ee4d9632f599 bkp/cpufreq/transition-latency -> bkp/cpufreq/transition-latency (forced update)
+ - [deleted]                   bkp/hikey/aosp/4.4
+ - [deleted]                   bkp/hikey/mainline
+ - [deleted]                   bkp/opp/genpd-pstate-bkp
+ - [deleted]                   bkp/opp/genpd-pstate-bkp2
+ - [deleted]                   bkp/sched/cleanup
+ - [deleted]                   bkp/sched/cpufreq-timing
+ - [deleted]                   bkp/sched/testing
+ - [deleted]                   bkp/test
+ + cb1f72adba5b...8c649da5a771 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 769bd6cd3dda...8c649da5a771 pm/linux-next -> pm/linux-next (forced update)
+   aae4e7a8bc44..ef954844c7ac  pm/master -> pm/master
+ + 769bd6cd3dda...8c649da5a771 pm/testing -> pm/testing (forced update)
+ * [new branch]                cpufreq/dt-plat -> cpufreq/dt-plat
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

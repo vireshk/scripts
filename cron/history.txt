@@ -8422,3 +8422,47 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 2b0cb61e35f4] updates
+ 11 files changed, 663 insertions(+), 23 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   ea677084e358..2b0cb61e35f4  master -> master
+   4d4fb551b88d..ea677084e358  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Fri Aug 18 13:00:02 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   dce838441afa..f5fd9accc832  pm/bleeding-edge -> pm/bleeding-edge
+   78aa904a773b..8179962b8466  pm/pm -> pm/pm
+ * [new branch]                cpufreq/sched-hook -> cpufreq/sched-hook
+ * [new tag]                   pm-4.13-rc6 -> pm-4.13-rc6
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

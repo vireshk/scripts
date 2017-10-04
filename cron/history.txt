@@ -8492,3 +8492,83 @@ and the repository exists.
 
 
 
+ 
+Wed Oct  4 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   cpufreq/dt-plat
+ - [deleted]                   cpufreq/sched-hook
+ - [deleted]                   cpufreq/schedutil
+ + 725a09fbb6b6...7c71279303a0 opp/genpd-pstate -> opp/genpd-pstate (forced update)
+ + de93d54c536a...4ca222de662d lnext/akpm -> lnext/akpm (forced update)
+ + 6346f463d6f1...e0acc6b632d2 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 5d51332f20b2...1418b852174a lnext/master -> lnext/master (forced update)
+   40c6d1b9e2fc..770b782f555d  lnext/stable -> lnext/stable
+ - [deleted]                   mac/bkp/exynos/ara-make-dep
+ - [deleted]                   mac/bkp/exynos/cpufreq-4.2
+ - [deleted]                   mac/bkp/exynos/cpufreq-4.5
+ - [deleted]                   mac/bkp/exynos/working/4.1-rc7
+ - [deleted]                   mac/cpufreq/bkp-policy-table
+ - [deleted]                   mac/cpufreq/dev
+ - [deleted]                   mac/cpufreq/interactive-debug
+ - [deleted]                   mac/cpufreq/interactive-idle-notifier
+ - [deleted]                   mac/cpufreq/interactive-orig
+ - [deleted]                   mac/cpufreq/interactive-v1
+ - [deleted]                   mac/cpufreq/interactive-with-work
+ - [deleted]                   mac/cpufreq/interactive-without-any-work-crashing
+ - [deleted]                   mac/cpufreq/masks
+ - [deleted]                   mac/i2c-hotplug
+ + 75c8dd960c28...7089db84e356 mac/master -> mac/master (forced update)
+ - [deleted]                   mac/memleak
+ - [deleted]                   mac/opp/regulator-v4-bkp
+ - [deleted]                   mac/timer/migrate-running-timer
+ - [deleted]                   mac/uart-msm
+ - [deleted]                   mac/vmstat/timer
+   bfa738cf3dfa..d81fa669e3de  origin/HEAD -> origin/HEAD
+   bfa738cf3dfa..d81fa669e3de  origin/master -> origin/master
+   3de559d4df54..333d1774224d  pm/acpi -> pm/acpi
+   708f5dcc21ae..5e9323219410  pm/acpi-blacklist -> pm/acpi-blacklist
+ + f5fd9accc832...0e3b2a7f4ede pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + dce838441afa...b2b8a1ee170e pm/linux-next -> pm/linux-next (forced update)
+   ef954844c7ac..9e66317d3c92  pm/master -> pm/master
+   8179962b8466..abeb19a219dc  pm/pm -> pm/pm
+ + dce838441afa...b2b8a1ee170e pm/testing -> pm/testing (forced update)
+ * [new branch]                opp/bleeding-edge -> opp/bleeding-edge
+ * [new branch]                opp/genpd-pstate-test -> opp/genpd-pstate-test
+ * [new branch]                opp/linux-next -> opp/linux-next
+ * [new branch]                bkp/cpufreq/sched-hook -> bkp/cpufreq/sched-hook
+ * [new branch]                mac/arm/configs -> mac/arm/configs
+ * [new branch]                mac/bkp/cpufreq/interactive-idle-notifier-v2 -> mac/bkp/cpufreq/interactive-idle-notifier-v2
+ * [new branch]                mac/board/820c -> mac/board/820c
+ * [new branch]                mac/cpufreq/dt-plat -> mac/cpufreq/dt-plat
+ * [new branch]                mac/cpufreq/transition-latency -> mac/cpufreq/transition-latency
+ * [new branch]                mac/device/boot-constraints -> mac/device/boot-constraints
+ * [new branch]                mac/opp/genpd-pstate -> mac/opp/genpd-pstate
+ * [new branch]                mac/opp/genpd-pstate-test -> mac/opp/genpd-pstate-test
+ * [new branch]                mac/opp/migrate -> mac/opp/migrate
+ * [new branch]                pmko/opp/linux-next -> pmko/opp/linux-next
+ * [new tag]                   acpi-4.13-rc7 -> acpi-4.13-rc7
+ * [new tag]                   acpi-4.14-rc1 -> acpi-4.14-rc1
+ * [new tag]                   acpi-4.14-rc2 -> acpi-4.14-rc2
+ * [new tag]                   acpi-4.14-rc3 -> acpi-4.14-rc3
+ * [new tag]                   devprop-4.14-rc1 -> devprop-4.14-rc1
+ * [new tag]                   next-20170929 -> next-20170929
+ * [new tag]                   pm-4.14-rc1 -> pm-4.14-rc1
+ * [new tag]                   pm-4.14-rc2 -> pm-4.14-rc2
+ * [new tag]                   pm-4.14-rc3 -> pm-4.14-rc3
+ * [new tag]                   v4.13 -> v4.13
+ * [new tag]                   v4.13-rc6 -> v4.13-rc6
+ * [new tag]                   v4.13-rc7 -> v4.13-rc7
+ * [new tag]                   v4.14-rc1 -> v4.14-rc1
+ * [new tag]                   v4.14-rc2 -> v4.14-rc2
+ * [new tag]                   v4.14-rc3 -> v4.14-rc3
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

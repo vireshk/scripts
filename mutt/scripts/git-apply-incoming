@@ -1,2 +1,2 @@
 cd ~/work/repos/devel/linux
-git am ~/scripts/mutt/incoming/*.mbox
+git am -s ~/scripts/mutt/incoming/*.mbox

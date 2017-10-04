@@ -62,6 +62,7 @@ alias hmdownload="cd /home/vireshk/mdownload"
 alias haastha="cd /home/vireshk/junk/aastha"
 alias hisol="cd /home/vireshk/work/repos/tools/isolation/"
 alias hwork="cd /home/vireshk/work/repos/devel/linux/"
+alias hpatches="cd /home/vireshk/scripts/mutt/incoming/"
 alias hmodule="cd /home/vireshk/work/repos/tools/module/"
 
 updatepkglist() { echo "$*" >> ~/scripts/pkglist-install; }

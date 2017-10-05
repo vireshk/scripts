@@ -33,7 +33,7 @@ ln -s ~/all/scripts/.minirc.tc2 ~/.minirc.tc2
 ln -s ~/all/criticalinfo/.password ~/.password
 #ln -s ~/all/work/mail/spool/viresh /var/mail/viresh
 ln -s ~/all/scripts/.Skype ~/.Skype
-ln -s ~/all/criticalinfo/.ssh ~/.ssh
+cp -R ~/all/criticalinfo/.ssh ~/.ssh
 ln -s ~/all/scripts/.signature ~/.signature
 #ln -s ~/all/scripts/.thunderbird ~/.thunderbird
 #ln -s ~/all/scripts/vim ~/vim

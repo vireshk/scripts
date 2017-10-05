@@ -8599,3 +8599,21 @@ and the repository exists.
 
 
 
+ 
+Thu Oct  5 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/scripts

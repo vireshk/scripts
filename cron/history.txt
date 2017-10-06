@@ -8617,3 +8617,63 @@ Please make sure you have the correct access rights
 and the repository exists.
 
 Entering /home/vireshk/scripts
+[master 65ab7516b40c] updates
+ 6 files changed, 178 insertions(+), 56 deletions(-)
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Fri Oct  6 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 0ebe17f17376...a4924409284f device/boot-constraints -> device/boot-constraints (forced update)
+ + 7c71279303a0...9bc386129c9b opp/genpd-pstate -> opp/genpd-pstate (forced update)
+ - [deleted]                   bkp/cpufreq/dt-plat
+ - [deleted]                   bkp/cpufreq/sched-hook
+ - [deleted]                   bkp/cpufreq/schedutil
+ + 725a09fbb6b6...7c71279303a0 bkp/opp/genpd-pstate -> bkp/opp/genpd-pstate (forced update)
+   d81fa669e3de..7a92616c0bac  origin/HEAD -> origin/HEAD
+   d81fa669e3de..7a92616c0bac  origin/master -> origin/master
+ + 0e3b2a7f4ede...3f971a8104ea pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   b2b8a1ee170e..9637e83dc446  pm/linux-next -> pm/linux-next
+   abeb19a219dc..ca935f8e769c  pm/pm -> pm/pm
+ + 39b1e494fa86...9e66317d3c92 pmko/opp/linux-next -> pmko/opp/linux-next (forced update)
+ + cf84d9584abd...13fe1509c44f pmlo/opp/genpd-performance-state -> pmlo/opp/genpd-performance-state (forced update)
+ * [new branch]                opp/genpd-pstate-v10 -> opp/genpd-pstate-v10
+ * [new branch]                bkp/opp/bleeding-edge -> bkp/opp/bleeding-edge
+ * [new branch]                bkp/opp/genpd-pstate-test -> bkp/opp/genpd-pstate-test
+ * [new branch]                bkp/opp/linux-next -> bkp/opp/linux-next
+ * [new tag]                   pm-4.14-rc4 -> pm-4.14-rc4
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

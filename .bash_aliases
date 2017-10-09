@@ -78,21 +78,21 @@ alias lmc="echo msudo linaro-media-create --mmc /dev/sdb --dev arndale --hwpack-
 alias mscan="xsane hpaio:/net/Deskjet_4510_series?ip=192.168.0.8"
 
 #For Compilation
-vcompile='/home/vireshk/scripts/compile.sh'
-alias clean='$vcompile clean'
-alias mrproper='$vcompile mrproper'
-alias config='$vcompile config'
-alias sconfig='$vcompile sconfig'
-alias menu='$vcompile menu'
-alias image='$vcompile image'
-alias dtimage='$vcompile dtimage'
-alias nimage='$vcompile nimage'
-alias module='$vcompile module'
-alias configimage='$vcompile configimage'
-alias build='$vcompile build'
-alias dtb='$vcompile dtb'
-alias dtbs='$vcompile dtbs'
-alias lbuild='$vcompile lbuild'
+compile='/home/vireshk/scripts/compile.sh'
+alias clean='$compile clean'
+alias mrproper='$compile mrproper'
+alias config='$compile config'
+alias sconfig='$compile sconfig'
+alias menu='$compile menu'
+alias image='$compile image'
+alias dtimage='$compile dtimage'
+alias nimage='$compile nimage'
+alias module='$compile module'
+alias configimage='$compile configimage'
+alias build='$compile build'
+alias dtb='$compile dtb'
+alias dtbs='$compile dtbs'
+alias lbuild='$compile lbuild'
 
 alias aramodule='make -C /home/vireshk/work/repos/ara/arche/out/target/product/arche/obj/KERNEL_OBJ M=`pwd` ARCH=arm64 CROSS_COMPILE=/home/vireshk/work/repos/ara/arche/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android- KCFLAGS=-mno-android'
 alias aramodulee='make -C /home/vireshk/work/repos/devel/bexynos M=`pwd` ARCH=arm CROSS_COMPILE="arm-linux-gnueabihf-" modules'
@@ -110,10 +110,16 @@ alias cpexynos='bkpexynos; cp ../bexynos/arch/arm/boot/uImage /media/viresh/boot
 alias ddscr="dd bs=1 skip=72 if=/media/viresh/boot/boot.scr of=/media/viresh/boot/boot.script"
 alias mkscr='mkimage -A arm -T script -C none -n "My Boot.scr" -d /media/viresh/boot/boot.script  /media/viresh/boot/boot.scr'
 
-alias cleana='$vcompile clean 3; $vcompile clean 6; $vcompile clean 13;'
-alias configa='$vcompile config 3; $vcompile config 6; $vcompile config 13;'
-alias imagea='$vcompile nimage 3 & $vcompile nimage 6 & $vcompile nimage 13&'
-alias builda='cleana configa imagea'
+alias cleana='$compile clean allarm; $compile clean allarm64; $compile clean allx86;'
+alias configa='$compile config allarm; $compile config allarm64; $compile config allx86;'
+alias imagea='$compile nimage allarm & $compile nimage allarm64 & $compile nimage allx86&'
+alias modulea='$compile nmodule allarm & $compile nmodule allarm64 & $compile nmodule allx86&'
+alias builda='configa imagea'
+alias cbuilda='cleana configa imagea'
+buildall() { $compile config all$1; $compile nimage all$1; $compile nmodule all$1; }
+alias buildallarm='buildall arm'
+alias buildallarm64='buildall arm64'
+alias buildallx86='buildall x86'
 
 # x86 specific installation
 export X86IMAGENAME="custom"
@@ -134,7 +140,7 @@ alias fixvbox="msudo /etc/init.d/vboxdrv setup"
 #alias uprvi="msudo /home/vireshk/work/utils/ARM/DS-5/bin/rviusbserver"
 #alias utorrent="utserver -settingspath /home/vireshk/tools/utorrent-server-v3_0/"
 
-scpfrom() { scp -r root@10.162.5.15:/work/trace/$1 /home/vireshk/junk; }
+scpfrom() { scp -r root@10.162.5.15:/work/trace/$1 /home/vireshyyk/junk; }
 
 alias startvnc="vncviewer 10.162.5.156:1"
 alias sshminicom="ssh user@10.162.5.156"

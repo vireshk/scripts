@@ -8677,3 +8677,52 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master e249201c86c4] updates
+ 7 files changed, 909 insertions(+), 28 deletions(-)
+ create mode 100644 .Skype/viresh.nitj/chatsync/d7/d7a8e11a33fd584d.dat
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   178b7ee9350b..e249201c86c4  master -> master
+   eb8df3ba0612..178b7ee9350b  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Mon Oct  9 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 9bc386129c9b...e2327de86df2 opp/genpd-pstate -> opp/genpd-pstate (forced update)
+ + 0ebe17f17376...a4924409284f bkp/device/boot-constraints -> bkp/device/boot-constraints (forced update)
+ + 7c71279303a0...9bc386129c9b bkp/opp/genpd-pstate -> bkp/opp/genpd-pstate (forced update)
+   7a92616c0bac..85b1bb248071  origin/HEAD -> origin/HEAD
+   7a92616c0bac..85b1bb248071  origin/master -> origin/master
+ + 13fe1509c44f...e3b357d95c51 pmlo/opp/genpd-performance-state -> pmlo/opp/genpd-performance-state (forced update)
+ * [new branch]                opp/power-model -> opp/power-model
+ * [new branch]                bkp/opp/genpd-pstate-v10 -> bkp/opp/genpd-pstate-v10
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

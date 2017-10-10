@@ -8726,3 +8726,57 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 8e4e3078f72e] updates
+ 19 files changed, 972 insertions(+), 62 deletions(-)
+ rewrite .Skype/viresh.nitj/chatsync/45/45a2d7d667cbcdf9.dat (94%)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   e249201c86c4..8e4e3078f72e  master -> master
+   178b7ee9350b..e249201c86c4  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Tue Oct 10 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git
+ + e2327de86df2...a8e7732dc54a opp/genpd-pstate -> opp/genpd-pstate (forced update)
+ + 9bc386129c9b...e2327de86df2 bkp/opp/genpd-pstate -> bkp/opp/genpd-pstate (forced update)
+ + 4ca222de662d...0df514eaaea5 lnext/akpm -> lnext/akpm (forced update)
+ + e0acc6b632d2...d405faf73c70 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 1418b852174a...49827b977a2e lnext/master -> lnext/master (forced update)
+   770b782f555d..8a5776a5f498  lnext/stable -> lnext/stable
+ + 3f971a8104ea...831cd2790df6 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 9637e83dc446...c05bd1ffae0f pm/linux-next -> pm/linux-next (forced update)
+   9e66317d3c92..8a5776a5f498  pm/master -> pm/master
+ + b2b8a1ee170e...c05bd1ffae0f pm/testing -> pm/testing (forced update)
+ * [new branch]                bkp/opp/power-model -> bkp/opp/power-model
+ * [new tag]                   next-20171009 -> next-20171009
+ * [new tag]                   v4.14-rc4 -> v4.14-rc4
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

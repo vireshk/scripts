@@ -61,6 +61,7 @@ elif [ $2 = panda ]; then
 elif [ $2 = allarm ]; then
 	dir=../ballarm/
 	cfg=allmodconfig
+	FLAGS="LOADADDR=0x40008000"
 	IMAGE=uImage
 elif [ $2 = pxa ]; then
 	dir=../pxa/

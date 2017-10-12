@@ -8833,3 +8833,53 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 552e982d046a] updates
+ 17 files changed, 1011 insertions(+), 36 deletions(-)
+ create mode 100644 mutt/incoming/PATCH_V10_0-3_PM_Domains_Performance_state_support.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   8e5b9c4e09a7..552e982d046a  master -> master
+   8e4e3078f72e..8e5b9c4e09a7  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Thu Oct 12 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 9cbf3bcedc0f...af20dc861f85 device/boot-constraints -> device/boot-constraints (forced update)
+ + f04e80fe80f7...ae412bae72c9 opp/genpd-pstate -> opp/genpd-pstate (forced update)
+ + a4924409284f...9cbf3bcedc0f bkp/device/boot-constraints -> bkp/device/boot-constraints (forced update)
+ + a8e7732dc54a...f04e80fe80f7 bkp/opp/genpd-pstate -> bkp/opp/genpd-pstate (forced update)
+ + a4c65052c69c...7927ac9513b4 lko/device/boot-constraints -> lko/device/boot-constraints (forced update)
+ + 73bc85b4c159...7693b241dabf pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 98d0724291c5...80010c9ca237 pm/linux-next -> pm/linux-next (forced update)
+ + 98d0724291c5...80010c9ca237 pm/testing -> pm/testing (forced update)
+ + 765602ccad2b...70e539ef5ece pmlo/opp/genpd-performance-state -> pmlo/opp/genpd-performance-state (forced update)
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

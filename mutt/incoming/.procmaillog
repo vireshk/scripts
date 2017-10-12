@@ -514,3 +514,13 @@ From vireshk  Wed Oct  4 07:23:18 2017
 From vireshk  Tue Sep 19 15:32:42 2017
  Subject: [PATCH V10 0/3] PM / Domains: Performance state support
   Folder: PATCH_V10_0-3_PM_Domains_Performance_state_support.mbox	   8909
+From vireshk  Wed Oct 11 15:42:01 2017
+ Subject: [PATCH v2] PM / OPP: add missing of_node_put() for of_get_cpu_node()
+  Folder: PATCH_v2_PM_OPP_add_missing_of_node_put__for_of_get_cpu_node	   4088
+From foo@bar  Wed Oct 11 15:45:33 2017
+  Folder: .mbox								   1646
+From vireshk  Wed Oct 11 15:42:01 2017
+ Subject: [PATCH v2] PM / OPP: add missing of_node_put() for of_get_cpu_node()
+  Folder: PATCH_v2_PM_OPP_add_missing_of_node_put__for_of_get_cpu_node	   4088
+From foo@bar  Wed Oct 11 15:46:13 2017
+  Folder: .mbox								   1646

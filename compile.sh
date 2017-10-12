@@ -60,7 +60,7 @@ elif [ $2 = panda ]; then
 	cfg=omap2plus_defconfig
 elif [ $2 = allarm ]; then
 	dir=../ballarm/
-	cfg=allmodconfig
+	cfg=allyesconfig
 	FLAGS="LOADADDR=0x40008000"
 	IMAGE=uImage
 elif [ $2 = pxa ]; then
@@ -96,7 +96,7 @@ elif [ $2 = hikeyu ]; then
 	IMAGE=
 elif [ $2 = allarm64 ]; then
 	dir=../ballarm64/
-	cfg=allmodconfig
+	cfg=allyesconfig
 	CROSS_COMPILE="aarch64-linux-gnu-"
 	carch="arm64"
 	IMAGE=
@@ -124,7 +124,7 @@ elif [ $2 = marvell ]; then
 	IMAGE=
 elif [ $2 = allx86 ]; then
 	dir=../ballx86/
-	cfg=allmodconfig
+	cfg=allyesconfig
 	CROSS_COMPILE=
 	MISMATCH=
 	FLAGS="LOCALVERSION=-custom"

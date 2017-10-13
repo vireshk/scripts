@@ -8883,3 +8883,85 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 93a52b98ec4e] updates
+ 19 files changed, 838 insertions(+), 232 deletions(-)
+ delete mode 100644 mutt/incoming/PATCH_V10_0-3_PM_Domains_Performance_state_support.mbox
+ create mode 100644 mutt/incoming/PATCH_v2_PM_OPP_add_missing_of_node_put__for_of_get_cpu_node_.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   552e982d046a..93a52b98ec4e  master -> master
+   8e5b9c4e09a7..552e982d046a  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Fri Oct 13 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + ae412bae72c9...c8424892e033 opp/genpd-pstate -> opp/genpd-pstate (forced update)
+   4e6bee65c56a..78b43f15991b  aosp/android-3.10 -> aosp/android-3.10
+   be671c7e1745..c8d3b871c4fb  aosp/android-3.18 -> aosp/android-3.18
+   25152dbcc1e5..35091a1d8b61  aosp/android-4.4 -> aosp/android-4.4
+   df3a2d218278..7db959ea7633  aosp/android-4.4-n -> aosp/android-4.4-n
+   880c68e41dd2..d9b927362a86  aosp/android-4.4-n-release -> aosp/android-4.4-n-release
+   7172a93a70f8..9add7c47ec55  aosp/android-4.9 -> aosp/android-4.9
+ + 0193b0b61b53...2ad74bc3a645 aosp/experimental/android-4.4-llvm -> aosp/experimental/android-4.4-llvm (forced update)
+   31c34faca7a7..3e2bb7d281ed  aosp/upstream-linux-3.18.y -> aosp/upstream-linux-3.18.y
+   22da7ca81a3a..69f53f5d37d5  aosp/upstream-linux-4.4.y -> aosp/upstream-linux-4.4.y
+   493ecd5cd73e..f37eb7b586f1  aosp/upstream-linux-4.9.y -> aosp/upstream-linux-4.9.y
+ + 9cbf3bcedc0f...af20dc861f85 bkp/device/boot-constraints -> bkp/device/boot-constraints (forced update)
+ + f04e80fe80f7...ae412bae72c9 bkp/opp/genpd-pstate -> bkp/opp/genpd-pstate (forced update)
+ + d405faf73c70...85144659b71a lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 49827b977a2e...dcc70ea85761 lnext/master -> lnext/master (forced update)
+   8a5776a5f498..ff5abbe799e2  lnext/stable -> lnext/stable
+   85b1bb248071..3d7882769b5d  origin/HEAD -> origin/HEAD
+   85b1bb248071..3d7882769b5d  origin/master -> origin/master
+   3689d3d69072..51858a2777f0  pm/device-properties -> pm/device-properties
+ + 70e539ef5ece...473a08a55102 pmlo/opp/genpd-performance-state -> pmlo/opp/genpd-performance-state (forced update)
+ * [new branch]                aosp/android-3.18-n-release -> aosp/android-3.18-n-release
+ * [new branch]                aosp/android-3.18-o-release -> aosp/android-3.18-o-release
+ * [new branch]                aosp/android-4.4-eas-test -> aosp/android-4.4-eas-test
+ * [new branch]                aosp/android-4.4-llvm -> aosp/android-4.4-llvm
+ * [new branch]                aosp/android-4.4-o -> aosp/android-4.4-o
+ * [new branch]                aosp/android-4.4-o-release -> aosp/android-4.4-o-release
+ * [new branch]                aosp/android-4.9-eas-dev -> aosp/android-4.9-eas-dev
+ * [new branch]                aosp/android-4.9-o -> aosp/android-4.9-o
+ * [new branch]                aosp/android-4.9-o-release -> aosp/android-4.9-o-release
+ * [new branch]                aosp/experimental/android-4.9-llvm -> aosp/experimental/android-4.9-llvm
+ * [new branch]                aosp/upstream-f2fs-stable-linux-3.18.y -> aosp/upstream-f2fs-stable-linux-3.18.y
+ * [new branch]                aosp/upstream-f2fs-stable-linux-4.4.y -> aosp/upstream-f2fs-stable-linux-4.4.y
+ * [new branch]                aosp/upstream-f2fs-stable-linux-4.9.y -> aosp/upstream-f2fs-stable-linux-4.9.y
+ * [new tag]                   ASB-2017-10-5_3.18-n-release -> ASB-2017-10-5_3.18-n-release
+ * [new tag]                   ASB-2017-10-5_3.18-o-release -> ASB-2017-10-5_3.18-o-release
+ * [new tag]                   ASB-2017-10-5_4.4-n-release -> ASB-2017-10-5_4.4-n-release
+ * [new tag]                   ASB-2017-10-5_4.4-o-release -> ASB-2017-10-5_4.4-o-release
+ * [new tag]                   ASB-2017-10-5_4.9-o-release -> ASB-2017-10-5_4.9-o-release
+ * [new tag]                   devprop-4.14-rc5 -> devprop-4.14-rc5
+ * [new tag]                   next-20171012 -> next-20171012
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

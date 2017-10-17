@@ -9015,3 +9015,49 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master d7b4ba48f2ca] updates
+ 13 files changed, 730 insertions(+), 25 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   3df678603328..d7b4ba48f2ca  master -> master
+   93a52b98ec4e..3df678603328  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Tue Oct 17 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 41bce7dfce41...32cc0ca6a244 lnext/akpm -> lnext/akpm (forced update)
+ + fc717f79fe2e...37c375678d26 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 3fd49c0edac1...babb43f85f5f lnext/master -> lnext/master (forced update)
+   3d7882769b5d..ae7df8f985f1  lnext/stable -> lnext/stable
+   8e5f4358d584..d5b33db9a557  pm/bleeding-edge -> pm/bleeding-edge
+ * [new tag]                   next-20171016 -> next-20171016
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

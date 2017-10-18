@@ -52,6 +52,13 @@ elif [ $2 = tc2 ]; then
 elif [ $2 = u85 ]; then
 	dir=../bu8500/
 	cfg=u8500_defconfig
+elif [ $2 = imx4 ]; then
+	dir=../bimx4/
+	cfg=imx_v4_v5_defconfig
+elif [ $2 = imx6 ]; then
+	dir=../bimx6/
+	cfg=imx_v6_v7_defconfig
+	FLAGS="LOADADDR=0x40008000"
 elif [ $2 = panda4 ]; then
 	dir=../bpanda4/
 	cfg=omap4plus_defconfig

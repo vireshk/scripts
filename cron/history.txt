@@ -9061,3 +9061,61 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 7493753bf446] updates
+ 11 files changed, 629 insertions(+), 30 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   d7b4ba48f2ca..7493753bf446  master -> master
+   3df678603328..d7b4ba48f2ca  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Wed Oct 18 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + af20dc861f85...7eb9f7574d87 device/boot-constraints -> device/boot-constraints (forced update)
+ + c8424892e033...6fe661a7d119 opp/genpd-pstate -> opp/genpd-pstate (forced update)
+   8a5776a5f498..33d930e59a98  drivers/driver-core-linus -> drivers/driver-core-linus
+   8a5776a5f498..33d930e59a98  drivers/driver-core-next -> drivers/driver-core-next
+   8a5776a5f498..33d930e59a98  drivers/driver-core-testing -> drivers/driver-core-testing
+   8a5776a5f498..33d930e59a98  drivers/master -> drivers/master
+ + 37c375678d26...37fc0c7ac586 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + babb43f85f5f...a7dd40274d75 lnext/master -> lnext/master (forced update)
+   ae7df8f985f1..33d930e59a98  lnext/stable -> lnext/stable
+   3d7882769b5d..ebe6e90ccc66  origin/HEAD -> origin/HEAD
+   3d7882769b5d..ebe6e90ccc66  origin/master -> origin/master
+   d5b33db9a557..d839040fcd4f  pm/bleeding-edge -> pm/bleeding-edge
+   8e5f4358d584..7a91aada3069  pm/linux-next -> pm/linux-next
+   8e5f4358d584..7a91aada3069  pm/testing -> pm/testing
+ * [new branch]                drivers/enforcement_statement -> drivers/enforcement_statement
+ * [new tag]                   enforcement-4.14-rc6 -> enforcement-4.14-rc6
+ * [new tag]                   next-20171017 -> next-20171017
+ * [new tag]                   v4.14-rc5 -> v4.14-rc5
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

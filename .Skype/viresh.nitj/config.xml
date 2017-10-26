@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
-<config version="1.0" serial="14780" timestamp="1508309673.650">
+<config version="1.0" serial="14815" timestamp="1509002833.56">
   <Lib>
     <Account>
       <Credentials3>2D02CCF9749A9936996552A66D866F0D7644B01CE7CF1EBB36024A5A487AA118E709D9FE90FF91A33C09415849FE743BB49F79BE7898A937EAAC3EB505811F974AEA3EA9DA42DC2EE958CF80D1CAF90BB96B0312230D95444CB1E539BE1B37112CBA5A07E255A2E00DA810ED92DE139248295D81B4EFE96FEB96B7E44D1BDC6C4897A72BD7F05CCD806773AFE3733D1EC85D5B372613810BC5D6BF4EEEE59C5037445635F7C3CAF0C1149CFFA208A444FCFB6409C24F2CD543641F64252E67A2434E30E6734C0501669E9760BFF59BFA79633ED46C098D7665A1908EF1436397408FC7309156CCBA53A97B1657FCC1FF0E78519BD9FC8D54478A9AC35DD363C88CF02E5E03D100E63E882AD2822256D3AF172D5B2FE6B578311732BB7964A7E7069975C4EFE3A0792A8180E7469AB161F907F8E7E8D0CDAF29260FFBC2A6CC68C70D5558634CCE97F8649FA0AE82F18C25FDE2BF3F329C48BC5599A5BEDB2AF617885CFF3069472985B596343784A71986CA13E4EDA01F4133B3B78B8A057F2B32A46DA53F3D70117F66A0DF44570C893B5C6F2BBD376AF0DC62F8533A0B2BF3D3C7C0BDE45E5D3FE1EB10623ACAE9C3B428B930EAE18FC0F847C5A6A5872B169D2AA4D84B70E91B50802CCBD764A5031B2F2ACB63381F98255D2F5F0DA5D23D337D1E71EA92C741139AD69A537C0EA8494054EAB9DD6BF34B35D01F1CA61544EE79D4ADD06ADF93A4D1620AC93AB70D7A370A52AE06438BD26F16011860B7D74F1B1AF71467254021DFC04A824DA7B19550B85A46D619B056F0752C86E99152C401053688148B592B7B35540B1BB874CB21DFBD05EE6CA9E10BF1180C49</Credentials3>
       <IdleTimeForAway>300</IdleTimeForAway>
       <IdleTimeForNA>1800</IdleTimeForNA>
-      <LastUsed>1507518972</LastUsed>
+      <LastUsed>1508986605</LastUsed>
       <LocalData>4215</LocalData>
       <Migration>63</Migration>
       <OMigration>1</OMigration>
     </Account>
     <Call>
       <ApplyCF>0</ApplyCF>
-      <MissedCallsRegistrarAnchor>https://api.mcr.skype.com/clients/v1/users/Skype/viresh.nitj/missed-calls?anchor=mcr20170802.20140104.NE1.FFFFFFFFFFFFFFFF;mcr20170802.20140104.WE1.FFFFFFFFFFFFFFFF;mcr20170802.20140104.WUS1.FFFFFFFFFFFFFFFF</MissedCallsRegistrarAnchor>
+      <MissedCallsRegistrarAnchor>https://api.mcr.skype.com/clients/v1/users/Skype/viresh.nitj/missed-calls?anchor=mcr20170911.20140104.NE1.FFFFFFFFFFFFFFFF;mcr20170911.20140104.WE1.FFFFFFFFFFFFFFFF;mcr20170911.20140104.WUS1.FFFFFFFFFFFFFFFF</MissedCallsRegistrarAnchor>
     </Call>
     <CentralStorage>
       <LastBackoff>0</LastBackoff>
@@ -115,19 +115,19 @@
     </Contacts>
     <Conversation>
       <ConversationStatistics>
-        <ConnectivityTimeStamp>1508300617</ConnectivityTimeStamp>
-        <TimeStamp>1508300617</TimeStamp>
+        <ConnectivityTimeStamp>1508986630</ConnectivityTimeStamp>
+        <TimeStamp>1508986630</TimeStamp>
       </ConversationStatistics>
       <CreationTimestampFixed>1</CreationTimestampFixed>
       <DupeLegacyDeleted2>1</DupeLegacyDeleted2>
       <GivenDisplaynameFixed>1</GivenDisplaynameFixed>
       <GroupChatStatisticsEvent>
-        <TimeStamp>1508299996</TimeStamp>
+        <TimeStamp>1508986630</TimeStamp>
       </GroupChatStatisticsEvent>
       <IsBlockedFixed>1</IsBlockedFixed>
       <LastMessageIdFixed3>1</LastMessageIdFixed3>
       <PermanenceFixed>1</PermanenceFixed>
-      <PruningHorizon>1507518972</PruningHorizon>
+      <PruningHorizon>1508986605</PruningHorizon>
       <RecentlyLiveTimeout>0</RecentlyLiveTimeout>
       <UpdateConversationsInboxMessageIdFromLastMessage>1</UpdateConversationsInboxMessageIdFromLastMessage>
     </Conversation>
@@ -146,16 +146,16 @@
       <NewThreadAllowed>1</NewThreadAllowed>
       <P2PMigrationAllowed>0</P2PMigrationAllowed>
       <ProtocolToUse>24</ProtocolToUse>
-      <RecentConnectionInfo>hk2-s.gateway.messenger.live.com@2017-10-17T08:34:30Z,hk2-s.gateway.messenger.live.com@2017-10-18T03:25:20Z,hk2-s.gateway.messenger.live.com@2017-10-18T03:41:01Z,hk2-s.gateway.messenger.live.com@2017-10-18T04:28:08Z,hk2-s.gateway.messenger.live.com@2017-10-18T04:41:02Z,</RecentConnectionInfo>
-      <RecentConversationsSyncState>2528943d605401000000000000000000004910c61c9e4020ba0b0000007669726573682e6e69746ae8bff8883f01000002536c0fc95c0100000c4360205d010000a5bc88205d01000087ecc82d5f01000002536c0fc95c0100000c4360205d010000a5bc88205d01000087ecc82d5f01000001000000000000000087ecc82d5f0100000128943d605401000087ecc82d5f01000002536c0fc95c0100000c4360205d010000a5bc88205d01000087ecc82d5f010000000000000000000000000000</RecentConversationsSyncState>
+      <RecentConnectionInfo>hk2-s.gateway.messenger.live.com@2017-10-26T04:07:11Z,hk2-s.gateway.messenger.live.com@2017-10-26T05:57:10Z,hk2-s.gateway.messenger.live.com@2017-10-26T06:17:12Z,hk2-s.gateway.messenger.live.com@2017-10-26T07:07:12Z,hk2-s.gateway.messenger.live.com@2017-10-26T07:27:10Z,</RecentConnectionInfo>
+      <RecentConversationsSyncState>2a28943d605401000000000000000000004910c61c9e4020ba0b0000007669726573682e6e69746ae8bff8883f01000002a5bc88205d0100005de1882f5f0100001d2b653d5f010000d0e793575f01000002a5bc88205d0100005de1882f5f0100001d2b653d5f010000d0e793575f010000010000000000000000d0e793575f0100000128943d6054010000d0e793575f01000002a5bc88205d0100005de1882f5f0100001d2b653d5f010000d0e793575f010000000000000000000000000000</RecentConversationsSyncState>
     </MSNPCore>
     <Notification>
-      <LastID>1000000311</LastID>
-      <LastPoll>1508297049</LastPoll>
-      <LastSearch>1508309671</LastSearch>
+      <LastID>1000000312</LastID>
+      <LastPoll>1508986606</LastPoll>
+      <LastSearch>1508997414</LastSearch>
     </Notification>
     <PM>
-      <pslut>1508209680</pslut>
+      <pslut>1508986605</pslut>
     </PM>
     <ProfilePopulated>1</ProfilePopulated>
     <PropsManager>
@@ -171,9 +171,9 @@
     </Sms>
     <StatsSender>
       <Phase2>
-        <LastCollect>1507519324</LastCollect>
-        <ProposedDelivery>1508221760</ProposedDelivery>
-        <SendSequence>3770</SendSequence>
+        <LastCollect>1508986916</LastCollect>
+        <ProposedDelivery>1509004594</ProposedDelivery>
+        <SendSequence>3974</SendSequence>
       </Phase2>
       <SubmitID>2235</SubmitID>
       <Type2SubmitID>
@@ -182,7 +182,7 @@
       </Type2SubmitID>
     </StatsSender>
     <table_insert_history>
-      <_356f441dd7e9f8a6f8c61a1f2cd2721b5cef46d2a008b061c73c1042ece52fbf>1508383469 59554:21600:1508297069 40704:17280:1508297069 50380:21600:1508297069 2147485230:86400:1508297069</_356f441dd7e9f8a6f8c61a1f2cd2721b5cef46d2a008b061c73c1042ece52fbf>
+      <d3ba4af1ea108d8d3de3b6f355372680ee583836cf373b93a6d5a17bc56a89f1>1509073007 59554:21600:1508986607 40704:17280:1508986607 50380:21600:1508986607 2147485230:86400:1508986607</d3ba4af1ea108d8d3de3b6f355372680ee583836cf373b93a6d5a17bc56a89f1>
     </table_insert_history>
   </Lib>
   <UI>

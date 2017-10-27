@@ -9186,3 +9186,49 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master d440cacb0241] updates
+ 16 files changed, 1332 insertions(+), 45 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   6291e511fcba..d440cacb0241  master -> master
+   7493753bf446..6291e511fcba  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Fri Oct 27 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 7eb9f7574d87...821201ae6907 bkp/device/boot-constraints -> bkp/device/boot-constraints (forced update)
+ + 6fe661a7d119...79ad0e883231 bkp/opp/genpd-pstate -> bkp/opp/genpd-pstate (forced update)
+ - [deleted]                   bkp/opp/genpd-pstate-test
+ - [deleted]                   bkp/opp/genpd-pstate-v10
+ * [new branch]                bkp/opp/genpd-bindings -> bkp/opp/genpd-bindings
+ * [new branch]                bkp/opp/genpd-pstate-v6 -> bkp/opp/genpd-pstate-v6
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

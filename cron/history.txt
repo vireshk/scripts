@@ -9360,3 +9360,45 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master beb34438060b] updates
+ 15 files changed, 1792 insertions(+), 40 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   4f2cf871d677..beb34438060b  master -> master
+   d440cacb0241..4f2cf871d677  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Tue Oct 31 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 821201ae6907...f40d08e1aae5 bkp/device/boot-constraints -> bkp/device/boot-constraints (forced update)
+ * [new branch]                bkp/tip -> bkp/tip
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

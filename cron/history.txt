@@ -9402,3 +9402,71 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 596da4a2cd75] updates
+ 13 files changed, 830 insertions(+), 39 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   beb34438060b..596da4a2cd75  master -> master
+   4f2cf871d677..beb34438060b  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Thu Nov  2 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + bb418ee8cbfc...23ba51eaa6b5 opp/genpd-bindings -> opp/genpd-bindings (forced update)
+   c8d3b871c4fb..7491982401fb  aosp/android-3.18 -> aosp/android-3.18
+   35091a1d8b61..9e293db0522f  aosp/android-4.4 -> aosp/android-4.4
+   867697792d19..20ea95166e62  aosp/android-4.4-llvm -> aosp/android-4.4-llvm
+   7db959ea7633..5c6218ffa7c2  aosp/android-4.4-n -> aosp/android-4.4-n
+   5fb401b2c60e..066c1adb7339  aosp/android-4.4-o -> aosp/android-4.4-o
+   9add7c47ec55..1f46caef2914  aosp/android-4.9 -> aosp/android-4.9
+   60cc09a9e3fc..185507e31ec7  aosp/android-4.9-eas-dev -> aosp/android-4.9-eas-dev
+   012bc8b1d02a..0c058ce1ab90  aosp/android-4.9-o -> aosp/android-4.9-o
+   b3a3eea5874b..c89830461759  aosp/upstream-f2fs-stable-linux-3.18.y -> aosp/upstream-f2fs-stable-linux-3.18.y
+   c7fd9e2b4a68..d5347b1e666d  aosp/upstream-f2fs-stable-linux-4.4.y -> aosp/upstream-f2fs-stable-linux-4.4.y
+   30da3a4de967..8c9f3066a99b  aosp/upstream-f2fs-stable-linux-4.9.y -> aosp/upstream-f2fs-stable-linux-4.9.y
+   3e2bb7d281ed..b44ef85f9033  aosp/upstream-linux-3.18.y -> aosp/upstream-linux-3.18.y
+   69f53f5d37d5..9b36699635c5  aosp/upstream-linux-4.4.y -> aosp/upstream-linux-4.4.y
+   f37eb7b586f1..d785062ef20f  aosp/upstream-linux-4.9.y -> aosp/upstream-linux-4.9.y
+   f34157878d3b..3a99df9a3d14  origin/HEAD -> origin/HEAD
+   f34157878d3b..3a99df9a3d14  origin/master -> origin/master
+ + 09ea6b927582...efe4e10cf142 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 3a15d3234ae6...efe4e10cf142 pm/linux-next -> pm/linux-next (forced update)
+   bb176f67090c..7c404c626759  pm/master -> pm/master
+   c97cc7dbce2f..d5919dcc349d  pm/pm -> pm/pm
+ + f27255481486...efe4e10cf142 pm/testing -> pm/testing (forced update)
+ * [new branch]                android-4.4 -> android-4.4
+ * [new branch]                aosp/android-4.9-llvm -> aosp/android-4.9-llvm
+ * [new tag]                   pm-4.14-rc7 -> pm-4.14-rc7
+ * [new tag]                   pm-reverts-4.14 -> pm-reverts-4.14
+ * [new tag]                   pm-urgent-4.14 -> pm-urgent-4.14
+ * [new tag]                   v4.14-rc7 -> v4.14-rc7
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

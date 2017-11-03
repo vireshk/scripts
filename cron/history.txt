@@ -9470,3 +9470,77 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 6cf3f5bfb8ad] updates
+ 14 files changed, 980 insertions(+), 48 deletions(-)
+ rewrite .Skype/shared_dynco/dc.db-journal (100%)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   596da4a2cd75..6cf3f5bfb8ad  master -> master
+   beb34438060b..596da4a2cd75  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Fri Nov  3 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   9e293db0522f..e41f9ef008f0  android-4.4 -> android-4.4
+   0a1320eb943a..48c02f5c54f8  aosp-hikey/android-hikey-linaro-3.18 -> aosp-hikey/android-hikey-linaro-3.18
+   681a185ce58a..59dc5319df91  aosp-hikey/android-hikey-linaro-4.1 -> aosp-hikey/android-hikey-linaro-4.1
+   205f2a740e8d..9ea7c33da4fc  aosp-hikey/android-hikey-linaro-4.4 -> aosp-hikey/android-hikey-linaro-4.4
+ + bb418ee8cbfc...23ba51eaa6b5 bkp/opp/genpd-bindings -> bkp/opp/genpd-bindings (forced update)
+ + cec900045f75...309b0d130a07 jstultz/dev/hikey-mainline-WIP -> jstultz/dev/hikey-mainline-WIP (forced update)
+ + aad0b37ccd47...7f1b4ea0ab4d lnext/akpm -> lnext/akpm (forced update)
+ + 0aa22d5defd0...64c853af1d5c lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 36ef71cae353...fa8785e862ef lnext/master -> lnext/master (forced update)
+   ebe6e90ccc66..4f2ba5dc183b  lnext/stable -> lnext/stable
+ * [new branch]                android-4.9 -> android-4.9
+ * [new branch]                android-4.9-hikey -> android-4.9-hikey
+ * [new branch]                aosp-hikey/android-hikey-linaro-4.9 -> aosp-hikey/android-hikey-linaro-4.9
+ * [new branch]                aosp-hikey/hikey-3.18-android-8.0.0_r4 -> aosp-hikey/hikey-3.18-android-8.0.0_r4
+ * [new branch]                aosp-hikey/hikey-4.4-android-8.0.0_r4 -> aosp-hikey/hikey-4.4-android-8.0.0_r4
+ * [new branch]                aosp-hikey/hikey-4.9-android-8.0.0_r4 -> aosp-hikey/hikey-4.9-android-8.0.0_r4
+ * [new branch]                bkp/android-4.4 -> bkp/android-4.4
+ * [new branch]                jstultz/aosp/4.9-fixups -> jstultz/aosp/4.9-fixups
+ * [new branch]                jstultz/dev/hikey-4.12 -> jstultz/dev/hikey-4.12
+ * [new branch]                jstultz/dev/hikey-4.13 -> jstultz/dev/hikey-4.13
+ * [new branch]                jstultz/dev/hikey960-mainline-WIP -> jstultz/dev/hikey960-mainline-WIP
+ * [new branch]                jstultz/dev/hikey960-usb-branch -> jstultz/dev/hikey960-usb-branch
+ * [new branch]                jstultz/dev/hikey960-v4.9-alltogether -> jstultz/dev/hikey960-v4.9-alltogether
+ * [new branch]                jstultz/dev/hikey960-v4.9-android-WIP -> jstultz/dev/hikey960-v4.9-android-WIP
+ * [new branch]                jstultz/dev/hikey960-v4.9-drm-for-guodong -> jstultz/dev/hikey960-v4.9-drm-for-guodong
+ * [new branch]                jstultz/dev/hikey960-v4.9-drm-for-guodong-WIP -> jstultz/dev/hikey960-v4.9-drm-for-guodong-WIP
+ * [new branch]                jstultz/dev/hikey960-v4.9-drm-for-guodong-malir7p0 -> jstultz/dev/hikey960-v4.9-drm-for-guodong-malir7p0
+ * [new branch]                jstultz/dev/hikey960-v4.9-usb-for-guodong -> jstultz/dev/hikey960-v4.9-usb-for-guodong
+ * [new branch]                jstultz/forsumit/hikey-4.4-lts -> jstultz/forsumit/hikey-4.4-lts
+ * [new tag]                   hikey-3.18-android-8.0.0_r4 -> hikey-3.18-android-8.0.0_r4
+ * [new tag]                   hikey-4.4-android-8.0.0_r4 -> hikey-4.4-android-8.0.0_r4
+ * [new tag]                   hikey-4.9-android-8.0.0_r4 -> hikey-4.9-android-8.0.0_r4
+ * [new tag]                   next-20171102 -> next-20171102
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

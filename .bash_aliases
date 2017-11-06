@@ -122,6 +122,8 @@ alias buildallarm='buildall arm'
 alias buildallarm64='buildall arm64'
 alias buildallx86='buildall x86'
 
+alias buildworkloadautomation='hwa; msudo -H pip install ./workload-automation'
+
 # x86 specific installation
 export X86IMAGENAME="custom"
 alias configx86="cp /boot/config-`uname -r` ../bx86/.config; yes '' | make O=../bx86 oldconfig;"
@@ -205,7 +207,7 @@ alias qcomflash="hwork; cd ../qcom/; msudo fastboot flash boot boot-db820c.img"
 
 alias flashhikey="hhikey; msudo fastboot flash boot boot_fat.uefi.img; fastboot reboot"
 alias mounthikey="hhikey; msudo mount -o loop,rw,sync boot_fat.uefi.img boot-fat"
-alias updatehikeya="hhikey; msudo cp ~/work/repos/devel/bhikey/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb boot-fat/hi6220-hikey.dtb; msudo cp ~/work/repos/devel/bhikey/arch/arm64/boot/Image boot-fat/kernel; sync; flashhikey"
+alias updatehikeya="hhikey; msudo cp ~/work/repos/devel/bhikey/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb boot-fat/hi6220-hikey.dtb; msudo cp ~/work/repos/devel/bhikey/arch/arm64/boot/Image boot-fat/kernel; sync; flashhikey; hwork"
 alias updatehikeyu="hhikey; msudo cp ~/work/repos/devel/bhikeyu/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb boot-fat/hi6220-hikey-u.dtb; msudo cp ~/work/repos/devel/bhikeyu/arch/arm64/boot/Image boot-fat/kernel-u; sync; flashhikey; hwork"
 
 # Android

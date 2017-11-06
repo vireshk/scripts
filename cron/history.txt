@@ -9544,3 +9544,47 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 3d581f64a56a] updates
+ 12 files changed, 841 insertions(+), 32 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   6cf3f5bfb8ad..3d581f64a56a  master -> master
+   596da4a2cd75..6cf3f5bfb8ad  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Mon Nov  6 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   9e293db0522f..e41f9ef008f0  bkp/android-4.4 -> bkp/android-4.4
+ * [new branch]                android-4.9-hikey-test -> android-4.9-hikey-test
+ * [new branch]                bkp/android-4.9 -> bkp/android-4.9
+ * [new branch]                bkp/android-4.9-hikey -> bkp/android-4.9-hikey
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

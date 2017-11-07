@@ -9588,3 +9588,60 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 5c01bdf5baf5] updates
+ 14 files changed, 2097 insertions(+), 26 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   3d581f64a56a..5c01bdf5baf5  master -> master
+   6cf3f5bfb8ad..3d581f64a56a  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Tue Nov  7 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + e41f9ef008f0...2dbd7709ea65 android-4.4 -> android-4.4 (forced update)
+ + f7f880ceca50...e0907557efa6 android-4.9 -> android-4.9 (forced update)
+ + c950c166ea3e...c1170933aa8c android-4.9-hikey -> android-4.9-hikey (forced update)
+ - [deleted]                   opp/power-model
+   78b43f15991b..a72942bb4922  aosp/android-3.10 -> aosp/android-3.10
+   7491982401fb..18c43e673cc0  aosp/android-3.18 -> aosp/android-3.18
+   9e293db0522f..e080c59bfb7c  aosp/android-4.4 -> aosp/android-4.4
+   5c6218ffa7c2..ddabbf1210c1  aosp/android-4.4-n -> aosp/android-4.4-n
+   066c1adb7339..9b0043250f95  aosp/android-4.4-o -> aosp/android-4.4-o
+   1f46caef2914..dfe0a9bcfc3a  aosp/android-4.9 -> aosp/android-4.9
+   185507e31ec7..c409b2024056  aosp/android-4.9-eas-dev -> aosp/android-4.9-eas-dev
+   0c058ce1ab90..4b2b8b9922f8  aosp/android-4.9-o -> aosp/android-4.9-o
+   b44ef85f9033..4f823316dac3  aosp/upstream-linux-3.18.y -> aosp/upstream-linux-3.18.y
+   9b36699635c5..27e68f1bca91  aosp/upstream-linux-4.4.y -> aosp/upstream-linux-4.4.y
+   d785062ef20f..06b639e5a1a6  aosp/upstream-linux-4.9.y -> aosp/upstream-linux-4.9.y
+ * [new branch]                bkp/android-4.9-hikey-test -> bkp/android-4.9-hikey-test
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+Warning: Permanently added the ECDSA host key for IP address '46.137.111.246' to the list of known hosts.
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

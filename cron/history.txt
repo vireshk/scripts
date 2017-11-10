@@ -9774,3 +9774,823 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 659993b3a2f1] updates
+ 13 files changed, 1019 insertions(+), 44 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   8c6be5d89669..659993b3a2f1  master -> master
+   c0e706bdc109..8c6be5d89669  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Fri Nov 10 13:00:02 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+Traceback (most recent call last):
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>
+    print(get_groups(sys.argv[1]))
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups
+    user = get_crowd_user(user)
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user
+    with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:
+  File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client
+    client.simple_bind(config["binddn"], config["bindpw"])
+  File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind
+    return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))
+  File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call
+    result = func(*args,**kwargs)
+ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   fc988f0b13a3..4658242d4309  android-4.9-hikey -> android-4.9-hikey
+ + f40d08e1aae5...026d737730e0 device/boot-constraints -> device/boot-constraints (forced update)
+ - [deleted]                   aosp/experimental/android-4.14-eas-integration.bak
+ + 2dbd7709ea65...4a3556f76d32 bkp/android-4.4 -> bkp/android-4.4 (forced update)
+   e0907557efa6..3902fae9ad47  bkp/android-4.9 -> bkp/android-4.9
+ + 209d746ad654...fc988f0b13a3 bkp/android-4.9-hikey -> bkp/android-4.9-hikey (forced update)
+ + ae05952223bd...4b76bf6ed293 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   3c047f6e619b..4b76bf6ed293  pm/linux-next -> pm/linux-next
+   d5919dcc349d..e029b9bf1221  pm/pm -> pm/pm
+   3c047f6e619b..4b76bf6ed293  pm/testing -> pm/testing
+   f34157878d3b..5f479447d983  tip/WIP.timers -> tip/WIP.timers
+   738f48cb5fdd..e4880bc5dfb1  tip/WIP.x86/fpu -> tip/WIP.x86/fpu
+ + 9fe2265d8841...9bfda22480f4 tip/auto-latest -> tip/auto-latest (forced update)
+   b703798386fb..ec1e1b610917  tip/core-urgent-for-linus -> tip/core-urgent-for-linus
+   6a93bb7e4a7d..9eb719855f6c  tip/core/objtool -> tip/core/objtool
+   b703798386fb..ec1e1b610917  tip/core/urgent -> tip/core/urgent
+   3d51969ce318..c9bb86338a6b  tip/irq-urgent-for-linus -> tip/irq-urgent-for-linus
+   250a53d6fcd8..722c908f84c6  tip/irq/core -> tip/irq/core
+   3d51969ce318..c9bb86338a6b  tip/irq/urgent -> tip/irq/urgent
+   e319e1fbd9d4..b04db8e19fc2  tip/locking/core -> tip/locking/core
+ + 9fe2265d8841...d41614d726be tip/master -> tip/master (forced update)
+   2eece390bf68..fb7df12d645c  tip/perf-urgent-for-linus -> tip/perf-urgent-for-linus
+   0d3d73aac2ff..15bcdc9477b0  tip/perf/core -> tip/perf/core
+   4d8a991d460d..a443026a48ad  tip/perf/kprobes -> tip/perf/kprobes
+   4139433c9a81..fb7df12d645c  tip/perf/urgent -> tip/perf/urgent
+   262e681183dd..7298f08ea887  tip/ras-urgent-for-linus -> tip/ras-urgent-for-linus
+   92bb6cb14030..783ca517bfd6  tip/ras/core -> tip/ras/core
+   262e681183dd..7298f08ea887  tip/ras/urgent -> tip/ras/urgent
+   150dfee95feb..8a103df440af  tip/sched/core -> tip/sched/core
+   6c1e272f962d..1c10bbee8cf7  tip/timers/core -> tip/timers/core
+   90edaac62729..eda9cec4c9a1  tip/x86-urgent-for-linus -> tip/x86-urgent-for-linus
+   c201c91799d6..141d3b1daacd  tip/x86/apic -> tip/x86/apic
+   82c62fa0c49a..a9e017d5619e  tip/x86/asm -> tip/x86/asm
+   dc0fdf7d2bf9..6c3b56b19730  tip/x86/boot -> tip/x86/boot
+ + af8e947079a7...f34157878d3b tip/x86/build -> tip/x86/build (forced update)
+ + 57b8b1a1856a...e4880bc5dfb1 tip/x86/fpu -> tip/x86/fpu (forced update)
+   773dd2fca581..c5e260890d5f  tip/x86/mm -> tip/x86/mm
+   4d8a991d460d..71271269ef9a  tip/x86/mpx -> tip/x86/mpx
+   90edaac62729..d0cd64b02aa8  tip/x86/urgent -> tip/x86/urgent
+ * [new branch]                sched/minor -> sched/minor
+ * [new branch]                aosp/experimental/android-4.14-eas-integration -> aosp/experimental/android-4.14-eas-integration
+ * [new branch]                bkp/cpufreq/cached-schedutil -> bkp/cpufreq/cached-schedutil
+ * [new tag]                   pm-final-4.14 -> pm-final-4.14
+ * [new tag]                   v4.14-rc8 -> v4.14-rc8
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+Traceback (most recent call last):
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>
+    print(get_groups(sys.argv[1]))
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups
+    user = get_crowd_user(user)
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user
+    with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:
+  File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client
+    client.simple_bind(config["binddn"], config["bindpw"])
+  File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind
+    return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))
+  File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call
+    result = func(*args,**kwargs)
+ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -207,11 +207,12 @@ alias qcomflash="hwork; cd ../qcom/; msudo fastboot flash boot boot-db820c.img"
 
 alias flashhikey="hhikey; msudo fastboot flash boot boot_fat.uefi.img; fastboot reboot"
 alias mounthikey="hhikey; msudo mount -o loop,rw,sync boot_fat.uefi.img boot-fat"
-alias updatehikeya="hhikey; msudo cp ~/work/repos/devel/bhikey/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb boot-fat/hi6220-hikey.dtb; msudo cp ~/work/repos/devel/bhikey/arch/arm64/boot/Image boot-fat/kernel; sync; flashhikey; hwork"
+alias updatehikeya="hhikey; msudo cp ~/work/repos/devel/bhikey/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb boot-fat/hi6220-hikey.dtb; msudo cp ~/work/repos/devel/bhikey/arch/arm64/boot/Image boot-fat/kernel; sync; flashhikey; hwork; cd ../android"
 alias updatehikeyu="hhikey; msudo cp ~/work/repos/devel/bhikeyu/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb boot-fat/hi6220-hikey-u.dtb; msudo cp ~/work/repos/devel/bhikeyu/arch/arm64/boot/Image boot-fat/kernel-u; sync; flashhikey; hwork"
 
 # Android
 export ANDROID_HOME=/home/vireshk/Android/Sdk
+sudo -A export ANDROID_HOME=/home/vireshk/Android/Sdk
 
 # JIRA
 export JIRA_USERNAME="Viresh.kumar@linaro.org"

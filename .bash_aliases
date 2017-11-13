@@ -62,6 +62,7 @@ alias hmdownload="cd /home/vireshk/mdownload"
 alias haastha="cd /home/vireshk/junk/aastha"
 alias hisol="cd /home/vireshk/work/repos/tools/isolation/"
 alias hwork="cd /home/vireshk/work/repos/devel/linux/"
+alias handroid="cd /home/vireshk/work/repos/devel/android/"
 alias hpatches="cd /home/vireshk/scripts/mutt/incoming/"
 alias hmodule="cd /home/vireshk/work/repos/tools/module/"
 
@@ -212,7 +213,6 @@ alias updatehikeyu="hhikey; msudo cp ~/work/repos/devel/bhikeyu/arch/arm64/boot/
 
 # Android
 export ANDROID_HOME=/home/vireshk/Android/Sdk
-sudo -A export ANDROID_HOME=/home/vireshk/Android/Sdk
 
 # JIRA
 export JIRA_USERNAME="Viresh.kumar@linaro.org"

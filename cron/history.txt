@@ -10594,3 +10594,121 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 2bbd0f1932ed] updates
+ 13 files changed, 1587 insertions(+), 23 deletions(-)
+ create mode 100644 gerrit.inc
+Traceback (most recent call last):
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>
+    print(get_groups(sys.argv[1]))
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups
+    user = get_crowd_user(user)
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user
+    with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:
+  File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client
+    client.simple_bind(config["binddn"], config["bindpw"])
+  File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind
+    return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))
+  File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call
+    result = func(*args,**kwargs)
+ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user        
+remote:     with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:        
+remote:   File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__        
+post-git trigger: updating grokmirror
+remote:     return self.gen.next()        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client        
+remote:     client.simple_bind(config["binddn"], config["bindpw"])        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind        
+remote:     return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))        
+remote:   File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}        
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   659993b3a2f1..2bbd0f1932ed  master -> master
+   8c6be5d89669..659993b3a2f1  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+Traceback (most recent call last):
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 104, in <module>
+    print(get_groups(sys.argv[1]))
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 56, in get_groups
+    user = get_crowd_user(user)
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 38, in get_crowd_user
+    with linaro_ldap.ldap_client(linaro_ldap.build_config()) as client:
+  File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/srv/linaro-git-tools/gitolite-tools/../linaro_ldap.py", line 18, in ldap_client
+    client.simple_bind(config["binddn"], config["bindpw"])
+  File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 201, in simple_bind
+    return self._ldap_call(self._l.simple_bind,who,cred,RequestControlTuples(serverctrls),RequestControlTuples(clientctrls))
+  File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call
+    result = func(*args,**kwargs)
+ldap.SERVER_DOWN: {'info': '(unknown error code)', 'desc': "Can't contact LDAP server"}
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Mon Nov 13 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   android-4.9-hikey-test
+ - [deleted]                   tip
+   fc988f0b13a3..4658242d4309  bkp/android-4.9-hikey -> bkp/android-4.9-hikey
+ + f40d08e1aae5...026d737730e0 bkp/device/boot-constraints -> bkp/device/boot-constraints (forced update)
+ + 7f1b4ea0ab4d...03d1f04ed251 lnext/akpm -> lnext/akpm (forced update)
+ + 64c853af1d5c...f5fede136451 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + fa8785e862ef...d9e0e63d9a6f lnext/master -> lnext/master (forced update)
+   4f2ba5dc183b..3fefc31843cf  lnext/stable -> lnext/stable
+   3a99df9a3d14..bebc6082da0a  origin/HEAD -> origin/HEAD
+   3a99df9a3d14..bebc6082da0a  origin/master -> origin/master
+ * [new branch]                bkp/sched/minor -> bkp/sched/minor
+ * [new tag]                   next-20171110 -> next-20171110
+ * [new tag]                   v4.14 -> v4.14
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

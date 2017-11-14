@@ -10712,3 +10712,48 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 4f43b1c61be8] updates
+ 18 files changed, 793 insertions(+), 46 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   2bbd0f1932ed..4f43b1c61be8  master -> master
+   659993b3a2f1..2bbd0f1932ed  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Tue Nov 14 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 026d737730e0...3e7ff818deb8 device/boot-constraints -> device/boot-constraints (forced update)
+ - [deleted]                   bkp/android-4.9-hikey-test
+ - [deleted]                   bkp/tip
+   bebc6082da0a..3c073991eb41  origin/HEAD -> origin/HEAD
+   bebc6082da0a..3c073991eb41  origin/master -> origin/master
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

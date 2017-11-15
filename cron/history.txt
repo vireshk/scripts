@@ -10757,3 +10757,65 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 05720edbc352] updates
+ 11 files changed, 681 insertions(+), 22 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   4f43b1c61be8..05720edbc352  master -> master
+   2bbd0f1932ed..4f43b1c61be8  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Wed Nov 15 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   cpufreq/cached-schedutil
+ + 23ba51eaa6b5...7b524c000fc1 opp/genpd-bindings -> opp/genpd-bindings (forced update)
+ - [deleted]                   opp/genpd-pstate
+ + 026d737730e0...3e7ff818deb8 bkp/device/boot-constraints -> bkp/device/boot-constraints (forced update)
+ + 03d1f04ed251...85c516ee626c lnext/akpm -> lnext/akpm (forced update)
+ + f5fede136451...c235bbaf8d93 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + d9e0e63d9a6f...c9b945f2a731 lnext/master -> lnext/master (forced update)
+   3fefc31843cf..8e9a2dba8686  lnext/stable -> lnext/stable
+   3c073991eb41..37cb8e1f8e10  origin/HEAD -> origin/HEAD
+   3c073991eb41..37cb8e1f8e10  origin/master -> origin/master
+   333d1774224d..04ed510988f2  pm/acpi -> pm/acpi
+   4b76bf6ed293..cab64e50ff45  pm/bleeding-edge -> pm/bleeding-edge
+   51858a2777f0..3c073991eb41  pm/device-properties -> pm/device-properties
+   39dae59d66ac..3c073991eb41  pm/master -> pm/master
+   e029b9bf1221..bd2cd7d5a8f8  pm/pm -> pm/pm
+ * [new branch]                cpufreq/cooling-generic -> cpufreq/cooling-generic
+ * [new branch]                opp/genpd-pstate-bkp -> opp/genpd-pstate-bkp
+ * [new branch]                opp/genpd-rpm -> opp/genpd-rpm
+ * [new tag]                   acpi-4.15-rc1 -> acpi-4.15-rc1
+ * [new tag]                   devprop-4.15-rc1 -> devprop-4.15-rc1
+ * [new tag]                   next-20171114 -> next-20171114
+ * [new tag]                   pm-4.15-rc1 -> pm-4.15-rc1
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

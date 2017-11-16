@@ -4,8 +4,11 @@ set complete = enhance
 set autolist
 set autologout=0
 umask 002
+
+# Environment variables
 #export PS1="\[\e]0;\u@\h: \a\]${debian_chroot:+($debian_chroot)}\u@\h:\$ "
 export PS1="$ "
+export COVER_CC=1
 
 # git
 source /home/vireshk/scripts/git_alias

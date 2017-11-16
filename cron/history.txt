@@ -10819,3 +10819,62 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 501892e3cdde] updates
+ 14 files changed, 692 insertions(+), 29 deletions(-)
+ create mode 100644 .Skype/viresh.nitj/chatsync/56/569237ff35656dc6.dat
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   05720edbc352..501892e3cdde  master -> master
+   4f43b1c61be8..05720edbc352  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Thu Nov 16 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 5b7403fc7c51...72430c68c5b2 cpufreq/cooling-generic -> cpufreq/cooling-generic (forced update)
+ - [deleted]                   opp/genpd-rpm
+ - [deleted]                   bkp/cpufreq/cached-schedutil
+ + 23ba51eaa6b5...7b524c000fc1 bkp/opp/genpd-bindings -> bkp/opp/genpd-bindings (forced update)
+ - [deleted]                   bkp/opp/genpd-pstate
+ + 85c516ee626c...d175d9159eac lnext/akpm -> lnext/akpm (forced update)
+ + c235bbaf8d93...3a4ea8d0cfe8 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + c9b945f2a731...63fb091c8018 lnext/master -> lnext/master (forced update)
+   8e9a2dba8686..894025f24bd0  lnext/stable -> lnext/stable
+   37cb8e1f8e10..e60e1ee60630  origin/HEAD -> origin/HEAD
+   37cb8e1f8e10..e60e1ee60630  origin/master -> origin/master
+ + cab64e50ff45...e23d3f3f9c76 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 4b76bf6ed293...e23d3f3f9c76 pm/linux-next -> pm/linux-next (forced update)
+ * [new branch]                opp/genpd-runtime-pm -> opp/genpd-runtime-pm
+ * [new branch]                bkp/cpufreq/cooling-generic -> bkp/cpufreq/cooling-generic
+ * [new branch]                bkp/opp/genpd-pstate-bkp -> bkp/opp/genpd-pstate-bkp
+ * [new branch]                bkp/opp/genpd-rpm -> bkp/opp/genpd-rpm
+ * [new tag]                   next-20171115 -> next-20171115
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -10878,3 +10878,65 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 333bb658eff5] updates
+ 17 files changed, 867 insertions(+), 44 deletions(-)
+ rewrite .Skype/shared_dynco/dc.db-journal (100%)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   501892e3cdde..333bb658eff5  master -> master
+   05720edbc352..501892e3cdde  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Fri Nov 17 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 4a3556f76d32...64b9890fd509 android-4.4 -> android-4.4 (forced update)
+ + 3902fae9ad47...8ea0917874aa android-4.9 -> android-4.9 (forced update)
+ + d25be70c9239...6eab4039f6bc opp/genpd-runtime-pm -> opp/genpd-runtime-pm (forced update)
+   8361f193a7e6..016dcef6aaa0  aosp/android-3.10 -> aosp/android-3.10
+   8b259430bf61..458359bf7762  aosp/android-3.18 -> aosp/android-3.18
+   04af12976bc6..19ef30ef23a4  aosp/android-4.4 -> aosp/android-4.4
+   93279ac4b81d..2d8b2af9282d  aosp/android-4.4-n -> aosp/android-4.4-n
+   9fc5de8e006a..44541b5bb745  aosp/android-4.4-o -> aosp/android-4.4-o
+   a93e3124db19..f09daf140e6e  aosp/android-4.9 -> aosp/android-4.9
+   4170bfad324c..1d6b43334b45  aosp/android-4.9-o -> aosp/android-4.9-o
+   0b07194bb55e..bebc6082da0a  aosp/experimental/android-4.14-eas-integration -> aosp/experimental/android-4.14-eas-integration
+   943dc0b3ef9f..37cdf969145f  aosp/upstream-linux-3.18.y -> aosp/upstream-linux-3.18.y
+   c54d0707aa09..c4e3d53bd9e7  aosp/upstream-linux-4.4.y -> aosp/upstream-linux-4.4.y
+   5caae9d14199..9b609ba2c2df  aosp/upstream-linux-4.9.y -> aosp/upstream-linux-4.9.y
+ + 5b7403fc7c51...72430c68c5b2 bkp/cpufreq/cooling-generic -> bkp/cpufreq/cooling-generic (forced update)
+ - [deleted]                   bkp/opp/genpd-rpm
+ + e23d3f3f9c76...495f224ff03b pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + e23d3f3f9c76...495f224ff03b pm/linux-next -> pm/linux-next (forced update)
+ + 26f91e4284c5...6d4d53f5c1b5 pmwg/integ -> pmwg/integ (forced update)
+ * [new branch]                aosp/experimental/android-mainline-tracking -> aosp/experimental/android-mainline-tracking
+ * [new branch]                bkp/opp/genpd-runtime-pm -> bkp/opp/genpd-runtime-pm
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

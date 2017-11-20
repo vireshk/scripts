@@ -10940,3 +10940,60 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 8eb6880ee82a] updates
+ 11 files changed, 673 insertions(+), 41 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   333bb658eff5..8eb6880ee82a  master -> master
+   501892e3cdde..333bb658eff5  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Mon Nov 20 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 4a3556f76d32...64b9890fd509 bkp/android-4.4 -> bkp/android-4.4 (forced update)
+ + 3902fae9ad47...8ea0917874aa bkp/android-4.9 -> bkp/android-4.9 (forced update)
+ + d25be70c9239...6eab4039f6bc bkp/opp/genpd-runtime-pm -> bkp/opp/genpd-runtime-pm (forced update)
+ + d175d9159eac...4299aef0fad8 lnext/akpm -> lnext/akpm (forced update)
+ + 3a4ea8d0cfe8...c4d21ac2f21c lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 63fb091c8018...e6016f98372b lnext/master -> lnext/master (forced update)
+   894025f24bd0..ed30b147e1f6  lnext/stable -> lnext/stable
+   e60e1ee60630..020aae3ee58c  origin/HEAD -> origin/HEAD
+   e60e1ee60630..020aae3ee58c  origin/master -> origin/master
+   04ed510988f2..190b10367b0d  pm/acpi -> pm/acpi
+ + 495f224ff03b...94243e5a3e67 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 495f224ff03b...190b10367b0d pm/linux-next -> pm/linux-next (forced update)
+   3c073991eb41..190b10367b0d  pm/master -> pm/master
+   bd2cd7d5a8f8..e75080f185c1  pm/pm -> pm/pm
+ * [new tag]                   acpi-fix-4.15-rc1 -> acpi-fix-4.15-rc1
+ * [new tag]                   next-20171120 -> next-20171120
+ * [new tag]                   pm-fixes-4.15-rc1 -> pm-fixes-4.15-rc1
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

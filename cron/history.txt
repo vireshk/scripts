@@ -10997,3 +10997,49 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master efe651013ece] updates
+ 17 files changed, 831 insertions(+), 34 deletions(-)
+ delete mode 100644 .Skype/viresh.nitj/chatsync/56/569237ff35656dc6.dat
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   8eb6880ee82a..efe651013ece  master -> master
+   333bb658eff5..8eb6880ee82a  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Tue Nov 21 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 4658242d4309...b2d2b7e1f8e7 android-4.9-hikey -> android-4.9-hikey (forced update)
+   16bf91f2795e..09adc5d7e45c  aosp-hikey/android-hikey-linaro-3.18 -> aosp-hikey/android-hikey-linaro-3.18
+   bdf339c41b6f..b7ae717a5791  aosp-hikey/android-hikey-linaro-4.4 -> aosp-hikey/android-hikey-linaro-4.4
+   9ea4cdd2974d..8116a00ad491  aosp-hikey/android-hikey-linaro-4.9 -> aosp-hikey/android-hikey-linaro-4.9
+ * [new branch]                android-4.9-hikey-old -> android-4.9-hikey-old
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

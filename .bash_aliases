@@ -66,6 +66,7 @@ alias haastha="cd /home/vireshk/junk/aastha"
 alias hisol="cd /home/vireshk/work/repos/tools/isolation/"
 alias hwork="cd /home/vireshk/work/repos/devel/linux/"
 alias handroid="cd /home/vireshk/work/repos/devel/android/"
+alias haosp="cd /media/vireshk/*/android/"
 alias hpatches="cd /home/vireshk/scripts/mutt/incoming/"
 alias hmodule="cd /home/vireshk/work/repos/tools/module/"
 
@@ -213,6 +214,8 @@ alias flashhikey="hhikey; msudo fastboot flash boot boot_fat.uefi.img; fastboot 
 alias mounthikey="hhikey; msudo mount -o loop,rw,sync boot_fat.uefi.img boot-fat"
 alias updatehikeya="hhikey; msudo cp ~/work/repos/devel/bhikey/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb boot-fat/hi6220-hikey.dtb; msudo cp ~/work/repos/devel/bhikey/arch/arm64/boot/Image boot-fat/kernel; sync; flashhikey; hwork; cd ../android"
 alias updatehikeyu="hhikey; msudo cp ~/work/repos/devel/bhikeyu/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb boot-fat/hi6220-hikey-u.dtb; msudo cp ~/work/repos/devel/bhikeyu/arch/arm64/boot/Image boot-fat/kernel-u; sync; flashhikey; hwork"
+alias makehikey960bootimg="haosp; abootimg --create out/target/product/hikey960/boot.img -k ~/work/repos/devel/bhikey960/arch/arm64/boot/Image-dtb -r out/target/product/hikey960/ramdisk.img -f ~/Downloads/config-hikey960-bootimg"
+alias flashhikey960="haosp; fastboot flash boot out/target/product/hikey960/boot.img; fastboot reboot"
 
 # Android
 export ANDROID_HOME=/home/vireshk/Android/Sdk

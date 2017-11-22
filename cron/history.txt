@@ -11043,3 +11043,62 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 5b62f72f1fce] updates
+ 13 files changed, 1557 insertions(+), 22 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   efe651013ece..5b62f72f1fce  master -> master
+   8eb6880ee82a..efe651013ece  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Wed Nov 22 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 64b9890fd509...b554c816ec27 android-4.4 -> android-4.4 (forced update)
+ + 8ea0917874aa...a39b7aebfbf1 android-4.9 -> android-4.9 (forced update)
+ + b2d2b7e1f8e7...4cf6923e5041 android-4.9-hikey -> android-4.9-hikey (forced update)
+   016dcef6aaa0..5dc1001c2557  aosp/android-3.10 -> aosp/android-3.10
+   458359bf7762..3cbb683dfb1e  aosp/android-3.18 -> aosp/android-3.18
+   19ef30ef23a4..482cc74cf79f  aosp/android-4.4 -> aosp/android-4.4
+   2d8b2af9282d..0668aafb7ee5  aosp/android-4.4-n -> aosp/android-4.4-n
+   44541b5bb745..f5ece0dcf6d5  aosp/android-4.4-o -> aosp/android-4.4-o
+   f09daf140e6e..fbb7468cbc28  aosp/android-4.9 -> aosp/android-4.9
+   1d6b43334b45..1812c2456fb0  aosp/android-4.9-o -> aosp/android-4.9-o
+   c89830461759..c6f66cb76658  aosp/upstream-f2fs-stable-linux-3.18.y -> aosp/upstream-f2fs-stable-linux-3.18.y
+   d5347b1e666d..56a07b070510  aosp/upstream-f2fs-stable-linux-4.4.y -> aosp/upstream-f2fs-stable-linux-4.4.y
+   8c9f3066a99b..5b2b7f7dd87f  aosp/upstream-f2fs-stable-linux-4.9.y -> aosp/upstream-f2fs-stable-linux-4.9.y
+   37cdf969145f..c35c375efa4e  aosp/upstream-linux-3.18.y -> aosp/upstream-linux-3.18.y
+   c4e3d53bd9e7..26d6298789e6  aosp/upstream-linux-4.4.y -> aosp/upstream-linux-4.4.y
+   9b609ba2c2df..563c24f65f4f  aosp/upstream-linux-4.9.y -> aosp/upstream-linux-4.9.y
+ + 4658242d4309...b2d2b7e1f8e7 bkp/android-4.9-hikey -> bkp/android-4.9-hikey (forced update)
+ * [new branch]                bkp/android-4.9-hikey-old -> bkp/android-4.9-hikey-old
+ * [new branch]                vingu/hikey960/power -> vingu/hikey960/power
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

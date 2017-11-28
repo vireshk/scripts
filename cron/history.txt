@@ -11280,3 +11280,75 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 9cacecbb9096] updates
+ 22 files changed, 877 insertions(+), 41 deletions(-)
+ delete mode 100644 .Skype/shared_dynco/dc.db-journal
+ delete mode 100644 .Skype/shared_dynco/dc.lock
+ delete mode 100644 .Skype/shared_httpfe/queue.lock
+ delete mode 100644 .Skype/viresh.nitj/bistats.db-journal
+ delete mode 100644 .Skype/viresh.nitj/bistats.lock
+ delete mode 100644 .Skype/viresh.nitj/keyval.lock
+ delete mode 100644 .Skype/viresh.nitj/main.db-journal
+ delete mode 100644 .Skype/viresh.nitj/main.lock
+ delete mode 100644 .Skype/viresh.nitj/msn.db-journal
+ delete mode 100644 .Skype/viresh.nitj/msn.lock
+ delete mode 100644 .Skype/viresh.nitj/statistics.db-journal
+ delete mode 100644 .Skype/viresh.nitj/statistics.lock
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   e908b359cef6..9cacecbb9096  master -> master
+   5b62f72f1fce..e908b359cef6  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Tue Nov 28 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   arm/configs
+ - [deleted]                   cpufreq/thermal-capping
+ - [deleted]                   cpufreq/transition-latency
+ + f9de3cd2b6eb...4fbd8d194f06 opp/bleeding-edge -> opp/bleeding-edge (forced update)
+   7813dd6fc75f..4fbd8d194f06  opp/linux-next -> opp/linux-next
+ - [deleted]                   sched/minor
+ + a7e3deb323b4...1fdda99b4ec3 lnext/akpm -> lnext/akpm (forced update)
+ + 9e8a2dc64ac8...6ea5e7ecd2e5 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 279a24799865...b0a84f19a516 lnext/master -> lnext/master (forced update)
+   0c86a6bd85ff..844056fd74eb  lnext/stable -> lnext/stable
+   0c86a6bd85ff..4fbd8d194f06  origin/HEAD -> origin/HEAD
+   0c86a6bd85ff..4fbd8d194f06  origin/master -> origin/master
+ + a8169616960e...d94f8ef6efe1 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 99ea4bb8c744...d94f8ef6efe1 pm/linux-next -> pm/linux-next (forced update)
+   190b10367b0d..4fbd8d194f06  pm/master -> pm/master
+ + 4b76bf6ed293...d94f8ef6efe1 pm/testing -> pm/testing (forced update)
+   9e66317d3c92..4fbd8d194f06  pmko/opp/linux-next -> pmko/opp/linux-next
+ * [new branch]                bkp/cpufreq/thermal-capping -> bkp/cpufreq/thermal-capping
+ * [new tag]                   next-20171127 -> next-20171127
+ * [new tag]                   v4.15-rc1 -> v4.15-rc1
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

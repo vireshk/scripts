@@ -11352,3 +11352,61 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 199656d9d955] updates
+ 6 files changed, 929 insertions(+), 33 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   9cacecbb9096..199656d9d955  master -> master
+   e908b359cef6..9cacecbb9096  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Wed Nov 29 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 7b524c000fc1...c4ac6620b957 opp/genpd-bindings -> opp/genpd-bindings (forced update)
+   4fbd8d194f06..c4ac6620b957  opp/linux-next -> opp/linux-next
+ - [deleted]                   bkp/arm/configs
+ - [deleted]                   bkp/cpufreq/thermal-capping
+ - [deleted]                   bkp/cpufreq/transition-latency
+ + f9de3cd2b6eb...4fbd8d194f06 bkp/opp/bleeding-edge -> bkp/opp/bleeding-edge (forced update)
+   7813dd6fc75f..4fbd8d194f06  bkp/opp/linux-next -> bkp/opp/linux-next
+ - [deleted]                   bkp/sched/minor
+ + 1fdda99b4ec3...e5f833628524 lnext/akpm -> lnext/akpm (forced update)
+ + 6ea5e7ecd2e5...29c759533308 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + b0a84f19a516...d127129e85a0 lnext/master -> lnext/master (forced update)
+   844056fd74eb..43f462f1c2e1  lnext/stable -> lnext/stable
+   4fbd8d194f06..43570f0383d6  origin/HEAD -> origin/HEAD
+   4fbd8d194f06..43570f0383d6  origin/master -> origin/master
+   4fbd8d194f06..c4ac6620b957  pmko/opp/linux-next -> pmko/opp/linux-next
+ * [new branch]                opp/genpd-bindings-code -> opp/genpd-bindings-code
+ * [new branch]                opp/genpd-bindings-code-bkp -> opp/genpd-bindings-code-bkp
+ * [new tag]                   next-20171129 -> next-20171129
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

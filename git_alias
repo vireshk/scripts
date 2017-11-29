@@ -68,6 +68,7 @@ gerritpushs() { git push -f ara-google HEAD:refs/heads/sandbox/vireshk/$1; }
 alias gpo='gp origin '
 alias gpl='gp linaro '
 alias gps='git push self --mirror'
+alias gpoppnext='gp pmko opp/linux-next:opp/linux-next'
 
 alias ggrep='git grep'
 alias gk='gitk --all -100&'

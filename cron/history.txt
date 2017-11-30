@@ -11436,3 +11436,22 @@ and the repository exists.
 
 
 
+ 
+Thu Nov 30 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 8623d2224a54...11ec6a7166be opp/genpd-bindings-code -> opp/genpd-bindings-code (forced update)
+ + 7b524c000fc1...c4ac6620b957 bkp/opp/genpd-bindings -> bkp/opp/genpd-bindings (forced update)
+   4fbd8d194f06..c4ac6620b957  bkp/opp/linux-next -> bkp/opp/linux-next
+ * [new branch]                bkp/opp/genpd-bindings-code -> bkp/opp/genpd-bindings-code
+ * [new branch]                bkp/opp/genpd-bindings-code-bkp -> bkp/opp/genpd-bindings-code-bkp
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

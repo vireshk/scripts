@@ -524,3 +524,6 @@ From vireshk  Wed Oct 11 15:42:01 2017
   Folder: PATCH_v2_PM_OPP_add_missing_of_node_put__for_of_get_cpu_node	   4088
 From foo@bar  Wed Oct 11 15:46:13 2017
   Folder: .mbox								   1646
+From vireshk  Tue Nov 28 08:41:46 2017
+ Subject: [PATCH] cpufreq: longhaul: Set transition_delay_us to 20 ms
+  Folder: PATCH_cpufreq_longhaul_Set_transition_delay_us_to_20_ms.mbox	   2780

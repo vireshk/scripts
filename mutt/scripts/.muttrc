@@ -179,8 +179,8 @@ set pager_stop           # don't go to next message at end of message
 color sidebar_new yellow default 
 set sidebar_width=18
 set sidebar_visible=yes
-set sidebar_delim='|'
-set sidebar_sort=no
+#set sidebar_delim='|'
+#set sidebar_sort=no
 
 # ctrl-n, ctrl-p to select next, prev folder # ctrl-o to open selected folder
 bind index,pager \CP sidebar-prev

@@ -11481,3 +11481,56 @@ and the repository exists.
 
 
 
+ 
+Mon Dec 11 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 8623d2224a54...11ec6a7166be bkp/opp/genpd-bindings-code -> bkp/opp/genpd-bindings-code (forced update)
+ + e5f833628524...d30b920dadd2 lnext/akpm -> lnext/akpm (forced update)
+ + 29c759533308...0d30821ca64f lnext/akpm-base -> lnext/akpm-base (forced update)
+ + d127129e85a0...ad4dac17f9d5 lnext/master -> lnext/master (forced update)
+   43f462f1c2e1..968edbd93c0c  lnext/stable -> lnext/stable
+ - [deleted]                   mac/arm/configs
+ - [deleted]                   mac/bkp/cpufreq/core/locking
+ - [deleted]                   mac/bkp/cpufreq/interactive-idle-notifier-v2
+ - [deleted]                   mac/bkp/exynos/hotplug
+ - [deleted]                   mac/bkp/hrtimer/spurious
+ - [deleted]                   mac/bkp/lng/isolation-3.14
+ - [deleted]                   mac/bkp/lng/vanila-spurious-tests
+ - [deleted]                   mac/board/820c
+ - [deleted]                   mac/cpufreq/dt-plat
+ - [deleted]                   mac/cpufreq/transition-latency
+ - [deleted]                   mac/device/boot-constraints
+ - [deleted]                   mac/master
+ - [deleted]                   mac/opp/genpd-pstate
+ - [deleted]                   mac/opp/genpd-pstate-test
+ - [deleted]                   mac/opp/migrate
+   43570f0383d6..50c4c4e268a2  origin/HEAD -> origin/HEAD
+   43570f0383d6..50c4c4e268a2  origin/master -> origin/master
+   190b10367b0d..1ecbd7170d65  pm/acpi -> pm/acpi
+ + d94f8ef6efe1...c339dc89a4cf pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + d94f8ef6efe1...f39b28a15c58 pm/linux-next -> pm/linux-next (forced update)
+   4fbd8d194f06..ae64f9bd1d36  pm/master -> pm/master
+   e75080f185c1..31eb74318054  pm/pm -> pm/pm
+ + d94f8ef6efe1...f39b28a15c58 pm/testing -> pm/testing (forced update)
+ + c4ac6620b957...4fbd8d194f06 pmko/opp/linux-next -> pmko/opp/linux-next (forced update)
+ * [new branch]                mac/cpufreq/cooling-generic -> mac/cpufreq/cooling-generic
+ * [new branch]                mac/cpufreq/longhaul -> mac/cpufreq/longhaul
+ * [new branch]                mac/opp/genpd-bindings -> mac/opp/genpd-bindings
+ * [new tag]                   acpi-4.15-rc2 -> acpi-4.15-rc2
+ * [new tag]                   acpi-4.15-rc3 -> acpi-4.15-rc3
+ * [new tag]                   next-20171208 -> next-20171208
+ * [new tag]                   pm-4.15-rc2 -> pm-4.15-rc2
+ * [new tag]                   pm-4.15-rc3 -> pm-4.15-rc3
+ * [new tag]                   v4.15-rc2 -> v4.15-rc2
+ * [new tag]                   v4.15-rc3 -> v4.15-rc3
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

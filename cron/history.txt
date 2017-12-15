@@ -11735,3 +11735,55 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master d67f4f76cfb7] updates
+ 6 files changed, 1040 insertions(+), 5 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   acc1dcceca20..d67f4f76cfb7  master -> master
+   c75d0b43be79..acc1dcceca20  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Fri Dec 15 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   cpufreq/cooling-generic
+ - [deleted]                   device/boot-constraints
+ - [deleted]                   device/boot-constraints-bkp
+ - [deleted]                   device/boot-constraints-test
+ + 3e7ff818deb8...cf32c43302b7 bkp/device/boot-constraints -> bkp/device/boot-constraints (forced update)
+ + 7cc78c749eb8...7b0698a61bcb bkp/sched/cpufreq-flags -> bkp/sched/cpufreq-flags (forced update)
+ - [deleted]                   lko/device/boot-constraints
+ - [deleted]                   lko/imx/boot-constraints
+ * [new branch]                boot-constraints -> boot-constraints
+ * [new branch]                bkp/device/boot-constraints-bkp -> bkp/device/boot-constraints-bkp
+ * [new branch]                bkp/device/boot-constraints-test -> bkp/device/boot-constraints-test
+ * [new branch]                lko/boot-constraints -> lko/boot-constraints
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

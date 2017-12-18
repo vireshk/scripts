@@ -11787,3 +11787,203 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 4fe8b1afb6d0] updates
+ 3 files changed, 1123 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   d67f4f76cfb7..4fe8b1afb6d0  master -> master
+   acc1dcceca20..d67f4f76cfb7  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Mon Dec 18 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   bkp/cpufreq/cooling-generic
+ - [deleted]                   bkp/device/boot-constraints
+ - [deleted]                   bkp/device/boot-constraints-bkp
+ - [deleted]                   bkp/device/boot-constraints-test
+ + 439811df7cfc...1fa90b4b2444 lnext/akpm -> lnext/akpm (forced update)
+ + 20015962d586...9d06711c328f lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 41d8c16909eb...0c1f9d81ac36 lnext/master -> lnext/master (forced update)
+   a638349bf6c2..d455df0bcc00  lnext/stable -> lnext/stable
+   a638349bf6c2..1291a0d5049d  origin/HEAD -> origin/HEAD
+   a638349bf6c2..1291a0d5049d  origin/master -> origin/master
+ - [deleted]                   pm/acpi-ac
+ - [deleted]                   pm/acpi-apei
+ - [deleted]                   pm/acpi-apple
+ - [deleted]                   pm/acpi-assorted
+ - [deleted]                   pm/acpi-battery
+ - [deleted]                   pm/acpi-bind
+ - [deleted]                   pm/acpi-blacklist
+ - [deleted]                   pm/acpi-bus
+ - [deleted]                   pm/acpi-button
+ - [deleted]                   pm/acpi-cca
+ - [deleted]                   pm/acpi-cleanup
+ - [deleted]                   pm/acpi-config
+ - [deleted]                   pm/acpi-conversion
+ - [deleted]                   pm/acpi-cppc
+ - [deleted]                   pm/acpi-debug
+ - [deleted]                   pm/acpi-debug-fixes
+ - [deleted]                   pm/acpi-dev-pm
+ - [deleted]                   pm/acpi-doc
+ - [deleted]                   pm/acpi-dock
+ - [deleted]                   pm/acpi-driver-core
+ - [deleted]                   pm/acpi-drivers
+ - [deleted]                   pm/acpi-dsm
+ - [deleted]                   pm/acpi-ec
+ - [deleted]                   pm/acpi-ec-fixes
+ - [deleted]                   pm/acpi-enumeration
+ - [deleted]                   pm/acpi-fan
+ - [deleted]                   pm/acpi-fixes
+ - [deleted]                   pm/acpi-general
+ - [deleted]                   pm/acpi-gpe
+ - [deleted]                   pm/acpi-gpio
+ - [deleted]                   pm/acpi-headers
+ - [deleted]                   pm/acpi-hotplug
+ - [deleted]                   pm/acpi-init
+ - [deleted]                   pm/acpi-ipmi
+ - [deleted]                   pm/acpi-irq
+ - [deleted]                   pm/acpi-lpss
+ - [deleted]                   pm/acpi-misc
+ - [deleted]                   pm/acpi-modules
+ - [deleted]                   pm/acpi-numa
+ - [deleted]                   pm/acpi-osi
+ - [deleted]                   pm/acpi-osl
+ - [deleted]                   pm/acpi-ost
+ - [deleted]                   pm/acpi-pad
+ - [deleted]                   pm/acpi-pcc
+ - [deleted]                   pm/acpi-pci
+ - [deleted]                   pm/acpi-pci-hotplug
+ - [deleted]                   pm/acpi-platform
+ - [deleted]                   pm/acpi-pm
+ - [deleted]                   pm/acpi-pm-test
+ - [deleted]                   pm/acpi-pmic
+ - [deleted]                   pm/acpi-pnp
+ - [deleted]                   pm/acpi-proc
+ - [deleted]                   pm/acpi-processor
+ - [deleted]                   pm/acpi-resources
+ - [deleted]                   pm/acpi-scan
+ - [deleted]                   pm/acpi-sleep
+ - [deleted]                   pm/acpi-smbus
+ - [deleted]                   pm/acpi-soc
+ - [deleted]                   pm/acpi-sysfs
+ - [deleted]                   pm/acpi-tables
+ - [deleted]                   pm/acpi-thermal
+ - [deleted]                   pm/acpi-tools
+ - [deleted]                   pm/acpi-tools-fixes
+ - [deleted]                   pm/acpi-tpm
+ - [deleted]                   pm/acpi-trace
+ - [deleted]                   pm/acpi-utils
+ - [deleted]                   pm/acpi-video
+ - [deleted]                   pm/acpi-wdat
+ - [deleted]                   pm/acpi-x86
+ - [deleted]                   pm/acpica
+ - [deleted]                   pm/acpica-test
+ - [deleted]                   pm/archive/3.10/acpi-assorted
+ - [deleted]                   pm/archive/3.10/acpi-hotplug
+ - [deleted]                   pm/archive/3.10/acpi-lpss
+ - [deleted]                   pm/archive/3.10/acpi-pm
+ - [deleted]                   pm/archive/3.10/acpica
+ - [deleted]                   pm/archive/3.10/pm-assorted
+ - [deleted]                   pm/archive/3.10/pm-cpufreq
+ - [deleted]                   pm/archive/3.10/pm-cpuidle
+ - [deleted]                   pm/archive/3.10/pm-runtime
+ - [deleted]                   pm/archive/3.10/pnp
+ - [deleted]                   pm/archive/3.8/acpi-dev-pm
+ - [deleted]                   pm/archive/3.8/acpi-enumeration
+ - [deleted]                   pm/archive/3.9/acpi-assorted
+ - [deleted]                   pm/archive/3.9/acpi-cleanup
+ - [deleted]                   pm/archive/3.9/acpi-lpss
+ - [deleted]                   pm/archive/3.9/acpi-pm
+ - [deleted]                   pm/archive/3.9/acpi-scan
+ - [deleted]                   pm/archive/3.9/acpica
+ - [deleted]                   pm/archive/3.9/pm-assorted
+ - [deleted]                   pm/archive/3.9/pm-cpufreq
+ - [deleted]                   pm/archive/3.9/pm-cpuidle
+ - [deleted]                   pm/archive/3.9/pnp
+ + 08e3b39d8c71...2b4e8f9bb857 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ - [deleted]                   pm/cpu-hotplug
+ - [deleted]                   pm/cpufreq-fixes
+ - [deleted]                   pm/cpufreq-macros
+ - [deleted]                   pm/cpuidle-arm
+ - [deleted]                   pm/fixes
+ - [deleted]                   pm/fixes-next
+ - [deleted]                   pm/for-3.14-rc1
+ - [deleted]                   pm/freezer
+ - [deleted]                   pm/intel_pstate-baseline
+ - [deleted]                   pm/intel_pstate-fast-ramp-up
+ - [deleted]                   pm/intel_pstate-test-one-algo
+ - [deleted]                   pm/irq-pm
+   6424368125cb..65dad6d2447b  pm/linux-next -> pm/linux-next
+ - [deleted]                   pm/misc
+   31eb74318054..3487972d7fa6  pm/pm -> pm/pm
+ - [deleted]                   pm/pm-apm
+ - [deleted]                   pm/pm-assorted
+ - [deleted]                   pm/pm-avs
+ - [deleted]                   pm/pm-clk
+ - [deleted]                   pm/pm-config
+ - [deleted]                   pm/pm-core
+ - [deleted]                   pm/pm-core-fixes
+ - [deleted]                   pm/pm-cpu
+ - [deleted]                   pm/pm-cpufreq
+ - [deleted]                   pm/pm-cpufreq-experimental
+ - [deleted]                   pm/pm-cpufreq-fixes
+ - [deleted]                   pm/pm-cpufreq-sched
+ - [deleted]                   pm/pm-cpuidle
+ - [deleted]                   pm/pm-devfreq
+ - [deleted]                   pm/pm-docs
+ - [deleted]                   pm/pm-domains
+ - [deleted]                   pm/pm-drivers
+ - [deleted]                   pm/pm-epoll
+ - [deleted]                   pm/pm-fixes
+ - [deleted]                   pm/pm-general
+ - [deleted]                   pm/pm-genirq
+ - [deleted]                   pm/pm-hibernate
+ - [deleted]                   pm/pm-omap
+ - [deleted]                   pm/pm-opp
+ - [deleted]                   pm/pm-opp-fixes
+ - [deleted]                   pm/pm-pci
+ - [deleted]                   pm/pm-qos
+ - [deleted]                   pm/pm-runtime
+ - [deleted]                   pm/pm-s2i
+ - [deleted]                   pm/pm-sleep
+ - [deleted]                   pm/pm-tools
+ - [deleted]                   pm/pm-wakeirq
+ - [deleted]                   pm/pm-wakeup
+ - [deleted]                   pm/powercap
+ - [deleted]                   pm/suspend-to-idle
+   6424368125cb..65dad6d2447b  pm/testing -> pm/testing
+ * [new branch]                bkp/boot-constraints -> bkp/boot-constraints
+ * [new tag]                   next-20171214 -> next-20171214
+ * [new tag]                   next-20171215 -> next-20171215
+ * [new tag]                   pm-4.15-rc4 -> pm-4.15-rc4
+ * [new tag]                   v4.15-rc4 -> v4.15-rc4
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

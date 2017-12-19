@@ -11987,3 +11987,50 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 23228bc7c75e] updates
+ 3 files changed, 1748 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   4fe8b1afb6d0..23228bc7c75e  master -> master
+   d67f4f76cfb7..4fe8b1afb6d0  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Tue Dec 19 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   boot-constraints
+ + c4ac6620b957...476d7ae69184 opp/genpd-bindings -> opp/genpd-bindings (forced update)
+ + 2b4e8f9bb857...5ff86164ebb2 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 65dad6d2447b...274465280daf pm/linux-next -> pm/linux-next (forced update)
+   50c4c4e268a2..1291a0d5049d  pm/master -> pm/master
+ + 65dad6d2447b...274465280daf pm/testing -> pm/testing (forced update)
+ * [new branch]                boot-constraint -> boot-constraint
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

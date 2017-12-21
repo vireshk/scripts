@@ -12077,3 +12077,401 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master a8d6fb41910f] updates
+ 4 files changed, 927 insertions(+), 2 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   2363ccf9fff0..a8d6fb41910f  master -> master
+   23228bc7c75e..2363ccf9fff0  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Thu Dec 21 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 1fa90b4b2444...d538478a1575 lnext/akpm -> lnext/akpm (forced update)
+ + 9d06711c328f...62814caf0aa7 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 0c1f9d81ac36...7dc9f647127d lnext/master -> lnext/master (forced update)
+   d455df0bcc00..ace52288edf0  lnext/stable -> lnext/stable
+   1291a0d5049d..d1ce8ceb8ba8  origin/HEAD -> origin/HEAD
+   1291a0d5049d..d1ce8ceb8ba8  origin/master -> origin/master
+   1ecbd7170d65..1362d628cbce  pm/acpi -> pm/acpi
+ + 5ff86164ebb2...083c7143ce6d pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 274465280daf...973c92251393 pm/linux-next -> pm/linux-next (forced update)
+   3487972d7fa6..9cd238ab2dfe  pm/pm -> pm/pm
+ + 08c15b331af4...9b1270951308 tip/WIP.x86/pti -> tip/WIP.x86/pti (forced update)
+ + 2533a63618fc...2aeb07365bcd tip/WIP.x86/pti.base -> tip/WIP.x86/pti.base (forced update)
+ + 47c1ae7c3f95...1c8552669c63 tip/WIP.x86/pti.merge -> tip/WIP.x86/pti.merge (forced update)
+ + b6a912bbf060...deecd9d96d5d tip/auto-latest -> tip/auto-latest (forced update)
+   14c47b54b0d9..7f6f60a1ba52  tip/core-urgent-for-linus -> tip/core-urgent-for-linus
+   4d8a991d460d..0f7cda2b824b  tip/core/debug -> tip/core/debug
+   14c47b54b0d9..7f6f60a1ba52  tip/core/urgent -> tip/core/urgent
+   6de47a5e371f..f6f3732162b5  tip/efi/core -> tip/efi/core
+   5e351ad10699..92ccc262e485  tip/locking-urgent-for-linus -> tip/locking-urgent-for-linus
+   5e351ad10699..92ccc262e485  tip/locking/urgent -> tip/locking/urgent
+ + aed0d571f512...deecd9d96d5d tip/master -> tip/master (forced update)
+   34c9ca37aaec..643e345c95f0  tip/perf-urgent-for-linus -> tip/perf-urgent-for-linus
+   d0300e5e8d2f..faaf95677f33  tip/perf/core -> tip/perf/core
+   34c9ca37aaec..2e36463525b8  tip/perf/urgent -> tip/perf/urgent
+   c8a4364c33ac..179eb850ac57  tip/ras/core -> tip/ras/core
+   a4c3c04974d6..f73c52a5bcd1  tip/sched-urgent-for-linus -> tip/sched-urgent-for-linus
+   a4c3c04974d6..d94d105329e4  tip/sched/urgent -> tip/sched/urgent
+   54b8a2306b92..cef31d9af908  tip/timers-urgent-for-linus -> tip/timers-urgent-for-linus
+   aea3706cfc4d..cef31d9af908  tip/timers/urgent -> tip/timers/urgent
+   1c9dbd4615fd..544c037bee55  tip/tmp.tmp -> tip/tmp.tmp
+   88edb57d1e0b..215eada73e77  tip/x86-urgent-for-linus -> tip/x86-urgent-for-linus
+   141d3b1daacd..03dd604e1d51  tip/x86/apic -> tip/x86/apic
+   6c3b56b19730..930ba49b2ce7  tip/x86/boot -> tip/x86/boot
+   642e641cbea5..81bf665d00ba  tip/x86/cleanups -> tip/x86/cleanups
+   6d7e0ba2d2be..6454b3bdd138  tip/x86/urgent -> tip/x86/urgent
+ * [new branch]                cpufreq/schedutil-peterz -> cpufreq/schedutil-peterz
+ * [new branch]                peterz/WIP.futex -> peterz/WIP.futex
+ * [new branch]                peterz/WIP.hotplug -> peterz/WIP.hotplug
+ * [new branch]                peterz/WIP.irq -> peterz/WIP.irq
+ * [new branch]                peterz/WIP.locking/atomics -> peterz/WIP.locking/atomics
+ * [new branch]                peterz/WIP.sched-core-for-linus -> peterz/WIP.sched-core-for-linus
+ * [new branch]                peterz/WIP.sched/core -> peterz/WIP.sched/core
+ * [new branch]                peterz/WIP.sched/cpusallowed -> peterz/WIP.sched/cpusallowed
+ * [new branch]                peterz/WIP.timers -> peterz/WIP.timers
+ * [new branch]                peterz/WIP.upstream-fixes -> peterz/WIP.upstream-fixes
+ * [new branch]                peterz/WIP.x86-pti.base-for-linus -> peterz/WIP.x86-pti.base-for-linus
+ * [new branch]                peterz/WIP.x86-pti.base.prep-for-linus -> peterz/WIP.x86-pti.base.prep-for-linus
+ * [new branch]                peterz/WIP.x86-pti.entry-for-linus -> peterz/WIP.x86-pti.entry-for-linus
+ * [new branch]                peterz/WIP.x86/apic -> peterz/WIP.x86/apic
+ * [new branch]                peterz/WIP.x86/boot -> peterz/WIP.x86/boot
+ * [new branch]                peterz/WIP.x86/fpu -> peterz/WIP.x86/fpu
+ * [new branch]                peterz/WIP.x86/kpti -> peterz/WIP.x86/kpti
+ * [new branch]                peterz/WIP.x86/mm -> peterz/WIP.x86/mm
+ * [new branch]                peterz/WIP.x86/nodeid -> peterz/WIP.x86/nodeid
+ * [new branch]                peterz/WIP.x86/process -> peterz/WIP.x86/process
+ * [new branch]                peterz/WIP.x86/pti -> peterz/WIP.x86/pti
+ * [new branch]                peterz/WIP.x86/pti-upstream -> peterz/WIP.x86/pti-upstream
+ * [new branch]                peterz/WIP.x86/pti.base -> peterz/WIP.x86/pti.base
+ * [new branch]                peterz/WIP.x86/pti.base.prep -> peterz/WIP.x86/pti.base.prep
+ * [new branch]                peterz/WIP.x86/pti.entry -> peterz/WIP.x86/pti.entry
+ * [new branch]                peterz/WIP.x86/pti.merge -> peterz/WIP.x86/pti.merge
+ * [new branch]                peterz/arm64/efi -> peterz/arm64/efi
+ * [new branch]                peterz/atomic/core -> peterz/atomic/core
+ * [new branch]                peterz/auto-latest -> peterz/auto-latest
+ * [new branch]                peterz/core-debug-for-linus -> peterz/core-debug-for-linus
+ * [new branch]                peterz/core-debugobjects-for-linus -> peterz/core-debugobjects-for-linus
+ * [new branch]                peterz/core-efi-for-linus -> peterz/core-efi-for-linus
+ * [new branch]                peterz/core-iommu-for-linus -> peterz/core-iommu-for-linus
+ * [new branch]                peterz/core-lib-for-linus -> peterz/core-lib-for-linus
+ * [new branch]                peterz/core-locking-for-linus -> peterz/core-locking-for-linus
+ * [new branch]                peterz/core-memblock-for-linus -> peterz/core-memblock-for-linus
+ * [new branch]                peterz/core-mutexes-for-linus -> peterz/core-mutexes-for-linus
+ * [new branch]                peterz/core-objtool-for-linus -> peterz/core-objtool-for-linus
+ * [new branch]                peterz/core-printk-for-linus -> peterz/core-printk-for-linus
+ * [new branch]                peterz/core-rcu-for-linus -> peterz/core-rcu-for-linus
+ * [new branch]                peterz/core-resources-for-linus -> peterz/core-resources-for-linus
+ * [new branch]                peterz/core-signals-for-linus -> peterz/core-signals-for-linus
+ * [new branch]                peterz/core-smp-for-linus -> peterz/core-smp-for-linus
+ * [new branch]                peterz/core-stackprotector-for-linus -> peterz/core-stackprotector-for-linus
+ * [new branch]                peterz/core-types-for-linus -> peterz/core-types-for-linus
+ * [new branch]                peterz/core-urgent-for-linus -> peterz/core-urgent-for-linus
+ * [new branch]                peterz/core-watchdog-for-linus -> peterz/core-watchdog-for-linus
+ * [new branch]                peterz/core/core -> peterz/core/core
+ * [new branch]                peterz/core/debug -> peterz/core/debug
+ * [new branch]                peterz/core/debugobjects -> peterz/core/debugobjects
+ * [new branch]                peterz/core/documentation -> peterz/core/documentation
+ * [new branch]                peterz/core/efi -> peterz/core/efi
+ * [new branch]                peterz/core/iommu -> peterz/core/iommu
+ * [new branch]                peterz/core/lib -> peterz/core/lib
+ * [new branch]                peterz/core/locking2 -> peterz/core/locking2
+ * [new branch]                peterz/core/memblock -> peterz/core/memblock
+ * [new branch]                peterz/core/mutex -> peterz/core/mutex
+ * [new branch]                peterz/core/mutexes -> peterz/core/mutexes
+ * [new branch]                peterz/core/objtool -> peterz/core/objtool
+ * [new branch]                peterz/core/printk -> peterz/core/printk
+ * [new branch]                peterz/core/rcu -> peterz/core/rcu
+ * [new branch]                peterz/core/resources -> peterz/core/resources
+ * [new branch]                peterz/core/signals -> peterz/core/signals
+ * [new branch]                peterz/core/smp -> peterz/core/smp
+ * [new branch]                peterz/core/stackprotector -> peterz/core/stackprotector
+ * [new branch]                peterz/core/types -> peterz/core/types
+ * [new branch]                peterz/core/urgent -> peterz/core/urgent
+ * [new branch]                peterz/core/watchdog -> peterz/core/watchdog
+ * [new branch]                peterz/debug/tmp -> peterz/debug/tmp
+ * [new branch]                peterz/efi-core-for-linus -> peterz/efi-core-for-linus
+ * [new branch]                peterz/efi-urgent-for-linus -> peterz/efi-urgent-for-linus
+ * [new branch]                peterz/efi/core -> peterz/efi/core
+ * [new branch]                peterz/efi/urgent -> peterz/efi/urgent
+ * [new branch]                peterz/irq-core-for-linus -> peterz/irq-core-for-linus
+ * [new branch]                peterz/irq-irqdomain-arm-for-linus -> peterz/irq-irqdomain-arm-for-linus
+ * [new branch]                peterz/irq-irqdomain-for-linus -> peterz/irq-irqdomain-for-linus
+ * [new branch]                peterz/irq-urgent-for-linus -> peterz/irq-urgent-for-linus
+ * [new branch]                peterz/irq/core -> peterz/irq/core
+ * [new branch]                peterz/irq/for-arm -> peterz/irq/for-arm
+ * [new branch]                peterz/irq/for-block -> peterz/irq/for-block
+ * [new branch]                peterz/irq/for-gpio -> peterz/irq/for-gpio
+ * [new branch]                peterz/irq/urgent -> peterz/irq/urgent
+ * [new branch]                peterz/locking-arch-for-linus -> peterz/locking-arch-for-linus
+ * [new branch]                peterz/locking-core-for-linus -> peterz/locking-core-for-linus
+ * [new branch]                peterz/locking-rwsem-for-linus -> peterz/locking-rwsem-for-linus
+ * [new branch]                peterz/locking-urgent-for-linus -> peterz/locking-urgent-for-linus
+ * [new branch]                peterz/locking/arch -> peterz/locking/arch
+ * [new branch]                peterz/locking/arch-atomic -> peterz/locking/arch-atomic
+ * [new branch]                peterz/locking/atomics -> peterz/locking/atomics
+ * [new branch]                peterz/locking/core -> peterz/locking/core
+ * [new branch]                peterz/locking/rwsem -> peterz/locking/rwsem
+ * [new branch]                peterz/locking/urgent -> peterz/locking/urgent
+ * [new branch]                peterz/master -> peterz/master
+ * [new branch]                peterz/mm-kasan-for-linus -> peterz/mm-kasan-for-linus
+ * [new branch]                peterz/mm-pat-for-linus -> peterz/mm-pat-for-linus
+ * [new branch]                peterz/mm-pkeys-for-linus -> peterz/mm-pkeys-for-linus
+ * [new branch]                peterz/mm-readonly-for-linus -> peterz/mm-readonly-for-linus
+ * [new branch]                peterz/mm-urgent-for-linus -> peterz/mm-urgent-for-linus
+ * [new branch]                peterz/mm/kasan -> peterz/mm/kasan
+ * [new branch]                peterz/mm/pat -> peterz/mm/pat
+ * [new branch]                peterz/mm/pkeys -> peterz/mm/pkeys
+ * [new branch]                peterz/mm/readonly -> peterz/mm/readonly
+ * [new branch]                peterz/mm/urgent -> peterz/mm/urgent
+ * [new branch]                peterz/numa/base -> peterz/numa/base
+ * [new branch]                peterz/numa/core -> peterz/numa/core
+ * [new branch]                peterz/numa/misc -> peterz/numa/misc
+ * [new branch]                peterz/perf-core-for-linus -> peterz/perf-core-for-linus
+ * [new branch]                peterz/perf-uprobes-for-linus -> peterz/perf-uprobes-for-linus
+ * [new branch]                peterz/perf-urgent-for-linus -> peterz/perf-urgent-for-linus
+ * [new branch]                peterz/perf-watchdog-for-linus -> peterz/perf-watchdog-for-linus
+ * [new branch]                peterz/perf/bench -> peterz/perf/bench
+ * [new branch]                peterz/perf/core -> peterz/perf/core
+ * [new branch]                peterz/perf/fast -> peterz/perf/fast
+ * [new branch]                peterz/perf/hw-branch-sampling -> peterz/perf/hw-branch-sampling
+ * [new branch]                peterz/perf/hw_breakpoints -> peterz/perf/hw_breakpoints
+ * [new branch]                peterz/perf/jump-labels -> peterz/perf/jump-labels
+ * [new branch]                peterz/perf/kprobes -> peterz/perf/kprobes
+ * [new branch]                peterz/perf/timer -> peterz/perf/timer
+ * [new branch]                peterz/perf/uprobes -> peterz/perf/uprobes
+ * [new branch]                peterz/perf/urgent -> peterz/perf/urgent
+ * [new branch]                peterz/perf/watchdog -> peterz/perf/watchdog
+ * [new branch]                peterz/perf/wip -> peterz/perf/wip
+ * [new branch]                peterz/perf/x86 -> peterz/perf/x86
+ * [new branch]                peterz/perf/x86-ibs -> peterz/perf/x86-ibs
+ * [new branch]                peterz/queue/irq/arm -> peterz/queue/irq/arm
+ * [new branch]                peterz/queue/irq/gpio -> peterz/queue/irq/gpio
+ * [new branch]                peterz/queue/irq/pinctrl -> peterz/queue/irq/pinctrl
+ * [new branch]                peterz/queue/irq/powerpc -> peterz/queue/irq/powerpc
+ * [new branch]                peterz/queue/x86/asm -> peterz/queue/x86/asm
+ * [new branch]                peterz/queue/x86/cpu -> peterz/queue/x86/cpu
+ * [new branch]                peterz/ras-core-for-linus -> peterz/ras-core-for-linus
+ * [new branch]                peterz/ras-urgent-for-linus -> peterz/ras-urgent-for-linus
+ * [new branch]                peterz/ras/core -> peterz/ras/core
+ * [new branch]                peterz/ras/urgent -> peterz/ras/urgent
+ * [new branch]                peterz/rcu-urgent-for-linus -> peterz/rcu-urgent-for-linus
+ * [new branch]                peterz/rcu/urgent -> peterz/rcu/urgent
+ * [new branch]                peterz/rfc/perf -> peterz/rfc/perf
+ * [new branch]                peterz/sched-core-for-linus -> peterz/sched-core-for-linus
+ * [new branch]                peterz/sched-idle-for-linus -> peterz/sched-idle-for-linus
+ * [new branch]                peterz/sched-mm-for-linus -> peterz/sched-mm-for-linus
+ * [new branch]                peterz/sched-urgent-for-linus -> peterz/sched-urgent-for-linus
+ * [new branch]                peterz/sched/arch -> peterz/sched/arch
+ * [new branch]                peterz/sched/core -> peterz/sched/core
+ * [new branch]                peterz/sched/hrtimers -> peterz/sched/hrtimers
+ * [new branch]                peterz/sched/idle -> peterz/sched/idle
+ * [new branch]                peterz/sched/locking -> peterz/sched/locking
+ * [new branch]                peterz/sched/mm -> peterz/sched/mm
+ * [new branch]                peterz/sched/numa -> peterz/sched/numa
+ * [new branch]                peterz/sched/urgent -> peterz/sched/urgent
+ * [new branch]                peterz/sched/wait -> peterz/sched/wait
+ * [new branch]                peterz/smp-hotplug-for-linus -> peterz/smp-hotplug-for-linus
+ * [new branch]                peterz/smp-urgent-for-linus -> peterz/smp-urgent-for-linus
+ * [new branch]                peterz/smp/for-block -> peterz/smp/for-block
+ * [new branch]                peterz/smp/hotplug -> peterz/smp/hotplug
+ * [new branch]                peterz/smp/testing -> peterz/smp/testing
+ * [new branch]                peterz/smp/threadalloc -> peterz/smp/threadalloc
+ * [new branch]                peterz/smp/urgent -> peterz/smp/urgent
+ * [new branch]                peterz/test-test-for-linus -> peterz/test-test-for-linus
+ * [new branch]                peterz/test/test -> peterz/test/test
+ * [new branch]                peterz/timers-2038-for-linus -> peterz/timers-2038-for-linus
+ * [new branch]                peterz/timers-core-for-linus -> peterz/timers-core-for-linus
+ * [new branch]                peterz/timers-nohz-for-linus -> peterz/timers-nohz-for-linus
+ * [new branch]                peterz/timers-urgent-for-linus -> peterz/timers-urgent-for-linus
+ * [new branch]                peterz/timers/2038 -> peterz/timers/2038
+ * [new branch]                peterz/timers/core -> peterz/timers/core
+ * [new branch]                peterz/timers/for-arm -> peterz/timers/for-arm
+ * [new branch]                peterz/timers/nohz -> peterz/timers/nohz
+ * [new branch]                peterz/timers/refactor -> peterz/timers/refactor
+ * [new branch]                peterz/timers/urgent -> peterz/timers/urgent
+ * [new branch]                peterz/tip -> peterz/tip
+ * [new branch]                peterz/tmp.fpu -> peterz/tmp.fpu
+ * [new branch]                peterz/tmp.irq -> peterz/tmp.irq
+ * [new branch]                peterz/tmp.smp/hotplug -> peterz/tmp.smp/hotplug
+ * [new branch]                peterz/tmp.tmp -> peterz/tmp.tmp
+ * [new branch]                peterz/tmp.tmp2 -> peterz/tmp.tmp2
+ * [new branch]                peterz/x86-acpi-for-linus -> peterz/x86-acpi-for-linus
+ * [new branch]                peterz/x86-apic-for-linus -> peterz/x86-apic-for-linus
+ * [new branch]                peterz/x86-asm-for-linus -> peterz/x86-asm-for-linus
+ * [new branch]                peterz/x86-asmlinkage-for-linus -> peterz/x86-asmlinkage-for-linus
+ * [new branch]                peterz/x86-atomic-for-linus -> peterz/x86-atomic-for-linus
+ * [new branch]                peterz/x86-boot-for-linus -> peterz/x86-boot-for-linus
+ * [new branch]                peterz/x86-bsp-hotplug-for-linus -> peterz/x86-bsp-hotplug-for-linus
+ * [new branch]                peterz/x86-build-for-linus -> peterz/x86-build-for-linus
+ * [new branch]                peterz/x86-cache-for-linus -> peterz/x86-cache-for-linus
+ * [new branch]                peterz/x86-cleanups-for-linus -> peterz/x86-cleanups-for-linus
+ * [new branch]                peterz/x86-core-for-linus -> peterz/x86-core-for-linus
+ * [new branch]                peterz/x86-cpu-for-linus -> peterz/x86-cpu-for-linus
+ * [new branch]                peterz/x86-cpufeature-for-linus -> peterz/x86-cpufeature-for-linus
+ * [new branch]                peterz/x86-debug-for-linus -> peterz/x86-debug-for-linus
+ * [new branch]                peterz/x86-efi-for-linus -> peterz/x86-efi-for-linus
+ * [new branch]                peterz/x86-efi-kexec-for-linus -> peterz/x86-efi-kexec-for-linus
+ * [new branch]                peterz/x86-eficross-for-linus -> peterz/x86-eficross-for-linus
+ * [new branch]                peterz/x86-extable-for-linus -> peterz/x86-extable-for-linus
+ * [new branch]                peterz/x86-fb-for-linus -> peterz/x86-fb-for-linus
+ * [new branch]                peterz/x86-fpu-for-linus -> peterz/x86-fpu-for-linus
+ * [new branch]                peterz/x86-geode-for-linus -> peterz/x86-geode-for-linus
+ * [new branch]                peterz/x86-hash-for-linus -> peterz/x86-hash-for-linus
+ * [new branch]                peterz/x86-headers-for-linus -> peterz/x86-headers-for-linus
+ * [new branch]                peterz/x86-hyperv-for-linus -> peterz/x86-hyperv-for-linus
+ * [new branch]                peterz/x86-idle-for-linus -> peterz/x86-idle-for-linus
+ * [new branch]                peterz/x86-intel-mid-for-linus -> peterz/x86-intel-mid-for-linus
+ * [new branch]                peterz/x86-iommu-for-linus -> peterz/x86-iommu-for-linus
+ * [new branch]                peterz/x86-irq-for-linus -> peterz/x86-irq-for-linus
+ * [new branch]                peterz/x86-jumplabel-for-linus -> peterz/x86-jumplabel-for-linus
+ * [new branch]                peterz/x86-kaslr-for-linus -> peterz/x86-kaslr-for-linus
+ * [new branch]                peterz/x86-kdump-for-linus -> peterz/x86-kdump-for-linus
+ * [new branch]                peterz/x86-mce-for-linus -> peterz/x86-mce-for-linus
+ * [new branch]                peterz/x86-microcode-for-linus -> peterz/x86-microcode-for-linus
+ * [new branch]                peterz/x86-mm-for-linus -> peterz/x86-mm-for-linus
+ * [new branch]                peterz/x86-mm-for-xen -> peterz/x86-mm-for-xen
+ * [new branch]                peterz/x86-mpx-for-linus -> peterz/x86-mpx-for-linus
+ * [new branch]                peterz/x86-nuke-platforms-for-linus -> peterz/x86-nuke-platforms-for-linus
+ * [new branch]                peterz/x86-nuke386-for-linus -> peterz/x86-nuke386-for-linus
+ * [new branch]                peterz/x86-paravirt-for-linus -> peterz/x86-paravirt-for-linus
+ * [new branch]                peterz/x86-platform-for-linus -> peterz/x86-platform-for-linus
+ * [new branch]                peterz/x86-pmem-for-linus -> peterz/x86-pmem-for-linus
+ * [new branch]                peterz/x86-process-for-linus -> peterz/x86-process-for-linus
+ * [new branch]                peterz/x86-pti-for-linus -> peterz/x86-pti-for-linus
+ * [new branch]                peterz/x86-ras-for-linus -> peterz/x86-ras-for-linus
+ * [new branch]                peterz/x86-rdrand-for-linus -> peterz/x86-rdrand-for-linus
+ * [new branch]                peterz/x86-reboot-for-linus -> peterz/x86-reboot-for-linus
+ * [new branch]                peterz/x86-seccomp-for-linus -> peterz/x86-seccomp-for-linus
+ * [new branch]                peterz/x86-smap-for-linus -> peterz/x86-smap-for-linus
+ * [new branch]                peterz/x86-spinlocks-for-linus -> peterz/x86-spinlocks-for-linus
+ * [new branch]                peterz/x86-syscall-for-linus -> peterz/x86-syscall-for-linus
+ * [new branch]                peterz/x86-threadinfo-for-linus -> peterz/x86-threadinfo-for-linus
+ * [new branch]                peterz/x86-timers-for-linus -> peterz/x86-timers-for-linus
+ * [new branch]                peterz/x86-trace-for-linus -> peterz/x86-trace-for-linus
+ * [new branch]                peterz/x86-tracing-for-linus -> peterz/x86-tracing-for-linus
+ * [new branch]                peterz/x86-trampoline-for-linus -> peterz/x86-trampoline-for-linus
+ * [new branch]                peterz/x86-uaccess-for-linus -> peterz/x86-uaccess-for-linus
+ * [new branch]                peterz/x86-uapi-for-linus -> peterz/x86-uapi-for-linus
+ * [new branch]                peterz/x86-urgent-for-linus -> peterz/x86-urgent-for-linus
+ * [new branch]                peterz/x86-urgent-for-linus-fixed -> peterz/x86-urgent-for-linus-fixed
+ * [new branch]                peterz/x86-uv-for-linus -> peterz/x86-uv-for-linus
+ * [new branch]                peterz/x86-vdso-for-linus -> peterz/x86-vdso-for-linus
+ * [new branch]                peterz/x86-x32-for-linus -> peterz/x86-x32-for-linus
+ * [new branch]                peterz/x86-xsave-for-linus -> peterz/x86-xsave-for-linus
+ * [new branch]                peterz/x86/acpi -> peterz/x86/acpi
+ * [new branch]                peterz/x86/amba -> peterz/x86/amba
+ * [new branch]                peterz/x86/apic -> peterz/x86/apic
+ * [new branch]                peterz/x86/apic-picks -> peterz/x86/apic-picks
+ * [new branch]                peterz/x86/asm -> peterz/x86/asm
+ * [new branch]                peterz/x86/asmlinkage -> peterz/x86/asmlinkage
+ * [new branch]                peterz/x86/atomic -> peterz/x86/atomic
+ * [new branch]                peterz/x86/autoprobe -> peterz/x86/autoprobe
+ * [new branch]                peterz/x86/boot -> peterz/x86/boot
+ * [new branch]                peterz/x86/bsp-hotplug -> peterz/x86/bsp-hotplug
+ * [new branch]                peterz/x86/build -> peterz/x86/build
+ * [new branch]                peterz/x86/cache -> peterz/x86/cache
+ * [new branch]                peterz/x86/cleanups -> peterz/x86/cleanups
+ * [new branch]                peterz/x86/core -> peterz/x86/core
+ * [new branch]                peterz/x86/cpu -> peterz/x86/cpu
+ * [new branch]                peterz/x86/cpufeature -> peterz/x86/cpufeature
+ * [new branch]                peterz/x86/debug -> peterz/x86/debug
+ * [new branch]                peterz/x86/efi -> peterz/x86/efi
+ * [new branch]                peterz/x86/efi-kexec -> peterz/x86/efi-kexec
+ * [new branch]                peterz/x86/efi-mixed -> peterz/x86/efi-mixed
+ * [new branch]                peterz/x86/efi2 -> peterz/x86/efi2
+ * [new branch]                peterz/x86/eficross -> peterz/x86/eficross
+ * [new branch]                peterz/x86/espfix -> peterz/x86/espfix
+ * [new branch]                peterz/x86/extable -> peterz/x86/extable
+ * [new branch]                peterz/x86/fb -> peterz/x86/fb
+ * [new branch]                peterz/x86/for-kvm -> peterz/x86/for-kvm
+ * [new branch]                peterz/x86/for-xen -> peterz/x86/for-xen
+ * [new branch]                peterz/x86/fpu -> peterz/x86/fpu
+ * [new branch]                peterz/x86/ftrace -> peterz/x86/ftrace
+ * [new branch]                peterz/x86/geode -> peterz/x86/geode
+ * [new branch]                peterz/x86/hash -> peterz/x86/hash
+ * [new branch]                peterz/x86/headers -> peterz/x86/headers
+ * [new branch]                peterz/x86/hyperv -> peterz/x86/hyperv
+ * [new branch]                peterz/x86/idle -> peterz/x86/idle
+ * [new branch]                peterz/x86/intel-mid -> peterz/x86/intel-mid
+ * [new branch]                peterz/x86/iommu -> peterz/x86/iommu
+ * [new branch]                peterz/x86/irq -> peterz/x86/irq
+ * [new branch]                peterz/x86/jumplabel -> peterz/x86/jumplabel
+ * [new branch]                peterz/x86/kaslr -> peterz/x86/kaslr
+ * [new branch]                peterz/x86/kdump -> peterz/x86/kdump
+ * [new branch]                peterz/x86/ld-fix -> peterz/x86/ld-fix
+ * [new branch]                peterz/x86/mce -> peterz/x86/mce
+ * [new branch]                peterz/x86/microcode -> peterz/x86/microcode
+ * [new branch]                peterz/x86/mm -> peterz/x86/mm
+ * [new branch]                peterz/x86/mm2 -> peterz/x86/mm2
+ * [new branch]                peterz/x86/mpx -> peterz/x86/mpx
+ * [new branch]                peterz/x86/nuke-platforms -> peterz/x86/nuke-platforms
+ * [new branch]                peterz/x86/nuke386 -> peterz/x86/nuke386
+ * [new branch]                peterz/x86/paravirt -> peterz/x86/paravirt
+ * [new branch]                peterz/x86/pkeys -> peterz/x86/pkeys
+ * [new branch]                peterz/x86/platform -> peterz/x86/platform
+ * [new branch]                peterz/x86/pmem -> peterz/x86/pmem
+ * [new branch]                peterz/x86/process -> peterz/x86/process
+ * [new branch]                peterz/x86/pti -> peterz/x86/pti
+ * [new branch]                peterz/x86/rdrand -> peterz/x86/rdrand
+ * [new branch]                peterz/x86/reboot -> peterz/x86/reboot
+ * [new branch]                peterz/x86/seccomp -> peterz/x86/seccomp
+ * [new branch]                peterz/x86/smap -> peterz/x86/smap
+ * [new branch]                peterz/x86/spinlocks -> peterz/x86/spinlocks
+ * [new branch]                peterz/x86/stackprotector -> peterz/x86/stackprotector
+ * [new branch]                peterz/x86/syscall -> peterz/x86/syscall
+ * [new branch]                peterz/x86/threadinfo -> peterz/x86/threadinfo
+ * [new branch]                peterz/x86/timers -> peterz/x86/timers
+ * [new branch]                peterz/x86/trace -> peterz/x86/trace
+ * [new branch]                peterz/x86/tracing -> peterz/x86/tracing
+ * [new branch]                peterz/x86/trampoline -> peterz/x86/trampoline
+ * [new branch]                peterz/x86/uaccess -> peterz/x86/uaccess
+ * [new branch]                peterz/x86/uapi -> peterz/x86/uapi
+ * [new branch]                peterz/x86/urgent -> peterz/x86/urgent
+ * [new branch]                peterz/x86/uv -> peterz/x86/uv
+ * [new branch]                peterz/x86/vdso -> peterz/x86/vdso
+ * [new branch]                peterz/x86/vdso-old -> peterz/x86/vdso-old
+ * [new branch]                peterz/x86/x32 -> peterz/x86/x32
+ * [new branch]                peterz/x86/xsave -> peterz/x86/xsave
+ * [new branch]                tip/WIP.x86-pti.base-for-linus -> tip/WIP.x86-pti.base-for-linus
+ * [new branch]                tip/WIP.x86-pti.base.prep-for-linus -> tip/WIP.x86-pti.base.prep-for-linus
+ * [new branch]                tip/WIP.x86-pti.entry-for-linus -> tip/WIP.x86-pti.entry-for-linus
+ * [new branch]                tip/WIP.x86/pti-upstream -> tip/WIP.x86/pti-upstream
+ * [new branch]                tip/WIP.x86/pti.base.prep -> tip/WIP.x86/pti.base.prep
+ * [new branch]                tip/WIP.x86/pti.entry -> tip/WIP.x86/pti.entry
+ * [new branch]                tip/x86-pti-for-linus -> tip/x86-pti-for-linus
+ * [new branch]                tip/x86/pti -> tip/x86/pti
+ * [new tag]                   acpi-4.15-rc5 -> acpi-4.15-rc5
+ * [new tag]                   next-20171220 -> next-20171220
+ * [new tag]                   pm-4.15-rc5 -> pm-4.15-rc5
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

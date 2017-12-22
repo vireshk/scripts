@@ -1,2 +1,2 @@
 [gerrit]
-	createChangeId = false;
+	createChangeId = true;

@@ -12567,3 +12567,84 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master f66a5465750d] updates
+ 6 files changed, 676 insertions(+), 5 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   ae182ee293c0..f66a5465750d  master -> master
+   a8d6fb41910f..ae182ee293c0  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Tue Dec 26 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + a39b7aebfbf1...725f5f7e8d1b bkp/android-4.9 -> bkp/android-4.9 (forced update)
+ + 4cf6923e5041...bb7915611761 bkp/android-4.9-hikey -> bkp/android-4.9-hikey (forced update)
+ + 476d7ae69184...beb1b3d5f1bd bkp/opp/genpd-bindings -> bkp/opp/genpd-bindings (forced update)
+ - [deleted]                   bkp/opp/genpd-bindings-code
+ + c4ac6620b957...beb1b3d5f1bd bkp/opp/linux-next -> bkp/opp/linux-next (forced update)
+ + d538478a1575...6f9f8078770f lnext/akpm -> lnext/akpm (forced update)
+ + 62814caf0aa7...9bda7786fcb8 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 7dc9f647127d...3514267557aa lnext/master -> lnext/master (forced update)
+   ace52288edf0..9035a8961b50  lnext/stable -> lnext/stable
+   d1ce8ceb8ba8..464e1d5f23cc  origin/HEAD -> origin/HEAD
+   d1ce8ceb8ba8..464e1d5f23cc  origin/master -> origin/master
+ + fae02a10ca4b...7a0c29d3d23f peterz/WIP.timers -> peterz/WIP.timers (forced update)
+ + f9de9df48a6a...fde2976c9aef peterz/WIP.x86/pti -> peterz/WIP.x86/pti (forced update)
+ + 1c8552669c63...d1ce8ceb8ba8 peterz/WIP.x86/pti.merge -> peterz/WIP.x86/pti.merge (forced update)
+ + deecd9d96d5d...4a5dbf8b3a7c peterz/auto-latest -> peterz/auto-latest (forced update)
+ + b1cec23226b6...2377e14a5863 peterz/debug/tmp -> peterz/debug/tmp (forced update)
+ + 3326a74eda12...5614c5375a4a peterz/master -> peterz/master (forced update)
+ + 6eae35a90d66...e6c2be27b80f peterz/perf/core -> peterz/perf/core (forced update)
+ - [deleted]                   peterz/perf/wip
+ + 38e19dbe1286...1cff2885503f peterz/sched/core -> peterz/sched/core (forced update)
+ + 9ba0726202b3...9e9492c76cab peterz/x86/core -> peterz/x86/core (forced update)
+   418492ba40b2..d1ce8ceb8ba8  peterz/x86/platform -> peterz/x86/platform
+ + 083c7143ce6d...08fb18e5a911 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 973c92251393...08fb18e5a911 pm/linux-next -> pm/linux-next (forced update)
+   1291a0d5049d..464e1d5f23cc  pm/master -> pm/master
+ + 274465280daf...08fb18e5a911 pm/testing -> pm/testing (forced update)
+ + fae02a10ca4b...7a0c29d3d23f tip/WIP.timers -> tip/WIP.timers (forced update)
+ + 9b1270951308...9f5cb6b32d9e tip/WIP.x86/pti -> tip/WIP.x86/pti (forced update)
+   2aeb07365bcd..a14a6c466f07  tip/WIP.x86/pti.base -> tip/WIP.x86/pti.base
+ + 1c8552669c63...d1ce8ceb8ba8 tip/WIP.x86/pti.merge -> tip/WIP.x86/pti.merge (forced update)
+ + deecd9d96d5d...a0648d04ac50 tip/auto-latest -> tip/auto-latest (forced update)
+ + deecd9d96d5d...6c68a9b4dc07 tip/master -> tip/master (forced update)
+ + eeb17ad55b3f...f6c4fd506cb6 tip/x86-pti-for-linus -> tip/x86-pti-for-linus (forced update)
+   418492ba40b2..d1ce8ceb8ba8  tip/x86/platform -> tip/x86/platform
+ + f3b5ad89de16...f6c4fd506cb6 tip/x86/pti -> tip/x86/pti (forced update)
+ * [new branch]                bkp/opp/genpd/updates -> bkp/opp/genpd/updates
+ * [new branch]                peterz/perf/testing -> peterz/perf/testing
+ * [new branch]                peterz/sched/testing -> peterz/sched/testing
+ * [new branch]                pmlo/opp/genpd/updates -> pmlo/opp/genpd/updates
+ * [new tag]                   next-20171222 -> next-20171222
+ * [new tag]                   v4.15-rc5 -> v4.15-rc5
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

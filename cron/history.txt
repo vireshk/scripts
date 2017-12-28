@@ -12688,3 +12688,59 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 37768a09244e] updates
+ 3 files changed, 502 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   ddef8e579da4..37768a09244e  master -> master
+   f66a5465750d..ddef8e579da4  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Thu Dec 28 13:00:01 IST 2017
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 725f5f7e8d1b...67987b753434 android-4.9 -> android-4.9 (forced update)
+   aa59a26157b2..587ae2c7e1ad  aosp-hikey/android-hikey-linaro-4.4 -> aosp-hikey/android-hikey-linaro-4.4
+   a0caa11e6b11..19675ab872e1  aosp-hikey/android-hikey-linaro-4.9 -> aosp-hikey/android-hikey-linaro-4.9
+   a59008538828..98ff79732c73  aosp/android-3.18 -> aosp/android-3.18
+   610c835673f3..55b3b8c2b574  aosp/android-4.4 -> aosp/android-4.4
+   97b3e2a0fb10..57309d3711f8  aosp/android-4.4-n -> aosp/android-4.4-n
+   71f69b39f16f..59e505a99e19  aosp/android-4.4-o -> aosp/android-4.4-o
+   250637879165..cb7518e6167c  aosp/android-4.9 -> aosp/android-4.9
+   88b151110d8a..8dd0f52d9b33  aosp/android-4.9-o -> aosp/android-4.9-o
+   cc43e740474a..d10767e21b95  aosp/experimental/android-4.14 -> aosp/experimental/android-4.14
+ - [deleted]                   aosp/experimental/android-4.14-eas-integration
+   1e6e21c74c7c..8da23652fa43  aosp/upstream-linux-3.18.y -> aosp/upstream-linux-3.18.y
+   96c00ece76be..03028e068a1f  aosp/upstream-linux-4.4.y -> aosp/upstream-linux-4.4.y
+   b632d710149f..2df397931072  aosp/upstream-linux-4.9.y -> aosp/upstream-linux-4.9.y
+   464e1d5f23cc..beacbc68ac3e  origin/HEAD -> origin/HEAD
+   464e1d5f23cc..beacbc68ac3e  origin/master -> origin/master
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

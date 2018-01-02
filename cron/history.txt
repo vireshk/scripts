@@ -12744,3 +12744,55 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 0d0e8567898a] updates
+ 4 files changed, 553 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   37768a09244e..0d0e8567898a  master -> master
+   ddef8e579da4..37768a09244e  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Tue Jan  2 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 67987b753434...80703e1d3cce android-4.9 -> android-4.9 (forced update)
+ + 725f5f7e8d1b...67987b753434 bkp/android-4.9 -> bkp/android-4.9 (forced update)
+   beacbc68ac3e..30a7acd57389  origin/HEAD -> origin/HEAD
+   beacbc68ac3e..30a7acd57389  origin/master -> origin/master
+ + 08fb18e5a911...d6a9ba3e497d pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 08fb18e5a911...f20bf7f9a6a4 pm/linux-next -> pm/linux-next (forced update)
+   464e1d5f23cc..30a7acd57389  pm/master -> pm/master
+   9cd238ab2dfe..466a2b42d676  pm/pm -> pm/pm
+ + 08fb18e5a911...f20bf7f9a6a4 pm/testing -> pm/testing (forced update)
+ * [new branch]                thermal/cooling -> thermal/cooling
+ * [new tag]                   pm-4.15-rc6 -> pm-4.15-rc6
+ * [new tag]                   v4.15-rc6 -> v4.15-rc6
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

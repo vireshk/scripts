@@ -12796,3 +12796,50 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 1752f95f2aa6] updates
+ 8 files changed, 959 insertions(+), 4 deletions(-)
+ create mode 100644 .Skype/shared_dynco/dc.db-journal
+ create mode 100644 .Skype/shared_dynco/dc.lock
+ create mode 100644 .Skype/shared_httpfe/queue.lock
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   0d0e8567898a..1752f95f2aa6  master -> master
+   37768a09244e..0d0e8567898a  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Wed Jan  3 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   bb7915611761..a385731c726f  android-4.9-hikey -> android-4.9-hikey
+ + 67987b753434...80703e1d3cce bkp/android-4.9 -> bkp/android-4.9 (forced update)
+   1291a0d5049d..e856f078bcf1  pmko/opp/linux-next -> pmko/opp/linux-next
+ * [new branch]                bkp/thermal/cooling -> bkp/thermal/cooling
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -12843,3 +12843,74 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 437ba30bdd5d] updates
+ 8 files changed, 760 insertions(+), 4 deletions(-)
+ delete mode 100644 .Skype/shared_dynco/dc.db-journal
+ delete mode 100644 .Skype/shared_dynco/dc.lock
+ delete mode 100644 .Skype/shared_httpfe/queue.lock
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   1752f95f2aa6..437ba30bdd5d  master -> master
+   0d0e8567898a..1752f95f2aa6  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Thu Jan  4 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 80703e1d3cce...0d23ccb9d6f6 android-4.9 -> android-4.9 (forced update)
+ + a385731c726f...d34cca059185 android-4.9-hikey -> android-4.9-hikey (forced update)
+ + 09947bfdaf86...4f27541c4810 thermal/cooling -> thermal/cooling (forced update)
+   3658cf895d22..8e8dca63d322  aosp/android-3.10 -> aosp/android-3.10
+   98ff79732c73..73cbcb8a02f9  aosp/android-3.18 -> aosp/android-3.18
+   7b3db9492488..4f8be956718c  aosp/android-3.18-n-release -> aosp/android-3.18-n-release
+   d83cb340cb60..174b25139e68  aosp/android-3.18-o-mr1 -> aosp/android-3.18-o-mr1
+   845e5019650c..da13288fe24e  aosp/android-3.18-o-release -> aosp/android-3.18-o-release
+   55b3b8c2b574..8cbe01c651bb  aosp/android-4.4 -> aosp/android-4.4
+   4395789bae0a..6d3fee538331  aosp/android-4.4-n-release -> aosp/android-4.4-n-release
+   554843b57de8..855473445f15  aosp/android-4.4-o-mr1 -> aosp/android-4.4-o-mr1
+   83fbd12c4a46..d113bf0ce2ed  aosp/android-4.4-o-release -> aosp/android-4.4-o-release
+   cb7518e6167c..9e5dd8ed9b9b  aosp/android-4.9 -> aosp/android-4.9
+   8dd0f52d9b33..7d01cc58607d  aosp/android-4.9-o -> aosp/android-4.9-o
+   22e9a46bea0c..da4c75028bef  aosp/android-4.9-o-mr1 -> aosp/android-4.9-o-mr1
+   c80cb1668c1c..e3264f851cff  aosp/android-4.9-o-release -> aosp/android-4.9-o-release
+   8da23652fa43..788ccf7552c8  aosp/upstream-linux-3.18.y -> aosp/upstream-linux-3.18.y
+   03028e068a1f..e68d6189c787  aosp/upstream-linux-4.4.y -> aosp/upstream-linux-4.4.y
+   2df397931072..07bcb2489b96  aosp/upstream-linux-4.9.y -> aosp/upstream-linux-4.9.y
+   bb7915611761..a385731c726f  bkp/android-4.9-hikey -> bkp/android-4.9-hikey
+ + 6f9f8078770f...c7eba70e5db0 lnext/akpm -> lnext/akpm (forced update)
+ + 9bda7786fcb8...4f756af2c293 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 3514267557aa...f4286eee6c78 lnext/master -> lnext/master (forced update)
+   9035a8961b50..d6bbd51587ec  lnext/stable -> lnext/stable
+ * [new branch]                aosp/android-4.14 -> aosp/android-4.14
+ * [new branch]                pmlo/thermal/cooling -> pmlo/thermal/cooling
+ * [new tag]                   next-20180103 -> next-20180103
+ * [new tag]                   next-20180104 -> next-20180104
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

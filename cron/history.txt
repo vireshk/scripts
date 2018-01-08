@@ -12958,3 +12958,63 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 78f132be2852] updates
+ 3 files changed, 724 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   980f1742156a..78f132be2852  master -> master
+   437ba30bdd5d..980f1742156a  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+[master eafcb2bd8cb8] updates
+ 1 file changed, 64 insertions(+)
+ create mode 100755 misc/pelt_walt.sh
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Mon Jan  8 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + beb1b3d5f1bd...e856f078bcf1 opp/linux-next -> opp/linux-next (forced update)
+ + d34cca059185...bc09e7e72beb bkp/android-4.9-hikey -> bkp/android-4.9-hikey (forced update)
+ - [deleted]                   llo/lng/isolation-3.14-for-gary-v2
+ - [deleted]                   llo/lng/vanila-spurious-tests
+ - [deleted]                   llo/sched/cleanup
+ + c7eba70e5db0...1b15b7261cf7 lnext/akpm -> lnext/akpm (forced update)
+ + 4f756af2c293...c2f271a55e60 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + f4286eee6c78...990b6a07d18c lnext/master -> lnext/master (forced update)
+   d6bbd51587ec..e1915c8195b3  lnext/stable -> lnext/stable
+   30a7acd57389..b2cd1df66037  origin/HEAD -> origin/HEAD
+   30a7acd57389..b2cd1df66037  origin/master -> origin/master
+ + d6a9ba3e497d...58467d45f6c1 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + f20bf7f9a6a4...61fe7eaffd03 pm/linux-next -> pm/linux-next (forced update)
+   30a7acd57389..b2cd1df66037  pm/master -> pm/master
+ + f20bf7f9a6a4...61fe7eaffd03 pm/testing -> pm/testing (forced update)
+ * [new branch]                llo/android-4.9-hikey -> llo/android-4.9-hikey
+ * [new branch]                pm/build-test -> pm/build-test
+ * [new tag]                   next-20180105 -> next-20180105
+ * [new tag]                   v4.15-rc7 -> v4.15-rc7
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

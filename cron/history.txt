@@ -13018,3 +13018,71 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 129fbb8cf606] updates
+ 8 files changed, 846 insertions(+), 1 deletion(-)
+ create mode 100644 .Skype/shared_dynco/dc.db-journal
+ create mode 100644 .Skype/shared_dynco/dc.lock
+ create mode 100644 .Skype/shared_httpfe/queue.lock
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   78f132be2852..129fbb8cf606  master -> master
+   980f1742156a..78f132be2852  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+[master 2bb6753ed13f] updates
+ 1 file changed, 2 deletions(-)
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Tue Jan  9 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+remote: error: The last gc run reported the following. Please correct the root cause        
+remote: and remove gc.log.        
+remote: Automatic cleanup will not be performed until the file is removed.        
+remote: 
+remote: warning: There are too many unreachable loose objects; run 'git prune' to remove them.        
+remote: 
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 0d23ccb9d6f6...0adc10023bc9 android-4.9 -> android-4.9 (forced update)
+ + bc09e7e72beb...61768d101515 android-4.9-hikey -> android-4.9-hikey (forced update)
+   8e8dca63d322..e17904f98bdf  aosp/android-3.10 -> aosp/android-3.10
+   73cbcb8a02f9..2897537bc331  aosp/android-3.18 -> aosp/android-3.18
+   4f8be956718c..a361308c7c68  aosp/android-3.18-n-release -> aosp/android-3.18-n-release
+   d10767e21b95..81e7d4589439  aosp/android-4.14 -> aosp/android-4.14
+   8cbe01c651bb..dac143966992  aosp/android-4.4 -> aosp/android-4.4
+   57309d3711f8..fff383862865  aosp/android-4.4-n -> aosp/android-4.4-n
+   6d3fee538331..748837d7290a  aosp/android-4.4-n-release -> aosp/android-4.4-n-release
+   59e505a99e19..e2afb47c7827  aosp/android-4.4-o -> aosp/android-4.4-o
+   9e5dd8ed9b9b..5f5e5d4041e3  aosp/android-4.9 -> aosp/android-4.9
+   7d01cc58607d..a080fe316852  aosp/android-4.9-o -> aosp/android-4.9-o
+   7b538c1c32e1..13b237d115a5  aosp/upstream-f2fs-stable-linux-4.14.y -> aosp/upstream-f2fs-stable-linux-4.14.y
+   56a07b070510..9e32f17d241b  aosp/upstream-f2fs-stable-linux-4.4.y -> aosp/upstream-f2fs-stable-linux-4.4.y
+   5b2b7f7dd87f..743205fbb952  aosp/upstream-f2fs-stable-linux-4.9.y -> aosp/upstream-f2fs-stable-linux-4.9.y
+   e68d6189c787..b3e3db15b450  aosp/upstream-linux-4.4.y -> aosp/upstream-linux-4.4.y
+   07bcb2489b96..9f74755895f9  aosp/upstream-linux-4.9.y -> aosp/upstream-linux-4.9.y
+ + beb1b3d5f1bd...e856f078bcf1 bkp/opp/linux-next -> bkp/opp/linux-next (forced update)
+ * [new branch]                aosp/upstream-linux-4.14.y -> aosp/upstream-linux-4.14.y
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

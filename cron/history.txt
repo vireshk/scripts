@@ -13146,3 +13146,51 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 736ce659465d] updates
+ 8 files changed, 833 insertions(+), 1 deletion(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   9568d12749c5..736ce659465d  master -> master
+   129fbb8cf606..9568d12749c5  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Wed Jan 10 15:06:56 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+remote: error: The last gc run reported the following. Please correct the root cause        
+remote: and remove gc.log.        
+remote: Automatic cleanup will not be performed until the file is removed.        
+remote: 
+remote: warning: There are too many unreachable loose objects; run 'git prune' to remove them.        
+remote: 
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   61768d101515..c50512b3cd7b  bkp/android-4.9-hikey -> bkp/android-4.9-hikey
+ + c20deca70439...8494993e3d3b bkp/boot-constraint -> bkp/boot-constraint (forced update)
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

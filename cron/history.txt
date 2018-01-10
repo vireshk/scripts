@@ -13086,3 +13086,63 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 9568d12749c5] updates
+ 3 files changed, 1424 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   129fbb8cf606..9568d12749c5  master -> master
+   78f132be2852..129fbb8cf606  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Wed Jan 10 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   61768d101515..c50512b3cd7b  android-4.9-hikey -> android-4.9-hikey
+ + c20deca70439...8494993e3d3b boot-constraint -> boot-constraint (forced update)
+ + 0d23ccb9d6f6...0adc10023bc9 bkp/android-4.9 -> bkp/android-4.9 (forced update)
+ + bc09e7e72beb...61768d101515 bkp/android-4.9-hikey -> bkp/android-4.9-hikey (forced update)
+   f57ab9a01a36..30a7acd57389  drivers/driver-core-linus -> drivers/driver-core-linus
+   59e73854b5fd..a9afc573dbe6  drivers/driver-core-next -> drivers/driver-core-next
+   59e73854b5fd..a9afc573dbe6  drivers/driver-core-testing -> drivers/driver-core-testing
+   50c4c4e268a2..30a7acd57389  drivers/master -> drivers/master
+ + 8fcbc317616e...000b848c02d4 lko/boot-constraints -> lko/boot-constraints (forced update)
+ + bc09e7e72beb...c50512b3cd7b llo/android-4.9-hikey -> llo/android-4.9-hikey (forced update)
+ + 1b15b7261cf7...e3de7584b841 lnext/akpm -> lnext/akpm (forced update)
+ + c2f271a55e60...75aa4af664d4 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 990b6a07d18c...b4464bcab38d lnext/master -> lnext/master (forced update)
+   e1915c8195b3..d476c5334f1d  lnext/stable -> lnext/stable
+   b2cd1df66037..cf1fb158230e  origin/HEAD -> origin/HEAD
+   b2cd1df66037..cf1fb158230e  origin/master -> origin/master
+ + 58467d45f6c1...b6c524b2e93b pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 61fe7eaffd03...361cdbc99a48 pm/linux-next -> pm/linux-next (forced update)
+ + 61fe7eaffd03...361cdbc99a48 pm/testing -> pm/testing (forced update)
+ * [new tag]                   next-20180110 -> next-20180110
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

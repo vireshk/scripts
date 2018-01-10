@@ -46,6 +46,8 @@ PATH="/home/vireshk/work/repos/ara/tools/bin:$PATH"
 # coccinelle
 # PATH="/home/vireshk/work/repos/tools/cocci-bin:$PATH"
 
+alias myasciidoc="asciidoc -b html4 "
+
 #export CROSS_COMPILE="ccache arm-linux-gnueabihf-"
 #ARMV8C="CROSS_COMPILE=ccache aarch64-linux-gnu-"
 

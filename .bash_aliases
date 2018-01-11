@@ -71,6 +71,7 @@ alias handroid="cd /home/vireshk/work/repos/devel/android/"
 alias haosp="cd /media/vireshk/*/android/"
 alias hpatches="cd /home/vireshk/scripts/mutt/incoming/"
 alias hmodule="cd /home/vireshk/work/repos/tools/module/"
+alias hlwn="cd /home/vireshk/work/repos/tools/lwn"
 
 updatepkglist() { echo "$*" >> ~/scripts/pkglist-install; }
 

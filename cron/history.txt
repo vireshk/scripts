@@ -13194,3 +13194,63 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 31f8e55cd13d] updates
+ 4 files changed, 198 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   736ce659465d..31f8e55cd13d  master -> master
+   9568d12749c5..736ce659465d  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/vireshk-linux.git
+ + 3c17fc970379...2bb6753ed13f master -> master (forced update)
+ - [deleted]                   bkp/master
+
+Entering /home/vireshk/work/repos/tools/lwn
+[master 88a0e65049e8] updates
+ 4 files changed, 1069 insertions(+), 166 deletions(-)
+ create mode 100644 boot_constraint/boot_constraint.html
+ create mode 100644 boot_constraint/boot_constraint.txt
+Initialized empty Git repository in /srv/repositories/people/viresh.kumar/backup/lwn.git/
+post-git trigger: updating grokmirror
+To ssh://git.linaro.org/people/viresh.kumar/backup/lwn
+ * [new branch]                master -> master
+ * [new branch]                mac/master -> mac/master
+
+
+
+ 
+Thu Jan 11 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+remote: error: The last gc run reported the following. Please correct the root cause        
+remote: and remove gc.log.        
+remote: Automatic cleanup will not be performed until the file is removed.        
+remote: 
+remote: warning: There are too many unreachable loose objects; run 'git prune' to remove them.        
+remote: 
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 4f27541c4810...e4abf2503200 thermal/cooling -> thermal/cooling (forced update)
+ + b6c524b2e93b...65c2d8d93d0a pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ * [new branch]                thermal/cooling-v1 -> thermal/cooling-v1
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

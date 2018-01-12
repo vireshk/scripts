@@ -13254,3 +13254,143 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 250ea45a4b1d] updates
+ 4 files changed, 659 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   31f8e55cd13d..250ea45a4b1d  master -> master
+   736ce659465d..31f8e55cd13d  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/vireshk-linux.git
+ * [new branch]                bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/lwn
+ * [new branch]                bkp/master -> bkp/master
+
+
+
+ 
+Fri Jan 12 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + c50512b3cd7b...f96719b999f3 android-4.9-hikey -> android-4.9-hikey (forced update)
+ + fdfcc75c50d6...0d7b23e7584f opp/genpd/updates -> opp/genpd/updates (forced update)
+ + e4abf2503200...087186fecdfd thermal/cooling -> thermal/cooling (forced update)
+ + 4f27541c4810...e4abf2503200 bkp/thermal/cooling -> bkp/thermal/cooling (forced update)
+ + e3de7584b841...fdb1d54e9357 lnext/akpm -> lnext/akpm (forced update)
+ + 75aa4af664d4...e2d7fe89e8ae lnext/akpm-base -> lnext/akpm-base (forced update)
+ + b4464bcab38d...8418f8876404 lnext/master -> lnext/master (forced update)
+   d476c5334f1d..5f615b97cdea  lnext/stable -> lnext/stable
+   cf1fb158230e..1545dec46db3  origin/HEAD -> origin/HEAD
+   cf1fb158230e..1545dec46db3  origin/master -> origin/master
+ + 65c2d8d93d0a...01baffba3706 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 9c4e00a8810f...4a47559c7e13 pm/build-test -> pm/build-test (forced update)
+   361cdbc99a48..701c3be43c8a  pm/linux-next -> pm/linux-next
+   361cdbc99a48..701c3be43c8a  pm/testing -> pm/testing
+ * [new branch]                opp/genpd/qcom -> opp/genpd/qcom
+ * [new branch]                bkp/thermal/cooling-v1 -> bkp/thermal/cooling-v1
+ * [new branch]                llo/opp/genpd/qcom -> llo/opp/genpd/qcom
+ * [new branch]                rajendra/clk-next-17may -> rajendra/clk-next-17may
+ * [new branch]                rajendra/clk-next-omap -> rajendra/clk-next-omap
+ * [new branch]                rajendra/clk-next-omap-3.5-rc2 -> rajendra/clk-next-omap-3.5-rc2
+ * [new branch]                rajendra/clk-next-omap-3.5-rc5 -> rajendra/clk-next-omap-3.5-rc5
+ * [new branch]                rajendra/clk-next-omap-3.6-rc2 -> rajendra/clk-next-omap-3.6-rc2
+ * [new branch]                rajendra/clk-next-omap-3.6-rc2-move -> rajendra/clk-next-omap-3.6-rc2-move
+ * [new branch]                rajendra/clk-next-omap-3.6-rc2-omap5 -> rajendra/clk-next-omap-3.6-rc2-omap5
+ * [new branch]                rajendra/clk-next-omap-3.6-rc3 -> rajendra/clk-next-omap-3.6-rc3
+ * [new branch]                rajendra/clk-next-omap-3.6-rc3-prep -> rajendra/clk-next-omap-3.6-rc3-prep
+ * [new branch]                rajendra/clk-next-omap2345-3.6-rc2 -> rajendra/clk-next-omap2345-3.6-rc2
+ * [new branch]                rajendra/clk-pll-3 -> rajendra/clk-pll-3
+ * [new branch]                rajendra/common_clk_testing_devel_3.7-updated -> rajendra/common_clk_testing_devel_3.7-updated
+ * [new branch]                rajendra/cpu-clk-acd-apm-latest -> rajendra/cpu-clk-acd-apm-latest
+ * [new branch]                rajendra/cpu-clk-acd-apm-latest-v2 -> rajendra/cpu-clk-acd-apm-latest-v2
+ * [new branch]                rajendra/cpu-clks-8996-v2 -> rajendra/cpu-clks-8996-v2
+ * [new branch]                rajendra/device/boot-constraints-final -> rajendra/device/boot-constraints-final
+ * [new branch]                rajendra/display_handover_rjendra -> rajendra/display_handover_rjendra
+ * [new branch]                rajendra/for-3.11-rc1/prm-cm-regbit-cleanups -> rajendra/for-3.11-rc1/prm-cm-regbit-cleanups
+ * [new branch]                rajendra/for-3.12/dra-core -> rajendra/for-3.12/dra-core
+ * [new branch]                rajendra/for-3.12/dra-core-data -> rajendra/for-3.12/dra-core-data
+ * [new branch]                rajendra/for-3.12/dra-core-v2 -> rajendra/for-3.12/dra-core-v2
+ * [new branch]                rajendra/for-3.12/dra-core-v3 -> rajendra/for-3.12/dra-core-v3
+ * [new branch]                rajendra/for-integration-drm-msm-next-working -> rajendra/for-integration-drm-msm-next-working
+ * [new branch]                rajendra/for-integration-drm-msm-next-working-clean -> rajendra/for-integration-drm-msm-next-working-clean
+ * [new branch]                rajendra/gdsc-clks -> rajendra/gdsc-clks
+ * [new branch]                rajendra/gdsc-clks-post1 -> rajendra/gdsc-clks-post1
+ * [new branch]                rajendra/gdsc-clks-take1 -> rajendra/gdsc-clks-take1
+ * [new branch]                rajendra/gdsc-clks-v2 -> rajendra/gdsc-clks-v2
+ * [new branch]                rajendra/gdsc-clks-v3 -> rajendra/gdsc-clks-v3
+ * [new branch]                rajendra/genpd-performance-state -> rajendra/genpd-performance-state
+ * [new branch]                rajendra/genpd-performance-state-v7 -> rajendra/genpd-performance-state-v7
+ * [new branch]                rajendra/genpd-performance-state-v8 -> rajendra/genpd-performance-state-v8
+ * [new branch]                rajendra/genpd-performance-state-v9 -> rajendra/genpd-performance-state-v9
+ * [new branch]                rajendra/gpu-gdsc-wip -> rajendra/gpu-gdsc-wip
+ * [new branch]                rajendra/linaro/msm-bus-wip -> rajendra/linaro/msm-bus-wip
+ * [new branch]                rajendra/master -> rajendra/master
+ * [new branch]                rajendra/multiple-powerdomains-using-qos1 -> rajendra/multiple-powerdomains-using-qos1
+ * [new branch]                rajendra/nvm-tsens-2 -> rajendra/nvm-tsens-2
+ * [new branch]                rajendra/omap5-3.8-rc4-base -> rajendra/omap5-3.8-rc4-base
+ * [new branch]                rajendra/omap5-3.8-rc4-base-palmas -> rajendra/omap5-3.8-rc4-base-palmas
+ * [new branch]                rajendra/out-of-tree/dra-integrated -> rajendra/out-of-tree/dra-integrated
+ * [new branch]                rajendra/out-of-tree/dra-integrated-v2 -> rajendra/out-of-tree/dra-integrated-v2
+ * [new branch]                rajendra/out-of-tree/dra-integrated-v3 -> rajendra/out-of-tree/dra-integrated-v3
+ * [new branch]                rajendra/prepare-common-clk-3.5-rc3 -> rajendra/prepare-common-clk-3.5-rc3
+ * [new branch]                rajendra/rajendra_hdmi_clk_handoff -> rajendra/rajendra_hdmi_clk_handoff
+ * [new branch]                rajendra/release/qcomlt-4.9-gpu-fixes -> rajendra/release/qcomlt-4.9-gpu-fixes
+ * [new branch]                rajendra/rpmclks-take1 -> rajendra/rpmclks-take1
+ * [new branch]                rajendra/sdm845-boot -> rajendra/sdm845-boot
+ * [new branch]                rajendra/sysc-cleanups -> rajendra/sysc-cleanups
+ * [new branch]                rajendra/topic/upstream -> rajendra/topic/upstream
+ * [new branch]                rajendra/tsens -> rajendra/tsens
+ * [new branch]                rajendra/uart-sysc-cleanup-3.10 -> rajendra/uart-sysc-cleanup-3.10
+ * [new branch]                rajendra/v4.0/runtime-rfc -> rajendra/v4.0/runtime-rfc
+ * [new branch]                rajendra/v4.0/runtime-rfc-v2 -> rajendra/v4.0/runtime-rfc-v2
+ * [new branch]                rajendra/v4.0/tsens-rfc -> rajendra/v4.0/tsens-rfc
+ * [new branch]                rajendra/v4.5-rc3/apq8096-wip -> rajendra/v4.5-rc3/apq8096-wip
+ * [new branch]                rajendra/v4.5-rc4/apq8096-wip -> rajendra/v4.5-rc4/apq8096-wip
+ * [new branch]                rajendra/v4.6-rc2/apq8096-wip -> rajendra/v4.6-rc2/apq8096-wip
+ * [new branch]                rajendra/v4.7-rc1/8096-boot -> rajendra/v4.7-rc1/8096-boot
+ * [new branch]                rajendra/v4.7-rc1/8096-wip -> rajendra/v4.7-rc1/8096-wip
+ * [new branch]                rajendra/v4.7-rc1/cpu-clk-8996 -> rajendra/v4.7-rc1/cpu-clk-8996
+ * [new branch]                rajendra/v4.7-rc1/gdsc -> rajendra/v4.7-rc1/gdsc
+ * [new branch]                rajendra/v4.7-rc1/glink -> rajendra/v4.7-rc1/glink
+ * [new branch]                rajendra/v4.7-rc1/tsens -> rajendra/v4.7-rc1/tsens
+ * [new branch]                rajendra/v4.7-rc2/apq8096-wip -> rajendra/v4.7-rc2/apq8096-wip
+ * [new branch]                rajendra/v4.7-rc5/apq8096-boot -> rajendra/v4.7-rc5/apq8096-boot
+ * [new branch]                rajendra/v4.7-rc5/cpu-clk-8996 -> rajendra/v4.7-rc5/cpu-clk-8996
+ * [new branch]                rajendra/v4.7-rc5/gdsc-updates -> rajendra/v4.7-rc5/gdsc-updates
+ * [new branch]                rajendra/v4.7-rc5/tsens -> rajendra/v4.7-rc5/tsens
+ * [new branch]                rajendra/v4.9-rc2/8096-boot -> rajendra/v4.9-rc2/8096-boot
+ * [new branch]                rajendra/v4.9-rc4/cpu-clk-8996 -> rajendra/v4.9-rc4/cpu-clk-8996
+ * [new branch]                rajendra/v4.9-rc6/cpu-clk-8996 -> rajendra/v4.9-rc6/cpu-clk-8996
+ * [new branch]                rajendra/voltage-corners -> rajendra/voltage-corners
+ * [new branch]                rajendra/voltage-corners-4.10 -> rajendra/voltage-corners-4.10
+ * [new tag]                   next-20180111 -> next-20180111
+ * [new tag]                   tags/dra7-core-support -> tags/dra7-core-support
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

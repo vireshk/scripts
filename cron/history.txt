@@ -13394,3 +13394,65 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master b6193e012a83] updates
+ 3 files changed, 796 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   250ea45a4b1d..b6193e012a83  master -> master
+   31f8e55cd13d..250ea45a4b1d  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon Jan 15 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + c50512b3cd7b...f96719b999f3 bkp/android-4.9-hikey -> bkp/android-4.9-hikey (forced update)
+ + fdfcc75c50d6...0d7b23e7584f bkp/opp/genpd/updates -> bkp/opp/genpd/updates (forced update)
+ + e4abf2503200...087186fecdfd bkp/thermal/cooling -> bkp/thermal/cooling (forced update)
+ + fdb1d54e9357...69bc82a82c9c lnext/akpm -> lnext/akpm (forced update)
+ + e2d7fe89e8ae...0bb4424568bb lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 8418f8876404...3e53c7415294 lnext/master -> lnext/master (forced update)
+   1545dec46db3..a8750ddca918  origin/HEAD -> origin/HEAD
+   1545dec46db3..a8750ddca918  origin/master -> origin/master
+ + 01baffba3706...ec73c92701ae pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ - [deleted]                   pm/build-test
+ + 701c3be43c8a...7d8df5bb0e27 pm/linux-next -> pm/linux-next (forced update)
+   b2cd1df66037..a8750ddca918  pm/master -> pm/master
+ + 701c3be43c8a...7d8df5bb0e27 pm/testing -> pm/testing (forced update)
+ * [new branch]                bkp/opp/genpd/qcom -> bkp/opp/genpd/qcom
+ * [new branch]                pm/acpi-gpio -> pm/acpi-gpio
+ * [new tag]                   next-20180112 -> next-20180112
+ * [new tag]                   v4.15-rc8 -> v4.15-rc8
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

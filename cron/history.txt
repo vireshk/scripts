@@ -13509,3 +13509,167 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master c4dba676ffda] updates
+ 3 files changed, 742 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   e202dcb3b26d..c4dba676ffda  master -> master
+   b6193e012a83..e202dcb3b26d  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+[master 9211d28e63ca] updates
+ 1 file changed, 3 insertions(+), 9 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/vireshk-linux.git
+   2bb6753ed13f..9211d28e63ca  master -> master
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Jan 17 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 0fdf3f98da14...446c96577e75 android-4.9-hikey -> android-4.9-hikey (forced update)
+ + e24e8a010f98...6e557b909507 thermal/cooling -> thermal/cooling (forced update)
+ + f96719b999f3...0fdf3f98da14 bkp/android-4.9-hikey -> bkp/android-4.9-hikey (forced update)
+ + 087186fecdfd...e24e8a010f98 bkp/thermal/cooling -> bkp/thermal/cooling (forced update)
+ * [new branch]                patrick/aosp/hikey/v4.15-dev -> patrick/aosp/hikey/v4.15-dev
+ * [new branch]                patrick/eas/dev/lsk-3.18-eas-5.2-util_est -> patrick/eas/dev/lsk-3.18-eas-5.2-util_est
+ * [new branch]                patrick/eas/dev/lsk/v4.4/eas_v5.2/schedtune -> patrick/eas/dev/lsk/v4.4/eas_v5.2/schedtune
+ * [new branch]                patrick/eas/dev/stune_fixes_and_utilest_20160216 -> patrick/eas/dev/stune_fixes_and_utilest_20160216
+ * [new branch]                patrick/eas/schedutil/flags_fixes -> patrick/eas/schedutil/flags_fixes
+ * [new branch]                patrick/eas/stune/rfcv2 -> patrick/eas/stune/rfcv2
+ * [new branch]                patrick/eas/stune/rfcv3 -> patrick/eas/stune/rfcv3
+ * [new branch]                patrick/eas/v1.5/util_est/hikey960 -> patrick/eas/v1.5/util_est/hikey960
+ * [new branch]                patrick/lisa/debug -> patrick/lisa/debug
+ * [new branch]                patrick/lisa/debug_base -> patrick/lisa/debug_base
+ * [new branch]                patrick/lkml/fix_sched_debug -> patrick/lkml/fix_sched_debug
+ * [new branch]                patrick/lsk-3.18-eas-5.2-util_est -> patrick/lsk-3.18-eas-5.2-util_est
+ * [new tag]                   big-LITTLE-MP-13.07 -> big-LITTLE-MP-13.07
+ * [new tag]                   big-LITTLE-MP-13.08 -> big-LITTLE-MP-13.08
+ * [new tag]                   big-LITTLE-MP-13.09 -> big-LITTLE-MP-13.09
+ * [new tag]                   big-LITTLE-MP-13.10 -> big-LITTLE-MP-13.10
+ * [new tag]                   big-LITTLE-MP-13.11 -> big-LITTLE-MP-13.11
+ * [new tag]                   big-LITTLE-MP-13.12 -> big-LITTLE-MP-13.12
+ * [new tag]                   big-LITTLE-MP-14.01 -> big-LITTLE-MP-14.01
+ * [new tag]                   big-LITTLE-MP-14.02 -> big-LITTLE-MP-14.02
+ * [new tag]                   big-LITTLE-MP-14.03 -> big-LITTLE-MP-14.03
+ * [new tag]                   big-LITTLE-MP-14.04 -> big-LITTLE-MP-14.04
+ * [new tag]                   big-LITTLE-MP-14.05 -> big-LITTLE-MP-14.05
+ * [new tag]                   big-LITTLE-MP-14.06 -> big-LITTLE-MP-14.06
+ * [new tag]                   big-LITTLE-MP-14.07 -> big-LITTLE-MP-14.07
+ * [new tag]                   big-LITTLE-MP-14.08 -> big-LITTLE-MP-14.08
+ * [new tag]                   big-LITTLE-MP-15.04 -> big-LITTLE-MP-15.04
+ * [new tag]                   cbs_base -> cbs_base
+ * [new tag]                   docs -> docs
+ * [new tag]                   dt-for-3.6 -> dt-for-3.6
+ * [new tag]                   dt-for-3.7 -> dt-for-3.7
+ * [new tag]                   eas/cros-20150615.0 -> eas/cros-20150615.0
+ * [new tag]                   eas/cros-20150616.1 -> eas/cros-20150616.1
+ * [new tag]                   eas/juno_v5.3-20160119.2 -> eas/juno_v5.3-20160119.2
+ * [new tag]                   kmemleak -> kmemleak
+ * [new tag]                   kmemleak-fixes -> kmemleak-fixes
+ * [new tag]                   multi-platform-for-3.7 -> multi-platform-for-3.7
+ * [new tag]                   multiplatform -> multiplatform
+ * [new tag]                   schedtune_fixes -> schedtune_fixes
+ * [new tag]                   schedtune_fixes_base -> schedtune_fixes_base
+ * [new tag]                   soc-late -> soc-late
+ * [new tag]                   tracking-baseline-eas/cros-20150615.0 -> tracking-baseline-eas/cros-20150615.0
+ * [new tag]                   tracking-baseline-eas/juno-20150615.0 -> tracking-baseline-eas/juno-20150615.0
+ * [new tag]                   tracking-baseline-eas/juno-20150615.1 -> tracking-baseline-eas/juno-20150615.1
+ * [new tag]                   tracking-baseline-eas/juno-20150615.10 -> tracking-baseline-eas/juno-20150615.10
+ * [new tag]                   tracking-baseline-eas/juno-20150615.11 -> tracking-baseline-eas/juno-20150615.11
+ * [new tag]                   tracking-baseline-eas/juno-20150615.2 -> tracking-baseline-eas/juno-20150615.2
+ * [new tag]                   tracking-baseline-eas/juno-20150615.3 -> tracking-baseline-eas/juno-20150615.3
+ * [new tag]                   tracking-baseline-eas/juno-20150615.4 -> tracking-baseline-eas/juno-20150615.4
+ * [new tag]                   tracking-baseline-eas/juno-20150615.5 -> tracking-baseline-eas/juno-20150615.5
+ * [new tag]                   tracking-baseline-eas/juno-20150615.6 -> tracking-baseline-eas/juno-20150615.6
+ * [new tag]                   tracking-baseline-eas/juno-20150615.7 -> tracking-baseline-eas/juno-20150615.7
+ * [new tag]                   tracking-baseline-eas/juno-20150615.8 -> tracking-baseline-eas/juno-20150615.8
+ * [new tag]                   tracking-baseline-eas/juno-20150615.9 -> tracking-baseline-eas/juno-20150615.9
+ * [new tag]                   tracking-baseline-eas/juno-20150616.0 -> tracking-baseline-eas/juno-20150616.0
+ * [new tag]                   tracking-baseline-eas/juno-20150616.1 -> tracking-baseline-eas/juno-20150616.1
+ * [new tag]                   tracking-baseline-eas/juno-20150617.0 -> tracking-baseline-eas/juno-20150617.0
+ * [new tag]                   tracking-baseline-eas/juno-20150618.0 -> tracking-baseline-eas/juno-20150618.0
+ * [new tag]                   tracking-baseline-eas/juno-20150619.0 -> tracking-baseline-eas/juno-20150619.0
+ * [new tag]                   tracking-baseline-eas/juno-20150619.1 -> tracking-baseline-eas/juno-20150619.1
+ * [new tag]                   tracking-baseline-eas/juno-20151112.0 -> tracking-baseline-eas/juno-20151112.0
+ * [new tag]                   tracking-baseline-eas/juno-20151112.1 -> tracking-baseline-eas/juno-20151112.1
+ * [new tag]                   tracking-baseline-eas/juno-20151112.2 -> tracking-baseline-eas/juno-20151112.2
+ * [new tag]                   tracking-baseline-eas/juno-20151112.3 -> tracking-baseline-eas/juno-20151112.3
+ * [new tag]                   tracking-baseline-eas/juno-20151112.4 -> tracking-baseline-eas/juno-20151112.4
+ * [new tag]                   tracking-baseline-eas/juno-20151112.5 -> tracking-baseline-eas/juno-20151112.5
+ * [new tag]                   tracking-baseline-eas/juno-20151112.6 -> tracking-baseline-eas/juno-20151112.6
+ * [new tag]                   tracking-baseline-eas/juno-20151112.7 -> tracking-baseline-eas/juno-20151112.7
+ * [new tag]                   tracking-baseline-eas/juno-20151123.0 -> tracking-baseline-eas/juno-20151123.0
+ * [new tag]                   tracking-baseline-eas/juno-20151123.1 -> tracking-baseline-eas/juno-20151123.1
+ * [new tag]                   tracking-baseline-eas/juno-20151123.2 -> tracking-baseline-eas/juno-20151123.2
+ * [new tag]                   tracking-baseline-eas/juno-20151123.3 -> tracking-baseline-eas/juno-20151123.3
+ * [new tag]                   tracking-baseline-eas/juno-20151123.4 -> tracking-baseline-eas/juno-20151123.4
+ * [new tag]                   tracking-baseline-eas/juno-20151123.5 -> tracking-baseline-eas/juno-20151123.5
+ * [new tag]                   tracking-baseline-eas/juno-20151123.6 -> tracking-baseline-eas/juno-20151123.6
+ * [new tag]                   tracking-baseline-eas/juno-20151203.0 -> tracking-baseline-eas/juno-20151203.0
+ * [new tag]                   tracking-baseline-eas/juno-20151203.1 -> tracking-baseline-eas/juno-20151203.1
+ * [new tag]                   tracking-baseline-eas/juno-20151209.0 -> tracking-baseline-eas/juno-20151209.0
+ * [new tag]                   tracking-baseline-eas/juno-20151209.1 -> tracking-baseline-eas/juno-20151209.1
+ * [new tag]                   tracking-baseline-eas/juno-20151209.2 -> tracking-baseline-eas/juno-20151209.2
+ * [new tag]                   tracking-baseline-eas/juno_v5.2-20151217.0 -> tracking-baseline-eas/juno_v5.2-20151217.0
+ * [new tag]                   tracking-baseline-eas/juno_v5.2-20151217.1 -> tracking-baseline-eas/juno_v5.2-20151217.1
+ * [new tag]                   tracking-baseline-eas/juno_v5.2-20151217.2 -> tracking-baseline-eas/juno_v5.2-20151217.2
+ * [new tag]                   tracking-baseline-eas/juno_v5.2-20151217.3 -> tracking-baseline-eas/juno_v5.2-20151217.3
+ * [new tag]                   tracking-baseline-eas/juno_v5.2-20151217.4 -> tracking-baseline-eas/juno_v5.2-20151217.4
+ * [new tag]                   tracking-baseline-eas/juno_v5.2-20151217.5 -> tracking-baseline-eas/juno_v5.2-20151217.5
+ * [new tag]                   tracking-baseline-eas/juno_v5.3-20160118.0 -> tracking-baseline-eas/juno_v5.3-20160118.0
+ * [new tag]                   tracking-baseline-eas/juno_v5.3-20160118.1 -> tracking-baseline-eas/juno_v5.3-20160118.1
+ * [new tag]                   tracking-baseline-eas/juno_v5.3-20160118.2 -> tracking-baseline-eas/juno_v5.3-20160118.2
+ * [new tag]                   tracking-baseline-eas/juno_v5.3-20160119.0 -> tracking-baseline-eas/juno_v5.3-20160119.0
+ * [new tag]                   tracking-baseline-eas/juno_v5.3-20160119.1 -> tracking-baseline-eas/juno_v5.3-20160119.1
+ * [new tag]                   tracking-baseline-eas/juno_v5.3-20160119.2 -> tracking-baseline-eas/juno_v5.3-20160119.2
+ * [new tag]                   tracking-baseline-eas/stune/rfcv1-20150814.0 -> tracking-baseline-eas/stune/rfcv1-20150814.0
+ * [new tag]                   tracking-baseline-eas/stune/rfcv1-20150817.0 -> tracking-baseline-eas/stune/rfcv1-20150817.0
+ * [new tag]                   tracking-baseline-eas/stune/rfcv1-20150817.1 -> tracking-baseline-eas/stune/rfcv1-20150817.1
+ * [new tag]                   tracking-baseline-eas/stune/rfcv1-20150817.2 -> tracking-baseline-eas/stune/rfcv1-20150817.2
+ * [new tag]                   tracking-baseline-eas/stune/rfcv1-20150817.3 -> tracking-baseline-eas/stune/rfcv1-20150817.3
+ * [new tag]                   tracking-baseline-eas/stune/rfcv1-20150817.4 -> tracking-baseline-eas/stune/rfcv1-20150817.4
+ * [new tag]                   tracking-baseline-eas/stune/rfcv1-20150817.5 -> tracking-baseline-eas/stune/rfcv1-20150817.5
+ * [new tag]                   tracking-baseline-eas/tc2-20150615.0 -> tracking-baseline-eas/tc2-20150615.0
+ * [new tag]                   tracking-baseline-eas/tc2-20150615.1 -> tracking-baseline-eas/tc2-20150615.1
+ * [new tag]                   tracking-baseline-eas/tc2-20150615.2 -> tracking-baseline-eas/tc2-20150615.2
+ * [new tag]                   tracking-baseline-eas/tc2-20150615.3 -> tracking-baseline-eas/tc2-20150615.3
+ * [new tag]                   tracking-baseline-eas/tc2-20150616.0 -> tracking-baseline-eas/tc2-20150616.0
+ * [new tag]                   tracking-baseline-eas/tc2-20150617.0 -> tracking-baseline-eas/tc2-20150617.0
+ * [new tag]                   tracking-baseline-eas/tc2-20150617.1 -> tracking-baseline-eas/tc2-20150617.1
+ * [new tag]                   tracking-baseline-juno/eas_v5.2-20151217.0 -> tracking-baseline-juno/eas_v5.2-20151217.0
+ * [new tag]                   tracking-baseline-juri_v5.2-20151217.0 -> tracking-baseline-juri_v5.2-20151217.0
+ * [new tag]                   tracking-juno_pm_integ-eas/juno-20150615.3 -> tracking-juno_pm_integ-eas/juno-20150615.3
+ * [new tag]                   tracking-oak-tot-eas/cros-20150616.1 -> tracking-oak-tot-eas/cros-20150616.1
+ * [new tag]                   tracking-tip_sched_core-eas/stune/cpuonly-20150810.0 -> tracking-tip_sched_core-eas/stune/cpuonly-20150810.0
+ * [new tag]                   tracking-tip_sched_core-eas/stune/cpuonly-20150810.1 -> tracking-tip_sched_core-eas/stune/cpuonly-20150810.1
+ * [new tag]                   util_est -> util_est
+ * [new tag]                   util_est_base -> util_est_base
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -13729,3 +13729,88 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master dec20d97573a] updates
+ 8 files changed, 800 insertions(+), 2 deletions(-)
+ delete mode 100644 .Skype/shared_dynco/dc.db-journal
+ delete mode 100644 .Skype/shared_dynco/dc.lock
+ delete mode 100644 .Skype/shared_httpfe/queue.lock
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   cef5c2adddfd..dec20d97573a  master -> master
+   c4dba676ffda..cef5c2adddfd  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Fri Jan 19 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 78b8d280bc3f...3a4d539053b4 android-4.9-hikey -> android-4.9-hikey (forced update)
+   e17904f98bdf..c9159b4a92bb  aosp/android-3.10 -> aosp/android-3.10
+   2897537bc331..cf43f2035a3f  aosp/android-3.18 -> aosp/android-3.18
+   a361308c7c68..f87d49bbfcc7  aosp/android-3.18-n-release -> aosp/android-3.18-n-release
+   174b25139e68..c5472d4701e8  aosp/android-3.18-o-mr1 -> aosp/android-3.18-o-mr1
+   da13288fe24e..8bf8c09a1d67  aosp/android-3.18-o-release -> aosp/android-3.18-o-release
+   81e7d4589439..9b68347c3554  aosp/android-4.14 -> aosp/android-4.14
+   dac143966992..52c02cf1b2a2  aosp/android-4.4 -> aosp/android-4.4
+   fff383862865..97ff3a0a1f26  aosp/android-4.4-n -> aosp/android-4.4-n
+   748837d7290a..711c70646977  aosp/android-4.4-n-release -> aosp/android-4.4-n-release
+   e2afb47c7827..d385b9bbf9f9  aosp/android-4.4-o -> aosp/android-4.4-o
+   855473445f15..1a6615e4a95d  aosp/android-4.4-o-mr1 -> aosp/android-4.4-o-mr1
+   d113bf0ce2ed..45ae3da3adfd  aosp/android-4.4-o-release -> aosp/android-4.4-o-release
+   5f5e5d4041e3..9c3804bc9b62  aosp/android-4.9 -> aosp/android-4.9
+   932c114c6954..225006a4f768  aosp/android-4.9-eas-dev -> aosp/android-4.9-eas-dev
+   a080fe316852..dcb2674a472a  aosp/android-4.9-o -> aosp/android-4.9-o
+   da4c75028bef..b181646c15b5  aosp/android-4.9-o-mr1 -> aosp/android-4.9-o-mr1
+   e3264f851cff..cf3a5bc1a044  aosp/android-4.9-o-release -> aosp/android-4.9-o-release
+ + 9e759250de8d...7b150986ac25 aosp/experimental/android-mainline-tracking -> aosp/experimental/android-mainline-tracking (forced update)
+   c6f66cb76658..f73a1ef7d7b5  aosp/upstream-f2fs-stable-linux-3.18.y -> aosp/upstream-f2fs-stable-linux-3.18.y
+   13b237d115a5..9d468a2b52d1  aosp/upstream-f2fs-stable-linux-4.14.y -> aosp/upstream-f2fs-stable-linux-4.14.y
+   9e32f17d241b..ba1ade71012d  aosp/upstream-f2fs-stable-linux-4.4.y -> aosp/upstream-f2fs-stable-linux-4.4.y
+   788ccf7552c8..a5d35deca214  aosp/upstream-linux-3.18.y -> aosp/upstream-linux-3.18.y
+   8d577afdee35..9c0bf9847171  aosp/upstream-linux-4.14.y -> aosp/upstream-linux-4.14.y
+   b3e3db15b450..42375c1120d5  aosp/upstream-linux-4.4.y -> aosp/upstream-linux-4.4.y
+   9f74755895f9..b8cf9ff79d63  aosp/upstream-linux-4.9.y -> aosp/upstream-linux-4.9.y
+ + 446c96577e75...78b8d280bc3f bkp/android-4.9-hikey -> bkp/android-4.9-hikey (forced update)
+ * [new branch]                android-4.9-eas-dev -> android-4.9-eas-dev
+ * [new branch]                bkp/android-4.9-hikey-utilest -> bkp/android-4.9-hikey-utilest
+ * [new tag]                   ASB-2018-01-05_3.18-n-release -> ASB-2018-01-05_3.18-n-release
+ * [new tag]                   ASB-2018-01-05_3.18-o-mr1 -> ASB-2018-01-05_3.18-o-mr1
+ * [new tag]                   ASB-2018-01-05_3.18-o-release -> ASB-2018-01-05_3.18-o-release
+ * [new tag]                   ASB-2018-01-05_4.4-n-release -> ASB-2018-01-05_4.4-n-release
+ * [new tag]                   ASB-2018-01-05_4.4-o-mr1 -> ASB-2018-01-05_4.4-o-mr1
+ * [new tag]                   ASB-2018-01-05_4.4-o-release -> ASB-2018-01-05_4.4-o-release
+ * [new tag]                   ASB-2018-01-05_4.9-o-mr1 -> ASB-2018-01-05_4.9-o-mr1
+ * [new tag]                   ASB-2018-01-05_4.9-o-release -> ASB-2018-01-05_4.9-o-release
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

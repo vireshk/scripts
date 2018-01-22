@@ -13814,3 +13814,64 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 20036201b5b8] updates
+ 3 files changed, 1051 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   dec20d97573a..20036201b5b8  master -> master
+   cef5c2adddfd..dec20d97573a  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon Jan 22 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   6e557b909507..c45a49fc8e90  thermal/cooling -> thermal/cooling
+ + 78b8d280bc3f...3a4d539053b4 bkp/android-4.9-hikey -> bkp/android-4.9-hikey (forced update)
+ * [new branch]                arm64-stable/4.4.y-rc-hikey -> arm64-stable/4.4.y-rc-hikey
+ * [new branch]                bkp/android-4.9-eas-dev -> bkp/android-4.9-eas-dev
+ * [new tag]                   4.4-71-rc-hikey-20170602 -> 4.4-71-rc-hikey-20170602
+ * [new tag]                   4.4-72-rc-hikey-20170612 -> 4.4-72-rc-hikey-20170612
+ * [new tag]                   4.4.77-hikey -> 4.4.77-hikey
+ * [new tag]                   4.4.78-hikey -> 4.4.78-hikey
+ * [new tag]                   4.4.79-hikey -> 4.4.79-hikey
+ * [new tag]                   4.4.80-hikey -> 4.4.80-hikey
+ * [new tag]                   4.4.82-hikey -> 4.4.82-hikey
+ * [new tag]                   4.4.83-hikey -> 4.4.83-hikey
+ * [new tag]                   4.4.84-hikey -> 4.4.84-hikey
+ * [new tag]                   4.4.85-hikey -> 4.4.85-hikey
+ * [new tag]                   4.4.86-hikey -> 4.4.86-hikey
+ * [new tag]                   4.4.88-rc1-hikey-20170913 -> 4.4.88-rc1-hikey-20170913
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

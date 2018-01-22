@@ -530,3 +530,6 @@ From vireshk  Tue Nov 28 08:41:46 2017
 From vireshk  Mon Dec 11 15:25:57 2017
  Subject: IT Services and maintenance over Christmas/New Year period
   Folder: IT_Services_and_maintenance_over_Christmas-New_Year_period.m	  12771
+From vireshk  Mon Jan 22 08:15:21 2018
+ Subject: [PATCH v3] cpufreq: add and use cpufreq_for_each_{valid_,}entry_idx
+  Folder: PATCH_v3_cpufreq_add_and_use_cpufreq_for_each_{valid_,}entry	  16900

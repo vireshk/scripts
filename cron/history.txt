@@ -13875,3 +13875,108 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 23f12762055e] updates
+ 5 files changed, 1232 insertions(+)
+ create mode 100644 mutt/incoming/PATCH_v3_cpufreq_add_and_use_cpufreq_for_each_{valid_,}entry_idx.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   20036201b5b8..23f12762055e  master -> master
+   dec20d97573a..20036201b5b8  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Tue Jan 23 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   6e557b909507..c45a49fc8e90  bkp/thermal/cooling -> bkp/thermal/cooling
+ + 69bc82a82c9c...adf77d065042 lnext/akpm -> lnext/akpm (forced update)
+ + 0bb4424568bb...b5bc11e6efa2 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 3e53c7415294...761914dd2975 lnext/master -> lnext/master (forced update)
+   5f615b97cdea..dda3e15231b3  lnext/stable -> lnext/stable
+   a8750ddca918..a0ec1ded22e6  origin/HEAD -> origin/HEAD
+   a8750ddca918..a0ec1ded22e6  origin/master -> origin/master
+ - [deleted]                   peterz/WIP.x86/pti
+ + 4a5dbf8b3a7c...b6d798352ff3 peterz/auto-latest -> peterz/auto-latest (forced update)
+   7f6f60a1ba52..ce90aaf5cde4  peterz/core-urgent-for-linus -> peterz/core-urgent-for-linus
+   72bc286b81d2..475c5ee193fd  peterz/core/rcu -> peterz/core/rcu
+   7f6f60a1ba52..ce90aaf5cde4  peterz/core/urgent -> peterz/core/urgent
+ + 2377e14a5863...8c8f5e40f2df peterz/debug/tmp -> peterz/debug/tmp (forced update)
+   0b02e448a2eb..81b60dbff049  peterz/efi-urgent-for-linus -> peterz/efi-urgent-for-linus
+   f6f3732162b5..301f55b1a917  peterz/efi/core -> peterz/efi/core
+   0b02e448a2eb..81b60dbff049  peterz/efi/urgent -> peterz/efi/urgent
+   4ce413d1840b..bc976233a872  peterz/irq-urgent-for-linus -> peterz/irq-urgent-for-linus
+   b29c6ef7bb12..80023aea8353  peterz/irq/core -> peterz/irq/core
+   4ce413d1840b..bc976233a872  peterz/irq/urgent -> peterz/irq/urgent
+   92ccc262e485..fbe0e839d1e2  peterz/locking-urgent-for-linus -> peterz/locking-urgent-for-linus
+   92ccc262e485..fbe0e839d1e2  peterz/locking/urgent -> peterz/locking/urgent
+ + 5614c5375a4a...2d8e52091dca peterz/master -> peterz/master (forced update)
+   643e345c95f0..1289e0e29857  peterz/perf-urgent-for-linus -> peterz/perf-urgent-for-linus
+ + e6c2be27b80f...9a80e72d11d4 peterz/perf/core -> peterz/perf/core (forced update)
+ + b738b7f7b2a3...19f2eb8ac44d peterz/perf/testing -> peterz/perf/testing (forced update)
+   2e36463525b8..1289e0e29857  peterz/perf/urgent -> peterz/perf/urgent
+   f73c52a5bcd1..c96f5471ce7d  peterz/sched-urgent-for-linus -> peterz/sched-urgent-for-linus
+ + 1cff2885503f...07881166a892 peterz/sched/core -> peterz/sched/core (forced update)
+ + fec7f6eff370...630ef6a1313a peterz/sched/testing -> peterz/sched/testing (forced update)
+   d94d105329e4..c96f5471ce7d  peterz/sched/urgent -> peterz/sched/urgent
+   46febd37f9c7..76dc6c097d58  peterz/smp-urgent-for-linus -> peterz/smp-urgent-for-linus
+   46febd37f9c7..76dc6c097d58  peterz/smp/urgent -> peterz/smp/urgent
+   cef31d9af908..ed4bbf7910b2  peterz/timers-urgent-for-linus -> peterz/timers-urgent-for-linus
+   b24591e2fcf8..b1a31a5f5f27  peterz/timers/core -> peterz/timers/core
+   cef31d9af908..ed4bbf7910b2  peterz/timers/urgent -> peterz/timers/urgent
+   8369c382960e..2bb8705471d5  peterz/tip -> peterz/tip
+ + eeb17ad55b3f...6cfb521ac0d5 peterz/x86-pti-for-linus -> peterz/x86-pti-for-linus (forced update)
+   215eada73e77..45d55e7bac40  peterz/x86-urgent-for-linus -> peterz/x86-urgent-for-linus
+   930ba49b2ce7..9e7a0bc0a315  peterz/x86/boot -> peterz/x86/boot
+   81bf665d00ba..80a3e3949b8f  peterz/x86/cleanups -> peterz/x86/cleanups
+ + 9e9492c76cab...4d8a991d460d peterz/x86/core -> peterz/x86/core (forced update)
+   1c9dbd4615fd..2a3e83c6f96c  peterz/x86/mm -> peterz/x86/mm
+   d1ce8ceb8ba8..1da2fd61d956  peterz/x86/platform -> peterz/x86/platform
+ + f3b5ad89de16...2c014b1fb2d8 peterz/x86/pti -> peterz/x86/pti (forced update)
+   120fc3fbb778..aa83c45762a2  peterz/x86/timers -> peterz/x86/timers
+   6454b3bdd138..45d55e7bac40  peterz/x86/urgent -> peterz/x86/urgent
+   1362d628cbce..a7f2766ac7c3  pm/acpi -> pm/acpi
+ + ec73c92701ae...6926258048ca pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   7d8df5bb0e27..6926258048ca  pm/linux-next -> pm/linux-next
+   466a2b42d676..ee43730d6515  pm/pm -> pm/pm
+   1001354ca341..846583ce1516  pm/pnp -> pm/pnp
+   7d8df5bb0e27..6926258048ca  pm/testing -> pm/testing
+ * [new branch]                android-4.9-hikey-pelt -> android-4.9-hikey-pelt
+ * [new branch]                peterz/audio/testing -> peterz/audio/testing
+ * [new tag]                   acpi-4.16-rc1 -> acpi-4.16-rc1
+ * [new tag]                   next-20180119 -> next-20180119
+ * [new tag]                   pm-4.16-rc1 -> pm-4.16-rc1
+ * [new tag]                   pnp-4.16-rc1 -> pnp-4.16-rc1
+ * [new tag]                   v4.15-rc9 -> v4.15-rc9
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

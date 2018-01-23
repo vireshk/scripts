@@ -20,6 +20,7 @@ alias muttman="zcat /usr/share/doc/mutt/manual.txt.gz | sensible-pager"
 
 # toolchains
 PATH="/home/vireshk/work/repos/tools/toolchain/gcc-linaro-4.9-2015.05-x86_64_aarch64-linux-gnu/bin:/home/vireshk/work/repos/tools/toolchain/gcc-linaro-4.9-2015.02-x86_64_arm-linux-gnueabihf/bin:/usr/bin:$PATH"
+PATH="/media/vireshk/bb4fad4d-8860-4037-8d08-02291222001e/android/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/:$PATH"
 
 # Nuttx
 #
@@ -58,6 +59,7 @@ alias msudo="sudo -A"
 alias minstall="msudo apt-get install"
 alias home="cd /home/vireshk/work/repos"
 alias htools="cd /home/vireshk/work/repos/tools"
+alias hlisa="htools; cd lisa"
 alias hboards="cd /home/vireshk/work/repos/tools/boards"
 alias hwa="cd /home/vireshk/work/repos/tools/wa-data"
 alias hhikey="cd /home/vireshk/work/repos/tools/boards/hikey"
@@ -132,6 +134,10 @@ alias buildallx86='buildall x86'
 
 alias buildworkloadautomation='hwa; msudo -H pip install ./workload-automation'
 alias wa3="adb root; msudo ANDROID_HOME=/home/vireshk/Android/Sdk wa run -f"
+
+alias mylisa="hlisa; source init_env"
+alias mywltestbkp="lisa-wltest-series --platform hikey960_android-4.9 --kernel_src ~/work/repos/devel/android --series ~/work/repos/devel/series.sha1 --wa_agenda tools/wltests/agendas/example-jankbench.yaml --device 67EA4E61017211BC"
+alias mywltest="tools/wltests/test_series --force --platform hikey960_android-4.4 --kernel_src ~/work/repos/devel/android --series ~/work/repos/devel/series.sha1 --wa_agenda ~/work/repos/tools/lisa/tools/wltests/agendas/example-jankbench.yaml --device 67EA4E61017211BC"
 
 # x86 specific installation
 export X86IMAGENAME="custom"

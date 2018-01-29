@@ -14118,3 +14118,54 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master f92e9f24ceed] updates
+ 6 files changed, 1292 insertions(+), 1 deletion(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   edd6f1946729..f92e9f24ceed  master -> master
+   76d25d674ae3..edd6f1946729  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon Jan 29 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   f190cc5facae..086ef2c768e1  bkp/android-4.9-hikey-pelt -> bkp/android-4.9-hikey-pelt
+   a0ec1ded22e6..d8a5b80568a9  origin/HEAD -> origin/HEAD
+   a0ec1ded22e6..d8a5b80568a9  origin/master -> origin/master
+ * [new branch]                cpufreq/stable -> cpufreq/stable
+ * [new branch]                bkp/android-4.9-hikey-walt -> bkp/android-4.9-hikey-walt
+ * [new tag]                   v4.15 -> v4.15
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

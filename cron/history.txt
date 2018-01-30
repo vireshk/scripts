@@ -14169,3 +14169,59 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 6d927ad65c03] updates
+ 6 files changed, 490 insertions(+), 1 deletion(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   f92e9f24ceed..6d927ad65c03  master -> master
+   edd6f1946729..f92e9f24ceed  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Tue Jan 30 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   android-4.9-hikey-walt
+ - [deleted]                   cpufreq/stable
+ * [new branch]                pelt16 -> pelt16
+ * [new branch]                pelt16-util -> pelt16-util
+ * [new branch]                pelt32 -> pelt32
+ * [new branch]                pelt8 -> pelt8
+ * [new branch]                pelt8-util -> pelt8-util
+ * [new branch]                walt10 -> walt10
+ * [new branch]                walt10-300 -> walt10-300
+ * [new branch]                bkp/cpufreq/stable -> bkp/cpufreq/stable
+ * [new branch]                llo/for-vingu -> llo/for-vingu
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

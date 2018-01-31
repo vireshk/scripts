@@ -14225,3 +14225,123 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master a8c3b64a39dd] updates
+ 3 files changed, 614 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   6d927ad65c03..a8c3b64a39dd  master -> master
+   f92e9f24ceed..6d927ad65c03  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Jan 31 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   android-4.9-hikey-old
+ + 086ef2c768e1...f76e698fb01c android-4.9-hikey-pelt -> android-4.9-hikey-pelt (forced update)
+ - [deleted]                   android-4.9-hikey-utilest
+ + 5408e2204156...99895f393cca pelt16 -> pelt16 (forced update)
+ + 086ef2c768e1...f76e698fb01c pelt16-util -> pelt16-util (forced update)
+ + 2f375c1ad251...ffad033afc96 pelt32 -> pelt32 (forced update)
+ + bd6e8fdcbf5e...3dfddcdca485 pelt8 -> pelt8 (forced update)
+ + f190cc5facae...9c75c382a779 pelt8-util -> pelt8-util (forced update)
+ + 72f216927976...f557ef10f928 walt10 -> walt10 (forced update)
+ + 41d2f0bed5c0...63321d9b5940 walt10-300 -> walt10-300 (forced update)
+ - [deleted]                   bkp/android-4.9-hikey-walt
+ - [deleted]                   bkp/cpufreq/stable
+ + adf77d065042...e26d9c4b0b1b lnext/akpm -> lnext/akpm (forced update)
+ + b5bc11e6efa2...4764beb67a72 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 761914dd2975...adbc9f27e641 lnext/master -> lnext/master (forced update)
+   dda3e15231b3..0a4b6e2f80aa  lnext/stable -> lnext/stable
+   d8a5b80568a9..13ddd1667e7f  origin/HEAD -> origin/HEAD
+   d8a5b80568a9..13ddd1667e7f  origin/master -> origin/master
+ + 3165e1f9664e...aa9e330bcba4 peterz/audio/testing -> peterz/audio/testing (forced update)
+ + b6d798352ff3...0f52a0d7229c peterz/auto-latest -> peterz/auto-latest (forced update)
+   b2f73922d119..0f7cda2b824b  peterz/core-debug-for-linus -> peterz/core-debug-for-linus
+   72bc286b81d2..475c5ee193fd  peterz/core-rcu-for-linus -> peterz/core-rcu-for-linus
+ + 8c8f5e40f2df...6aa7cb96404b peterz/debug/tmp -> peterz/debug/tmp (forced update)
+   6de47a5e371f..a5c03c31af22  peterz/efi-core-for-linus -> peterz/efi-core-for-linus
+   301f55b1a917..a5c03c31af22  peterz/efi/core -> peterz/efi/core
+   ffc661c99f62..c5baa1be8f55  peterz/irq-core-for-linus -> peterz/irq-core-for-linus
+   bc976233a872..a0c9259dc4e1  peterz/irq-urgent-for-linus -> peterz/irq-urgent-for-linus
+   80023aea8353..c5baa1be8f55  peterz/irq/core -> peterz/irq/core
+   bc976233a872..8de50dc26278  peterz/irq/urgent -> peterz/irq/urgent
+   450cbdd0125c..05b93801a23c  peterz/locking-core-for-linus -> peterz/locking-core-for-linus
+   fbe0e839d1e2..88f1c87de11a  peterz/locking-urgent-for-linus -> peterz/locking-urgent-for-linus
+   450cbdd0125c..05b93801a23c  peterz/locking/core -> peterz/locking/core
+   fbe0e839d1e2..88f1c87de11a  peterz/locking/urgent -> peterz/locking/urgent
+ + 2d8e52091dca...e0ade55d6954 peterz/master -> peterz/master (forced update)
+   fcdfafcb73be..e4c1091cb495  peterz/perf-core-for-linus -> peterz/perf-core-for-linus
+   1289e0e29857..efe951d3de91  peterz/perf-urgent-for-linus -> peterz/perf-urgent-for-linus
+ + 9a80e72d11d4...5724efe7dca2 peterz/perf/core -> peterz/perf/core (forced update)
+ + 19f2eb8ac44d...7827a3fa5ab7 peterz/perf/testing -> peterz/perf/testing (forced update)
+   1289e0e29857..efe951d3de91  peterz/perf/urgent -> peterz/perf/urgent
+   783ca517bfd6..179eb850ac57  peterz/ras-core-for-linus -> peterz/ras-core-for-linus
+   765cc3a4b224..07881166a892  peterz/sched-core-for-linus -> peterz/sched-core-for-linus
+   c96f5471ce7d..ce48c146495a  peterz/sched-urgent-for-linus -> peterz/sched-urgent-for-linus
+ + 630ef6a1313a...cc40b3512a83 peterz/sched/testing -> peterz/sched/testing (forced update)
+   c96f5471ce7d..ce48c146495a  peterz/sched/urgent -> peterz/sched/urgent
+   b24591e2fcf8..303c146df1c4  peterz/timers-core-for-linus -> peterz/timers-core-for-linus
+   ed4bbf7910b2..d5421ea43d30  peterz/timers-urgent-for-linus -> peterz/timers-urgent-for-linus
+   b1a31a5f5f27..303c146df1c4  peterz/timers/core -> peterz/timers/core
+   ed4bbf7910b2..d5421ea43d30  peterz/timers/urgent -> peterz/timers/urgent
+   141d3b1daacd..03dd604e1d51  peterz/x86-apic-for-linus -> peterz/x86-apic-for-linus
+   2244645ab194..31516de306c0  peterz/x86-cache-for-linus -> peterz/x86-cache-for-linus
+   642e641cbea5..782bf20c2a17  peterz/x86-cleanups-for-linus -> peterz/x86-cleanups-for-linus
+   71c2a2d0a81f..617ab45c9a89  peterz/x86-hyperv-for-linus -> peterz/x86-hyperv-for-linus
+   9e52fc2b50de..2a3e83c6f96c  peterz/x86-mm-for-linus -> peterz/x86-mm-for-linus
+   418492ba40b2..3b42349d56c9  peterz/x86-platform-for-linus -> peterz/x86-platform-for-linus
+   6cfb521ac0d5..64e16720ea08  peterz/x86-pti-for-linus -> peterz/x86-pti-for-linus
+   120fc3fbb778..fe6daab1ee9d  peterz/x86-timers-for-linus -> peterz/x86-timers-for-linus
+   45d55e7bac40..dd085168a74c  peterz/x86-urgent-for-linus -> peterz/x86-urgent-for-linus
+   2244645ab194..31516de306c0  peterz/x86/cache -> peterz/x86/cache
+   80a3e3949b8f..782bf20c2a17  peterz/x86/cleanups -> peterz/x86/cleanups
+   71c2a2d0a81f..617ab45c9a89  peterz/x86/hyperv -> peterz/x86/hyperv
+   1da2fd61d956..3b42349d56c9  peterz/x86/platform -> peterz/x86/platform
+ + 2c014b1fb2d8...ec32f8ca2b89 peterz/x86/pti -> peterz/x86/pti (forced update)
+   aa83c45762a2..fe6daab1ee9d  peterz/x86/timers -> peterz/x86/timers
+   45d55e7bac40..dd085168a74c  peterz/x86/urgent -> peterz/x86/urgent
+ + 097526284595...283a386d4b9e vingu/hikey960/power -> vingu/hikey960/power (forced update)
+ * [new branch]                thermal/cpuidle-cooling -> thermal/cpuidle-cooling
+ * [new branch]                bkp/pelt16 -> bkp/pelt16
+ * [new branch]                bkp/pelt16-util -> bkp/pelt16-util
+ * [new branch]                bkp/pelt32 -> bkp/pelt32
+ * [new branch]                bkp/pelt8 -> bkp/pelt8
+ * [new branch]                bkp/pelt8-util -> bkp/pelt8-util
+ * [new branch]                bkp/walt10 -> bkp/walt10
+ * [new branch]                bkp/walt10-300 -> bkp/walt10-300
+ * [new branch]                vingu/test-hikey960-v4.9 -> vingu/test-hikey960-v4.9
+ * [new tag]                   next-20180130 -> next-20180130
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

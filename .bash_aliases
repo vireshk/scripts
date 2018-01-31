@@ -139,7 +139,7 @@ alias wa3="adb root; msudo ANDROID_HOME=/home/vireshk/Android/Sdk wa run -f"
 
 alias mylisa="hlisa; source init_env"
 alias mywltestbkp="lisa-wltest-series --platform hikey960_android-4.9 --kernel_src ~/work/repos/devel/android --series ~/work/repos/devel/series.sha1 --wa_agenda tools/wltests/agendas/example-jankbench.yaml --device 67EA4E61017211BC"
-alias mywltest="tools/wltests/test_series --force --platform hikey960_android-4.4 --kernel_src ~/work/repos/devel/android --series ~/work/repos/devel/series.sha1 --wa_agenda ~/work/repos/tools/lisa/tools/wltests/agendas/example-jankbench.yaml --device 67EA4E61017211BC"
+alias mywltest="tools/wltests/test_series --force --platform hikey960_android-4.4 --kernel_src ~/work/repos/devel/android --series results/wltests/series.sha1 --wa_agenda ~/work/repos/tools/lisa/tools/wltests/agendas/sched-evaluation-full-short.yaml --device 67EA4E61017211BC"
 
 # x86 specific installation
 export X86IMAGENAME="custom"

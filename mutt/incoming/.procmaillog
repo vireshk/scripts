@@ -533,3 +533,27 @@ From vireshk  Mon Dec 11 15:25:57 2017
 From vireshk  Mon Jan 22 08:15:21 2018
  Subject: [PATCH v3] cpufreq: add and use cpufreq_for_each_{valid_,}entry_idx
   Folder: PATCH_v3_cpufreq_add_and_use_cpufreq_for_each_{valid_,}entry	  16900
+From vireshk  Wed Jan 24 07:01:05 2018
+ Subject: [PATCH 1/8] thermal/drivers/cpu_cooling: Fixup the header and copyrig
+  Folder: PATCH_1-8_thermal-drivers-cpu_cooling_Fixup_the_header_and_c	   6289
+From vireshk  Wed Jan 24 07:01:06 2018
+ Subject: [PATCH 2/8] thermal/drivers/cpu_cooling: Add Software Package Data Ex
+  Folder: PATCH_2-8_thermal-drivers-cpu_cooling_Add_Software_Package_D	   6901
+From vireshk  Wed Jan 24 07:01:07 2018
+ Subject: [PATCH 3/8] thermal/drivers/cpu_cooling: Remove pointless field
+  Folder: PATCH_3-8_thermal-drivers-cpu_cooling_Remove_pointless_field	   7155
+From vireshk  Wed Jan 24 07:01:08 2018
+ Subject: [PATCH 4/8] thermal/drivers/Kconfig: Convert the CPU cooling device t
+  Folder: PATCH_4-8_thermal-drivers-Kconfig_Convert_the_CPU_cooling_de	   6938
+From vireshk  Wed Jan 24 07:01:12 2018
+ Subject: [PATCH 8/8] thermal/drivers/cpu_cooling: Add the combo cpu cooling de
+  Folder: PATCH_8-8_thermal-drivers-cpu_cooling_Add_the_combo_cpu_cool	  27976
+From vireshk  Wed Jan 24 07:01:11 2018
+ Subject: [PATCH 7/8] cpuidle/drivers/cpuidle-arm: Register the cooling device
+  Folder: PATCH_7-8_cpuidle-drivers-cpuidle-arm_Register_the_cooling_d	   6012
+From vireshk  Wed Jan 24 07:01:10 2018
+ Subject: [PATCH 6/8] thermal/drivers/cpu_cooling: Add idle cooling device docu
+  Folder: PATCH_6-8_thermal-drivers-cpu_cooling_Add_idle_cooling_devic	  13269
+From vireshk  Wed Jan 24 07:01:09 2018
+ Subject: [PATCH 5/8] thermal/drivers/cpu_cooling: Introduce the cpu idle cooli
+  Folder: PATCH_5-8_thermal-drivers-cpu_cooling_Introduce_the_cpu_idle	  24365

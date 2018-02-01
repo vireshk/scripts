@@ -14345,3 +14345,61 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 32e05bd5beee] updates
+ 7 files changed, 1105 insertions(+), 565 deletions(-)
+ delete mode 100644 mutt/incoming/IT_Services_and_maintenance_over_Christmas-New_Year_period.mbox
+ delete mode 100644 mutt/incoming/PATCH_v3_cpufreq_add_and_use_cpufreq_for_each_{valid_,}entry_idx.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   a8c3b64a39dd..32e05bd5beee  master -> master
+   6d927ad65c03..a8c3b64a39dd  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Thu Feb  1 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   bkp/android-4.9-hikey-old
+ + 086ef2c768e1...f76e698fb01c bkp/android-4.9-hikey-pelt -> bkp/android-4.9-hikey-pelt (forced update)
+ - [deleted]                   bkp/android-4.9-hikey-utilest
+ + 5408e2204156...99895f393cca bkp/pelt16 -> bkp/pelt16 (forced update)
+ + 086ef2c768e1...f76e698fb01c bkp/pelt16-util -> bkp/pelt16-util (forced update)
+ + 2f375c1ad251...ffad033afc96 bkp/pelt32 -> bkp/pelt32 (forced update)
+ + bd6e8fdcbf5e...3dfddcdca485 bkp/pelt8 -> bkp/pelt8 (forced update)
+ + f190cc5facae...9c75c382a779 bkp/pelt8-util -> bkp/pelt8-util (forced update)
+ + 72f216927976...f557ef10f928 bkp/walt10 -> bkp/walt10 (forced update)
+ + 41d2f0bed5c0...63321d9b5940 bkp/walt10-300 -> bkp/walt10-300 (forced update)
+ * [new branch]                bkp/thermal/cpuidle-cooling -> bkp/thermal/cpuidle-cooling
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

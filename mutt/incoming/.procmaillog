@@ -557,3 +557,6 @@ From vireshk  Wed Jan 24 07:01:10 2018
 From vireshk  Wed Jan 24 07:01:09 2018
  Subject: [PATCH 5/8] thermal/drivers/cpu_cooling: Introduce the cpu idle cooli
   Folder: PATCH_5-8_thermal-drivers-cpu_cooling_Introduce_the_cpu_idle	  24365
+From vireshk  Mon Jan 29 08:42:03 2018
+ Subject: [PATCH] opp: cpu: Replace GFP_ATOMIC with GFP_KERNEL in dev_pm_opp_in
+  Folder: PATCH_opp_cpu_Replace_GFP_ATOMIC_with_GFP_KERNEL_in_dev_pm_o	   7260

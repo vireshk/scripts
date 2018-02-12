@@ -14712,3 +14712,59 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master db7214148c0b] updates
+ 5 files changed, 800 insertions(+)
+ create mode 100644 mutt/incoming/PATCH_opp_cpu_Replace_GFP_ATOMIC_with_GFP_KERNEL_in_dev_pm_opp_init_cpufreq_table.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   091e913c88e9..db7214148c0b  master -> master
+   710855a409d8..091e913c88e9  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon Feb 12 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 2ce9c207d1a4...0ec53640f1a0 thermal/cooling-min-max -> thermal/cooling-min-max (forced update)
+   e856f078bcf1..673899b19a20  bkp/opp/linux-next -> bkp/opp/linux-next
+   1a9a126b5098..54ce685cae30  pm/acpi -> pm/acpi
+ + ce59cf5d89b2...54ce685cae30 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + ce59cf5d89b2...54ce685cae30 pm/linux-next -> pm/linux-next (forced update)
+   1c7385dbf8c5..54ce685cae30  pm/master -> pm/master
+   7f3fdd40a7df..a051c14b8db3  pm/pm -> pm/pm
+ * [new branch]                bkp/thermal/cooling-min-max -> bkp/thermal/cooling-min-max
+ * [new tag]                   acpi-part2-4.16-rc1 -> acpi-part2-4.16-rc1
+ * [new tag]                   pm-part2-4.16-rc1 -> pm-part2-4.16-rc1
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

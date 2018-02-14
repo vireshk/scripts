@@ -14768,3 +14768,105 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master ea4fc6ce01f3] updates
+ 3 files changed, 814 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   db7214148c0b..ea4fc6ce01f3  master -> master
+   091e913c88e9..db7214148c0b  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Feb 14 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   f76e698fb01c..523ea21976d3  android-4.9-hikey-pelt -> android-4.9-hikey-pelt
+ + 673899b19a20...4a823c0be80f opp/linux-next -> opp/linux-next (forced update)
+   73de15c3c343..d87524331261  aosp-hikey/android-hikey-linaro-3.18 -> aosp-hikey/android-hikey-linaro-3.18
+   649d63f97db4..65e13ce3629b  aosp-hikey/android-hikey-linaro-4.14 -> aosp-hikey/android-hikey-linaro-4.14
+   587ae2c7e1ad..41bb49da74f7  aosp-hikey/android-hikey-linaro-4.4 -> aosp-hikey/android-hikey-linaro-4.4
+   19675ab872e1..2273c775d42a  aosp-hikey/android-hikey-linaro-4.9 -> aosp-hikey/android-hikey-linaro-4.9
+   c9159b4a92bb..65a96e9d8443  aosp/android-3.10 -> aosp/android-3.10
+   cf43f2035a3f..ba85515984f6  aosp/android-3.18 -> aosp/android-3.18
+   f87d49bbfcc7..6b52e1023e87  aosp/android-3.18-n-release -> aosp/android-3.18-n-release
+   c5472d4701e8..dd4f2817d2ed  aosp/android-3.18-o-mr1 -> aosp/android-3.18-o-mr1
+   8bf8c09a1d67..102e7048aa00  aosp/android-3.18-o-release -> aosp/android-3.18-o-release
+   9b68347c3554..fb6faf04232d  aosp/android-4.14 -> aosp/android-4.14
+   52c02cf1b2a2..78d59f1aea62  aosp/android-4.4 -> aosp/android-4.4
+   047200481e7f..0c3356c0cf26  aosp/android-4.4-eas-test -> aosp/android-4.4-eas-test
+   97ff3a0a1f26..0ebd74a36711  aosp/android-4.4-n -> aosp/android-4.4-n
+   711c70646977..2124c331c24e  aosp/android-4.4-n-release -> aosp/android-4.4-n-release
+   d385b9bbf9f9..bc8f9ae6bcd3  aosp/android-4.4-o -> aosp/android-4.4-o
+   1a6615e4a95d..1d54552e0f08  aosp/android-4.4-o-mr1 -> aosp/android-4.4-o-mr1
+   45ae3da3adfd..1e21e4c99129  aosp/android-4.4-o-release -> aosp/android-4.4-o-release
+   9c3804bc9b62..1a938310b8af  aosp/android-4.9 -> aosp/android-4.9
+   225006a4f768..de22a05ed091  aosp/android-4.9-eas-dev -> aosp/android-4.9-eas-dev
+   dcb2674a472a..1b9d719b0b46  aosp/android-4.9-o -> aosp/android-4.9-o
+   b181646c15b5..534ee59441e7  aosp/android-4.9-o-mr1 -> aosp/android-4.9-o-mr1
+   cf3a5bc1a044..fcb9faa1d2e6  aosp/android-4.9-o-release -> aosp/android-4.9-o-release
+ + 7b150986ac25...6afaf6488a62 aosp/experimental/android-mainline-tracking -> aosp/experimental/android-mainline-tracking (forced update)
+   9d468a2b52d1..00f0eaaadfe0  aosp/upstream-f2fs-stable-linux-4.14.y -> aosp/upstream-f2fs-stable-linux-4.14.y
+   ba1ade71012d..5f9b3abb911f  aosp/upstream-f2fs-stable-linux-4.4.y -> aosp/upstream-f2fs-stable-linux-4.4.y
+   743205fbb952..71f8f0499e8b  aosp/upstream-f2fs-stable-linux-4.9.y -> aosp/upstream-f2fs-stable-linux-4.9.y
+   a5d35deca214..cde3537bd109  aosp/upstream-linux-3.18.y -> aosp/upstream-linux-3.18.y
+   9c0bf9847171..1722fe372784  aosp/upstream-linux-4.14.y -> aosp/upstream-linux-4.14.y
+   42375c1120d5..f0feeec9c246  aosp/upstream-linux-4.4.y -> aosp/upstream-linux-4.4.y
+   b8cf9ff79d63..7f3bd8db9974  aosp/upstream-linux-4.9.y -> aosp/upstream-linux-4.9.y
+ + 2ce9c207d1a4...0ec53640f1a0 bkp/thermal/cooling-min-max -> bkp/thermal/cooling-min-max (forced update)
+ + c8cefc87ae4f...48f19eee3e82 lnext/akpm -> lnext/akpm (forced update)
+ + 85f4eaa3086b...0cc1bc89785d lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 417c85c22818...ae51fc4eafbe lnext/master -> lnext/master (forced update)
+   e237f98a9c13..61f14c015f5b  lnext/stable -> lnext/stable
+   f1517df8701c..61f14c015f5b  origin/HEAD -> origin/HEAD
+   f1517df8701c..61f14c015f5b  origin/master -> origin/master
+   54ce685cae30..7928b2cbe55b  pm/acpi -> pm/acpi
+   54ce685cae30..edf2b9fda0df  pm/bleeding-edge -> pm/bleeding-edge
+   54ce685cae30..edf2b9fda0df  pm/linux-next -> pm/linux-next
+   54ce685cae30..7928b2cbe55b  pm/master -> pm/master
+   a051c14b8db3..7928b2cbe55b  pm/pm -> pm/pm
+ + 6410ea9a7072...edf2b9fda0df pm/testing -> pm/testing (forced update)
+ + 673899b19a20...4a823c0be80f pmko/opp/linux-next -> pmko/opp/linux-next (forced update)
+ * [new branch]                android-4.9-hikey-eas -> android-4.9-hikey-eas
+ * [new tag]                   ASB-2018-02-05_3.18-n-release -> ASB-2018-02-05_3.18-n-release
+ * [new tag]                   ASB-2018-02-05_3.18-o-mr1 -> ASB-2018-02-05_3.18-o-mr1
+ * [new tag]                   ASB-2018-02-05_3.18-o-release -> ASB-2018-02-05_3.18-o-release
+ * [new tag]                   ASB-2018-02-05_4.4-n-release -> ASB-2018-02-05_4.4-n-release
+ * [new tag]                   ASB-2018-02-05_4.4-o-mr1 -> ASB-2018-02-05_4.4-o-mr1
+ * [new tag]                   ASB-2018-02-05_4.4-o-release -> ASB-2018-02-05_4.4-o-release
+ * [new tag]                   ASB-2018-02-05_4.9-o-mr1 -> ASB-2018-02-05_4.9-o-mr1
+ * [new tag]                   ASB-2018-02-05_4.9-o-release -> ASB-2018-02-05_4.9-o-release
+ * [new tag]                   next-20180214 -> next-20180214
+ * [new tag]                   v4.16-rc1 -> v4.16-rc1
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

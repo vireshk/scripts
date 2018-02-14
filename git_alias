@@ -83,6 +83,8 @@ alias ph='gpatch HEAD^'
 phc() { gpatch $1^..$1; }
 rpull() { git request-pull remotes/linux-linaro/linux-linaro-core-tracking git://git.linaro.org/arm/big.LITTLE/mp.git $1 > ../pull.txt; gvim ../pull.txt; }
 cpufreqrpull() { git request-pull origin/master git://git.linaro.org/people/vireshk/linux.git $1 > ../pull.txt; gvim ../pull.txt; }
+opprpull() { git request-pull origin/master git://git.kernel.org/pub/scm/linux/kernel/git/vireshk/pm.git opp/linux-next > ~/junk/pull.txt; gvim ~/junk/pull.txt; }
+
 
 alias gitgetcclist='for i in `cat ../test`; do gls HEAD~200.. -- $i > ../pull.txt;echo $i; cat ../pull.txt | grep -e Acked -e Cc | sort -u; echo ""; done | less'
 

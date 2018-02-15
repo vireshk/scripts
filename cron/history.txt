@@ -14870,3 +14870,89 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 41f5b01372e9] updates
+ 4 files changed, 934 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   ea4fc6ce01f3..41f5b01372e9  master -> master
+   db7214148c0b..ea4fc6ce01f3  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+[master bad15ba4c6d2] updates
+ 1 file changed, 280 insertions(+)
+ create mode 100644 power-graph/display_power.html
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/vireshk-linux.git
+   3f17b82e153c..bad15ba4c6d2  master -> master
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Thu Feb 15 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   pelt16
+ - [deleted]                   pelt16-util
+ - [deleted]                   pelt32
+ - [deleted]                   pelt32-util
+ - [deleted]                   pelt8
+ - [deleted]                   pelt8-util
+ - [deleted]                   walt10
+ - [deleted]                   walt10-300
+   f76e698fb01c..523ea21976d3  bkp/android-4.9-hikey-pelt -> bkp/android-4.9-hikey-pelt
+ + 673899b19a20...4a823c0be80f bkp/opp/linux-next -> bkp/opp/linux-next (forced update)
+ + aa9e330bcba4...a9c398946058 peterz/audio/testing -> peterz/audio/testing (forced update)
+ + 0f52a0d7229c...edf28e12ae74 peterz/auto-latest -> peterz/auto-latest (forced update)
+   4d8a991d460d..ac65ddad4a23  peterz/core/core -> peterz/core/core
+ + 6aa7cb96404b...6e9c4876bf8b peterz/debug/tmp -> peterz/debug/tmp (forced update)
+   a0c9259dc4e1..1beaeacdc88b  peterz/irq-urgent-for-linus -> peterz/irq-urgent-for-linus
+   8de50dc26278..1beaeacdc88b  peterz/irq/urgent -> peterz/irq/urgent
+   88f1c87de11a..ca66e797120f  peterz/locking-urgent-for-linus -> peterz/locking-urgent-for-linus
+   05b93801a23c..7246a966b678  peterz/locking/core -> peterz/locking/core
+   88f1c87de11a..79e902382637  peterz/locking/urgent -> peterz/locking/urgent
+ + e0ade55d6954...d0acdf069ea1 peterz/master -> peterz/master (forced update)
+   efe951d3de91..59410f5ac70a  peterz/perf-urgent-for-linus -> peterz/perf-urgent-for-linus
+ + 5724efe7dca2...33ea4b24277b peterz/perf/core -> peterz/perf/core (forced update)
+ + 7827a3fa5ab7...43bac2f7601c peterz/perf/testing -> peterz/perf/testing (forced update)
+   efe951d3de91..59410f5ac70a  peterz/perf/urgent -> peterz/perf/urgent
+   ce48c146495a..828450791608  peterz/sched-urgent-for-linus -> peterz/sched-urgent-for-linus
+   07881166a892..f783f8b3e6f8  peterz/sched/core -> peterz/sched/core
+ + cc40b3512a83...24e888308c85 peterz/sched/testing -> peterz/sched/testing (forced update)
+   ce48c146495a..6a546c7e69ff  peterz/sched/urgent -> peterz/sched/urgent
+   64e16720ea08..b2ac58f90540  peterz/x86-pti-for-linus -> peterz/x86-pti-for-linus
+   dd085168a74c..328008a72d38  peterz/x86-urgent-for-linus -> peterz/x86-urgent-for-linus
+ + 9e7a0bc0a315...b4b56015ed1c peterz/x86/boot -> peterz/x86/boot (forced update)
+   f34157878d3b..f1517df8701c  peterz/x86/build -> peterz/x86/build
+   4d8a991d460d..76ab24c3cd4b  peterz/x86/core -> peterz/x86/core
+   617ab45c9a89..5fa4ec9cb2e6  peterz/x86/hyperv -> peterz/x86/hyperv
+ + ec32f8ca2b89...1ddb168ce150 peterz/x86/pti -> peterz/x86/pti (forced update)
+   dd085168a74c..2b21b6e56780  peterz/x86/urgent -> peterz/x86/urgent
+ * [new branch]                android-4.9-hikey-eas-pc -> android-4.9-hikey-eas-pc
+ * [new branch]                bkp/android-4.9-hikey-eas -> bkp/android-4.9-hikey-eas
+ * [new branch]                peterz/x86/entry -> peterz/x86/entry
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

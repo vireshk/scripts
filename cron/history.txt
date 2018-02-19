@@ -14956,3 +14956,63 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master bd5abdd5e5fb] updates
+ 3 files changed, 669 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   41f5b01372e9..bd5abdd5e5fb  master -> master
+   ea4fc6ce01f3..41f5b01372e9  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/vireshk-linux.git
+   3f17b82e153c..bad15ba4c6d2  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/lwn
+[master 74d8f0315511] updates
+ 3 files changed, 302 insertions(+), 6 deletions(-)
+ create mode 100644 boot_constraint/boot_constraint_jon.txt
+ create mode 100644 rules.txt
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/lwn
+   78c72960f7d7..74d8f0315511  master -> master
+
+
+
+ 
+Mon Feb 19 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   bkp/pelt16
+ - [deleted]                   bkp/pelt16-util
+ - [deleted]                   bkp/pelt32
+ - [deleted]                   bkp/pelt32-util
+ - [deleted]                   bkp/pelt8
+ - [deleted]                   bkp/pelt8-util
+ - [deleted]                   bkp/walt10
+ - [deleted]                   bkp/walt10-300
+ + 6d4d53f5c1b5...c2193dd6f6a6 pmwg/integ -> pmwg/integ (forced update)
+ * [new branch]                bkp/android-4.9-hikey-eas-pc -> bkp/android-4.9-hikey-eas-pc
+ * [new branch]                pmwg/gem5-arm-mainline -> pmwg/gem5-arm-mainline
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

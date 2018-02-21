@@ -15076,3 +15076,57 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 8f0e53538d50] updates
+ 3 files changed, 667 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   37cf4cdb9403..8f0e53538d50  master -> master
+   bd5abdd5e5fb..37cf4cdb9403  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Feb 21 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 5685a07f937f...11cb7a162442 lnext/akpm -> lnext/akpm (forced update)
+ + 11453e4347c8...52ba62654ad5 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 61ca12c48e67...9601ec609bcf lnext/master -> lnext/master (forced update)
+   79c0ef3e85c0..af3e79d29555  lnext/stable -> lnext/stable
+ * [new branch]                pelt16-util -> pelt16-util
+ * [new branch]                pelt32-util -> pelt32-util
+ * [new branch]                pelt8-util -> pelt8-util
+ * [new branch]                walt10 -> walt10
+ * [new tag]                   next-20180221 -> next-20180221
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -15130,3 +15130,54 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 4928b6e7827a] updates
+ 3 files changed, 529 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   8f0e53538d50..4928b6e7827a  master -> master
+   37cf4cdb9403..8f0e53538d50  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Thu Feb 22 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   91ab883eb213..e29f775b2661  pm/bleeding-edge -> pm/bleeding-edge
+ * [new branch]                cpufreq/empty-table -> cpufreq/empty-table
+ * [new branch]                bkp/pelt16-util -> bkp/pelt16-util
+ * [new branch]                bkp/pelt32-util -> bkp/pelt32-util
+ * [new branch]                bkp/pelt8-util -> bkp/pelt8-util
+ * [new branch]                bkp/walt10 -> bkp/walt10
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

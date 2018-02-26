@@ -6,4 +6,5 @@ if [ "$RESULT" != "" ]; then
 	echo "$RESULT"
 fi
 
-scripts/get_maintainer.pl --nogit --nogit-fallback --norolestats --nom --nor $1
+#scripts/get_maintainer.pl --nogit --nogit-fallback --norolestats --nom --nor $1
+scripts/get_maintainer.pl --nogit --nogit-fallback --norolestats --nom --nor --pattern-depth=1 $1

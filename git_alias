@@ -118,7 +118,7 @@ alias gitmailschedutil='gitmailpm --to ingo --to peterz --cc vingu'
 alias gitmailtimer='gitmail --cc lkml --to tglx --cc fw --cc vingu'
 alias gitmailgenpd='gitmailopp --to ulf.hansson@linaro.org --to "Kevin Hilman <khilman@kernel.org>" --cc "robh+dt@kernel.org" --cc rnayak@codeaurora.org --cc sudeep.holla@arm.com'
 alias gitmailgenpdsuppress='gitmailsuppress --cc rafael --cc pm --cc vingu --cc sboyd --cc "Nishanth Menon <nm@ti.com>" --to ulf.hansson@linaro.org --to "Kevin Hilman <khilman@kernel.org>" --cc "robh+dt@kernel.org" --cc lina.iyer@linaro.org --cc rnayak@codeaurora.org --cc sudeep.holla@arm.com --cc lkml --cc "Len Brown <len.brown@intel.com>" --cc "Pavel Machek <pavel@ucw.cz>" --cc "Andy Gross <andy.gross@linaro.org>" --cc "David Brown <david.brown@linaro.org>"'
-alias gitmailbootconstraint='gitmailsuppress --cc vingu --to greg --cc sboyd --cc rnayak --cc lkml --cc lakml --cc robdclark@gmail.com --cc s.hauer@pengutronix.de --cc l.stach@pengutronix.de --cc shawnguo@kernel.org --cc fabio.estevam@nxp.com --cc nm@ti.com --cc xuwei5@hisilicon.com --cc robh+dt@kernel.org'
+alias gitmailbootconstraint='gitmailsuppress --cc vingu --to greg --cc sboyd --cc rnayak --cc lkml --cc lakml --cc robdclark@gmail.com --cc s.hauer@pengutronix.de --cc l.stach@pengutronix.de --cc shawnguo@kernel.org --cc fabio.estevam@nxp.com --cc nm@ti.com --cc xuwei5@hisilicon.com --cc robh+dt@kernel.org --cc olof@lixom.net'
 
 
 # fetch remotes

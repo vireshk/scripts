@@ -11,7 +11,7 @@ alias greg	Greg Kroah-Hartman <gregkh@linuxfoundation.org>
 alias gregl	Greg Kroah-Hartman <gregkh@google.com>
 alias alex	Alex Elder <elder@linaro.org>
 alias johan	Johan Hovold <johan@hovoldconsulting.com>
-alias sboyd	Stephen Boyd <sboyd@codeaurora.org>
+alias sboyd	Stephen Boyd <sboyd@kernel.org>
 alias vingu	Vincent Guittot <vincent.guittot@linaro.org>
 alias juri	Juri Lelli <Juri.Lelli@arm.com>
 alias robin	Robin Randhawa <robin.randhawa@arm.com>

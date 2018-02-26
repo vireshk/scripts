@@ -15237,3 +15237,361 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master e708d4d6caf4] updates
+ 4 files changed, 681 insertions(+), 1 deletion(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   c6bf272207b3..e708d4d6caf4  master -> master
+   4928b6e7827a..c6bf272207b3  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon Feb 26 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   android-4.4
+ - [deleted]                   android-4.9
+ - [deleted]                   android-4.9-eas-dev
+ - [deleted]                   android-4.9-hikey
+ - [deleted]                   android-4.9-hikey-eas
+   a732c091e930..d9761a6a491e  android-4.9-hikey-eas-pc -> android-4.9-hikey-eas-pc
+ - [deleted]                   board/820c
+ + 8494993e3d3b...cac926e7fdf7 boot-constraint -> boot-constraint (forced update)
+ + 566a10ce11a1...651f495d68e8 cpufreq/table-validation-updates -> cpufreq/table-validation-updates (forced update)
+ - [deleted]                   pelt16-util
+ - [deleted]                   pelt32-util
+ - [deleted]                   pelt8-util
+ - [deleted]                   walt10
+ - [deleted]                   bkp/cpufreq/empty-table
+ - [deleted]                   lko/boot-constraints
+ + 07b76633b237...f3a3e1344948 lnext/akpm -> lnext/akpm (forced update)
+ + d196ae5f8c5c...778b4c614f53 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 955c93482cf0...eced78aae9cb lnext/master -> lnext/master (forced update)
+   af3e79d29555..a638af00b272  lnext/stable -> lnext/stable
+   61f14c015f5b..4a3928c6f8a5  origin/HEAD -> origin/HEAD
+   61f14c015f5b..4a3928c6f8a5  origin/master -> origin/master
+ - [deleted]                   peterz/WIP.futex
+ - [deleted]                   peterz/WIP.hotplug
+ - [deleted]                   peterz/WIP.irq
+ - [deleted]                   peterz/WIP.locking/atomics
+ - [deleted]                   peterz/WIP.sched-core-for-linus
+ - [deleted]                   peterz/WIP.sched/core
+ - [deleted]                   peterz/WIP.sched/cpusallowed
+ - [deleted]                   peterz/WIP.timers
+ - [deleted]                   peterz/WIP.upstream-fixes
+ - [deleted]                   peterz/WIP.x86-pti.base-for-linus
+ - [deleted]                   peterz/WIP.x86-pti.base.prep-for-linus
+ - [deleted]                   peterz/WIP.x86-pti.entry-for-linus
+ - [deleted]                   peterz/WIP.x86/apic
+ - [deleted]                   peterz/WIP.x86/boot
+ - [deleted]                   peterz/WIP.x86/fpu
+ - [deleted]                   peterz/WIP.x86/kpti
+ - [deleted]                   peterz/WIP.x86/mm
+ - [deleted]                   peterz/WIP.x86/nodeid
+ - [deleted]                   peterz/WIP.x86/process
+ - [deleted]                   peterz/WIP.x86/pti-upstream
+ - [deleted]                   peterz/WIP.x86/pti.base
+ - [deleted]                   peterz/WIP.x86/pti.base.prep
+ - [deleted]                   peterz/WIP.x86/pti.entry
+ - [deleted]                   peterz/WIP.x86/pti.merge
+ - [deleted]                   peterz/arm64/efi
+ + a9c398946058...f8fdc2c2f537 peterz/audio/testing -> peterz/audio/testing (forced update)
+ + edf28e12ae74...91aab9c843cf peterz/auto-latest -> peterz/auto-latest (forced update)
+ - [deleted]                   peterz/core-debug-for-linus
+ - [deleted]                   peterz/core-debugobjects-for-linus
+ - [deleted]                   peterz/core-efi-for-linus
+ - [deleted]                   peterz/core-iommu-for-linus
+ - [deleted]                   peterz/core-lib-for-linus
+ - [deleted]                   peterz/core-locking-for-linus
+ - [deleted]                   peterz/core-memblock-for-linus
+ - [deleted]                   peterz/core-mutexes-for-linus
+ - [deleted]                   peterz/core-objtool-for-linus
+ - [deleted]                   peterz/core-printk-for-linus
+ - [deleted]                   peterz/core-rcu-for-linus
+ - [deleted]                   peterz/core-resources-for-linus
+ - [deleted]                   peterz/core-signals-for-linus
+ - [deleted]                   peterz/core-smp-for-linus
+ - [deleted]                   peterz/core-stackprotector-for-linus
+ - [deleted]                   peterz/core-types-for-linus
+   ce90aaf5cde4..d207af2eab3f  peterz/core-urgent-for-linus -> peterz/core-urgent-for-linus
+ - [deleted]                   peterz/core-watchdog-for-linus
+   caba4cbbd27d..1ea9b98b007a  peterz/core/debugobjects -> peterz/core/debugobjects
+ - [deleted]                   peterz/core/documentation
+ - [deleted]                   peterz/core/efi
+ - [deleted]                   peterz/core/iommu
+ - [deleted]                   peterz/core/lib
+ - [deleted]                   peterz/core/locking2
+ - [deleted]                   peterz/core/memblock
+ - [deleted]                   peterz/core/mutex
+ - [deleted]                   peterz/core/mutexes
+ - [deleted]                   peterz/core/resources
+ - [deleted]                   peterz/core/signals
+ - [deleted]                   peterz/core/smp
+ - [deleted]                   peterz/core/stackprotector
+ - [deleted]                   peterz/core/types
+   ce90aaf5cde4..d207af2eab3f  peterz/core/urgent -> peterz/core/urgent
+ - [deleted]                   peterz/core/watchdog
+ + 6e9c4876bf8b...32e215b32f22 peterz/debug/tmp -> peterz/debug/tmp (forced update)
+ - [deleted]                   peterz/efi-core-for-linus
+ - [deleted]                   peterz/efi-urgent-for-linus
+ - [deleted]                   peterz/irq-core-for-linus
+ - [deleted]                   peterz/irq-irqdomain-arm-for-linus
+ - [deleted]                   peterz/irq-irqdomain-for-linus
+   1beaeacdc88b..6dee6ae9d626  peterz/irq-urgent-for-linus -> peterz/irq-urgent-for-linus
+   c5baa1be8f55..cbf8699996a6  peterz/irq/core -> peterz/irq/core
+ - [deleted]                   peterz/irq/for-arm
+ - [deleted]                   peterz/irq/for-block
+ - [deleted]                   peterz/irq/for-gpio
+   1beaeacdc88b..6dee6ae9d626  peterz/irq/urgent -> peterz/irq/urgent
+ - [deleted]                   peterz/locking-arch-for-linus
+ - [deleted]                   peterz/locking-core-for-linus
+ - [deleted]                   peterz/locking-rwsem-for-linus
+ - [deleted]                   peterz/locking-urgent-for-linus
+ - [deleted]                   peterz/locking/arch
+ - [deleted]                   peterz/locking/arch-atomic
+   7246a966b678..a1ea544fe091  peterz/locking/core -> peterz/locking/core
+ - [deleted]                   peterz/locking/rwsem
+   79e902382637..2dd6fd2e9997  peterz/locking/urgent -> peterz/locking/urgent
+ + d0acdf069ea1...a97bbde0a19a peterz/master -> peterz/master (forced update)
+ - [deleted]                   peterz/mm-kasan-for-linus
+ - [deleted]                   peterz/mm-pat-for-linus
+ - [deleted]                   peterz/mm-pkeys-for-linus
+ - [deleted]                   peterz/mm-readonly-for-linus
+ - [deleted]                   peterz/mm-urgent-for-linus
+ - [deleted]                   peterz/mm/kasan
+ - [deleted]                   peterz/mm/pat
+ - [deleted]                   peterz/mm/pkeys
+ - [deleted]                   peterz/mm/readonly
+ - [deleted]                   peterz/mm/urgent
+ - [deleted]                   peterz/numa/base
+ - [deleted]                   peterz/numa/core
+ - [deleted]                   peterz/numa/misc
+ - [deleted]                   peterz/perf-core-for-linus
+ - [deleted]                   peterz/perf-uprobes-for-linus
+   59410f5ac70a..297f9233b53a  peterz/perf-urgent-for-linus -> peterz/perf-urgent-for-linus
+ - [deleted]                   peterz/perf-watchdog-for-linus
+ - [deleted]                   peterz/perf/bench
+ - [deleted]                   peterz/perf/fast
+ - [deleted]                   peterz/perf/hw-branch-sampling
+ - [deleted]                   peterz/perf/hw_breakpoints
+ - [deleted]                   peterz/perf/jump-labels
+ - [deleted]                   peterz/perf/kprobes
+ + 43bac2f7601c...5afd32ebc0c7 peterz/perf/testing -> peterz/perf/testing (forced update)
+ - [deleted]                   peterz/perf/timer
+ - [deleted]                   peterz/perf/uprobes
+   59410f5ac70a..297f9233b53a  peterz/perf/urgent -> peterz/perf/urgent
+ - [deleted]                   peterz/perf/watchdog
+ - [deleted]                   peterz/perf/x86
+ - [deleted]                   peterz/perf/x86-ibs
+ - [deleted]                   peterz/queue/irq/arm
+ - [deleted]                   peterz/queue/irq/gpio
+ - [deleted]                   peterz/queue/irq/pinctrl
+ - [deleted]                   peterz/queue/irq/powerpc
+ - [deleted]                   peterz/queue/x86/asm
+ - [deleted]                   peterz/queue/x86/cpu
+ - [deleted]                   peterz/ras-core-for-linus
+ - [deleted]                   peterz/ras-urgent-for-linus
+ - [deleted]                   peterz/rcu-urgent-for-linus
+ - [deleted]                   peterz/rcu/urgent
+ - [deleted]                   peterz/rfc/perf
+ - [deleted]                   peterz/sched-core-for-linus
+ - [deleted]                   peterz/sched-idle-for-linus
+ - [deleted]                   peterz/sched-mm-for-linus
+ - [deleted]                   peterz/sched-urgent-for-linus
+ - [deleted]                   peterz/sched/arch
+ + f783f8b3e6f8...2d7885ddd924 peterz/sched/core -> peterz/sched/core (forced update)
+ - [deleted]                   peterz/sched/hrtimers
+ - [deleted]                   peterz/sched/idle
+ - [deleted]                   peterz/sched/locking
+ - [deleted]                   peterz/sched/mm
+ - [deleted]                   peterz/sched/numa
+ + 24e888308c85...21c71f9d8b36 peterz/sched/testing -> peterz/sched/testing (forced update)
+   6a546c7e69ff..43d1b29b27c7  peterz/sched/urgent -> peterz/sched/urgent
+ - [deleted]                   peterz/sched/wait
+ - [deleted]                   peterz/smp-hotplug-for-linus
+ - [deleted]                   peterz/smp-urgent-for-linus
+ - [deleted]                   peterz/smp/for-block
+ - [deleted]                   peterz/smp/testing
+ - [deleted]                   peterz/smp/threadalloc
+ - [deleted]                   peterz/test-test-for-linus
+ - [deleted]                   peterz/test/test
+ - [deleted]                   peterz/timers-2038-for-linus
+ - [deleted]                   peterz/timers-core-for-linus
+ - [deleted]                   peterz/timers-nohz-for-linus
+ - [deleted]                   peterz/timers-urgent-for-linus
+ - [deleted]                   peterz/timers/2038
+ - [deleted]                   peterz/timers/for-arm
+ - [deleted]                   peterz/timers/refactor
+   2bb8705471d5..03ae0307c258  peterz/tip -> peterz/tip
+ - [deleted]                   peterz/tmp.fpu
+ - [deleted]                   peterz/tmp.irq
+ - [deleted]                   peterz/tmp.smp/hotplug
+ - [deleted]                   peterz/tmp.tmp
+ - [deleted]                   peterz/tmp.tmp2
+ - [deleted]                   peterz/x86-acpi-for-linus
+ - [deleted]                   peterz/x86-apic-for-linus
+ - [deleted]                   peterz/x86-asm-for-linus
+ - [deleted]                   peterz/x86-asmlinkage-for-linus
+ - [deleted]                   peterz/x86-atomic-for-linus
+ - [deleted]                   peterz/x86-boot-for-linus
+ - [deleted]                   peterz/x86-bsp-hotplug-for-linus
+ - [deleted]                   peterz/x86-build-for-linus
+ - [deleted]                   peterz/x86-cache-for-linus
+ - [deleted]                   peterz/x86-cleanups-for-linus
+ - [deleted]                   peterz/x86-core-for-linus
+ - [deleted]                   peterz/x86-cpu-for-linus
+ - [deleted]                   peterz/x86-cpufeature-for-linus
+ - [deleted]                   peterz/x86-debug-for-linus
+ - [deleted]                   peterz/x86-efi-for-linus
+ - [deleted]                   peterz/x86-efi-kexec-for-linus
+ - [deleted]                   peterz/x86-eficross-for-linus
+ - [deleted]                   peterz/x86-extable-for-linus
+ - [deleted]                   peterz/x86-fb-for-linus
+ - [deleted]                   peterz/x86-fpu-for-linus
+ - [deleted]                   peterz/x86-geode-for-linus
+ - [deleted]                   peterz/x86-hash-for-linus
+ - [deleted]                   peterz/x86-headers-for-linus
+ - [deleted]                   peterz/x86-hyperv-for-linus
+ - [deleted]                   peterz/x86-idle-for-linus
+ - [deleted]                   peterz/x86-intel-mid-for-linus
+ - [deleted]                   peterz/x86-iommu-for-linus
+ - [deleted]                   peterz/x86-irq-for-linus
+ - [deleted]                   peterz/x86-jumplabel-for-linus
+ - [deleted]                   peterz/x86-kaslr-for-linus
+ - [deleted]                   peterz/x86-kdump-for-linus
+ - [deleted]                   peterz/x86-mce-for-linus
+ - [deleted]                   peterz/x86-microcode-for-linus
+ - [deleted]                   peterz/x86-mm-for-linus
+ - [deleted]                   peterz/x86-mm-for-xen
+ - [deleted]                   peterz/x86-mpx-for-linus
+ - [deleted]                   peterz/x86-nuke-platforms-for-linus
+ - [deleted]                   peterz/x86-nuke386-for-linus
+ - [deleted]                   peterz/x86-paravirt-for-linus
+ - [deleted]                   peterz/x86-platform-for-linus
+ - [deleted]                   peterz/x86-pmem-for-linus
+ - [deleted]                   peterz/x86-process-for-linus
+ - [deleted]                   peterz/x86-pti-for-linus
+ - [deleted]                   peterz/x86-ras-for-linus
+ - [deleted]                   peterz/x86-rdrand-for-linus
+ - [deleted]                   peterz/x86-reboot-for-linus
+ - [deleted]                   peterz/x86-seccomp-for-linus
+ - [deleted]                   peterz/x86-smap-for-linus
+ - [deleted]                   peterz/x86-spinlocks-for-linus
+ - [deleted]                   peterz/x86-syscall-for-linus
+ - [deleted]                   peterz/x86-threadinfo-for-linus
+ - [deleted]                   peterz/x86-timers-for-linus
+ - [deleted]                   peterz/x86-trace-for-linus
+ - [deleted]                   peterz/x86-tracing-for-linus
+ - [deleted]                   peterz/x86-trampoline-for-linus
+ - [deleted]                   peterz/x86-uaccess-for-linus
+ - [deleted]                   peterz/x86-uapi-for-linus
+   328008a72d38..25d76ac88821  peterz/x86-urgent-for-linus -> peterz/x86-urgent-for-linus
+ - [deleted]                   peterz/x86-urgent-for-linus-fixed
+ - [deleted]                   peterz/x86-uv-for-linus
+ - [deleted]                   peterz/x86-vdso-for-linus
+ - [deleted]                   peterz/x86-x32-for-linus
+ - [deleted]                   peterz/x86-xsave-for-linus
+ - [deleted]                   peterz/x86/acpi
+ - [deleted]                   peterz/x86/amba
+   03dd604e1d51..bee3204ec3c4  peterz/x86/apic -> peterz/x86/apic
+ - [deleted]                   peterz/x86/apic-picks
+   91a6a6cfee8a..16c5055a5ff5  peterz/x86/asm -> peterz/x86/asm
+ - [deleted]                   peterz/x86/asmlinkage
+ - [deleted]                   peterz/x86/atomic
+ - [deleted]                   peterz/x86/autoprobe
+ + b4b56015ed1c...e9cb8fc2e5ca peterz/x86/boot -> peterz/x86/boot (forced update)
+ - [deleted]                   peterz/x86/bsp-hotplug
+   f1517df8701c..a06cc94f3f8d  peterz/x86/build -> peterz/x86/build
+ + 76ab24c3cd4b...8b0e9db46157 peterz/x86/core -> peterz/x86/core (forced update)
+ - [deleted]                   peterz/x86/cpufeature
+ - [deleted]                   peterz/x86/efi
+ - [deleted]                   peterz/x86/efi-kexec
+ - [deleted]                   peterz/x86/efi-mixed
+ - [deleted]                   peterz/x86/efi2
+ - [deleted]                   peterz/x86/eficross
+ - [deleted]                   peterz/x86/espfix
+ - [deleted]                   peterz/x86/extable
+ - [deleted]                   peterz/x86/fb
+ - [deleted]                   peterz/x86/for-kvm
+ - [deleted]                   peterz/x86/for-xen
+ - [deleted]                   peterz/x86/ftrace
+ - [deleted]                   peterz/x86/geode
+ - [deleted]                   peterz/x86/hash
+ - [deleted]                   peterz/x86/headers
+ - [deleted]                   peterz/x86/idle
+ - [deleted]                   peterz/x86/intel-mid
+ - [deleted]                   peterz/x86/iommu
+ - [deleted]                   peterz/x86/jumplabel
+ - [deleted]                   peterz/x86/kdump
+ - [deleted]                   peterz/x86/ld-fix
+ - [deleted]                   peterz/x86/mce
+   2a3e83c6f96c..6657fca06e3f  peterz/x86/mm -> peterz/x86/mm
+ - [deleted]                   peterz/x86/mm2
+ - [deleted]                   peterz/x86/mpx
+ - [deleted]                   peterz/x86/nuke-platforms
+ - [deleted]                   peterz/x86/nuke386
+ - [deleted]                   peterz/x86/paravirt
+ - [deleted]                   peterz/x86/pkeys
+   3b42349d56c9..a66b86f0026b  peterz/x86/platform -> peterz/x86/platform
+ - [deleted]                   peterz/x86/pmem
+ - [deleted]                   peterz/x86/process
+ + 1ddb168ce150...f38cb9f2ad94 peterz/x86/pti -> peterz/x86/pti (forced update)
+ - [deleted]                   peterz/x86/rdrand
+ - [deleted]                   peterz/x86/reboot
+ - [deleted]                   peterz/x86/seccomp
+ - [deleted]                   peterz/x86/smap
+ - [deleted]                   peterz/x86/spinlocks
+ - [deleted]                   peterz/x86/stackprotector
+ - [deleted]                   peterz/x86/syscall
+ - [deleted]                   peterz/x86/threadinfo
+ - [deleted]                   peterz/x86/trace
+ - [deleted]                   peterz/x86/tracing
+ - [deleted]                   peterz/x86/trampoline
+ - [deleted]                   peterz/x86/uaccess
+ - [deleted]                   peterz/x86/uapi
+ + 2b21b6e56780...894266466aa7 peterz/x86/urgent -> peterz/x86/urgent (forced update)
+ - [deleted]                   peterz/x86/uv
+ - [deleted]                   peterz/x86/vdso-old
+ - [deleted]                   peterz/x86/x32
+ - [deleted]                   peterz/x86/xsave
+ + 566a10ce11a1...651f495d68e8 pmko/cpufreq/table-validation-updates -> pmko/cpufreq/table-validation-updates (forced update)
+ * [new branch]                android-4.9-walt-remove -> android-4.9-walt-remove
+ * [new branch]                bkp/cpufreq/table-validation-updates -> bkp/cpufreq/table-validation-updates
+ * [new branch]                lko/boot-constraint -> lko/boot-constraint
+ * [new branch]                peterz/core/headers -> peterz/core/headers
+ * [new branch]                peterz/core/locking -> peterz/core/locking
+ * [new tag]                   next-20180223 -> next-20180223
+ * [new tag]                   v4.16-rc3 -> v4.16-rc3
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

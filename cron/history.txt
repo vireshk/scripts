@@ -15595,3 +15595,67 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master dc0cff804a95] updates
+ 6 files changed, 1202 insertions(+), 3 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   e708d4d6caf4..dc0cff804a95  master -> master
+   c6bf272207b3..e708d4d6caf4  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Tue Feb 27 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   bkp/android-4.4
+ - [deleted]                   bkp/android-4.9
+ - [deleted]                   bkp/android-4.9-eas-dev
+ - [deleted]                   bkp/android-4.9-hikey
+ - [deleted]                   bkp/android-4.9-hikey-eas
+   a732c091e930..d9761a6a491e  bkp/android-4.9-hikey-eas-pc -> bkp/android-4.9-hikey-eas-pc
+ - [deleted]                   bkp/board/820c
+ + 8494993e3d3b...cac926e7fdf7 bkp/boot-constraint -> bkp/boot-constraint (forced update)
+ + 566a10ce11a1...651f495d68e8 bkp/cpufreq/table-validation-updates -> bkp/cpufreq/table-validation-updates (forced update)
+ - [deleted]                   bkp/pelt16-util
+ - [deleted]                   bkp/pelt32-util
+ - [deleted]                   bkp/pelt8-util
+ - [deleted]                   bkp/walt10
+ + e4ea6034df45...913add8d583b pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + a8135650d21e...bc6cf4a9f2e8 pm/linux-next -> pm/linux-next (forced update)
+   91ab883eb213..4a3928c6f8a5  pm/master -> pm/master
+ + a8135650d21e...bc6cf4a9f2e8 pm/testing -> pm/testing (forced update)
+ * [new branch]                bkp/android-4.9-walt-remove -> bkp/android-4.9-walt-remove
+ * [new branch]                pm/acpi-battery -> pm/acpi-battery
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

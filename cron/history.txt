@@ -15659,3 +15659,60 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 1c2bcb0a10aa] updates
+ 3 files changed, 699 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   dc0cff804a95..1c2bcb0a10aa  master -> master
+   e708d4d6caf4..dc0cff804a95  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Feb 28 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + d9761a6a491e...2d38f54dc34c android-4.9-hikey-eas-pc -> android-4.9-hikey-eas-pc (forced update)
+ + f3a3e1344948...9292d3a7d851 lnext/akpm -> lnext/akpm (forced update)
+ + 778b4c614f53...beb5ec805777 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + eced78aae9cb...22383c3a38ce lnext/master -> lnext/master (forced update)
+   a638af00b272..4c3579f6cadd  lnext/stable -> lnext/stable
+   4a3928c6f8a5..f3afe530d644  origin/HEAD -> origin/HEAD
+   4a3928c6f8a5..f3afe530d644  origin/master -> origin/master
+   913add8d583b..3092e2cbbad7  pm/bleeding-edge -> pm/bleeding-edge
+ * [new branch]                android-4.9-hikey-eas-leo-fixes -> android-4.9-hikey-eas-leo-fixes
+ * [new branch]                test -> test
+ * [new branch]                origin/WIP-syscall -> origin/WIP-syscall
+ * [new tag]                   next-20180227 -> next-20180227
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -15716,3 +15716,69 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 4668f883c535] updates
+ 3 files changed, 731 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   1c2bcb0a10aa..4668f883c535  master -> master
+   dc0cff804a95..1c2bcb0a10aa  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon Mar  5 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+Warning: Permanently added the ECDSA host key for IP address '54.255.241.230' to the list of known hosts.
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 2d38f54dc34c...93a149342902 android-4.9-hikey-eas-pc -> android-4.9-hikey-eas-pc (forced update)
+ + 651f495d68e8...a4b82bba782e cpufreq/table-validation-updates -> cpufreq/table-validation-updates (forced update)
+ + d9761a6a491e...2d38f54dc34c bkp/android-4.9-hikey-eas-pc -> bkp/android-4.9-hikey-eas-pc (forced update)
+   a54c51863ed1..fd6d2e506ce6  eduardo/fixes -> eduardo/fixes
+ + 6cc6cfd79fe6...d0ecbbbe518e eduardo/for-kernelci -> eduardo/for-kernelci (forced update)
+ + 9f4bf9eb9fb4...d0ecbbbe518e eduardo/linus -> eduardo/linus (forced update)
+ + 6cc6cfd79fe6...d0ecbbbe518e eduardo/next -> eduardo/next (forced update)
+ + 9292d3a7d851...df44578a55b1 lnext/akpm -> lnext/akpm (forced update)
+ + beb5ec805777...81e34f4fe56c lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 22383c3a38ce...80253003d5da lnext/master -> lnext/master (forced update)
+   4c3579f6cadd..8da5db7ddae1  lnext/stable -> lnext/stable
+   f3afe530d644..661e50bc8532  origin/HEAD -> origin/HEAD
+   f3afe530d644..661e50bc8532  origin/master -> origin/master
+   bc6cf4a9f2e8..981020918bad  pm/linux-next -> pm/linux-next
+   91ab883eb213..b61e07030533  pm/pm -> pm/pm
+ * [new branch]                bkp/android-4.9-hikey-eas-leo-fixes -> bkp/android-4.9-hikey-eas-leo-fixes
+ * [new branch]                bkp/test -> bkp/test
+ * [new tag]                   next-20180302 -> next-20180302
+ * [new tag]                   pm-4.16-rc4 -> pm-4.16-rc4
+ * [new tag]                   v4.16-rc4 -> v4.16-rc4
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -15839,3 +15839,60 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 818809d90417] updates
+ 3 files changed, 651 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   9660905de7c8..818809d90417  master -> master
+   4668f883c535..9660905de7c8  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Mar  7 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 93a149342902...22e98837ac72 bkp/android-4.9-hikey-eas-pc -> bkp/android-4.9-hikey-eas-pc (forced update)
+ + a4b82bba782e...db87f88f482e bkp/cpufreq/table-validation-updates -> bkp/cpufreq/table-validation-updates (forced update)
+ + 0ec53640f1a0...e616e3a78957 bkp/thermal/cooling-min-max -> bkp/thermal/cooling-min-max (forced update)
+ + 2f231cb29024...ce65d7c3cb07 lnext/akpm -> lnext/akpm (forced update)
+ + afffef95918a...2e3f0c5082cc lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 9c142d8a6556...b3baaf8265fc lnext/master -> lnext/master (forced update)
+   661e50bc8532..ce380619fab9  lnext/stable -> lnext/stable
+ + 3092e2cbbad7...3ce1a9d19a98 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 981020918bad...3ce1a9d19a98 pm/linux-next -> pm/linux-next (forced update)
+   4a3928c6f8a5..661e50bc8532  pm/master -> pm/master
+ + bc6cf4a9f2e8...3ce1a9d19a98 pm/testing -> pm/testing (forced update)
+ * [new tag]                   next-20180307 -> next-20180307
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

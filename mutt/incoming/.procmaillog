@@ -560,3 +560,6 @@ From vireshk  Wed Jan 24 07:01:09 2018
 From vireshk  Mon Jan 29 08:42:03 2018
  Subject: [PATCH] opp: cpu: Replace GFP_ATOMIC with GFP_KERNEL in dev_pm_opp_in
   Folder: PATCH_opp_cpu_Replace_GFP_ATOMIC_with_GFP_KERNEL_in_dev_pm_o	   7260
+From vireshk  Wed Mar  7 08:11:55 2018
+ Subject: Re: [PATCH android-4.9] sched/fair: Prefer low capacity idle-CPU for 
+  Folder: Re_PATCH_android-4.9_sched-fair_Prefer_low_capacity_idle-CPU	   8736

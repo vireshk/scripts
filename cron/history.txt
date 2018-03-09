@@ -15943,3 +15943,55 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 6158a103a203] updates
+ 5 files changed, 879 insertions(+)
+ create mode 100644 mutt/incoming/Re_PATCH_android-4.9_sched-fair_Prefer_low_capacity_idle-CPU_for_boosted_non-prefer-idle_tasks.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   ebafcbd5e053..6158a103a203  master -> master
+   818809d90417..ebafcbd5e053  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Fri Mar  9 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + c184a5fee775...6f1602ba4a6f test -> test (forced update)
+ + ce65d7c3cb07...15ade14f5c34 lnext/akpm -> lnext/akpm (forced update)
+ + 2e3f0c5082cc...69298ab99e55 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + b3baaf8265fc...c6f1a8c95347 lnext/master -> lnext/master (forced update)
+   ce380619fab9..ea9b5ee31078  lnext/stable -> lnext/stable
+ * [new tag]                   next-20180308 -> next-20180308
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

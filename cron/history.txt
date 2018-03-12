@@ -15995,3 +15995,60 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 987506803829] updates
+ 3 files changed, 668 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   6158a103a203..987506803829  master -> master
+   ebafcbd5e053..6158a103a203  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon Mar 12 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   22e98837ac72..0256cf9445c3  android-4.9-hikey-eas-pc -> android-4.9-hikey-eas-pc
+ + 6f1602ba4a6f...af598e3624bd test -> test (forced update)
+ + e616e3a78957...9691f66bb743 thermal/cooling-min-max -> thermal/cooling-min-max (forced update)
+ + c184a5fee775...6f1602ba4a6f bkp/test -> bkp/test (forced update)
+ + 15ade14f5c34...75e930b5d474 lnext/akpm -> lnext/akpm (forced update)
+ + 69298ab99e55...46bbf2aee093 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + c6f1a8c95347...61530b14b059 lnext/master -> lnext/master (forced update)
+   ea9b5ee31078..1b88accf6a65  lnext/stable -> lnext/stable
+   1b88accf6a65..0c8efd610b58  origin/HEAD -> origin/HEAD
+   1b88accf6a65..0c8efd610b58  origin/master -> origin/master
+ * [new tag]                   next-20180309 -> next-20180309
+ * [new tag]                   v4.16-rc5 -> v4.16-rc5
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -16052,3 +16052,66 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master fa0add111c1d] updates
+ 4 files changed, 869 insertions(+), 8 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   987506803829..fa0add111c1d  master -> master
+   6158a103a203..987506803829  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Tue Mar 13 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   22e98837ac72..0256cf9445c3  bkp/android-4.9-hikey-eas-pc -> bkp/android-4.9-hikey-eas-pc
+ + 6f1602ba4a6f...af598e3624bd bkp/test -> bkp/test (forced update)
+ + e616e3a78957...9691f66bb743 bkp/thermal/cooling-min-max -> bkp/thermal/cooling-min-max (forced update)
+ - [deleted]                   pm/acpi-battery
+ + 3ce1a9d19a98...87f2b9960aac pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 3ce1a9d19a98...87f2b9960aac pm/linux-next -> pm/linux-next (forced update)
+   661e50bc8532..0c8efd610b58  pm/master -> pm/master
+ + 3ce1a9d19a98...87f2b9960aac pm/testing -> pm/testing (forced update)
+ * [new branch]                android-4.9-hikey-rt-pressure -> android-4.9-hikey-rt-pressure
+ * [new branch]                leoyan/android-hikey-linaro-4.4-eas-opt-1013 -> leoyan/android-hikey-linaro-4.4-eas-opt-1013
+ * [new branch]                leoyan/android-hikey-linaro-4.9-1109 -> leoyan/android-hikey-linaro-4.9-1109
+ * [new branch]                leoyan/android-hikey-linaro-4.9-clear-random-event -> leoyan/android-hikey-linaro-4.9-clear-random-event
+ * [new branch]                leoyan/android-hikey-linaro-4.9-mali-r4-experiment -> leoyan/android-hikey-linaro-4.9-mali-r4-experiment
+ * [new branch]                leoyan/android-hikey-linaro-4.9-opt-nrg-cal-boost-margin -> leoyan/android-hikey-linaro-4.9-opt-nrg-cal-boost-margin
+ * [new branch]                leoyan/android-hikey-linaro-4.9-opt-nrg-cal-cluster-candidates -> leoyan/android-hikey-linaro-4.9-opt-nrg-cal-cluster-candidates
+ * [new branch]                leoyan/android-hikey-linaro-4.9-opt-nrg-cal-task-basis-2 -> leoyan/android-hikey-linaro-4.9-opt-nrg-cal-task-basis-2
+ * [new branch]                leoyan/android-hikey-linaro-4.9-opt-rt-pressure -> leoyan/android-hikey-linaro-4.9-opt-rt-pressure
+ * [new branch]                pm/idle-loop -> pm/idle-loop
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

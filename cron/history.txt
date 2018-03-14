@@ -16115,3 +16115,88 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 3649904a079f] updates
+ 3 files changed, 608 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   fa0add111c1d..3649904a079f  master -> master
+   987506803829..fa0add111c1d  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Mar 14 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 75e930b5d474...fd10bb678525 lnext/akpm -> lnext/akpm (forced update)
+ + 46bbf2aee093...caef8d0ee8d6 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 61530b14b059...872c90b2c718 lnext/master -> lnext/master (forced update)
+   1b88accf6a65..fc6eabbbf8ef  lnext/stable -> lnext/stable
+   87f2b9960aac..222d946a2539  pm/bleeding-edge -> pm/bleeding-edge
+ + fe03daa32565...39209e4486d2 pm/idle-loop -> pm/idle-loop (forced update)
+   87f2b9960aac..222d946a2539  pm/linux-next -> pm/linux-next
+   87f2b9960aac..222d946a2539  pm/testing -> pm/testing
+ * [new branch]                bkp/android-4.9-hikey-rt-pressure -> bkp/android-4.9-hikey-rt-pressure
+ * [new branch]                patrick/aosp/test_p2/utilest -> patrick/aosp/test_p2/utilest
+ * [new branch]                patrick/eas/next/topics/hikey960_debian -> patrick/eas/next/topics/hikey960_debian
+ * [new branch]                patrick/lkml/cfs_barriers -> patrick/lkml/cfs_barriers
+ * [new branch]                patrick/lkml/utilest_v5 -> patrick/lkml/utilest_v5
+ * [new branch]                patrick/lkml/utilest_v6 -> patrick/lkml/utilest_v6
+ * [new branch]                pm/acpi-battery -> pm/acpi-battery
+ * [new branch]                pm/baseline -> pm/baseline
+ * [new branch]                pm/idle-tick -> pm/idle-tick
+ * [new branch]                pm/poll-idle -> pm/poll-idle
+ * [new tag]                   for-3.4/core -> for-3.4/core
+ * [new tag]                   for-3.4/drivers -> for-3.4/drivers
+ * [new tag]                   for-3.8/core -> for-3.8/core
+ * [new tag]                   for-3.8/drivers -> for-3.8/drivers
+ * [new tag]                   for-3.9/core -> for-3.9/core
+ * [new tag]                   for-3.9/drivers -> for-3.9/drivers
+ * [new tag]                   for-linus-20120211 -> for-linus-20120211
+ * [new tag]                   for-linus-20120531 -> for-linus-20120531
+ * [new tag]                   for-linus-20121123 -> for-linus-20121123
+ * [new tag]                   for-linus-20130206 -> for-linus-20130206
+ * [new tag]                   for-linus-20130331 -> for-linus-20130331
+ * [new tag]                   for-linus-20130409 -> for-linus-20130409
+ * [new tag]                   hikey-tracking-eas-v5.2-v4.4-20160606 -> hikey-tracking-eas-v5.2-v4.4-20160606
+ * [new tag]                   hikey-tracking-eas-v5.2-v4.4-20160614 -> hikey-tracking-eas-v5.2-v4.4-20160614
+ * [new tag]                   hikey-tracking-eas-v5.2-v4.4-20160617 -> hikey-tracking-eas-v5.2-v4.4-20160617
+ * [new tag]                   hikey-tracking-eas-v5.2-v4.4-20160620 -> hikey-tracking-eas-v5.2-v4.4-20160620
+ * [new tag]                   hikey-tracking-eas-v5.2-v4.4-20160701 -> hikey-tracking-eas-v5.2-v4.4-20160701
+ * [new tag]                   next-20180313 -> next-20180313
+ * [new tag]                   release/v4.9 -> release/v4.9
+ * [new tag]                   test_p2_pelt8_utilest -> test_p2_pelt8_utilest
+ * [new tag]                   tjh -> tjh
+ * [new tag]                   v2.6.34-401.0 -> v2.6.34-401.0
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -239,7 +239,7 @@ export ANDROID_HOME=/home/vireshk/Android/Sdk
 export JIRA_USERNAME="Viresh.kumar@linaro.org"
 export JIRA_PASSWORD=`cat ~/all/criticalinfo/.password`
 PATH="/home/vireshk/work/repos/tools/jipdate/:$PATH"
-alias updatejiramail="git send-email --confirm=always --cc-cmd=true --to-cmd=true pmwg-weekly-status.txt --to private-pmwg@lists.linaro.org --cc vireshk"
+alias updatejiramail="git send-email --confirm=always --cc-cmd=true --to-cmd=true pmwg-weekly-status.txt --to private-pmwg@linaro.org --cc vireshk"
 alias updatejira="hjunk; cd jira; jipdate.py -q --all -f pmwg-weekly-status.txt; updatejiramail"
 
 # go to linux on shell startup

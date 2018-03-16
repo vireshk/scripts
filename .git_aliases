@@ -29,4 +29,4 @@ alias pm	linux-pm@vger.kernel.org
 alias spear	spear-devel@list.st.com
 alias ara	projectara-software-dev@linaro.org
 alias arak	project-ara-kernel@lists.linaro.org
-alias pmwg	private-pmwg@lists.linaro.org
+alias pmwg	private-pmwg@linaro.org

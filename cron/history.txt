@@ -16332,3 +16332,50 @@ Everything up-to-date
 
 
 
+ 
+Mon Apr  2 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 01b604efc4b8...3d4b18fd7c8d lnext/akpm -> lnext/akpm (forced update)
+ + bce5ff51871b...f73f88bdb0c0 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + ba5add06b563...d1f1142ea4f4 lnext/master -> lnext/master (forced update)
+   274a1ff0704b..3eb2ce825ea1  lnext/stable -> lnext/stable
+   df09348f78dc..0adb32858b0b  origin/HEAD -> origin/HEAD
+   df09348f78dc..0adb32858b0b  origin/master -> origin/master
+   91ab883eb213..e7d7743f1be5  pm/acpi -> pm/acpi
+   0c8efd610b58..3eb2ce825ea1  pm/baseline -> pm/baseline
+ + 222d946a2539...4606b87beeff pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ - [deleted]                   pm/idle-loop
+ - [deleted]                   pm/idle-tick
+ + 222d946a2539...4606b87beeff pm/linux-next -> pm/linux-next (forced update)
+   0c8efd610b58..3eb2ce825ea1  pm/master -> pm/master
+ - [deleted]                   pm/poll-idle
+ + 222d946a2539...4606b87beeff pm/testing -> pm/testing (forced update)
+ * [new branch]                cpufreq/ti -> cpufreq/ti
+ * [new branch]                mac/cpufreq/table-validation-updates -> mac/cpufreq/table-validation-updates
+ * [new branch]                mac/cpufreq/test -> mac/cpufreq/test
+ * [new branch]                mac/opp/genpd/qcom -> mac/opp/genpd/qcom
+ * [new branch]                mac/thermal/cooling -> mac/thermal/cooling
+ * [new branch]                mac/thermal/cooling-min-max -> mac/thermal/cooling-min-max
+ * [new branch]                pm/idle-loop-v7.3 -> pm/idle-loop-v7.3
+ * [new branch]                pm/idle-loop-v8 -> pm/idle-loop-v8
+ * [new branch]                pm/idle-poll -> pm/idle-poll
+ * [new branch]                pm/idle-tick-v7.3 -> pm/idle-tick-v7.3
+ * [new branch]                pm/idle-tick-v8 -> pm/idle-tick-v8
+ * [new tag]                   acpi-4.16-rc7 -> acpi-4.16-rc7
+ * [new tag]                   next-20180319 -> next-20180319
+ * [new tag]                   next-20180321 -> next-20180321
+ * [new tag]                   next-20180329 -> next-20180329
+ * [new tag]                   v4.16 -> v4.16
+ * [new tag]                   v4.16-rc6 -> v4.16-rc6
+ * [new tag]                   v4.16-rc7 -> v4.16-rc7
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

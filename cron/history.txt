@@ -16379,3 +16379,58 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 21f34fd99edf] updates
+ 6 files changed, 1248 insertions(+)
+ create mode 100644 .Skype/shared_dynco/dc.db-journal
+ create mode 100644 .Skype/shared_dynco/dc.lock
+ create mode 100644 .Skype/shared_httpfe/queue.lock
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   d34a7ca71de5..21f34fd99edf  master -> master
+   938cceb14081..d34a7ca71de5  bkp/master -> bkp/master
+   0ca6f0a3c17b..630138b04732  mac/master -> mac/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Tue Apr  3 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   e7d7743f1be5..49076b2c64a2  pm/acpi -> pm/acpi
+   b61e07030533..103cf0e5799c  pm/pm -> pm/pm
+ * [new branch]                thermal/sysfs -> thermal/sysfs
+ * [new branch]                bkp/cpufreq/ti -> bkp/cpufreq/ti
+ * [new tag]                   acpi-4.17-rc1 -> acpi-4.17-rc1
+ * [new tag]                   pm-4.17-rc1 -> pm-4.17-rc1
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

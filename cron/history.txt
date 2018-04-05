@@ -16498,3 +16498,69 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master cfe1ce8258a3] updates
+ 3 files changed, 710 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   3e39fcf6c59e..cfe1ce8258a3  master -> master
+   21f34fd99edf..3e39fcf6c59e  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Thu Apr  5 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   9ff535a3f9f2..85eb06c83538  cpufreq/table-validation-updates -> cpufreq/table-validation-updates
+ - [deleted]                   bkp/cpufreq/schedutil-peterz
+ + db87f88f482e...9ff535a3f9f2 bkp/cpufreq/table-validation-updates -> bkp/cpufreq/table-validation-updates (forced update)
+ - [deleted]                   bkp/sched/cpufreq-flags
+ - [deleted]                   bkp/test
+ - [deleted]                   bkp/thermal/cooling
+ - [deleted]                   bkp/thermal/cooling-min-max
+ - [deleted]                   bkp/thermal/cooling-v1
+ + b2b6505c1245...2f7b2301539a bkp/thermal/sysfs -> bkp/thermal/sysfs (forced update)
+ + d85e20b28568...56c87c3878fd lnext/akpm -> lnext/akpm (forced update)
+ + 6076f8742445...fe0bd905ab63 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + c6e7ba314d05...5cdf9a5fa3f9 lnext/master -> lnext/master (forced update)
+   46e0d28bdb8e..e40dc66220b7  lnext/stable -> lnext/stable
+   642e7fd23353..06dd3dfeea60  origin/HEAD -> origin/HEAD
+   642e7fd23353..06dd3dfeea60  origin/master -> origin/master
+   49076b2c64a2..be5537542743  pm/acpi -> pm/acpi
+   3eb2ce825ea1..0adb32858b0b  pm/master -> pm/master
+   103cf0e5799c..f2d285669aae  pm/pm -> pm/pm
+ * [new branch]                pm/idle-loop-v9 -> pm/idle-loop-v9
+ * [new branch]                pm/idle-tick-v9 -> pm/idle-tick-v9
+ * [new tag]                   next-20180404 -> next-20180404
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

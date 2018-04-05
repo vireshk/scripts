@@ -563,3 +563,12 @@ From vireshk  Mon Jan 29 08:42:03 2018
 From vireshk  Wed Mar  7 08:11:55 2018
  Subject: Re: [PATCH android-4.9] sched/fair: Prefer low capacity idle-CPU for 
   Folder: Re_PATCH_android-4.9_sched-fair_Prefer_low_capacity_idle-CPU	   8736
+From vireshk  Wed Apr  4 14:48:42 2018
+ Subject: [PATCH v2] cpufreq: cppc_cpufreq: Initialize shared cpu's perf capabi
+  Folder: PATCH_v2_cpufreq_cppc_cpufreq_Initialize_shared_cpu's_perf_c	   6749
+From vireshk  Mon Apr  2 08:41:48 2018
+ Subject: [PATCH] cpufreq/schedutil: Cleanup and document iowait boost
+  Folder: PATCH_cpufreq-schedutil_Cleanup_and_document_iowait_boost.mb	  12319
+From vireshk  Mon Apr  2 08:41:48 2018
+ Subject: [PATCH] cpufreq/schedutil: Cleanup and document iowait boost
+  Folder: PATCH_cpufreq-schedutil_Cleanup_and_document_iowait_boost.mb	  12319

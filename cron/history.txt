@@ -16622,3 +16622,62 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master dda53331484d] updates
+ 3 files changed, 651 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   cf89c2335d4b..dda53331484d  master -> master
+   cfe1ce8258a3..cf89c2335d4b  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon Apr  9 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 134d757d8742...e16cff3b5782 opp/genpd/updates -> opp/genpd/updates (forced update)
+ + 0d7b23e7584f...134d757d8742 bkp/opp/genpd/updates -> bkp/opp/genpd/updates (forced update)
+ + d36b6ae8e8f7...97f45c3487f9 lnext/akpm -> lnext/akpm (forced update)
+ + 3bd615df0739...9a7624add6ad lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 3049c0c63c6a...5e1dacccbb87 lnext/master -> lnext/master (forced update)
+   5b1f3dc927a2..052c220da392  lnext/stable -> lnext/stable
+   38c23685b273..f8cf2f16a7c9  origin/HEAD -> origin/HEAD
+ - [deleted]                   origin/WIP-syscall
+   38c23685b273..f8cf2f16a7c9  origin/master -> origin/master
+ + c371d8ecbfcf...f798bef0859a pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 4606b87beeff...f798bef0859a pm/linux-next -> pm/linux-next (forced update)
+ + 4606b87beeff...f798bef0859a pm/testing -> pm/testing (forced update)
+ * [new branch]                pm/pm-cpuidle -> pm/pm-cpuidle
+ * [new tag]                   next-20180406 -> next-20180406
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -16925,3 +16925,56 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master ac836ddb366e] updates
+ 3 files changed, 633 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   f73ab10b57b3..ac836ddb366e  master -> master
+   54d36f513c46..f73ab10b57b3  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon Apr 16 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + b70afd25fc48...469dfad07762 opp/ignore-opp-v2-platcode -> opp/ignore-opp-v2-platcode (forced update)
+   80aa76bcd364..60cc43fc8884  origin/HEAD -> origin/HEAD
+   80aa76bcd364..60cc43fc8884  origin/master -> origin/master
+ + f87e80f31dc5...06c4d7c3605e pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + f87e80f31dc5...1fe43114ea73 pm/linux-next -> pm/linux-next (forced update)
+   51798deaffb7..1fe43114ea73  pm/pm -> pm/pm
+ + f87e80f31dc5...1fe43114ea73 pm/testing -> pm/testing (forced update)
+ * [new tag]                   v4.17-rc1 -> v4.17-rc1
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

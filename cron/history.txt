@@ -17078,3 +17078,54 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master d99c5963eb8d] updates
+ 3 files changed, 516 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   5080fe5873df..d99c5963eb8d  master -> master
+   77d20a6ba483..5080fe5873df  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Thu Apr 19 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 2c9f408ab1e4...38c84ba386b0 lnext/akpm -> lnext/akpm (forced update)
+ + 5346ace6a611...c740710c474e lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 73cd03e23132...37d730b6516f lnext/master -> lnext/master (forced update)
+   a27fc14219f2..87ef12027b9b  origin/HEAD -> origin/HEAD
+   a27fc14219f2..87ef12027b9b  origin/master -> origin/master
+ * [new tag]                   next-20180418 -> next-20180418
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -26,7 +26,7 @@ mailboxes +me +inbox +korg \
 	+linaro +linaro/pmwg +linaro/eas +linaro/schedtools +linaro/kernel \
 	+linaro/moderator +linaro/build +linaro/kernelci +linaro/toolchain +linaro/everyone +linaro/wiki +linaro/android +linaro/announce  +linaro/dev +linaro/payslip\
 	+linaro/lng +linaro/releases +linaro/switchers +linaro/tech +linaro/conf \
-	+ara +ara/patches +ara/list +ara/jira \
+	+ara +ara/greybus +ara/list +ara/jira \
 	+sent +draft +lwn +linux-pm +bkp +bkp/me-bkp-jan16
 #mailboxes ! +Fetchmail +slrn +mutt
 set sort_browser=alpha		# Sort mailboxes by alpha(bet)

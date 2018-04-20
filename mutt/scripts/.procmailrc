@@ -43,7 +43,7 @@ me
 # ARA/kernel:
 :0:
 * ^(From|To|Cc):.*(project-ara-kernel@lists\.linaro\.org|greybus-dev@lists\.linaro\.org)
-ara/patches
+ara/greybus
 
 # ARA:
 :0:

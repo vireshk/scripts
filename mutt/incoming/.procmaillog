@@ -572,3 +572,6 @@ From vireshk  Mon Apr  2 08:41:48 2018
 From vireshk  Mon Apr  2 08:41:48 2018
  Subject: [PATCH] cpufreq/schedutil: Cleanup and document iowait boost
   Folder: PATCH_cpufreq-schedutil_Cleanup_and_document_iowait_boost.mb	  12319
+From vireshk  Mon Apr 23 09:46:43 2018
+ Subject: [PATCH] cpufreq: add suspend/resume support in Armada 37xx DVFS drive
+  Folder: PATCH_cpufreq_add_suspend-resume_support_in_Armada_37xx_DVFS	   7998

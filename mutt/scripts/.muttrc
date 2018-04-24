@@ -80,6 +80,7 @@ macro index ",1" "<enter-command>set editor=\"~/scripts/editlabel append "pen"\"
 <edit><sync-mailbox><next-undeleted>\
 <enter-command>set editor=vim\n"
 
+bind index . noop
 macro index ".1" "<enter-command>set editor=\"~/scripts/editlabel remove "pen"\"\n\
 <edit><sync-mailbox><next-undeleted>\
 <enter-command>set editor=vim\n"
@@ -197,7 +198,7 @@ bind pager <up> previous-line
 bind pager <down> next-line
 bind pager <left> exit
 bind pager <right> view-attachments
-bind pager <esc> exit
+#bind pager <esc> exit
 bind attach <left> exit
 bind attach <right> view-attach
 bind index <right> display-message

@@ -17231,3 +17231,69 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 4b8d80d84690] updates
+ 3 files changed, 575 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   ff590480da9c..4b8d80d84690  master -> master
+   e55034317807..ff590480da9c  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Tue Apr 24 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 93743f75026a...8a34a16da90b sched/cleanup -> sched/cleanup (forced update)
+ + 6cceef4e4fbc...9458d6aa2e77 lnext/akpm -> lnext/akpm (forced update)
+ + f90f921ad8cb...e0050a758bff lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 559d97996f1b...e2277be089f1 lnext/master -> lnext/master (forced update)
+   87ef12027b9b..5ec83b22a2dd  lnext/stable -> lnext/stable
+ - [deleted]                   pm/acpi-battery
+ - [deleted]                   pm/acpi-gpio
+ - [deleted]                   pm/baseline
+ + fabeef37bfd5...c959ffc52285 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ - [deleted]                   pm/idle-loop-v7.3
+ - [deleted]                   pm/idle-loop-v8
+ - [deleted]                   pm/idle-poll
+ - [deleted]                   pm/idle-tick-v7.3
+ - [deleted]                   pm/idle-tick-v8
+ + fabeef37bfd5...c959ffc52285 pm/linux-next -> pm/linux-next (forced update)
+   0adb32858b0b..6d08b06e67cd  pm/master -> pm/master
+ - [deleted]                   pm/pm-cpuidle
+ + fabeef37bfd5...c959ffc52285 pm/testing -> pm/testing (forced update)
+ * [new branch]                cpufreq/cpufreq-dt-suspend-resume -> cpufreq/cpufreq-dt-suspend-resume
+ * [new branch]                bkp/sched/cleanup -> bkp/sched/cleanup
+ * [new tag]                   next-20180423 -> next-20180423
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

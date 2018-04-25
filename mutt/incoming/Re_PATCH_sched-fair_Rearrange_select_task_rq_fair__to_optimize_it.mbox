@@ -1,0 +1,163 @@
+From vireshk  Tue Apr 24 15:33:35 2018
+Delivered-To: viresh.kumar@linaro.org
+Received: from gmail-pop.l.google.com [74.125.68.109] 	by vireshk-i7 with POP3 (fetchmail-6.3.26) 	for <vireshk@localhost> (single-drop); Tue, 24 Apr 2018 15:33:35 +0530 (IST)
+Received: by 2002:a02:b1d8:0:0:0:0:0 with SMTP id u24-v6csp783639jah;         Tue, 24 Apr 2018 03:02:29 -0700 (PDT)
+X-Google-Smtp-Source: AIpwx4/xVHQQEsfFo4UjimqphOWzgwbVYDepHLBOm0pNvukou9Mnbv/UmqxNV84nbsquVlwQC7W8
+X-Received: by 2002:a9d:e84:: with SMTP id 4-v6mr16882000otj.14.1524564148956;         Tue, 24 Apr 2018 03:02:28 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1524564148; cv=none;         d=google.com; s=arc-20160816;         b=VnLjfge30RHg63D6/WYxB/+w/3rsTL3p5NpLZpIowx9GK+n3oOYtFCsDC5ZXTaeh1W          7beNYIb/4JpHuMWQP8XTMZGfRgI+uH3Wuj5fX8nJR7h15bqjQa0sIKVUpSHN72ao8g10          8iW2t5kY9VweRvUDXsWfUM+a0OYy5atnjBf7tFz9V0AwFGdTl0OkC263TNLBwjChstMM          /yqGQzKdyBI8AChT1acQUBGBZLFc7LpB0IkZuO28iQK5FdLb9umOjdLbjADfiSW1ixu2          9l4uXTrQrMLTeaspD5U1BIyXcOtE+iz9fPYAZWIm4ukwtXf2aWNw7RBWRNZ6RvLGwsPG          l00Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:content-language:in-reply-to:mime-version          :user-agent:date:message-id:references:cc:to:subject:from          :arc-authentication-results;         bh=yS2Gnk24IHeRSy295G1xc8hYPXFN5EbMPENdqPta8r8=;         b=Zd/l1KrEzMJHQw4K3dY2qXi0nyXIbZBXaDKqwRXSzftyw3KQHoKGv77GQsHxgfvDPR          yf29YZ5oMoY7guLu4jFqqHSrudE1KAh18jO/+D66dCXlLsln+cDIi/okkaMey7PJ8aZh          PvqYm4fDoWacgApBGzeyl3qxjR/SOZlj1TRz/zRzi5u87FxHozlrM+tRIQ0ChpVJX9cH          2G771TRB4IWz6fBw07vtPBZBBtKNKM4h/iNB0WNoJYZ5BBCHJzsu26OVkBbHssPVLBm8          bkSSNt3/OTZ6p1CsRKb6ID1KSwkMFgHp22YfynyqWjECIxJUlJRx+ZMLr9VPv7bHM9cb          fJ0g==
+ARC-Authentication-Results: i=1; mx.google.com;        spf=pass (google.com: domain of valentin.schneider@arm.com designates 217.140.101.70 as permitted sender) smtp.mailfrom=valentin.schneider@arm.com
+Return-Path: <valentin.schneider@arm.com>
+Received: from foss.arm.com (usa-sjc-mx-foss1.foss.arm.com. [217.140.101.70])         by mx.google.com with ESMTP id y83-v6si3359142oia.447.2018.04.24.03.02.28;         Tue, 24 Apr 2018 03:02:28 -0700 (PDT)
+Received-SPF: pass (google.com: domain of valentin.schneider@arm.com designates 217.140.101.70 as permitted sender) client-ip=217.140.101.70;
+Authentication-Results: mx.google.com;        spf=pass (google.com: domain of valentin.schneider@arm.com designates 217.140.101.70 as permitted sender) smtp.mailfrom=valentin.schneider@arm.com
+Received: from usa-sjc-imap-foss1.foss.arm.com (unknown [10.72.51.249]) 	by usa-sjc-mx-foss1.foss.arm.com (Postfix) with ESMTP id 1CF3D15AD; 	Tue, 24 Apr 2018 03:02:28 -0700 (PDT)
+Received: from [10.1.206.36] (e113632-lin.cambridge.arm.com [10.1.206.36]) 	by usa-sjc-imap-foss1.foss.arm.com (Postfix) with ESMTPA id 0DA1A3F25D; 	Tue, 24 Apr 2018 03:02:26 -0700 (PDT)
+From: Valentin Schneider <valentin.schneider@arm.com>
+Subject: Re: [PATCH] sched/fair: Rearrange select_task_rq_fair() to optimize  it
+To: Viresh Kumar <viresh.kumar@linaro.org>, Ingo Molnar <mingo@redhat.com>,  Peter Zijlstra <peterz@infradead.org>
+Cc: Vincent Guittot <vincent.guittot@linaro.org>,  Daniel Lezcano <daniel.lezcano@linaro.org>, linux-kernel@vger.kernel.org
+References: <8a34a16da90b9f83ffe60316a074a5e4d05b59b0.1524479666.git.viresh.kumar@linaro.org>
+Message-ID: <434fa179-7c8f-8a01-a07a-4527521a04c7@arm.com>
+Date: Tue, 24 Apr 2018 11:02:26 +0100
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101  Thunderbird/52.7.0
+MIME-Version: 1.0
+In-Reply-To: <8a34a16da90b9f83ffe60316a074a5e4d05b59b0.1524479666.git.viresh.kumar@linaro.org>
+Content-Type: text/plain; charset=utf-8
+Content-Language: en-US
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: A
+Content-Length: 4243
+Lines: 130
+
+Hi,
+
+On 23/04/18 11:38, Viresh Kumar wrote:
+> Rearrange select_task_rq_fair() a bit to avoid executing some
+> conditional statements in few specific code-paths. That gets rid of the
+> goto as well.
+> 
+
+I'd argue making things easier to read is a non-negligible part as well.
+
+> This shouldn't result in any functional changes.
+> 
+> Signed-off-by: Viresh Kumar <viresh.kumar@linaro.org>
+> ---
+>  kernel/sched/fair.c | 24 +++++++++---------------
+>  1 file changed, 9 insertions(+), 15 deletions(-)
+> 
+> diff --git a/kernel/sched/fair.c b/kernel/sched/fair.c
+> index 54dc31e7ab9b..cacee15076a4 100644
+> --- a/kernel/sched/fair.c
+> +++ b/kernel/sched/fair.c
+> @@ -6636,6 +6636,7 @@ select_task_rq_fair(struct task_struct *p, int prev_cpu, int sd_flag, int wake_f
+>  		 */
+>  		if (want_affine && (tmp->flags & SD_WAKE_AFFINE) &&
+>  		    cpumask_test_cpu(prev_cpu, sched_domain_span(tmp))) {
+> +			sd = NULL; /* Prefer wake_affine over balance flags */
+>  			affine_sd = tmp;
+>  			break;
+>  		}
+> @@ -6646,33 +6647,26 @@ select_task_rq_fair(struct task_struct *p, int prev_cpu, int sd_flag, int wake_f
+>  			break;
+>  	}
+>  
+> -	if (affine_sd) {
+> -		sd = NULL; /* Prefer wake_affine over balance flags */
+> -		if (cpu == prev_cpu)
+> -			goto pick_cpu;
+> -
+> -		new_cpu = wake_affine(affine_sd, p, cpu, prev_cpu, sync);
+> -	}
+> -
+> -	if (sd && !(sd_flag & SD_BALANCE_FORK)) {
+> +	if (sd) {
+>  		/*
+>  		 * We're going to need the task's util for capacity_spare_wake
+>  		 * in find_idlest_group. Sync it up to prev_cpu's
+>  		 * last_update_time.
+>  		 */
+> -		sync_entity_load_avg(&p->se);
+> -	}
+> +		if (!(sd_flag & SD_BALANCE_FORK))
+> +			sync_entity_load_avg(&p->se);
+> +
+> +		new_cpu = find_idlest_cpu(sd, p, cpu, prev_cpu, sd_flag);
+> +	} else {
+> +		if (affine_sd && cpu != prev_cpu)
+> +			new_cpu = wake_affine(affine_sd, p, cpu, prev_cpu, sync);
+>  
+> -	if (!sd) {
+> -pick_cpu:
+>  		if (sd_flag & SD_BALANCE_WAKE) { /* XXX always ? */
+>  			new_cpu = select_idle_sibling(p, prev_cpu, new_cpu);
+>  
+>  			if (want_affine)
+>  				current->recent_used_cpu = cpu;
+>  		}
+> -	} else {
+> -		new_cpu = find_idlest_cpu(sd, p, cpu, prev_cpu, sd_flag);
+>  	}
+>  	rcu_read_unlock();
+>  
+> 
+
+I stared at it for a bit and don't see anything wrong. I was just thinking
+that the original flow made it a bit clearer to follow the 'wake_affine' path.
+
+What about this ? It re-bumps up the number of conditionals and adds an indent
+level in the domain loop (that could be prevented by hiding the 
+cpu != prev_cpu check in wake_affine()), which isn't great, but you get to
+squash some more if's.
+
+---------------------->8-------------------------
+
+diff --git a/kernel/sched/fair.c b/kernel/sched/fair.c
+index cacee15..ad09b67 100644
+--- a/kernel/sched/fair.c
++++ b/kernel/sched/fair.c
+@@ -6613,7 +6613,7 @@ static int wake_cap(struct task_struct *p, int cpu, int prev_cpu)
+ static int
+ select_task_rq_fair(struct task_struct *p, int prev_cpu, int sd_flag, int wake_flags)
+ {
+-	struct sched_domain *tmp, *affine_sd = NULL, *sd = NULL;
++	struct sched_domain *tmp, *sd = NULL;
+ 	int cpu = smp_processor_id();
+ 	int new_cpu = prev_cpu;
+ 	int want_affine = 0;
+@@ -6636,8 +6636,10 @@ select_task_rq_fair(struct task_struct *p, int prev_cpu, int sd_flag, int wake_f
+ 		 */
+ 		if (want_affine && (tmp->flags & SD_WAKE_AFFINE) &&
+ 		    cpumask_test_cpu(prev_cpu, sched_domain_span(tmp))) {
++			if (cpu != prev_cpu)
++				new_cpu = wake_affine(tmp, p, cpu, prev_cpu, sync);
++
+ 			sd = NULL; /* Prefer wake_affine over balance flags */
+-			affine_sd = tmp;
+ 			break;
+ 		}
+ 
+@@ -6657,16 +6659,11 @@ select_task_rq_fair(struct task_struct *p, int prev_cpu, int sd_flag, int wake_f
+ 			sync_entity_load_avg(&p->se);
+ 
+ 		new_cpu = find_idlest_cpu(sd, p, cpu, prev_cpu, sd_flag);
+-	} else {
+-		if (affine_sd && cpu != prev_cpu)
+-			new_cpu = wake_affine(affine_sd, p, cpu, prev_cpu, sync);
++	} else if (sd_flag & SD_BALANCE_WAKE) { /* XXX always ? */
++		new_cpu = select_idle_sibling(p, prev_cpu, new_cpu);
+ 
+-		if (sd_flag & SD_BALANCE_WAKE) { /* XXX always ? */
+-			new_cpu = select_idle_sibling(p, prev_cpu, new_cpu);
+-
+-			if (want_affine)
+-				current->recent_used_cpu = cpu;
+-		}
++		if (want_affine)
++			current->recent_used_cpu = cpu;
+ 	}
+ 	rcu_read_unlock();
+ 
+

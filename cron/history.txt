@@ -17297,3 +17297,64 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 327e498901ad] updates
+ 6 files changed, 808 insertions(+), 1 deletion(-)
+ create mode 100644 mutt/incoming/PATCH_cpufreq_add_suspend-resume_support_in_Armada_37xx_DVFS_driver.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   4b8d80d84690..327e498901ad  master -> master
+   ff590480da9c..4b8d80d84690  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Apr 25 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + cac926e7fdf7...23d615cf51df boot-constraint -> boot-constraint (forced update)
+ + 4ca19364ff10...e98965068836 cpufreq/cpufreq-dt-suspend-resume -> cpufreq/cpufreq-dt-suspend-resume (forced update)
+ + a2b9b1db8d03...87259fae776e opp/genpd/updates -> opp/genpd/updates (forced update)
+ + 8a34a16da90b...f6e5ebec3dd2 sched/cleanup -> sched/cleanup (forced update)
+ + 93743f75026a...8a34a16da90b bkp/sched/cleanup -> bkp/sched/cleanup (forced update)
+ + 6b17ffecd991...9396f3cd7139 lko/boot-constraint -> lko/boot-constraint (forced update)
+ + 9458d6aa2e77...088345fc3553 lnext/akpm -> lnext/akpm (forced update)
+ + e0050a758bff...3f0cbac748f1 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + e2277be089f1...43cd1f497999 lnext/master -> lnext/master (forced update)
+   5ec83b22a2dd..6d08b06e67cd  lnext/stable -> lnext/stable
+   6d08b06e67cd..3be4aaf4e2d3  origin/HEAD -> origin/HEAD
+   6d08b06e67cd..3be4aaf4e2d3  origin/master -> origin/master
+   c959ffc52285..8fe6c128ca1d  pm/bleeding-edge -> pm/bleeding-edge
+ * [new branch]                bkp/cpufreq/cpufreq-dt-suspend-resume -> bkp/cpufreq/cpufreq-dt-suspend-resume
+ * [new tag]                   next-20180424 -> next-20180424
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -17421,3 +17421,59 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master eeb6496f5486] updates
+ 3 files changed, 706 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   37c741ca14b0..eeb6496f5486  master -> master
+   327e498901ad..37c741ca14b0  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Fri Apr 27 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 23d615cf51df...466db280dab5 boot-constraint -> boot-constraint (forced update)
+ + e98965068836...d6be605205f6 cpufreq/cpufreq-dt-suspend-resume -> cpufreq/cpufreq-dt-suspend-resume (forced update)
+ + f6e5ebec3dd2...cd019d175382 bkp/sched/cleanup -> bkp/sched/cleanup (forced update)
+ + 9396f3cd7139...7746f7bc9a80 lko/boot-constraint -> lko/boot-constraint (forced update)
+   69bfd470f462..0644f186fc9d  origin/HEAD -> origin/HEAD
+   69bfd470f462..0644f186fc9d  origin/master -> origin/master
+   be5537542743..bd6dff55de7a  pm/acpi -> pm/acpi
+   fa3ee26bbaed..9b7f8f5a71a0  pm/bleeding-edge -> pm/bleeding-edge
+   1fe43114ea73..e140c4af1b63  pm/pm -> pm/pm
+ * [new tag]                   acpi-4.17-rc3 -> acpi-4.17-rc3
+ * [new tag]                   pm-4.17-rc3 -> pm-4.17-rc3
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

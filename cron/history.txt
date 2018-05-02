@@ -17477,3 +17477,62 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 02ec12632a7c] updates
+ 3 files changed, 615 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   eeb6496f5486..02ec12632a7c  master -> master
+   37c741ca14b0..eeb6496f5486  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed May  2 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 23d615cf51df...466db280dab5 bkp/boot-constraint -> bkp/boot-constraint (forced update)
+ + e98965068836...d6be605205f6 bkp/cpufreq/cpufreq-dt-suspend-resume -> bkp/cpufreq/cpufreq-dt-suspend-resume (forced update)
+ + 24dc823cc7e8...bef772e2d1bd lnext/akpm -> lnext/akpm (forced update)
+ + e5bbc3c61d48...cf826a799426 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 679c0aaddcc6...c182424d2260 lnext/master -> lnext/master (forced update)
+   3be4aaf4e2d3..8188fc8bef8c  lnext/stable -> lnext/stable
+   0644f186fc9d..2d618bdf7163  origin/HEAD -> origin/HEAD
+   0644f186fc9d..2d618bdf7163  origin/master -> origin/master
+ + 9b7f8f5a71a0...188f811e2330 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + fa3ee26bbaed...541d42f1e4ab pm/linux-next -> pm/linux-next (forced update)
+   6d08b06e67cd..6da6c0db5316  pm/master -> pm/master
+ + fa3ee26bbaed...541d42f1e4ab pm/testing -> pm/testing (forced update)
+ * [new tag]                   next-20180501 -> next-20180501
+ * [new tag]                   v4.17-rc3 -> v4.17-rc3
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

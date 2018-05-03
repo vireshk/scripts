@@ -17536,3 +17536,56 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 518301471c9f] updates
+ 7 files changed, 953 insertions(+), 6 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   02ec12632a7c..518301471c9f  master -> master
+   eeb6496f5486..02ec12632a7c  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Thu May  3 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + bef772e2d1bd...1ffb084d79e4 lnext/akpm -> lnext/akpm (forced update)
+ + cf826a799426...492e6bec5eb3 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + c182424d2260...029d0d87b4a8 lnext/master -> lnext/master (forced update)
+   8188fc8bef8c..f2125992e7cb  lnext/stable -> lnext/stable
+ + 188f811e2330...4bb6e91f1729 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   541d42f1e4ab..4bb6e91f1729  pm/linux-next -> pm/linux-next
+   541d42f1e4ab..4bb6e91f1729  pm/testing -> pm/testing
+ * [new tag]                   next-20180502 -> next-20180502
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

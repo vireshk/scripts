@@ -17638,3 +17638,374 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master c6496be5828e] updates
+ 3 files changed, 672 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   27720188f535..c6496be5828e  master -> master
+   518301471c9f..27720188f535  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon May  7 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   opp/bleeding-edge
+ + 6ac15ea6fdc1...5cba20619c8f opp/genpd/updates -> opp/genpd/updates (forced update)
+ - [deleted]                   opp/genpd/updates-with-dev-add
+ - [deleted]                   opp/ignore-opp-v2-platcode
+   4a823c0be80f..97ea007c0238  opp/linux-next -> opp/linux-next
+ + cd019d175382...db1c6436e0e0 sched/cleanup -> sched/cleanup (forced update)
+ - [deleted]                   thermal/sysfs
+ + 87259fae776e...6ac15ea6fdc1 bkp/opp/genpd/updates -> bkp/opp/genpd/updates (forced update)
+ + 1ffb084d79e4...472c0c855e2c lnext/akpm -> lnext/akpm (forced update)
+ + 492e6bec5eb3...2d1190b71b85 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 029d0d87b4a8...5cf92348da2a lnext/master -> lnext/master (forced update)
+   f2125992e7cb..c15f6d8d4715  lnext/stable -> lnext/stable
+   f4ef6a438cee..75bc37fefc44  origin/HEAD -> origin/HEAD
+   f4ef6a438cee..75bc37fefc44  origin/master -> origin/master
+   bd6dff55de7a..755396163148  pm/acpi -> pm/acpi
+   e140c4af1b63..d4f3388afd48  pm/pm -> pm/pm
+   4a823c0be80f..97ea007c0238  pmko/opp/linux-next -> pmko/opp/linux-next
+ - [deleted]                   tip/WIP.futex
+ - [deleted]                   tip/WIP.hotplug
+ - [deleted]                   tip/WIP.irq
+ - [deleted]                   tip/WIP.locking/atomics
+ - [deleted]                   tip/WIP.sched-core-for-linus
+   f34157878d3b..0adb32858b0b  tip/WIP.sched/core -> tip/WIP.sched/core
+ - [deleted]                   tip/WIP.sched/cpusallowed
+ - [deleted]                   tip/WIP.timers
+ - [deleted]                   tip/WIP.upstream-fixes
+ - [deleted]                   tip/WIP.x86-pti.base-for-linus
+ - [deleted]                   tip/WIP.x86-pti.base.prep-for-linus
+ - [deleted]                   tip/WIP.x86-pti.entry-for-linus
+ - [deleted]                   tip/WIP.x86/apic
+ - [deleted]                   tip/WIP.x86/boot
+ - [deleted]                   tip/WIP.x86/fpu
+ - [deleted]                   tip/WIP.x86/kpti
+ - [deleted]                   tip/WIP.x86/mm
+ - [deleted]                   tip/WIP.x86/nodeid
+ - [deleted]                   tip/WIP.x86/process
+ - [deleted]                   tip/WIP.x86/pti
+ - [deleted]                   tip/WIP.x86/pti-upstream
+ - [deleted]                   tip/WIP.x86/pti.base
+ - [deleted]                   tip/WIP.x86/pti.base.prep
+ - [deleted]                   tip/WIP.x86/pti.entry
+ - [deleted]                   tip/WIP.x86/pti.merge
+ - [deleted]                   tip/arm64/efi
+ + a0648d04ac50...6ca67ff55bb3 tip/auto-latest -> tip/auto-latest (forced update)
+ - [deleted]                   tip/core-debug-for-linus
+   caba4cbbd27d..163cf842f583  tip/core-debugobjects-for-linus -> tip/core-debugobjects-for-linus
+ - [deleted]                   tip/core-efi-for-linus
+ - [deleted]                   tip/core-iommu-for-linus
+ - [deleted]                   tip/core-lib-for-linus
+ - [deleted]                   tip/core-locking-for-linus
+ - [deleted]                   tip/core-memblock-for-linus
+ - [deleted]                   tip/core-mutexes-for-linus
+ - [deleted]                   tip/core-objtool-for-linus
+ - [deleted]                   tip/core-printk-for-linus
+   72bc286b81d2..c4fb5f370015  tip/core-rcu-for-linus -> tip/core-rcu-for-linus
+ - [deleted]                   tip/core-resources-for-linus
+ - [deleted]                   tip/core-signals-for-linus
+ - [deleted]                   tip/core-smp-for-linus
+ - [deleted]                   tip/core-stackprotector-for-linus
+ - [deleted]                   tip/core-types-for-linus
+   7f6f60a1ba52..596a9f6768af  tip/core-urgent-for-linus -> tip/core-urgent-for-linus
+ - [deleted]                   tip/core-watchdog-for-linus
+   4d8a991d460d..5ad751053704  tip/core/core -> tip/core/core
+   caba4cbbd27d..163cf842f583  tip/core/debugobjects -> tip/core/debugobjects
+ - [deleted]                   tip/core/documentation
+ - [deleted]                   tip/core/efi
+ - [deleted]                   tip/core/iommu
+ - [deleted]                   tip/core/lib
+ - [deleted]                   tip/core/locking2
+ - [deleted]                   tip/core/memblock
+ - [deleted]                   tip/core/mutex
+ - [deleted]                   tip/core/mutexes
+   72bc286b81d2..c4fb5f370015  tip/core/rcu -> tip/core/rcu
+ - [deleted]                   tip/core/resources
+ - [deleted]                   tip/core/signals
+ - [deleted]                   tip/core/smp
+ - [deleted]                   tip/core/stackprotector
+ - [deleted]                   tip/core/types
+   7f6f60a1ba52..596a9f6768af  tip/core/urgent -> tip/core/urgent
+ - [deleted]                   tip/core/watchdog
+   6de47a5e371f..03781e40890c  tip/efi-core-for-linus -> tip/efi-core-for-linus
+   0b02e448a2eb..162ee5a8ab49  tip/efi-urgent-for-linus -> tip/efi-urgent-for-linus
+   f6f3732162b5..03781e40890c  tip/efi/core -> tip/efi/core
+   0b02e448a2eb..162ee5a8ab49  tip/efi/urgent -> tip/efi/urgent
+   ffc661c99f62..d3056812e7df  tip/irq-core-for-linus -> tip/irq-core-for-linus
+ - [deleted]                   tip/irq-irqdomain-arm-for-linus
+ - [deleted]                   tip/irq-irqdomain-for-linus
+   4ce413d1840b..1bc2463cee92  tip/irq-urgent-for-linus -> tip/irq-urgent-for-linus
+   b29c6ef7bb12..b5c5f3959bb3  tip/irq/core -> tip/irq/core
+ - [deleted]                   tip/irq/for-arm
+ - [deleted]                   tip/irq/for-block
+ - [deleted]                   tip/irq/for-gpio
+   4ce413d1840b..1bc2463cee92  tip/irq/urgent -> tip/irq/urgent
+ - [deleted]                   tip/locking-arch-for-linus
+   450cbdd0125c..19193bcad8dc  tip/locking-core-for-linus -> tip/locking-core-for-linus
+ - [deleted]                   tip/locking-rwsem-for-linus
+   92ccc262e485..578ae447e7e5  tip/locking-urgent-for-linus -> tip/locking-urgent-for-linus
+ - [deleted]                   tip/locking/arch
+ - [deleted]                   tip/locking/arch-atomic
+   450cbdd0125c..ad6812db3855  tip/locking/core -> tip/locking/core
+ - [deleted]                   tip/locking/rwsem
+   92ccc262e485..578ae447e7e5  tip/locking/urgent -> tip/locking/urgent
+ + 6c68a9b4dc07...db1c6436e0e0 tip/master -> tip/master (forced update)
+ - [deleted]                   tip/mm-kasan-for-linus
+ - [deleted]                   tip/mm-pat-for-linus
+ - [deleted]                   tip/mm-pkeys-for-linus
+ - [deleted]                   tip/mm-readonly-for-linus
+ - [deleted]                   tip/mm-urgent-for-linus
+ - [deleted]                   tip/mm/kasan
+ - [deleted]                   tip/mm/pat
+ - [deleted]                   tip/mm/pkeys
+ - [deleted]                   tip/mm/readonly
+ - [deleted]                   tip/mm/urgent
+ - [deleted]                   tip/numa/base
+ - [deleted]                   tip/numa/core
+ - [deleted]                   tip/numa/misc
+   fcdfafcb73be..1159e0947653  tip/perf-core-for-linus -> tip/perf-core-for-linus
+ - [deleted]                   tip/perf-uprobes-for-linus
+   643e345c95f0..d4652f614f21  tip/perf-urgent-for-linus -> tip/perf-urgent-for-linus
+ - [deleted]                   tip/perf-watchdog-for-linus
+ - [deleted]                   tip/perf/bench
+   faaf95677f33..eaeb1f4d8929  tip/perf/core -> tip/perf/core
+ - [deleted]                   tip/perf/fast
+ - [deleted]                   tip/perf/hw-branch-sampling
+ - [deleted]                   tip/perf/hw_breakpoints
+ - [deleted]                   tip/perf/jump-labels
+ - [deleted]                   tip/perf/kprobes
+ - [deleted]                   tip/perf/timer
+ - [deleted]                   tip/perf/uprobes
+   2e36463525b8..150426981426  tip/perf/urgent -> tip/perf/urgent
+ - [deleted]                   tip/perf/watchdog
+ - [deleted]                   tip/perf/x86
+ - [deleted]                   tip/perf/x86-ibs
+ - [deleted]                   tip/queue/irq/arm
+ - [deleted]                   tip/queue/irq/gpio
+ - [deleted]                   tip/queue/irq/pinctrl
+ - [deleted]                   tip/queue/irq/powerpc
+ - [deleted]                   tip/queue/x86/asm
+ - [deleted]                   tip/queue/x86/cpu
+   783ca517bfd6..e2efacb6a54a  tip/ras-core-for-linus -> tip/ras-core-for-linus
+   7298f08ea887..b3b7c4795cca  tip/ras-urgent-for-linus -> tip/ras-urgent-for-linus
+   179eb850ac57..985c78d3ff8e  tip/ras/core -> tip/ras/core
+   7298f08ea887..b3b7c4795cca  tip/ras/urgent -> tip/ras/urgent
+ - [deleted]                   tip/rcu-urgent-for-linus
+ - [deleted]                   tip/rcu/urgent
+ - [deleted]                   tip/rfc/perf
+   765cc3a4b224..b720342849fe  tip/sched-core-for-linus -> tip/sched-core-for-linus
+ - [deleted]                   tip/sched-idle-for-linus
+ - [deleted]                   tip/sched-mm-for-linus
+   f73c52a5bcd1..317d359df95d  tip/sched-urgent-for-linus -> tip/sched-urgent-for-linus
+ - [deleted]                   tip/sched/arch
+   a555e9d86ee3..247f2f6f3c70  tip/sched/core -> tip/sched/core
+ - [deleted]                   tip/sched/hrtimers
+ - [deleted]                   tip/sched/idle
+ - [deleted]                   tip/sched/locking
+ - [deleted]                   tip/sched/mm
+ - [deleted]                   tip/sched/numa
+   d94d105329e4..f4ef6a438cee  tip/sched/urgent -> tip/sched/urgent
+   4d8a991d460d..b3fc5c9bb373  tip/sched/wait -> tip/sched/wait
+   f4c09f87adfe..fcb3029a8d89  tip/smp-hotplug-for-linus -> tip/smp-hotplug-for-linus
+ - [deleted]                   tip/smp-urgent-for-linus
+ - [deleted]                   tip/smp/for-block
+   f4c09f87adfe..fcb3029a8d89  tip/smp/hotplug -> tip/smp/hotplug
+ - [deleted]                   tip/smp/testing
+ - [deleted]                   tip/smp/threadalloc
+   46febd37f9c7..76dc6c097d58  tip/smp/urgent -> tip/smp/urgent
+ - [deleted]                   tip/test-test-for-linus
+ - [deleted]                   tip/test/test
+ - [deleted]                   tip/timers-2038-for-linus
+   b24591e2fcf8..90c7c0c24e22  tip/timers-core-for-linus -> tip/timers-core-for-linus
+ - [deleted]                   tip/timers-nohz-for-linus
+   cef31d9af908..7dba33c6346c  tip/timers-urgent-for-linus -> tip/timers-urgent-for-linus
+ - [deleted]                   tip/timers/2038
+   b24591e2fcf8..7197e77abcb6  tip/timers/core -> tip/timers/core
+ - [deleted]                   tip/timers/for-arm
+ - [deleted]                   tip/timers/refactor
+   cef31d9af908..7dba33c6346c  tip/timers/urgent -> tip/timers/urgent
+   8369c382960e..cca3acd06bb5  tip/tip -> tip/tip
+ - [deleted]                   tip/tmp.fpu
+ - [deleted]                   tip/tmp.irq
+ - [deleted]                   tip/tmp.smp/hotplug
+ - [deleted]                   tip/tmp.tmp
+ - [deleted]                   tip/tmp.tmp2
+ - [deleted]                   tip/x86-acpi-for-linus
+   141d3b1daacd..e25283bf83bd  tip/x86-apic-for-linus -> tip/x86-apic-for-linus
+   91a6a6cfee8a..16c5055a5ff5  tip/x86-asm-for-linus -> tip/x86-asm-for-linus
+ - [deleted]                   tip/x86-asmlinkage-for-linus
+ - [deleted]                   tip/x86-atomic-for-linus
+ - [deleted]                   tip/x86-boot-for-linus
+ - [deleted]                   tip/x86-bsp-hotplug-for-linus
+   9e8730b178a2..d6289f36aa7d  tip/x86-build-for-linus -> tip/x86-build-for-linus
+ - [deleted]                   tip/x86-cache-for-linus
+   642e641cbea5..9b9a51354cae  tip/x86-cleanups-for-linus -> tip/x86-cleanups-for-linus
+ - [deleted]                   tip/x86-core-for-linus
+ - [deleted]                   tip/x86-cpu-for-linus
+ - [deleted]                   tip/x86-cpufeature-for-linus
+ - [deleted]                   tip/x86-debug-for-linus
+ - [deleted]                   tip/x86-efi-for-linus
+ - [deleted]                   tip/x86-efi-kexec-for-linus
+ - [deleted]                   tip/x86-eficross-for-linus
+ - [deleted]                   tip/x86-extable-for-linus
+ - [deleted]                   tip/x86-fb-for-linus
+ - [deleted]                   tip/x86-fpu-for-linus
+ - [deleted]                   tip/x86-geode-for-linus
+ - [deleted]                   tip/x86-hash-for-linus
+ - [deleted]                   tip/x86-headers-for-linus
+ - [deleted]                   tip/x86-hyperv-for-linus
+ - [deleted]                   tip/x86-idle-for-linus
+ - [deleted]                   tip/x86-intel-mid-for-linus
+ - [deleted]                   tip/x86-iommu-for-linus
+ - [deleted]                   tip/x86-irq-for-linus
+ - [deleted]                   tip/x86-jumplabel-for-linus
+ - [deleted]                   tip/x86-kaslr-for-linus
+ - [deleted]                   tip/x86-kdump-for-linus
+ - [deleted]                   tip/x86-mce-for-linus
+ - [deleted]                   tip/x86-microcode-for-linus
+   9e52fc2b50de..eaeb8e76cd57  tip/x86-mm-for-linus -> tip/x86-mm-for-linus
+ - [deleted]                   tip/x86-mm-for-xen
+ - [deleted]                   tip/x86-mpx-for-linus
+ - [deleted]                   tip/x86-nuke-platforms-for-linus
+ - [deleted]                   tip/x86-nuke386-for-linus
+ - [deleted]                   tip/x86-paravirt-for-linus
+   418492ba40b2..47a9973d3ed8  tip/x86-platform-for-linus -> tip/x86-platform-for-linus
+ - [deleted]                   tip/x86-pmem-for-linus
+ - [deleted]                   tip/x86-process-for-linus
+   f6c4fd506cb6..8bb2610bc496  tip/x86-pti-for-linus -> tip/x86-pti-for-linus
+ - [deleted]                   tip/x86-ras-for-linus
+ - [deleted]                   tip/x86-rdrand-for-linus
+ - [deleted]                   tip/x86-reboot-for-linus
+ - [deleted]                   tip/x86-seccomp-for-linus
+ - [deleted]                   tip/x86-smap-for-linus
+ - [deleted]                   tip/x86-spinlocks-for-linus
+ - [deleted]                   tip/x86-syscall-for-linus
+ - [deleted]                   tip/x86-threadinfo-for-linus
+   120fc3fbb778..ea89c0654821  tip/x86-timers-for-linus -> tip/x86-timers-for-linus
+ - [deleted]                   tip/x86-trace-for-linus
+ - [deleted]                   tip/x86-tracing-for-linus
+ - [deleted]                   tip/x86-trampoline-for-linus
+ - [deleted]                   tip/x86-uaccess-for-linus
+ - [deleted]                   tip/x86-uapi-for-linus
+   215eada73e77..c65732e4f721  tip/x86-urgent-for-linus -> tip/x86-urgent-for-linus
+ - [deleted]                   tip/x86-urgent-for-linus-fixed
+ - [deleted]                   tip/x86-uv-for-linus
+ - [deleted]                   tip/x86-vdso-for-linus
+ - [deleted]                   tip/x86-x32-for-linus
+ - [deleted]                   tip/x86-xsave-for-linus
+ - [deleted]                   tip/x86/acpi
+ - [deleted]                   tip/x86/amba
+   03dd604e1d51..e25283bf83bd  tip/x86/apic -> tip/x86/apic
+ - [deleted]                   tip/x86/apic-picks
+   91a6a6cfee8a..c76fc9826075  tip/x86/asm -> tip/x86/asm
+ - [deleted]                   tip/x86/asmlinkage
+ - [deleted]                   tip/x86/atomic
+ - [deleted]                   tip/x86/autoprobe
+ + 930ba49b2ce7...0c8efd610b58 tip/x86/boot -> tip/x86/boot (forced update)
+ - [deleted]                   tip/x86/bsp-hotplug
+   f34157878d3b..d6289f36aa7d  tip/x86/build -> tip/x86/build
+   2244645ab194..31516de306c0  tip/x86/cache -> tip/x86/cache
+   81bf665d00ba..5f26c50143f5  tip/x86/cleanups -> tip/x86/cleanups
+   aac64f7de999..60882cc159e1  tip/x86/cpu -> tip/x86/cpu
+ - [deleted]                   tip/x86/cpufeature
+   77072f09eab1..4dba072cd097  tip/x86/debug -> tip/x86/debug
+ - [deleted]                   tip/x86/efi
+ - [deleted]                   tip/x86/efi-kexec
+ - [deleted]                   tip/x86/efi-mixed
+ - [deleted]                   tip/x86/efi2
+ - [deleted]                   tip/x86/eficross
+ - [deleted]                   tip/x86/espfix
+ - [deleted]                   tip/x86/extable
+ - [deleted]                   tip/x86/fb
+ - [deleted]                   tip/x86/for-kvm
+ - [deleted]                   tip/x86/for-xen
+ - [deleted]                   tip/x86/ftrace
+ - [deleted]                   tip/x86/geode
+ - [deleted]                   tip/x86/hash
+ - [deleted]                   tip/x86/headers
+   71c2a2d0a81f..5fa4ec9cb2e6  tip/x86/hyperv -> tip/x86/hyperv
+ - [deleted]                   tip/x86/idle
+ - [deleted]                   tip/x86/intel-mid
+ - [deleted]                   tip/x86/iommu
+ - [deleted]                   tip/x86/jumplabel
+ - [deleted]                   tip/x86/kdump
+ - [deleted]                   tip/x86/ld-fix
+ - [deleted]                   tip/x86/mce
+   1c9dbd4615fd..eaeb8e76cd57  tip/x86/mm -> tip/x86/mm
+ - [deleted]                   tip/x86/mm2
+ - [deleted]                   tip/x86/mpx
+ - [deleted]                   tip/x86/nuke-platforms
+ - [deleted]                   tip/x86/nuke386
+ - [deleted]                   tip/x86/paravirt
+ - [deleted]                   tip/x86/pkeys
+   d1ce8ceb8ba8..47a9973d3ed8  tip/x86/platform -> tip/x86/platform
+ - [deleted]                   tip/x86/pmem
+ - [deleted]                   tip/x86/process
+   f6c4fd506cb6..e0f6d1a526b6  tip/x86/pti -> tip/x86/pti
+ - [deleted]                   tip/x86/rdrand
+ - [deleted]                   tip/x86/reboot
+ - [deleted]                   tip/x86/seccomp
+ - [deleted]                   tip/x86/smap
+ - [deleted]                   tip/x86/spinlocks
+ - [deleted]                   tip/x86/stackprotector
+ - [deleted]                   tip/x86/syscall
+ - [deleted]                   tip/x86/threadinfo
+   120fc3fbb778..ea89c0654821  tip/x86/timers -> tip/x86/timers
+ - [deleted]                   tip/x86/trace
+ - [deleted]                   tip/x86/tracing
+ - [deleted]                   tip/x86/trampoline
+ - [deleted]                   tip/x86/uaccess
+ - [deleted]                   tip/x86/uapi
+   6454b3bdd138..c65732e4f721  tip/x86/urgent -> tip/x86/urgent
+ - [deleted]                   tip/x86/uv
+   4d8a991d460d..f2173356e26c  tip/x86/vdso -> tip/x86/vdso
+ - [deleted]                   tip/x86/vdso-old
+ - [deleted]                   tip/x86/x32
+ - [deleted]                   tip/x86/xsave
+ * [new branch]                tip/core-core-for-linus -> tip/core-core-for-linus
+ * [new branch]                tip/core-headers-for-linus -> tip/core-headers-for-linus
+ * [new branch]                tip/core/headers -> tip/core/headers
+ * [new branch]                tip/sched-wait-for-linus -> tip/sched-wait-for-linus
+ * [new branch]                tip/x86-dma-for-linus -> tip/x86-dma-for-linus
+ * [new branch]                tip/x86/dma -> tip/x86/dma
+ * [new branch]                tip/x86/entry -> tip/x86/entry
+ * [new tag]                   acpi-4.17-rc4 -> acpi-4.17-rc4
+ * [new tag]                   next-20180504 -> next-20180504
+ * [new tag]                   pm-4.17-rc4 -> pm-4.17-rc4
+ * [new tag]                   v4.17-rc4 -> v4.17-rc4
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

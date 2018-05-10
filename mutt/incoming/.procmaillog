@@ -578,3 +578,6 @@ From vireshk  Mon Apr 23 09:46:43 2018
 From vireshk  Tue Apr 24 15:33:35 2018
  Subject: Re: [PATCH] sched/fair: Rearrange select_task_rq_fair() to optimize  
   Folder: Re_PATCH_sched-fair_Rearrange_select_task_rq_fair__to_optimi	   8139
+From vireshk  Wed May  9 15:15:33 2018
+ Subject: [PATCH] cpufreq: schedutil: Avoid using invalid next_freq
+  Folder: PATCH_cpufreq_schedutil_Avoid_using_invalid_next_freq.mbox	   5186

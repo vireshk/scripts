@@ -1,0 +1,66 @@
+From vireshk  Wed May  9 15:15:33 2018
+Delivered-To: viresh.kumar@linaro.org
+Received: from gmail-pop.l.google.com [74.125.200.109] 	by vireshk-i7 with POP3 (fetchmail-6.3.26) 	for <vireshk@localhost> (single-drop); Wed, 09 May 2018 15:15:33 +0530 (IST)
+Received: by 2002:a02:b1d8:0:0:0:0:0 with SMTP id u24-v6csp2954073jah;         Wed, 9 May 2018 02:45:22 -0700 (PDT)
+X-Google-Smtp-Source: AB8JxZqiHBjEHoW16dxmY3Csmy3M+3jMgb8cvIhJKE6POX1gRTUGDLgVyS85cZp1+hKeeCiTsLEI
+X-Received: by 2002:a2e:7c02:: with SMTP id x2-v6mr31624014ljc.96.1525859122414;         Wed, 09 May 2018 02:45:22 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1525859122; cv=none;         d=google.com; s=arc-20160816;         b=uy1plGDU+MlI6ciAeMiE9RQjqBSfheB3Bg1u0/zmDnbkaZp+Xh8T+dSeT589xH6W/m          3TzfgYL94TIYenLfnZ1K+uJYmFPOBmjbdjAXlBqvA7m01T3smPtZFHNRWzY+yTrgy92a          NXCKZYhgxJpgqbd1cTlb8B15y3ERazFTEnr6NFuLp4yDGiXSnlTtCgWLd1m0VULjhKtx          uDfV1fgsudD1Pvrb+y5IeXDTCpeNDQcvQakIFBD7Dxbvgu1ZMZhUYJA7SYmDu25C6xvU          9yNp90PIJoRXibMxxSPGGPh/NYRRhOG92XcVvSaHGzs54GaBVrE4P4/SIxzA4NwPi4fS          FH1g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:references:in-reply-to          :message-id:date:subject:cc:to:from:arc-authentication-results;         bh=IqeMnozJlCr/hTHQFzerI9/IdG9y0NW76K3bWfwZQlo=;         b=UlQCLVxn912dgELoj3gJJ1uyUavX4+hadIEk7vfTZdqLjJTLzKK6H+tP7OGCZBOoj8          b5bEypqLHdMVD1H3jVeshWyv3d+nvd9DSJdca/fl8w0/usV1R8Jb9Yf9KmwvvLAN5a4G          0zs+gBHGHwJFh8gcwoUi4jjFoDbBGB7ec+XV91MaDXHRXcw7xE2jT4nQ/75qn6TcVPDR          uBYUHB+7vcsm6Sb9JsH1uq2Bas1UjxScYGpkreekFjpwMRjuxHy8QP7tKP69AElgUdma          jkQzP1Bkk9Zn8hTZ+v6Nh5VLVEgQFJNggtTSGXUj/yZuTRSSI5KTZW7MUIOFJGYCjo0z          /Xdg==
+ARC-Authentication-Results: i=1; mx.google.com;        spf=pass (google.com: domain of rjw@rjwysocki.net designates 79.96.170.134 as permitted sender) smtp.mailfrom=rjw@rjwysocki.net
+Return-Path: <rjw@rjwysocki.net>
+Received: from cloudserver094114.home.pl (cloudserver094114.home.pl. [79.96.170.134])         by mx.google.com with ESMTPS id 39-v6si4640222ljb.153.2018.05.09.02.45.21         (version=TLS1_2 cipher=ECDHE-RSA-CHACHA20-POLY1305 bits=256/256);         Wed, 09 May 2018 02:45:22 -0700 (PDT)
+Received-SPF: pass (google.com: domain of rjw@rjwysocki.net designates 79.96.170.134 as permitted sender) client-ip=79.96.170.134;
+Authentication-Results: mx.google.com;        spf=pass (google.com: domain of rjw@rjwysocki.net designates 79.96.170.134 as permitted sender) smtp.mailfrom=rjw@rjwysocki.net
+Return-Path: <rjw@rjwysocki.net>
+Received: from 79.184.255.167.ipv4.supernova.orange.pl (79.184.255.167) (HELO aspire.rjw.lan)  by serwer1319399.home.pl (79.96.170.134) with SMTP (IdeaSmtpServer 0.83)  id 3ffe1b41cdeba4a2; Wed, 9 May 2018 11:45:20 +0200
+From: "Rafael J. Wysocki" <rjw@rjwysocki.net>
+To: linux-pm@vger.kernel.org
+Cc: Viresh Kumar <viresh.kumar@linaro.org>, Ingo Molnar <mingo@redhat.com>, Peter Zijlstra <peterz@infradead.org>, Vincent Guittot <vincent.guittot@linaro.org>, claudio@evidence.eu.com, patrick.bellasi@arm.com, juri.lelli@redhat.com, joelaf@google.com, linux-kernel@vger.kernel.org
+Subject: [PATCH] cpufreq: schedutil: Avoid using invalid next_freq
+Date: Wed, 09 May 2018 11:44:56 +0200
+Message-ID: <2276196.ev9rMjHTR0@aspire.rjw.lan>
+In-Reply-To: <872c3f8690d9362820639d91a807e535f10a9a36.1525761635.git.viresh.kumar@linaro.org>
+References: <872c3f8690d9362820639d91a807e535f10a9a36.1525761635.git.viresh.kumar@linaro.org>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7Bit
+Content-Type: text/plain; charset="us-ascii"
+Status: RO
+X-Status: A
+Content-Length: 1484
+Lines: 34
+
+From: Rafael J. Wysocki <rafael.j.wysocki@intel.com>
+
+If the next_freq field of struct sugov_policy is set to UINT_MAX,
+it shouldn't be used for updating the CPU frequency (this is a
+special "invalid" value), but after commit b7eaf1aab9f8 (cpufreq:
+schedutil: Avoid reducing frequency of busy CPUs prematurely) it
+may be passed as the new frequency to sugov_update_commit() in
+sugov_update_single().
+
+Fix that by adding an extra check for the special UINT_MAX value
+of next_freq to sugov_update_single().
+
+Fixes: b7eaf1aab9f8 (cpufreq: schedutil: Avoid reducing frequency of busy CPUs prematurely)
+Reported-by: Viresh Kumar <viresh.kumar@linaro.org>
+Cc: 4.12+ <stable@vger.kernel.org> # 4.12+
+Signed-off-by: Rafael J. Wysocki <rafael.j.wysocki@intel.com>
+---
+ kernel/sched/cpufreq_schedutil.c |    3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Index: linux-pm/kernel/sched/cpufreq_schedutil.c
+===================================================================
+--- linux-pm.orig/kernel/sched/cpufreq_schedutil.c
++++ linux-pm/kernel/sched/cpufreq_schedutil.c
+@@ -305,7 +305,8 @@ static void sugov_update_single(struct u
+ 	 * Do not reduce the frequency if the CPU has not been idle
+ 	 * recently, as the reduction is likely to be premature then.
+ 	 */
+-	if (busy && next_f < sg_policy->next_freq) {
++	if (busy && next_f < sg_policy->next_freq &&
++	    sg_policy->next_freq != UINT_MAX) {
+ 		next_f = sg_policy->next_freq;
+ 
+ 		/* Reset cached freq as next_freq has changed */
+

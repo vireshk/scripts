@@ -18367,3 +18367,58 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master c3f2cd8ee17e] updates
+ 3 files changed, 891 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   c16477ff6f1f..c3f2cd8ee17e  master -> master
+   5aa9c99da0e6..c16477ff6f1f  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed May 16 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   android-4.9-hikey-eas-leo-fixes
+ - [deleted]                   android-4.9-hikey-eas-pc
+ - [deleted]                   android-4.9-hikey-pelt
+ - [deleted]                   cpufreq/notifier-cleanup
+ - [deleted]                   opp/genpd/qcom
+ + db1c6436e0e0...af37b24ae6b3 sched/cleanup -> sched/cleanup (forced update)
+ - [deleted]                   sched/schedutil-fixup
+ + 212147c3666a...76d5e09417f5 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 212147c3666a...76d5e09417f5 pm/linux-next -> pm/linux-next (forced update)
+ + 212147c3666a...76d5e09417f5 pm/testing -> pm/testing (forced update)
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

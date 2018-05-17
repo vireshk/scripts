@@ -1,0 +1,62 @@
+From vireshk  Wed May 16 15:23:01 2018
+Delivered-To: viresh.kumar@linaro.org
+Received: from gmail-pop.l.google.com [74.125.24.109] 	by vireshk-i7 with POP3 (fetchmail-6.3.26) 	for <vireshk@localhost> (single-drop); Wed, 16 May 2018 15:23:01 +0530 (IST)
+Received: by 2002:a02:9996:0:0:0:0:0 with SMTP id a22-v6csp1658836jal;         Wed, 16 May 2018 02:52:52 -0700 (PDT)
+X-Google-Smtp-Source: AB8JxZqlEJ06127GOnXZ0gvaemhVn7XKrayic5VczDYS3+TK+GqGaBgoWXZGGB8LD4in4mBpH+qh
+X-Received: by 2002:a62:9342:: with SMTP id b63-v6mr213562pfe.130.1526464372218;         Wed, 16 May 2018 02:52:52 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1526464372; cv=none;         d=google.com; s=arc-20160816;         b=RsGfBZmOWHg7tcH+AZr1MPCCiE8ZPEpmbqtgsKNJsWPusEu4cHTuiRbzCbk7nCIqlR          yd9LFMYTPE9VCdUm2Lccz3PQD5P6w8xDkxaAIkuKAbcb3fYTLGgrVfU/iJEq0bY52E4n          KOkNPa7GXuxMRaKkiCvIRpRcVek4fYVwQkF8FaoNAc7CgGYW0J7kE4eoMlbcEyvhHocS          3GwHBjab5gjDLYKb82R75uS9Xuj9bprmh27fSObTSCNeCBHUPE+CVRfcR+n+O/Z1IqCx          4I95eNLgi//Ee+6FEnCRzS/etdyDFrX7NSo9fWi66hcbXvAuX0KhbZ/QVxQN916Siwnt          t7Pg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=user-agent:in-reply-to:content-disposition:mime-version:message-id          :subject:cc:to:from:date:dkim-signature:dmarc-filter:delivered-to          :arc-authentication-results;         bh=i7+KL7uGPi+ANACVEIsB1+RZozdR0sWLQ3oyERKSCa4=;         b=y+Y8Ow+XBMUXooJ8CGrrOWZ3TGmJzuIIN0mcqH9C/jB8gzvd+uK2pRNbNSdj3mBJZ/          0hEvGel1qylxk6hZB2oQiG19bG8DsqT0wC57LUTNHW6K58UBgjh4Eq/ECxxeQXtmfNuA          mUfd/UWamFFamIgw0nDzQDtbL5/n/zZ3Po5Xc1ocVpg6Jkojs14/YE/Ki4f+n006HPpB          VI/dKgezzybbOF9sRsfEqL3wda3GMlpnG8fNz7pJ48nWupgdklxeDG6GrGOvYQ7qZSJd          BTrAbKzmox+eZqvPcxCGF7ztKoQSfyEfyWHzoaML476FJC4T8XmK5EPXGZqyc0PQTUaO          Qg3w==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@oracle.com header.s=corp-2017-10-26 header.b=e1NL6djj;        spf=pass (google.com: domain of srs0=0lve=id=oracle.com=dan.carpenter@kernel.org designates 198.145.29.99 as permitted sender) smtp.mailfrom=SRS0=0LVe=ID=oracle.com=dan.carpenter@kernel.org;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=oracle.com
+Return-Path: <SRS0=0LVe=ID=oracle.com=dan.carpenter@kernel.org>
+Received: from mail.kernel.org (mail.kernel.org. [198.145.29.99])         by mx.google.com with ESMTPS id d14-v6si2266138pls.333.2018.05.16.02.52.52         for <viresh.kumar@linaro.org>         (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);         Wed, 16 May 2018 02:52:52 -0700 (PDT)
+Received-SPF: pass (google.com: domain of srs0=0lve=id=oracle.com=dan.carpenter@kernel.org designates 198.145.29.99 as permitted sender) client-ip=198.145.29.99;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@oracle.com header.s=corp-2017-10-26 header.b=e1NL6djj;        spf=pass (google.com: domain of srs0=0lve=id=oracle.com=dan.carpenter@kernel.org designates 198.145.29.99 as permitted sender) smtp.mailfrom=SRS0=0LVe=ID=oracle.com=dan.carpenter@kernel.org;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=oracle.com
+Received: by mail.kernel.org (Postfix) 	id 0CE602083A; Wed, 16 May 2018 09:52:52 +0000 (UTC)
+Delivered-To: vireshk@kernel.org
+Received: from userp2130.oracle.com (userp2130.oracle.com [156.151.31.86]) 	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) 	(No client certificate requested) 	by mail.kernel.org (Postfix) with ESMTPS id D436B206B7; 	Wed, 16 May 2018 09:52:51 +0000 (UTC)
+Authentication-Results: mail.kernel.org; 	dkim=pass (2048-bit key) header.d=oracle.com header.i=@oracle.com header.b="e1NL6djj"
+DMARC-Filter: OpenDMARC Filter v1.3.2 mail.kernel.org D436B206B7
+Authentication-Results: mail.kernel.org; dmarc=pass (p=none dis=none) header.from=oracle.com
+Authentication-Results: mail.kernel.org; spf=pass smtp.mailfrom=dan.carpenter@oracle.com
+Received: from pps.filterd (userp2130.oracle.com [127.0.0.1]) 	by userp2130.oracle.com (8.16.0.22/8.16.0.22) with SMTP id w4G9omji193010; 	Wed, 16 May 2018 09:52:50 GMT
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=oracle.com; h=date : from : to : cc  : subject : message-id : mime-version : content-type : in-reply-to;  s=corp-2017-10-26; bh=i7+KL7uGPi+ANACVEIsB1+RZozdR0sWLQ3oyERKSCa4=;  b=e1NL6djjQ5TA5O5DDVNCA4ak/4u0i6cF6OqVsJt8uN5YJ8EJOb4noXy59sdHf6EFLzM4  qsBQYhBASUHBRxISkq7OXiAZq/jLZv3oO/u2mRB8utdUi5cKS/y3r7zS0UIfFPK6ys6B  E6NwfhWiq8hADeriBFRW9xX1srOQXMTqFb8wtFytDQPQwr6iGvGgOOvaAGVairbak8gq  mpv01B9GDNOQzAKY75vmsh1/RkSWN3FBiZh7a7hsvwaX6F8RK8DRjoKBtAqwDIAJIl/L  njXM1YGIe1c+QhFQsuS/FjK63dohn5ikV7RZJOtf/KTnau9nU36bTAPOJhJynwP9nS+0 2Q== 
+Received: from aserv0022.oracle.com (aserv0022.oracle.com [141.146.126.234]) 	by userp2130.oracle.com with ESMTP id 2hx29wc34m-1 	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=OK); 	Wed, 16 May 2018 09:52:50 +0000
+Received: from userv0121.oracle.com (userv0121.oracle.com [156.151.31.72]) 	by aserv0022.oracle.com (8.14.4/8.14.4) with ESMTP id w4G9qmvM008260 	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256 verify=OK); 	Wed, 16 May 2018 09:52:49 GMT
+Received: from abhmp0004.oracle.com (abhmp0004.oracle.com [141.146.116.10]) 	by userv0121.oracle.com (8.14.4/8.13.8) with ESMTP id w4G9qmRW022724; 	Wed, 16 May 2018 09:52:48 GMT
+Received: from mwanda (/197.254.35.146) 	by default (Oracle Beehive Gateway v4.0) 	with ESMTP ; Wed, 16 May 2018 02:52:47 -0700
+Date: Wed, 16 May 2018 12:52:41 +0300
+From: Dan Carpenter <dan.carpenter@oracle.com>
+To: Viresh Kumar <vireshk@kernel.org>
+Cc: Nishanth Menon <nm@ti.com>, Stephen Boyd <sboyd@kernel.org>,         linux-pm@vger.kernel.org, kernel-janitors@vger.kernel.org
+Subject: PATCH v2] PM / OPP: silence an uninitialized variable warning
+Message-ID: <20180516095241.GA27540@mwanda>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20180516093233.kdfira3zmvj6qyox@vireshk-i7>
+X-Mailer: git-send-email haha only kidding
+User-Agent: Mutt/1.9.4 (2018-02-28)
+X-Proofpoint-Virus-Version: vendor=nai engine=5900 definitions=8894 signatures=668698
+X-Proofpoint-Spam-Details: rule=notspam policy=default score=0 suspectscore=0 malwarescore=0  phishscore=0 bulkscore=0 spamscore=0 mlxscore=0 mlxlogscore=973  adultscore=0 classifier=spam adjust=0 reason=mlx scancount=1  engine=8.0.1-1711220000 definitions=main-1805160100
+
+Smatch complains that it's possible we print "rate" in the debug output
+when it hasn't been initialized.  It should be zero on that path.
+
+Signed-off-by: Dan Carpenter <dan.carpenter@oracle.com>
+---
+v2: fix it a different way
+
+diff --git a/drivers/opp/of.c b/drivers/opp/of.c
+index 7026e9f484ea..6d15f05bfc28 100644
+--- a/drivers/opp/of.c
++++ b/drivers/opp/of.c
+@@ -287,7 +287,7 @@ static int _opp_add_static_v2(struct opp_table *opp_table, struct device *dev,
+ 			      struct device_node *np)
+ {
+ 	struct dev_pm_opp *new_opp;
+-	u64 rate;
++	u64 rate = 0;
+ 	u32 val;
+ 	int ret;
+ 	bool rate_not_available = false;
+

@@ -581,3 +581,6 @@ From vireshk  Tue Apr 24 15:33:35 2018
 From vireshk  Wed May  9 15:15:33 2018
  Subject: [PATCH] cpufreq: schedutil: Avoid using invalid next_freq
   Folder: PATCH_cpufreq_schedutil_Avoid_using_invalid_next_freq.mbox	   5186
+From vireshk  Wed May 16 15:23:01 2018
+ Subject: PATCH v2] PM / OPP: silence an uninitialized variable warning
+  Folder: PATCH_v2_PM_OPP_silence_an_uninitialized_variable_warning.mb	   7047

@@ -18422,3 +18422,91 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master acf185327017] updates
+ 3 files changed, 849 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   c3f2cd8ee17e..acf185327017  master -> master
+   c16477ff6f1f..c3f2cd8ee17e  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Thu May 17 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   28fa4aca262c..6a89e012aaf4  opp/linux-next -> opp/linux-next
+ + af37b24ae6b3...f677441f255d sched/cleanup -> sched/cleanup (forced update)
+ - [deleted]                   bkp/android-4.9-hikey-eas-leo-fixes
+ - [deleted]                   bkp/android-4.9-hikey-eas-pc
+ - [deleted]                   bkp/android-4.9-hikey-pelt
+ - [deleted]                   bkp/cpufreq/notifier-cleanup
+ - [deleted]                   bkp/opp/genpd/qcom
+ + db1c6436e0e0...af37b24ae6b3 bkp/sched/cleanup -> bkp/sched/cleanup (forced update)
+ - [deleted]                   bkp/sched/schedutil-fixup
+ + e49ef4c0f88e...ee45f3e2249c lnext/akpm -> lnext/akpm (forced update)
+ + 9126f414bbae...60d5b97739b6 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + af37b24ae6b3...005b4ec12846 lnext/master -> lnext/master (forced update)
+ + a48cfda03090...88573a945502 lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   66e1c94db3cd..21b9f1c7e319  lnext/stable -> lnext/stable
+   67b8d5c70812..e6506eb24187  origin/HEAD -> origin/HEAD
+   67b8d5c70812..e6506eb24187  origin/master -> origin/master
+   28fa4aca262c..6a89e012aaf4  pmko/opp/linux-next -> pmko/opp/linux-next
+ + 6ca67ff55bb3...eee5fb11dbc6 tip/auto-latest -> tip/auto-latest (forced update)
+   c4fb5f370015..13a553199fa9  tip/core/rcu -> tip/core/rcu
+   596a9f6768af..6f5ec2993b1f  tip/core/urgent -> tip/core/urgent
+   03781e40890c..83f0a7c7b265  tip/efi/core -> tip/efi/core
+   162ee5a8ab49..0b3225ab9407  tip/efi/urgent -> tip/efi/urgent
+   b5c5f3959bb3..48bda43eabb8  tip/irq/core -> tip/irq/core
+ + ad6812db3855...99c12749b172 tip/locking/core -> tip/locking/core (forced update)
+ + db1c6436e0e0...f677441f255d tip/master -> tip/master (forced update)
+   d4652f614f21..49cf4a4b3f5a  tip/perf-urgent-for-linus -> tip/perf-urgent-for-linus
+   150426981426..f3903c9161f0  tip/perf/urgent -> tip/perf/urgent
+   317d359df95d..789ba28013ce  tip/sched-urgent-for-linus -> tip/sched-urgent-for-linus
+   247f2f6f3c70..bb4e30a48045  tip/sched/core -> tip/sched/core
+   f4ef6a438cee..789ba28013ce  tip/sched/urgent -> tip/sched/urgent
+   7197e77abcb6..ed772ec873cb  tip/timers/core -> tip/timers/core
+   7dba33c6346c..5596fe34495c  tip/timers/urgent -> tip/timers/urgent
+   8bb2610bc496..e0f6d1a526b6  tip/x86-pti-for-linus -> tip/x86-pti-for-linus
+   c76fc9826075..1153933703d9  tip/x86/asm -> tip/x86/asm
+   d6289f36aa7d..1742ed2088cc  tip/x86/build -> tip/x86/build
+   5f26c50143f5..e6d8c84a5838  tip/x86/cleanups -> tip/x86/cleanups
+   60882cc159e1..9305bd6ca7b4  tip/x86/cpu -> tip/x86/cpu
+   e0f6d1a526b6..158754d60cdb  tip/x86/pti -> tip/x86/pti
+   c65732e4f721..2fa9d1cfaf0e  tip/x86/urgent -> tip/x86/urgent
+ * [new branch]                tip/WIP.locking/core -> tip/WIP.locking/core
+ * [new branch]                tip/timers/2038 -> tip/timers/2038
+ * [new branch]                tip/x86/dax -> tip/x86/dax
+ * [new tag]                   next-20180516 -> next-20180516
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

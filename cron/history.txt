@@ -18510,3 +18510,67 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master dd5f5f96ffe0] updates
+ 6 files changed, 954 insertions(+), 66 deletions(-)
+ delete mode 100644 mutt/incoming/PATCH_cpufreq_schedutil_Avoid_using_invalid_next_freq.mbox
+ create mode 100644 mutt/incoming/PATCH_v2_PM_OPP_silence_an_uninitialized_variable_warning.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   acf185327017..dd5f5f96ffe0  master -> master
+   c3f2cd8ee17e..acf185327017  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon May 21 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+Warning: Permanently added the ECDSA host key for IP address '52.2.214.187' to the list of known hosts.
+post-git trigger: updating grokmirror
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   28fa4aca262c..6a89e012aaf4  bkp/opp/linux-next -> bkp/opp/linux-next
+ + af37b24ae6b3...f677441f255d bkp/sched/cleanup -> bkp/sched/cleanup (forced update)
+ + ee45f3e2249c...31c4e88060c0 lnext/akpm -> lnext/akpm (forced update)
+ + 60d5b97739b6...92bdb3df959d lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 005b4ec12846...fbbe3b8c2c9c lnext/master -> lnext/master (forced update)
+ + 88573a945502...e4723e60cb65 lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   e6506eb24187..771c577c23ba  origin/HEAD -> origin/HEAD
+   e6506eb24187..771c577c23ba  origin/master -> origin/master
+   755396163148..7b34c0fb1b51  pm/acpi -> pm/acpi
+ + 76d5e09417f5...f3a1bd1d530e pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 76d5e09417f5...f3a1bd1d530e pm/linux-next -> pm/linux-next (forced update)
+   ef050374e1ee..0cf442c6bcf5  pm/pm -> pm/pm
+ + 76d5e09417f5...f3a1bd1d530e pm/testing -> pm/testing (forced update)
+ * [new branch]                origin/proc-cmdline -> origin/proc-cmdline
+ * [new tag]                   acpi-4.17-rc6 -> acpi-4.17-rc6
+ * [new tag]                   next-20180517 -> next-20180517
+ * [new tag]                   pm-4.17-rc6 -> pm-4.17-rc6
+ * [new tag]                   v4.17-rc6 -> v4.17-rc6
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/scripts

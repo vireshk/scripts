@@ -590,3 +590,6 @@ From vireshk  Mon May 21 14:22:41 2018
 From vireshk  Mon May 21 14:22:42 2018
  Subject: [PATCH v3 2/2] cpufreq: schedutil: Cleanup and document iowait boost
   Folder: PATCH_v3_2-2_cpufreq_schedutil_Cleanup_and_document_iowait_b	  14219
+From vireshk  Mon May 21 09:09:18 2018
+ Subject: [PATCH v2] schedutil: Allow cpufreq requests to be made even when kth
+  Folder: PATCH_v2_schedutil_Allow_cpufreq_requests_to_be_made_even_wh	  10194

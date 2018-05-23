@@ -1,0 +1,152 @@
+From vireshk  Mon May 21 09:09:18 2018
+Delivered-To: viresh.kumar@linaro.org
+Received: from gmail-pop.l.google.com [74.125.24.109] 	by vireshk-i7 with POP3 (fetchmail-6.3.26) 	for <vireshk@localhost> (single-drop); Mon, 21 May 2018 09:09:18 +0530 (IST)
+Received: by 2002:a02:9996:0:0:0:0:0 with SMTP id a22-v6csp4775178jal;         Fri, 18 May 2018 11:55:22 -0700 (PDT)
+X-Received: by 2002:a17:902:9a8a:: with SMTP id w10-v6mr10779039plp.333.1526669722446;         Fri, 18 May 2018 11:55:22 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1526669722; cv=none;         d=google.com; s=arc-20160816;         b=uK0tjr6gHjcoyHN0lo2fkGETWLQc4qCdQwrHIVBerAGew/gB+I3hwdfmedGMQ35ZJH          p9za3E9rE8hfbe3j6u6KkH+bHxkLbxZeS/cx6/4GCnmgsuTMarnk7pxWgS6NdfGhV8LF          NZENR4I6PHBunQIT4KwCDFOk8x6YSnUVupYeh/vINC50sljcWkjWLQggoehv8CXhjCom          13uUFB8Gye2dDcO2iqFUEtsM6fW50xTj+AwJkWobAn9ZVlg0RdxkcUUPLllF6Mbo5/o1          umTpJ44HkTZs5s05biMBxKIM4FCC6elPPOyD2kLGBU/L8uCx8wzz2Cy6Pkf1U3uUc3SL          1G0w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=message-id:date:subject:cc:to:from:dkim-signature          :arc-authentication-results;         bh=LGZLW3AYcIHo8xYpveO5bq4qClMMQzpok1BLzSUcW6w=;         b=HiQIX8CQYcwiREO/MHBPTpjj/c8t1lcC5ZH8SPnAKbVJ8bjerSh3tjynHUVb9P6UEg          6x+5wmCOdDaYcfYxUF54vEpRvH9LGX0p1mbWFjo0HHI291LI2kukLqJp6HazP3p3mVQA          WeY1NJaclAHtG6BwiU2rgogNbrMR9I4cUCD/0rMxXi1K2nA9rQd7+wXtHkCUkV0n8a1w          CMcps2ohmQWHqPrJ5jGDFlc1JIlMzSxQHmbGY0bpedTGn7g226pBAqmrgI0K4gLXJIBZ          Yh4ZhdB7hSlEAT2CBvd/PwvBtMnWtxE7rVzzUJqA3PIBmQvbIlWxjcjMgVxzVeSgfsJD          3DGA==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@google.com header.s=20161025 header.b=E7r5nvOx;        spf=pass (google.com: domain of joelaf@google.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=joelaf@google.com;        dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=google.com
+Return-Path: <joelaf@google.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])         by mx.google.com with SMTPS id d89-v6sor3903376pfm.74.2018.05.18.11.55.22         for <viresh.kumar@linaro.org>         (Google Transport Security);         Fri, 18 May 2018 11:55:22 -0700 (PDT)
+Received-SPF: pass (google.com: domain of joelaf@google.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@google.com header.s=20161025 header.b=E7r5nvOx;        spf=pass (google.com: domain of joelaf@google.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=joelaf@google.com;        dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=google.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=google.com; s=20161025;         h=from:to:cc:subject:date:message-id;         bh=LGZLW3AYcIHo8xYpveO5bq4qClMMQzpok1BLzSUcW6w=;         b=E7r5nvOxshc+HiCtbna38B0KjE2ljDGZHqVhMGYZL6jI1BVxNjB1yspP5UU6m/qBAn          LhwIyfwI0g6rPFgmLPaHu/wa29/yQJffxsDekbFShU4m4e/TFWoKV1eD5DAsIfdyv8uB          GUet4XKIF0z6C2E4q7+EWRO5nU7RrHE8Md1v4KkVpTO1CqO5+6Oxmn/zBV6cwRTbNR99          6PpaUpH+c6KUsxwFfHrhsKhpBdWzhMtYxIrz/Zp+I762duAF2800TVinDqZ1/6AJGy1y          E9uPwKRr67CJaoiXDdxO5W7attqRHphlkfvNivDbB0u2gFBcqcgl9IkOEjSco4TOUoSY          Dq/A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=1e100.net; s=20161025;         h=x-gm-message-state:from:to:cc:subject:date:message-id;         bh=LGZLW3AYcIHo8xYpveO5bq4qClMMQzpok1BLzSUcW6w=;         b=DDC4vkEkEnLZ5TIPVLvm3jWVbMlds5i8ALXD+en2tObjq2ujkhfjizc24RBNg35C4U          8GfVU+okpD2/33QMlVmRmb71aPo2ZGoC/OUIPR6foxGSl3Ib00EmpNbzSBWNwqPpDflL          IuidXL/L0WOH1RPW4qrjSo6YxD+2bXaN3xTz5AvqKWoH5qvrPI5BzqhAR/UDyY9cc1WV          3tW3efOn26KLHDqE/jX0LC5uNYoyWUcT+MOR4G4yktgAv0Lck3fIoV0PBWUmW6zXblqn          KZHpmvEtKP7BNxGQDo7+SG+Q+JtgcyvBPmy3+rf2jbDIemoRmsmZpDJR2QVjL3mKn9VZ          fdCA==
+X-Gm-Message-State: ALKqPwfXBlbclmaEBi9AZZGgUdOmnGE246ekajTeKkkazKo88gC/KsLN 	55cn3M/52bX3PnNMvWMXZNbyRd05MUI=
+X-Google-Smtp-Source: AB8JxZpQjPazoOQxBobMRQw5uXxwNpiZO9GmNiJ7scQ1ghvHiLBXGAxGuFPWNHRhNyE0BYenQL6v5A==
+X-Received: by 2002:a62:f24a:: with SMTP id y10-v6mr10573179pfl.75.1526669721738;         Fri, 18 May 2018 11:55:21 -0700 (PDT)
+Return-Path: <joelaf@google.com>
+Received: from joelaf.mtv.corp.google.com ([2620:0:1000:1600:3122:ea9c:d178:eb])         by smtp.gmail.com with ESMTPSA id x2-v6sm11658061pgc.53.2018.05.18.11.55.20         (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);         Fri, 18 May 2018 11:55:20 -0700 (PDT)
+From: "Joel Fernandes (Google.)" <joelaf@google.com>
+X-Google-Original-From: "Joel Fernandes (Google.)" <joel@joelfernandes.org>
+To: linux-kernel@vger.kernel.org
+Cc: "Joel Fernandes (Google)" <joel@joelfernandes.org>, 	Viresh Kumar <viresh.kumar@linaro.org>, 	"Rafael J . Wysocki" <rafael.j.wysocki@intel.com>, 	Peter Zijlstra <peterz@infradead.org>, 	Ingo Molnar <mingo@redhat.com>, 	Patrick Bellasi <patrick.bellasi@arm.com>, 	Juri Lelli <juri.lelli@redhat.com>, 	Luca Abeni <luca.abeni@santannapisa.it>, 	Joel Fernandes <joelaf@google.com>, 	Todd Kjos <tkjos@google.com>, 	claudio@evidence.eu.com, 	kernel-team@android.com, 	linux-pm@vger.kernel.org
+Subject: [PATCH v2] schedutil: Allow cpufreq requests to be made even when kthread kicked
+Date: Fri, 18 May 2018 11:55:01 -0700
+Message-Id: <20180518185501.173552-1-joel@joelfernandes.org>
+X-Mailer: git-send-email 2.17.0.441.gb46fe60e1d-goog
+Status: RO
+X-Status: A
+Content-Length: 4614
+Lines: 119
+
+From: "Joel Fernandes (Google)" <joel@joelfernandes.org>
+
+Currently there is a chance of a schedutil cpufreq update request to be
+dropped if there is a pending update request. This pending request can
+be delayed if there is a scheduling delay of the irq_work and the wake
+up of the schedutil governor kthread.
+
+A very bad scenario is when a schedutil request was already just made,
+such as to reduce the CPU frequency, then a newer request to increase
+CPU frequency (even sched deadline urgent frequency increase requests)
+can be dropped, even though the rate limits suggest that its Ok to
+process a request. This is because of the way the work_in_progress flag
+is used.
+
+This patch improves the situation by allowing new requests to happen
+even though the old one is still being processed. Note that in this
+approach, if an irq_work was already issued, we just update next_freq
+and don't bother to queue another request so there's no extra work being
+done to make this happen.
+
+I had brought up this issue at the OSPM conference and Claudio had a
+discussion RFC with an alternate approach [1]. I prefer the approach as
+done in the patch below since it doesn't need any new flags and doesn't
+cause any other extra overhead.
+
+[1] https://patchwork.kernel.org/patch/10384261/
+
+LGTMed-by: Viresh Kumar <viresh.kumar@linaro.org>
+LGTMed-by: Juri Lelli <juri.lelli@redhat.com>
+CC: Viresh Kumar <viresh.kumar@linaro.org>
+CC: Rafael J. Wysocki <rafael.j.wysocki@intel.com>
+CC: Peter Zijlstra <peterz@infradead.org>
+CC: Ingo Molnar <mingo@redhat.com>
+CC: Patrick Bellasi <patrick.bellasi@arm.com>
+CC: Juri Lelli <juri.lelli@redhat.com>
+Cc: Luca Abeni <luca.abeni@santannapisa.it>
+CC: Joel Fernandes <joelaf@google.com>
+CC: Todd Kjos <tkjos@google.com>
+CC: claudio@evidence.eu.com
+CC: kernel-team@android.com
+CC: linux-pm@vger.kernel.org
+Signed-off-by: Joel Fernandes (Google) <joel@joelfernandes.org>
+---
+v1 -> v2: Minor style related changes.
+
+ kernel/sched/cpufreq_schedutil.c | 34 ++++++++++++++++++++++++--------
+ 1 file changed, 26 insertions(+), 8 deletions(-)
+
+diff --git a/kernel/sched/cpufreq_schedutil.c b/kernel/sched/cpufreq_schedutil.c
+index e13df951aca7..5c482ec38610 100644
+--- a/kernel/sched/cpufreq_schedutil.c
++++ b/kernel/sched/cpufreq_schedutil.c
+@@ -92,9 +92,6 @@ static bool sugov_should_update_freq(struct sugov_policy *sg_policy, u64 time)
+ 	    !cpufreq_can_do_remote_dvfs(sg_policy->policy))
+ 		return false;
+ 
+-	if (sg_policy->work_in_progress)
+-		return false;
+-
+ 	if (unlikely(sg_policy->need_freq_update)) {
+ 		sg_policy->need_freq_update = false;
+ 		/*
+@@ -128,7 +125,7 @@ static void sugov_update_commit(struct sugov_policy *sg_policy, u64 time,
+ 
+ 		policy->cur = next_freq;
+ 		trace_cpu_frequency(next_freq, smp_processor_id());
+-	} else {
++	} else if (!sg_policy->work_in_progress) {
+ 		sg_policy->work_in_progress = true;
+ 		irq_work_queue(&sg_policy->irq_work);
+ 	}
+@@ -291,6 +288,13 @@ static void sugov_update_single(struct update_util_data *hook, u64 time,
+ 
+ 	ignore_dl_rate_limit(sg_cpu, sg_policy);
+ 
++	/*
++	 * For slow-switch systems, single policy requests can't run at the
++	 * moment if update is in progress, unless we acquire update_lock.
++	 */
++	if (sg_policy->work_in_progress)
++		return;
++
+ 	if (!sugov_should_update_freq(sg_policy, time))
+ 		return;
+ 
+@@ -382,13 +386,27 @@ sugov_update_shared(struct update_util_data *hook, u64 time, unsigned int flags)
+ static void sugov_work(struct kthread_work *work)
+ {
+ 	struct sugov_policy *sg_policy = container_of(work, struct sugov_policy, work);
++	unsigned int freq;
++	unsigned long flags;
++
++	/*
++	 * Hold sg_policy->update_lock shortly to handle the case where:
++	 * incase sg_policy->next_freq is read here, and then updated by
++	 * sugov_update_shared just before work_in_progress is set to false
++	 * here, we may miss queueing the new update.
++	 *
++	 * Note: If a work was queued after the update_lock is released,
++	 * sugov_work will just be called again by kthread_work code; and the
++	 * request will be proceed before the sugov thread sleeps.
++	 */
++	raw_spin_lock_irqsave(&sg_policy->update_lock, flags);
++	freq = sg_policy->next_freq;
++	sg_policy->work_in_progress = false;
++	raw_spin_unlock_irqrestore(&sg_policy->update_lock, flags);
+ 
+ 	mutex_lock(&sg_policy->work_lock);
+-	__cpufreq_driver_target(sg_policy->policy, sg_policy->next_freq,
+-				CPUFREQ_RELATION_L);
++	__cpufreq_driver_target(sg_policy->policy, freq, CPUFREQ_RELATION_L);
+ 	mutex_unlock(&sg_policy->work_lock);
+-
+-	sg_policy->work_in_progress = false;
+ }
+ 
+ static void sugov_irq_work(struct irq_work *irq_work)
+-- 
+2.17.0.441.gb46fe60e1d-goog
+

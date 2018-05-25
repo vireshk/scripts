@@ -18720,3 +18720,57 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 9196b6168ea0] updates
+ 9 files changed, 785 insertions(+), 1 deletion(-)
+ create mode 100644 .Skype/shared_dynco/dc.db-journal
+ create mode 100644 .Skype/shared_dynco/dc.lock
+ create mode 100644 .Skype/shared_httpfe/queue.lock
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   10173982e604..9196b6168ea0  master -> master
+   aa98ae97c003..10173982e604  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Fri May 25 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 70a36dba8745...5019acc693d3 opp/linux-next -> opp/linux-next (forced update)
+ + 901426128791...f19dbafcbbb7 thermal/cooling-dev-fixes -> thermal/cooling-dev-fixes (forced update)
+ + f677441f255d...852b8b25bdea bkp/sched/cleanup -> bkp/sched/cleanup (forced update)
+   852b8b25bdea..2821b5390f82  pm/bleeding-edge -> pm/bleeding-edge
+   0cf442c6bcf5..c62ec4610c40  pm/pm -> pm/pm
+ * [new tag]                   pm-4.17-rc7 -> pm-4.17-rc7
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

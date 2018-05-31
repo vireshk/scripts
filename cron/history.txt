@@ -18979,3 +18979,56 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 437fe7b85f0f] updates
+ 3 files changed, 1030 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   5b5b9800590e..437fe7b85f0f  master -> master
+   0ab19e4ff15c..5b5b9800590e  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Thu May 31 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+Warning: Permanently added the ECDSA host key for IP address '34.241.58.132' to the list of known hosts.
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   5019acc693d3..8a352fd8787c  opp/linux-next -> opp/linux-next
+   5dbca3b5e4b4..e01fe0ae45a5  thermal/cooling-dev-fixes -> thermal/cooling-dev-fixes
+ + 264124e14b96...5dbca3b5e4b4 bkp/thermal/cooling-dev-fixes -> bkp/thermal/cooling-dev-fixes (forced update)
+ + 95675575132d...c7533d0fd82f pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   c9c6b793ea2a..c7533d0fd82f  pm/linux-next -> pm/linux-next
+   c9c6b793ea2a..c7533d0fd82f  pm/testing -> pm/testing
+   6a89e012aaf4..8a352fd8787c  pmko/opp/linux-next -> pmko/opp/linux-next
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

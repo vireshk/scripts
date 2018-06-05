@@ -19091,3 +19091,63 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 7f07e7cf4bbd] updates
+ 6 files changed, 1230 insertions(+), 1 deletion(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   d25e288b1e1f..7f07e7cf4bbd  master -> master
+   437fe7b85f0f..d25e288b1e1f  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Tue Jun  5 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + e01fe0ae45a5...f5e01eaf4647 thermal/cooling-dev-fixes -> thermal/cooling-dev-fixes (forced update)
+ + 00105f98ec0f...8b971c1d8a29 lnext/akpm -> lnext/akpm (forced update)
+ + 2dfc1237ef48...6e7900cbb215 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + b5376b2a2800...1624a0987845 lnext/master -> lnext/master (forced update)
+ + be495b012d49...84a03c02bc7f lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   0512e0134582..29dcea88779c  lnext/stable -> lnext/stable
+   29dcea88779c..716a685fdb89  origin/HEAD -> origin/HEAD
+   29dcea88779c..716a685fdb89  origin/master -> origin/master
+   7b34c0fb1b51..2448d1399bac  pm/acpi -> pm/acpi
+   3c073991eb41..63dcc7090137  pm/device-properties -> pm/device-properties
+   c62ec4610c40..a24e16b1310c  pm/pm -> pm/pm
+ * [new tag]                   acpi-4.18-rc1 -> acpi-4.18-rc1
+ * [new tag]                   dp-4.18-rc1 -> dp-4.18-rc1
+ * [new tag]                   next-20180604 -> next-20180604
+ * [new tag]                   pm-4.18-rc1 -> pm-4.18-rc1
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

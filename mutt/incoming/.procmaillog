@@ -593,3 +593,6 @@ From vireshk  Mon May 21 14:22:42 2018
 From vireshk  Mon May 21 09:09:18 2018
  Subject: [PATCH v2] schedutil: Allow cpufreq requests to be made even when kth
   Folder: PATCH_v2_schedutil_Allow_cpufreq_requests_to_be_made_even_wh	  10194
+From vireshk  Tue Jun  5 14:52:25 2018
+ Subject: [PATCH V5] powercap/drivers/idle_injection: Add an idle injection fra
+  Folder: PATCH_V5_powercap-drivers-idle_injection_Add_an_idle_injecti	  20267

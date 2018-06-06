@@ -19151,3 +19151,60 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master cb2f775e0355] updates
+ 3 files changed, 1700 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   7f07e7cf4bbd..cb2f775e0355  master -> master
+   d25e288b1e1f..7f07e7cf4bbd  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Jun  6 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 5cba20619c8f...f95112233500 opp/genpd/updates -> opp/genpd/updates (forced update)
+ - [deleted]                   schedutil/remote
+ + e01fe0ae45a5...f5e01eaf4647 bkp/thermal/cooling-dev-fixes -> bkp/thermal/cooling-dev-fixes (forced update)
+ + 8b971c1d8a29...151e832642ed lnext/akpm -> lnext/akpm (forced update)
+ + 6e7900cbb215...6496045a2b51 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 1624a0987845...20995ee603bf lnext/master -> lnext/master (forced update)
+ + 84a03c02bc7f...a37d129f95a4 lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   29dcea88779c..325520142b47  lnext/stable -> lnext/stable
+   716a685fdb89..af6c5d5e01ad  origin/HEAD -> origin/HEAD
+   716a685fdb89..af6c5d5e01ad  origin/master -> origin/master
+ + afb856775ab6...2c48f97a6a48 pm/testing -> pm/testing (forced update)
+ * [new tag]                   next-20180605 -> next-20180605
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

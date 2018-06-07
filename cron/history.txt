@@ -19208,3 +19208,86 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master ac8edeb918e0] updates
+ 5 files changed, 1317 insertions(+)
+ create mode 100644 mutt/incoming/PATCH_V5_powercap-drivers-idle_injection_Add_an_idle_injection_framework.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   cb2f775e0355..ac8edeb918e0  master -> master
+   7f07e7cf4bbd..cb2f775e0355  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Thu Jun  7 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + f95112233500...b63becee627a opp/genpd/updates -> opp/genpd/updates (forced update)
+ + 5cba20619c8f...f95112233500 bkp/opp/genpd/updates -> bkp/opp/genpd/updates (forced update)
+ - [deleted]                   bkp/schedutil/remote
+   af6c5d5e01ad..1c8c5a9d38f6  origin/HEAD -> origin/HEAD
+   af6c5d5e01ad..1c8c5a9d38f6  origin/master -> origin/master
+ + 760c3aa70029...299344c8e447 tip/auto-latest -> tip/auto-latest (forced update)
+   c4fb5f370015..52f2b34f4622  tip/core-rcu-for-linus -> tip/core-rcu-for-linus
+   786b71f5b754..cd77849a69cf  tip/core/urgent -> tip/core/urgent
+   03781e40890c..83f0a7c7b265  tip/efi-core-for-linus -> tip/efi-core-for-linus
+   d3056812e7df..65441ba9c4e4  tip/irq-core-for-linus -> tip/irq-core-for-linus
+   48bda43eabb8..65441ba9c4e4  tip/irq/core -> tip/irq/core
+   1bc2463cee92..0cdd431c337e  tip/irq/urgent -> tip/irq/urgent
+   19193bcad8dc..1b22fc609cec  tip/locking-core-for-linus -> tip/locking-core-for-linus
+ + 61327e202188...49071293392a tip/master -> tip/master (forced update)
+   1159e0947653..9aae1780e7e8  tip/perf-core-for-linus -> tip/perf-core-for-linus
+   f3903c9161f0..4e9ae0d3d5bf  tip/perf-urgent-for-linus -> tip/perf-urgent-for-linus
+   10b1105004fb..9aae1780e7e8  tip/perf/core -> tip/perf/core
+   f3903c9161f0..4e9ae0d3d5bf  tip/perf/urgent -> tip/perf/urgent
+   e2efacb6a54a..fbf96cf904dc  tip/ras-core-for-linus -> tip/ras-core-for-linus
+   b720342849fe..2539fc82aa9b  tip/sched-core-for-linus -> tip/sched-core-for-linus
+   4ff648decf47..595058b6675e  tip/sched-urgent-for-linus -> tip/sched-urgent-for-linus
+   4ff648decf47..595058b6675e  tip/sched/urgent -> tip/sched/urgent
+   90c7c0c24e22..e45e778f078e  tip/timers-core-for-linus -> tip/timers-core-for-linus
+   db6f9e55c8d8..e45e778f078e  tip/timers/core -> tip/timers/core
+   e25283bf83bd..2773397171ac  tip/x86-apic-for-linus -> tip/x86-apic-for-linus
+   16c5055a5ff5..6469a0ee0a06  tip/x86-asm-for-linus -> tip/x86-asm-for-linus
+   d6289f36aa7d..1742ed2088cc  tip/x86-build-for-linus -> tip/x86-build-for-linus
+   9b9a51354cae..844ea8f62619  tip/x86-cleanups-for-linus -> tip/x86-cleanups-for-linus
+   8ecc4979b1bd..108fab4b5c8f  tip/x86/pti -> tip/x86/pti
+   acf46020012c..a07771ac6a78  tip/x86/urgent -> tip/x86/urgent
+ * [new branch]                tip/core/rseq -> tip/core/rseq
+ * [new branch]                tip/timers-2038-for-linus -> tip/timers-2038-for-linus
+ * [new branch]                tip/x86-boot-for-linus -> tip/x86-boot-for-linus
+ * [new branch]                tip/x86-cache-for-linus -> tip/x86-cache-for-linus
+ * [new branch]                tip/x86-dax-for-linus -> tip/x86-dax-for-linus
+ * [new branch]                tip/x86-debug-for-linus -> tip/x86-debug-for-linus
+ * [new branch]                tip/x86-hyperv-for-linus -> tip/x86-hyperv-for-linus
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

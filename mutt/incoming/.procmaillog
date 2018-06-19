@@ -599,3 +599,9 @@ From vireshk  Tue Jun  5 14:52:25 2018
 From vireshk  Tue Jun  5 14:52:25 2018
  Subject: [PATCH V5] powercap/drivers/idle_injection: Add an idle injection fra
   Folder: PATCH_V5_powercap-drivers-idle_injection_Add_an_idle_injecti	  20267
+From vireshk  Mon Jun 18 15:04:04 2018
+ Subject: Re: [PATCH V7-rc2] powercap/drivers/idle_injection: Add an idle  inje
+  Folder: Re_PATCH_V7-rc2_powercap-drivers-idle_injection_Add_an_idle_	   5952
+From vireshk  Fri Jun 15 08:12:44 2018
+ Subject: [PATCH] PM / OPP: Update voltage in case freq == old_freq
+  Folder: PATCH_PM_OPP_Update_voltage_in_case_freq_==_old_freq.mbox	   6624

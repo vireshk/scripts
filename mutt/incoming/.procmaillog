@@ -605,3 +605,6 @@ From vireshk  Mon Jun 18 15:04:04 2018
 From vireshk  Fri Jun 15 08:12:44 2018
  Subject: [PATCH] PM / OPP: Update voltage in case freq == old_freq
   Folder: PATCH_PM_OPP_Update_voltage_in_case_freq_==_old_freq.mbox	   6624
+From vireshk  Tue Jun 19 11:33:30 2018
+ Subject: [PATCH v8] powercap/drivers/idle_injection: Add an idle injection fra
+  Folder: PATCH_v8_powercap-drivers-idle_injection_Add_an_idle_injecti	  22050

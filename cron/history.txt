@@ -19974,3 +19974,66 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 3166f2da5fe3] updates
+ 3 files changed, 757 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   62865f3d204a..3166f2da5fe3  master -> master
+   a374f10bdc64..62865f3d204a  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Fri Jun 29 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 466db280dab5...6675212a391f boot-constraint -> boot-constraint (forced update)
+ + 02636fd784be...63aa2a714d44 opp/genpd/required-opps -> opp/genpd/required-opps (forced update)
+ + f5e01eaf4647...c13d4e5fb547 thermal/cooling-dev-fixes -> thermal/cooling-dev-fixes (forced update)
+ + ca64d86702ae...b63becee627a bkp/opp/genpd/debug -> bkp/opp/genpd/debug (forced update)
+ + aa8172568eed...02636fd784be bkp/opp/genpd/required-opps -> bkp/opp/genpd/required-opps (forced update)
+ + ab1dc45f84a5...d3d095fd03af lnext/akpm -> lnext/akpm (forced update)
+ + a23ef164079b...fb07ec10d5a7 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 8439c34f07a3...4379975bae04 lnext/master -> lnext/master (forced update)
+ + 2f18c9aa9419...d324f08c4bf3 lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   1abd8a8f39cd..f57494321cbf  lnext/stable -> lnext/stable
+   1abd8a8f39cd..f57494321cbf  origin/HEAD -> origin/HEAD
+   1abd8a8f39cd..f57494321cbf  origin/master -> origin/master
+ + a1696a229441...b1d2b5b3bc24 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   7daf201d7fe8..b1d2b5b3bc24  pm/linux-next -> pm/linux-next
+   7daf201d7fe8..b1d2b5b3bc24  pm/testing -> pm/testing
+ + a11d04267073...b7843b994174 pmko/opp/genpd/required-opps -> pmko/opp/genpd/required-opps (forced update)
+ * [new tag]                   next-20180628 -> next-20180628
+ * [new tag]                   v4.18-rc2 -> v4.18-rc2
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

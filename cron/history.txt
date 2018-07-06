@@ -20204,3 +20204,52 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 9591a84bf148] updates
+ 3 files changed, 613 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   748e7f961c34..9591a84bf148  master -> master
+   9e96e6144494..748e7f961c34  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Fri Jul  6 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + b63becee627a...63aa2a714d44 bkp/opp/genpd/debug -> bkp/opp/genpd/debug (forced update)
+ + 63aa2a714d44...b7843b994174 bkp/opp/genpd/required-opps -> bkp/opp/genpd/required-opps (forced update)
+ + c13d4e5fb547...bd3e87515fa6 bkp/thermal/cooling-dev-fixes -> bkp/thermal/cooling-dev-fixes (forced update)
+ * [new branch]                thermal/cooling-maps -> thermal/cooling-maps
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

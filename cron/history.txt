@@ -20611,3 +20611,64 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 4040631095d4] updates
+ 5 files changed, 1222 insertions(+), 5 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   fe7dd120cd15..4040631095d4  master -> master
+   7297eb42edb1..fe7dd120cd15  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Thu Jul 26 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + ab57b2ca3f90...6d93abaf4c5b thermal/cooling-dev-fixes -> thermal/cooling-dev-fixes (forced update)
+ + 98a20fae43d8...8be02f92043e thermal/cooling-maps -> thermal/cooling-maps (forced update)
+ + 90a8c406d322...3a4f5ce74769 lnext/akpm -> lnext/akpm (forced update)
+ + 67067951673e...22c7c165da50 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 89cf55353308...d1e0b8e0cb7a lnext/master -> lnext/master (forced update)
+ + 7fdbd7bd4bf4...1df75d5cd983 lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   fb7d1bcf1602..f89ed2f880cc  lnext/stable -> lnext/stable
+   d72e90f33aa4..6e77b267723c  origin/HEAD -> origin/HEAD
+   d72e90f33aa4..6e77b267723c  origin/master -> origin/master
+ + 91dd6f15ab4b...7834f284205a pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 45414aea93b5...46bc14fd2c9b pm/linux-next -> pm/linux-next (forced update)
+   9d3cce1e8b85..d72e90f33aa4  pm/master -> pm/master
+ + 45414aea93b5...6012bb618f93 pm/testing -> pm/testing (forced update)
+ * [new branch]                opp/qcom-fix -> opp/qcom-fix
+ * [new tag]                   next-20180723 -> next-20180723
+ * [new tag]                   next-20180725 -> next-20180725
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

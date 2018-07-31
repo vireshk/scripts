@@ -20672,3 +20672,69 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 55334b4d8405] updates
+ 6 files changed, 796 insertions(+), 5 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   4040631095d4..55334b4d8405  master -> master
+   fe7dd120cd15..4040631095d4  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Tue Jul 31 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   6d93abaf4c5b..be0e4a968831  opp/qcom-fix -> opp/qcom-fix
+ + 39657e86b594...6d93abaf4c5b bkp/thermal/cooling-dev-fixes -> bkp/thermal/cooling-dev-fixes (forced update)
+ + e3d63fb35213...8be02f92043e bkp/thermal/cooling-maps -> bkp/thermal/cooling-maps (forced update)
+ + 3a4f5ce74769...a4d049b1a53a lnext/akpm -> lnext/akpm (forced update)
+ + 22c7c165da50...da5a5edd102e lnext/akpm-base -> lnext/akpm-base (forced update)
+ + d1e0b8e0cb7a...09345ddbd80f lnext/master -> lnext/master (forced update)
+ + 1df75d5cd983...d3bab80e6058 lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   f89ed2f880cc..3cfb6772d4cf  lnext/stable -> lnext/stable
+   6e77b267723c..527838d470e3  origin/HEAD -> origin/HEAD
+   6e77b267723c..527838d470e3  origin/master -> origin/master
+   2c4d6baf1bc4..73c2a01c52b6  pm/acpi -> pm/acpi
+ + 7834f284205a...55bdd9a7225f pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 46bc14fd2c9b...55bdd9a7225f pm/linux-next -> pm/linux-next (forced update)
+   d72e90f33aa4..acb1872577b3  pm/master -> pm/master
+   95d6c0857e54..bafaf056e073  pm/pm -> pm/pm
+ + 6012bb618f93...55bdd9a7225f pm/testing -> pm/testing (forced update)
+ * [new branch]                bkp/opp/qcom-fix -> bkp/opp/qcom-fix
+ * [new tag]                   acpi-4.18-rc7 -> acpi-4.18-rc7
+ * [new tag]                   next-20180730 -> next-20180730
+ * [new tag]                   pm-4.18-rc7 -> pm-4.18-rc7
+ * [new tag]                   v4.18-rc7 -> v4.18-rc7
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -21019,3 +21019,87 @@ Please make sure you have the correct access rights
 and the repository exists.
 
 Entering /home/vireshk/scripts
+[master 1f7bfbde6493] updates
+ 8 files changed, 3064 insertions(+), 2 deletions(-)
+ create mode 100644 .Skype/shared_dynco/dc.db-journal
+ create mode 100644 .Skype/shared_dynco/dc.lock
+ create mode 100644 .Skype/shared_httpfe/queue.lock
+ssh: Could not resolve hostname git.linaro.org: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+ssh: Could not resolve hostname git.linaro.org: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+ssh: Could not resolve hostname git.linaro.org: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+ssh: Could not resolve hostname git.linaro.org: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Mon Sep  3 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + f8b42c5022a7...99ce92c81930 opp/qcom-fix -> opp/qcom-fix (forced update)
+ + a4d049b1a53a...4341dc6f7b1f lnext/akpm -> lnext/akpm (forced update)
+ + da5a5edd102e...46af79a33ed2 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 09345ddbd80f...a880148cb2af lnext/master -> lnext/master (forced update)
+ + d3bab80e6058...96865ae9db40 lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   3cfb6772d4cf..fb6463856658  lnext/stable -> lnext/stable
+   527838d470e3..57361846b52b  origin/HEAD -> origin/HEAD
+   527838d470e3..57361846b52b  origin/master -> origin/master
+   73c2a01c52b6..f5d707ede37a  pm/acpi -> pm/acpi
+ + 55bdd9a7225f...501b192d0299 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 55bdd9a7225f...501b192d0299 pm/linux-next -> pm/linux-next (forced update)
+   acb1872577b3..2c20443ec221  pm/master -> pm/master
+   bafaf056e073..a0b9c4de7bf3  pm/pm -> pm/pm
+ + 55bdd9a7225f...2c7e83a0c276 pm/testing -> pm/testing (forced update)
+ * [new branch]                opp/qcom-fix-intermediate -> opp/qcom-fix-intermediate
+ * [new branch]                mac/opp/qcom-fix -> mac/opp/qcom-fix
+ * [new tag]                   acpi-4.19-rc1 -> acpi-4.19-rc1
+ * [new tag]                   acpi-4.19-rc1-2 -> acpi-4.19-rc1-2
+ * [new tag]                   acpi-4.19-rc1-3 -> acpi-4.19-rc1-3
+ * [new tag]                   acpi-urgent-4.18 -> acpi-urgent-4.18
+ * [new tag]                   master -> master
+ * [new tag]                   next-20180831 -> next-20180831
+ * [new tag]                   pm-4.19-rc1 -> pm-4.19-rc1
+ * [new tag]                   pm-4.19-rc1-2 -> pm-4.19-rc1-2
+ * [new tag]                   pm-4.19-rc2 -> pm-4.19-rc2
+ * [new tag]                   pm-urgent-4.18 -> pm-urgent-4.18
+ * [new tag]                   v4.18 -> v4.18
+ * [new tag]                   v4.18-rc8 -> v4.18-rc8
+ * [new tag]                   v4.19-rc1 -> v4.19-rc1
+ * [new tag]                   v4.19-rc2 -> v4.19-rc2
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

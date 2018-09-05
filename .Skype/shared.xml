@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<config version="1.0" serial="37806" timestamp="1535947687.1">
+<config version="1.0" serial="37809" timestamp="1536047894.2">
   <Lib>
     <Access>
       <Cookies>4100</Cookies>
@@ -32,7 +32,7 @@
         <Enable>0</Enable>
       </HttpsProxy>
       <LastIP>2058099312</LastIP>
-      <LastNetworkIdentity>4494fc1f4840</LastNetworkIdentity>
+      <LastNetworkIdentity>acf970c0036e</LastNetworkIdentity>
       <LastProbingFailed>0</LastProbingFailed>
       <ListeningPort>33926</ListeningPort>
       <NatTracker>
@@ -69,7 +69,7 @@
     <Localnode>
       <NodeID>1321404958F290E8</NodeID>
     </Localnode>
-    <NBwE_BandwidthStorage>42F623137C706DABADD99464CAE0593B4DF015784858783A787EF42E37BA257DABBCBB6C1206E3</NBwE_BandwidthStorage>
+    <NBwE_BandwidthStorage>42F6230BD5ACBBBE3F503C8FBD9E197FCF8E8E9026F2CCB03FAB49714BBB49191F3DBBEF647B4F7FB3BFB228D96E1A46B2564DBBF1D0A9FDEBA195E7F9947A377CF056AC3BEF53012FF061CC4C902657586509BB78AE67</NBwE_BandwidthStorage>
     <NBwM_Storage>4215</NBwM_Storage>
     <PropsManager>
       <PermaProps>4102030E322F342E332E302E33372F31373200000FFAB397B105</PermaProps>

@@ -21202,3 +21202,54 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 4921788c3520] updates
+ 8 files changed, 1670 insertions(+), 2 deletions(-)
+ create mode 100644 .Skype/shared_dynco/dc.db-journal
+ create mode 100644 .Skype/shared_dynco/dc.lock
+ create mode 100644 .Skype/shared_httpfe/queue.lock
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   03904156b23b..4921788c3520  master -> master
+   afa46e492d19..03904156b23b  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Fri Sep  7 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 69a634cc0e85...6f4b14e4de4b opp/qcom-fix -> opp/qcom-fix (forced update)
+ + d85ddbe7d882...69a634cc0e85 bkp/opp/qcom-fix -> bkp/opp/qcom-fix (forced update)
+ - [deleted]                   bkp/opp/qcom-fix-intermediate
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -21528,3 +21528,70 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master c699a6a5f7e9] updates
+ 3 files changed, 1176 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   5146a067d3f7..c699a6a5f7e9  master -> master
+   cadedd44b622..5146a067d3f7  bkp/master -> bkp/master
+   630138b04732..44fc727e66a8  mac/master -> mac/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Oct  3 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 9ea47a1cc5f0...5ed4cecd75e9 opp/linux-next -> opp/linux-next (forced update)
+ + a26ac7afa80d...3efa163a9b2f opp/qcom-fix -> opp/qcom-fix (forced update)
+   c5c2a97b3ac7..9ea47a1cc5f0  bkp/opp/linux-next -> bkp/opp/linux-next
+ + d587a5c92450...a26ac7afa80d bkp/opp/qcom-fix -> bkp/opp/qcom-fix (forced update)
+ + e19dd7e429c7...1e66098cbef4 lnext/akpm -> lnext/akpm (forced update)
+ + 3cee983ea75c...33b6707f12c0 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 9660309cab05...4794a36bf08d lnext/master -> lnext/master (forced update)
+ + d98214aa54f4...0abcc9649ce3 lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   ca16eb342ebe..ad0371482b1e  lnext/stable -> lnext/stable
+   11da3a7f84f1..17b57b1883c1  origin/HEAD -> origin/HEAD
+   11da3a7f84f1..17b57b1883c1  origin/master -> origin/master
+ + 0ccfa3661a26...4a4b85a413cd pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 0ccfa3661a26...2eb458f5f636 pm/linux-next -> pm/linux-next (forced update)
+   57361846b52b..17b57b1883c1  pm/master -> pm/master
+   a0b9c4de7bf3..d51aea13dd67  pm/pm -> pm/pm
+ + 0ccfa3661a26...2eb458f5f636 pm/testing -> pm/testing (forced update)
+   c5c2a97b3ac7..5ed4cecd75e9  pmko/opp/linux-next -> pmko/opp/linux-next
+ * [new tag]                   next-20180928 -> next-20180928
+ * [new tag]                   pm-4.19-rc6 -> pm-4.19-rc6
+ * [new tag]                   v4.19-rc5 -> v4.19-rc5
+ * [new tag]                   v4.19-rc6 -> v4.19-rc6
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -21657,3 +21657,54 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 3962ccdfd732] updates
+ 5 files changed, 231 insertions(+), 5 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   cb203faf9aa8..3962ccdfd732  master -> master
+   c699a6a5f7e9..cb203faf9aa8  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Fri Oct  5 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + b7843b994174...012051f9d5b3 opp/genpd/required-opps -> opp/genpd/required-opps (forced update)
+ - [deleted]                   opp/qcom-fix
+   5ed4cecd75e9..deac8703da5f  bkp/opp/linux-next -> bkp/opp/linux-next
+   3efa163a9b2f..9ab2a9893b60  bkp/opp/qcom-fix -> bkp/opp/qcom-fix
+ + 2c702c6da8d3...e23510fbad45 bkp/thermal/cooling-maps -> bkp/thermal/cooling-maps (forced update)
+ * [new branch]                opp/genpd/required-opps-bkp -> opp/genpd/required-opps-bkp
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -21817,3 +21817,55 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 28dfb66925cd] updates
+ 3 files changed, 212 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   b9a490e3f8b2..28dfb66925cd  master -> master
+   15ea95271c37..b9a490e3f8b2  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Oct 10 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 012051f9d5b3...ed225a921fe3 bkp/opp/genpd/required-opps -> bkp/opp/genpd/required-opps (forced update)
+ + 81cbc47b8c6a...d6f18e0d7fae lnext/akpm -> lnext/akpm (forced update)
+ + 689fd3c9000a...eb6344dd3a30 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 12ffaa1197f5...570b7bdeaf18 lnext/master -> lnext/master (forced update)
+ + 9a7617060284...c66967f4228d lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   010bd965f971..0854ba5ff5c9  lnext/stable -> lnext/stable
+ * [new tag]                   next-20181009 -> next-20181009
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

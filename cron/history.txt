@@ -22008,3 +22008,31 @@ Everything up-to-date
 
 
 
+ 
+Mon Oct 15 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 63aa2a714d44...39cf7cce21a3 opp/genpd/debug -> opp/genpd/debug (forced update)
+ + 6f8100b29aab...c4104405e6a8 opp/genpd/required-opps -> opp/genpd/required-opps (forced update)
+ + abc840c79644...6f8100b29aab bkp/opp/genpd/required-opps -> bkp/opp/genpd/required-opps (forced update)
+ - [deleted]                   bkp/opp/genpd/required-opps-bkp-10oct
+ + abcbc358cbfe...7b60e91a0932 lnext/akpm -> lnext/akpm (forced update)
+ + 4e8394c4113b...72b5ca3121d5 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 7f3049305d22...774ea0551a29 lnext/master -> lnext/master (forced update)
+ + 54e157560b63...efb8cc66c0ac lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   64c5e530ac2c..0778a9f2dd92  lnext/stable -> lnext/stable
+   b8db9e69dba9..3a27203102eb  origin/HEAD -> origin/HEAD
+   b8db9e69dba9..3a27203102eb  origin/master -> origin/master
+   a5f0f63a6fd6..9e7e67861dd7  pm/bleeding-edge -> pm/bleeding-edge
+ + b7843b994174...c4104405e6a8 pmko/opp/genpd/required-opps -> pmko/opp/genpd/required-opps (forced update)
+ * [new tag]                   next-20181012 -> next-20181012
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

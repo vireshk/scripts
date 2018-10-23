@@ -22282,3 +22282,71 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 9b9644770238] updates
+ 3 files changed, 738 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   3f652344640c..9b9644770238  master -> master
+   5e50b7fd58f2..3f652344640c  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Tue Oct 23 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   tip/master
+   467e050e9760..84df9525b0c2  origin/HEAD -> origin/HEAD
+   467e050e9760..84df9525b0c2  origin/master -> origin/master
+   a38523185b40..b955a910d7fd  tip/WIP.fixes -> tip/WIP.fixes
+ + 99bfece2251c...ff16f53e4ee7 tip/auto-latest -> tip/auto-latest (forced update)
+   b8d62f33b7b2..746a923b863a  tip/irq/core -> tip/irq/core
+   7aa54be29765..01a14bda11ad  tip/locking/core -> tip/locking/core
+ + adc4de7b2f65...34e0f5cce831 tip/master -> tip/master (forced update)
+   c1883f10cfe0..20e8e72d0fa8  tip/perf-urgent-for-linus -> tip/perf-urgent-for-linus
+   d4ae552982de..2e62024c265a  tip/perf/core -> tip/perf/core
+   c1883f10cfe0..20e8e72d0fa8  tip/perf/urgent -> tip/perf/urgent
+   e5276b1ffa97..711f76a328cb  tip/ras/core -> tip/ras/core
+   e054637597ba..9845c49cc9bb  tip/sched-urgent-for-linus -> tip/sched-urgent-for-linus
+   0c373344b5c1..11e13696a08e  tip/sched/core -> tip/sched/core
+   184d47f0fd36..485734f3fc77  tip/x86-urgent-for-linus -> tip/x86-urgent-for-linus
+   f0a7d1883d9f..b3569d3a4b4f  tip/x86/build -> tip/x86/build
+   2a7adf6ce643..b61b8bba18fe  tip/x86/cache -> tip/x86/cache
+   c200dac78fec..977e4be5eb71  tip/x86/mm -> tip/x86/mm
+ + 0cd6fa95a4a4...485734f3fc77 tip/x86/urgent -> tip/x86/urgent (forced update)
+ - [deleted]                   10
+ - [deleted]                   tjh
+ * [new branch]                sched/tip -> sched/tip
+ * [new tag]                   v4.19 -> v4.19
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

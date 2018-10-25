@@ -45,12 +45,12 @@ ln -s ~/all/criticalinfo/.goobook_auth.json ~/.goobook_auth.json
 
 # mails
 ln -s ~/all/criticalinfo/.msmtprc ~/.msmtprc
-ln -s ~/all/scripts/mutt/scripts/.fetchmailrc ~/.fetchmailrc
-ln -s ~/all/scripts/mutt/scripts/.fetchids ~/.fetchids
-ln -s ~/all/scripts/mutt/scripts/.fetchmaillog ~/.fetchmaillog
-ln -s ~/all/scripts/mutt/scripts/.fetchmail.pid ~/.fetchmail.pid
+ln -s ~/all/criticalinfo/mutt/.fetchmailrc ~/.fetchmailrc
+ln -s ~/all/criticalinfo/mutt/.fetchids ~/.fetchids
+ln -s ~/all/criticalinfo/mutt/.fetchmaillog ~/.fetchmaillog
+ln -s ~/all/criticalinfo/mutt/.fetchmail.pid ~/.fetchmail.pid
 ln -s ~/all/scripts/mutt/scripts/.procmailrc ~/.procmailrc
-ln -s ~/all/scripts/mutt/scripts/.procmaillog ~/.procmaillog
+ln -s ~/all/criticalinfo/mutt/.procmaillog ~/.procmaillog
 ln -s ~/all/scripts/mutt/scripts/.muttrc ~/.muttrc
 
 # minidlna

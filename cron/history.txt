@@ -22428,3 +22428,32 @@ Everything up-to-date
 
 
 
+ 
+Thu Oct 25 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   idle-injection
+ + 39cf7cce21a3...7a1ea7bb8f7d opp/genpd/debug -> opp/genpd/debug (forced update)
+ + c4104405e6a8...db0789a3048d opp/genpd/required-opps -> opp/genpd/required-opps (forced update)
+ - [deleted]                   opp/genpd/required-opps-bkp
+ - [deleted]                   sched/cleanup
+   887e8ea2379a..138600f5d504  sched/tip -> sched/tip
+ - [deleted]                   thermal/cooling-dev-fixes
+   84df9525b0c2..01aa9d518eae  origin/HEAD -> origin/HEAD
+   84df9525b0c2..01aa9d518eae  origin/master -> origin/master
+ - [deleted]                   pmko/cpufreq/transition-latency
+ - [deleted]                   pmko/opp/bleeding-edge
+ + c4104405e6a8...db0789a3048d pmko/opp/genpd/required-opps -> pmko/opp/genpd/required-opps (forced update)
+ - [deleted]                   pmko/opp/qcom-fix
+ - [deleted]                   pmko/thermal/cooling-dev-fixes
+ - [deleted]                   pmko/thermal/cooling-maps
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

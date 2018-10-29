@@ -22457,3 +22457,91 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 96b1b8d732cb] updates
+ 2 files changed, 31 insertions(+), 2 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   48859d82809a..96b1b8d732cb  master -> master
+   8b10d28cfde8..48859d82809a  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon Oct 29 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + db0789a3048d...9c5107f8c56e opp/genpd/required-opps -> opp/genpd/required-opps (forced update)
+   deac8703da5f..9c5107f8c56e  opp/linux-next -> opp/linux-next
+ + 138600f5d504...204fc4b01088 sched/tip -> sched/tip (forced update)
+ - [deleted]                   bkp/idle-injection
+ + 39cf7cce21a3...7a1ea7bb8f7d bkp/opp/genpd/debug -> bkp/opp/genpd/debug (forced update)
+ + c4104405e6a8...db0789a3048d bkp/opp/genpd/required-opps -> bkp/opp/genpd/required-opps (forced update)
+ - [deleted]                   bkp/opp/genpd/required-opps-bkp
+ - [deleted]                   bkp/sched/cleanup
+   887e8ea2379a..138600f5d504  bkp/sched/tip -> bkp/sched/tip
+ - [deleted]                   bkp/thermal/cooling-dev-fixes
+   01aa9d518eae..9f51ae62c84a  origin/HEAD -> origin/HEAD
+   01aa9d518eae..9f51ae62c84a  origin/master -> origin/master
+ + 2aee39fe51f1...9e074f4644f0 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + dfb2bb2f07cf...9e074f4644f0 pm/linux-next -> pm/linux-next (forced update)
+   35a7f35ad1b1..bd6bf7c10484  pm/master -> pm/master
+ + dfb2bb2f07cf...9e074f4644f0 pm/testing -> pm/testing (forced update)
+ + ff16f53e4ee7...db9f03a422b6 tip/auto-latest -> tip/auto-latest (forced update)
+   ea73a5c6929b..d0346559a7c3  tip/core-rcu-for-linus -> tip/core-rcu-for-linus
+ + 77ac1c02d9f2...ca9eb48fe01f tip/core/core -> tip/core/core (forced update)
+   c4326563d9ab..fa70f0d2ce96  tip/efi-core-for-linus -> tip/efi-core-for-linus
+   9e90c7985229..746a923b863a  tip/irq-core-for-linus -> tip/irq-core-for-linus
+   fd2efaa4eb53..01a14bda11ad  tip/locking-core-for-linus -> tip/locking-core-for-linus
+ + 34e0f5cce831...c148945221c9 tip/master -> tip/master (forced update)
+   ec2cb7a526d4..dda93b45389f  tip/perf-core-for-linus -> tip/perf-core-for-linus
+   2e62024c265a..dda93b45389f  tip/perf/core -> tip/perf/core
+   20e8e72d0fa8..efe8eaf7b525  tip/perf/urgent -> tip/perf/urgent
+   d5c84ef202d7..711f76a328cb  tip/ras-core-for-linus -> tip/ras-core-for-linus
+   1b6266ebe3da..11e13696a08e  tip/sched-core-for-linus -> tip/sched-core-for-linus
+   fbfa9260085b..d59e0ba19481  tip/timers-core-for-linus -> tip/timers-core-for-linus
+   843c40890501..76f99ae5b54d  tip/x86-apic-for-linus -> tip/x86-apic-for-linus
+   6709812f094d..ec3a94188df7  tip/x86-asm-for-linus -> tip/x86-asm-for-linus
+   216a37202f10..44060e8a5189  tip/x86-boot-for-linus -> tip/x86-boot-for-linus
+   bdc9c3e5ed95..b3569d3a4b4f  tip/x86-build-for-linus -> tip/x86-build-for-linus
+   301d328a6f8b..995d5f64b62f  tip/x86-cpu-for-linus -> tip/x86-cpu-for-linus
+   be0e16ce7c3b..5140a6f47113  tip/x86-hyperv-for-linus -> tip/x86-hyperv-for-linus
+   765d28f13629..977e4be5eb71  tip/x86-mm-for-linus -> tip/x86-mm-for-linus
+   d79d024820f2..fa112cf1e8bc  tip/x86-platform-for-linus -> tip/x86-platform-for-linus
+   612bc3b3d4be..bb4b3b776273  tip/x86-pti-for-linus -> tip/x86-pti-for-linus
+   379d98ddf413..99c19e6a8fe4  tip/x86-vdso-for-linus -> tip/x86-vdso-for-linus
+   485734f3fc77..ace6485a0326  tip/x86/urgent -> tip/x86/urgent
+ * [new branch]                opp/genpd/propagation -> opp/genpd/propagation
+ * [new branch]                tip/x86-grub2-for-linus -> tip/x86-grub2-for-linus
+ * [new branch]                tip/x86-paravirt-for-linus -> tip/x86-paravirt-for-linus
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

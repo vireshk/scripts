@@ -22699,3 +22699,58 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master a100731db587] updates
+ 1 file changed, 58 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   f824374ede9b..a100731db587  master -> master
+   c9fd94ead729..f824374ede9b  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon Nov  5 13:00:02 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + d4bc5145e7b5...7481346d61a4 opp/genpd/propagation -> opp/genpd/propagation (forced update)
+ + 9c5107f8c56e...534245cc69c2 opp/genpd/required-opps -> opp/genpd/required-opps (forced update)
+ + 9c5107f8c56e...534245cc69c2 opp/linux-next -> opp/linux-next (forced update)
+   9c5107f8c56e..d4bc5145e7b5  bkp/opp/genpd/propagation -> bkp/opp/genpd/propagation
+   baa888d25ea6..651022382c7f  origin/HEAD -> origin/HEAD
+   baa888d25ea6..651022382c7f  origin/master -> origin/master
+ + db0789a3048d...1800522c2ba9 pmko/opp/genpd/required-opps -> pmko/opp/genpd/required-opps (forced update)
+   deac8703da5f..534245cc69c2  pmko/opp/linux-next -> pmko/opp/linux-next
+ * [new branch]                pmko/opp/genpd/propagation -> pmko/opp/genpd/propagation
+ * [new tag]                   v4.20-rc1 -> v4.20-rc1
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

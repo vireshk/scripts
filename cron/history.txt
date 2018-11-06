@@ -22754,3 +22754,80 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 83a1191fb93b] updates
+ 2 files changed, 57 insertions(+), 2 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   a100731db587..83a1191fb93b  master -> master
+   f824374ede9b..a100731db587  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Tue Nov  6 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 7481346d61a4...53216ad9c515 opp/genpd/propagation -> opp/genpd/propagation (forced update)
+ + 204fc4b01088...78cbd78a615d sched/tip -> sched/tip (forced update)
+ + d4bc5145e7b5...7481346d61a4 bkp/opp/genpd/propagation -> bkp/opp/genpd/propagation (forced update)
+ + 9c5107f8c56e...534245cc69c2 bkp/opp/genpd/required-opps -> bkp/opp/genpd/required-opps (forced update)
+ + 9c5107f8c56e...534245cc69c2 bkp/opp/linux-next -> bkp/opp/linux-next (forced update)
+ + 7e1ea283f9ee...325be68df734 pmko/opp/genpd/propagation -> pmko/opp/genpd/propagation (forced update)
+ + 1800522c2ba9...534245cc69c2 pmko/opp/genpd/required-opps -> pmko/opp/genpd/required-opps (forced update)
+   9d94e8b1d4f9..ebbeb6a70ade  tip/WIP.x86/boot -> tip/WIP.x86/boot
+ + db9f03a422b6...11b080f48a8a tip/auto-latest -> tip/auto-latest (forced update)
+   ca9eb48fe01f..112950555263  tip/core/core -> tip/core/core
+   113fc08357ad..f75d651587f7  tip/core/urgent -> tip/core/urgent
+   4cb205c0c50f..3424243e39e8  tip/irq-urgent-for-linus -> tip/irq-urgent-for-linus
+   746a923b863a..6da4b3ab9a6e  tip/irq/core -> tip/irq/core
+   4cb205c0c50f..3424243e39e8  tip/irq/urgent -> tip/irq/urgent
+   01a14bda11ad..4d8e5cd233db  tip/locking/core -> tip/locking/core
+   e4a02ed2aaf4..b987ffc18fb3  tip/locking/urgent -> tip/locking/urgent
+ + c148945221c9...a0c4b16102a0 tip/master -> tip/master (forced update)
+   20e8e72d0fa8..29995d296e3e  tip/perf-urgent-for-linus -> tip/perf-urgent-for-linus
+   efe8eaf7b525..29995d296e3e  tip/perf/urgent -> tip/perf/urgent
+   9845c49cc9bb..993f0b0510da  tip/sched-urgent-for-linus -> tip/sched-urgent-for-linus
+   11e13696a08e..ff1cdc94de4d  tip/sched/core -> tip/sched/core
+   9845c49cc9bb..e1ff516a56ad  tip/sched/urgent -> tip/sched/urgent
+   090bcfd5d1b6..bff9a1076adf  tip/timers-urgent-for-linus -> tip/timers-urgent-for-linus
+   d59e0ba19481..7d9df98be66f  tip/timers/core -> tip/timers/core
+   291d0e5d81e1..bff9a1076adf  tip/timers/urgent -> tip/timers/urgent
+   485734f3fc77..23a12ddee1ce  tip/x86-urgent-for-linus -> tip/x86-urgent-for-linus
+   ec3a94188df7..566b62a3676c  tip/x86/asm -> tip/x86/asm
+   0b2c1aec49dd..63ecd3b13d5c  tip/x86/cleanups -> tip/x86/cleanups
+   995d5f64b62f..43500e6f294d  tip/x86/cpu -> tip/x86/cpu
+   ace6485a0326..437e88ab8f9e  tip/x86/urgent -> tip/x86/urgent
+ * [new branch]                lko/sched/tip -> lko/sched/tip
+ * [new branch]                tip/irq/for-block -> tip/irq/for-block
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

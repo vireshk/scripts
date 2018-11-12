@@ -242,6 +242,8 @@ PATH="/home/vireshk/work/repos/tools/jipdate/:$PATH"
 alias updatejiramail="git send-email --confirm=always --cc-cmd=true --to-cmd=true pmwg-weekly-status.txt --to private-pmwg@linaro.org --cc vireshk"
 alias updatejira="hjunk; cd jira; jipdate.py -q --all -f pmwg-weekly-status.txt; updatejiramail"
 
+alias mountrouterdrive="curlftpfs vireshk:123456@192.168.1.1 ~/Videos/routerdrive/"
+
 # go to linux on shell startup
 hwork
 #clear

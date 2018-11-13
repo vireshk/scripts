@@ -608,3 +608,9 @@ From vireshk  Fri Jun 15 08:12:44 2018
 From vireshk  Tue Jun 19 11:33:30 2018
  Subject: [PATCH v8] powercap/drivers/idle_injection: Add an idle injection fra
   Folder: PATCH_v8_powercap-drivers-idle_injection_Add_an_idle_injecti	  22050
+From vireshk  Wed Nov  7 12:33:42 2018
+ Subject: [PATCH 1/2] opp: ti-opp-supply: Dynamically update u_volt_min
+  Folder: PATCH_1-2_opp_ti-opp-supply_Dynamically_update_u_volt_min.mb	   6469
+From vireshk  Wed Nov  7 12:33:43 2018
+ Subject: [PATCH 2/2] opp: ti-opp-supply: Correct the supply in _get_optimal_vd
+  Folder: PATCH_2-2_opp_ti-opp-supply_Correct_the_supply_in_get_optima	   6077

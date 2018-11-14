@@ -23064,3 +23064,54 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 7118318c17cb] updates
+ 2 files changed, 82 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   fb7523b051b5..7118318c17cb  master -> master
+   89ad71867b36..fb7523b051b5  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Nov 14 13:00:02 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 7b3f3eb1ced1...4740217b2a25 sched/tip -> sched/tip (forced update)
+ + bb4b1ef9ad1b...7b3f3eb1ced1 bkp/sched/tip -> bkp/sched/tip (forced update)
+   93049e909c24..1ed7441f7f70  tip/master -> tip/master
+   ed8885a14433..3e184501083c  tip/sched/core -> tip/sched/core
+   977e4be5eb71..1d8ca3be86eb  tip/x86/mm -> tip/x86/mm
+ * [new branch]                bkp/opp/fixes-for-4.20 -> bkp/opp/fixes-for-4.20
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

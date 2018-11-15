@@ -23115,3 +23115,58 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 8aec0b20602d] updates
+ 1 file changed, 51 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   7118318c17cb..8aec0b20602d  master -> master
+   fb7523b051b5..7118318c17cb  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Thu Nov 15 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   4740217b2a25..de531a78bd94  sched/tip -> sched/tip
+ + 7b3f3eb1ced1...4740217b2a25 bkp/sched/tip -> bkp/sched/tip (forced update)
+ + 9ee6022891aa...e77b06c3ec7c lnext/akpm -> lnext/akpm (forced update)
+ + 93ca7b9593db...64ae9bbe64b0 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + f7af6d2c48bf...0bc80e3cb0c1 lnext/master -> lnext/master (forced update)
+ + c0f0d69cd6d7...59a9ebee0952 lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   85758777c2a2..ccda4af0f4b9  lnext/stable -> lnext/stable
+   ccda4af0f4b9..5929a1f0ff30  origin/HEAD -> origin/HEAD
+   ccda4af0f4b9..5929a1f0ff30  origin/master -> origin/master
+ * [new tag]                   next-20181114 -> next-20181114
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

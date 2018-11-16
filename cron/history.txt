@@ -23170,3 +23170,53 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master fe67bd98c1ac] updates
+ 2 files changed, 56 insertions(+), 1 deletion(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   8aec0b20602d..fe67bd98c1ac  master -> master
+   7118318c17cb..8aec0b20602d  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Fri Nov 16 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + de531a78bd94...c279b9f1a4a1 sched/tip -> sched/tip (forced update)
+ + e23510fbad45...3b4877bb0e4a thermal/cooling-maps -> thermal/cooling-maps (forced update)
+   4740217b2a25..de531a78bd94  bkp/sched/tip -> bkp/sched/tip
+   5929a1f0ff30..da5322e65940  origin/HEAD -> origin/HEAD
+   5929a1f0ff30..da5322e65940  origin/master -> origin/master
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

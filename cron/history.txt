@@ -23374,3 +23374,53 @@ post-git trigger: updating grokmirror
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 62eba7263ca7] updates
+ 1 file changed, 44 insertions(+)
+post-git trigger: updating grokmirror
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   d0cc76bbd02f..62eba7263ca7  master -> master
+   1881d6684e62..d0cc76bbd02f  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+
+
+ 
+Thu Nov 22 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   3cd478198ed1..75d86880ec41  opp/genpd/propagation -> opp/genpd/propagation
+   534245cc69c2..8f01f4347bdd  opp/linux-next -> opp/linux-next
+ + 53216ad9c515...3cd478198ed1 bkp/opp/genpd/propagation -> bkp/opp/genpd/propagation (forced update)
+ + e06050764354...b3f1df1c3f53 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   cbceb5d4144d..b3f1df1c3f53  pm/linux-next -> pm/linux-next
+   cbceb5d4144d..b3f1df1c3f53  pm/testing -> pm/testing
+   534245cc69c2..8f01f4347bdd  pmko/opp/linux-next -> pmko/opp/linux-next
+ - [deleted]                   cpufreq/fixes
+ - [deleted]                   opp/fixes
+ * [new branch]                opp/fixes -> opp/fixes
+ * [new branch]                pmko/opp/fixes -> pmko/opp/fixes
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -614,3 +614,6 @@ From vireshk  Wed Nov  7 12:33:42 2018
 From vireshk  Wed Nov  7 12:33:43 2018
  Subject: [PATCH 2/2] opp: ti-opp-supply: Correct the supply in _get_optimal_vd
   Folder: PATCH_2-2_opp_ti-opp-supply_Correct_the_supply_in_get_optima	   6077
+From vireshk  Thu Nov 22 09:35:40 2018
+ Subject: [PATCH -next] opp: ti-opp-supply: Fix platform_no_drv_owner.cocci war
+  Folder: PATCH_-next_opp_ti-opp-supply_Fix_platform_no_drv_owner.cocc	   5089

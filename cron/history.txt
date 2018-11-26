@@ -23475,3 +23475,62 @@ post-git trigger: updating grokmirror
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 30db1c9de3d1] updates
+ 1 file changed, 51 insertions(+)
+post-git trigger: updating grokmirror
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   cc620e87145c..30db1c9de3d1  master -> master
+   62eba7263ca7..cc620e87145c  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+
+
+ 
+Mon Nov 26 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + cf2ef3b91061...e0c4245c113a opp/genpd/propagation -> opp/genpd/propagation (forced update)
+ + 6675212a391f...ea65761fd4af bkp/boot-constraint -> bkp/boot-constraint (forced update)
+   bf21c6e45553..3e27c79c4b12  bkp/opp/fixes -> bkp/opp/fixes
+   622fecbccfe8..3e27c79c4b12  bkp/opp/fixes-for-4.20 -> bkp/opp/fixes-for-4.20
+ + 75d86880ec41...cf2ef3b91061 bkp/opp/genpd/propagation -> bkp/opp/genpd/propagation (forced update)
+ + 8f01f4347bdd...e822eac560a8 bkp/opp/linux-next -> bkp/opp/linux-next (forced update)
+ + 57cb3d5c15cc...0f52e09f066a lnext/akpm -> lnext/akpm (forced update)
+ + 84c9df399461...f2d2d58687c8 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + a4aedc266326...8c9733fd9806 lnext/master -> lnext/master (forced update)
+ + 63dc24cadf39...055142ecaa42 lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   f2ce1065e767..edeca3a769ad  lnext/stable -> lnext/stable
+   f2ce1065e767..2e6e902d1850  origin/HEAD -> origin/HEAD
+   f2ce1065e767..2e6e902d1850  origin/master -> origin/master
+   017ce359a718..2bbb5fa37475  pm/acpi -> pm/acpi
+   97dc6c03c1b0..1d50088ca395  pm/pm -> pm/pm
+ + 325be68df734...5a29ceb27042 pmko/opp/genpd/propagation -> pmko/opp/genpd/propagation (forced update)
+ * [new tag]                   acpi-4.20-rc4 -> acpi-4.20-rc4
+ * [new tag]                   next-20181123 -> next-20181123
+ * [new tag]                   pm-4.20-rc4 -> pm-4.20-rc4
+ * [new tag]                   v4.20-rc4 -> v4.20-rc4
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -617,3 +617,6 @@ From vireshk  Wed Nov  7 12:33:43 2018
 From vireshk  Thu Nov 22 09:35:40 2018
  Subject: [PATCH -next] opp: ti-opp-supply: Fix platform_no_drv_owner.cocci war
   Folder: PATCH_-next_opp_ti-opp-supply_Fix_platform_no_drv_owner.cocc	   5089
+From vireshk  Mon Nov  5 12:07:40 2018
+ Subject: [PATCH 4/4] PM / Domains: Propagate performance state updates
+  Folder: PATCH_4-4_PM_Domains_Propagate_performance_state_updates.mbo	   9108

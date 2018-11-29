@@ -1738,3 +1738,239 @@ index 0b718886479b..6a486ad81259 100644
 --
 2.7.4
 
+From foo@bar  Wed Nov 28 14:40:48 2018
+Cc: Chris Redpath <chris.redpath@linaro.org>
+Cc: Quentin Perret <quentin.perret@linaro.org>
+Cc: Viresh Kumar <viresh.kumar@linaro.org>
+Cc: Amit Kucheria <amit.kucheria@linaro.org>
+Cc: Nicolas Dechesne <nicolas.dechesne@linaro.org>
+Cc: Niklas Cassel <niklas.cassel@linaro.org>
+Reviewed-by: Viresh Kumar <viresh.kumar@linaro.org>
+Tested-by: Quentin Perret <quentin.perret@arm.com>
+Acked-by: Rob Herring <robh@kernel.org>
+Signed-off-by: Daniel Lezcano <daniel.lezcano@linaro.org>
+
+---
+ Documentation/devicetree/bindings/arm/cpu-capacity.txt | 6 ++++++
+ drivers/base/arch_topology.c                           | 9 ++++++++-
+ 2 files changed, 14 insertions(+), 1 deletion(-)
+
+diff --git a/Documentation/devicetree/bindings/arm/cpu-capacity.txt b/Documentation/devicetree/bindings/arm/cpu-capacity.txt
+index 84262cd..f53a3c9 100644
+--- a/Documentation/devicetree/bindings/arm/cpu-capacity.txt
++++ b/Documentation/devicetree/bindings/arm/cpu-capacity.txt
+@@ -54,6 +54,12 @@ fall back to the default capacity value for every CPU. If cpufreq is not
+ available, final capacities are calculated by directly using capacity-dmips-
+ mhz values (normalized w.r.t. the highest value found while parsing the DT).
+ 
++If capacity-dmips-mhz is not specified or if the parsing fails, the
++default capacity value will be computed against the highest frequency.
++When all CPUs have the same OPP, they will have the same capacity
++value otherwise the capacity will be scaled down for CPUs having lower
++frequencies.
++
+ ===========================================
+ 4 - Examples
+ ===========================================
+diff --git a/drivers/base/arch_topology.c b/drivers/base/arch_topology.c
+index fd5325b..696cea5 100644
+--- a/drivers/base/arch_topology.c
++++ b/drivers/base/arch_topology.c
+@@ -243,9 +243,16 @@ static int __init register_cpufreq_notifier(void)
+ 	 * until we have the necessary code to parse the cpu capacity, so
+ 	 * skip registering cpufreq notifier.
+ 	 */
+-	if (!acpi_disabled || !raw_capacity)
++	if (!acpi_disabled)
+ 		return -EINVAL;
+ 
++	if (!raw_capacity) {
++		raw_capacity = kmalloc_array(num_possible_cpus(),
++					     sizeof(*raw_capacity), GFP_KERNEL);
++		if (!raw_capacity)
++			return -ENOMEM;
++	}
++
+ 	if (!alloc_cpumask_var(&cpus_to_visit, GFP_KERNEL)) {
+ 		pr_err("cpu_capacity: failed to allocate memory for cpus_to_visit\n");
+ 		return -ENOMEM;
+-- 
+2.7.4
+
+From foo@bar  Wed Nov 28 14:44:36 2018
+Cc: Chris Redpath <chris.redpath@linaro.org>
+Cc: Quentin Perret <quentin.perret@linaro.org>
+Cc: Viresh Kumar <viresh.kumar@linaro.org>
+Cc: Amit Kucheria <amit.kucheria@linaro.org>
+Cc: Nicolas Dechesne <nicolas.dechesne@linaro.org>
+Cc: Niklas Cassel <niklas.cassel@linaro.org>
+Reviewed-by: Viresh Kumar <viresh.kumar@linaro.org>
+Tested-by: Quentin Perret <quentin.perret@arm.com>
+Acked-by: Rob Herring <robh@kernel.org>
+Signed-off-by: Daniel Lezcano <daniel.lezcano@linaro.org>
+
+---
+ Documentation/devicetree/bindings/arm/cpu-capacity.txt | 6 ++++++
+ drivers/base/arch_topology.c                           | 9 ++++++++-
+ 2 files changed, 14 insertions(+), 1 deletion(-)
+
+diff --git a/Documentation/devicetree/bindings/arm/cpu-capacity.txt b/Documentation/devicetree/bindings/arm/cpu-capacity.txt
+index 84262cd..f53a3c9 100644
+--- a/Documentation/devicetree/bindings/arm/cpu-capacity.txt
++++ b/Documentation/devicetree/bindings/arm/cpu-capacity.txt
+@@ -54,6 +54,12 @@ fall back to the default capacity value for every CPU. If cpufreq is not
+ available, final capacities are calculated by directly using capacity-dmips-
+ mhz values (normalized w.r.t. the highest value found while parsing the DT).
+ 
++If capacity-dmips-mhz is not specified or if the parsing fails, the
++default capacity value will be computed against the highest frequency.
++When all CPUs have the same OPP, they will have the same capacity
++value otherwise the capacity will be scaled down for CPUs having lower
++frequencies.
++
+ ===========================================
+ 4 - Examples
+ ===========================================
+diff --git a/drivers/base/arch_topology.c b/drivers/base/arch_topology.c
+index fd5325b..696cea5 100644
+--- a/drivers/base/arch_topology.c
++++ b/drivers/base/arch_topology.c
+@@ -243,9 +243,16 @@ static int __init register_cpufreq_notifier(void)
+ 	 * until we have the necessary code to parse the cpu capacity, so
+ 	 * skip registering cpufreq notifier.
+ 	 */
+-	if (!acpi_disabled || !raw_capacity)
++	if (!acpi_disabled)
+ 		return -EINVAL;
+ 
++	if (!raw_capacity) {
++		raw_capacity = kmalloc_array(num_possible_cpus(),
++					     sizeof(*raw_capacity), GFP_KERNEL);
++		if (!raw_capacity)
++			return -ENOMEM;
++	}
++
+ 	if (!alloc_cpumask_var(&cpus_to_visit, GFP_KERNEL)) {
+ 		pr_err("cpu_capacity: failed to allocate memory for cpus_to_visit\n");
+ 		return -ENOMEM;
+-- 
+2.7.4
+
+From foo@bar  Wed Nov 28 14:44:58 2018
+Cc: Chris Redpath <chris.redpath@linaro.org>
+Cc: Quentin Perret <quentin.perret@linaro.org>
+Cc: Viresh Kumar <viresh.kumar@linaro.org>
+Cc: Amit Kucheria <amit.kucheria@linaro.org>
+Cc: Nicolas Dechesne <nicolas.dechesne@linaro.org>
+Cc: Niklas Cassel <niklas.cassel@linaro.org>
+Reviewed-by: Viresh Kumar <viresh.kumar@linaro.org>
+Tested-by: Quentin Perret <quentin.perret@arm.com>
+Acked-by: Rob Herring <robh@kernel.org>
+Signed-off-by: Daniel Lezcano <daniel.lezcano@linaro.org>
+
+---
+ Documentation/devicetree/bindings/arm/cpu-capacity.txt | 6 ++++++
+ drivers/base/arch_topology.c                           | 9 ++++++++-
+ 2 files changed, 14 insertions(+), 1 deletion(-)
+
+diff --git a/Documentation/devicetree/bindings/arm/cpu-capacity.txt b/Documentation/devicetree/bindings/arm/cpu-capacity.txt
+index 84262cd..f53a3c9 100644
+--- a/Documentation/devicetree/bindings/arm/cpu-capacity.txt
++++ b/Documentation/devicetree/bindings/arm/cpu-capacity.txt
+@@ -54,6 +54,12 @@ fall back to the default capacity value for every CPU. If cpufreq is not
+ available, final capacities are calculated by directly using capacity-dmips-
+ mhz values (normalized w.r.t. the highest value found while parsing the DT).
+ 
++If capacity-dmips-mhz is not specified or if the parsing fails, the
++default capacity value will be computed against the highest frequency.
++When all CPUs have the same OPP, they will have the same capacity
++value otherwise the capacity will be scaled down for CPUs having lower
++frequencies.
++
+ ===========================================
+ 4 - Examples
+ ===========================================
+diff --git a/drivers/base/arch_topology.c b/drivers/base/arch_topology.c
+index fd5325b..696cea5 100644
+--- a/drivers/base/arch_topology.c
++++ b/drivers/base/arch_topology.c
+@@ -243,9 +243,16 @@ static int __init register_cpufreq_notifier(void)
+ 	 * until we have the necessary code to parse the cpu capacity, so
+ 	 * skip registering cpufreq notifier.
+ 	 */
+-	if (!acpi_disabled || !raw_capacity)
++	if (!acpi_disabled)
+ 		return -EINVAL;
+ 
++	if (!raw_capacity) {
++		raw_capacity = kmalloc_array(num_possible_cpus(),
++					     sizeof(*raw_capacity), GFP_KERNEL);
++		if (!raw_capacity)
++			return -ENOMEM;
++	}
++
+ 	if (!alloc_cpumask_var(&cpus_to_visit, GFP_KERNEL)) {
+ 		pr_err("cpu_capacity: failed to allocate memory for cpus_to_visit\n");
+ 		return -ENOMEM;
+-- 
+2.7.4
+
+From foo@bar  Wed Nov 28 14:48:29 2018
+Cc: Chris Redpath <chris.redpath@linaro.org>
+Cc: Quentin Perret <quentin.perret@linaro.org>
+Cc: Viresh Kumar <viresh.kumar@linaro.org>
+Cc: Amit Kucheria <amit.kucheria@linaro.org>
+Cc: Nicolas Dechesne <nicolas.dechesne@linaro.org>
+Cc: Niklas Cassel <niklas.cassel@linaro.org>
+Reviewed-by: Viresh Kumar <viresh.kumar@linaro.org>
+Tested-by: Quentin Perret <quentin.perret@arm.com>
+Acked-by: Rob Herring <robh@kernel.org>
+Signed-off-by: Daniel Lezcano <daniel.lezcano@linaro.org>
+
+---
+ Documentation/devicetree/bindings/arm/cpu-capacity.txt | 6 ++++++
+ drivers/base/arch_topology.c                           | 9 ++++++++-
+ 2 files changed, 14 insertions(+), 1 deletion(-)
+
+diff --git a/Documentation/devicetree/bindings/arm/cpu-capacity.txt b/Documentation/devicetree/bindings/arm/cpu-capacity.txt
+index 84262cd..f53a3c9 100644
+--- a/Documentation/devicetree/bindings/arm/cpu-capacity.txt
++++ b/Documentation/devicetree/bindings/arm/cpu-capacity.txt
+@@ -54,6 +54,12 @@ fall back to the default capacity value for every CPU. If cpufreq is not
+ available, final capacities are calculated by directly using capacity-dmips-
+ mhz values (normalized w.r.t. the highest value found while parsing the DT).
+ 
++If capacity-dmips-mhz is not specified or if the parsing fails, the
++default capacity value will be computed against the highest frequency.
++When all CPUs have the same OPP, they will have the same capacity
++value otherwise the capacity will be scaled down for CPUs having lower
++frequencies.
++
+ ===========================================
+ 4 - Examples
+ ===========================================
+diff --git a/drivers/base/arch_topology.c b/drivers/base/arch_topology.c
+index fd5325b..696cea5 100644
+--- a/drivers/base/arch_topology.c
++++ b/drivers/base/arch_topology.c
+@@ -243,9 +243,16 @@ static int __init register_cpufreq_notifier(void)
+ 	 * until we have the necessary code to parse the cpu capacity, so
+ 	 * skip registering cpufreq notifier.
+ 	 */
+-	if (!acpi_disabled || !raw_capacity)
++	if (!acpi_disabled)
+ 		return -EINVAL;
+ 
++	if (!raw_capacity) {
++		raw_capacity = kmalloc_array(num_possible_cpus(),
++					     sizeof(*raw_capacity), GFP_KERNEL);
++		if (!raw_capacity)
++			return -ENOMEM;
++	}
++
+ 	if (!alloc_cpumask_var(&cpus_to_visit, GFP_KERNEL)) {
+ 		pr_err("cpu_capacity: failed to allocate memory for cpus_to_visit\n");
+ 		return -ENOMEM;
+-- 
+2.7.4
+

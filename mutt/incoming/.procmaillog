@@ -620,3 +620,32 @@ From vireshk  Thu Nov 22 09:35:40 2018
 From vireshk  Mon Nov  5 12:07:40 2018
  Subject: [PATCH 4/4] PM / Domains: Propagate performance state updates
   Folder: PATCH_4-4_PM_Domains_Propagate_performance_state_updates.mbo	   9108
+From vireshk  Wed Nov 28 08:22:04 2018
+ Subject: [PATCH V5 1/2] base/drivers/arch_topology: Replace mutex with READ_ON
+  Folder: PATCH_V5_1-2_base-drivers-arch_topology_Replace_mutex_with_R	   7802
+From vireshk  Wed Nov 28 08:22:05 2018
+ Subject: [PATCH V5 2/2] base/drivers/arch_topology: Default dmips-mhz if they 
+  Folder: PATCH_V5_2-2_base-drivers-arch_topology_Default_dmips-mhz_if	   6717
+From foo@bar  Wed Nov 28 14:40:48 2018
+  Folder: .mbox								   2407
+From vireshk  Wed Nov 28 08:22:05 2018
+ Subject: [PATCH V5 2/2] base/drivers/arch_topology: Default dmips-mhz if they 
+  Folder: PATCH_V5_2-2_base-drivers-arch_topology_Default_dmips-mhz_if	   6717
+From foo@bar  Wed Nov 28 14:44:36 2018
+  Folder: .mbox								   2407
+From vireshk  Wed Nov 28 08:22:05 2018
+ Subject: [PATCH V5 2/2] base/drivers/arch_topology: Default dmips-mhz if they 
+  Folder: PATCH_V5_2-2_base-drivers-arch_topology_Default_dmips-mhz_if	   6717
+From foo@bar  Wed Nov 28 14:44:58 2018
+  Folder: .mbox								   2407
+From vireshk  Wed Nov 28 08:22:04 2018
+ Subject: [PATCH V5 1/2] base/drivers/arch_topology: Replace mutex with READ_ON
+  Folder: PATCH_V5_1-2_base-drivers-arch_topology_Replace_mutex_with_R	   7802
+From vireshk  Wed Nov 28 08:22:05 2018
+ Subject: [PATCH V5 2/2] base/drivers/arch_topology: Default dmips-mhz if they 
+  Folder: PATCH_V5_2-2_base-drivers-arch_topology_Default_dmips-mhz_if	   6717
+From foo@bar  Wed Nov 28 14:48:29 2018
+  Folder: .mbox								   2407
+From vireshk  Thu Nov 29 09:34:38 2018
+ Subject: [PATCH v2] Documentation: admin-guide: PM: Add cpuidle document
+  Folder: PATCH_v2_Documentation_admin-guide_PM_Add_cpuidle_document.m	  46989

@@ -23671,3 +23671,47 @@ post-git trigger: updating grokmirror
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 31d0254f6396] updates
+ 5 files changed, 1106 insertions(+), 248 deletions(-)
+ delete mode 100644 mutt/incoming/PATCH_4-4_PM_Domains_Propagate_performance_state_updates.mbox
+ create mode 100644 mutt/incoming/PATCH_v2_Documentation_admin-guide_PM_Add_cpuidle_document.mbox
+post-git trigger: updating grokmirror
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   421063a41044..31d0254f6396  master -> master
+   70abd8087dcd..421063a41044  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+
+
+ 
+Fri Nov 30 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   2e6e902d1850..fa3a60fde708  cpufreq/constraints -> cpufreq/constraints
+ * [new branch]                bkp/arch/topology -> bkp/arch/topology
+ * [new branch]                bkp/cpufreq/constraints -> bkp/cpufreq/constraints
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/scripts

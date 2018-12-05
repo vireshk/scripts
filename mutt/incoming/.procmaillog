@@ -649,3 +649,6 @@ From foo@bar  Wed Nov 28 14:48:29 2018
 From vireshk  Thu Nov 29 09:34:38 2018
  Subject: [PATCH v2] Documentation: admin-guide: PM: Add cpuidle document
   Folder: PATCH_v2_Documentation_admin-guide_PM_Add_cpuidle_document.m	  46989
+From vireshk  Mon Dec  3 09:09:32 2018
+ Subject: [PATCH v11 2/2] cpufreq: qcom-hw: Add support for QCOM cpufreq HW dri
+  Folder: PATCH_v11_2-2_cpufreq_qcom-hw_Add_support_for_QCOM_cpufreq_H	  16145

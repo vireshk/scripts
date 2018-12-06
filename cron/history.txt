@@ -23853,3 +23853,47 @@ post-git trigger: updating grokmirror
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master d0c15c891215] updates
+ 4 files changed, 474 insertions(+), 800 deletions(-)
+ create mode 100644 mutt/incoming/PATCH_v11_2-2_cpufreq_qcom-hw_Add_support_for_QCOM_cpufreq_HW_driver.mbox
+ delete mode 100644 mutt/incoming/PATCH_v2_Documentation_admin-guide_PM_Add_cpuidle_document.mbox
+post-git trigger: updating grokmirror
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   dfd5c2e6d0d0..d0c15c891215  master -> master
+   6aaecf3a3990..dfd5c2e6d0d0  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+
+
+ 
+Thu Dec  6 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 761d8cc77f70...23bdc93bc0c5 cpufreq/constraints -> cpufreq/constraints (forced update)
+   fa3a60fde708..761d8cc77f70  bkp/cpufreq/constraints -> bkp/cpufreq/constraints
+ * [new branch]                bkp/test -> bkp/test
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/scripts

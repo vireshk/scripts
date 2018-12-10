@@ -23897,3 +23897,61 @@ post-git trigger: updating grokmirror
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 191f28b758fa] updates
+ 1 file changed, 44 insertions(+)
+post-git trigger: updating grokmirror
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   d0c15c891215..191f28b758fa  master -> master
+   dfd5c2e6d0d0..d0c15c891215  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+
+
+ 
+Mon Dec 10 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   23bdc93bc0c5..7ed4348fb272  cpufreq/constraints -> cpufreq/constraints
+ + 761d8cc77f70...23bdc93bc0c5 bkp/cpufreq/constraints -> bkp/cpufreq/constraints (forced update)
+ + 35a6bff95cfa...261c9f4d1b61 lnext/akpm -> lnext/akpm (forced update)
+ + 0f006b447efd...420661a12c6e lnext/akpm-base -> lnext/akpm-base (forced update)
+ + d2e6681167c6...74c4a24df7ca lnext/master -> lnext/master (forced update)
+ + ace3a0ccecf4...0e1b8041e7d5 lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   60b548237fed..abb8d6ecbd8f  lnext/stable -> lnext/stable
+   2595646791c3..40e020c129cf  origin/HEAD -> origin/HEAD
+   2595646791c3..40e020c129cf  origin/master -> origin/master
+ + 3105d85d5586...0b71efed2eda pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + f9ca83c5c001...0b71efed2eda pm/linux-next -> pm/linux-next (forced update)
+   2e6e902d1850..2595646791c3  pm/master -> pm/master
+   36c3aeb4b48d..a72173ecfc67  pm/pm -> pm/pm
+ + f9ca83c5c001...0b71efed2eda pm/testing -> pm/testing (forced update)
+ * [new tag]                   next-20181207 -> next-20181207
+ * [new tag]                   pm-4.20-rc6 -> pm-4.20-rc6
+ * [new tag]                   v4.20-rc6 -> v4.20-rc6
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

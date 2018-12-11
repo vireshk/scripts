@@ -652,3 +652,6 @@ From vireshk  Thu Nov 29 09:34:38 2018
 From vireshk  Mon Dec  3 09:09:32 2018
  Subject: [PATCH v11 2/2] cpufreq: qcom-hw: Add support for QCOM cpufreq HW dri
   Folder: PATCH_v11_2-2_cpufreq_qcom-hw_Add_support_for_QCOM_cpufreq_H	  16145
+From vireshk  Tue Dec 11 09:34:22 2018
+ Subject: [RFC PATCH] PM / OPP: Always expose one supply in debugfs
+  Folder: RFC_PATCH_PM_OPP_Always_expose_one_supply_in_debugfs.mbox	   5789

@@ -23955,3 +23955,53 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 22408482c402] updates
+ 1 file changed, 58 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   191f28b758fa..22408482c402  master -> master
+   d0c15c891215..191f28b758fa  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Tue Dec 11 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   23bdc93bc0c5..7ed4348fb272  bkp/cpufreq/constraints -> bkp/cpufreq/constraints
+ + 0b71efed2eda...528ea42245de pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 0b71efed2eda...c332f1e0d962 pm/linux-next -> pm/linux-next (forced update)
+   2595646791c3..40e020c129cf  pm/master -> pm/master
+ + 0b71efed2eda...c332f1e0d962 pm/testing -> pm/testing (forced update)
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

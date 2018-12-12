@@ -655,3 +655,6 @@ From vireshk  Mon Dec  3 09:09:32 2018
 From vireshk  Tue Dec 11 09:34:22 2018
  Subject: [RFC PATCH] PM / OPP: Always expose one supply in debugfs
   Folder: RFC_PATCH_PM_OPP_Always_expose_one_supply_in_debugfs.mbox	   5789
+From vireshk  Tue Dec 11 15:35:46 2018
+ Subject: [PATCH v2] PM / Domains: Make genpd performance states orthogonal to 
+  Folder: PATCH_v2_PM_Domains_Make_genpd_performance_states_orthogonal	   7284

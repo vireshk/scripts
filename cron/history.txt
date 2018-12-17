@@ -24181,3 +24181,70 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master b28bb30bfded] updates
+ 1 file changed, 53 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   715a03942755..b28bb30bfded  master -> master
+   83ea73f5668b..715a03942755  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon Dec 17 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 675e4f49975a...5f5a2ac6b7d9 cpufreq/constraints -> cpufreq/constraints (forced update)
+ + 91035f89cb4f...18edf49c4554 opp/genpd/propagation -> opp/genpd/propagation (forced update)
+ - [deleted]                   opp/genpd/propagation-v1
+ - [deleted]                   opp/genpd/required-opps
+ + 0f33efede6b9...ade0c9493e97 opp/linux-next -> opp/linux-next (forced update)
+   a19e837f8851..675e4f49975a  bkp/cpufreq/constraints -> bkp/cpufreq/constraints
+ + cea86b8fc8f3...91035f89cb4f bkp/opp/genpd/propagation -> bkp/opp/genpd/propagation (forced update)
+ + 55a0c9b0ce74...4a3443a998ec lnext/akpm -> lnext/akpm (forced update)
+ + fed813e5e09e...d8c6527f9681 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + c09747a95c72...d14b746c6c1c lnext/master -> lnext/master (forced update)
+ + 0a4a9e6b0337...92a2d6661ebe lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   f5d582777bcb..7566ec393f41  origin/HEAD -> origin/HEAD
+   f5d582777bcb..7566ec393f41  origin/master -> origin/master
+ + 73ee6bae26c7...22683a4c1a6e pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   49176826d815..22683a4c1a6e  pm/linux-next -> pm/linux-next
+   49176826d815..22683a4c1a6e  pm/testing -> pm/testing
+ + d138bd45d0ea...18edf49c4554 pmko/opp/genpd/propagation -> pmko/opp/genpd/propagation (forced update)
+ + e822eac560a8...ade0c9493e97 pmko/opp/linux-next -> pmko/opp/linux-next (forced update)
+ * [new branch]                opp/genpd/propagation-debug -> opp/genpd/propagation-debug
+ * [new branch]                test -> test
+ * [new tag]                   next-20181214 -> next-20181214
+ * [new tag]                   v4.20-rc7 -> v4.20-rc7
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -24248,3 +24248,56 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 49316d802bbf] updates
+ 1 file changed, 67 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   b28bb30bfded..49316d802bbf  master -> master
+   715a03942755..b28bb30bfded  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Tue Dec 18 13:00:01 IST 2018
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   22683a4c1a6e..5c9a626a272a  test -> test
+ + 675e4f49975a...5f5a2ac6b7d9 bkp/cpufreq/constraints -> bkp/cpufreq/constraints (forced update)
+ + 91035f89cb4f...18edf49c4554 bkp/opp/genpd/propagation -> bkp/opp/genpd/propagation (forced update)
+ - [deleted]                   bkp/opp/genpd/propagation-v1
+ - [deleted]                   bkp/opp/genpd/required-opps
+ + 0f33efede6b9...ade0c9493e97 bkp/opp/linux-next -> bkp/opp/linux-next (forced update)
+ * [new branch]                bkp/opp/genpd/propagation-debug -> bkp/opp/genpd/propagation-debug
+ * [new branch]                bkp/test -> bkp/test
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

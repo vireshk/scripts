@@ -24425,3 +24425,62 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master e656408be395] updates
+ 1 file changed, 76 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   356a0622eb40..e656408be395  master -> master
+   8d12bcb349fd..356a0622eb40  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Thu Jan  3 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 7a1ea7bb8f7d...ac5759869a2d opp/genpd/debug -> opp/genpd/debug (forced update)
+ - [deleted]                   opp/genpd/propagation-debug
+ - [deleted]                   sched/tip
+ - [deleted]                   bkp/arch/topology
+ + 2e6fbd3feb87...22ab20ef437b bkp/cpufreq/constraints -> bkp/cpufreq/constraints (forced update)
+ - [deleted]                   bkp/opp/fixes
+ - [deleted]                   bkp/opp/fixes-for-4.20
+ - [deleted]                   bkp/opp/fixes-for-4.21
+ - [deleted]                   bkp/opp/genpd/propagation
+ - [deleted]                   bkp/test
+ + 046afb3e1462...36f21f241f46 bkp/thermal/cooling-maps -> bkp/thermal/cooling-maps (forced update)
+ * [new branch]                opp/oops -> opp/oops
+ * [new branch]                sched/idle -> sched/idle
+ * [new branch]                bkp/cpufreq/oops -> bkp/cpufreq/oops
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

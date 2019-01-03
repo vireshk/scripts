@@ -658,3 +658,6 @@ From vireshk  Tue Dec 11 09:34:22 2018
 From vireshk  Tue Dec 11 15:35:46 2018
  Subject: [PATCH v2] PM / Domains: Make genpd performance states orthogonal to 
   Folder: PATCH_v2_PM_Domains_Make_genpd_performance_states_orthogonal	   7284
+From vireshk  Wed Jan  2 09:28:39 2019
+ Subject: [BUG] dev_pm_opp refcount issue on Arm Juno r0
+  Folder: BUG_dev_pm_opp_refcount_issue_on_Arm_Juno_r0.mbox		  13195

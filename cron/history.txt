@@ -24539,3 +24539,294 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 745794a0e24b] updates
+ 1 file changed, 55 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   3f44a7f645f6..745794a0e24b  master -> master
+   e656408be395..3f44a7f645f6  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon Jan  7 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + aad7106afba3...aeb5bdb74326 cpufreq/constraints -> cpufreq/constraints (forced update)
+   96d4f267e40f..7dddbeabb434  opp/oops -> opp/oops
+   d87524331261..93e12fddbae3  aosp-hikey/android-hikey-linaro-3.18 -> aosp-hikey/android-hikey-linaro-3.18
+   65e13ce3629b..636d2eaef5af  aosp-hikey/android-hikey-linaro-4.14 -> aosp-hikey/android-hikey-linaro-4.14
+   41bb49da74f7..02ba6fc5ea78  aosp-hikey/android-hikey-linaro-4.4 -> aosp-hikey/android-hikey-linaro-4.4
+   2273c775d42a..2531c8d5dc4d  aosp-hikey/android-hikey-linaro-4.9 -> aosp-hikey/android-hikey-linaro-4.9
+ - [deleted]                   aosp/android-3.10
+ - [deleted]                   aosp/android-3.10.y
+   ba85515984f6..fa26112339db  aosp/android-3.18 -> aosp/android-3.18
+   6b52e1023e87..2673e6c98e64  aosp/android-3.18-n-release -> aosp/android-3.18-n-release
+   dd4f2817d2ed..ccaf4c28b56f  aosp/android-3.18-o-mr1 -> aosp/android-3.18-o-mr1
+   102e7048aa00..dfecf7c6578f  aosp/android-3.18-o-release -> aosp/android-3.18-o-release
+   fb6faf04232d..3c207c880674  aosp/android-4.14 -> aosp/android-4.14
+   78d59f1aea62..d08574b6f0ae  aosp/android-4.4 -> aosp/android-4.4
+   0c3356c0cf26..b2600cf7e70a  aosp/android-4.4-eas-test -> aosp/android-4.4-eas-test
+ - [deleted]                   aosp/android-4.4-llvm
+   0ebd74a36711..1695253e0049  aosp/android-4.4-n -> aosp/android-4.4-n
+   2124c331c24e..a6591fa8dd43  aosp/android-4.4-n-release -> aosp/android-4.4-n-release
+   bc8f9ae6bcd3..b55e7ac5a192  aosp/android-4.4-o -> aosp/android-4.4-o
+   1d54552e0f08..9f7d53dc33ed  aosp/android-4.4-o-mr1 -> aosp/android-4.4-o-mr1
+   1e21e4c99129..901b6e530dbd  aosp/android-4.4-o-release -> aosp/android-4.4-o-release
+   1a938310b8af..043c92bd0517  aosp/android-4.9 -> aosp/android-4.9
+ - [deleted]                   aosp/android-4.9-eas-dev
+ - [deleted]                   aosp/android-4.9-llvm
+   1b9d719b0b46..2720a69dd2e2  aosp/android-4.9-o -> aosp/android-4.9-o
+   534ee59441e7..4ce00d67a6ac  aosp/android-4.9-o-mr1 -> aosp/android-4.9-o-mr1
+   fcb9faa1d2e6..198eb35aaed0  aosp/android-4.9-o-release -> aosp/android-4.9-o-release
+   00b503944b0a..eb1249894645  aosp/android-trusty-4.9 -> aosp/android-trusty-4.9
+ - [deleted]                   aosp/experimental/android-4.4-llvm
+ - [deleted]                   aosp/experimental/android-4.9-llvm
+ - [deleted]                   aosp/experimental/android-mainline-tracking
+   f73a1ef7d7b5..d614a83672ae  aosp/upstream-f2fs-stable-linux-3.18.y -> aosp/upstream-f2fs-stable-linux-3.18.y
+   00f0eaaadfe0..34983b0428ca  aosp/upstream-f2fs-stable-linux-4.14.y -> aosp/upstream-f2fs-stable-linux-4.14.y
+   5f9b3abb911f..0eea3276eebc  aosp/upstream-f2fs-stable-linux-4.4.y -> aosp/upstream-f2fs-stable-linux-4.4.y
+   71f8f0499e8b..d831272f116f  aosp/upstream-f2fs-stable-linux-4.9.y -> aosp/upstream-f2fs-stable-linux-4.9.y
+   cde3537bd109..fa42fea0d8b4  aosp/upstream-linux-3.18.y -> aosp/upstream-linux-3.18.y
+   1722fe372784..d2dd9f1593dc  aosp/upstream-linux-4.14.y -> aosp/upstream-linux-4.14.y
+   f0feeec9c246..ba0da581b466  aosp/upstream-linux-4.4.y -> aosp/upstream-linux-4.4.y
+   7f3bd8db9974..d99748864fa9  aosp/upstream-linux-4.9.y -> aosp/upstream-linux-4.9.y
+ + 22ab20ef437b...aad7106afba3 bkp/cpufreq/constraints -> bkp/cpufreq/constraints (forced update)
+ + f39137386180...96d4f267e40f bkp/opp/oops -> bkp/opp/oops (forced update)
+   96d4f267e40f..3bd6e94bec12  origin/HEAD -> origin/HEAD
+   96d4f267e40f..3bd6e94bec12  origin/master -> origin/master
+ * [new branch]                android-hikey-linaro-4.14 -> android-hikey-linaro-4.14
+ * [new branch]                aosp-hikey/android-hikey-linaro-4.19 -> aosp-hikey/android-hikey-linaro-4.19
+ * [new branch]                aosp-hikey/android-poplar-linaro-4.9 -> aosp-hikey/android-poplar-linaro-4.9
+ * [new branch]                aosp-hikey/mirror-android-3.18 -> aosp-hikey/mirror-android-3.18
+ * [new branch]                aosp-hikey/mirror-android-4.14 -> aosp-hikey/mirror-android-4.14
+ * [new branch]                aosp-hikey/mirror-android-4.19 -> aosp-hikey/mirror-android-4.19
+ * [new branch]                aosp-hikey/mirror-android-4.4 -> aosp-hikey/mirror-android-4.4
+ * [new branch]                aosp-hikey/mirror-android-4.9 -> aosp-hikey/mirror-android-4.9
+ * [new branch]                aosp-hikey/upstream-poplar-android-4.9 -> aosp-hikey/upstream-poplar-android-4.9
+ * [new branch]                aosp/android-4.14-p -> aosp/android-4.14-p
+ * [new branch]                aosp/android-4.14-p-release -> aosp/android-4.14-p-release
+ * [new branch]                aosp/android-4.19 -> aosp/android-4.19
+ * [new branch]                aosp/android-4.4-p -> aosp/android-4.4-p
+ * [new branch]                aosp/android-4.4-p-release -> aosp/android-4.4-p-release
+ * [new branch]                aosp/android-4.9-p -> aosp/android-4.9-p
+ * [new branch]                aosp/android-4.9-p-release -> aosp/android-4.9-p-release
+ * [new branch]                aosp/android-mainline-tracking -> aosp/android-mainline-tracking
+ * [new branch]                aosp/android-trusty-4.14 -> aosp/android-trusty-4.14
+ * [new branch]                aosp/cuttlefish-4.14 -> aosp/cuttlefish-4.14
+ * [new branch]                aosp/cuttlefish-4.4 -> aosp/cuttlefish-4.4
+ * [new branch]                aosp/deprecated/android-3.10 -> aosp/deprecated/android-3.10
+ * [new branch]                aosp/deprecated/android-4.4-llvm -> aosp/deprecated/android-4.4-llvm
+ * [new branch]                aosp/deprecated/android-4.9-eas-dev -> aosp/deprecated/android-4.9-eas-dev
+ * [new branch]                aosp/deprecated/android-4.9-llvm -> aosp/deprecated/android-4.9-llvm
+ * [new branch]                aosp/experimental/android-4.19 -> aosp/experimental/android-4.19
+ * [new branch]                aosp/experimental/eas-dev -> aosp/experimental/eas-dev
+ * [new branch]                aosp/upstream-f2fs-stable-linux-4.19.y -> aosp/upstream-f2fs-stable-linux-4.19.y
+ * [new branch]                aosp/upstream-linux-4.19.y -> aosp/upstream-linux-4.19.y
+ * [new tag]                   ASB-2018-03-05_3.18-n-release -> ASB-2018-03-05_3.18-n-release
+ * [new tag]                   ASB-2018-03-05_3.18-o-mr1 -> ASB-2018-03-05_3.18-o-mr1
+ * [new tag]                   ASB-2018-03-05_3.18-o-release -> ASB-2018-03-05_3.18-o-release
+ * [new tag]                   ASB-2018-03-05_4.4-n-release -> ASB-2018-03-05_4.4-n-release
+ * [new tag]                   ASB-2018-03-05_4.4-o-mr1 -> ASB-2018-03-05_4.4-o-mr1
+ * [new tag]                   ASB-2018-03-05_4.4-o-release -> ASB-2018-03-05_4.4-o-release
+ * [new tag]                   ASB-2018-03-05_4.9-o-mr1 -> ASB-2018-03-05_4.9-o-mr1
+ * [new tag]                   ASB-2018-03-05_4.9-o-release -> ASB-2018-03-05_4.9-o-release
+ * [new tag]                   ASB-2018-04-05_3.18 -> ASB-2018-04-05_3.18
+ * [new tag]                   ASB-2018-04-05_3.18-n-release -> ASB-2018-04-05_3.18-n-release
+ * [new tag]                   ASB-2018-04-05_3.18-o-mr1 -> ASB-2018-04-05_3.18-o-mr1
+ * [new tag]                   ASB-2018-04-05_3.18-o-release -> ASB-2018-04-05_3.18-o-release
+ * [new tag]                   ASB-2018-04-05_4.14 -> ASB-2018-04-05_4.14
+ * [new tag]                   ASB-2018-04-05_4.4 -> ASB-2018-04-05_4.4
+ * [new tag]                   ASB-2018-04-05_4.4-n -> ASB-2018-04-05_4.4-n
+ * [new tag]                   ASB-2018-04-05_4.4-n-release -> ASB-2018-04-05_4.4-n-release
+ * [new tag]                   ASB-2018-04-05_4.4-o -> ASB-2018-04-05_4.4-o
+ * [new tag]                   ASB-2018-04-05_4.4-o-mr1 -> ASB-2018-04-05_4.4-o-mr1
+ * [new tag]                   ASB-2018-04-05_4.4-o-release -> ASB-2018-04-05_4.4-o-release
+ * [new tag]                   ASB-2018-04-05_4.9 -> ASB-2018-04-05_4.9
+ * [new tag]                   ASB-2018-04-05_4.9-o -> ASB-2018-04-05_4.9-o
+ * [new tag]                   ASB-2018-04-05_4.9-o-mr1 -> ASB-2018-04-05_4.9-o-mr1
+ * [new tag]                   ASB-2018-04-05_4.9-o-release -> ASB-2018-04-05_4.9-o-release
+ * [new tag]                   ASB-2018-05-05_3.18 -> ASB-2018-05-05_3.18
+ * [new tag]                   ASB-2018-05-05_3.18-n-release -> ASB-2018-05-05_3.18-n-release
+ * [new tag]                   ASB-2018-05-05_3.18-o-mr1 -> ASB-2018-05-05_3.18-o-mr1
+ * [new tag]                   ASB-2018-05-05_3.18-o-release -> ASB-2018-05-05_3.18-o-release
+ * [new tag]                   ASB-2018-05-05_4.14 -> ASB-2018-05-05_4.14
+ * [new tag]                   ASB-2018-05-05_4.4 -> ASB-2018-05-05_4.4
+ * [new tag]                   ASB-2018-05-05_4.4-n -> ASB-2018-05-05_4.4-n
+ * [new tag]                   ASB-2018-05-05_4.4-n-release -> ASB-2018-05-05_4.4-n-release
+ * [new tag]                   ASB-2018-05-05_4.4-o -> ASB-2018-05-05_4.4-o
+ * [new tag]                   ASB-2018-05-05_4.4-o-mr1 -> ASB-2018-05-05_4.4-o-mr1
+ * [new tag]                   ASB-2018-05-05_4.4-o-release -> ASB-2018-05-05_4.4-o-release
+ * [new tag]                   ASB-2018-05-05_4.9 -> ASB-2018-05-05_4.9
+ * [new tag]                   ASB-2018-05-05_4.9-o -> ASB-2018-05-05_4.9-o
+ * [new tag]                   ASB-2018-05-05_4.9-o-mr1 -> ASB-2018-05-05_4.9-o-mr1
+ * [new tag]                   ASB-2018-05-05_4.9-o-release -> ASB-2018-05-05_4.9-o-release
+ * [new tag]                   ASB-2018-06-05_3.18 -> ASB-2018-06-05_3.18
+ * [new tag]                   ASB-2018-06-05_3.18-n-release -> ASB-2018-06-05_3.18-n-release
+ * [new tag]                   ASB-2018-06-05_3.18-o-mr1 -> ASB-2018-06-05_3.18-o-mr1
+ * [new tag]                   ASB-2018-06-05_3.18-o-release -> ASB-2018-06-05_3.18-o-release
+ * [new tag]                   ASB-2018-06-05_4.14 -> ASB-2018-06-05_4.14
+ * [new tag]                   ASB-2018-06-05_4.4 -> ASB-2018-06-05_4.4
+ * [new tag]                   ASB-2018-06-05_4.4-n -> ASB-2018-06-05_4.4-n
+ * [new tag]                   ASB-2018-06-05_4.4-n-release -> ASB-2018-06-05_4.4-n-release
+ * [new tag]                   ASB-2018-06-05_4.4-o -> ASB-2018-06-05_4.4-o
+ * [new tag]                   ASB-2018-06-05_4.4-o-mr1 -> ASB-2018-06-05_4.4-o-mr1
+ * [new tag]                   ASB-2018-06-05_4.4-o-release -> ASB-2018-06-05_4.4-o-release
+ * [new tag]                   ASB-2018-06-05_4.9 -> ASB-2018-06-05_4.9
+ * [new tag]                   ASB-2018-06-05_4.9-o -> ASB-2018-06-05_4.9-o
+ * [new tag]                   ASB-2018-06-05_4.9-o-mr1 -> ASB-2018-06-05_4.9-o-mr1
+ * [new tag]                   ASB-2018-06-05_4.9-o-release -> ASB-2018-06-05_4.9-o-release
+ * [new tag]                   ASB-2018-07-05_3.18 -> ASB-2018-07-05_3.18
+ * [new tag]                   ASB-2018-07-05_3.18-n-release -> ASB-2018-07-05_3.18-n-release
+ * [new tag]                   ASB-2018-07-05_3.18-o-mr1 -> ASB-2018-07-05_3.18-o-mr1
+ * [new tag]                   ASB-2018-07-05_3.18-o-release -> ASB-2018-07-05_3.18-o-release
+ * [new tag]                   ASB-2018-07-05_4.14 -> ASB-2018-07-05_4.14
+ * [new tag]                   ASB-2018-07-05_4.4 -> ASB-2018-07-05_4.4
+ * [new tag]                   ASB-2018-07-05_4.4-n -> ASB-2018-07-05_4.4-n
+ * [new tag]                   ASB-2018-07-05_4.4-n-release -> ASB-2018-07-05_4.4-n-release
+ * [new tag]                   ASB-2018-07-05_4.4-o -> ASB-2018-07-05_4.4-o
+ * [new tag]                   ASB-2018-07-05_4.4-o-mr1 -> ASB-2018-07-05_4.4-o-mr1
+ * [new tag]                   ASB-2018-07-05_4.4-o-release -> ASB-2018-07-05_4.4-o-release
+ * [new tag]                   ASB-2018-07-05_4.9 -> ASB-2018-07-05_4.9
+ * [new tag]                   ASB-2018-07-05_4.9-o -> ASB-2018-07-05_4.9-o
+ * [new tag]                   ASB-2018-07-05_4.9-o-mr1 -> ASB-2018-07-05_4.9-o-mr1
+ * [new tag]                   ASB-2018-07-05_4.9-o-release -> ASB-2018-07-05_4.9-o-release
+ * [new tag]                   ASB-2018-08-05_3.18 -> ASB-2018-08-05_3.18
+ * [new tag]                   ASB-2018-08-05_3.18-n-release -> ASB-2018-08-05_3.18-n-release
+ * [new tag]                   ASB-2018-08-05_3.18-o-mr1 -> ASB-2018-08-05_3.18-o-mr1
+ * [new tag]                   ASB-2018-08-05_3.18-o-release -> ASB-2018-08-05_3.18-o-release
+ * [new tag]                   ASB-2018-08-05_4.14 -> ASB-2018-08-05_4.14
+ * [new tag]                   ASB-2018-08-05_4.14-p -> ASB-2018-08-05_4.14-p
+ * [new tag]                   ASB-2018-08-05_4.4 -> ASB-2018-08-05_4.4
+ * [new tag]                   ASB-2018-08-05_4.4-n -> ASB-2018-08-05_4.4-n
+ * [new tag]                   ASB-2018-08-05_4.4-n-release -> ASB-2018-08-05_4.4-n-release
+ * [new tag]                   ASB-2018-08-05_4.4-o -> ASB-2018-08-05_4.4-o
+ * [new tag]                   ASB-2018-08-05_4.4-o-mr1 -> ASB-2018-08-05_4.4-o-mr1
+ * [new tag]                   ASB-2018-08-05_4.4-o-release -> ASB-2018-08-05_4.4-o-release
+ * [new tag]                   ASB-2018-08-05_4.4-p -> ASB-2018-08-05_4.4-p
+ * [new tag]                   ASB-2018-08-05_4.9 -> ASB-2018-08-05_4.9
+ * [new tag]                   ASB-2018-08-05_4.9-o -> ASB-2018-08-05_4.9-o
+ * [new tag]                   ASB-2018-08-05_4.9-o-mr1 -> ASB-2018-08-05_4.9-o-mr1
+ * [new tag]                   ASB-2018-08-05_4.9-o-release -> ASB-2018-08-05_4.9-o-release
+ * [new tag]                   ASB-2018-08-05_4.9-p -> ASB-2018-08-05_4.9-p
+ * [new tag]                   ASB-2018-09-05_3.18 -> ASB-2018-09-05_3.18
+ * [new tag]                   ASB-2018-09-05_3.18-n-release -> ASB-2018-09-05_3.18-n-release
+ * [new tag]                   ASB-2018-09-05_3.18-o-mr1 -> ASB-2018-09-05_3.18-o-mr1
+ * [new tag]                   ASB-2018-09-05_3.18-o-release -> ASB-2018-09-05_3.18-o-release
+ * [new tag]                   ASB-2018-09-05_4.14 -> ASB-2018-09-05_4.14
+ * [new tag]                   ASB-2018-09-05_4.14-p -> ASB-2018-09-05_4.14-p
+ * [new tag]                   ASB-2018-09-05_4.14-p-release -> ASB-2018-09-05_4.14-p-release
+ * [new tag]                   ASB-2018-09-05_4.4 -> ASB-2018-09-05_4.4
+ * [new tag]                   ASB-2018-09-05_4.4-n -> ASB-2018-09-05_4.4-n
+ * [new tag]                   ASB-2018-09-05_4.4-n-release -> ASB-2018-09-05_4.4-n-release
+ * [new tag]                   ASB-2018-09-05_4.4-o -> ASB-2018-09-05_4.4-o
+ * [new tag]                   ASB-2018-09-05_4.4-o-mr1 -> ASB-2018-09-05_4.4-o-mr1
+ * [new tag]                   ASB-2018-09-05_4.4-o-release -> ASB-2018-09-05_4.4-o-release
+ * [new tag]                   ASB-2018-09-05_4.4-p -> ASB-2018-09-05_4.4-p
+ * [new tag]                   ASB-2018-09-05_4.4-p-release -> ASB-2018-09-05_4.4-p-release
+ * [new tag]                   ASB-2018-09-05_4.9 -> ASB-2018-09-05_4.9
+ * [new tag]                   ASB-2018-09-05_4.9-o -> ASB-2018-09-05_4.9-o
+ * [new tag]                   ASB-2018-09-05_4.9-o-mr1 -> ASB-2018-09-05_4.9-o-mr1
+ * [new tag]                   ASB-2018-09-05_4.9-o-release -> ASB-2018-09-05_4.9-o-release
+ * [new tag]                   ASB-2018-09-05_4.9-p -> ASB-2018-09-05_4.9-p
+ * [new tag]                   ASB-2018-09-05_4.9-p-release -> ASB-2018-09-05_4.9-p-release
+ * [new tag]                   ASB-2018-10-05_3.18 -> ASB-2018-10-05_3.18
+ * [new tag]                   ASB-2018-10-05_3.18-n-release -> ASB-2018-10-05_3.18-n-release
+ * [new tag]                   ASB-2018-10-05_3.18-o-mr1 -> ASB-2018-10-05_3.18-o-mr1
+ * [new tag]                   ASB-2018-10-05_4.14 -> ASB-2018-10-05_4.14
+ * [new tag]                   ASB-2018-10-05_4.14-p -> ASB-2018-10-05_4.14-p
+ * [new tag]                   ASB-2018-10-05_4.14-p-release -> ASB-2018-10-05_4.14-p-release
+ * [new tag]                   ASB-2018-10-05_4.4 -> ASB-2018-10-05_4.4
+ * [new tag]                   ASB-2018-10-05_4.4-n -> ASB-2018-10-05_4.4-n
+ * [new tag]                   ASB-2018-10-05_4.4-n-release -> ASB-2018-10-05_4.4-n-release
+ * [new tag]                   ASB-2018-10-05_4.4-o -> ASB-2018-10-05_4.4-o
+ * [new tag]                   ASB-2018-10-05_4.4-o-mr1 -> ASB-2018-10-05_4.4-o-mr1
+ * [new tag]                   ASB-2018-10-05_4.4-o-release -> ASB-2018-10-05_4.4-o-release
+ * [new tag]                   ASB-2018-10-05_4.4-p -> ASB-2018-10-05_4.4-p
+ * [new tag]                   ASB-2018-10-05_4.4-p-release -> ASB-2018-10-05_4.4-p-release
+ * [new tag]                   ASB-2018-10-05_4.9 -> ASB-2018-10-05_4.9
+ * [new tag]                   ASB-2018-10-05_4.9-o -> ASB-2018-10-05_4.9-o
+ * [new tag]                   ASB-2018-10-05_4.9-o-mr1 -> ASB-2018-10-05_4.9-o-mr1
+ * [new tag]                   ASB-2018-10-05_4.9-o-release -> ASB-2018-10-05_4.9-o-release
+ * [new tag]                   ASB-2018-10-05_4.9-p -> ASB-2018-10-05_4.9-p
+ * [new tag]                   ASB-2018-10-05_4.9-p-release -> ASB-2018-10-05_4.9-p-release
+ * [new tag]                   ASB-2018-11-05_3.18 -> ASB-2018-11-05_3.18
+ * [new tag]                   ASB-2018-11-05_3.18-n-release -> ASB-2018-11-05_3.18-n-release
+ * [new tag]                   ASB-2018-11-05_3.18-o-mr1 -> ASB-2018-11-05_3.18-o-mr1
+ * [new tag]                   ASB-2018-11-05_3.18-o-release -> ASB-2018-11-05_3.18-o-release
+ * [new tag]                   ASB-2018-11-05_4.14 -> ASB-2018-11-05_4.14
+ * [new tag]                   ASB-2018-11-05_4.14-p -> ASB-2018-11-05_4.14-p
+ * [new tag]                   ASB-2018-11-05_4.14-p-release -> ASB-2018-11-05_4.14-p-release
+ * [new tag]                   ASB-2018-11-05_4.4 -> ASB-2018-11-05_4.4
+ * [new tag]                   ASB-2018-11-05_4.4-n -> ASB-2018-11-05_4.4-n
+ * [new tag]                   ASB-2018-11-05_4.4-n-release -> ASB-2018-11-05_4.4-n-release
+ * [new tag]                   ASB-2018-11-05_4.4-o -> ASB-2018-11-05_4.4-o
+ * [new tag]                   ASB-2018-11-05_4.4-o-mr1 -> ASB-2018-11-05_4.4-o-mr1
+ * [new tag]                   ASB-2018-11-05_4.4-o-release -> ASB-2018-11-05_4.4-o-release
+ * [new tag]                   ASB-2018-11-05_4.4-p -> ASB-2018-11-05_4.4-p
+ * [new tag]                   ASB-2018-11-05_4.4-p-release -> ASB-2018-11-05_4.4-p-release
+ * [new tag]                   ASB-2018-11-05_4.9 -> ASB-2018-11-05_4.9
+ * [new tag]                   ASB-2018-11-05_4.9-o -> ASB-2018-11-05_4.9-o
+ * [new tag]                   ASB-2018-11-05_4.9-o-mr1 -> ASB-2018-11-05_4.9-o-mr1
+ * [new tag]                   ASB-2018-11-05_4.9-o-release -> ASB-2018-11-05_4.9-o-release
+ * [new tag]                   ASB-2018-11-05_4.9-p -> ASB-2018-11-05_4.9-p
+ * [new tag]                   ASB-2018-11-05_4.9-p-release -> ASB-2018-11-05_4.9-p-release
+ * [new tag]                   ASB-2018-12-05_3.18 -> ASB-2018-12-05_3.18
+ * [new tag]                   ASB-2018-12-05_3.18-n-release -> ASB-2018-12-05_3.18-n-release
+ * [new tag]                   ASB-2018-12-05_3.18-o-mr1 -> ASB-2018-12-05_3.18-o-mr1
+ * [new tag]                   ASB-2018-12-05_3.18-o-release -> ASB-2018-12-05_3.18-o-release
+ * [new tag]                   ASB-2018-12-05_4.14 -> ASB-2018-12-05_4.14
+ * [new tag]                   ASB-2018-12-05_4.14-p -> ASB-2018-12-05_4.14-p
+ * [new tag]                   ASB-2018-12-05_4.14-p-release -> ASB-2018-12-05_4.14-p-release
+ * [new tag]                   ASB-2018-12-05_4.4 -> ASB-2018-12-05_4.4
+ * [new tag]                   ASB-2018-12-05_4.4-n -> ASB-2018-12-05_4.4-n
+ * [new tag]                   ASB-2018-12-05_4.4-n-release -> ASB-2018-12-05_4.4-n-release
+ * [new tag]                   ASB-2018-12-05_4.4-o -> ASB-2018-12-05_4.4-o
+ * [new tag]                   ASB-2018-12-05_4.4-o-mr1 -> ASB-2018-12-05_4.4-o-mr1
+ * [new tag]                   ASB-2018-12-05_4.4-o-release -> ASB-2018-12-05_4.4-o-release
+ * [new tag]                   ASB-2018-12-05_4.4-p -> ASB-2018-12-05_4.4-p
+ * [new tag]                   ASB-2018-12-05_4.4-p-release -> ASB-2018-12-05_4.4-p-release
+ * [new tag]                   ASB-2018-12-05_4.9 -> ASB-2018-12-05_4.9
+ * [new tag]                   ASB-2018-12-05_4.9-o -> ASB-2018-12-05_4.9-o
+ * [new tag]                   ASB-2018-12-05_4.9-o-mr1 -> ASB-2018-12-05_4.9-o-mr1
+ * [new tag]                   ASB-2018-12-05_4.9-o-release -> ASB-2018-12-05_4.9-o-release
+ * [new tag]                   ASB-2018-12-05_4.9-p -> ASB-2018-12-05_4.9-p
+ * [new tag]                   ASB-2018-12-05_4.9-p-release -> ASB-2018-12-05_4.9-p-release
+ * [new tag]                   P-RELEASE_4.14 -> P-RELEASE_4.14
+ * [new tag]                   P-RELEASE_4.4 -> P-RELEASE_4.4
+ * [new tag]                   P-RELEASE_4.9 -> P-RELEASE_4.9
+ * [new tag]                   eas-dev-v4.19 -> eas-dev-v4.19
+ * [new tag]                   experimental-android-4.15 -> experimental-android-4.15
+ * [new tag]                   v5.0-rc1 -> v5.0-rc1
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

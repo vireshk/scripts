@@ -24830,3 +24830,58 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 3f302a41f43e] updates
+ 2 files changed, 292 insertions(+), 1 deletion(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   745794a0e24b..3f302a41f43e  master -> master
+   3f44a7f645f6..745794a0e24b  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Tue Jan  8 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + aeb5bdb74326...b859a92ea767 cpufreq/constraints -> cpufreq/constraints (forced update)
+ + aad7106afba3...aeb5bdb74326 bkp/cpufreq/constraints -> bkp/cpufreq/constraints (forced update)
+   96d4f267e40f..7dddbeabb434  bkp/opp/oops -> bkp/opp/oops
+   f4747b9c68b8..e790d062f5e6  pm/bleeding-edge -> pm/bleeding-edge
+   f569da8c994c..f4747b9c68b8  pm/devprop -> pm/devprop
+   f4747b9c68b8..e790d062f5e6  pm/linux-next -> pm/linux-next
+   8fe28cb58bcb..bfeffd155283  pm/master -> pm/master
+ + 15b289c36c65...e790d062f5e6 pm/testing -> pm/testing (forced update)
+ * [new branch]                bkp/android-hikey-linaro-4.14 -> bkp/android-hikey-linaro-4.14
+ * [new tag]                   devprop-4.21-rc1-2 -> devprop-4.21-rc1-2
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

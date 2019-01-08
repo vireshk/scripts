@@ -88,6 +88,14 @@ elif [ $2 = odoroid ]; then
 elif [ $2 = tegra ]; then
 	dir=../btegra/
 	cfg=tegra_defconfig
+elif [ $2 = hikeyc ]; then
+	dir=../bhikeyc/
+	cfg=hikey_defconfig
+	CROSS_COMPILE="aarch64-linux-android-"
+	MISC="CC=clang"
+	carch="arm64"
+	IMAGE=
+#	IMAGE=Image-dtb
 elif [ $2 = hikey ]; then
 	dir=../bhikey/
 	cfg=hikey_defconfig
@@ -159,7 +167,7 @@ fi
 
 #mk="make ARCH=$carch O=$dir -j4"
 #mk="ARCH=$carch O=$dir -j4"
-mk="make ARCH=$carch O=$dir -j8 $FLAGS CROSS_COMPILE=$CROSS_COMPILE $MISMATCH"
+mk="make ARCH=$carch O=$dir -j8 $FLAGS CROSS_COMPILE=$CROSS_COMPILE $MISMATCH $MISC"
 
 if [ ! -z $isdebug ]; then
 	echo ""

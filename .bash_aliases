@@ -21,6 +21,7 @@ alias muttman="zcat /usr/share/doc/mutt/manual.txt.gz | sensible-pager"
 # toolchains
 PATH="/home/vireshk/work/repos/tools/toolchain/gcc-linaro-4.9-2015.05-x86_64_aarch64-linux-gnu/bin:/home/vireshk/work/repos/tools/toolchain/gcc-linaro-4.9-2015.02-x86_64_arm-linux-gnueabihf/bin:/usr/bin:$PATH"
 PATH="/media/vireshk/bb4fad4d-8860-4037-8d08-02291222001e/android/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/:$PATH"
+PATH="/media/vireshk/bb4fad4d-8860-4037-8d08-02291222001e/android/prebuilts/clang/host/linux-x86/clang-r346389b/bin:$PATH"
 
 # Nuttx
 #
@@ -234,6 +235,8 @@ alias buildupdatehikey960="handroid; nimage hikey960; makehikey960bootimg; flash
 
 # Android
 export ANDROID_HOME=/home/vireshk/Android/Sdk
+export CLANG_TRIPLE=aarch64-linux-gnu-
+
 
 # JIRA
 export JIRA_USERNAME="Viresh.kumar@linaro.org"

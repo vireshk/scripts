@@ -24885,3 +24885,53 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 171fc98112d2] updates
+ 3 files changed, 67 insertions(+), 1 deletion(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   3f302a41f43e..171fc98112d2  master -> master
+   745794a0e24b..3f302a41f43e  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Jan  9 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + b859a92ea767...461d506f1cac cpufreq/constraints -> cpufreq/constraints (forced update)
+ + aeb5bdb74326...b859a92ea767 bkp/cpufreq/constraints -> bkp/cpufreq/constraints (forced update)
+   e790d062f5e6..8564ff010103  pm/bleeding-edge -> pm/bleeding-edge
+   e790d062f5e6..9651c0a030b8  pm/linux-next -> pm/linux-next
+   e790d062f5e6..9651c0a030b8  pm/testing -> pm/testing
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -68,6 +68,8 @@ alias gpl='gp linaro '
 alias gps='git push self --mirror'
 alias gpoppnext='gp pmko opp/linux-next:opp/linux-next'
 alias gpoppbl='gp pmko opp/linux-next:opp/bleeding-edge'
+alias gpcfnext='gp pmko cpufreq/arm/linux-next:cpufreq/arm/linux-next'
+alias gpcfbl='gp pmko cpufreq/arm/linux-next:cpufreq/arm/bleeding-edge'
 
 alias ggrep='git grep'
 alias gk='gitk --all -100&'

@@ -24935,3 +24935,56 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 7e4e5908a8e3] updates
+ 1 file changed, 50 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   171fc98112d2..7e4e5908a8e3  master -> master
+   3f302a41f43e..171fc98112d2  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Thu Jan 10 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + ea65761fd4af...1b1d5fc2d6dc boot-constraint -> boot-constraint (forced update)
+ + 461d506f1cac...11055fe89db7 cpufreq/constraints -> cpufreq/constraints (forced update)
+ + b859a92ea767...461d506f1cac bkp/cpufreq/constraints -> bkp/cpufreq/constraints (forced update)
+ + 8564ff010103...f17631751f79 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   9651c0a030b8..f17631751f79  pm/linux-next -> pm/linux-next
+   9651c0a030b8..f17631751f79  pm/testing -> pm/testing
+ * [new branch]                cpufreq/arm/linux-next -> cpufreq/arm/linux-next
+ * [new branch]                pmko/cpufreq/arm/linux-next -> pmko/cpufreq/arm/linux-next
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

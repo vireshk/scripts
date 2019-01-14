@@ -25043,3 +25043,67 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master acb86483d7bd] updates
+ 1 file changed, 55 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   01bcb9aef2b8..acb86483d7bd  master -> master
+   7e4e5908a8e3..01bcb9aef2b8  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon Jan 14 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   636d2eaef5af..77863acf2be9  android-hikey-linaro-4.14 -> android-hikey-linaro-4.14
+ - [deleted]                   cpufreq/constraints
+ + 11055fe89db7...c743549799df bkp/cpufreq/constraints -> bkp/cpufreq/constraints (forced update)
+ + b12bf9fe63f9...1f70e44e509a lnext/akpm -> lnext/akpm (forced update)
+ + b8282eee9ffe...2a3d0412a5d2 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 6a1d293238c1...b808822a75a3 lnext/master -> lnext/master (forced update)
+ + 48a8e49987d9...dc8eeb48e92c lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   3c730b1041ae..1bdbe2274920  lnext/stable -> lnext/stable
+   3bd6e94bec12..1c7fc5cbc339  origin/HEAD -> origin/HEAD
+   3bd6e94bec12..1c7fc5cbc339  origin/master -> origin/master
+   3eb85368460d..65a4f3a1efda  pm/acpi -> pm/acpi
+   a465d38fa3dc..343e60e52a3a  pm/pm -> pm/pm
+ * [new branch]                cpufreq/freq-constraints -> cpufreq/freq-constraints
+ * [new branch]                cpufreq/freq-constraints-debug -> cpufreq/freq-constraints-debug
+ * [new branch]                pmko/cpufreq/freq-constraints -> pmko/cpufreq/freq-constraints
+ * [new tag]                   acpi-5.0-rc2 -> acpi-5.0-rc2
+ * [new tag]                   next-20190111 -> next-20190111
+ * [new tag]                   pm-5.0-rc2 -> pm-5.0-rc2
+ * [new tag]                   v5.0-rc2 -> v5.0-rc2
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

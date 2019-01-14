@@ -75,7 +75,7 @@ macro index,pager I '<shell-escape> fetchmail <enter>'
 macro index \|	'<collapse-all>'
 macro index \\	'<collapse-thread>'
 
-# Labels to mark messages pen,imp
+# Labels to mark messages pen,apply
 macro index ",1" "<enter-command>set editor=\"~/scripts/editlabel append "pen"\"\n\
 <edit><sync-mailbox><next-undeleted>\
 <enter-command>set editor=vim\n"
@@ -85,18 +85,18 @@ macro index ".1" "<enter-command>set editor=\"~/scripts/editlabel remove "pen"\"
 <edit><sync-mailbox><next-undeleted>\
 <enter-command>set editor=vim\n"
 
-macro index ",2" "<enter-command>set editor=\"~/scripts/editlabel append "imp"\"\n\
+macro index ",2" "<enter-command>set editor=\"~/scripts/editlabel append "apply"\"\n\
 <edit><sync-mailbox><next-undeleted>\
 <enter-command>set editor=vim\n"
 
-macro index ".2" "<enter-command>set editor=\"~/scripts/editlabel remove "imp"\"\n\
+macro index ".2" "<enter-command>set editor=\"~/scripts/editlabel remove "apply"\"\n\
 <edit><sync-mailbox><next-undeleted>\
 <enter-command>set editor=vim\n" "test"
 
 macro index,pager ",0" "<enter-command>set editor=\"vim -c 'set spell tw=70 et' '+/^$'"\n
 
 # ctrl+y: show pending, ctrl+a: show all
-macro index \Cy "<limit>~y pen\n" "Limit view to label"
+macro index \Cy "<limit>~y pen|~y apply\n" "Limit view to label"
 macro index \Ca "<limit>all\n<collapse-all>" "Limit view to label"
 
 

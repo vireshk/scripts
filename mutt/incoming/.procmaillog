@@ -664,3 +664,6 @@ From vireshk  Wed Jan  2 09:28:39 2019
 From vireshk  Thu Jan 10 09:33:40 2019
  Subject: [PATCH v1 4/7] cpufreq: qcom-hw: Move to device_initcall
   Folder: PATCH_v1_4-7_cpufreq_qcom-hw_Move_to_device_initcall.mbox	   6298
+From vireshk  Wed Jan 16 12:08:14 2019
+ Subject: [PATCH v2] MAINTAINERS: use common indentation
+  Folder: PATCH_v2_MAINTAINERS_use_common_indentation.mbox		   6287

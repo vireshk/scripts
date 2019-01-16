@@ -223,7 +223,7 @@ alias qcomboot="hwork; cd ../qcom/; msudo fastboot boot boot-db820c.img"
 alias qcomupdate="hwork; nimage qcom; dtbs qcom; qcomdtimg; qcomimg; qcomboot"
 alias qcomflash="hwork; cd ../qcom/; msudo fastboot flash boot boot-db820c.img"
 
-alias recoverhikey="hhikey; cd binaries/157; msudo python hisi-idt.py -d /dev/ttyUSB2 --img1=l-loader.bin"
+alias recoverhikey="hhikey; cd binaries/157; msudo python hisi-idt.py -d /dev/ttyUSB1 --img1=l-loader.bin"
 alias flashhikey="hhikey; msudo fastboot flash boot boot_fat.uefi.img; fastboot reboot"
 alias mounthikey="hhikey; msudo mount -o loop,rw,sync boot_fat.uefi.img boot-fat"
 alias updatehikeya="hhikey; msudo cp ~/work/repos/devel/bhikey/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb boot-fat/hi6220-hikey.dtb; msudo cp ~/work/repos/devel/bhikey/arch/arm64/boot/Image boot-fat/kernel; sync; flashhikey; hwork; cd ../android"

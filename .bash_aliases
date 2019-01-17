@@ -234,6 +234,11 @@ alias flashhikey960="haosp; fastboot flash boot out/target/product/hikey960/boot
 alias updatehikey960="makehikey960bootimg; flashhikey960;"
 alias buildupdatehikey960="handroid; nimage hikey960; makehikey960bootimg; flashhikey960; handroid"
 
+alias makehikey620dtbimg="cat ../barm64/arch/arm64/boot/Image ../barm64/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb > ../barm64/arch/arm64/boot/Image-dtb"
+alias makehikey620bootimg="makehikey620dtbimg; abootimg --create ../barm64/arch/arm64/boot/boot.img -k ~/work/repos/devel/barm64/arch/arm64/boot/Image-dtb -r /home/vireshk/work/repos/tools/boards/hikey/boot-fat/ramdisk.img -f /home/vireshk/work/repos/tools/boards/hikey/config/config-hikey6220-bootimg"
+alias flashhikey620="fastboot flash boot ../barm64/arch/arm64/boot/boot.img; fastboot reboot"
+alias updatehikey620="makehikey620bootimg; flashhikey620;"
+
 # Android
 export ANDROID_HOME=/home/vireshk/Android/Sdk
 export CLANG_TRIPLE=aarch64-linux-gnu-

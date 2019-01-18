@@ -667,3 +667,6 @@ From vireshk  Thu Jan 10 09:33:40 2019
 From vireshk  Wed Jan 16 12:08:14 2019
  Subject: [PATCH v2] MAINTAINERS: use common indentation
   Folder: PATCH_v2_MAINTAINERS_use_common_indentation.mbox		   6287
+From vireshk  Mon Jan 14 09:04:36 2019
+ Subject: [PATCH v4] cpufreq: s5pv210: Defer probe if getting regulators fail
+  Folder: PATCH_v4_cpufreq_s5pv210_Defer_probe_if_getting_regulators_f	   9654

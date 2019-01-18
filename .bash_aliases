@@ -223,21 +223,32 @@ alias qcomboot="hwork; cd ../qcom/; msudo fastboot boot boot-db820c.img"
 alias qcomupdate="hwork; nimage qcom; dtbs qcom; qcomdtimg; qcomimg; qcomboot"
 alias qcomflash="hwork; cd ../qcom/; msudo fastboot flash boot boot-db820c.img"
 
-alias recoverhikey="hhikey; cd binaries/157; msudo python hisi-idt.py -d /dev/ttyUSB1 --img1=l-loader.bin"
-alias flashhikey="hhikey; msudo fastboot flash boot boot_fat.uefi.img; fastboot reboot"
 alias mounthikey="hhikey; msudo mount -o loop,rw,sync boot_fat.uefi.img boot-fat"
-alias updatehikeya="hhikey; msudo cp ~/work/repos/devel/bhikey/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb boot-fat/hi6220-hikey.dtb; msudo cp ~/work/repos/devel/bhikey/arch/arm64/boot/Image boot-fat/kernel; sync; flashhikey; hwork; cd ../android"
-alias updatehikeyac="hhikey; msudo cp ~/work/repos/devel/bhikeyc/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb boot-fat/hi6220-hikey.dtb; msudo cp ~/work/repos/devel/bhikeyc/arch/arm64/boot/Image boot-fat/kernel; sync; flashhikey; hwork; cd ../android"
-alias updatehikeyu="hhikey; msudo cp ~/work/repos/devel/barm64/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb boot-fat/hi6220-hikey-u.dtb; msudo cp ~/work/repos/devel/barm64/arch/arm64/boot/Image boot-fat/kernel-u; sync; flashhikey; hwork"
-alias makehikey960bootimg="haosp; abootimg --create out/target/product/hikey960/boot.img -k ~/work/repos/devel/bhikey960/arch/arm64/boot/Image-dtb -r out/target/product/hikey960/ramdisk.img -f ~/work/repos/tools/boards/hikey/backup/config-hikey960-bootimg"
+
+#alias recoverhikey="hhikey; cd binaries/157; msudo python hisi-idt.py -d /dev/ttyUSB1 --img1=l-loader.bin"
+#alias flashhikey="hhikey; msudo fastboot flash boot boot_fat.uefi.img; fastboot reboot"
+#alias updatehikeya="hhikey; msudo cp ~/work/repos/devel/bhikey/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb boot-fat/hi6220-hikey.dtb; msudo cp ~/work/repos/devel/bhikey/arch/arm64/boot/Image boot-fat/kernel; sync; flashhikey; hwork; cd ../android"
+#alias updatehikeyac="hhikey; msudo cp ~/work/repos/devel/bhikeyc/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb boot-fat/hi6220-hikey.dtb; msudo cp ~/work/repos/devel/bhikeyc/arch/arm64/boot/Image boot-fat/kernel; sync; flashhikey; hwork; cd ../android"
+#alias updatehikeyu="hhikey; msudo cp ~/work/repos/devel/barm64/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb boot-fat/hi6220-hikey-u.dtb; msudo cp ~/work/repos/devel/barm64/arch/arm64/boot/Image boot-fat/kernel-u; sync; flashhikey; hwork"
+
+alias makehikey960bootimg="haosp; abootimg --create out/target/product/hikey960/boot.img -k ~/work/repos/devel/bhikey960/arch/arm64/boot/Image-dtb -r out/target/product/hikey960/ramdisk.img -f /home/vireshk/work/repos/tools/boards/hikey/config/config-hikey960-bootimg"
 alias flashhikey960="haosp; fastboot flash boot out/target/product/hikey960/boot.img; fastboot reboot"
 alias updatehikey960="makehikey960bootimg; flashhikey960;"
 alias buildupdatehikey960="handroid; nimage hikey960; makehikey960bootimg; flashhikey960; handroid"
 
-alias makehikey620dtbimg="cat ../barm64/arch/arm64/boot/Image ../barm64/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb > ../barm64/arch/arm64/boot/Image-dtb"
-alias makehikey620bootimg="makehikey620dtbimg; abootimg --create ../barm64/arch/arm64/boot/boot.img -k ~/work/repos/devel/barm64/arch/arm64/boot/Image-dtb -r /home/vireshk/work/repos/tools/boards/hikey/boot-fat/ramdisk.img -f /home/vireshk/work/repos/tools/boards/hikey/config/config-hikey6220-bootimg"
-alias flashhikey620="fastboot flash boot ../barm64/arch/arm64/boot/boot.img; fastboot reboot"
-alias updatehikey620="makehikey620bootimg; flashhikey620;"
+ARMBOOTU="~/work/repos/devel/barm64/arch/arm64/boot"
+
+alias makehikeydtbimg="cat $ARMBOOTU/Image $ARMBOOTU/dts/hisilicon/hi6220-hikey.dtb > $ARMBOOTU/Image-dtb"
+alias makehikeybootimg="makehikeydtbimg; abootimg --create $ARMBOOTU/boot.img -k $ARMBOOTU/Image-dtb -r /home/vireshk/work/repos/tools/boards/hikey/boot-fat/ramdisk.img -f /home/vireshk/work/repos/tools/boards/hikey/config/config-hikey6220-bootimg-ubuntu"
+alias flashhikey="fastboot flash boot $ARMBOOTU/boot.img; fastboot reboot"
+alias updatehikey="makehikey620bootimg; flashhikey620;"
+
+ARMBOOTA="~/work/repos/devel/bhikey/arch/arm64/boot"
+
+alias makehikeydtbimga="cat $ARMBOOTA/Image $ARMBOOTA/dts/hisilicon/hi6220-hikey.dtb > $ARMBOOTA/Image-dtb"
+alias makehikeybootimga="makehikeydtbimga; abootimg --create $ARMBOOTA/boot.img -k $ARMBOOTA/Image-dtb -r /home/vireshk/work/repos/tools/boards/hikey/boot-fat/ramdiska.img -f /home/vireshk/work/repos/tools/boards/hikey/config/config-hikey6220-bootimg-android"
+alias flashhikeya="fastboot flash boot $ARMBOOTA/boot.img; fastboot reboot"
+alias updatehikeya="makehikey620bootimg; flashhikey620;"
 
 # Android
 export ANDROID_HOME=/home/vireshk/Android/Sdk

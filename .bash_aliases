@@ -241,18 +241,19 @@ ARMBOOTU="~/work/repos/devel/barm64/arch/arm64/boot"
 alias makehikeydtbimg="cat $ARMBOOTU/Image $ARMBOOTU/dts/hisilicon/hi6220-hikey.dtb > $ARMBOOTU/Image-dtb"
 alias makehikeybootimg="makehikeydtbimg; abootimg --create $ARMBOOTU/boot.img -k $ARMBOOTU/Image-dtb -r /home/vireshk/work/repos/tools/boards/hikey/boot-fat/ramdisk.img -f /home/vireshk/work/repos/tools/boards/hikey/config/config-hikey6220-bootimg-ubuntu"
 alias flashhikey="fastboot flash boot $ARMBOOTU/boot.img; fastboot reboot"
-alias updatehikey="makehikey620bootimg; flashhikey620;"
+alias updatehikey="makehikeybootimg; flashhikey;"
 
-ARMBOOTA="~/work/repos/devel/bhikey/arch/arm64/boot"
+ARMBOOTA="~/work/repos/devel/bhikeyc/arch/arm64/boot"
 
 alias makehikeydtbimga="cat $ARMBOOTA/Image $ARMBOOTA/dts/hisilicon/hi6220-hikey.dtb > $ARMBOOTA/Image-dtb"
 alias makehikeybootimga="makehikeydtbimga; abootimg --create $ARMBOOTA/boot.img -k $ARMBOOTA/Image-dtb -r /home/vireshk/work/repos/tools/boards/hikey/boot-fat/ramdiska.img -f /home/vireshk/work/repos/tools/boards/hikey/config/config-hikey6220-bootimg-android"
 alias flashhikeya="fastboot flash boot $ARMBOOTA/boot.img; fastboot reboot"
-alias updatehikeya="makehikey620bootimg; flashhikey620;"
+alias updatehikeya="makehikeybootimga; flashhikeya;"
 
 # Android
 export ANDROID_HOME=/home/vireshk/Android/Sdk
 export CLANG_TRIPLE=aarch64-linux-gnu-
+export LD_LIBRARY_PATH="/media/vireshk/bb4fad4d-8860-4037-8d08-02291222001e/android/prebuilts/clang/host/linux-x86/clang-r346389b/lib64/"
 
 
 # JIRA

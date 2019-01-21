@@ -25265,3 +25265,76 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 28af98ebd90f] updates
+ 4 files changed, 71 insertions(+), 10 deletions(-)
+ create mode 100644 .bash_aliases.swp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   cb2b69b510b3..28af98ebd90f  master -> master
+   95575d51eb64..cb2b69b510b3  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon Jan 21 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 77863acf2be9...60fbba0fe90d android-hikey-linaro-4.14 -> android-hikey-linaro-4.14 (forced update)
+   636d2eaef5af..afcc548be647  aosp-hikey/android-hikey-linaro-4.14 -> aosp-hikey/android-hikey-linaro-4.14
+   437969d372c2..89c074f921d7  aosp-hikey/android-hikey-linaro-4.19 -> aosp-hikey/android-hikey-linaro-4.19
+   02ba6fc5ea78..1e0daa11c5c0  aosp-hikey/android-hikey-linaro-4.4 -> aosp-hikey/android-hikey-linaro-4.4
+   2531c8d5dc4d..c8f472987702  aosp-hikey/android-hikey-linaro-4.9 -> aosp-hikey/android-hikey-linaro-4.9
+   c66b5c8692bb..53f49fb9ffa3  aosp-hikey/android-poplar-linaro-4.9 -> aosp-hikey/android-poplar-linaro-4.9
+   fa26112339db..5227e2a47604  aosp-hikey/mirror-android-3.18 -> aosp-hikey/mirror-android-3.18
+   3c207c880674..5a76363f1262  aosp-hikey/mirror-android-4.14 -> aosp-hikey/mirror-android-4.14
+   383eacb91bdc..138993ea8208  aosp-hikey/mirror-android-4.19 -> aosp-hikey/mirror-android-4.19
+   d08574b6f0ae..24189101975d  aosp-hikey/mirror-android-4.4 -> aosp-hikey/mirror-android-4.4
+   043c92bd0517..4b1d0d3e4e00  aosp-hikey/mirror-android-4.9 -> aosp-hikey/mirror-android-4.9
+ + 3ca12c96ef5e...0c192d7c7dc8 bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next (forced update)
+ + e90c667fd5bc...e5a18af204a6 lnext/akpm -> lnext/akpm (forced update)
+ + 653e50927ef0...3c1c6ab5e402 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + cbeb3db684f7...9673b4aa71ca lnext/master -> lnext/master (forced update)
+ + 7ce4a9e1feee...4c0b0c22e9fd lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   7939f8beecf1..a3a80255d58d  lnext/stable -> lnext/stable
+   47bfa6d9dc8c..49a57857aeea  origin/HEAD -> origin/HEAD
+   47bfa6d9dc8c..49a57857aeea  origin/master -> origin/master
+   65a4f3a1efda..11ee2a3808ae  pm/acpi -> pm/acpi
+ + 9813e128bda3...cf25f822dfa2 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 4a9729495d33...cf25f822dfa2 pm/linux-next -> pm/linux-next (forced update)
+ + 4a9729495d33...cf25f822dfa2 pm/testing -> pm/testing (forced update)
+ * [new branch]                aosp-hikey/android-amlogic-bmeson-4.19 -> aosp-hikey/android-amlogic-bmeson-4.19
+ * [new tag]                   acpi-5.0-rc3 -> acpi-5.0-rc3
+ * [new tag]                   next-20190118 -> next-20190118
+ * [new tag]                   v5.0-rc3 -> v5.0-rc3
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

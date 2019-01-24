@@ -680,3 +680,9 @@ From vireshk  Wed Jan 23 09:21:54 2019
   Folder: PATCH_opp_no_need_to_check_return_value_of_debugfs_create_fu	   4419
 From foo@bar  Wed Jan 23 12:34:42 2019
   Folder: .mbox								   8483
+From vireshk  Mon Jan 21 07:57:16 2019
+ Subject: [PATCH v5 1/2] MAINTAINERS: add new entries for Armada 8K cpufreq dri
+  Folder: PATCH_v5_1-2_MAINTAINERS_add_new_entries_for_Armada_8K_cpufr	   4745
+From vireshk  Mon Jan 21 07:57:18 2019
+ Subject: [PATCH v5 2/2] cpufreq: ap806: add cpufreq driver for Armada 8K
+  Folder: PATCH_v5_2-2_cpufreq_ap806_add_cpufreq_driver_for_Armada_8K.	  11361

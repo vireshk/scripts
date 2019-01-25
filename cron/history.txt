@@ -25496,3 +25496,61 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 86a60cb58963] updates
+ 4 files changed, 419 insertions(+)
+ create mode 100644 mutt/incoming/PATCH_v5_1-2_MAINTAINERS_add_new_entries_for_Armada_8K_cpufreq_driver.mbox
+ create mode 100644 mutt/incoming/PATCH_v5_2-2_cpufreq_ap806_add_cpufreq_driver_for_Armada_8K.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   666cef49d354..86a60cb58963  master -> master
+   d85f5c7cdc90..666cef49d354  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+[master 9cc4044bb4d8] updates
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 misc/.srothwell_check_patches.sh.swp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/vireshk-linux.git
+   e26ff9b4d304..9cc4044bb4d8  master -> master
+   bad15ba4c6d2..e26ff9b4d304  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Fri Jan 25 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   35f201ac125d..5887f50a1a61  cpufreq/arm/linux-next -> cpufreq/arm/linux-next
+ - [deleted]                   cpufreq/oops
+   0c192d7c7dc8..35f201ac125d  bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next
+ + 9389d5c08571...dd7ac2422a9b bkp/opp/linux-next -> bkp/opp/linux-next (forced update)
+   35f201ac125d..5887f50a1a61  pmko/cpufreq/arm/linux-next -> pmko/cpufreq/arm/linux-next
+ * [new branch]                cpufreq/cfi -> cpufreq/cfi
+ * [new branch]                cpufreq/oops/sboyd -> cpufreq/oops/sboyd
+ * [new branch]                bkp/cpufreq/armada-debug -> bkp/cpufreq/armada-debug
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

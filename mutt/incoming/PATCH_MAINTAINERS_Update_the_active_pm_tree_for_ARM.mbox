@@ -1,0 +1,48 @@
+From vireshk  Thu Jan 24 15:24:34 2019
+Delivered-To: viresh.kumar@linaro.org
+Received: from gmail-pop.l.google.com [74.125.24.109] 	by vireshk-i7 with POP3 (fetchmail-6.3.26) 	for <vireshk@localhost> (single-drop); Thu, 24 Jan 2019 15:24:34 +0530 (IST)
+Received: by 2002:a02:b5bb:0:0:0:0:0 with SMTP id m56csp1737935jaj;         Thu, 24 Jan 2019 01:53:50 -0800 (PST)
+X-Google-Smtp-Source: ALg8bN46/YblPQI0X9BWNvdHQHtPwaU0YVrzirTKXo0/XXdqvmeuzx9oD7MH7a6NjIffpp3u3/nc
+X-Received: by 2002:a1c:16c5:: with SMTP id 188mr1930693wmw.69.1548323630471;         Thu, 24 Jan 2019 01:53:50 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1548323630; cv=none;         d=google.com; s=arc-20160816;         b=G09HEGxRY7LLcEswypj1cU/uckuc3a/vY0rmVN3+U/pKEqaaNENO60WWcDpyczP6zf          EMtxxGmYNHxx0ARLis8N3GGm7y19AVM/PkfL4p77cKeW/gNz1PfPzSxTyuvYWE7CiLR+          5ZNuWIqMhH4i4CSk9yiMRfcG/JGD/LJNzQ/gloxP923tJ9BBCEc+Vw1vhyQImVWceYVu          4xHTdBsacTR/PvdJANqPXMOT6qqHTe3rk783zQ/CAn+u9Tq28H891eXX/5oFsUiSZiBx          b72OibrHLV/P/HkeF9ejZXkuw+nwmu1f80XV0Xq8n/Lnp2KNIFH9UAN8kFVwEZnk4/TD          /Tkg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from;         bh=dDugM032DKfPIw3D5CJOj3MTkopSTXaF1vdx1EKEHfc=;         b=d4L1Sm7Kvj5uLNoOOZFyzOSkMPKYpWqYhAROnSklEsAu8aBWevOBHaP/p8FS/IwfH6          rO4y0NbIszKJc9xHOqZScZ/GFnRvFARLkHQqJKXebUP0BDls2mPit/EkD8I2rRl/WYL9          Icc8PTmsX3Kt5XhNJ0zjTVmDBWr4TfY5HFv4uOYMSDD6wgIIKLVGyXnKSjlYm3YjxU2B          F1egy/yv6xVEgLMyxWQU+iZ/TQUinwUfJAlgp9H6XbUHOY9ybn926KeVnrT+3M4973dS          8INMAceAC8lA0WyB9boWK/APafhI4pC8XoVikk3dOdAAkdJ/hYggQfDNuEFEJmEVV6Ud          sU0g==
+ARC-Authentication-Results: i=1; mx.google.com;        spf=neutral (google.com: 192.115.133.116 is neither permitted nor denied by best guess record for domain of baruch@tkos.co.il) smtp.mailfrom=baruch@tkos.co.il
+Return-Path: <baruch@tkos.co.il>
+Received: from mx.tkos.co.il (guitar.tcltek.co.il. [192.115.133.116])         by mx.google.com with ESMTPS id o125si38742817wmb.159.2019.01.24.01.53.49         for <viresh.kumar@linaro.org>         (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);         Thu, 24 Jan 2019 01:53:50 -0800 (PST)
+Received-SPF: neutral (google.com: 192.115.133.116 is neither permitted nor denied by best guess record for domain of baruch@tkos.co.il) client-ip=192.115.133.116;
+Authentication-Results: mx.google.com;        spf=neutral (google.com: 192.115.133.116 is neither permitted nor denied by best guess record for domain of baruch@tkos.co.il) smtp.mailfrom=baruch@tkos.co.il
+Received: from tarshish.tkos.co.il (unknown [10.0.8.6]) 	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) 	(No client certificate requested) 	by mx.tkos.co.il (Postfix) with ESMTPS id C18E24405BD; 	Thu, 24 Jan 2019 11:53:45 +0200 (IST)
+From: Baruch Siach <baruch@tkos.co.il>
+To: "Rafael J. Wysocki" <rjw@rjwysocki.net>, 	Viresh Kumar <viresh.kumar@linaro.org>
+Cc: linux-pm@vger.kernel.org, 	Baruch Siach <baruch@tkos.co.il>
+Subject: [PATCH] MAINTAINERS: Update the active pm tree for ARM
+Date: Thu, 24 Jan 2019 11:53:11 +0200
+Message-Id: <befab5d7b6e900a477cc446beb63b5416ca94658.1548323591.git.baruch@tkos.co.il>
+X-Mailer: git-send-email 2.20.1
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+The Linaro hosted git tree is no longer active. Update the cpufreq
+entry.
+
+Signed-off-by: Baruch Siach <baruch@tkos.co.il>
+---
+ MAINTAINERS | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/MAINTAINERS b/MAINTAINERS
+index 51029a425dbe..02438ee0ab46 100644
+--- a/MAINTAINERS
++++ b/MAINTAINERS
+@@ -3956,7 +3956,7 @@ M:	Viresh Kumar <viresh.kumar@linaro.org>
+ L:	linux-pm@vger.kernel.org
+ S:	Maintained
+ T:	git git://git.kernel.org/pub/scm/linux/kernel/git/rafael/linux-pm.git
+-T:	git git://git.linaro.org/people/vireshk/linux.git (For ARM Updates)
++T:	git git://git.kernel.org/pub/scm/linux/kernel/git/vireshk/pm.git (For ARM Updates)
+ B:	https://bugzilla.kernel.org
+ F:	Documentation/admin-guide/pm/cpufreq.rst
+ F:	Documentation/admin-guide/pm/intel_pstate.rst
+-- 
+2.20.1
+

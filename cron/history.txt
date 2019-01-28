@@ -25554,3 +25554,75 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 5f7fe4fffdc2] updates
+ 5 files changed, 112 insertions(+), 359 deletions(-)
+ create mode 100644 mutt/incoming/PATCH_MAINTAINERS_Update_the_active_pm_tree_for_ARM.mbox
+ delete mode 100644 mutt/incoming/PATCH_v5_1-2_MAINTAINERS_add_new_entries_for_Armada_8K_cpufreq_driver.mbox
+ delete mode 100644 mutt/incoming/PATCH_v5_2-2_cpufreq_ap806_add_cpufreq_driver_for_Armada_8K.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   86a60cb58963..5f7fe4fffdc2  master -> master
+   666cef49d354..86a60cb58963  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/vireshk-linux.git
+   e26ff9b4d304..9cc4044bb4d8  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon Jan 28 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   bkp/cpufreq/core/locking
+ - [deleted]                   bkp/exynos/hotplug
+ - [deleted]                   bkp/hrtimer/spurious
+ - [deleted]                   bkp/lng/isolation-3.14
+ - [deleted]                   bkp/lng/vanila-spurious-tests
+ - [deleted]                   opp/oops
+ - [deleted]                   thermal/cooling-maps
+   35f201ac125d..5887f50a1a61  bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next
+ - [deleted]                   bkp/cpufreq/oops
+ + 3841d08b3596...bedae28d6429 lnext/akpm -> lnext/akpm (forced update)
+ + 3a964d111656...20e7994d20fb lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 5b22549b8c00...494367cb57c9 lnext/master -> lnext/master (forced update)
+ + ce909646912a...ac8358d52d79 lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   52e60b754438..cffd425b9014  lnext/stable -> lnext/stable
+   49a57857aeea..f17b5f06cb92  origin/HEAD -> origin/HEAD
+   49a57857aeea..f17b5f06cb92  origin/master -> origin/master
+ + 5c2850dd4755...76200a38f2c5 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   027d5d5d698b..76200a38f2c5  pm/linux-next -> pm/linux-next
+   027d5d5d698b..76200a38f2c5  pm/testing -> pm/testing
+ * [new branch]                bkp/cpufreq/cfi -> bkp/cpufreq/cfi
+ * [new branch]                bkp/cpufreq/oops/sboyd -> bkp/cpufreq/oops/sboyd
+ * [new tag]                   next-20190125 -> next-20190125
+ * [new tag]                   v5.0-rc4 -> v5.0-rc4
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -692,3 +692,6 @@ From vireshk  Thu Jan 24 15:24:34 2019
 From vireshk  Thu Jan 24 14:41:57 2019
  Subject: Re: scheduler performance activity
   Folder: Re_scheduler_performance_activity.mbox			  14240
+From vireshk  Fri Feb  1 08:51:55 2019
+ Subject: [PATCH v6] cpufreq: qcom: Read voltage LUT and populate OPP
+  Folder: PATCH_v6_cpufreq_qcom_Read_voltage_LUT_and_populate_OPP.mbox	  10256

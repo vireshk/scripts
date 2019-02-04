@@ -695,3 +695,6 @@ From vireshk  Thu Jan 24 14:41:57 2019
 From vireshk  Fri Feb  1 08:51:55 2019
  Subject: [PATCH v6] cpufreq: qcom: Read voltage LUT and populate OPP
   Folder: PATCH_v6_cpufreq_qcom_Read_voltage_LUT_and_populate_OPP.mbox	  10256
+From vireshk  Mon Feb  4 11:43:31 2019
+ Subject: [PATCH] cpufreq: qcom-kryo: make some variables static
+  Folder: PATCH_cpufreq_qcom-kryo_make_some_variables_static.mbox	   5736

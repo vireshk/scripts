@@ -1,0 +1,57 @@
+From vireshk  Mon Feb  4 16:40:55 2019
+Delivered-To: viresh.kumar@linaro.org
+Received: from gmail-pop.l.google.com [74.125.24.108] 	by vireshk-i7 with POP3 (fetchmail-6.3.26) 	for <vireshk@localhost> (single-drop); Mon, 04 Feb 2019 16:40:55 +0530 (IST)
+Received: by 2002:a02:4c07:0:0:0:0:0 with SMTP id a7csp1897560jab;         Mon, 4 Feb 2019 03:10:09 -0800 (PST)
+X-Google-Smtp-Source: ALg8bN6Gmk/cOiK9MTBbuxu0by4wjREcKHlXWTywIv2tbAkbCdtkgR1Sco0d2q3+qxjtAkt3UPH3
+X-Received: by 2002:a50:b85d:: with SMTP id k29mr50157161ede.86.1549278609369;         Mon, 04 Feb 2019 03:10:09 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1549278609; cv=none;         d=google.com; s=arc-20160816;         b=friQNYYAuJQSMiUDQGG0Cf5ujxg8kzBNpTxlTnBr9bNpDHf+4tJ69fC3iXoo/0EK3s          OSh7hUq1tm3psMlQxZyQv3Wogfk4S/mBI8HRk2qEPSHaEsj3BGbLxxi9vvP6yDcCJMtO          SPQKsTmR4aK/GDHtbdItjqdH+oiRLIEJzvUblIQm7nFyVG1Wl8+LFR5kGIPyeUvFpn/H          uBoi5jnXlgQXWS41KgXFsDCBAoG7s1T1r2HVneO+IBSwKF0skKr+st1uNaubiKyua31a          ziS1PqXq5oJsW18HIRo8H7AuABx1iR8HQiKpMVGurVYIGEr9M0hVXENNXYKklj/RrP1I          D3IA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:references:in-reply-to          :message-id:date:subject:cc:to:from;         bh=YHWZm2FICrIuIqlsb5xKbu4GNpes6Dlzf6/Fdvm+1S8=;         b=lQBTLEptUoGMfzzhJ6nt17kuKuh6UXWA4uEKaOxLzJwu4CDkDUGFwlh54GMDCXLBnd          rtQfTllAwe/qBsQjeNa9tm2rW+Qo1useZ8TdnbN58dOTbk8sf9z4mgoNyAyjdZPusiX+          np9TRbLH1nFGNm3NSL/D18Y753LtXxYS1tFVJaDbtQ2z0n8lPRW9344tUGvy+lshvOo9          EqsWCWu3pakgtTfP14uQwxFP/8Ns9N/Mg/XOWVZF6+RPb+ZBQnbxEJTgv4qEThLfVmVa          2VbvgPyYG/P/OR7QWyqKML6x8FniKsAlNCg3SLP/XsjSPd9DTq4+tI5KhqBk+qfry3EK          vkeg==
+ARC-Authentication-Results: i=1; mx.google.com;        spf=pass (google.com: domain of quentin.perret@arm.com designates 217.140.101.70 as permitted sender) smtp.mailfrom=quentin.perret@arm.com
+Return-Path: <quentin.perret@arm.com>
+Received: from foss.arm.com (foss.arm.com. [217.140.101.70])         by mx.google.com with ESMTP id o25si1042338eju.224.2019.02.04.03.10.08         for <viresh.kumar@linaro.org>;         Mon, 04 Feb 2019 03:10:09 -0800 (PST)
+Received-SPF: pass (google.com: domain of quentin.perret@arm.com designates 217.140.101.70 as permitted sender) client-ip=217.140.101.70;
+Authentication-Results: mx.google.com;        spf=pass (google.com: domain of quentin.perret@arm.com designates 217.140.101.70 as permitted sender) smtp.mailfrom=quentin.perret@arm.com
+Received: from usa-sjc-imap-foss1.foss.arm.com (unknown [10.72.51.249]) 	by usa-sjc-mx-foss1.foss.arm.com (Postfix) with ESMTP id D0E40A78; 	Mon,  4 Feb 2019 03:10:07 -0800 (PST)
+Received: from queper01-lin.cambridge.arm.com (queper01-lin.cambridge.arm.com [10.1.195.48]) 	by usa-sjc-imap-foss1.foss.arm.com (Postfix) with ESMTPSA id E05683F675; 	Mon,  4 Feb 2019 03:10:05 -0800 (PST)
+From: Quentin Perret <quentin.perret@arm.com>
+To: viresh.kumar@linaro.org, 	sudeep.holla@arm.com, 	rjw@rjwysocki.net, 	nm@ti.com, 	sboyd@kernel.org, 	mka@chromium.org
+Cc: linux-pm@vger.kernel.org, 	linux-kernel@vger.kernel.org, 	linux-arm-kernel@lists.infradead.org, 	dietmar.eggemann@arm.com, 	quentin.perret@arm.com
+Subject: [PATCH v4 4/5] cpufreq: arm_big_little: Register an Energy Model
+Date: Mon,  4 Feb 2019 11:09:51 +0000
+Message-Id: <20190204110952.16025-5-quentin.perret@arm.com>
+X-Mailer: git-send-email 2.20.1
+In-Reply-To: <20190204110952.16025-1-quentin.perret@arm.com>
+References: <20190204110952.16025-1-quentin.perret@arm.com>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+From: Dietmar Eggemann <dietmar.eggemann@arm.com>
+
+Now that PM_OPP provides a helper function to estimate the power
+consumed by CPUs, make sure to try and register an Energy Model (EM)
+from the arm_big_little CPUFreq driver, hence ensuring interested
+subsystems (the task scheduler, for example) can make use of that
+information when available.
+
+Signed-off-by: Dietmar Eggemann <dietmar.eggemann@arm.com>
+Signed-off-by: Quentin Perret <quentin.perret@arm.com>
+---
+ drivers/cpufreq/arm_big_little.c | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/drivers/cpufreq/arm_big_little.c b/drivers/cpufreq/arm_big_little.c
+index cf62a1f64dd7..7fe52fcddcf1 100644
+--- a/drivers/cpufreq/arm_big_little.c
++++ b/drivers/cpufreq/arm_big_little.c
+@@ -487,6 +487,8 @@ static int bL_cpufreq_init(struct cpufreq_policy *policy)
+ 	policy->cpuinfo.transition_latency =
+ 				arm_bL_ops->get_transition_latency(cpu_dev);
+ 
++	dev_pm_opp_of_register_em(policy->cpus);
++
+ 	if (is_bL_switching_enabled())
+ 		per_cpu(cpu_last_req_freq, policy->cpu) = clk_get_cpu_rate(policy->cpu);
+ 
+-- 
+2.20.1
+

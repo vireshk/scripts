@@ -25892,3 +25892,50 @@ post-git trigger: updating grokmirror
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master b30a2039579a] updates
+ 4 files changed, 119 insertions(+), 192 deletions(-)
+ create mode 100644 mutt/incoming/PATCH_cpufreq_qcom-kryo_make_some_variables_static.mbox
+ delete mode 100644 mutt/incoming/PATCH_v6_cpufreq_qcom_Read_voltage_LUT_and_populate_OPP.mbox
+post-git trigger: updating grokmirror
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   7ef4ae6157d8..b30a2039579a  master -> master
+   56c439984713..7ef4ae6157d8  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+
+
+ 
+Tue Feb  5 14:13:46 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+ssh: Could not resolve hostname git.linaro.org: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+ssh: Could not resolve hostname git.linaro.org: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/scripts

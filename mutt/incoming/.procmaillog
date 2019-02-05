@@ -698,3 +698,21 @@ From vireshk  Fri Feb  1 08:51:55 2019
 From vireshk  Mon Feb  4 11:43:31 2019
  Subject: [PATCH] cpufreq: qcom-kryo: make some variables static
   Folder: PATCH_cpufreq_qcom-kryo_make_some_variables_static.mbox	   5736
+From vireshk  Mon Feb  4 13:19:10 2019
+ Subject: [PATCH v2] cpufreq: tegra124: add missing of_node_put()
+  Folder: PATCH_v2_cpufreq_tegra124_add_missing_of_node_put_.mbox	   5888
+From vireshk  Mon Feb  4 16:40:53 2019
+ Subject: [PATCH v4 1/5] PM / OPP: Introduce a power estimation helper
+  Folder: PATCH_v4_1-5_PM_OPP_Introduce_a_power_estimation_helper.mbox	   9501
+From vireshk  Mon Feb  4 16:40:54 2019
+ Subject: [PATCH v4 2/5] cpufreq: dt: Register an Energy Model
+  Folder: PATCH_v4_2-5_cpufreq_dt_Register_an_Energy_Model.mbox		   4482
+From vireshk  Mon Feb  4 16:40:54 2019
+ Subject: [PATCH v4 3/5] cpufreq: scpi: Register an Energy Model
+  Folder: PATCH_v4_3-5_cpufreq_scpi_Register_an_Energy_Model.mbox	   4470
+From vireshk  Mon Feb  4 16:40:55 2019
+ Subject: [PATCH v4 4/5] cpufreq: arm_big_little: Register an Energy Model
+  Folder: PATCH_v4_4-5_cpufreq_arm_big_little_Register_an_Energy_Model	   4689
+From vireshk  Mon Feb  4 16:40:56 2019
+ Subject: [PATCH v4 5/5] cpufreq: scmi: Register an Energy Model
+  Folder: PATCH_v4_5-5_cpufreq_scmi_Register_an_Energy_Model.mbox	   6201

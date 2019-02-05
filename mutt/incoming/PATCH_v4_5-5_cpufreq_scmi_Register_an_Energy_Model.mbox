@@ -1,0 +1,118 @@
+From vireshk  Mon Feb  4 16:40:56 2019
+Delivered-To: viresh.kumar@linaro.org
+Received: from gmail-pop.l.google.com [74.125.24.108] 	by vireshk-i7 with POP3 (fetchmail-6.3.26) 	for <vireshk@localhost> (single-drop); Mon, 04 Feb 2019 16:40:56 +0530 (IST)
+Received: by 2002:a02:4c07:0:0:0:0:0 with SMTP id a7csp1897602jab;         Mon, 4 Feb 2019 03:10:11 -0800 (PST)
+X-Google-Smtp-Source: ALg8bN4mdVhm9dE3NSHqoem4CfjSKNC/Bld066lpxwowUno74pSoXT00IXIvlnAsND+iLlJBOOe7
+X-Received: by 2002:a50:d002:: with SMTP id j2mr49727861edf.123.1549278610947;         Mon, 04 Feb 2019 03:10:10 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1549278610; cv=none;         d=google.com; s=arc-20160816;         b=vSl3HozS9o35nGcopU/QIvfULt5uhMVntf4klZ5cXkNhf6/9E1hvF0TsNPtI+6L+kO          wdAMwlmps/hKrdfDMBZ3cLwrE41AOdeFkcAJ/dKPxAWBOuUTpg2LDG8Wba9WWoH0zDZU          88MGjdg/uFcvVFgEY69Jr4Q1+OHtFzlkqhYImfkxMkcnFCTAZJYpjqjBifsa2GhLjNbv          K2rUClCLeEONtzOgRS5lwuLmHhpAKwV6Fk7HF9Wgdu08zwTd79hg0D3WHhX/oMUMAe7b          zDnTNkHUhZoiRi5KQqg6vTZjdMkqLc1W1ng/tEcEAPFwsGVVjvQFYKLm2dqYr3c3bgxO          kXPQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:references:in-reply-to          :message-id:date:subject:cc:to:from;         bh=W457cvw1ILB4/pi0D1+5q9BCAMqXOeHtEeb9HM3FAbA=;         b=biG3yL6OOgAmzghRT/PfmCcjE4gbfp3Oo5xb8VEGbkBR7MGj7OsEeZcoK5svTkT+eE          mChH60O2s/GBZbabsythQLYiTKnoB5d2eDAu8PCwWEReAI2B+EVBOjceTg9f2wJp+QFI          AJKqnhPslrrF+szJ8rKWxdguK0REQzm9y/Ktnfn8qJmjKBQo+W6+0LOTlsDZyZL4nvw6          OOPte9CynnJTDeeSTpKMTHEK2mFNTpQy8j5sIapFyNyOFjUU2cM8YqR1/mPdwoQ4bMPL          4hgX1PAQEDSHbwQcps6vNdj3zvmP+XV4oWacggfQCl3XTWLvdm8T7NNhwK9Pt0ZnCiof          O10Q==
+ARC-Authentication-Results: i=1; mx.google.com;        spf=pass (google.com: domain of quentin.perret@arm.com designates 217.140.101.70 as permitted sender) smtp.mailfrom=quentin.perret@arm.com
+Return-Path: <quentin.perret@arm.com>
+Received: from foss.arm.com (foss.arm.com. [217.140.101.70])         by mx.google.com with ESMTP id s5si985565eju.260.2019.02.04.03.10.10         for <viresh.kumar@linaro.org>;         Mon, 04 Feb 2019 03:10:10 -0800 (PST)
+Received-SPF: pass (google.com: domain of quentin.perret@arm.com designates 217.140.101.70 as permitted sender) client-ip=217.140.101.70;
+Authentication-Results: mx.google.com;        spf=pass (google.com: domain of quentin.perret@arm.com designates 217.140.101.70 as permitted sender) smtp.mailfrom=quentin.perret@arm.com
+Received: from usa-sjc-imap-foss1.foss.arm.com (unknown [10.72.51.249]) 	by usa-sjc-mx-foss1.foss.arm.com (Postfix) with ESMTP id 0A46315BF; 	Mon,  4 Feb 2019 03:10:10 -0800 (PST)
+Received: from queper01-lin.cambridge.arm.com (queper01-lin.cambridge.arm.com [10.1.195.48]) 	by usa-sjc-imap-foss1.foss.arm.com (Postfix) with ESMTPSA id 1A0533F675; 	Mon,  4 Feb 2019 03:10:07 -0800 (PST)
+From: Quentin Perret <quentin.perret@arm.com>
+To: viresh.kumar@linaro.org, 	sudeep.holla@arm.com, 	rjw@rjwysocki.net, 	nm@ti.com, 	sboyd@kernel.org, 	mka@chromium.org
+Cc: linux-pm@vger.kernel.org, 	linux-kernel@vger.kernel.org, 	linux-arm-kernel@lists.infradead.org, 	dietmar.eggemann@arm.com, 	quentin.perret@arm.com
+Subject: [PATCH v4 5/5] cpufreq: scmi: Register an Energy Model
+Date: Mon,  4 Feb 2019 11:09:52 +0000
+Message-Id: <20190204110952.16025-6-quentin.perret@arm.com>
+X-Mailer: git-send-email 2.20.1
+In-Reply-To: <20190204110952.16025-1-quentin.perret@arm.com>
+References: <20190204110952.16025-1-quentin.perret@arm.com>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+The Energy Model (EM) framework provides an API to register the active
+power of CPUs. Call this API from the scmi-cpufreq driver by using the
+power costs obtained from firmware. This is done to ensure interested
+subsystems (the task scheduler, for example) can make use of the EM
+when available.
+
+Signed-off-by: Quentin Perret <quentin.perret@arm.com>
+---
+ drivers/cpufreq/scmi-cpufreq.c | 39 +++++++++++++++++++++++++++++++---
+ 1 file changed, 36 insertions(+), 3 deletions(-)
+
+diff --git a/drivers/cpufreq/scmi-cpufreq.c b/drivers/cpufreq/scmi-cpufreq.c
+index 242c3370544e..0d87e1433296 100644
+--- a/drivers/cpufreq/scmi-cpufreq.c
++++ b/drivers/cpufreq/scmi-cpufreq.c
+@@ -12,6 +12,7 @@
+ #include <linux/cpufreq.h>
+ #include <linux/cpumask.h>
+ #include <linux/cpu_cooling.h>
++#include <linux/energy_model.h>
+ #include <linux/export.h>
+ #include <linux/module.h>
+ #include <linux/pm_opp.h>
+@@ -103,13 +104,42 @@ scmi_get_sharing_cpus(struct device *cpu_dev, struct cpumask *cpumask)
+ 	return 0;
+ }
+ 
++static int __maybe_unused
++scmi_get_cpu_power(unsigned long *power, unsigned long *KHz, int cpu)
++{
++	struct device *cpu_dev = get_cpu_device(cpu);
++	unsigned long Hz;
++	int ret, domain;
++
++	if (!cpu_dev) {
++		pr_err("failed to get cpu%d device\n", cpu);
++		return -ENODEV;
++	}
++
++	domain = handle->perf_ops->device_domain_id(cpu_dev);
++	if (domain < 0)
++		return domain;
++
++	/* Get the power cost of the performance domain. */
++	Hz = *KHz * 1000;
++	ret = handle->perf_ops->est_power_get(handle, domain, &Hz, power);
++	if (ret)
++		return ret;
++
++	/* The EM framework specifies the frequency in KHz. */
++	*KHz = Hz / 1000;
++
++	return 0;
++}
++
+ static int scmi_cpufreq_init(struct cpufreq_policy *policy)
+ {
+-	int ret;
++	int ret, nr_opp;
+ 	unsigned int latency;
+ 	struct device *cpu_dev;
+ 	struct scmi_data *priv;
+ 	struct cpufreq_frequency_table *freq_table;
++	struct em_data_callback em_cb = EM_DATA_CB(scmi_get_cpu_power);
+ 
+ 	cpu_dev = get_cpu_device(policy->cpu);
+ 	if (!cpu_dev) {
+@@ -136,8 +166,8 @@ static int scmi_cpufreq_init(struct cpufreq_policy *policy)
+ 		return ret;
+ 	}
+ 
+-	ret = dev_pm_opp_get_opp_count(cpu_dev);
+-	if (ret <= 0) {
++	nr_opp = dev_pm_opp_get_opp_count(cpu_dev);
++	if (nr_opp <= 0) {
+ 		dev_dbg(cpu_dev, "OPP table is not ready, deferring probe\n");
+ 		ret = -EPROBE_DEFER;
+ 		goto out_free_opp;
+@@ -171,6 +201,9 @@ static int scmi_cpufreq_init(struct cpufreq_policy *policy)
+ 	policy->cpuinfo.transition_latency = latency;
+ 
+ 	policy->fast_switch_possible = true;
++
++	em_register_perf_domain(policy->cpus, nr_opp, &em_cb);
++
+ 	return 0;
+ 
+ out_free_priv:
+-- 
+2.20.1
+

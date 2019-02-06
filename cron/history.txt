@@ -25939,3 +25939,147 @@ Please make sure you have the correct access rights
 and the repository exists.
 
 Entering /home/vireshk/scripts
+[master 395b01e24781] updates
+ 8 files changed, 547 insertions(+), 51 deletions(-)
+ delete mode 100644 mutt/incoming/PATCH_cpufreq_qcom-kryo_make_some_variables_static.mbox
+ create mode 100644 mutt/incoming/PATCH_v4_1-5_PM_OPP_Introduce_a_power_estimation_helper.mbox
+ create mode 100644 mutt/incoming/PATCH_v4_2-5_cpufreq_dt_Register_an_Energy_Model.mbox
+ create mode 100644 mutt/incoming/PATCH_v4_3-5_cpufreq_scpi_Register_an_Energy_Model.mbox
+ create mode 100644 mutt/incoming/PATCH_v4_4-5_cpufreq_arm_big_little_Register_an_Energy_Model.mbox
+ create mode 100644 mutt/incoming/PATCH_v4_5-5_cpufreq_scmi_Register_an_Energy_Model.mbox
+ssh: Could not resolve hostname git.linaro.org: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+ssh: Could not resolve hostname git.linaro.org: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+ssh: Could not resolve hostname git.linaro.org: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+ssh: Could not resolve hostname git.linaro.org: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Wed Feb  6 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 60fbba0fe90d...13f46f19fe0b android-hikey-linaro-4.14 -> android-hikey-linaro-4.14 (forced update)
+   45b11bc65853..fb9b07a0f2d1  cpufreq/arm/linux-next -> cpufreq/arm/linux-next
+   c257a22bea9b..662702536cd9  opp/linux-next -> opp/linux-next
+ + 94905d2679ed...dd337240a8e9 sched/idle -> sched/idle (forced update)
+   afcc548be647..7edc44ec5289  aosp-hikey/android-hikey-linaro-4.14 -> aosp-hikey/android-hikey-linaro-4.14
+   89c074f921d7..15b828e47627  aosp-hikey/android-hikey-linaro-4.19 -> aosp-hikey/android-hikey-linaro-4.19
+   1e0daa11c5c0..3bfe405f0c3e  aosp-hikey/android-hikey-linaro-4.4 -> aosp-hikey/android-hikey-linaro-4.4
+   53f49fb9ffa3..3bfaf11e4ed6  aosp-hikey/android-poplar-linaro-4.9 -> aosp-hikey/android-poplar-linaro-4.9
+   5227e2a47604..b842e78491b4  aosp-hikey/mirror-android-3.18 -> aosp-hikey/mirror-android-3.18
+   5a76363f1262..80d7b06534fa  aosp-hikey/mirror-android-4.14 -> aosp-hikey/mirror-android-4.14
+   138993ea8208..18ba00a34eb1  aosp-hikey/mirror-android-4.19 -> aosp-hikey/mirror-android-4.19
+   24189101975d..b3e9e81ee068  aosp-hikey/mirror-android-4.4 -> aosp-hikey/mirror-android-4.4
+   4b1d0d3e4e00..5aa04bc73fa2  aosp-hikey/mirror-android-4.9 -> aosp-hikey/mirror-android-4.9
+   5471b2c9bd08..45b11bc65853  bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next
+   45b11bc65853..fb9b07a0f2d1  pmko/cpufreq/arm/linux-next -> pmko/cpufreq/arm/linux-next
+   c257a22bea9b..662702536cd9  pmko/opp/linux-next -> pmko/opp/linux-next
+   b955a910d7fd..40e020c129cf  tip/WIP.fixes -> tip/WIP.fixes
+ + ebbeb6a70ade...7566ec393f41 tip/WIP.x86/boot -> tip/WIP.x86/boot (forced update)
+ + 11b080f48a8a...3fc175d79dbc tip/auto-latest -> tip/auto-latest (forced update)
+   d0346559a7c3..4bbfd7467cfc  tip/core-rcu-for-linus -> tip/core-rcu-for-linus
+   f26621e60b35..22566c160303  tip/core-urgent-for-linus -> tip/core-urgent-for-linus
+   d0346559a7c3..4bbfd7467cfc  tip/core/rcu -> tip/core/rcu
+   f26621e60b35..22566c160303  tip/core/urgent -> tip/core/urgent
+   fa70f0d2ce96..1debf0958fa2  tip/efi-core-for-linus -> tip/efi-core-for-linus
+   008d2f444222..74c953ca5f6b  tip/efi-urgent-for-linus -> tip/efi-urgent-for-linus
+   fa70f0d2ce96..41dd9d30a099  tip/efi/core -> tip/efi/core
+   008d2f444222..74c953ca5f6b  tip/efi/urgent -> tip/efi/urgent
+   746a923b863a..c410abbbacb9  tip/irq-core-for-linus -> tip/irq-core-for-linus
+   3424243e39e8..37b144df8099  tip/irq-urgent-for-linus -> tip/irq-urgent-for-linus
+   e8da8794a7fd..434537bbd50f  tip/irq/core -> tip/irq/core
+   3424243e39e8..37b144df8099  tip/irq/urgent -> tip/irq/urgent
+   01a14bda11ad..80eb86576870  tip/locking-core-for-linus -> tip/locking-core-for-linus
+   b987ffc18fb3..e158488be27b  tip/locking-urgent-for-linus -> tip/locking-urgent-for-linus
+   6cff0a118f23..bdf37b4dd35d  tip/locking/atomics -> tip/locking/atomics
+ + bdf37b4dd35d...47b8f3ab9c49 tip/locking/core -> tip/locking/core (forced update)
+   b987ffc18fb3..e158488be27b  tip/locking/urgent -> tip/locking/urgent
+ + 1ed7441f7f70...8cfb3552f2b7 tip/master -> tip/master (forced update)
+   dda93b45389f..883f4def8b77  tip/perf-core-for-linus -> tip/perf-core-for-linus
+   45fd80809144..d3c8c0af7565  tip/perf-urgent-for-linus -> tip/perf-urgent-for-linus
+   dda93b45389f..ca3bb3d027f6  tip/perf/core -> tip/perf/core
+   4d47d6407ac7..9dff0aa95a32  tip/perf/urgent -> tip/perf/urgent
+   711f76a328cb..72a8f089c382  tip/ras-core-for-linus -> tip/ras-core-for-linus
+ + d813dfb28641...1c1522d32ac4 tip/ras/core -> tip/ras/core (forced update)
+   11e13696a08e..732cd75b8c92  tip/sched-core-for-linus -> tip/sched-core-for-linus
+   993f0b0510da..120e4e76857d  tip/sched-urgent-for-linus -> tip/sched-urgent-for-linus
+   3e184501083c..f6783319737f  tip/sched/core -> tip/sched/core
+   c469933e7721..d7393226d15a  tip/sched/urgent -> tip/sched/urgent
+   69fa6eb7d6a6..b284909abad4  tip/smp-urgent-for-linus -> tip/smp-urgent-for-linus
+   69fa6eb7d6a6..b284909abad4  tip/smp/urgent -> tip/smp/urgent
+   d59e0ba19481..bd2bcaa565a2  tip/timers-core-for-linus -> tip/timers-core-for-linus
+   e6a2d72c1040..93ad0fc088c5  tip/timers-urgent-for-linus -> tip/timers-urgent-for-linus
+   7d9df98be66f..75b710af7139  tip/timers/core -> tip/timers/core
+   e6a2d72c1040..93ad0fc088c5  tip/timers/urgent -> tip/timers/urgent
+   cc41710a7bce..d7dd3041a84a  tip/tip -> tip/tip
+   ec3a94188df7..29434801e7e9  tip/x86-asm-for-linus -> tip/x86-asm-for-linus
+   44060e8a5189..69be4efeb959  tip/x86-boot-for-linus -> tip/x86-boot-for-linus
+   b3569d3a4b4f..e4f752dda0de  tip/x86-build-for-linus -> tip/x86-build-for-linus
+   4a7a54a55e72..52eb74339a62  tip/x86-cache-for-linus -> tip/x86-cache-for-linus
+   0b2c1aec49dd..4b1bacab61aa  tip/x86-cleanups-for-linus -> tip/x86-cleanups-for-linus
+   995d5f64b62f..aa02ef099cff  tip/x86-cpu-for-linus -> tip/x86-cpu-for-linus
+   977e4be5eb71..6848ac7ca39a  tip/x86-mm-for-linus -> tip/x86-mm-for-linus
+   fa112cf1e8bc..c04e55388a4f  tip/x86-platform-for-linus -> tip/x86-platform-for-linus
+   bb4b3b776273..20c3a2c33e9f  tip/x86-pti-for-linus -> tip/x86-pti-for-linus
+   1088c6eef261..d999c0ec2498  tip/x86-timers-for-linus -> tip/x86-timers-for-linus
+   15035388439f..e6d429313ea5  tip/x86-urgent-for-linus -> tip/x86-urgent-for-linus
+   566b62a3676c..2e905c7abdcd  tip/x86/asm -> tip/x86/asm
+   e8eeb3c8aab0..690eaa532057  tip/x86/boot -> tip/x86/boot
+   b3569d3a4b4f..e6d7bc0bdf41  tip/x86/build -> tip/x86/build
+   b61b8bba18fe..52eb74339a62  tip/x86/cache -> tip/x86/cache
+   63ecd3b13d5c..5a064d398fbe  tip/x86/cleanups -> tip/x86/cleanups
+   08e823c2c589..0237199186e7  tip/x86/cpu -> tip/x86/cpu
+   e4880bc5dfb1..bae54dc4f353  tip/x86/fpu -> tip/x86/fpu
+   f4661d293eb2..2ffcbce39ea1  tip/x86/microcode -> tip/x86/microcode
+   1d8ca3be86eb..6848ac7ca39a  tip/x86/mm -> tip/x86/mm
+   fa112cf1e8bc..c04e55388a4f  tip/x86/platform -> tip/x86/platform
+ + aa0bb5a22372...71368af9027f tip/x86/pti -> tip/x86/pti (forced update)
+   a786ef152cdc..d999c0ec2498  tip/x86/timers -> tip/x86/timers
+   d19f9130b814..d28af26faa0b  tip/x86/urgent -> tip/x86/urgent
+ * [new branch]                sched/idle-bkp -> sched/idle-bkp
+ * [new branch]                tip/WIP.x86/pti -> tip/WIP.x86/pti
+ * [new branch]                tip/tmp.tmp -> tip/tmp.tmp
+ * [new branch]                tip/x86-amd-nb-for-linus -> tip/x86-amd-nb-for-linus
+ * [new branch]                tip/x86-fpu-for-linus -> tip/x86-fpu-for-linus
+ * [new branch]                tip/x86-microcode-for-linus -> tip/x86-microcode-for-linus
+ * [new branch]                tip/x86/alternatives -> tip/x86/alternatives
+ * [new branch]                tip/x86/kdump -> tip/x86/kdump
+ * [new branch]                tip/x86/mpx -> tip/x86/mpx
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

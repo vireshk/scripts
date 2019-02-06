@@ -716,3 +716,9 @@ From vireshk  Mon Feb  4 16:40:55 2019
 From vireshk  Mon Feb  4 16:40:56 2019
  Subject: [PATCH v4 5/5] cpufreq: scmi: Register an Energy Model
   Folder: PATCH_v4_5-5_cpufreq_scmi_Register_an_Energy_Model.mbox	   6201
+From vireshk  Wed Feb  6 08:54:11 2019
+ Subject: [PATCH 1/2] cpufreq: qcom-hw: Register an Energy Model
+  Folder: PATCH_1-2_cpufreq_qcom-hw_Register_an_Energy_Model.mbox	   5441
+From vireshk  Wed Feb  6 08:54:12 2019
+ Subject: [PATCH 2/2] cpufreq: mediatek: Register an Energy Model
+  Folder: PATCH_2-2_cpufreq_mediatek_Register_an_Energy_Model.mbox	   5640

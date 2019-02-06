@@ -1,0 +1,53 @@
+From vireshk  Wed Feb  6 08:54:11 2019
+Delivered-To: viresh.kumar@linaro.org
+Received: from gmail-pop.l.google.com [74.125.24.108] 	by vireshk-i7 with POP3 (fetchmail-6.3.26) 	for <vireshk@localhost> (single-drop); Wed, 06 Feb 2019 08:54:11 +0530 (IST)
+Received: by 2002:a02:4c07:0:0:0:0:0 with SMTP id a7csp3494808jab;         Tue, 5 Feb 2019 09:52:43 -0800 (PST)
+X-Received: by 2002:a65:6542:: with SMTP id a2mr5531417pgw.389.1549389163492;         Tue, 05 Feb 2019 09:52:43 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1549389163; cv=none;         d=google.com; s=arc-20160816;         b=g8584j4TOa7seHLSqtIT3Y2mOlCp9GJS7BBpUsy41ieYI6YZw45Zf6RqBJjiz00Lax          aiNDLQhCwMABYNf1SVuQLk7t4VohTqtBW4o+KTUZTcmn4ovrqiFZTsSYeHinTCStbx1f          7awK1hJmegcYKIjoiJREQxdunA8mul51osvjt+AK/9rhLKSj8mdy7I8oIM4xrQRoSS0u          toJQ+VuU9KEqbKZ7gwRBYNPWcemSGIh16UCg0V7qaEChvVKipAvwicMtxQSnc1CZSmrq          pU0bTHJbLJl5LDIj25dxKgiU8ilI3+aWA+ZbxrCDWtQfc4YzLAKpV3+x6y0iSatOJhei          FNVw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from;         bh=4VqdMM+w0qT/K7e9KJmdykIErjiwD51l9d/UiASd0yI=;         b=fxDEwk07MZ9ahgiV35/+hpj8gaTWTL44GT2rqcgM2fs6ov2bjg8RdPqCW+mbUeNZAm          mvouqWqyLaqBAUHIhvNWs01Y6JZ3r2wrIl5NQJ7YZ2q7TVn4dgdUmPvI4sUZsvn1SqLL          OEIiKUT2FUXu6TtdAutLtG18KdGvOlxbjTWWDBrJghUlkQNdvCyBkjVHHYNp5kmtkc3d          T1d6zeeSWbkY8MC7ecpevvrmYYyXaPwwOgpYGWHBlFCbu+7ay8AIMVmYjRjrXZqyabHw          b4SkOCABhObujdeGlSiaHbI4AZT85wAg0Q1a0I0NMV+Lx+E5aD2r3zuRG2rrQaYVBeHc          p0tQ==
+ARC-Authentication-Results: i=1; mx.google.com;        spf=pass (google.com: domain of mka@google.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=mka@google.com;        dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=chromium.org
+Return-Path: <mka@google.com>
+Received: from mail-sor-f65.google.com (mail-sor-f65.google.com. [209.85.220.65])         by mx.google.com with SMTPS id f91sor5573428plf.59.2019.02.05.09.52.42         for <viresh.kumar@linaro.org>         (Google Transport Security);         Tue, 05 Feb 2019 09:52:43 -0800 (PST)
+Received-SPF: pass (google.com: domain of mka@google.com designates 209.85.220.65 as permitted sender) client-ip=209.85.220.65;
+Authentication-Results: mx.google.com;        spf=pass (google.com: domain of mka@google.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=mka@google.com;        dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=chromium.org
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=1e100.net; s=20161025;         h=x-gm-message-state:from:to:cc:subject:date:message-id:mime-version          :content-transfer-encoding;         bh=4VqdMM+w0qT/K7e9KJmdykIErjiwD51l9d/UiASd0yI=;         b=YIwwJZ0mmy1xEl9PeH0XIPt26i5xzjDkDgRcweAIXWhhUT8ODWzlVkK4THAspjVcEg          /Xs1Up3Puoe8O0smbDerFtChPqb0yrNxnl94K2QjAxEwwhyTpYHw/XcSQvCefoFGzFAF          MCNYHe2wGYjGYfGe0XDNf5zpsw19iXxARRUf4rfc+8wZVPJ3J8vW1xbALhB0TD5/O9Cq          U4G+XwQ7kd3ao7FrlQFAJGozMfdDPtj3aT2ZbuTAOlLrkCl7BRmG3ZpvuvtUyseFrL//          +2Hhhsn7/W4wg9UdICX79t5guJIHkUSSi0PpQ/XrJsX/4HNjuyjgh6V4Oqt6NQQCZXaP          4s3g==
+X-Gm-Message-State: AHQUAuaCuBYXjcTqyRtI0IwdBJiWvWum0YypmylXxYTXmv2mNt0THDaj 	StdaQXuo8MD8DNhHB4iet2NtgAKhsfosTQ==
+X-Google-Smtp-Source: AHgI3Ib6RXJt5ElBZ9izg3szJBC/E9z6G3PfrBwxlRYuo4v44yqQw+q4lCZNCEb+c8BP7RerBeaqEg==
+X-Received: by 2002:a17:902:6bc7:: with SMTP id m7mr6396409plt.106.1549389162105;         Tue, 05 Feb 2019 09:52:42 -0800 (PST)
+Return-Path: <mka@google.com>
+Received: from mka.mtv.corp.google.com ([2620:15c:202:1:75a:3f6e:21d:9374])         by smtp.gmail.com with ESMTPSA id 85sm6030280pfw.17.2019.02.05.09.52.40         (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);         Tue, 05 Feb 2019 09:52:41 -0800 (PST)
+From: Matthias Kaehlcke <mka@chromium.org>
+To: "Rafael J . Wysocki" <rjw@rjwysocki.net>, 	Viresh Kumar <viresh.kumar@linaro.org>, 	Matthias Brugger <matthias.bgg@gmail.com>
+Cc: linux-pm@vger.kernel.org, 	linux-kernel@vger.kernel.org, 	linux-arm-kernel@lists.infradead.org, 	linux-mediatek@lists.infradead.org, 	Quentin Perret <quentin.perret@arm.com>, 	Taniya Das <tdas@codeaurora.org>, 	CK Hu <ck.hu@mediatek.com>, 	Eddie Huang <eddie.huang@mediatek.com>, 	Nicolas Boichat <drinkcat@chromium.org>, 	Douglas Anderson <dianders@chromium.org>, 	Matthias Kaehlcke <mka@chromium.org>
+Subject: [PATCH 1/2] cpufreq: qcom-hw: Register an Energy Model
+Date: Tue,  5 Feb 2019 09:52:24 -0800
+Message-Id: <20190205175225.25923-1-mka@chromium.org>
+X-Mailer: git-send-email 2.20.1.611.gfbb209baf1-goog
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+Try and register an Energy Model from qcom-cpufreq-hw to allow
+interested sub-systems like the task scheduler to use the provided
+information.
+
+Signed-off-by: Matthias Kaehlcke <mka@chromium.org>
+---
+ drivers/cpufreq/qcom-cpufreq-hw.c | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/drivers/cpufreq/qcom-cpufreq-hw.c b/drivers/cpufreq/qcom-cpufreq-hw.c
+index d83939a1b3d4c..a16b9dca7ea3b 100644
+--- a/drivers/cpufreq/qcom-cpufreq-hw.c
++++ b/drivers/cpufreq/qcom-cpufreq-hw.c
+@@ -205,6 +205,8 @@ static int qcom_cpufreq_hw_cpu_init(struct cpufreq_policy *policy)
+ 		goto error;
+ 	}
+ 
++	dev_pm_opp_of_register_em(policy->cpus);
++
+ 	policy->fast_switch_possible = true;
+ 
+ 	return 0;
+-- 
+2.20.1.611.gfbb209baf1-goog
+

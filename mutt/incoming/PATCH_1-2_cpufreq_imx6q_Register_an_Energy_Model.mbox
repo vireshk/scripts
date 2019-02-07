@@ -1,0 +1,51 @@
+From vireshk  Thu Feb  7 10:05:17 2019
+Delivered-To: viresh.kumar@linaro.org
+Received: from gmail-pop.l.google.com [74.125.24.108] 	by vireshk-i7 with POP3 (fetchmail-6.3.26) 	for <vireshk@localhost> (single-drop); Thu, 07 Feb 2019 10:05:17 +0530 (IST)
+Received: by 2002:a02:4c07:0:0:0:0:0 with SMTP id a7csp175023jab;         Wed, 6 Feb 2019 20:34:44 -0800 (PST)
+X-Received: by 2002:a17:902:9f93:: with SMTP id g19mr14281932plq.195.1549514084076;         Wed, 06 Feb 2019 20:34:44 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1549514084; cv=none;         d=google.com; s=arc-20160816;         b=UhpiInS2wTq5bSow++keBVwF2Kl1iLqZW5IuWGnZ8//zUyJVUPEVSzfRRtIh6AMeFG          VIe1NfPoxaw77MLhOVC5eF3jrzIT496QkC6ryendrsBfJ239rpIIAMNArRO+lKS/P7eX          ZYMff3jKtLh2L8MQV1XihFzTlGVqkLjw2LcMQoFQoaORdeA84sP2r21BzwDDA1qYBx9h          liFdZKWbr3KstuAw6R/F1RLWpN3wtEQt7zPGnPv/wFMm3XmIGgp2b1zvjFMHLiGB0ZXj          kr9sETcEiAxftLlSj3ptYY77jAK8QyXeSSL1jkv5rUXcDaiY1unHpyoVcrZT83LaT+wI          dbhA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=message-id:date:subject:cc:to:from:dkim-signature;         bh=TdWV8zaDsbS5D8yo5py6H+fVu+r9OXN8sENHXC5gOwM=;         b=nqj6Zc5D76QzQuvsjy0hje9yLIrf7VEboU/za/OATdWaEhYed14NbOvLbQK//lamow          KWGgim9nH9pWtvE5kSSWLTpWYeOOwURMNNK0PorJ8rtqv/eN8popYCZQ0YkNM8bsjNzY          doOXh6wNhEzkMMkwzgbJacwrDybzuH2iqbmjUa7LuimVUWjYMElkZzyQlcY8S1O9ozE9          hqY5UqCUJTozfOm5IX/7uLLoomHnSES7f8paxdSboMF0EXSL/uLALYa2DTvzYKqt79bB          5GHkBbwvPkT57k5Fn0sKeyeWJJFKFRxoNe/2LbRF3eNorVUT9hoJDyENHaQIIcwgUWyu          xFlQ==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@gmail.com header.s=20161025 header.b=JM2BBt4c;        spf=pass (google.com: domain of tiny.windzz@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=tiny.windzz@gmail.com;        dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <tiny.windzz@gmail.com>
+Received: from mail-sor-f65.google.com (mail-sor-f65.google.com. [209.85.220.65])         by mx.google.com with SMTPS id a33sor12207675pla.29.2019.02.06.20.34.44         for <viresh.kumar@linaro.org>         (Google Transport Security);         Wed, 06 Feb 2019 20:34:44 -0800 (PST)
+Received-SPF: pass (google.com: domain of tiny.windzz@gmail.com designates 209.85.220.65 as permitted sender) client-ip=209.85.220.65;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@gmail.com header.s=20161025 header.b=JM2BBt4c;        spf=pass (google.com: domain of tiny.windzz@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=tiny.windzz@gmail.com;        dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=gmail.com; s=20161025;         h=from:to:cc:subject:date:message-id;         bh=TdWV8zaDsbS5D8yo5py6H+fVu+r9OXN8sENHXC5gOwM=;         b=JM2BBt4ciTeNh0942oaqMXx1eMY81XikVvUDq/cne4pNWGT4EsoDLi1z8t+uOocymr          2GdB2t/HrVn10Y2zuWrl87nG06UJMbLODzLTw1bELY7T0rdaBh77o37xwgoIZdlB7qHJ          WZCIAds0bMmZcJqZr7AA3XRcWXUWFI6mL1yPApLvOjetfYGH+LLdw8xfWHKi3Iari0Kv          nVJ4D5yVaLvdJXkXG4kWJlzfxm3hV1z2jXz77ur9apYq8bwrT/J2A0wd3O/LsxeZv/Yp          OU0vSsMhnbXLgMkpGvgTR5s4HUuH72+HXMYqjnOIah/UdgxNTe7PVaTdqzZ+W0G/1nlL          JsHA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=1e100.net; s=20161025;         h=x-gm-message-state:from:to:cc:subject:date:message-id;         bh=TdWV8zaDsbS5D8yo5py6H+fVu+r9OXN8sENHXC5gOwM=;         b=BUrsuN7joTsqM5c7tWBlf+rc7yRbZNxbaFMcSSDS074WHQ3koTY9LPf2IBEjZSw42Q          spwJgdpeY//7rJecpBQM2zHCH13FzzmC90QflPJJ4rQb1us7+f4OnGnT+nTSLx4Fr7UZ          ekgZdZ/cl37kgu4Hg2MopNu7sN5+c0owqm2uaraC7JDysAFgBa48G8VzZJmyOhK2c7e8          5L1/AhW3Du2gx/VVyveyO4fqS0XhSgNWsacmVLVwf0/AdsJT1w7RLfNKvN9G6A9Y2tf0          MUMX+IQDVJAICYK8IP77emyH/4z4V3/XZRitLvlh+Hy6/avPuoBop4dxN80Fb1ODNPYI          ssag==
+X-Gm-Message-State: AHQUAua1Z0uAVdGy4ScoGUi/PubkhWe4YQV30ujKgqhHl3Ss+FkGUVez 	sjq9rfZkvh9mWU+CaJ7kOec=
+X-Google-Smtp-Source: AHgI3Ibx37dLZNjm6pPnxB136+eNX+WRjHgEr+5TORF6RkoglWEP6fJAT1pToaNKtY+792/ruCnHKw==
+X-Received: by 2002:a17:902:e090:: with SMTP id cb16mr759219plb.32.1549514083415;         Wed, 06 Feb 2019 20:34:43 -0800 (PST)
+Return-Path: <tiny.windzz@gmail.com>
+Received: from localhost (68.168.130.77.16clouds.com. [68.168.130.77])         by smtp.gmail.com with ESMTPSA id o84sm19595648pfi.172.2019.02.06.20.34.41         (version=TLS1_2 cipher=ECDHE-RSA-CHACHA20-POLY1305 bits=256/256);         Wed, 06 Feb 2019 20:34:42 -0800 (PST)
+From: Yangtao Li <tiny.windzz@gmail.com>
+To: rjw@rjwysocki.net, 	viresh.kumar@linaro.org, 	quentin.perret@arm.com
+Cc: linux-pm@vger.kernel.org, 	linux-kernel@vger.kernel.org, 	Yangtao Li <tiny.windzz@gmail.com>
+Subject: [PATCH 1/2] cpufreq: imx6q: Register an Energy Model
+Date: Wed,  6 Feb 2019 23:34:20 -0500
+Message-Id: <20190207043420.3838-1-tiny.windzz@gmail.com>
+X-Mailer: git-send-email 2.17.0
+
+Try and register an Energy Model from imx6q-cpufreq to allow
+interested subsystems like the task scheduler to use the provided
+information.
+
+Signed-off-by: Yangtao Li <tiny.windzz@gmail.com>
+---
+ drivers/cpufreq/imx6q-cpufreq.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/drivers/cpufreq/imx6q-cpufreq.c b/drivers/cpufreq/imx6q-cpufreq.c
+index 9fedf627e000..73bfd5bc3087 100644
+--- a/drivers/cpufreq/imx6q-cpufreq.c
++++ b/drivers/cpufreq/imx6q-cpufreq.c
+@@ -210,6 +210,7 @@ static int imx6q_cpufreq_init(struct cpufreq_policy *policy)
+ 	policy->clk = clks[ARM].clk;
+ 	ret = cpufreq_generic_init(policy, freq_table, transition_latency);
+ 	policy->suspend_freq = max_freq;
++	dev_pm_opp_of_register_em(policy->cpus);
+ 
+ 	return ret;
+ }
+-- 
+2.17.0
+

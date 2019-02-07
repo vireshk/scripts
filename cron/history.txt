@@ -26083,3 +26083,74 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master a7d790bab467] updates
+ 9 files changed, 258 insertions(+), 482 deletions(-)
+ create mode 100644 mutt/incoming/PATCH_1-2_cpufreq_qcom-hw_Register_an_Energy_Model.mbox
+ create mode 100644 mutt/incoming/PATCH_2-2_cpufreq_mediatek_Register_an_Energy_Model.mbox
+ delete mode 100644 mutt/incoming/PATCH_v4_1-5_PM_OPP_Introduce_a_power_estimation_helper.mbox
+ delete mode 100644 mutt/incoming/PATCH_v4_2-5_cpufreq_dt_Register_an_Energy_Model.mbox
+ delete mode 100644 mutt/incoming/PATCH_v4_3-5_cpufreq_scpi_Register_an_Energy_Model.mbox
+ delete mode 100644 mutt/incoming/PATCH_v4_4-5_cpufreq_arm_big_little_Register_an_Energy_Model.mbox
+ delete mode 100644 mutt/incoming/PATCH_v4_5-5_cpufreq_scmi_Register_an_Energy_Model.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   b30a2039579a..a7d790bab467  master -> master
+   7ef4ae6157d8..b30a2039579a  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Thu Feb  7 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + fb9b07a0f2d1...0d41859dd10e cpufreq/arm/linux-next -> cpufreq/arm/linux-next (forced update)
+ + 662702536cd9...a9a744dd5b82 opp/linux-next -> opp/linux-next (forced update)
+ + dd337240a8e9...1ccf17e03a3f sched/idle -> sched/idle (forced update)
+ - [deleted]                   ara/i2c
+ - [deleted]                   ara/pm
+ - [deleted]                   ara/watchdog-v1-bkp
+ - [deleted]                   ara/wdog-bark
+ + 60fbba0fe90d...13f46f19fe0b bkp/android-hikey-linaro-4.14 -> bkp/android-hikey-linaro-4.14 (forced update)
+   45b11bc65853..fb9b07a0f2d1  bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next
+   c257a22bea9b..662702536cd9  bkp/opp/linux-next -> bkp/opp/linux-next
+ + 94905d2679ed...dd337240a8e9 bkp/sched/idle -> bkp/sched/idle (forced update)
+ - [deleted]                   lko/sched/tip
+ + fb9b07a0f2d1...0d41859dd10e pmko/cpufreq/arm/linux-next -> pmko/cpufreq/arm/linux-next (forced update)
+ + 662702536cd9...a9a744dd5b82 pmko/opp/linux-next -> pmko/opp/linux-next (forced update)
+ - [deleted]                   pmlo/cpufreq/core/locking
+ * [new branch]                sched/cleanups -> sched/cleanups
+ * [new branch]                bkp/sched/idle-bkp -> bkp/sched/idle-bkp
+ * [new branch]                lko/sched/cleanups -> lko/sched/cleanups
+ * [new tag]                   10 -> 10
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

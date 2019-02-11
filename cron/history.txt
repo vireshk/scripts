@@ -26216,3 +26216,153 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 5f1a91f158d3] updates
+ 2 files changed, 65 insertions(+), 3 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   6bfda4eafc7c..5f1a91f158d3  master -> master
+   a7d790bab467..6bfda4eafc7c  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon Feb 11 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   sched/cleanups
+   9f5e7029220b..85dbd5051d7c  aosp-hikey/android-amlogic-bmeson-4.19 -> aosp-hikey/android-amlogic-bmeson-4.19
+   7edc44ec5289..6366e73204dc  aosp-hikey/android-hikey-linaro-4.14 -> aosp-hikey/android-hikey-linaro-4.14
+   15b828e47627..8403ca56bfda  aosp-hikey/android-hikey-linaro-4.19 -> aosp-hikey/android-hikey-linaro-4.19
+   c8f472987702..03c85b6dfac6  aosp-hikey/android-hikey-linaro-4.9 -> aosp-hikey/android-hikey-linaro-4.9
+   b842e78491b4..4b92e6f09906  aosp-hikey/mirror-android-3.18 -> aosp-hikey/mirror-android-3.18
+   80d7b06534fa..0116eb1061b0  aosp-hikey/mirror-android-4.14 -> aosp-hikey/mirror-android-4.14
+   18ba00a34eb1..c28f73fe420c  aosp-hikey/mirror-android-4.19 -> aosp-hikey/mirror-android-4.19
+   b3e9e81ee068..64b564428faa  aosp-hikey/mirror-android-4.4 -> aosp-hikey/mirror-android-4.4
+   5aa04bc73fa2..1597fdfe52ba  aosp-hikey/mirror-android-4.9 -> aosp-hikey/mirror-android-4.9
+   fa26112339db..4b92e6f09906  aosp/android-3.18 -> aosp/android-3.18
+   2673e6c98e64..d2f94a9e050d  aosp/android-3.18-n-release -> aosp/android-3.18-n-release
+   ccaf4c28b56f..451358eb3519  aosp/android-3.18-o-mr1 -> aosp/android-3.18-o-mr1
+   dfecf7c6578f..d9179c26bbfa  aosp/android-3.18-o-release -> aosp/android-3.18-o-release
+   3c207c880674..0116eb1061b0  aosp/android-4.14 -> aosp/android-4.14
+   eef4cf658dd1..848d71fbb8c0  aosp/android-4.14-p -> aosp/android-4.14-p
+   ae55a6e8e2dc..7943e452b4e6  aosp/android-4.14-p-release -> aosp/android-4.14-p-release
+   383eacb91bdc..c28f73fe420c  aosp/android-4.19 -> aosp/android-4.19
+   d08574b6f0ae..64b564428faa  aosp/android-4.4 -> aosp/android-4.4
+   1695253e0049..c9e0a82f38a4  aosp/android-4.4-n -> aosp/android-4.4-n
+   a6591fa8dd43..94ee30f0dee6  aosp/android-4.4-n-release -> aosp/android-4.4-n-release
+   b55e7ac5a192..9965e77e8032  aosp/android-4.4-o -> aosp/android-4.4-o
+   9f7d53dc33ed..6085e8304b1d  aosp/android-4.4-o-mr1 -> aosp/android-4.4-o-mr1
+   901b6e530dbd..8bc944dd1cf1  aosp/android-4.4-o-release -> aosp/android-4.4-o-release
+   908e869944e4..a95e76973d59  aosp/android-4.4-p -> aosp/android-4.4-p
+   8593a2fa3f50..172570c068ec  aosp/android-4.4-p-release -> aosp/android-4.4-p-release
+   043c92bd0517..1597fdfe52ba  aosp/android-4.9 -> aosp/android-4.9
+   2720a69dd2e2..b271d4779643  aosp/android-4.9-o -> aosp/android-4.9-o
+   4ce00d67a6ac..22160f9d2198  aosp/android-4.9-o-mr1 -> aosp/android-4.9-o-mr1
+   198eb35aaed0..38ead4936717  aosp/android-4.9-o-release -> aosp/android-4.9-o-release
+   c1fac76c9a7c..ee54eeb80779  aosp/android-4.9-p -> aosp/android-4.9-p
+   9ad37d6269b9..f3cbfcb66d02  aosp/android-4.9-p-release -> aosp/android-4.9-p-release
+ + 63d2dda21105...5b1268a19daf aosp/android-mainline-tracking -> aosp/android-mainline-tracking (forced update)
+   1d9e5e7a0985..7aceb6591a25  aosp/android-trusty-4.14 -> aosp/android-trusty-4.14
+   eace41bf639d..3ed4111b0805  aosp/android-trusty-4.4 -> aosp/android-trusty-4.4
+   eb1249894645..6b9a6959f97b  aosp/android-trusty-4.9 -> aosp/android-trusty-4.9
+   2070e456e49a..2223882fe362  aosp/cuttlefish-4.14 -> aosp/cuttlefish-4.14
+   6de2c6112aeb..2fcb9b6d865d  aosp/cuttlefish-4.4 -> aosp/cuttlefish-4.4
+ + ee816085289d...439ae3572bd9 aosp/experimental/eas-dev -> aosp/experimental/eas-dev (forced update)
+   d614a83672ae..5cd56a20f14e  aosp/upstream-f2fs-stable-linux-3.18.y -> aosp/upstream-f2fs-stable-linux-3.18.y
+   34983b0428ca..ad65135dc447  aosp/upstream-f2fs-stable-linux-4.14.y -> aosp/upstream-f2fs-stable-linux-4.14.y
+   08b3d450f8a7..437584796d8b  aosp/upstream-f2fs-stable-linux-4.19.y -> aosp/upstream-f2fs-stable-linux-4.19.y
+   0eea3276eebc..011f2e498d94  aosp/upstream-f2fs-stable-linux-4.4.y -> aosp/upstream-f2fs-stable-linux-4.4.y
+   d831272f116f..b152e2d05c67  aosp/upstream-f2fs-stable-linux-4.9.y -> aosp/upstream-f2fs-stable-linux-4.9.y
+   fa42fea0d8b4..49ab1e524f6a  aosp/upstream-linux-3.18.y -> aosp/upstream-linux-3.18.y
+   d2dd9f1593dc..0d7866d54a2c  aosp/upstream-linux-4.14.y -> aosp/upstream-linux-4.14.y
+   c04c050f5bf9..323e0195e63f  aosp/upstream-linux-4.19.y -> aosp/upstream-linux-4.19.y
+   ba0da581b466..343f981c7608  aosp/upstream-linux-4.4.y -> aosp/upstream-linux-4.4.y
+   d99748864fa9..6ebe34c1da89  aosp/upstream-linux-4.9.y -> aosp/upstream-linux-4.9.y
+ + 0d41859dd10e...af816ddfbdf0 bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next (forced update)
+ - [deleted]                   bkp/cpufreq/stats
+ + 1ccf17e03a3f...c19747c8b1f2 bkp/sched/idle -> bkp/sched/idle (forced update)
+   b473406a06c4..ce5cbf53496b  pm/acpi -> pm/acpi
+ + 6180f33d16cf...d2279409c131 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 924e00689c73...1fad3c513fc7 pm/linux-next -> pm/linux-next (forced update)
+   f17b5f06cb92..8834f5600cf3  pm/master -> pm/master
+ + 924e00689c73...1fad3c513fc7 pm/testing -> pm/testing (forced update)
+ * [new branch]                android-hikey-linaro-4.19 -> android-hikey-linaro-4.19
+ * [new branch]                cpufreq/suspend -> cpufreq/suspend
+ * [new tag]                   ASB-2019-01-05_3.18 -> ASB-2019-01-05_3.18
+ * [new tag]                   ASB-2019-01-05_3.18-n-release -> ASB-2019-01-05_3.18-n-release
+ * [new tag]                   ASB-2019-01-05_3.18-o-mr1 -> ASB-2019-01-05_3.18-o-mr1
+ * [new tag]                   ASB-2019-01-05_3.18-o-release -> ASB-2019-01-05_3.18-o-release
+ * [new tag]                   ASB-2019-01-05_4.14 -> ASB-2019-01-05_4.14
+ * [new tag]                   ASB-2019-01-05_4.14-p -> ASB-2019-01-05_4.14-p
+ * [new tag]                   ASB-2019-01-05_4.14-p-release -> ASB-2019-01-05_4.14-p-release
+ * [new tag]                   ASB-2019-01-05_4.19 -> ASB-2019-01-05_4.19
+ * [new tag]                   ASB-2019-01-05_4.4 -> ASB-2019-01-05_4.4
+ * [new tag]                   ASB-2019-01-05_4.4-n -> ASB-2019-01-05_4.4-n
+ * [new tag]                   ASB-2019-01-05_4.4-n-release -> ASB-2019-01-05_4.4-n-release
+ * [new tag]                   ASB-2019-01-05_4.4-o -> ASB-2019-01-05_4.4-o
+ * [new tag]                   ASB-2019-01-05_4.4-o-mr1 -> ASB-2019-01-05_4.4-o-mr1
+ * [new tag]                   ASB-2019-01-05_4.4-o-release -> ASB-2019-01-05_4.4-o-release
+ * [new tag]                   ASB-2019-01-05_4.4-p -> ASB-2019-01-05_4.4-p
+ * [new tag]                   ASB-2019-01-05_4.4-p-release -> ASB-2019-01-05_4.4-p-release
+ * [new tag]                   ASB-2019-01-05_4.9 -> ASB-2019-01-05_4.9
+ * [new tag]                   ASB-2019-01-05_4.9-o -> ASB-2019-01-05_4.9-o
+ * [new tag]                   ASB-2019-01-05_4.9-o-mr1 -> ASB-2019-01-05_4.9-o-mr1
+ * [new tag]                   ASB-2019-01-05_4.9-o-release -> ASB-2019-01-05_4.9-o-release
+ * [new tag]                   ASB-2019-01-05_4.9-p -> ASB-2019-01-05_4.9-p
+ * [new tag]                   ASB-2019-01-05_4.9-p-release -> ASB-2019-01-05_4.9-p-release
+ * [new tag]                   ASB-2019-02-05_3.18 -> ASB-2019-02-05_3.18
+ * [new tag]                   ASB-2019-02-05_3.18-n-release -> ASB-2019-02-05_3.18-n-release
+ * [new tag]                   ASB-2019-02-05_3.18-o-mr1 -> ASB-2019-02-05_3.18-o-mr1
+ * [new tag]                   ASB-2019-02-05_3.18-o-release -> ASB-2019-02-05_3.18-o-release
+ * [new tag]                   ASB-2019-02-05_4.14 -> ASB-2019-02-05_4.14
+ * [new tag]                   ASB-2019-02-05_4.14-p -> ASB-2019-02-05_4.14-p
+ * [new tag]                   ASB-2019-02-05_4.14-p-release -> ASB-2019-02-05_4.14-p-release
+ * [new tag]                   ASB-2019-02-05_4.19 -> ASB-2019-02-05_4.19
+ * [new tag]                   ASB-2019-02-05_4.4 -> ASB-2019-02-05_4.4
+ * [new tag]                   ASB-2019-02-05_4.4-n -> ASB-2019-02-05_4.4-n
+ * [new tag]                   ASB-2019-02-05_4.4-n-release -> ASB-2019-02-05_4.4-n-release
+ * [new tag]                   ASB-2019-02-05_4.4-o -> ASB-2019-02-05_4.4-o
+ * [new tag]                   ASB-2019-02-05_4.4-o-mr1 -> ASB-2019-02-05_4.4-o-mr1
+ * [new tag]                   ASB-2019-02-05_4.4-o-release -> ASB-2019-02-05_4.4-o-release
+ * [new tag]                   ASB-2019-02-05_4.4-p -> ASB-2019-02-05_4.4-p
+ * [new tag]                   ASB-2019-02-05_4.4-p-release -> ASB-2019-02-05_4.4-p-release
+ * [new tag]                   ASB-2019-02-05_4.9 -> ASB-2019-02-05_4.9
+ * [new tag]                   ASB-2019-02-05_4.9-o -> ASB-2019-02-05_4.9-o
+ * [new tag]                   ASB-2019-02-05_4.9-o-mr1 -> ASB-2019-02-05_4.9-o-mr1
+ * [new tag]                   ASB-2019-02-05_4.9-o-release -> ASB-2019-02-05_4.9-o-release
+ * [new tag]                   ASB-2019-02-05_4.9-p -> ASB-2019-02-05_4.9-p
+ * [new tag]                   ASB-2019-02-05_4.9-p-release -> ASB-2019-02-05_4.9-p-release
+ * [new tag]                   acpi-5.0-rc6 -> acpi-5.0-rc6
+ * [new tag]                   experimental-android-4.20 -> experimental-android-4.20
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

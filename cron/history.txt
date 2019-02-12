@@ -26366,3 +26366,53 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 67f41d28c290] updates
+ 1 file changed, 150 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   5f1a91f158d3..67f41d28c290  master -> master
+   6bfda4eafc7c..5f1a91f158d3  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Tue Feb 12 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 03ac36a174f6...cfec9fc7e893 cpufreq/suspend -> cpufreq/suspend (forced update)
+ - [deleted]                   bkp/sched/cleanups
+ * [new branch]                cpufreq/freq-constraint-pmqos -> cpufreq/freq-constraint-pmqos
+ * [new branch]                bkp/android-hikey-linaro-4.19 -> bkp/android-hikey-linaro-4.19
+ * [new branch]                bkp/cpufreq/suspend -> bkp/cpufreq/suspend
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

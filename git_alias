@@ -82,7 +82,7 @@ gpatchcs() { gpatchc --subject-prefix="PATCH V$1" $2; }
 alias ph='gpatch HEAD^'
 phc() { gpatch $1^..$1; }
 rpull() { git request-pull remotes/linux-linaro/linux-linaro-core-tracking git://git.linaro.org/arm/big.LITTLE/mp.git $1 > ../pull.txt; cat ../pull.txt; }
-rpullcpufreq() { git request-pull origin/master git://git.linaro.org/people/vireshk/linux.git $1 > ../pull.txt; cat ../pull.txt; }
+rpullcpufreq() { git request-pull pm/linux-next git://git.kernel.org/pub/scm/linux/kernel/git/vireshk/pm.git cpufreq/arm/linux-next > ~/junk/pull.txt; cat ~/junk/pull.txt; }
 rpullopp() { git request-pull origin/master git://git.kernel.org/pub/scm/linux/kernel/git/vireshk/pm.git opp/linux-next > ~/junk/pull.txt; cat ~/junk/pull.txt; }
 rpulloppn() { git request-pull pm/linux-next git://git.kernel.org/pub/scm/linux/kernel/git/vireshk/pm.git opp/linux-next > ~/junk/pull.txt; cat ~/junk/pull.txt; }
 

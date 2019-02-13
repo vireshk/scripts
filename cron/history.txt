@@ -26416,3 +26416,85 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master a19f9adf47c6] updates
+ 1 file changed, 50 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   67f41d28c290..a19f9adf47c6  master -> master
+   5f1a91f158d3..67f41d28c290  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Feb 13 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + cfec9fc7e893...55a5722e4dbe cpufreq/suspend -> cpufreq/suspend (forced update)
+ + 03ac36a174f6...cfec9fc7e893 bkp/cpufreq/suspend -> bkp/cpufreq/suspend (forced update)
+ + 09d218263339...37c9540210ba lnext/akpm -> lnext/akpm (forced update)
+ + f9f83faf3e7e...97bd34fee3df lnext/akpm-base -> lnext/akpm-base (forced update)
+ + dc4c89997735...b5829453d81a lnext/master -> lnext/master (forced update)
+ + 0e2a32a55ef6...88edf2c308b0 lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   e74c98ca2d6a..fb7453e61a2b  lnext/stable -> lnext/stable
+   8834f5600cf3..1f947a7a011f  origin/HEAD -> origin/HEAD
+   8834f5600cf3..1f947a7a011f  origin/master -> origin/master
+ + d2279409c131...dd476dd35c93 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 1fad3c513fc7...d26ff2405272 pm/linux-next -> pm/linux-next (forced update)
+   8834f5600cf3..d13937116f1e  pm/master -> pm/master
+ + 1fad3c513fc7...d26ff2405272 pm/testing -> pm/testing (forced update)
+   3fc175d79dbc..9649be2211eb  tip/auto-latest -> tip/auto-latest
+   37b144df8099..8087f407364d  tip/irq-urgent-for-linus -> tip/irq-urgent-for-linus
+   434537bbd50f..1342d8080f61  tip/irq/core -> tip/irq/core
+   37b144df8099..8087f407364d  tip/irq/urgent -> tip/irq/urgent
+   e158488be27b..1a1fb985f2e2  tip/locking-urgent-for-linus -> tip/locking-urgent-for-linus
+   47b8f3ab9c49..49262de2270e  tip/locking/core -> tip/locking/core
+   e158488be27b..1a1fb985f2e2  tip/locking/urgent -> tip/locking/urgent
+   8affee43e854..9eb1f524bbbe  tip/master -> tip/master
+   d3c8c0af7565..3bb2600657da  tip/perf-urgent-for-linus -> tip/perf-urgent-for-linus
+   ca3bb3d027f6..af63147c1eda  tip/perf/core -> tip/perf/core
+   9dff0aa95a32..81ec3f3c4c4d  tip/perf/urgent -> tip/perf/urgent
+   f6783319737f..1b5500d73466  tip/sched/core -> tip/sched/core
+   e27c49291a7f..41ea39101d6b  tip/timers/2038 -> tip/timers/2038
+   e6d429313ea5..20e55bc17dd0  tip/x86-urgent-for-linus -> tip/x86-urgent-for-linus
+   82434d23f36d..653a561bb2fd  tip/x86/cleanups -> tip/x86/cleanups
+   0237199186e7..266d63a7d9d4  tip/x86/cpu -> tip/x86/cpu
+   bae54dc4f353..2f7726f95557  tip/x86/fpu -> tip/x86/fpu
+   6848ac7ca39a..ad8cfb9c42ef  tip/x86/mm -> tip/x86/mm
+   c04e55388a4f..1c034a2fe560  tip/x86/platform -> tip/x86/platform
+   45b13b424faa..20e55bc17dd0  tip/x86/urgent -> tip/x86/urgent
+ * [new branch]                sched/cleanup -> sched/cleanup
+ * [new branch]                bkp/cpufreq/freq-constraint-pmqos -> bkp/cpufreq/freq-constraint-pmqos
+ * [new tag]                   next-20190212 -> next-20190212
+ * [new tag]                   v5.0-rc6 -> v5.0-rc6
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

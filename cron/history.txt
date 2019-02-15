@@ -26548,3 +26548,60 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master a7aab81b72f3] updates
+ 1 file changed, 50 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   84dd9b46110d..a7aab81b72f3  master -> master
+   a19f9adf47c6..84dd9b46110d  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Fri Feb 15 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 1fad3c513fc7...e0ea5fc21f9d cpufreq/freq-constraint-pmqos -> cpufreq/freq-constraint-pmqos (forced update)
+ - [deleted]                   cpufreq/suspend
+ - [deleted]                   sched/cleanup
+ + 1631f7494c0b...d26ff2405272 temp1 -> temp1 (forced update)
+ + 47020d9fb64e...7c139d3f0f99 temp2 -> temp2 (forced update)
+ - [deleted]                   temp3
+ + dd476dd35c93...3580ae18d801 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   d26ff2405272..580a746702bd  pm/linux-next -> pm/linux-next
+   d26ff2405272..580a746702bd  pm/testing -> pm/testing
+ * [new branch]                bkp/temp1 -> bkp/temp1
+ * [new branch]                bkp/temp2 -> bkp/temp2
+ * [new branch]                bkp/temp3 -> bkp/temp3
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

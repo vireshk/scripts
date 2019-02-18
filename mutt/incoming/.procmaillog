@@ -731,3 +731,21 @@ From vireshk  Thu Feb  7 10:05:17 2019
 From vireshk  Thu Feb  7 10:06:21 2019
  Subject: [PATCH 2/2] cpufreq: OMAP: Register an Energy Model
   Folder: PATCH_2-2_cpufreq_OMAP_Register_an_Energy_Model.mbox		   5839
+From vireshk  Mon Feb 18 08:09:22 2019
+ Subject: [PATCH 1/2] cpufreq: pcc-cpufreq: remove unneeded semicolon
+  Folder: PATCH_1-2_cpufreq_pcc-cpufreq_remove_unneeded_semicolon.mbox	   5832
+From vireshk  Mon Feb 18 08:09:23 2019
+ Subject: [PATCH 2/2] cpufreq: longhaul: remove unneeded semicolon
+  Folder: PATCH_2-2_cpufreq_longhaul_remove_unneeded_semicolon.mbox	   5789
+From vireshk  Mon Feb 18 08:09:24 2019
+ Subject: [PATCH] cpufreq: speedstep: convert BUG() to BUG_ON()
+  Folder: PATCH_cpufreq_speedstep_convert_BUG__to_BUG_ON_.mbox		   5798
+From vireshk  Mon Feb 18 08:09:27 2019
+ Subject: [PATCH] cpufreq: powernv: fix missing check of return value in init_p
+  Folder: PATCH_cpufreq_powernv_fix_missing_check_of_return_value_in_i	   6724
+From vireshk  Fri Feb 15 08:21:53 2019
+ Subject: [PATCH] cpufreq: davinci: move configuration to include/linux/platfor
+  Folder: PATCH_cpufreq_davinci_move_configuration_to_include-linux-pl	   9347
+From vireshk  Fri Feb 15 08:21:53 2019
+ Subject: [PATCH] cpufreq: davinci: move configuration to include/linux/platfor
+  Folder: PATCH_cpufreq_davinci_move_configuration_to_include-linux-pl	   9347

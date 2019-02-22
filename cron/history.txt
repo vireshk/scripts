@@ -26828,3 +26828,78 @@ Please make sure you have the correct access rights
 and the repository exists.
 
 Entering /home/vireshk/scripts
+[master 82fa2c45ce31] updates
+ 1 file changed, 49 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   ade84276993f..82fa2c45ce31  master -> master
+   d2164f2fcac4..ade84276993f  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Fri Feb 22 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   android-4.9-hikey-rt-pressure
+ - [deleted]                   android-4.9-walt-remove
+ - [deleted]                   android-hikey-linaro-4.14
+ + 997668863b3f...a6a92d6a4ff3 cpufreq/freq-constraint-pmqos -> cpufreq/freq-constraint-pmqos (forced update)
+ + c19747c8b1f2...9bdc69b75620 sched/idle -> sched/idle (forced update)
+ + 1d68d891d813...997668863b3f bkp/cpufreq/freq-constraint-pmqos -> bkp/cpufreq/freq-constraint-pmqos (forced update)
+ + e5905bd6becd...23b56a58df0a pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   a65b747c7753..23b56a58df0a  pm/linux-next -> pm/linux-next
+   a65b747c7753..23b56a58df0a  pm/testing -> pm/testing
+ + 9649be2211eb...7bb209768006 tip/auto-latest -> tip/auto-latest (forced update)
+   4bbfd7467cfc..cae45e1c6c54  tip/core/rcu -> tip/core/rcu
+   74c953ca5f6b..582a32e70882  tip/efi-urgent-for-linus -> tip/efi-urgent-for-linus
+   69c1f396f25b..5c418dc789a3  tip/efi/core -> tip/efi/core
+   74c953ca5f6b..582a32e70882  tip/efi/urgent -> tip/efi/urgent
+   1342d8080f61..4e6b26d23dc1  tip/irq/core -> tip/irq/core
+   49262de2270e..0cf264b3133d  tip/locking/core -> tip/locking/core
+ + 9eb1f524bbbe...d34a27ce2f54 tip/master -> tip/master (forced update)
+   3bb2600657da..528871b45602  tip/perf-urgent-for-linus -> tip/perf-urgent-for-linus
+   af63147c1eda..43f4e6279f05  tip/perf/core -> tip/perf/core
+   81ec3f3c4c4d..528871b45602  tip/perf/urgent -> tip/perf/urgent
+   1c1522d32ac4..a0bcd3c0b8a5  tip/ras/core -> tip/ras/core
+   1b5500d73466..c89d92eddfad  tip/sched/core -> tip/sched/core
+   20e55bc17dd0..f331e766c4be  tip/x86-urgent-for-linus -> tip/x86-urgent-for-linus
+   ccec81e4251f..f9d230e893e8  tip/x86/boot -> tip/x86/boot
+   653a561bb2fd..f91fecc09e49  tip/x86/cleanups -> tip/x86/cleanups
+   20e55bc17dd0..f331e766c4be  tip/x86/urgent -> tip/x86/urgent
+ * [new branch]                cpufreq/qcom-kyro-fix -> cpufreq/qcom-kyro-fix
+ * [new branch]                tip/WIP.irq -> tip/WIP.irq
+ * [new branch]                tip/WIP.x86/timers -> tip/WIP.x86/timers
+ * [new branch]                tip/x86/uv -> tip/x86/uv
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

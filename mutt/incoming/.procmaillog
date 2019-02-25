@@ -749,3 +749,6 @@ From vireshk  Fri Feb 15 08:21:53 2019
 From vireshk  Fri Feb 15 08:21:53 2019
  Subject: [PATCH] cpufreq: davinci: move configuration to include/linux/platfor
   Folder: PATCH_cpufreq_davinci_move_configuration_to_include-linux-pl	   9347
+From vireshk  Mon Feb 25 09:19:55 2019
+ Subject: [PATCH 10/12] cpufreq: ap806: add missing of_node_put after of_device
+  Folder: PATCH_10-12_cpufreq_ap806_add_missing_of_node_put_after_of_d	   4890

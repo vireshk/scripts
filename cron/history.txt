@@ -26970,3 +26970,51 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master db3b1b7f874b] updates
+ 4 files changed, 146 insertions(+), 154 deletions(-)
+ create mode 100644 mutt/incoming/PATCH_10-12_cpufreq_ap806_add_missing_of_node_put_after_of_device_is_available.mbox
+ delete mode 100644 mutt/incoming/PATCH_cpufreq_davinci_move_configuration_to_include-linux-platform_data.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   81b6ea6480eb..db3b1b7f874b  master -> master
+   82fa2c45ce31..81b6ea6480eb  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Tue Feb 26 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 40b46b3b2f09...76d8efa73ba0 bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next (forced update)
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

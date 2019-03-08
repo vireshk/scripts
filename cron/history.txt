@@ -27351,3 +27351,547 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 5fe9010abe43] updates
+ 1 file changed, 64 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   d51beaa721cb..5fe9010abe43  master -> master
+   5f6d2e9e0522..d51beaa721cb  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Fri Mar  8 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 7d8e05c1a4f4...fde638bcedcd cpufreq/notifiers -> cpufreq/notifiers (forced update)
+ + 231c7b7d0d9f...610cd4eadec4 master -> master (forced update)
+   15d6e84159eb..f1b72a89f5bb  bkp/aosp/android-4.4 -> bkp/aosp/android-4.4
+ + 2bf83fe7e1ff...7d8e05c1a4f4 bkp/cpufreq/notifiers -> bkp/cpufreq/notifiers (forced update)
+   f90d64483ebd..610cd4eadec4  origin/HEAD -> origin/HEAD
+   f90d64483ebd..610cd4eadec4  origin/master -> origin/master
+ + 7d8e05c1a4f4...fde638bcedcd pmko/cpufreq/notifiers -> pmko/cpufreq/notifiers (forced update)
+   2447a018c322..e90210bb658d  stable/linux-3.16.y -> stable/linux-3.16.y
+   c35c375efa4e..e128f16fddb6  stable/linux-3.18.y -> stable/linux-3.18.y
+   8518814021e0..f63b2b3204ea  stable/linux-3.2.y -> stable/linux-3.2.y
+   200d858d94b4..c4ff7514e71d  stable/linux-4.1.y -> stable/linux-4.1.y
+   e5dc37a09817..e87c13993f16  stable/linux-4.13.y -> stable/linux-4.13.y
+   780a781dd6f1..99403097be0c  stable/linux-4.14.y -> stable/linux-4.14.y
+   26d6298789e6..af13f43f01a3  stable/linux-4.4.y -> stable/linux-4.4.y
+   563c24f65f4f..f422a02f865a  stable/linux-4.9.y -> stable/linux-4.9.y
+   bebc6082da0a..1c163f4c7b3f  stable/master -> stable/master
+ - [deleted]                   master
+ * [new branch]                bkp/wakeup-source -> bkp/wakeup-source
+ * [new branch]                stable/linux-4.15.y -> stable/linux-4.15.y
+ * [new branch]                stable/linux-4.16.y -> stable/linux-4.16.y
+ * [new branch]                stable/linux-4.17.y -> stable/linux-4.17.y
+ * [new branch]                stable/linux-4.18.y -> stable/linux-4.18.y
+ * [new branch]                stable/linux-4.19.y -> stable/linux-4.19.y
+ * [new branch]                stable/linux-4.20.y -> stable/linux-4.20.y
+ * [new branch]                stable/linux-5.0.y -> stable/linux-5.0.y
+ * [new tag]                   v3.16.51 -> v3.16.51
+ * [new tag]                   v3.16.52 -> v3.16.52
+ * [new tag]                   v3.16.53 -> v3.16.53
+ * [new tag]                   v3.16.54 -> v3.16.54
+ * [new tag]                   v3.16.55 -> v3.16.55
+ * [new tag]                   v3.16.56 -> v3.16.56
+ * [new tag]                   v3.16.57 -> v3.16.57
+ * [new tag]                   v3.16.58 -> v3.16.58
+ * [new tag]                   v3.16.59 -> v3.16.59
+ * [new tag]                   v3.16.60 -> v3.16.60
+ * [new tag]                   v3.16.61 -> v3.16.61
+ * [new tag]                   v3.16.62 -> v3.16.62
+ * [new tag]                   v3.16.63 -> v3.16.63
+ * [new tag]                   v3.18.100 -> v3.18.100
+ * [new tag]                   v3.18.101 -> v3.18.101
+ * [new tag]                   v3.18.102 -> v3.18.102
+ * [new tag]                   v3.18.103 -> v3.18.103
+ * [new tag]                   v3.18.104 -> v3.18.104
+ * [new tag]                   v3.18.105 -> v3.18.105
+ * [new tag]                   v3.18.106 -> v3.18.106
+ * [new tag]                   v3.18.107 -> v3.18.107
+ * [new tag]                   v3.18.108 -> v3.18.108
+ * [new tag]                   v3.18.109 -> v3.18.109
+ * [new tag]                   v3.18.110 -> v3.18.110
+ * [new tag]                   v3.18.111 -> v3.18.111
+ * [new tag]                   v3.18.112 -> v3.18.112
+ * [new tag]                   v3.18.113 -> v3.18.113
+ * [new tag]                   v3.18.114 -> v3.18.114
+ * [new tag]                   v3.18.115 -> v3.18.115
+ * [new tag]                   v3.18.116 -> v3.18.116
+ * [new tag]                   v3.18.117 -> v3.18.117
+ * [new tag]                   v3.18.118 -> v3.18.118
+ * [new tag]                   v3.18.119 -> v3.18.119
+ * [new tag]                   v3.18.120 -> v3.18.120
+ * [new tag]                   v3.18.121 -> v3.18.121
+ * [new tag]                   v3.18.122 -> v3.18.122
+ * [new tag]                   v3.18.123 -> v3.18.123
+ * [new tag]                   v3.18.124 -> v3.18.124
+ * [new tag]                   v3.18.125 -> v3.18.125
+ * [new tag]                   v3.18.126 -> v3.18.126
+ * [new tag]                   v3.18.127 -> v3.18.127
+ * [new tag]                   v3.18.128 -> v3.18.128
+ * [new tag]                   v3.18.129 -> v3.18.129
+ * [new tag]                   v3.18.130 -> v3.18.130
+ * [new tag]                   v3.18.131 -> v3.18.131
+ * [new tag]                   v3.18.132 -> v3.18.132
+ * [new tag]                   v3.18.133 -> v3.18.133
+ * [new tag]                   v3.18.134 -> v3.18.134
+ * [new tag]                   v3.18.135 -> v3.18.135
+ * [new tag]                   v3.18.136 -> v3.18.136
+ * [new tag]                   v3.18.84 -> v3.18.84
+ * [new tag]                   v3.18.85 -> v3.18.85
+ * [new tag]                   v3.18.86 -> v3.18.86
+ * [new tag]                   v3.18.87 -> v3.18.87
+ * [new tag]                   v3.18.88 -> v3.18.88
+ * [new tag]                   v3.18.89 -> v3.18.89
+ * [new tag]                   v3.18.90 -> v3.18.90
+ * [new tag]                   v3.18.91 -> v3.18.91
+ * [new tag]                   v3.18.92 -> v3.18.92
+ * [new tag]                   v3.18.93 -> v3.18.93
+ * [new tag]                   v3.18.94 -> v3.18.94
+ * [new tag]                   v3.18.95 -> v3.18.95
+ * [new tag]                   v3.18.96 -> v3.18.96
+ * [new tag]                   v3.18.97 -> v3.18.97
+ * [new tag]                   v3.18.98 -> v3.18.98
+ * [new tag]                   v3.18.99 -> v3.18.99
+ * [new tag]                   v3.2.100 -> v3.2.100
+ * [new tag]                   v3.2.101 -> v3.2.101
+ * [new tag]                   v3.2.102 -> v3.2.102
+ * [new tag]                   v3.2.96 -> v3.2.96
+ * [new tag]                   v3.2.97 -> v3.2.97
+ * [new tag]                   v3.2.98 -> v3.2.98
+ * [new tag]                   v3.2.99 -> v3.2.99
+ * [new tag]                   v4.1.47 -> v4.1.47
+ * [new tag]                   v4.1.48 -> v4.1.48
+ * [new tag]                   v4.1.49 -> v4.1.49
+ * [new tag]                   v4.1.50 -> v4.1.50
+ * [new tag]                   v4.1.51 -> v4.1.51
+ * [new tag]                   v4.1.52 -> v4.1.52
+ * [new tag]                   v4.13.16 -> v4.13.16
+ * [new tag]                   v4.14.10 -> v4.14.10
+ * [new tag]                   v4.14.100 -> v4.14.100
+ * [new tag]                   v4.14.101 -> v4.14.101
+ * [new tag]                   v4.14.102 -> v4.14.102
+ * [new tag]                   v4.14.103 -> v4.14.103
+ * [new tag]                   v4.14.104 -> v4.14.104
+ * [new tag]                   v4.14.105 -> v4.14.105
+ * [new tag]                   v4.14.11 -> v4.14.11
+ * [new tag]                   v4.14.12 -> v4.14.12
+ * [new tag]                   v4.14.13 -> v4.14.13
+ * [new tag]                   v4.14.14 -> v4.14.14
+ * [new tag]                   v4.14.15 -> v4.14.15
+ * [new tag]                   v4.14.16 -> v4.14.16
+ * [new tag]                   v4.14.17 -> v4.14.17
+ * [new tag]                   v4.14.18 -> v4.14.18
+ * [new tag]                   v4.14.19 -> v4.14.19
+ * [new tag]                   v4.14.2 -> v4.14.2
+ * [new tag]                   v4.14.20 -> v4.14.20
+ * [new tag]                   v4.14.21 -> v4.14.21
+ * [new tag]                   v4.14.22 -> v4.14.22
+ * [new tag]                   v4.14.23 -> v4.14.23
+ * [new tag]                   v4.14.24 -> v4.14.24
+ * [new tag]                   v4.14.25 -> v4.14.25
+ * [new tag]                   v4.14.26 -> v4.14.26
+ * [new tag]                   v4.14.27 -> v4.14.27
+ * [new tag]                   v4.14.28 -> v4.14.28
+ * [new tag]                   v4.14.29 -> v4.14.29
+ * [new tag]                   v4.14.3 -> v4.14.3
+ * [new tag]                   v4.14.30 -> v4.14.30
+ * [new tag]                   v4.14.31 -> v4.14.31
+ * [new tag]                   v4.14.32 -> v4.14.32
+ * [new tag]                   v4.14.33 -> v4.14.33
+ * [new tag]                   v4.14.34 -> v4.14.34
+ * [new tag]                   v4.14.35 -> v4.14.35
+ * [new tag]                   v4.14.36 -> v4.14.36
+ * [new tag]                   v4.14.37 -> v4.14.37
+ * [new tag]                   v4.14.38 -> v4.14.38
+ * [new tag]                   v4.14.39 -> v4.14.39
+ * [new tag]                   v4.14.4 -> v4.14.4
+ * [new tag]                   v4.14.40 -> v4.14.40
+ * [new tag]                   v4.14.41 -> v4.14.41
+ * [new tag]                   v4.14.42 -> v4.14.42
+ * [new tag]                   v4.14.43 -> v4.14.43
+ * [new tag]                   v4.14.44 -> v4.14.44
+ * [new tag]                   v4.14.45 -> v4.14.45
+ * [new tag]                   v4.14.46 -> v4.14.46
+ * [new tag]                   v4.14.47 -> v4.14.47
+ * [new tag]                   v4.14.48 -> v4.14.48
+ * [new tag]                   v4.14.49 -> v4.14.49
+ * [new tag]                   v4.14.5 -> v4.14.5
+ * [new tag]                   v4.14.50 -> v4.14.50
+ * [new tag]                   v4.14.51 -> v4.14.51
+ * [new tag]                   v4.14.52 -> v4.14.52
+ * [new tag]                   v4.14.53 -> v4.14.53
+ * [new tag]                   v4.14.54 -> v4.14.54
+ * [new tag]                   v4.14.55 -> v4.14.55
+ * [new tag]                   v4.14.56 -> v4.14.56
+ * [new tag]                   v4.14.57 -> v4.14.57
+ * [new tag]                   v4.14.58 -> v4.14.58
+ * [new tag]                   v4.14.59 -> v4.14.59
+ * [new tag]                   v4.14.6 -> v4.14.6
+ * [new tag]                   v4.14.60 -> v4.14.60
+ * [new tag]                   v4.14.61 -> v4.14.61
+ * [new tag]                   v4.14.62 -> v4.14.62
+ * [new tag]                   v4.14.63 -> v4.14.63
+ * [new tag]                   v4.14.64 -> v4.14.64
+ * [new tag]                   v4.14.65 -> v4.14.65
+ * [new tag]                   v4.14.66 -> v4.14.66
+ * [new tag]                   v4.14.67 -> v4.14.67
+ * [new tag]                   v4.14.68 -> v4.14.68
+ * [new tag]                   v4.14.69 -> v4.14.69
+ * [new tag]                   v4.14.7 -> v4.14.7
+ * [new tag]                   v4.14.70 -> v4.14.70
+ * [new tag]                   v4.14.71 -> v4.14.71
+ * [new tag]                   v4.14.72 -> v4.14.72
+ * [new tag]                   v4.14.73 -> v4.14.73
+ * [new tag]                   v4.14.74 -> v4.14.74
+ * [new tag]                   v4.14.75 -> v4.14.75
+ * [new tag]                   v4.14.76 -> v4.14.76
+ * [new tag]                   v4.14.77 -> v4.14.77
+ * [new tag]                   v4.14.78 -> v4.14.78
+ * [new tag]                   v4.14.79 -> v4.14.79
+ * [new tag]                   v4.14.8 -> v4.14.8
+ * [new tag]                   v4.14.80 -> v4.14.80
+ * [new tag]                   v4.14.81 -> v4.14.81
+ * [new tag]                   v4.14.82 -> v4.14.82
+ * [new tag]                   v4.14.83 -> v4.14.83
+ * [new tag]                   v4.14.84 -> v4.14.84
+ * [new tag]                   v4.14.85 -> v4.14.85
+ * [new tag]                   v4.14.86 -> v4.14.86
+ * [new tag]                   v4.14.87 -> v4.14.87
+ * [new tag]                   v4.14.88 -> v4.14.88
+ * [new tag]                   v4.14.89 -> v4.14.89
+ * [new tag]                   v4.14.9 -> v4.14.9
+ * [new tag]                   v4.14.90 -> v4.14.90
+ * [new tag]                   v4.14.91 -> v4.14.91
+ * [new tag]                   v4.14.92 -> v4.14.92
+ * [new tag]                   v4.14.93 -> v4.14.93
+ * [new tag]                   v4.14.94 -> v4.14.94
+ * [new tag]                   v4.14.95 -> v4.14.95
+ * [new tag]                   v4.14.96 -> v4.14.96
+ * [new tag]                   v4.14.97 -> v4.14.97
+ * [new tag]                   v4.14.98 -> v4.14.98
+ * [new tag]                   v4.14.99 -> v4.14.99
+ * [new tag]                   v4.15.1 -> v4.15.1
+ * [new tag]                   v4.15.10 -> v4.15.10
+ * [new tag]                   v4.15.11 -> v4.15.11
+ * [new tag]                   v4.15.12 -> v4.15.12
+ * [new tag]                   v4.15.13 -> v4.15.13
+ * [new tag]                   v4.15.14 -> v4.15.14
+ * [new tag]                   v4.15.15 -> v4.15.15
+ * [new tag]                   v4.15.16 -> v4.15.16
+ * [new tag]                   v4.15.17 -> v4.15.17
+ * [new tag]                   v4.15.18 -> v4.15.18
+ * [new tag]                   v4.15.2 -> v4.15.2
+ * [new tag]                   v4.15.3 -> v4.15.3
+ * [new tag]                   v4.15.4 -> v4.15.4
+ * [new tag]                   v4.15.5 -> v4.15.5
+ * [new tag]                   v4.15.6 -> v4.15.6
+ * [new tag]                   v4.15.7 -> v4.15.7
+ * [new tag]                   v4.15.8 -> v4.15.8
+ * [new tag]                   v4.15.9 -> v4.15.9
+ * [new tag]                   v4.16.1 -> v4.16.1
+ * [new tag]                   v4.16.10 -> v4.16.10
+ * [new tag]                   v4.16.11 -> v4.16.11
+ * [new tag]                   v4.16.12 -> v4.16.12
+ * [new tag]                   v4.16.13 -> v4.16.13
+ * [new tag]                   v4.16.14 -> v4.16.14
+ * [new tag]                   v4.16.15 -> v4.16.15
+ * [new tag]                   v4.16.16 -> v4.16.16
+ * [new tag]                   v4.16.17 -> v4.16.17
+ * [new tag]                   v4.16.18 -> v4.16.18
+ * [new tag]                   v4.16.2 -> v4.16.2
+ * [new tag]                   v4.16.3 -> v4.16.3
+ * [new tag]                   v4.16.4 -> v4.16.4
+ * [new tag]                   v4.16.5 -> v4.16.5
+ * [new tag]                   v4.16.6 -> v4.16.6
+ * [new tag]                   v4.16.7 -> v4.16.7
+ * [new tag]                   v4.16.8 -> v4.16.8
+ * [new tag]                   v4.16.9 -> v4.16.9
+ * [new tag]                   v4.17.1 -> v4.17.1
+ * [new tag]                   v4.17.10 -> v4.17.10
+ * [new tag]                   v4.17.11 -> v4.17.11
+ * [new tag]                   v4.17.12 -> v4.17.12
+ * [new tag]                   v4.17.13 -> v4.17.13
+ * [new tag]                   v4.17.14 -> v4.17.14
+ * [new tag]                   v4.17.15 -> v4.17.15
+ * [new tag]                   v4.17.16 -> v4.17.16
+ * [new tag]                   v4.17.17 -> v4.17.17
+ * [new tag]                   v4.17.18 -> v4.17.18
+ * [new tag]                   v4.17.19 -> v4.17.19
+ * [new tag]                   v4.17.2 -> v4.17.2
+ * [new tag]                   v4.17.3 -> v4.17.3
+ * [new tag]                   v4.17.4 -> v4.17.4
+ * [new tag]                   v4.17.5 -> v4.17.5
+ * [new tag]                   v4.17.6 -> v4.17.6
+ * [new tag]                   v4.17.7 -> v4.17.7
+ * [new tag]                   v4.17.8 -> v4.17.8
+ * [new tag]                   v4.17.9 -> v4.17.9
+ * [new tag]                   v4.18.1 -> v4.18.1
+ * [new tag]                   v4.18.10 -> v4.18.10
+ * [new tag]                   v4.18.11 -> v4.18.11
+ * [new tag]                   v4.18.12 -> v4.18.12
+ * [new tag]                   v4.18.13 -> v4.18.13
+ * [new tag]                   v4.18.14 -> v4.18.14
+ * [new tag]                   v4.18.15 -> v4.18.15
+ * [new tag]                   v4.18.16 -> v4.18.16
+ * [new tag]                   v4.18.17 -> v4.18.17
+ * [new tag]                   v4.18.18 -> v4.18.18
+ * [new tag]                   v4.18.19 -> v4.18.19
+ * [new tag]                   v4.18.2 -> v4.18.2
+ * [new tag]                   v4.18.20 -> v4.18.20
+ * [new tag]                   v4.18.3 -> v4.18.3
+ * [new tag]                   v4.18.4 -> v4.18.4
+ * [new tag]                   v4.18.5 -> v4.18.5
+ * [new tag]                   v4.18.6 -> v4.18.6
+ * [new tag]                   v4.18.7 -> v4.18.7
+ * [new tag]                   v4.18.8 -> v4.18.8
+ * [new tag]                   v4.18.9 -> v4.18.9
+ * [new tag]                   v4.19.1 -> v4.19.1
+ * [new tag]                   v4.19.10 -> v4.19.10
+ * [new tag]                   v4.19.11 -> v4.19.11
+ * [new tag]                   v4.19.12 -> v4.19.12
+ * [new tag]                   v4.19.13 -> v4.19.13
+ * [new tag]                   v4.19.14 -> v4.19.14
+ * [new tag]                   v4.19.15 -> v4.19.15
+ * [new tag]                   v4.19.16 -> v4.19.16
+ * [new tag]                   v4.19.17 -> v4.19.17
+ * [new tag]                   v4.19.18 -> v4.19.18
+ * [new tag]                   v4.19.19 -> v4.19.19
+ * [new tag]                   v4.19.2 -> v4.19.2
+ * [new tag]                   v4.19.20 -> v4.19.20
+ * [new tag]                   v4.19.21 -> v4.19.21
+ * [new tag]                   v4.19.22 -> v4.19.22
+ * [new tag]                   v4.19.23 -> v4.19.23
+ * [new tag]                   v4.19.24 -> v4.19.24
+ * [new tag]                   v4.19.25 -> v4.19.25
+ * [new tag]                   v4.19.26 -> v4.19.26
+ * [new tag]                   v4.19.27 -> v4.19.27
+ * [new tag]                   v4.19.3 -> v4.19.3
+ * [new tag]                   v4.19.4 -> v4.19.4
+ * [new tag]                   v4.19.5 -> v4.19.5
+ * [new tag]                   v4.19.6 -> v4.19.6
+ * [new tag]                   v4.19.7 -> v4.19.7
+ * [new tag]                   v4.19.8 -> v4.19.8
+ * [new tag]                   v4.19.9 -> v4.19.9
+ * [new tag]                   v4.20.1 -> v4.20.1
+ * [new tag]                   v4.20.10 -> v4.20.10
+ * [new tag]                   v4.20.11 -> v4.20.11
+ * [new tag]                   v4.20.12 -> v4.20.12
+ * [new tag]                   v4.20.13 -> v4.20.13
+ * [new tag]                   v4.20.14 -> v4.20.14
+ * [new tag]                   v4.20.2 -> v4.20.2
+ * [new tag]                   v4.20.3 -> v4.20.3
+ * [new tag]                   v4.20.4 -> v4.20.4
+ * [new tag]                   v4.20.5 -> v4.20.5
+ * [new tag]                   v4.20.6 -> v4.20.6
+ * [new tag]                   v4.20.7 -> v4.20.7
+ * [new tag]                   v4.20.8 -> v4.20.8
+ * [new tag]                   v4.20.9 -> v4.20.9
+ * [new tag]                   v4.4.101 -> v4.4.101
+ * [new tag]                   v4.4.102 -> v4.4.102
+ * [new tag]                   v4.4.103 -> v4.4.103
+ * [new tag]                   v4.4.104 -> v4.4.104
+ * [new tag]                   v4.4.105 -> v4.4.105
+ * [new tag]                   v4.4.106 -> v4.4.106
+ * [new tag]                   v4.4.107 -> v4.4.107
+ * [new tag]                   v4.4.108 -> v4.4.108
+ * [new tag]                   v4.4.109 -> v4.4.109
+ * [new tag]                   v4.4.110 -> v4.4.110
+ * [new tag]                   v4.4.111 -> v4.4.111
+ * [new tag]                   v4.4.112 -> v4.4.112
+ * [new tag]                   v4.4.113 -> v4.4.113
+ * [new tag]                   v4.4.114 -> v4.4.114
+ * [new tag]                   v4.4.115 -> v4.4.115
+ * [new tag]                   v4.4.116 -> v4.4.116
+ * [new tag]                   v4.4.117 -> v4.4.117
+ * [new tag]                   v4.4.118 -> v4.4.118
+ * [new tag]                   v4.4.119 -> v4.4.119
+ * [new tag]                   v4.4.120 -> v4.4.120
+ * [new tag]                   v4.4.121 -> v4.4.121
+ * [new tag]                   v4.4.122 -> v4.4.122
+ * [new tag]                   v4.4.123 -> v4.4.123
+ * [new tag]                   v4.4.124 -> v4.4.124
+ * [new tag]                   v4.4.125 -> v4.4.125
+ * [new tag]                   v4.4.126 -> v4.4.126
+ * [new tag]                   v4.4.127 -> v4.4.127
+ * [new tag]                   v4.4.128 -> v4.4.128
+ * [new tag]                   v4.4.129 -> v4.4.129
+ * [new tag]                   v4.4.130 -> v4.4.130
+ * [new tag]                   v4.4.131 -> v4.4.131
+ * [new tag]                   v4.4.132 -> v4.4.132
+ * [new tag]                   v4.4.133 -> v4.4.133
+ * [new tag]                   v4.4.134 -> v4.4.134
+ * [new tag]                   v4.4.135 -> v4.4.135
+ * [new tag]                   v4.4.136 -> v4.4.136
+ * [new tag]                   v4.4.137 -> v4.4.137
+ * [new tag]                   v4.4.138 -> v4.4.138
+ * [new tag]                   v4.4.139 -> v4.4.139
+ * [new tag]                   v4.4.140 -> v4.4.140
+ * [new tag]                   v4.4.141 -> v4.4.141
+ * [new tag]                   v4.4.142 -> v4.4.142
+ * [new tag]                   v4.4.143 -> v4.4.143
+ * [new tag]                   v4.4.144 -> v4.4.144
+ * [new tag]                   v4.4.145 -> v4.4.145
+ * [new tag]                   v4.4.146 -> v4.4.146
+ * [new tag]                   v4.4.147 -> v4.4.147
+ * [new tag]                   v4.4.148 -> v4.4.148
+ * [new tag]                   v4.4.149 -> v4.4.149
+ * [new tag]                   v4.4.150 -> v4.4.150
+ * [new tag]                   v4.4.151 -> v4.4.151
+ * [new tag]                   v4.4.152 -> v4.4.152
+ * [new tag]                   v4.4.153 -> v4.4.153
+ * [new tag]                   v4.4.154 -> v4.4.154
+ * [new tag]                   v4.4.155 -> v4.4.155
+ * [new tag]                   v4.4.156 -> v4.4.156
+ * [new tag]                   v4.4.157 -> v4.4.157
+ * [new tag]                   v4.4.158 -> v4.4.158
+ * [new tag]                   v4.4.159 -> v4.4.159
+ * [new tag]                   v4.4.160 -> v4.4.160
+ * [new tag]                   v4.4.161 -> v4.4.161
+ * [new tag]                   v4.4.162 -> v4.4.162
+ * [new tag]                   v4.4.163 -> v4.4.163
+ * [new tag]                   v4.4.164 -> v4.4.164
+ * [new tag]                   v4.4.165 -> v4.4.165
+ * [new tag]                   v4.4.166 -> v4.4.166
+ * [new tag]                   v4.4.167 -> v4.4.167
+ * [new tag]                   v4.4.168 -> v4.4.168
+ * [new tag]                   v4.4.169 -> v4.4.169
+ * [new tag]                   v4.4.170 -> v4.4.170
+ * [new tag]                   v4.4.171 -> v4.4.171
+ * [new tag]                   v4.4.172 -> v4.4.172
+ * [new tag]                   v4.4.173 -> v4.4.173
+ * [new tag]                   v4.4.174 -> v4.4.174
+ * [new tag]                   v4.4.175 -> v4.4.175
+ * [new tag]                   v4.4.176 -> v4.4.176
+ * [new tag]                   v4.9.100 -> v4.9.100
+ * [new tag]                   v4.9.101 -> v4.9.101
+ * [new tag]                   v4.9.102 -> v4.9.102
+ * [new tag]                   v4.9.103 -> v4.9.103
+ * [new tag]                   v4.9.104 -> v4.9.104
+ * [new tag]                   v4.9.105 -> v4.9.105
+ * [new tag]                   v4.9.106 -> v4.9.106
+ * [new tag]                   v4.9.107 -> v4.9.107
+ * [new tag]                   v4.9.108 -> v4.9.108
+ * [new tag]                   v4.9.109 -> v4.9.109
+ * [new tag]                   v4.9.110 -> v4.9.110
+ * [new tag]                   v4.9.111 -> v4.9.111
+ * [new tag]                   v4.9.112 -> v4.9.112
+ * [new tag]                   v4.9.113 -> v4.9.113
+ * [new tag]                   v4.9.114 -> v4.9.114
+ * [new tag]                   v4.9.115 -> v4.9.115
+ * [new tag]                   v4.9.116 -> v4.9.116
+ * [new tag]                   v4.9.117 -> v4.9.117
+ * [new tag]                   v4.9.118 -> v4.9.118
+ * [new tag]                   v4.9.119 -> v4.9.119
+ * [new tag]                   v4.9.120 -> v4.9.120
+ * [new tag]                   v4.9.121 -> v4.9.121
+ * [new tag]                   v4.9.122 -> v4.9.122
+ * [new tag]                   v4.9.123 -> v4.9.123
+ * [new tag]                   v4.9.124 -> v4.9.124
+ * [new tag]                   v4.9.125 -> v4.9.125
+ * [new tag]                   v4.9.126 -> v4.9.126
+ * [new tag]                   v4.9.127 -> v4.9.127
+ * [new tag]                   v4.9.128 -> v4.9.128
+ * [new tag]                   v4.9.129 -> v4.9.129
+ * [new tag]                   v4.9.130 -> v4.9.130
+ * [new tag]                   v4.9.131 -> v4.9.131
+ * [new tag]                   v4.9.132 -> v4.9.132
+ * [new tag]                   v4.9.133 -> v4.9.133
+ * [new tag]                   v4.9.134 -> v4.9.134
+ * [new tag]                   v4.9.135 -> v4.9.135
+ * [new tag]                   v4.9.136 -> v4.9.136
+ * [new tag]                   v4.9.137 -> v4.9.137
+ * [new tag]                   v4.9.138 -> v4.9.138
+ * [new tag]                   v4.9.139 -> v4.9.139
+ * [new tag]                   v4.9.140 -> v4.9.140
+ * [new tag]                   v4.9.141 -> v4.9.141
+ * [new tag]                   v4.9.142 -> v4.9.142
+ * [new tag]                   v4.9.143 -> v4.9.143
+ * [new tag]                   v4.9.144 -> v4.9.144
+ * [new tag]                   v4.9.145 -> v4.9.145
+ * [new tag]                   v4.9.146 -> v4.9.146
+ * [new tag]                   v4.9.147 -> v4.9.147
+ * [new tag]                   v4.9.148 -> v4.9.148
+ * [new tag]                   v4.9.149 -> v4.9.149
+ * [new tag]                   v4.9.150 -> v4.9.150
+ * [new tag]                   v4.9.151 -> v4.9.151
+ * [new tag]                   v4.9.152 -> v4.9.152
+ * [new tag]                   v4.9.153 -> v4.9.153
+ * [new tag]                   v4.9.154 -> v4.9.154
+ * [new tag]                   v4.9.155 -> v4.9.155
+ * [new tag]                   v4.9.156 -> v4.9.156
+ * [new tag]                   v4.9.157 -> v4.9.157
+ * [new tag]                   v4.9.158 -> v4.9.158
+ * [new tag]                   v4.9.159 -> v4.9.159
+ * [new tag]                   v4.9.160 -> v4.9.160
+ * [new tag]                   v4.9.161 -> v4.9.161
+ * [new tag]                   v4.9.162 -> v4.9.162
+ * [new tag]                   v4.9.65 -> v4.9.65
+ * [new tag]                   v4.9.66 -> v4.9.66
+ * [new tag]                   v4.9.67 -> v4.9.67
+ * [new tag]                   v4.9.68 -> v4.9.68
+ * [new tag]                   v4.9.69 -> v4.9.69
+ * [new tag]                   v4.9.70 -> v4.9.70
+ * [new tag]                   v4.9.71 -> v4.9.71
+ * [new tag]                   v4.9.72 -> v4.9.72
+ * [new tag]                   v4.9.73 -> v4.9.73
+ * [new tag]                   v4.9.74 -> v4.9.74
+ * [new tag]                   v4.9.75 -> v4.9.75
+ * [new tag]                   v4.9.76 -> v4.9.76
+ * [new tag]                   v4.9.77 -> v4.9.77
+ * [new tag]                   v4.9.78 -> v4.9.78
+ * [new tag]                   v4.9.79 -> v4.9.79
+ * [new tag]                   v4.9.80 -> v4.9.80
+ * [new tag]                   v4.9.81 -> v4.9.81
+ * [new tag]                   v4.9.82 -> v4.9.82
+ * [new tag]                   v4.9.83 -> v4.9.83
+ * [new tag]                   v4.9.84 -> v4.9.84
+ * [new tag]                   v4.9.85 -> v4.9.85
+ * [new tag]                   v4.9.86 -> v4.9.86
+ * [new tag]                   v4.9.87 -> v4.9.87
+ * [new tag]                   v4.9.88 -> v4.9.88
+ * [new tag]                   v4.9.89 -> v4.9.89
+ * [new tag]                   v4.9.90 -> v4.9.90
+ * [new tag]                   v4.9.91 -> v4.9.91
+ * [new tag]                   v4.9.92 -> v4.9.92
+ * [new tag]                   v4.9.93 -> v4.9.93
+ * [new tag]                   v4.9.94 -> v4.9.94
+ * [new tag]                   v4.9.95 -> v4.9.95
+ * [new tag]                   v4.9.96 -> v4.9.96
+ * [new tag]                   v4.9.97 -> v4.9.97
+ * [new tag]                   v4.9.98 -> v4.9.98
+ * [new tag]                   v4.9.99 -> v4.9.99
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

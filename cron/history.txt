@@ -28006,3 +28006,76 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 5c4cd7dcf7c8] updates
+ 1 file changed, 53 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   913180bb3b9b..5c4cd7dcf7c8  master -> master
+   667dd5e275c4..913180bb3b9b  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Mar 13 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   opp/perf-state-fix
+ - [deleted]                   wakeup-source
+ + fde638bcedcd...f98b170e408e bkp/cpufreq/notifiers -> bkp/cpufreq/notifiers (forced update)
+   f3124ccf025c..ebc551f2b8f9  origin/HEAD -> origin/HEAD
+   f3124ccf025c..ebc551f2b8f9  origin/master -> origin/master
+ + 5b735d9e8804...e393eb8dcb7a pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   66be9157281e..d3a0319f8514  pm/linux-next -> pm/linux-next
+   66be9157281e..d3a0319f8514  pm/testing -> pm/testing
+ * [new branch]                arm64/devel -> arm64/devel
+ * [new branch]                arm64/for-next/core -> arm64/for-next/core
+ * [new branch]                arm64/for-next/fixes -> arm64/for-next/fixes
+ * [new branch]                arm64/kpti -> arm64/kpti
+ * [new branch]                arm64/master -> arm64/master
+ * [new branch]                arm64/ssbd -> arm64/ssbd
+ * [new branch]                arm64/staging/ilp32-4.12 -> arm64/staging/ilp32-4.12
+ * [new branch]                arm64/staging/ilp32-4.13 -> arm64/staging/ilp32-4.13
+ * [new branch]                arm64/staging/ilp32-4.14 -> arm64/staging/ilp32-4.14
+ * [new branch]                arm64/staging/ilp32-4.15 -> arm64/staging/ilp32-4.15
+ * [new branch]                arm64/staging/ilp32-4.16 -> arm64/staging/ilp32-4.16
+ * [new branch]                arm64/staging/ilp32-4.17 -> arm64/staging/ilp32-4.17
+ * [new branch]                arm64/staging/ilp32-4.18 -> arm64/staging/ilp32-4.18
+ * [new branch]                arm64/staging/ilp32-4.19 -> arm64/staging/ilp32-4.19
+ * [new branch]                arm64/staging/ilp32-4.20 -> arm64/staging/ilp32-4.20
+ * [new branch]                bkp/opp/perf-state-fix -> bkp/opp/perf-state-fix
+ * [new tag]                   arm64-perf -> arm64-perf
+ * [new tag]                   arm64-spectre-meltdown-for-4.15-stable -> arm64-spectre-meltdown-for-4.15-stable
+ * [new tag]                   kpti-base -> kpti-base
+ * [new tag]                   security_fixes_20180208 -> security_fixes_20180208
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

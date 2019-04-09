@@ -752,3 +752,21 @@ From vireshk  Fri Feb 15 08:21:53 2019
 From vireshk  Mon Feb 25 09:19:55 2019
  Subject: [PATCH 10/12] cpufreq: ap806: add missing of_node_put after of_device
   Folder: PATCH_10-12_cpufreq_ap806_add_missing_of_node_put_after_of_d	   4890
+From vireshk  Mon Apr  8 08:16:56 2019
+ Subject: [PATCH 1/7] cpufreq: ap806: fix possible object reference leak
+  Folder: PATCH_1-7_cpufreq_ap806_fix_possible_object_reference_leak.m	   5851
+From vireshk  Mon Apr  8 08:16:57 2019
+ Subject: [PATCH 2/7] cpufreq: imx6q: fix possible object reference leak
+  Folder: PATCH_2-7_cpufreq_imx6q_fix_possible_object_reference_leak.m	   6019
+From vireshk  Mon Apr  8 08:16:58 2019
+ Subject: [PATCH 3/7] cpufreq: kirkwood: fix possible object reference leak
+  Folder: PATCH_3-7_cpufreq_kirkwood_fix_possible_object_reference_lea	   6403
+From vireshk  Mon Apr  8 08:16:59 2019
+ Subject: [PATCH 5/7] cpufreq/pasemi: fix possible object reference leak
+  Folder: PATCH_5-7_cpufreq-pasemi_fix_possible_object_reference_leak.	   5359
+From vireshk  Mon Apr  8 08:17:00 2019
+ Subject: [PATCH 6/7] cpufreq: pmac32: fix possible object reference leak
+  Folder: PATCH_6-7_cpufreq_pmac32_fix_possible_object_reference_leak.	   6242
+From vireshk  Mon Apr  8 08:17:01 2019
+ Subject: [PATCH 7/7] cpufreq: ppc_cbe: fix possible object reference leak
+  Folder: PATCH_7-7_cpufreq_ppc_cbe_fix_possible_object_reference_leak	   5400

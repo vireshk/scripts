@@ -1,0 +1,139 @@
+From vireshk  Mon Apr  8 08:16:06 2019
+Delivered-To: viresh.kumar@linaro.org
+Received: from gmail-pop.l.google.com [74.125.24.108] 	by vireshk-i7 with POP3 (fetchmail-6.3.26) 	for <vireshk@localhost> (single-drop); Mon, 08 Apr 2019 08:16:06 +0530 (IST)
+Received: by 2002:a02:c80c:0:0:0:0:0 with SMTP id p12csp1683511jao;         Thu, 28 Mar 2019 23:46:30 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqy0Zs6soXAf/f9eAqK20FLOMlLXSdHXxyyK07g1aAMscyJn++D1inMoIqpHqxih0GiG7MaE
+X-Received: by 2002:a62:6306:: with SMTP id x6mr44630519pfb.244.1553841990523;         Thu, 28 Mar 2019 23:46:30 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1553841990; cv=none;         d=google.com; s=arc-20160816;         b=0pg2/FI+ZHiu2T40Vz9n/Ha8hQXBTMJbSUkxJgeMbOQsZ0ee+Jq05WI47qQhXpYFkR          42PTOgTQsnG8SDc2sXpCcoR/MrJbQL+Saagn9DlYxXhjmdy6NjNZFMV3kzWoR7PQGoJk          6WJ7EFge89NI4+N6Cuvvg9oxhPVkspKDeVcXyoLTDadqLwD+Lc31aRaVO5uVZ5DkXwVx          6KmoX+czhij6DPRkdDWQ5yzLTzUebPNIGUOhOF1hS17S08Iy5KjYsGkXABOHYKapoTMU          PlDGXWM/b0bOdMwQ3baooC1zVwuwJfcZ7mCBHrvFQfwDv+6zirVpazGu0Pwdd1mepmpp          3/mQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=mime-version:references:in-reply-to:message-id:date:subject:cc:to          :from;         bh=L4I3zeoKcQqqvRWnQH3CiQ5po6tmn/Paio/PynEnQrI=;         b=fdPNNtNl6gs3//JRog4LLBOwqt11idRa+Pp6j2wJxmU4JOlGRIUSHXosMYvc6VvdT7          Pull9VGwyi5KzDxAoQltv4Eoin6RC1iLuwPONZM7YojXn4yxW9Gk+nqs9TK4ROJDgxMN          bl5VZrJgDWGNHgM8PLZyHdgOKZiC9guoFhFJA2z2kgn2e0eh++XEB8DEzb8ZI9LzOy4T          XwTRrUTpLiyy8KOnCdGwBMTj1/TOZSa987HnJQYw9LREWhLXGeCOVZVXnZxxLIcr7mE7          2Vsie0+JKOMU2+OP6GoZGhSVxbGSOqkYPtAu9K5ZJbtFH4Hu9P0gPVFQHnhJ2ol7dJEu          uPJg==
+ARC-Authentication-Results: i=1; mx.google.com;        spf=pass (google.com: domain of andrew-sh.cheng@mediatek.com designates 210.61.82.183 as permitted sender) smtp.mailfrom=andrew-sh.cheng@mediatek.com
+Return-Path: <andrew-sh.cheng@mediatek.com>
+Received: from mailgw01.mediatek.com ([210.61.82.183])         by mx.google.com with ESMTPS id d23si1164916pls.151.2019.03.28.23.46.30         for <viresh.kumar@linaro.org>         (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);         Thu, 28 Mar 2019 23:46:30 -0700 (PDT)
+Received-SPF: pass (google.com: domain of andrew-sh.cheng@mediatek.com designates 210.61.82.183 as permitted sender) client-ip=210.61.82.183;
+Authentication-Results: mx.google.com;        spf=pass (google.com: domain of andrew-sh.cheng@mediatek.com designates 210.61.82.183 as permitted sender) smtp.mailfrom=andrew-sh.cheng@mediatek.com
+X-UUID: b6d4b4916b3941b8b956cd7aa868ade0-20190329
+X-UUID: b6d4b4916b3941b8b956cd7aa868ade0-20190329
+Received: from mtkcas09.mediatek.inc [(172.21.101.178)] by mailgw01.mediatek.com 	(envelope-from <andrew-sh.cheng@mediatek.com>) 	(mhqrelay.mediatek.com ESMTP with TLS) 	with ESMTP id 1267631268; Fri, 29 Mar 2019 14:46:26 +0800
+Received: from mtkcas07.mediatek.inc (172.21.101.84) by  mtkmbs02n1.mediatek.inc (172.21.101.77) with Microsoft SMTP Server (TLS) id  15.0.1395.4; Fri, 29 Mar 2019 14:46:18 +0800
+Received: from mtksdccf07.mediatek.inc (172.21.84.99) by mtkcas07.mediatek.inc  (172.21.101.73) with Microsoft SMTP Server id 15.0.1395.4 via Frontend  Transport; Fri, 29 Mar 2019 14:46:18 +0800
+From: Andrew-sh.Cheng <andrew-sh.cheng@mediatek.com>
+To: MyungJoo Ham <myungjoo.ham@samsung.com>, Kyungmin Park 	<kyungmin.park@samsung.com>, Chanwoo Choi <cw00.choi@samsung.com>, "Rob  Herring" <robh+dt@kernel.org>, Mark Rutland <mark.rutland@arm.com>, "Matthias  Brugger" <matthias.bgg@gmail.com>, "Rafael J. Wysocki" <rjw@rjwysocki.net>, 	Viresh Kumar <viresh.kumar@linaro.org>
+CC: <linux-pm@vger.kernel.org>, <devicetree@vger.kernel.org>, 	<linux-arm-kernel@lists.infradead.org>, <linux-mediatek@lists.infradead.org>, 	<linux-kernel@vger.kernel.org>, <srv_heupstream@mediatek.com>, 	<fan.chen@mediatek.com>, Andrew-sh.Cheng <andrew-sh.cheng@mediatek.com>
+Subject: [PATCH v2 2/4] opp: add API which get max freq by voltage
+Date: Fri, 29 Mar 2019 14:46:10 +0800
+Message-ID: <1553841972-19737-3-git-send-email-andrew-sh.cheng@mediatek.com>
+X-Mailer: git-send-email 1.8.1.1.dirty
+In-Reply-To: <1553841972-19737-1-git-send-email-andrew-sh.cheng@mediatek.com>
+References: <1553841972-19737-1-git-send-email-andrew-sh.cheng@mediatek.com>
+Return-Path: andrew-sh.cheng@mediatek.com
+MIME-Version: 1.0
+Content-Type: text/plain
+X-MTK: N
+Content-Length: 3295
+Lines: 104
+
+This API will get voltage as input parameter.
+Search all opp items for the item which with max frequency,
+and the voltae is smaller than provided voltage.
+
+Signed-off-by: Andrew-sh.Cheng <andrew-sh.cheng@mediatek.com>
+---
+ drivers/opp/core.c     | 55 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ include/linux/pm_opp.h |  8 ++++++++
+ 2 files changed, 63 insertions(+)
+
+diff --git a/drivers/opp/core.c b/drivers/opp/core.c
+index 0420f7e..7323cd9 100644
+--- a/drivers/opp/core.c
++++ b/drivers/opp/core.c
+@@ -526,6 +526,61 @@ struct dev_pm_opp *dev_pm_opp_find_freq_floor(struct device *dev,
+ }
+ EXPORT_SYMBOL_GPL(dev_pm_opp_find_freq_floor);
+ 
++/**
++ * dev_pm_opp_find_max_freq_by_volt() - Search for a opp with max freq
++ * under provided voltage
++ * @dev:	device for which we do this operation
++ * @u_volt:	provided voltage
++ *
++ * Search for the matching available OPP which provide voltage can support.
++ *
++ * Return: matching *opp, else returns ERR_PTR in case of error
++ * and should be handled using IS_ERR.
++ * Error return values can be:
++ * EINVAL:	for bad pointer
++ * ERANGE:	no match found for search
++ * ENODEV:	if device not found in list of registered devices
++ *
++ * The callers are required to call dev_pm_opp_put() for the returned OPP after
++ * use.
++ */
++struct dev_pm_opp *dev_pm_opp_find_max_freq_by_volt(struct device *dev,
++					      unsigned long u_volt)
++{
++	struct opp_table *opp_table;
++	struct dev_pm_opp *temp_opp, *opp = ERR_PTR(-ERANGE);
++
++	if (!dev || !u_volt) {
++		dev_err(dev, "%s: Invalid argument volt=%d\n", __func__,
++			u_volt);
++		return ERR_PTR(-EINVAL);
++	}
++
++	opp_table = _find_opp_table(dev);
++	if (IS_ERR(opp_table))
++		return ERR_CAST(opp_table);
++
++	mutex_lock(&opp_table->lock);
++
++	list_for_each_entry(temp_opp, &opp_table->opp_list, node) {
++		if (temp_opp->available) {
++			/* go to the next node, before choosing prev */
++			if (temp_opp->supplies[0].u_volt > u_volt)
++				break;
++			opp = temp_opp;
++		}
++	}
++
++	/* Increment the reference count of OPP */
++	if (!IS_ERR(opp))
++		dev_pm_opp_get(opp);
++	mutex_unlock(&opp_table->lock);
++	dev_pm_opp_put_opp_table(opp_table);
++
++	return opp;
++}
++EXPORT_SYMBOL_GPL(dev_pm_opp_find_max_freq_by_volt);
++
+ static int _set_opp_voltage(struct device *dev, struct regulator *reg,
+ 			    struct dev_pm_opp_supply *supply)
+ {
+diff --git a/include/linux/pm_opp.h b/include/linux/pm_opp.h
+index 24c757a..57deef9 100644
+--- a/include/linux/pm_opp.h
++++ b/include/linux/pm_opp.h
+@@ -102,6 +102,8 @@ struct dev_pm_opp *dev_pm_opp_find_freq_exact(struct device *dev,
+ 
+ struct dev_pm_opp *dev_pm_opp_find_freq_floor(struct device *dev,
+ 					      unsigned long *freq);
++struct dev_pm_opp *dev_pm_opp_find_max_freq_by_volt(struct device *dev,
++					      unsigned long u_volt);
+ 
+ struct dev_pm_opp *dev_pm_opp_find_freq_ceil(struct device *dev,
+ 					     unsigned long *freq);
+@@ -207,6 +209,12 @@ static inline struct dev_pm_opp *dev_pm_opp_find_freq_floor(struct device *dev,
+ 	return ERR_PTR(-ENOTSUPP);
+ }
+ 
++static inline struct dev_pm_opp *dev_pm_opp_find_max_freq_by_volt(struct device *dev,
++					      unsigned long u_volt)
++{
++	return ERR_PTR(-ENOTSUPP);
++}
++
+ static inline struct dev_pm_opp *dev_pm_opp_find_freq_ceil(struct device *dev,
+ 					unsigned long *freq)
+ {
+-- 
+1.8.1.1.dirty
+

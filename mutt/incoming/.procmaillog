@@ -770,3 +770,9 @@ From vireshk  Mon Apr  8 08:17:00 2019
 From vireshk  Mon Apr  8 08:17:01 2019
  Subject: [PATCH 7/7] cpufreq: ppc_cbe: fix possible object reference leak
   Folder: PATCH_7-7_cpufreq_ppc_cbe_fix_possible_object_reference_leak	   5400
+From vireshk  Mon Apr  8 08:16:06 2019
+ Subject: [PATCH v2 2/4] opp: add API which get max freq by voltage
+  Folder: PATCH_v2_2-4_opp_add_API_which_get_max_freq_by_voltage.mbox	   7771
+From vireshk  Mon Apr  8 08:16:06 2019
+ Subject: [PATCH v2 2/4] opp: add API which get max freq by voltage
+  Folder: PATCH_v2_2-4_opp_add_API_which_get_max_freq_by_voltage.mbox	   7771

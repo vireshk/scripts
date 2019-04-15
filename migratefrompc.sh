@@ -7,6 +7,8 @@ fetch_repo()
 {
 	cd $HOME/$1
 	git fetch -p origin
+	git checkout master
+	git reset --hard origin/master
 }
 
 for i in `cat $HOME/scripts/migraterepos.txt`; do

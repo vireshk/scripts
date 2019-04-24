@@ -776,3 +776,9 @@ From vireshk  Mon Apr  8 08:16:06 2019
 From vireshk  Mon Apr  8 08:16:06 2019
  Subject: [PATCH v2 2/4] opp: add API which get max freq by voltage
   Folder: PATCH_v2_2-4_opp_add_API_which_get_max_freq_by_voltage.mbox	   7771
+From vireshk  Wed Apr 24 09:20:21 2019
+ Subject: [PATCH] cpufreq: qoriq: Add ls1028a chip support
+  Folder: PATCH_cpufreq_qoriq_Add_ls1028a_chip_support.mbox		   4398
+From vireshk  Sat Apr 20 21:47:14 2019
+ Subject: [PATCH] x86: tsc: Rework time_cpufreq_notifier()
+  Folder: PATCH_x86_tsc_Rework_time_cpufreq_notifier_.mbox		   6961

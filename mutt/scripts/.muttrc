@@ -229,3 +229,7 @@ macro index,pager a "<pipe-message>goobook add<return>" "add the sender address 
 #
 # text/html;                      lynx %s; nametemplate=%s.html
 # text/html;                      lynx -dump %s; nametemplate=%s.html; copiousoutput
+
+# PGP
+set pgp_encrypt_only_command="/usr/lib/neomutt/pgpewrap gpg --batch --quiet --no-verbose --output - --textmode --armor -- --recipient %r -- --encrypt %f"
+set pgp_check_gpg_decrypt_status_fd = no

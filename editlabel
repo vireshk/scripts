@@ -83,6 +83,6 @@ fi
 
 # if we created a new file, step over the old one
 if [ -f "$NFNAME" ]; then
-	mv "$NFNAME" "$FNAME"
+	mv $NFNAME $FNAME
 fi
 

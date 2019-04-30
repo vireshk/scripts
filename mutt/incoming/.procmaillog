@@ -782,3 +782,6 @@ From vireshk  Wed Apr 24 09:20:21 2019
 From vireshk  Sat Apr 20 21:47:14 2019
  Subject: [PATCH] x86: tsc: Rework time_cpufreq_notifier()
   Folder: PATCH_x86_tsc_Rework_time_cpufreq_notifier_.mbox		   6961
+From vireshk  Mon Mar 11 09:36:14 2019
+ Subject: [PATCH 2/2] cpufreq: armada-37xx: fix frequency calculation for opp
+  Folder: PATCH_2-2_cpufreq_armada-37xx_fix_frequency_calculation_for_	   6416

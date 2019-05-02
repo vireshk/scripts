@@ -785,3 +785,6 @@ From vireshk  Sat Apr 20 21:47:14 2019
 From vireshk  Mon Mar 11 09:36:14 2019
  Subject: [PATCH 2/2] cpufreq: armada-37xx: fix frequency calculation for opp
   Folder: PATCH_2-2_cpufreq_armada-37xx_fix_frequency_calculation_for_	   6416
+From vireshk  Wed May  1 13:41:27 2019
+ Subject: [PATCH] media: vivid: check if the cec_adapter is valid
+  Folder: PATCH_media_vivid_check_if_the_cec_adapter_is_valid.mbox	   6098

@@ -1,3 +1,4 @@
 #!/bin/bash
-scripts/get_maintainer.pl --nogit --nogit-fallback --norolestats --nol $1 | grep -v "viresh\.kumar@linaro\.org"
+#scripts/get_maintainer.pl --nogit --nogit-fallback --norolestats --nol $1 | grep -v "viresh\.kumar@linaro\.org"
+scripts/get_maintainer.pl --nogit --nogit-fallback --norolestats --nol $1
 #scripts/get_maintainer.pl --nogit --nogit-fallback --norolestats --nol --pattern-depth=1 $1 | grep -v "viresh\.kumar@linaro\.org"

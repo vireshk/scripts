@@ -794,3 +794,9 @@ From vireshk  Mon May 13 16:32:10 2019
 From vireshk  Mon May 13 16:32:10 2019
  Subject: [PATCH v4 2/5] dt-bindings: imx-cpufreq-dt: Document opp-supported-hw
   Folder: PATCH_v4_2-5_dt-bindings_imx-cpufreq-dt_Document_opp-support	   9898
+From vireshk  Tue May 21 14:48:59 2019
+ Subject: [PATCH 1/2] soc: imx: soc-imx8: Avoid unnecessary of_node_put() in  e
+  Folder: PATCH_1-2_soc_imx_soc-imx8_Avoid_unnecessary_of_node_put__in	   8697
+From vireshk  Tue May 21 14:48:59 2019
+ Subject: [PATCH 1/2] soc: imx: soc-imx8: Avoid unnecessary of_node_put() in  e
+  Folder: PATCH_1-2_soc_imx_soc-imx8_Avoid_unnecessary_of_node_put__in	   8697

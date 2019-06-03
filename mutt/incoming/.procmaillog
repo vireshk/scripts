@@ -800,3 +800,9 @@ From vireshk  Tue May 21 14:48:59 2019
 From vireshk  Tue May 21 14:48:59 2019
  Subject: [PATCH 1/2] soc: imx: soc-imx8: Avoid unnecessary of_node_put() in  e
   Folder: PATCH_1-2_soc_imx_soc-imx8_Avoid_unnecessary_of_node_put__in	   8697
+From vireshk  Wed May 29 19:11:43 2019
+ Subject: [PATCH] cpufreq: imx-cpufreq-dt: Fix no OPPs available on unfused  pa
+  Folder: PATCH_cpufreq_imx-cpufreq-dt_Fix_no_OPPs_available_on_unfuse	   9520
+From vireshk  Mon Jun  3 08:37:58 2019
+ Subject: [PATCH -next] cpufreq: armada-37xx: Remove set but not used variable 
+  Folder: PATCH_-next_cpufreq_armada-37xx_Remove_set_but_not_used_vari	   5179

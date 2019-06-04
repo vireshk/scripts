@@ -806,3 +806,9 @@ From vireshk  Wed May 29 19:11:43 2019
 From vireshk  Mon Jun  3 08:37:58 2019
  Subject: [PATCH -next] cpufreq: armada-37xx: Remove set but not used variable 
   Folder: PATCH_-next_cpufreq_armada-37xx_Remove_set_but_not_used_vari	   5179
+From vireshk  Thu May 23 08:32:19 2019
+ Subject: [PATCH 1/2] cpufreq: brcmstb-avs-cpufreq: Fix initial command check
+  Folder: PATCH_1-2_cpufreq_brcmstb-avs-cpufreq_Fix_initial_command_ch	   6668
+From vireshk  Thu May 23 08:32:21 2019
+ Subject: [PATCH 2/2] cpufreq: brcmstb-avs-cpufreq: Fix types for voltage/frequ
+  Folder: PATCH_2-2_cpufreq_brcmstb-avs-cpufreq_Fix_types_for_voltage-	   7446

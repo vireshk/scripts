@@ -1,0 +1,60 @@
+From vireshk  Thu May 23 08:32:19 2019
+Delivered-To: viresh.kumar@linaro.org
+Received: from gmail-pop.l.google.com [74.125.68.109] 	by vireshk-i7 with POP3 (fetchmail-6.3.26) 	for <vireshk@localhost> (single-drop); Thu, 23 May 2019 08:32:19 +0530 (IST)
+Received: by 2002:a02:ccd8:0:0:0:0:0 with SMTP id k24csp1223275jaq;         Wed, 22 May 2019 11:46:15 -0700 (PDT)
+X-Received: by 2002:a63:8a4a:: with SMTP id y71mr91595709pgd.270.1558550775234;         Wed, 22 May 2019 11:46:15 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1558550775; cv=none;         d=google.com; s=arc-20160816;         b=plyfoh/p6Z9oadddDiZoBrgHcFwmiCo8pIZS8eSrbh6rBc/JqOnI5xAh14f/a8osNN          YY34oNjLPHwG2UGjfCjtgh3DKC8Z9uE4HKcKxRlyGFHLbaV3r0uubE/NXJFRK5sXBh8v          p8hHxXndxQiQT92EeFBEggY8yDIOQ+B2US6G/yGT0KmMPLeWpRVGuXmymUsnnuyyQ3bG          Ibhh6gVpY3KGd9u/ceqGYP2ZeFqXhQVWkaCraI/GkMXJuL+lf0zLjSSOz0Ad6NZT25Rf          Ac05IiTt7LE7NVNOZOQ/efnaXUbrbdD42+4F3TiB1H+vVNumfTnkyaS+Jn8mOEHqV9qt          vTkg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=references:in-reply-to:message-id:date:subject:cc:to:from          :dkim-signature;         bh=GmGzWLHRhAiFHdLO6sJ1o+baERaywOCM8lSPrMQvma4=;         b=BshY/mY/yGsZu80WmHx/GlMNsJcuzy2FEJMo1s6FtRNdVRnvcyu9uMF2sb02z/nvhu          yfktE9lXyelvcp1+C9DsJkkTU7QKlTCJEkAig8DaQaHbtcSrpsxY3pQR1k/C0AcB05nA          7cI0aVCCulAh6rE4UgCuxfJzHoQGL9NJmkNheHNccw9XxPud74YKE6g43aFQcwm49ahb          UKIlePOa4czH2hU1a/Bhxa8w7Aq4EIZUbuuCV1TRLmmJ3Y8bltD/dYwJ3iXhxL+suXUl          50NyB61UaocGXI0vGICPhDayb6DPCP7uAJ6ZbsFeE0ocSa29zvGnd8tmUAYE/O0Fy5L3          H9ig==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@gmail.com header.s=20161025 header.b=oIGeZss5;        spf=pass (google.com: domain of f.fainelli@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=f.fainelli@gmail.com;        dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <f.fainelli@gmail.com>
+Received: from mail-sor-f65.google.com (mail-sor-f65.google.com. [209.85.220.65])         by mx.google.com with SMTPS id v6sor3500798pgg.55.2019.05.22.11.46.15         for <viresh.kumar@linaro.org>         (Google Transport Security);         Wed, 22 May 2019 11:46:15 -0700 (PDT)
+Received-SPF: pass (google.com: domain of f.fainelli@gmail.com designates 209.85.220.65 as permitted sender) client-ip=209.85.220.65;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@gmail.com header.s=20161025 header.b=oIGeZss5;        spf=pass (google.com: domain of f.fainelli@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=f.fainelli@gmail.com;        dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=gmail.com; s=20161025;         h=from:to:cc:subject:date:message-id:in-reply-to:references;         bh=GmGzWLHRhAiFHdLO6sJ1o+baERaywOCM8lSPrMQvma4=;         b=oIGeZss5BNTBJcdtowR+26iCRL4R4Fx9g7Qgo20cHvKWUFUy2aZ8eonGKSgpstWskl          3HEFFLEs2l5SU+/FOvNIzLc+VprONyDe3l0YBe4JNXd0VUdf2/E+cEmAswoEv9ufAmBv          dcj9amWmV01GudIV5EbexapIqVk6E9itihrZsI5N9QWi5jIBVhtJxVcuAc7KYVGQu915          KdGs/Ae+730mGjN8LDiXhcDW+MX2c0FhIsg5DbD2bZBzbj31uRHTsJPYQIFBtbJJIvbY          H7P8fNZeF6xQoy2TFa6DKfFkXgrDPRu2mvQ/3vEru1ZL7EXMwqFEgaDK1SCLOeR7/Ith          2THQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=1e100.net; s=20161025;         h=x-gm-message-state:from:to:cc:subject:date:message-id:in-reply-to          :references;         bh=GmGzWLHRhAiFHdLO6sJ1o+baERaywOCM8lSPrMQvma4=;         b=MwkHOoGVMzaSc5FjAH8U4+M+ZAD3u5URUGzYDUOX7uNWXtatmADuq+6CGQcJkYEE9U          wwuGmncDZS/2NIT/p8b8xTM0LbNIFXr3Q9d3S5Re1y83BW78o4XX07fQ1L1Lm9AagFto          hyhzgPPKgqbjDJSo33IhFAfuzigGYXsbb6l70fgkCbheHdAnO74UyDJ94peY1GSrzE4B          E42ogLMpY/vKlDq+LvKQdMYX5JppSBxNp4M6A0JnI9JhOsK8HF/bYZbw/PcMDFOiouQv          ZEXjK6Bd9LUImQhFuGcceFvqADUW3uSPoOL7KCO+p+A3m7KNzyvWjixraoguFVRquO36          yBfQ==
+X-Gm-Message-State: APjAAAWPkh/e5VTOPUNRZZ8b2xkB9nO7U1XSpn2Gw92MvCkcmCzH5BhG 	7mU58N4YeeRTb3/C09Ti8ZA=
+X-Google-Smtp-Source: APXvYqx5MVPCTwB1TvOzSQ+U+LjSQYLhgOCeldaVnfeKLh7uDytNdcFNe+vlJzLK/zdCNC/iIWLAYg==
+X-Received: by 2002:a63:c94f:: with SMTP id y15mr28257342pgg.159.1558550774800;         Wed, 22 May 2019 11:46:14 -0700 (PDT)
+Return-Path: <f.fainelli@gmail.com>
+Received: from fainelli-desktop.igp.broadcom.net ([192.19.223.252])         by smtp.gmail.com with ESMTPSA id 25sm2439585pfp.76.2019.05.22.11.46.13         (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);         Wed, 22 May 2019 11:46:14 -0700 (PDT)
+From: Florian Fainelli <f.fainelli@gmail.com>
+To: linux-kernel@vger.kernel.org
+Cc: Florian Fainelli <f.fainelli@gmail.com>, 	Markus Mayer <mmayer@broadcom.com>, 	bcm-kernel-feedback-list@broadcom.com (maintainer:BROADCOM STB AVS CPUFREQ DRIVER), 	"Rafael J. Wysocki" <rjw@rjwysocki.net>, 	Viresh Kumar <viresh.kumar@linaro.org>, 	Brian Norris <computersforpeace@gmail.com>, 	Gregory Fong <gregory.0xf0@gmail.com>, 	linux-pm@vger.kernel.org (open list:BROADCOM STB AVS CPUFREQ DRIVER), 	linux-arm-kernel@lists.infradead.org (moderated list:BROADCOM BCM7XXX ARM ARCHITECTURE)
+Subject: [PATCH 1/2] cpufreq: brcmstb-avs-cpufreq: Fix initial command check
+Date: Wed, 22 May 2019 11:45:46 -0700
+Message-Id: <20190522184547.31791-2-f.fainelli@gmail.com>
+X-Mailer: git-send-email 2.17.1
+In-Reply-To: <20190522184547.31791-1-f.fainelli@gmail.com>
+References: <20190522184547.31791-1-f.fainelli@gmail.com>
+Status: RO
+Content-Length: 1069
+Lines: 27
+
+There is a logical error in brcm_avs_is_firmware_loaded() whereby if the
+firmware returns -EINVAL, we will be reporting this as an error. The
+comment is correct, the code was not.
+
+Fixes: de322e085995 ("cpufreq: brcmstb-avs-cpufreq: AVS CPUfreq driver for Broadcom STB SoCs")
+Signed-off-by: Florian Fainelli <f.fainelli@gmail.com>
+---
+ drivers/cpufreq/brcmstb-avs-cpufreq.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/drivers/cpufreq/brcmstb-avs-cpufreq.c b/drivers/cpufreq/brcmstb-avs-cpufreq.c
+index e6f9cbe5835f..6ed53ca8aa98 100644
+--- a/drivers/cpufreq/brcmstb-avs-cpufreq.c
++++ b/drivers/cpufreq/brcmstb-avs-cpufreq.c
+@@ -446,8 +446,8 @@ static bool brcm_avs_is_firmware_loaded(struct private_data *priv)
+ 	rc = brcm_avs_get_pmap(priv, NULL);
+ 	magic = readl(priv->base + AVS_MBOX_MAGIC);
+ 
+-	return (magic == AVS_FIRMWARE_MAGIC) && (rc != -ENOTSUPP) &&
+-		(rc != -EINVAL);
++	return (magic == AVS_FIRMWARE_MAGIC) && ((rc != -ENOTSUPP) ||
++		(rc != -EINVAL));
+ }
+ 
+ static unsigned int brcm_avs_cpufreq_get(unsigned int cpu)
+-- 
+2.17.1
+

@@ -812,3 +812,15 @@ From vireshk  Thu May 23 08:32:19 2019
 From vireshk  Thu May 23 08:32:21 2019
  Subject: [PATCH 2/2] cpufreq: brcmstb-avs-cpufreq: Fix types for voltage/frequ
   Folder: PATCH_2-2_cpufreq_brcmstb-avs-cpufreq_Fix_types_for_voltage-	   7446
+From vireshk  Wed Jun  5 18:05:47 2019
+ Subject: [PATCH v2 1/5] cpufreq: imx-cpufreq-dt: Remove global platform match 
+  Folder: PATCH_v2_1-5_cpufreq_imx-cpufreq-dt_Remove_global_platform_m	   6473
+From vireshk  Wed Jun  5 18:05:49 2019
+ Subject: [PATCH v2 2/5] cpufreq: Switch imx7d to imx-cpufreq-dt for speed grad
+  Folder: PATCH_v2_2-5_cpufreq_Switch_imx7d_to_imx-cpufreq-dt_for_spee	   5473
+From vireshk  Wed Jun  5 18:05:47 2019
+ Subject: [PATCH v2 1/5] cpufreq: imx-cpufreq-dt: Remove global platform match 
+  Folder: PATCH_v2_1-5_cpufreq_imx-cpufreq-dt_Remove_global_platform_m	   6473
+From vireshk  Wed Jun  5 18:05:49 2019
+ Subject: [PATCH v2 2/5] cpufreq: Switch imx7d to imx-cpufreq-dt for speed grad
+  Folder: PATCH_v2_2-5_cpufreq_Switch_imx7d_to_imx-cpufreq-dt_for_spee	   5473

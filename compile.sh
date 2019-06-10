@@ -201,7 +201,7 @@ elif [ $1 = "config" ]; then
 	$isdebug $mk $cfg
 elif [ $1 = "sconfig" ]; then
 	$isdebug $mk savedefconfig
-	cp $dir/defconfig arch/arm/configs/$cfg
+	cp $dir/defconfig arch/$carch/configs/$cfg
 elif [ $1 = "image" ]; then
 	$isdebug $bimage
 elif [ $1 = "nimage" ]; then

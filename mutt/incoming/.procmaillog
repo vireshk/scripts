@@ -824,3 +824,36 @@ From vireshk  Wed Jun  5 18:05:47 2019
 From vireshk  Wed Jun  5 18:05:49 2019
  Subject: [PATCH v2 2/5] cpufreq: Switch imx7d to imx-cpufreq-dt for speed grad
   Folder: PATCH_v2_2-5_cpufreq_Switch_imx7d_to_imx-cpufreq-dt_for_spee	   5473
+From vireshk  Wed Mar 20 15:20:09 2019
+ Subject: [RFC v2 01/11] OPP: Don't overwrite rounded clk rate
+  Folder: RFC_v2_01-11_OPP_Don't_overwrite_rounded_clk_rate.mbox	   7988
+From vireshk  Wed Mar 20 15:20:10 2019
+ Subject: [RFC v2 02/11] OPP: Make dev_pm_opp_set_rate() with freq=0 as valid
+  Folder: RFC_v2_02-11_OPP_Make_dev_pm_opp_set_rate__with_freq=0_as_va	   7166
+From vireshk  Wed Mar 20 15:20:10 2019
+ Subject: [RFC v2 03/11] tty: serial: qcom_geni_serial: Use OPP API to set clk/
+  Folder: RFC_v2_03-11_tty_serial_qcom_geni_serial_Use_OPP_API_to_set_	   8205
+From vireshk  Wed Mar 20 15:20:11 2019
+ Subject: [RFC v2 04/11] spi: spi-geni-qcom: Use OPP API to set clk/perf state
+  Folder: RFC_v2_04-11_spi_spi-geni-qcom_Use_OPP_API_to_set_clk-perf_s	   7837
+From vireshk  Wed Mar 20 15:20:12 2019
+ Subject: [RFC v2 05/11] arm64: dts: sdm845: Add OPP table for all qup devices
+  Folder: RFC_v2_05-11_arm64_dts_sdm845_Add_OPP_table_for_all_qup_devi	  19029
+From vireshk  Wed Mar 20 15:20:12 2019
+ Subject: [RFC v2 06/11] scsi: ufs: Add support to manage multiple power domain
+  Folder: RFC_v2_06-11_scsi_ufs_Add_support_to_manage_multiple_power_d	   8961
+From vireshk  Wed Mar 20 15:21:16 2019
+ Subject: [RFC v2 07/11] scsi: ufs: Add support for specifying OPP tables in DT
+  Folder: RFC_v2_07-11_scsi_ufs_Add_support_for_specifying_OPP_tables_	   7715
+From vireshk  Wed Mar 20 15:21:18 2019
+ Subject: [RFC v2 10/11] drm/msm: dsi: Use OPP API to set clk/perf state
+  Folder: RFC_v2_10-11_drm-msm_dsi_Use_OPP_API_to_set_clk-perf_state.m	  12032
+From vireshk  Wed Mar 20 15:21:19 2019
+ Subject: [RFC v2 11/11] arm64: dts: sdm845: Add DSI and MDP OPP tables and pow
+  Folder: RFC_v2_11-11_arm64_dts_sdm845_Add_DSI_and_MDP_OPP_tables_and	   8266
+From vireshk  Wed Mar 20 15:21:17 2019
+ Subject: [RFC v2 09/11] drm/msm/dpu: Use OPP API to set clk/perf state
+  Folder: RFC_v2_09-11_drm-msm-dpu_Use_OPP_API_to_set_clk-perf_state.m	   8429
+From vireshk  Wed Mar 20 15:21:17 2019
+ Subject: [RFC v2 08/11] arm64: dts: sdm845: Add ufs opps and power-domains
+  Folder: RFC_v2_08-11_arm64_dts_sdm845_Add_ufs_opps_and_power-domains	   7212

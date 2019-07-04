@@ -1,0 +1,75 @@
+From vireshk  Tue Jul  2 10:07:45 2019
+Delivered-To: viresh.kumar@linaro.org
+Received: from gmail-pop.l.google.com [74.125.24.109] 	by vireshk-i7 with POP3 (fetchmail-6.3.26) 	for <vireshk@localhost> (single-drop); Tue, 02 Jul 2019 10:07:45 +0530 (IST)
+Received: by 2002:a02:1a89:0:0:0:0:0 with SMTP id 131csp3599976jai;         Mon, 1 Jul 2019 21:36:54 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqxLS86JF3vDK41sEcnkLZroPnaD9jYfFkaDFWJqbf/9VUzDsgw/JlLQ8HQumV/n5Y+m9fnc
+X-Received: by 2002:a17:90a:9bc5:: with SMTP id b5mr3260556pjw.109.1562042214268;         Mon, 01 Jul 2019 21:36:54 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1562042214; cv=none;         d=google.com; s=arc-20160816;         b=q20K49YKYv3TiikxSH1Av5+oEQWFAK/88WysDKau2BHVjnw9UDP9lQEhihZIzdJX/+          w2fLDhBBXBY3d9v+fve5VJE/d+d6vkwADlYYayLKrmf07z/ZNHIp+OcSm2oKptT2Ly8O          z980E80ImkBZkF0wLcg2RBdaNk8BEex+/PhHRnvzKV1p4TTkNEjKMhTmivgRB7nOKxaY          wHy5nh8ZtStfbSnm7VoNuVhouiAeuuqwoOvYxtYylLVDbuyW79BZh7ZoTI3YlRh3G9Du          sXZn51SaGIQ34tmKtmMU1xEAm75M/W1+5FfP8hDuUWSxAUWO7qP7hDDUBTYoR4CWDWyp          sOgw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:references:in-reply-to          :message-id:date:subject:cc:to:from:dmarc-filter:dkim-signature          :dkim-signature:delivered-to;         bh=3KxVguWQVy1BoUIAXx0FPhD11t8fz+AkidEzbavHVuA=;         b=YeAp2LRCeE8/KVGb1qcpDjLLw03hI//iq60Np78iQPB6z6xB0q8p+Q7K6csq4lm+44          7VydxrQ3Ivvckf7JxQjqQ6RP8XYE/W4aDbZkJ11S3Zc8nUBi/6RJkJqsQBkFLl3rGiYi          +BViFYYzXaMVoLdxTQM/Lr6tdDOcgbFgaFoJITi/GL2HQoEAw3tPxCSZtepuBWAEO+tt          j6fmGSsJm14UoWNIF5voBi2vBhUwDno1yH0YZHh+Ypjx76zKlNNKst46pQnH6Inem+GK          zSZsQKKzLg2ERR2NESuggalFqiy5sSNcfKgx24+wLXyYknMWfzPeff8JRLXo/+8y04uN          Y3DQ==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@codeaurora.org header.s=default header.b=P20RLyZz;        dkim=pass header.i=@codeaurora.org header.s=default header.b=P20RLyZz;        spf=pass (google.com: domain of srs0=gu8v=u7=codeaurora.org=rnayak@kernel.org designates 198.145.29.99 as permitted sender) smtp.mailfrom="SRS0=Gu8V=U7=codeaurora.org=rnayak@kernel.org"
+Return-Path: <SRS0=Gu8V=U7=codeaurora.org=rnayak@kernel.org>
+Received: from mail.kernel.org (mail.kernel.org. [198.145.29.99])         by mx.google.com with ESMTPS id g24si11585570pgj.197.2019.07.01.21.36.54         for <viresh.kumar@linaro.org>         (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);         Mon, 01 Jul 2019 21:36:54 -0700 (PDT)
+Received-SPF: pass (google.com: domain of srs0=gu8v=u7=codeaurora.org=rnayak@kernel.org designates 198.145.29.99 as permitted sender) client-ip=198.145.29.99;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@codeaurora.org header.s=default header.b=P20RLyZz;        dkim=pass header.i=@codeaurora.org header.s=default header.b=P20RLyZz;        spf=pass (google.com: domain of srs0=gu8v=u7=codeaurora.org=rnayak@kernel.org designates 198.145.29.99 as permitted sender) smtp.mailfrom="SRS0=Gu8V=U7=codeaurora.org=rnayak@kernel.org"
+Received: by mail.kernel.org (Postfix) 	id 106112184E; Tue,  2 Jul 2019 04:36:54 +0000 (UTC)
+Delivered-To: vireshk@kernel.org
+Received: by smtp.codeaurora.org (Postfix, from userid 1000) 	id A7E8E6083E; Tue,  2 Jul 2019 04:36:53 +0000 (UTC)
+Authentication-Results: mail.kernel.org; 	dkim=fail reason="key not found in DNS" (0-bit key) header.d=codeaurora.org header.i=@codeaurora.org header.b="P20RLyZz"; 	dkim=fail reason="key not found in DNS" (0-bit key) header.d=codeaurora.org header.i=@codeaurora.org header.b="P20RLyZz"
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=codeaurora.org; 	s=default; t=1562042213; 	bh=zZPzUmRssl1hYuGZRP1UExVBZhx+79WmuCJUsSBCzIc=; 	h=From:To:Cc:Subject:Date:In-Reply-To:References:From; 	b=P20RLyZzIpSH9VRUgrmeq0uC5hMqayEPXybdCoQoKDd8McNnRuc4rukJNwXNnk1NK 	 YnIIf2Pv/PSlpXu+vwZrTuLOUKupjLAtajU+98aDpBLHsZIHUbetD8RljYuRFFDzRR 	 19rWcQ3+yxlPkp+LCTUFD6P6JOXDWHyQ06RGmvsM=
+X-Spam-Checker-Version: SpamAssassin 3.4.0 (2014-02-07) on 	pdx-caf-mail.web.codeaurora.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.7 required=2.0 tests=ALL_TRUSTED,BAYES_00, 	DKIM_INVALID,DKIM_SIGNED,SPF_NONE autolearn=no autolearn_force=no 	version=3.4.0
+Received: from blr-ubuntu-173.qualcomm.com (blr-bdr-fw-01_globalnat_allzones-outside.qualcomm.com [103.229.18.19]) 	(using TLSv1.2 with cipher ECDHE-RSA-AES128-SHA256 (128/128 bits)) 	(No client certificate requested) 	(Authenticated sender: rnayak@smtp.codeaurora.org) 	by smtp.codeaurora.org (Postfix) with ESMTPSA id 5DD606028D; 	Tue,  2 Jul 2019 04:36:51 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=codeaurora.org; 	s=default; t=1562042213; 	bh=zZPzUmRssl1hYuGZRP1UExVBZhx+79WmuCJUsSBCzIc=; 	h=From:To:Cc:Subject:Date:In-Reply-To:References:From; 	b=P20RLyZzIpSH9VRUgrmeq0uC5hMqayEPXybdCoQoKDd8McNnRuc4rukJNwXNnk1NK 	 YnIIf2Pv/PSlpXu+vwZrTuLOUKupjLAtajU+98aDpBLHsZIHUbetD8RljYuRFFDzRR 	 19rWcQ3+yxlPkp+LCTUFD6P6JOXDWHyQ06RGmvsM=
+DMARC-Filter: OpenDMARC Filter v1.3.2 smtp.codeaurora.org 5DD606028D
+Authentication-Results: pdx-caf-mail.web.codeaurora.org; dmarc=none (p=none dis=none) header.from=codeaurora.org
+Authentication-Results: pdx-caf-mail.web.codeaurora.org; spf=none smtp.mailfrom=rnayak@codeaurora.org
+From: Rajendra Nayak <rnayak@codeaurora.org>
+To: vireshk@kernel.org, 	sboyd@kernel.org
+Cc: linux-pm@vger.kernel.org, 	linux-kernel@vger.kernel.org, 	linux-arm-msm@vger.kernel.org, 	Rajendra Nayak <rnayak@codeaurora.org>
+Subject: [PATCH 2/2] opp: Manage empty OPP tables with clk handle
+Date: Tue,  2 Jul 2019 10:06:43 +0530
+Message-Id: <20190702043643.1746-2-rnayak@codeaurora.org>
+X-Mailer: git-send-email 2.21.0
+In-Reply-To: <20190702043643.1746-1-rnayak@codeaurora.org>
+References: <20190702043643.1746-1-rnayak@codeaurora.org>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Status: RO
+Content-Length: 1264
+Lines: 34
+
+With OPP core now supporting DVFS for IO devices, we have instances of
+IO devices (same IP block) with require an OPP on some platforms/SoCs
+while just needing to scale the clock on some others.
+In order to avoid conditional code in every driver, (to check for 
+availability of OPPs and then deciding to do either dev_pm_opp_set_rate()
+or clk_set_rate()) add support to manage empty OPP tables with a clk handle.
+This makes dev_pm_opp_set_rate() equivalent of a clk_set_rate() for devices
+with just a clk and no OPPs specified.
+
+Signed-off-by: Rajendra Nayak <rnayak@codeaurora.org>
+---
+ drivers/opp/core.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/drivers/opp/core.c b/drivers/opp/core.c
+index ae033bb1e5b7..fa7d4d6d37b3 100644
+--- a/drivers/opp/core.c
++++ b/drivers/opp/core.c
+@@ -801,6 +801,11 @@ int dev_pm_opp_set_rate(struct device *dev, unsigned long target_freq)
+ 		goto put_opp_table;
+ 	}
+ 
++	if (!_get_opp_count(opp_table)) {
++		ret = _generic_set_opp_clk_only(dev, clk, freq);
++		goto put_opp_table;
++	}
++
+ 	temp_freq = old_freq;
+ 	old_opp = _find_freq_ceil(opp_table, &temp_freq);
+ 	if (IS_ERR(old_opp)) {
+-- 
+QUALCOMM INDIA, on behalf of Qualcomm Innovation Center, Inc. is a member
+of Code Aurora Forum, hosted by The Linux Foundation
+

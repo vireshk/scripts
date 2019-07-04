@@ -866,3 +866,9 @@ From vireshk  Mon Jun 24 07:53:10 2019
 From vireshk  Mon Jun 24 07:53:48 2019
  Subject: [PATCH v1] OPP: Fix crashing when current OPP has unsupportable volta
   Folder: PATCH_v1_OPP_Fix_crashing_when_current_OPP_has_unsupportable	   7434
+From vireshk  Tue Jul  2 10:07:44 2019
+ Subject: [PATCH 1/2] opp: Export dev_pm_opp_set_genpd_virt_dev()
+  Folder: PATCH_1-2_opp_Export_dev_pm_opp_set_genpd_virt_dev_.mbox	   6487
+From vireshk  Tue Jul  2 10:07:45 2019
+ Subject: [PATCH 2/2] opp: Manage empty OPP tables with clk handle
+  Folder: PATCH_2-2_opp_Manage_empty_OPP_tables_with_clk_handle.mbox	   7236

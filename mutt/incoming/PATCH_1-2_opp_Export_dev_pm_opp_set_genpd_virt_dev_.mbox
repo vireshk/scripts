@@ -1,0 +1,62 @@
+From vireshk  Tue Jul  2 10:07:44 2019
+Delivered-To: viresh.kumar@linaro.org
+Received: from gmail-pop.l.google.com [74.125.24.109] 	by vireshk-i7 with POP3 (fetchmail-6.3.26) 	for <vireshk@localhost> (single-drop); Tue, 02 Jul 2019 10:07:44 +0530 (IST)
+Received: by 2002:a02:1a89:0:0:0:0:0 with SMTP id 131csp3599960jai;         Mon, 1 Jul 2019 21:36:52 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqwL9q5paoSjNEMGdCSOOxPVu7TkkHpXBDm5qQE6dnJi5ReJakPvjxSsXOZEjSv8zr0xJvh4
+X-Received: by 2002:a63:dc02:: with SMTP id s2mr28847293pgg.286.1562042212775;         Mon, 01 Jul 2019 21:36:52 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1562042212; cv=none;         d=google.com; s=arc-20160816;         b=bEuhHIu9J8lQwvnzMo4aU58RcIe9vrmI1PqF1rPJ3s9qn+cFz6pHBY0iYYgiVElqP0          b9BiwCpHWmQKtz/FQXVq7dd605IMvRHS9dbEj0pwKSPXgDq2O8pROjgFtTfWIzk3jOIu          kwQpN2rYpslP3rMpA1X75kGNsJt8cVb3eKhCop36njvUUA+Z4EdE8r0hDDXs9RnhGu+h          yq4S2TGcPE4YBYZP48M8mm3HcDgfVLFaweGP3Rjy/8JCrZFQ5TTo1Awlgb2i1nykp5Ht          8bPB4ad6+y+RzKYVePhVx/fxSXkbxveBNColVf86YmI3Qj0Iua4+Hm+SwKHR+BXkoul/          jAMQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from:dmarc-filter:dkim-signature:dkim-signature:delivered-to;         bh=FTo9CieMQQfiqggAmfYjPFlqTdoGqXIABRgYW2agLRo=;         b=Pre1vjj15xyx+XjKtvBPzr5LdVBhqceCNO0lEzhv+RL0RlX9uGXi3pL9wmpbzfYFRo          oC5a0BtX5GjYiPclG6FOyGFEmrZujcFJ8yMU6zAycTxt6GF0yKaOf3LxlSWr8drw8GpV          IJT0hRo+y2eaccMs1GSjbKZuZxkfYEMzXzNbcrddVcdUYBmHJ9UQfC538gSdtQ8y+0A0          +lD8S9l/u418XxLDUVerShnX3Rlp9VIkyVw5tnZ67YrD+2po+ybxZTzpqWgVbBhDjuCE          zytmLD4yiIYvOgn2PjyhsICf2tND+HsGKJxflZpcACwG5KJbZvrojkBDShRWF10glYHs          59IA==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@codeaurora.org header.s=default header.b=iQ+bkUSA;        dkim=pass header.i=@codeaurora.org header.s=default header.b=CkiwfEX3;        spf=pass (google.com: domain of srs0=gu8v=u7=codeaurora.org=rnayak@kernel.org designates 198.145.29.99 as permitted sender) smtp.mailfrom="SRS0=Gu8V=U7=codeaurora.org=rnayak@kernel.org"
+Return-Path: <SRS0=Gu8V=U7=codeaurora.org=rnayak@kernel.org>
+Received: from mail.kernel.org (mail.kernel.org. [198.145.29.99])         by mx.google.com with ESMTPS id h4si1341934pje.41.2019.07.01.21.36.52         for <viresh.kumar@linaro.org>         (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);         Mon, 01 Jul 2019 21:36:52 -0700 (PDT)
+Received-SPF: pass (google.com: domain of srs0=gu8v=u7=codeaurora.org=rnayak@kernel.org designates 198.145.29.99 as permitted sender) client-ip=198.145.29.99;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@codeaurora.org header.s=default header.b=iQ+bkUSA;        dkim=pass header.i=@codeaurora.org header.s=default header.b=CkiwfEX3;        spf=pass (google.com: domain of srs0=gu8v=u7=codeaurora.org=rnayak@kernel.org designates 198.145.29.99 as permitted sender) smtp.mailfrom="SRS0=Gu8V=U7=codeaurora.org=rnayak@kernel.org"
+Received: by mail.kernel.org (Postfix) 	id 4890D21721; Tue,  2 Jul 2019 04:36:52 +0000 (UTC)
+Delivered-To: vireshk@kernel.org
+Received: by smtp.codeaurora.org (Postfix, from userid 1000) 	id 0191D607B9; Tue,  2 Jul 2019 04:36:51 +0000 (UTC)
+Authentication-Results: mail.kernel.org; 	dkim=fail reason="key not found in DNS" (0-bit key) header.d=codeaurora.org header.i=@codeaurora.org header.b="iQ+bkUSA"; 	dkim=fail reason="key not found in DNS" (0-bit key) header.d=codeaurora.org header.i=@codeaurora.org header.b="CkiwfEX3"
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=codeaurora.org; 	s=default; t=1562042212; 	bh=mgMehHvBkR+GBicy9Yj53pOCNoXk3pHBimhXl6uHn/A=; 	h=From:To:Cc:Subject:Date:From; 	b=iQ+bkUSAZM70dHBIIbGJO/JN1aGeV/WO7fhF4kKjOyAXbKCGvfiafmyy6oN7BFoQF 	 25cT/vKJ4ULQyPih8jSsM/frVdxTYuAR1YqwKBCmLPgEGHJtVIqrqG91cLMzI3ZoHG 	 Ehf8F7BEzuQj6kVs8VXRXds4LLoojG4USu9yQ9TM=
+X-Spam-Checker-Version: SpamAssassin 3.4.0 (2014-02-07) on 	pdx-caf-mail.web.codeaurora.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.7 required=2.0 tests=ALL_TRUSTED,BAYES_00, 	DKIM_INVALID,DKIM_SIGNED,SPF_NONE autolearn=no autolearn_force=no 	version=3.4.0
+Received: from blr-ubuntu-173.qualcomm.com (blr-bdr-fw-01_globalnat_allzones-outside.qualcomm.com [103.229.18.19]) 	(using TLSv1.2 with cipher ECDHE-RSA-AES128-SHA256 (128/128 bits)) 	(No client certificate requested) 	(Authenticated sender: rnayak@smtp.codeaurora.org) 	by smtp.codeaurora.org (Postfix) with ESMTPSA id 14DF1601B4; 	Tue,  2 Jul 2019 04:36:48 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=codeaurora.org; 	s=default; t=1562042210; 	bh=mgMehHvBkR+GBicy9Yj53pOCNoXk3pHBimhXl6uHn/A=; 	h=From:To:Cc:Subject:Date:From; 	b=CkiwfEX3pcuHxLNmwyGKq8LBRXwjpaBuphjz11/WOeKqNXuIiaeTCcu4d1khnnP+0 	 ccCC5bzpxoZ/zzuSezeXNJrAW6Qkr1uaKxFTq9SoUR8zXZqSIzR2ZodNLmm0Q4lpp+ 	 BTR7eJ1IIdr7Ulmy/VBEL6qTr8TIP9BeYYjadYxI=
+DMARC-Filter: OpenDMARC Filter v1.3.2 smtp.codeaurora.org 14DF1601B4
+Authentication-Results: pdx-caf-mail.web.codeaurora.org; dmarc=none (p=none dis=none) header.from=codeaurora.org
+Authentication-Results: pdx-caf-mail.web.codeaurora.org; spf=none smtp.mailfrom=rnayak@codeaurora.org
+From: Rajendra Nayak <rnayak@codeaurora.org>
+To: vireshk@kernel.org, 	sboyd@kernel.org
+Cc: linux-pm@vger.kernel.org, 	linux-kernel@vger.kernel.org, 	linux-arm-msm@vger.kernel.org, 	Rajendra Nayak <rnayak@codeaurora.org>
+Subject: [PATCH 1/2] opp: Export dev_pm_opp_set_genpd_virt_dev()
+Date: Tue,  2 Jul 2019 10:06:42 +0530
+Message-Id: <20190702043643.1746-1-rnayak@codeaurora.org>
+X-Mailer: git-send-email 2.21.0
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Status: RO
+Content-Length: 719
+Lines: 22
+
+Export dev_pm_opp_set_genpd_virt_dev() so loadable modules can use it.
+
+Signed-off-by: Rajendra Nayak <rnayak@codeaurora.org>
+---
+ drivers/opp/core.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/drivers/opp/core.c b/drivers/opp/core.c
+index 8fbdbedc009c..ae033bb1e5b7 100644
+--- a/drivers/opp/core.c
++++ b/drivers/opp/core.c
+@@ -1797,6 +1797,7 @@ struct opp_table *dev_pm_opp_set_genpd_virt_dev(struct device *dev,
+ 
+ 	return opp_table;
+ }
++EXPORT_SYMBOL_GPL(dev_pm_opp_set_genpd_virt_dev);
+ 
+ /**
+  * dev_pm_opp_put_genpd_virt_dev() - Releases resources blocked for genpd device.
+-- 
+QUALCOMM INDIA, on behalf of Qualcomm Innovation Center, Inc. is a member
+of Code Aurora Forum, hosted by The Linux Foundation
+

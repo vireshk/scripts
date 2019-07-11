@@ -872,3 +872,9 @@ From vireshk  Tue Jul  2 10:07:44 2019
 From vireshk  Tue Jul  2 10:07:45 2019
  Subject: [PATCH 2/2] opp: Manage empty OPP tables with clk handle
   Folder: PATCH_2-2_opp_Manage_empty_OPP_tables_with_clk_handle.mbox	   7236
+From vireshk  Wed Jun 12 21:59:22 2019
+ Subject: [RESEND, PATCH v4 1/2] cpufreq: Add sun50i nvmem based CPU scaling dr
+  Folder: RESEND,_PATCH_v4_1-2_cpufreq_Add_sun50i_nvmem_based_CPU_scal	  15343
+From vireshk  Wed Jun 12 21:59:22 2019
+ Subject: [RESEND, PATCH v4 2/2] dt-bindings: cpufreq: Document allwinner,sun50
+  Folder: RESEND,_PATCH_v4_2-2_dt-bindings_cpufreq_Document_allwinner,	  13554

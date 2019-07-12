@@ -31642,3 +31642,62 @@ Please make sure you have the correct access rights
 and the repository exists.
 
 Entering /home/vireshk/scripts
+[master b56a8271f24d] updates
+ 6 files changed, 656 insertions(+), 137 deletions(-)
+ delete mode 100644 mutt/incoming/PATCH_1-2_opp_Export_dev_pm_opp_set_genpd_virt_dev_.mbox
+ delete mode 100644 mutt/incoming/PATCH_2-2_opp_Manage_empty_OPP_tables_with_clk_handle.mbox
+ create mode 100644 mutt/incoming/RESEND,_PATCH_v4_1-2_cpufreq_Add_sun50i_nvmem_based_CPU_scaling_driver.mbox
+ create mode 100644 mutt/incoming/RESEND,_PATCH_v4_2-2_dt-bindings_cpufreq_Document_allwinner,sun50i-h6-operating-points.mbox
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Fri Jul 12 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/scripts

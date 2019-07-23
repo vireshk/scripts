@@ -31923,3 +31923,1227 @@ Please make sure you have the correct access rights
 and the repository exists.
 
 Entering /home/vireshk/scripts
+[master b037387187ca] updates
+ 1 file changed, 56 insertions(+)
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Mon Jul 22 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+packet_write_wait: Connection to 18.136.253.116 port 22: Broken pipe
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   android-hikey-linaro-4.19
+ - [deleted]                   aosp/android-4.14
+ - [deleted]                   aosp/android-4.4
+ + 1b1d5fc2d6dc...a462f6f3ed22 boot-constraint -> boot-constraint (forced update)
+   0334906c0696..3355c91b7939  cpufreq/arm/linux-next -> cpufreq/arm/linux-next
+ + a6a92d6a4ff3...c0cbb7ce7a86 cpufreq/freq-constraint-pmqos -> cpufreq/freq-constraint-pmqos (forced update)
+ - [deleted]                   cpufreq/freq-constraints
+ - [deleted]                   cpufreq/notifiers
+ - [deleted]                   cpufreq/notifiers-v2
+ - [deleted]                   cpufreq/oops/sboyd
+ - [deleted]                   opp/genpd-runtime-pm
+   a9a744dd5b82..aaf5648b925a  opp/linux-next -> opp/linux-next
+ + 49a063e1989c...eddc4afccdc1 sched/idle -> sched/idle (forced update)
+ - [deleted]                   sched/idle-v1
+   4b92e6f09906..a7c0cb68e4bf  aosp/android-3.18 -> aosp/android-3.18
+   d2f94a9e050d..d69c001be7c0  aosp/android-3.18-n-release -> aosp/android-3.18-n-release
+   451358eb3519..3d5885175b90  aosp/android-3.18-o-mr1 -> aosp/android-3.18-o-mr1
+   d9179c26bbfa..9e69bb285e72  aosp/android-3.18-o-release -> aosp/android-3.18-o-release
+   0116eb1061b0..1f1139ce6f90  aosp/android-4.14 -> aosp/android-4.14
+   848d71fbb8c0..499682502f01  aosp/android-4.14-p -> aosp/android-4.14-p
+   7943e452b4e6..35a605529447  aosp/android-4.14-p-release -> aosp/android-4.14-p-release
+   c28f73fe420c..7d7ef9670900  aosp/android-4.19 -> aosp/android-4.19
+   64b564428faa..ce469a70f3bc  aosp/android-4.4 -> aosp/android-4.4
+   c9e0a82f38a4..058ef8575d5f  aosp/android-4.4-n -> aosp/android-4.4-n
+   94ee30f0dee6..3e3f5245dc8f  aosp/android-4.4-n-release -> aosp/android-4.4-n-release
+   9965e77e8032..51a0508ca2cf  aosp/android-4.4-o -> aosp/android-4.4-o
+   6085e8304b1d..b2d0d9c68259  aosp/android-4.4-o-mr1 -> aosp/android-4.4-o-mr1
+   8bc944dd1cf1..fbdbce0a5a02  aosp/android-4.4-o-release -> aosp/android-4.4-o-release
+   a95e76973d59..45246ee04997  aosp/android-4.4-p -> aosp/android-4.4-p
+   172570c068ec..ab916c6b8089  aosp/android-4.4-p-release -> aosp/android-4.4-p-release
+   1597fdfe52ba..25b685128493  aosp/android-4.9 -> aosp/android-4.9
+   b271d4779643..a169da128685  aosp/android-4.9-o -> aosp/android-4.9-o
+   22160f9d2198..1169103e2aac  aosp/android-4.9-o-mr1 -> aosp/android-4.9-o-mr1
+   38ead4936717..fc79ddc31bfa  aosp/android-4.9-o-release -> aosp/android-4.9-o-release
+   ee54eeb80779..2a275b5c6d5c  aosp/android-4.9-p -> aosp/android-4.9-p
+   f3cbfcb66d02..8fd8ddee8544  aosp/android-4.9-p-release -> aosp/android-4.9-p-release
+ + 5b1268a19daf...2d996668da6f aosp/android-mainline-tracking -> aosp/android-mainline-tracking (forced update)
+   7aceb6591a25..79d202b40461  aosp/android-trusty-4.14 -> aosp/android-trusty-4.14
+   2223882fe362..2860dfe869a9  aosp/cuttlefish-4.14 -> aosp/cuttlefish-4.14
+   2fcb9b6d865d..212c82d24c70  aosp/cuttlefish-4.4 -> aosp/cuttlefish-4.4
+ + 439ae3572bd9...ec2f204c3e51 aosp/experimental/eas-dev -> aosp/experimental/eas-dev (forced update)
+   5cd56a20f14e..32576ded6947  aosp/upstream-f2fs-stable-linux-3.18.y -> aosp/upstream-f2fs-stable-linux-3.18.y
+   ad65135dc447..abb2642ba373  aosp/upstream-f2fs-stable-linux-4.14.y -> aosp/upstream-f2fs-stable-linux-4.14.y
+   437584796d8b..dc7b5efa0734  aosp/upstream-f2fs-stable-linux-4.19.y -> aosp/upstream-f2fs-stable-linux-4.19.y
+   011f2e498d94..0cba1d4c1422  aosp/upstream-f2fs-stable-linux-4.4.y -> aosp/upstream-f2fs-stable-linux-4.4.y
+   b152e2d05c67..c673f4b15a8a  aosp/upstream-f2fs-stable-linux-4.9.y -> aosp/upstream-f2fs-stable-linux-4.9.y
+   49ab1e524f6a..dc3e913edf94  aosp/upstream-linux-3.18.y -> aosp/upstream-linux-3.18.y
+   0d7866d54a2c..2af67d29b6fe  aosp/upstream-linux-4.14.y -> aosp/upstream-linux-4.14.y
+   323e0195e63f..3351e9d39947  aosp/upstream-linux-4.19.y -> aosp/upstream-linux-4.19.y
+   343f981c7608..5875149a400a  aosp/upstream-linux-4.4.y -> aosp/upstream-linux-4.4.y
+   6ebe34c1da89..ffe8cffc8be1  aosp/upstream-linux-4.9.y -> aosp/upstream-linux-4.9.y
+   9ff01193a20d..a823c35ff2ed  arm64/devel -> arm64/devel
+   b855b58ac1b7..c166adf6ef2c  arm64/for-next/core -> arm64/for-next/core
+   74698f6971f2..045afc24124d  arm64/for-next/fixes -> arm64/for-next/fixes
+ - [deleted]                   clockevents/chromebook2
+ - [deleted]                   clockevents/clockevents/3.12-fixes
+ - [deleted]                   clockevents/clockevents/3.12-stable
+ - [deleted]                   clockevents/clockevents/3.13
+ - [deleted]                   clockevents/clockevents/3.13-fixes
+ - [deleted]                   clockevents/clockevents/3.14
+ - [deleted]                   clockevents/clockevents/3.15
+ - [deleted]                   clockevents/clockevents/3.15-fixes
+ - [deleted]                   clockevents/clockevents/3.16
+ - [deleted]                   clockevents/clockevents/3.17
+ - [deleted]                   clockevents/clockevents/3.18
+ - [deleted]                   clockevents/clockevents/3.18-fixes
+ - [deleted]                   clockevents/clockevents/3.19
+ - [deleted]                   clockevents/clockevents/3.20
+ - [deleted]                   clockevents/clockevents/4.0-rc1
+ - [deleted]                   clockevents/clockevents/4.0-rc2
+ - [deleted]                   clockevents/clockevents/4.0-rc4
+ - [deleted]                   clockevents/clockevents/4.0-rc5
+ - [deleted]                   clockevents/clockevents/4.1
+ - [deleted]                   clockevents/clockevents/4.2
+ - [deleted]                   clockevents/clockevents/4.2-fixes
+ - [deleted]                   clockevents/clockevents/4.2-rc2
+ - [deleted]                   clockevents/clockevents/4.3
+ - [deleted]                   clockevents/clockevents/cmt-mtu2-tmu-cleanups
+ - [deleted]                   clockevents/clockevents/for-Simon-3.13-rc2
+ - [deleted]                   clockevents/clockevents/next
+ - [deleted]                   clockevents/clockevents/renesas-timers-dt
+ - [deleted]                   clockevents/cpuidle-eas-next
+ - [deleted]                   clockevents/cpuidle/3.13-fixes
+ - [deleted]                   clockevents/cpuidle/3.14
+ - [deleted]                   clockevents/cpuidle/3.16
+ - [deleted]                   clockevents/cpuidle/3.18
+ - [deleted]                   clockevents/cpuidle/3.19
+ - [deleted]                   clockevents/cpuidle/3.20
+ - [deleted]                   clockevents/cpuidle/4.0-fixes
+ - [deleted]                   clockevents/cpuidle/4.1
+ - [deleted]                   clockevents/cpuidle/samsung-next
+ - [deleted]                   clockevents/kevin-bot
+ - [deleted]                   clockevents/qcom/next
+ - [deleted]                   clockevents/sched/cleanups
+ - [deleted]                   clockevents/sched/cpuidle-integration
+ - [deleted]                   clockevents/sched/cpuidle/eas-next
+ - [deleted]                   clockevents/sched/idle-balance
+ - [deleted]                   dlezcano/chromebook2
+ - [deleted]                   dlezcano/clockevents/3.12-fixes
+ - [deleted]                   dlezcano/clockevents/3.12-stable
+ - [deleted]                   dlezcano/clockevents/3.13
+ - [deleted]                   dlezcano/clockevents/3.13-fixes
+ - [deleted]                   dlezcano/clockevents/3.14
+ - [deleted]                   dlezcano/clockevents/3.15
+ - [deleted]                   dlezcano/clockevents/3.15-fixes
+ - [deleted]                   dlezcano/clockevents/3.16
+ - [deleted]                   dlezcano/clockevents/3.17
+ - [deleted]                   dlezcano/clockevents/3.18
+ - [deleted]                   dlezcano/clockevents/3.18-fixes
+ - [deleted]                   dlezcano/clockevents/3.19
+ - [deleted]                   dlezcano/clockevents/3.20
+ - [deleted]                   dlezcano/clockevents/4.0-rc1
+ - [deleted]                   dlezcano/clockevents/4.0-rc2
+ - [deleted]                   dlezcano/clockevents/4.0-rc4
+ - [deleted]                   dlezcano/clockevents/4.0-rc5
+ - [deleted]                   dlezcano/clockevents/4.1
+ - [deleted]                   dlezcano/clockevents/4.10
+ - [deleted]                   dlezcano/clockevents/4.2
+ - [deleted]                   dlezcano/clockevents/4.2-fixes
+ - [deleted]                   dlezcano/clockevents/4.2-rc2
+ - [deleted]                   dlezcano/clockevents/4.3
+ - [deleted]                   dlezcano/clockevents/4.3-fixes
+ - [deleted]                   dlezcano/clockevents/4.4
+ - [deleted]                   dlezcano/clockevents/4.4-fixes
+ - [deleted]                   dlezcano/clockevents/4.4-rc7
+ - [deleted]                   dlezcano/clockevents/4.5
+ - [deleted]                   dlezcano/clockevents/4.5-fixes
+ - [deleted]                   dlezcano/clockevents/4.6
+ - [deleted]                   dlezcano/clockevents/4.6-fixes
+ - [deleted]                   dlezcano/clockevents/4.7
+ - [deleted]                   dlezcano/clockevents/4.8
+ - [deleted]                   dlezcano/clockevents/4.8-fixes
+ - [deleted]                   dlezcano/clockevents/4.9
+ - [deleted]                   dlezcano/clockevents/cmt-mtu2-tmu-cleanups
+ - [deleted]                   dlezcano/clockevents/for-Simon-3.13-rc2
+ - [deleted]                   dlezcano/clockevents/next
+ - [deleted]                   dlezcano/clockevents/renesas-timers-dt
+ - [deleted]                   dlezcano/cpuidle-eas-next
+ - [deleted]                   dlezcano/cpuidle/3.13-fixes
+ - [deleted]                   dlezcano/cpuidle/3.14
+ - [deleted]                   dlezcano/cpuidle/3.16
+ - [deleted]                   dlezcano/cpuidle/3.18
+ - [deleted]                   dlezcano/cpuidle/3.19
+ - [deleted]                   dlezcano/cpuidle/3.20
+ - [deleted]                   dlezcano/cpuidle/4.0-fixes
+ - [deleted]                   dlezcano/cpuidle/4.1
+ - [deleted]                   dlezcano/cpuidle/4.4
+ - [deleted]                   dlezcano/cpuidle/4.7
+ - [deleted]                   dlezcano/cpuidle/irq-governor
+ - [deleted]                   dlezcano/cpuidle/samsung-next
+ - [deleted]                   dlezcano/irq-timings-v0
+ - [deleted]                   dlezcano/irq-timings-v2
+ - [deleted]                   dlezcano/irq-timings-v7
+ - [deleted]                   dlezcano/kevin-bot
+ - [deleted]                   dlezcano/qcom/next
+ - [deleted]                   dlezcano/sched/cleanups
+ - [deleted]                   dlezcano/sched/cpuidle-integration
+ - [deleted]                   dlezcano/sched/cpuidle/eas-next
+ - [deleted]                   dlezcano/sched/idle
+ - [deleted]                   dlezcano/sched/idle-balance
+ - [deleted]                   greg-greybus/char-misc-linus
+ - [deleted]                   greg-greybus/char-misc-next
+ - [deleted]                   greg-greybus/char-misc-testing
+ - [deleted]                   greg-greybus/greybus
+ - [deleted]                   greg-greybus/greybus-test
+ - [deleted]                   greg-greybus/master
+ - [deleted]                   jstultz/EAS/android-4.4-easv5.2+aosp-changes
+ - [deleted]                   jstultz/EAS/android-hikey-linaro-4.4-EASv5.2+aosp
+ - [deleted]                   jstultz/EAS/v4.4-easv5.2+aosp-changes
+ - [deleted]                   jstultz/android-4.4-stable-merge
+ - [deleted]                   jstultz/android-hikey-linaro-4.1
+ - [deleted]                   jstultz/android-hikey-linaro-4.1-topic-hikey
+ - [deleted]                   jstultz/android-hikey-linaro-4.4
+ - [deleted]                   jstultz/android-hikey-linaro-4.4-EASv5.2
+ - [deleted]                   jstultz/android-hikey-linaro-4.4-EASv5.2+aosp
+ - [deleted]                   jstultz/android-hikey-linaro-4.4-EASv5.2-WIP
+ - [deleted]                   jstultz/android-hikey-linaro-4.4-WIP
+ - [deleted]                   jstultz/android-hikey-linaro-4.4-configsync
+ - [deleted]                   jstultz/android-hikey-linaro-4.4-stable
+ - [deleted]                   jstultz/android-hikey-linaro-4.4.17
+ - [deleted]                   jstultz/android-hikey-linaro-4.9
+ - [deleted]                   jstultz/aosp/4.9-fixups
+ - [deleted]                   jstultz/common/cgroup-perf
+ - [deleted]                   jstultz/dev/3.10-hissc-driver
+ - [deleted]                   jstultz/dev/andorid-4.4-easv5.2+aosp-changes
+ - [deleted]                   jstultz/dev/android-4.4-cleanup-WIP
+ - [deleted]                   jstultz/dev/asix-fix
+ - [deleted]                   jstultz/dev/battery
+ - [deleted]                   jstultz/dev/bluetooth-trivial
+ - [deleted]                   jstultz/dev/etm
+ - [deleted]                   jstultz/dev/fiq-kdb
+ - [deleted]                   jstultz/dev/hdmi-audio
+ - [deleted]                   jstultz/dev/hdmi-audio-4.4
+ - [deleted]                   jstultz/dev/hdmi-more-modes
+ - [deleted]                   jstultz/dev/hdmi-suspend
+ - [deleted]                   jstultz/dev/hi3660-4.4-aosp-take2
+ - [deleted]                   jstultz/dev/hi3660-aosp
+ - [deleted]                   jstultz/dev/hi3660-cleanup
+ - [deleted]                   jstultz/dev/hikey-4.10
+ - [deleted]                   jstultz/dev/hikey-4.11
+ - [deleted]                   jstultz/dev/hikey-4.12
+ - [deleted]                   jstultz/dev/hikey-4.13
+ - [deleted]                   jstultz/dev/hikey-4.4
+ - [deleted]                   jstultz/dev/hikey-4.4-WIP
+ - [deleted]                   jstultz/dev/hikey-4.4-drm-sync
+ - [deleted]                   jstultz/dev/hikey-4.6-dev
+ - [deleted]                   jstultz/dev/hikey-4.6-rc3
+ - [deleted]                   jstultz/dev/hikey-4.7
+ - [deleted]                   jstultz/dev/hikey-4.7-WIP
+ - [deleted]                   jstultz/dev/hikey-4.7-pwr
+ - [deleted]                   jstultz/dev/hikey-4.8
+ - [deleted]                   jstultz/dev/hikey-4.9
+ - [deleted]                   jstultz/dev/hikey-mainline-WIP
+ - [deleted]                   jstultz/dev/hikey-mainline-newmali
+ - [deleted]                   jstultz/dev/hikey960-mainline-WIP
+ - [deleted]                   jstultz/dev/hikey960-rebase-4.9
+ - [deleted]                   jstultz/dev/hikey960-usb-branch
+ - [deleted]                   jstultz/dev/hikey960-v4.9-alltogether
+ - [deleted]                   jstultz/dev/hikey960-v4.9-android-WIP
+ - [deleted]                   jstultz/dev/hikey960-v4.9-drm-for-guodong
+ - [deleted]                   jstultz/dev/hikey960-v4.9-drm-for-guodong-WIP
+ - [deleted]                   jstultz/dev/hikey960-v4.9-drm-for-guodong-malir7p0
+ - [deleted]                   jstultz/dev/hikey960-v4.9-usb-for-guodong
+ - [deleted]                   jstultz/dev/i2c-fixes
+ - [deleted]                   jstultz/dev/kdb-kiosk
+ - [deleted]                   jstultz/dev/mali-fix
+ - [deleted]                   jstultz/dev/mali-r6p0
+ - [deleted]                   jstultz/dev/netfilter
+ - [deleted]                   jstultz/dev/reboot-reason
+ - [deleted]                   jstultz/dev/suspend-fix
+ - [deleted]                   jstultz/dev/timerslack
+ - [deleted]                   jstultz/dev/upstream-bluetooth
+ - [deleted]                   jstultz/dev/v4.4-easv5.2+aosp-changes
+ - [deleted]                   jstultz/dev/vrange-paging
+ - [deleted]                   jstultz/dev/vrange-v9
+ - [deleted]                   jstultz/experimental/android-4.1-cleanup
+ - [deleted]                   jstultz/experimental/android-hikey-linaro-4.1
+ - [deleted]                   jstultz/experimental/android-hikey-linaro-4.1-cleanup
+ - [deleted]                   jstultz/experimental/android-hikey-linaro-4.9
+ - [deleted]                   jstultz/forsumit/hikey-4.4-lts
+ - [deleted]                   jstultz/hikey-3.18-malir6p0
+ - [deleted]                   jstultz/hikey-4.1-WIP
+ - [deleted]                   jstultz/hikey-android-4.1-WIP
+ - [deleted]                   jstultz/hikey-mainline
+ - [deleted]                   jstultz/master
+ - [deleted]                   jstultz/timerslack-merge
+ - [deleted]                   jstultz/upstream/experimental/android-4.1
+ - [deleted]                   jstultz/upstream/fbhelper_deferred
+ - [deleted]                   jstultz/upstream/hikey-hdmi-audio
+ - [deleted]                   khilman/arm-nohz-v3.10
+ - [deleted]                   khilman/arm-nohz-v3.12
+ - [deleted]                   khilman/avs-next
+ - [deleted]                   khilman/master
+ - [deleted]                   khilman/queue-4.0
+ - [deleted]                   khilman/to-build
+ - [deleted]                   khilman/wip/exynos/v3.17-rc3-integ
+ - [deleted]                   khilman/wip/exynos/v3.19-integ-orig
+ - [deleted]                   khilman/wip/exynos/v4.0-integ
+ - [deleted]                   khilman/wip/soc-idle/dev
+ - [deleted]                   khilman/wip/v3.14/arm64-errata
+ - [deleted]                   khilman/wip/v3.18/arm64-errata
+ - [deleted]                   leoyan/android-hikey-linaro-4.4-eas-opt-1013
+ - [deleted]                   leoyan/android-hikey-linaro-4.9-1109
+ - [deleted]                   leoyan/android-hikey-linaro-4.9-clear-random-event
+ - [deleted]                   leoyan/android-hikey-linaro-4.9-mali-r4-experiment
+ - [deleted]                   leoyan/android-hikey-linaro-4.9-opt-nrg-cal-boost-margin
+ - [deleted]                   leoyan/android-hikey-linaro-4.9-opt-nrg-cal-cluster-candidates
+ - [deleted]                   leoyan/android-hikey-linaro-4.9-opt-nrg-cal-task-basis-2
+ - [deleted]                   leoyan/android-hikey-linaro-4.9-opt-rt-pressure
+ + 7746f7bc9a80...6c019e8711d6 lko/boot-constraint -> lko/boot-constraint (forced update)
+ - [deleted]                   llt/caf/msm-3.18/LA.HB.1.1.1_rb4.5
+ - [deleted]                   llt/dev/srini/v3.14
+ - [deleted]                   llt/freedreno/ifc6410-drm
+ - [deleted]                   llt/freedreno/ifc6410-v2.0-drm
+ - [deleted]                   llt/galak-msm/apq_ipq_base
+ - [deleted]                   llt/inforce/ifc6410/v1.5
+ - [deleted]                   llt/inforce/ifc6410/v2.0
+ - [deleted]                   llt/inforce/ifc6410/v3.0
+ - [deleted]                   llt/integration-linux-ifc6410
+ - [deleted]                   llt/integration-linux-qcomlt
+ - [deleted]                   llt/master
+ - [deleted]                   llt/ndec/freedreno/ifc6410-v2.0-drm-thermal
+ - [deleted]                   llt/psci-for-4.4
+ - [deleted]                   llt/qcomlt-v3.14-dev
+ - [deleted]                   llt/release/qcomlt-3.17
+ - [deleted]                   llt/release/qcomlt-3.18
+ - [deleted]                   llt/release/qcomlt-3.19
+ - [deleted]                   llt/release/qcomlt-3.4
+ - [deleted]                   llt/release/qcomlt-4.0
+ - [deleted]                   llt/release/qcomlt-4.2
+ - [deleted]                   llt/release/qcomlt-4.2-bis
+ - [deleted]                   llt/release/qcomlt-4.3
+ - [deleted]                   llt/release/qcomlt-4.4
+ - [deleted]                   llt/release/qcomlt-4.4-next
+ - [deleted]                   llt/test-ndec-bisect
+ - [deleted]                   llt/tracking-next-mmc
+ - [deleted]                   llt/tracking-qcomlt-8064-restart
+ - [deleted]                   llt/tracking-qcomlt-adm-dma
+ - [deleted]                   llt/tracking-qcomlt-adv7511
+ - [deleted]                   llt/tracking-qcomlt-adv7533
+ - [deleted]                   llt/tracking-qcomlt-apq8016-dt
+ - [deleted]                   llt/tracking-qcomlt-apq8064-audio
+ - [deleted]                   llt/tracking-qcomlt-apq8064-dt
+ - [deleted]                   llt/tracking-qcomlt-apq8096-dt
+ - [deleted]                   llt/tracking-qcomlt-arm64
+ - [deleted]                   llt/tracking-qcomlt-arm64-smp
+ - [deleted]                   llt/tracking-qcomlt-audio
+ - [deleted]                   llt/tracking-qcomlt-bus-scaling
+ - [deleted]                   llt/tracking-qcomlt-card-detect
+ - [deleted]                   llt/tracking-qcomlt-clk
+ - [deleted]                   llt/tracking-qcomlt-config-fragments
+ - [deleted]                   llt/tracking-qcomlt-coresight
+ - [deleted]                   llt/tracking-qcomlt-cpufreq
+ - [deleted]                   llt/tracking-qcomlt-cpuidle
+ - [deleted]                   llt/tracking-qcomlt-dma
+ - [deleted]                   llt/tracking-qcomlt-drm-msm
+ - [deleted]                   llt/tracking-qcomlt-drm_msm
+ - [deleted]                   llt/tracking-qcomlt-dsi
+ - [deleted]                   llt/tracking-qcomlt-dt
+ - [deleted]                   llt/tracking-qcomlt-efuse
+ - [deleted]                   llt/tracking-qcomlt-fixes
+ - [deleted]                   llt/tracking-qcomlt-gsbi
+ - [deleted]                   llt/tracking-qcomlt-hsuart
+ - [deleted]                   llt/tracking-qcomlt-i2c
+ - [deleted]                   llt/tracking-qcomlt-iommu
+ - [deleted]                   llt/tracking-qcomlt-ipcrtr
+ - [deleted]                   llt/tracking-qcomlt-mainline-pcie
+ - [deleted]                   llt/tracking-qcomlt-mainline-rpm-smd
+ - [deleted]                   llt/tracking-qcomlt-mainline-rpm-smd-pil
+ - [deleted]                   llt/tracking-qcomlt-msm8916-smd-rpm
+ - [deleted]                   llt/tracking-qcomlt-nvmem
+ - [deleted]                   llt/tracking-qcomlt-panelpicker
+ - [deleted]                   llt/tracking-qcomlt-pcie
+ - [deleted]                   llt/tracking-qcomlt-pmic-gpio
+ - [deleted]                   llt/tracking-qcomlt-pmic-gpio-mpp
+ - [deleted]                   llt/tracking-qcomlt-power-regulator
+ - [deleted]                   llt/tracking-qcomlt-powerseq
+ - [deleted]                   llt/tracking-qcomlt-remoteproc
+ - [deleted]                   llt/tracking-qcomlt-rpm
+ - [deleted]                   llt/tracking-qcomlt-sata
+ - [deleted]                   llt/tracking-qcomlt-scm
+ - [deleted]                   llt/tracking-qcomlt-sdcc
+ - [deleted]                   llt/tracking-qcomlt-smd
+ - [deleted]                   llt/tracking-qcomlt-smem-state
+ - [deleted]                   llt/tracking-qcomlt-tsens
+ - [deleted]                   llt/tracking-qcomlt-ufs
+ - [deleted]                   llt/tracking-qcomlt-usb
+ - [deleted]                   llt/tracking-qcomlt-venus
+ - [deleted]                   llt/tracking-qcomlt-wcn36xx
+ - [deleted]                   llt/tracking-qcomlt-wcnss
+ - [deleted]                   llt/tracking-qcomlt-wcnss_ctrl
+ - [deleted]                   llt/tracking-qcomlt-wlan
+ + 3d41c6b20fa6...4c1edbf1ba7d lnext/akpm -> lnext/akpm (forced update)
+ + 85d05559ffa4...f45e875aafb0 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 75e6a83b189c...1438cde7c87c lnext/master -> lnext/master (forced update)
+ + 0f9777c74304...f96c1aec6d0e lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   9e98c678c2d6..fec88ab0af97  lnext/stable -> lnext/stable
+ - [deleted]                   lng/linux-linaro-lng-v3.14
+ - [deleted]                   lng/linux-linaro-lng-v3.14-rt
+ - [deleted]                   lng/linux-linaro-lng-v3.18
+ - [deleted]                   lng/linux-linaro-lng-v3.18-rt
+ - [deleted]                   lng/mainline-nohz
+ - [deleted]                   lng/master
+ - [deleted]                   lng/nohz-linux-linaro-lng-v3.18
+ - [deleted]                   lng/nohz-linux-linaro-lng-v3.18-rt
+ - [deleted]                   marvell/beta2-rebase
+ - [deleted]                   marvell/camera-demo
+ - [deleted]                   marvell/helium-hdmi
+ - [deleted]                   marvell/pinchartl/demo
+ - [deleted]                   marvell/pinchartl/marvell/ov5645
+ - [deleted]                   marvell/pinchartl/pstore
+ - [deleted]                   marvell/projectara-5.1
+ - [deleted]                   marvell/projectara-spiral2-4.4
+ - [deleted]                   marvell/projectara-spiral2-4.4.4-v2
+ - [deleted]                   marvell/projectara-spiral2-5.0.0
+ - [deleted]                   marvell/projectara-spiral2-5.0.0-a0
+ - [deleted]                   marvell/projectara-spiral2-5.0.0-testing
+ - [deleted]                   marvell/projectara-spiral2-5.0.0-v2
+ - [deleted]                   marvell/projectara-spiral2-5.0.0-v3
+ - [deleted]                   marvell/pxa1928-lp5.0
+ - [deleted]                   marvell/pxa1928_pdk5.0
+ - [deleted]                   marvell/rls_pxa1928_kk4.4_alpha2
+ - [deleted]                   marvell/rls_pxa1928_kk4.4_beta2
+ - [deleted]                   marvell/rls_pxa1928_kk4.4_beta2_evaluation
+ - [deleted]                   marvell/rls_pxa1928_lp5.0_alpha1
+ - [deleted]                   marvell/rls_pxa1928_lp5.1_beta1
+   babf09c3837f..5f9e832c1370  origin/HEAD -> origin/HEAD
+   babf09c3837f..5f9e832c1370  origin/master -> origin/master
+ - [deleted]                   patrick/aosp/hikey/v4.15-dev
+ - [deleted]                   patrick/aosp/test_p2/utilest
+ - [deleted]                   patrick/eas/dev/lsk-3.18-eas-5.2-util_est
+ - [deleted]                   patrick/eas/dev/lsk/v4.4/eas_v5.2/schedtune
+ - [deleted]                   patrick/eas/dev/stune_fixes_and_utilest_20160216
+ - [deleted]                   patrick/eas/next/topics/hikey960_debian
+ - [deleted]                   patrick/eas/schedutil/flags_fixes
+ - [deleted]                   patrick/eas/stune/rfcv2
+ - [deleted]                   patrick/eas/stune/rfcv3
+ - [deleted]                   patrick/eas/v1.5/util_est/hikey960
+ - [deleted]                   patrick/lisa/debug
+ - [deleted]                   patrick/lisa/debug_base
+ - [deleted]                   patrick/lkml/cfs_barriers
+ - [deleted]                   patrick/lkml/fix_sched_debug
+ - [deleted]                   patrick/lkml/utilest_v5
+ - [deleted]                   patrick/lkml/utilest_v6
+ - [deleted]                   patrick/lsk-3.18-eas-5.2-util_est
+ - [deleted]                   peterz/audio/testing
+ + 91aab9c843cf...162b65ddbf2f peterz/auto-latest -> peterz/auto-latest (forced update)
+   d207af2eab3f..7e8e6816c649  peterz/core-urgent-for-linus -> peterz/core-urgent-for-linus
+   ac65ddad4a23..e0478542cfd4  peterz/core/core -> peterz/core/core
+   1ea9b98b007a..d5f34153e526  peterz/core/debugobjects -> peterz/core/debugobjects
+ - [deleted]                   peterz/core/locking
+   a356d2ae5079..29da93fea3ea  peterz/core/objtool -> peterz/core/objtool
+   475c5ee193fd..83086d654dd0  peterz/core/rcu -> peterz/core/rcu
+   d207af2eab3f..7e8e6816c649  peterz/core/urgent -> peterz/core/urgent
+ - [deleted]                   peterz/debug/tmp
+   a5c03c31af22..02562d0ca108  peterz/efi/core -> peterz/efi/core
+   81b60dbff049..48c7d73b2362  peterz/efi/urgent -> peterz/efi/urgent
+   6dee6ae9d626..20faba848752  peterz/irq-urgent-for-linus -> peterz/irq-urgent-for-linus
+   cbf8699996a6..3a1d24ca9573  peterz/irq/core -> peterz/irq/core
+   6dee6ae9d626..20faba848752  peterz/irq/urgent -> peterz/irq/urgent
+   6cff0a118f23..bdf37b4dd35d  peterz/locking/atomics -> peterz/locking/atomics
+   a1ea544fe091..9156e545765e  peterz/locking/core -> peterz/locking/core
+   2dd6fd2e9997..526b935ec1bc  peterz/locking/urgent -> peterz/locking/urgent
+ + a97bbde0a19a...9e68d5d843e6 peterz/master -> peterz/master (forced update)
+   297f9233b53a..e4557c1a46b0  peterz/perf-urgent-for-linus -> peterz/perf-urgent-for-linus
+   33ea4b24277b..873ec295e328  peterz/perf/core -> peterz/perf/core
+ - [deleted]                   peterz/perf/testing
+   297f9233b53a..e4557c1a46b0  peterz/perf/urgent -> peterz/perf/urgent
+   179eb850ac57..6e4f929ea8b2  peterz/ras/core -> peterz/ras/core
+   7298f08ea887..0ade0b6240c4  peterz/ras/urgent -> peterz/ras/urgent
+ + 2d7885ddd924...56e338e77e85 peterz/sched/core -> peterz/sched/core (forced update)
+ - [deleted]                   peterz/sched/testing
+   43d1b29b27c7..e3d85487fba4  peterz/sched/urgent -> peterz/sched/urgent
+   f4c09f87adfe..caa759323c73  peterz/smp/hotplug -> peterz/smp/hotplug
+   76dc6c097d58..0ecfebd2b524  peterz/smp/urgent -> peterz/smp/urgent
+   303c146df1c4..9176ab1b8480  peterz/timers/core -> peterz/timers/core
+   d5421ea43d30..0df1c9868c3a  peterz/timers/urgent -> peterz/timers/urgent
+   03ae0307c258..1c65a355329e  peterz/tip -> peterz/tip
+   25d76ac88821..e9a1379f9219  peterz/x86-urgent-for-linus -> peterz/x86-urgent-for-linus
+   bee3204ec3c4..f8a8fe61fec8  peterz/x86/apic -> peterz/x86/apic
+   16c5055a5ff5..7457c0da024b  peterz/x86/asm -> peterz/x86/asm
+ + e9cb8fc2e5ca...8ff80fbe7e98 peterz/x86/boot -> peterz/x86/boot (forced update)
+   a06cc94f3f8d..87b61864d7ab  peterz/x86/build -> peterz/x86/build
+   31516de306c0..2ef085bd110c  peterz/x86/cache -> peterz/x86/cache
+   782bf20c2a17..53b7607382b0  peterz/x86/cleanups -> peterz/x86/cleanups
+ + 8b0e9db46157...a127fb28e3a4 peterz/x86/core -> peterz/x86/core (forced update)
+   aac64f7de999..049331f277fe  peterz/x86/cpu -> peterz/x86/cpu
+   77072f09eab1..e55a73251da3  peterz/x86/debug -> peterz/x86/debug
+   f1517df8701c..7f0a5e075583  peterz/x86/entry -> peterz/x86/entry
+   e4880bc5dfb1..7891bc0ab739  peterz/x86/fpu -> peterz/x86/fpu
+   5fa4ec9cb2e6..e53f31bffe1d  peterz/x86/hyperv -> peterz/x86/hyperv
+   4d8a991d460d..2c4645439e8f  peterz/x86/irq -> peterz/x86/irq
+   aa78c1ccfab6..c02f48e070bd  peterz/x86/microcode -> peterz/x86/microcode
+   6657fca06e3f..caa841360134  peterz/x86/mm -> peterz/x86/mm
+   a66b86f0026b..d97ee99bf225  peterz/x86/platform -> peterz/x86/platform
+ + f38cb9f2ad94...ab3765a050f7 peterz/x86/pti -> peterz/x86/pti (forced update)
+   fe6daab1ee9d..e44252f4fe79  peterz/x86/timers -> peterz/x86/timers
+   894266466aa7..406de552c2be  peterz/x86/urgent -> peterz/x86/urgent
+   4d8a991d460d..79a3aaa7b82e  peterz/x86/vdso -> peterz/x86/vdso
+   b6e88119f1ed..2c66a5b52e9e  pm/acpi -> pm/acpi
+ + 5fbe479d9120...b23303b63281 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   344798206f17..33ee09cd59ce  pm/devprop -> pm/devprop
+   9e98c678c2d6..b5d0790132df  pm/linux-next -> pm/linux-next
+   9e98c678c2d6..6fbc7275c7a9  pm/master -> pm/master
+   b444e1aa3e48..918e162e6a71  pm/pm -> pm/pm
+   9e98c678c2d6..aa9dbec9559c  pm/testing -> pm/testing
+   0334906c0696..3355c91b7939  pmko/cpufreq/arm/linux-next -> pmko/cpufreq/arm/linux-next
+   a9a744dd5b82..560d1bcad715  pmko/opp/linux-next -> pmko/opp/linux-next
+ - [deleted]                   qc-lt/caf/msm-3.18/LA.HB.1.1.1_rb4.5
+ - [deleted]                   qc-lt/caf/msm-3.18/LA.HB.1.3.2-16800
+ - [deleted]                   qc-lt/dev/srini/v3.14
+ - [deleted]                   qc-lt/freedreno/ifc6410-drm
+ - [deleted]                   qc-lt/freedreno/ifc6410-v2.0-drm
+ - [deleted]                   qc-lt/galak-msm/apq_ipq_base
+ - [deleted]                   qc-lt/inforce/ifc6410/v1.5
+ - [deleted]                   qc-lt/inforce/ifc6410/v2.0
+ - [deleted]                   qc-lt/inforce/ifc6410/v3.0
+ - [deleted]                   qc-lt/integration-linux-ifc6410
+ - [deleted]                   qc-lt/integration-linux-qcomlt
+ - [deleted]                   qc-lt/master
+ - [deleted]                   qc-lt/ndec/freedreno/ifc6410-v2.0-drm-thermal
+ - [deleted]                   qc-lt/psci-for-4.4
+ - [deleted]                   qc-lt/qcomlt-v3.14-dev
+ - [deleted]                   qc-lt/release/qcomlt-3.17
+ - [deleted]                   qc-lt/release/qcomlt-3.18
+ - [deleted]                   qc-lt/release/qcomlt-3.19
+ - [deleted]                   qc-lt/release/qcomlt-3.4
+ - [deleted]                   qc-lt/release/qcomlt-4.0
+ - [deleted]                   qc-lt/release/qcomlt-4.2
+ - [deleted]                   qc-lt/release/qcomlt-4.2-bis
+ - [deleted]                   qc-lt/release/qcomlt-4.3
+ - [deleted]                   qc-lt/release/qcomlt-4.4
+ - [deleted]                   qc-lt/release/qcomlt-4.7
+ - [deleted]                   qc-lt/test-ndec-bisect
+ - [deleted]                   qc-lt/tracking-next-mmc
+ - [deleted]                   qc-lt/tracking-qcomlt-8064-restart
+ - [deleted]                   qc-lt/tracking-qcomlt-adm-dma
+ - [deleted]                   qc-lt/tracking-qcomlt-adv7511
+ - [deleted]                   qc-lt/tracking-qcomlt-adv7533
+ - [deleted]                   qc-lt/tracking-qcomlt-apq8016-dt
+ - [deleted]                   qc-lt/tracking-qcomlt-apq8064-audio
+ - [deleted]                   qc-lt/tracking-qcomlt-apq8064-dt
+ - [deleted]                   qc-lt/tracking-qcomlt-apq8096-dt
+ - [deleted]                   qc-lt/tracking-qcomlt-arm64
+ - [deleted]                   qc-lt/tracking-qcomlt-arm64-smp
+ - [deleted]                   qc-lt/tracking-qcomlt-audio
+ - [deleted]                   qc-lt/tracking-qcomlt-bus-scaling
+ - [deleted]                   qc-lt/tracking-qcomlt-card-detect
+ - [deleted]                   qc-lt/tracking-qcomlt-clk
+ - [deleted]                   qc-lt/tracking-qcomlt-config-fragments
+ - [deleted]                   qc-lt/tracking-qcomlt-coresight
+ - [deleted]                   qc-lt/tracking-qcomlt-cpu-clk-8996
+ - [deleted]                   qc-lt/tracking-qcomlt-cpu-regulators
+ - [deleted]                   qc-lt/tracking-qcomlt-cpufreq
+ - [deleted]                   qc-lt/tracking-qcomlt-cpuidle
+ - [deleted]                   qc-lt/tracking-qcomlt-dma
+ - [deleted]                   qc-lt/tracking-qcomlt-drm-msm
+ - [deleted]                   qc-lt/tracking-qcomlt-drm_msm
+ - [deleted]                   qc-lt/tracking-qcomlt-dsi
+ - [deleted]                   qc-lt/tracking-qcomlt-dt
+ - [deleted]                   qc-lt/tracking-qcomlt-efuse
+ - [deleted]                   qc-lt/tracking-qcomlt-fixes
+ - [deleted]                   qc-lt/tracking-qcomlt-gdsc
+ - [deleted]                   qc-lt/tracking-qcomlt-glink
+ - [deleted]                   qc-lt/tracking-qcomlt-gsbi
+ - [deleted]                   qc-lt/tracking-qcomlt-hci_smd
+ - [deleted]                   qc-lt/tracking-qcomlt-hsuart
+ - [deleted]                   qc-lt/tracking-qcomlt-i2c
+ - [deleted]                   qc-lt/tracking-qcomlt-iommu
+ - [deleted]                   qc-lt/tracking-qcomlt-ipcrtr
+ - [deleted]                   qc-lt/tracking-qcomlt-mainline-pcie
+ - [deleted]                   qc-lt/tracking-qcomlt-mainline-rpm-smd
+ - [deleted]                   qc-lt/tracking-qcomlt-mainline-rpm-smd-pil
+ - [deleted]                   qc-lt/tracking-qcomlt-mmc
+ - [deleted]                   qc-lt/tracking-qcomlt-msm8916-smd-rpm
+ - [deleted]                   qc-lt/tracking-qcomlt-msm8996-pcie
+ - [deleted]                   qc-lt/tracking-qcomlt-nvmem
+ - [deleted]                   qc-lt/tracking-qcomlt-panelpicker
+ - [deleted]                   qc-lt/tracking-qcomlt-pcie
+ - [deleted]                   qc-lt/tracking-qcomlt-pmic-gpio
+ - [deleted]                   qc-lt/tracking-qcomlt-pmic-gpio-mpp
+ - [deleted]                   qc-lt/tracking-qcomlt-power-regulator
+ - [deleted]                   qc-lt/tracking-qcomlt-powerseq
+ - [deleted]                   qc-lt/tracking-qcomlt-qcom-rproc
+ - [deleted]                   qc-lt/tracking-qcomlt-regulators
+ - [deleted]                   qc-lt/tracking-qcomlt-remoteproc
+ - [deleted]                   qc-lt/tracking-qcomlt-rpm
+ - [deleted]                   qc-lt/tracking-qcomlt-sata
+ - [deleted]                   qc-lt/tracking-qcomlt-scm
+ - [deleted]                   qc-lt/tracking-qcomlt-sdcc
+ - [deleted]                   qc-lt/tracking-qcomlt-sdhci
+ - [deleted]                   qc-lt/tracking-qcomlt-smd
+ - [deleted]                   qc-lt/tracking-qcomlt-smem-state
+ - [deleted]                   qc-lt/tracking-qcomlt-tsens
+ - [deleted]                   qc-lt/tracking-qcomlt-tz-pil
+ - [deleted]                   qc-lt/tracking-qcomlt-ufs
+ - [deleted]                   qc-lt/tracking-qcomlt-usb
+ - [deleted]                   qc-lt/tracking-qcomlt-venus
+ - [deleted]                   qc-lt/tracking-qcomlt-wcn36xx
+ - [deleted]                   qc-lt/tracking-qcomlt-wcnss
+ - [deleted]                   qc-lt/tracking-qcomlt-wcnss_ctrl
+ - [deleted]                   qc-lt/tracking-qcomlt-wcnss_pil
+ - [deleted]                   qc-lt/tracking-qcomlt-wlan
+ - [deleted]                   rajendra/clk-next-17may
+ - [deleted]                   rajendra/clk-next-omap
+ - [deleted]                   rajendra/clk-next-omap-3.5-rc2
+ - [deleted]                   rajendra/clk-next-omap-3.5-rc5
+ - [deleted]                   rajendra/clk-next-omap-3.6-rc2
+ - [deleted]                   rajendra/clk-next-omap-3.6-rc2-move
+ - [deleted]                   rajendra/clk-next-omap-3.6-rc2-omap5
+ - [deleted]                   rajendra/clk-next-omap-3.6-rc3
+ - [deleted]                   rajendra/clk-next-omap-3.6-rc3-prep
+ - [deleted]                   rajendra/clk-next-omap2345-3.6-rc2
+ - [deleted]                   rajendra/clk-pll-3
+ - [deleted]                   rajendra/common_clk_testing_devel_3.7-updated
+ - [deleted]                   rajendra/cpu-clk-acd-apm-latest
+ - [deleted]                   rajendra/cpu-clk-acd-apm-latest-v2
+ - [deleted]                   rajendra/cpu-clks-8996-v2
+ - [deleted]                   rajendra/device/boot-constraints-final
+ - [deleted]                   rajendra/display_handover_rjendra
+ - [deleted]                   rajendra/for-3.11-rc1/prm-cm-regbit-cleanups
+ - [deleted]                   rajendra/for-3.12/dra-core
+ - [deleted]                   rajendra/for-3.12/dra-core-data
+ - [deleted]                   rajendra/for-3.12/dra-core-v2
+ - [deleted]                   rajendra/for-3.12/dra-core-v3
+ - [deleted]                   rajendra/for-integration-drm-msm-next-working
+ - [deleted]                   rajendra/for-integration-drm-msm-next-working-clean
+ - [deleted]                   rajendra/gdsc-clks
+ - [deleted]                   rajendra/gdsc-clks-post1
+ - [deleted]                   rajendra/gdsc-clks-take1
+ - [deleted]                   rajendra/gdsc-clks-v2
+ - [deleted]                   rajendra/gdsc-clks-v3
+ - [deleted]                   rajendra/genpd-performance-state
+ - [deleted]                   rajendra/genpd-performance-state-v7
+ - [deleted]                   rajendra/genpd-performance-state-v8
+ - [deleted]                   rajendra/genpd-performance-state-v9
+ - [deleted]                   rajendra/gpu-gdsc-wip
+ - [deleted]                   rajendra/linaro/msm-bus-wip
+ - [deleted]                   rajendra/master
+ - [deleted]                   rajendra/multiple-powerdomains-using-qos1
+ - [deleted]                   rajendra/nvm-tsens-2
+ - [deleted]                   rajendra/omap5-3.8-rc4-base
+ - [deleted]                   rajendra/omap5-3.8-rc4-base-palmas
+ - [deleted]                   rajendra/out-of-tree/dra-integrated
+ - [deleted]                   rajendra/out-of-tree/dra-integrated-v2
+ - [deleted]                   rajendra/out-of-tree/dra-integrated-v3
+ - [deleted]                   rajendra/prepare-common-clk-3.5-rc3
+ - [deleted]                   rajendra/rajendra_hdmi_clk_handoff
+ - [deleted]                   rajendra/release/qcomlt-4.9-gpu-fixes
+ - [deleted]                   rajendra/rpmclks-take1
+ - [deleted]                   rajendra/sdm845-boot
+ - [deleted]                   rajendra/sysc-cleanups
+ - [deleted]                   rajendra/topic/upstream
+ - [deleted]                   rajendra/tsens
+ - [deleted]                   rajendra/uart-sysc-cleanup-3.10
+ - [deleted]                   rajendra/v4.0/runtime-rfc
+ - [deleted]                   rajendra/v4.0/runtime-rfc-v2
+ - [deleted]                   rajendra/v4.0/tsens-rfc
+ - [deleted]                   rajendra/v4.5-rc3/apq8096-wip
+ - [deleted]                   rajendra/v4.5-rc4/apq8096-wip
+ - [deleted]                   rajendra/v4.6-rc2/apq8096-wip
+ - [deleted]                   rajendra/v4.7-rc1/8096-boot
+ - [deleted]                   rajendra/v4.7-rc1/8096-wip
+ - [deleted]                   rajendra/v4.7-rc1/cpu-clk-8996
+ - [deleted]                   rajendra/v4.7-rc1/gdsc
+ - [deleted]                   rajendra/v4.7-rc1/glink
+ - [deleted]                   rajendra/v4.7-rc1/tsens
+ - [deleted]                   rajendra/v4.7-rc2/apq8096-wip
+ - [deleted]                   rajendra/v4.7-rc5/apq8096-boot
+ - [deleted]                   rajendra/v4.7-rc5/cpu-clk-8996
+ - [deleted]                   rajendra/v4.7-rc5/gdsc-updates
+ - [deleted]                   rajendra/v4.7-rc5/tsens
+ - [deleted]                   rajendra/v4.9-rc2/8096-boot
+ - [deleted]                   rajendra/v4.9-rc4/cpu-clk-8996
+ - [deleted]                   rajendra/v4.9-rc6/cpu-clk-8996
+ - [deleted]                   rajendra/voltage-corners
+ - [deleted]                   rajendra/voltage-corners-4.10
+ - [deleted]                   smuckle/android-3.18-schedutil
+ - [deleted]                   smuckle/interactive
+ - [deleted]                   smuckle/pmwg-integration
+ - [deleted]                   smuckle/pmwg-schedutil
+ - [deleted]                   smuckle/sched-dvfs
+ - [deleted]                   smuckle/sched-freq-rfcv6
+ - [deleted]                   smuckle/sched-freq-rfcv7
+ - [deleted]                   smuckle/schedutil-4.4.9
+ - [deleted]                   smuckle/schedutil-hikey-4.4
+ - [deleted]                   smuckle/schedutil-las16
+ - [deleted]                   smuckle/tip-schedfreq
+   e90210bb658d..cf2df8f10789  stable/linux-3.16.y -> stable/linux-3.16.y
+   e128f16fddb6..6b1ae527b1fd  stable/linux-3.18.y -> stable/linux-3.18.y
+   99403097be0c..aea8526edf59  stable/linux-4.14.y -> stable/linux-4.14.y
+   adc2a008ae56..7a6bfa08b938  stable/linux-4.19.y -> stable/linux-4.19.y
+   bc3041f2385d..c0ad257a19f4  stable/linux-4.20.y -> stable/linux-4.20.y
+   af13f43f01a3..7bbf48947605  stable/linux-4.4.y -> stable/linux-4.4.y
+   f422a02f865a..9c51e1102c95  stable/linux-4.9.y -> stable/linux-4.9.y
+   1c163f4c7b3f..fd1594eb7064  stable/linux-5.0.y -> stable/linux-5.0.y
+   1c163f4c7b3f..0ecfebd2b524  stable/master -> stable/master
+   a3b22b9f11d9..fe7442435db3  tip/WIP.irq -> tip/WIP.irq
+   1abd8a8f39cd..26536e7c242e  tip/WIP.locking/core -> tip/WIP.locking/core
+ + dff73d9f170b...eefb58064412 tip/auto-latest -> tip/auto-latest (forced update)
+   5ad751053704..112950555263  tip/core-core-for-linus -> tip/core-core-for-linus
+   4bbfd7467cfc..94e4dcc75a47  tip/core-rcu-for-linus -> tip/core-rcu-for-linus
+   ccba8b64452b..83b0b15bcb0f  tip/core-rseq-for-linus -> tip/core-rseq-for-linus
+   22566c160303..7eaf51a2e094  tip/core-urgent-for-linus -> tip/core-urgent-for-linus
+   112950555263..e0478542cfd4  tip/core/core -> tip/core/core
+   3ff4f80a74fd..d5f34153e526  tip/core/debugobjects -> tip/core/debugobjects
+   4a60aa05a063..29da93fea3ea  tip/core/objtool -> tip/core/objtool
+   cae45e1c6c54..94e4dcc75a47  tip/core/rcu -> tip/core/rcu
+   ccba8b64452b..83b0b15bcb0f  tip/core/rseq -> tip/core/rseq
+   22566c160303..7eaf51a2e094  tip/core/urgent -> tip/core/urgent
+   1debf0958fa2..02562d0ca108  tip/efi-core-for-linus -> tip/efi-core-for-linus
+   582a32e70882..88447c5b93d9  tip/efi-urgent-for-linus -> tip/efi-urgent-for-linus
+   5c418dc789a3..02562d0ca108  tip/efi/core -> tip/efi/core
+   582a32e70882..48c7d73b2362  tip/efi/urgent -> tip/efi/urgent
+   c410abbbacb9..471ba0e686cb  tip/irq-core-for-linus -> tip/irq-core-for-linus
+   8087f407364d..fb4e0592654a  tip/irq-urgent-for-linus -> tip/irq-urgent-for-linus
+   a324ca9cad47..8afecaa68df1  tip/irq/core -> tip/irq/core
+   8087f407364d..a52548dd0491  tip/irq/urgent -> tip/irq/urgent
+   80eb86576870..d671002be6bd  tip/locking-core-for-linus -> tip/locking-core-for-linus
+   1a1fb985f2e2..a9e9bcb45b15  tip/locking-urgent-for-linus -> tip/locking-urgent-for-linus
+   0cf264b3133d..9156e545765e  tip/locking/core -> tip/locking/core
+   1a1fb985f2e2..a9e9bcb45b15  tip/locking/urgent -> tip/locking/urgent
+ + 9dd58fe7f821...50b73869270f tip/master -> tip/master (forced update)
+   883f4def8b77..62e1c09418fc  tip/perf-core-for-linus -> tip/perf-core-for-linus
+   528871b45602..849e96f30068  tip/perf-urgent-for-linus -> tip/perf-urgent-for-linus
+   43f4e6279f05..fd7d55172d1e  tip/perf/core -> tip/perf/core
+   528871b45602..8b12b812f536  tip/perf/urgent -> tip/perf/urgent
+   72a8f089c382..71a84402b93e  tip/ras-core-for-linus -> tip/ras-core-for-linus
+   40c36e2741d7..0ade0b6240c4  tip/ras-urgent-for-linus -> tip/ras-urgent-for-linus
+   41f035a86b5b..6e4f929ea8b2  tip/ras/core -> tip/ras/core
+   40c36e2741d7..0ade0b6240c4  tip/ras/urgent -> tip/ras/urgent
+   732cd75b8c92..08ae95f4fd3b  tip/sched-core-for-linus -> tip/sched-core-for-linus
+ + 120e4e76857d...9a4f26cc98d8 tip/sched-urgent-for-linus -> tip/sched-urgent-for-linus (forced update)
+   c89d92eddfad..af24bde8df20  tip/sched/core -> tip/sched/core
+   d7393226d15a..9a4f26cc98d8  tip/sched/urgent -> tip/sched/urgent
+   d018031f562b..d4645d30b50d  tip/smp-hotplug-for-linus -> tip/smp-hotplug-for-linus
+   b284909abad4..bebd024e4815  tip/smp-urgent-for-linus -> tip/smp-urgent-for-linus
+   d018031f562b..caa759323c73  tip/smp/hotplug -> tip/smp/hotplug
+   b284909abad4..bebd024e4815  tip/smp/urgent -> tip/smp/urgent
+   e27c49291a7f..cfbe271667b7  tip/timers-2038-for-linus -> tip/timers-2038-for-linus
+   bd2bcaa565a2..13e792a19d4e  tip/timers-core-for-linus -> tip/timers-core-for-linus
+   93ad0fc088c5..e3ff9c3678b4  tip/timers-urgent-for-linus -> tip/timers-urgent-for-linus
+   41ea39101d6b..cfbe271667b7  tip/timers/2038 -> tip/timers/2038
+   8dd2eee2f444..d48e0cd8fcaf  tip/timers/core -> tip/timers/core
+   93ad0fc088c5..e3ff9c3678b4  tip/timers/urgent -> tip/timers/urgent
+   d7dd3041a84a..a7d0d8940df8  tip/tip -> tip/tip
+   76f99ae5b54d..6eb4f08293e9  tip/x86-apic-for-linus -> tip/x86-apic-for-linus
+   29434801e7e9..3855f11d54a0  tip/x86-asm-for-linus -> tip/x86-asm-for-linus
+   69be4efeb959..e4a0bd0308f0  tip/x86-boot-for-linus -> tip/x86-boot-for-linus
+   e4f752dda0de..f36e7495dd39  tip/x86-build-for-linus -> tip/x86-build-for-linus
+   52eb74339a62..47820e73f5b3  tip/x86-cache-for-linus -> tip/x86-cache-for-linus
+   4b1bacab61aa..15854edd193a  tip/x86-cleanups-for-linus -> tip/x86-cleanups-for-linus
+   aa02ef099cff..987ddbe4870b  tip/x86-cpu-for-linus -> tip/x86-cpu-for-linus
+   12209993e98c..d9c9ce34ed5c  tip/x86-fpu-for-linus -> tip/x86-fpu-for-linus
+   2ffcbce39ea1..c02f48e070bd  tip/x86-microcode-for-linus -> tip/x86-microcode-for-linus
+   6848ac7ca39a..caa841360134  tip/x86-mm-for-linus -> tip/x86-mm-for-linus
+   c04e55388a4f..14e581c381b9  tip/x86-platform-for-linus -> tip/x86-platform-for-linus
+   20c3a2c33e9f..71368af9027f  tip/x86-pti-for-linus -> tip/x86-pti-for-linus
+   d999c0ec2498..81423c37415f  tip/x86-timers-for-linus -> tip/x86-timers-for-linus
+   f331e766c4be..78f4e932f776  tip/x86-urgent-for-linus -> tip/x86-urgent-for-linus
+   99c19e6a8fe4..705acedd7fcb  tip/x86-vdso-for-linus -> tip/x86-vdso-for-linus
+   093ae8f9a86a..e53f31bffe1d  tip/x86/alternatives -> tip/x86/alternatives
+   76f99ae5b54d..dde3626f815e  tip/x86/apic -> tip/x86/apic
+ + 679cd5ce3bc7...7457c0da024b tip/x86/asm -> tip/x86/asm (forced update)
+   f9d230e893e8..5a949b38839e  tip/x86/boot -> tip/x86/boot
+   e6d7bc0bdf41..87b61864d7ab  tip/x86/build -> tip/x86/build
+   52eb74339a62..2ef085bd110c  tip/x86/cache -> tip/x86/cache
+   2e7614c0736d..166da5c5462f  tip/x86/cleanups -> tip/x86/cleanups
+   c0554d2d3db4..711486fd1859  tip/x86/core -> tip/x86/core
+   266d63a7d9d4..203dffacf592  tip/x86/cpu -> tip/x86/cpu
+   f1517df8701c..b5b447b6b4e8  tip/x86/entry -> tip/x86/entry
+   2f7726f95557..466329bf407c  tip/x86/fpu -> tip/x86/fpu
+   5140a6f47113..e53f31bffe1d  tip/x86/hyperv -> tip/x86/hyperv
+   4d8a991d460d..2c4645439e8f  tip/x86/irq -> tip/x86/irq
+   f263245a0ce2..4eb5fec31e61  tip/x86/kdump -> tip/x86/kdump
+   2ffcbce39ea1..c02f48e070bd  tip/x86/microcode -> tip/x86/microcode
+   ad8cfb9c42ef..caa841360134  tip/x86/mm -> tip/x86/mm
+   3a025de64bf8..46938cc8ab91  tip/x86/paravirt -> tip/x86/paravirt
+   1c034a2fe560..498ad3936886  tip/x86/platform -> tip/x86/platform
+   d999c0ec2498..4b972a01a7da  tip/x86/timers -> tip/x86/timers
+   2a418cf3f5f1..ea136a112d89  tip/x86/urgent -> tip/x86/urgent
+   99c19e6a8fe4..79a3aaa7b82e  tip/x86/vdso -> tip/x86/vdso
+ - [deleted]                   vingu/hikey960/power
+ - [deleted]                   vingu/test-hikey960-v4.9
+ - [deleted]                   cpufreq/next
+ - [deleted]                   for_3.7-fixes-cpufreq
+ * [new branch]                bkp/opp/genpd-runtime-pm -> bkp/opp/genpd-runtime-pm
+ * [new branch]                bkp/usb-to-eth-hikey -> bkp/usb-to-eth-hikey
+ * [new branch]                bp/arm64/kpti -> bp/arm64/kpti
+ * [new branch]                bp/mr/kpti -> bp/mr/kpti
+ * [new branch]                cpufreq/cleanup -> cpufreq/cleanup
+ * [new branch]                stable/v4.4.y/spectre -> stable/v4.4.y/spectre
+ * [new branch]                stable/v4.9.y -> stable/v4.9.y
+ * [new branch]                aosp/android-4.14-q -> aosp/android-4.14-q
+ * [new branch]                aosp/android-4.19-gki-dev -> aosp/android-4.19-gki-dev
+ * [new branch]                aosp/android-4.19-q -> aosp/android-4.19-q
+ * [new branch]                aosp/android-4.9-q -> aosp/android-4.9-q
+ * [new branch]                aosp/android-mainline -> aosp/android-mainline
+ * [new branch]                aosp/android-trusty-4.19 -> aosp/android-trusty-4.19
+ * [new branch]                arm64/for-next/mmiowb -> arm64/for-next/mmiowb
+ * [new branch]                arm64/staging/ilp32-5.0 -> arm64/staging/ilp32-5.0
+ * [new branch]                lko/stable/v4.4.y/spectre -> lko/stable/v4.4.y/spectre
+ * [new branch]                lko/stable/v4.4.y/spectre-v1 -> lko/stable/v4.4.y/spectre-v1
+ * [new branch]                mac/bp/aosp/4.4-1 -> mac/bp/aosp/4.4-1
+ * [new branch]                mac/bp/mr/kpti -> mac/bp/mr/kpti
+ * [new branch]                mac/cpufreq/notifiers-v2 -> mac/cpufreq/notifiers-v2
+ * [new branch]                mac/master -> mac/master
+ * [new branch]                mac/v4.4-kpti -> mac/v4.4-kpti
+ * [new branch]                peterz/WIP.core/stacktrace -> peterz/WIP.core/stacktrace
+ * [new branch]                peterz/WIP.fixes -> peterz/WIP.fixes
+ * [new branch]                peterz/WIP.irq -> peterz/WIP.irq
+ * [new branch]                peterz/WIP.locking/core -> peterz/WIP.locking/core
+ * [new branch]                peterz/WIP.sched/core -> peterz/WIP.sched/core
+ * [new branch]                peterz/WIP.vdso -> peterz/WIP.vdso
+ * [new branch]                peterz/WIP.x86/boot -> peterz/WIP.x86/boot
+ * [new branch]                peterz/WIP.x86/core -> peterz/WIP.x86/core
+ * [new branch]                peterz/WIP.x86/debug -> peterz/WIP.x86/debug
+ * [new branch]                peterz/WIP.x86/fpu -> peterz/WIP.x86/fpu
+ * [new branch]                peterz/WIP.x86/hpet -> peterz/WIP.x86/hpet
+ * [new branch]                peterz/WIP.x86/ipi -> peterz/WIP.x86/ipi
+ * [new branch]                peterz/WIP.x86/paravirt -> peterz/WIP.x86/paravirt
+ * [new branch]                peterz/WIP.x86/pti -> peterz/WIP.x86/pti
+ * [new branch]                peterz/WIP.x86/stackguards -> peterz/WIP.x86/stackguards
+ * [new branch]                peterz/WIP.x86/timers -> peterz/WIP.x86/timers
+ * [new branch]                peterz/WIP.x86/vdso -> peterz/WIP.x86/vdso
+ * [new branch]                peterz/core-core-for-linus -> peterz/core-core-for-linus
+ * [new branch]                peterz/core-debugobjects-for-linus -> peterz/core-debugobjects-for-linus
+ * [new branch]                peterz/core-headers-for-linus -> peterz/core-headers-for-linus
+ * [new branch]                peterz/core-mm-for-linus -> peterz/core-mm-for-linus
+ * [new branch]                peterz/core-objtool-for-linus -> peterz/core-objtool-for-linus
+ * [new branch]                peterz/core-rcu-for-linus -> peterz/core-rcu-for-linus
+ * [new branch]                peterz/core-rseq-for-linus -> peterz/core-rseq-for-linus
+ * [new branch]                peterz/core-rslib-for-linus -> peterz/core-rslib-for-linus
+ * [new branch]                peterz/core-speculation-for-linus -> peterz/core-speculation-for-linus
+ * [new branch]                peterz/core-stacktrace-for-linus -> peterz/core-stacktrace-for-linus
+ * [new branch]                peterz/core/mm -> peterz/core/mm
+ * [new branch]                peterz/core/rseq -> peterz/core/rseq
+ * [new branch]                peterz/core/rslib -> peterz/core/rslib
+ * [new branch]                peterz/core/speculation -> peterz/core/speculation
+ * [new branch]                peterz/core/stacktrace -> peterz/core/stacktrace
+ * [new branch]                peterz/debug/experimental -> peterz/debug/experimental
+ * [new branch]                peterz/efi-core-for-linus -> peterz/efi-core-for-linus
+ * [new branch]                peterz/efi-urgent-for-linus -> peterz/efi-urgent-for-linus
+ * [new branch]                peterz/efi/irqchip -> peterz/efi/irqchip
+ * [new branch]                peterz/for-vfs -> peterz/for-vfs
+ * [new branch]                peterz/for-vfs-merged -> peterz/for-vfs-merged
+ * [new branch]                peterz/irq-core-for-linus -> peterz/irq-core-for-linus
+ * [new branch]                peterz/irq/for-block -> peterz/irq/for-block
+ * [new branch]                peterz/locking-core-for-linus -> peterz/locking-core-for-linus
+ * [new branch]                peterz/locking-urgent-for-linus -> peterz/locking-urgent-for-linus
+ * [new branch]                peterz/locking/atomic -> peterz/locking/atomic
+ * [new branch]                peterz/locking/jump_label -> peterz/locking/jump_label
+ * [new branch]                peterz/locking/more -> peterz/locking/more
+ * [new branch]                peterz/modules/core -> peterz/modules/core
+ * [new branch]                peterz/perf-core-for-linus -> peterz/perf-core-for-linus
+ * [new branch]                peterz/perf/experimental -> peterz/perf/experimental
+ * [new branch]                peterz/ras-core-for-linus -> peterz/ras-core-for-linus
+ * [new branch]                peterz/ras-urgent-for-linus -> peterz/ras-urgent-for-linus
+ * [new branch]                peterz/sched-core-for-linus -> peterz/sched-core-for-linus
+ * [new branch]                peterz/sched-urgent-for-linus -> peterz/sched-urgent-for-linus
+ * [new branch]                peterz/sched-wait-for-linus -> peterz/sched-wait-for-linus
+ * [new branch]                peterz/sched/wait -> peterz/sched/wait
+ * [new branch]                peterz/smp-hotplug-for-linus -> peterz/smp-hotplug-for-linus
+ * [new branch]                peterz/smp-urgent-for-linus -> peterz/smp-urgent-for-linus
+ * [new branch]                peterz/timers-2038-for-linus -> peterz/timers-2038-for-linus
+ * [new branch]                peterz/timers-core-for-linus -> peterz/timers-core-for-linus
+ * [new branch]                peterz/timers-urgent-for-linus -> peterz/timers-urgent-for-linus
+ * [new branch]                peterz/timers/2038 -> peterz/timers/2038
+ * [new branch]                peterz/timers/vdso -> peterz/timers/vdso
+ * [new branch]                peterz/tmp.tmp -> peterz/tmp.tmp
+ * [new branch]                peterz/x86-alternatives-for-linus -> peterz/x86-alternatives-for-linus
+ * [new branch]                peterz/x86-amd-nb-for-linus -> peterz/x86-amd-nb-for-linus
+ * [new branch]                peterz/x86-apic-for-linus -> peterz/x86-apic-for-linus
+ * [new branch]                peterz/x86-asm-for-linus -> peterz/x86-asm-for-linus
+ * [new branch]                peterz/x86-boot-for-linus -> peterz/x86-boot-for-linus
+ * [new branch]                peterz/x86-build-for-linus -> peterz/x86-build-for-linus
+ * [new branch]                peterz/x86-cache-for-linus -> peterz/x86-cache-for-linus
+ * [new branch]                peterz/x86-cleanups-for-linus -> peterz/x86-cleanups-for-linus
+ * [new branch]                peterz/x86-core-for-linus -> peterz/x86-core-for-linus
+ * [new branch]                peterz/x86-cpu-for-linus -> peterz/x86-cpu-for-linus
+ * [new branch]                peterz/x86-dax-for-linus -> peterz/x86-dax-for-linus
+ * [new branch]                peterz/x86-debug-for-linus -> peterz/x86-debug-for-linus
+ * [new branch]                peterz/x86-dma-for-linus -> peterz/x86-dma-for-linus
+ * [new branch]                peterz/x86-entry-for-linus -> peterz/x86-entry-for-linus
+ * [new branch]                peterz/x86-fpu-for-linus -> peterz/x86-fpu-for-linus
+ * [new branch]                peterz/x86-grub2-for-linus -> peterz/x86-grub2-for-linus
+ * [new branch]                peterz/x86-hyperv-for-linus -> peterz/x86-hyperv-for-linus
+ * [new branch]                peterz/x86-irq-for-linus -> peterz/x86-irq-for-linus
+ * [new branch]                peterz/x86-kdump-for-linus -> peterz/x86-kdump-for-linus
+ * [new branch]                peterz/x86-microcode-for-linus -> peterz/x86-microcode-for-linus
+ * [new branch]                peterz/x86-mm-for-linus -> peterz/x86-mm-for-linus
+ * [new branch]                peterz/x86-paravirt-for-linus -> peterz/x86-paravirt-for-linus
+ * [new branch]                peterz/x86-platform-for-linus -> peterz/x86-platform-for-linus
+ * [new branch]                peterz/x86-pti-for-linus -> peterz/x86-pti-for-linus
+ * [new branch]                peterz/x86-pti-urgent-for-linus -> peterz/x86-pti-urgent-for-linus
+ * [new branch]                peterz/x86-timers-for-linus -> peterz/x86-timers-for-linus
+ * [new branch]                peterz/x86-topology-for-linus -> peterz/x86-topology-for-linus
+ * [new branch]                peterz/x86-uv-for-linus -> peterz/x86-uv-for-linus
+ * [new branch]                peterz/x86-vdso-for-linus -> peterz/x86-vdso-for-linus
+ * [new branch]                peterz/x86/alternatives -> peterz/x86/alternatives
+ * [new branch]                peterz/x86/amd-nb -> peterz/x86/amd-nb
+ * [new branch]                peterz/x86/dax -> peterz/x86/dax
+ * [new branch]                peterz/x86/dma -> peterz/x86/dma
+ * [new branch]                peterz/x86/early-printk -> peterz/x86/early-printk
+ * [new branch]                peterz/x86/grub2 -> peterz/x86/grub2
+ * [new branch]                peterz/x86/kdump -> peterz/x86/kdump
+ * [new branch]                peterz/x86/mpx -> peterz/x86/mpx
+ * [new branch]                peterz/x86/olpc -> peterz/x86/olpc
+ * [new branch]                peterz/x86/paravirt -> peterz/x86/paravirt
+ * [new branch]                peterz/x86/pti-urgent -> peterz/x86/pti-urgent
+ * [new branch]                peterz/x86/static_call -> peterz/x86/static_call
+ * [new branch]                peterz/x86/topology -> peterz/x86/topology
+ * [new branch]                peterz/x86/uv -> peterz/x86/uv
+ * [new branch]                pm/acpi-utils -> pm/acpi-utils
+ * [new branch]                pm/pm-s2idle-rework -> pm/pm-s2idle-rework
+ * [new branch]                pmko/cpufreq/cleanup -> pmko/cpufreq/cleanup
+ * [new branch]                pmko/cpufreq/freq-constraint-pmqos -> pmko/cpufreq/freq-constraint-pmqos
+ * [new branch]                stable/linux-5.1.y -> stable/linux-5.1.y
+ * [new branch]                stable/linux-5.2.y -> stable/linux-5.2.y
+ * [new branch]                tip/WIP.core/stacktrace -> tip/WIP.core/stacktrace
+ * [new branch]                tip/WIP.vdso -> tip/WIP.vdso
+ * [new branch]                tip/WIP.x86/core -> tip/WIP.x86/core
+ * [new branch]                tip/WIP.x86/fpu -> tip/WIP.x86/fpu
+ * [new branch]                tip/WIP.x86/hpet -> tip/WIP.x86/hpet
+ * [new branch]                tip/WIP.x86/ipi -> tip/WIP.x86/ipi
+ * [new branch]                tip/WIP.x86/paravirt -> tip/WIP.x86/paravirt
+ * [new branch]                tip/WIP.x86/stackguards -> tip/WIP.x86/stackguards
+ * [new branch]                tip/core-mm-for-linus -> tip/core-mm-for-linus
+ * [new branch]                tip/core-objtool-for-linus -> tip/core-objtool-for-linus
+ * [new branch]                tip/core-speculation-for-linus -> tip/core-speculation-for-linus
+ * [new branch]                tip/core-stacktrace-for-linus -> tip/core-stacktrace-for-linus
+ * [new branch]                tip/core/mm -> tip/core/mm
+ * [new branch]                tip/core/speculation -> tip/core/speculation
+ * [new branch]                tip/core/stacktrace -> tip/core/stacktrace
+ * [new branch]                tip/timers/vdso -> tip/timers/vdso
+ * [new branch]                tip/x86-alternatives-for-linus -> tip/x86-alternatives-for-linus
+ * [new branch]                tip/x86-entry-for-linus -> tip/x86-entry-for-linus
+ * [new branch]                tip/x86-irq-for-linus -> tip/x86-irq-for-linus
+ * [new branch]                tip/x86-kdump-for-linus -> tip/x86-kdump-for-linus
+ * [new branch]                tip/x86-topology-for-linus -> tip/x86-topology-for-linus
+ * [new branch]                tip/x86-uv-for-linus -> tip/x86-uv-for-linus
+ * [new branch]                tip/x86/topology -> tip/x86/topology
+ * [new tag]                   ASB-2019-03-05_3.18 -> ASB-2019-03-05_3.18
+ * [new tag]                   ASB-2019-03-05_3.18-n-release -> ASB-2019-03-05_3.18-n-release
+ * [new tag]                   ASB-2019-03-05_3.18-o-mr1 -> ASB-2019-03-05_3.18-o-mr1
+ * [new tag]                   ASB-2019-03-05_3.18-o-release -> ASB-2019-03-05_3.18-o-release
+ * [new tag]                   ASB-2019-03-05_4.14 -> ASB-2019-03-05_4.14
+ * [new tag]                   ASB-2019-03-05_4.14-p -> ASB-2019-03-05_4.14-p
+ * [new tag]                   ASB-2019-03-05_4.14-p-release -> ASB-2019-03-05_4.14-p-release
+ * [new tag]                   ASB-2019-03-05_4.19 -> ASB-2019-03-05_4.19
+ * [new tag]                   ASB-2019-03-05_4.4 -> ASB-2019-03-05_4.4
+ * [new tag]                   ASB-2019-03-05_4.4-n -> ASB-2019-03-05_4.4-n
+ * [new tag]                   ASB-2019-03-05_4.4-o -> ASB-2019-03-05_4.4-o
+ * [new tag]                   ASB-2019-03-05_4.4-o-mr1 -> ASB-2019-03-05_4.4-o-mr1
+ * [new tag]                   ASB-2019-03-05_4.4-o-release -> ASB-2019-03-05_4.4-o-release
+ * [new tag]                   ASB-2019-03-05_4.4-p -> ASB-2019-03-05_4.4-p
+ * [new tag]                   ASB-2019-03-05_4.4-p-release -> ASB-2019-03-05_4.4-p-release
+ * [new tag]                   ASB-2019-03-05_4.9 -> ASB-2019-03-05_4.9
+ * [new tag]                   ASB-2019-03-05_4.9-o -> ASB-2019-03-05_4.9-o
+ * [new tag]                   ASB-2019-03-05_4.9-o-mr1 -> ASB-2019-03-05_4.9-o-mr1
+ * [new tag]                   ASB-2019-03-05_4.9-o-release -> ASB-2019-03-05_4.9-o-release
+ * [new tag]                   ASB-2019-03-05_4.9-p -> ASB-2019-03-05_4.9-p
+ * [new tag]                   ASB-2019-03-05_4.9-p-release -> ASB-2019-03-05_4.9-p-release
+ * [new tag]                   ASB-2019-04-05_3.18 -> ASB-2019-04-05_3.18
+ * [new tag]                   ASB-2019-04-05_3.18-n-release -> ASB-2019-04-05_3.18-n-release
+ * [new tag]                   ASB-2019-04-05_3.18-o-mr1 -> ASB-2019-04-05_3.18-o-mr1
+ * [new tag]                   ASB-2019-04-05_3.18-o-release -> ASB-2019-04-05_3.18-o-release
+ * [new tag]                   ASB-2019-04-05_4.14 -> ASB-2019-04-05_4.14
+ * [new tag]                   ASB-2019-04-05_4.14-p -> ASB-2019-04-05_4.14-p
+ * [new tag]                   ASB-2019-04-05_4.14-p-release -> ASB-2019-04-05_4.14-p-release
+ * [new tag]                   ASB-2019-04-05_4.19 -> ASB-2019-04-05_4.19
+ * [new tag]                   ASB-2019-04-05_4.4 -> ASB-2019-04-05_4.4
+ * [new tag]                   ASB-2019-04-05_4.4-n -> ASB-2019-04-05_4.4-n
+ * [new tag]                   ASB-2019-04-05_4.4-n-release -> ASB-2019-04-05_4.4-n-release
+ * [new tag]                   ASB-2019-04-05_4.4-o -> ASB-2019-04-05_4.4-o
+ * [new tag]                   ASB-2019-04-05_4.4-o-mr1 -> ASB-2019-04-05_4.4-o-mr1
+ * [new tag]                   ASB-2019-04-05_4.4-o-release -> ASB-2019-04-05_4.4-o-release
+ * [new tag]                   ASB-2019-04-05_4.4-p -> ASB-2019-04-05_4.4-p
+ * [new tag]                   ASB-2019-04-05_4.4-p-release -> ASB-2019-04-05_4.4-p-release
+ * [new tag]                   ASB-2019-04-05_4.9 -> ASB-2019-04-05_4.9
+ * [new tag]                   ASB-2019-04-05_4.9-o -> ASB-2019-04-05_4.9-o
+ * [new tag]                   ASB-2019-04-05_4.9-o-mr1 -> ASB-2019-04-05_4.9-o-mr1
+ * [new tag]                   ASB-2019-04-05_4.9-o-release -> ASB-2019-04-05_4.9-o-release
+ * [new tag]                   ASB-2019-04-05_4.9-p -> ASB-2019-04-05_4.9-p
+ * [new tag]                   ASB-2019-04-05_4.9-p-release -> ASB-2019-04-05_4.9-p-release
+ * [new tag]                   ASB-2019-05-05_3.18 -> ASB-2019-05-05_3.18
+ * [new tag]                   ASB-2019-05-05_3.18-n-release -> ASB-2019-05-05_3.18-n-release
+ * [new tag]                   ASB-2019-05-05_3.18-o-mr1 -> ASB-2019-05-05_3.18-o-mr1
+ * [new tag]                   ASB-2019-05-05_3.18-o-release -> ASB-2019-05-05_3.18-o-release
+ * [new tag]                   ASB-2019-05-05_4.14 -> ASB-2019-05-05_4.14
+ * [new tag]                   ASB-2019-05-05_4.14-p -> ASB-2019-05-05_4.14-p
+ * [new tag]                   ASB-2019-05-05_4.14-p-release -> ASB-2019-05-05_4.14-p-release
+ * [new tag]                   ASB-2019-05-05_4.14-q -> ASB-2019-05-05_4.14-q
+ * [new tag]                   ASB-2019-05-05_4.19 -> ASB-2019-05-05_4.19
+ * [new tag]                   ASB-2019-05-05_4.19-q -> ASB-2019-05-05_4.19-q
+ * [new tag]                   ASB-2019-05-05_4.4 -> ASB-2019-05-05_4.4
+ * [new tag]                   ASB-2019-05-05_4.4-n -> ASB-2019-05-05_4.4-n
+ * [new tag]                   ASB-2019-05-05_4.4-n-release -> ASB-2019-05-05_4.4-n-release
+ * [new tag]                   ASB-2019-05-05_4.4-o -> ASB-2019-05-05_4.4-o
+ * [new tag]                   ASB-2019-05-05_4.4-o-mr1 -> ASB-2019-05-05_4.4-o-mr1
+ * [new tag]                   ASB-2019-05-05_4.4-o-release -> ASB-2019-05-05_4.4-o-release
+ * [new tag]                   ASB-2019-05-05_4.4-p -> ASB-2019-05-05_4.4-p
+ * [new tag]                   ASB-2019-05-05_4.4-p-release -> ASB-2019-05-05_4.4-p-release
+ * [new tag]                   ASB-2019-05-05_4.9 -> ASB-2019-05-05_4.9
+ * [new tag]                   ASB-2019-05-05_4.9-o -> ASB-2019-05-05_4.9-o
+ * [new tag]                   ASB-2019-05-05_4.9-o-mr1 -> ASB-2019-05-05_4.9-o-mr1
+ * [new tag]                   ASB-2019-05-05_4.9-o-release -> ASB-2019-05-05_4.9-o-release
+ * [new tag]                   ASB-2019-05-05_4.9-p -> ASB-2019-05-05_4.9-p
+ * [new tag]                   ASB-2019-05-05_4.9-p-release -> ASB-2019-05-05_4.9-p-release
+ * [new tag]                   ASB-2019-05-05_4.9-q -> ASB-2019-05-05_4.9-q
+ * [new tag]                   acpi-5.1-rc2 -> acpi-5.1-rc2
+ * [new tag]                   acpi-5.1-rc3 -> acpi-5.1-rc3
+ * [new tag]                   acpi-5.1-rc4 -> acpi-5.1-rc4
+ * [new tag]                   acpi-5.1-rc5 -> acpi-5.1-rc5
+ * [new tag]                   acpi-5.1-rc8 -> acpi-5.1-rc8
+ * [new tag]                   acpi-5.2-rc1 -> acpi-5.2-rc1
+ * [new tag]                   acpi-5.2-rc1-2 -> acpi-5.2-rc1-2
+ * [new tag]                   acpi-5.3-rc1 -> acpi-5.3-rc1
+ * [new tag]                   acpi-5.3-rc1-2 -> acpi-5.3-rc1-2
+ * [new tag]                   acpi-5.3-rc1-3 -> acpi-5.3-rc1-3
+ * [new tag]                   devprop-5.1-rc2 -> devprop-5.1-rc2
+ * [new tag]                   devprop-5.2-rc1 -> devprop-5.2-rc1
+ * [new tag]                   devprop-5.3-rc1 -> devprop-5.3-rc1
+ * [new tag]                   experimental-android-5.1 -> experimental-android-5.1
+ * [new tag]                   master -> master
+ * [new tag]                   next-20190405 -> next-20190405
+ * [new tag]                   next-20190412 -> next-20190412
+ * [new tag]                   next-20190426 -> next-20190426
+ * [new tag]                   next-20190501 -> next-20190501
+ * [new tag]                   next-20190503 -> next-20190503
+ * [new tag]                   next-20190508 -> next-20190508
+ * [new tag]                   next-20190510 -> next-20190510
+ * [new tag]                   next-20190520 -> next-20190520
+ * [new tag]                   next-20190603 -> next-20190603
+ * [new tag]                   next-20190606 -> next-20190606
+ * [new tag]                   next-20190621 -> next-20190621
+ * [new tag]                   next-20190703 -> next-20190703
+ * [new tag]                   next-20190710 -> next-20190710
+ * [new tag]                   next-20190716 -> next-20190716
+ * [new tag]                   opp/fixes -> opp/fixes
+ * [new tag]                   pm-5.1-rc2 -> pm-5.1-rc2
+ * [new tag]                   pm-5.1-rc3 -> pm-5.1-rc3
+ * [new tag]                   pm-5.1-rc4 -> pm-5.1-rc4
+ * [new tag]                   pm-5.2-rc1 -> pm-5.2-rc1
+ * [new tag]                   pm-5.2-rc1-2 -> pm-5.2-rc1-2
+ * [new tag]                   pm-5.2-rc3 -> pm-5.2-rc3
+ * [new tag]                   pm-5.2-rc4 -> pm-5.2-rc4
+ * [new tag]                   pm-5.2-rc6 -> pm-5.2-rc6
+ * [new tag]                   pm-5.2-rc7 -> pm-5.2-rc7
+ * [new tag]                   pm-5.3-rc1 -> pm-5.3-rc1
+ * [new tag]                   pm-5.3-rc1-2 -> pm-5.3-rc1-2
+ * [new tag]                   tjh -> tjh
+ * [new tag]                   v3.16.64 -> v3.16.64
+ * [new tag]                   v3.16.65 -> v3.16.65
+ * [new tag]                   v3.16.66 -> v3.16.66
+ * [new tag]                   v3.16.67 -> v3.16.67
+ * [new tag]                   v3.16.68 -> v3.16.68
+ * [new tag]                   v3.16.69 -> v3.16.69
+ * [new tag]                   v3.16.70 -> v3.16.70
+ * [new tag]                   v3.18.137 -> v3.18.137
+ * [new tag]                   v3.18.138 -> v3.18.138
+ * [new tag]                   v3.18.139 -> v3.18.139
+ * [new tag]                   v3.18.140 -> v3.18.140
+ * [new tag]                   v4.14.106 -> v4.14.106
+ * [new tag]                   v4.14.107 -> v4.14.107
+ * [new tag]                   v4.14.108 -> v4.14.108
+ * [new tag]                   v4.14.109 -> v4.14.109
+ * [new tag]                   v4.14.110 -> v4.14.110
+ * [new tag]                   v4.14.111 -> v4.14.111
+ * [new tag]                   v4.14.112 -> v4.14.112
+ * [new tag]                   v4.14.113 -> v4.14.113
+ * [new tag]                   v4.14.114 -> v4.14.114
+ * [new tag]                   v4.14.115 -> v4.14.115
+ * [new tag]                   v4.14.116 -> v4.14.116
+ * [new tag]                   v4.14.117 -> v4.14.117
+ * [new tag]                   v4.14.118 -> v4.14.118
+ * [new tag]                   v4.14.119 -> v4.14.119
+ * [new tag]                   v4.14.120 -> v4.14.120
+ * [new tag]                   v4.14.121 -> v4.14.121
+ * [new tag]                   v4.14.122 -> v4.14.122
+ * [new tag]                   v4.14.123 -> v4.14.123
+ * [new tag]                   v4.14.124 -> v4.14.124
+ * [new tag]                   v4.14.125 -> v4.14.125
+ * [new tag]                   v4.14.126 -> v4.14.126
+ * [new tag]                   v4.14.127 -> v4.14.127
+ * [new tag]                   v4.14.128 -> v4.14.128
+ * [new tag]                   v4.14.129 -> v4.14.129
+ * [new tag]                   v4.14.130 -> v4.14.130
+ * [new tag]                   v4.14.131 -> v4.14.131
+ * [new tag]                   v4.14.132 -> v4.14.132
+ * [new tag]                   v4.14.133 -> v4.14.133
+ * [new tag]                   v4.19.28 -> v4.19.28
+ * [new tag]                   v4.19.29 -> v4.19.29
+ * [new tag]                   v4.19.30 -> v4.19.30
+ * [new tag]                   v4.19.31 -> v4.19.31
+ * [new tag]                   v4.19.32 -> v4.19.32
+ * [new tag]                   v4.19.33 -> v4.19.33
+ * [new tag]                   v4.19.34 -> v4.19.34
+ * [new tag]                   v4.19.35 -> v4.19.35
+ * [new tag]                   v4.19.36 -> v4.19.36
+ * [new tag]                   v4.19.37 -> v4.19.37
+ * [new tag]                   v4.19.38 -> v4.19.38
+ * [new tag]                   v4.19.39 -> v4.19.39
+ * [new tag]                   v4.19.40 -> v4.19.40
+ * [new tag]                   v4.19.41 -> v4.19.41
+ * [new tag]                   v4.19.42 -> v4.19.42
+ * [new tag]                   v4.19.43 -> v4.19.43
+ * [new tag]                   v4.19.44 -> v4.19.44
+ * [new tag]                   v4.19.45 -> v4.19.45
+ * [new tag]                   v4.19.46 -> v4.19.46
+ * [new tag]                   v4.19.47 -> v4.19.47
+ * [new tag]                   v4.19.48 -> v4.19.48
+ * [new tag]                   v4.19.49 -> v4.19.49
+ * [new tag]                   v4.19.50 -> v4.19.50
+ * [new tag]                   v4.19.51 -> v4.19.51
+ * [new tag]                   v4.19.52 -> v4.19.52
+ * [new tag]                   v4.19.53 -> v4.19.53
+ * [new tag]                   v4.19.54 -> v4.19.54
+ * [new tag]                   v4.19.55 -> v4.19.55
+ * [new tag]                   v4.19.56 -> v4.19.56
+ * [new tag]                   v4.19.57 -> v4.19.57
+ * [new tag]                   v4.19.58 -> v4.19.58
+ * [new tag]                   v4.20.15 -> v4.20.15
+ * [new tag]                   v4.20.16 -> v4.20.16
+ * [new tag]                   v4.20.17 -> v4.20.17
+ * [new tag]                   v4.4.177 -> v4.4.177
+ * [new tag]                   v4.4.178 -> v4.4.178
+ * [new tag]                   v4.4.179 -> v4.4.179
+ * [new tag]                   v4.4.180 -> v4.4.180
+ * [new tag]                   v4.4.181 -> v4.4.181
+ * [new tag]                   v4.4.182 -> v4.4.182
+ * [new tag]                   v4.4.183 -> v4.4.183
+ * [new tag]                   v4.4.184 -> v4.4.184
+ * [new tag]                   v4.4.185 -> v4.4.185
+ * [new tag]                   v4.9.163 -> v4.9.163
+ * [new tag]                   v4.9.164 -> v4.9.164
+ * [new tag]                   v4.9.165 -> v4.9.165
+ * [new tag]                   v4.9.166 -> v4.9.166
+ * [new tag]                   v4.9.167 -> v4.9.167
+ * [new tag]                   v4.9.168 -> v4.9.168
+ * [new tag]                   v4.9.169 -> v4.9.169
+ * [new tag]                   v4.9.170 -> v4.9.170
+ * [new tag]                   v4.9.171 -> v4.9.171
+ * [new tag]                   v4.9.172 -> v4.9.172
+ * [new tag]                   v4.9.173 -> v4.9.173
+ * [new tag]                   v4.9.174 -> v4.9.174
+ * [new tag]                   v4.9.175 -> v4.9.175
+ * [new tag]                   v4.9.176 -> v4.9.176
+ * [new tag]                   v4.9.177 -> v4.9.177
+ * [new tag]                   v4.9.178 -> v4.9.178
+ * [new tag]                   v4.9.179 -> v4.9.179
+ * [new tag]                   v4.9.180 -> v4.9.180
+ * [new tag]                   v4.9.181 -> v4.9.181
+ * [new tag]                   v4.9.182 -> v4.9.182
+ * [new tag]                   v4.9.183 -> v4.9.183
+ * [new tag]                   v4.9.184 -> v4.9.184
+ * [new tag]                   v4.9.185 -> v4.9.185
+ * [new tag]                   v5.0.1 -> v5.0.1
+ * [new tag]                   v5.0.10 -> v5.0.10
+ * [new tag]                   v5.0.11 -> v5.0.11
+ * [new tag]                   v5.0.12 -> v5.0.12
+ * [new tag]                   v5.0.13 -> v5.0.13
+ * [new tag]                   v5.0.14 -> v5.0.14
+ * [new tag]                   v5.0.15 -> v5.0.15
+ * [new tag]                   v5.0.16 -> v5.0.16
+ * [new tag]                   v5.0.17 -> v5.0.17
+ * [new tag]                   v5.0.18 -> v5.0.18
+ * [new tag]                   v5.0.19 -> v5.0.19
+ * [new tag]                   v5.0.2 -> v5.0.2
+ * [new tag]                   v5.0.20 -> v5.0.20
+ * [new tag]                   v5.0.21 -> v5.0.21
+ * [new tag]                   v5.0.3 -> v5.0.3
+ * [new tag]                   v5.0.4 -> v5.0.4
+ * [new tag]                   v5.0.5 -> v5.0.5
+ * [new tag]                   v5.0.6 -> v5.0.6
+ * [new tag]                   v5.0.7 -> v5.0.7
+ * [new tag]                   v5.0.8 -> v5.0.8
+ * [new tag]                   v5.0.9 -> v5.0.9
+ * [new tag]                   v5.1 -> v5.1
+ * [new tag]                   v5.1-rc2 -> v5.1-rc2
+ * [new tag]                   v5.1-rc3 -> v5.1-rc3
+ * [new tag]                   v5.1-rc4 -> v5.1-rc4
+ * [new tag]                   v5.1-rc5 -> v5.1-rc5
+ * [new tag]                   v5.1-rc6 -> v5.1-rc6
+ * [new tag]                   v5.1-rc7 -> v5.1-rc7
+ * [new tag]                   v5.1.1 -> v5.1.1
+ * [new tag]                   v5.1.10 -> v5.1.10
+ * [new tag]                   v5.1.11 -> v5.1.11
+ * [new tag]                   v5.1.12 -> v5.1.12
+ * [new tag]                   v5.1.13 -> v5.1.13
+ * [new tag]                   v5.1.14 -> v5.1.14
+ * [new tag]                   v5.1.15 -> v5.1.15
+ * [new tag]                   v5.1.16 -> v5.1.16
+ * [new tag]                   v5.1.17 -> v5.1.17
+ * [new tag]                   v5.1.2 -> v5.1.2
+ * [new tag]                   v5.1.3 -> v5.1.3
+ * [new tag]                   v5.1.4 -> v5.1.4
+ * [new tag]                   v5.1.5 -> v5.1.5
+ * [new tag]                   v5.1.6 -> v5.1.6
+ * [new tag]                   v5.1.7 -> v5.1.7
+ * [new tag]                   v5.1.8 -> v5.1.8
+ * [new tag]                   v5.1.9 -> v5.1.9
+ * [new tag]                   v5.2 -> v5.2
+ * [new tag]                   v5.2-rc1 -> v5.2-rc1
+ * [new tag]                   v5.2-rc2 -> v5.2-rc2
+ * [new tag]                   v5.2-rc3 -> v5.2-rc3
+ * [new tag]                   v5.2-rc4 -> v5.2-rc4
+ * [new tag]                   v5.2-rc5 -> v5.2-rc5
+ * [new tag]                   v5.2-rc6 -> v5.2-rc6
+ * [new tag]                   v5.2-rc7 -> v5.2-rc7
+ * [new tag]                   v5.3-rc1 -> v5.3-rc1
+error: failed to push some refs to 'ssh://git@git.linaro.org/people/viresh.kumar/backup/linux.git'
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+Warning: Permanently added the ECDSA host key for IP address '52.2.214.187' to the list of known hosts.
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/scripts

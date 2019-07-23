@@ -33147,3 +33147,89 @@ post-git trigger: updating grokmirror
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 268207adac36] updates
+ 5 files changed, 1285 insertions(+), 595 deletions(-)
+ create mode 100644 mutt/incoming/PATCH_cpufreq_ap806_Add_NULL_check_after_kcalloc.mbox
+ delete mode 100644 mutt/incoming/RESEND,_PATCH_v4_1-2_cpufreq_Add_sun50i_nvmem_based_CPU_scaling_driver.mbox
+ delete mode 100644 mutt/incoming/RESEND,_PATCH_v4_2-2_dt-bindings_cpufreq_Document_allwinner,sun50i-h6-operating-points.mbox
+post-git trigger: updating grokmirror
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   51bb7e8ea18f..268207adac36  master -> master
+   45f82b6ad88e..51bb7e8ea18f  bkp/master -> bkp/master
+ + 44fc727e66a8...e11a78e89a57 mac/master -> mac/master (forced update)
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+
+
+ 
+Tue Jul 23 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + c0cbb7ce7a86...6a63bbf42d90 cpufreq/freq-constraint-pmqos -> cpufreq/freq-constraint-pmqos (forced update)
+ + aaf5648b925a...cce03f3ca108 opp/linux-next -> opp/linux-next (forced update)
+ - [deleted]                   bkp/android-hikey-linaro-4.19
+ - [deleted]                   bkp/aosp/android-4.14
+ - [deleted]                   bkp/aosp/android-4.4
+ + 1b1d5fc2d6dc...a462f6f3ed22 bkp/boot-constraint -> bkp/boot-constraint (forced update)
+   0334906c0696..3355c91b7939  bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next
+ + a6a92d6a4ff3...c0cbb7ce7a86 bkp/cpufreq/freq-constraint-pmqos -> bkp/cpufreq/freq-constraint-pmqos (forced update)
+ - [deleted]                   bkp/cpufreq/freq-constraints
+ - [deleted]                   bkp/cpufreq/notifiers
+ - [deleted]                   bkp/cpufreq/notifiers-v2
+ - [deleted]                   bkp/cpufreq/oops/sboyd
+ - [deleted]                   bkp/opp/genpd-runtime-pm
+   a9a744dd5b82..aaf5648b925a  bkp/opp/linux-next -> bkp/opp/linux-next
+ + 49a063e1989c...eddc4afccdc1 bkp/sched/idle -> bkp/sched/idle (forced update)
+ - [deleted]                   bkp/sched/idle-v1
+ - [deleted]                   lko/sched/cleanups
+ - [deleted]                   lko/thermal/cooling-maps
+ - [deleted]                   llo/android-4.9-hikey
+ - [deleted]                   llo/for-vingu
+ - [deleted]                   llo/opp/genpd/qcom
+   5f9e832c1370..7b5cf701ea9c  origin/HEAD -> origin/HEAD
+   5f9e832c1370..7b5cf701ea9c  origin/master -> origin/master
+ + b23303b63281...e338a8d5aa45 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + b5d0790132df...f76cb066edd1 pm/linux-next -> pm/linux-next (forced update)
+   6fbc7275c7a9..5f9e832c1370  pm/master -> pm/master
+ + aa9dbec9559c...f76cb066edd1 pm/testing -> pm/testing (forced update)
+ + c0cbb7ce7a86...6a63bbf42d90 pmko/cpufreq/freq-constraint-pmqos -> pmko/cpufreq/freq-constraint-pmqos (forced update)
+ - [deleted]                   pmko/cpufreq/freq-constraints
+ - [deleted]                   pmko/cpufreq/notifiers
+ - [deleted]                   pmko/opp/fixes
+ - [deleted]                   pmko/opp/fixes-for-4.20
+ - [deleted]                   pmko/opp/genpd/propagation
+ - [deleted]                   pmko/opp/genpd/required-opps
+   560d1bcad715..cce03f3ca108  pmko/opp/linux-next -> pmko/opp/linux-next
+ * [new branch]                bkp/bkp/opp/genpd-runtime-pm -> bkp/bkp/opp/genpd-runtime-pm
+ * [new branch]                bkp/bkp/usb-to-eth-hikey -> bkp/bkp/usb-to-eth-hikey
+ * [new branch]                bkp/bp/arm64/kpti -> bkp/bp/arm64/kpti
+ * [new branch]                bkp/bp/mr/kpti -> bkp/bp/mr/kpti
+ * [new branch]                bkp/cpufreq/cleanup -> bkp/cpufreq/cleanup
+ * [new branch]                bkp/stable/v4.4.y/spectre -> bkp/stable/v4.4.y/spectre
+ * [new branch]                bkp/stable/v4.9.y -> bkp/stable/v4.9.y
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

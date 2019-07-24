@@ -33233,3 +33233,54 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 7085bc12c083] updates
+ 3 files changed, 89 insertions(+), 58 deletions(-)
+ delete mode 100644 mutt/incoming/PATCH_cpufreq_ap806_Add_NULL_check_after_kcalloc.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   268207adac36..7085bc12c083  master -> master
+   51bb7e8ea18f..268207adac36  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Jul 24 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + c0cbb7ce7a86...6a63bbf42d90 bkp/cpufreq/freq-constraint-pmqos -> bkp/cpufreq/freq-constraint-pmqos (forced update)
+ + aaf5648b925a...cce03f3ca108 bkp/opp/linux-next -> bkp/opp/linux-next (forced update)
+ + e338a8d5aa45...0c40de5db51c pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   f76cb066edd1..3f5308561dcf  pm/linux-next -> pm/linux-next
+   f76cb066edd1..3f5308561dcf  pm/testing -> pm/testing
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

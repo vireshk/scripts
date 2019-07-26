@@ -890,3 +890,6 @@ From vireshk  Tue Jul  9 13:39:49 2019
 From vireshk  Tue Jul  9 13:39:49 2019
  Subject: [PATCH V2 2/4] opp: of: Support multiple suspend OPPs defined in DT
   Folder: PATCH_V2_2-4_opp_of_Support_multiple_suspend_OPPs_defined_in	   6692
+From vireshk  Fri Jul 26 11:38:54 2019
+ Subject: [PATCH] PM / OPP: Correct Documentation about library location
+  Folder: PATCH_PM_OPP_Correct_Documentation_about_library_location.mb	   6966

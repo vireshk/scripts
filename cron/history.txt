@@ -33333,3 +33333,95 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 0d631cb83165] updates
+ 2 files changed, 55 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   fd5f9d8f9d3d..0d631cb83165  master -> master
+   7085bc12c083..fd5f9d8f9d3d  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Fri Jul 26 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 8a3d46cf7c8b...090ca6003517 cpufreq/cleanup -> cpufreq/cleanup (forced update)
+   0096c014218f..987d9213eef7  opp/linux-next -> opp/linux-next
+ + 8091ef83f264...8a3d46cf7c8b bkp/cpufreq/cleanup -> bkp/cpufreq/cleanup (forced update)
+   cce03f3ca108..0096c014218f  bkp/opp/linux-next -> bkp/opp/linux-next
+ + 66eaf5ce075f...e228edc9e998 peterz/WIP.x86/ipi -> peterz/WIP.x86/ipi (forced update)
+ + 162b65ddbf2f...3836cd537b20 peterz/auto-latest -> peterz/auto-latest (forced update)
+   7e8e6816c649..b68b9907069a  peterz/core-urgent-for-linus -> peterz/core-urgent-for-linus
+   7e8e6816c649..882a0db9d143  peterz/core/urgent -> peterz/core/urgent
+ + 16da732fa12c...24d73d3a62bf peterz/debug/experimental -> peterz/debug/experimental (forced update)
+   20faba848752..5f9e832c1370  peterz/irq/urgent -> peterz/irq/urgent
+ + c0238e337c88...0de129fe70a7 peterz/locking/atomic -> peterz/locking/atomic (forced update)
+   9156e545765e..ddffc98ac775  peterz/locking/core -> peterz/locking/core
+ + 52725db77a8b...55294bf2fe61 peterz/locking/jump_label -> peterz/locking/jump_label (forced update)
+ + 0fe8bf5e9540...ba1465c64c1c peterz/locking/more -> peterz/locking/more (forced update)
+ + 526b935ec1bc...2ae7ea7f4a95 peterz/locking/urgent -> peterz/locking/urgent (forced update)
+ + 9e68d5d843e6...d0d7c1627cb5 peterz/master -> peterz/master (forced update)
+ + ae7194923f7b...54f40bfb36cd peterz/modules/core -> peterz/modules/core (forced update)
+   e4557c1a46b0..e0c5c5e308ee  peterz/perf-urgent-for-linus -> peterz/perf-urgent-for-linus
+ + 873ec295e328...39e104312aff peterz/perf/core -> peterz/perf/core (forced update)
+   f632a8170a6b..7b5cf701ea9c  peterz/perf/experimental -> peterz/perf/experimental
+   e4557c1a46b0..232c6a8fe1b3  peterz/perf/urgent -> peterz/perf/urgent
+   e3d85487fba4..b8d3349803ba  peterz/sched-urgent-for-linus -> peterz/sched-urgent-for-linus
+ + 56e338e77e85...bcd616774260 peterz/sched/core -> peterz/sched/core (forced update)
+   e3d85487fba4..9d28cbd0b2fd  peterz/sched/urgent -> peterz/sched/urgent
+   33d4a5a7a5b4..19dbdcb8039c  peterz/smp-urgent-for-linus -> peterz/smp-urgent-for-linus
+   caa759323c73..3f70915f5be9  peterz/smp/hotplug -> peterz/smp/hotplug
+   0ecfebd2b524..19dbdcb8039c  peterz/smp/urgent -> peterz/smp/urgent
+   9176ab1b8480..511885d7061e  peterz/timers/core -> peterz/timers/core
+   e9a1379f9219..6879298bd067  peterz/x86-urgent-for-linus -> peterz/x86-urgent-for-linus
+   f8a8fe61fec8..83b584d9c6a1  peterz/x86/apic -> peterz/x86/apic
+   87b61864d7ab..701010532164  peterz/x86/build -> peterz/x86/build
+   53b7607382b0..4599c6671b81  peterz/x86/cleanups -> peterz/x86/cleanups
+ + a127fb28e3a4...711486fd1859 peterz/x86/core -> peterz/x86/core (forced update)
+   049331f277fe..be261ffce6f1  peterz/x86/cpu -> peterz/x86/cpu
+   7f0a5e075583..6365b842aae4  peterz/x86/entry -> peterz/x86/entry
+   e53f31bffe1d..83527ef7abf7  peterz/x86/hyperv -> peterz/x86/hyperv
+   caa841360134..21e450d21cca  peterz/x86/mm -> peterz/x86/mm
+ - [deleted]                   peterz/x86/static_call
+   406de552c2be..b8f70953c125  peterz/x86/urgent -> peterz/x86/urgent
+ + 0c40de5db51c...28d0e69ea0fa pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   3f5308561dcf..28d0e69ea0fa  pm/linux-next -> pm/linux-next
+   918e162e6a71..fdc757015782  pm/pm -> pm/pm
+   3f5308561dcf..28d0e69ea0fa  pm/testing -> pm/testing
+   0096c014218f..987d9213eef7  pmko/opp/linux-next -> pmko/opp/linux-next
+ * [new branch]                stable/v4.4.y/spectre32 -> stable/v4.4.y/spectre32
+ * [new branch]                lko/stable/v4.4.y/spectre32 -> lko/stable/v4.4.y/spectre32
+ * [new tag]                   pm-5.3-rc2 -> pm-5.3-rc2
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

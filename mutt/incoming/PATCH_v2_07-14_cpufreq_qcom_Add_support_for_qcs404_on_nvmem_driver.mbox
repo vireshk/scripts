@@ -1,0 +1,174 @@
+From vireshk  Thu Jul 25 16:12:42 2019
+Delivered-To: viresh.kumar@linaro.org
+Received: from gmail-pop.l.google.com [74.125.200.109] 	by vireshk-i7 with POP3 (fetchmail-6.3.26) 	for <vireshk@localhost> (single-drop); Thu, 25 Jul 2019 16:12:42 +0530 (IST)
+Received: by 2002:a02:1a89:0:0:0:0:0 with SMTP id 131csp8301728jai;         Thu, 25 Jul 2019 03:42:33 -0700 (PDT)
+X-Received: by 2002:a2e:9858:: with SMTP id e24mr22226773ljj.91.1564051352897;         Thu, 25 Jul 2019 03:42:32 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1564051352; cv=none;         d=google.com; s=arc-20160816;         b=PNUcRTKUmzW+u4OWefJwedJIGtbrz8dmjzdVQa3EM7mwQNbL3l/9/QAg9f82yn1ns5          yvKpyvEnluJVtideXT66S+292ZWbiN6Qh+jnXOfSAH9waK39deLo0RYpQtHdE+2/iBEH          H3k/xzNEly6PC+GwG6qJaYKXLQh4zdxzDofnL5ceD60I8mtvYaoy2FEWrKEoRBtA+S1k          H+tNIpnFqMJDf30SJNykwWGK9Ziqm/JXsmA6zJ8viLwpEd5RUwTRw8TIaODhvrVQN8e3          A78WEEEI9UuS8nTLIYgRA4w741ul1yVChCJXcwDSP+8fTjrbeQg/m/ncIKVkQPtBSP1K          agKg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:references:in-reply-to          :message-id:date:subject:cc:to:from:dkim-signature;         bh=lthHRg+gKXUu96aNRs4HmAIZHQgiKH+Tn5IF/VHfwN4=;         b=lD9NxnzQQM7+m0Ignw441p8F3RSXT+s+eXL8NGB+hxPYWrkoZpxcmCVaeWeQwaO5Ea          XqPLRJ9Qy8AXxxrsvmp00MNhvPBJFBg/YlCMMCNRh/uGEdAxQA7EBy7QhSa2Ljocb6U0          rMZvSotogIx9kF17xFbj5zrK0z9KZjqcplPuVsfenv96Jhzz4y4DCZaK6PFREVRp1jEo          dLjyV4zz87GSB3+Wb0zs/9e/wuSFLY7uzWy0GuANhBhQ963r/keeYuHr27Kh51aDHZX8          LPfnRSpge6p9RJ9RNYCQhNwBNHd5pF6SyhPVT0kPSoQ7OEVeSHH9U8H1zwXEvKd8wom3          gi4w==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@linaro.org header.s=google header.b="bik7/fTB";        spf=pass (google.com: domain of niklas.cassel@linaro.org designates 209.85.220.65 as permitted sender) smtp.mailfrom=niklas.cassel@linaro.org;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=linaro.org
+Return-Path: <niklas.cassel@linaro.org>
+Received: from mail-sor-f65.google.com (mail-sor-f65.google.com. [209.85.220.65])         by mx.google.com with SMTPS id q21sor26961615lji.10.2019.07.25.03.42.32         for <viresh.kumar@linaro.org>         (Google Transport Security);         Thu, 25 Jul 2019 03:42:32 -0700 (PDT)
+Received-SPF: pass (google.com: domain of niklas.cassel@linaro.org designates 209.85.220.65 as permitted sender) client-ip=209.85.220.65;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@linaro.org header.s=google header.b="bik7/fTB";        spf=pass (google.com: domain of niklas.cassel@linaro.org designates 209.85.220.65 as permitted sender) smtp.mailfrom=niklas.cassel@linaro.org;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=linaro.org
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=linaro.org; s=google;         h=from:to:cc:subject:date:message-id:in-reply-to:references          :mime-version:content-transfer-encoding;         bh=lthHRg+gKXUu96aNRs4HmAIZHQgiKH+Tn5IF/VHfwN4=;         b=bik7/fTBpoIKUMQpRer7EZRyL8s2d/DAzqt781ZRaZF2vwO1YCG6Qs4D75TXyU/Aqd          QSZ3GJWLYKpwW5o0LrZKZsEk4CJcXsv6AgCV/J7cDqOiEvjFRBIVkvtiiqQA/VjRn2qf          bdC1jNuEb0T0HuwbJNSe3YVhop2MaqYHeEBujobY8fvxBU232FETSigsM6mBhv2yHcIy          5dnp3zdQU6XIbchzboRdwDQ+ZmMk0I9pjyVsyQdpXaUo2bv60Lv2nsuSJknU+y77FYls          iUIOHoo8ck5x0h0baCJf43xQI3/6KainyUBCQY6+M2uIw9xKwncn8JP7KiONLBG/tzQL          s5uw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=1e100.net; s=20161025;         h=x-gm-message-state:from:to:cc:subject:date:message-id:in-reply-to          :references:mime-version:content-transfer-encoding;         bh=lthHRg+gKXUu96aNRs4HmAIZHQgiKH+Tn5IF/VHfwN4=;         b=CpzPgXlewvJUWZiBOYCVibo53/VykQzPxBf9V2A6AAXlP4vxtD7OlY4vY+FmG23vlI          BtnD/7RdgU6nwSTug8q7a5GC2zqMcyrEWsypKzMQU6y6gyWTQz0CH8Kx0C52SjGAT95/          Ef8feIxqFrKHsIN0aXBVcyoncykI0X4d1p9hosb0AXQFOwhovEzCJEvgXKU5buAzU8wV          YZ1+SoPpPbhrX+nydQvNuVWqEIlzdtjGePeJemaCy724clHm5I9ZMJbR2X1TK1z6rTI1          BLufh+zZnjuFBV8DK44DDaoYmsi/aN9+FeRm3S+Kv4BIR/6A1zQuYhmcnOu71m5JttcN          xc0w==
+X-Gm-Message-State: APjAAAXwLPJgdrmDc8qSL4H3dAHcLY2ufumtH8OlUEC/lt4HuvfpDPw4 	ocm41wbbz25LHURFyOdTdU9oIFSE
+X-Google-Smtp-Source: APXvYqy30cmSo8WOFrobopcmlYQFl9tHS1A4U25VNDfym4apAzYxjLNd5zvlPoZoGBvkb+mGvfdJZg==
+X-Received: by 2002:a2e:89ca:: with SMTP id c10mr30275573ljk.106.1564051352562;         Thu, 25 Jul 2019 03:42:32 -0700 (PDT)
+Return-Path: <niklas.cassel@linaro.org>
+Received: from localhost.localdomain (ua-83-226-44-230.bbcust.telenor.se. [83.226.44.230])         by smtp.gmail.com with ESMTPSA id k124sm7461299lfd.60.2019.07.25.03.42.31         (version=TLS1_3 cipher=AEAD-AES256-GCM-SHA384 bits=256/256);         Thu, 25 Jul 2019 03:42:32 -0700 (PDT)
+From: Niklas Cassel <niklas.cassel@linaro.org>
+To: Andy Gross <agross@kernel.org>, 	Ilia Lin <ilia.lin@kernel.org>, 	"Rafael J. Wysocki" <rjw@rjwysocki.net>, 	Viresh Kumar <viresh.kumar@linaro.org>
+Cc: linux-arm-msm@vger.kernel.org, 	jorge.ramirez-ortiz@linaro.org, 	sboyd@kernel.org, 	vireshk@kernel.org, 	bjorn.andersson@linaro.org, 	ulf.hansson@linaro.org, 	Niklas Cassel <niklas.cassel@linaro.org>, 	linux-pm@vger.kernel.org, 	linux-kernel@vger.kernel.org
+Subject: [PATCH v2 07/14] cpufreq: qcom: Add support for qcs404 on nvmem driver
+Date: Thu, 25 Jul 2019 12:41:35 +0200
+Message-Id: <20190725104144.22924-8-niklas.cassel@linaro.org>
+X-Mailer: git-send-email 2.21.0
+In-Reply-To: <20190725104144.22924-1-niklas.cassel@linaro.org>
+References: <20190725104144.22924-1-niklas.cassel@linaro.org>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Content-Length: 4264
+Lines: 140
+
+Add support for qcs404 on nvmem driver.
+
+The qcs404 SoC has support for Core Power Reduction (CPR), which is
+implemented as a power domain provider, therefore add optional support
+in this driver to attach to a genpd power domain.
+
+Co-developed-by: Jorge Ramirez-Ortiz <jorge.ramirez-ortiz@linaro.org>
+Signed-off-by: Jorge Ramirez-Ortiz <jorge.ramirez-ortiz@linaro.org>
+Signed-off-by: Niklas Cassel <niklas.cassel@linaro.org>
+---
+Changes since V1:
+-Adapt to dev_pm_opp_attach_genpd() API change.
+
+ drivers/cpufreq/qcom-cpufreq-nvmem.c | 50 ++++++++++++++++++++++++++--
+ 1 file changed, 47 insertions(+), 3 deletions(-)
+
+diff --git a/drivers/cpufreq/qcom-cpufreq-nvmem.c b/drivers/cpufreq/qcom-cpufreq-nvmem.c
+index 2d798a1685c5..f0d2d5035413 100644
+--- a/drivers/cpufreq/qcom-cpufreq-nvmem.c
++++ b/drivers/cpufreq/qcom-cpufreq-nvmem.c
+@@ -24,6 +24,7 @@
+ #include <linux/of.h>
+ #include <linux/of_device.h>
+ #include <linux/platform_device.h>
++#include <linux/pm_domain.h>
+ #include <linux/pm_opp.h>
+ #include <linux/slab.h>
+ #include <linux/soc/qcom/smem.h>
+@@ -49,10 +50,12 @@ struct qcom_cpufreq_match_data {
+ 	int (*get_version)(struct device *cpu_dev,
+ 			   struct nvmem_cell *speedbin_nvmem,
+ 			   struct qcom_cpufreq_drv *drv);
++	const char **genpd_names;
+ };
+ 
+ struct qcom_cpufreq_drv {
+ 	struct opp_table **opp_tables;
++	struct opp_table **genpd_opp_tables;
+ 	u32 versions;
+ 	const struct qcom_cpufreq_match_data *data;
+ };
+@@ -126,6 +129,12 @@ static const struct qcom_cpufreq_match_data match_data_kryo = {
+ 	.get_version = qcom_cpufreq_kryo_name_version,
+ };
+ 
++static const char *qcs404_genpd_names[] = { "cpr", NULL };
++
++static const struct qcom_cpufreq_match_data match_data_qcs404 = {
++	.genpd_names = qcs404_genpd_names,
++};
++
+ static int qcom_cpufreq_probe(struct platform_device *pdev)
+ {
+ 	struct qcom_cpufreq_drv *drv;
+@@ -188,11 +197,19 @@ static int qcom_cpufreq_probe(struct platform_device *pdev)
+ 		goto free_drv;
+ 	}
+ 
++	drv->genpd_opp_tables = kcalloc(num_possible_cpus(),
++					sizeof(*drv->genpd_opp_tables),
++					GFP_KERNEL);
++	if (!drv->genpd_opp_tables) {
++		ret = -ENOMEM;
++		goto free_opp;
++	}
++
+ 	for_each_possible_cpu(cpu) {
+ 		cpu_dev = get_cpu_device(cpu);
+ 		if (NULL == cpu_dev) {
+ 			ret = -ENODEV;
+-			goto free_opp;
++			goto free_genpd_opp;
+ 		}
+ 
+ 		if (drv->data->get_version) {
+@@ -203,7 +220,22 @@ static int qcom_cpufreq_probe(struct platform_device *pdev)
+ 				ret = PTR_ERR(drv->opp_tables[cpu]);
+ 				dev_err(cpu_dev,
+ 					"Failed to set supported hardware\n");
+-				goto free_opp;
++				goto free_genpd_opp;
++			}
++		}
++
++		if (drv->data->genpd_names) {
++			drv->genpd_opp_tables[cpu] =
++				dev_pm_opp_attach_genpd(cpu_dev,
++							drv->data->genpd_names,
++							NULL);
++			if (IS_ERR(drv->genpd_opp_tables[cpu])) {
++				ret = PTR_ERR(drv->genpd_opp_tables[cpu]);
++				if (ret != -EPROBE_DEFER)
++					dev_err(cpu_dev,
++						"Could not attach to pm_domain: %d\n",
++						ret);
++				goto free_genpd_opp;
+ 			}
+ 		}
+ 	}
+@@ -218,6 +250,13 @@ static int qcom_cpufreq_probe(struct platform_device *pdev)
+ 	ret = PTR_ERR(cpufreq_dt_pdev);
+ 	dev_err(cpu_dev, "Failed to register platform device\n");
+ 
++free_genpd_opp:
++	for_each_possible_cpu(cpu) {
++		if (IS_ERR_OR_NULL(drv->genpd_opp_tables[cpu]))
++			break;
++		dev_pm_opp_detach_genpd(drv->genpd_opp_tables[cpu]);
++	}
++	kfree(drv->genpd_opp_tables);
+ free_opp:
+ 	for_each_possible_cpu(cpu) {
+ 		if (IS_ERR_OR_NULL(drv->opp_tables[cpu]))
+@@ -238,11 +277,15 @@ static int qcom_cpufreq_remove(struct platform_device *pdev)
+ 
+ 	platform_device_unregister(cpufreq_dt_pdev);
+ 
+-	for_each_possible_cpu(cpu)
++	for_each_possible_cpu(cpu) {
+ 		if (drv->opp_tables[cpu])
+ 			dev_pm_opp_put_supported_hw(drv->opp_tables[cpu]);
++		if (drv->genpd_opp_tables[cpu])
++			dev_pm_opp_detach_genpd(drv->genpd_opp_tables[cpu]);
++	}
+ 
+ 	kfree(drv->opp_tables);
++	kfree(drv->genpd_opp_tables);
+ 	kfree(drv);
+ 
+ 	return 0;
+@@ -259,6 +302,7 @@ static struct platform_driver qcom_cpufreq_driver = {
+ static const struct of_device_id qcom_cpufreq_match_list[] __initconst = {
+ 	{ .compatible = "qcom,apq8096", .data = &match_data_kryo },
+ 	{ .compatible = "qcom,msm8996", .data = &match_data_kryo },
++	{ .compatible = "qcom,qcs404", .data = &match_data_qcs404 },
+ 	{},
+ };
+ 
+-- 
+2.21.0
+

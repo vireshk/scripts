@@ -1,0 +1,73 @@
+From vireshk  Thu Jul 25 16:12:40 2019
+Delivered-To: viresh.kumar@linaro.org
+Received: from gmail-pop.l.google.com [74.125.200.109] 	by vireshk-i7 with POP3 (fetchmail-6.3.26) 	for <vireshk@localhost> (single-drop); Thu, 25 Jul 2019 16:12:40 +0530 (IST)
+Received: by 2002:a02:1a89:0:0:0:0:0 with SMTP id 131csp8301472jai;         Thu, 25 Jul 2019 03:42:17 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqzyZo4XaToa9lFlBWOP6UyyKViQNXYS9/e4qm9u4X1TNZCumC/9ajiGvWUAHjIS+0Eo5x7y
+X-Received: by 2002:a63:2784:: with SMTP id n126mr82874182pgn.92.1564051336884;         Thu, 25 Jul 2019 03:42:16 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1564051336; cv=none;         d=google.com; s=arc-20160816;         b=yvQChMzSD7lmBGkBaztc0rRJhuHDvOAUsusLVFJvxVlapKLDvXmIFA7pNh9HI9dM/5          oWa3hLyYQFWOuG5yyB5rjNysbc/Py9j8Razx2mvqRu96MkTeXMeZlfrZAuJUE972LK5f          4WSJXqSbV/C0sxaM8Qxs4AZG6LzJZxbs422bIOxg5cLRvqfeqweQnc/+gi9tRybkj7RR          9DuluM1ZT7mUpk/P9GrMFJk1N+7wBnCHlCp4RszKT4hkPRFvW40c5qLRyf1bij/YtKrl          UZBwBghPXNGd8yUVplC95isem4Q9NyxiTgoDE5yShXNsfx1ZTvIg6s076JMkyVOn3soy          s7sQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:references:in-reply-to          :message-id:date:subject:cc:to:from:dkim-signature:dmarc-filter          :delivered-to;         bh=TpKb4VV72yRVAf7yb1K/qNrZx1PQ6/zj42Sv4qoKxfU=;         b=x7FQxvacyDfzUwTKPQdvds/W88NaYvljIMzsyrv015Lw70Glz/7Mv1iYxbRbzybuzT          yapfNAwZuXLyuI+xmn2lM5uXNio6820MiUVif4Vbj9uE9632u5FplWlxGAh5w4BcZU88          kYY24TRjfOdjWj/thdKWDOAFrHD/m5XA8GY592yzg7agc7tGWZ7ed1FUBeUDVDD4q/6q          MftsyNOtcg+Y6JnZ2ag6guLGEBvd2tWLM3ser0iMtmSoSZ7/MJxlXL7SYfNDobhi6wBy          PCck5x5EXHkJXJXZXseghVfWosU7tnXV1q+NUP5fOHiAJNiyJ/kyFJjbNb4GpdWm4aJe          wrzw==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@linaro.org header.s=google header.b=Jc4jwUeo;        spf=pass (google.com: domain of srs0=wdvt=vw=linaro.org=niklas.cassel@kernel.org designates 198.145.29.99 as permitted sender) smtp.mailfrom="SRS0=wdVt=VW=linaro.org=niklas.cassel@kernel.org";        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=linaro.org
+Return-Path: <SRS0=wdVt=VW=linaro.org=niklas.cassel@kernel.org>
+Received: from mail.kernel.org (mail.kernel.org. [198.145.29.99])         by mx.google.com with ESMTPS id j25si15997251pfr.11.2019.07.25.03.42.16         for <viresh.kumar@linaro.org>         (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);         Thu, 25 Jul 2019 03:42:16 -0700 (PDT)
+Received-SPF: pass (google.com: domain of srs0=wdvt=vw=linaro.org=niklas.cassel@kernel.org designates 198.145.29.99 as permitted sender) client-ip=198.145.29.99;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@linaro.org header.s=google header.b=Jc4jwUeo;        spf=pass (google.com: domain of srs0=wdvt=vw=linaro.org=niklas.cassel@kernel.org designates 198.145.29.99 as permitted sender) smtp.mailfrom="SRS0=wdVt=VW=linaro.org=niklas.cassel@kernel.org";        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=linaro.org
+Received: by mail.kernel.org (Postfix) 	id 7EB0C22CC3; Thu, 25 Jul 2019 10:42:16 +0000 (UTC)
+Delivered-To: vireshk@kernel.org
+Received: from mail-lf1-f68.google.com (mail-lf1-f68.google.com [209.85.167.68]) 	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) 	(No client certificate requested) 	by mail.kernel.org (Postfix) with ESMTPS id 1C2BA22BF5 	for <vireshk@kernel.org>; Thu, 25 Jul 2019 10:42:16 +0000 (UTC)
+Authentication-Results: mail.kernel.org; 	dkim=pass (2048-bit key) header.d=linaro.org header.i=@linaro.org header.b="Jc4jwUeo"
+DMARC-Filter: OpenDMARC Filter v1.3.2 mail.kernel.org 1C2BA22BF5
+Authentication-Results: mail.kernel.org; dmarc=pass (p=none dis=none) header.from=linaro.org
+Authentication-Results: mail.kernel.org; spf=pass smtp.mailfrom=niklas.cassel@linaro.org
+Received: by mail-lf1-f68.google.com with SMTP id x3so34273603lfc.0         for <vireshk@kernel.org>; Thu, 25 Jul 2019 03:42:15 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=linaro.org; s=google;         h=from:to:cc:subject:date:message-id:in-reply-to:references          :mime-version:content-transfer-encoding;         bh=TpKb4VV72yRVAf7yb1K/qNrZx1PQ6/zj42Sv4qoKxfU=;         b=Jc4jwUeowngvAFR3LX2W1/kDI10qMd8LfPEIU08SrKmCtk+2usu+5+U+uUsonvMdyi          cloQgHAyJZVlsXpVdBZvjk9ZeuUYkRE8n0e2pVvhrRB83DD5BrCzaUd3FIPfmHXim6kz          yn2RQb79KNc7N5jzwU5TXU0dYc4jyJE4/XavMRXVd0Gbv4SXQl4mrktwT3WO8YJpvAKT          GaF6Mcxr8VgsTSmfXOGqry85Dpr5T+Jh3SdhOJXwgpv54sG/qwS/cQhWD9vGgUcCyseq          Ce2qxwTBZr8Yc8PvgL2IeXitU3Ui86u9ckAhqpfMe54fyPKnBNGg8TsF48oiYEBAcZWh          Q8HA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=1e100.net; s=20161025;         h=x-gm-message-state:from:to:cc:subject:date:message-id:in-reply-to          :references:mime-version:content-transfer-encoding;         bh=TpKb4VV72yRVAf7yb1K/qNrZx1PQ6/zj42Sv4qoKxfU=;         b=EvZH4nvFluqvC4tbyJfvjWZ4j7nFDs0aTrj0lidTI6edFH6E3zJiH507+zjA8hdokb          oVCj1QzaxN+7Gb8dUGv34tt4ukDFERjqlbnI7LHDz2MAgrpRAFlyWFocpjeNRUZO5+eo          GiE3nU6PdcsI6CW5n9KjHvcRAWX4tIbfQ1foXkZXLWgmpZWMse/XXADSnqE3Na3rnZCB          rfUP1iugfq4NZKeE/4G7XP0eYl3eHVwwUHebhjpPsyFSDwylPqCmocfPrCio1rq9JylP          9zS/RVWpPw4rlwvKx+1rubbyl0GqDpAcJ+nyYystcIsvNOgsGbGUgtAXKvMO9ezJLOIz          CiiA==
+X-Gm-Message-State: APjAAAV6iTHxOTaH7EfFONV3LXmkvpb0gonSpwipa+OhLHqHrwMnxv8c 	iJ00UIF/7u0WiMatgjlI/Z6kxA==
+X-Received: by 2002:ac2:5336:: with SMTP id f22mr39514270lfh.180.1564051334342;         Thu, 25 Jul 2019 03:42:14 -0700 (PDT)
+Received: from localhost.localdomain (ua-83-226-44-230.bbcust.telenor.se. [83.226.44.230])         by smtp.gmail.com with ESMTPSA id h1sm7451290lfj.21.2019.07.25.03.42.13         (version=TLS1_3 cipher=AEAD-AES256-GCM-SHA384 bits=256/256);         Thu, 25 Jul 2019 03:42:13 -0700 (PDT)
+From: Niklas Cassel <niklas.cassel@linaro.org>
+To: Andy Gross <agross@kernel.org>, 	Ilia Lin <ilia.lin@kernel.org>, 	Viresh Kumar <vireshk@kernel.org>, 	Nishanth Menon <nm@ti.com>, 	Stephen Boyd <sboyd@kernel.org>
+Cc: linux-arm-msm@vger.kernel.org, 	jorge.ramirez-ortiz@linaro.org, 	bjorn.andersson@linaro.org, 	ulf.hansson@linaro.org, 	Niklas Cassel <niklas.cassel@linaro.org>, 	Rob Herring <robh@kernel.org>, 	Rob Herring <robh+dt@kernel.org>, 	Mark Rutland <mark.rutland@arm.com>, 	linux-pm@vger.kernel.org, 	devicetree@vger.kernel.org, 	linux-kernel@vger.kernel.org
+Subject: [PATCH v2 04/14] dt-bindings: cpufreq: qcom-nvmem: Make speedbin related properties optional
+Date: Thu, 25 Jul 2019 12:41:32 +0200
+Message-Id: <20190725104144.22924-5-niklas.cassel@linaro.org>
+X-Mailer: git-send-email 2.21.0
+In-Reply-To: <20190725104144.22924-1-niklas.cassel@linaro.org>
+References: <20190725104144.22924-1-niklas.cassel@linaro.org>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Content-Length: 1216
+Lines: 32
+
+Not all Qualcomm platforms need to care about the speedbin efuse,
+nor the value blown into the speedbin efuse.
+Therefore, make the nvmem-cells and opp-supported-hw properties
+optional.
+
+Signed-off-by: Niklas Cassel <niklas.cassel@linaro.org>
+Reviewed-by: Ilia Lin <ilia.lin@kernel.org>
+Reviewed-by: Rob Herring <robh@kernel.org>
+---
+Changes since V1:
+-Picked up tags.
+
+ Documentation/devicetree/bindings/opp/qcom-nvmem-cpufreq.txt | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/Documentation/devicetree/bindings/opp/qcom-nvmem-cpufreq.txt b/Documentation/devicetree/bindings/opp/qcom-nvmem-cpufreq.txt
+index 198441e80ba8..c5ea8b90e35d 100644
+--- a/Documentation/devicetree/bindings/opp/qcom-nvmem-cpufreq.txt
++++ b/Documentation/devicetree/bindings/opp/qcom-nvmem-cpufreq.txt
+@@ -20,6 +20,10 @@ In 'cpus' nodes:
+ In 'operating-points-v2' table:
+ - compatible: Should be
+ 	- 'operating-points-v2-kryo-cpu' for apq8096 and msm8996.
++
++Optional properties:
++--------------------
++In 'operating-points-v2' table:
+ - nvmem-cells: A phandle pointing to a nvmem-cells node representing the
+ 		efuse registers that has information about the
+ 		speedbin that is used to select the right frequency/voltage
+-- 
+2.21.0
+

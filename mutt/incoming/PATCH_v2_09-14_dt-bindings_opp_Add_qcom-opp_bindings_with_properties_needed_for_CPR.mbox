@@ -1,0 +1,82 @@
+From vireshk  Thu Jul 25 16:13:46 2019
+Delivered-To: viresh.kumar@linaro.org
+Received: from gmail-pop.l.google.com [74.125.200.109] 	by vireshk-i7 with POP3 (fetchmail-6.3.26) 	for <vireshk@localhost> (single-drop); Thu, 25 Jul 2019 16:13:46 +0530 (IST)
+Received: by 2002:a02:1a89:0:0:0:0:0 with SMTP id 131csp8302052jai;         Thu, 25 Jul 2019 03:42:51 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqxF7ayDKWagZdRMj5LqXSZ/tP9vIpsNrZRAmsCDYe67IbeXtQfaDM803dnnhWsBYhYcuwLc
+X-Received: by 2002:a17:902:654f:: with SMTP id d15mr85090232pln.253.1564051371788;         Thu, 25 Jul 2019 03:42:51 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1564051371; cv=none;         d=google.com; s=arc-20160816;         b=oEQbpcANBEhoWU2qkXSJBGT/PE7w8PbwmjsY8SdGjTa78O8eodfTQp2+BmK7/cc4Xx          EoxCsT9CGDHzjhWB6E7ufKu85cXZP96hEV5qZcV/pfzBYN1TMcHczrcZ9aAmKCKErN4i          qlFfM3ncm+aFDwg3oZpjEz5t2nn+1Q5/i9JJ/rt6y9WQ4l/BT63KgS2kgfwjvjIaWob2          PetqyzMy5kQtlihH3n4EcW82sisOHU5y5KxBtj+kFcgbA/Di4nW3w1JcW9bFqsnIhcjr          oTDR2QcznPdYBHuLSiAaWHr8xVyrmcE78gu/xOh8Ar70Yueu61jV9i4MIekrpsoe6LoL          ASOg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:references:in-reply-to          :message-id:date:subject:cc:to:from:dkim-signature:dmarc-filter          :delivered-to;         bh=CCZt3kPOpetUJel0mQo8gQ4T9AKw5U16SpvhhYzlabk=;         b=j4qEshbIFd1U1g8ADqFV6I/CvthNCFZcF6o48Tdo4LUJeTbFeb9Rx6gYJHyFmOhtds          eJGa1Z+ErQl7xJZtTEG6qJW+m0fQHUhJ0ICjAFMx+WSGoNZe0jQcEYmTL+8/3IADSt82          tl9BBh2jIKbEWlozIC2cv7iqXbXlOcNWPyd+O8u3N0UmgyjdjfCpewjif41Jx8ROXN3E          6Pw5bXRN9gGCPtimm/Fte1jSfH2KeOICqvhM6/PA/kNfzG9sYh1GVrbIxJTZpPhzNFCi          /d2v7C9MQ6FRcodz4Y9ifcEoHbZd9pv9CXYIyft3+vtfQZmT6QwNx7zag3tDMUVEtW9a          r57A==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@linaro.org header.s=google header.b=dPjlq6A2;        spf=pass (google.com: domain of srs0=wdvt=vw=linaro.org=niklas.cassel@kernel.org designates 198.145.29.99 as permitted sender) smtp.mailfrom="SRS0=wdVt=VW=linaro.org=niklas.cassel@kernel.org";        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=linaro.org
+Return-Path: <SRS0=wdVt=VW=linaro.org=niklas.cassel@kernel.org>
+Received: from mail.kernel.org (mail.kernel.org. [198.145.29.99])         by mx.google.com with ESMTPS id f2si19218808pgl.74.2019.07.25.03.42.51         for <viresh.kumar@linaro.org>         (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);         Thu, 25 Jul 2019 03:42:51 -0700 (PDT)
+Received-SPF: pass (google.com: domain of srs0=wdvt=vw=linaro.org=niklas.cassel@kernel.org designates 198.145.29.99 as permitted sender) client-ip=198.145.29.99;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@linaro.org header.s=google header.b=dPjlq6A2;        spf=pass (google.com: domain of srs0=wdvt=vw=linaro.org=niklas.cassel@kernel.org designates 198.145.29.99 as permitted sender) smtp.mailfrom="SRS0=wdVt=VW=linaro.org=niklas.cassel@kernel.org";        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=linaro.org
+Received: by mail.kernel.org (Postfix) 	id 926BE22CB8; Thu, 25 Jul 2019 10:42:51 +0000 (UTC)
+Delivered-To: vireshk@kernel.org
+Received: from mail-lf1-f66.google.com (mail-lf1-f66.google.com [209.85.167.66]) 	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) 	(No client certificate requested) 	by mail.kernel.org (Postfix) with ESMTPS id 19AEF22CBF 	for <vireshk@kernel.org>; Thu, 25 Jul 2019 10:42:51 +0000 (UTC)
+Authentication-Results: mail.kernel.org; 	dkim=pass (2048-bit key) header.d=linaro.org header.i=@linaro.org header.b="dPjlq6A2"
+DMARC-Filter: OpenDMARC Filter v1.3.2 mail.kernel.org 19AEF22CBF
+Authentication-Results: mail.kernel.org; dmarc=pass (p=none dis=none) header.from=linaro.org
+Authentication-Results: mail.kernel.org; spf=pass smtp.mailfrom=niklas.cassel@linaro.org
+Received: by mail-lf1-f66.google.com with SMTP id z15so29900154lfh.13         for <vireshk@kernel.org>; Thu, 25 Jul 2019 03:42:51 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=linaro.org; s=google;         h=from:to:cc:subject:date:message-id:in-reply-to:references          :mime-version:content-transfer-encoding;         bh=CCZt3kPOpetUJel0mQo8gQ4T9AKw5U16SpvhhYzlabk=;         b=dPjlq6A2lvWvgrMNJdWXllzHpmLL0eSjAKl3p11X8gAO1Yvl99cnY+xirJks9vbb13          6nCvLEzGEA+2Mg8BA/VSM4x4lPIC4J3FPTKrWy/NmUUST4mSkbSrrw4h/Htc1lt3k9wG          c2E2gKHIQKGr6YPf5me3iOR9WO3A3pxO2gOPg7kQqbJpotHyCEZ065jJ9upAazCdKAa+          Hkv6dhJkQvDN6NIXUh+c8CnF1I9EDZW0xg4Y1ThnQCMHCW7nXjOdeN8YAjOSI7FDKZyz          HwGJ+jvUU2QgFbEP+6Kxw6TmQYkwHxlRRLRuwVPtdM5ifpOujExT0iq02CSofXx4/moQ          SRfQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=1e100.net; s=20161025;         h=x-gm-message-state:from:to:cc:subject:date:message-id:in-reply-to          :references:mime-version:content-transfer-encoding;         bh=CCZt3kPOpetUJel0mQo8gQ4T9AKw5U16SpvhhYzlabk=;         b=OYnKa33L5R/Wy6MLBwaGMWcZE6RUHa0yzI6SzCkr/snmRrik+lY+8cB8lh13nA0RlZ          fO7RPwY9v2bLtWL+nOG6TrTGgEm6WMF/8XKRKrGWQfaBEx3UlS7mOThc2BF3JXQO7o/F          u+O1WJlZyTVMavN1JFOGkE0xEmoHOpXeMVTumO70X0wXkl1yAILsfiZepz3V7VTg7SuZ          r8R/ooh8OQpgdcUO4A6cU6ZVubJmKJwVzdRpNZVAy8ZLWx+0g8Vz7Oo+J/nRPuSLnhKO          ZOjNPPpU/VGAI4lDdq2XQYdJvOhgkwHqFgNwzOlAP0sOD6MXFhbrnUO5OieuQQr4yLFC          PRJA==
+X-Gm-Message-State: APjAAAXgh7+nvZvBpvh3+lYPulzhw9wrSTEsEWObOw93kJ+bDahRfbDA 	DGy7/8M6v6aq5k1o2psMntSXkQ==
+X-Received: by 2002:ac2:59c6:: with SMTP id x6mr5914293lfn.169.1564051369379;         Thu, 25 Jul 2019 03:42:49 -0700 (PDT)
+Received: from localhost.localdomain (ua-83-226-44-230.bbcust.telenor.se. [83.226.44.230])         by smtp.gmail.com with ESMTPSA id e62sm9035045ljf.82.2019.07.25.03.42.48         (version=TLS1_3 cipher=AEAD-AES256-GCM-SHA384 bits=256/256);         Thu, 25 Jul 2019 03:42:48 -0700 (PDT)
+From: Niklas Cassel <niklas.cassel@linaro.org>
+To: Andy Gross <agross@kernel.org>, 	Viresh Kumar <vireshk@kernel.org>, 	Nishanth Menon <nm@ti.com>, 	Stephen Boyd <sboyd@kernel.org>
+Cc: linux-arm-msm@vger.kernel.org, 	jorge.ramirez-ortiz@linaro.org, 	bjorn.andersson@linaro.org, 	ulf.hansson@linaro.org, 	Niklas Cassel <niklas.cassel@linaro.org>, 	Rob Herring <robh+dt@kernel.org>, 	Mark Rutland <mark.rutland@arm.com>, 	linux-pm@vger.kernel.org, 	devicetree@vger.kernel.org, 	linux-kernel@vger.kernel.org
+Subject: [PATCH v2 09/14] dt-bindings: opp: Add qcom-opp bindings with properties needed for CPR
+Date: Thu, 25 Jul 2019 12:41:37 +0200
+Message-Id: <20190725104144.22924-10-niklas.cassel@linaro.org>
+X-Mailer: git-send-email 2.21.0
+In-Reply-To: <20190725104144.22924-1-niklas.cassel@linaro.org>
+References: <20190725104144.22924-1-niklas.cassel@linaro.org>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Content-Length: 1496
+Lines: 41
+
+Add qcom-opp bindings with properties needed for Core Power Reduction
+(CPR).
+
+CPR is included in a great variety of Qualcomm SoCs, e.g. msm8916 and
+msm8996. CPR was first introduced in msm8974.
+
+Co-developed-by: Jorge Ramirez-Ortiz <jorge.ramirez-ortiz@linaro.org>
+Signed-off-by: Jorge Ramirez-Ortiz <jorge.ramirez-ortiz@linaro.org>
+Signed-off-by: Niklas Cassel <niklas.cassel@linaro.org>
+---
+ .../devicetree/bindings/opp/qcom-opp.txt      | 19 +++++++++++++++++++
+ 1 file changed, 19 insertions(+)
+ create mode 100644 Documentation/devicetree/bindings/opp/qcom-opp.txt
+
+diff --git a/Documentation/devicetree/bindings/opp/qcom-opp.txt b/Documentation/devicetree/bindings/opp/qcom-opp.txt
+new file mode 100644
+index 000000000000..f204685d029c
+--- /dev/null
++++ b/Documentation/devicetree/bindings/opp/qcom-opp.txt
+@@ -0,0 +1,19 @@
++Qualcomm OPP bindings to describe OPP nodes
++
++The bindings are based on top of the operating-points-v2 bindings
++described in Documentation/devicetree/bindings/opp/opp.txt
++Additional properties are described below.
++
++* OPP Table Node
++
++Required properties:
++- compatible: Allow OPPs to express their compatibility. It should be:
++  "operating-points-v2-qcom-level"
++
++* OPP Node
++
++Optional properties:
++- qcom,opp-fuse-level: A positive value representing the fuse corner/level
++  associated with this OPP node. Sometimes several corners/levels shares
++  a certain fuse corner/level. A fuse corner/level contains e.g. ref uV,
++  min uV, and max uV.
+-- 
+2.21.0
+

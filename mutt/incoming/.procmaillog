@@ -893,3 +893,30 @@ From vireshk  Tue Jul  9 13:39:49 2019
 From vireshk  Fri Jul 26 11:38:54 2019
  Subject: [PATCH] PM / OPP: Correct Documentation about library location
   Folder: PATCH_PM_OPP_Correct_Documentation_about_library_location.mb	   6966
+From vireshk  Thu Jul 25 16:12:36 2019
+ Subject: [PATCH v2 01/14] opp: Add dev_pm_opp_find_level_exact()
+  Folder: PATCH_v2_01-14_opp_Add_dev_pm_opp_find_level_exact_.mbox	  10002
+From vireshk  Thu Jul 25 16:12:38 2019
+ Subject: [PATCH v2 02/14] dt-bindings: cpufreq: Re-organise kryo cpufreq to us
+  Folder: PATCH_v2_02-14_dt-bindings_cpufreq_Re-organise_kryo_cpufreq_	   9487
+From vireshk  Thu Jul 25 16:12:38 2019
+ Subject: [PATCH v2 03/14] cpufreq: qcom: Re-organise kryo cpufreq to use it fo
+  Folder: PATCH_v2_03-14_cpufreq_qcom_Re-organise_kryo_cpufreq_to_use_	  15611
+From vireshk  Thu Jul 25 16:12:40 2019
+ Subject: [PATCH v2 04/14] dt-bindings: cpufreq: qcom-nvmem: Make speedbin rela
+  Folder: PATCH_v2_04-14_dt-bindings_cpufreq_qcom-nvmem_Make_speedbin_	   8165
+From vireshk  Thu Jul 25 16:12:40 2019
+ Subject: [PATCH v2 05/14] cpufreq: qcom: Refactor the driver to make it easier
+  Folder: PATCH_v2_05-14_cpufreq_qcom_Refactor_the_driver_to_make_it_e	  12681
+From vireshk  Thu Jul 25 16:13:46 2019
+ Subject: [PATCH v2 06/14] dt-bindings: cpufreq: qcom-nvmem: Support pstates pr
+  Folder: PATCH_v2_06-14_dt-bindings_cpufreq_qcom-nvmem_Support_pstate	  10337
+From vireshk  Thu Jul 25 16:12:42 2019
+ Subject: [PATCH v2 07/14] cpufreq: qcom: Add support for qcs404 on nvmem drive
+  Folder: PATCH_v2_07-14_cpufreq_qcom_Add_support_for_qcs404_on_nvmem_	   9976
+From vireshk  Thu Jul 25 16:13:45 2019
+ Subject: [PATCH v2 08/14] cpufreq: Add qcs404 to cpufreq-dt-platdev blacklist
+  Folder: PATCH_v2_08-14_cpufreq_Add_qcs404_to_cpufreq-dt-platdev_blac	   6496
+From vireshk  Thu Jul 25 16:13:46 2019
+ Subject: [PATCH v2 09/14] dt-bindings: opp: Add qcom-opp bindings with propert
+  Folder: PATCH_v2_09-14_dt-bindings_opp_Add_qcom-opp_bindings_with_pr	   8380

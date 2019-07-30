@@ -33488,3 +33488,61 @@ post-git trigger: updating grokmirror
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master c4c5cba52e53] updates
+ 10 files changed, 1355 insertions(+)
+ create mode 100644 mutt/incoming/PATCH_v2_02-14_dt-bindings_cpufreq_Re-organise_kryo_cpufreq_to_use_it_for_other_nvmem_based_qcom_socs.mbox
+ create mode 100644 mutt/incoming/PATCH_v2_03-14_cpufreq_qcom_Re-organise_kryo_cpufreq_to_use_it_for_other_nvmem_based_qcom_socs.mbox
+ create mode 100644 mutt/incoming/PATCH_v2_04-14_dt-bindings_cpufreq_qcom-nvmem_Make_speedbin_related_properties_optional.mbox
+ create mode 100644 mutt/incoming/PATCH_v2_05-14_cpufreq_qcom_Refactor_the_driver_to_make_it_easier_to_extend.mbox
+ create mode 100644 mutt/incoming/PATCH_v2_06-14_dt-bindings_cpufreq_qcom-nvmem_Support_pstates_provided_by_a_power_domain.mbox
+ create mode 100644 mutt/incoming/PATCH_v2_07-14_cpufreq_qcom_Add_support_for_qcs404_on_nvmem_driver.mbox
+ create mode 100644 mutt/incoming/PATCH_v2_08-14_cpufreq_Add_qcs404_to_cpufreq-dt-platdev_blacklist.mbox
+ create mode 100644 mutt/incoming/PATCH_v2_09-14_dt-bindings_opp_Add_qcom-opp_bindings_with_properties_needed_for_CPR.mbox
+post-git trigger: updating grokmirror
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   ef04eaaf4210..c4c5cba52e53  master -> master
+   0d631cb83165..ef04eaaf4210  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+
+
+ 
+Tue Jul 30 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + a462f6f3ed22...c0789bb918d3 boot-constraint -> boot-constraint (forced update)
+ + fc7d8233c794...cfef2846f785 cpufreq/arm/linux-next -> cpufreq/arm/linux-next (forced update)
+   3355c91b7939..fc7d8233c794  bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next
+ + 987d9213eef7...0203c0343a1f bkp/opp/linux-next -> bkp/opp/linux-next (forced update)
+ + 6c019e8711d6...36bf11e4bf62 lko/boot-constraint -> lko/boot-constraint (forced update)
+ + fc7d8233c794...cfef2846f785 pmko/cpufreq/arm/linux-next -> pmko/cpufreq/arm/linux-next (forced update)
+ * [new branch]                bkp/cpufreq/qcom-updates -> bkp/cpufreq/qcom-updates
+ * [new branch]                bkp/opp/genp-updates -> bkp/opp/genp-updates
+ * [new branch]                bkp/opp/qcom-updates -> bkp/opp/qcom-updates
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

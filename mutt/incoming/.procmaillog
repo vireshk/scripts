@@ -920,3 +920,6 @@ From vireshk  Thu Jul 25 16:13:45 2019
 From vireshk  Thu Jul 25 16:13:46 2019
  Subject: [PATCH v2 09/14] dt-bindings: opp: Add qcom-opp bindings with propert
   Folder: PATCH_v2_09-14_dt-bindings_opp_Add_qcom-opp_bindings_with_pr	   8380
+From vireshk  Tue Jul 30 07:47:40 2019
+ Subject: [PATCH] cpufreq: ti-cpufreq: Mark expected switch fall-through
+  Folder: PATCH_cpufreq_ti-cpufreq_Mark_expected_switch_fall-through.m	   6539

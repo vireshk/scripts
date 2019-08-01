@@ -33646,3 +33646,87 @@ post-git trigger: updating grokmirror
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master ab15be4f933a] updates
+ 1 file changed, 100 insertions(+)
+post-git trigger: updating grokmirror
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   9f88372fcd01..ab15be4f933a  master -> master
+   c4c5cba52e53..9f88372fcd01  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+
+
+ 
+Thu Aug  1 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   2e2b33e5735e..487910cf8338  cpufreq/cleanup -> cpufreq/cleanup
+ - [deleted]                   stable/v4.4.y/spectre
+ - [deleted]                   stable/v4.4.y/spectre32
+ + 090ca6003517...2e2b33e5735e bkp/cpufreq/cleanup -> bkp/cpufreq/cleanup (forced update)
+ + d951386d5543...dc6260a39a38 bkp/stable/v4.4.y/spectre32 -> bkp/stable/v4.4.y/spectre32 (forced update)
+ + 0f28104ecd73...72f67fd749db bkp/stable/v4.9.y -> bkp/stable/v4.9.y (forced update)
+ + 57676b8e5f4e...4ba6a2292f0e lko/for-kernelci -> lko/for-kernelci (forced update)
+ - [deleted]                   lko/stable/v4.4.y/spectre
+ - [deleted]                   lko/stable/v4.4.y/spectre-v1
+ - [deleted]                   lko/stable/v4.4.y/spectre32
+ + afd9d1c1c783...da24406da651 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 4f48445e5052...9c77b777925f pm/linux-next -> pm/linux-next (forced update)
+ + 4f48445e5052...9c77b777925f pm/testing -> pm/testing (forced update)
+   cf2df8f10789..8eb43aebcde7  stable/linux-3.16.y -> stable/linux-3.16.y
+   aea8526edf59..10d6aa565d05  stable/linux-4.14.y -> stable/linux-4.14.y
+   7a6bfa08b938..9a9de33a9dfa  stable/linux-4.19.y -> stable/linux-4.19.y
+   7bbf48947605..a3e421fbb857  stable/linux-4.4.y -> stable/linux-4.4.y
+   9c51e1102c95..35c308d7828d  stable/linux-4.9.y -> stable/linux-4.9.y
+   4b886fa2b8f1..4a9b1eb8bc3b  stable/linux-5.1.y -> stable/linux-5.1.y
+   0ecfebd2b524..2519374d2a6b  stable/linux-5.2.y -> stable/linux-5.2.y
+   0ecfebd2b524..609488bc979f  stable/master -> stable/master
+ * [new branch]                stable/arm32/v4.4.y/spectre -> stable/arm32/v4.4.y/spectre
+ * [new branch]                stable/arm64/v4.4.y/spectre -> stable/arm64/v4.4.y/spectre
+ * [new branch]                stable/arm64/v4.4.y/spectre-v2 -> stable/arm64/v4.4.y/spectre-v2
+ * [new branch]                lko/stable/arm32/v4.4.y/spectre -> lko/stable/arm32/v4.4.y/spectre
+ * [new branch]                lko/stable/arm64/v4.4.y/spectre -> lko/stable/arm64/v4.4.y/spectre
+ * [new tag]                   v3.16.71 -> v3.16.71
+ * [new tag]                   v4.14.134 -> v4.14.134
+ * [new tag]                   v4.14.135 -> v4.14.135
+ * [new tag]                   v4.19.59 -> v4.19.59
+ * [new tag]                   v4.19.60 -> v4.19.60
+ * [new tag]                   v4.19.61 -> v4.19.61
+ * [new tag]                   v4.19.62 -> v4.19.62
+ * [new tag]                   v4.19.63 -> v4.19.63
+ * [new tag]                   v4.4.186 -> v4.4.186
+ * [new tag]                   v4.9.186 -> v4.9.186
+ * [new tag]                   v5.1.18 -> v5.1.18
+ * [new tag]                   v5.1.19 -> v5.1.19
+ * [new tag]                   v5.1.20 -> v5.1.20
+ * [new tag]                   v5.1.21 -> v5.1.21
+ * [new tag]                   v5.2.1 -> v5.2.1
+ * [new tag]                   v5.2.2 -> v5.2.2
+ * [new tag]                   v5.2.3 -> v5.2.3
+ * [new tag]                   v5.2.4 -> v5.2.4
+ * [new tag]                   v5.2.5 -> v5.2.5
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/scripts

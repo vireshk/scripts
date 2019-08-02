@@ -33730,3 +33730,57 @@ post-git trigger: updating grokmirror
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 7a578e45a533] updates
+ 1 file changed, 84 insertions(+)
+post-git trigger: updating grokmirror
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   ab15be4f933a..7a578e45a533  master -> master
+   9f88372fcd01..ab15be4f933a  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+
+
+ 
+Fri Aug  2 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   cpufreq/cleanup
+ + 78754f15313b...455094dcf249 stable/arm32/v4.4.y/spectre -> stable/arm32/v4.4.y/spectre (forced update)
+   2e2b33e5735e..487910cf8338  bkp/cpufreq/cleanup -> bkp/cpufreq/cleanup
+ - [deleted]                   bkp/stable/v4.4.y/spectre
+ - [deleted]                   bkp/stable/v4.4.y/spectre32
+ + 4ba6a2292f0e...455094dcf249 lko/for-kernelci -> lko/for-kernelci (forced update)
+ + 78754f15313b...e18ce6b8f6ce lko/stable/arm32/v4.4.y/spectre -> lko/stable/arm32/v4.4.y/spectre (forced update)
+ + da24406da651...792f396a1423 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   9c77b777925f..36c01003fc59  pm/linux-next -> pm/linux-next
+ + b0f5942ee1fb...2fb47962f42a pm/pm-s2idle-testing -> pm/pm-s2idle-testing (forced update)
+   9c77b777925f..36c01003fc59  pm/testing -> pm/testing
+ * [new branch]                cpufreq/intel-pstate-fix -> cpufreq/intel-pstate-fix
+ * [new branch]                bkp/stable/arm32/v4.4.y/spectre -> bkp/stable/arm32/v4.4.y/spectre
+ * [new branch]                bkp/stable/arm64/v4.4.y/spectre -> bkp/stable/arm64/v4.4.y/spectre
+ * [new branch]                bkp/stable/arm64/v4.4.y/spectre-v2 -> bkp/stable/arm64/v4.4.y/spectre-v2
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/scripts

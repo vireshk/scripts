@@ -33874,3 +33874,48 @@ post-git trigger: updating grokmirror
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 515af1e0c57b] updates
+ 1 file changed, 48 insertions(+)
+post-git trigger: updating grokmirror
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   47c114ff6874..515af1e0c57b  master -> master
+   7c39fc237746..47c114ff6874  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+
+
+ 
+Wed Aug  7 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 221a09fef83a...95476b4c4a44 cpufreq/freq-constraint-pmqos -> cpufreq/freq-constraint-pmqos (forced update)
+ + 23e3dee8688f...e789eceae3f3 cpufreq/intel-pstate-fix -> cpufreq/intel-pstate-fix (forced update)
+ + 6a63bbf42d90...221a09fef83a bkp/cpufreq/freq-constraint-pmqos -> bkp/cpufreq/freq-constraint-pmqos (forced update)
+ * [new branch]                pmko/cpufreq/intel-pstate-fix -> pmko/cpufreq/intel-pstate-fix
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

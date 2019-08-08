@@ -33919,3 +33919,154 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 771bcfdccdb4] updates
+ 1 file changed, 45 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   515af1e0c57b..771bcfdccdb4  master -> master
+   47c114ff6874..515af1e0c57b  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Thu Aug  8 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + cfef2846f785...07e44f922529 cpufreq/arm/linux-next -> cpufreq/arm/linux-next (forced update)
+ + 221a09fef83a...95476b4c4a44 bkp/cpufreq/freq-constraint-pmqos -> bkp/cpufreq/freq-constraint-pmqos (forced update)
+ + 23e3dee8688f...e789eceae3f3 bkp/cpufreq/intel-pstate-fix -> bkp/cpufreq/intel-pstate-fix (forced update)
+ + cfef2846f785...07e44f922529 pmko/cpufreq/arm/linux-next -> pmko/cpufreq/arm/linux-next (forced update)
+ * [new branch]                bkp/mr/meltdown -> bkp/mr/meltdown
+ * [new branch]                stable/arm64/v4.4.y/meltdown -> stable/arm64/v4.4.y/meltdown
+ * [new branch]                mr/arch-timer/cleanup -> mr/arch-timer/cleanup
+ * [new branch]                mr/arch-timer/gtdt -> mr/arch-timer/gtdt
+ * [new branch]                mr/arch-timer/hisi-161010101 -> mr/arch-timer/hisi-161010101
+ * [new branch]                mr/arch-timer/updates -> mr/arch-timer/updates
+ * [new branch]                mr/arm/perf/acpi -> mr/arm/perf/acpi
+ * [new branch]                mr/arm/perf/heterogeneous-pmus -> mr/arm/perf/heterogeneous-pmus
+ * [new branch]                mr/arm/perf/irq-rework -> mr/arm/perf/irq-rework
+ * [new branch]                mr/arm/perf/platform-updates -> mr/arm/perf/platform-updates
+ * [new branch]                mr/arm/perf/refactoring -> mr/arm/perf/refactoring
+ * [new branch]                mr/arm64/access-ok -> mr/arm64/access-ok
+ * [new branch]                mr/arm64/acpi-pmu-lockdep -> mr/arm64/acpi-pmu-lockdep
+ * [new branch]                mr/arm64/adrp-cleanup -> mr/arm64/adrp-cleanup
+ * [new branch]                mr/arm64/alt-nop -> mr/arm64/alt-nop
+ * [new branch]                mr/arm64/asm-fixes -> mr/arm64/asm-fixes
+ * [new branch]                mr/arm64/atomic-instrumentation -> mr/arm64/atomic-instrumentation
+ * [new branch]                mr/arm64/common-esr-macros -> mr/arm64/common-esr-macros
+ * [new branch]                mr/arm64/common-sysreg -> mr/arm64/common-sysreg
+ * [new branch]                mr/arm64/dts -> mr/arm64/dts
+ * [new branch]                mr/arm64/entry-cleanups -> mr/arm64/entry-cleanups
+ * [new branch]                mr/arm64/entry-deasm -> mr/arm64/entry-deasm
+ * [new branch]                mr/arm64/entry-deasm-old -> mr/arm64/entry-deasm-old
+ * [new branch]                mr/arm64/exception-stack -> mr/arm64/exception-stack
+ * [new branch]                mr/arm64/exception-stack-fixup -> mr/arm64/exception-stack-fixup
+ * [new branch]                mr/arm64/export-cleanup -> mr/arm64/export-cleanup
+ * [new branch]                mr/arm64/fault-cleanups -> mr/arm64/fault-cleanups
+ * [new branch]                mr/arm64/fixes -> mr/arm64/fixes
+ * [new branch]                mr/arm64/ftrace-cleanup -> mr/arm64/ftrace-cleanup
+ * [new branch]                mr/arm64/ftrace/makefile-cleanup -> mr/arm64/ftrace/makefile-cleanup
+ * [new branch]                mr/arm64/kasan-atomic -> mr/arm64/kasan-atomic
+ * [new branch]                mr/arm64/kasan-improvements -> mr/arm64/kasan-improvements
+ * [new branch]                mr/arm64/kernel-guards -> mr/arm64/kernel-guards
+ * [new branch]                mr/arm64/kill-esr-lnx-exec -> mr/arm64/kill-esr-lnx-exec
+ * [new branch]                mr/arm64/kvm-single-step -> mr/arm64/kvm-single-step
+ * [new branch]                mr/arm64/misc-patches -> mr/arm64/misc-patches
+ * [new branch]                mr/arm64/misc/hardening -> mr/arm64/misc/hardening
+ * [new branch]                mr/arm64/nospec -> mr/arm64/nospec
+ * [new branch]                mr/arm64/pagetable-rework -> mr/arm64/pagetable-rework
+ * [new branch]                mr/arm64/pointer-auth -> mr/arm64/pointer-auth
+ * [new branch]                mr/arm64/pointer-auth-kernel -> mr/arm64/pointer-auth-kernel
+ * [new branch]                mr/arm64/psci-rework -> mr/arm64/psci-rework
+ * [new branch]                mr/arm64/pstate-fixes -> mr/arm64/pstate-fixes
+ * [new branch]                mr/arm64/pt-regs-xzr -> mr/arm64/pt-regs-xzr
+ * [new branch]                mr/arm64/ptdump/librify -> mr/arm64/ptdump/librify
+ * [new branch]                mr/arm64/read-write-sysreg -> mr/arm64/read-write-sysreg
+ * [new branch]                mr/arm64/ro-swapper -> mr/arm64/ro-swapper
+ * [new branch]                mr/arm64/robust-stacktrace -> mr/arm64/robust-stacktrace
+ * [new branch]                mr/arm64/smccc-cleanup -> mr/arm64/smccc-cleanup
+ * [new branch]                mr/arm64/syscall-regs -> mr/arm64/syscall-regs
+ * [new branch]                mr/arm64/sysreg -> mr/arm64/sysreg
+ * [new branch]                mr/arm64/this-cpu-reg -> mr/arm64/this-cpu-reg
+ * [new branch]                mr/arm64/ti-stack-split -> mr/arm64/ti-stack-split
+ * [new branch]                mr/arm64/vmap-stack -> mr/arm64/vmap-stack
+ * [new branch]                mr/arm64/vmap-stack-align -> mr/arm64/vmap-stack-align
+ * [new branch]                mr/arm64/vmap-stack-old -> mr/arm64/vmap-stack-old
+ * [new branch]                mr/asan-clean-shadow -> mr/asan-clean-shadow
+ * [new branch]                mr/atomics/alignment-check -> mr/atomics/alignment-check
+ * [new branch]                mr/atomics/api-cleanup -> mr/atomics/api-cleanup
+ * [new branch]                mr/atomics/arch-atomic -> mr/atomics/arch-atomic
+ * [new branch]                mr/atomics/generated -> mr/atomics/generated
+ * [new branch]                mr/atomics/refcount-checked -> mr/atomics/refcount-checked
+ * [new branch]                mr/atomics/regenerate -> mr/atomics/regenerate
+ * [new branch]                mr/atomics/type-cleanup -> mr/atomics/type-cleanup
+ * [new branch]                mr/core/access-once -> mr/core/access-once
+ * [new branch]                mr/core/access-once-prep -> mr/core/access-once-prep
+ * [new branch]                mr/core/access-once-removal -> mr/core/access-once-removal
+ * [new branch]                mr/core/nospec/rfc -> mr/core/nospec/rfc
+ * [new branch]                mr/core/ti-stack-split -> mr/core/ti-stack-split
+ * [new branch]                mr/efi-stub/definitions -> mr/efi-stub/definitions
+ * [new branch]                mr/efi/flag-corruption -> mr/efi/flag-corruption
+ * [new branch]                mr/fuzzing/4.16 -> mr/fuzzing/4.16
+ * [new branch]                mr/fuzzing/4.17-rc1 -> mr/fuzzing/4.17-rc1
+ * [new branch]                mr/fuzzing/4.17-rc3 -> mr/fuzzing/4.17-rc3
+ * [new branch]                mr/fuzzing/4.17-rc7 -> mr/fuzzing/4.17-rc7
+ * [new branch]                mr/fuzzing/4.19-rc5 -> mr/fuzzing/4.19-rc5
+ * [new branch]                mr/fuzzing/5.0 -> mr/fuzzing/5.0
+ * [new branch]                mr/fuzzing/5.2-rc3 -> mr/fuzzing/5.2-rc3
+ * [new branch]                mr/fuzzing/5.2-rc5 -> mr/fuzzing/5.2-rc5
+ * [new branch]                mr/fuzzing/5.2-rc7 -> mr/fuzzing/5.2-rc7
+ * [new branch]                mr/fuzzing/5.2-rt1 -> mr/fuzzing/5.2-rt1
+ * [new branch]                mr/fuzzing/5.3-rc1 -> mr/fuzzing/5.3-rc1
+ * [new branch]                mr/fuzzing/v5.3-rc0-20190716 -> mr/fuzzing/v5.3-rc0-20190716
+ * [new branch]                mr/kcov/fixes -> mr/kcov/fixes
+ * [new branch]                mr/kill-null-task-idiom -> mr/kill-null-task-idiom
+ * [new branch]                mr/kvm/common-sysreg -> mr/kvm/common-sysreg
+ * [new branch]                mr/master -> mr/master
+ * [new branch]                mr/misc-patches -> mr/misc-patches
+ * [new branch]                mr/mm/misc-patches -> mr/mm/misc-patches
+ * [new branch]                mr/perf-drivers/cleanup -> mr/perf-drivers/cleanup
+ * [new branch]                mr/perf-drivers/hisilicon-soc -> mr/perf-drivers/hisilicon-soc
+ * [new branch]                mr/perf/refcount -> mr/perf/refcount
+ * [new branch]                mr/perf/tmp/core -> mr/perf/tmp/core
+ * [new branch]                mr/psci/rework -> mr/psci/rework
+ * [new branch]                mr/psci/unification -> mr/psci/unification
+ * [new branch]                mr/sched/kthread-cleanup -> mr/sched/kthread-cleanup
+ * [new branch]                mr/stable/4.9.y/meltdown -> mr/stable/4.9.y/meltdown
+ * [new branch]                mr/stable/4.9.y/spectre -> mr/stable/4.9.y/spectre
+ * [new tag]                   arch-timer-gtdt -> arch-timer-gtdt
+ * [new tag]                   arm64-pagetable-rework-20160125 -> arm64-pagetable-rework-20160125
+ * [new tag]                   core-nospec-20180109 -> core-nospec-20180109
+ * [new tag]                   core-ti-stack-split -> core-ti-stack-split
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

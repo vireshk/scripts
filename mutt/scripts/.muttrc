@@ -114,6 +114,7 @@ macro index,pager \Ch '<pipe-entry>~/scripts/mutt/scripts/frommutt^M' "output gi
 macro index,pager ,r '<pipe-entry>rm -f ~/scripts/mutt/incoming/*.mbox^M'  "Nukes all ~/scripts/mutt/incoming/" 
 macro index,pager ,l '<pipe-entry>ls -ltr ~/scripts/mutt/incoming/^M'  "ls -l ~/scripts/mutt/incoming/"         
 macro index,pager ,a '<pipe-entry>~/scripts/mutt/scripts/git-apply-incoming^M' "Apply all patches"
+macro index A '<pipe-entry> git am -s'\n
 
 
 #======================================================#

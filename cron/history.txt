@@ -34070,3 +34070,70 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 989951413b56] updates
+ 2 files changed, 154 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   771bcfdccdb4..989951413b56  master -> master
+   515af1e0c57b..771bcfdccdb4  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon Aug 19 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   bkp/mr/meltdown
+ + 07e44f922529...94f306fee125 cpufreq/arm/linux-next -> cpufreq/arm/linux-next (forced update)
+ + 95476b4c4a44...0dc64126cee7 cpufreq/freq-constraint-pmqos -> cpufreq/freq-constraint-pmqos (forced update)
+ + e789eceae3f3...85cdbc41f7f5 cpufreq/intel-pstate-fix -> cpufreq/intel-pstate-fix (forced update)
+ + 7f98670b3a42...841a75182e95 stable/arm64/v4.4.y/meltdown -> stable/arm64/v4.4.y/meltdown (forced update)
+ + cfef2846f785...07e44f922529 bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next (forced update)
+ + b540ea79d3f1...8011345f71ff pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 9a7513a4449e...92f74956122e pm/linux-next -> pm/linux-next (forced update)
+   e21a712a9685..d45331b00ddb  pm/master -> pm/master
+   42787ed79638..a3ee2477c45f  pm/pm -> pm/pm
+ + 80646626b02a...11f26633cccb pm/pm-s2idle-rework -> pm/pm-s2idle-rework (forced update)
+ + 2fb47962f42a...461fc1caed55 pm/pm-s2idle-testing -> pm/pm-s2idle-testing (forced update)
+ + 9a7513a4449e...49889f0f99e6 pm/testing -> pm/testing (forced update)
+ - [deleted]                   pm/xps13-9380-20190803
+ * [new branch]                bp/mr/meltdown -> bp/mr/meltdown
+ * [new branch]                stable/arm64/v4.4.y/meltdown-bkp -> stable/arm64/v4.4.y/meltdown-bkp
+ * [new branch]                bkp/bkp/mr/meltdown -> bkp/bkp/mr/meltdown
+ * [new branch]                bkp/stable/arm64/v4.4.y/meltdown -> bkp/stable/arm64/v4.4.y/meltdown
+ * [new branch]                pm/xps13-9380-20190809 -> pm/xps13-9380-20190809
+ * [new branch]                pm/xps13-9380-20190812 -> pm/xps13-9380-20190812
+ * [new tag]                   pm-5.3-rc4 -> pm-5.3-rc4
+ * [new tag]                   pm-5.3-rc5 -> pm-5.3-rc5
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

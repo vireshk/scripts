@@ -1,0 +1,71 @@
+From vireshk  Mon Aug 19 07:27:38 2019
+Delivered-To: viresh.kumar@linaro.org
+Received: from gmail-pop.l.google.com [74.125.24.108] 	by vireshk-i7 with POP3 (fetchmail-6.3.26) 	for <vireshk@localhost> (single-drop); Mon, 19 Aug 2019 07:27:38 +0530 (IST)
+Received: by 2002:a02:1a89:0:0:0:0:0 with SMTP id 131csp850406jai;         Tue, 13 Aug 2019 06:32:13 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqxZESyCAwE4fruQadyK7nLiDyzS4Hy/HF2g7au9bJFfuwERJDa5dhUYEtSTVRPOV1hC5DdC
+X-Received: by 2002:a17:902:36e:: with SMTP id 101mr26206321pld.51.1565703133421;         Tue, 13 Aug 2019 06:32:13 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1565703133; cv=none;         d=google.com; s=arc-20160816;         b=ykV48TZSX0iYHIx1rTPl5SojHdz1RvnrOm7uPoftssSFDoj1ECk647wVvr3PsMnjJu          sckF9TftN4cHTbPrLkY5+TptDgzpIp8HCEHZgzsmpDln6wYw6ei44TUXqoghsxtY6/vZ          vau0ITQBVvbZvQOrfF6uxn+FWB//cu/GWdUFdtmggDE9WGFsWlSJi9c3CNjKdTw1t+bL          wNDQ4jEnedjDz6qpz1LYKCa3hAId6YEtm3eUAjHHwB7o29P/QnbidC2MDId2aDMfJMCb          e3qmJoBhCP9U6FBJ38bVljomlluUczvQ6ACqekUbjBXrTqJapmsQnCwD/27g+YlpMBU6          CR5g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=mime-version:references:in-reply-to:message-id:date:subject:cc:to          :from;         bh=xKrLrIbLL6L6Y/huE5vGSB+iA5SsKo5uuwhe04sWESc=;         b=pvV/2xKfTErMFVusJnDfcbvq0R39ET+cwN+OHBc5/Nvcl8Wn+gNDGa/hmfBMj6JEry          LWMW6nGQAfJN2HpK2VVoaTA29EQTfDZ4J39Nqtv1yt02m8QOUw4Ux8gwSLtWHUb23kO9          o2VkvB053Ve5aYWnlrlb7UlssctnM7i+Fi8HwcyFDvRyO20wHkdKaYLBh4Pj5IUsaXgb          of3sxMrbbH65HxLbP6dEAhi2wQiy1gamwg2KuWKmEQiGD2jGuRBoeHiwgvbDuWIio6wI          bOAdV5pHqI7LYL2qPL+i1l56krxEpgupcj1gHJKdFx8z3zbWxTzF9P7XpBnbc59oJmtt          05Dw==
+ARC-Authentication-Results: i=1; mx.google.com;        spf=pass (google.com: domain of andrew-sh.cheng@mediatek.com designates 210.61.82.184 as permitted sender) smtp.mailfrom=andrew-sh.cheng@mediatek.com;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=mediatek.com
+Return-Path: <andrew-sh.cheng@mediatek.com>
+Received: from mailgw02.mediatek.com ([210.61.82.184])         by mx.google.com with ESMTP id t63si63836504pfb.5.2019.08.13.06.32.12         for <viresh.kumar@linaro.org>;         Tue, 13 Aug 2019 06:32:13 -0700 (PDT)
+Received-SPF: pass (google.com: domain of andrew-sh.cheng@mediatek.com designates 210.61.82.184 as permitted sender) client-ip=210.61.82.184;
+Authentication-Results: mx.google.com;        spf=pass (google.com: domain of andrew-sh.cheng@mediatek.com designates 210.61.82.184 as permitted sender) smtp.mailfrom=andrew-sh.cheng@mediatek.com;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=mediatek.com
+X-UUID: 8390b908888b4d10b15938ce14f4d590-20190813
+X-UUID: 8390b908888b4d10b15938ce14f4d590-20190813
+Received: from mtkcas06.mediatek.inc [(172.21.101.30)] by mailgw02.mediatek.com 	(envelope-from <andrew-sh.cheng@mediatek.com>) 	(Cellopoint E-mail Firewall v4.1.10 Build 0707 with TLS) 	with ESMTP id 1995056738; Tue, 13 Aug 2019 21:31:58 +0800
+Received: from mtkcas08.mediatek.inc (172.21.101.126) by  mtkmbs07n1.mediatek.inc (172.21.101.16) with Microsoft SMTP Server (TLS) id  15.0.1395.4; Tue, 13 Aug 2019 21:31:59 +0800
+Received: from mtksdccf07.mediatek.inc (172.21.84.99) by mtkcas08.mediatek.inc  (172.21.101.73) with Microsoft SMTP Server id 15.0.1395.4 via Frontend  Transport; Tue, 13 Aug 2019 21:32:01 +0800
+From: Andrew-sh.Cheng <andrew-sh.cheng@mediatek.com>
+To: MyungJoo Ham <myungjoo.ham@samsung.com>, Kyungmin Park 	<kyungmin.park@samsung.com>, Chanwoo Choi <cw00.choi@samsung.com>, Rob  Herring <robh+dt@kernel.org>, Mark Rutland <mark.rutland@arm.com>, Matthias  Brugger <matthias.bgg@gmail.com>, "Rafael J. Wysocki" <rjw@rjwysocki.net>, 	Viresh Kumar <viresh.kumar@linaro.org>, Nishanth Menon <nm@ti.com>, Stephen  Boyd <sboyd@kernel.org>
+CC: <linux-pm@vger.kernel.org>, <devicetree@vger.kernel.org>, 	<linux-arm-kernel@lists.infradead.org>, <linux-mediatek@lists.infradead.org>, 	<linux-kernel@vger.kernel.org>, <srv_heupstream@mediatek.com>, 	<fan.chen@mediatek.com>, Andrew-sh.Cheng <andrew-sh.cheng@mediatek.com>
+Subject: [v4, 3/8] cpufreq: mediatek: Add support for mt8183
+Date: Tue, 13 Aug 2019 21:31:48 +0800
+Message-ID: <1565703113-31479-4-git-send-email-andrew-sh.cheng@mediatek.com>
+X-Mailer: git-send-email 1.8.1.1.dirty
+In-Reply-To: <1565703113-31479-1-git-send-email-andrew-sh.cheng@mediatek.com>
+References: <1565703113-31479-1-git-send-email-andrew-sh.cheng@mediatek.com>
+Return-Path: andrew-sh.cheng@mediatek.com
+MIME-Version: 1.0
+Content-Type: text/plain
+X-MTK: N
+Content-Length: 1308
+Lines: 36
+
+From: "Andrew-sh.Cheng" <andrew-sh.cheng@mediatek.com>
+
+Add compatible string for mediatek mt8183
+
+Signed-off-by: Andrew-sh.Cheng <andrew-sh.cheng@mediatek.com>
+---
+ drivers/cpufreq/cpufreq-dt-platdev.c | 1 +
+ drivers/cpufreq/mediatek-cpufreq.c   | 1 +
+ 2 files changed, 2 insertions(+)
+
+diff --git a/drivers/cpufreq/cpufreq-dt-platdev.c b/drivers/cpufreq/cpufreq-dt-platdev.c
+index 03dc4244ab00..0f7e837a264e 100644
+--- a/drivers/cpufreq/cpufreq-dt-platdev.c
++++ b/drivers/cpufreq/cpufreq-dt-platdev.c
+@@ -117,6 +117,7 @@ static const struct of_device_id blacklist[] __initconst = {
+ 	{ .compatible = "mediatek,mt817x", },
+ 	{ .compatible = "mediatek,mt8173", },
+ 	{ .compatible = "mediatek,mt8176", },
++	{ .compatible = "mediatek,mt8183", },
+ 
+ 	{ .compatible = "nvidia,tegra124", },
+ 	{ .compatible = "nvidia,tegra210", },
+diff --git a/drivers/cpufreq/mediatek-cpufreq.c b/drivers/cpufreq/mediatek-cpufreq.c
+index acd9539e95de..4dce41b18369 100644
+--- a/drivers/cpufreq/mediatek-cpufreq.c
++++ b/drivers/cpufreq/mediatek-cpufreq.c
+@@ -546,6 +546,7 @@ static const struct of_device_id mtk_cpufreq_machines[] __initconst = {
+ 	{ .compatible = "mediatek,mt817x", },
+ 	{ .compatible = "mediatek,mt8173", },
+ 	{ .compatible = "mediatek,mt8176", },
++	{ .compatible = "mediatek,mt8183", },
+ 
+ 	{ }
+ };
+-- 
+2.12.5
+

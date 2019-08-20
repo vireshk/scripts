@@ -926,3 +926,6 @@ From vireshk  Tue Jul 30 07:47:40 2019
 From vireshk  Tue Aug  6 15:21:21 2019
  Subject: [PATCH] cpufreq: mediatek-cpufreq: Add compatible for MT8516
   Folder: PATCH_cpufreq_mediatek-cpufreq_Add_compatible_for_MT8516.mbo	   5960
+From vireshk  Mon Aug 19 07:27:38 2019
+ Subject: [v4, 3/8] cpufreq: mediatek: Add support for mt8183
+  Folder: v4,_3-8_cpufreq_mediatek_Add_support_for_mt8183.mbox		   5920

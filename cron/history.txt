@@ -34193,3 +34193,60 @@ post-git trigger: updating grokmirror
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master f92eb6a0e361] updates
+ 3 files changed, 130 insertions(+)
+ create mode 100644 mutt/incoming/v4,_3-8_cpufreq_mediatek_Add_support_for_mt8183.mbox
+post-git trigger: updating grokmirror
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   8178249f5893..f92eb6a0e361  master -> master
+   989951413b56..8178249f5893  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+
+
+ 
+Wed Aug 21 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + c0789bb918d3...e4ce0faa01c4 boot-constraint -> boot-constraint (forced update)
+ + 94f306fee125...c7b48823a13f bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next (forced update)
+ * [new branch]                georgi/boot-constraint -> georgi/boot-constraint
+ * [new branch]                georgi/bus-scaling -> georgi/bus-scaling
+ * [new branch]                georgi/bus-scaling-4.14 -> georgi/bus-scaling-4.14
+ * [new branch]                georgi/bus-scaling-consumers -> georgi/bus-scaling-consumers
+ * [new branch]                georgi/cpufreq-apq8064 -> georgi/cpufreq-apq8064
+ * [new branch]                georgi/db410c-cpufreq-v4.14 -> georgi/db410c-cpufreq-v4.14
+ * [new branch]                georgi/db600c-v4.13-rc3-cpufreq -> georgi/db600c-v4.13-rc3-cpufreq
+ * [new branch]                georgi/icc-next -> georgi/icc-next
+ * [new branch]                georgi/icc-tag -> georgi/icc-tag
+ * [new branch]                georgi/icc-testing -> georgi/icc-testing
+ * [new branch]                georgi/ifc6410-cpufreq-v4.14 -> georgi/ifc6410-cpufreq-v4.14
+ * [new branch]                georgi/qcs404-boot-constraints -> georgi/qcs404-boot-constraints
+ * [new branch]                georgi/qcs404-icc -> georgi/qcs404-icc
+ * [new branch]                georgi/qcs404-test -> georgi/qcs404-test
+ * [new tag]                   icc-5.2-rc1 -> icc-5.2-rc1
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/scripts

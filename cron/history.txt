@@ -34348,3 +34348,48 @@ post-git trigger: updating grokmirror
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 348b6723c84f] updates
+ 1 file changed, 48 insertions(+)
+post-git trigger: updating grokmirror
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   744c812e9705..348b6723c84f  master -> master
+   9b4890a3d563..744c812e9705  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+
+
+ 
+Mon Aug 26 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 438be6d0930a...f78a0dbfacce boot-constraint -> boot-constraint (forced update)
+ + c40984fe8971...438be6d0930a bkp/boot-constraint -> bkp/boot-constraint (forced update)
+ + b22b43f05d06...858838f2b99d lko/boot-constraint -> lko/boot-constraint (forced update)
+ + e53ce72218d8...ce89a5ee6777 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   ca1c6e855bcd..563a965beb53  pm/linux-next -> pm/linux-next
+   ca1c6e855bcd..563a965beb53  pm/testing -> pm/testing
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/scripts

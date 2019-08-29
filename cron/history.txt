@@ -34453,3 +34453,63 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 45c42ed80168] updates
+ 1 file changed, 60 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   b9c80fa4c113..45c42ed80168  master -> master
+   348b6723c84f..b9c80fa4c113  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Thu Aug 29 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + cb5181d6ba52...ad96a3734023 boot-constraint -> boot-constraint (forced update)
+ + 0a044570e4a3...6d07b1faa889 cpufreq/freq-constraint-pmqos -> cpufreq/freq-constraint-pmqos (forced update)
+ + f78a0dbfacce...cb5181d6ba52 bkp/boot-constraint -> bkp/boot-constraint (forced update)
+ + 793d1adff3b7...76e75f3b8386 bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next (forced update)
+ + 0dc64126cee7...0a044570e4a3 bkp/cpufreq/freq-constraint-pmqos -> bkp/cpufreq/freq-constraint-pmqos (forced update)
+ + b5ceada8983b...5f597a04c853 bkp/cpufreq/qcom-updates -> bkp/cpufreq/qcom-updates (forced update)
+ + 0203c0343a1f...5ffdb1529b7f bkp/opp/linux-next -> bkp/opp/linux-next (forced update)
+ + 30405f84e8cb...021117dd8815 bkp/opp/qcom-updates -> bkp/opp/qcom-updates (forced update)
+ + 0786dabef54f...f825af37c262 lko/boot-constraint -> lko/boot-constraint (forced update)
+ - [deleted]                   pm/acpi-utils
+ + 100046f3c6f6...f9b8fad55c41 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   33ee09cd59ce..149f3b87840e  pm/devprop -> pm/devprop
+   65a439cf22f7..65eaac7736ab  pm/linux-next -> pm/linux-next
+   65a439cf22f7..65eaac7736ab  pm/testing -> pm/testing
+ + 0a044570e4a3...6d07b1faa889 pmko/cpufreq/freq-constraint-pmqos -> pmko/cpufreq/freq-constraint-pmqos (forced update)
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

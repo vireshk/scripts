@@ -34633,3 +34633,56 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 42f79c174c98] updates
+ 1 file changed, 69 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   4664794ead26..42f79c174c98  master -> master
+   e680808f7925..4664794ead26  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+
+
+ 
+Thu Sep  5 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 75d2a48d82db...67be97420553 stable/arm64/v4.4.y/spectre -> stable/arm64/v4.4.y/spectre (forced update)
+ + 76e75f3b8386...f75d2accca77 bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next (forced update)
+ + 5f597a04c853...248b5f297cf8 bkp/cpufreq/qcom-updates -> bkp/cpufreq/qcom-updates (forced update)
+ + 5ffdb1529b7f...071afa50609d bkp/opp/linux-next -> bkp/opp/linux-next (forced update)
+ + 021117dd8815...475a21e0eade bkp/opp/qcom-updates -> bkp/opp/qcom-updates (forced update)
+ + 965d727955b4...75d2a48d82db bkp/stable/arm64/v4.4.y/spectre -> bkp/stable/arm64/v4.4.y/spectre (forced update)
+ - [deleted]                   bkp/stable/arm64/v4.4.y/spectre-v2
+ + 37981dcecbd9...4545010e180c pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   b89823861e09..84e0e78d3df2  pm/linux-next -> pm/linux-next
+   b89823861e09..84e0e78d3df2  pm/testing -> pm/testing
+ * [new branch]                bkp/stable/arm64/v4.4.y/spectre-v3 -> bkp/stable/arm64/v4.4.y/spectre-v3
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

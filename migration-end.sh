@@ -27,4 +27,5 @@ for i in `cat $HOME/scripts/migration-repos.txt`; do
 done
 
 cd $HOME/scripts/
-git revert 75592b4ebf4b
+GIT_EDITOR=cat git revert 75592b4ebf4b
+myfetch

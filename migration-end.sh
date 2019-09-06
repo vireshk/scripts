@@ -22,7 +22,7 @@ fetch_repo()
 	git reset --hard $repo/master
 }
 
-for i in `cat $HOME/scripts/migraterepos.txt`; do
+for i in `cat $HOME/scripts/migration-repos.txt`; do
 	fetch_repo $i
 done
 

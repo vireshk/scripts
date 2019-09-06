@@ -13,7 +13,7 @@ update_repo()
 # disable fetchmail
 fetchmail -q
 
-for i in `cat $HOME/scripts/migraterepos.txt`; do
+for i in `cat $HOME/scripts/migration-repos.txt`; do
 	update_repo $i
 done
 

@@ -34686,3 +34686,97 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master d7a994fd6d3f] updates
+ 1 file changed, 53 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   42f79c174c98..d7a994fd6d3f  master -> master
+   4664794ead26..42f79c174c98  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Fri Sep  6 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 67be97420553...0cad590b22ac stable/arm64/v4.4.y/spectre -> stable/arm64/v4.4.y/spectre (forced update)
+ + 75d2a48d82db...67be97420553 bkp/stable/arm64/v4.4.y/spectre -> bkp/stable/arm64/v4.4.y/spectre (forced update)
+ + 965d727955b4...0cad590b22ac lko/stable/arm64/v4.4.y/spectre -> lko/stable/arm64/v4.4.y/spectre (forced update)
+ + 60e47d61fcf1...443981ca1e0a lnext/akpm -> lnext/akpm (forced update)
+ + 279302d24c6f...54d54656b440 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 0d8b3265d9a6...35394d031b71 lnext/master -> lnext/master (forced update)
+ + e69123aa8cf8...18ec21ed1250 lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   609488bc979f..089cf7f6ecb2  lnext/stable -> lnext/stable
+   089cf7f6ecb2..d41a3effbb53  origin/HEAD -> origin/HEAD
+   089cf7f6ecb2..d41a3effbb53  origin/master -> origin/master
+ + 4545010e180c...d85e53a7564b pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   84e0e78d3df2..d85e53a7564b  pm/linux-next -> pm/linux-next
+   84e0e78d3df2..d85e53a7564b  pm/testing -> pm/testing
+   8eb43aebcde7..a3d313e3302f  stable/linux-3.16.y -> stable/linux-3.16.y
+   10d6aa565d05..01fd1694b93c  stable/linux-4.14.y -> stable/linux-4.14.y
+   9a9de33a9dfa..97ab07e11fbf  stable/linux-4.19.y -> stable/linux-4.19.y
+   a3e421fbb857..5e9f4d704f86  stable/linux-4.4.y -> stable/linux-4.4.y
+   35c308d7828d..228e87c35b6c  stable/linux-4.9.y -> stable/linux-4.9.y
+   2519374d2a6b..c3915fe1bf12  stable/linux-5.2.y -> stable/linux-5.2.y
+   609488bc979f..089cf7f6ecb2  stable/master -> stable/master
+ * [new tag]                   next-20190904 -> next-20190904
+ * [new tag]                   v3.16.72 -> v3.16.72
+ * [new tag]                   v3.16.73 -> v3.16.73
+ * [new tag]                   v4.14.136 -> v4.14.136
+ * [new tag]                   v4.14.137 -> v4.14.137
+ * [new tag]                   v4.14.138 -> v4.14.138
+ * [new tag]                   v4.14.139 -> v4.14.139
+ * [new tag]                   v4.14.140 -> v4.14.140
+ * [new tag]                   v4.14.141 -> v4.14.141
+ * [new tag]                   v4.19.64 -> v4.19.64
+ * [new tag]                   v4.19.65 -> v4.19.65
+ * [new tag]                   v4.19.66 -> v4.19.66
+ * [new tag]                   v4.19.67 -> v4.19.67
+ * [new tag]                   v4.19.68 -> v4.19.68
+ * [new tag]                   v4.19.69 -> v4.19.69
+ * [new tag]                   v4.4.187 -> v4.4.187
+ * [new tag]                   v4.4.188 -> v4.4.188
+ * [new tag]                   v4.4.189 -> v4.4.189
+ * [new tag]                   v4.4.190 -> v4.4.190
+ * [new tag]                   v4.9.187 -> v4.9.187
+ * [new tag]                   v4.9.188 -> v4.9.188
+ * [new tag]                   v4.9.189 -> v4.9.189
+ * [new tag]                   v4.9.190 -> v4.9.190
+ * [new tag]                   v5.2.10 -> v5.2.10
+ * [new tag]                   v5.2.11 -> v5.2.11
+ * [new tag]                   v5.2.6 -> v5.2.6
+ * [new tag]                   v5.2.7 -> v5.2.7
+ * [new tag]                   v5.2.8 -> v5.2.8
+ * [new tag]                   v5.2.9 -> v5.2.9
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

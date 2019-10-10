@@ -28,4 +28,4 @@ done
 
 cd $HOME/scripts/
 GIT_EDITOR=cat git revert 75592b4ebf4b
-myfetch
+fetchmail -d 60 -L ~/.fetchmaillog

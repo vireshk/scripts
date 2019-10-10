@@ -34811,3 +34811,51 @@ Everything up-to-date
 
 
 
+ 
+Thu Oct 10 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   610cd4eadec4..8a8c600de5dc  master -> master
+ + ca7f6ed5b674...eddc4afccdc1 sched/idle -> sched/idle (forced update)
+   eddc4afccdc1..ca7f6ed5b674  bkp/sched/idle -> bkp/sched/idle
+ - [deleted]                   mac/bp/aosp/4.4-1
+ - [deleted]                   mac/bp/mr/kpti
+ - [deleted]                   mac/cpufreq/notifiers-v2
+ - [deleted]                   mac/master
+ - [deleted]                   mac/opp/linux-next
+ - [deleted]                   mac/opp/qcom-fix
+ - [deleted]                   mac/v4.4-kpti
+   d41a3effbb53..8a8c600de5dc  origin/HEAD -> origin/HEAD
+   d41a3effbb53..8a8c600de5dc  origin/master -> origin/master
+   2c66a5b52e9e..0b3e79731285  pm/acpi -> pm/acpi
+ + d85e53a7564b...122c12e37d5a pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   149f3b87840e..016049a81677  pm/devprop -> pm/devprop
+ + d85e53a7564b...315ea754a4c4 pm/linux-next -> pm/linux-next (forced update)
+   089cf7f6ecb2..54ecb8f7028c  pm/master -> pm/master
+   a3ee2477c45f..fc6763a2d7e0  pm/pm -> pm/pm
+ + d85e53a7564b...315ea754a4c4 pm/testing -> pm/testing (forced update)
+ * [new branch]                mac/android -> mac/android
+ * [new branch]                mac/i-want-to-be-a-maintainer -> mac/i-want-to-be-a-maintainer
+ * [new branch]                mac/i-want-to-be-a-maintainer-fixup -> mac/i-want-to-be-a-maintainer-fixup
+ * [new branch]                mac/i-want-to-be-a-maintainer-with-email -> mac/i-want-to-be-a-maintainer-with-email
+ * [new branch]                pm/acpi-tables -> pm/acpi-tables
+ * [new tag]                   acpi-5.4-rc1 -> acpi-5.4-rc1
+ * [new tag]                   cpufreq/fixes -> cpufreq/fixes
+ * [new tag]                   cpufreq/next -> cpufreq/next
+ * [new tag]                   devprop-5.4-rc1 -> devprop-5.4-rc1
+ * [new tag]                   for_3.7-fixes-cpufreq -> for_3.7-fixes-cpufreq
+ * [new tag]                   pm-5.4-rc1 -> pm-5.4-rc1
+ * [new tag]                   v5.3 -> v5.3
+ * [new tag]                   v5.3-rc8 -> v5.3-rc8
+ * [new tag]                   v5.4-rc1 -> v5.4-rc1
+ * [new tag]                   v5.4-rc2 -> v5.4-rc2
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -932,3 +932,27 @@ From vireshk  Mon Aug 19 07:27:38 2019
 From vireshk  Fri Jul 12 10:59:26 2019
  Subject: [PATCH v4.4 V2 00/43] V4.4 backport of arm64 Spectre patches
   Folder: PATCH_v4.4_V2_00-43_V4.4_backport_of_arm64_Spectre_patches.m	   9527
+From vireshk  Fri Sep 13 07:29:43 2019
+ Subject: [PATCH v3 3/8] DTS: bindings: omap: update bindings documentation
+  Folder: PATCH_v3_3-8_DTS_bindings_omap_update_bindings_documentation	   8870
+From vireshk  Fri Sep 13 07:29:44 2019
+ Subject: [PATCH v3 2/8] ARM: dts: omap34xx & omap36xx: replace opp-v1 tables b
+  Folder: PATCH_v3_2-8_ARM_dts_omap34xx_&_omap36xx_replace_opp-v1_tabl	  11678
+From vireshk  Fri Sep 13 07:29:45 2019
+ Subject: [PATCH v3 4/8] ARM: dts: omap3: bulk convert compatible to be explici
+  Folder: PATCH_v3_4-8_ARM_dts_omap3_bulk_convert_compatible_to_be_exp	  27795
+From vireshk  Fri Sep 13 07:29:43 2019
+ Subject: [PATCH v3 1/8] cpufreq: ti-cpufreq: add support for omap34xx and omap
+  Folder: PATCH_v3_1-8_cpufreq_ti-cpufreq_add_support_for_omap34xx_and	  10969
+From vireshk  Fri Sep 13 07:29:47 2019
+ Subject: [PATCH v3 6/8] ARM: dts: omap36xx: using OPP1G needs to control the a
+  Folder: PATCH_v3_6-8_ARM_dts_omap36xx_using_OPP1G_needs_to_control_t	   9036
+From vireshk  Fri Sep 13 07:29:46 2019
+ Subject: [PATCH v3 7/8] cpufreq: ti-cpufreq: Add support for AM3517
+  Folder: PATCH_v3_7-8_cpufreq_ti-cpufreq_Add_support_for_AM3517.mbox	   7080
+From vireshk  Fri Sep 13 07:29:47 2019
+ Subject: [PATCH v3 8/8] ARM: dts: Add OPP-V2 table for AM3517
+  Folder: PATCH_v3_8-8_ARM_dts_Add_OPP-V2_table_for_AM3517.mbox		   6944
+From vireshk  Fri Sep 13 07:29:44 2019
+ Subject: [PATCH v3 5/8] cpufreq: ti-cpufreq: omap36xx use "cpu0","vbb" if run 
+  Folder: PATCH_v3_5-8_cpufreq_ti-cpufreq_omap36xx_use_cpu0_,_vbb_if_r	   8691

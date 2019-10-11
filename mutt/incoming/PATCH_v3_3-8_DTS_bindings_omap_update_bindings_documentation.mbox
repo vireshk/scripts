@@ -1,0 +1,134 @@
+From vireshk  Fri Sep 13 07:29:43 2019
+Delivered-To: viresh.kumar@linaro.org
+Received: from gmail-pop.l.google.com [74.125.24.109] 	by vireshk-mac-ubuntu with POP3 (fetchmail-6.3.26) 	for <vireshk@localhost> (single-drop); Fri, 13 Sep 2019 11:59:43 +0530 (IST)
+Received: by 2002:a6b:7009:0:0:0:0:0 with SMTP id l9csp1221514ioc;         Wed, 11 Sep 2019 10:47:39 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqyhlcY8z3CwpCqKH3/xrcoOND6oOt9SuemYo2rMM0uKyVXKu6w8aIdiY1goML1vndTs/+Mb
+X-Received: by 2002:a05:6000:142:: with SMTP id r2mr8258993wrx.212.1568224059762;         Wed, 11 Sep 2019 10:47:39 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1568224059; cv=none;         d=google.com; s=arc-20160816;         b=TZhaX7/DdRkiHqSBxWZG9Bb+5a8PCc7LMLgqAgVSd7Csyfnk1qr2RTqku3u0xHxE7c          jPbWfuYktWpreJaILjPX4q8RTpcbzZ+sfQ3MiEyzNyZWIcK8tuoqwGzRl27rFxGc8C8D          wJwfLejRKJqnZLCot/39eSKBvd7OnyV8vtMgZ8mGYGROYOx9f0jgs++ol5smlbBpRY1P          iHzcYP/Pdl1SsBW/JxD2r8tGIHjk0YfW1lEA7dtbBWln582dtTpbA9YlWi3vVTgED4d3          eF4FRYJ7OVaMMG+BUybNjF6oTEvx8cOnATr9d1oRtKLwDfsdwAQrSG7/K0HzX1i0v3rk          2tBQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:references:in-reply-to          :message-id:date:subject:cc:to:from:dkim-signature;         bh=dkjt0qMhGxLVTBpvMP6aAPlNlv/UnmzG7T8esfy3ij4=;         b=deUvSM9ed/q9HjRQfaBk5y+Eo9lN6nx0Zlyex7wbZD1bFwDp5AfP8IDUq7F7uQQzgn          ikSOwegGJidbuVCfWdzjPkUS72MyQ9ij5/LufzYiubN/gLQl0Bqtgqm4o6qJUKhoG9yu          dWLUrPW9/mYZte4+gT3YItUNzcmj8cxHy3/OqFssigrrD6/FocrBvdbrnWlnesVFB6Fh          bnCO2erhl3CKbyOh8XVe6QQdyelttYbqXLZeNtE/OTabXSO6W5h6oQSWHv3AAFP04V9W          XkNzcqUS2cAycc4TSgviL1BuRZ1N/Zsd6KNgoEZqTpeayHFvd2fWt54cbgouLz4AWTZH          iobw==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@goldelico.com header.s=strato-dkim-0002 header.b=Z+F+tOzY;        spf=neutral (google.com: 2a01:238:20a:202:5303::1 is neither permitted nor denied by best guess record for domain of hns@goldelico.com) smtp.mailfrom=hns@goldelico.com
+Return-Path: <hns@goldelico.com>
+Received: from mo6-p03-ob.smtp.rzone.de (mo6-p03-ob.smtp.rzone.de. [2a01:238:20a:202:5303::1])         by mx.google.com with ESMTPS id o3si20948817wre.119.2019.09.11.10.47.39         for <viresh.kumar@linaro.org>         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Wed, 11 Sep 2019 10:47:39 -0700 (PDT)
+Received-SPF: neutral (google.com: 2a01:238:20a:202:5303::1 is neither permitted nor denied by best guess record for domain of hns@goldelico.com) client-ip=2a01:238:20a:202:5303::1;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@goldelico.com header.s=strato-dkim-0002 header.b=Z+F+tOzY;        spf=neutral (google.com: 2a01:238:20a:202:5303::1 is neither permitted nor denied by best guess record for domain of hns@goldelico.com) smtp.mailfrom=hns@goldelico.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; t=1568224059; 	s=strato-dkim-0002; d=goldelico.com; 	h=References:In-Reply-To:Message-Id:Date:Subject:Cc:To:From: 	X-RZG-CLASS-ID:X-RZG-AUTH:From:Subject:Sender; 	bh=dkjt0qMhGxLVTBpvMP6aAPlNlv/UnmzG7T8esfy3ij4=; 	b=Z+F+tOzYHcvHhd4emKcXteYdp7r9HhTuB95hnXPHQUzqk2X36objgtDTB+za400ZMP 	gpgvF5a3A0uxYv1cekCl7/ybei7qzLJvr7RhgIQhXdd41gBk9XQQsyIarAhpIqce3UUl 	NOnNrWSpUUUP2ThqMjI8YqGVjEwTCH9078745zFggDb2wBudw8ErME1ouepc/UHDIBpo 	b2qe647hQhGeE0+MpAhT14nLCcRKscOi6hFb0lGDDwYnZeOK6koF/TWFw60VuY6gtQ34 	nwuCT0Sj4cdY680b5QhNMAS0imyrqOYqQ0Fuwetb4HBIbA2PQoG4hNlx2X+HM09SZTFx 	+/NQ==
+X-RZG-AUTH: ":JGIXVUS7cutRB/49FwqZ7WcJeFKiMhflhwDubTJ9o1OAA2UNf2M7Nk1d2C6Y"
+X-RZG-CLASS-ID: mo00
+Received: from iMac.fritz.box 	by smtp.strato.de (RZmta 44.27.0 DYNA|AUTH) 	with ESMTPSA id u036f9v8BHlG8nt 	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (curve secp521r1 with 521 ECDH bits, eq. 15360 bits RSA)) 	(Client did not present a certificate); 	Wed, 11 Sep 2019 19:47:16 +0200 (CEST)
+From: "H. Nikolaus Schaller" <hns@goldelico.com>
+To: =?UTF-8?q?Beno=C3=AEt=20Cousson?= <bcousson@baylibre.com>, 	Tony Lindgren <tony@atomide.com>, 	Rob Herring <robh+dt@kernel.org>, 	Adam Ford <aford173@gmail.com>, 	=?UTF-8?q?Andr=C3=A9=20Roth?= <neolynx@gmail.com>, 	Mark Rutland <mark.rutland@arm.com>, 	"Rafael J. Wysocki" <rjw@rjwysocki.net>, 	Viresh Kumar <viresh.kumar@linaro.org>, 	Enric Balletbo i Serra <eballetbo@gmail.com>, 	Javier Martinez Canillas <javier@dowhile0.org>, 	Roger Quadros <rogerq@ti.com>, 	Teresa Remmet <t.remmet@phytec.de>, 	"H. Nikolaus Schaller" <hns@goldelico.com>
+Cc: linux-omap@vger.kernel.org, 	devicetree@vger.kernel.org, 	linux-kernel@vger.kernel.org, 	linux-pm@vger.kernel.org, 	letux-kernel@openphoenux.org, 	kernel@pyra-handheld.com, 	linux-arm-kernel@lists.infradead.org
+Subject: [PATCH v3 3/8] DTS: bindings: omap: update bindings documentation
+Date: Wed, 11 Sep 2019 19:47:09 +0200
+Message-Id: <2316bdb65c4223d54aefa74043a02d588cdeb04a.1568224033.git.hns@goldelico.com>
+X-Mailer: git-send-email 2.19.1
+In-Reply-To: <cover.1568224032.git.hns@goldelico.com>
+References: <cover.1568224032.git.hns@goldelico.com>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Status: RO
+Content-Length: 3665
+Lines: 101
+
+* clarify that we now need either "ti,omap3430" or "ti,omap3630" or "ti,am3517" for omap3 chips
+* clarify that "ti,omap3" has no default
+* clarify that AM33x is not an "ti,omap3"
+* clarify that the list of boards is incomplete
+* remove some "ti,am33xx", "ti,omap3"
+* add some missing "ti,omap4"
+
+Signed-off-by: H. Nikolaus Schaller <hns@goldelico.com>
+Acked-by: Tony Lindgren <tony@atomide.com>
+---
+ .../devicetree/bindings/arm/omap/omap.txt     | 30 +++++++++++--------
+ 1 file changed, 17 insertions(+), 13 deletions(-)
+
+diff --git a/Documentation/devicetree/bindings/arm/omap/omap.txt b/Documentation/devicetree/bindings/arm/omap/omap.txt
+index b301f753ed2c..e77635c5422c 100644
+--- a/Documentation/devicetree/bindings/arm/omap/omap.txt
++++ b/Documentation/devicetree/bindings/arm/omap/omap.txt
+@@ -43,7 +43,7 @@ SoC Families:
+ 
+ - OMAP2 generic - defaults to OMAP2420
+   compatible = "ti,omap2"
+-- OMAP3 generic - defaults to OMAP3430
++- OMAP3 generic
+   compatible = "ti,omap3"
+ - OMAP4 generic - defaults to OMAP4430
+   compatible = "ti,omap4"
+@@ -51,6 +51,8 @@ SoC Families:
+   compatible = "ti,omap5"
+ - DRA7 generic - defaults to DRA742
+   compatible = "ti,dra7"
++- AM33x generic
++  compatible = "ti,am33xx"
+ - AM43x generic - defaults to AM4372
+   compatible = "ti,am43"
+ 
+@@ -63,12 +65,14 @@ SoCs:
+ 
+ - OMAP3430
+   compatible = "ti,omap3430", "ti,omap3"
++  legacy: "ti,omap34xx" - please do not use any more
+ - AM3517
+   compatible = "ti,am3517", "ti,omap3"
+ - OMAP3630
+-  compatible = "ti,omap36xx", "ti,omap3"
+-- AM33xx
+-  compatible = "ti,am33xx", "ti,omap3"
++  compatible = "ti,omap3630", "ti,omap3"
++  legacy: "ti,omap36xx" - please do not use any more
++- AM335x
++  compatible = "ti,am33xx"
+ 
+ - OMAP4430
+   compatible = "ti,omap4430", "ti,omap4"
+@@ -110,19 +114,19 @@ SoCs:
+ - AM4372
+   compatible = "ti,am4372", "ti,am43"
+ 
+-Boards:
++Boards (incomplete list of examples):
+ 
+ - OMAP3 BeagleBoard : Low cost community board
+-  compatible = "ti,omap3-beagle", "ti,omap3"
++  compatible = "ti,omap3-beagle", "ti,omap3430", "ti,omap3"
+ 
+ - OMAP3 Tobi with Overo : Commercial expansion board with daughter board
+-  compatible = "gumstix,omap3-overo-tobi", "gumstix,omap3-overo", "ti,omap3"
++  compatible = "gumstix,omap3-overo-tobi", "gumstix,omap3-overo", "ti,omap3430", "ti,omap3"
+ 
+ - OMAP4 SDP : Software Development Board
+-  compatible = "ti,omap4-sdp", "ti,omap4430"
++  compatible = "ti,omap4-sdp", "ti,omap4430", "ti,omap4"
+ 
+ - OMAP4 PandaBoard : Low cost community board
+-  compatible = "ti,omap4-panda", "ti,omap4430"
++  compatible = "ti,omap4-panda", "ti,omap4430", "ti,omap4"
+ 
+ - OMAP4 DuoVero with Parlor : Commercial expansion board with daughter board
+   compatible = "gumstix,omap4-duovero-parlor", "gumstix,omap4-duovero", "ti,omap4430", "ti,omap4";
+@@ -134,16 +138,16 @@ Boards:
+   compatible = "variscite,var-dvk-om44", "variscite,var-som-om44", "ti,omap4460", "ti,omap4";
+ 
+ - OMAP3 EVM : Software Development Board for OMAP35x, AM/DM37x
+-  compatible = "ti,omap3-evm", "ti,omap3"
++  compatible = "ti,omap3-evm", "ti,omap3630", "ti,omap3"
+ 
+ - AM335X EVM : Software Development Board for AM335x
+-  compatible = "ti,am335x-evm", "ti,am33xx", "ti,omap3"
++  compatible = "ti,am335x-evm", "ti,am33xx"
+ 
+ - AM335X Bone : Low cost community board
+-  compatible = "ti,am335x-bone", "ti,am33xx", "ti,omap3"
++  compatible = "ti,am335x-bone", "ti,am33xx"
+ 
+ - AM3359 ICEv2 : Low cost Industrial Communication Engine EVM.
+-  compatible = "ti,am3359-icev2", "ti,am33xx", "ti,omap3"
++  compatible = "ti,am3359-icev2", "ti,am33xx"
+ 
+ - AM335X OrionLXm : Substation Automation Platform
+   compatible = "novatech,am335x-lxm", "ti,am33xx"
+-- 
+2.19.1
+

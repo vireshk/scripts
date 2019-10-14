@@ -34921,3 +34921,71 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 2412fb53514f] updates
+ 10 files changed, 1743 insertions(+)
+ create mode 100644 mutt/incoming/PATCH_v3_1-8_cpufreq_ti-cpufreq_add_support_for_omap34xx_and_omap36xx.mbox
+ create mode 100644 mutt/incoming/PATCH_v3_2-8_ARM_dts_omap34xx_&_omap36xx_replace_opp-v1_tables_by_opp-v2_for.mbox
+ create mode 100644 mutt/incoming/PATCH_v3_3-8_DTS_bindings_omap_update_bindings_documentation.mbox
+ create mode 100644 mutt/incoming/PATCH_v3_4-8_ARM_dts_omap3_bulk_convert_compatible_to_be_explicitly_ti,omap3430_or_ti,omap3630_or_ti,am3517.mbox
+ create mode 100644 mutt/incoming/PATCH_v3_5-8_cpufreq_ti-cpufreq_omap36xx_use_cpu0_,_vbb_if_run_in_multi_regulator_mode.mbox
+ create mode 100644 mutt/incoming/PATCH_v3_6-8_ARM_dts_omap36xx_using_OPP1G_needs_to_control_the_abb_ldo.mbox
+ create mode 100644 mutt/incoming/PATCH_v3_7-8_cpufreq_ti-cpufreq_Add_support_for_AM3517.mbox
+ create mode 100644 mutt/incoming/PATCH_v3_8-8_ARM_dts_Add_OPP-V2_table_for_AM3517.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   1cb586144b79..2412fb53514f  master -> master
+ + df3661010246...1cb586144b79 bkp/master -> bkp/master (forced update)
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon Oct 14 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   f75d2accca77..09865094536c  bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next
+   8a8c600de5dc..6306e18beab9  bkp/master -> bkp/master
+   071afa50609d..f2edbb6699b0  bkp/opp/linux-next -> bkp/opp/linux-next
+ + 4ca79c152dc5...afe8d316f5f8 lnext/akpm -> lnext/akpm (forced update)
+ + ec98adbe19b0...1ab986a4ab9b lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 8ada228ac7ed...4eeb5abd245d lnext/master -> lnext/master (forced update)
+ + 83e89f5f17ba...fdf8dc3f1fdb lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   9e208aa06c21..2581efa9a47d  lnext/stable -> lnext/stable
+   8a8c600de5dc..4f5cafb5cb84  origin/HEAD -> origin/HEAD
+   8a8c600de5dc..4f5cafb5cb84  origin/master -> origin/master
+ + 122c12e37d5a...0ce6667c8632 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 315ea754a4c4...6200ab503536 pm/linux-next -> pm/linux-next (forced update)
+   54ecb8f7028c..da0c9ea146cb  pm/master -> pm/master
+ + 315ea754a4c4...6200ab503536 pm/testing -> pm/testing (forced update)
+ * [new branch]                bkp/cpufreq/ti/oppv2 -> bkp/cpufreq/ti/oppv2
+ * [new tag]                   next-20191014 -> next-20191014
+ * [new tag]                   v5.4-rc3 -> v5.4-rc3
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/scripts

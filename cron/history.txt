@@ -35029,3 +35029,59 @@ post-git trigger: updating grokmirror
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 3c9167f4691f] updates
+ 1 file changed, 40 insertions(+)
+post-git trigger: updating grokmirror
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   86956675bbb4..3c9167f4691f  master -> master
+   2412fb53514f..86956675bbb4  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+
+
+ 
+Wed Oct 16 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 6a196d38ede1...3cbb490f9754 opp/linux-next -> opp/linux-next (forced update)
+   f2edbb6699b0..6a196d38ede1  bkp/opp/linux-next -> bkp/opp/linux-next
+ + afe8d316f5f8...a1f1aa5b550e lnext/akpm -> lnext/akpm (forced update)
+ + 1ab986a4ab9b...f34a8e1f1190 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 4eeb5abd245d...78662bffde37 lnext/master -> lnext/master (forced update)
+ + fdf8dc3f1fdb...ce15fc3fc1ae lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   2581efa9a47d..8e0d0ad206f0  lnext/stable -> lnext/stable
+   4f5cafb5cb84..3b1f00aceb7a  origin/HEAD -> origin/HEAD
+   4f5cafb5cb84..3b1f00aceb7a  origin/master -> origin/master
+ + 0ce6667c8632...a79e8dc2fbc3 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 6200ab503536...3c44c1419842 pm/linux-next -> pm/linux-next (forced update)
+   da0c9ea146cb..4f5cafb5cb84  pm/master -> pm/master
+ + 6200ab503536...3c44c1419842 pm/testing -> pm/testing (forced update)
+ * [new branch]                boot-constraint-test -> boot-constraint-test
+ * [new tag]                   next-20191016 -> next-20191016
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

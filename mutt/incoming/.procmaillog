@@ -956,3 +956,9 @@ From vireshk  Fri Sep 13 07:29:47 2019
 From vireshk  Fri Sep 13 07:29:44 2019
  Subject: [PATCH v3 5/8] cpufreq: ti-cpufreq: omap36xx use "cpu0","vbb" if run 
   Folder: PATCH_v3_5-8_cpufreq_ti-cpufreq_omap36xx_use_cpu0_,_vbb_if_r	   8691
+From vireshk  Thu Oct 17 07:48:07 2019
+ Subject: [PATCH v5 1/4] PM / OPP: Support adjusting OPP voltages at runtime
+  Folder: PATCH_v5_1-4_PM_OPP_Support_adjusting_OPP_voltages_at_runtim	  13735
+From vireshk  Thu Oct 17 07:48:07 2019
+ Subject: [PATCH v5 1/4] PM / OPP: Support adjusting OPP voltages at runtime
+  Folder: PATCH_v5_1-4_PM_OPP_Support_adjusting_OPP_voltages_at_runtim	  13735

@@ -35146,3 +35146,70 @@ post-git trigger: updating grokmirror
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 3f3a4f06edd5] updates
+ 13 files changed, 265 insertions(+), 1953 deletions(-)
+ delete mode 100644 mutt/incoming/PATCH_v3_1-8_cpufreq_ti-cpufreq_add_support_for_omap34xx_and_omap36xx.mbox
+ delete mode 100644 mutt/incoming/PATCH_v3_2-8_ARM_dts_omap34xx_&_omap36xx_replace_opp-v1_tables_by_opp-v2_for.mbox
+ delete mode 100644 mutt/incoming/PATCH_v3_3-8_DTS_bindings_omap_update_bindings_documentation.mbox
+ delete mode 100644 mutt/incoming/PATCH_v3_4-8_ARM_dts_omap3_bulk_convert_compatible_to_be_explicitly_ti,omap3430_or_ti,omap3630_or_ti,am3517.mbox
+ delete mode 100644 mutt/incoming/PATCH_v3_5-8_cpufreq_ti-cpufreq_omap36xx_use_cpu0_,_vbb_if_run_in_multi_regulator_mode.mbox
+ delete mode 100644 mutt/incoming/PATCH_v3_6-8_ARM_dts_omap36xx_using_OPP1G_needs_to_control_the_abb_ldo.mbox
+ delete mode 100644 mutt/incoming/PATCH_v3_7-8_cpufreq_ti-cpufreq_Add_support_for_AM3517.mbox
+ delete mode 100644 mutt/incoming/PATCH_v3_8-8_ARM_dts_Add_OPP-V2_table_for_AM3517.mbox
+ delete mode 100644 mutt/incoming/PATCH_v4.4_V2_00-43_V4.4_backport_of_arm64_Spectre_patches.mbox
+ create mode 100644 mutt/incoming/PATCH_v5_1-4_PM_OPP_Support_adjusting_OPP_voltages_at_runtime.mbox
+ delete mode 100644 mutt/incoming/v4,_3-8_cpufreq_mediatek_Add_support_for_mt8183.mbox
+post-git trigger: updating grokmirror
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   2e9091b98ed5..3f3a4f06edd5  master -> master
+   3c9167f4691f..2e9091b98ed5  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+
+
+ 
+Fri Oct 18 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   bkp/bp/arm64/kpti
+ - [deleted]                   bkp/bp/mr/kpti
+ - [deleted]                   bkp/bp/mr/meltdown
+ - [deleted]                   bkp/cpufreq/qcom-updates
+ - [deleted]                   bkp/opp/genp-updates
+ + 3cbb490f9754...41153c532781 bkp/opp/linux-next -> bkp/opp/linux-next (forced update)
+ - [deleted]                   bkp/opp/qcom-updates
+ - [deleted]                   bkp/sched/idle
+ - [deleted]                   bkp/stable/arm32/v4.4.y/spectre
+ - [deleted]                   bkp/stable/arm64/v4.4.y/meltdown
+ - [deleted]                   bkp/stable/arm64/v4.4.y/meltdown-bkp
+ - [deleted]                   bkp/stable/arm64/v4.4.y/spectre
+ - [deleted]                   bkp/stable/arm64/v4.4.y/spectre-v3
+ - [deleted]                   bkp/stable/v4.9.y
+ * [new branch]                bkp/temp -> bkp/temp
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

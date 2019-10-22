@@ -962,3 +962,24 @@ From vireshk  Thu Oct 17 07:48:07 2019
 From vireshk  Thu Oct 17 07:48:07 2019
  Subject: [PATCH v5 1/4] PM / OPP: Support adjusting OPP voltages at runtime
   Folder: PATCH_v5_1-4_PM_OPP_Support_adjusting_OPP_voltages_at_runtim	  13735
+From vireshk  Fri Oct 18 09:33:04 2019
+ Subject: [PATCH] opp: core: Revert "add regulators enable and disable"
+  Folder: PATCH_opp_core_Revert_add_regulators_enable_and_disable_.mbo	  11225
+From vireshk  Mon Oct 21 07:18:34 2019
+ Subject: [PATCH v3 1/5] cpufreq: scpi: remove stale/outdated comment about the
+  Folder: PATCH_v3_1-5_cpufreq_scpi_remove_stale-outdated_comment_abou	   4280
+From vireshk  Mon Oct 21 07:18:33 2019
+ Subject: [PATCH v3 2/5] cpufreq: merge arm_big_little and vexpress-spc
+  Folder: PATCH_v3_2-5_cpufreq_merge_arm_big_little_and_vexpress-spc.m	  12278
+From vireshk  Mon Oct 21 07:18:35 2019
+ Subject: [PATCH v3 3/5] cpufreq: vexpress-spc: drop unnessary cpufreq_arm_bL_o
+  Folder: PATCH_v3_3-5_cpufreq_vexpress-spc_drop_unnessary_cpufreq_arm	  13538
+From vireshk  Mon Oct 21 07:18:36 2019
+ Subject: [PATCH v3 4/5] cpufreq: vexpress-spc: remove lots of debug messages
+  Folder: PATCH_v3_4-5_cpufreq_vexpress-spc_remove_lots_of_debug_messa	   9598
+From vireshk  Mon Oct 21 07:18:36 2019
+ Subject: [PATCH v3 5/5] cpufreq: vexpress-spc: fix some coding style issues
+  Folder: PATCH_v3_5-5_cpufreq_vexpress-spc_fix_some_coding_style_issu	   7631
+From vireshk  Mon Oct 21 15:51:13 2019
+ Subject: [RESEND] [PATCH v3 2/5] cpufreq: merge arm_big_little and vexpress-sp
+  Folder: RESEND_PATCH_v3_2-5_cpufreq_merge_arm_big_little_and_vexpres	  45229

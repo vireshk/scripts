@@ -983,3 +983,9 @@ From vireshk  Mon Oct 21 07:18:36 2019
 From vireshk  Mon Oct 21 15:51:13 2019
  Subject: [RESEND] [PATCH v3 2/5] cpufreq: merge arm_big_little and vexpress-sp
   Folder: RESEND_PATCH_v3_2-5_cpufreq_merge_arm_big_little_and_vexpres	  45229
+From vireshk  Tue Oct 22 14:06:44 2019
+ Subject: [PATCH V2] cpufreq: imx-cpufreq-dt: Correct i.MX8MN's default speed g
+  Folder: PATCH_V2_cpufreq_imx-cpufreq-dt_Correct_i.MX8MN's_default_sp	   5697
+From vireshk  Wed Oct 23 08:28:42 2019
+ Subject: [PATCH] cpufreq: s3c64xx: Remove pointless NULL check in s3c64xx_cpuf
+  Folder: PATCH_cpufreq_s3c64xx_Remove_pointless_NULL_check_in_s3c64xx	   7604

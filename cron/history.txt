@@ -35267,3 +35267,78 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 7c287021c44b] updates
+ 8 files changed, 2384 insertions(+), 198 deletions(-)
+ create mode 100644 mutt/incoming/PATCH_v3_1-5_cpufreq_scpi_remove_stale-outdated_comment_about_the_driver.mbox
+ create mode 100644 mutt/incoming/PATCH_v3_2-5_cpufreq_merge_arm_big_little_and_vexpress-spc.mbox
+ create mode 100644 mutt/incoming/PATCH_v3_3-5_cpufreq_vexpress-spc_drop_unnessary_cpufreq_arm_bL_ops_abstraction.mbox
+ create mode 100644 mutt/incoming/PATCH_v3_4-5_cpufreq_vexpress-spc_remove_lots_of_debug_messages.mbox
+ create mode 100644 mutt/incoming/PATCH_v3_5-5_cpufreq_vexpress-spc_fix_some_coding_style_issues.mbox
+ delete mode 100644 mutt/incoming/PATCH_v5_1-4_PM_OPP_Support_adjusting_OPP_voltages_at_runtime.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   2cde720a2ec7..7c287021c44b  master -> master
+   3f3a4f06edd5..2cde720a2ec7  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+[master b650392be656] updates
+ 8 files changed, 109 insertions(+)
+ create mode 100644 greybus/.greybus_subsystem.txt.swp
+ create mode 100644 scheduler/.sched_idle.txt.swp
+ create mode 100644 scheduler/sched_idle.html
+ create mode 100644 scheduler/sched_idle.txt
+ create mode 100644 scheduler/scheduling-classes-and-policies.jpg
+ create mode 100644 scheduler/scheduling-classes.png
+ rename {schedutil => scheduler}/schedutil_remote_wakeup.html (100%)
+ rename {schedutil => scheduler}/schedutil_remote_wakeup.txt (100%)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/lwn
+   74d8f0315511..b650392be656  master -> master
+
+
+
+ 
+Wed Oct 23 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   e318d2c8f32d..e458eb97df7a  cpufreq/arm/linux-next -> cpufreq/arm/linux-next
+ + 24121332a338...b19c23551be8 opp/fixes -> opp/fixes (forced update)
+ + 8a8cf2ca6190...ec3e8e001b35 temp -> temp (forced update)
+   09865094536c..e318d2c8f32d  bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next
+ + 41153c532781...c86487ec42bd bkp/opp/linux-next -> bkp/opp/linux-next (forced update)
+ + 3cbb490f9754...8a8cf2ca6190 bkp/temp -> bkp/temp (forced update)
+   0b3e79731285..ffba17bb335d  pm/acpi -> pm/acpi
+ + a79e8dc2fbc3...5ceadabaabfa pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 3c44c1419842...96d73730d6b2 pm/linux-next -> pm/linux-next (forced update)
+   4f5cafb5cb84..7d194c2100ad  pm/master -> pm/master
+   fc6763a2d7e0..b23eb5c74e6e  pm/pm -> pm/pm
+ + 3c44c1419842...96d73730d6b2 pm/testing -> pm/testing (forced update)
+   e318d2c8f32d..e458eb97df7a  pmko/cpufreq/arm/linux-next -> pmko/cpufreq/arm/linux-next
+ + 24121332a338...b19c23551be8 pmko/opp/fixes -> pmko/opp/fixes (forced update)
+ * [new branch]                bkp/opp/fixes -> bkp/opp/fixes
+ * [new tag]                   acpi-5.4-rc4 -> acpi-5.4-rc4
+ * [new tag]                   pm-5.4-rc4 -> pm-5.4-rc4
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/scripts

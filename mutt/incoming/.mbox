@@ -2484,3 +2484,115 @@ index e24d81497375..810a85b9a66d 100644
 -- 
 2.20.1
 
+From foo@bar  Thu Oct 24 08:35:39 2019
+Cc: Viresh Kumar <viresh.kumar@linaro.org>
+Cc: "Rafael J. Wysocki" <rjw@rjwysocki.net>
+Signed-off-by: Sudeep Holla <sudeep.holla@arm.com>
+
+---
+ drivers/cpufreq/vexpress-spc-cpufreq.c | 22 +++++++++++++++++++---
+ 1 file changed, 19 insertions(+), 3 deletions(-)
+
+v1->v2:
+	- Removed loop unrolling for clusters
+
+diff --git a/drivers/cpufreq/vexpress-spc-cpufreq.c b/drivers/cpufreq/vexpress-spc-cpufreq.c
+index 093ef8d3a8d4..506e3f2bf53a 100644
+--- a/drivers/cpufreq/vexpress-spc-cpufreq.c
++++ b/drivers/cpufreq/vexpress-spc-cpufreq.c
+@@ -242,6 +242,19 @@ static inline u32 get_table_max(struct cpufreq_frequency_table *table)
+ 	return max_freq;
+ }
+
++static bool search_frequency(struct cpufreq_frequency_table *table, int size,
++			     unsigned int freq)
++{
++	int count;
++
++	for (count = 0; count < size; count++) {
++		if (table[count].frequency == freq)
++			return true;
++	}
++
++	return false;
++}
++
+ static int merge_cluster_tables(void)
+ {
+ 	int i, j, k = 0, count = 1;
+@@ -257,10 +270,13 @@ static int merge_cluster_tables(void)
+ 	freq_table[MAX_CLUSTERS] = table;
+ 
+ 	/* Add in reverse order to get freqs in increasing order */
+-	for (i = MAX_CLUSTERS - 1; i >= 0; i--) {
++	for (i = MAX_CLUSTERS - 1; i >= 0; i--, count = k) {
+ 		for (j = 0; freq_table[i][j].frequency != CPUFREQ_TABLE_END;
+-		     j++, k++) {
+-			table[k].frequency =
++		     j++) {
++			if (i == A15_CLUSTER &&
++			    search_frequency(table, count, freq_table[i][j].frequency))
++				continue; /* skip duplicates */
++			table[k++].frequency =
+ 				VIRT_FREQ(i, freq_table[i][j].frequency);
+ 		}
+ 	}
+-- 
+2.17.1
+
+From foo@bar  Thu Oct 24 08:35:43 2019
+Cc: Viresh Kumar <viresh.kumar@linaro.org>
+Cc: "Rafael J. Wysocki" <rjw@rjwysocki.net>
+Signed-off-by: Sudeep Holla <sudeep.holla@arm.com>
+
+---
+ drivers/cpufreq/vexpress-spc-cpufreq.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+diff --git a/drivers/cpufreq/vexpress-spc-cpufreq.c b/drivers/cpufreq/vexpress-spc-cpufreq.c
+index 3259498d7eaa..093ef8d3a8d4 100644
+--- a/drivers/cpufreq/vexpress-spc-cpufreq.c
++++ b/drivers/cpufreq/vexpress-spc-cpufreq.c
+@@ -380,8 +380,9 @@ static int get_cluster_clk_and_freq_table(struct device *cpu_dev,
+ 		goto put_clusters;
+ 
+ 	/* Assuming 2 cluster, set clk_big_min and clk_little_max */
+-	clk_big_min = get_table_min(freq_table[0]);
+-	clk_little_max = VIRT_FREQ(1, get_table_max(freq_table[1]));
++	clk_big_min = get_table_min(freq_table[A15_CLUSTER]);
++	clk_little_max = VIRT_FREQ(A7_CLUSTER,
++				   get_table_max(freq_table[A7_CLUSTER]));
+ 
+ 	return 0;
+ 
+-- 
+2.17.1
+
+From foo@bar  Thu Oct 24 08:36:20 2019
+Cc: Viresh Kumar <viresh.kumar@linaro.org>
+Cc: "Rafael J. Wysocki" <rjw@rjwysocki.net>
+Signed-off-by: Sudeep Holla <sudeep.holla@arm.com>
+
+---
+ drivers/cpufreq/vexpress-spc-cpufreq.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+diff --git a/drivers/cpufreq/vexpress-spc-cpufreq.c b/drivers/cpufreq/vexpress-spc-cpufreq.c
+index 3259498d7eaa..093ef8d3a8d4 100644
+--- a/drivers/cpufreq/vexpress-spc-cpufreq.c
++++ b/drivers/cpufreq/vexpress-spc-cpufreq.c
+@@ -380,8 +380,9 @@ static int get_cluster_clk_and_freq_table(struct device *cpu_dev,
+ 		goto put_clusters;
+ 
+ 	/* Assuming 2 cluster, set clk_big_min and clk_little_max */
+-	clk_big_min = get_table_min(freq_table[0]);
+-	clk_little_max = VIRT_FREQ(1, get_table_max(freq_table[1]));
++	clk_big_min = get_table_min(freq_table[A15_CLUSTER]);
++	clk_little_max = VIRT_FREQ(A7_CLUSTER,
++				   get_table_max(freq_table[A7_CLUSTER]));
+ 
+ 	return 0;
+ 
+-- 
+2.17.1
+

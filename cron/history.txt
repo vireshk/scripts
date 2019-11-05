@@ -35509,3 +35509,80 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 99ae134476e7] updates
+ 6 files changed, 327 insertions(+), 94 deletions(-)
+ create mode 100644 mutt/incoming/PATCH_1-2_cpufreq_vexpress-spc_use_macros_instead_of_hardcoded_values_for_cluster_ids.mbox
+ delete mode 100644 mutt/incoming/PATCH_cpufreq_s3c64xx_Remove_pointless_NULL_check_in_s3c64xx_cpufreq_driver_init.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   efdf6ea25bf1..99ae134476e7  master -> master
+   7c287021c44b..efdf6ea25bf1  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+[master bc89c753ab1a] updates
+ 6 files changed, 338 insertions(+), 154 deletions(-)
+ delete mode 100644 scheduler/.sched_idle.txt.swp
+ delete mode 100644 scheduler/scheduling-classes-and-policies.jpg
+ create mode 100644 scheduler/v5.3-kshark.png
+ create mode 100644 scheduler/v5.4-kshark.png
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/lwn
+   9a6344e0a0f5..bc89c753ab1a  master -> master
+   b650392be656..9a6344e0a0f5  bkp/master -> bkp/master
+
+
+
+ 
+Tue Nov  5 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 6306e18beab9...631520d77392 master -> master (forced update)
+   e458eb97df7a..e32beb064105  bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next
+ - [deleted]                   bkp/temp
+ + a1f1aa5b550e...528ab4a96af0 lnext/akpm -> lnext/akpm (forced update)
+ + f34a8e1f1190...d8d78c852ef4 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 78662bffde37...49afce6d47fe lnext/master -> lnext/master (forced update)
+ + ce15fc3fc1ae...18696339da4e lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   8e0d0ad206f0..320000e72ec0  lnext/stable -> lnext/stable
+   3b1f00aceb7a..a99d8080aaf3  origin/HEAD -> origin/HEAD
+   3b1f00aceb7a..a99d8080aaf3  origin/master -> origin/master
+   ffba17bb335d..edffc70f505a  pm/acpi -> pm/acpi
+ + 631520d77392...fedb14eb0096 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 631520d77392...7dba3cb7cc3a pm/linux-next -> pm/linux-next (forced update)
+   7d194c2100ad..a99d8080aaf3  pm/master -> pm/master
+   b23eb5c74e6e..e82b7457909a  pm/pm -> pm/pm
+ + 631520d77392...7dba3cb7cc3a pm/testing -> pm/testing (forced update)
+ * [new branch]                temp -> temp
+ * [new branch]                bkp/sched/idle -> bkp/sched/idle
+ * [new tag]                   acpi-5.4-rc5 -> acpi-5.4-rc5
+ * [new tag]                   next-20191031 -> next-20191031
+ * [new tag]                   pm-5.4-rc5 -> pm-5.4-rc5
+ * [new tag]                   pm-5.4-rc6 -> pm-5.4-rc6
+ * [new tag]                   v5.4-rc5 -> v5.4-rc5
+ * [new tag]                   v5.4-rc6 -> v5.4-rc6
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

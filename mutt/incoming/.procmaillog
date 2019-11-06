@@ -1004,3 +1004,6 @@ From vireshk  Wed Oct 23 16:38:51 2019
   Folder: PATCH_1-2_cpufreq_vexpress-spc_use_macros_instead_of_hardcod	   3542
 From foo@bar  Thu Oct 24 08:36:20 2019
   Folder: .mbox								    960
+From vireshk  Tue Nov  5 08:33:33 2019
+ Subject: [PATCH v2] cpufreq: sun50i: Fix CPU speed bin detection
+  Folder: PATCH_v2_cpufreq_sun50i_Fix_CPU_speed_bin_detection.mbox	   6618

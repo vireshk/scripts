@@ -35744,3 +35744,61 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 7aabb50f761b] updates
+ 1 file changed, 47 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   fced17d7a590..7aabb50f761b  master -> master
+   7b8f57fe0c04..fced17d7a590  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon Nov 11 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   cpufreq/armada-debug
+ - [deleted]                   cpufreq/freq-constraint-pmqos
+ - [deleted]                   cpufreq/intel-pstate-fix
+ - [deleted]                   kobj-type
+ - [deleted]                   opp/fixes
+ + c44bb5034aec...25cb20a212a1 opp/linux-next -> opp/linux-next (forced update)
+   5eba2fb4af9e..b23483300b37  sched/idle -> sched/idle
+ + b1838b28d0db...716ded6dd6aa pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   4fc2bfa6e8ce..341d02290c9a  pm/linux-next -> pm/linux-next
+   e82b7457909a..c31432fa7f82  pm/pm -> pm/pm
+   4fc2bfa6e8ce..341d02290c9a  pm/testing -> pm/testing
+ + c44bb5034aec...25cb20a212a1 pmko/opp/linux-next -> pmko/opp/linux-next (forced update)
+ * [new tag]                   pm-5.4-rc7 -> pm-5.4-rc7
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

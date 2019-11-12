@@ -35802,3 +35802,56 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 7375bd4ecc88] updates
+ 1 file changed, 58 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   7aabb50f761b..7375bd4ecc88  master -> master
+   fced17d7a590..7aabb50f761b  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Tue Nov 12 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   bkp/cpufreq/armada-debug
+ - [deleted]                   bkp/cpufreq/freq-constraint-pmqos
+ - [deleted]                   bkp/cpufreq/intel-pstate-fix
+ - [deleted]                   bkp/kobj-type
+ - [deleted]                   bkp/opp/fixes
+ + c44bb5034aec...25cb20a212a1 bkp/opp/linux-next -> bkp/opp/linux-next (forced update)
+   5eba2fb4af9e..b23483300b37  bkp/sched/idle -> bkp/sched/idle
+ * [new branch]                opp/cleanup -> opp/cleanup
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

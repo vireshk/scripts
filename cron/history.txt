@@ -35855,3 +35855,55 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master ebb2ae54473e] updates
+ 1 file changed, 53 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   7375bd4ecc88..ebb2ae54473e  master -> master
+   7aabb50f761b..7375bd4ecc88  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Nov 13 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 163b9b9626c8...b225c20df974 bkp/usb-to-eth-hikey -> bkp/usb-to-eth-hikey (forced update)
+ + 06dd77cb2b5b...456811f2f87d opp/cleanup -> opp/cleanup (forced update)
+ + 716ded6dd6aa...ba5026b7dd2a pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 341d02290c9a...678de5f0c750 pm/linux-next -> pm/linux-next (forced update)
+   a99d8080aaf3..31f4f5b495a6  pm/master -> pm/master
+ + 341d02290c9a...678de5f0c750 pm/testing -> pm/testing (forced update)
+ * [new branch]                bkp/opp/cleanup -> bkp/opp/cleanup
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -1007,3 +1007,15 @@ From foo@bar  Thu Oct 24 08:36:20 2019
 From vireshk  Tue Nov  5 08:33:33 2019
  Subject: [PATCH v2] cpufreq: sun50i: Fix CPU speed bin detection
   Folder: PATCH_v2_cpufreq_sun50i_Fix_CPU_speed_bin_detection.mbox	   6618
+From vireshk  Fri Oct 18 14:22:20 2019
+ Subject: [PATCH v4 1/6] thermal: Remove netlink support
+  Folder: PATCH_v4_1-6_thermal_Remove_netlink_support.mbox		  13210
+From vireshk  Fri Oct 18 14:23:23 2019
+ Subject: [PATCH v4 2/6] thermal: Initialize thermal subsystem earlier
+  Folder: PATCH_v4_2-6_thermal_Initialize_thermal_subsystem_earlier.mb	   6800
+From vireshk  Fri Oct 18 14:23:24 2019
+ Subject: [PATCH v4 3/6] cpufreq: Initialise the governors in core_initcall
+  Folder: PATCH_v4_3-6_cpufreq_Initialise_the_governors_in_core_initca	   9420
+From vireshk  Fri Oct 18 14:23:24 2019
+ Subject: [PATCH v4 4/6] cpufreq: Initialize cpufreq-dt driver earlier
+  Folder: PATCH_v4_4-6_cpufreq_Initialize_cpufreq-dt_driver_earlier.mb	   6772

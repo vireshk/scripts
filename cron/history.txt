@@ -35907,3 +35907,64 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 68333eb3360a] updates
+ 1 file changed, 52 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   ebb2ae54473e..68333eb3360a  master -> master
+   7375bd4ecc88..ebb2ae54473e  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+[master 5f0f22dfbf8c] updates
+ 2 files changed, 7 insertions(+), 7 deletions(-)
+ create mode 100644 scheduler/.sched_idle.txt.swp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/lwn
+   dc45938eae9c..5f0f22dfbf8c  master -> master
+
+
+
+ 
+Thu Nov 14 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   456811f2f87d..00bbf230fc78  opp/cleanup -> opp/cleanup
+ + 163b9b9626c8...b225c20df974 bkp/bkp/usb-to-eth-hikey -> bkp/bkp/usb-to-eth-hikey (forced update)
+ + 06dd77cb2b5b...456811f2f87d bkp/opp/cleanup -> bkp/opp/cleanup (forced update)
+ + 528ab4a96af0...d3a2ab1900a0 lnext/akpm -> lnext/akpm (forced update)
+ + d8d78c852ef4...2930da4327b6 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 49afce6d47fe...4e8f108c3af2 lnext/master -> lnext/master (forced update)
+ + 18696339da4e...1b2a36d66d87 lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   320000e72ec0..eb094f06963b  lnext/stable -> lnext/stable
+ + ba5026b7dd2a...b60a6a5d6908 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   678de5f0c750..238eb524d5af  pm/linux-next -> pm/linux-next
+   678de5f0c750..238eb524d5af  pm/testing -> pm/testing
+ * [new branch]                cpufreq/test -> cpufreq/test
+ * [new tag]                   next-20191113 -> next-20191113
+ * [new tag]                   v5.4-rc7 -> v5.4-rc7
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -24,8 +24,8 @@ ara/jira
 
 # pmwg-weeklies
 :0:
-* ^(To|Cc):.*(private-pmwg@lists\.linaro\.org|private-pmwg@linaro\.org)
-* ^(Subject):.*\[pmwg-weekly\]
+* ^(To|Cc):.*(private-pmwg@lists\.linaro\.org|private-pmwg@linaro\.org|kwg-team-private@linaro\.org|private-kwg@linaro\.org|)
+* ^(Subject):.*\[.*-weekly\]
 linaro/pmwg
 
 # me

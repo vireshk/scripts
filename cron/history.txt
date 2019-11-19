@@ -36066,3 +36066,57 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 10fdc9dee8f1] updates
+ 2 files changed, 50 insertions(+), 2 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   67f8c1c5e701..10fdc9dee8f1  master -> master
+   fac5f6c9fdf7..67f8c1c5e701  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+[master 3723bc8fb261] updates
+ 3 files changed, 263 insertions(+), 440 deletions(-)
+ delete mode 100644 scheduler/.sched_idle.txt.swp
+ rewrite scheduler/sched_idle.html (85%)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/lwn
+   1989e3fb6198..3723bc8fb261  master -> master
+   7b2206b4ee08..1989e3fb6198  bkp/master -> bkp/master
+
+
+
+ 
+Tue Nov 19 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 00bbf230fc78...bc5326ca9531 opp/cleanup -> opp/cleanup (forced update)
+ + b60a6a5d6908...8752bdb5f55b pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 238eb524d5af...8752bdb5f55b pm/linux-next -> pm/linux-next (forced update)
+   31f4f5b495a6..af42d3466bdc  pm/master -> pm/master
+ + 238eb524d5af...8752bdb5f55b pm/testing -> pm/testing (forced update)
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

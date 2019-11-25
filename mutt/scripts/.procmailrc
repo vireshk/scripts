@@ -24,8 +24,8 @@ ara/jira
 
 # pmwg-weeklies
 :0:
-* ^(To|Cc):.*(private-pmwg@lists\.linaro\.org|private-pmwg@linaro\.org|kwg-team-private@linaro\.org|private-kwg@linaro\.org|)
-* ^(Subject):.*\[.*-weekly\]
+* ^(To|Cc):.*(private-pmwg@lists\.linaro\.org|private-pmwg@linaro\.org|kwg-team-private@linaro\.org|private-kwg@linaro\.org)
+* ^(Subject):.*\[.*-[wW]eekly\]
 linaro/pmwg
 
 # me
@@ -127,7 +127,7 @@ linaro/lng
 
 # pmwg
 :0:
-* ^(To|Cc):.*(linaro-pm-wg@lists\.launchpad\.net|private-pmwg@linaro\.org|private-big-little@linaro\.org|private-pmwg@lists\.linaro\.org)
+* ^(To|Cc):.*(linaro-pm-wg@lists\.launchpad\.net|private-pmwg@linaro\.org|private-big-little@linaro\.org|private-pmwg@lists\.linaro\.org|kwg-team-private@linaro\.org|private-kwg@linaro\.org)
 linaro/pmwg
 
 # releases

@@ -36258,3 +36258,53 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 29e5063dfbc2] updates
+ 1 file changed, 45 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   f3f38b18a9d6..29e5063dfbc2  master -> master
+   d579c30c16c5..f3f38b18a9d6  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon Nov 25 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + ad9028e19996...0d94b9beb8e9 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   8752bdb5f55b..16512c3e4523  pm/linux-next -> pm/linux-next
+   c31432fa7f82..05ff1ba412fd  pm/pm -> pm/pm
+   8752bdb5f55b..16512c3e4523  pm/testing -> pm/testing
+ * [new tag]                   pm-5.4-final -> pm-5.4-final
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

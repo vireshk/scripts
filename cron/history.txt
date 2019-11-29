@@ -36459,3 +36459,57 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 702cb2e9625d] updates
+ 1 file changed, 54 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   a52dac4c8287..702cb2e9625d  master -> master
+   3fc078e69dcb..a52dac4c8287  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Fri Nov 29 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   irqwork
+ + 998570b92107...f18a2c61d72f scmi -> scmi (forced update)
+   edffc70f505a..782b59711e15  pm/acpi -> pm/acpi
+   016049a81677..1afc14032e54  pm/devprop -> pm/devprop
+   05ff1ba412fd..e350b60f4e0f  pm/pm -> pm/pm
+ * [new branch]                bkp/scmi -> bkp/scmi
+ * [new tag]                   acpi-5.5-rc1 -> acpi-5.5-rc1
+ * [new tag]                   devprop-5.5-rc1 -> devprop-5.5-rc1
+ * [new tag]                   pm-5.5-rc1 -> pm-5.5-rc1
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

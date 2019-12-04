@@ -36620,3 +36620,237 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 9b7fb2e86524] updates
+ 1 file changed, 47 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   1728d28cb1a8..9b7fb2e86524  master -> master
+   22cc0607e55d..1728d28cb1a8  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Dec  4 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + b90cbcce608c...ea7c2c824d6b sched/idle -> sched/idle (forced update)
+ - [deleted]                   peterz/WIP.fixes
+   26536e7c242e..3ef240eaff36  peterz/WIP.locking/core -> peterz/WIP.locking/core
+ - [deleted]                   peterz/WIP.sched/core
+ - [deleted]                   peterz/WIP.x86/boot
+ - [deleted]                   peterz/WIP.x86/core
+ - [deleted]                   peterz/WIP.x86/debug
+ + e228edc9e998...ad5e427e0f6b peterz/WIP.x86/ipi -> peterz/WIP.x86/ipi (forced update)
+ - [deleted]                   peterz/WIP.x86/pti
+ - [deleted]                   peterz/WIP.x86/timers
+ - [deleted]                   peterz/WIP.x86/vdso
+ + 3836cd537b20...e16a444976e9 peterz/auto-latest -> peterz/auto-latest (forced update)
+   562c45d635ec..e8e4eb0fbeda  peterz/core-headers-for-linus -> peterz/core-headers-for-linus
+   29da93fea3ea..f73b3cc39c84  peterz/core-objtool-for-linus -> peterz/core-objtool-for-linus
+   83086d654dd0..4a0fa886ab79  peterz/core-rcu-for-linus -> peterz/core-rcu-for-linus
+ - [deleted]                   peterz/core-rslib-for-linus
+   3599fe12a125..ee050dc83bc3  peterz/core-stacktrace-for-linus -> peterz/core-stacktrace-for-linus
+   b68b9907069a..b0c51f158455  peterz/core-urgent-for-linus -> peterz/core-urgent-for-linus
+   562c45d635ec..e8e4eb0fbeda  peterz/core/headers -> peterz/core/headers
+   ffa6f55eb618..8a8c600de5dc  peterz/core/mm -> peterz/core/mm
+   29da93fea3ea..700c1018b86d  peterz/core/objtool -> peterz/core/objtool
+   83086d654dd0..43e0ae7ae0f5  peterz/core/rcu -> peterz/core/rcu
+   7e8e6816c649..4b48512c2e9c  peterz/core/stacktrace -> peterz/core/stacktrace
+   882a0db9d143..ac91dcca87e4  peterz/core/urgent -> peterz/core/urgent
+ + 24d73d3a62bf...8404bdbbf508 peterz/debug/experimental -> peterz/debug/experimental (forced update)
+   02562d0ca108..d3dc0168e932  peterz/efi-core-for-linus -> peterz/efi-core-for-linus
+   48c7d73b2362..359efcc2c910  peterz/efi-urgent-for-linus -> peterz/efi-urgent-for-linus
+   02562d0ca108..2278f452a12d  peterz/efi/core -> peterz/efi/core
+   48c7d73b2362..359efcc2c910  peterz/efi/urgent -> peterz/efi/urgent
+ - [deleted]                   peterz/for-vfs
+ - [deleted]                   peterz/for-vfs-merged
+   3a1d24ca9573..9cc5b7fba579  peterz/irq-core-for-linus -> peterz/irq-core-for-linus
+   20faba848752..0ed9ca25894e  peterz/irq-urgent-for-linus -> peterz/irq-urgent-for-linus
+   3a1d24ca9573..407e62f52aad  peterz/irq/core -> peterz/irq/core
+   5f9e832c1370..0ed9ca25894e  peterz/irq/urgent -> peterz/irq/urgent
+   9156e545765e..e57d143091f1  peterz/locking-core-for-linus -> peterz/locking-core-for-linus
+   68d41d8c94a3..6c11c6e3d5e9  peterz/locking-urgent-for-linus -> peterz/locking-urgent-for-linus
+ - [deleted]                   peterz/locking/atomic
+ + ddffc98ac775...97a5e861767a peterz/locking/core -> peterz/locking/core (forced update)
+ + 55294bf2fe61...d7df9c7836dd peterz/locking/jump_label -> peterz/locking/jump_label (forced update)
+ - [deleted]                   peterz/locking/more
+ + 2ae7ea7f4a95...6c11c6e3d5e9 peterz/locking/urgent -> peterz/locking/urgent (forced update)
+ + d0d7c1627cb5...baf049dad451 peterz/master -> peterz/master (forced update)
+ + 54f40bfb36cd...f28622499a2d peterz/modules/core -> peterz/modules/core (forced update)
+   d1d59b817939..e336b4027775  peterz/perf-core-for-linus -> peterz/perf-core-for-linus
+   e0c5c5e308ee..d00dbd298142  peterz/perf-urgent-for-linus -> peterz/perf-urgent-for-linus
+ + 39e104312aff...8f6ee51d772d peterz/perf/core -> peterz/perf/core (forced update)
+   7b5cf701ea9c..af42d3466bdc  peterz/perf/experimental -> peterz/perf/experimental
+ + 232c6a8fe1b3...c4b75479741c peterz/perf/urgent -> peterz/perf/urgent (forced update)
+   6e4f929ea8b2..b6ff24f7b510  peterz/ras-core-for-linus -> peterz/ras-core-for-linus
+   6e4f929ea8b2..f6656208f04e  peterz/ras/core -> peterz/ras/core
+   af24bde8df20..563c4f85f9f0  peterz/sched-core-for-linus -> peterz/sched-core-for-linus
+   b8d3349803ba..6e1ff0773f49  peterz/sched-urgent-for-linus -> peterz/sched-urgent-for-linus
+ + bcd616774260...8392853e964c peterz/sched/core -> peterz/sched/core (forced update)
+ + 9d28cbd0b2fd...6e1ff0773f49 peterz/sched/urgent -> peterz/sched/urgent (forced update)
+   caa759323c73..0c09ab96fc82  peterz/smp-hotplug-for-linus -> peterz/smp-hotplug-for-linus
+ + 3f70915f5be9...0c09ab96fc82 peterz/smp/hotplug -> peterz/smp/hotplug (forced update)
+ - [deleted]                   peterz/timers-2038-for-linus
+   9176ab1b8480..77b4b5420422  peterz/timers-core-for-linus -> peterz/timers-core-for-linus
+   0df1c9868c3a..2f5841349df2  peterz/timers-urgent-for-linus -> peterz/timers-urgent-for-linus
+   511885d7061e..cf25e24db61c  peterz/timers/core -> peterz/timers/core
+   0df1c9868c3a..7b8474466ed9  peterz/timers/urgent -> peterz/timers/urgent
+   1c65a355329e..5fedc65be2c8  peterz/tip -> peterz/tip
+   f8a8fe61fec8..743dac494d61  peterz/x86-apic-for-linus -> peterz/x86-apic-for-linus
+   7457c0da024b..e86c2c8b9380  peterz/x86-asm-for-linus -> peterz/x86-asm-for-linus
+   8ff80fbe7e98..d5a1baddf158  peterz/x86-boot-for-linus -> peterz/x86-boot-for-linus
+   87b61864d7ab..701010532164  peterz/x86-build-for-linus -> peterz/x86-build-for-linus
+   049331f277fe..0cc5359d8fd4  peterz/x86-cpu-for-linus -> peterz/x86-cpu-for-linus
+   7f0a5e075583..6365b842aae4  peterz/x86-entry-for-linus -> peterz/x86-entry-for-linus
+   5140a6f47113..83527ef7abf7  peterz/x86-hyperv-for-linus -> peterz/x86-hyperv-for-linus
+   2c4645439e8f..8725fcd99a30  peterz/x86-irq-for-linus -> peterz/x86-irq-for-linus
+   caa841360134..bc04a049f058  peterz/x86-mm-for-linus -> peterz/x86-mm-for-linus
+   d97ee99bf225..864b23f0169d  peterz/x86-platform-for-linus -> peterz/x86-platform-for-linus
+   993773d11d45..990784b57731  peterz/x86-pti-for-linus -> peterz/x86-pti-for-linus
+   6879298bd067..c8eafe149530  peterz/x86-urgent-for-linus -> peterz/x86-urgent-for-linus
+   83b584d9c6a1..2579a4eefc04  peterz/x86/apic -> peterz/x86/apic
+   7457c0da024b..45c083831417  peterz/x86/asm -> peterz/x86/asm
+   8ff80fbe7e98..b3c72fc9a78e  peterz/x86/boot -> peterz/x86/boot
+   701010532164..66584ea6b70a  peterz/x86/build -> peterz/x86/build
+   4599c6671b81..b41d62201b97  peterz/x86/cleanups -> peterz/x86/cleanups
+   711486fd1859..004e8dce9c55  peterz/x86/core -> peterz/x86/core
+   be261ffce6f1..db8c33f8b5be  peterz/x86/cpu -> peterz/x86/cpu
+   6365b842aae4..f53e2cd0b8ab  peterz/x86/entry -> peterz/x86/entry
+   7891bc0ab739..446e693ca30b  peterz/x86/fpu -> peterz/x86/fpu
+   83527ef7abf7..4df4cb9e99f8  peterz/x86/hyperv -> peterz/x86/hyperv
+   2c4645439e8f..8725fcd99a30  peterz/x86/irq -> peterz/x86/irq
+   4eb5fec31e61..9eff303725da  peterz/x86/kdump -> peterz/x86/kdump
+   c02f48e070bd..811ae8ba6dca  peterz/x86/microcode -> peterz/x86/microcode
+   21e450d21cca..7f264dab5b60  peterz/x86/mm -> peterz/x86/mm
+   d97ee99bf225..7a56b81c4746  peterz/x86/platform -> peterz/x86/platform
+   ab3765a050f7..cd5a2aa89e84  peterz/x86/pti -> peterz/x86/pti
+   b8f70953c125..895429076512  peterz/x86/urgent -> peterz/x86/urgent
+   26536e7c242e..af42d3466bdc  tip/WIP.locking/core -> tip/WIP.locking/core
+ + 9bd999c60e93...e445033e5810 tip/auto-latest -> tip/auto-latest (forced update)
+   f73b3cc39c84..700c1018b86d  tip/core-objtool-for-linus -> tip/core-objtool-for-linus
+   4a0fa886ab79..43e0ae7ae0f5  tip/core-rcu-for-linus -> tip/core-rcu-for-linus
+   ee050dc83bc3..4b48512c2e9c  tip/core-stacktrace-for-linus -> tip/core-stacktrace-for-linus
+   b1fc58333575..90558b7b3583  tip/core-urgent-for-linus -> tip/core-urgent-for-linus
+   e8e4eb0fbeda..be2eca94d144  tip/core/headers -> tip/core/headers
+   7d194c2100ad..89d57dddd7d3  tip/core/kprobes -> tip/core/kprobes
+   4a0fa886ab79..43e0ae7ae0f5  tip/core/rcu -> tip/core/rcu
+   ee050dc83bc3..4b48512c2e9c  tip/core/stacktrace -> tip/core/stacktrace
+   b1fc58333575..219d54332a09  tip/core/urgent -> tip/core/urgent
+   d3dc0168e932..2278f452a12d  tip/efi-core-for-linus -> tip/efi-core-for-linus
+   be59d57f9806..359efcc2c910  tip/efi-urgent-for-linus -> tip/efi-urgent-for-linus
+   d3dc0168e932..2278f452a12d  tip/efi/core -> tip/efi/core
+   be59d57f9806..359efcc2c910  tip/efi/urgent -> tip/efi/urgent
+   9cc5b7fba579..407e62f52aad  tip/irq-core-for-linus -> tip/irq-core-for-linus
+   c9b59181c2b0..0ed9ca25894e  tip/irq-urgent-for-linus -> tip/irq-urgent-for-linus
+   9cc5b7fba579..407e62f52aad  tip/irq/core -> tip/irq/core
+   c9b59181c2b0..0ed9ca25894e  tip/irq/urgent -> tip/irq/urgent
+   e57d143091f1..500543c53a54  tip/locking-core-for-linus -> tip/locking-core-for-linus
+   5facae4f3549..1a365e822372  tip/locking/core -> tip/locking/core
+ + 9bd999c60e93...c0a5b98836c3 tip/master -> tip/master (forced update)
+   e336b4027775..ceb9e77324fa  tip/perf-core-for-linus -> tip/perf-core-for-linus
+   52e92f409ded..e680a41fcaf0  tip/perf-urgent-for-linus -> tip/perf-urgent-for-linus
+   27a0a90d6301..ceb9e77324fa  tip/perf/core -> tip/perf/core
+   f3a519e4add9..e680a41fcaf0  tip/perf/urgent -> tip/perf/urgent
+   b6ff24f7b510..f6656208f04e  tip/ras-core-for-linus -> tip/ras-core-for-linus
+   0ade0b6240c4..5a43b87b3c62  tip/ras-urgent-for-linus -> tip/ras-urgent-for-linus
+   9c3bafaa1fd8..f6656208f04e  tip/ras/core -> tip/ras/core
+   0ade0b6240c4..5a43b87b3c62  tip/ras/urgent -> tip/ras/urgent
+   563c4f85f9f0..de881a341c41  tip/sched-core-for-linus -> tip/sched-core-for-linus
+   68e7a4d66b0c..c5105d764e02  tip/sched-urgent-for-linus -> tip/sched-urgent-for-linus
+   57abff067a08..de881a341c41  tip/sched/core -> tip/sched/core
+   09c7e8b21d67..d61ca3c25e03  tip/sched/rt -> tip/sched/rt
+   68e7a4d66b0c..c5105d764e02  tip/sched/urgent -> tip/sched/urgent
+   77b4b5420422..83bae01182ea  tip/timers-core-for-linus -> tip/timers-core-for-linus
+   ff229eee3d89..2f5841349df2  tip/timers-urgent-for-linus -> tip/timers-urgent-for-linus
+   b9023b91dd02..83bae01182ea  tip/timers/core -> tip/timers/core
+   7f2cbcbcafbc..e0748539e3d5  tip/timers/urgent -> tip/timers/urgent
+   b36f3fb8d7eb..5fedc65be2c8  tip/tip -> tip/tip
+   743dac494d61..2579a4eefc04  tip/x86-apic-for-linus -> tip/x86-apic-for-linus
+   e86c2c8b9380..f01ec4fca820  tip/x86-asm-for-linus -> tip/x86-asm-for-linus
+   d5a1baddf158..b3c72fc9a78e  tip/x86-boot-for-linus -> tip/x86-boot-for-linus
+   53b7607382b0..b41d62201b97  tip/x86-cleanups-for-linus -> tip/x86-cleanups-for-linus
+   0cc5359d8fd4..db8c33f8b5be  tip/x86-cpu-for-linus -> tip/x86-cpu-for-linus
+   6365b842aae4..f53e2cd0b8ab  tip/x86-entry-for-linus -> tip/x86-entry-for-linus
+   7891bc0ab739..446e693ca30b  tip/x86-fpu-for-linus -> tip/x86-fpu-for-linus
+   83527ef7abf7..4df4cb9e99f8  tip/x86-hyperv-for-linus -> tip/x86-hyperv-for-linus
+   4eb5fec31e61..9eff303725da  tip/x86-kdump-for-linus -> tip/x86-kdump-for-linus
+   c02f48e070bd..811ae8ba6dca  tip/x86-microcode-for-linus -> tip/x86-microcode-for-linus
+   bc04a049f058..7f264dab5b60  tip/x86-mm-for-linus -> tip/x86-mm-for-linus
+   864b23f0169d..7a56b81c4746  tip/x86-platform-for-linus -> tip/x86-platform-for-linus
+   990784b57731..cd5a2aa89e84  tip/x86-pti-for-linus -> tip/x86-pti-for-linus
+   228d120051a2..91298f1a302d  tip/x86-urgent-for-linus -> tip/x86-urgent-for-linus
+   743dac494d61..2579a4eefc04  tip/x86/apic -> tip/x86/apic
+   13fbe784ef6e..f01ec4fca820  tip/x86/asm -> tip/x86/asm
+   6a181e333954..b3c72fc9a78e  tip/x86/boot -> tip/x86/boot
+   9e2276fa6eb3..66584ea6b70a  tip/x86/build -> tip/x86/build
+   e095cb7a0f57..b74374fef924  tip/x86/cleanups -> tip/x86/cleanups
+   1edae1ae6258..db8c33f8b5be  tip/x86/cpu -> tip/x86/cpu
+   7891bc0ab739..446e693ca30b  tip/x86/fpu -> tip/x86/fpu
+   83527ef7abf7..4df4cb9e99f8  tip/x86/hyperv -> tip/x86/hyperv
+   4eb5fec31e61..9eff303725da  tip/x86/kdump -> tip/x86/kdump
+   44e09568cf2d..7f264dab5b60  tip/x86/mm -> tip/x86/mm
+   990784b57731..cd5a2aa89e84  tip/x86/pti -> tip/x86/pti
+   6fee2a0be0ec..91298f1a302d  tip/x86/urgent -> tip/x86/urgent
+ * [new branch]                peterz/WIP.core-toplevel-for-linus -> peterz/WIP.core-toplevel-for-linus
+ * [new branch]                peterz/WIP.core/entry -> peterz/WIP.core/entry
+ * [new branch]                peterz/WIP.core/headers -> peterz/WIP.core/headers
+ * [new branch]                peterz/WIP.core/toplevel -> peterz/WIP.core/toplevel
+ * [new branch]                peterz/WIP.locking/kcsan -> peterz/WIP.locking/kcsan
+ * [new branch]                peterz/WIP.timers/core -> peterz/WIP.timers/core
+ * [new branch]                peterz/WIP.x86/cleanups -> peterz/WIP.x86/cleanups
+ * [new branch]                peterz/WIP.x86/iopl -> peterz/WIP.x86/iopl
+ * [new branch]                peterz/WIP.x86/mm -> peterz/WIP.x86/mm
+ * [new branch]                peterz/core/kprobes -> peterz/core/kprobes
+ * [new branch]                peterz/locking/kcsan -> peterz/locking/kcsan
+ * [new branch]                peterz/perf/cgroup -> peterz/perf/cgroup
+ * [new branch]                peterz/sched/rt -> peterz/sched/rt
+ * [new branch]                peterz/sched/wip-deadline -> peterz/sched/wip-deadline
+ * [new branch]                peterz/x86-vmware-for-linus -> peterz/x86-vmware-for-linus
+ * [new branch]                peterz/x86/iopl -> peterz/x86/iopl
+ * [new branch]                peterz/x86/rwx -> peterz/x86/rwx
+ * [new branch]                peterz/x86/static_call -> peterz/x86/static_call
+ * [new branch]                peterz/x86/vmware -> peterz/x86/vmware
+ * [new branch]                tip/WIP.core/headers -> tip/WIP.core/headers
+ * [new branch]                tip/WIP.core/kprobes -> tip/WIP.core/kprobes
+ * [new branch]                tip/WIP.locking/kcsan -> tip/WIP.locking/kcsan
+ * [new branch]                tip/WIP.x86/asm -> tip/WIP.x86/asm
+ * [new branch]                tip/WIP.x86/cleanups -> tip/WIP.x86/cleanups
+ * [new branch]                tip/WIP.x86/iopl -> tip/WIP.x86/iopl
+ * [new branch]                tip/WIP.x86/mm -> tip/WIP.x86/mm
+ * [new branch]                tip/WIP.x86/urgent -> tip/WIP.x86/urgent
+ * [new branch]                tip/locking-kcsan-for-linus -> tip/locking-kcsan-for-linus
+ * [new branch]                tip/locking/kcsan -> tip/locking/kcsan
+ * [new branch]                tip/x86-iopl-for-linus -> tip/x86-iopl-for-linus
+ * [new branch]                tip/x86/iopl -> tip/x86/iopl
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -194,7 +194,7 @@ export LD_LIBRARY_PATH="/media/vireshk/bb4fad4d-8860-4037-8d08-02291222001e/andr
 export JIRA_USERNAME="Viresh.kumar@linaro.org"
 export JIRA_PASSWORD=`cat ~/all/criticalinfo/.password`
 PATH="/home/vireshk/work/repos/tools/jipdate/:$PATH"
-alias updatejiramail="git send-email --confirm=always --cc-cmd=true --to-cmd=true pmwg-weekly-status.txt --to private-pmwg@linaro.org --cc vireshk"
+alias updatejiramail="git send-email --confirm=always --cc-cmd=true --to-cmd=true pmwg-weekly-status.txt --to private-kwg@linaro.org --cc vireshk"
 alias updatejira="hjunk; cd jira; jipdate.py -q --all -f pmwg-weekly-status.txt; updatejiramail"
 
 alias mountrouterdrive="curlftpfs vireshk:123456@192.168.1.1 ~/Videos/routerdrive/"

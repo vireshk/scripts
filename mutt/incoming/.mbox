@@ -2596,3 +2596,29 @@ index 3259498d7eaa..093ef8d3a8d4 100644
 -- 
 2.17.1
 
+From foo@bar  Wed Dec 11 08:07:39 2019
+Cc: "Rafael J. Wysocki" <rjw@rjwysocki.net>
+Cc: Viresh Kumar <viresh.kumar@linaro.org>
+Cc: linux-pm@vger.kernel.org
+Signed-off-by: Sudeep Holla <sudeep.holla@arm.com>
+
+---
+ drivers/cpufreq/scmi-cpufreq.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/drivers/cpufreq/scmi-cpufreq.c b/drivers/cpufreq/scmi-cpufreq.c
+index e6182c89df79..61623e2ff149 100644
+--- a/drivers/cpufreq/scmi-cpufreq.c
++++ b/drivers/cpufreq/scmi-cpufreq.c
+@@ -261,7 +261,7 @@ static void scmi_cpufreq_remove(struct scmi_device *sdev)
+ }
+
+ static const struct scmi_device_id scmi_id_table[] = {
+-	{ SCMI_PROTOCOL_PERF },
++	{ SCMI_PROTOCOL_PERF, "cpufreq" },
+ 	{ },
+ };
+ MODULE_DEVICE_TABLE(scmi, scmi_id_table);
+--
+2.17.1
+

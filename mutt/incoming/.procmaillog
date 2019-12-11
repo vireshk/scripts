@@ -1025,3 +1025,8 @@ From vireshk  Wed Nov 13 14:11:32 2019
 From vireshk  Mon Nov 25 15:14:23 2019
  Subject: RE: About CPU hot-plug stress test failed in cpufreq driver
   Folder: RE_About_CPU_hot-plug_stress_test_failed_in_cpufreq_driver.m	  21980
+From vireshk  Wed Dec 11 07:11:03 2019
+ Subject: [PATCH 13/15] cpufreq: scmi: Match scmi device by both name and proto
+  Folder: PATCH_13-15_cpufreq_scmi_Match_scmi_device_by_both_name_and_	   3975
+From foo@bar  Wed Dec 11 08:07:39 2019
+  Folder: .mbox								    755

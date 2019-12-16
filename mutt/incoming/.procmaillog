@@ -1030,3 +1030,12 @@ From vireshk  Wed Dec 11 07:11:03 2019
   Folder: PATCH_13-15_cpufreq_scmi_Match_scmi_device_by_both_name_and_	   3975
 From foo@bar  Wed Dec 11 08:07:39 2019
   Folder: .mbox								    755
+From vireshk  Tue Nov 19 07:50:56 2019
+ Subject: [PATCH v5 07/11] cpufreq: dt-platdev: Blacklist NVIDIA Tegra20 and Te
+  Folder: PATCH_v5_07-11_cpufreq_dt-platdev_Blacklist_NVIDIA_Tegra20_a	   7121
+From vireshk  Mon Dec 16 09:18:42 2019
+ Subject: [PATCH 1/2] cpufreq: kirkwood: convert to devm_platform_ioremap_resou
+  Folder: PATCH_1-2_cpufreq_kirkwood_convert_to_devm_platform_ioremap_	   5962
+From vireshk  Mon Dec 16 09:18:43 2019
+ Subject: [PATCH 2/2] cpufreq: tegra186: convert to devm_platform_ioremap_resou
+  Folder: PATCH_2-2_cpufreq_tegra186_convert_to_devm_platform_ioremap_	   6359

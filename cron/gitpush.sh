@@ -1,5 +1,5 @@
 #!/bin/bash
-export PATH=/usr/bin:$PATH
+export PATH=/usr/bin:/usr/local/bin:$PATH
 file=$HOME"/scripts/cron/history.txt"
 bl=`echo " " >> $file` #add blank line
 

@@ -37388,3 +37388,129 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master beca83a130bb] updates
+ 1 file changed, 76 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   882acffb5df9..beca83a130bb  master -> master
+   9776f9c347d0..882acffb5df9  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon Dec 23 13:00:01 IST 2019
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 26b49079b540...6e058d645ba6 sched/idle -> sched/idle (forced update)
+ + fb53e7764a3d...26b49079b540 bkp/sched/idle -> bkp/sched/idle (forced update)
+ + 995462afd65e...960786422fe9 peterz/WIP.core/headers -> peterz/WIP.core/headers (forced update)
+ + 3ef240eaff36...af42d3466bdc peterz/WIP.locking/core -> peterz/WIP.locking/core (forced update)
+ + b74374fef924...6794862a16ef peterz/WIP.x86/cleanups -> peterz/WIP.x86/cleanups (forced update)
+ + a74019557d1d...186525bd6b83 peterz/WIP.x86/mm -> peterz/WIP.x86/mm (forced update)
+ + e16a444976e9...ec7b10f2d023 peterz/auto-latest -> peterz/auto-latest (forced update)
+   f73b3cc39c84..700c1018b86d  peterz/core-objtool-for-linus -> peterz/core-objtool-for-linus
+   4a0fa886ab79..43e0ae7ae0f5  peterz/core-rcu-for-linus -> peterz/core-rcu-for-linus
+   ee050dc83bc3..4b48512c2e9c  peterz/core-stacktrace-for-linus -> peterz/core-stacktrace-for-linus
+   b0c51f158455..90558b7b3583  peterz/core-urgent-for-linus -> peterz/core-urgent-for-linus
+   e8e4eb0fbeda..be2eca94d144  peterz/core/headers -> peterz/core/headers
+ + 0be6748cdf51...24852c401826 peterz/core/kprobes -> peterz/core/kprobes (forced update)
+   700c1018b86d..f14bf6a350df  peterz/core/objtool -> peterz/core/objtool
+   83b0b15bcb0f..39892c262fe9  peterz/core/rseq -> peterz/core/rseq
+ + ac91dcca87e4...219d54332a09 peterz/core/urgent -> peterz/core/urgent (forced update)
+ + 8404bdbbf508...fa7617830cd7 peterz/debug/experimental -> peterz/debug/experimental (forced update)
+   d3dc0168e932..2278f452a12d  peterz/efi-core-for-linus -> peterz/efi-core-for-linus
+   359efcc2c910..a470552ee896  peterz/efi-urgent-for-linus -> peterz/efi-urgent-for-linus
+   359efcc2c910..a470552ee896  peterz/efi/urgent -> peterz/efi/urgent
+   9cc5b7fba579..407e62f52aad  peterz/irq-core-for-linus -> peterz/irq-core-for-linus
+   e57d143091f1..500543c53a54  peterz/locking-core-for-linus -> peterz/locking-core-for-linus
+   6c11c6e3d5e9..c571b72e2b84  peterz/locking-urgent-for-linus -> peterz/locking-urgent-for-linus
+ + 97a5e861767a...db4c175bc206 peterz/locking/core -> peterz/locking/core (forced update)
+ + d7df9c7836dd...2a1751c993b3 peterz/locking/jump_label -> peterz/locking/jump_label (forced update)
+   af42d3466bdc..02b74a798d15  peterz/locking/kcsan -> peterz/locking/kcsan
+   6c11c6e3d5e9..c571b72e2b84  peterz/locking/urgent -> peterz/locking/urgent
+ + baf049dad451...f0810d450935 peterz/master -> peterz/master (forced update)
+ + f28622499a2d...44020932af5e peterz/modules/core -> peterz/modules/core (forced update)
+   e336b4027775..ceb9e77324fa  peterz/perf-core-for-linus -> peterz/perf-core-for-linus
+   d00dbd298142..9f0bff1180ef  peterz/perf-urgent-for-linus -> peterz/perf-urgent-for-linus
+ + eb2d687ea4e8...e773940a9e90 peterz/perf/cgroup -> peterz/perf/cgroup (forced update)
+   8f6ee51d772d..ceb9e77324fa  peterz/perf/core -> peterz/perf/core
+   af42d3466bdc..2187f215ebaa  peterz/perf/experimental -> peterz/perf/experimental
+   c4b75479741c..9f0bff1180ef  peterz/perf/urgent -> peterz/perf/urgent
+   b6ff24f7b510..f6656208f04e  peterz/ras-core-for-linus -> peterz/ras-core-for-linus
+   0ade0b6240c4..a3a57ddad061  peterz/ras-urgent-for-linus -> peterz/ras-urgent-for-linus
+   f6656208f04e..81736abd5578  peterz/ras/core -> peterz/ras/core
+   0ade0b6240c4..a3a57ddad061  peterz/ras/urgent -> peterz/ras/urgent
+   563c4f85f9f0..de881a341c41  peterz/sched-core-for-linus -> peterz/sched-core-for-linus
+   6e1ff0773f49..6cf82d559e1a  peterz/sched-urgent-for-linus -> peterz/sched-urgent-for-linus
+   8392853e964c..cbcef6feb394  peterz/sched/core -> peterz/sched/core
+   6e1ff0773f49..6cf82d559e1a  peterz/sched/urgent -> peterz/sched/urgent
+ + d325fcd9ee32...8d84aa17269b peterz/sched/wip-deadline -> peterz/sched/wip-deadline (forced update)
+   77b4b5420422..83bae01182ea  peterz/timers-core-for-linus -> peterz/timers-core-for-linus
+   2f5841349df2..e0748539e3d5  peterz/timers-urgent-for-linus -> peterz/timers-urgent-for-linus
+   cf25e24db61c..83bae01182ea  peterz/timers/core -> peterz/timers/core
+   7b8474466ed9..e0748539e3d5  peterz/timers/urgent -> peterz/timers/urgent
+   5fedc65be2c8..4c81cb5fbabe  peterz/tip -> peterz/tip
+   743dac494d61..2579a4eefc04  peterz/x86-apic-for-linus -> peterz/x86-apic-for-linus
+   e86c2c8b9380..f01ec4fca820  peterz/x86-asm-for-linus -> peterz/x86-asm-for-linus
+   d5a1baddf158..b3c72fc9a78e  peterz/x86-boot-for-linus -> peterz/x86-boot-for-linus
+   53b7607382b0..b41d62201b97  peterz/x86-cleanups-for-linus -> peterz/x86-cleanups-for-linus
+   0cc5359d8fd4..db8c33f8b5be  peterz/x86-cpu-for-linus -> peterz/x86-cpu-for-linus
+   6365b842aae4..f53e2cd0b8ab  peterz/x86-entry-for-linus -> peterz/x86-entry-for-linus
+   7891bc0ab739..446e693ca30b  peterz/x86-fpu-for-linus -> peterz/x86-fpu-for-linus
+   83527ef7abf7..4df4cb9e99f8  peterz/x86-hyperv-for-linus -> peterz/x86-hyperv-for-linus
+   4eb5fec31e61..9eff303725da  peterz/x86-kdump-for-linus -> peterz/x86-kdump-for-linus
+   c02f48e070bd..811ae8ba6dca  peterz/x86-microcode-for-linus -> peterz/x86-microcode-for-linus
+   bc04a049f058..7f264dab5b60  peterz/x86-mm-for-linus -> peterz/x86-mm-for-linus
+   864b23f0169d..7a56b81c4746  peterz/x86-platform-for-linus -> peterz/x86-platform-for-linus
+   990784b57731..cd5a2aa89e84  peterz/x86-pti-for-linus -> peterz/x86-pti-for-linus
+   c8eafe149530..af1648984828  peterz/x86-urgent-for-linus -> peterz/x86-urgent-for-linus
+   45c083831417..f01ec4fca820  peterz/x86/asm -> peterz/x86/asm
+   b3c72fc9a78e..163159aad74d  peterz/x86/boot -> peterz/x86/boot
+   b41d62201b97..e133f6eac3fa  peterz/x86/cleanups -> peterz/x86/cleanups
+   db8c33f8b5be..d157aa0fb241  peterz/x86/cpu -> peterz/x86/cpu
+   811ae8ba6dca..82c881b28aa8  peterz/x86/microcode -> peterz/x86/microcode
+ + 004b380f46da...4908e0c1808b peterz/x86/rwx -> peterz/x86/rwx (forced update)
+ + 6447a7fa278d...c5b1affece3d peterz/x86/static_call -> peterz/x86/static_call (forced update)
+   895429076512..af1648984828  peterz/x86/urgent -> peterz/x86/urgent
+ * [new branch]                peterz/WIP.core/kprobes -> peterz/WIP.core/kprobes
+ * [new branch]                peterz/WIP.fixes -> peterz/WIP.fixes
+ * [new branch]                peterz/WIP.x86/asm -> peterz/WIP.x86/asm
+ * [new branch]                peterz/WIP.x86/urgent -> peterz/WIP.x86/urgent
+ * [new branch]                peterz/locking-kcsan-for-linus -> peterz/locking-kcsan-for-linus
+ * [new branch]                peterz/locking/percpu-rwsem -> peterz/locking/percpu-rwsem
+ * [new branch]                peterz/mm/tlb -> peterz/mm/tlb
+ * [new branch]                peterz/perf/amd -> peterz/perf/amd
+ * [new branch]                peterz/x86-iopl-for-linus -> peterz/x86-iopl-for-linus
+ * [new branch]                peterz/x86/mtrr -> peterz/x86/mtrr
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -1039,3 +1039,9 @@ From vireshk  Mon Dec 16 09:18:42 2019
 From vireshk  Mon Dec 16 09:18:43 2019
  Subject: [PATCH 2/2] cpufreq: tegra186: convert to devm_platform_ioremap_resou
   Folder: PATCH_2-2_cpufreq_tegra186_convert_to_devm_platform_ioremap_	   6359
+From vireshk  Sat Dec 28 09:57:21 2019
+ Subject: [PATCH 1/2] cpufreq: Use imx-cpufreq-dt for i.MX8MP's speed grading
+  Folder: PATCH_1-2_cpufreq_Use_imx-cpufreq-dt_for_i.MX8MP's_speed_gra	   4489
+From vireshk  Sat Dec 28 09:57:23 2019
+ Subject: [PATCH 2/2] cpufreq: imx-cpufreq-dt: Add i.MX8MP support
+  Folder: PATCH_2-2_cpufreq_imx-cpufreq-dt_Add_i.MX8MP_support.mbox	   5060

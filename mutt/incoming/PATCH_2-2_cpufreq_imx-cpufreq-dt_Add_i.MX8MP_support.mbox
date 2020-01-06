@@ -1,0 +1,63 @@
+From vireshk  Sat Dec 28 09:57:23 2019
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [74.125.130.109] 	by vireshk-i7 with POP3 (fetchmail-6.3.26) 	for <vireshk@localhost> (single-drop); Sat, 28 Dec 2019 09:57:23 +0530 (IST)
+Received: by 2002:a5e:a605:0:0:0:0:0 with SMTP id q5csp10418163ioi;         Wed, 25 Dec 2019 22:56:03 -0800 (PST)
+X-Google-Smtp-Source: APXvYqzrLOlL84mQ7X8l5/rZeiLRG8fuxKj/8VqNqQc/VAFnp1x0rGSXFvh2ONQLuLAbngES2suU
+X-Received: by 2002:a17:906:a3d3:: with SMTP id ca19mr46882444ejb.136.1577343363760;         Wed, 25 Dec 2019 22:56:03 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1577343363; cv=none;         d=google.com; s=arc-20160816;         b=AsYaPTAub9zdexHiUthj6vv5ykfKQn2W0B5DJ162a916ASeb7/cBL6sgcsRaEYgHfF          bsnzxFC1FtBqJcmLWoGXSu/h5XBcSeHNWsOUTW7rU0ugMiDFW65eH7AiN51tZNDZcvra          LkyBZmMu+MmlVfujMGdtFBCi+pt+JOdNrMToH9SHq90vIwpr3NmO1UCltEpS5mPXUOD9          WMTgMB99pw3R+NVIzgM0dLLZum24mItvf+7fJh/6jpzWHCGPLUgQqeeBcw9J0ZGXK1al          0rbVxoF5X5MWGj2TF1jKKyu4cTCY9yMbn4Nr7k9Sbmjnwd164iUEJ+Bptl9qRBdW+Yyc          RmZg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=references:in-reply-to:message-id:date:subject:cc:to:from;         bh=rfjtILOeiE6K3NMTJinSR+sBvwPja1Wgh6+X3QxsgGY=;         b=Sl2Z87C0ZBQVaRPSIQimvQ0uT/C9X+huKQDmxY/gSuGLZ1m0NN9asjeJWhJZNossOO          /pY6kSkS4hurAelsDGGqibsE8wSfKuF1CiAqYIpBogrn1Cs5in1JldN555tou0673+Kp          DGYN3DNbFw34x6mId/1OLmXkLdARYykOA8XRHh84ifk/ruh+ZHnE6WHlUp4GJgDOD3oE          VS3xAB4tBmMLFbqdHTKdpZvJsu0lOVjzMNlr7+QGAHDeqErGCHOVb/AdkbXmbBgrQYkJ          lKIynWc5CEAvBYjxARWdr19qUIA4JKXbOHl1PB2bwp2lspM0Lgw6vFrl3VXkRGoGwtRh          7bHQ==
+ARC-Authentication-Results: i=1; mx.google.com;        spf=pass (google.com: domain of anson.huang@nxp.com designates 92.121.34.13 as permitted sender) smtp.mailfrom=Anson.Huang@nxp.com;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=nxp.com
+Return-Path: <Anson.Huang@nxp.com>
+Received: from inva020.nxp.com (inva020.nxp.com. [92.121.34.13])         by mx.google.com with ESMTPS id t21si20168386eju.417.2019.12.25.22.56.03         for <viresh.kumar@linaro.org>         (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);         Wed, 25 Dec 2019 22:56:03 -0800 (PST)
+Received-SPF: pass (google.com: domain of anson.huang@nxp.com designates 92.121.34.13 as permitted sender) client-ip=92.121.34.13;
+Authentication-Results: mx.google.com;        spf=pass (google.com: domain of anson.huang@nxp.com designates 92.121.34.13 as permitted sender) smtp.mailfrom=Anson.Huang@nxp.com;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=nxp.com
+Received: from inva020.nxp.com (localhost [127.0.0.1]) 	by inva020.eu-rdc02.nxp.com (Postfix) with ESMTP id 78D541A163E; 	Thu, 26 Dec 2019 07:56:03 +0100 (CET)
+Received: from invc005.ap-rdc01.nxp.com (invc005.ap-rdc01.nxp.com [165.114.16.14]) 	by inva020.eu-rdc02.nxp.com (Postfix) with ESMTP id 8E5F71A0BFA; 	Thu, 26 Dec 2019 07:55:58 +0100 (CET)
+Received: from localhost.localdomain (shlinux2.ap.freescale.net [10.192.224.44]) 	by invc005.ap-rdc01.nxp.com (Postfix) with ESMTP id 48DE7402B3; 	Thu, 26 Dec 2019 14:55:52 +0800 (SGT)
+From: Anson Huang <Anson.Huang@nxp.com>
+To: rjw@rjwysocki.net, 	viresh.kumar@linaro.org, 	shawnguo@kernel.org, 	s.hauer@pengutronix.de, 	kernel@pengutronix.de, 	festevam@gmail.com, 	linux-pm@vger.kernel.org, 	linux-kernel@vger.kernel.org, 	linux-arm-kernel@lists.infradead.org
+Cc: Linux-imx@nxp.com
+Subject: [PATCH 2/2] cpufreq: imx-cpufreq-dt: Add i.MX8MP support
+Date: Thu, 26 Dec 2019 14:52:47 +0800
+Message-Id: <1577343167-16376-2-git-send-email-Anson.Huang@nxp.com>
+X-Mailer: git-send-email 2.7.4
+In-Reply-To: <1577343167-16376-1-git-send-email-Anson.Huang@nxp.com>
+References: <1577343167-16376-1-git-send-email-Anson.Huang@nxp.com>
+X-Virus-Scanned: ClamAV using ClamSMTP
+Content-Length: 1147
+Lines: 33
+
+Add i.MX8MP cpufreq DT support for speed grading and market
+segment check.
+
+Signed-off-by: Anson Huang <Anson.Huang@nxp.com>
+---
+ drivers/cpufreq/imx-cpufreq-dt.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+diff --git a/drivers/cpufreq/imx-cpufreq-dt.c b/drivers/cpufreq/imx-cpufreq-dt.c
+index 85a6efd..912e93d 100644
+--- a/drivers/cpufreq/imx-cpufreq-dt.c
++++ b/drivers/cpufreq/imx-cpufreq-dt.c
+@@ -35,7 +35,7 @@ static int imx_cpufreq_dt_probe(struct platform_device *pdev)
+ 	if (ret)
+ 		return ret;
+ 
+-	if (of_machine_is_compatible("fsl,imx8mn"))
++	if (of_machine_is_compatible("fsl,imx8mn") || of_machine_is_compatible("fsl,imx8mp"))
+ 		speed_grade = (cell_value & IMX8MN_OCOTP_CFG3_SPEED_GRADE_MASK)
+ 			      >> OCOTP_CFG3_SPEED_GRADE_SHIFT;
+ 	else
+@@ -54,7 +54,8 @@ static int imx_cpufreq_dt_probe(struct platform_device *pdev)
+ 		if (of_machine_is_compatible("fsl,imx8mm") ||
+ 		    of_machine_is_compatible("fsl,imx8mq"))
+ 			speed_grade = 1;
+-		if (of_machine_is_compatible("fsl,imx8mn"))
++		if (of_machine_is_compatible("fsl,imx8mn") ||
++			of_machine_is_compatible("fsl,imx8mp"))
+ 			speed_grade = 0xb;
+ 	}
+ 
+-- 
+2.7.4
+

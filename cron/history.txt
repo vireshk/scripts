@@ -37587,3 +37587,52 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 1fc92a9099e6] updates
+ 4 files changed, 192 insertions(+)
+ create mode 100644 mutt/incoming/PATCH_1-2_cpufreq_Use_imx-cpufreq-dt_for_i.MX8MP's_speed_grading.mbox
+ create mode 100644 mutt/incoming/PATCH_2-2_cpufreq_imx-cpufreq-dt_Add_i.MX8MP_support.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   284fa438b72a..1fc92a9099e6  master -> master
+   beca83a130bb..284fa438b72a  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Tue Jan  7 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   d4a386f59527..bdeb9bbf9684  bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next
+ + 6e058d645ba6...7dcc55e59fec bkp/sched/idle -> bkp/sched/idle (forced update)
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

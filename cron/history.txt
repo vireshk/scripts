@@ -37808,3 +37808,49 @@ Entering /home/vireshk/work/repos/tools/cpufreq-tests
 fatal: unable to access 'https://git.linaro.org/people/viresh.kumar/backup/cpufreq-tests.git/': The requested URL returned error: 403
 
 Entering /home/vireshk/scripts
+[master 722c2b9da884] updates
+ 1 file changed, 57 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   6f0aefbc3df9..722c2b9da884  master -> master
+   5a4da80c4f76..6f0aefbc3df9  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+fatal: unable to access 'https://git.linaro.org/people/viresh.kumar/backup/module.git/': The requested URL returned error: 403
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+fatal: unable to access 'https://git.linaro.org/people/viresh.kumar/backup/vireshk-linux.git/': The requested URL returned error: 403
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+fatal: unable to access 'https://git.linaro.org/people/viresh.kumar/backup/lwn.git/': The requested URL returned error: 403
+
+
+
+ 
+Wed Jan  8 14:36:38 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/cpufreq-tests.git
+ - [deleted]                   bkp/master
+
+Entering /home/vireshk/scripts

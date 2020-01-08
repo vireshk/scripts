@@ -37686,3 +37686,68 @@ Please make sure you have the correct access rights
 and the repository exists.
 
 Entering /home/vireshk/scripts
+[master 5a4da80c4f76] updates
+ 5 files changed, 157 insertions(+), 113 deletions(-)
+ delete mode 100644 mutt/incoming/PATCH_1-2_cpufreq_Use_imx-cpufreq-dt_for_i.MX8MP's_speed_grading.mbox
+ delete mode 100644 mutt/incoming/PATCH_2-2_cpufreq_imx-cpufreq-dt_Add_i.MX8MP_support.mbox
+ create mode 100644 mutt/incoming/PATCH_v3_cpufreq_s3c_fix_unbalances_of_cpufreq_policy_refcount.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   e2be2bf3ed71..5a4da80c4f76  master -> master
+   1fc92a9099e6..e2be2bf3ed71  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Wed Jan  8 14:29:19 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 58d956fe1c2d...327440cf9316 sched/idle -> sched/idle (forced update)
+ + bdeb9bbf9684...8ead819f1bef bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next (forced update)
+ + 7dcc55e59fec...58d956fe1c2d bkp/sched/idle -> bkp/sched/idle (forced update)
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/scripts

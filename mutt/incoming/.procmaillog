@@ -1045,3 +1045,6 @@ From vireshk  Sat Dec 28 09:57:21 2019
 From vireshk  Sat Dec 28 09:57:23 2019
  Subject: [PATCH 2/2] cpufreq: imx-cpufreq-dt: Add i.MX8MP support
   Folder: PATCH_2-2_cpufreq_imx-cpufreq-dt_Add_i.MX8MP_support.mbox	   5060
+From vireshk  Tue Jan  7 13:24:14 2020
+ Subject: [PATCH v3] cpufreq: s3c: fix unbalances of cpufreq policy refcount
+  Folder: PATCH_v3_cpufreq_s3c_fix_unbalances_of_cpufreq_policy_refcou	   7446

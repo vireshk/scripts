@@ -37636,3 +37636,53 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master e2be2bf3ed71] updates
+ 1 file changed, 49 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   1fc92a9099e6..e2be2bf3ed71  master -> master
+   284fa438b72a..1fc92a9099e6  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Jan  8 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + bdeb9bbf9684...8ead819f1bef cpufreq/arm/linux-next -> cpufreq/arm/linux-next (forced update)
+ + 7dcc55e59fec...58d956fe1c2d sched/idle -> sched/idle (forced update)
+ + bdeb9bbf9684...8ead819f1bef pmko/cpufreq/arm/linux-next -> pmko/cpufreq/arm/linux-next (forced update)
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/scripts

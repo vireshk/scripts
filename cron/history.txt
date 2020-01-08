@@ -37751,3 +37751,60 @@ Please make sure you have the correct access rights
 and the repository exists.
 
 Entering /home/vireshk/scripts
+[master 6f0aefbc3df9] updates
+ 2 files changed, 65 insertions(+), 104 deletions(-)
+ delete mode 100644 mutt/incoming/PATCH_v3_cpufreq_s3c_fix_unbalances_of_cpufreq_policy_refcount.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   5a4da80c4f76..6f0aefbc3df9  master -> master
+   e2be2bf3ed71..5a4da80c4f76  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+fatal: 'bkp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Wed Jan  8 14:32:49 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 58d956fe1c2d...327440cf9316 bkp/sched/idle -> bkp/sched/idle (forced update)
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+fatal: unable to access 'https://git.linaro.org/people/viresh.kumar/backup/cpufreq-tests.git/': The requested URL returned error: 403
+
+Entering /home/vireshk/scripts

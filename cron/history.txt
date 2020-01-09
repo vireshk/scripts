@@ -37854,3 +37854,97 @@ To ssh://git.linaro.org/people/viresh.kumar/backup/cpufreq-tests.git
  - [deleted]                   bkp/master
 
 Entering /home/vireshk/scripts
+[master 8d4f95a26b90] updates
+ 1 file changed, 46 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   722c2b9da884..8d4f95a26b90  master -> master
+   6f0aefbc3df9..722c2b9da884  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/module.git
+ - [deleted]                   bkp/master
+ * [new branch]                origin/HEAD -> origin/HEAD
+ * [new branch]                origin/master -> origin/master
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/vireshk-linux.git
+ - [deleted]                   bkp/master
+ * [new branch]                origin/HEAD -> origin/HEAD
+ * [new branch]                origin/master -> origin/master
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/lwn.git
+ - [deleted]                   bkp/master
+ - [deleted]                   mac/master
+ * [new branch]                origin/HEAD -> origin/HEAD
+ * [new branch]                origin/master -> origin/master
+
+
+
+ 
+Thu Jan  9 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + ec7b10f2d023...acd35e8ec7fd peterz/auto-latest -> peterz/auto-latest (forced update)
+ + 24852c401826...2040cf9f5903 peterz/core/kprobes -> peterz/core/kprobes (forced update)
+   f14bf6a350df..22a7fa8848c5  peterz/core/objtool -> peterz/core/objtool
+ + 39892c262fe9...83b0b15bcb0f peterz/core/rseq -> peterz/core/rseq (forced update)
+   219d54332a09..463f550fb47b  peterz/core/urgent -> peterz/core/urgent
+ + fa7617830cd7...eb333b32c7fe peterz/debug/experimental -> peterz/debug/experimental (forced update)
+   2278f452a12d..0679715e7143  peterz/efi/core -> peterz/efi/core
+   a470552ee896..4911ee401b7c  peterz/efi/urgent -> peterz/efi/urgent
+ + db4c175bc206...1c66f2e3cdbe peterz/locking/core -> peterz/locking/core (forced update)
+ + 2a1751c993b3...f6feb59615ac peterz/locking/jump_label -> peterz/locking/jump_label (forced update)
+ + 02b74a798d15...31c7ac388aa9 peterz/locking/kcsan -> peterz/locking/kcsan (forced update)
+ + 2da05ba3ff96...22f2eda8e57b peterz/locking/percpu-rwsem -> peterz/locking/percpu-rwsem (forced update)
+   c571b72e2b84..d91f3057263c  peterz/locking/urgent -> peterz/locking/urgent
+ + f0810d450935...c568cdfe2703 peterz/master -> peterz/master (forced update)
+ + ca23332f272f...abb4c221c944 peterz/mm/tlb -> peterz/mm/tlb (forced update)
+ + 44020932af5e...6183f8edf1c8 peterz/modules/core -> peterz/modules/core (forced update)
+ + d29808922249...867d83f978cb peterz/perf/amd -> peterz/perf/amd (forced update)
+ + e773940a9e90...c55787fb50f1 peterz/perf/cgroup -> peterz/perf/cgroup (forced update)
+   ceb9e77324fa..11d2c58485ba  peterz/perf/core -> peterz/perf/core
+   2187f215ebaa..c79f46a28239  peterz/perf/experimental -> peterz/perf/experimental
+   9f0bff1180ef..f66bededbea3  peterz/perf/urgent -> peterz/perf/urgent
+ + cbcef6feb394...587c1e31025f peterz/sched/core -> peterz/sched/core (forced update)
+ + 8d84aa17269b...7a8e8777be97 peterz/sched/wip-deadline -> peterz/sched/wip-deadline (forced update)
+   4c81cb5fbabe..634d5e96e4c8  peterz/tip -> peterz/tip
+   f01ec4fca820..50cc02e599ef  peterz/x86/asm -> peterz/x86/asm
+   e133f6eac3fa..fae7bfcc7814  peterz/x86/cleanups -> peterz/x86/cleanups
+   004e8dce9c55..36209766cede  peterz/x86/core -> peterz/x86/core
+   446e693ca30b..bbc55341b9c6  peterz/x86/fpu -> peterz/x86/fpu
+   9eff303725da..8757dc970f55  peterz/x86/kdump -> peterz/x86/kdump
+ + 4908e0c1808b...e9c6b21b7113 peterz/x86/rwx -> peterz/x86/rwx (forced update)
+ + c5b1affece3d...0df251137c49 peterz/x86/static_call -> peterz/x86/static_call (forced update)
+   af1648984828..ab6a2114433a  peterz/x86/urgent -> peterz/x86/urgent
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/cpufreq-tests.git
+ * [new branch]                bkp/master -> bkp/master
+
+Entering /home/vireshk/scripts

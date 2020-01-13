@@ -38009,3 +38009,79 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 9c43ed4b94a3] updates
+ 1 file changed, 61 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   834c9443d0e8..9c43ed4b94a3  master -> master
+   8d4f95a26b90..834c9443d0e8  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon Jan 13 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   mailbox/cleanup
+ + 2dab60e3bdd4...0b53d5f907e2 scmi -> scmi (forced update)
+   acd35e8ec7fd..425cc0b850aa  peterz/auto-latest -> peterz/auto-latest
+   2040cf9f5903..12864088354c  peterz/core/kprobes -> peterz/core/kprobes
+ + eb333b32c7fe...80217a944786 peterz/debug/experimental -> peterz/debug/experimental (forced update)
+   407e62f52aad..099368bb10c0  peterz/irq/core -> peterz/irq/core
+ + 1c66f2e3cdbe...d161db75135f peterz/locking/core -> peterz/locking/core (forced update)
+ + f6feb59615ac...40c829f9f64c peterz/locking/jump_label -> peterz/locking/jump_label (forced update)
+ + 22f2eda8e57b...5bea19140f44 peterz/locking/percpu-rwsem -> peterz/locking/percpu-rwsem (forced update)
+   d91f3057263c..51bfb1d11d6d  peterz/locking/urgent -> peterz/locking/urgent
+ + c568cdfe2703...57ada6c50bc7 peterz/master -> peterz/master (forced update)
+ + abb4c221c944...eda14b1ec7b1 peterz/mm/tlb -> peterz/mm/tlb (forced update)
+ + 6183f8edf1c8...7944c622fd78 peterz/modules/core -> peterz/modules/core (forced update)
+ + 867d83f978cb...44d482993e4a peterz/perf/amd -> peterz/perf/amd (forced update)
+ + c55787fb50f1...4c3b29188645 peterz/perf/cgroup -> peterz/perf/cgroup (forced update)
+ + 11d2c58485ba...388fa63cdcb2 peterz/perf/core -> peterz/perf/core (forced update)
+ + f66bededbea3...7d724de0edeb peterz/perf/urgent -> peterz/perf/urgent (forced update)
+ + 587c1e31025f...219eeb1b0271 peterz/sched/core -> peterz/sched/core (forced update)
+ + 7a8e8777be97...318b8acf1875 peterz/sched/wip-deadline -> peterz/sched/wip-deadline (forced update)
+   19dbdcb8039c..dc8d37ed304e  peterz/smp/urgent -> peterz/smp/urgent
+   83bae01182ea..2707745533d6  peterz/timers/core -> peterz/timers/core
+   e0748539e3d5..f35deaff1b8e  peterz/timers/urgent -> peterz/timers/urgent
+   50cc02e599ef..b2b1d94cdfd4  peterz/x86/asm -> peterz/x86/asm
+   fae7bfcc7814..1429b568ad71  peterz/x86/cleanups -> peterz/x86/cleanups
+ + e9c6b21b7113...39d4e57f7e97 peterz/x86/rwx -> peterz/x86/rwx (forced update)
+ + 0df251137c49...23d7903ffdf3 peterz/x86/static_call -> peterz/x86/static_call (forced update)
+ * [new branch]                bkp/mailbox/cleanup -> bkp/mailbox/cleanup
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/scripts

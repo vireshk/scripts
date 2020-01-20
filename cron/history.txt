@@ -38229,3 +38229,105 @@ post-git trigger: updating grokmirror
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master a68a2bf8a3e5] updates
+ 1 file changed, 46 insertions(+)
+post-git trigger: updating grokmirror
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   4f713df1dc80..a68a2bf8a3e5  master -> master
+   d162ffa4274c..4f713df1dc80  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+
+
+ 
+Mon Jan 20 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   ltp
+   327440cf9316..f0554f590687  sched/idle -> sched/idle
+ + 2346f22ec84c...59eafce2cdef lnext/akpm -> lnext/akpm (forced update)
+ + afc40d2023b5...2c469ca5ba49 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 85cff1ab6432...de970dffa7d1 lnext/master -> lnext/master (forced update)
+ + a617565a3afb...587f6a13069e lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   b07f636fca1c..0c99ee44b892  lnext/stable -> lnext/stable
+ + ec7b10f2d023...05f24904d5f5 tip/auto-latest -> tip/auto-latest (forced update)
+ + 90558b7b3583...463f550fb47b tip/core-urgent-for-linus -> tip/core-urgent-for-linus (forced update)
+   e0478542cfd4..11e31f608b49  tip/core/core -> tip/core/core
+   d5f34153e526..35fd7a637c42  tip/core/debugobjects -> tip/core/debugobjects
+   be2eca94d144..960786422fe9  tip/core/headers -> tip/core/headers
+   2040cf9f5903..31537cf8f3f9  tip/core/kprobes -> tip/core/kprobes
+   f14bf6a350df..22a7fa8848c5  tip/core/objtool -> tip/core/objtool
+   219d54332a09..463f550fb47b  tip/core/urgent -> tip/core/urgent
+   a470552ee896..4911ee401b7c  tip/efi-urgent-for-linus -> tip/efi-urgent-for-linus
+   2278f452a12d..4444f8541dad  tip/efi/core -> tip/efi/core
+   a470552ee896..4911ee401b7c  tip/efi/urgent -> tip/efi/urgent
+   0ed9ca25894e..1fd224e35c14  tip/irq-urgent-for-linus -> tip/irq-urgent-for-linus
+   407e62f52aad..099368bb10c0  tip/irq/core -> tip/irq/core
+   0ed9ca25894e..1fd224e35c14  tip/irq/urgent -> tip/irq/urgent
+   c571b72e2b84..39e7234f00bc  tip/locking-urgent-for-linus -> tip/locking-urgent-for-linus
+   1a365e822372..f5bfdc8e3947  tip/locking/core -> tip/locking/core
+ + 02b74a798d15...c29a59e43829 tip/locking/kcsan -> tip/locking/kcsan (forced update)
+   c571b72e2b84..39e7234f00bc  tip/locking/urgent -> tip/locking/urgent
+ + ec7b10f2d023...05f24904d5f5 tip/master -> tip/master (forced update)
+   57e04eeda515..2167f1625c2f  tip/perf-urgent-for-linus -> tip/perf-urgent-for-linus
+   ceb9e77324fa..5738891229a2  tip/perf/core -> tip/perf/core
+   9f0bff1180ef..2167f1625c2f  tip/perf/urgent -> tip/perf/urgent
+   5a43b87b3c62..978370956d20  tip/ras-urgent-for-linus -> tip/ras-urgent-for-linus
+   81736abd5578..86e9f9d60eb5  tip/ras/core -> tip/ras/core
+   a3a57ddad061..978370956d20  tip/ras/urgent -> tip/ras/urgent
+   346da4d2c7ea..6cf82d559e1a  tip/sched-urgent-for-linus -> tip/sched-urgent-for-linus
+   a5e37de90e67..ccf74128d66c  tip/sched/core -> tip/sched/core
+   19dbdcb8039c..dc8d37ed304e  tip/smp-urgent-for-linus -> tip/smp-urgent-for-linus
+   19dbdcb8039c..dc8d37ed304e  tip/smp/urgent -> tip/smp/urgent
+   e0748539e3d5..de95a991bb72  tip/timers-urgent-for-linus -> tip/timers-urgent-for-linus
+   83bae01182ea..a67ca893ae0a  tip/timers/core -> tip/timers/core
+   e0748539e3d5..9f24c540f7f8  tip/timers/urgent -> tip/timers/urgent
+   4c81cb5fbabe..634d5e96e4c8  tip/tip -> tip/tip
+   af1648984828..a006483b2f97  tip/x86-urgent-for-linus -> tip/x86-urgent-for-linus
+   2579a4eefc04..d0b778880448  tip/x86/apic -> tip/x86/apic
+   f01ec4fca820..b2b1d94cdfd4  tip/x86/asm -> tip/x86/asm
+   2ef085bd110c..536a0d8e79fb  tip/x86/cache -> tip/x86/cache
+   e133f6eac3fa..1429b568ad71  tip/x86/cleanups -> tip/x86/cleanups
+   004e8dce9c55..248ed51048c4  tip/x86/core -> tip/x86/core
+   d157aa0fb241..bb02e2cb715a  tip/x86/cpu -> tip/x86/cpu
+   446e693ca30b..bbc55341b9c6  tip/x86/fpu -> tip/x86/fpu
+   4df4cb9e99f8..538f127cd3bc  tip/x86/hyperv -> tip/x86/hyperv
+   9eff303725da..8757dc970f55  tip/x86/kdump -> tip/x86/kdump
+   7f264dab5b60..186525bd6b83  tip/x86/mm -> tip/x86/mm
+   cd5a2aa89e84..a84de2fa962c  tip/x86/pti -> tip/x86/pti
+   af1648984828..a006483b2f97  tip/x86/urgent -> tip/x86/urgent
+ * [new branch]                bkp/ltp -> bkp/ltp
+ * [new branch]                tip/core/documentation -> tip/core/documentation
+ * [new tag]                   next-20200117 -> next-20200117
+ * [new tag]                   v5.5-rc6 -> v5.5-rc6
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/scripts

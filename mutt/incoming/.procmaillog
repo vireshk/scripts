@@ -1048,3 +1048,6 @@ From vireshk  Sat Dec 28 09:57:23 2019
 From vireshk  Tue Jan  7 13:24:14 2020
  Subject: [PATCH v3] cpufreq: s3c: fix unbalances of cpufreq policy refcount
   Folder: PATCH_v3_cpufreq_s3c_fix_unbalances_of_cpufreq_policy_refcou	   7446
+From vireshk  Mon Jan 20 13:12:35 2020
+ Subject: [PATCH v4] cpufreq: brcmstb-avs: fix imbalance of cpufreq policy refc
+  Folder: PATCH_v4_cpufreq_brcmstb-avs_fix_imbalance_of_cpufreq_policy	   6519

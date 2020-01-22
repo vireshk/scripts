@@ -38387,3 +38387,66 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 8dee785a84e5] updates
+ 3 files changed, 130 insertions(+)
+ create mode 100644 mutt/incoming/PATCH_v4_cpufreq_brcmstb-avs_fix_imbalance_of_cpufreq_policy_refcount.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   c4f0072503b0..8dee785a84e5  master -> master
+   a68a2bf8a3e5..c4f0072503b0  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Jan 22 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + c4de170e8ac6...f081bb7a1c7b scmi -> scmi (forced update)
+   8ead819f1bef..a48ac1c9f294  bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next
+ + 0b53d5f907e2...c4de170e8ac6 bkp/scmi -> bkp/scmi (forced update)
+ + 59eafce2cdef...55992a236e9e lnext/akpm -> lnext/akpm (forced update)
+ + 2c469ca5ba49...294a1f70ea61 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + de970dffa7d1...bc80e6ad8ee1 lnext/master -> lnext/master (forced update)
+ + 587f6a13069e...56dd35ec1a09 lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   0c99ee44b892..d96d875ef5dd  lnext/stable -> lnext/stable
+ * [new branch]                scmi-bkp -> scmi-bkp
+ * [new tag]                   next-20200121 -> next-20200121
+ * [new tag]                   v5.5-rc7 -> v5.5-rc7
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

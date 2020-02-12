@@ -1,0 +1,63 @@
+From vireshk  Wed Feb 12 09:23:01 2020
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [172.217.194.108] 	by vireshk-i7 with POP3 (fetchmail-6.3.26) 	for <vireshk@localhost> (single-drop); Wed, 12 Feb 2020 09:23:01 +0530 (IST)
+Received: by 2002:a6b:c883:0:0:0:0:0 with SMTP id y125csp5164496iof;         Tue, 11 Feb 2020 04:01:02 -0800 (PST)
+X-Google-Smtp-Source: APXvYqwMP9yJlIedSO0CtHHrkxQH6W1tZ5708+s6L2Oa8qlnfNbohqlQ34/lG3qWsmyNzaHk9Bzj
+X-Received: by 2002:adf:fa50:: with SMTP id y16mr7847828wrr.183.1581422462351;         Tue, 11 Feb 2020 04:01:02 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1581422462; cv=none;         d=google.com; s=arc-20160816;         b=GPA5q9rujPT9U94qanj8f3B6yo7igV9XfuF/+ZB/NWaElgUQVn3jI9cEd5eQGbNFWw          12R4cayls1ExNvdY/l2VYo0QScEqZjBt8HnKdZsgn5OfrXfCGyPoolDRzw/qVL9UvSBm          cFrXryvsFbTOCNcZh3qTlW/6JGL02vAB9mKFaFEjsjURZepf9oazYhoIrwj760V9jOV7          cwFcAb8QBIiiBvEaMl5FtS4xsN+8m00hIddjpWxis6xU63zqN6UhR6eNeMBwEeugkANI          mg5VqqGQkgpVddtd4wKn1Qit0OzmL5osHl3qQbipATwvsJokducFuO3Lq6vfqrP7R+/5          2nWQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=mime-version:message-id:date:subject:cc:to:from;         bh=6H4bxZ+cFtLsoQHWOZn+FdkfrnnzKN2VtdLyY1IeE5k=;         b=D9deMaO+KtimXxwfPSWFkGx3sR6n93Xa699nCpCLIOLaZG9nDYEm7RXhPiA6RWleTU          Qn2VcVJLP+UT2qbN+A6gC/yG2rTKlZeqmg5Et5vgT4clrdKjS3TC9/hLzZRQmOG17NGR          PQDPC5gNfJlbDof8sisUmFh1Q1uU4TJxmt7twEyRr/nR3uS+vgja8OF/snSCAUgsmjkc          qhZaFJhRC3J/8OvQU7VY2alDj9xTauVvmnhiRtCWTlAWq5EbZh/Os+S68R0/2xVFXcSu          BEHmC2M/z7gYp8YSP4k82zK/UX4xabx/BZFngifuY/Q6+sX/nZaVIOh9CCLHIIx0tCny          +tcw==
+ARC-Authentication-Results: i=1; mx.google.com;        spf=pass (google.com: domain of cniedermaier@dh-electronics.com designates 188.68.39.254 as permitted sender) smtp.mailfrom=cniedermaier@dh-electronics.com
+Return-Path: <cniedermaier@dh-electronics.com>
+Received: from securetransport.cubewerk.de (securetransport.cubewerk.de. [188.68.39.254])         by mx.google.com with ESMTP id 198si1995842wme.86.2020.02.11.04.01.02         for <viresh.kumar@linaro.org>;         Tue, 11 Feb 2020 04:01:02 -0800 (PST)
+Received-SPF: pass (google.com: domain of cniedermaier@dh-electronics.com designates 188.68.39.254 as permitted sender) client-ip=188.68.39.254;
+Authentication-Results: mx.google.com;        spf=pass (google.com: domain of cniedermaier@dh-electronics.com designates 188.68.39.254 as permitted sender) smtp.mailfrom=cniedermaier@dh-electronics.com
+Received: from DHPWEX01.DH-ELECTRONICS.ORG (unknown [188.192.239.38]) 	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) 	(No client certificate requested) 	by securetransport.cubewerk.de (Postfix) with ESMTPSA id 8227D5E96D; 	Tue, 11 Feb 2020 13:00:28 +0100 (CET)
+Received: from DHPWEX01.DH-ELECTRONICS.ORG (10.64.2.30) by  DHPWEX01.DH-ELECTRONICS.ORG (10.64.2.30) with Microsoft SMTP Server  (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.2.397.3;  Tue, 11 Feb 2020 13:00:08 +0100
+Received: from Stretch.dh-electronics.org (10.64.6.183) by  DHPWEX01.DH-ELECTRONICS.ORG (10.64.2.30) with Microsoft SMTP Server  (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.2.397.3  via Frontend Transport; Tue, 11 Feb 2020 13:00:08 +0100
+From: Christoph Niedermaier <cniedermaier@dh-electronics.com>
+To: <linux-arm-kernel@lists.infradead.org>, <rjw@rjwysocki.net>
+CC: <Anson.Huang@nxp.com>, <viresh.kumar@linaro.org>, 	<sebastien.szymanski@armadeus.com>, <festevam@gmail.com>, 	<shawnguo@kernel.org>, Christoph Niedermaier 	<cniedermaier@dh-electronics.com>
+Subject: [PATCH] cpufreq: imx6q: Fixes unwanted cpu overclocking on i.MX6ULL
+Date: Tue, 11 Feb 2020 12:58:07 +0100
+Message-ID: <20200211115807.57292-1-cniedermaier@dh-electronics.com>
+X-Mailer: git-send-email 2.11.0
+X-klartext: yes
+MIME-Version: 1.0
+Content-Type: text/plain
+Status: RO
+Content-Length: 1242
+Lines: 32
+
+imx6ul_opp_check_speed_grading is called for both i.MX6UL and i.MX6ULL.
+Since the i.MX6ULL was introduced to a separate ocotp compatible node
+later, it is possible that the i.MX6ULL has also dtbs with
+"fsl,imx6ull-ocotp". On a system without nvmem-cell speed grade a
+missing check on this node causes a driver fail without considering
+the cpu speed grade.
+
+This patch prevents unwanted cpu overclocking on i.MX6ULL with compatible
+node "fsl,imx6ull-ocotp" in old dtbs without nvmem-cell speed grade.
+
+Fixes: 2733fb0d0699 ("cpufreq: imx6q: read OCOTP through nvmem for imx6ul/imx6ull")
+Signed-off-by: Christoph Niedermaier <cniedermaier@dh-electronics.com>
+---
+ drivers/cpufreq/imx6q-cpufreq.c | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/drivers/cpufreq/imx6q-cpufreq.c b/drivers/cpufreq/imx6q-cpufreq.c
+index 648a09a1778a..1fcbbd53a48a 100644
+--- a/drivers/cpufreq/imx6q-cpufreq.c
++++ b/drivers/cpufreq/imx6q-cpufreq.c
+@@ -281,6 +281,9 @@ static int imx6ul_opp_check_speed_grading(struct device *dev)
+ 
+ 		np = of_find_compatible_node(NULL, NULL, "fsl,imx6ul-ocotp");
+ 		if (!np)
++			np = of_find_compatible_node(NULL, NULL,
++						     "fsl,imx6ull-ocotp");
++		if (!np)
+ 			return -ENOENT;
+ 
+ 		base = of_iomap(np, 0);
+-- 
+2.11.0
+

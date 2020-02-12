@@ -1051,3 +1051,9 @@ From vireshk  Tue Jan  7 13:24:14 2020
 From vireshk  Mon Jan 20 13:12:35 2020
  Subject: [PATCH v4] cpufreq: brcmstb-avs: fix imbalance of cpufreq policy refc
   Folder: PATCH_v4_cpufreq_brcmstb-avs_fix_imbalance_of_cpufreq_policy	   6519
+From vireshk  Tue Feb 11 12:55:45 2020
+ Subject: [PATCH] cpufreq: ti-cpufreq: Add support for OPP_PLUS
+  Folder: PATCH_cpufreq_ti-cpufreq_Add_support_for_OPP_PLUS.mbox	   6313
+From vireshk  Wed Feb 12 09:23:01 2020
+ Subject: [PATCH] cpufreq: imx6q: Fixes unwanted cpu overclocking on i.MX6ULL
+  Folder: PATCH_cpufreq_imx6q_Fixes_unwanted_cpu_overclocking_on_i.MX6	   5220

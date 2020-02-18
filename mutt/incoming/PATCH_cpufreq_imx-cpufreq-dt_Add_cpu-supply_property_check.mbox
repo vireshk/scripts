@@ -1,0 +1,53 @@
+From vireshk  Mon Feb 17 15:19:14 2020
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [74.125.68.109] 	by vireshk-i7 with POP3 (fetchmail-6.3.26) 	for <vireshk@localhost> (single-drop); Mon, 17 Feb 2020 15:19:14 +0530 (IST)
+Received: by 2002:a6b:c883:0:0:0:0:0 with SMTP id y125csp4991376iof;         Mon, 17 Feb 2020 01:48:42 -0800 (PST)
+X-Google-Smtp-Source: APXvYqzSpmbhtNNlQ92YtTNSNHDGepF2ntJANyein6YugUOShk+QUp9azCO1n/ZMBV2cZza7z0cZ
+X-Received: by 2002:a17:906:c7d5:: with SMTP id dc21mr14563377ejb.316.1581932922403;         Mon, 17 Feb 2020 01:48:42 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1581932922; cv=none;         d=google.com; s=arc-20160816;         b=z0DpqRiLTBEpX7+y5YZEnXAJud/lvBLke+GbhcbwUI+89VyjT57A6Jve1wwBl8t5p2          4u8u6P0dMp7NXyl8PrSrKX+aUj56bZRhPdMhXALcGOH7UfS4NRSiiU44VBWTSxNVH0qD          zYyvVE7GhyzRpM/26joHEJ6Loantc0rKrJlkNrHHNo0YseAx6S/ZwSPeQ7rwv0TjJJq0          FITreD9DPfslxob6j4OZ0jX7pk5ZbBoAsDSaQH1Wit5HqyXno+8RxGuip6iu863RSc0g          qIP1HVi2F18IOcADYJsl8od8FIIdissLihhae+NzBFjkH7oscZd11OWFicanavHdW8KV          A64A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=message-id:date:subject:cc:to:from;         bh=EKQuITNqxs57IPYwN1T10R91lSQSP/kEoR8KinKMDuo=;         b=Woj9FutAWYp2vulvbL5kJp4iXvAZj7esdWAffKZxdSz2auO5hTtmgJFEKmr3NsxpR8          ox91NE4HzNw1rDoMwxvSgWIruR4Wd0JzuyZCMcUs2UMn6ZyijUG1/y5k2+dks+DYm4On          V46S8Uxo7OzJipETYc8t6UmnjF1nvOUJlWUYH6FeuuuOsGddEH1gFxAhZUy9JV4l5P0O          8vZfDsda2T18GT4SPbeb8kBW7XGTAK61SAjg+CrKoMtZiMaa1SYpeX28mrcytZFZUqGO          Yw7N0DO9zdSCzqevyLnSi8zgV6FzAFOobe3zaX0T0/gVE8oOMWq4ivB775VvXKWXrr4o          qZ0w==
+ARC-Authentication-Results: i=1; mx.google.com;        spf=pass (google.com: domain of anson.huang@nxp.com designates 92.121.34.13 as permitted sender) smtp.mailfrom=Anson.Huang@nxp.com;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=nxp.com
+Return-Path: <Anson.Huang@nxp.com>
+Received: from inva020.nxp.com (inva020.nxp.com. [92.121.34.13])         by mx.google.com with ESMTPS id e5si7943854edy.146.2020.02.17.01.48.42         for <viresh.kumar@linaro.org>         (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);         Mon, 17 Feb 2020 01:48:42 -0800 (PST)
+Received-SPF: pass (google.com: domain of anson.huang@nxp.com designates 92.121.34.13 as permitted sender) client-ip=92.121.34.13;
+Authentication-Results: mx.google.com;        spf=pass (google.com: domain of anson.huang@nxp.com designates 92.121.34.13 as permitted sender) smtp.mailfrom=Anson.Huang@nxp.com;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=nxp.com
+Received: from inva020.nxp.com (localhost [127.0.0.1]) 	by inva020.eu-rdc02.nxp.com (Postfix) with ESMTP id 1DD311A03D5; 	Mon, 17 Feb 2020 10:48:42 +0100 (CET)
+Received: from invc005.ap-rdc01.nxp.com (invc005.ap-rdc01.nxp.com [165.114.16.14]) 	by inva020.eu-rdc02.nxp.com (Postfix) with ESMTP id D20DD1A03B2; 	Mon, 17 Feb 2020 10:48:36 +0100 (CET)
+Received: from localhost.localdomain (shlinux2.ap.freescale.net [10.192.224.44]) 	by invc005.ap-rdc01.nxp.com (Postfix) with ESMTP id 46132402A7; 	Mon, 17 Feb 2020 17:48:30 +0800 (SGT)
+From: Anson Huang <Anson.Huang@nxp.com>
+To: rjw@rjwysocki.net, 	viresh.kumar@linaro.org, 	shawnguo@kernel.org, 	s.hauer@pengutronix.de, 	kernel@pengutronix.de, 	festevam@gmail.com, 	linux-pm@vger.kernel.org, 	linux-arm-kernel@lists.infradead.org, 	linux-kernel@vger.kernel.org
+Cc: Linux-imx@nxp.com
+Subject: [PATCH] cpufreq: imx-cpufreq-dt: Add "cpu-supply" property check
+Date: Mon, 17 Feb 2020 17:42:55 +0800
+Message-Id: <1581932575-13177-1-git-send-email-Anson.Huang@nxp.com>
+X-Mailer: git-send-email 2.7.4
+X-Virus-Scanned: ClamAV using ClamSMTP
+
+The cpufreq-dt driver allows cpufreq driver enabled without valid
+regulator assigned, however, all i.MX platforms using cpufreq-dt
+driver now require valid regulator, add "cpu-supply" property check
+to avoid i.MX platforms' cpufreq enabled without valid regulator
+and lead to system unstable.
+
+Signed-off-by: Anson Huang <Anson.Huang@nxp.com>
+---
+ drivers/cpufreq/imx-cpufreq-dt.c | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/drivers/cpufreq/imx-cpufreq-dt.c b/drivers/cpufreq/imx-cpufreq-dt.c
+index 6cb8193..0e29d88 100644
+--- a/drivers/cpufreq/imx-cpufreq-dt.c
++++ b/drivers/cpufreq/imx-cpufreq-dt.c
+@@ -31,6 +31,9 @@ static int imx_cpufreq_dt_probe(struct platform_device *pdev)
+ 	int speed_grade, mkt_segment;
+ 	int ret;
+ 
++	if (!of_find_property(cpu_dev->of_node, "cpu-supply", NULL))
++		return -ENODEV;
++
+ 	ret = nvmem_cell_read_u32(cpu_dev, "speed_grade", &cell_value);
+ 	if (ret)
+ 		return ret;
+-- 
+2.7.4
+

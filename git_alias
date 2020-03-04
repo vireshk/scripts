@@ -40,7 +40,7 @@ alias gampcp='mv /media/psf/Home/Documents/[1-9].txt ~/Downloads/patches/'
 alias gamp='git am -3 ~/Downloads/patches/*'
 alias cgamp='dos2unix ~/Downloads/patches/*'
 alias dgamp='rm -rf ~/Downloads/patches/*'
-alias mgamp='git am -3 ~/scripts/mutt/incoming/*.mbox'
+alias mgamp='git am -s -3 ~/scripts/mutt/incoming/*.mbox'
 
 alias gr='git rebase -i'
 alias tgr='GIT_EDITOR=cat gr'

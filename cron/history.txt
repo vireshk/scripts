@@ -39985,3 +39985,57 @@ post-git trigger: updating grokmirror
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 2df0964097a9] updates
+ 7 files changed, 348 insertions(+), 3192 deletions(-)
+ create mode 100644 mutt/incoming/PATCH_2-3_cpufreq_imx6q_fix_error_handling.mbox
+ create mode 100644 mutt/incoming/PATCH_3-3_cpufreq_imx6q_read_OCOTP_through_nvmem_for_imx6q.mbox
+ delete mode 100644 mutt/incoming/PATCH_v2_1-1_lap-syscalls_Update_syscall_numbers.mbox
+ delete mode 100644 mutt/incoming/Re_PATCH_V3_00-10_Add_new_LTP_tests_related_to_fsmount_family_of_syscalls.mbox
+post-git trigger: updating grokmirror
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   f457c98fb15e..2df0964097a9  master -> master
+   82d78427fb71..f457c98fb15e  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Thu Mar  5 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   a30f8a91f3c2..4bd8459b6c3f  bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

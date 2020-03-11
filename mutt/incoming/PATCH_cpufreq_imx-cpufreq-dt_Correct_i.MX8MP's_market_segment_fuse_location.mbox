@@ -1,0 +1,66 @@
+From vireshk  Tue Mar 10 16:33:24 2020
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [74.125.24.108] 	by vireshk-i7 with POP3 (fetchmail-6.3.26) 	for <vireshk@localhost> (single-drop); Tue, 10 Mar 2020 16:33:24 +0530 (IST)
+Received: by 2002:a6b:9202:0:0:0:0:0 with SMTP id u2csp412570iod;         Mon, 9 Mar 2020 22:54:46 -0700 (PDT)
+X-Google-Smtp-Source: ADFU+vt13NM5kYbGicMY+rd7Yb+ciRyq4BIUGwWtQX1RIFXecxwgnyzmr4zc6XzwTiNSc98N4v7f
+X-Received: by 2002:a05:6402:1a27:: with SMTP id be7mr17082300edb.182.1583819686606;         Mon, 09 Mar 2020 22:54:46 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1583819686; cv=none;         d=google.com; s=arc-20160816;         b=JAiFAz9ov6UoKU116M/9UTe09gcE8lacvDfQ1jptrB3c+jCHqlZ07NL/dFfu9QrAxo          BEiwCU8XyRud783Aqro8Wc8D//UrV6ElbONqgpSETIaynJFSRpISe1TB9NTGdmj4oS4x          mm5TSLf7y2f0iVV99bsPTR7+7buiMLp4sZK63IiIo0+NOmWG5WjXi0s029jRRTBccwXQ          VR7zg032y7VziTeEYU/5+olYS8FE8IIEvzkwYYQ17w7Htq5YwxBGeolITlfSbWjA7Akx          t4+QIuNTd2Sl1SWXRn3ufQILrzEdsNI2wwhAWc33LYfYmRh/6SpKsffl+ZTWFzAoEXFf          rEzQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=message-id:date:subject:cc:to:from;         bh=60wgqNWOno5DHuysXsPTmCpOAOZdtmNPaEpowdoGVJM=;         b=VA9Ff96t6moqhYBLNaQ6GXG+pzNqJkOvZaAPX9nmmWBxyfRZyo5QNGNGsnr5S52fV1          RmvPcWGKHgIr+R4ZCkk3/wOERud4MPAuWE34ZBJnNirrFUn5CzpjkDhq8XPKxUwsYjXa          Q42HNjjdTKwQhGiNFFNGWHYd9Q0tsB757gILoxmdk09V4htin426nh0VE2fopwn05RJ8          jQIVsCsUSrrFRqOfCkbToNBrhMXDs8PlO95ztr+Ou8wc33G7XyngyMzBvtXWrCuuYhVS          WmBdjYIc56zDr8Zbk/LA2bdpoEWOSk7AykgcVqHnBT95IqQFxd2P9z3LLK++uis1TUl0          F0Og==
+ARC-Authentication-Results: i=1; mx.google.com;        spf=pass (google.com: domain of anson.huang@nxp.com designates 92.121.34.21 as permitted sender) smtp.mailfrom=Anson.Huang@nxp.com;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=nxp.com
+Return-Path: <Anson.Huang@nxp.com>
+Received: from inva021.nxp.com (inva021.nxp.com. [92.121.34.21])         by mx.google.com with ESMTPS id i19si9701530edu.415.2020.03.09.22.54.46         for <viresh.kumar@linaro.org>         (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);         Mon, 09 Mar 2020 22:54:46 -0700 (PDT)
+Received-SPF: pass (google.com: domain of anson.huang@nxp.com designates 92.121.34.21 as permitted sender) client-ip=92.121.34.21;
+Authentication-Results: mx.google.com;        spf=pass (google.com: domain of anson.huang@nxp.com designates 92.121.34.21 as permitted sender) smtp.mailfrom=Anson.Huang@nxp.com;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=nxp.com
+Received: from inva021.nxp.com (localhost [127.0.0.1]) 	by inva021.eu-rdc02.nxp.com (Postfix) with ESMTP id 4439F200431; 	Tue, 10 Mar 2020 06:54:46 +0100 (CET)
+Received: from invc005.ap-rdc01.nxp.com (invc005.ap-rdc01.nxp.com [165.114.16.14]) 	by inva021.eu-rdc02.nxp.com (Postfix) with ESMTP id 8A960200438; 	Tue, 10 Mar 2020 06:54:40 +0100 (CET)
+Received: from localhost.localdomain (shlinux2.ap.freescale.net [10.192.224.44]) 	by invc005.ap-rdc01.nxp.com (Postfix) with ESMTP id 79D9B40245; 	Tue, 10 Mar 2020 13:54:33 +0800 (SGT)
+From: Anson Huang <Anson.Huang@nxp.com>
+To: rjw@rjwysocki.net, 	viresh.kumar@linaro.org, 	shawnguo@kernel.org, 	s.hauer@pengutronix.de, 	kernel@pengutronix.de, 	festevam@gmail.com, 	abel.vesa@nxp.com, 	linux-pm@vger.kernel.org, 	linux-arm-kernel@lists.infradead.org, 	linux-kernel@vger.kernel.org
+Cc: Linux-imx@nxp.com
+Subject: [PATCH] cpufreq: imx-cpufreq-dt: Correct i.MX8MP's market segment fuse location
+Date: Tue, 10 Mar 2020 13:48:16 +0800
+Message-Id: <1583819296-7763-1-git-send-email-Anson.Huang@nxp.com>
+X-Mailer: git-send-email 2.7.4
+X-Virus-Scanned: ClamAV using ClamSMTP
+Content-Length: 1499
+Lines: 38
+
+i.MX8MP's market segment fuse field is bit[6:5], correct it.
+
+Fixes: 83fe39ad0a48 ("cpufreq: imx-cpufreq-dt: Add i.MX8MP support")
+Signed-off-by: Anson Huang <Anson.Huang@nxp.com>
+---
+ drivers/cpufreq/imx-cpufreq-dt.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+
+diff --git a/drivers/cpufreq/imx-cpufreq-dt.c b/drivers/cpufreq/imx-cpufreq-dt.c
+index 0e29d88..de206d2 100644
+--- a/drivers/cpufreq/imx-cpufreq-dt.c
++++ b/drivers/cpufreq/imx-cpufreq-dt.c
+@@ -19,6 +19,8 @@
+ #define IMX8MN_OCOTP_CFG3_SPEED_GRADE_MASK	(0xf << 8)
+ #define OCOTP_CFG3_MKT_SEGMENT_SHIFT    6
+ #define OCOTP_CFG3_MKT_SEGMENT_MASK     (0x3 << 6)
++#define IMX8MP_OCOTP_CFG3_MKT_SEGMENT_SHIFT    5
++#define IMX8MP_OCOTP_CFG3_MKT_SEGMENT_MASK     (0x3 << 5)
+ 
+ /* cpufreq-dt device registered by imx-cpufreq-dt */
+ static struct platform_device *cpufreq_dt_pdev;
+@@ -45,7 +47,13 @@ static int imx_cpufreq_dt_probe(struct platform_device *pdev)
+ 	else
+ 		speed_grade = (cell_value & OCOTP_CFG3_SPEED_GRADE_MASK)
+ 			      >> OCOTP_CFG3_SPEED_GRADE_SHIFT;
+-	mkt_segment = (cell_value & OCOTP_CFG3_MKT_SEGMENT_MASK) >> OCOTP_CFG3_MKT_SEGMENT_SHIFT;
++
++	if (of_machine_is_compatible("fsl,imx8mp"))
++		mkt_segment = (cell_value & IMX8MP_OCOTP_CFG3_MKT_SEGMENT_MASK)
++			       >> IMX8MP_OCOTP_CFG3_MKT_SEGMENT_SHIFT;
++	else
++		mkt_segment = (cell_value & OCOTP_CFG3_MKT_SEGMENT_MASK)
++			       >> OCOTP_CFG3_MKT_SEGMENT_SHIFT;
+ 
+ 	/*
+ 	 * Early samples without fuses written report "0 0" which may NOT
+-- 
+2.7.4
+

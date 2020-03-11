@@ -1084,3 +1084,9 @@ From vireshk  Tue Mar  3 07:52:46 2020
 From vireshk  Tue Mar  3 07:52:48 2020
  Subject: [PATCH 3/3] cpufreq: imx6q: read OCOTP through nvmem for imx6q
   Folder: PATCH_3-3_cpufreq_imx6q_read_OCOTP_through_nvmem_for_imx6q.m	  12284
+From vireshk  Tue Mar 10 16:33:24 2020
+ Subject: [PATCH] cpufreq: imx-cpufreq-dt: Correct i.MX8MP's market segment fus
+  Folder: PATCH_cpufreq_imx-cpufreq-dt_Correct_i.MX8MP's_market_segmen	   5289
+From vireshk  Tue Mar 10 16:33:24 2020
+ Subject: [PATCH] cpufreq: imx-cpufreq-dt: Correct i.MX8MP's market segment fus
+  Folder: PATCH_cpufreq_imx-cpufreq-dt_Correct_i.MX8MP's_market_segmen	   5289

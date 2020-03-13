@@ -1090,3 +1090,6 @@ From vireshk  Tue Mar 10 16:33:24 2020
 From vireshk  Tue Mar 10 16:33:24 2020
  Subject: [PATCH] cpufreq: imx-cpufreq-dt: Correct i.MX8MP's market segment fus
   Folder: PATCH_cpufreq_imx-cpufreq-dt_Correct_i.MX8MP's_market_segmen	   5289
+From vireshk  Wed Feb 19 13:37:07 2020
+ Subject: [PATCH v2 10/14] cpufreq: dt: Allow platform specific intermediate ca
+  Folder: PATCH_v2_10-14_cpufreq_dt_Allow_platform_specific_intermedia	  10609

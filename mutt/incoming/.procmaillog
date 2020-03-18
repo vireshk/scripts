@@ -1093,3 +1093,6 @@ From vireshk  Tue Mar 10 16:33:24 2020
 From vireshk  Wed Feb 19 13:37:07 2020
  Subject: [PATCH v2 10/14] cpufreq: dt: Allow platform specific intermediate ca
   Folder: PATCH_v2_10-14_cpufreq_dt_Allow_platform_specific_intermedia	  10609
+From vireshk  Tue Mar 17 10:15:52 2020
+ Subject: [PATCH] cpufreq: imx6q-cpufreq: Improve the logic of -EPROBE_DEFER ha
+  Folder: PATCH_cpufreq_imx6q-cpufreq_Improve_the_logic_of_-EPROBE_DEF	   4556

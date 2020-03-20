@@ -1096,3 +1096,6 @@ From vireshk  Wed Feb 19 13:37:07 2020
 From vireshk  Tue Mar 17 10:15:52 2020
  Subject: [PATCH] cpufreq: imx6q-cpufreq: Improve the logic of -EPROBE_DEFER ha
   Folder: PATCH_cpufreq_imx6q-cpufreq_Improve_the_logic_of_-EPROBE_DEF	   4556
+From vireshk  Mon Mar 16 10:18:11 2020
+ Subject: [PATCH v2] cpufreq: qcom: Add support for krait based socs
+  Folder: PATCH_v2_cpufreq_qcom_Add_support_for_krait_based_socs.mbox	  18382

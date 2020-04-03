@@ -158,7 +158,7 @@ elif [ $2 = x86 ]; then
 #	CROSS_COMPILE="\"ccache gcc\""
 	CROSS_COMPILE=
 	MISMATCH=
-	FLAGS="LOCALVERSION=-custom"
+	FLAGS="LOCALVERSION=-buggy2"
 	carch="x86"
 	IMAGE=
 else

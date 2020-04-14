@@ -41234,3 +41234,76 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master ca026fcc933f] updates
+ 1 file changed, 54 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   92ae06cd604b..ca026fcc933f  master -> master
+   f83eb1da2479..92ae06cd604b  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Tue Apr 14 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   bb6d3fb354c5..aca48b61f963  opp/linux-next -> opp/linux-next
+   86dfa5bec249..0214da7cce20  pm/acpi -> pm/acpi
+ - [deleted]                   pm/acpi-ec-work
+ + 5e3ada361a7a...1846b08e7d4f pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 71558503c7c2...0e938563aad2 pm/intel_pstate-hwp-passive -> pm/intel_pstate-hwp-passive (forced update)
+ + ca1afdfb8775...5791800962b7 pm/intel_pstate-passive -> pm/intel_pstate-passive (forced update)
+ + 5e3ada361a7a...d3e5e977abe2 pm/linux-next -> pm/linux-next (forced update)
+   fb33c6510d55..d3e5e977abe2  pm/master -> pm/master
+   bce74b1feb01..a31434bcd4cb  pm/pm -> pm/pm
+   786c87cd312a..eaec20c7362c  pm/pnp -> pm/pnp
+ + 5e3ada361a7a...61fafa3ac67b pm/testing -> pm/testing (forced update)
+   03758d60265c..aca48b61f963  pmko/opp/linux-next -> pmko/opp/linux-next
+ * [new branch]                pm/acpi-ec -> pm/acpi-ec
+ * [new branch]                pm/acpi-s2idle-fixup -> pm/acpi-s2idle-fixup
+ * [new branch]                pm/pm-sleep-core -> pm/pm-sleep-core
+ * [new tag]                   acpi-5.7-rc1 -> acpi-5.7-rc1
+ * [new tag]                   acpi-5.7-rc1-2 -> acpi-5.7-rc1-2
+ * [new tag]                   acpi-5.7-rc1-3 -> acpi-5.7-rc1-3
+ * [new tag]                   pm-5.7-rc1 -> pm-5.7-rc1
+ * [new tag]                   pm-5.7-rc1-2 -> pm-5.7-rc1-2
+ * [new tag]                   pm-5.7-rc1-3 -> pm-5.7-rc1-3
+ * [new tag]                   pnp-5.7-rc1 -> pnp-5.7-rc1
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

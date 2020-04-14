@@ -1099,3 +1099,6 @@ From vireshk  Tue Mar 17 10:15:52 2020
 From vireshk  Mon Mar 16 10:18:11 2020
  Subject: [PATCH v2] cpufreq: qcom: Add support for krait based socs
   Folder: PATCH_v2_cpufreq_qcom_Add_support_for_krait_based_socs.mbox	  18382
+From vireshk  Thu Apr  9 10:14:34 2020
+ Subject: [PATCH 01/21] opp: Manage empty OPP tables with clk handle
+  Folder: PATCH_01-21_opp_Manage_empty_OPP_tables_with_clk_handle.mbox	   7515

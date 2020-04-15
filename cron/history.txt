@@ -41307,3 +41307,63 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 7e0cfb18fef5] updates
+ 4 files changed, 169 insertions(+), 413 deletions(-)
+ create mode 100644 mutt/incoming/PATCH_01-21_opp_Manage_empty_OPP_tables_with_clk_handle.mbox
+ delete mode 100644 mutt/incoming/PATCH_v2_cpufreq_qcom_Add_support_for_krait_based_socs.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   ca026fcc933f..7e0cfb18fef5  master -> master
+   92ae06cd604b..ca026fcc933f  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Apr 15 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   bb6d3fb354c5..aca48b61f963  bkp/opp/linux-next -> bkp/opp/linux-next
+   8f3d9f354286..8632e9b5645b  origin/HEAD -> origin/HEAD
+   8f3d9f354286..8632e9b5645b  origin/master -> origin/master
+ + 1846b08e7d4f...cc84eba41895 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   d3e5e977abe2..8f3d9f354286  pm/linux-next -> pm/linux-next
+   d3e5e977abe2..8f3d9f354286  pm/master -> pm/master
+ + 61fafa3ac67b...38aeec472905 pm/testing -> pm/testing (forced update)
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

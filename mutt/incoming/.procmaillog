@@ -1102,3 +1102,6 @@ From vireshk  Mon Mar 16 10:18:11 2020
 From vireshk  Thu Apr  9 10:14:34 2020
  Subject: [PATCH 01/21] opp: Manage empty OPP tables with clk handle
   Folder: PATCH_01-21_opp_Manage_empty_OPP_tables_with_clk_handle.mbox	   7515
+From vireshk  Wed Apr 15 13:46:46 2020
+ Subject: [PATCH] cpufreq: omap: Build driver by default for ARCH_OMAP2PLUS
+  Folder: PATCH_cpufreq_omap_Build_driver_by_default_for_ARCH_OMAP2PLU	   5989

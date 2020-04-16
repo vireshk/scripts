@@ -1,0 +1,53 @@
+From vireshk  Wed Apr 15 13:46:46 2020
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [172.217.194.108] 	by vireshk-i7 with POP3 (fetchmail-6.3.26) 	for <vireshk@localhost> (single-drop); Wed, 15 Apr 2020 13:46:46 +0530 (IST)
+Received: by 2002:a6b:5a0c:0:0:0:0:0 with SMTP id o12csp308896iob;         Wed, 15 Apr 2020 01:16:16 -0700 (PDT)
+X-Received: by 2002:a2e:571a:: with SMTP id l26mr986564ljb.12.1586938576434;         Wed, 15 Apr 2020 01:16:16 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1586938576; cv=none;         d=google.com; s=arc-20160816;         b=aXaXeVyJBlNli/2TShaFXR8plu8VjyKZ+zQ6I/kQQTXrkDInpo0kWzuQBenfdOzVEE          rmRnKC9GgbbOFFI2s0Tl/456gx5WlNuUIw/WuPIFWJ30tAv3BVUMYqx+wgJGb59q/el/          pkAuQUSMWKTFDP9SfYhaxVI1pG1oYNyNkr807eU71sHcA3ui94sNd8Ayh30TYAwZzMk8          XmEm3RNLobSNoW9kxy2LLmI4rWfqrK2ysJM0hWr/g/8e2wKfyts8V3pU0jCqL+9iKZji          CywDAuFDvAQmVGbVNRD0C0UsJFq24O1CWRgB13PJ4TUt1lrKbbjFA7PEEzV7G3/tDj1X          7aVw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from:dkim-signature;         bh=j0qOETrZoEuB/v/v2DIKaf1AzjYUQKI4o/HWYtk5Q1I=;         b=oPSJuezEw1cTP/PI0bwk4Q3Yx2K47ouXGo/V0SvB5gxKlyL3uquuk61ychycZFoESf          lysGVK/PPjGwGkQsJ1VObu4XNsUcUOAMN+kfXqL5T4Ugqrn4FgLdq3jdmm2Di1dSL9Mm          3FKZ+eIclaBGcJ9VM/z3NQ2LHJhRUq6QJdUcuXPIS1Q2WgIFETn5JkkDS5dDuHPOUPC/          fN8CjWbQhJhiadbYqRB41h7KMx3x0WUAAfjdvVZoexFbx3Yi5uPhvwTrYOqkQCmWZvP5          XRZFJeYDCAlpFj8PSUoFXLnC/30zJwYiY9SxcFJ+jwFe0cvRCOdYX1qmskxYN9nhnyht          qtiQ==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@linaro.org header.s=google header.b=BBJ4B47p;        spf=pass (google.com: domain of anders.roxell@linaro.org designates 209.85.220.65 as permitted sender) smtp.mailfrom=anders.roxell@linaro.org;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=linaro.org
+Return-Path: <anders.roxell@linaro.org>
+Received: from mail-sor-f65.google.com (mail-sor-f65.google.com. [209.85.220.65])         by mx.google.com with SMTPS id c5sor9463827ljk.42.2020.04.15.01.16.16         for <viresh.kumar@linaro.org>         (Google Transport Security);         Wed, 15 Apr 2020 01:16:16 -0700 (PDT)
+Received-SPF: pass (google.com: domain of anders.roxell@linaro.org designates 209.85.220.65 as permitted sender) client-ip=209.85.220.65;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@linaro.org header.s=google header.b=BBJ4B47p;        spf=pass (google.com: domain of anders.roxell@linaro.org designates 209.85.220.65 as permitted sender) smtp.mailfrom=anders.roxell@linaro.org;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=linaro.org
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=linaro.org; s=google;         h=from:to:cc:subject:date:message-id:mime-version          :content-transfer-encoding;         bh=j0qOETrZoEuB/v/v2DIKaf1AzjYUQKI4o/HWYtk5Q1I=;         b=BBJ4B47pV461JB8hafdD1HSs9rFcq4u/CFI1vxC2XLf+nY9DxQMFZCO0wkA8fnwRzV          z5EByMRPSpTtdRUAtlJVw/h/Veuw28jcYkYxdKA7e+qhX7RysmAnOB+Pbp2bt3qxX6oK          KusrlgqE90QTNG5/FaUlh8qhzaZG/XVFCYE+7Y7ZPpwMUmRneVlBQDGvPIAOm/4MxaA0          h4xwXWCkU2z8N1Bp2mKuTmugUO5q4BcMEHynKVTeNOBL8/9FYNqHYsntP548HpyRZ5sx          cTQVxQLrF510PYD//23HZ4zPqP5UT1RohIHiwBj8iyugPb6xjWcaS4vbdQAfs7UPNS5C          qOUg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=1e100.net; s=20161025;         h=x-gm-message-state:from:to:cc:subject:date:message-id:mime-version          :content-transfer-encoding;         bh=j0qOETrZoEuB/v/v2DIKaf1AzjYUQKI4o/HWYtk5Q1I=;         b=p4xa7pYhTJZ7FNIMwHu+ibQmSO0I5rmCfkK7qoiF5C4ZYcg8LvWFq2ID38LD8bIgzL          U0LXcuI6xfaYC0Ka34nntgfL14Us/veADgr0IDIt3nxEn4VsIRozWKrStDX+HARvILWN          J1Dfp9Nkfimd8jnWUGWhbUkMPXcQiOQPDbdcMszKNuarygDBJBMbzRjQrHiLb5M/47dh          7JodQm+n64jEnVwlObFPuf00XD+qQnWD1iMjphMl8fODis7ZL0Jcgo3BRbs5lkeqdGD7          SNXijJVAW6gtH+FxZspua0mtzkyTpZ2RqP7kjGiP6zu1wCZ67cAfMNmpexlXbhpPHpkU          forQ==
+X-Gm-Message-State: AGi0Pub6Byg48NU+nchskBwXvt8b7YBGWpxa+AqaCWkdiMNW336HjRZ4 	ckRrW3IutBZRfaZKA1fNrE+RWVd3
+X-Google-Smtp-Source: APiQypKK2eFrxitYeiW5ZObqNZGRMQRvh8bM+g566NNhmNjDwnVsifl7LxVz7UJKIboEFl0ITTAVoQ==
+X-Received: by 2002:a2e:914c:: with SMTP id q12mr2538316ljg.124.1586938575988;         Wed, 15 Apr 2020 01:16:15 -0700 (PDT)
+Return-Path: <anders.roxell@linaro.org>
+Received: from localhost (c-c33270d5.07-21-73746f28.bbcust.telenor.se. [213.112.50.195])         by smtp.gmail.com with ESMTPSA id f21sm12066627lfk.94.2020.04.15.01.16.15         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Wed, 15 Apr 2020 01:16:15 -0700 (PDT)
+From: Anders Roxell <anders.roxell@linaro.org>
+To: rjw@rjwysocki.net, 	viresh.kumar@linaro.org
+Cc: linux-pm@vger.kernel.org, 	linux-kernel@vger.kernel.org, 	Anders Roxell <anders.roxell@linaro.org>
+Subject: [PATCH] cpufreq: omap: Build driver by default for ARCH_OMAP2PLUS
+Date: Wed, 15 Apr 2020 10:15:59 +0200
+Message-Id: <20200415081600.29904-1-anders.roxell@linaro.org>
+X-Mailer: git-send-email 2.20.1
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+When building the mult_v7_defconfig, ARM_TI_CPUFREQ doesn't get enabled
+evenwhen ARCH_OMAP(3|4) is selected. Build ARM_TI_CPUFREQ by default for
+ARCH_OMAP2PLUS.
+
+Signed-off-by: Anders Roxell <anders.roxell@linaro.org>
+---
+ drivers/cpufreq/Kconfig.arm | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/drivers/cpufreq/Kconfig.arm b/drivers/cpufreq/Kconfig.arm
+index 15c1a1231516..9481292981f0 100644
+--- a/drivers/cpufreq/Kconfig.arm
++++ b/drivers/cpufreq/Kconfig.arm
+@@ -317,6 +317,7 @@ config ARM_TEGRA186_CPUFREQ
+ config ARM_TI_CPUFREQ
+ 	bool "Texas Instruments CPUFreq support"
+ 	depends on ARCH_OMAP2PLUS
++	default ARCH_OMAP2PLUS
+ 	help
+ 	  This driver enables valid OPPs on the running platform based on
+ 	  values contained within the SoC in use. Enable this in order to
+-- 
+2.20.1
+

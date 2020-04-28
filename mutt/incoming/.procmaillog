@@ -1111,3 +1111,6 @@ From vireshk  Mon Apr 20 13:34:47 2020
 From vireshk  Mon Apr 20 13:34:49 2020
  Subject: [PATCH 2/2] cpufreq: imx-cpufreq-dt: support i.MX7ULP
   Folder: PATCH_2-2_cpufreq_imx-cpufreq-dt_support_i.MX7ULP.mbox	  13678
+From vireshk  Tue Apr 28 09:21:22 2020
+ Subject: [PATCH RESEND] cpufreq: dt: Add support for r8a7742
+  Folder: PATCH_RESEND_cpufreq_dt_Add_support_for_r8a7742.mbox		   4520

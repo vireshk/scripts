@@ -41848,3 +41848,60 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 524dcc626ade] updates
+ 5 files changed, 105 insertions(+), 306 deletions(-)
+ delete mode 100644 mutt/incoming/PATCH_1-2_cpufreq_Add_i.MX7ULP_to_cpufreq-dt-platdev_blacklist.mbox
+ delete mode 100644 mutt/incoming/PATCH_2-2_cpufreq_imx-cpufreq-dt_support_i.MX7ULP.mbox
+ create mode 100644 mutt/incoming/PATCH_RESEND_cpufreq_dt_Add_support_for_r8a7742.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   24b46dfd4e2d..524dcc626ade  master -> master
+   753f8767ca37..24b46dfd4e2d  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Apr 29 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   a6d1bfa05545..7c2553f0db61  cpufreq/arm/linux-next -> cpufreq/arm/linux-next
+ + 2fbd0de2a20f...a6d1bfa05545 bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next (forced update)
+   a6d1bfa05545..7c2553f0db61  pmko/cpufreq/arm/linux-next -> pmko/cpufreq/arm/linux-next
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

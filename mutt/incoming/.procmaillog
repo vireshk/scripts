@@ -1117,3 +1117,6 @@ From vireshk  Tue Apr 28 09:21:22 2020
 From vireshk  Tue Apr 28 13:00:28 2020
  Subject: [PATCH V2] cpufreq: imx-cpufreq-dt: support i.MX7ULP
   Folder: PATCH_V2_cpufreq_imx-cpufreq-dt_support_i.MX7ULP.mbox		  14097
+From vireshk  Mon May  4 09:07:05 2020
+ Subject: [PATCH] cpufreq: qcom: fix wrong compatible binding
+  Folder: PATCH_cpufreq_qcom_fix_wrong_compatible_binding.mbox		   6223

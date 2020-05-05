@@ -10,9 +10,15 @@ umask 002
 export PS1="$ "
 export COVER_CC=1
 
+# From Linus Torvalds
+BOLD='\['"$(tput setaf 2)"'\]'
+RESET='\['"$(tput sgr0)"'\]'
+export PS1='['"$BOLD"'\W'"$RESET\$(git ps1)"']\$ '
+
+
 # git
 source /home/vireshk/scripts/git_alias
-PATH="/home/vireshk/work/repos/tools/git/contrib/workdir/:$PATH"
+PATH="/home/vireshk/work/repos/tools/git/contrib/workdir/:/home/vireshk/.local/bin/:$PATH"
 
 # mail
 export MAIL=/var/mail/viresh

@@ -1132,3 +1132,6 @@ From vireshk  Tue Apr 21 14:01:26 2020
 From vireshk  Tue Apr 21 14:01:27 2020
  Subject: [PATCH v2 2/2] clk: qoriq: add cpufreq platform device
   Folder: PATCH_v2_2-2_clk_qoriq_add_cpufreq_platform_device.mbox	   5982
+From vireshk  Thu May  7 17:00:24 2020
+ Subject: [PATCH 2/4] cpufreq: qoriq: Add platform dependencies
+  Folder: PATCH_2-4_cpufreq_qoriq_Add_platform_dependencies.mbox	   5171

@@ -42428,3 +42428,65 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 0ce8348f084a] updates
+ 1 file changed, 80 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   df69eb5829b5..0ce8348f084a  master -> master
+   8a1368091033..df69eb5829b5  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Fri May 15 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + c22a734841b1...5d56441a77df opp/linux-next -> opp/linux-next (forced update)
+ - [deleted]                   scmi-bkp
+ - [deleted]                   sudeep/scmi_mhu_dt_changes
+ + 89e8ae82b5e5...c22a734841b1 bkp/opp/linux-next -> bkp/opp/linux-next (forced update)
+   152036d1379f..1ae7efb38854  origin/HEAD -> origin/HEAD
+   152036d1379f..1ae7efb38854  origin/master -> origin/master
+ * [new branch]                mailbox/mhu -> mailbox/mhu
+ * [new branch]                opp/linux-next-ict -> opp/linux-next-ict
+ * [new branch]                viresh/scmi_mhu -> viresh/scmi_mhu
+ * [new branch]                viresh/scmi_mhu-bkp -> viresh/scmi_mhu-bkp
+ * [new branch]                bkp/sudeep/scmi_mhu_dt_changes -> bkp/sudeep/scmi_mhu_dt_changes
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

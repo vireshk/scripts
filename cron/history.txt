@@ -42490,3 +42490,71 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master afc4d9d9991a] updates
+ 1 file changed, 62 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   0ce8348f084a..afc4d9d9991a  master -> master
+   df69eb5829b5..0ce8348f084a  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon May 18 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   1f1755af4f06..6cc3d0e9a097  cpufreq/arm/linux-next -> cpufreq/arm/linux-next
+ + 5d56441a77df...4ae9d870e761 opp/linux-next -> opp/linux-next (forced update)
+ - [deleted]                   opp/linux-next-ict
+ + c22a734841b1...5d56441a77df bkp/opp/linux-next -> bkp/opp/linux-next (forced update)
+ - [deleted]                   bkp/scmi-bkp
+ - [deleted]                   bkp/sudeep/scmi_mhu_dt_changes
+   1597d453289b..8fd3574b54a5  georgi/icc-get-by-index -> georgi/icc-get-by-index
+   7d374b209083..32cc93dd734f  georgi/icc-next -> georgi/icc-next
+   1f1755af4f06..6cc3d0e9a097  pmko/cpufreq/arm/linux-next -> pmko/cpufreq/arm/linux-next
+   ae83d0b416db..4ae9d870e761  pmko/opp/linux-next -> pmko/opp/linux-next
+ * [new branch]                opp/regulators -> opp/regulators
+ * [new branch]                bkp/mailbox/mhu -> bkp/mailbox/mhu
+ * [new branch]                bkp/opp/linux-next-ict -> bkp/opp/linux-next-ict
+ * [new branch]                bkp/viresh/scmi_mhu -> bkp/viresh/scmi_mhu
+ * [new branch]                bkp/viresh/scmi_mhu-bkp -> bkp/viresh/scmi_mhu-bkp
+ * [new branch]                georgi/opp-test -> georgi/opp-test
+ * [new branch]                georgi/opp-test2 -> georgi/opp-test2
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

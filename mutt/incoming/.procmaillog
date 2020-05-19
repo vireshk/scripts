@@ -1135,3 +1135,6 @@ From vireshk  Tue Apr 21 14:01:27 2020
 From vireshk  Thu May  7 17:00:24 2020
  Subject: [PATCH 2/4] cpufreq: qoriq: Add platform dependencies
   Folder: PATCH_2-4_cpufreq_qoriq_Add_platform_dependencies.mbox	   5171
+From vireshk  Mon May 18 16:56:35 2020
+ Subject: [PATCH] opp: Expose bandwidth information via debugfs
+  Folder: PATCH_opp_Expose_bandwidth_information_via_debugfs.mbox	   8790

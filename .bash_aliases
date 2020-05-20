@@ -206,6 +206,9 @@ alias updatejira="hjunk; cd jira; jipdate.py -q --all -f pmwg-weekly-status.txt;
 
 alias mountrouterdrive="curlftpfs vireshk:123456@192.168.1.1 ~/Videos/routerdrive/"
 
+#ltp
+alias ltpbuild="make clean;make autotools;./configure;make"
+
 # go to linux on shell startup
 hwork
 #clear

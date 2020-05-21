@@ -20,6 +20,7 @@ export PS1='['"$BOLD"'\W'"$RESET\$(git ps1)"']\$ '
 source /home/vireshk/scripts/git_alias
 PATH="/home/vireshk/work/repos/tools/git/contrib/workdir/:/home/vireshk/.local/bin/:$PATH"
 alias b4="/home/vireshk/work/repos/tools/b4/b4.sh"
+alias python3="python"
 
 # mail
 export MAIL=/var/mail/viresh

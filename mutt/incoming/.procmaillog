@@ -1138,3 +1138,9 @@ From vireshk  Thu May  7 17:00:24 2020
 From vireshk  Mon May 18 16:56:35 2020
  Subject: [PATCH] opp: Expose bandwidth information via debugfs
   Folder: PATCH_opp_Expose_bandwidth_information_via_debugfs.mbox	   8790
+From vireshk  Thu May 28 08:45:19 2020
+ Subject: [PATCH] OPP: Check for bandwidth values before creating icc paths
+  Folder: PATCH_OPP_Check_for_bandwidth_values_before_creating_icc_pat	   6725
+From vireshk  Thu May 28 08:45:19 2020
+ Subject: [PATCH] OPP: Check for bandwidth values before creating icc paths
+  Folder: PATCH_OPP_Check_for_bandwidth_values_before_creating_icc_pat	   6725

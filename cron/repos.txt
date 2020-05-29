@@ -1,2 +1,2 @@
 work/repos/devel/linux
-work/repos/tools/cpufreq-tests
+work/repos/tools/ltp

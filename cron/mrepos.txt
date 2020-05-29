@@ -2,3 +2,4 @@ scripts
 work/repos/tools/module
 work/repos/tools/vireshk-linux
 work/repos/tools/lwn
+work/repos/tools/cpufreq-tests

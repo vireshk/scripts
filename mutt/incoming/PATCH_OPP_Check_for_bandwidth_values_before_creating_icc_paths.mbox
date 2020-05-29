@@ -1,0 +1,78 @@
+From vireshk  Thu May 28 08:45:19 2020
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [172.217.194.109] 	by vireshk-i7 with POP3 (fetchmail-6.3.26) 	for <vireshk@localhost> (single-drop); Thu, 28 May 2020 08:45:19 +0530 (IST)
+Received: by 2002:a05:6602:2050:0:0:0:0 with SMTP id z16csp787760iod;         Wed, 27 May 2020 12:24:44 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJxNP+g8aX41Hkil7LzIHut7v8+xzaW6ETxYKPDrZUh0dAMc6yrz5yGacj9YEBlqPkSq0JvA
+X-Received: by 2002:aca:c789:: with SMTP id x131mr4019021oif.1.1590607484331;         Wed, 27 May 2020 12:24:44 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1590607484; cv=none;         d=google.com; s=arc-20160816;         b=bdvQ7GMfqfE4n+bf0WDzwYyTlI+Q1un7zweaxXy24qGURoUQpmCJzXipnwhze78JXY          QeUv20oUcwUORKCe9ftv+l1haykXqI4MFDcSaaHaCXjwPTenHIVSxAHCID7Ywb44B6/b          /B6SAxz6Lkfnf6b4SwEmiGVKCSL8LFTmDPv1wrox0j4jgGYoPaNrXz3gjdtacLJUseh0          zRSjNLA2dgqWIKofGjX65OnePYNci5oqSk/9dVu0O4dx/BwCPNOkBJL7XaYnrvkVnlvm          9zeK1NUt/EwmbO8tw6NeuMzpfzo9Sa12lV1KeKUSCcosz3j8uCl2DHeYgJn1rix6QHfJ          IMWw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from:dmarc-filter:sender:dkim-signature;         bh=sez9DLoTCLoV1yeYXeZwwXSuXPX1bIuNFVUeJPl9HsA=;         b=eoxIG+kFBNbsgzEHxYl+MWW4y3OQ3S5kHfvpHBckkwCrhPfDBr9WjvuSWZoDzE+Obr          60fDNlK8SViEdy1Rfu3lmSsTYUjQJaKBDyOhp+UZn6tCMpDaqlG8Dcc+VKlpayxyw3DD          kPyvjKmOaFpq3ph+oj8lyavkYi6rajNgMl8q7LbW5jRKmuddpZUzIrFSZ3QBq9BohONR          HxIp02qHo9uSzYowrnlVqe7VQ6bD8O1Pyadwg49PMkqQHX1C2hu7pjz3Y2dzUhwCXfQt          0ZKlYVFlZ0p0VEyjEZwPeP1eoeTiLBy53C/7YiW6aMNjp9OQMBNaEWzGxA0DhBJOtv6X          OyDw==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@mg.codeaurora.org header.s=smtp header.b=td8oE4ty;        spf=pass (google.com: domain of bounce+41d485.be9e4a-viresh.kumar=linaro.org@mg.codeaurora.org designates 104.130.122.27 as permitted sender) smtp.mailfrom="bounce+41d485.be9e4a-viresh.kumar=linaro.org@mg.codeaurora.org"
+Return-Path: <bounce+41d485.be9e4a-viresh.kumar=linaro.org@mg.codeaurora.org>
+Received: from mail27.static.mailgun.info (mail27.static.mailgun.info. [104.130.122.27])         by mx.google.com with UTF8SMTPS id y19si361003otq.37.2020.05.27.12.24.41         for <viresh.kumar@linaro.org>         (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);         Wed, 27 May 2020 12:24:44 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce+41d485.be9e4a-viresh.kumar=linaro.org@mg.codeaurora.org designates 104.130.122.27 as permitted sender) client-ip=104.130.122.27;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@mg.codeaurora.org header.s=smtp header.b=td8oE4ty;        spf=pass (google.com: domain of bounce+41d485.be9e4a-viresh.kumar=linaro.org@mg.codeaurora.org designates 104.130.122.27 as permitted sender) smtp.mailfrom="bounce+41d485.be9e4a-viresh.kumar=linaro.org@mg.codeaurora.org"
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mg.codeaurora.org; q=dns/txt;  s=smtp; t=1590607484; h=Content-Transfer-Encoding: MIME-Version:  Message-Id: Date: Subject: Cc: To: From: Sender;  bh=sez9DLoTCLoV1yeYXeZwwXSuXPX1bIuNFVUeJPl9HsA=; b=td8oE4tya5sh+HY/Q0nGTMEDH4Fp01NrPOLn85CFbuIbuYS5Zb1IhhWUBNztFl/XfXnJfvD2  pKtTmmPn7TY994tarMMD2Z/aTVt0os2ieg1SnsxtOKDPRAb0o2biNPNIFAEJhssWlQWn4y1Q  MsNutN1XLE0H8mFjvloG+WMgLCI=
+X-Mailgun-Sending-Ip: 104.130.122.27
+X-Mailgun-Sid: WyI3OWY0YiIsICJ2aXJlc2gua3VtYXJAbGluYXJvLm9yZyIsICJiZTllNGEiXQ==
+Received: from smtp.codeaurora.org  (ec2-35-166-182-171.us-west-2.compute.amazonaws.com [35.166.182.171]) by  smtp-out-n03.prod.us-east-1.postgun.com with SMTP id  5ecebe702dd9e15ae3bf40f3 (version=TLS1.2,  cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256); Wed, 27 May 2020 19:24:32  GMT
+Sender: sibis=codeaurora.org@mg.codeaurora.org
+Received: by smtp.codeaurora.org (Postfix, from userid 1001) 	id 1BE3CC43395; Wed, 27 May 2020 19:24:32 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.0 (2014-02-07) on 	aws-us-west-2-caf-mail-1.web.codeaurora.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.0 required=2.0 tests=ALL_TRUSTED,SPF_NONE, 	URIBL_BLOCKED autolearn=unavailable autolearn_force=no version=3.4.0
+Received: from blr-ubuntu-87.qualcomm.com (blr-bdr-fw-01_GlobalNAT_AllZones-Outside.qualcomm.com [103.229.18.19]) 	(using TLSv1.2 with cipher ECDHE-RSA-AES128-SHA256 (128/128 bits)) 	(No client certificate requested) 	(Authenticated sender: sibis) 	by smtp.codeaurora.org (Postfix) with ESMTPSA id 34819C433C9; 	Wed, 27 May 2020 19:24:27 +0000 (UTC)
+DMARC-Filter: OpenDMARC Filter v1.3.2 smtp.codeaurora.org 34819C433C9
+Authentication-Results: aws-us-west-2-caf-mail-1.web.codeaurora.org; dmarc=none (p=none dis=none) header.from=codeaurora.org
+Authentication-Results: aws-us-west-2-caf-mail-1.web.codeaurora.org; spf=none smtp.mailfrom=sibis@codeaurora.org
+From: Sibi Sankar <sibis@codeaurora.org>
+To: viresh.kumar@linaro.org, 	sboyd@kernel.org, 	georgi.djakov@linaro.org
+Cc: nm@ti.com, 	linux-arm-msm@vger.kernel.org, 	linux-kernel@vger.kernel.org, 	linux-pm@vger.kernel.org, 	saravanak@google.com, 	mka@chromium.org, 	smasetty@codeaurora.org, 	Sibi Sankar <sibis@codeaurora.org>
+Subject: [PATCH] OPP: Check for bandwidth values before creating icc paths
+Date: Thu, 28 May 2020 00:54:18 +0530
+Message-Id: <20200527192418.20169-1-sibis@codeaurora.org>
+X-Mailer: git-send-email 2.25.0
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Status: RO
+Content-Length: 1149
+Lines: 39
+
+Prevent the core from creating and voting on icc paths when the
+opp-table does not have the bandwidth values populated. Currently
+this check is performed on the first OPP node.
+
+Signed-off-by: Sibi Sankar <sibis@codeaurora.org>
+---
+ drivers/opp/of.c | 15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+
+diff --git a/drivers/opp/of.c b/drivers/opp/of.c
+index 61fce1284f012..95cf6f1312765 100644
+--- a/drivers/opp/of.c
++++ b/drivers/opp/of.c
+@@ -338,6 +338,21 @@ int dev_pm_opp_of_find_icc_paths(struct device *dev,
+ 	struct device_node *np;
+ 	int ret = 0, i, count, num_paths;
+ 	struct icc_path **paths;
++	struct property *prop;
++
++	/* Check for bandwidth values on the first OPP node */
++	if (opp_table && opp_table->np) {
++		np = of_get_next_available_child(opp_table->np, NULL);
++		if (!np) {
++			dev_err(dev, "Empty OPP table\n");
++			return 0;
++		}
++
++		prop = of_find_property(np, "opp-peak-kBps", NULL);
++		of_node_put(np);
++		if (!prop || !prop->length)
++			return 0;
++	}
+ 
+ 	np = of_node_get(dev->of_node);
+ 	if (!np)
+-- 
+The Qualcomm Innovation Center, Inc. is a member of the Code Aurora Forum,
+a Linux Foundation Collaborative Project
+

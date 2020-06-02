@@ -1144,3 +1144,6 @@ From vireshk  Thu May 28 08:45:19 2020
 From vireshk  Thu May 28 08:45:19 2020
  Subject: [PATCH] OPP: Check for bandwidth values before creating icc paths
   Folder: PATCH_OPP_Check_for_bandwidth_values_before_creating_icc_pat	   6725
+From vireshk  Thu May 28 08:45:23 2020
+ Subject: [PATCH v5 4/5] cpufreq: qcom: Update the bandwidth levels on frequenc
+  Folder: PATCH_v5_4-5_cpufreq_qcom_Update_the_bandwidth_levels_on_fre	  10967

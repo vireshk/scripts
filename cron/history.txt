@@ -43821,3 +43821,68 @@ To ssh://git.linaro.org/people/viresh.kumar/backup/ltp.git
    0461bc931e8c..9901dded4c6f  origin/master -> origin/master
 
 Entering /home/vireshk/scripts
+[master 0556c609379e] updates
+ 1 file changed, 69 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   36ae727efb33..0556c609379e  master -> master
+   43ddacc73d92..36ae727efb33  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Jun 17 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/ltp.git
+ + 0559d219bf3a...c68a94063720 master -> master (forced update)
+ + b8e76ea054cd...d3f45ab4d0e8 bkp/fixes -> bkp/fixes (forced update)
+ + cd6f19980b21...0559d219bf3a bkp/master -> bkp/master (forced update)
+   9901dded4c6f..4a422f8d7838  origin/HEAD -> origin/HEAD
+   9901dded4c6f..4a422f8d7838  origin/master -> origin/master
+
+Entering /home/vireshk/scripts

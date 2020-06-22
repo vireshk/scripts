@@ -1147,3 +1147,15 @@ From vireshk  Thu May 28 08:45:19 2020
 From vireshk  Thu May 28 08:45:23 2020
  Subject: [PATCH v5 4/5] cpufreq: qcom: Update the bandwidth levels on frequenc
   Folder: PATCH_v5_4-5_cpufreq_qcom_Update_the_bandwidth_levels_on_fre	  10967
+From vireshk  Sun Jun 21 19:54:44 2020
+ Subject: opp: core: Add missing export to core.c
+  Folder: opp_core_Add_missing_export_to_core.c.mbox			   8115
+From vireshk  Sun Jun 21 19:54:44 2020
+ Subject: [PATCH] cpufreq: dt: fix oops on armada37xx
+  Folder: PATCH_cpufreq_dt_fix_oops_on_armada37xx.mbox			   5027
+From vireshk  Sat Jun  6 15:15:29 2020
+ Subject: [PATCH v6 0/5] DDR/L3 Scaling support on SDM845 and SC7180 SoCs
+  Folder: PATCH_v6_0-5_DDR-L3_Scaling_support_on_SDM845_and_SC7180_SoC	   7798
+From vireshk  Sun Jun 21 19:54:44 2020
+ Subject: [PATCH] cpufreq: dt: fix oops on armada37xx
+  Folder: PATCH_cpufreq_dt_fix_oops_on_armada37xx.mbox			   5027

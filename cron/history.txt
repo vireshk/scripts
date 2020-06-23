@@ -44093,3 +44093,70 @@ To ssh://git.linaro.org/people/viresh.kumar/backup/ltp.git
    a5e595fbe7bd..a937b62a8fa0  origin/master -> origin/master
 
 Entering /home/vireshk/scripts
+[master 837619b20da0] updates
+ 5 files changed, 317 insertions(+), 206 deletions(-)
+ create mode 100644 mutt/incoming/PATCH_cpufreq_dt_fix_oops_on_armada37xx.mbox
+ delete mode 100644 mutt/incoming/PATCH_v5_4-5_cpufreq_qcom_Update_the_bandwidth_levels_on_frequency_change.mbox
+ create mode 100644 mutt/incoming/PATCH_v6_0-5_DDR-L3_Scaling_support_on_SDM845_and_SC7180_SoCs.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   dd04d7cd8ccb..837619b20da0  master -> master
+   d527de9fa449..dd04d7cd8ccb  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Tue Jun 23 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   7e63420847ae..b217dc843935  master -> master
+ + fa647413b761...8514ab9b8836 bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next (forced update)
+   b466542f331e..e7bf9997c605  bkp/opp/linux-next -> bkp/opp/linux-next
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/ltp.git
+ + 42127963ba2f...2b28944b0032 bkp/master -> bkp/master (forced update)
+
+Entering /home/vireshk/scripts

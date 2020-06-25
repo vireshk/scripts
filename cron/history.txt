@@ -44230,3 +44230,70 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 5bc26cec4627] updates
+ 3 files changed, 167 insertions(+)
+ create mode 100644 mutt/incoming/PATCH_1-1_v3_cpufreq_ap806_fix_cpufreq_driver_needs_ap_cpu_clk.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   67d095d38815..5bc26cec4627  master -> master
+   837619b20da0..67d095d38815  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Thu Jun 25 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   bkp/cpufreq/arm/fixes
+   8514ab9b8836..c318ea261749  bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next
+ - [deleted]                   bkp/hackbench-test
+ + b217dc843935...3d77e6a8804a bkp/master -> bkp/master (forced update)
+ * [new branch]                bkp/cppc/fi -> bkp/cppc/fi
+ * [new branch]                bkp/cpufreq/qcom -> bkp/cpufreq/qcom
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

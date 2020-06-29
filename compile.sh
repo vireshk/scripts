@@ -128,6 +128,8 @@ elif [ $2 = arm ]; then
 	CROSS_COMPILE="aarch64-linux-gnu-"
 	carch="arm64"
 	IMAGE=
+	UPDATE_CONFIG="`echo \"CONFIG_USB_RTL8152=y\" >> $dir.config`"
+	MERGE_CONFIG="KCONFIG_CONFIG=$dir/.config scripts/kconfig/merge_config.sh -m $dir/.config ~/junk/config"
 elif [ $2 = qcom ]; then
 	dir=../qcom/
 	cfg="defconfig distro.config"
@@ -199,6 +201,7 @@ elif [ $1 = "mrproper" ]; then
 	$isdebug $mk mrproper
 elif [ $1 = "config" ]; then
 	$isdebug $mk $cfg
+	echo "CONFIG_USB_RTL8152=y" >> $dir.config
 elif [ $1 = "sconfig" ]; then
 	$isdebug $mk savedefconfig
 	cp $dir/defconfig arch/$carch/configs/$cfg
@@ -214,6 +217,7 @@ elif [ $1 = "nmodule" ]; then
 	$isdebug $mk modules > /dev/null
 elif [ $1 = "configimage" ]; then
 	$isdebug $mk $cfg
+	echo "CONFIG_USB_RTL8152=y" >> $dir.config
 	$isdebug $bimage > /dev/null
 elif [ $1 = "build" -o $1 = "lbuild" ]; then
 	# $isdebug $mk clean > /dev/null
@@ -305,9 +309,3 @@ else
 	echo "$1: is an invalid argument"
 	exit
 fi
-
-# HACK
-#if [ $2 = exynos ]; then
-#	cp /home/vireshk/work/repos/devel/bexynos/arch/arm/boot/uImage /tftpboot/bexynos_uImage
-#	cp /home/vireshk/work/repos/devel/bexynos/arch/arm/boot/dts/exynos5250-arndale.dtb /tftpboot/bexynos.dtb
-#fi

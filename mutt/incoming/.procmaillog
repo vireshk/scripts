@@ -1168,3 +1168,6 @@ From vireshk  Wed Jun 24 10:14:01 2020
 From vireshk  Wed Jun 24 10:14:02 2020
  Subject: [PATCH v2 2/2] cpufreq: Specify default governor on command line
   Folder: PATCH_v2_2-2_cpufreq_Specify_default_governor_on_command_lin	  11719
+From vireshk  Wed Jul  1 08:56:35 2020
+ Subject: [PATCH v2]  cpufreq: CPPC: fix some unreasonable codes in cppc_cpufre
+  Folder: PATCH_v2_cpufreq_CPPC_fix_some_unreasonable_codes_in_cppc_cp	   4399

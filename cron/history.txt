@@ -44999,3 +44999,688 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master b0279e45d5c8] updates
+ 1 file changed, 73 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   42456df4cdcd..b0279e45d5c8  master -> master
+   12c589abc0c8..42456df4cdcd  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Fri Jul  3 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 25b2b1a6a02d...a5299842e167 cooling/sched -> cooling/sched (forced update)
+ + 49cbbb1a80ba...25b2b1a6a02d bkp/cooling/sched -> bkp/cooling/sched (forced update)
+ + 002eff00f1b2...65cb6f6b1e94 bkp/cppc/fi -> bkp/cppc/fi (forced update)
+   a3d313e3302f..16f3f0d74b20  stable/linux-3.16.y -> stable/linux-3.16.y
+   01fd1694b93c..4139fb08c05f  stable/linux-4.14.y -> stable/linux-4.14.y
+   97ab07e11fbf..399849e4654e  stable/linux-4.19.y -> stable/linux-4.19.y
+   5e9f4d704f86..480787e5be11  stable/linux-4.4.y -> stable/linux-4.4.y
+   228e87c35b6c..df4674d89f7e  stable/linux-4.9.y -> stable/linux-4.9.y
+   c3915fe1bf12..e91ef5bcdeda  stable/linux-5.2.y -> stable/linux-5.2.y
+   089cf7f6ecb2..9ebcfadb0610  stable/master -> stable/master
+ - [deleted]                   tip/WIP.core-toplevel-for-linus
+ - [deleted]                   tip/WIP.core/entry
+   960786422fe9..1167da790ee8  tip/WIP.core/headers -> tip/WIP.core/headers
+ - [deleted]                   tip/WIP.core/kprobes
+ - [deleted]                   tip/WIP.core/stacktrace
+ - [deleted]                   tip/WIP.core/toplevel
+ + aa245bbaa2a7...bdbfb1d52d5e tip/WIP.fixes -> tip/WIP.fixes (forced update)
+ - [deleted]                   tip/WIP.irq
+   af42d3466bdc..19f545b6e07f  tip/WIP.locking/core -> tip/WIP.locking/core
+ - [deleted]                   tip/WIP.locking/kcsan
+ - [deleted]                   tip/WIP.timers/core
+ - [deleted]                   tip/WIP.vdso
+ - [deleted]                   tip/WIP.x86/asm
+ - [deleted]                   tip/WIP.x86/cleanups
+ - [deleted]                   tip/WIP.x86/fpu
+ - [deleted]                   tip/WIP.x86/hpet
+ - [deleted]                   tip/WIP.x86/iopl
+ - [deleted]                   tip/WIP.x86/ipi
+   186525bd6b83..c30a3e465817  tip/WIP.x86/mm -> tip/WIP.x86/mm
+ - [deleted]                   tip/WIP.x86/paravirt
+ - [deleted]                   tip/WIP.x86/stackguards
+ - [deleted]                   tip/WIP.x86/urgent
+ - [deleted]                   tip/atomic/core
+ + 05f24904d5f5...46fa597fe899 tip/auto-latest -> tip/auto-latest (forced update)
+ - [deleted]                   tip/core-core-for-linus
+ - [deleted]                   tip/core-debugobjects-for-linus
+ - [deleted]                   tip/core-headers-for-linus
+ - [deleted]                   tip/core-mm-for-linus
+ - [deleted]                   tip/core-objtool-for-linus
+ - [deleted]                   tip/core-rcu-for-linus
+ - [deleted]                   tip/core-rseq-for-linus
+ - [deleted]                   tip/core-speculation-for-linus
+ - [deleted]                   tip/core-stacktrace-for-linus
+ - [deleted]                   tip/core-urgent-for-linus
+   11e31f608b49..6e0d6ac5f3d9  tip/core/core -> tip/core/core
+ - [deleted]                   tip/core/debug
+ - [deleted]                   tip/core/headers
+   31537cf8f3f9..66e9b0717102  tip/core/kprobes -> tip/core/kprobes
+ - [deleted]                   tip/core/mm
+ - [deleted]                   tip/core/objtool
+ - [deleted]                   tip/core/printk
+   43e0ae7ae0f5..cb3cb6733fbd  tip/core/rcu -> tip/core/rcu
+ - [deleted]                   tip/core/rseq
+ - [deleted]                   tip/core/rslib
+ - [deleted]                   tip/core/speculation
+ - [deleted]                   tip/core/stacktrace
+   463f550fb47b..5fdeefa053df  tip/core/urgent -> tip/core/urgent
+ - [deleted]                   tip/efi-core-for-linus
+   4911ee401b7c..2a55280a3675  tip/efi-urgent-for-linus -> tip/efi-urgent-for-linus
+   4444f8541dad..e9524fb97ab5  tip/efi/core -> tip/efi/core
+ - [deleted]                   tip/efi/irqchip
+   4911ee401b7c..2a55280a3675  tip/efi/urgent -> tip/efi/urgent
+ - [deleted]                   tip/irq-core-for-linus
+ - [deleted]                   tip/irq-urgent-for-linus
+   099368bb10c0..d77aeb5d403d  tip/irq/core -> tip/irq/core
+ - [deleted]                   tip/irq/for-block
+   1fd224e35c14..98817a84ff1c  tip/irq/urgent -> tip/irq/urgent
+ - [deleted]                   tip/locking-core-for-linus
+ - [deleted]                   tip/locking-kcsan-for-linus
+ - [deleted]                   tip/locking-urgent-for-linus
+ - [deleted]                   tip/locking/atomics
+   f5bfdc8e3947..c935cd62d3fe  tip/locking/core -> tip/locking/core
+   c29a59e43829..1f44328ea24c  tip/locking/kcsan -> tip/locking/kcsan
+   39e7234f00bc..37f8173dd849  tip/locking/urgent -> tip/locking/urgent
+ + 05f24904d5f5...e936e0a9b6f3 tip/master -> tip/master (forced update)
+ - [deleted]                   tip/perf-core-for-linus
+   2167f1625c2f..16accae3d97f  tip/perf-urgent-for-linus -> tip/perf-urgent-for-linus
+   5738891229a2..bb42b3d39781  tip/perf/core -> tip/perf/core
+   2167f1625c2f..16accae3d97f  tip/perf/urgent -> tip/perf/urgent
+ - [deleted]                   tip/ras-core-for-linus
+ - [deleted]                   tip/ras-urgent-for-linus
+   86e9f9d60eb5..bb2de0adca21  tip/ras/core -> tip/ras/core
+   978370956d20..59b5809655bd  tip/ras/urgent -> tip/ras/urgent
+ - [deleted]                   tip/sched-core-for-linus
+   6cf82d559e1a..68f7b5cc835d  tip/sched-urgent-for-linus -> tip/sched-urgent-for-linus
+ - [deleted]                   tip/sched-wait-for-linus
+   ccf74128d66c..01e377c539ca  tip/sched/core -> tip/sched/core
+   d61ca3c25e03..4e139c771163  tip/sched/rt -> tip/sched/rt
+   6cf82d559e1a..e21cf43406a1  tip/sched/urgent -> tip/sched/urgent
+ - [deleted]                   tip/sched/wait
+ - [deleted]                   tip/smp-hotplug-for-linus
+ - [deleted]                   tip/smp-urgent-for-linus
+   dc8d37ed304e..1e474b28e788  tip/smp/urgent -> tip/smp/urgent
+ - [deleted]                   tip/timers-core-for-linus
+   de95a991bb72..f097eb38f713  tip/timers-urgent-for-linus -> tip/timers-urgent-for-linus
+   a67ca893ae0a..809eb4e9bf9d  tip/timers/core -> tip/timers/core
+   d4af6d933ccf..e4970c9c54d7  tip/timers/nohz -> tip/timers/nohz
+   9f24c540f7f8..f097eb38f713  tip/timers/urgent -> tip/timers/urgent
+   634d5e96e4c8..1ac49f8328cb  tip/tip -> tip/tip
+ - [deleted]                   tip/tmp.tmp
+ - [deleted]                   tip/x86-alternatives-for-linus
+ - [deleted]                   tip/x86-amd-nb-for-linus
+ - [deleted]                   tip/x86-apic-for-linus
+ - [deleted]                   tip/x86-asm-for-linus
+ - [deleted]                   tip/x86-boot-for-linus
+ - [deleted]                   tip/x86-build-for-linus
+ - [deleted]                   tip/x86-cache-for-linus
+ - [deleted]                   tip/x86-cleanups-for-linus
+ - [deleted]                   tip/x86-core-for-linus
+ - [deleted]                   tip/x86-cpu-for-linus
+ - [deleted]                   tip/x86-dax-for-linus
+ - [deleted]                   tip/x86-debug-for-linus
+ - [deleted]                   tip/x86-dma-for-linus
+ - [deleted]                   tip/x86-entry-for-linus
+ - [deleted]                   tip/x86-fpu-for-linus
+ - [deleted]                   tip/x86-grub2-for-linus
+ - [deleted]                   tip/x86-hyperv-for-linus
+ - [deleted]                   tip/x86-iopl-for-linus
+ - [deleted]                   tip/x86-irq-for-linus
+ - [deleted]                   tip/x86-kdump-for-linus
+ - [deleted]                   tip/x86-microcode-for-linus
+   7f264dab5b60..bd1de2a7aace  tip/x86-mm-for-linus -> tip/x86-mm-for-linus
+ - [deleted]                   tip/x86-paravirt-for-linus
+ - [deleted]                   tip/x86-platform-for-linus
+ - [deleted]                   tip/x86-pti-for-linus
+ - [deleted]                   tip/x86-pti-urgent-for-linus
+ - [deleted]                   tip/x86-timers-for-linus
+ - [deleted]                   tip/x86-topology-for-linus
+ - [deleted]                   tip/x86-urgent-for-linus
+ - [deleted]                   tip/x86-uv-for-linus
+ - [deleted]                   tip/x86-vdso-for-linus
+ - [deleted]                   tip/x86-vmware-for-linus
+   e53f31bffe1d..1b2e335ebfa2  tip/x86/alternatives -> tip/x86/alternatives
+ - [deleted]                   tip/x86/amd-nb
+   d0b778880448..de308d1815c9  tip/x86/apic -> tip/x86/apic
+   b2b1d94cdfd4..2ce0d7f9766f  tip/x86/asm -> tip/x86/asm
+   163159aad74d..5214028dd89e  tip/x86/boot -> tip/x86/boot
+   66584ea6b70a..38f3e775e9c2  tip/x86/build -> tip/x86/build
+   536a0d8e79fb..0c4d5ba1b998  tip/x86/cache -> tip/x86/cache
+   1429b568ad71..99e40204e014  tip/x86/cleanups -> tip/x86/cleanups
+   248ed51048c4..9cb1fd0efd19  tip/x86/core -> tip/x86/core
+   bb02e2cb715a..c9a1ff316bc9  tip/x86/cpu -> tip/x86/cpu
+ - [deleted]                   tip/x86/dax
+ - [deleted]                   tip/x86/debug
+ - [deleted]                   tip/x86/dma
+ - [deleted]                   tip/x86/early-printk
+   f53e2cd0b8ab..2c92d787cc9f  tip/x86/entry -> tip/x86/entry
+   bbc55341b9c6..4185b3b92792  tip/x86/fpu -> tip/x86/fpu
+ - [deleted]                   tip/x86/grub2
+ - [deleted]                   tip/x86/iopl
+ - [deleted]                   tip/x86/irq
+ - [deleted]                   tip/x86/kaslr
+   8757dc970f55..3d77e6a8804a  tip/x86/kdump -> tip/x86/kdump
+   82c881b28aa8..c8a59a4d8e3c  tip/x86/microcode -> tip/x86/microcode
+   186525bd6b83..bd1de2a7aace  tip/x86/mm -> tip/x86/mm
+ - [deleted]                   tip/x86/mpx
+ - [deleted]                   tip/x86/mtrr
+ - [deleted]                   tip/x86/olpc
+ - [deleted]                   tip/x86/paravirt
+   7a56b81c4746..33649bf4494c  tip/x86/platform -> tip/x86/platform
+ - [deleted]                   tip/x86/pti-urgent
+   e44252f4fe79..bd35c77e32e4  tip/x86/timers -> tip/x86/timers
+ - [deleted]                   tip/x86/topology
+   a006483b2f97..cced0b24bb54  tip/x86/urgent -> tip/x86/urgent
+ - [deleted]                   tip/x86/uv
+   79a3aaa7b82e..cd2f45b7514c  tip/x86/vdso -> tip/x86/vdso
+   f7b15c74cffd..8fefe9dacdb0  tip/x86/vmware -> tip/x86/vmware
+ * [new branch]                stable-update -> stable-update
+ * [new branch]                stable/linux-5.3.y -> stable/linux-5.3.y
+ * [new branch]                stable/linux-5.4.y -> stable/linux-5.4.y
+ * [new branch]                stable/linux-5.5.y -> stable/linux-5.5.y
+ * [new branch]                stable/linux-5.6.y -> stable/linux-5.6.y
+ * [new branch]                stable/linux-5.7.y -> stable/linux-5.7.y
+ * [new branch]                tip/WIP.core/rcu -> tip/WIP.core/rcu
+ * [new branch]                tip/WIP.sched/core -> tip/WIP.sched/core
+ * [new branch]                tip/WIP.x86/entry -> tip/WIP.x86/entry
+ * [new branch]                tip/core-kprobes-for-linus -> tip/core-kprobes-for-linus
+ * [new branch]                tip/locking/header -> tip/locking/header
+ * [new branch]                tip/objtool/core -> tip/objtool/core
+ * [new branch]                tip/objtool/urgent -> tip/objtool/urgent
+ * [new branch]                tip/rcu/urgent -> tip/rcu/urgent
+ * [new branch]                tip/sched/fifo -> tip/sched/fifo
+ * [new branch]                tip/smp/core -> tip/smp/core
+ * [new branch]                tip/x86/fsgsbase -> tip/x86/fsgsbase
+ * [new branch]                tip/x86/misc -> tip/x86/misc
+ * [new branch]                tip/x86/splitlock -> tip/x86/splitlock
+ * [new tag]                   core-core-2020-01-28 -> core-core-2020-01-28
+ * [new tag]                   core-debugobjects-2020-01-28 -> core-debugobjects-2020-01-28
+ * [new tag]                   core-kprobes-2020-06-01 -> core-kprobes-2020-06-01
+ * [new tag]                   core-rcu-2020-06-01 -> core-rcu-2020-06-01
+ * [new tag]                   core-urgent-2020-04-19 -> core-urgent-2020-04-19
+ * [new tag]                   core_core_updates_for_5.8 -> core_core_updates_for_5.8
+ * [new tag]                   efi-core-2020-06-01 -> efi-core-2020-06-01
+ * [new tag]                   efi-urgent-2020-02-09 -> efi-urgent-2020-02-09
+ * [new tag]                   efi-urgent-2020-03-15 -> efi-urgent-2020-03-15
+ * [new tag]                   efi-urgent-2020-04-15 -> efi-urgent-2020-04-15
+ * [new tag]                   efi-urgent-2020-05-24 -> efi-urgent-2020-05-24
+ * [new tag]                   efi-urgent-2020-06-28 -> efi-urgent-2020-06-28
+ * [new tag]                   irq-core-2020-01-28 -> irq-core-2020-01-28
+ * [new tag]                   irq-core-2020-03-30 -> irq-core-2020-03-30
+ * [new tag]                   irq-core-2020-06-02 -> irq-core-2020-06-02
+ * [new tag]                   irq-urgent-2020-02-09 -> irq-urgent-2020-02-09
+ * [new tag]                   irq-urgent-2020-02-22 -> irq-urgent-2020-02-22
+ * [new tag]                   irq-urgent-2020-03-15 -> irq-urgent-2020-03-15
+ * [new tag]                   irq-urgent-2020-03-29 -> irq-urgent-2020-03-29
+ * [new tag]                   irq-urgent-2020-04-05 -> irq-urgent-2020-04-05
+ * [new tag]                   irq-urgent-2020-04-19 -> irq-urgent-2020-04-19
+ * [new tag]                   locking-core-2020-06-01 -> locking-core-2020-06-01
+ * [new tag]                   locking-kcsan-2020-06-02 -> locking-kcsan-2020-06-02
+ * [new tag]                   locking-kcsan-2020-06-11 -> locking-kcsan-2020-06-11
+ * [new tag]                   locking-urgent-2020-03-15 -> locking-urgent-2020-03-15
+ * [new tag]                   locking-urgent-2020-04-12 -> locking-urgent-2020-04-12
+ * [new tag]                   locking-urgent-2020-05-10 -> locking-urgent-2020-05-10
+ * [new tag]                   locking-urgent-2020-06-11 -> locking-urgent-2020-06-11
+ * [new tag]                   noinstr-rcu-2020-05-19 -> noinstr-rcu-2020-05-19
+ * [new tag]                   noinstr-rcu-220-05-23 -> noinstr-rcu-220-05-23
+ * [new tag]                   noinstr-x86-kvm-2020-05-16 -> noinstr-x86-kvm-2020-05-16
+ * [new tag]                   objtool-core-2020-06-01 -> objtool-core-2020-06-01
+ * [new tag]                   objtool-urgent-2020-04-25 -> objtool-urgent-2020-04-25
+ * [new tag]                   objtool-urgent-2020-05-10 -> objtool-urgent-2020-05-10
+ * [new tag]                   objtool-urgent-2020-05-17 -> objtool-urgent-2020-05-17
+ * [new tag]                   objtool_urgent_for_5.8_rc3 -> objtool_urgent_for_5.8_rc3
+ * [new tag]                   perf-core-2020-06-01 -> perf-core-2020-06-01
+ * [new tag]                   perf-for-bpf-2020-05-06 -> perf-for-bpf-2020-05-06
+ * [new tag]                   perf-urgent-2020-02-09 -> perf-urgent-2020-02-09
+ * [new tag]                   perf-urgent-2020-03-15 -> perf-urgent-2020-03-15
+ * [new tag]                   perf-urgent-2020-03-29 -> perf-urgent-2020-03-29
+ * [new tag]                   perf-urgent-2020-04-05 -> perf-urgent-2020-04-05
+ * [new tag]                   perf-urgent-2020-04-12 -> perf-urgent-2020-04-12
+ * [new tag]                   perf-urgent-2020-04-19 -> perf-urgent-2020-04-19
+ * [new tag]                   perf-urgent-2020-04-25 -> perf-urgent-2020-04-25
+ * [new tag]                   perf-urgent-2020-06-28 -> perf-urgent-2020-06-28
+ * [new tag]                   ras-core-2020-05-27-history -> ras-core-2020-05-27-history
+ * [new tag]                   ras-core-2020-06-12 -> ras-core-2020-06-12
+ * [new tag]                   ras-urgent-2020-02-22 -> ras-urgent-2020-02-22
+ * [new tag]                   ras-urgent-2020-03-15 -> ras-urgent-2020-03-15
+ * [new tag]                   ras_updates_for_5.7 -> ras_updates_for_5.7
+ * [new tag]                   rcu_urgent_for_5.8_rc3 -> rcu_urgent_for_5.8_rc3
+ * [new tag]                   sched-core-2020-06-01 -> sched-core-2020-06-01
+ * [new tag]                   sched-core-2020-06-02 -> sched-core-2020-06-02
+ * [new tag]                   sched-for-bpf-2020-02-20 -> sched-for-bpf-2020-02-20
+ * [new tag]                   sched-urgent-2020-04-12 -> sched-urgent-2020-04-12
+ * [new tag]                   sched-urgent-2020-04-19 -> sched-urgent-2020-04-19
+ * [new tag]                   sched-urgent-2020-04-25 -> sched-urgent-2020-04-25
+ * [new tag]                   sched-urgent-2020-05-24 -> sched-urgent-2020-05-24
+ * [new tag]                   sched-urgent-2020-05-31 -> sched-urgent-2020-05-31
+ * [new tag]                   sched-urgent-2020-06-28 -> sched-urgent-2020-06-28
+ * [new tag]                   sched_urgent_for_5.8_rc3 -> sched_urgent_for_5.8_rc3
+ * [new tag]                   smp-core-2020-01-28 -> smp-core-2020-01-28
+ * [new tag]                   smp-core-2020-03-30 -> smp-core-2020-03-30
+ * [new tag]                   smp-core-2020-06-01 -> smp-core-2020-06-01
+ * [new tag]                   smp-urgent-2020-02-09 -> smp-urgent-2020-02-09
+ * [new tag]                   timers-core-2020-01-27 -> timers-core-2020-01-27
+ * [new tag]                   timers-core-2020-03-30 -> timers-core-2020-03-30
+ * [new tag]                   timers-core-2020-06-02 -> timers-core-2020-06-02
+ * [new tag]                   timers-nohz-2020-03-30 -> timers-nohz-2020-03-30
+ * [new tag]                   timers-urgent-2020-01-27 -> timers-urgent-2020-01-27
+ * [new tag]                   timers-urgent-2020-02-09 -> timers-urgent-2020-02-09
+ * [new tag]                   timers-urgent-2020-03-15 -> timers-urgent-2020-03-15
+ * [new tag]                   timers-urgent-2020-03-29 -> timers-urgent-2020-03-29
+ * [new tag]                   timers-urgent-2020-04-05 -> timers-urgent-2020-04-05
+ * [new tag]                   timers-urgent-2020-04-12 -> timers-urgent-2020-04-12
+ * [new tag]                   timers-urgent-2020-04-19 -> timers-urgent-2020-04-19
+ * [new tag]                   timers-urgent-2020-04-25 -> timers-urgent-2020-04-25
+ * [new tag]                   timers-urgent-2020-06-11 -> timers-urgent-2020-06-11
+ * [new tag]                   timers-urgent-2020-06-28 -> timers-urgent-2020-06-28
+ * [new tag]                   v3.16.74 -> v3.16.74
+ * [new tag]                   v3.16.75 -> v3.16.75
+ * [new tag]                   v3.16.76 -> v3.16.76
+ * [new tag]                   v3.16.77 -> v3.16.77
+ * [new tag]                   v3.16.78 -> v3.16.78
+ * [new tag]                   v3.16.79 -> v3.16.79
+ * [new tag]                   v3.16.80 -> v3.16.80
+ * [new tag]                   v3.16.81 -> v3.16.81
+ * [new tag]                   v3.16.82 -> v3.16.82
+ * [new tag]                   v3.16.83 -> v3.16.83
+ * [new tag]                   v3.16.84 -> v3.16.84
+ * [new tag]                   v3.16.85 -> v3.16.85
+ * [new tag]                   v4.14.142 -> v4.14.142
+ * [new tag]                   v4.14.143 -> v4.14.143
+ * [new tag]                   v4.14.144 -> v4.14.144
+ * [new tag]                   v4.14.145 -> v4.14.145
+ * [new tag]                   v4.14.146 -> v4.14.146
+ * [new tag]                   v4.14.147 -> v4.14.147
+ * [new tag]                   v4.14.148 -> v4.14.148
+ * [new tag]                   v4.14.149 -> v4.14.149
+ * [new tag]                   v4.14.150 -> v4.14.150
+ * [new tag]                   v4.14.151 -> v4.14.151
+ * [new tag]                   v4.14.152 -> v4.14.152
+ * [new tag]                   v4.14.153 -> v4.14.153
+ * [new tag]                   v4.14.154 -> v4.14.154
+ * [new tag]                   v4.14.155 -> v4.14.155
+ * [new tag]                   v4.14.156 -> v4.14.156
+ * [new tag]                   v4.14.157 -> v4.14.157
+ * [new tag]                   v4.14.158 -> v4.14.158
+ * [new tag]                   v4.14.159 -> v4.14.159
+ * [new tag]                   v4.14.160 -> v4.14.160
+ * [new tag]                   v4.14.161 -> v4.14.161
+ * [new tag]                   v4.14.162 -> v4.14.162
+ * [new tag]                   v4.14.163 -> v4.14.163
+ * [new tag]                   v4.14.164 -> v4.14.164
+ * [new tag]                   v4.14.165 -> v4.14.165
+ * [new tag]                   v4.14.166 -> v4.14.166
+ * [new tag]                   v4.14.167 -> v4.14.167
+ * [new tag]                   v4.14.168 -> v4.14.168
+ * [new tag]                   v4.14.169 -> v4.14.169
+ * [new tag]                   v4.14.170 -> v4.14.170
+ * [new tag]                   v4.14.171 -> v4.14.171
+ * [new tag]                   v4.14.172 -> v4.14.172
+ * [new tag]                   v4.14.173 -> v4.14.173
+ * [new tag]                   v4.14.174 -> v4.14.174
+ * [new tag]                   v4.14.175 -> v4.14.175
+ * [new tag]                   v4.14.176 -> v4.14.176
+ * [new tag]                   v4.14.177 -> v4.14.177
+ * [new tag]                   v4.14.178 -> v4.14.178
+ * [new tag]                   v4.14.179 -> v4.14.179
+ * [new tag]                   v4.14.180 -> v4.14.180
+ * [new tag]                   v4.14.181 -> v4.14.181
+ * [new tag]                   v4.14.182 -> v4.14.182
+ * [new tag]                   v4.14.183 -> v4.14.183
+ * [new tag]                   v4.14.184 -> v4.14.184
+ * [new tag]                   v4.14.185 -> v4.14.185
+ * [new tag]                   v4.14.186 -> v4.14.186
+ * [new tag]                   v4.14.187 -> v4.14.187
+ * [new tag]                   v4.19.100 -> v4.19.100
+ * [new tag]                   v4.19.101 -> v4.19.101
+ * [new tag]                   v4.19.102 -> v4.19.102
+ * [new tag]                   v4.19.103 -> v4.19.103
+ * [new tag]                   v4.19.104 -> v4.19.104
+ * [new tag]                   v4.19.105 -> v4.19.105
+ * [new tag]                   v4.19.106 -> v4.19.106
+ * [new tag]                   v4.19.107 -> v4.19.107
+ * [new tag]                   v4.19.108 -> v4.19.108
+ * [new tag]                   v4.19.109 -> v4.19.109
+ * [new tag]                   v4.19.110 -> v4.19.110
+ * [new tag]                   v4.19.111 -> v4.19.111
+ * [new tag]                   v4.19.112 -> v4.19.112
+ * [new tag]                   v4.19.113 -> v4.19.113
+ * [new tag]                   v4.19.114 -> v4.19.114
+ * [new tag]                   v4.19.115 -> v4.19.115
+ * [new tag]                   v4.19.116 -> v4.19.116
+ * [new tag]                   v4.19.117 -> v4.19.117
+ * [new tag]                   v4.19.118 -> v4.19.118
+ * [new tag]                   v4.19.119 -> v4.19.119
+ * [new tag]                   v4.19.120 -> v4.19.120
+ * [new tag]                   v4.19.121 -> v4.19.121
+ * [new tag]                   v4.19.122 -> v4.19.122
+ * [new tag]                   v4.19.123 -> v4.19.123
+ * [new tag]                   v4.19.124 -> v4.19.124
+ * [new tag]                   v4.19.125 -> v4.19.125
+ * [new tag]                   v4.19.126 -> v4.19.126
+ * [new tag]                   v4.19.127 -> v4.19.127
+ * [new tag]                   v4.19.128 -> v4.19.128
+ * [new tag]                   v4.19.129 -> v4.19.129
+ * [new tag]                   v4.19.130 -> v4.19.130
+ * [new tag]                   v4.19.131 -> v4.19.131
+ * [new tag]                   v4.19.70 -> v4.19.70
+ * [new tag]                   v4.19.71 -> v4.19.71
+ * [new tag]                   v4.19.72 -> v4.19.72
+ * [new tag]                   v4.19.73 -> v4.19.73
+ * [new tag]                   v4.19.74 -> v4.19.74
+ * [new tag]                   v4.19.75 -> v4.19.75
+ * [new tag]                   v4.19.76 -> v4.19.76
+ * [new tag]                   v4.19.77 -> v4.19.77
+ * [new tag]                   v4.19.78 -> v4.19.78
+ * [new tag]                   v4.19.79 -> v4.19.79
+ * [new tag]                   v4.19.80 -> v4.19.80
+ * [new tag]                   v4.19.81 -> v4.19.81
+ * [new tag]                   v4.19.82 -> v4.19.82
+ * [new tag]                   v4.19.83 -> v4.19.83
+ * [new tag]                   v4.19.84 -> v4.19.84
+ * [new tag]                   v4.19.85 -> v4.19.85
+ * [new tag]                   v4.19.86 -> v4.19.86
+ * [new tag]                   v4.19.87 -> v4.19.87
+ * [new tag]                   v4.19.88 -> v4.19.88
+ * [new tag]                   v4.19.89 -> v4.19.89
+ * [new tag]                   v4.19.90 -> v4.19.90
+ * [new tag]                   v4.19.91 -> v4.19.91
+ * [new tag]                   v4.19.92 -> v4.19.92
+ * [new tag]                   v4.19.93 -> v4.19.93
+ * [new tag]                   v4.19.94 -> v4.19.94
+ * [new tag]                   v4.19.95 -> v4.19.95
+ * [new tag]                   v4.19.96 -> v4.19.96
+ * [new tag]                   v4.19.97 -> v4.19.97
+ * [new tag]                   v4.19.98 -> v4.19.98
+ * [new tag]                   v4.19.99 -> v4.19.99
+ * [new tag]                   v4.4.191 -> v4.4.191
+ * [new tag]                   v4.4.192 -> v4.4.192
+ * [new tag]                   v4.4.193 -> v4.4.193
+ * [new tag]                   v4.4.194 -> v4.4.194
+ * [new tag]                   v4.4.195 -> v4.4.195
+ * [new tag]                   v4.4.196 -> v4.4.196
+ * [new tag]                   v4.4.197 -> v4.4.197
+ * [new tag]                   v4.4.198 -> v4.4.198
+ * [new tag]                   v4.4.199 -> v4.4.199
+ * [new tag]                   v4.4.200 -> v4.4.200
+ * [new tag]                   v4.4.201 -> v4.4.201
+ * [new tag]                   v4.4.202 -> v4.4.202
+ * [new tag]                   v4.4.203 -> v4.4.203
+ * [new tag]                   v4.4.204 -> v4.4.204
+ * [new tag]                   v4.4.205 -> v4.4.205
+ * [new tag]                   v4.4.206 -> v4.4.206
+ * [new tag]                   v4.4.207 -> v4.4.207
+ * [new tag]                   v4.4.208 -> v4.4.208
+ * [new tag]                   v4.4.209 -> v4.4.209
+ * [new tag]                   v4.4.210 -> v4.4.210
+ * [new tag]                   v4.4.211 -> v4.4.211
+ * [new tag]                   v4.4.212 -> v4.4.212
+ * [new tag]                   v4.4.213 -> v4.4.213
+ * [new tag]                   v4.4.214 -> v4.4.214
+ * [new tag]                   v4.4.215 -> v4.4.215
+ * [new tag]                   v4.4.216 -> v4.4.216
+ * [new tag]                   v4.4.217 -> v4.4.217
+ * [new tag]                   v4.4.218 -> v4.4.218
+ * [new tag]                   v4.4.219 -> v4.4.219
+ * [new tag]                   v4.4.220 -> v4.4.220
+ * [new tag]                   v4.4.221 -> v4.4.221
+ * [new tag]                   v4.4.222 -> v4.4.222
+ * [new tag]                   v4.4.223 -> v4.4.223
+ * [new tag]                   v4.4.224 -> v4.4.224
+ * [new tag]                   v4.4.225 -> v4.4.225
+ * [new tag]                   v4.4.226 -> v4.4.226
+ * [new tag]                   v4.4.227 -> v4.4.227
+ * [new tag]                   v4.4.228 -> v4.4.228
+ * [new tag]                   v4.4.229 -> v4.4.229
+ * [new tag]                   v4.9.191 -> v4.9.191
+ * [new tag]                   v4.9.192 -> v4.9.192
+ * [new tag]                   v4.9.193 -> v4.9.193
+ * [new tag]                   v4.9.194 -> v4.9.194
+ * [new tag]                   v4.9.195 -> v4.9.195
+ * [new tag]                   v4.9.196 -> v4.9.196
+ * [new tag]                   v4.9.197 -> v4.9.197
+ * [new tag]                   v4.9.198 -> v4.9.198
+ * [new tag]                   v4.9.199 -> v4.9.199
+ * [new tag]                   v4.9.200 -> v4.9.200
+ * [new tag]                   v4.9.201 -> v4.9.201
+ * [new tag]                   v4.9.202 -> v4.9.202
+ * [new tag]                   v4.9.203 -> v4.9.203
+ * [new tag]                   v4.9.204 -> v4.9.204
+ * [new tag]                   v4.9.205 -> v4.9.205
+ * [new tag]                   v4.9.206 -> v4.9.206
+ * [new tag]                   v4.9.207 -> v4.9.207
+ * [new tag]                   v4.9.208 -> v4.9.208
+ * [new tag]                   v4.9.209 -> v4.9.209
+ * [new tag]                   v4.9.210 -> v4.9.210
+ * [new tag]                   v4.9.211 -> v4.9.211
+ * [new tag]                   v4.9.212 -> v4.9.212
+ * [new tag]                   v4.9.213 -> v4.9.213
+ * [new tag]                   v4.9.214 -> v4.9.214
+ * [new tag]                   v4.9.215 -> v4.9.215
+ * [new tag]                   v4.9.216 -> v4.9.216
+ * [new tag]                   v4.9.217 -> v4.9.217
+ * [new tag]                   v4.9.218 -> v4.9.218
+ * [new tag]                   v4.9.219 -> v4.9.219
+ * [new tag]                   v4.9.220 -> v4.9.220
+ * [new tag]                   v4.9.221 -> v4.9.221
+ * [new tag]                   v4.9.222 -> v4.9.222
+ * [new tag]                   v4.9.223 -> v4.9.223
+ * [new tag]                   v4.9.224 -> v4.9.224
+ * [new tag]                   v4.9.225 -> v4.9.225
+ * [new tag]                   v4.9.226 -> v4.9.226
+ * [new tag]                   v4.9.227 -> v4.9.227
+ * [new tag]                   v4.9.228 -> v4.9.228
+ * [new tag]                   v4.9.229 -> v4.9.229
+ * [new tag]                   v5.2.12 -> v5.2.12
+ * [new tag]                   v5.2.13 -> v5.2.13
+ * [new tag]                   v5.2.14 -> v5.2.14
+ * [new tag]                   v5.2.15 -> v5.2.15
+ * [new tag]                   v5.2.16 -> v5.2.16
+ * [new tag]                   v5.2.17 -> v5.2.17
+ * [new tag]                   v5.2.18 -> v5.2.18
+ * [new tag]                   v5.2.19 -> v5.2.19
+ * [new tag]                   v5.2.20 -> v5.2.20
+ * [new tag]                   v5.2.21 -> v5.2.21
+ * [new tag]                   v5.3.1 -> v5.3.1
+ * [new tag]                   v5.3.10 -> v5.3.10
+ * [new tag]                   v5.3.11 -> v5.3.11
+ * [new tag]                   v5.3.12 -> v5.3.12
+ * [new tag]                   v5.3.13 -> v5.3.13
+ * [new tag]                   v5.3.14 -> v5.3.14
+ * [new tag]                   v5.3.15 -> v5.3.15
+ * [new tag]                   v5.3.16 -> v5.3.16
+ * [new tag]                   v5.3.17 -> v5.3.17
+ * [new tag]                   v5.3.18 -> v5.3.18
+ * [new tag]                   v5.3.2 -> v5.3.2
+ * [new tag]                   v5.3.3 -> v5.3.3
+ * [new tag]                   v5.3.4 -> v5.3.4
+ * [new tag]                   v5.3.5 -> v5.3.5
+ * [new tag]                   v5.3.6 -> v5.3.6
+ * [new tag]                   v5.3.7 -> v5.3.7
+ * [new tag]                   v5.3.8 -> v5.3.8
+ * [new tag]                   v5.3.9 -> v5.3.9
+ * [new tag]                   v5.4.1 -> v5.4.1
+ * [new tag]                   v5.4.10 -> v5.4.10
+ * [new tag]                   v5.4.11 -> v5.4.11
+ * [new tag]                   v5.4.12 -> v5.4.12
+ * [new tag]                   v5.4.13 -> v5.4.13
+ * [new tag]                   v5.4.14 -> v5.4.14
+ * [new tag]                   v5.4.15 -> v5.4.15
+ * [new tag]                   v5.4.16 -> v5.4.16
+ * [new tag]                   v5.4.17 -> v5.4.17
+ * [new tag]                   v5.4.18 -> v5.4.18
+ * [new tag]                   v5.4.19 -> v5.4.19
+ * [new tag]                   v5.4.2 -> v5.4.2
+ * [new tag]                   v5.4.20 -> v5.4.20
+ * [new tag]                   v5.4.21 -> v5.4.21
+ * [new tag]                   v5.4.22 -> v5.4.22
+ * [new tag]                   v5.4.23 -> v5.4.23
+ * [new tag]                   v5.4.24 -> v5.4.24
+ * [new tag]                   v5.4.25 -> v5.4.25
+ * [new tag]                   v5.4.26 -> v5.4.26
+ * [new tag]                   v5.4.27 -> v5.4.27
+ * [new tag]                   v5.4.28 -> v5.4.28
+ * [new tag]                   v5.4.29 -> v5.4.29
+ * [new tag]                   v5.4.3 -> v5.4.3
+ * [new tag]                   v5.4.30 -> v5.4.30
+ * [new tag]                   v5.4.31 -> v5.4.31
+ * [new tag]                   v5.4.32 -> v5.4.32
+ * [new tag]                   v5.4.33 -> v5.4.33
+ * [new tag]                   v5.4.34 -> v5.4.34
+ * [new tag]                   v5.4.35 -> v5.4.35
+ * [new tag]                   v5.4.36 -> v5.4.36
+ * [new tag]                   v5.4.37 -> v5.4.37
+ * [new tag]                   v5.4.38 -> v5.4.38
+ * [new tag]                   v5.4.39 -> v5.4.39
+ * [new tag]                   v5.4.4 -> v5.4.4
+ * [new tag]                   v5.4.40 -> v5.4.40
+ * [new tag]                   v5.4.41 -> v5.4.41
+ * [new tag]                   v5.4.42 -> v5.4.42
+ * [new tag]                   v5.4.43 -> v5.4.43
+ * [new tag]                   v5.4.44 -> v5.4.44
+ * [new tag]                   v5.4.45 -> v5.4.45
+ * [new tag]                   v5.4.46 -> v5.4.46
+ * [new tag]                   v5.4.47 -> v5.4.47
+ * [new tag]                   v5.4.48 -> v5.4.48
+ * [new tag]                   v5.4.49 -> v5.4.49
+ * [new tag]                   v5.4.5 -> v5.4.5
+ * [new tag]                   v5.4.50 -> v5.4.50
+ * [new tag]                   v5.4.6 -> v5.4.6
+ * [new tag]                   v5.4.7 -> v5.4.7
+ * [new tag]                   v5.4.8 -> v5.4.8
+ * [new tag]                   v5.4.9 -> v5.4.9
+ * [new tag]                   v5.5.1 -> v5.5.1
+ * [new tag]                   v5.5.10 -> v5.5.10
+ * [new tag]                   v5.5.11 -> v5.5.11
+ * [new tag]                   v5.5.12 -> v5.5.12
+ * [new tag]                   v5.5.13 -> v5.5.13
+ * [new tag]                   v5.5.14 -> v5.5.14
+ * [new tag]                   v5.5.15 -> v5.5.15
+ * [new tag]                   v5.5.16 -> v5.5.16
+ * [new tag]                   v5.5.17 -> v5.5.17
+ * [new tag]                   v5.5.18 -> v5.5.18
+ * [new tag]                   v5.5.19 -> v5.5.19
+ * [new tag]                   v5.5.2 -> v5.5.2
+ * [new tag]                   v5.5.3 -> v5.5.3
+ * [new tag]                   v5.5.4 -> v5.5.4
+ * [new tag]                   v5.5.5 -> v5.5.5
+ * [new tag]                   v5.5.6 -> v5.5.6
+ * [new tag]                   v5.5.7 -> v5.5.7
+ * [new tag]                   v5.5.8 -> v5.5.8
+ * [new tag]                   v5.5.9 -> v5.5.9
+ * [new tag]                   v5.6.1 -> v5.6.1
+ * [new tag]                   v5.6.10 -> v5.6.10
+ * [new tag]                   v5.6.11 -> v5.6.11
+ * [new tag]                   v5.6.12 -> v5.6.12
+ * [new tag]                   v5.6.13 -> v5.6.13
+ * [new tag]                   v5.6.14 -> v5.6.14
+ * [new tag]                   v5.6.15 -> v5.6.15
+ * [new tag]                   v5.6.16 -> v5.6.16
+ * [new tag]                   v5.6.17 -> v5.6.17
+ * [new tag]                   v5.6.18 -> v5.6.18
+ * [new tag]                   v5.6.19 -> v5.6.19
+ * [new tag]                   v5.6.2 -> v5.6.2
+ * [new tag]                   v5.6.3 -> v5.6.3
+ * [new tag]                   v5.6.4 -> v5.6.4
+ * [new tag]                   v5.6.5 -> v5.6.5
+ * [new tag]                   v5.6.6 -> v5.6.6
+ * [new tag]                   v5.6.7 -> v5.6.7
+ * [new tag]                   v5.6.8 -> v5.6.8
+ * [new tag]                   v5.6.9 -> v5.6.9
+ * [new tag]                   v5.7.1 -> v5.7.1
+ * [new tag]                   v5.7.2 -> v5.7.2
+ * [new tag]                   v5.7.3 -> v5.7.3
+ * [new tag]                   v5.7.4 -> v5.7.4
+ * [new tag]                   v5.7.5 -> v5.7.5
+ * [new tag]                   v5.7.6 -> v5.7.6
+ * [new tag]                   v5.7.7 -> v5.7.7
+ * [new tag]                   x86-asm-2020-04-02 -> x86-asm-2020-04-02
+ * [new tag]                   x86-asm-for-linus-v5.7 -> x86-asm-for-linus-v5.7
+ * [new tag]                   x86-boot-2020-06-01 -> x86-boot-2020-06-01
+ * [new tag]                   x86-build-2020-06-01 -> x86-build-2020-06-01
+ * [new tag]                   x86-cleanups-2020-06-01 -> x86-cleanups-2020-06-01
+ * [new tag]                   x86-cpu-2020-06-01 -> x86-cpu-2020-06-01
+ * [new tag]                   x86-entry-2020-03-30 -> x86-entry-2020-03-30
+ * [new tag]                   x86-entry-2020-06-04-history -> x86-entry-2020-06-04-history
+ * [new tag]                   x86-entry-2020-06-12 -> x86-entry-2020-06-12
+ * [new tag]                   x86-fpu-2020-06-01 -> x86-fpu-2020-06-01
+ * [new tag]                   x86-mm-2020-06-01 -> x86-mm-2020-06-01
+ * [new tag]                   x86-mm-2020-06-04 -> x86-mm-2020-06-04
+ * [new tag]                   x86-mm-2020-06-05 -> x86-mm-2020-06-05
+ * [new tag]                   x86-platform-2020-06-01 -> x86-platform-2020-06-01
+ * [new tag]                   x86-pti-2020-01-28 -> x86-pti-2020-01-28
+ * [new tag]                   x86-splitlock-2020-03-30 -> x86-splitlock-2020-03-30
+ * [new tag]                   x86-timers-2020-03-30 -> x86-timers-2020-03-30
+ * [new tag]                   x86-timers-2020-06-03 -> x86-timers-2020-06-03
+ * [new tag]                   x86-urgent-2020-02-09 -> x86-urgent-2020-02-09
+ * [new tag]                   x86-urgent-2020-02-22 -> x86-urgent-2020-02-22
+ * [new tag]                   x86-urgent-2020-03-15 -> x86-urgent-2020-03-15
+ * [new tag]                   x86-urgent-2020-03-29 -> x86-urgent-2020-03-29
+ * [new tag]                   x86-urgent-2020-04-02 -> x86-urgent-2020-04-02
+ * [new tag]                   x86-urgent-2020-04-12 -> x86-urgent-2020-04-12
+ * [new tag]                   x86-urgent-2020-04-19 -> x86-urgent-2020-04-19
+ * [new tag]                   x86-urgent-2020-05-10 -> x86-urgent-2020-05-10
+ * [new tag]                   x86-urgent-2020-05-24 -> x86-urgent-2020-05-24
+ * [new tag]                   x86-urgent-2020-05-31 -> x86-urgent-2020-05-31
+ * [new tag]                   x86-urgent-2020-06-11 -> x86-urgent-2020-06-11
+ * [new tag]                   x86-vdso-2020-06-01 -> x86-vdso-2020-06-01
+ * [new tag]                   x86_cache_updates_for_5.8 -> x86_cache_updates_for_5.8
+ * [new tag]                   x86_entry_for_5.8 -> x86_entry_for_5.8
+ * [new tag]                   x86_microcode_for_5.8 -> x86_microcode_for_5.8
+ * [new tag]                   x86_urgent_for_5.8_rc3 -> x86_urgent_for_5.8_rc3
+ * [new tag]                   x86_urgent_for_v5.7-rc7 -> x86_urgent_for_v5.7-rc7
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/ltp.git
+ + aa1007391fe6...0744cfd7d2f1 master -> master (forced update)
+   c5311d26fb80..c921377e7f49  origin/HEAD -> origin/HEAD
+   c5311d26fb80..c921377e7f49  origin/master -> origin/master
+
+Entering /home/vireshk/scripts

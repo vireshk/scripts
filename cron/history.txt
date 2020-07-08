@@ -45828,3 +45828,69 @@ To ssh://git.linaro.org/people/viresh.kumar/backup/ltp.git
  + 0744cfd7d2f1...81a952af3018 bkp/master -> bkp/master (forced update)
 
 Entering /home/vireshk/scripts
+[master 6ff09bd36e4c] updates
+ 1 file changed, 71 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   ade24b2a9eaf..6ff09bd36e4c  master -> master
+   1dcebd0a45f1..ade24b2a9eaf  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Jul  8 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 65cb6f6b1e94...3209ecede8a0 cppc/fi -> cppc/fi (forced update)
+ + ffdfb849a11b...bebc6082da0a stable-update -> stable-update (forced update)
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/ltp.git
+ + 86fd9c6ee662...0f4c438a1a37 master -> master (forced update)
+ + 81a952af3018...86fd9c6ee662 bkp/master -> bkp/master (forced update)
+   1d76ececee28..8cb6f33ce041  origin/HEAD -> origin/HEAD
+   1d76ececee28..8cb6f33ce041  origin/master -> origin/master
+
+Entering /home/vireshk/scripts

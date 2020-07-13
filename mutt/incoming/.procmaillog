@@ -1171,3 +1171,6 @@ From vireshk  Wed Jun 24 10:14:02 2020
 From vireshk  Wed Jul  1 08:56:35 2020
  Subject: [PATCH v2]  cpufreq: CPPC: fix some unreasonable codes in cppc_cpufre
   Folder: PATCH_v2_cpufreq_CPPC_fix_some_unreasonable_codes_in_cppc_cp	   4399
+From vireshk  Mon Jul 13 07:34:49 2020
+ Subject: [PATCH 2/2] cpufreq: tegra186: Simplify probe return path
+  Folder: PATCH_2-2_cpufreq_tegra186_Simplify_probe_return_path.mbox	   6137

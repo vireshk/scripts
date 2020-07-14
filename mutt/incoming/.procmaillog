@@ -1174,3 +1174,12 @@ From vireshk  Wed Jul  1 08:56:35 2020
 From vireshk  Mon Jul 13 07:34:49 2020
  Subject: [PATCH 2/2] cpufreq: tegra186: Simplify probe return path
   Folder: PATCH_2-2_cpufreq_tegra186_Simplify_probe_return_path.mbox	   6137
+From vireshk  Fri Jul 10 08:02:05 2020
+ Subject: [PATCH v7 5/8] opp: Modify opp API, dev_pm_opp_get_freq(), find freq 
+  Folder: PATCH_v7_5-8_opp_Modify_opp_API,_dev_pm_opp_get_freq_,_find_	   6510
+From vireshk  Fri Jul 10 08:02:05 2020
+ Subject: [PATCH v7 5/8] opp: Modify opp API, dev_pm_opp_get_freq(), find freq 
+  Folder: PATCH_v7_5-8_opp_Modify_opp_API,_dev_pm_opp_get_freq_,_find_	   6510
+From vireshk  Tue Jul 14 08:56:40 2020
+ Subject: [PATCH] opp: ti-opp-supply: Replace HTTP links with HTTPS ones
+  Folder: PATCH_opp_ti-opp-supply_Replace_HTTP_links_with_HTTPS_ones.m	   6122

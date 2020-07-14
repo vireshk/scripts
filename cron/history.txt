@@ -46101,3 +46101,83 @@ To ssh://git.linaro.org/people/viresh.kumar/backup/ltp.git
  + fa9bce5f1faa...4f625394af8a bkp/master -> bkp/master (forced update)
 
 Entering /home/vireshk/scripts
+[master 9560feb271ba] updates
+ 3 files changed, 142 insertions(+)
+ create mode 100644 mutt/incoming/PATCH_2-2_cpufreq_tegra186_Simplify_probe_return_path.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   5b0dc54cb322..9560feb271ba  master -> master
+   22d9f907b992..5b0dc54cb322  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Tue Jul 14 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + a5299842e167...80e3e75430a7 cooling/sched -> cooling/sched (forced update)
+   e7bf9997c605..e75f84af530e  opp/linux-next -> opp/linux-next
+   0363635faa1d..512381824ad9  bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next
+   e7bf9997c605..e75f84af530e  pmko/opp/linux-next -> pmko/opp/linux-next
+ + 46fa597fe899...1c14587141a0 tip/auto-latest -> tip/auto-latest (forced update)
+   d77aeb5d403d..8fa88a88d573  tip/irq/core -> tip/irq/core
+   c935cd62d3fe..f9ad4a5f3f20  tip/locking/core -> tip/locking/core
+ + e936e0a9b6f3...bccf9048549a tip/master -> tip/master (forced update)
+   bb42b3d39781..c085fb877467  tip/perf/core -> tip/perf/core
+   01e377c539ca..9d246053a691  tip/sched/core -> tip/sched/core
+   e21cf43406a1..ce3614daabea  tip/sched/urgent -> tip/sched/urgent
+   f097eb38f713..30c66fc30ee7  tip/timers/urgent -> tip/timers/urgent
+   2c92d787cc9f..b037b09b9058  tip/x86/entry -> tip/x86/entry
+   cced0b24bb54..bd87e6f6610a  tip/x86/urgent -> tip/x86/urgent
+ * [new branch]                tip/perf/vlbr -> tip/perf/vlbr
+ * [new tag]                   core-urgent-2020-07-05 -> core-urgent-2020-07-05
+ * [new tag]                   irq-urgent-2020-07-05 -> irq-urgent-2020-07-05
+ * [new tag]                   x86-urgent-2020-07-05 -> x86-urgent-2020-07-05
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/ltp.git
+ + 4f625394af8a...9a30a0173a6a bkp/master -> bkp/master (forced update)
+
+Entering /home/vireshk/scripts

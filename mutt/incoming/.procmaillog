@@ -1183,3 +1183,11 @@ From vireshk  Fri Jul 10 08:02:05 2020
 From vireshk  Tue Jul 14 08:56:40 2020
  Subject: [PATCH] opp: ti-opp-supply: Replace HTTP links with HTTPS ones
   Folder: PATCH_opp_ti-opp-supply_Replace_HTTP_links_with_HTTPS_ones.m	   6122
+From vireshk  Wed Jul 15 07:58:52 2020
+ Subject: [PATCH 04/13] cpufreq: sti-cpufreq: Fix some formatting and misspelli
+  Folder: PATCH_04-13_cpufreq_sti-cpufreq_Fix_some_formatting_and_miss	   5693
+From foo@bar  Wed Jul 15 08:23:38 2020
+  Folder: .mbox								    874
+From vireshk  Wed Jul 15 07:59:16 2020
+ Subject: [PATCH] cpufreq: imx: Select NVMEM_IMX_OCOTP
+  Folder: PATCH_cpufreq_imx_Select_NVMEM_IMX_OCOTP.mbox			   4324

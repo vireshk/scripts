@@ -2622,3 +2622,35 @@ index e6182c89df79..61623e2ff149 100644
 --
 2.17.1
 
+From foo@bar  Wed Jul 15 08:23:38 2020
+Cc: Patrice Chotard <patrice.chotard@st.com>
+Cc: Pal Singh <ajitpal.singh@st.com>
+Signed-off-by: Lee Jones <lee.jones@linaro.org>
+
+---
+ drivers/cpufreq/sti-cpufreq.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/drivers/cpufreq/sti-cpufreq.c b/drivers/cpufreq/sti-cpufreq.c
+index 8f16bbb164b84..a5ad96d29adca 100644
+--- a/drivers/cpufreq/sti-cpufreq.c
++++ b/drivers/cpufreq/sti-cpufreq.c
+@@ -40,11 +40,11 @@ enum {
+ };
+ 
+ /**
+- * ST CPUFreq Driver Data
++ * struct sti_cpufreq_ddata - ST CPUFreq Driver Data
+  *
+- * @cpu_node		CPU's OF node
+- * @syscfg_eng		Engineering Syscon register map
+- * @regmap		Syscon register map
++ * @cpu:		CPU's OF node
++ * @syscfg_eng:		Engineering Syscon register map
++ * @syscfg:		Syscon register map
+  */
+ static struct sti_cpufreq_ddata {
+ 	struct device *cpu;
+-- 
+2.25.1
+

@@ -2,3 +2,4 @@ all/scripts
 all/criticalinfo/
 work/mail/
 work/repos/devel/linux
+work/repos/tools/ltp

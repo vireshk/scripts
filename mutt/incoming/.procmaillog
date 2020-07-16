@@ -1191,3 +1191,6 @@ From foo@bar  Wed Jul 15 08:23:38 2020
 From vireshk  Wed Jul 15 07:59:16 2020
  Subject: [PATCH] cpufreq: imx: Select NVMEM_IMX_OCOTP
   Folder: PATCH_cpufreq_imx_Select_NVMEM_IMX_OCOTP.mbox			   4324
+From vireshk  Thu Jul 16 08:25:52 2020
+ Subject: [PATCH] opp: Increase parsed_static_opps on _of_add_opp_table_v1
+  Folder: PATCH_opp_Increase_parsed_static_opps_on_of_add_opp_table_v1	   5081

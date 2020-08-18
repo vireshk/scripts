@@ -11,15 +11,15 @@ export PS1="$ "
 export COVER_CC=1
 
 # From Linus Torvalds
-BOLD='\['"$(tput setaf 2)"'\]'
-RESET='\['"$(tput sgr0)"'\]'
-export PS1='['"$BOLD"'\W'"$RESET\$(git ps1)"']\$ '
+#BOLD='\['"$(tput setaf 2)"'\]'
+#RESET='\['"$(tput sgr0)"'\]'
+#export PS1='['"$BOLD"'\W'"$RESET\$(git ps1)"']\$ '
 
 
 # git
 source /home/vireshk/scripts/git_alias
 PATH="/home/vireshk/work/repos/tools/git/contrib/workdir/:/home/vireshk/.local/bin/:$PATH"
-alias python3="python"
+#alias python3="python"
 alias b4="/home/vireshk/work/repos/tools/b4/b4.sh"
 
 # mail
@@ -49,6 +49,8 @@ alias msudo="sudo -A"
 alias minstall="msudo apt-get install"
 alias home="cd /home/vireshk/work/repos"
 alias htools="cd /home/vireshk/work/repos/tools"
+alias hltp="cd /home/vireshk/work/repos/tools/ltp"
+alias hscripts="cd /home/vireshk/scripts"
 alias hlisa="htools; cd lisa"
 alias hwa="cd /home/vireshk/work/repos/tools/wa-data"
 alias hwasrc="hlisa; cd tools/workload-automation"

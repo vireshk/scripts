@@ -46364,3 +46364,40 @@ Everything up-to-date
 
 
 
+ 
+Wed Aug 19 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 52d82df42eef...9aa94d231b52 opp/linux-next -> opp/linux-next (forced update)
+ + e75f84af530e...52d82df42eef bkp/opp/linux-next -> bkp/opp/linux-next (forced update)
+ * [new branch]                bkp/opp/fixes -> bkp/opp/fixes
+ * [new branch]                mac/cpufreq/arm/linux-next -> mac/cpufreq/arm/linux-next
+ * [new branch]                mac/cpufreq/cleanup -> mac/cpufreq/cleanup
+ * [new branch]                mac/cpufreq/qcom -> mac/cpufreq/qcom
+ * [new branch]                mac/master -> mac/master
+ * [new branch]                mac/opp/defer-probe -> mac/opp/defer-probe
+ * [new branch]                mac/opp/linux-next -> mac/opp/linux-next
+ * [new tag]                   acpi-5.9-rc1 -> acpi-5.9-rc1
+ * [new tag]                   master -> master
+ * [new tag]                   opp/fixes -> opp/fixes
+ * [new tag]                   pm-5.8-rc6 -> pm-5.8-rc6
+ * [new tag]                   pm-5.9-rc1 -> pm-5.9-rc1
+ * [new tag]                   v5.8 -> v5.8
+ * [new tag]                   v5.8-rc6 -> v5.8-rc6
+ * [new tag]                   v5.8-rc7 -> v5.8-rc7
+ * [new tag]                   v5.9-rc1 -> v5.9-rc1
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/ltp.git
+ + 6e1e7666faf1...8e9c4c86f854 master -> master (forced update)
+ + 372d8af4c706...6e1e7666faf1 bkp/master -> bkp/master (forced update)
+   d2768c84eb5e..de36948871c5  origin/HEAD -> origin/HEAD
+   d2768c84eb5e..de36948871c5  origin/master -> origin/master
+ * [new branch]                mac/master -> mac/master
+
+Entering /home/vireshk/scripts

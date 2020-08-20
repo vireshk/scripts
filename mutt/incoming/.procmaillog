@@ -1227,3 +1227,6 @@ From vireshk  Wed Aug 12 09:17:56 2020
 From vireshk  Mon Aug 10 14:55:33 2020
  Subject: [PATCH] opp: Fix dev_pm_opp_set_rate() to not return early
   Folder: PATCH_opp_Fix_dev_pm_opp_set_rate__to_not_return_early.mbox	   6220
+From vireshk  Wed Aug 12 09:17:53 2020
+ Subject: [Patch] cpufreq: replace cpu_logical_map with read_cpuid_mpir
+  Folder: Patch_cpufreq_replace_cpu_logical_map_with_read_cpuid_mpir.m	   6756

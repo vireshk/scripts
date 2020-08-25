@@ -46636,3 +46636,126 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 1ec1a5245f09] updates
+ 1 file changed, 70 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   5066b68d5f33..1ec1a5245f09  master -> master
+   6b57199583e3..5066b68d5f33  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Tue Aug 25 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   9123e3a74ec7..99bcfd231280  cpufreq/arm/linux-next -> cpufreq/arm/linux-next
+ + 12b3e4724a6b...284e3734450c opp/defer-probe -> opp/defer-probe (forced update)
+ + 1ee60b43581e...8c6269534d00 opp/linux-next -> opp/linux-next (forced update)
+ + 1e2414cd80ed...12b3e4724a6b bkp/opp/defer-probe -> bkp/opp/defer-probe (forced update)
+   9123e3a74ec7..99bcfd231280  pmko/cpufreq/arm/linux-next -> pmko/cpufreq/arm/linux-next
+ + 1ee60b43581e...8c6269534d00 pmko/opp/linux-next -> pmko/opp/linux-next (forced update)
+   4139fb08c05f..6a24ca2506d6  stable/linux-4.14.y -> stable/linux-4.14.y
+   399849e4654e..d18b78abc0c6  stable/linux-4.19.y -> stable/linux-4.19.y
+   480787e5be11..5c1073c66666  stable/linux-4.4.y -> stable/linux-4.4.y
+   df4674d89f7e..8d71b6117b58  stable/linux-4.9.y -> stable/linux-4.9.y
+   e75220890bf6..77fcb48939fc  stable/linux-5.4.y -> stable/linux-5.4.y
+   fb6c79052380..3f45898cffc4  stable/linux-5.7.y -> stable/linux-5.7.y
+   9ebcfadb0610..d012a7190fc1  stable/master -> stable/master
+ * [new branch]                opp/stable/5.4 -> opp/stable/5.4
+ * [new branch]                stable/linux-5.8.y -> stable/linux-5.8.y
+ * [new tag]                   v4.14.188 -> v4.14.188
+ * [new tag]                   v4.14.189 -> v4.14.189
+ * [new tag]                   v4.14.190 -> v4.14.190
+ * [new tag]                   v4.14.191 -> v4.14.191
+ * [new tag]                   v4.14.192 -> v4.14.192
+ * [new tag]                   v4.14.193 -> v4.14.193
+ * [new tag]                   v4.14.194 -> v4.14.194
+ * [new tag]                   v4.19.132 -> v4.19.132
+ * [new tag]                   v4.19.133 -> v4.19.133
+ * [new tag]                   v4.19.134 -> v4.19.134
+ * [new tag]                   v4.19.135 -> v4.19.135
+ * [new tag]                   v4.19.136 -> v4.19.136
+ * [new tag]                   v4.19.137 -> v4.19.137
+ * [new tag]                   v4.19.138 -> v4.19.138
+ * [new tag]                   v4.19.139 -> v4.19.139
+ * [new tag]                   v4.19.140 -> v4.19.140
+ * [new tag]                   v4.19.141 -> v4.19.141
+ * [new tag]                   v4.4.230 -> v4.4.230
+ * [new tag]                   v4.4.231 -> v4.4.231
+ * [new tag]                   v4.4.232 -> v4.4.232
+ * [new tag]                   v4.4.233 -> v4.4.233
+ * [new tag]                   v4.9.230 -> v4.9.230
+ * [new tag]                   v4.9.231 -> v4.9.231
+ * [new tag]                   v4.9.232 -> v4.9.232
+ * [new tag]                   v4.9.233 -> v4.9.233
+ * [new tag]                   v5.4.51 -> v5.4.51
+ * [new tag]                   v5.4.52 -> v5.4.52
+ * [new tag]                   v5.4.53 -> v5.4.53
+ * [new tag]                   v5.4.54 -> v5.4.54
+ * [new tag]                   v5.4.55 -> v5.4.55
+ * [new tag]                   v5.4.56 -> v5.4.56
+ * [new tag]                   v5.4.57 -> v5.4.57
+ * [new tag]                   v5.4.58 -> v5.4.58
+ * [new tag]                   v5.4.59 -> v5.4.59
+ * [new tag]                   v5.4.60 -> v5.4.60
+ * [new tag]                   v5.7.10 -> v5.7.10
+ * [new tag]                   v5.7.11 -> v5.7.11
+ * [new tag]                   v5.7.12 -> v5.7.12
+ * [new tag]                   v5.7.13 -> v5.7.13
+ * [new tag]                   v5.7.14 -> v5.7.14
+ * [new tag]                   v5.7.15 -> v5.7.15
+ * [new tag]                   v5.7.16 -> v5.7.16
+ * [new tag]                   v5.7.17 -> v5.7.17
+ * [new tag]                   v5.7.8 -> v5.7.8
+ * [new tag]                   v5.7.9 -> v5.7.9
+ * [new tag]                   v5.8.1 -> v5.8.1
+ * [new tag]                   v5.8.2 -> v5.8.2
+ * [new tag]                   v5.8.3 -> v5.8.3
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

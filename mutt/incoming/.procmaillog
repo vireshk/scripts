@@ -1230,3 +1230,12 @@ From vireshk  Mon Aug 10 14:55:33 2020
 From vireshk  Wed Aug 12 09:17:53 2020
  Subject: [Patch] cpufreq: replace cpu_logical_map with read_cpuid_mpir
   Folder: Patch_cpufreq_replace_cpu_logical_map_with_read_cpuid_mpir.m	   6756
+From vireshk  Thu Jul 30 13:33:20 2020
+ Subject: [RFC PATCH 1/3] opp: Reduce code duplication in _set_required_opps()
+  Folder: RFC_PATCH_1-3_opp_Reduce_code_duplication_in_set_required_op	   7175
+From vireshk  Thu Jul 30 13:33:21 2020
+ Subject: [RFC PATCH 2/3] opp: Set required OPPs in reverse order when scaling 
+  Folder: RFC_PATCH_2-3_opp_Set_required_OPPs_in_reverse_order_when_sc	   8549
+From vireshk  Tue Aug 25 09:36:53 2020
+ Subject: [PATCH V2] cpufreq: tegra186: Fix initial frequency
+  Folder: PATCH_V2_cpufreq_tegra186_Fix_initial_frequency.mbox		   8282

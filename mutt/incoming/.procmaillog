@@ -1239,3 +1239,6 @@ From vireshk  Thu Jul 30 13:33:21 2020
 From vireshk  Tue Aug 25 09:36:53 2020
  Subject: [PATCH V2] cpufreq: tegra186: Fix initial frequency
   Folder: PATCH_V2_cpufreq_tegra186_Fix_initial_frequency.mbox		   8282
+From vireshk  Wed Aug 26 15:05:25 2020
+ Subject: [PATCH v2] opp: Power on (virtual) power domains managed by the OPP c
+  Folder: PATCH_v2_opp_Power_on_virtual_power_domains_managed_by_the_O	   8663

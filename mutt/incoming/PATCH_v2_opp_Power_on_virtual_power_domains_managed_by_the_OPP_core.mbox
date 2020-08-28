@@ -1,0 +1,151 @@
+From vireshk  Wed Aug 26 15:05:25 2020
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [172.217.194.109] 	by vireshk-i7 with POP3 (fetchmail-6.3.26) 	for <vireshk@localhost> (single-drop); Wed, 26 Aug 2020 15:05:25 +0530 (IST)
+Received: by 2002:a05:6602:1488:0:0:0:0 with SMTP id a8csp3728091iow;         Wed, 26 Aug 2020 02:35:15 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJylSsuCfYAF/0phbwYRuT2cMd7lao1Yxr7RPK8X8V0bYbKZbx36oFqCSchCxvZzsTswI6/n
+X-Received: by 2002:a17:906:2c47:: with SMTP id f7mr14166354ejh.199.1598434515078;         Wed, 26 Aug 2020 02:35:15 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1598434515; cv=none;         d=google.com; s=arc-20160816;         b=mq9/zrEtzvy9zcHS9rWNG2xjkn22t+ADr9l0gP2IxYxHec7OuimsR8NUkawYQtm9FE          TJUN9DWzBoBn+aszL28vEDlReckWnhuzoS31q5ZaVyIC+8Ib0wTL6ds/w5t1yR3VC0Vb          lYV3RIj1ymY0U07xv/xNNCNXgmzAJKP7vgMm/IwXu733W0Z6eBUYjPBKoMRgNAxoT7lK          m14cotnHZwyRK/Dk3Oi4J2nuTI3acseOgs/rbKcedPSWLA4wuC3r0y5bwBLOvu6F5NQU          o6uLi1JFbxDnfwO4K+TGPtNb7eJPtc+hmwjGdYMLuQ8x87tz/61RqllFaBKRbKHO9GZz          W+gA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from:dkim-signature;         bh=yBt+2etaBY9zgYdXE/iL82GyuWazNPY8Ty2z45dc9Fs=;         b=Y9ck++/cpXIhwK4gqefyUMFLotgMCt9e8HIxZq5KeoCzYXCbZiGdf/EF9hDq5SUfQL          EXLq07NN64/7eYYdyibIm12lr8BdP21aL9Qp+vDiYZk8MYAYMDSOT0aksttCVHtGxrlZ          ZnO0KuuaklGjyvbSafkmoLHgq61zmX+r9RCRix95JXpBuUfmaONciI3ux2y+zTGlRqUq          gnc+blPdCuuMfbwJ3gkCeqGapA6a2mxAlyITnHdXsb7+DvZv2LSY05uX2gxtGhrqL8gC          68aehfrGE4aOXhZeM2e98nM4TCa0oG4OvMvxBDj409n+ibX9Td256FzWJMUA3jTlDLRY          BvUA==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@gerhold.net header.s=strato-dkim-0002 header.b=iXEOjimV;        spf=neutral (google.com: 81.169.146.165 is neither permitted nor denied by best guess record for domain of stephan@gerhold.net) smtp.mailfrom=stephan@gerhold.net
+Return-Path: <stephan@gerhold.net>
+Received: from mo4-p01-ob.smtp.rzone.de (mo4-p01-ob.smtp.rzone.de. [81.169.146.165])         by mx.google.com with ESMTPS id t4si1285484ejd.29.2020.08.26.02.35.14         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Wed, 26 Aug 2020 02:35:15 -0700 (PDT)
+Received-SPF: neutral (google.com: 81.169.146.165 is neither permitted nor denied by best guess record for domain of stephan@gerhold.net) client-ip=81.169.146.165;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@gerhold.net header.s=strato-dkim-0002 header.b=iXEOjimV;        spf=neutral (google.com: 81.169.146.165 is neither permitted nor denied by best guess record for domain of stephan@gerhold.net) smtp.mailfrom=stephan@gerhold.net
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; t=1598434514; 	s=strato-dkim-0002; d=gerhold.net; 	h=Message-Id:Date:Subject:Cc:To:From:X-RZG-CLASS-ID:X-RZG-AUTH:From: 	Subject:Sender; 	bh=yBt+2etaBY9zgYdXE/iL82GyuWazNPY8Ty2z45dc9Fs=; 	b=iXEOjimV/Ww9hKwv2gBdo23IjAdseIaXf6DBjgNK7l2Gw0LVj8HOl8AMxta4s3ROnN 	RfDLinxnSiGVXmPI92C5gzwp3joTEhrgywOi/fS3xKWidvaTxOTns3ydUcA/wKzekxe4 	qDCBFOBdkAyC1EesAftEPEHzDsTUxZq2IgE5ZMRhmCznYrInVaBfrcM5uIxFd/xdVhlH 	R/blnYqhbAtI11eaPmZXEm3L0oKSocAa0gI7jMo+xFenblkoSmpiatIhL0rsHbKLjb3D 	TSBbcrh9hlJ5DSKbI8MEuKAILa7OehvkHXUygQCkRCDB4EriE6LJ3Slp3dRI0dqu1cwW 	NKBQ==
+X-RZG-AUTH: ":P3gBZUipdd93FF5ZZvYFPugejmSTVR2nRPhVORvLd4SsytBXS7IYBkLahKxB4W6NYn8D"
+X-RZG-CLASS-ID: mo00
+Received: from localhost.localdomain 	by smtp.strato.de (RZmta 46.10.7 DYNA|AUTH) 	with ESMTPSA id g0b6c1w7Q9YUkzf 	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256 bits)) 	(Client did not present a certificate); 	Wed, 26 Aug 2020 11:34:30 +0200 (CEST)
+From: Stephan Gerhold <stephan@gerhold.net>
+To: Viresh Kumar <viresh.kumar@linaro.org>
+Cc: "Rafael J. Wysocki" <rjw@rjwysocki.net>, 	Kevin Hilman <khilman@kernel.org>, 	Ulf Hansson <ulf.hansson@linaro.org>, 	Nishanth Menon <nm@ti.com>, 	Stephen Boyd <sboyd@kernel.org>, 	linux-pm@vger.kernel.org, 	linux-kernel@vger.kernel.org, 	Niklas Cassel <nks@flawful.org>, 	Stephan Gerhold <stephan@gerhold.net>
+Subject: [PATCH v2] opp: Power on (virtual) power domains managed by the OPP core
+Date: Wed, 26 Aug 2020 11:33:28 +0200
+Message-Id: <20200826093328.88268-1-stephan@gerhold.net>
+X-Mailer: git-send-email 2.28.0
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Content-Length: 4188
+Lines: 121
+
+dev_pm_opp_attach_genpd() allows attaching an arbitrary number of
+power domains to an OPP table. In that case, the genpd core will
+create a virtual device for each of the power domains.
+
+At the moment, the OPP core only calls
+dev_pm_genpd_set_performance_state() on these virtual devices.
+It does not attempt to power on the power domains. Therefore
+the required power domain might never get turned on.
+
+So far, dev_pm_opp_attach_genpd() is only used in qcom-cpufreq-nvmem.c
+to attach the CPR power domain to the CPU OPP table. The CPR driver
+does not check if it was actually powered on so this did not cause
+any problems. However, other drivers (e.g. rpmpd) might ignore the
+performance state until the power domain is actually powered on.
+
+Since these virtual devices are managed exclusively by the OPP core,
+I would say that it should also be responsible to ensure they are
+enabled.
+
+This commit implements this similar to the non-virtual power domains;
+we create device links for each of attached power domains so that they
+are turned on whenever the consumer device is active.
+
+Signed-off-by: Stephan Gerhold <stephan@gerhold.net>
+---
+Related discussion: https://lore.kernel.org/linux-arm-msm/20200426123140.GA190483@gerhold.net/
+
+v1: https://lore.kernel.org/linux-pm/20200730080146.25185-4-stephan@gerhold.net/
+Changes in v2:
+  - Use device links instead of enabling the power domains in
+    dev_pm_opp_set_rate()
+---
+ drivers/opp/core.c | 34 +++++++++++++++++++++++++++++++++-
+ drivers/opp/opp.h  |  1 +
+ 2 files changed, 34 insertions(+), 1 deletion(-)
+
+diff --git a/drivers/opp/core.c b/drivers/opp/core.c
+index 8b3c3986f589..7e53a7b94c59 100644
+--- a/drivers/opp/core.c
++++ b/drivers/opp/core.c
+@@ -17,6 +17,7 @@
+ #include <linux/device.h>
+ #include <linux/export.h>
+ #include <linux/pm_domain.h>
++#include <linux/pm_runtime.h>
+ #include <linux/regulator/consumer.h>
+ 
+ #include "opp.h"
+@@ -1964,10 +1965,13 @@ static void _opp_detach_genpd(struct opp_table *opp_table)
+ 		if (!opp_table->genpd_virt_devs[index])
+ 			continue;
+ 
++		if (opp_table->genpd_virt_links && opp_table->genpd_virt_links[index])
++			device_link_del(opp_table->genpd_virt_links[index]);
+ 		dev_pm_domain_detach(opp_table->genpd_virt_devs[index], false);
+ 		opp_table->genpd_virt_devs[index] = NULL;
+ 	}
+ 
++	kfree(opp_table->genpd_virt_links);
+ 	kfree(opp_table->genpd_virt_devs);
+ 	opp_table->genpd_virt_devs = NULL;
+ }
+@@ -1999,8 +2003,10 @@ struct opp_table *dev_pm_opp_attach_genpd(struct device *dev,
+ {
+ 	struct opp_table *opp_table;
+ 	struct device *virt_dev;
+-	int index = 0, ret = -EINVAL;
++	struct device_link *dev_link;
++	int index = 0, ret = -EINVAL, num_devs;
+ 	const char **name = names;
++	u32 flags;
+ 
+ 	opp_table = dev_pm_opp_get_opp_table(dev);
+ 	if (IS_ERR(opp_table))
+@@ -2049,6 +2055,32 @@ struct opp_table *dev_pm_opp_attach_genpd(struct device *dev,
+ 		name++;
+ 	}
+ 
++	/* Create device links to enable the power domains when necessary */
++	opp_table->genpd_virt_links = kcalloc(opp_table->required_opp_count,
++					      sizeof(*opp_table->genpd_virt_links),
++					      GFP_KERNEL);
++	if (!opp_table->genpd_virt_links)
++		goto err;
++
++	/* Turn on power domain initially if consumer is active */
++	pm_runtime_get_noresume(dev);
++	flags = DL_FLAG_PM_RUNTIME | DL_FLAG_STATELESS;
++	if (pm_runtime_active(dev))
++		flags |= DL_FLAG_RPM_ACTIVE;
++
++	num_devs = index;
++	for (index = 0; index < num_devs; index++) {
++		dev_link = device_link_add(dev, opp_table->genpd_virt_devs[index],
++					   flags);
++		if (!dev_link) {
++			dev_err(dev, "Failed to create device link\n");
++			pm_runtime_put(dev);
++			goto err;
++		}
++		opp_table->genpd_virt_links[index] = dev_link;
++	}
++	pm_runtime_put(dev);
++
+ 	if (virt_devs)
+ 		*virt_devs = opp_table->genpd_virt_devs;
+ 	mutex_unlock(&opp_table->genpd_virt_dev_lock);
+diff --git a/drivers/opp/opp.h b/drivers/opp/opp.h
+index 78e876ec803e..be5526cdbdba 100644
+--- a/drivers/opp/opp.h
++++ b/drivers/opp/opp.h
+@@ -186,6 +186,7 @@ struct opp_table {
+ 
+ 	struct mutex genpd_virt_dev_lock;
+ 	struct device **genpd_virt_devs;
++	struct device_link **genpd_virt_links;
+ 	struct opp_table **required_opp_tables;
+ 	unsigned int required_opp_count;
+ 
+-- 
+2.28.0
+

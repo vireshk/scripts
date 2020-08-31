@@ -1242,3 +1242,9 @@ From vireshk  Tue Aug 25 09:36:53 2020
 From vireshk  Wed Aug 26 15:05:25 2020
  Subject: [PATCH v2] opp: Power on (virtual) power domains managed by the OPP c
   Folder: PATCH_v2_opp_Power_on_virtual_power_domains_managed_by_the_O	   8663
+From vireshk  Thu Aug 27 09:29:36 2020
+ Subject: [PATCH 1/2] cpufreq: s5pv210: Simplify with dev_err_probe()
+  Folder: PATCH_1-2_cpufreq_s5pv210_Simplify_with_dev_err_probe_.mbox	   5650
+From vireshk  Thu Aug 27 09:29:37 2020
+ Subject: [PATCH 2/2] cpufreq: s5pv210: Use dev_err instead of pr_err in probe
+  Folder: PATCH_2-2_cpufreq_s5pv210_Use_dev_err_instead_of_pr_err_in_p	   6269

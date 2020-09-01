@@ -47057,3 +47057,83 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 00e6d257712f] updates
+ 6 files changed, 259 insertions(+), 152 deletions(-)
+ create mode 100644 mutt/incoming/PATCH_1-2_cpufreq_s5pv210_Simplify_with_dev_err_probe_.mbox
+ create mode 100644 mutt/incoming/PATCH_2-2_cpufreq_s5pv210_Use_dev_err_instead_of_pr_err_in_probe.mbox
+ delete mode 100644 mutt/incoming/PATCH_v2_opp_Power_on_virtual_power_domains_managed_by_the_OPP_core.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   0ef56871768e..00e6d257712f  master -> master
+   7edcc35f0119..0ef56871768e  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Tue Sep  1 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   opp/bkp/genpd-stephan
+ - [deleted]                   opp/stable/5.4
+ - [deleted]                   opp/supp-hw
+ - [deleted]                   test
+   99bcfd231280..4a5bbb6dc2dd  bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next
+ + 9b53e9891081...1cadaccf3728 bkp/opp/linux-next -> bkp/opp/linux-next (forced update)
+ + dc37b29f6d30...13f46f822831 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 49785a8d2c30...13f46f822831 pm/intel_pstate-testing -> pm/intel_pstate-testing (forced update)
+ + dc37b29f6d30...7c174c127f32 pm/linux-next -> pm/linux-next (forced update)
+   d012a7190fc1..f75aef392f86  pm/master -> pm/master
+ + dc37b29f6d30...7c174c127f32 pm/testing -> pm/testing (forced update)
+ + a4501bac0e55...922ff0759a16 pmko/opp/fixes -> pmko/opp/fixes (forced update)
+   e56199230be6..1cadaccf3728  pmko/opp/linux-next -> pmko/opp/linux-next
+ * [new branch]                cpufreq/stats -> cpufreq/stats
+ * [new branch]                opp/bkp/genpd-links -> opp/bkp/genpd-links
+ * [new branch]                opp/fixes -> opp/fixes
+ * [new branch]                bkp/test -> bkp/test
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

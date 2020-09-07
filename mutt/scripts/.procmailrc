@@ -173,6 +173,11 @@ lwn
 * ^(To|Cc):.*users@linux\.kernel\.org
 korg
 
+# gitlab
+:0:
+* ^From:.*gitlab@mg\.gitlab\.com
+linaro/gitlab
+
 
 # Everything else to inbox
 :0:

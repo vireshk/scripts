@@ -1248,3 +1248,6 @@ From vireshk  Thu Aug 27 09:29:36 2020
 From vireshk  Thu Aug 27 09:29:37 2020
  Subject: [PATCH 2/2] cpufreq: s5pv210: Use dev_err instead of pr_err in probe
   Folder: PATCH_2-2_cpufreq_s5pv210_Use_dev_err_instead_of_pr_err_in_p	   6269
+From vireshk  Tue Sep  8 08:58:56 2020
+ Subject: [PATCH] cpufreq: armada-37xx: Add missing MODULE_DEVICE_TABLE
+  Folder: PATCH_cpufreq_armada-37xx_Add_missing_MODULE_DEVICE_TABLE.mb	   5569

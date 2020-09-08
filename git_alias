@@ -78,6 +78,7 @@ alias cpatch='scripts/checkpatch.pl --strict'
 alias cpatcha='cpatch *.patch'
 alias gpatch='git format-patch -C -M --thread=shallow'
 alias gpatchc='gpatch --cover-letter'
+gpatchs() { gpatch --subject-prefix="PATCH V$1" $2; }
 gpatchcs() { gpatchc --subject-prefix="PATCH V$1" $2; }
 gpatchcsb() { gpatchc --subject-prefix="PATCH V$1 --base=$2" $3; }
 alias ph='gpatch HEAD^'

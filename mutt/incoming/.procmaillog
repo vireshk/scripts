@@ -1251,3 +1251,15 @@ From vireshk  Thu Aug 27 09:29:37 2020
 From vireshk  Tue Sep  8 08:58:56 2020
  Subject: [PATCH] cpufreq: armada-37xx: Add missing MODULE_DEVICE_TABLE
   Folder: PATCH_cpufreq_armada-37xx_Add_missing_MODULE_DEVICE_TABLE.mb	   5569
+From vireshk  Tue Sep  8 13:28:03 2020
+ Subject: [PATCH 3/7] cpufreq: qcom-hw: Make use of cpufreq driver_data for pas
+  Folder: PATCH_3-7_cpufreq_qcom-hw_Make_use_of_cpufreq_driver_data_fo	   7810
+From vireshk  Tue Sep  8 13:29:10 2020
+ Subject: [PATCH 7/7] cpufreq: qcom-hw: Use devm_platform_ioremap_resource() to
+  Folder: PATCH_7-7_cpufreq_qcom-hw_Use_devm_platform_ioremap_resource	   6910
+From vireshk  Tue Sep  8 13:29:10 2020
+ Subject: [PATCH 7/7] cpufreq: qcom-hw: Use devm_platform_ioremap_resource() to
+  Folder: PATCH_7-7_cpufreq_qcom-hw_Use_devm_platform_ioremap_resource	   6910
+From vireshk  Fri May 15 10:48:47 2020
+ Subject: [RFC] dt-bindings: mailbox: add doorbell support to ARM MHU
+  Folder: RFC_dt-bindings_mailbox_add_doorbell_support_to_ARM_MHU.mbox	   8343

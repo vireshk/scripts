@@ -96,6 +96,7 @@ alias configimage='$compile configimage'
 alias build='$compile build'
 alias dtb='$compile dtb'
 alias dtbs='$compile dtbs'
+alias dtbsc='$compile dtbsc'
 alias lbuild='$compile lbuild'
 
 alias bkpexynos='cp /media/viresh/boot/uImage /media/viresh/boot/uImage_bkp; cp /media/viresh/boot/board.dtb /media/viresh/boot/board_bkp.dtb; sync'

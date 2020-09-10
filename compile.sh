@@ -285,6 +285,8 @@ elif [ $1 = "dtb" ]; then
 	$isdebug $mk $3".dtb"
 elif [ $1 = "dtbs" ]; then
 	$isdebug $mk W=1 dtbs
+elif [ $1 = "dtbsc" ]; then
+	$isdebug $mk W=1 dt_binding_check
 elif [ $1 = "dtimage" ]; then
 	if [ $3 ]; then
 		DTB=$3

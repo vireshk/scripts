@@ -80,7 +80,7 @@ alias gpatch='git format-patch -C -M --thread=shallow'
 alias gpatchc='gpatch --cover-letter'
 gpatchs() { gpatch --subject-prefix="PATCH V$1" $2; }
 gpatchcs() { gpatchc --subject-prefix="PATCH V$1" $2; }
-gpatchcsb() { gpatchc --subject-prefix="PATCH V$1 --base=$2" $3; }
+gpatchcsb() { gpatchc --subject-prefix="PATCH V$1" --base=$2 $3; }
 alias ph='gpatch HEAD^'
 phc() { gpatch $1^..$1; }
 rpull() { git request-pull remotes/linux-linaro/linux-linaro-core-tracking git://git.linaro.org/arm/big.LITTLE/mp.git $1 > ../pull.txt; cat ../pull.txt; }

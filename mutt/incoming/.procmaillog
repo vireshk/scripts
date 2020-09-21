@@ -1263,3 +1263,6 @@ From vireshk  Tue Sep  8 13:29:10 2020
 From vireshk  Fri May 15 10:48:47 2020
  Subject: [RFC] dt-bindings: mailbox: add doorbell support to ARM MHU
   Folder: RFC_dt-bindings_mailbox_add_doorbell_support_to_ARM_MHU.mbox	   8343
+From vireshk  Tue Sep 15 22:41:29 2020
+ Subject: [PATCH] cpufreq: qcom: Don't add frequencies without an OPP
+  Folder: PATCH_cpufreq_qcom_Don't_add_frequencies_without_an_OPP.mbox	   7322

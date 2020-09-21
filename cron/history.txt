@@ -47853,3 +47853,80 @@ To ssh://git.linaro.org/people/viresh.kumar/backup/ltp.git
  + 6198f4c7cd49...51aaea5ff0bc bkp/master -> bkp/master (forced update)
 
 Entering /home/vireshk/scripts
+[master 04743a702b68] updates
+ 2 files changed, 89 insertions(+), 1 deletion(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   a26574b6fc98..04743a702b68  master -> master
+   a3a6628bd4a6..a26574b6fc98  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon Sep 21 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 02e94298f90e...bc9b9c5ab9d8 cpufreq/arm/linux-next -> cpufreq/arm/linux-next (forced update)
+ + 5d448f579a41...7f4a98d4dac9 mailbox/mhu -> mailbox/mhu (forced update)
+   85bc65ee30f9..6ed05b593599  master -> master
+ + 27d9312e5552...dc279ac6e5b4 opp/defer-probe -> opp/defer-probe (forced update)
+ + 45dd93c40a30...a5663c9b1e31 opp/linux-next -> opp/linux-next (forced update)
+   d168eaa6f6a1..02e94298f90e  bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next
+ + 3f76b8bb243d...875fc2c8d800 bkp/cpufreq/stats -> bkp/cpufreq/stats (forced update)
+   3d77e6a8804a..85bc65ee30f9  bkp/master -> bkp/master
+ + 5a79b14dcfa1...45dd93c40a30 bkp/opp/linux-next -> bkp/opp/linux-next (forced update)
+   34d4ddd359db..fc4f28bb3daf  origin/HEAD -> origin/HEAD
+   34d4ddd359db..fc4f28bb3daf  origin/master -> origin/master
+ + 02e94298f90e...bc9b9c5ab9d8 pmko/cpufreq/arm/linux-next -> pmko/cpufreq/arm/linux-next (forced update)
+ + 45dd93c40a30...a5663c9b1e31 pmko/opp/linux-next -> pmko/opp/linux-next (forced update)
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/ltp.git
+ + 235911649dec...aea25607851a master -> master (forced update)
+ + 51aaea5ff0bc...235911649dec bkp/master -> bkp/master (forced update)
+   a88bdb76e753..8a1393e2442b  origin/HEAD -> origin/HEAD
+   a88bdb76e753..8a1393e2442b  origin/master -> origin/master
+
+Entering /home/vireshk/scripts

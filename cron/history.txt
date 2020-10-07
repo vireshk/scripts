@@ -48329,3 +48329,72 @@ To ssh://git.linaro.org/people/viresh.kumar/backup/ltp.git
  + aea25607851a...a65bc68d324a bkp/master -> bkp/master (forced update)
 
 Entering /home/vireshk/scripts
+[master eb9ee9b51aec] updates
+ 1 file changed, 67 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   1761ae386749..eb9ee9b51aec  master -> master
+   099d5dd2c364..1761ae386749  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Oct  7 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   cpufreq/stats
+ - [deleted]                   mailbox/mhu
+ + 40b676a1e261...bf05b0693613 mailbox/mhuv2 -> mailbox/mhuv2 (forced update)
+ - [deleted]                   opp/defer-probe
+ - [deleted]                   opp/fixes
+ + 5e46e56c2b00...11f230e5015f pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   66bebc5f7cab..c3cdb7873495  pm/linux-next -> pm/linux-next
+   66bebc5f7cab..c3cdb7873495  pm/testing -> pm/testing
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/ltp.git
+   a65bc68d324a..4bec407cc820  master -> master
+
+Entering /home/vireshk/scripts

@@ -48859,3 +48859,66 @@ To ssh://git.linaro.org/people/viresh.kumar/backup/ltp.git
  + 4bec407cc820...eacf2e5e4cc6 bkp/master -> bkp/master (forced update)
 
 Entering /home/vireshk/scripts
+[master 490318b3fbcc] updates
+ 1 file changed, 66 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   da3b326372fd..490318b3fbcc  master -> master
+   0ba5f7c6dd2d..da3b326372fd  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon Oct 19 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 83b5d3ca8d9e...76a1c7ae070a mailbox/mhuv2 -> mailbox/mhuv2 (forced update)
+ + da509e7c7ba5...83b5d3ca8d9e bkp/mailbox/mhuv2 -> bkp/mailbox/mhuv2 (forced update)
+ * [new branch]                bkp/mailbox/mhuv2-v1 -> bkp/mailbox/mhuv2-v1
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

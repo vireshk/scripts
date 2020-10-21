@@ -17,10 +17,10 @@ LOGFILE=$HOME/.procmaillog		# Keep a log for troubleshooting.
 * ^Subject:.*Payslip
 linaro/payslip
 
-# ara/jira
+# linaro-open-discussions@op-lists.linaro.org
 :0:
-* ^(From|To|Cc):.*(jira@projectara\.atlassian\.net|review@projectara-review\.linaro\.org)
-ara/jira
+* ^(From|To|Cc):.*(linaro-open-discussions@op-lists\.linaro.org)
+linaro/discuss
 
 # pmwg-weeklies
 :0:

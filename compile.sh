@@ -154,6 +154,14 @@ elif [ $2 = allx86 ]; then
 	FLAGS="LOCALVERSION=-custom"
 	carch="x86"
 	IMAGE=
+elif [ $2 = modx86 ]; then
+	dir=../ballmodx86/
+	cfg=allmodconfig
+	CROSS_COMPILE=
+	MISMATCH=
+	FLAGS="LOCALVERSION=-custom"
+	carch="x86"
+	IMAGE=
 elif [ $2 = x86 ]; then
 	dir=../bx86/
 	cfg=x86_64_defconfig

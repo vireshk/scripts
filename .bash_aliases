@@ -154,11 +154,11 @@ alias mydump="aarch64-linux-gnu-objdump -r -S -l --disassemble"
 mymini() { msudo minicom -w panda -D /dev/ttyUSB$1; }
 
 # ccache
-export USE_CCACHE=1
+#export USE_CCACHE=1
 
 alias myfetch="fetchmail -d 60 -L ~/.fetchmaillog"
 
-PATH="/usr/lib/ccache:$PATH"
+#PATH="/usr/lib/ccache:$PATH"
 
 # qcom-board: skales
 PATH="$htools/skales:$PATH"

@@ -49206,3 +49206,268 @@ To ssh://git.linaro.org/people/viresh.kumar/backup/ltp.git
  + 41c6693c6714...7741d0595a64 bkp/master -> bkp/master (forced update)
 
 Entering /home/vireshk/scripts
+[master f0bc09d709b3] updates
+ 2 files changed, 68 insertions(+), 88 deletions(-)
+ delete mode 100644 mutt/incoming/PATCH_cpufreq_qcom_Don't_add_frequencies_without_an_OPP.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   d4009923b3d7..f0bc09d709b3  master -> master
+   d1fe9f680288..d4009923b3d7  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Tue Oct 27 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 0827a925d1b0...f312d8b23f74 cooling/sched-v2 -> cooling/sched-v2 (forced update)
+ + bf0dc2467620...a1563e0658e6 opp/fixes -> opp/fixes (forced update)
+ + 049bfa3c0699...43c3a1fd5e60 bkp/opp/linux-next -> bkp/opp/linux-next (forced update)
+   f9893351acae..4525c8781ec0  origin/HEAD -> origin/HEAD
+   f9893351acae..4525c8781ec0  origin/master -> origin/master
+ - [deleted]                   tip/WIP.core/headers
+ - [deleted]                   tip/WIP.core/rcu
+ + bdbfb1d52d5e...34d4ddd359db tip/WIP.fixes -> tip/WIP.fixes (forced update)
+ - [deleted]                   tip/WIP.locking/core
+ - [deleted]                   tip/WIP.sched/core
+ - [deleted]                   tip/WIP.x86/entry
+ - [deleted]                   tip/WIP.x86/mm
+ + 1c14587141a0...65609b26b21a tip/auto-latest -> tip/auto-latest (forced update)
+   35fd7a637c42..88451f2cd3ce  tip/core/debugobjects -> tip/core/debugobjects
+   cb3cb6733fbd..b36c830f8c9b  tip/core/rcu -> tip/core/rcu
+   5fdeefa053df..b6ec41346103  tip/core/urgent -> tip/core/urgent
+   2a55280a3675..74f85551666f  tip/efi-urgent-for-linus -> tip/efi-urgent-for-linus
+   e9524fb97ab5..4d0a4388ccdd  tip/efi/core -> tip/efi/core
+   2a55280a3675..d32de9130f6c  tip/efi/urgent -> tip/efi/urgent
+   8fa88a88d573..863bae1fbcfa  tip/irq/core -> tip/irq/core
+   98817a84ff1c..ceb2465c5119  tip/irq/urgent -> tip/irq/urgent
+   f9ad4a5f3f20..2116d708b058  tip/locking/core -> tip/locking/core
+   c935cd62d3fe..459e39538e61  tip/locking/header -> tip/locking/header
+   37f8173dd849..ed3e453798d4  tip/locking/urgent -> tip/locking/urgent
+ + bccf9048549a...95d591cca3b1 tip/master -> tip/master (forced update)
+   d832c0051f4e..ab0a40ea8820  tip/objtool/core -> tip/objtool/core
+   0f1441b44e82..db6c6a0df840  tip/objtool/urgent -> tip/objtool/urgent
+   16accae3d97f..6d6b8b9f4fce  tip/perf-urgent-for-linus -> tip/perf-urgent-for-linus
+   c085fb877467..f91072ed1b72  tip/perf/core -> tip/perf/core
+   16accae3d97f..f3d301c1f2f5  tip/perf/urgent -> tip/perf/urgent
+   bb2de0adca21..b3149ffcdb31  tip/ras/core -> tip/ras/core
+ + 68f7b5cc835d...cc172ff301d8 tip/sched-urgent-for-linus -> tip/sched-urgent-for-linus (forced update)
+   9d246053a691..feff2e65efd8  tip/sched/core -> tip/sched/core
+   8b700983de82..4fd5750af02a  tip/sched/fifo -> tip/sched/fifo
+   ce3614daabea..a73f863af4ce  tip/sched/urgent -> tip/sched/urgent
+ - [deleted]                   tip/smp/hotplug
+   f097eb38f713..b4a25fb0e629  tip/timers-urgent-for-linus -> tip/timers-urgent-for-linus
+ - [deleted]                   tip/timers/2038
+   809eb4e9bf9d..1b80043ed218  tip/timers/core -> tip/timers/core
+   30c66fc30ee7..a4fd8414659b  tip/timers/urgent -> tip/timers/urgent
+ - [deleted]                   tip/timers/vdso
+   1ac49f8328cb..788a8cb1f7c2  tip/tip -> tip/tip
+   bd1de2a7aace..7a27ef5e8308  tip/x86-mm-for-linus -> tip/x86-mm-for-linus
+   2ce0d7f9766f..f75aef392f86  tip/x86/asm -> tip/x86/asm
+   5214028dd89e..f75aef392f86  tip/x86/boot -> tip/x86/boot
+   38f3e775e9c2..642d94cf336f  tip/x86/build -> tip/x86/build
+   0c4d5ba1b998..29b6bd41ee24  tip/x86/cache -> tip/x86/cache
+   99e40204e014..900ffe39fec9  tip/x86/cleanups -> tip/x86/cleanups
+   9cb1fd0efd19..238c91115cd0  tip/x86/core -> tip/x86/core
+   c9a1ff316bc9..e1ebb2b49048  tip/x86/cpu -> tip/x86/cpu
+   b037b09b9058..d53d9bc0cf78  tip/x86/entry -> tip/x86/entry
+   4185b3b92792..1ef5423a55c2  tip/x86/fpu -> tip/x86/fpu
+   d029bff60aa6..1b9abd1755ad  tip/x86/fsgsbase -> tip/x86/fsgsbase
+   538f127cd3bc..dfc53baae3c6  tip/x86/hyperv -> tip/x86/hyperv
+   a7e1f67ed29f..f94c91f7ba3b  tip/x86/misc -> tip/x86/misc
+   bd1de2a7aace..7a27ef5e8308  tip/x86/mm -> tip/x86/mm
+   33649bf4494c..7a6d94f0ed95  tip/x86/platform -> tip/x86/platform
+   a84de2fa962c..e9c142f6f54d  tip/x86/pti -> tip/x86/pti
+   bd35c77e32e4..898ec52d2ba0  tip/x86/timers -> tip/x86/timers
+   bd87e6f6610a..abee7c494d8c  tip/x86/urgent -> tip/x86/urgent
+ * [new branch]                bkp/cooling/sched-v2 -> bkp/cooling/sched-v2
+ * [new branch]                bkp/opp/fixes -> bkp/opp/fixes
+ * [new branch]                tip/core-build-for-linus -> tip/core-build-for-linus
+ * [new branch]                tip/core-debugobjects-for-linus -> tip/core-debugobjects-for-linus
+ * [new branch]                tip/core-headers-for-linus -> tip/core-headers-for-linus
+ * [new branch]                tip/core-rcu-for-linus -> tip/core-rcu-for-linus
+ * [new branch]                tip/core-static_call-for-linus -> tip/core-static_call-for-linus
+ * [new branch]                tip/core/build -> tip/core/build
+ * [new branch]                tip/core/entry -> tip/core/entry
+ * [new branch]                tip/core/headers -> tip/core/headers
+ * [new branch]                tip/core/static_call -> tip/core/static_call
+ * [new branch]                tip/efi-core-for-linus -> tip/efi-core-for-linus
+ * [new branch]                tip/irq-urgent-for-linus -> tip/irq-urgent-for-linus
+ * [new branch]                tip/locking-core-for-linus -> tip/locking-core-for-linus
+ * [new branch]                tip/locking-urgent-for-linus -> tip/locking-urgent-for-linus
+ * [new branch]                tip/locking/nmi -> tip/locking/nmi
+ * [new branch]                tip/objtool-core-for-linus -> tip/objtool-core-for-linus
+ * [new branch]                tip/perf-core-for-linus -> tip/perf-core-for-linus
+ * [new branch]                tip/perf-kprobes-for-linus -> tip/perf-kprobes-for-linus
+ * [new branch]                tip/perf/kprobes -> tip/perf/kprobes
+ * [new branch]                tip/ras-core-for-linus -> tip/ras-core-for-linus
+ * [new branch]                tip/sched-core-for-linus -> tip/sched-core-for-linus
+ * [new branch]                tip/sched-fifo-for-linus -> tip/sched-fifo-for-linus
+ * [new branch]                tip/x86-alternatives-for-linus -> tip/x86-alternatives-for-linus
+ * [new branch]                tip/x86-asm-for-linus -> tip/x86-asm-for-linus
+ * [new branch]                tip/x86-boot-for-linus -> tip/x86-boot-for-linus
+ * [new branch]                tip/x86-build-for-linus -> tip/x86-build-for-linus
+ * [new branch]                tip/x86-cleanups-for-linus -> tip/x86-cleanups-for-linus
+ * [new branch]                tip/x86-core-for-linus -> tip/x86-core-for-linus
+ * [new branch]                tip/x86-cpu-for-linus -> tip/x86-cpu-for-linus
+ * [new branch]                tip/x86-fpu-for-linus -> tip/x86-fpu-for-linus
+ * [new branch]                tip/x86-hyperv-for-linus -> tip/x86-hyperv-for-linus
+ * [new branch]                tip/x86-kaslr-for-linus -> tip/x86-kaslr-for-linus
+ * [new branch]                tip/x86-microcode-for-linus -> tip/x86-microcode-for-linus
+ * [new branch]                tip/x86-misc-for-linus -> tip/x86-misc-for-linus
+ * [new branch]                tip/x86-paravirt-for-linus -> tip/x86-paravirt-for-linus
+ * [new branch]                tip/x86-platform-for-linus -> tip/x86-platform-for-linus
+ * [new branch]                tip/x86-seves-for-paolo -> tip/x86-seves-for-paolo
+ * [new branch]                tip/x86-timers-for-linus -> tip/x86-timers-for-linus
+ * [new branch]                tip/x86-urgent-for-linus -> tip/x86-urgent-for-linus
+ * [new branch]                tip/x86/irq -> tip/x86/irq
+ * [new branch]                tip/x86/kaslr -> tip/x86/kaslr
+ * [new branch]                tip/x86/paravirt -> tip/x86/paravirt
+ * [new branch]                tip/x86/pasid -> tip/x86/pasid
+ * [new branch]                tip/x86/seves -> tip/x86/seves
+ * [new tag]                   core-build-2020-10-12 -> core-build-2020-10-12
+ * [new tag]                   core-debugobjects-2020-08-03 -> core-debugobjects-2020-08-03
+ * [new tag]                   core-debugobjects-2020-10-12 -> core-debugobjects-2020-10-12
+ * [new tag]                   core-entry-2020-08-04 -> core-entry-2020-08-04
+ * [new tag]                   core-headers-2020-08-03 -> core-headers-2020-08-03
+ * [new tag]                   core-rcu-2020-08-03 -> core-rcu-2020-08-03
+ * [new tag]                   core-rcu-2020-10-12 -> core-rcu-2020-10-12
+ * [new tag]                   core-static_call-2020-10-12 -> core-static_call-2020-10-12
+ * [new tag]                   core-urgent-2020-08-23 -> core-urgent-2020-08-23
+ * [new tag]                   core_urgent_for_v5.9_rc6 -> core_urgent_for_v5.9_rc6
+ * [new tag]                   efi-core-2020-10-12 -> efi-core-2020-10-12
+ * [new tag]                   efi-urgent-2020-07-25 -> efi-urgent-2020-07-25
+ * [new tag]                   efi-urgent-2020-08-23 -> efi-urgent-2020-08-23
+ * [new tag]                   efi-urgent-for-v5.9-rc5 -> efi-urgent-for-v5.9-rc5
+ * [new tag]                   irq-core-2020-08-04 -> irq-core-2020-08-04
+ * [new tag]                   irq-core-2020-10-12 -> irq-core-2020-10-12
+ * [new tag]                   irq-urgent-2020-07-19 -> irq-urgent-2020-07-19
+ * [new tag]                   irq-urgent-2020-08-02 -> irq-urgent-2020-08-02
+ * [new tag]                   irq-urgent-2020-08-14 -> irq-urgent-2020-08-14
+ * [new tag]                   irq-urgent-2020-08-30 -> irq-urgent-2020-08-30
+ * [new tag]                   locking-core-2020-08-03 -> locking-core-2020-08-03
+ * [new tag]                   locking-core-2020-10-12 -> locking-core-2020-10-12
+ * [new tag]                   locking-urgent-2020-08-10 -> locking-urgent-2020-08-10
+ * [new tag]                   locking-urgent-2020-08-15 -> locking-urgent-2020-08-15
+ * [new tag]                   locking-urgent-2020-08-30 -> locking-urgent-2020-08-30
+ * [new tag]                   locking-urgent-2020-10-11 -> locking-urgent-2020-10-11
+ * [new tag]                   locking_urgent_for_v5.9_rc6 -> locking_urgent_for_v5.9_rc6
+ * [new tag]                   objtool-core-2020-08-03 -> objtool-core-2020-08-03
+ * [new tag]                   objtool-core-2020-10-13 -> objtool-core-2020-10-13
+ * [new tag]                   objtool_urgent_for_v5.9_rc6 -> objtool_urgent_for_v5.9_rc6
+ * [new tag]                   perf-core-2020-08-03 -> perf-core-2020-08-03
+ * [new tag]                   perf-core-2020-10-12 -> perf-core-2020-10-12
+ * [new tag]                   perf-kprobes-2020-10-12 -> perf-kprobes-2020-10-12
+ * [new tag]                   perf-urgent-2020-07-25 -> perf-urgent-2020-07-25
+ * [new tag]                   perf-urgent-2020-08-15 -> perf-urgent-2020-08-15
+ * [new tag]                   perf-urgent-2020-08-23 -> perf-urgent-2020-08-23
+ * [new tag]                   perf-urgent-2020-10-11 -> perf-urgent-2020-10-11
+ * [new tag]                   ras-core-2020-08-03 -> ras-core-2020-08-03
+ * [new tag]                   ras_updates_for_v5.10 -> ras_updates_for_v5.10
+ * [new tag]                   sched-core-2020-08-03 -> sched-core-2020-08-03
+ * [new tag]                   sched-core-2020-10-12 -> sched-core-2020-10-12
+ * [new tag]                   sched-fifo-2020-08-04 -> sched-fifo-2020-08-04
+ * [new tag]                   sched-urgent-2020-07-19 -> sched-urgent-2020-07-19
+ * [new tag]                   sched-urgent-2020-07-25 -> sched-urgent-2020-07-25
+ * [new tag]                   sched-urgent-2020-08-15 -> sched-urgent-2020-08-15
+ * [new tag]                   sched-urgent-2020-08-30 -> sched-urgent-2020-08-30
+ * [new tag]                   timekeeping-for-printk-2020-08-23 -> timekeeping-for-printk-2020-08-23
+ * [new tag]                   timers-core-2020-08-04 -> timers-core-2020-08-04
+ * [new tag]                   timers-core-2020-08-14 -> timers-core-2020-08-14
+ * [new tag]                   timers-core-2020-10-12 -> timers-core-2020-10-12
+ * [new tag]                   timers-urgent-2020-07-19 -> timers-urgent-2020-07-19
+ * [new tag]                   timers-urgent-2020-07-25 -> timers-urgent-2020-07-25
+ * [new tag]                   timers-urgent-2020-08-14 -> timers-urgent-2020-08-14
+ * [new tag]                   timers-urgent-2020-09-27 -> timers-urgent-2020-09-27
+ * [new tag]                   v5.10-rc1 -> v5.10-rc1
+ * [new tag]                   x86-alternatives-2020-08-03 -> x86-alternatives-2020-08-03
+ * [new tag]                   x86-asm-2020-08-03 -> x86-asm-2020-08-03
+ * [new tag]                   x86-boot-2020-08-03 -> x86-boot-2020-08-03
+ * [new tag]                   x86-build-2020-08-03 -> x86-build-2020-08-03
+ * [new tag]                   x86-build-2020-10-12 -> x86-build-2020-10-12
+ * [new tag]                   x86-cleanups-2020-08-03 -> x86-cleanups-2020-08-03
+ * [new tag]                   x86-core-2020-08-03 -> x86-core-2020-08-03
+ * [new tag]                   x86-cpu-2020-08-03 -> x86-cpu-2020-08-03
+ * [new tag]                   x86-entry-2020-08-04 -> x86-entry-2020-08-04
+ * [new tag]                   x86-entry-2020-10-12 -> x86-entry-2020-10-12
+ * [new tag]                   x86-fpu-2020-08-03 -> x86-fpu-2020-08-03
+ * [new tag]                   x86-fsgsbase-2020-08-04 -> x86-fsgsbase-2020-08-04
+ * [new tag]                   x86-hyperv-2020-10-12 -> x86-hyperv-2020-10-12
+ * [new tag]                   x86-irq-2020-10-12 -> x86-irq-2020-10-12
+ * [new tag]                   x86-kaslr-2020-10-12 -> x86-kaslr-2020-10-12
+ * [new tag]                   x86-microcode-2020-08-03 -> x86-microcode-2020-08-03
+ * [new tag]                   x86-misc-2020-08-03 -> x86-misc-2020-08-03
+ * [new tag]                   x86-mm-2020-08-03 -> x86-mm-2020-08-03
+ * [new tag]                   x86-mm-2020-10-12 -> x86-mm-2020-10-12
+ * [new tag]                   x86-paravirt-2020-10-12 -> x86-paravirt-2020-10-12
+ * [new tag]                   x86-platform-2020-08-03 -> x86-platform-2020-08-03
+ * [new tag]                   x86-timers-2020-08-03 -> x86-timers-2020-08-03
+ * [new tag]                   x86-urgent-2020-07-19 -> x86-urgent-2020-07-19
+ * [new tag]                   x86-urgent-2020-07-25 -> x86-urgent-2020-07-25
+ * [new tag]                   x86-urgent-2020-08-02 -> x86-urgent-2020-08-02
+ * [new tag]                   x86-urgent-2020-08-15 -> x86-urgent-2020-08-15
+ * [new tag]                   x86-urgent-2020-08-23 -> x86-urgent-2020-08-23
+ * [new tag]                   x86-urgent-2020-08-30 -> x86-urgent-2020-08-30
+ * [new tag]                   x86-urgent-2020-09-06 -> x86-urgent-2020-09-06
+ * [new tag]                   x86-urgent-2020-09-27 -> x86-urgent-2020-09-27
+ * [new tag]                   x86-urgent-2020-10-11 -> x86-urgent-2020-10-11
+ * [new tag]                   x86_asm_for_v5.10 -> x86_asm_for_v5.10
+ * [new tag]                   x86_cache_for_v5.10 -> x86_cache_for_v5.10
+ * [new tag]                   x86_cleanups_for_v5.10 -> x86_cleanups_for_v5.10
+ * [new tag]                   x86_core_for_v5.10 -> x86_core_for_v5.10
+ * [new tag]                   x86_cpu_for_v5.10 -> x86_cpu_for_v5.10
+ * [new tag]                   x86_fpu_for_v5.10 -> x86_fpu_for_v5.10
+ * [new tag]                   x86_fsgsbase_for_v5.10 -> x86_fsgsbase_for_v5.10
+ * [new tag]                   x86_misc_for_v5.10 -> x86_misc_for_v5.10
+ * [new tag]                   x86_pasid_for_5.10 -> x86_pasid_for_5.10
+ * [new tag]                   x86_platform_for_v5.10 -> x86_platform_for_v5.10
+ * [new tag]                   x86_seves_for_v5.10 -> x86_seves_for_v5.10
+ * [new tag]                   x86_urgent_for_v5.10-rc1 -> x86_urgent_for_v5.10-rc1
+ * [new tag]                   x86_urgent_for_v5.9_rc6 -> x86_urgent_for_v5.9_rc6
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -1266,3 +1266,24 @@ From vireshk  Fri May 15 10:48:47 2020
 From vireshk  Tue Sep 15 22:41:29 2020
  Subject: [PATCH] cpufreq: qcom: Don't add frequencies without an OPP
   Folder: PATCH_cpufreq_qcom_Don't_add_frequencies_without_an_OPP.mbox	   7322
+From vireshk  Tue Oct 13 08:55:17 2020
+ Subject: [PATCH 1/3] opp: Add devres wrapper for dev_pm_opp_set_supported_hw
+  Folder: PATCH_1-3_opp_Add_devres_wrapper_for_dev_pm_opp_set_supporte	   8229
+From vireshk  Tue Oct 13 08:55:19 2020
+ Subject: [PATCH 2/3] opp: Add devres wrapper for dev_pm_opp_set_prop_name
+  Folder: PATCH_2-3_opp_Add_devres_wrapper_for_dev_pm_opp_set_prop_nam	   8166
+From vireshk  Tue Oct 13 08:55:20 2020
+ Subject: [PATCH 3/3] drm/msm: Convert to devm_pm_opp_set_supported_hw
+  Folder: PATCH_3-3_drm-msm_Convert_to_devm_pm_opp_set_supported_hw.mb	   5674
+From vireshk  Tue Oct 13 08:55:21 2020
+ Subject: [PATCH] cpufreq: sti-cpufreq: fix mem leak in sti_cpufreq_set_opp_inf
+  Folder: PATCH_cpufreq_sti-cpufreq_fix_mem_leak_in_sti_cpufreq_set_op	   4814
+From vireshk  Tue Oct 13 14:57:57 2020
+ Subject: [PATCH 1/2] cpufreq: mediatek: Add support for mt8167
+  Folder: PATCH_1-2_cpufreq_mediatek_Add_support_for_mt8167.mbox	   6639
+From vireshk  Tue Oct 13 14:57:57 2020
+ Subject: [PATCH 2/2] cpufreq: blacklist mt8516 in cpufreq-dt-platdev
+  Folder: PATCH_2-2_cpufreq_blacklist_mt8516_in_cpufreq-dt-platdev.mbo	   6232
+From vireshk  Wed Oct 14 15:06:37 2020
+ Subject: [PATCH v3] cpufreq: tegra194: get consistent cpuinfo_cur_freq
+  Folder: PATCH_v3_cpufreq_tegra194_get_consistent_cpuinfo_cur_freq.mb	   8091

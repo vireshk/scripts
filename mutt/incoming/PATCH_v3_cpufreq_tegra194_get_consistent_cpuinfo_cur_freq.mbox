@@ -1,0 +1,145 @@
+From vireshk  Wed Oct 14 15:06:37 2020
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [172.217.194.108] 	by vireshk-i7 with POP3 (fetchmail-6.3.26) 	for <vireshk@localhost> (single-drop); Wed, 14 Oct 2020 15:06:37 +0530 (IST)
+Received: by 2002:a05:6602:141:0:0:0:0 with SMTP id v1csp371036iot;         Wed, 14 Oct 2020 02:36:23 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJwJi1es5wt7rS5J37ez1XMc/zrCS68GzsbbJieiHrs4ehbhBiXztqpj5k07kbxTRh1VOayT
+X-Received: by 2002:a9d:6005:: with SMTP id h5mr2626173otj.87.1602668183292;         Wed, 14 Oct 2020 02:36:23 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1602668183; cv=none;         d=google.com; s=arc-20160816;         b=UZD/xO2N/pkKtViZmdMTw39EOp2aXXrQbw2UAxuqsY/GRJAbyiKend0evQDx2tlwOA          NuI9MnvhWyBY+SnktclcFd8Heyy72Ah9IwGsH9VDgudP2+zK/0imThlps0veT4TX9zM/          ryBZ+3EqOA52hxSjMAaoOu7bgIdzCWdfsWAcW+DA7QY0TET5gWE0hyhKtWCf38z5Kr5o          yCX61RWlYAOkPPvd5aIujQZTUMPEsrxeegymO71RuDuri7NKWaLubKjAphvPilugb8Pd          epYePqTyNNxMvwxF3w+DaqHElgBj4RP7Wtf67jb8AXxRCKNCmMF5ZPn65rvlOaBSIzEf          1BOQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=dkim-signature:mime-version:message-id:date:subject:cc:to:from;         bh=nJXHQmA8SJehW7u27ymHyIMfAp9QzF0a30R0l0W0ccY=;         b=zOUpaI69dN7kF30A/y8F2P86qo9J8yUXME5M/twotZc101RllpWvynzRWN9SEX3JyL          ElqnhIuSBJEpxIIZ8zC5i2BibmEH3MXdN8xzFjgzN3WenA8MZKS2x8jZ3XKjl15RqL5z          AbqbdKbxDvWL6gqltMpIFDKF/Gw/Gt8rzKDLkWr1HWSNO4LnHIsHoiXqe0D2z2S1Mddw          0PqiN+jB0tIeQcD+jZtbT76K8/tjPKrcyZ1OWbQs8cZUnyUad3y0g7W+34qbxe6bi+Qq          5VgJeAUkjrIcx1JWXa0m8f2SboHtfOPGejrMB0tQDqs3lW42FQnbUK6X7RfglEuhnUYE          Oaug==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@nvidia.com header.s=n1 header.b=I9hRcMpX;        spf=pass (google.com: domain of sumitg@nvidia.com designates 216.228.121.65 as permitted sender) smtp.mailfrom=sumitg@nvidia.com;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=nvidia.com
+Return-Path: <sumitg@nvidia.com>
+Received: from hqnvemgate26.nvidia.com (hqnvemgate26.nvidia.com. [216.228.121.65])         by mx.google.com with ESMTPS id h3si1312984otm.236.2020.10.14.02.36.22         for <viresh.kumar@linaro.org>         (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);         Wed, 14 Oct 2020 02:36:23 -0700 (PDT)
+Received-SPF: pass (google.com: domain of sumitg@nvidia.com designates 216.228.121.65 as permitted sender) client-ip=216.228.121.65;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@nvidia.com header.s=n1 header.b=I9hRcMpX;        spf=pass (google.com: domain of sumitg@nvidia.com designates 216.228.121.65 as permitted sender) smtp.mailfrom=sumitg@nvidia.com;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=nvidia.com
+Received: from hqmail.nvidia.com (Not Verified[216.228.121.13]) by hqnvemgate26.nvidia.com (using TLS: TLSv1.2, AES256-SHA) 	id <B5f86c6890003>; Wed, 14 Oct 2020 02:36:09 -0700
+Received: from HQMAIL109.nvidia.com (172.20.187.15) by HQMAIL109.nvidia.com  (172.20.187.15) with Microsoft SMTP Server (TLS) id 15.0.1473.3; Wed, 14 Oct  2020 09:36:18 +0000
+Received: from sumitg-l4t.nvidia.com (172.20.13.39) by mail.nvidia.com  (172.20.187.15) with Microsoft SMTP Server id 15.0.1473.3 via Frontend  Transport; Wed, 14 Oct 2020 09:36:15 +0000
+From: Sumit Gupta <sumitg@nvidia.com>
+To: <rjw@rjwysocki.net>, <viresh.kumar@linaro.org>, <sudeep.holla@arm.com>, 	<thierry.reding@gmail.com>, <jonathanh@nvidia.com>, 	<linux-pm@vger.kernel.org>, <linux-tegra@vger.kernel.org>, 	<linux-arm-kernel@lists.infradead.org>, <linux-kernel@vger.kernel.org>
+CC: <sumitg@nvidia.com>, <bbasu@nvidia.com>, <ksitaraman@nvidia.com>
+Subject: [PATCH v3] cpufreq: tegra194: get consistent cpuinfo_cur_freq
+Date: Wed, 14 Oct 2020 15:06:11 +0530
+Message-ID: <1602668171-30104-1-git-send-email-sumitg@nvidia.com>
+X-Mailer: git-send-email 2.7.4
+X-NVConfidentiality: public
+Return-Path: sumitg@nvidia.com
+MIME-Version: 1.0
+Content-Type: text/plain
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=nvidia.com; s=n1; 	t=1602668169; bh=nJXHQmA8SJehW7u27ymHyIMfAp9QzF0a30R0l0W0ccY=; 	h=From:To:CC:Subject:Date:Message-ID:X-Mailer:X-NVConfidentiality: 	 MIME-Version:Content-Type; 	b=I9hRcMpXYVEMOYPv3b65uisktBZmMlkA1NAwI6Rsi5F8yQWTLcqGa8HZXFw2jfwcN 	 KRZvsk+toi82mkENMo6imd3A+E9HskH2np3Dr/+/YVZlNuJf/fHRz9Vnaszsh+KbQx 	 1LKATsBjfGJLRwtqbmE3Xx2OnhWyys2oX8bJ/6jJNhMcOkLPmlPzdgJvoZlbzwgZFj 	 k8CaJgRBDjI8r190U6IpBeYt4MotlQ401n2sU5OBf6LyHOTglRlWXc7jnJ23Xen5CN 	 xpLKly1Yu2YBEMwN7EK3+CyFK5/f4vPmsetjqafSjlJWJWEEwE9p52Q0I0LBKC7W1c 	 d+vuEO0A2r+Ig==
+X-Label: apply
+Status: RO
+Content-Length: 3393
+Lines: 112
+
+Frequency returned by 'cpuinfo_cur_freq' using counters is not fixed
+and keeps changing slightly. This change returns a consistent value
+from freq_table. If the reconstructed frequency has acceptable delta
+from the last written value, then return the frequency corresponding
+to the last written ndiv value from freq_table. Otherwise, print a
+warning and return the reconstructed freq.
+
+Signed-off-by: Sumit Gupta <sumitg@nvidia.com>
+---
+
+Sending only this patch as other patch not required after the change
+to convert 'pr_warn' to 'pr_info' in cpufreq core for unlisted freq.
+Changelog
+v1[2] -> v3:
+- Removed unwanted checks for cpu_online and max cluster number
+- Used WARN_ON_ONCE to avoid print flooding.
+
+v1[1] -> v2:
+- Minor changes to improve comments and reduce debug prints.
+- Get freq table from cluster specific data instead of policy.
+
+[2] https://marc.info/?l=linux-tegra&m=160216218511280&w=2
+[1] https://marc.info/?l=linux-arm-kernel&m=160028821117535&w=2
+
+ drivers/cpufreq/tegra194-cpufreq.c | 62 ++++++++++++++++++++++++++++++++------
+ 1 file changed, 53 insertions(+), 9 deletions(-)
+
+diff --git a/drivers/cpufreq/tegra194-cpufreq.c b/drivers/cpufreq/tegra194-cpufreq.c
+index e1d931c..7901587 100644
+--- a/drivers/cpufreq/tegra194-cpufreq.c
++++ b/drivers/cpufreq/tegra194-cpufreq.c
+@@ -180,9 +180,61 @@ static unsigned int tegra194_get_speed_common(u32 cpu, u32 delay)
+ 	return (rate_mhz * KHZ); /* in KHz */
+ }
+ 
++static void get_cpu_ndiv(void *ndiv)
++{
++	u64 ndiv_val;
++
++	asm volatile("mrs %0, s3_0_c15_c0_4" : "=r" (ndiv_val) : );
++
++	*(u64 *)ndiv = ndiv_val;
++}
++
++static void set_cpu_ndiv(void *data)
++{
++	struct cpufreq_frequency_table *tbl = data;
++	u64 ndiv_val = (u64)tbl->driver_data;
++
++	asm volatile("msr s3_0_c15_c0_4, %0" : : "r" (ndiv_val));
++}
++
+ static unsigned int tegra194_get_speed(u32 cpu)
+ {
+-	return tegra194_get_speed_common(cpu, US_DELAY);
++	struct tegra194_cpufreq_data *data = cpufreq_get_driver_data();
++	struct cpufreq_frequency_table *pos;
++	unsigned int rate;
++	u64 ndiv;
++	int ret;
++	u32 cl;
++
++	smp_call_function_single(cpu, get_cpu_cluster, &cl, true);
++
++	/* reconstruct actual cpu freq using counters */
++	rate = tegra194_get_speed_common(cpu, US_DELAY);
++
++	/* get last written ndiv value */
++	ret = smp_call_function_single(cpu, get_cpu_ndiv, &ndiv, true);
++	if (WARN_ON_ONCE(ret))
++		return rate;
++
++	/*
++	 * If the reconstructed frequency has acceptable delta from
++	 * the last written value, then return freq corresponding
++	 * to the last written ndiv value from freq_table. This is
++	 * done to return consistent value.
++	 */
++	cpufreq_for_each_valid_entry(pos, data->tables[cl]) {
++		if (pos->driver_data != ndiv)
++			continue;
++
++		if (abs(pos->frequency - rate) > 115200) {
++			pr_warn("cpufreq: cpu%d,cur:%u,set:%u,set ndiv:%llu\n",
++				cpu, rate, pos->frequency, ndiv);
++		} else {
++			rate = pos->frequency;
++		}
++		break;
++	}
++	return rate;
+ }
+ 
+ static int tegra194_cpufreq_init(struct cpufreq_policy *policy)
+@@ -209,14 +261,6 @@ static int tegra194_cpufreq_init(struct cpufreq_policy *policy)
+ 	return 0;
+ }
+ 
+-static void set_cpu_ndiv(void *data)
+-{
+-	struct cpufreq_frequency_table *tbl = data;
+-	u64 ndiv_val = (u64)tbl->driver_data;
+-
+-	asm volatile("msr s3_0_c15_c0_4, %0" : : "r" (ndiv_val));
+-}
+-
+ static int tegra194_cpufreq_set_target(struct cpufreq_policy *policy,
+ 				       unsigned int index)
+ {
+-- 
+2.7.4
+

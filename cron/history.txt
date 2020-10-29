@@ -49554,3 +49554,81 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 20782751fa73] updates
+ 3 files changed, 249 insertions(+)
+ create mode 100644 mutt/incoming/PATCH_v3_cpufreq_tegra194_get_consistent_cpuinfo_cur_freq.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   d10e143e536c..20782751fa73  master -> master
+   f0bc09d709b3..d10e143e536c  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Thu Oct 29 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   f312d8b23f74..3936a41c9011  cooling/sched-v2 -> cooling/sched-v2
+ - [deleted]                   mailbox/mhuv2-v1
+ - [deleted]                   opp/bkp/genpd-links
+ - [deleted]                   opp/genpd/debug
+ - [deleted]                   opp/lazy
+ + e50a9551eba9...211866566cd0 opp/linux-next -> opp/linux-next (forced update)
+ - [deleted]                   bkp/cooling/sched
+ + 9c499a132d06...8af3f8ece520 bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next (forced update)
+ + d0a7f72ad2cf...10572999ec8c bkp/mailbox/mhuv2 -> bkp/mailbox/mhuv2 (forced update)
+ + a1563e0658e6...203e29749cc0 bkp/opp/fixes -> bkp/opp/fixes (forced update)
+ + 43c3a1fd5e60...e50a9551eba9 bkp/opp/linux-next -> bkp/opp/linux-next (forced update)
+ + 06bb92f3ef9d...08ec1ee1d425 bkp/opp/remove-flag -> bkp/opp/remove-flag (forced update)
+ + e50a9551eba9...211866566cd0 pmko/opp/linux-next -> pmko/opp/linux-next (forced update)
+ * [new branch]                bkp/mailbox/mhuv2-v1 -> bkp/mailbox/mhuv2-v1
+ * [new branch]                bkp/opp/genpd/debug -> bkp/opp/genpd/debug
+ * [new branch]                bkp/opp/genpd/links -> bkp/opp/genpd/links
+ * [new branch]                bkp/opp/lazy -> bkp/opp/lazy
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

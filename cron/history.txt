@@ -49632,3 +49632,106 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master c5da8689a4a0] updates
+ 1 file changed, 78 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   20782751fa73..c5da8689a4a0  master -> master
+   d10e143e536c..20782751fa73  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Fri Oct 30 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 3936a41c9011...f723ce3c63ac cooling/sched-v2 -> cooling/sched-v2 (forced update)
+   f312d8b23f74..3936a41c9011  bkp/cooling/sched-v2 -> bkp/cooling/sched-v2
+ - [deleted]                   bkp/mailbox/mhuv2-v1
+ - [deleted]                   bkp/opp/bkp/genpd-links
+ - [deleted]                   bkp/opp/genpd/debug
+ - [deleted]                   bkp/opp/lazy
+ + e50a9551eba9...211866566cd0 bkp/opp/linux-next -> bkp/opp/linux-next (forced update)
+ + 54e1ca2a1923...5e00eb5f6209 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 54e1ca2a1923...5e00eb5f6209 pm/linux-next -> pm/linux-next (forced update)
+   defb53a7c790..3650b228f83a  pm/master -> pm/master
+ + 91e0225c546b...5e00eb5f6209 pm/testing -> pm/testing (forced update)
+   65609b26b21a..6f72faf4a323  tip/auto-latest -> tip/auto-latest
+   3135f5b73592..45ff510517f3  tip/core/entry -> tip/core/entry
+   ed3e453798d4..921c7ebd1337  tip/locking/urgent -> tip/locking/urgent
+   95d591cca3b1..6f72faf4a323  tip/master -> tip/master
+   f91072ed1b72..306e3e91edf1  tip/perf/core -> tip/perf/core
+   b3149ffcdb31..633cdaf29ec4  tip/ras/core -> tip/ras/core
+   feff2e65efd8..d8fcb81f1acf  tip/sched/core -> tip/sched/core
+   1e474b28e788..4230e2deaa48  tip/smp/urgent -> tip/smp/urgent
+   1b80043ed218..1a2b85f1e2a9  tip/timers/core -> tip/timers/core
+   a4fd8414659b..cb47755725da  tip/timers/urgent -> tip/timers/urgent
+   de308d1815c9..2e008ffe426f  tip/x86/apic -> tip/x86/apic
+   642d94cf336f..ea3186b9572a  tip/x86/build -> tip/x86/build
+   29b6bd41ee24..4868a61d498a  tip/x86/cache -> tip/x86/cache
+   900ffe39fec9..0d847ce7c176  tip/x86/cleanups -> tip/x86/cleanups
+   d53d9bc0cf78..c8d5ed67936f  tip/x86/entry -> tip/x86/entry
+   c8a59a4d8e3c..880396c86a1f  tip/x86/microcode -> tip/x86/microcode
+   f94c91f7ba3b..632211cdd6ad  tip/x86/misc -> tip/x86/misc
+   7a27ef5e8308..1fcd009102ee  tip/x86/mm -> tip/x86/mm
+   b17a45b6e53f..2411cd821123  tip/x86/seves -> tip/x86/seves
+   abee7c494d8c..cb05143bdf42  tip/x86/urgent -> tip/x86/urgent
+ * [new branch]                sched/util-fix -> sched/util-fix
+ * [new branch]                bkp/bkp/mailbox/mhuv2-v1 -> bkp/bkp/mailbox/mhuv2-v1
+ * [new branch]                bkp/bkp/opp/genpd/debug -> bkp/bkp/opp/genpd/debug
+ * [new branch]                bkp/bkp/opp/genpd/links -> bkp/bkp/opp/genpd/links
+ * [new branch]                bkp/bkp/opp/lazy -> bkp/bkp/opp/lazy
+ * [new tag]                   locking-urgent-2020-10-25 -> locking-urgent-2020-10-25
+ * [new tag]                   perf-urgent-2020-10-25 -> perf-urgent-2020-10-25
+ * [new tag]                   sched-urgent-2020-10-25 -> sched-urgent-2020-10-25
+ * [new tag]                   timers-urgent-2020-10-25 -> timers-urgent-2020-10-25
+ * [new tag]                   x86-urgent-2020-10-25 -> x86-urgent-2020-10-25
+ * [new tag]                   x86-urgent-2020-10-27 -> x86-urgent-2020-10-27
+ * [new tag]                   x86_seves_fixes_for_v5.10_rc1 -> x86_seves_fixes_for_v5.10_rc1
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

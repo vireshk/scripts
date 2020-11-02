@@ -1287,3 +1287,6 @@ From vireshk  Tue Oct 13 14:57:57 2020
 From vireshk  Wed Oct 14 15:06:37 2020
  Subject: [PATCH v3] cpufreq: tegra194: get consistent cpuinfo_cur_freq
   Folder: PATCH_v3_cpufreq_tegra194_get_consistent_cpuinfo_cur_freq.mb	   8091
+From vireshk  Sat Oct 31 11:23:20 2020
+ Subject: [PATCH] cpufreq: mediatek: add missing platform_driver_unregister() o
+  Folder: PATCH_cpufreq_mediatek_add_missing_platform_driver_unregiste	   4611

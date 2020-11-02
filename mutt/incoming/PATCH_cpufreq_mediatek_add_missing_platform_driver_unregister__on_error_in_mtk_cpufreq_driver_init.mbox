@@ -1,0 +1,54 @@
+From vireshk  Sat Oct 31 11:23:20 2020
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [74.125.130.108] 	by vireshk-i7 with POP3 (fetchmail-6.3.26) 	for <vireshk@localhost> (single-drop); Sat, 31 Oct 2020 11:23:20 +0530 (IST)
+Received: by 2002:a05:6602:141:0:0:0:0 with SMTP id v1csp1917694iot;         Fri, 30 Oct 2020 18:13:17 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJwkO7UJ721tVRWBdM+VS/GzPgJvirKRLla5HMuJ7B0Zm92i4xjy2jbJ5pA+sxMXcgzXamui
+X-Received: by 2002:a62:3857:0:b029:155:37a5:295 with SMTP id f84-20020a6238570000b029015537a50295mr11535472pfa.23.1604106797174;         Fri, 30 Oct 2020 18:13:17 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1604106797; cv=none;         d=google.com; s=arc-20160816;         b=fXJzHB5Ej5sTm87KcVqBFPj2n05L54TUK8G9tmEJwbnKR+UFL0f+NDtG4WVzVwQQqS          UAjKhe5Blq/9zzIdxGm69c2XuYQJnQtEBzZ1KmE7iVU4N+ls6+NyMiQ+vWWTXTu/vqTD          2qsygr7M5HJOavissKcvw35CuYE//sn6ZgZllp5/BN0c4+7ZWejT0B6Ja3zlL8UVtQyt          qxnSEBesbzc/+X00V1P8CwCiPHWFNez7TboQNPbpxYmbcfbQSYe3eYk3Ql/j6Qvt7MoL          /54OInSSndSFXqqI+gNFTZQIH+5R92I4gDh5eSPmR+1z2df3+IIwhqZIcuJ0pj5/0AFh          YP2A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from;         bh=nFi84jnZCJsiMEVZaJQzhhitXfxJSGTVn9gJHIc7UKo=;         b=EWlelTI+VBjj10XcYR6k8frSLEnIQrJOCFuin474RrN3GmVv7hSqay6+6nfVsx5pLI          9whY65Rx9xXXd+qcBV3k9eFibdGAFeNdOHE7jxy/XLqdnXPMuZjrd1/UoAXFlQerKeJY          ZDpTxgTttq33QXPT8cVeqUSf/DpXCc6vyM2vFZLxmMr5+mYzuVdPc4RZvxVv8EvtDnOc          Drk1F8EMo7YFxgG5gr5C7trNjoi6mn98D2qrjKCnarBpB98Ks53LgLCObw2XNk8IcWdt          rJGqI0kYyI968yEGfjV0K+Jg04LG+bGPFgSTmY6IbSxtigISfFSyHe2C2EkfAMvwfo3p          wJsw==
+ARC-Authentication-Results: i=1; mx.google.com;        spf=pass (google.com: domain of miaoqinglang@huawei.com designates 45.249.212.32 as permitted sender) smtp.mailfrom=miaoqinglang@huawei.com
+Return-Path: <miaoqinglang@huawei.com>
+Received: from szxga06-in.huawei.com (szxga06-in.huawei.com. [45.249.212.32])         by mx.google.com with ESMTPS id z24si8262888pgf.128.2020.10.30.18.13.16         for <viresh.kumar@linaro.org>         (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);         Fri, 30 Oct 2020 18:13:17 -0700 (PDT)
+Received-SPF: pass (google.com: domain of miaoqinglang@huawei.com designates 45.249.212.32 as permitted sender) client-ip=45.249.212.32;
+Authentication-Results: mx.google.com;        spf=pass (google.com: domain of miaoqinglang@huawei.com designates 45.249.212.32 as permitted sender) smtp.mailfrom=miaoqinglang@huawei.com
+Received: from DGGEMS402-HUB.china.huawei.com (unknown [172.30.72.58]) 	by szxga06-in.huawei.com (SkyGuard) with ESMTP id 4CNLlf00YszhdT9; 	Sat, 31 Oct 2020 09:13:17 +0800 (CST)
+Received: from localhost.localdomain.localdomain (10.175.113.25) by  DGGEMS402-HUB.china.huawei.com (10.3.19.202) with Microsoft SMTP Server id  14.3.487.0; Sat, 31 Oct 2020 09:13:07 +0800
+From: Qinglang Miao <miaoqinglang@huawei.com>
+To: "Rafael J. Wysocki" <rjw@rjwysocki.net>, Viresh Kumar 	<viresh.kumar@linaro.org>, Matthias Brugger <matthias.bgg@gmail.com>
+CC: <linux-pm@vger.kernel.org>, <linux-kernel@vger.kernel.org>, 	<linux-arm-kernel@lists.infradead.org>, <linux-mediatek@lists.infradead.org>, 	Qinglang Miao <miaoqinglang@huawei.com>
+Subject: [PATCH] cpufreq: mediatek: add missing platform_driver_unregister() on error in mtk_cpufreq_driver_init
+Date: Sat, 31 Oct 2020 09:18:54 +0800
+Message-ID: <20201031011854.137261-1-miaoqinglang@huawei.com>
+X-Mailer: git-send-email 2.20.1
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain
+X-Originating-IP: [10.175.113.25]
+X-CFilter-Loop: Reflected
+Content-Length: 821
+Lines: 23
+
+Add the missing platform_driver_unregister() before return from
+mtk_cpufreq_driver_init in the error handling case when failed
+to register mtk-cpufreq platform device
+
+Signed-off-by: Qinglang Miao <miaoqinglang@huawei.com>
+---
+ drivers/cpufreq/mediatek-cpufreq.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/drivers/cpufreq/mediatek-cpufreq.c b/drivers/cpufreq/mediatek-cpufreq.c
+index 7d1212c9b..c03c76a0c 100644
+--- a/drivers/cpufreq/mediatek-cpufreq.c
++++ b/drivers/cpufreq/mediatek-cpufreq.c
+@@ -572,6 +572,7 @@ static int __init mtk_cpufreq_driver_init(void)
+ 	pdev = platform_device_register_simple("mtk-cpufreq", -1, NULL, 0);
+ 	if (IS_ERR(pdev)) {
+ 		pr_err("failed to register mtk-cpufreq platform device\n");
++		platform_driver_unregister(&mtk_cpufreq_platdrv);
+ 		return PTR_ERR(pdev);
+ 	}
+ 
+-- 
+2.23.0
+

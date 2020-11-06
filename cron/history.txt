@@ -50015,3 +50015,79 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 1c011a71deab] updates
+ 1 file changed, 62 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   b9b0faac48d7..1c011a71deab  master -> master
+   5d85d7c57f39..b9b0faac48d7  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Fri Nov  6 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   cooling/sched-v2
+ + b00bd2467090...e4ddf06e467c opp/linux-next -> opp/linux-next (forced update)
+ - [deleted]                   opp/remove-flag
+ - [deleted]                   sched/util-fix
+   dddb1b16f148..8b867fb17e68  bkp/cooling/sched-v2 -> bkp/cooling/sched-v2
+ + 55f4bff8073f...f7d9dc4846ac lnext/akpm -> lnext/akpm (forced update)
+ + 285f24f9d57b...46f3f7a28c3f lnext/akpm-base -> lnext/akpm-base (forced update)
+ + c50585161e79...c34f157421f6 lnext/master -> lnext/master (forced update)
+ + 3261d524354a...3952050a63fb lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   b7cbaf59f62f..521b619acdc8  lnext/stable -> lnext/stable
+   3cea11cd5e3b..521b619acdc8  origin/HEAD -> origin/HEAD
+   3cea11cd5e3b..521b619acdc8  origin/master -> origin/master
+ + b0756034202a...e4ddf06e467c pmko/opp/linux-next -> pmko/opp/linux-next (forced update)
+ * [new branch]                sched/cpufreq-cooilng -> sched/cpufreq-cooilng
+ * [new branch]                pmko/sched/cpufreq-cooilng -> pmko/sched/cpufreq-cooilng
+ * [new tag]                   next-20201106 -> next-20201106
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

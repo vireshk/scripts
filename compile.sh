@@ -128,7 +128,6 @@ elif [ $2 = arm ]; then
 	CROSS_COMPILE="aarch64-linux-gnu-"
 	carch="arm64"
 	IMAGE=
-	UPDATE_CONFIG="`echo \"CONFIG_USB_RTL8152=y\" >> $dir.config`"
 	MERGE_CONFIG="KCONFIG_CONFIG=$dir/.config scripts/kconfig/merge_config.sh -m $dir/.config ~/junk/config"
 elif [ $2 = qcom ]; then
 	dir=../qcom/

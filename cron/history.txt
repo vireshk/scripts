@@ -50510,3 +50510,74 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 2c19c9704f1a] updates
+ 4 files changed, 183 insertions(+), 54 deletions(-)
+ delete mode 100644 mutt/incoming/PATCH_cpufreq_mediatek_add_missing_platform_driver_unregister__on_error_in_mtk_cpufreq_driver_init.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   238af7213167..2c19c9704f1a  master -> master
+   62ea3a2852de..238af7213167  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Nov 18 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 10572999ec8c...cdbd4f2c4383 mailbox/mhuv2 -> mailbox/mhuv2 (forced update)
+ + 4e6fe1a4123c...9e7f4689dd97 bkp/opp/linux-next -> bkp/opp/linux-next (forced update)
+ + 58680c2ecef8...0b8cc6f628e8 lnext/akpm -> lnext/akpm (forced update)
+ + b3b0e18878d6...37042536e40d lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 034307507118...7c8ca8129ee9 lnext/master -> lnext/master (forced update)
+ + 4a800512632b...55e1cd5a3155 lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   a6af8718b98e..09162bc32c88  lnext/stable -> lnext/stable
+ * [new branch]                thermal/sysfs -> thermal/sysfs
+ * [new branch]                bkp/cpufreq/arm/fixes -> bkp/cpufreq/arm/fixes
+ * [new tag]                   next-20201117 -> next-20201117
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

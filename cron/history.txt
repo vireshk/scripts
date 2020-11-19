@@ -50581,3 +50581,118 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 367800abacc3] updates
+ 1 file changed, 71 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   2c19c9704f1a..367800abacc3  master -> master
+   238af7213167..2c19c9704f1a  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Thu Nov 19 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   9e7f4689dd97..ed40e33c0b91  opp/linux-next -> opp/linux-next
+ + a55780fba859...28d4eb57b174 sched/cpufreq-cooilng -> sched/cpufreq-cooilng (forced update)
+ + 10572999ec8c...cdbd4f2c4383 bkp/mailbox/mhuv2 -> bkp/mailbox/mhuv2 (forced update)
+ + 0b8cc6f628e8...b640c4e12bbe lnext/akpm -> lnext/akpm (forced update)
+ + 37042536e40d...cbad5bf532dc lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 7c8ca8129ee9...f8550c0d35df lnext/master -> lnext/master (forced update)
+ + 55e1cd5a3155...1a6722b3cb3e lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   09162bc32c88..c2e7554e1b85  lnext/stable -> lnext/stable
+   9e7f4689dd97..ed40e33c0b91  pmko/opp/linux-next -> pmko/opp/linux-next
+ + 6f72faf4a323...c3c30db1b191 tip/auto-latest -> tip/auto-latest (forced update)
+   45ff510517f3..51af3f230639  tip/core/entry -> tip/core/entry
+   b6ec41346103..9d820f68b2bd  tip/core/urgent -> tip/core/urgent
+   4d0a4388ccdd..b283477d394a  tip/efi/core -> tip/efi/core
+   d32de9130f6c..c2fe61d8be49  tip/efi/urgent -> tip/efi/urgent
+   863bae1fbcfa..8c67d247dcad  tip/irq/core -> tip/irq/core
+   ceb2465c5119..82768a86c646  tip/irq/urgent -> tip/irq/urgent
+   2116d708b058..932f8c64d38b  tip/locking/core -> tip/locking/core
+   921c7ebd1337..d61fc96a3760  tip/locking/urgent -> tip/locking/urgent
+ + 6f72faf4a323...fe4adf6f92c4 tip/master -> tip/master (forced update)
+   6e426e0fcd20..a70a04b3844f  tip/perf/kprobes -> tip/perf/kprobes
+   f3d301c1f2f5..1a8cfa24e21c  tip/perf/urgent -> tip/perf/urgent
+   633cdaf29ec4..098416e69861  tip/ras/core -> tip/ras/core
+   d8fcb81f1acf..dc824eb89853  tip/sched/core -> tip/sched/core
+   a73f863af4ce..8d4d9c7b4333  tip/sched/urgent -> tip/sched/urgent
+   1a2b85f1e2a9..66981c37b319  tip/timers/core -> tip/timers/core
+   788a8cb1f7c2..7a0bb8055ee6  tip/tip -> tip/tip
+   2e008ffe426f..d1adcfbb520c  tip/x86/apic -> tip/x86/apic
+   0d847ce7c176..31d854603305  tip/x86/cleanups -> tip/x86/cleanups
+   1ef5423a55c2..cba08c5dc6dc  tip/x86/fpu -> tip/x86/fpu
+   632211cdd6ad..18741a5251d0  tip/x86/misc -> tip/x86/misc
+   cb05143bdf42..860aaabac823  tip/x86/urgent -> tip/x86/urgent
+ * [new branch]                sched/cpufreq-cooilng-r -> sched/cpufreq-cooilng-r
+ * [new branch]                bkp/thermal/sysfs -> bkp/thermal/sysfs
+ * [new branch]                tip/core/mm -> tip/core/mm
+ * [new branch]                tip/sched/migrate-disable -> tip/sched/migrate-disable
+ * [new branch]                tip/x86/sgx -> tip/x86/sgx
+ * [new tag]                   core-entry-notify-signal -> core-entry-notify-signal
+ * [new tag]                   core-urgent-2020-11-08 -> core-urgent-2020-11-08
+ * [new tag]                   irq-urgent-2020-11-08 -> irq-urgent-2020-11-08
+ * [new tag]                   locking-urgent-2020-11-01 -> locking-urgent-2020-11-01
+ * [new tag]                   locking-urgent-2020-11-08 -> locking-urgent-2020-11-08
+ * [new tag]                   locking-urgent-2020-11-15 -> locking-urgent-2020-11-15
+ * [new tag]                   next-20201119 -> next-20201119
+ * [new tag]                   perf-urgent-2020-11-08 -> perf-urgent-2020-11-08
+ * [new tag]                   perf-urgent-2020-11-15 -> perf-urgent-2020-11-15
+ * [new tag]                   sched-urgent-2020-11-15 -> sched-urgent-2020-11-15
+ * [new tag]                   smp-urgent-2020-11-01 -> smp-urgent-2020-11-01
+ * [new tag]                   timers-urgent-2020-11-01 -> timers-urgent-2020-11-01
+ * [new tag]                   x86-urgent-2020-11-01 -> x86-urgent-2020-11-01
+ * [new tag]                   x86-urgent-2020-11-08 -> x86-urgent-2020-11-08
+ * [new tag]                   x86-urgent-2020-11-15 -> x86-urgent-2020-11-15
+ * [new tag]                   x86_seves_for_v5.10_rc3 -> x86_seves_for_v5.10_rc3
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/ltp.git
+   7741d0595a64..4b831a202780  master -> master
+   7741d0595a64..b84571b825d1  origin/HEAD -> origin/HEAD
+   7741d0595a64..b84571b825d1  origin/master -> origin/master
+
+Entering /home/vireshk/scripts

@@ -1306,3 +1306,6 @@ From vireshk  Tue Nov 10 16:41:12 2020
   Folder: PATCH_cpufreq_scmi_Fix_OPP_addition_failure_with_a_dummy_clo	   4441
 From foo@bar  Tue Nov 17 10:02:59 2020
   Folder: .mbox								   1327
+From vireshk  Fri Nov 20 19:31:01 2020
+ Subject: [PATCH] cpufreq: scmi: Fix build for !CONFIG_COMMON_CLK
+  Folder: PATCH_cpufreq_scmi_Fix_build_for_!CONFIG_COMMON_CLK.mbox	   5635

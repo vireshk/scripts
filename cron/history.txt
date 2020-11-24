@@ -50836,3 +50836,50 @@ To ssh://git.linaro.org/people/viresh.kumar/backup/ltp.git
    b84571b825d1..f3f3ef6c892d  origin/master -> origin/master
 
 Entering /home/vireshk/scripts
+[master d93e6ccad91d] updates
+ 3 files changed, 162 insertions(+)
+ create mode 100644 mutt/incoming/PATCH_cpufreq_scmi_Fix_build_for_!CONFIG_COMMON_CLK.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   3ea47f547bab..d93e6ccad91d  master -> master
+   11e4b6c2adae..3ea47f547bab  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+

@@ -1309,3 +1309,21 @@ From foo@bar  Tue Nov 17 10:02:59 2020
 From vireshk  Fri Nov 20 19:31:01 2020
  Subject: [PATCH] cpufreq: scmi: Fix build for !CONFIG_COMMON_CLK
   Folder: PATCH_cpufreq_scmi_Fix_build_for_!CONFIG_COMMON_CLK.mbox	   5635
+From vireshk  Fri Dec  4 09:28:13 2020
+ Subject: [PATCH] cpufreq: imx: fix NVMEM_IMX_OCOTP dependency
+  Folder: PATCH_cpufreq_imx_fix_NVMEM_IMX_OCOTP_dependency.mbox		   4704
+From vireshk  Thu Dec  3 09:32:25 2020
+ Subject: [PATCH 1/4] cpufreq: tegra186: Fix sparse 'incorrect type in assignme
+  Folder: PATCH_1-4_cpufreq_tegra186_Fix_sparse_'incorrect_type_in_ass	  10419
+From vireshk  Thu Dec  3 09:32:25 2020
+ Subject: [PATCH 1/4] cpufreq: tegra186: Fix sparse 'incorrect type in assignme
+  Folder: PATCH_1-4_cpufreq_tegra186_Fix_sparse_'incorrect_type_in_ass	  10419
+From vireshk  Thu Dec  3 09:32:26 2020
+ Subject: [PATCH 2/4] cpufreq: tegra186: Simplify cluster information lookup
+  Folder: PATCH_2-4_cpufreq_tegra186_Simplify_cluster_information_look	  11608
+From vireshk  Thu Dec  3 09:32:27 2020
+ Subject: [PATCH 3/4] cpufreq: tegra194: Remove unnecessary frequency calculati
+  Folder: PATCH_3-4_cpufreq_tegra194_Remove_unnecessary_frequency_calc	   8097
+From vireshk  Thu Dec  3 09:32:27 2020
+ Subject: [PATCH 4/4] cpufreq: tegra194: Rename tegra194_get_speed_common funct
+  Folder: PATCH_4-4_cpufreq_tegra194_Rename_tegra194_get_speed_common_	   6211

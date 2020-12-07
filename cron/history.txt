@@ -50883,3 +50883,46 @@ Everything up-to-date
 
 
 
+ 
+Mon Dec  7 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   32c855670808..de202c5e55bf  cpufreq/arm/linux-next -> cpufreq/arm/linux-next
+ + 1fa999439576...c0d7c796be7d bkp/sched/cpufreq-cooilng -> bkp/sched/cpufreq-cooilng (forced update)
+ + b640c4e12bbe...e1ec61260b00 lnext/akpm -> lnext/akpm (forced update)
+ + cbad5bf532dc...5a2002fc31f2 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + f8550c0d35df...2996bd3f6ca9 lnext/master -> lnext/master (forced update)
+ + 1a6722b3cb3e...b2779a0d410f lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   c2e7554e1b85..34816d20f173  lnext/stable -> lnext/stable
+   3d77e6a8804a..270315b8235e  mac/master -> mac/master
+   9c87c9f41245..0477e9288185  origin/HEAD -> origin/HEAD
+   9c87c9f41245..0477e9288185  origin/master -> origin/master
+ - [deleted]                   pm/acpi-ec
+ - [deleted]                   pm/acpica-osl
+ + e98c22d03688...c35cc6e0cf05 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 2009d79faa04...b3628e700e69 pm/intel_pstate-testing -> pm/intel_pstate-testing (forced update)
+ + e98c22d03688...c35cc6e0cf05 pm/linux-next -> pm/linux-next (forced update)
+   09162bc32c88..b65054597872  pm/master -> pm/master
+   3a8ac4d39651..05b8955f4353  pm/pm -> pm/pm
+ + e98c22d03688...c35cc6e0cf05 pm/testing -> pm/testing (forced update)
+ * [new tag]                   next-20201204 -> next-20201204
+ * [new tag]                   opp/fixes -> opp/fixes
+ * [new tag]                   pm-5.10-rc6 -> pm-5.10-rc6
+ * [new tag]                   v5.10-rc5 -> v5.10-rc5
+ * [new tag]                   v5.10-rc6 -> v5.10-rc6
+ * [new tag]                   v5.10-rc7 -> v5.10-rc7
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/ltp.git
+ + 86b0551e5da9...8e04efde8f3f master -> master (forced update)
+   f3f3ef6c892d..86b0551e5da9  bkp/master -> bkp/master
+ + 548e419f0b67...fc5aaa2a9e14 mac/master -> mac/master (forced update)
+   e2e3f7391351..8e04efde8f3f  origin/HEAD -> origin/HEAD
+   e2e3f7391351..8e04efde8f3f  origin/master -> origin/master
+
+Entering /home/vireshk/scripts

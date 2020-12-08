@@ -19,7 +19,7 @@ linaro/payslip
 
 # linaro-open-discussions@op-lists.linaro.org
 :0:
-* ^(From|To|Cc):.*(linaro-open-discussions@op-lists\.linaro.org)
+* ^(From|To|Cc):.*(linaro-open-discussions@op-lists\.linaro.org|stratos-dev@op-lists\.linaro\.org)
 linaro/discuss
 
 # pmwg-weeklies

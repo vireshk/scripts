@@ -1,0 +1,73 @@
+From vireshk  Wed Dec  9 09:56:11 2020
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [74.125.24.108] 	by vireshk-i7 with POP3 (fetchmail-6.3.26) 	for <vireshk@localhost> (single-drop); Wed, 09 Dec 2020 09:56:11 +0530 (IST)
+Received: by 2002:a6b:5c02:0:0:0:0:0 with SMTP id z2csp3894349ioh;         Tue, 8 Dec 2020 09:41:32 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJyv2fr6tW42IKJlWVfe1iDoMGpTYWpO4Sr//N1CSNs+nU1vKbE1gEW/KQ6292SgTpn25UvF
+X-Received: by 2002:a17:90b:1202:: with SMTP id gl2mr5374166pjb.123.1607449292597;         Tue, 08 Dec 2020 09:41:32 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1607449292; cv=none;         d=google.com; s=arc-20160816;         b=Mt2f8GgjHvzSFpDdnRG5zz8guoVL9rxdu9fMM6rxTpPbCOvupVsfEP5wOndV3P2ff6          zh5Q13ZulRegIUxbLVR2ofM7VGahXcXzI3/OvD7qgw2NYoTDweGhciUnDjpr11FQsBnG          29ntqOOEiKrPV5y+rNPYG/0lt9n4Ra4kIt4pS4593pdDuvYMbkapjPu3ReCEQz5+uZ5d          F2enprlLd219+FO/KoyioUWN3u3QRiWI8ZjjBE8etNk6t3eB07soIP0pTKut7AJ5Ida7          /R59Ya9ZsttPKk2TSrAEHxjD8m8aLcr+p1JQ3M6G/6oD8FABbwTEx9P8hXUEUy7Sd4/P          wcmw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:references:in-reply-to          :message-id:date:subject:cc:to:from:dmarc-filter:delivered-to;         bh=CcBhGHGkMC1j2+gDglHWX90zQA7CumP7tqwqkTnDaqc=;         b=qIFMJbP7VgdAHPLLPE0jwUNBkCISYIMm0DV3pSnUf77f/7zGIMNeFkusA+9K9Qd+lU          S8BBROHLiyxWYsPHQ56IVFbEid34iB+pMuWMSh3hI9ckAnHi84CdrigVNhewNHOZ74Du          GoE3EMl/SsVUa5fbZRkeO1QmKCPXlvAWz4BNhp7/7t9EMPpzKLq7Oh8zrR5CjlDTfuXI          ARGqZpemP6sebVTLBrEtskGIBqWvYcjfz1AaRpY92Ejfz1UMawmUPIgNj8HgSKtjbUfj          h4Onady33G3gJzhfZ1MMeFWZa/QVNaGLBdsedWUV5zFmjlgi4UbCseLZOXNO1yDfKEAU          yD0g==
+ARC-Authentication-Results: i=1; mx.google.com;        spf=pass (google.com: domain of srs0=cueu=fm=arm.com=nicola.mazzucato@kernel.org designates 198.145.29.99 as permitted sender) smtp.mailfrom="SRS0=CUeU=FM=arm.com=nicola.mazzucato@kernel.org";        dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=arm.com
+Return-Path: <SRS0=CUeU=FM=arm.com=nicola.mazzucato@kernel.org>
+Received: from mail.kernel.org (mail.kernel.org. [198.145.29.99])         by mx.google.com with ESMTPS id u4si5287236plz.350.2020.12.08.09.41.32         for <viresh.kumar@linaro.org>         (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);         Tue, 08 Dec 2020 09:41:32 -0800 (PST)
+Received-SPF: pass (google.com: domain of srs0=cueu=fm=arm.com=nicola.mazzucato@kernel.org designates 198.145.29.99 as permitted sender) client-ip=198.145.29.99;
+Authentication-Results: mx.google.com;        spf=pass (google.com: domain of srs0=cueu=fm=arm.com=nicola.mazzucato@kernel.org designates 198.145.29.99 as permitted sender) smtp.mailfrom="SRS0=CUeU=FM=arm.com=nicola.mazzucato@kernel.org";        dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=arm.com
+Received: by mail.kernel.org (Postfix) 	id 5BF9B23B46; Tue,  8 Dec 2020 17:41:32 +0000 (UTC)
+Delivered-To: vireshk@kernel.org
+Received: from foss.arm.com (foss.arm.com [217.140.110.172]) 	by mail.kernel.org (Postfix) with ESMTP id 228D723B23; 	Tue,  8 Dec 2020 17:41:32 +0000 (UTC)
+DMARC-Filter: OpenDMARC Filter v1.3.2 mail.kernel.org 228D723B23
+Authentication-Results: mail.kernel.org; dmarc=fail (p=none dis=none) header.from=arm.com
+Authentication-Results: mail.kernel.org; spf=tempfail smtp.mailfrom=nicola.mazzucato@arm.com
+Received: from usa-sjc-imap-foss1.foss.arm.com (unknown [10.121.207.14]) 	by usa-sjc-mx-foss1.foss.arm.com (Postfix) with ESMTP id DE93C13D5; 	Tue,  8 Dec 2020 09:41:31 -0800 (PST)
+Received: from ubuntu.cambridge.arm.com (unknown [172.31.20.19]) 	by usa-sjc-imap-foss1.foss.arm.com (Postfix) with ESMTPA id 8EF073F68F; 	Tue,  8 Dec 2020 09:41:29 -0800 (PST)
+From: Nicola Mazzucato <nicola.mazzucato@arm.com>
+To: linux-kernel@vger.kernel.org, 	linux-arm-kernel@lists.infradead.org, 	linux-pm@vger.kernel.org, 	devicetree@vger.kernel.org, 	sudeep.holla@arm.com, 	rjw@rjwysocki.net, 	vireshk@kernel.org, 	robh+dt@kernel.org, 	sboyd@kernel.org, 	nm@ti.com
+Cc: daniel.lezcano@linaro.org, 	morten.rasmussen@arm.com, 	chris.redpath@arm.com, 	nicola.mazzucato@arm.com
+Subject: [PATCH v5 2/4] opp/of: Allow empty opp-table with opp-shared
+Date: Tue,  8 Dec 2020 17:42:27 +0000
+Message-Id: <20201208174229.24323-3-nicola.mazzucato@arm.com>
+X-Mailer: git-send-email 2.27.0
+In-Reply-To: <20201208174229.24323-1-nicola.mazzucato@arm.com>
+References: <20201208174229.24323-1-nicola.mazzucato@arm.com>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+The opp binding now allows to have an empty opp table and shared-opp to
+still describe that devices share v/f lines.
+
+When initialising an empty opp table, allow such case by:
+- treating such conditions with warnings in place of errors
+- don't fail on empty table
+
+Signed-off-by: Nicola Mazzucato <nicola.mazzucato@arm.com>
+---
+ drivers/opp/of.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+
+diff --git a/drivers/opp/of.c b/drivers/opp/of.c
+index ffd937af8089..03cb387236c4 100644
+--- a/drivers/opp/of.c
++++ b/drivers/opp/of.c
+@@ -170,7 +170,8 @@ static void _opp_table_alloc_required_tables(struct opp_table *opp_table,
+ 	/* Traversing the first OPP node is all we need */
+ 	np = of_get_next_available_child(opp_np, NULL);
+ 	if (!np) {
+-		dev_err(dev, "Empty OPP table\n");
++		dev_warn(dev, "Empty OPP table\n");
++
+ 		return;
+ 	}
+ 
+@@ -378,7 +379,9 @@ int dev_pm_opp_of_find_icc_paths(struct device *dev,
+ 	struct icc_path **paths;
+ 
+ 	ret = _bandwidth_supported(dev, opp_table);
+-	if (ret <= 0)
++	if (ret == -EINVAL)
++		return 0; /* Empty OPP table is a valid corner-case, let's not fail */
++	else if (ret <= 0)
+ 		return ret;
+ 
+ 	ret = 0;
+-- 
+2.27.0
+

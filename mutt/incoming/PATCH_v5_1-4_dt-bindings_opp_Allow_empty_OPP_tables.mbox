@@ -1,0 +1,120 @@
+From vireshk  Wed Dec  9 09:56:10 2020
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [74.125.24.108] 	by vireshk-i7 with POP3 (fetchmail-6.3.26) 	for <vireshk@localhost> (single-drop); Wed, 09 Dec 2020 09:56:10 +0530 (IST)
+Received: by 2002:a6b:5c02:0:0:0:0:0 with SMTP id z2csp3894309ioh;         Tue, 8 Dec 2020 09:41:29 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJyrp51i/+9fKxxKefFqVBy0LX8uRumrmSxkXyN93NhWS6YIBFQQrPBfhjrn2PYcD4G+xKaF
+X-Received: by 2002:a63:f708:: with SMTP id x8mr17966468pgh.369.1607449289142;         Tue, 08 Dec 2020 09:41:29 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1607449289; cv=none;         d=google.com; s=arc-20160816;         b=FyATd2QErGdUO2QJZlJchDWfHXMbDPjrpS6mpLhVmQILSDJDxpB6/Z+KygJLH9V7uj          A0VPgvlssZuGCeJqnBZ6MHDsFEOq8K0PtKHKxergpsfKLgmYk6A0XkqSzLTEIgZf2RSx          V+jb8AxUdY5iZQCsYraLpO46btjvxtd7XCNlq+7auPwF3cKOr+sZ5tGEFxY6gjb1uyqx          InsBJLoWBxA9nG1Jx//B+QLdV44ED+Nmd69VoUNyhWzFqAEthTHlZegEGTWEG9O4d9i7          VewAqB6SqJGeODmt1f7FR1ePKYLmCk1WuFdYWJQRwxlKNOwmzGryrO9hpzGN/DJVqwO2          bmsQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:references:in-reply-to          :message-id:date:subject:cc:to:from:dmarc-filter:delivered-to;         bh=V8rpvhL6LbSK+dEJv1KQtZ8ICvrionmnvDAutVnWi+M=;         b=wb26Yo6p8oClL218o0MzOHLlpsqmDrG6chS2pxy9BSFIgGmP3RhjivLmb6eMSaxYo5          q1O97IMIlNqz/IJhVdz9eLx4PCGCUEQ5HejXaWFoU9nE3dojUBkerG6+CAH9cikzJhYD          d4uW33hG/SlenFFreeqrkayMfc+vYMoP/MpAQEtVz9lJOtFzuuj41sGUwny/GnMxywt0          pt5F/9RgY5JUBNWi1cS9Jta5V/Ay0p6tAcocDApD4AapxLpe9OG9Bnf0ZoHwoXQ7L1aa          YPAEdAKGLmaJ4tRVXKx0I+DJ6EgQZWTGt2jCR2G7ff/UleEU4wkKkNb+YEYyk2VqimiI          sDUQ==
+ARC-Authentication-Results: i=1; mx.google.com;        spf=pass (google.com: domain of srs0=cueu=fm=arm.com=nicola.mazzucato@kernel.org designates 198.145.29.99 as permitted sender) smtp.mailfrom="SRS0=CUeU=FM=arm.com=nicola.mazzucato@kernel.org";        dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=arm.com
+Return-Path: <SRS0=CUeU=FM=arm.com=nicola.mazzucato@kernel.org>
+Received: from mail.kernel.org (mail.kernel.org. [198.145.29.99])         by mx.google.com with ESMTPS id t20si13971143plr.172.2020.12.08.09.41.29         for <viresh.kumar@linaro.org>         (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);         Tue, 08 Dec 2020 09:41:29 -0800 (PST)
+Received-SPF: pass (google.com: domain of srs0=cueu=fm=arm.com=nicola.mazzucato@kernel.org designates 198.145.29.99 as permitted sender) client-ip=198.145.29.99;
+Authentication-Results: mx.google.com;        spf=pass (google.com: domain of srs0=cueu=fm=arm.com=nicola.mazzucato@kernel.org designates 198.145.29.99 as permitted sender) smtp.mailfrom="SRS0=CUeU=FM=arm.com=nicola.mazzucato@kernel.org";        dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=arm.com
+Received: by mail.kernel.org (Postfix) 	id D7EB623B46; Tue,  8 Dec 2020 17:41:28 +0000 (UTC)
+Delivered-To: vireshk@kernel.org
+Received: from foss.arm.com (foss.arm.com [217.140.110.172]) 	by mail.kernel.org (Postfix) with ESMTP id 9119223B23; 	Tue,  8 Dec 2020 17:41:28 +0000 (UTC)
+DMARC-Filter: OpenDMARC Filter v1.3.2 mail.kernel.org 9119223B23
+Authentication-Results: mail.kernel.org; dmarc=fail (p=none dis=none) header.from=arm.com
+Authentication-Results: mail.kernel.org; spf=tempfail smtp.mailfrom=nicola.mazzucato@arm.com
+Received: from usa-sjc-imap-foss1.foss.arm.com (unknown [10.121.207.14]) 	by usa-sjc-mx-foss1.foss.arm.com (Postfix) with ESMTP id 5238231B; 	Tue,  8 Dec 2020 09:41:28 -0800 (PST)
+Received: from ubuntu.cambridge.arm.com (unknown [172.31.20.19]) 	by usa-sjc-imap-foss1.foss.arm.com (Postfix) with ESMTPA id 24CC53F68F; 	Tue,  8 Dec 2020 09:41:26 -0800 (PST)
+From: Nicola Mazzucato <nicola.mazzucato@arm.com>
+To: linux-kernel@vger.kernel.org, 	linux-arm-kernel@lists.infradead.org, 	linux-pm@vger.kernel.org, 	devicetree@vger.kernel.org, 	sudeep.holla@arm.com, 	rjw@rjwysocki.net, 	vireshk@kernel.org, 	robh+dt@kernel.org, 	sboyd@kernel.org, 	nm@ti.com
+Cc: daniel.lezcano@linaro.org, 	morten.rasmussen@arm.com, 	chris.redpath@arm.com, 	nicola.mazzucato@arm.com
+Subject: [PATCH v5 1/4] dt-bindings: opp: Allow empty OPP tables
+Date: Tue,  8 Dec 2020 17:42:26 +0000
+Message-Id: <20201208174229.24323-2-nicola.mazzucato@arm.com>
+X-Mailer: git-send-email 2.27.0
+In-Reply-To: <20201208174229.24323-1-nicola.mazzucato@arm.com>
+References: <20201208174229.24323-1-nicola.mazzucato@arm.com>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+Currently the optional property opp-shared is used within an opp table
+to tell that a set of devices share their clock/voltage lines (and the
+OPP points).
+It is therefore possible to use an empty OPP table to convey only that
+information, useful in situations where the opp points are provided via
+other means (hardware. firmware, etc).
+
+Update the documentation to remark this additional case and provide an
+example.
+
+Signed-off-by: Nicola Mazzucato <nicola.mazzucato@arm.com>
+---
+ Documentation/devicetree/bindings/opp/opp.txt | 54 ++++++++++++++++++-
+ 1 file changed, 53 insertions(+), 1 deletion(-)
+
+diff --git a/Documentation/devicetree/bindings/opp/opp.txt b/Documentation/devicetree/bindings/opp/opp.txt
+index 9847dfeeffcb..08b3da4736cf 100644
+--- a/Documentation/devicetree/bindings/opp/opp.txt
++++ b/Documentation/devicetree/bindings/opp/opp.txt
+@@ -65,7 +65,9 @@ Required properties:
+ 
+ - OPP nodes: One or more OPP nodes describing voltage-current-frequency
+   combinations. Their name isn't significant but their phandle can be used to
+-  reference an OPP.
++  reference an OPP. These are mandatory except for the case where the OPP table
++  is present only to indicate dependency between devices using the opp-shared
++  property.
+ 
+ Optional properties:
+ - opp-shared: Indicates that device nodes using this OPP Table Node's phandle
+@@ -568,3 +570,53 @@ Example 6: opp-microvolt-<name>, opp-microamp-<name>:
+ 		};
+ 	};
+ };
++
++Example 7: Single cluster Quad-core ARM cortex A53, OPP points from firmware,
++distinct clock controls but two sets of clock/voltage/current lines.
++
++/ {
++	cpus {
++		#address-cells = <2>;
++		#size-cells = <0>;
++
++		cpu@0 {
++			compatible = "arm,cortex-a53";
++			reg = <0x0 0x100>;
++			next-level-cache = <&A53_L2>;
++			clocks = <&dvfs_controller 0>;
++			operating-points-v2 = <&cpu_opp0_table>;
++		};
++		cpu@1 {
++			compatible = "arm,cortex-a53";
++			reg = <0x0 0x101>;
++			next-level-cache = <&A53_L2>;
++			clocks = <&dvfs_controller 1>;
++			operating-points-v2 = <&cpu_opp0_table>;
++		};
++		cpu@2 {
++			compatible = "arm,cortex-a53";
++			reg = <0x0 0x102>;
++			next-level-cache = <&A53_L2>;
++			clocks = <&dvfs_controller 2>;
++			operating-points-v2 = <&cpu_opp1_table>;
++		};
++		cpu@3 {
++			compatible = "arm,cortex-a53";
++			reg = <0x0 0x103>;
++			next-level-cache = <&A53_L2>;
++			clocks = <&dvfs_controller 3>;
++			operating-points-v2 = <&cpu_opp1_table>;
++		};
++
++	};
++
++	cpu_opp0_table: opp0_table {
++		compatible = "operating-points-v2";
++		opp-shared;
++	};
++
++	cpu_opp1_table: opp1_table {
++		compatible = "operating-points-v2";
++		opp-shared;
++	};
++};
+-- 
+2.27.0
+

@@ -51294,3 +51294,110 @@ To ssh://git.linaro.org/people/viresh.kumar/backup/ltp.git
    8e04efde8f3f..57716ce0f2b1  origin/master -> origin/master
 
 Entering /home/vireshk/scripts
+[master 25c0d7805017] updates
+ 4 files changed, 494 insertions(+)
+ create mode 100644 mutt/incoming/PATCH_v5_1-4_dt-bindings_opp_Allow_empty_OPP_tables.mbox
+ create mode 100644 mutt/incoming/PATCH_v5_2-4_opp-of_Allow_empty_opp-table_with_opp-shared.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   9e3eef4e10d3..25c0d7805017  master -> master
+   fdcd7d41ec3e..9e3eef4e10d3  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Thu Dec 10 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   bkp/mailbox/mhuv2-v1
+ + 08e1b06f5bcf...0c8880f5096c cppc/fi -> cppc/fi (forced update)
+ - [deleted]                   bkp/opp/fixes
+ + ed40e33c0b91...2c07b0fd9bf6 bkp/opp/linux-next -> bkp/opp/linux-next (forced update)
+ + e1ec61260b00...623794d94dce lnext/akpm -> lnext/akpm (forced update)
+ + 5a2002fc31f2...c26636d598da lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 2996bd3f6ca9...a9e26cb5f261 lnext/master -> lnext/master (forced update)
+ + b2779a0d410f...c9b6935dc4f4 lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   34816d20f173..cd796ed33450  lnext/stable -> lnext/stable
+ + c8a0ee0b169f...ed109def55c7 peterz/debug/experimental -> peterz/debug/experimental (forced update)
+ + cb014fa9e18e...cb262935a166 peterz/locking/core -> peterz/locking/core (forced update)
+ + e9242bcc3a02...31784cff7ee0 peterz/locking/rwsem -> peterz/locking/rwsem (forced update)
+ + c630595fdd8b...61a72e271727 peterz/locking/wip-cna -> peterz/locking/wip-cna (forced update)
+ + 6a470c7212d0...ff9bdcfc8492 peterz/master -> peterz/master (forced update)
+ + bb9549ab8dc5...03eb86d48773 peterz/mm/tlb -> peterz/mm/tlb (forced update)
+ + dbbd52d0e41a...c2208046bba6 peterz/perf/core -> peterz/perf/core (forced update)
+ + 71749435af11...602f214dfcff peterz/perf/next -> peterz/perf/next (forced update)
+ + 31c239472c87...24df96c63f0d peterz/sched/cleanup -> peterz/sched/cleanup (forced update)
+ + 08befee616ef...4c8213a57b84 peterz/sched/core -> peterz/sched/core (forced update)
+ + d1f8170274fc...916c7f6139b4 peterz/sched/core-sched -> peterz/sched/core-sched (forced update)
+ + d02c77725c18...467adcb51140 peterz/sched/rbtree -> peterz/sched/rbtree (forced update)
+   cb09a379724d..262bd5724afd  peterz/x86/cpu -> peterz/x86/cpu
+ + 05d5c9ac84df...3ed71cdd3428 peterz/x86/fpu -> peterz/x86/fpu (forced update)
+ + d69be239adcf...2865946c4ee9 peterz/x86/module -> peterz/x86/module (forced update)
+   84da009f06e6..e45cdc71d1fa  peterz/x86/urgent -> peterz/x86/urgent
+ - [deleted]                   10
+ - [deleted]                   cleanup
+ - [deleted]                   devel
+ - [deleted]                   dma
+ - [deleted]                   docs
+ - [deleted]                   drivers
+ - [deleted]                   dt
+ - [deleted]                   dt2
+ - [deleted]                   fixes
+ - [deleted]                   irq
+ - [deleted]                   latest
+ - [deleted]                   maintainers
+ - [deleted]                   mytag
+ - [deleted]                   newsoc
+ - [deleted]                   next
+ * [new branch]                bkp/cppc/fi -> bkp/cppc/fi
+ * [new branch]                bkp/opp/empty -> bkp/opp/empty
+ * [new branch]                peterz/locking/next -> peterz/locking/next
+ * [new tag]                   next-20201208 -> next-20201208
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/ltp.git
+   8e04efde8f3f..57716ce0f2b1  bkp/master -> bkp/master
+
+Entering /home/vireshk/scripts

@@ -51557,3 +51557,76 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master fe2aef37b21a] updates
+ 1 file changed, 72 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   9fb07225bb90..fe2aef37b21a  master -> master
+   1da1e4e75029..9fb07225bb90  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Tue Dec 15 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 06a358faf44c...5b6e14d041f9 cppc/fi -> cppc/fi (forced update)
+ - [deleted]                   cpufreq/arm/fixes
+ - [deleted]                   cpufreq/scmi
+ - [deleted]                   cpufreq/scmi-opp
+   270315b8235e..2c85ebc57b3e  master -> master
+ - [deleted]                   opp/empty
+ + 965c41b969df...06a358faf44c bkp/cppc/fi -> bkp/cppc/fi (forced update)
+   a2f5ea9e314b..2c85ebc57b3e  origin/HEAD -> origin/HEAD
+   a2f5ea9e314b..2c85ebc57b3e  origin/master -> origin/master
+ + 88e3db954de0...97756044ce06 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 960e625edeb5...97756044ce06 pm/linux-next -> pm/linux-next (forced update)
+ + 960e625edeb5...97756044ce06 pm/testing -> pm/testing (forced update)
+ * [new tag]                   v5.10 -> v5.10
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -51630,3 +51630,87 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master ec7c45020c98] updates
+ 1 file changed, 73 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   fe2aef37b21a..ec7c45020c98  master -> master
+   9fb07225bb90..fe2aef37b21a  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Dec 16 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   bkp/cppc/fi
+ - [deleted]                   bkp/opp/genpd-runtime-pm
+ - [deleted]                   bkp/opp/genpd/debug
+ - [deleted]                   bkp/opp/genpd/links
+ - [deleted]                   bkp/opp/lazy
+ - [deleted]                   bkp/usb-to-eth-hikey
+ + 5b6e14d041f9...1f12d2770849 cppc/fi -> cppc/fi (forced update)
+ + 06a358faf44c...5b6e14d041f9 bkp/cppc/fi -> bkp/cppc/fi (forced update)
+ - [deleted]                   bkp/cpufreq/arm/fixes
+ - [deleted]                   bkp/cpufreq/scmi
+ - [deleted]                   bkp/cpufreq/scmi-opp
+   270315b8235e..2c85ebc57b3e  bkp/master -> bkp/master
+ - [deleted]                   bkp/opp/empty
+   2c85ebc57b3e..d01e7f10dae2  origin/HEAD -> origin/HEAD
+   2c85ebc57b3e..d01e7f10dae2  origin/master -> origin/master
+ * [new branch]                0/cppc/fi -> 0/cppc/fi
+ * [new branch]                0/opp/genpd-runtime-pm -> 0/opp/genpd-runtime-pm
+ * [new branch]                0/opp/genpd/debug -> 0/opp/genpd/debug
+ * [new branch]                0/opp/genpd/links -> 0/opp/genpd/links
+ * [new branch]                0/opp/lazy -> 0/opp/lazy
+ * [new branch]                0/usb-to-eth-hikey -> 0/usb-to-eth-hikey
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/ltp.git
+   57716ce0f2b1..65aa35f668a9  master -> master
+   57716ce0f2b1..4df6ff1be36f  origin/HEAD -> origin/HEAD
+   57716ce0f2b1..4df6ff1be36f  origin/master -> origin/master
+
+Entering /home/vireshk/scripts

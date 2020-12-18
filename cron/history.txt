@@ -51791,3 +51791,68 @@ To ssh://git.linaro.org/people/viresh.kumar/backup/ltp.git
    4df6ff1be36f..97996384b78e  origin/master -> origin/master
 
 Entering /home/vireshk/scripts
+[master abdeee45664b] updates
+ 1 file changed, 77 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   908c188aaaed..abdeee45664b  master -> master
+   ec7c45020c98..908c188aaaed  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Fri Dec 18 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 1f12d2770849...273bd87c1324 cppc/fi -> cppc/fi (forced update)
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/ltp.git
+ + 0279beda4660...049a750ca35c master -> master (forced update)
+ + 65aa35f668a9...0279beda4660 bkp/master -> bkp/master (forced update)
+   97996384b78e..4bc14b36abc7  origin/HEAD -> origin/HEAD
+   97996384b78e..4bc14b36abc7  origin/master -> origin/master
+
+Entering /home/vireshk/scripts

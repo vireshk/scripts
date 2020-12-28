@@ -52106,3 +52106,72 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 4186f5937b79] updates
+ 1 file changed, 61 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   bd77988022d5..4186f5937b79  master -> master
+   d9add0c675f5..bd77988022d5  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon Dec 28 13:00:01 IST 2020
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   c8bb45205438..5c8fe583cce5  cpufreq/arm/linux-next -> cpufreq/arm/linux-next
+   614cb5894306..5c8fe583cce5  dt/overlays -> dt/overlays
+   2c07b0fd9bf6..0e1d9ca1766f  opp/linux-next -> opp/linux-next
+   614cb5894306..5c8fe583cce5  origin/HEAD -> origin/HEAD
+   614cb5894306..5c8fe583cce5  origin/master -> origin/master
+   2c07b0fd9bf6..0e1d9ca1766f  pmko/opp/linux-next -> pmko/opp/linux-next
+ * [new branch]                opp/fixes -> opp/fixes
+ * [new branch]                pmko/opp/fixes -> pmko/opp/fixes
+ * [new tag]                   v5.11-rc1 -> v5.11-rc1
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

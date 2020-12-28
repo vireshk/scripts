@@ -1333,3 +1333,6 @@ From vireshk  Wed Dec  9 09:56:10 2020
 From vireshk  Wed Dec  9 09:56:11 2020
  Subject: [PATCH v5 2/4] opp/of: Allow empty opp-table with opp-shared
   Folder: PATCH_v5_2-4_opp-of_Allow_empty_opp-table_with_opp-shared.mb	   5760
+From vireshk  Mon Dec 28 10:12:11 2020
+ Subject: [PATCH] opp: fix memory leak in _allocate_opp_table
+  Folder: PATCH_opp_fix_memory_leak_in_allocate_opp_table.mbox		  13759

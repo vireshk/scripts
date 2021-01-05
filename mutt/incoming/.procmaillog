@@ -1336,3 +1336,27 @@ From vireshk  Wed Dec  9 09:56:11 2020
 From vireshk  Mon Dec 28 10:12:11 2020
  Subject: [PATCH] opp: fix memory leak in _allocate_opp_table
   Folder: PATCH_opp_fix_memory_leak_in_allocate_opp_table.mbox		  13759
+From vireshk  Mon Jan  4 09:14:47 2021
+ Subject: [PATCH 25/31] memory: tegra30: convert to use devm_pm_opp_* API
+  Folder: PATCH_25-31_memory_tegra30_convert_to_use_devm_pm_opp_*_API.	  10108
+From vireshk  Mon Jan  4 09:14:48 2021
+ Subject: [PATCH 26/31] PM / devfreq: tegra30: convert to use devm_pm_opp_* API
+  Folder: PATCH_26-31_PM_devfreq_tegra30_convert_to_use_devm_pm_opp_*_	  10251
+From vireshk  Mon Jan  4 09:14:49 2021
+ Subject: [PATCH 27/31] PM / devfreq: rk3399_dmc: convert to use devm_pm_opp_* 
+  Folder: PATCH_27-31_PM_devfreq_rk3399_dmc_convert_to_use_devm_pm_opp	  10236
+From vireshk  Mon Jan  4 09:14:49 2021
+ Subject: [PATCH 27/31] PM / devfreq: rk3399_dmc: convert to use devm_pm_opp_* 
+  Folder: PATCH_27-31_PM_devfreq_rk3399_dmc_convert_to_use_devm_pm_opp	  10236
+From vireshk  Mon Jan  4 09:14:50 2021
+ Subject: [PATCH 28/31] PM / devfreq: imx8m-ddrc: convert to use devm_pm_opp_* 
+  Folder: PATCH_28-31_PM_devfreq_imx8m-ddrc_convert_to_use_devm_pm_opp	   9586
+From vireshk  Mon Jan  4 09:14:50 2021
+ Subject: [PATCH 29/31] PM / devfreq: imx-bus: convert to use devm_pm_opp_* API
+  Folder: PATCH_29-31_PM_devfreq_imx-bus_convert_to_use_devm_pm_opp_*_	   9201
+From vireshk  Mon Jan  4 09:14:51 2021
+ Subject: [PATCH 30/31] PM / devfreq: exynos: convert to use devm_pm_opp_* API
+  Folder: PATCH_30-31_PM_devfreq_exynos_convert_to_use_devm_pm_opp_*_A	  11810
+From vireshk  Mon Jan  4 09:14:52 2021
+ Subject: [PATCH 31/31] PM / devfreq: convert to devm_pm_opp_register_notifier 
+  Folder: PATCH_31-31_PM_devfreq_convert_to_devm_pm_opp_register_notif	  12538

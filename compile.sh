@@ -145,6 +145,14 @@ elif [ $2 = marvell ]; then
 #	FLAGS="KCFLAGS=-fno-pic TEXT_OFFSET=0x00280000"
 	FLAGS="KCFLAGS=-fno-pic TEXT_OFFSET=0x0080000"
 	IMAGE=
+elif [ $2 = ppc ]; then
+	dir=../bppc/
+	cfg=ppc64_defconfig
+	CROSS_COMPILE="powerpc-linux-gnu-"
+	MISMATCH=
+	FLAGS=
+	carch="powerpc"
+	IMAGE=
 elif [ $2 = allx86 ]; then
 	dir=../ballx86/
 	cfg=allyesconfig

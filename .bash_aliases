@@ -28,6 +28,7 @@ alias muttman="zcat /usr/share/doc/mutt/manual.txt.gz | sensible-pager"
 
 # toolchains
 PATH="/home/vireshk/work/repos/tools/toolchain/gcc-linaro-7.5.0-2019.12-x86_64_aarch64-linux-gnu/bin:/home/vireshk/work/repos/tools/toolchain/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin:/usr/bin:$PATH"
+PATH="/home/vireshk/work/repos/tools/toolchain/gcc-10.1.0-nolibc/ia64-linux/bin:$PATH"
 PATH="/media/vireshk/bb4fad4d-8860-4037-8d08-02291222001e/android/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/:$PATH"
 PATH="/media/vireshk/bb4fad4d-8860-4037-8d08-02291222001e/android/prebuilts/clang/host/linux-x86/clang-r346389b/bin:$PATH"
 

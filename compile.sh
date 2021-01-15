@@ -145,6 +145,14 @@ elif [ $2 = marvell ]; then
 #	FLAGS="KCFLAGS=-fno-pic TEXT_OFFSET=0x00280000"
 	FLAGS="KCFLAGS=-fno-pic TEXT_OFFSET=0x0080000"
 	IMAGE=
+elif [ $2 = ia64 ]; then
+	dir=../bia64/
+	cfg=generic_defconfig
+	CROSS_COMPILE=ia64-linux-
+	MISMATCH=
+	FLAGS=
+	carch="ia64"
+	IMAGE=
 elif [ $2 = ppc ]; then
 	dir=../bppc/
 	cfg=ppc64_defconfig

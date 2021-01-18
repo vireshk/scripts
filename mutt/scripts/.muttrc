@@ -233,4 +233,5 @@ macro index,pager a "<pipe-message>goobook add<return>" "add the sender address 
 
 # PGP
 set pgp_encrypt_only_command="/usr/lib/neomutt/pgpewrap gpg --batch --quiet --no-verbose --output - --textmode --armor -- --recipient %r -- --encrypt %f"
+set pgp_sign_as=D2B91C3CAE81121C
 #set pgp_check_gpg_decrypt_status_fd = no

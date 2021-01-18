@@ -1360,3 +1360,12 @@ From vireshk  Mon Jan  4 09:14:51 2021
 From vireshk  Mon Jan  4 09:14:52 2021
  Subject: [PATCH 31/31] PM / devfreq: convert to devm_pm_opp_register_notifier 
   Folder: PATCH_31-31_PM_devfreq_convert_to_devm_pm_opp_register_notif	  12538
+From vireshk  Mon Jan 18 09:18:25 2021
+ Subject: [PATCH v1] cpufreq: tegra20: Use resource-managed API
+  Folder: PATCH_v1_cpufreq_tegra20_Use_resource-managed_API.mbox	   7692
+From vireshk  Mon Jan 18 09:18:19 2021
+ Subject: [PATCH v2 1/2] cpufreq: brcmstb-avs-cpufreq: Fix some resource leaks 
+  Folder: PATCH_v2_1-2_cpufreq_brcmstb-avs-cpufreq_Fix_some_resource_l	   5655
+From vireshk  Mon Jan 18 09:18:21 2021
+ Subject: [PATCH v2 2/2] cpufreq: brcmstb-avs-cpufreq: Fix some resource leaks 
+  Folder: PATCH_v2_2-2_cpufreq_brcmstb-avs-cpufreq_Fix_some_resource_l	   4531

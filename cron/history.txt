@@ -54553,3 +54553,80 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master ef1d67630e47] updates
+ 4 files changed, 85 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   723f3d5a6b80..ef1d67630e47  master -> master
+   0900628c2928..723f3d5a6b80  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon Jan 18 13:00:01 IST 2021
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 369bb6d226bd...c61760a754c4 cppc/fi -> cppc/fi (forced update)
+   5c8fe583cce5..3657f729b6fb  cpufreq/arm/linux-next -> cpufreq/arm/linux-next
+ + c95622b1f560...bae6ac7b1c6a oprofile/removal -> oprofile/removal (forced update)
+ + abf6b8dfba53...369bb6d226bd bkp/cppc/fi -> bkp/cppc/fi (forced update)
+ + f79cc55059a0...d40de4fcf44e bkp/dt/overlays -> bkp/dt/overlays (forced update)
+ - [deleted]                   bkp/oprofile
+ + c95622b1f560...bae6ac7b1c6a lko/oprofile/removal -> lko/oprofile/removal (forced update)
+ + 08124e767eea...7d2eca960cd3 lnext/akpm -> lnext/akpm (forced update)
+ + f0ffb222e1aa...85e86890fe36 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 9152a993930d...93bf8b946e5f lnext/master -> lnext/master (forced update)
+ + 5bd8ecf03410...69c0c89b7d69 lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   65f0d2414b70..e2da783614bb  lnext/stable -> lnext/stable
+   c8bb45205438..3657f729b6fb  pmko/cpufreq/arm/linux-next -> pmko/cpufreq/arm/linux-next
+ * [new branch]                bkp/oprofile/removal -> bkp/oprofile/removal
+ * [new tag]                   next-20210115 -> next-20210115
+ * [new tag]                   next-20210118 -> next-20210118
+ * [new tag]                   oprofile-removal-for-5.12 -> oprofile-removal-for-5.12
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

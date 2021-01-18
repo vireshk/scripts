@@ -1,6 +1,7 @@
 [user]
 	name = Viresh Kumar
 	email = viresh.kumar@linaro.org
+	signingkey = D2B91C3CAE81121C
 [sendemail]
 	smtpserver = /usr/bin/msmtp
         smtpserverport = 25

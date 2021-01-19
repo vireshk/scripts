@@ -1,0 +1,139 @@
+From vireshk  Tue Jan 19 08:05:18 2021
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [74.125.24.109] 	by vireshk-i7 with POP3 (fetchmail-6.3.26) 	for <vireshk@localhost> (single-drop); Tue, 19 Jan 2021 08:05:18 +0530 (IST)
+Received: by 2002:a5e:c10b:0:0:0:0:0 with SMTP id v11csp1156234iol;         Mon, 18 Jan 2021 18:22:04 -0800 (PST)
+X-Received: by 2002:a0c:e90a:: with SMTP id a10mr2300510qvo.38.1611022924160;         Mon, 18 Jan 2021 18:22:04 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1611022924; cv=none;         d=google.com; s=arc-20160816;         b=hcPGTEms4e1i+rf9u9s4sar3KuS84Tas+pUOVDbEctWAKwSKtNZCzDLeIbvPXxBAgN          jpQcjgHgwSX5l8ktcPapeq5/ScPoKtRc8O5EP0ffKmpFNi+07VcyfaYv0N3RgXO9yM6U          l4HRcVEbfUz4Hx2CyO6LxGkEvMa4HkbGRW4/kmmKP03Qe/ZFzSFIWOTG3kNFQHEG4K7d          ccBT3JweUzfOIjrOwrn3ehowuN+omZKxEGbOOOIRIAb8Qs1icade88ileKEAFO2Unj1c          R5y4scPPamuiOOij2mulUJ2NPmF27FjzPz1g3E/jTZCOcxeBa1lXPAQfGI9fDIWFhcZh          0czA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:references:in-reply-to          :message-id:date:subject:cc:to:from:dkim-signature;         bh=uvVQDxYFvYqoF+K8ci4qn05sk1l1BTuSg44ft2MDtH4=;         b=mAFvq03/wgnzPb1tgRUqL/UIoC+YMmj/13tjX2VGynNuLESLeIdG6s3EplT5etY9Kt          wb+MPmV0wxpR4BcPf3SRltB6JHkCSCEjAvGx2bIAb7VISMXfyCDWX13XxK9xqPPygfEk          n2FSZD/H576VQQCSFKKSjrqdJ21+PQJPl/oJiHr4Gm7xeyYdzfuakJRBQfLM7EBGIHTF          1sBKNzk053JHvITfd6BEAs7jy8E80QP19lpJCgb3mpBL3VrdkdkTpPNda1d6tkOsxrBN          9mTvamHS/rxHHM+nBxjsvI0lhQiw3Z7rMgVUjKIUjZVByfXpjHem8Up6VJDZjvpzafu3          wj5g==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@gmail.com header.s=20161025 header.b=HhgxnwqY;        spf=pass (google.com: domain of frowand.list@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=frowand.list@gmail.com;        dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <frowand.list@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])         by mx.google.com with SMTPS id b10sor2921950qte.0.2021.01.18.18.22.03         (Google Transport Security);         Mon, 18 Jan 2021 18:22:04 -0800 (PST)
+Received-SPF: pass (google.com: domain of frowand.list@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@gmail.com header.s=20161025 header.b=HhgxnwqY;        spf=pass (google.com: domain of frowand.list@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=frowand.list@gmail.com;        dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=gmail.com; s=20161025;         h=from:to:cc:subject:date:message-id:in-reply-to:references          :mime-version:content-transfer-encoding;         bh=uvVQDxYFvYqoF+K8ci4qn05sk1l1BTuSg44ft2MDtH4=;         b=HhgxnwqY6uDcFQ+5x2NAJSxS+o0DYUVGshktNgxa0/nmN9Ba3kNfESPag6zMFT5/bf          ZPXDJjuAU/xXq0rB/qLMMen6XDzxDfP/bQggDclv64JMkkbBy2w2OAE1M/s1VRQKtdb8          F1SROHq+eYyKSGXlxk9W56ql3qnntLyE0RRTlEbUvL0vimjLtO2L1VXEIe+nX8LDIsaZ          jXDZ0ntt7VNY8aUc5/zMynH8NAmatSAUTVr3s6WTVoEKZ20s4/M7P5JUNKUlQkTKdiif          /evy0bFQAjsN7IJbRBwHycfV1o4CH7aSb4HXIcOkvKHX8HJvweOCAIx+9YH19N/q4QZM          jA4g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=1e100.net; s=20161025;         h=x-gm-message-state:from:to:cc:subject:date:message-id:in-reply-to          :references:mime-version:content-transfer-encoding;         bh=uvVQDxYFvYqoF+K8ci4qn05sk1l1BTuSg44ft2MDtH4=;         b=TDBAMWQWZQvK3re+VVImZNGqbaWNCy106upLWKURqI04z5m8WEL8q+sF1sgQXBsq6J          zPt7D5o86bCf1xDNX/IfK5e0gnjjmHbBDLBNJEMQZYGFQM5YthT05t0dRmk5AzYexmqy          okefo2Eb+KQyn0H+43cRcAM2W6pXQX8ynnB7+PdPkHS+ObElqlSmhYGlvcJs5evPqIWD          B5JnKnvg9/M9wknTQb5ElchAxLN5FKtN8gAKiidDMGjrhmLvHrZ7z9MXH6Wz9CwgHcTD          Wsd0gIwjbzBW4I2Y4nwTdTjBFkwbFnzuCvC4sMo9huST0PwQ5WRVRw0qDcddha4v8lP6          AVFA==
+X-Gm-Message-State: AOAM531hngyZX50zA+pVP7scsunQVXeEnPqfu5axxcMa4dmcBQ9vjPA/ 	sDG/nj+UonjE/vDpDgIzoLt0v7GpXYpr9g==
+X-Google-Smtp-Source: ABdhPJy+bgCIazljR4BqFCPgcP9YA7HwXsTvCuYFjYtbZfrEBjq6gUYEDUO6b9l9pzjCzGNITu31rQ==
+X-Received: by 2002:ac8:370b:: with SMTP id o11mr2465925qtb.314.1611022923564;         Mon, 18 Jan 2021 18:22:03 -0800 (PST)
+Return-Path: <frowand.list@gmail.com>
+Received: from localhost.localdomain (c-67-187-90-124.hsd1.ky.comcast.net. [67.187.90.124])         by smtp.gmail.com with ESMTPSA id s14sm12212194qke.45.2021.01.18.18.22.02         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Mon, 18 Jan 2021 18:22:02 -0800 (PST)
+From: frowand.list@gmail.com
+To: Viresh Kumar <viresh.kumar@linaro.org>, 	Rob Herring <robh+dt@kernel.org>, 	pantelis.antoniou@konsulko.com
+Cc: devicetree@vger.kernel.org, 	linux-kernel@vger.kernel.org, 	linux-kbuild@vger.kernel.org, 	Vincent Guittot <vincent.guittot@linaro.org>, 	Bill Mills <bill.mills@linaro.org>, 	anmar.oueja@linaro.org, 	Masahiro Yamada <masahiroy@kernel.org>
+Subject: re: [PATCH] of: unittest: Statically apply overlays using fdtoverlay
+Date: Mon, 18 Jan 2021 20:21:54 -0600
+Message-Id: <20210119022154.2338781-1-frowand.list@gmail.com>
+X-Mailer: git-send-email 2.25.1
+In-Reply-To: <1e42183ccafa1afba33b3e79a4e3efd3329fd133.1610095159.git.viresh.kumar@linaro.org>
+References: <1e42183ccafa1afba33b3e79a4e3efd3329fd133.1610095159.git.viresh.kumar@linaro.org>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Content-Length: 4036
+Lines: 105
+
+From: Frank Rowand <frank.rowand@sony.com>
+
+These changes apply on top of the patches in:
+
+  [PATCH] of: unittest: Statically apply overlays using fdtoverlay
+  Message-Id: <1e42183ccafa1afba33b3e79a4e3efd3329fd133.1610095159.git.viresh.kumar@linaro.org>
+
+There are still some issues to be cleaned up, so not ready for acceptance.
+
+I have not used the construct "always-$(CONFIG_OF_OVERLAY)" before, and
+have not looked into the proper usage of it.
+
+I tested this using a hand build libfdt and fdtoverlay from the dtc-compiler
+upstream project.  For my testing I added LD_LIBRARY_PATH to the body of
+"cmd_fdtoverlay" to reference my hand built libfdt.  The kernel build
+system will have to instead use a libfdt that is built in the kernel
+tree.
+
+I have not run this through checkpatch, or my checks for build warnings.
+I have not run unittests on my target with these patches applied.
+
+---
+ drivers/of/unittest-data/Makefile | 67 ++++++++++++++++++++++---------
+ 1 file changed, 48 insertions(+), 19 deletions(-)
+
+diff --git a/drivers/of/unittest-data/Makefile b/drivers/of/unittest-data/Makefile
+index f17bce85f65f..28614a123d1e 100644
+--- a/drivers/of/unittest-data/Makefile
++++ b/drivers/of/unittest-data/Makefile
+@@ -39,25 +39,54 @@ DTC_FLAGS_testcases += -@
+ # suppress warnings about intentional errors
+ DTC_FLAGS_testcases += -Wno-interrupts_property
+ 
+-# Apply overlays statically with fdtoverlay
+-intermediate-overlay	:= overlay.dtb
+-master			:= overlay_0.dtb overlay_1.dtb overlay_2.dtb \
+-			   overlay_3.dtb overlay_4.dtb overlay_5.dtb \
+-			   overlay_6.dtb overlay_7.dtb overlay_8.dtb \
+-			   overlay_9.dtb overlay_10.dtb overlay_11.dtb \
+-			   overlay_12.dtb overlay_13.dtb overlay_15.dtb \
+-			   overlay_gpio_01.dtb overlay_gpio_02a.dtb \
+-			   overlay_gpio_02b.dtb overlay_gpio_03.dtb \
+-			   overlay_gpio_04a.dtb overlay_gpio_04b.dtb \
+-			   intermediate-overlay.dtb
+-
+-quiet_cmd_fdtoverlay = fdtoverlay $@
+-      cmd_fdtoverlay = $(objtree)/scripts/dtc/fdtoverlay -o $@ -i $^
+-
+-$(obj)/intermediate-overlay.dtb: $(obj)/overlay_base.dtb $(addprefix $(obj)/,$(intermediate-overlay))
+-	$(call if_changed,fdtoverlay)
++# Apply overlays statically with fdtoverlay.  This is a build time test that
++# the overlays can be applied successfully by fdtoverlay.  This does not
++# guarantee that the overlays can be applied successfully at run time by
++# unittest, but it provides a bit of build time test coverage for those
++# who do not execute unittest.
++#
++# The overlays are applied on top of testcases.dtb to create static_test.dtb
++# If fdtoverlay detects an error than the kernel build will fail.
++# static_test.dtb is not consumed by unittest.
++#
++# Some unittest overlays deliberately contain errors that unittest checks for.
++# These overlays will cause fdtoverlay to fail, and are thus not included
++# in the static test:
++#			overlay.dtb \
++#			overlay_bad_add_dup_node.dtb \
++#			overlay_bad_add_dup_prop.dtb \
++#			overlay_bad_phandle.dtb \
++#			overlay_bad_symbol.dtb \
++
++apply_static_overlay := overlay_base.dtb \
++			overlay_0.dtb \
++			overlay_1.dtb \
++			overlay_2.dtb \
++			overlay_3.dtb \
++			overlay_4.dtb \
++			overlay_5.dtb \
++			overlay_6.dtb \
++			overlay_7.dtb \
++			overlay_8.dtb \
++			overlay_9.dtb \
++			overlay_10.dtb \
++			overlay_11.dtb \
++			overlay_12.dtb \
++			overlay_13.dtb \
++			overlay_15.dtb \
++			overlay_gpio_01.dtb \
++			overlay_gpio_02a.dtb \
++			overlay_gpio_02b.dtb \
++			overlay_gpio_03.dtb \
++			overlay_gpio_04a.dtb \
++			overlay_gpio_04b.dtb \
++
++quiet_cmd_fdtoverlay = FDTOVERLAY $@
++
++## This is not correct, need to use libfdt from the kernel tree:
++cmd_fdtoverlay = $(objtree)/scripts/dtc/fdtoverlay -o $@ -i $^
+ 
+-$(obj)/master.dtb: $(obj)/testcases.dtb $(addprefix $(obj)/,$(master))
++$(obj)/static_test.dtb: $(obj)/testcases.dtb $(addprefix $(obj)/,$(apply_static_overlay))
+ 	$(call if_changed,fdtoverlay)
+ 
+-always-$(CONFIG_OF_OVERLAY) += intermediate-overlay.dtb master.dtb
++always-$(CONFIG_OF_OVERLAY) += static_test.dtb
+-- 
+Frank Rowand <frank.rowand@sony.com>
+

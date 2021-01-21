@@ -1402,3 +1402,8 @@ From vireshk  Mon Jan 18 09:18:46 2021
 From vireshk  Tue Jan 19 08:05:18 2021
  Subject: re: [PATCH] of: unittest: Statically apply overlays using fdtoverlay
   Folder: re_PATCH_of_unittest_Statically_apply_overlays_using_fdtover	   9685
+From vireshk  Wed Jan 20 22:20:30 2021
+ Subject: [PATCH] cpufreq: remove tango driver
+  Folder: PATCH_cpufreq_remove_tango_driver.mbox			   4233
+From foo@bar  Thu Jan 21 09:30:54 2021
+  Folder: .mbox								   2730

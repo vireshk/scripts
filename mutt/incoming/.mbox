@@ -2740,3 +2740,90 @@ index e855e8612a67..78318508a6d6 100644
 -- 
 2.25.1
 
+From foo@bar  Thu Jan 21 09:30:54 2021
+Cc: Marc Gonzalez <marc.w.gonzalez@free.fr>
+Cc: Mans Rullgard <mans@mansr.com>
+Signed-off-by: Arnd Bergmann <arnd@arndb.de>
+
+---
+ drivers/cpufreq/Kconfig.arm     |  5 -----
+ drivers/cpufreq/Makefile        |  1 -
+ drivers/cpufreq/tango-cpufreq.c | 38 ---------------------------------
+ 3 files changed, 44 deletions(-)
+ delete mode 100644 drivers/cpufreq/tango-cpufreq.c
+
+diff --git a/drivers/cpufreq/Kconfig.arm b/drivers/cpufreq/Kconfig.arm
+index 1f73fa75b1a0..e65e0a43be64 100644
+--- a/drivers/cpufreq/Kconfig.arm
++++ b/drivers/cpufreq/Kconfig.arm
+@@ -289,11 +289,6 @@ config ARM_STI_CPUFREQ
+ 	  this config option if you wish to add CPUFreq support for STi based
+ 	  SoCs.
+ 
+-config ARM_TANGO_CPUFREQ
+-	bool
+-	depends on CPUFREQ_DT && ARCH_TANGO
+-	default y
+-
+ config ARM_TEGRA20_CPUFREQ
+ 	tristate "Tegra20/30 CPUFreq support"
+ 	depends on ARCH_TEGRA && CPUFREQ_DT
+diff --git a/drivers/cpufreq/Makefile b/drivers/cpufreq/Makefile
+index f1b7e3dd6e5d..1ab9b1536304 100644
+--- a/drivers/cpufreq/Makefile
++++ b/drivers/cpufreq/Makefile
+@@ -79,7 +79,6 @@ obj-$(CONFIG_ARM_SCPI_CPUFREQ)		+= scpi-cpufreq.o
+ obj-$(CONFIG_ARM_SPEAR_CPUFREQ)		+= spear-cpufreq.o
+ obj-$(CONFIG_ARM_STI_CPUFREQ)		+= sti-cpufreq.o
+ obj-$(CONFIG_ARM_ALLWINNER_SUN50I_CPUFREQ_NVMEM) += sun50i-cpufreq-nvmem.o
+-obj-$(CONFIG_ARM_TANGO_CPUFREQ)		+= tango-cpufreq.o
+ obj-$(CONFIG_ARM_TEGRA20_CPUFREQ)	+= tegra20-cpufreq.o
+ obj-$(CONFIG_ARM_TEGRA124_CPUFREQ)	+= tegra124-cpufreq.o
+ obj-$(CONFIG_ARM_TEGRA186_CPUFREQ)	+= tegra186-cpufreq.o
+diff --git a/drivers/cpufreq/tango-cpufreq.c b/drivers/cpufreq/tango-cpufreq.c
+deleted file mode 100644
+index 89a7f860bfe8..000000000000
+--- a/drivers/cpufreq/tango-cpufreq.c
++++ /dev/null
+@@ -1,38 +0,0 @@
+-#include <linux/of.h>
+-#include <linux/cpu.h>
+-#include <linux/clk.h>
+-#include <linux/pm_opp.h>
+-#include <linux/platform_device.h>
+-
+-static const struct of_device_id machines[] __initconst = {
+-	{ .compatible = "sigma,tango4" },
+-	{ /* sentinel */ }
+-};
+-
+-static int __init tango_cpufreq_init(void)
+-{
+-	struct device *cpu_dev = get_cpu_device(0);
+-	unsigned long max_freq;
+-	struct clk *cpu_clk;
+-	void *res;
+-
+-	if (!of_match_node(machines, of_root))
+-		return -ENODEV;
+-
+-	cpu_clk = clk_get(cpu_dev, NULL);
+-	if (IS_ERR(cpu_clk))
+-		return -ENODEV;
+-
+-	max_freq = clk_get_rate(cpu_clk);
+-
+-	dev_pm_opp_add(cpu_dev, max_freq / 1, 0);
+-	dev_pm_opp_add(cpu_dev, max_freq / 2, 0);
+-	dev_pm_opp_add(cpu_dev, max_freq / 3, 0);
+-	dev_pm_opp_add(cpu_dev, max_freq / 5, 0);
+-	dev_pm_opp_add(cpu_dev, max_freq / 9, 0);
+-
+-	res = platform_device_register_data(NULL, "cpufreq-dt", -1, NULL, 0);
+-
+-	return PTR_ERR_OR_ZERO(res);
+-}
+-device_initcall(tango_cpufreq_init);
+-- 
+2.29.2
+

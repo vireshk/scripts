@@ -1407,3 +1407,6 @@ From vireshk  Wed Jan 20 22:20:30 2021
   Folder: PATCH_cpufreq_remove_tango_driver.mbox			   4233
 From foo@bar  Thu Jan 21 09:30:54 2021
   Folder: .mbox								   2730
+From vireshk  Thu Jan 21 03:58:18 2021
+ Subject: [PATCH v4 4/4] opp: Make _set_opp_custom() work without regulators
+  Folder: PATCH_v4_4-4_opp_Make_set_opp_custom__work_without_regulator	   8483

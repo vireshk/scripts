@@ -54970,3 +54970,86 @@ Please make sure you have the correct access rights
 and the repository exists.
 
 Entering /home/vireshk/scripts
+[master b7d936a00f78] updates
+ 1 file changed, 65 insertions(+)
+ssh: Could not resolve hostname git.linaro.org: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+ssh: Could not resolve hostname git.linaro.org: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+ssh: Could not resolve hostname git.linaro.org: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+ssh: Could not resolve hostname git.linaro.org: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+ssh: Could not resolve hostname git.linaro.org: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+ 
+Wed Jan 27 13:00:01 IST 2021
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + c61760a754c4...c642761ca4cf cppc/fi -> cppc/fi (forced update)
+ + eab469d36bd6...c4dc2d7056d9 dt/overlays -> dt/overlays (forced update)
+ + 5d49522b46d4...e07820234411 opp/linux-next -> opp/linux-next (forced update)
+ + 5e33a6a7e718...5d49522b46d4 bkp/opp/linux-next -> bkp/opp/linux-next (forced update)
+ + bae6ac7b1c6a...227c4c936483 bkp/oprofile/removal -> bkp/oprofile/removal (forced update)
+ + 15da5a516af0...429b6482ca45 lnext/akpm -> lnext/akpm (forced update)
+ + bcdacf47c169...ee7473549a1a lnext/akpm-base -> lnext/akpm-base (forced update)
+ + b4bb878f3eb3...59fa6a163ffa lnext/master -> lnext/master (forced update)
+ + e3f3158a4b86...3e6d74db7e02 lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   1e2a199f6ccd..fdbc80bdc436  lnext/stable -> lnext/stable
+   146620506274..2ab38c17aac1  origin/HEAD -> origin/HEAD
+   146620506274..2ab38c17aac1  origin/master -> origin/master
+ + 71538796e60c...2fba9103fda8 pmko/opp/linux-next -> pmko/opp/linux-next (forced update)
+ * [new tag]                   next-20210125 -> next-20210125
+ * [new tag]                   v5.11-rc5 -> v5.11-rc5
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

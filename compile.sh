@@ -88,6 +88,7 @@ elif [ $2 = odoroid ]; then
 elif [ $2 = tegra ]; then
 	dir=../btegra/
 	cfg=tegra_defconfig
+	IMAGE=
 elif [ $2 = hikeyc ]; then
 	dir=../bhikeyc/
 	cfg=hikey_defconfig

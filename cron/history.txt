@@ -55268,3 +55268,106 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master b473b3b8cdbc] updates
+ 1 file changed, 74 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   b629c99af5c9..b473b3b8cdbc  master -> master
+   da1c2bede602..b629c99af5c9  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Tue Feb  2 13:00:01 IST 2021
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   0/cppc/fi
+ - [deleted]                   0/opp/lazy
+ - [deleted]                   android/dtbo
+ + 76b98d6560ce...1d614920318b opp/linux-next -> opp/linux-next (forced update)
+ - [deleted]                   bkp/bkp/exynos/ara-make-dep
+ - [deleted]                   bkp/bkp/exynos/cpufreq-4.2
+ - [deleted]                   bkp/bkp/exynos/cpufreq-4.5
+ - [deleted]                   bkp/bkp/exynos/working/4.1-rc7
+ - [deleted]                   bkp/clkevt/clocksource/set-state
+ - [deleted]                   bkp/clkevt/migrate-to-new-per-state-api
+ - [deleted]                   bkp/cpufreq/core/locking
+ - [deleted]                   bkp/cpufreq/get-rate-api
+ - [deleted]                   bkp/cpufreq/get-rate-api-v1
+ - [deleted]                   bkp/cpufreq/gov-locking-timer
+ - [deleted]                   bkp/cpufreq/governor-fixes-v4
+ - [deleted]                   bkp/cpufreq/policy_under_cpufreq
+ - [deleted]                   bkp/exynos/working/4.1-rc7
+ - [deleted]                   bkp/lng/isolation-3.14
+ - [deleted]                   bkp/lng/vanila-spurious-tests
+ - [deleted]                   bkp/marvell
+ + 8b523d9f7f0a...76b98d6560ce bkp/opp/linux-next -> bkp/opp/linux-next (forced update)
+ - [deleted]                   bkp/opp/multi-regulator
+ - [deleted]                   bkp/opp/multi-regulator-v1
+ - [deleted]                   bkp/opp/multi-regulator-v2
+ - [deleted]                   bkp/opp/multi-regulator-v3
+ - [deleted]                   bkp/opp/multi-regulator-v3-with-debugfsbkp
+ - [deleted]                   bkp/opp/regulator-v4-bkp
+ - [deleted]                   bkp/opp/supported-hw-prop-name
+ - [deleted]                   bkp/opp/supported-hw-prop-name-v1
+ - [deleted]                   bkp/opp/v2
+ - [deleted]                   bkp/timer/migrate-running-timer
+ - [deleted]                   bkp/trivial/unlikely-is-err
+ - [deleted]                   bkp/vmstat/timer
+ + c73144a81ef1...2a2de8cce512 lnext/akpm -> lnext/akpm (forced update)
+ + 38ffb6181e2b...547e23285783 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + b01f250d83f6...fd821bf0ed9a lnext/master -> lnext/master (forced update)
+ + 1e76bd25cdcd...e94e5f3f41ac lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   e5ff2cb9cf67..ac8c6edd20bc  lnext/stable -> lnext/stable
+   1048ba83fb1c..88bb507a74ea  origin/HEAD -> origin/HEAD
+   1048ba83fb1c..88bb507a74ea  origin/master -> origin/master
+ + 76b98d6560ce...1d614920318b pmko/opp/linux-next -> pmko/opp/linux-next (forced update)
+ * [new branch]                cpufreq/random -> cpufreq/random
+ * [new tag]                   next-20210201 -> next-20210201
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

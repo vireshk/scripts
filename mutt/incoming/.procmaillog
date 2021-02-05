@@ -1419,3 +1419,12 @@ From vireshk  Fri Jan 22 11:31:15 2021
 From vireshk  Thu Feb  4 07:35:05 2021
  Subject: Re: [PATCH V7 6/6] of: unittest: Statically apply overlays using  fdt
   Folder: Re_PATCH_V7_6-6_of_unittest_Statically_apply_overlays_using_	  12927
+From vireshk  Thu Feb  4 13:45:31 2021
+ Subject: [PATCH v6 1/3] OPP: Add function to look up required OPP's for a give
+  Folder: PATCH_v6_1-3_OPP_Add_function_to_look_up_required_OPP's_for_	  10491
+From vireshk  Thu Feb  4 13:45:31 2021
+ Subject: [PATCH v6 2/3] PM / devfreq: Cache OPP table reference in devfreq
+  Folder: PATCH_v6_2-3_PM_devfreq_Cache_OPP_table_reference_in_devfreq	   8602
+From vireshk  Thu Feb  4 13:45:33 2021
+ Subject: [PATCH v6 3/3] PM / devfreq: Add required OPPs support to passive gov
+  Folder: PATCH_v6_3-3_PM_devfreq_Add_required_OPPs_support_to_passive	   8879

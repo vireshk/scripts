@@ -1,0 +1,98 @@
+From vireshk  Thu Feb  4 13:45:31 2021
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [74.125.68.109] 	by vireshk-i7 with POP3 (fetchmail-6.3.26) 	for <vireshk@localhost> (single-drop); Thu, 04 Feb 2021 13:45:31 +0530 (IST)
+Received: by 2002:a5d:9459:0:0:0:0:0 with SMTP id x25csp1121476ior;         Thu, 4 Feb 2021 00:14:35 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJwwm2BHX8XVf6CIUBaUXsj8WAwSTAPe1NPH/pOk1ByIL2oONxB4VvJQJ/PQiPPbkdfI+lAj
+X-Received: by 2002:a17:90a:183:: with SMTP id 3mr7309512pjc.99.1612426474964;         Thu, 04 Feb 2021 00:14:34 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1612426474; cv=none;         d=google.com; s=arc-20160816;         b=c6XjRR9b6LGjpSqvB5G1iFV5qiZrzMs6dBIBuWLq7SQoJdZ/C/sqaWW2hhzczN/ROc          mXTkFJ2YXWv4passLc6TuFdvXjPJpIO/YK3fn+EbYj2LgyEriJzUSzN9pwJHQQNduCp/          wwQFlwPOr0uvK/v/gKCeJ+1niYKciFfUtj4ByTOJr/Ptc0sE7nV+ZYis6V584pZ2nWDA          KlGW/9lwOAIBqj7PCZhqsm2HXLayELMdelSKk1hp/SldcQ2Z4JpkxQj75vDtbhlA5kqr          gAJEE8et4HvUCmfsNN0zkflmOd3juSAuzVw5gJlNOYSSG3caE8QLUMEIHBfUd7Lby2uM          u7Jg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:references:in-reply-to          :message-id:date:subject:cc:to:from:dkim-signature:dmarc-filter          :delivered-to;         bh=BUo70dpbWZG2th1HyMSGNG98xfWBgw6XoNhP4iRnwRU=;         b=FzjP72q5DBIN3V00eeyy1dIpCXYH9CUWBhUnbsV9C5xveyWR7qk9me2/YBGaymNFCO          8SV3GLFQh2yhDaDyWte+SEhPvoI2gVkdFB+j8XxfaLWXEoNw7qUK/ME1b3D3p31bq7UY          YAVX/K36eajCtxYobXU4M1PfCXbjlZ47Yc3wwxO5L7rYuQlT46vwTrtPC9MqTqHBxyu1          +o7kdPzjFmn2m22BUSNSjsKqql5qn2m5TluKoE5IP1gA0Gk09nC52NE3uLmlXNf7SAio          yKdIm3PlDPvxZ3o4wVAC5Abym8OXDSqY2qkdVSVACU4Ep2uwCVrduqVxkIqbJRRUGOr6          pF3A==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@chromium.org header.s=google header.b=FlecxtCo;        spf=pass (google.com: domain of srs0=xsga=hg=chromium.org=hsinyi@kernel.org designates 198.145.29.99 as permitted sender) smtp.mailfrom="SRS0=Xsga=HG=chromium.org=hsinyi@kernel.org";        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=chromium.org
+Return-Path: <SRS0=Xsga=HG=chromium.org=hsinyi@kernel.org>
+Received: from mail.kernel.org (mail.kernel.org. [198.145.29.99])         by mx.google.com with ESMTPS id e7si4836480plj.297.2021.02.04.00.14.34         for <viresh.kumar@linaro.org>         (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);         Thu, 04 Feb 2021 00:14:34 -0800 (PST)
+Received-SPF: pass (google.com: domain of srs0=xsga=hg=chromium.org=hsinyi@kernel.org designates 198.145.29.99 as permitted sender) client-ip=198.145.29.99;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@chromium.org header.s=google header.b=FlecxtCo;        spf=pass (google.com: domain of srs0=xsga=hg=chromium.org=hsinyi@kernel.org designates 198.145.29.99 as permitted sender) smtp.mailfrom="SRS0=Xsga=HG=chromium.org=hsinyi@kernel.org";        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=chromium.org
+Received: by mail.kernel.org (Postfix) 	id B3C3C64F67; Thu,  4 Feb 2021 08:14:34 +0000 (UTC)
+Delivered-To: vireshk@kernel.org
+Received: from mail-pj1-f48.google.com (mail-pj1-f48.google.com [209.85.216.48]) 	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) 	(No client certificate requested) 	by mail.kernel.org (Postfix) with ESMTPS id 8904564F4D 	for <vireshk@kernel.org>; Thu,  4 Feb 2021 08:14:34 +0000 (UTC)
+DMARC-Filter: OpenDMARC Filter v1.3.2 mail.kernel.org 8904564F4D
+Authentication-Results: mail.kernel.org; dmarc=pass (p=none dis=none) header.from=chromium.org
+Authentication-Results: mail.kernel.org; spf=pass smtp.mailfrom=hsinyi@chromium.org
+Received: by mail-pj1-f48.google.com with SMTP id z9so1332763pjl.5         for <vireshk@kernel.org>; Thu, 04 Feb 2021 00:14:34 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=chromium.org; s=google;         h=from:to:cc:subject:date:message-id:in-reply-to:references          :mime-version:content-transfer-encoding;         bh=BUo70dpbWZG2th1HyMSGNG98xfWBgw6XoNhP4iRnwRU=;         b=FlecxtCo1Sa+T60LAKIz04wg5u7FUSFpjvYDenVMCaVVTpYbFIQ1j7HOvvpOdOiL/K          QyN3GuJ1tBXy2TswFsx8eyUT+AeSg4puA72D1LFhXYI9VR9mEbytlcrSmxSjOIJzzLPd          YUikBNf0rUIs+Vd+NxiNHuKck5lXplDsXvzBE=
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=1e100.net; s=20161025;         h=x-gm-message-state:from:to:cc:subject:date:message-id:in-reply-to          :references:mime-version:content-transfer-encoding;         bh=BUo70dpbWZG2th1HyMSGNG98xfWBgw6XoNhP4iRnwRU=;         b=skfiaHp97ab2/458EEmp8T8il+jvrCxFaMfRfLmB3yJ0jho95CR4PbnUvL2hGweQ8h          +PXITSLauloN0L/ItniA1DjvqXUq4z8jRGEp0rnIWuASKWLdeTRzEmwy9f3IP11vavaD          g7YPKjs9xoma7dTpR1LLX0ESGi2UxDFcradBcWid9Kzr52SDIUdM4JvBJcsjmgJ5Bb/u          vX05FPSFigUVyJeUsmDfcF2P/OHS8UC1ggnD1rT+qql5/+H1Z9u3bI4AZbKnUXHa1YJq          +Lx4q0esh5tAonUBV1C+EaWXaZZLEsXXps+ufqZIqnAbPh9LojMdPV/mRVzptaiQ3X2J          QfEA==
+X-Gm-Message-State: AOAM5313KnAcLBacAAYCcpxtlL1nLoAzXguhb30F2RAHvqS8n/CwZ13B 	9XG0JXSMmQgX7sZTJdkJIHv1zVOSUJj6sQ==
+X-Received: by 2002:a17:902:ff0a:b029:e1:93ab:1e7b with SMTP id f10-20020a170902ff0ab02900e193ab1e7bmr7053319plj.61.1612426473736;         Thu, 04 Feb 2021 00:14:33 -0800 (PST)
+Received: from hsinyi-z840.tpe.corp.google.com ([2401:fa00:1:10:ed70:6d43:9c6a:2e22])         by smtp.gmail.com with ESMTPSA id e3sm5091258pgs.60.2021.02.04.00.14.31         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Thu, 04 Feb 2021 00:14:33 -0800 (PST)
+From: Hsin-Yi Wang <hsinyi@chromium.org>
+To: Viresh Kumar <vireshk@kernel.org>, 	linux-pm@vger.kernel.org
+Cc: Nishanth Menon <nm@ti.com>, 	Stephen Boyd <sboyd@kernel.org>, 	"Rafael J . Wysocki" <rjw@rjwysocki.net>, 	linux-kernel@vger.kernel.org, 	MyungJoo Ham <myungjoo.ham@samsung.com>, 	Kyungmin Park <kyungmin.park@samsung.com>, 	Chanwoo Choi <cw00.choi@samsung.com>, 	Saravana Kannan <saravanak@google.com>
+Subject: [PATCH v6 2/3] PM / devfreq: Cache OPP table reference in devfreq
+Date: Thu,  4 Feb 2021 16:14:23 +0800
+Message-Id: <20210204081424.2219311-3-hsinyi@chromium.org>
+X-Mailer: git-send-email 2.30.0.365.g02bc693789-goog
+In-Reply-To: <20210204081424.2219311-1-hsinyi@chromium.org>
+References: <20210204081424.2219311-1-hsinyi@chromium.org>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+From: Saravana Kannan <saravanak@google.com>
+
+The OPP table can be used often in devfreq. Trying to get it each time can
+be expensive, so cache it in the devfreq struct.
+
+Signed-off-by: Saravana Kannan <saravanak@google.com>
+Reviewed-by: Chanwoo Choi <cw00.choi@samsung.com>
+Acked-by: MyungJoo Ham <myungjoo.ham@samsung.com>
+Signed-off-by: Hsin-Yi Wang <hsinyi@chromium.org>
+---
+ drivers/devfreq/devfreq.c | 6 ++++++
+ include/linux/devfreq.h   | 2 ++
+ 2 files changed, 8 insertions(+)
+
+diff --git a/drivers/devfreq/devfreq.c b/drivers/devfreq/devfreq.c
+index 6aa10de792b33..a5899c9ae16fc 100644
+--- a/drivers/devfreq/devfreq.c
++++ b/drivers/devfreq/devfreq.c
+@@ -757,6 +757,8 @@ static void devfreq_dev_release(struct device *dev)
+ 	if (devfreq->profile->exit)
+ 		devfreq->profile->exit(devfreq->dev.parent);
+ 
++	if (devfreq->opp_table)
++		dev_pm_opp_put_opp_table(devfreq->opp_table);
+ 	mutex_destroy(&devfreq->lock);
+ 	kfree(devfreq);
+ }
+@@ -844,6 +846,10 @@ struct devfreq *devfreq_add_device(struct device *dev,
+ 	}
+ 
+ 	devfreq->suspend_freq = dev_pm_opp_get_suspend_opp_freq(dev);
++	devfreq->opp_table = dev_pm_opp_get_opp_table(dev);
++	if (IS_ERR(devfreq->opp_table))
++		devfreq->opp_table = NULL;
++
+ 	atomic_set(&devfreq->suspend_count, 0);
+ 
+ 	dev_set_name(&devfreq->dev, "%s", dev_name(dev));
+diff --git a/include/linux/devfreq.h b/include/linux/devfreq.h
+index b6d3bae1c74d8..26ea0850be9bb 100644
+--- a/include/linux/devfreq.h
++++ b/include/linux/devfreq.h
+@@ -137,6 +137,7 @@ struct devfreq_stats {
+  *		using devfreq.
+  * @profile:	device-specific devfreq profile
+  * @governor:	method how to choose frequency based on the usage.
++ * @opp_table:	Reference to OPP table of dev.parent, if one exists.
+  * @nb:		notifier block used to notify devfreq object that it should
+  *		reevaluate operable frequencies. Devfreq users may use
+  *		devfreq.nb to the corresponding register notifier call chain.
+@@ -173,6 +174,7 @@ struct devfreq {
+ 	struct device dev;
+ 	struct devfreq_dev_profile *profile;
+ 	const struct devfreq_governor *governor;
++	struct opp_table *opp_table;
+ 	struct notifier_block nb;
+ 	struct delayed_work work;
+ 
+-- 
+2.30.0.365.g02bc693789-goog
+

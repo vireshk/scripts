@@ -215,9 +215,32 @@ bimage="$mk $IMAGE"
 echo $bimage
 
 echo ""
-echo "Start operation: $1 for machine $cfg"
+echo "Start operation: $1 for $dir $cfg"
 echo "*******************************************"
 echo ""
+
+if [ $1 = "dtimage" ]; then
+	if [ $3 ]; then
+		DTB=$3
+	else
+		if [ ! $DTB ]; then
+			echo no dtimage specified as second argument
+			exit
+		fi
+	fi
+
+	$isdebug $mk zImage > /dev/null
+	$isdebug $mk dtbs
+
+	if [ ! -f $dir"arch/arm/boot/dts/$DTB.dtb" ]; then
+		echo no dtb created with name: $DTB.dtb
+		exit
+	fi
+
+	$isdebug cat $dir"arch/arm/boot/zImage" $dir"arch/arm/boot/dts/$DTB.dtb" > $dir"arch/arm/boot/zImage_dtb"
+	$isdebug mkimage -A arm -T kernel -C none -a 0x8000 -e 0x8000 -O linux -n "$2-$DTB uImage with dtb appended" -d $dir"arch/arm/boot/zImage_dtb" $dir"arch/arm/boot/uImage_dtb"
+	exit
+fi
 
 if [ $1 = "clean" ]; then
 	$isdebug $mk clean
@@ -243,73 +266,17 @@ elif [ $1 = "configimage" ]; then
 	$isdebug $mk $cfg
 	echo "CONFIG_USB_RTL8152=y" >> $dir.config
 	$isdebug $bimage > /dev/null
-elif [ $1 = "build" -o $1 = "lbuild" ]; then
-	# $isdebug $mk clean > /dev/null
-
-	#build config fragment
-	if [ $1 != "lbuild" ]; then
-		echo $cfg
-		$isdebug $mk $cfg > /dev/null
-	else
-		# save & restore .cscope
-		if [ ! -z cscope.out ]; then
-			cp cscope.out ~/junk/
-		fi
-
-		# $isdebug make mrproper
-
-		if [ $2 = tc2 ]; then
-			if [ -f linaro/configs/vexpress.conf ]; then
-				basecfg="$basecfg linaro/configs/vexpress.conf"
-			else
-				basecfg="$basecfg arch/arm/configs/"$cfg
-			fi
-		elif [ $2 = exynos ]; then
-			if [ -f linaro/configs/arndale.conf ]; then
-				basecfg="$basecfg linaro/configs/arndale.conf"
-			else
-				basecfg="$basecfg arch/arm/configs/"$cfg
-			fi
-		fi
-
-		if [ ! $3 -o $3 = "ubuntu" ]; then
-			basecfg="$basecfg linaro/configs/distribution.conf"
-		else
-			basecfg="$basecfg linaro/configs/android.conf"
-		fi
-
-		if [ $4 -a $4 = "mp" ]; then #To test with and without bLMP.conf
-			basecfg="$basecfg linaro/configs/big-LITTLE-MP.conf"
-		elif [ $4 -a $4 = "lng" ]; then
-			basecfg="$basecfg linaro/configs/distribution.conf linaro/configs/hugepage.conf linaro/configs/ovs.conf linaro/configs/kvm-host.conf linaro/configs/no_hz_full.conf"
-		fi
-
-		if [ $5 -a $5 = "rt" ]; then
-			basecfg="$basecfg linaro/configs/preempt-rt.conf"
-		fi
-
-		echo $basecfg
-		ARCH=arm $basecfg > /dev/null
-
-		rm -rf source
-		$isdebug cp .config $dir
-		$isdebug make mrproper
-
-		if [ ! -z ~/junk/cscope.out ]; then
-			cp ~/junk/cscope.out cscope.out
-		fi
-	fi
-
+elif [ $1 = "build" ]; then
+	echo $cfg
+	$isdebug $mk $cfg > /dev/null
 	$isdebug $bimage > /dev/null
-
-	if [ ! $2 = x86 ]; then
-		$isdebug $mk dtbs
-	fi
 elif [ $1 = "dtb" ]; then
 	$isdebug $mk $3".dtb"
 elif [ $1 = "dtbs" ]; then
 	$isdebug $mk W=1 dtbs
 elif [ $1 = "dtbsc" ]; then
+	$isdebug $mk W=1 dtbs_check
+elif [ $1 = "dtbsbc" ]; then
 	$isdebug $mk W=1 dt_binding_check
 elif [ $1 = "dtimage" ]; then
 	if [ $3 ]; then

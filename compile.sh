@@ -1,6 +1,24 @@
 #!/bin/bash
-isdebug=""
-#isdebug=echo
+is_debug=
+#is_debug=1
+
+run_cmd() {
+	echo $*;
+	echo;
+
+	if [ -z $is_debug ]; then
+		$*;
+	fi
+}
+
+run_cmd_dn() {
+	echo $*;
+	echo;
+
+	if [ -z $is_debug ]; then
+		$* > /dev/null;
+	fi
+}
 
 user=arm
 imagepath="arch/arm/boot"
@@ -194,14 +212,14 @@ fi
 
 #create directory if already not there
 if [ ! -d $dir ]; then
-	$isdebug mkdir $dir
+	run_cmd mkdir $dir
 fi
 
 #mk="make ARCH=$carch O=$dir -j4"
 #mk="ARCH=$carch O=$dir -j4"
 mk="make ARCH=$carch O=$dir -j8 $FLAGS CROSS_COMPILE=$CROSS_COMPILE $MISMATCH $MISC"
 
-if [ ! -z $isdebug ]; then
+if [ ! -z $is_debug ]; then
 	echo ""
 	echo "directory selected is: "$dir
 	echo "ARCH is: $carch"
@@ -212,72 +230,48 @@ if [ ! -z $isdebug ]; then
 fi
 
 bimage="$mk $IMAGE"
-echo $bimage
 
 echo ""
 echo "Start operation: $1 for $dir $cfg"
 echo "*******************************************"
 echo ""
 
-if [ $1 = "dtimage" ]; then
-	if [ $3 ]; then
-		DTB=$3
-	else
-		if [ ! $DTB ]; then
-			echo no dtimage specified as second argument
-			exit
-		fi
-	fi
-
-	$isdebug $mk zImage > /dev/null
-	$isdebug $mk dtbs
-
-	if [ ! -f $dir"arch/arm/boot/dts/$DTB.dtb" ]; then
-		echo no dtb created with name: $DTB.dtb
-		exit
-	fi
-
-	$isdebug cat $dir"arch/arm/boot/zImage" $dir"arch/arm/boot/dts/$DTB.dtb" > $dir"arch/arm/boot/zImage_dtb"
-	$isdebug mkimage -A arm -T kernel -C none -a 0x8000 -e 0x8000 -O linux -n "$2-$DTB uImage with dtb appended" -d $dir"arch/arm/boot/zImage_dtb" $dir"arch/arm/boot/uImage_dtb"
-	exit
-fi
-
 if [ $1 = "clean" ]; then
-	$isdebug $mk clean
+	run_cmd $mk clean
 elif [ $1 = "mrproper" ]; then
-	$isdebug $mk mrproper
+	run_cmd $mk mrproper
 elif [ $1 = "config" ]; then
-	$isdebug $mk $cfg
+	run_cmd $mk $cfg
 	echo "CONFIG_USB_RTL8152=y" >> $dir.config
 elif [ $1 = "sconfig" ]; then
-	$isdebug $mk savedefconfig
+	run_cmd $mk savedefconfig
 	cp $dir/defconfig arch/$carch/configs/$cfg
 elif [ $1 = "image" ]; then
-	$isdebug $bimage
+	run_cmd $bimage
 elif [ $1 = "nimage" ]; then
-	$isdebug $bimage > /dev/null
+	run_cmd_dn $bimage
 elif [ $1 = "menu" ]; then
-	$isdebug $mk menuconfig
+	run_cmd $mk menuconfig
 elif [ $1 = "module" ]; then
-	$isdebug $mk modules
+	run_cmd $mk modules
 elif [ $1 = "nmodule" ]; then
-	$isdebug $mk modules > /dev/null
+	run_cmd_dn $mk modules
 elif [ $1 = "configimage" ]; then
-	$isdebug $mk $cfg
+	run_cmd $mk $cfg
 	echo "CONFIG_USB_RTL8152=y" >> $dir.config
-	$isdebug $bimage > /dev/null
+	run_cmd_dn $bimage
 elif [ $1 = "build" ]; then
 	echo $cfg
-	$isdebug $mk $cfg > /dev/null
-	$isdebug $bimage > /dev/null
+	run_cmd_dn $mk $cfg
+	run_cmd_dn $bimage
 elif [ $1 = "dtb" ]; then
-	$isdebug $mk $3".dtb"
+	run_cmd $mk $3".dtb"
 elif [ $1 = "dtbs" ]; then
-	$isdebug $mk W=1 dtbs
+	run_cmd $mk W=1 dtbs
 elif [ $1 = "dtbsc" ]; then
-	$isdebug $mk W=1 dtbs_check
+	run_cmd $mk W=1 dtbs_check
 elif [ $1 = "dtbsbc" ]; then
-	$isdebug $mk W=1 dt_binding_check
+	run_cmd $mk W=1 dt_binding_check
 elif [ $1 = "dtimage" ]; then
 	if [ $3 ]; then
 		DTB=$3
@@ -288,16 +282,36 @@ elif [ $1 = "dtimage" ]; then
 		fi
 	fi
 
-	$isdebug $mk zImage > /dev/null
-	$isdebug $mk dtbs
+	run_cmd_dn $mk zImage
+	run_cmd $mk dtbs
 
 	if [ ! -f $dir"arch/arm/boot/dts/$DTB.dtb" ]; then
 		echo no dtb created with name: $DTB.dtb
 		exit
 	fi
 
-	$isdebug cat $dir"arch/arm/boot/zImage" $dir"arch/arm/boot/dts/$DTB.dtb" > $dir"arch/arm/boot/zImage_dtb"
-	$isdebug mkimage -A arm -T kernel -C none -a 0x8000 -e 0x8000 -O linux -n "$2-$DTB uImage with dtb appended" -d $dir"arch/arm/boot/zImage_dtb" $dir"arch/arm/boot/uImage_dtb"
+	run_cmd cat $dir"arch/arm/boot/zImage" $dir"arch/arm/boot/dts/$DTB.dtb" > $dir"arch/arm/boot/zImage_dtb"
+	run_cmd mkimage -A arm -T kernel -C none -a 0x8000 -e 0x8000 -O linux -n "$2-$DTB uImage with dtb appended" -d $dir"arch/arm/boot/zImage_dtb" $dir"arch/arm/boot/uImage_dtb"
+elif [ $1 = "dtimage" ]; then
+	if [ $3 ]; then
+		DTB=$3
+	else
+		if [ ! $DTB ]; then
+			echo no dtimage specified as second argument
+			exit
+		fi
+	fi
+
+	run_cmd_dn $mk zImage
+	run_cmd $mk dtbs
+
+	if [ ! -f $dir"arch/arm/boot/dts/$DTB.dtb" ]; then
+		echo no dtb created with name: $DTB.dtb
+		exit
+	fi
+
+	run_cmd cat $dir"arch/arm/boot/zImage" $dir"arch/arm/boot/dts/$DTB.dtb" > $dir"arch/arm/boot/zImage_dtb"
+	run_cmd mkimage -A arm -T kernel -C none -a 0x8000 -e 0x8000 -O linux -n "$2-$DTB uImage with dtb appended" -d $dir"arch/arm/boot/zImage_dtb" $dir"arch/arm/boot/uImage_dtb"
 else
 	echo "$1: is an invalid argument"
 	exit

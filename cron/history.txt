@@ -63919,3 +63919,75 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 9d07758c79ff] updates
+ 3 files changed, 5741 insertions(+), 49 deletions(-)
+ delete mode 100644 .compile.sh.swp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   183cb54dab63..9d07758c79ff  master -> master
+   20985cad2d59..183cb54dab63  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Fri Feb 12 13:00:01 IST 2021
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 0b9d35960733...911d5aa7a2f3 dt/overlays -> dt/overlays (forced update)
+ * [new branch]                bkp/0/opp/genpd-runtime-pm -> bkp/0/opp/genpd-runtime-pm
+ * [new branch]                bkp/0/opp/genpd/debug -> bkp/0/opp/genpd/debug
+ * [new branch]                bkp/0/opp/genpd/links -> bkp/0/opp/genpd/links
+ * [new branch]                bkp/0/usb-to-eth-hikey -> bkp/0/usb-to-eth-hikey
+ * [new branch]                bkp/cppc/fi -> bkp/cppc/fi
+ * [new branch]                bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next
+ * [new branch]                bkp/dt/overlays -> bkp/dt/overlays
+ * [new branch]                bkp/master -> bkp/master
+ * [new branch]                bkp/opp/linux-next -> bkp/opp/linux-next
+ * [new branch]                bkp/oprofile/removal -> bkp/oprofile/removal
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -64131,3 +64131,72 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 86b0f409ab12] updates
+ 1 file changed, 64 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   0fdcfd3e1d4c..86b0f409ab12  master -> master
+   ea67f201ee2f..0fdcfd3e1d4c  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Feb 17 13:00:01 IST 2021
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 4ceabad80e48...b2b7e8494493 cppc/fi -> cppc/fi (forced update)
+ - [deleted]                   bkp/greybus-fixes
+ + 25730252dd6f...fa58486ff542 lnext/akpm -> lnext/akpm (forced update)
+ + 4524bfc9583b...1c595cf53f40 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 07f7e57c63aa...6553715b6db5 lnext/master -> lnext/master (forced update)
+ + 095727507311...dcd372394d93 lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   c05263df6c1a..f40ddce88593  lnext/stable -> lnext/stable
+ * [new branch]                bkp/virtio/i2c -> bkp/virtio/i2c
+ * [new tag]                   next-20210216 -> next-20210216
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

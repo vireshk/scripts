@@ -1428,3 +1428,6 @@ From vireshk  Thu Feb  4 13:45:31 2021
 From vireshk  Thu Feb  4 13:45:33 2021
  Subject: [PATCH v6 3/3] PM / devfreq: Add required OPPs support to passive gov
   Folder: PATCH_v6_3-3_PM_devfreq_Add_required_OPPs_support_to_passive	   8879
+From vireshk  Wed Feb 17 08:28:01 2021
+ Subject: [PATCH] opp: fix dev_pm_opp_set_rate for different frequency at the s
+  Folder: PATCH_opp_fix_dev_pm_opp_set_rate_for_different_frequency_at	   8355

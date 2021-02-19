@@ -1431,3 +1431,15 @@ From vireshk  Thu Feb  4 13:45:33 2021
 From vireshk  Wed Feb 17 08:28:01 2021
  Subject: [PATCH] opp: fix dev_pm_opp_set_rate for different frequency at the s
   Folder: PATCH_opp_fix_dev_pm_opp_set_rate_for_different_frequency_at	   8355
+From vireshk  Tue Jan 19 08:10:31 2021
+ Subject: [PATCH v2] cpufreq: qcom-hw: drop devm_xxx() calls from init/exit hoo
+  Folder: PATCH_v2_cpufreq_qcom-hw_drop_devm_xxx__calls_from_init-exit	  10018
+From vireshk  Fri Feb 19 09:37:35 2021
+ Subject: [PATCH v8 2/3] scmi-cpufreq: Get opp_shared_cpus from opp-v2 for EM
+  Folder: PATCH_v8_2-3_scmi-cpufreq_Get_opp_shared_cpus_from_opp-v2_fo	   9009
+From vireshk  Fri Feb 19 09:37:35 2021
+ Subject: [PATCH v8 3/3] cpufreq: blacklist Arm Vexpress platforms in cpufreq-d
+  Folder: PATCH_v8_3-3_cpufreq_blacklist_Arm_Vexpress_platforms_in_cpu	   5476
+From vireshk  Fri Feb 19 09:37:37 2021
+ Subject: [PATCH v8 1/3] scmi-cpufreq: Remove deferred probe
+  Folder: PATCH_v8_1-3_scmi-cpufreq_Remove_deferred_probe.mbox		   5600

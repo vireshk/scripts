@@ -69,6 +69,7 @@ alias haosp="cd /media/vireshk/*/android/"
 alias hpatches="cd /home/vireshk/scripts/mutt/incoming/"
 alias hmodule="cd /home/vireshk/work/repos/tools/module/"
 alias hlwn="cd /home/vireshk/work/repos/tools/lwn"
+alias hqemu="htools; cd qemu"
 
 updatepkglist() { echo "$*" >> ~/scripts/pkglist-install; }
 
@@ -216,6 +217,7 @@ alias ltpbuild="make clean;make autotools;./configure;make"
 
 #qemu
 alias myqemu="~/work/repos/tools/qemu/build/qemu-system-aarch64 -machine virt -cpu cortex-a57 -machine type=virt -nographic -smp 4 -m 2G -kernel ~/work/repos/devel/barm64/arch/arm64/boot/Image  --append \"console=ttyAMA0\""
+alias myqemujunk="~/work/repos/tools/qemu/build/qemu-system-aarch64 -machine virt -cpu cortex-a57 -machine type=virt -nographic -smp 4 -m 2G -kernel ~/junk/Image-qemu --append \"console=ttyAMA0\""
 
 # go to linux on shell startup
 hwork

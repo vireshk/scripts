@@ -219,8 +219,11 @@ alias ltpbuild="make clean;make autotools;./configure;make"
 alias myqemu="~/work/repos/tools/qemu/build/qemu-system-aarch64 -machine virt -cpu cortex-a57 -machine type=virt -nographic -smp 4 -m 2G -kernel ~/work/repos/devel/barm64/arch/arm64/boot/Image  --append \"console=ttyAMA0\""
 alias myqemui2c="myqemu -chardev socket,path=vi2c.sock,id=vi2c -device vhost-user-i2c-pci,chardev=vi2c,id=i2c"
 alias myqemujunk="~/work/repos/tools/qemu/build/qemu-system-aarch64 -machine virt -cpu cortex-a57 -machine type=virt -nographic -smp 4 -m 2G -kernel ~/junk/Image-qemu --append \"console=ttyAMA0\""
-alias vui2c="unlink vi2c.sock; ~/work/repos/tools/qemu/build/tools/vhost-user-i2c/vhost-user-i2c --socket-path=vi2c.sock &"
+alias vui2c="unlink vi2c.sock; ~/work/repos/tools/qemu/build/tools/vhost-user-i2c/vhost-user-i2c --socket-path=vi2c.sock --debug --verbose &"
 alias qvim="vim -c 'set expandtab' -c 'set shiftwidth=4'"
+alias buildqemu="../configure --python=/usr/bin/python3.7 --target-list=aarch64-softmmu; make"
+alias myqemui2cfs="myqemui2c -fsdev local,id=r,path=/home/vireshk/work/repos/tools/virtio/scripts/,security_model=none -device virtio-9p-device,fsdev=r,mount_tag=r"
+alias mountqemu="echo \"mount -t 9p -o trans=virtio r /mnt\""
 
 
 # go to linux on shell startup

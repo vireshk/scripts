@@ -64680,3 +64680,73 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 75069988c868] updates
+ 3 files changed, 3205 insertions(+), 1 deletion(-)
+ create mode 100644 pkglist
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   89e2c31ba6fc..75069988c868  master -> master
+   62df60d18172..89e2c31ba6fc  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Mon Mar  1 13:00:01 IST 2021
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 6c641f19d43d...a419ac73e641 cppc/fi -> cppc/fi (forced update)
+ - [deleted]                   cppc/fi-rebased
+ + 8fcb957b703d...8f9d3ee02bcc cpufreq/arm/linux-next -> cpufreq/arm/linux-next (forced update)
+ - [deleted]                   mhuv2
+ + b1a410777158...e7a74cec101f bkp/virtio/i2c -> bkp/virtio/i2c (forced update)
+   29c395c77a9a..fe07bfda2fb9  origin/HEAD -> origin/HEAD
+   29c395c77a9a..fe07bfda2fb9  origin/master -> origin/master
+   67fc209b527d..8f9d3ee02bcc  pmko/cpufreq/arm/linux-next -> pmko/cpufreq/arm/linux-next
+ * [new tag]                   v5.12-rc1 -> v5.12-rc1
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

@@ -1443,3 +1443,6 @@ From vireshk  Fri Feb 19 09:37:35 2021
 From vireshk  Fri Feb 19 09:37:37 2021
  Subject: [PATCH v8 1/3] scmi-cpufreq: Remove deferred probe
   Folder: PATCH_v8_1-3_scmi-cpufreq_Remove_deferred_probe.mbox		   5600
+From vireshk  Mon Mar  1 09:21:47 2021
+ Subject: [PATCH] cpufreq: qcom-hw: fix dereferencing freed memory 'data'
+  Folder: PATCH_cpufreq_qcom-hw_fix_dereferencing_freed_memory_'data'.	   6181

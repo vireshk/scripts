@@ -15,12 +15,15 @@ export COVER_CC=1
 #RESET='\['"$(tput sgr0)"'\]'
 #export PS1='['"$BOLD"'\W'"$RESET\$(git ps1)"']\$ '
 
+#Misc
+export mypaste="| curl -F 'f:1=<-' ix.io"
 
 # git
 source /home/vireshk/scripts/git_alias
-PATH="/home/vireshk/work/repos/tools/git/contrib/workdir/:/home/vireshk/.local/bin/:$PATH"
+PATH="/home/vireshk/work/repos/tools/git/contrib/workdir/:/home/vireshk/.local/bin/:/home/vireshk/work/repos/tools/binaries/:$PATH"
 #alias python3="python"
 alias b4="/home/vireshk/work/repos/tools/b4/b4.sh"
+
 
 # mail
 export MAIL=/var/mail/viresh
@@ -136,6 +139,7 @@ alias installx86="nimage x86; nmodule x86; msudo make O=../bx86 CROSS_COMPILE= -
 
 #fixes
 alias fixsound1="pulseaudio -k"
+alias fixsoundbose="msudo alsa force-reload"
 alias fixsound2="pactl load-module module-bluetooth-discover"
 alias fixmail="~/scripts/mailvialinaro.sh"
 alias fixmouse="msudo rmmod usbhid && msudo modprobe usbhid"

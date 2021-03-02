@@ -220,7 +220,7 @@ alias mountrouterdrive="curlftpfs vireshk:123456@192.168.1.1 ~/Videos/routerdriv
 alias ltpbuild="make clean;make autotools;./configure;make"
 
 #qemu
-alias myqemu="~/work/repos/tools/qemu/build/qemu-system-aarch64 -machine virt -cpu cortex-a57 -machine type=virt -nographic -smp 4 -m 2G -kernel ~/work/repos/devel/barm64/arch/arm64/boot/Image  --append \"console=ttyAMA0\""
+alias myqemu="~/work/repos/tools/qemu/build/qemu-system-aarch64 -machine virt -cpu cortex-a57 -machine type=virt -nographic -smp 4 -m 2G -kernel ~/work/repos/devel/barm64/arch/arm64/boot/Image  --append \"console=ttyAMA0\" -object memory-backend-file,id=mem,size=2G,mem-path=/dev/shm,share=on -numa node,memdev=mem"
 alias myqemui2c="myqemu -chardev socket,path=vi2c.sock,id=vi2c -device vhost-user-i2c-pci,chardev=vi2c,id=i2c"
 alias myqemujunk="~/work/repos/tools/qemu/build/qemu-system-aarch64 -machine virt -cpu cortex-a57 -machine type=virt -nographic -smp 4 -m 2G -kernel ~/junk/Image-qemu --append \"console=ttyAMA0\""
 alias vui2c="unlink vi2c.sock; ~/work/repos/tools/qemu/build/tools/vhost-user-i2c/vhost-user-i2c --socket-path=vi2c.sock --debug --verbose &"

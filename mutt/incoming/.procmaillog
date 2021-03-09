@@ -1461,3 +1461,9 @@ From vireshk  Mon Mar  8 08:35:53 2021
 From vireshk  Mon Mar  8 08:35:53 2021
  Subject: Re: [PATCH V9 2/4] kbuild: Add generic rule to apply fdtoverlay
   Folder: Re_PATCH_V9_2-4_kbuild_Add_generic_rule_to_apply_fdtoverlay.	   8270
+From vireshk  Fri Mar  5 08:19:35 2021
+ Subject: [PATCH] opp: Invalidate current opp when draining the opp list
+  Folder: PATCH_opp_Invalidate_current_opp_when_draining_the_opp_list.	   7269
+From vireshk  Fri Mar  5 08:19:35 2021
+ Subject: [PATCH] opp: Invalidate current opp when draining the opp list
+  Folder: PATCH_opp_Invalidate_current_opp_when_draining_the_opp_list.	   7269

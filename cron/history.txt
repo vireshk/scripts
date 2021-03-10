@@ -65163,3 +65163,77 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master adaa65f91450] updates
+ 3 files changed, 88 insertions(+), 37 deletions(-)
+ delete mode 100644 mutt/incoming/Re_PATCH_V9_2-4_kbuild_Add_generic_rule_to_apply_fdtoverlay.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   ea7518c2467b..adaa65f91450  master -> master
+   00f985e2901f..ea7518c2467b  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Mar 10 13:00:01 IST 2021
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + a419ac73e641...a0fd788b9ba1 cppc/fi -> cppc/fi (forced update)
+   fbb31cb805fd..ce4e7ba54891  cpufreq/arm/linux-next -> cpufreq/arm/linux-next
+ + 013df6adc9f6...20a4674797b3 dt/overlays -> dt/overlays (forced update)
+ + 021c503e1508...ffda33ab1612 opp/linux-next -> opp/linux-next (forced update)
+ + b3acebd683d6...fbb31cb805fd bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next (forced update)
+ + 1ed53ec9d229...013df6adc9f6 bkp/dt/overlays -> bkp/dt/overlays (forced update)
+   de04241ab87a..021c503e1508  bkp/opp/linux-next -> bkp/opp/linux-next
+ - [deleted]                   bkp/oprofile/removal
+   0c28f47dae11..c5113993dc71  bkp/virtio/i2c -> bkp/virtio/i2c
+   144c79ef3353..05a59d79793d  origin/HEAD -> origin/HEAD
+   144c79ef3353..05a59d79793d  origin/master -> origin/master
+   fbb31cb805fd..ce4e7ba54891  pmko/cpufreq/arm/linux-next -> pmko/cpufreq/arm/linux-next
+ * [new branch]                bkp/cpufreq/arm/fixes -> bkp/cpufreq/arm/fixes
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

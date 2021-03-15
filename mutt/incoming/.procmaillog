@@ -1467,3 +1467,9 @@ From vireshk  Fri Mar  5 08:19:35 2021
 From vireshk  Fri Mar  5 08:19:35 2021
  Subject: [PATCH] opp: Invalidate current opp when draining the opp list
   Folder: PATCH_opp_Invalidate_current_opp_when_draining_the_opp_list.	   7269
+From vireshk  Mon Mar 15 08:00:30 2021
+ Subject: [PATCH v3 11/15] drm/msm: Convert to use resource-managed OPP API
+  Folder: PATCH_v3_11-15_drm-msm_Convert_to_use_resource-managed_OPP_A	  18131
+From vireshk  Mon Mar 15 08:00:06 2021
+ Subject: [PATCH] cpufreq: cppc: simplify default delay_us setting
+  Folder: PATCH_cpufreq_cppc_simplify_default_delay_us_setting.mbox	  14462

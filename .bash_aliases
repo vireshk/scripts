@@ -229,6 +229,9 @@ alias buildqemu="../configure --python=/usr/bin/python3.7 --target-list=aarch64-
 alias myqemui2cfs="myqemui2c -fsdev local,id=r,path=/home/vireshk/work/repos/tools/virtio/scripts/,security_model=none -device virtio-9p-device,fsdev=r,mount_tag=r"
 alias mountqemu="echo \"mount -t 9p -o trans=virtio r /mnt\""
 
+#alias myqemux86="~/work/repos/tools/qemu/buildx86/qemu-system-x86_64 -M pc -kernel ~/work/repos/devel/bx86/arch/x86_64/boot/bzImage -drive file=output/images/rootfs.ext2,if=ide -append "root=/dev/sda console=ttyS0,115200" -net nic,model=rtl8139 -net user -nographic -s"
+alias myqemux86="~/work/repos/tools/qemu/buildx86/qemu-system-x86_64  -kernel ~/work/repos/devel/bx86/arch/x86_64/boot/bzImage -boot c -m 2049M -drive file=~/work/repos/tools/buildroot/buildx86/images/rootfs.ext2,format=raw -append \"root=/dev/sda rw console=ttyS0,115200 acpi=off nokaslr\" -nographic -display none"
+
 
 # go to linux on shell startup
 hwork

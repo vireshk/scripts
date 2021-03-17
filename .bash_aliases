@@ -220,18 +220,19 @@ alias mountrouterdrive="curlftpfs vireshk:123456@192.168.1.1 ~/Videos/routerdriv
 alias ltpbuild="make clean;make autotools;./configure;make"
 
 #qemu
-alias myqemu="~/work/repos/tools/qemu/build/qemu-system-aarch64 -machine virt -cpu cortex-a57 -machine type=virt -nographic -smp 4 -m 2G -kernel ~/work/repos/devel/barm64/arch/arm64/boot/Image  --append \"console=ttyAMA0\" -object memory-backend-file,id=mem,size=2G,mem-path=/dev/shm,share=on -numa node,memdev=mem"
-alias myqemui2c="myqemu -chardev socket,path=vi2c.sock,id=vi2c -device vhost-user-i2c-pci,chardev=vi2c,id=i2c"
-alias myqemujunk="~/work/repos/tools/qemu/build/qemu-system-aarch64 -machine virt -cpu cortex-a57 -machine type=virt -nographic -smp 4 -m 2G -kernel ~/junk/Image-qemu --append \"console=ttyAMA0\""
+export qemufs=" -fsdev local,id=r,path=/home/vireshk/work/repos/tools/virtio/scripts/,security_model=none -device virtio-9p-device,fsdev=r,mount_tag=r"
+export qemui2c="-chardev socket,path=vi2c.sock,id=vi2c -device vhost-user-i2c-pci,chardev=vi2c,id=i2c"
+alias mountqemu="echo \"mount -t 9p -o trans=virtio r /mnt\""
 alias vui2c="unlink vi2c.sock; ~/work/repos/tools/qemu/build/tools/vhost-user-i2c/vhost-user-i2c --socket-path=vi2c.sock --debug --verbose "
 alias qvim="vim -c 'set expandtab' -c 'set shiftwidth=4'"
+
+alias myqemu="~/work/repos/tools/qemu/build/qemu-system-aarch64 -machine virt -cpu cortex-a57 -machine type=virt -nographic -smp 4 -m 2G -kernel ~/work/repos/devel/barm64/arch/arm64/boot/Image  --append \"console=ttyAMA0\" -object memory-backend-file,id=mem,size=2G,mem-path=/dev/shm,share=on -numa node,memdev=mem"
+alias myqemufs="myqemu $qemui2c $qemufs"
+alias myqemujunk="~/work/repos/tools/qemu/build/qemu-system-aarch64 -machine virt -cpu cortex-a57 -machine type=virt -nographic -smp 4 -m 2G -kernel ~/junk/Image-qemu --append \"console=ttyAMA0\""
 alias buildqemu="../configure --python=/usr/bin/python3.7 --target-list=aarch64-softmmu; make"
-alias myqemui2cfs="myqemui2c -fsdev local,id=r,path=/home/vireshk/work/repos/tools/virtio/scripts/,security_model=none -device virtio-9p-device,fsdev=r,mount_tag=r"
-alias mountqemu="echo \"mount -t 9p -o trans=virtio r /mnt\""
+alias myqemuvexp="~/work/repos/tools/qemu/build/qemu-system-aarch64 -machine vexpress-a15 -nographic -smp 4 -m 2G -kernel ~/work/repos/devel/barm/arch/arm/boot/zImage -dtb ~/work/repos/devel/barm/arch/arm/boot/dts/vexpress-v2p-ca15-tc1.dtb --append \"console=ttyAMA0\" -object memory-backend-file,id=mem,size=2G,mem-path=/dev/shm,share=on $qemufs"
 
-#alias myqemux86="~/work/repos/tools/qemu/buildx86/qemu-system-x86_64 -M pc -kernel ~/work/repos/devel/bx86/arch/x86_64/boot/bzImage -drive file=output/images/rootfs.ext2,if=ide -append "root=/dev/sda console=ttyS0,115200" -net nic,model=rtl8139 -net user -nographic -s"
 alias myqemux86="~/work/repos/tools/qemu/buildx86/qemu-system-x86_64  -kernel ~/work/repos/devel/bx86/arch/x86_64/boot/bzImage -boot c -m 2049M -drive file=~/work/repos/tools/buildroot/buildx86/images/rootfs.ext2,format=raw -append \"root=/dev/sda rw console=ttyS0,115200 acpi=off nokaslr\" -nographic -display none"
-
 
 # go to linux on shell startup
 hwork

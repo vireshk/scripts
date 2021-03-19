@@ -72,7 +72,7 @@ alias haosp="cd /media/vireshk/*/android/"
 alias hpatches="cd /home/vireshk/scripts/mutt/incoming/"
 alias hmodule="cd /home/vireshk/work/repos/tools/module/"
 alias hlwn="cd /home/vireshk/work/repos/tools/lwn"
-alias hqemu="htools; cd qemu"
+alias hqemu="htools; cd qemu/qemu"
 
 updatepkglist() { echo "$*" >> ~/scripts/pkglist-install; }
 
@@ -220,21 +220,27 @@ alias mountrouterdrive="curlftpfs vireshk:123456@192.168.1.1 ~/Videos/routerdriv
 alias ltpbuild="make clean;make autotools;./configure;make"
 
 #qemu
-export qemufs=" -fsdev local,id=r,path=/home/vireshk/work/repos/tools/virtio/scripts/,security_model=none -device virtio-9p-device,fsdev=r,mount_tag=r"
-export qemui2c="-chardev socket,path=vi2c.sock,id=vi2c -device vhost-user-i2c-pci,chardev=vi2c,id=i2c"
-export qemurtc="-device ds1338,address=0x20"
-alias mountqemu="echo \"mount -t 9p -o trans=virtio r /mnt\""
-alias vui2c="unlink vi2c.sock; ~/work/repos/tools/qemu/build/tools/vhost-user-i2c/vhost-user-i2c --socket-path=vi2c.sock --debug --verbose "
+alias configqemu="../configure --python=/usr/bin/python3.7 --target-list=aarch64-softmmu --enable-virtfs"
+alias buildqemu="configqemu; make"
+alias vui2c="unlink vi2c.sock; ~/work/repos/tools/qemu/qemu/buildarm64/tools/vhost-user-i2c/vhost-user-i2c --socket-path=vi2c.sock --debug --verbose "
 alias qvim="vim -c 'set expandtab' -c 'set shiftwidth=4'"
+alias mountqemu="echo \"mount -t 9p -o trans=virtio r /mnt\""
 alias i2ccreate="echo \"echo ds1338 0x20 > /sys/bus/i2c/devices/i2c-0/new_device\""
 
-alias myqemu="~/work/repos/tools/qemu/build/qemu-system-aarch64 -machine virt,virtualization=on -cpu cortex-a57 -machine type=virt -nographic -smp 4 -m 2G -kernel ~/work/repos/devel/barm64/arch/arm64/boot/Image  --append \"console=ttyAMA0\" -object memory-backend-file,id=mem,size=2G,mem-path=/dev/shm,share=on -numa node,memdev=mem"
-alias myqemufs="myqemu $qemui2c $qemufs"
-alias myqemujunk="~/work/repos/tools/qemu/build/qemu-system-aarch64 -machine virt -cpu cortex-a57 -machine type=virt -nographic -smp 4 -m 2G -kernel ~/junk/Image-qemu --append \"console=ttyAMA0\""
-alias buildqemu="../configure --python=/usr/bin/python3.7 --target-list=aarch64-softmmu; make"
-#alias myqemuvexp="~/work/repos/tools/qemu/build/qemu-system-aarch64 -machine vexpress-a15 -nographic -smp 4 -m 2G -kernel ~/work/repos/devel/barm/arch/arm/boot/zImage -dtb ~/work/repos/devel/barm/arch/arm/boot/dts/vexpress-v2p-ca15-tc1.dtb --append \"console=ttyAMA0\" -object memory-backend-file,id=mem,size=2G,mem-path=/dev/shm,share=on $qemufs"
+export qemufs=" -fsdev local,id=r,path=/home/vireshk/work/repos/tools/qemu/,security_model=none -device virtio-9p-device,fsdev=r,mount_tag=r"
+export qemui2c="-chardev socket,path=vi2c.sock,id=vi2c -device vhost-user-i2c-pci,chardev=vi2c,id=i2c"
+export qemurtc="-device ds1338,address=0x20"
 
-alias myqemux86="~/work/repos/tools/qemu/buildx86/qemu-system-x86_64  -kernel ~/work/repos/devel/bx86/arch/x86_64/boot/bzImage -boot c -m 2049M -drive file=~/work/repos/tools/buildroot/buildx86/images/rootfs.ext2,format=raw -append \"root=/dev/sda rw console=ttyS0,115200 acpi=off nokaslr\" -nographic -display none"
+alias qemuarm=" ~/work/repos/tools/qemu/qemu/buildarm64/qemu-system-aarch64 -M virt -machine virtualization=true -machine virt,gic-version=3 -cpu max -smp 2 -m 4096 -drive if=virtio,format=qcow2,file=/home/vireshk/work/repos/tools/qemu/host-qemu/disk.img -device virtio-scsi-pci,id=scsi0 -object rng-random,filename=/dev/urandom,id=rng0 -device virtio-rng-pci,rng=rng0 -device virtio-net-pci,netdev=net0 -netdev user,id=net0,hostfwd=tcp::8022-:22 -nographic -kernel ~/work/repos/devel/barm64/arch/arm64/boot/Image --append \"earlycon root=/dev/vda2\""
+
+alias qemuarmold=" ~/work/repos/tools/qemu/qemu/buildarm64/qemu-system-aarch64 -M virt -machine virtualization=true -machine virt,gic-version=3 -cpu max -smp 2 -m 4096 -drive if=pflash,format=raw,file=/home/vireshk/work/repos/tools/qemu/host-qemu/efi.img,readonly -drive if=pflash,format=raw,file=/home/vireshk/work/repos/tools/qemu/host-qemu/varstore.img  -drive if=virtio,format=qcow2,file=/home/vireshk/work/repos/tools/qemu/host-qemu/disk.img -device virtio-scsi-pci,id=scsi0 -object rng-random,filename=/dev/urandom,id=rng0 -device virtio-rng-pci,rng=rng0 -device virtio-net-pci,netdev=net0 -netdev user,id=net0,hostfwd=tcp::8022-:22 -nographic -kernel ~/work/repos/devel/barm64/arch/arm64/boot/Image --append \"earlycon root=/dev/vda2\""
+
+alias qemuarmf="~/work/repos/tools/qemu/qemu/buildarm64/qemu-system-aarch64 -machine virt,virtualization=on -cpu cortex-a57 -machine type=virt -nographic -smp 4 -m 2G -kernel ~/work/repos/devel/barm64/arch/arm64/boot/Image  --append \"console=ttyAMA0\" -object memory-backend-file,id=mem,size=2G,mem-path=/dev/shm,share=on -numa node,memdev=mem"
+alias myqemufs="myqemu $qemui2c $qemufs"
+alias myqemujunk="~/work/repos/tools/qemu/qemu/buildarm64/qemu-system-aarch64 -machine virt -cpu cortex-a57 -machine type=virt -nographic -smp 4 -m 2G -kernel ~/junk/Image-qemu --append \"console=ttyAMA0\""
+#alias myqemuvexp="~/work/repos/tools/qemu/qemu/buildarm64/qemu-system-aarch64 -machine vexpress-a15 -nographic -smp 4 -m 2G -kernel ~/work/repos/devel/barm/arch/arm/boot/zImage -dtb ~/work/repos/devel/barm/arch/arm/boot/dts/vexpress-v2p-ca15-tc1.dtb --append \"console=ttyAMA0\" -object memory-backend-file,id=mem,size=2G,mem-path=/dev/shm,share=on $qemufs"
+
+alias qemux86="~/work/repos/tools/qemu/qemu/buildx86/qemu-system-x86_64  -kernel ~/work/repos/devel/bx86/arch/x86_64/boot/bzImage -boot c -m 2049M -drive file=~/work/repos/tools/qemu/buildroot/buildx86/images/rootfs.ext2,format=raw -append \"root=/dev/sda rw console=ttyS0,115200 acpi=off nokaslr\" -nographic -display none"
 
 # go to linux on shell startup
 hwork

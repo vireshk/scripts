@@ -72,6 +72,7 @@ alias haosp="cd /media/vireshk/*/android/"
 alias hpatches="cd /home/vireshk/scripts/mutt/incoming/"
 alias hmodule="cd /home/vireshk/work/repos/tools/module/"
 alias hlwn="cd /home/vireshk/work/repos/tools/lwn"
+alias hqemud="htools; cd qemu"
 alias hqemu="htools; cd qemu/qemu"
 
 updatepkglist() { echo "$*" >> ~/scripts/pkglist-install; }
@@ -231,7 +232,7 @@ export qemufs=" -fsdev local,id=r,path=/home/vireshk/work/repos/tools/qemu/,secu
 export qemui2c="-chardev socket,path=vi2c.sock,id=vi2c -device vhost-user-i2c-pci,chardev=vi2c,id=i2c"
 export qemurtc="-device ds1338,address=0x20"
 
-alias qemuarm=" ~/work/repos/tools/qemu/qemu/buildarm64/qemu-system-aarch64 -M virt -machine virtualization=true -machine virt,gic-version=3 -cpu max -smp 2 -m 4096 -drive if=virtio,format=qcow2,file=/home/vireshk/work/repos/tools/qemu/host-qemu/disk.img -device virtio-scsi-pci,id=scsi0 -object rng-random,filename=/dev/urandom,id=rng0 -device virtio-rng-pci,rng=rng0 -device virtio-net-pci,netdev=net0 -netdev user,id=net0,hostfwd=tcp::8022-:22 -nographic -kernel ~/work/repos/devel/barm64/arch/arm64/boot/Image --append \"earlycon root=/dev/vda2\""
+alias qemuarm=" ~/work/repos/tools/qemu/qemu/buildarm64/qemu-system-aarch64 -M virt -machine virtualization=true -machine virt,gic-version=3 -cpu max -smp 4 -m 4096 -drive if=virtio,format=qcow2,file=/home/vireshk/work/repos/tools/qemu/host-qemu/disk.img -device virtio-scsi-pci,id=scsi0 -object rng-random,filename=/dev/urandom,id=rng0 -device virtio-rng-pci,rng=rng0 -device virtio-net-pci,netdev=net0 -netdev user,id=net0,hostfwd=tcp::8022-:22 -nographic -kernel ~/work/repos/devel/barm64/arch/arm64/boot/Image --append \"earlycon root=/dev/vda2\""
 
 alias qemuarmold=" ~/work/repos/tools/qemu/qemu/buildarm64/qemu-system-aarch64 -M virt -machine virtualization=true -machine virt,gic-version=3 -cpu max -smp 2 -m 4096 -drive if=pflash,format=raw,file=/home/vireshk/work/repos/tools/qemu/host-qemu/efi.img,readonly -drive if=pflash,format=raw,file=/home/vireshk/work/repos/tools/qemu/host-qemu/varstore.img  -drive if=virtio,format=qcow2,file=/home/vireshk/work/repos/tools/qemu/host-qemu/disk.img -device virtio-scsi-pci,id=scsi0 -object rng-random,filename=/dev/urandom,id=rng0 -device virtio-rng-pci,rng=rng0 -device virtio-net-pci,netdev=net0 -netdev user,id=net0,hostfwd=tcp::8022-:22 -nographic -kernel ~/work/repos/devel/barm64/arch/arm64/boot/Image --append \"earlycon root=/dev/vda2\""
 

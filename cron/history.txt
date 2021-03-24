@@ -65792,3 +65792,65 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 4754f1e51a27] updates
+ 3 files changed, 67 insertions(+), 2 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   6a0cca272171..4754f1e51a27  master -> master
+   8b650b6d117e..6a0cca272171  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wed Mar 24 13:00:01 IST 2021
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 1517bdb6036b...07bacf71cd4a bkp/virtio/i2c -> bkp/virtio/i2c (forced update)
+ * [new branch]                virtio/i2c-working -> virtio/i2c-working
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

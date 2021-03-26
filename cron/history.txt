@@ -65919,3 +65919,68 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 2984eb447415] updates
+ 5 files changed, 86 insertions(+), 10 deletions(-)
+ delete mode 100644 .git_alias.swp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   b0305c5d03a7..2984eb447415  master -> master
+   4754f1e51a27..b0305c5d03a7  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Fri Mar 26 13:00:01 IST 2021
+
+Entering /home/vireshk/work/repos/devel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 834c0dfcec64...a8bb0e872bfb opp/linux-next -> opp/linux-next (forced update)
+   2b53d1bd13e1..c3135d28a1e0  bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next
+ + 5d18bfb9e5cd...af4108eeb16e bkp/dt/overlays -> bkp/dt/overlays (forced update)
+ + 834c0dfcec64...a8bb0e872bfb pmko/opp/linux-next -> pmko/opp/linux-next (forced update)
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

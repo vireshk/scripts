@@ -1488,3 +1488,42 @@ From vireshk  Thu Mar 25 09:45:35 2021
 From vireshk  Thu Mar 25 12:13:33 2021
  Subject: [V2][PATCH] cpufreq: dt: check the -EPROBE_DEFER error returned by de
   Folder: V2PATCH_cpufreq_dt_check_the_-EPROBE_DEFER_error_returned_by	  11959
+From vireshk  Tue Apr  6 17:11:04 2021
+ Subject: [PATCH 01/10] firmware: arm_scmi, smccc, mailbox: Make shmem based tr
+  Folder: PATCH_01-10_firmware_arm_scmi,_smccc,_mailbox_Make_shmem_bas	   9343
+From vireshk  Tue Apr  6 17:11:04 2021
+ Subject: [PATCH 01/10] firmware: arm_scmi, smccc, mailbox: Make shmem based tr
+  Folder: PATCH_01-10_firmware_arm_scmi,_smccc,_mailbox_Make_shmem_bas	   9343
+From vireshk  Tue Apr  6 17:11:05 2021
+ Subject: [PATCH 02/10] firmware: arm_scmi: Document that max_msg is a per chan
+  Folder: PATCH_02-10_firmware_arm_scmi_Document_that_max_msg_is_a_per	   6492
+From vireshk  Tue Apr  6 17:11:05 2021
+ Subject: [PATCH 03/10] firmware: arm_scmi: Add op to override max message #
+  Folder: PATCH_03-10_firmware_arm_scmi_Add_op_to_override_max_message	  11352
+From vireshk  Tue Apr  6 17:11:07 2021
+ Subject: [PATCH 04/10] firmware: arm_scmi: Add per message transport data
+  Folder: PATCH_04-10_firmware_arm_scmi_Add_per_message_transport_data	   6684
+From vireshk  Tue Apr  6 17:11:07 2021
+ Subject: [PATCH 04/10] firmware: arm_scmi: Add per message transport data
+  Folder: PATCH_04-10_firmware_arm_scmi_Add_per_message_transport_data	   6684
+From vireshk  Tue Apr  6 17:11:51 2021
+ Subject: [PATCH 05/10] firmware: arm_scmi: Add xfer_init_buffers transport op
+  Folder: PATCH_05-10_firmware_arm_scmi_Add_xfer_init_buffers_transpor	   8246
+From vireshk  Tue Apr  6 17:11:52 2021
+ Subject: [PATCH 06/10] firmware: arm_scmi: Add optional link_supplier() transp
+  Folder: PATCH_06-10_firmware_arm_scmi_Add_optional_link_supplier__tr	   7064
+From vireshk  Tue Apr  6 17:11:52 2021
+ Subject: [PATCH 07/10] firmware: arm_scmi: Add per-device transport private in
+  Folder: PATCH_07-10_firmware_arm_scmi_Add_per-device_transport_priva	   7960
+From vireshk  Tue Apr  6 17:11:54 2021
+ Subject: [PATCH 08/10] firmware: arm_scmi: Add is_scmi_protocol_device()
+  Folder: PATCH_08-10_firmware_arm_scmi_Add_is_scmi_protocol_device_.m	   6634
+From vireshk  Tue Apr  6 17:11:54 2021
+ Subject: [PATCH 09/10] dt-bindings: arm: Add virtio transport for SCMI
+  Folder: PATCH_09-10_dt-bindings_arm_Add_virtio_transport_for_SCMI.mb	   8162
+From vireshk  Tue Apr  6 17:11:56 2021
+ Subject: [PATCH 10/10] firmware: arm_scmi: Add virtio transport
+  Folder: PATCH_10-10_firmware_arm_scmi_Add_virtio_transport.mbox	  26691
+From vireshk  Tue Apr  6 16:57:48 2021
+ Subject: [PATCH] vhost-user-scmi
+  Folder: PATCH_vhost-user-scmi.mbox					  31566

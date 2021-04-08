@@ -66,14 +66,16 @@ alias hjunk="cd /home/vireshk/junk/"
 alias hmdownload="cd /home/vireshk/mdownload"
 alias haastha="cd /home/vireshk/junk/aastha"
 alias hisol="cd /home/vireshk/work/repos/tools/isolation/"
-alias hwork="cd /home/vireshk/work/repos/devel/linux/"
-alias handroid="cd /home/vireshk/work/repos/devel/worktree/"
+alias hwork="cd /home/vireshk/work/repos/kernel/linux/"
+alias handroid="cd /home/vireshk/work/repos/kernel/worktree/"
 alias haosp="cd /media/vireshk/*/android/"
 alias hpatches="cd /home/vireshk/scripts/mutt/incoming/"
 alias hmodule="cd /home/vireshk/work/repos/tools/module/"
 alias hlwn="cd /home/vireshk/work/repos/tools/lwn"
-alias hqemud="htools; cd qemu"
-alias hqemu="htools; cd qemu/qemu"
+export qemupath="/home/vireshk/work/repos/virtio/qemu/"
+alias hqemu="cd $qemupath"
+alias hvirtio="cd $qemupath/../"
+alias hrust="cd /home/vireshk/work/repos/virtio/rust"
 
 updatepkglist() { echo "$*" >> ~/scripts/pkglist-install; }
 
@@ -127,8 +129,8 @@ alias buildworkloadautomation='hwa; msudo -H pip install ./workload-automation'
 alias wa3="adb root; msudo ANDROID_HOME=/home/vireshk/Android/Sdk wa run -f"
 
 alias mylisa="hlisa; source init_env"
-alias mywltestbkp="lisa-wltest-series --platform hikey960_android-4.9 --kernel_src ~/work/repos/devel/android --series ~/work/repos/devel/series.sha1 --wa_agenda tools/wltests/agendas/example-jankbench.yaml --device 67EA4E61017211BC"
-alias mywltest="tools/wltests/test_series --force --platform hikey960_android-4.4 --kernel_src ~/work/repos/devel/android --series results/wltests/series.sha1 --wa_agenda ~/work/repos/tools/lisa/tools/wltests/agendas/sched-evaluation-full-short.yaml --device 67EA4E61017211BC"
+alias mywltestbkp="lisa-wltest-series --platform hikey960_android-4.9 --kernel_src ~/work/repos/kernel/android --series ~/work/repos/kernel/series.sha1 --wa_agenda tools/wltests/agendas/example-jankbench.yaml --device 67EA4E61017211BC"
+alias mywltest="tools/wltests/test_series --force --platform hikey960_android-4.4 --kernel_src ~/work/repos/kernel/android --series results/wltests/series.sha1 --wa_agenda ~/work/repos/tools/lisa/tools/wltests/agendas/sched-evaluation-full-short.yaml --device 67EA4E61017211BC"
 
 # x86 specific installation
 export X86IMAGENAME="custom"
@@ -179,23 +181,23 @@ alias mounthikey="hhikey; msudo mount -o loop,rw,sync boot_fat.uefi.img boot-fat
 
 #alias recoverhikey="hhikey; cd binaries/157; msudo python hisi-idt.py -d /dev/ttyUSB1 --img1=l-loader.bin"
 #alias flashhikey="hhikey; msudo fastboot flash boot boot_fat.uefi.img; fastboot reboot"
-#alias updatehikeya="hhikey; msudo cp ~/work/repos/devel/bhikey/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb boot-fat/hi6220-hikey.dtb; msudo cp ~/work/repos/devel/bhikey/arch/arm64/boot/Image boot-fat/kernel; sync; flashhikey; hwork; cd ../android"
-#alias updatehikeyac="hhikey; msudo cp ~/work/repos/devel/bhikeyc/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb boot-fat/hi6220-hikey.dtb; msudo cp ~/work/repos/devel/bhikeyc/arch/arm64/boot/Image boot-fat/kernel; sync; flashhikey; hwork; cd ../android"
-#alias updatehikeyu="hhikey; msudo cp ~/work/repos/devel/barm64/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb boot-fat/hi6220-hikey-u.dtb; msudo cp ~/work/repos/devel/barm64/arch/arm64/boot/Image boot-fat/kernel-u; sync; flashhikey; hwork"
+#alias updatehikeya="hhikey; msudo cp ~/work/repos/kernel/bhikey/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb boot-fat/hi6220-hikey.dtb; msudo cp ~/work/repos/kernel/bhikey/arch/arm64/boot/Image boot-fat/kernel; sync; flashhikey; hwork; cd ../android"
+#alias updatehikeyac="hhikey; msudo cp ~/work/repos/kernel/bhikeyc/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb boot-fat/hi6220-hikey.dtb; msudo cp ~/work/repos/kernel/bhikeyc/arch/arm64/boot/Image boot-fat/kernel; sync; flashhikey; hwork; cd ../android"
+#alias updatehikeyu="hhikey; msudo cp ~/work/repos/kernel/barm64/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb boot-fat/hi6220-hikey-u.dtb; msudo cp ~/work/repos/kernel/barm64/arch/arm64/boot/Image boot-fat/kernel-u; sync; flashhikey; hwork"
 
-alias makehikey960bootimg="haosp; abootimg --create out/target/product/hikey960/boot.img -k ~/work/repos/devel/bhikey960/arch/arm64/boot/Image-dtb -r out/target/product/hikey960/ramdisk.img -f /home/vireshk/work/repos/tools/boards/hikey/config/config-hikey960-bootimg"
+alias makehikey960bootimg="haosp; abootimg --create out/target/product/hikey960/boot.img -k ~/work/repos/kernel/bhikey960/arch/arm64/boot/Image-dtb -r out/target/product/hikey960/ramdisk.img -f /home/vireshk/work/repos/tools/boards/hikey/config/config-hikey960-bootimg"
 alias flashhikey960="haosp; fastboot flash boot out/target/product/hikey960/boot.img; fastboot reboot"
 alias updatehikey960="makehikey960bootimg; flashhikey960;"
 alias buildupdatehikey960="handroid; nimage hikey960; makehikey960bootimg; flashhikey960; handroid"
 
-ARMBOOTU="~/work/repos/devel/barm64/arch/arm64/boot"
+ARMBOOTU="~/work/repos/kernel/barm64/arch/arm64/boot"
 
 alias makehikeydtbimg="cat $ARMBOOTU/Image $ARMBOOTU/dts/hisilicon/hi6220-hikey.dtb > $ARMBOOTU/Image-dtb"
 alias makehikeybootimg="makehikeydtbimg; abootimg --create $ARMBOOTU/boot.img -k $ARMBOOTU/Image-dtb -r /home/vireshk/work/repos/tools/boards/hikey/boot-fat/ramdisk.img -f /home/vireshk/work/repos/tools/boards/hikey/config/config-hikey6220-bootimg-ubuntu"
 alias flashhikey="fastboot flash boot $ARMBOOTU/boot.img; fastboot reboot"
 alias updatehikey="makehikeybootimg; flashhikey;"
 
-ARMBOOTA="~/work/repos/devel/bhikeyc/arch/arm64/boot"
+ARMBOOTA="~/work/repos/kernel/bhikeyc/arch/arm64/boot"
 
 alias makehikeydtbimga="cat $ARMBOOTA/Image $ARMBOOTA/dts/hisilicon/hi6220-hikey.dtb > $ARMBOOTA/Image-dtb"
 alias makehikeybootimga="makehikeydtbimga; abootimg --create $ARMBOOTA/boot.img -k $ARMBOOTA/Image-dtb -r /home/vireshk/work/repos/tools/boards/hikey/boot-fat/ramdiska.img -f /home/vireshk/work/repos/tools/boards/hikey/config/config-hikey6220-bootimg-android"
@@ -223,24 +225,24 @@ alias ltpbuild="make clean;make autotools;./configure;make"
 #qemu
 alias configqemu="../configure --python=/usr/bin/python3.7 --target-list=aarch64-softmmu --enable-virtfs"
 alias buildqemu="configqemu; make"
-alias vui2c="unlink vi2c.sock; ~/work/repos/tools/qemu/qemu/buildarm64/tools/vhost-user-i2c/vhost-user-i2c --socket-path=vi2c.sock "
+alias vui2c="unlink vi2c.sock; $qemupath/buildarm64/tools/vhost-user-i2c/vhost-user-i2c --socket-path=vi2c.sock "
 alias qvim="vim -c 'set expandtab' -c 'set shiftwidth=4'"
 alias mountqemu="echo \"mount -t 9p -o trans=virtio r /mnt\""
 alias i2ccreate="echo \"echo ds1338 0x20 > /sys/bus/i2c/devices/i2c-1/new_device\""
 
-export qemufs=" -fsdev local,id=r,path=/home/vireshk/work/repos/tools/qemu/,security_model=none -device virtio-9p-device,fsdev=r,mount_tag=r"
+export qemufs=" -fsdev local,id=r,path=$qemupath/../,security_model=none -device virtio-9p-device,fsdev=r,mount_tag=r"
 export qemui2c="-chardev socket,path=vi2c.sock,id=vi2c -device vhost-user-i2c-pci,chardev=vi2c,id=i2c"
 export qemurtc="-device ds1338,address=0x20"
 
-alias qemuarm=" ~/work/repos/tools/qemu/qemu/buildarm64/qemu-system-aarch64 -M virt -machine virtualization=true -machine virt,gic-version=3 -cpu max -smp 12 -m 4096 -drive if=virtio,format=qcow2,file=/home/vireshk/work/repos/tools/qemu/host-qemu/disk.img -device virtio-scsi-pci,id=scsi0 -object rng-random,filename=/dev/urandom,id=rng0 -device virtio-rng-pci,rng=rng0 -device virtio-net-pci,netdev=net0 -netdev user,id=net0,hostfwd=tcp::8022-:22 -nographic -kernel ~/work/repos/devel/barm64/arch/arm64/boot/Image --append \"earlycon root=/dev/vda2\" $qemurtc $qemufs"
+alias qemuarm=" $qemupath/buildarm64/qemu-system-aarch64 -M virt -machine virtualization=true -machine virt,gic-version=3 -cpu max -smp 12 -m 4096 -drive if=virtio,format=qcow2,file=$qemupath/../host-qemu/disk.img -device virtio-scsi-pci,id=scsi0 -object rng-random,filename=/dev/urandom,id=rng0 -device virtio-rng-pci,rng=rng0 -device virtio-net-pci,netdev=net0 -netdev user,id=net0,hostfwd=tcp::8022-:22 -nographic -kernel ~/work/repos/kernel/barm64/arch/arm64/boot/Image --append \"earlycon root=/dev/vda2\" $qemurtc $qemufs"
 
-alias qemuarmold=" ~/work/repos/tools/qemu/qemu/buildarm64/qemu-system-aarch64 -M virt -machine virtualization=true -machine virt,gic-version=3 -cpu max -smp 2 -m 4096 -drive if=pflash,format=raw,file=/home/vireshk/work/repos/tools/qemu/host-qemu/efi.img,readonly -drive if=pflash,format=raw,file=/home/vireshk/work/repos/tools/qemu/host-qemu/varstore.img  -drive if=virtio,format=qcow2,file=/home/vireshk/work/repos/tools/qemu/host-qemu/disk.img -device virtio-scsi-pci,id=scsi0 -object rng-random,filename=/dev/urandom,id=rng0 -device virtio-rng-pci,rng=rng0 -device virtio-net-pci,netdev=net0 -netdev user,id=net0,hostfwd=tcp::8022-:22 -nographic -kernel ~/work/repos/devel/barm64/arch/arm64/boot/Image --append \"earlycon root=/dev/vda2\""
+alias qemuarmold="$qemupath/buildarm64/qemu-system-aarch64 -M virt -machine virtualization=true -machine virt,gic-version=3 -cpu max -smp 2 -m 4096 -drive if=pflash,format=raw,file=$qemupath/../host-qemu/efi.img,readonly -drive if=pflash,format=raw,file=$qemupath/../host-qemu/varstore.img  -drive if=virtio,format=qcow2,file=$qemupath/../host-qemu/disk.img -device virtio-scsi-pci,id=scsi0 -object rng-random,filename=/dev/urandom,id=rng0 -device virtio-rng-pci,rng=rng0 -device virtio-net-pci,netdev=net0 -netdev user,id=net0,hostfwd=tcp::8022-:22 -nographic -kernel ~/work/repos/kernel/barm64/arch/arm64/boot/Image --append \"earlycon root=/dev/vda2\""
 
-alias qemuarmf="~/work/repos/tools/qemu/qemu/buildarm64/qemu-system-aarch64 -machine virt,virtualization=on,gic-version=max -cpu cortex-a57 -machine type=virt -nographic -smp 4 -m 2G -kernel ~/work/repos/devel/barm64/arch/arm64/boot/Image  --append \"console=ttyAMA0\" -object memory-backend-file,id=mem,size=2G,mem-path=/dev/shm,share=on -numa node,memdev=mem"
+alias qemuarmf="$qemupath/buildarm64/qemu-system-aarch64 -machine virt,virtualization=on,gic-version=max -cpu cortex-a57 -machine type=virt -nographic -smp 4 -m 2G -kernel ~/work/repos/kernel/barm64/arch/arm64/boot/Image  --append \"console=ttyAMA0\" -object memory-backend-file,id=mem,size=2G,mem-path=/dev/shm,share=on -numa node,memdev=mem"
 alias myqemufs="qemuarmf $qemui2c $qemufs"
-#alias myqemuvexp="~/work/repos/tools/qemu/qemu/buildarm64/qemu-system-aarch64 -machine vexpress-a15 -nographic -smp 4 -m 2G -kernel ~/work/repos/devel/barm/arch/arm/boot/zImage -dtb ~/work/repos/devel/barm/arch/arm/boot/dts/vexpress-v2p-ca15-tc1.dtb --append \"console=ttyAMA0\" -object memory-backend-file,id=mem,size=2G,mem-path=/dev/shm,share=on $qemufs"
+#alias myqemuvexp="$qemupath/buildarm64/qemu-system-aarch64 -machine vexpress-a15 -nographic -smp 4 -m 2G -kernel ~/work/repos/kernel/barm/arch/arm/boot/zImage -dtb ~/work/repos/kernel/barm/arch/arm/boot/dts/vexpress-v2p-ca15-tc1.dtb --append \"console=ttyAMA0\" -object memory-backend-file,id=mem,size=2G,mem-path=/dev/shm,share=on $qemufs"
 
-alias qemux86="~/work/repos/tools/qemu/qemu/buildx86/qemu-system-x86_64  -kernel ~/work/repos/devel/bx86/arch/x86_64/boot/bzImage -boot c -m 2049M -drive file=~/work/repos/tools/qemu/buildroot/buildx86/images/rootfs.ext2,format=raw -append \"root=/dev/sda rw console=ttyS0,115200 acpi=off nokaslr\" -nographic -display none"
+alias qemux86="$qemupath/buildx86/qemu-system-x86_64  -kernel ~/work/repos/kernel/bx86/arch/x86_64/boot/bzImage -boot c -m 2049M -drive file=$qemupath/../buildroot/buildx86/images/rootfs.ext2,format=raw -append \"root=/dev/sda rw console=ttyS0,115200 acpi=off nokaslr\" -nographic -display none"
 
 # go to linux on shell startup
 hwork

@@ -66415,3 +66415,137 @@ Updating local grokmirror with changes on master
 Everything up-to-date
 
 Entering /home/vireshk/scripts
+[master 885facf9b91a] updates
+ 2 files changed, 80 insertions(+), 19 deletions(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   18a19ed757b7..885facf9b91a  master -> master
+   0d1a2607df3a..18a19ed757b7  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Friday 09 April 2021 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+/home/vireshk/scripts/cron/gitpush.sh: line 16: git: command not found
+
+Entering /home/vireshk/work/repos/tools/ltp
+/home/vireshk/scripts/cron/gitpush.sh: line 16: git: command not found
+
+Entering /home/vireshk/scripts
+/home/vireshk/scripts/cron/gitpush.sh: line 16: git: command not found
+
+Entering /home/vireshk/work/repos/tools/module
+/home/vireshk/scripts/cron/gitpush.sh: line 16: git: command not found
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+/home/vireshk/scripts/cron/gitpush.sh: line 16: git: command not found
+
+Entering /home/vireshk/work/repos/tools/lwn
+/home/vireshk/scripts/cron/gitpush.sh: line 16: git: command not found
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+/home/vireshk/scripts/cron/gitpush.sh: line 16: git: command not found
+
+
+
+ 
+Monday 12 April 2021 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+/home/vireshk/scripts/cron/gitpush.sh: line 16: git: command not found
+
+Entering /home/vireshk/work/repos/tools/ltp
+/home/vireshk/scripts/cron/gitpush.sh: line 16: git: command not found
+
+Entering /home/vireshk/scripts
+/home/vireshk/scripts/cron/gitpush.sh: line 16: git: command not found
+
+Entering /home/vireshk/work/repos/tools/module
+/home/vireshk/scripts/cron/gitpush.sh: line 16: git: command not found
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+/home/vireshk/scripts/cron/gitpush.sh: line 16: git: command not found
+
+Entering /home/vireshk/work/repos/tools/lwn
+/home/vireshk/scripts/cron/gitpush.sh: line 16: git: command not found
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+/home/vireshk/scripts/cron/gitpush.sh: line 16: git: command not found
+
+
+
+ 
+Monday 12 April 2021 01:07:29 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   c3135d28a1e0..dbbd49bade05  cpufreq/arm/linux-next -> cpufreq/arm/linux-next
+ - [deleted]                   virio/scmi
+ + 1fb6c4cb1902...fb7c3b51d88e virtio/i2c -> virtio/i2c (forced update)
+   ff70784ab9f8..fa26d0c778b4  pm/acpi -> pm/acpi
+ - [deleted]                   pm/acpi-platform
+ + 8608bdeb4cdb...45f505d811b4 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   3f7bddaf5d5a..2a92c90f2ecc  pm/devprop -> pm/devprop
+ + 8608bdeb4cdb...45f505d811b4 pm/linux-next -> pm/linux-next (forced update)
+   a38fd8748464..e49d033bddf5  pm/master -> pm/master
+   7bff4c26b6d2..ac1790ad78f8  pm/pm -> pm/pm
+ - [deleted]                   pm/sfi-removal
+ + 8608bdeb4cdb...45f505d811b4 pm/testing -> pm/testing (forced update)
+   c3135d28a1e0..dbbd49bade05  pmko/cpufreq/arm/linux-next -> pmko/cpufreq/arm/linux-next
+ * [new reference]             bkp/virio/scmi -> bkp/virio/scmi
+ * [new tag]                   acpi-5.12-rc5 -> acpi-5.12-rc5
+ * [new tag]                   acpi-5.12-rc6 -> acpi-5.12-rc6
+ * [new tag]                   acpi-5.12-rc7 -> acpi-5.12-rc7
+ * [new tag]                   devprop-5.12-rc3 -> devprop-5.12-rc3
+ * [new tag]                   pm-5.12-rc3 -> pm-5.12-rc3
+ * [new tag]                   pm-5.12-rc4 -> pm-5.12-rc4
+ * [new tag]                   pm-5.12-rc5 -> pm-5.12-rc5
+ * [new tag]                   pm-5.12-rc6 -> pm-5.12-rc6
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/scripts

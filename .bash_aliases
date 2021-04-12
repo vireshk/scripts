@@ -223,7 +223,7 @@ alias mountrouterdrive="curlftpfs vireshk:123456@192.168.1.1 ~/Videos/routerdriv
 alias ltpbuild="make clean;make autotools;./configure;make"
 
 #qemu
-alias configqemu="../configure --python=/usr/bin/python3.7 --target-list=aarch64-softmmu --enable-virtfs"
+alias configqemu="../configure --python=/usr/bin/python3.8 --target-list=aarch64-softmmu --enable-virtfs"
 alias buildqemu="configqemu; make"
 alias vui2c="unlink vi2c.sock; $qemupath/buildarm64/tools/vhost-user-i2c/vhost-user-i2c --socket-path=vi2c.sock "
 alias qvim="vim -c 'set expandtab' -c 'set shiftwidth=4'"

@@ -141,6 +141,13 @@ elif [ $2 = arma ]; then
 	CROSS_COMPILE="aarch64-linux-android-"
 	carch="arm64"
 	IMAGE=
+elif [ $2 = armt ]; then
+	dir=../barm64t/
+	cfg=defconfig
+	CROSS_COMPILE="aarch64-linux-gnu-"
+	carch="arm64"
+	IMAGE=
+	MERGE_CONFIG="KCONFIG_CONFIG=$dir/.config scripts/kconfig/merge_config.sh -m $dir/.config ~/junk/config"
 elif [ $2 = arm ]; then
 	dir=../barm64/
 	cfg=defconfig

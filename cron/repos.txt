@@ -1,2 +1,2 @@
-work/repos/devel/linux
+work/repos/kernel/linux
 work/repos/tools/ltp

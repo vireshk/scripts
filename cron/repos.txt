@@ -1,2 +1,3 @@
 work/repos/kernel/linux
 work/repos/tools/ltp
+work/repos/virtio/rust

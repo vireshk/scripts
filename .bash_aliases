@@ -227,7 +227,7 @@ alias ltpbuild="make clean;make autotools;./configure;make"
 alias configqemu="../configure --python=/usr/bin/python3.8 --target-list=aarch64-softmmu --enable-virtfs"
 alias buildqemu="configqemu; make"
 alias vui2c="hjunk;unlink vi2c.sock; $qemupath/buildarm64/tools/vhost-user-i2c/vhost-user-i2c --socket-path=vi2c.sock -l 5:20"
-alias rusti2c="hjunk;unlink vi2c.sock; $rustpath/vhost-user-i2c/target/debug/vhost-user-i2c --socket-path=vi2c.sock -l 5:20"
+alias rusti2c="hjunk;unlink vi2c.sock; $rustpath/vhost-user-i2c/target/debug/vhost-user-i2c --socket-path=vi2c.sock -l 6:20"
 alias qvim="vim -c 'set expandtab' -c 'set shiftwidth=4'"
 alias mountqemu="echo \"mount -t 9p -o trans=virtio r /mnt\""
 alias i2ccreate="echo \"echo ds1338 0x20 > /sys/bus/i2c/devices/i2c-1/new_device\""
@@ -245,7 +245,7 @@ alias qemuarmf="$qemupath/buildarm64/qemu-system-aarch64 -machine virt,virtualiz
 alias myqemufs="qemuarmf $qemui2c $qemufs"
 #alias myqemuvexp="$qemupath/buildarm64/qemu-system-aarch64 -machine vexpress-a15 -nographic -smp 4 -m 2G -kernel ~/work/repos/kernel/barm/arch/arm/boot/zImage -dtb ~/work/repos/kernel/barm/arch/arm/boot/dts/vexpress-v2p-ca15-tc1.dtb --append \"console=ttyAMA0\" -object memory-backend-file,id=mem,size=2G,mem-path=/dev/shm,share=on $qemufs"
 
-alias qemux86="$qemupath/buildx86/qemu-system-x86_64  -kernel ~/work/repos/kernel/bx86/arch/x86_64/boot/bzImage -boot c -m 2049M -drive file=$qemupath/../buildroot/buildx86/images/rootfs.ext2,format=raw -append \"root=/dev/sda rw console=ttyS0,115200 acpi=off nokaslr\" -nographic -display none"
+alias qemux86="$qemupath/buildx86/qemu-system-x86_64  -smp 12 -kernel ~/work/repos/kernel/bx86/arch/x86_64/boot/bzImage -boot c -m 2049M -drive file=$qemupath/../buildroot/buildx86/images/rootfs.ext2,format=raw -append \"root=/dev/sda rw console=ttyS0,115200 acpi=off nokaslr\" -nographic -display none"
 
 # go to linux on shell startup
 hwork

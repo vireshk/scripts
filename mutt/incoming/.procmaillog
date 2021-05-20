@@ -1527,3 +1527,12 @@ From vireshk  Tue Apr  6 17:11:56 2021
 From vireshk  Tue Apr  6 16:57:48 2021
  Subject: [PATCH] vhost-user-scmi
   Folder: PATCH_vhost-user-scmi.mbox					  31566
+From vireshk  Wed May 12 13:42:37 2021
+ Subject: [PATCH v3 1/2] cpufreq: blacklist SC7280 in cpufreq-dt-platdev
+  Folder: PATCH_v3_1-2_cpufreq_blacklist_SC7280_in_cpufreq-dt-platdev.	   6545
+From vireshk  Thu May 20 08:59:26 2021
+ Subject: [PATCH] cpufreq: mediatek: add support for mt8365
+  Folder: PATCH_cpufreq_mediatek_add_support_for_mt8365.mbox		   6635
+From vireshk  Tue May 18 10:17:24 2021
+ Subject: [PATCH -next] opp: use list_del_init instead of list_del/INIT_LIST_HE
+  Folder: PATCH_-next_opp_use_list_del_init_instead_of_list_del-INIT_L	   5696

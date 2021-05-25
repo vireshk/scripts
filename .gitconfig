@@ -38,3 +38,4 @@
 	cookiefile = /home/vireshk/.gitcookies
 [alias]
 	ps1=!test -d .git && echo -n : && git branch --show-current
+	mylg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative

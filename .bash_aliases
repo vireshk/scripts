@@ -76,7 +76,7 @@ export qemupath="/home/vireshk/work/repos/virtio/qemu/"
 export rustpath="/home/vireshk/work/repos/virtio/rust/"
 alias hqemu="cd $qemupath"
 alias hvirtio="cd $qemupath/../"
-alias hrust="cd $rustpath"
+alias hrust="cd $rustpath/vhost-device"
 
 updatepkglist() { echo "$*" >> ~/scripts/pkglist-install; }
 
@@ -227,7 +227,7 @@ alias ltpbuild="make clean;make autotools;./configure;make"
 alias configqemu="../configure --python=/usr/bin/python3.8 --target-list=aarch64-softmmu --enable-virtfs"
 alias buildqemu="configqemu; make"
 alias vui2c="hjunk;unlink vi2c.sock; $qemupath/buildarm64/tools/vhost-user-i2c/vhost-user-i2c --socket-path=vi2c.sock -l 5:20"
-alias rusti2c="hjunk;unlink vi2c.sock; $rustpath/vhost-user-i2c/target/debug/vhost-user-i2c --socket-path=vi2c.sock -l 6:32"
+alias rusti2c="hjunk;unlink vi2c.sock; $rustpath/vhost-device/debug/vhost-device-i2c --socket-path=vi2c.sock -l 6:32"
 alias qvim="vim -c 'set expandtab' -c 'set shiftwidth=4'"
 alias mountqemu="echo \"mount -t 9p -o trans=virtio r /mnt\""
 alias i2ccreate="echo \"echo ds1338 0x20 > /sys/bus/i2c/devices/i2c-1/new_device\""

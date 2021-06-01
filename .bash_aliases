@@ -232,6 +232,8 @@ alias qvim="vim -c 'set expandtab' -c 'set shiftwidth=4'"
 alias mountqemu="echo \"mount -t 9p -o trans=virtio r /mnt\""
 alias i2ccreate="echo \"echo ds1338 0x20 > /sys/bus/i2c/devices/i2c-1/new_device\""
 alias smbuscreate="echo \"echo al3320a 0x20 > /sys/class/i2c-adapter/i2c-1/new_device\""
+alias rustcoverage="echo \"pytest  rust-vmm-ci/integration_tests/test_coverage.py --no-cleanup\"; msudo docker run --device=/dev/kvm -it --security-opt seccomp=unconfined --volume $rustpath/vhost-device:/vhost-device rustvmm/dev:v11"
+
 
 export qemufs=" -fsdev local,id=r,path=$qemupath/../,security_model=none -device virtio-9p-device,fsdev=r,mount_tag=r"
 export qemui2c="-chardev socket,path=vi2c.sock,id=vi2c -device vhost-user-i2c-pci,chardev=vi2c,id=i2c"

@@ -179,6 +179,11 @@ korg
 * ^From:.*gitlab@mg\.gitlab\.com
 linaro/gitlab
 
+# pmwg
+:0:
+* ^(To|Cc):.*(virtio-dev@lists\.oasis-open\.or|virtio-comment@lists\.oasis-open\.org)
+virtio
+
 
 # Everything else to inbox
 :0:

@@ -233,6 +233,7 @@ alias mountqemu="echo \"mount -t 9p -o trans=virtio r /mnt\""
 alias i2ccreate="echo \"echo ds1338 0x20 > /sys/bus/i2c/devices/i2c-1/new_device\""
 alias smbuscreate="echo \"echo al3320a 0x20 > /sys/class/i2c-adapter/i2c-1/new_device\""
 alias rustcoverage="echo \"pytest  rust-vmm-ci/integration_tests/test_coverage.py --no-cleanup\"; msudo docker run --device=/dev/kvm -it --security-opt seccomp=unconfined --volume $rustpath/vhost-device:/vhost-device rustvmm/dev:v11"
+alias rustchecks="cargo fmt --all -- --check; cargo clippy --workspace --bins --examples --benches --all-features -- -D warnings"
 
 
 export qemufs=" -fsdev local,id=r,path=$qemupath/../,security_model=none -device virtio-9p-device,fsdev=r,mount_tag=r"

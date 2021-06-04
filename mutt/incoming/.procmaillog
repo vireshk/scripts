@@ -1536,3 +1536,9 @@ From vireshk  Thu May 20 08:59:26 2021
 From vireshk  Tue May 18 10:17:24 2021
  Subject: [PATCH -next] opp: use list_del_init instead of list_del/INIT_LIST_HE
   Folder: PATCH_-next_opp_use_list_del_init_instead_of_list_del-INIT_L	   5696
+From vireshk  Tue Jun  1 12:41:46 2021
+ Subject: [RESEND 1/2] clk: mediatek: remove deprecated CLK_INFRA_CA57SEL for M
+  Folder: RESEND_1-2_clk_mediatek_remove_deprecated_CLK_INFRA_CA57SEL_	   5084
+From vireshk  Tue Jun  1 12:41:46 2021
+ Subject: [RESEND 2/2] dt-bindings: cpufreq: update cpu type and clock name for
+  Folder: RESEND_2-2_dt-bindings_cpufreq_update_cpu_type_and_clock_nam	   5986

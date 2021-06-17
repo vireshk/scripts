@@ -1,0 +1,101 @@
+From vireshk  Wed Jun 16 11:04:25 2021
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [172.217.194.109] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Wed, 16 Jun 2021 11:04:25 +0530 (IST)
+Received: by 2002:a6b:e802:0:0:0:0:0 with SMTP id f2csp196136ioh;         Tue, 15 Jun 2021 22:33:43 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJxs9xV++xSNzV71Y66VFmfktHMm5umzxK7bbBa6UyL6sU6J5ySLTDoOjvOhUWFU1Bs5bD2G
+X-Received: by 2002:a17:90a:31c4:: with SMTP id j4mr9025176pjf.105.1623821622891;         Tue, 15 Jun 2021 22:33:42 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1623821622; cv=none;         d=google.com; s=arc-20160816;         b=kXj1DmfBXr1FtWe7Ktkxp18BL+OarH0oY8kxHBNA+xUwjBawcEn2qo5sIPQcWLpXQD          7UZy1BdNhUJD0U+j6ihUxlc5ewwVGyMAAx3RETjYV+b/6fPxvHLm7TWbACWMZCbjnqHH          Gg+iHkJ5eYFlVIkfB7G6TrhvEf500btUAY8fUlsg1myzUc5Y4gHZd1mOAIKYgAJJBhGe          yn0gGX0bNyhNGgl1Gl5/uvG+1V+ud5dGBW9lpBqsq2HGUmywKIN72uPQd0eZexLNnLKs          gRokcrQj2lvFNYMUyQ+ks7u+W0o3woBB0A7KBY0FlN9UE6jqG2kh8Hd9x1sxCntBOFFe          tPeA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from:dkim-signature:dmarc-filter:delivered-to;         bh=ltLj09RyfOdWMIEM0MG0ccEuiq6U59etKafB5sPzk0s=;         b=GrtwqoAcy6uyq+uDBfZtIzBQgLXu0+b3/cmkh7g2VXCRj/enegfGrvrZOyuwCptc1w          gULL0pv7j2D1JWI1ymOZKL/2yHsNX6zZEjPWLfP9dGb/7oWqGmxhZ+5hYt01FaxV/AYD          EFHeR5B9aB4BpYIr5iP8pNDvzqm6edaAc+9Nv5IgPylMLZ6/u0FuFYSlFqlkOE8KK2y8          kYG1IUy+aIMGEUC+yiOpKr6g1NT4+nV2YhFP0xIZ2Nf9ZylNFMz5VButq869kDXazfIO          a4NOOft2GQPKZxzMN/dh9WmZ9dTXq3aFBjzD6EUbb0ck9fiMC4OHypHMe9t0MRjiu0H3          13sQ==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@chromium.org header.s=google header.b=jHE61uyU;        spf=pass (google.com: domain of srs0=bluy=lk=chromium.org=hsinyi@kernel.org designates 198.145.29.99 as permitted sender) smtp.mailfrom="SRS0=BLUy=LK=chromium.org=hsinyi@kernel.org";        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=chromium.org
+Return-Path: <SRS0=BLUy=LK=chromium.org=hsinyi@kernel.org>
+Received: from mail.kernel.org (mail.kernel.org. [198.145.29.99])         by mx.google.com with ESMTPS id cq22si1197573pjb.106.2021.06.15.22.33.42         for <viresh.kumar@linaro.org>         (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);         Tue, 15 Jun 2021 22:33:42 -0700 (PDT)
+Received-SPF: pass (google.com: domain of srs0=bluy=lk=chromium.org=hsinyi@kernel.org designates 198.145.29.99 as permitted sender) client-ip=198.145.29.99;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@chromium.org header.s=google header.b=jHE61uyU;        spf=pass (google.com: domain of srs0=bluy=lk=chromium.org=hsinyi@kernel.org designates 198.145.29.99 as permitted sender) smtp.mailfrom="SRS0=BLUy=LK=chromium.org=hsinyi@kernel.org";        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=chromium.org
+Received: by mail.kernel.org (Postfix) 	id 6F7CB61375; Wed, 16 Jun 2021 05:33:42 +0000 (UTC)
+Delivered-To: vireshk@kernel.org
+Received: from mail-pj1-f45.google.com (mail-pj1-f45.google.com [209.85.216.45]) 	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) 	(No client certificate requested) 	by mail.kernel.org (Postfix) with ESMTPS id 47D4F61351 	for <vireshk@kernel.org>; Wed, 16 Jun 2021 05:33:42 +0000 (UTC)
+DMARC-Filter: OpenDMARC Filter v1.3.2 mail.kernel.org 47D4F61351
+Authentication-Results: mail.kernel.org; dmarc=pass (p=none dis=none) header.from=chromium.org
+Authentication-Results: mail.kernel.org; spf=pass smtp.mailfrom=hsinyi@chromium.org
+Received: by mail-pj1-f45.google.com with SMTP id m13-20020a17090b068db02901656cc93a75so3260747pjz.3         for <vireshk@kernel.org>; Tue, 15 Jun 2021 22:33:42 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=chromium.org; s=google;         h=from:to:cc:subject:date:message-id:mime-version          :content-transfer-encoding;         bh=ltLj09RyfOdWMIEM0MG0ccEuiq6U59etKafB5sPzk0s=;         b=jHE61uyUv0XMNagTHrkkUEaFsVLD9NrLsaj4xu+pGVb+uh/e2nz3UlD2zJArDaCADd          zhtRKsfghNSVYOIlQ4kFJRmagRDAAANsqEYHE6t1IgUyYW30wtB73KKizNTIwI9vdMx5          0WFHzvKLZ5yYmFjAMYMAKjYO5l+iX0aD9ZQrk=
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=1e100.net; s=20161025;         h=x-gm-message-state:from:to:cc:subject:date:message-id:mime-version          :content-transfer-encoding;         bh=ltLj09RyfOdWMIEM0MG0ccEuiq6U59etKafB5sPzk0s=;         b=qWsbw+SwCTIuc4GHHZq4VtQtLGdpFoRunI6L/nI9QcthwIKoG9PS1bm+ZnETX3RWd4          9OTp/bdvlh1b3QgB0jGbKlAHoSFRYNotVwCUue3B5LY/cHFHi8GYCFK4IZcV8exRA62Z          SLQ2Sn1cfgRP2+r7MweDlgiuf4z4r45DmLNxsyIzGQvJH+dn08ooRDWtdIbHfl/J0TB4          NnhtGbxsuoTOmOIvS19iiyhKUGtWSilDj4zfd8+K+c0sYUG2JvgqhdOek9Xh3sYgi4GW          3ov1HczL357H/jUiuJBakonZkDCYWbEgwwkVU2+cPCZnVinF9UCfN0Ru/y7p5BTNU8yv          b88w==
+X-Gm-Message-State: AOAM530NaG+PiwGjxak3dC4i0hIozgy37ljrAiIZb2pUFIj8g7nHJIfb 	uUUsPw7Q2uc56R86i8S41vAHid9jTOQPqQ==
+X-Received: by 2002:a17:90a:a585:: with SMTP id b5mr8922657pjq.10.1623821621350;         Tue, 15 Jun 2021 22:33:41 -0700 (PDT)
+Received: from hsinyi-z840.tpe.corp.google.com ([2401:fa00:1:10:2915:9186:62d1:9af3])         by smtp.gmail.com with ESMTPSA id c21sm808034pfi.44.2021.06.15.22.33.39         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Tue, 15 Jun 2021 22:33:40 -0700 (PDT)
+From: Hsin-Yi Wang <hsinyi@chromium.org>
+To: "Viresh Kumar )" <vireshk@kernel.org>, 	Chanwoo Choi <cw00.choi@samsung.com>
+Cc: Nishanth Menon <nm@ti.com>, 	Stephen Boyd <sboyd@kernel.org>, 	linux-pm@vger.kernel.org, 	linux-kernel@vger.kernel.org, 	"andrew-sh . cheng" <andrew-sh.cheng@mediatek.com>
+Subject: [PATCH] opp: of: Allow lazy-linking of required-opps to non genpd
+Date: Wed, 16 Jun 2021 13:33:35 +0800
+Message-Id: <20210616053335.4181780-1-hsinyi@chromium.org>
+X-Mailer: git-send-email 2.32.0.272.g935e593368-goog
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Status: RO
+X-Status: A
+Content-Length: 2013
+Lines: 61
+
+Don't limit required_opp_table to genpd only. One possible use case is
+cpufreq based devfreq governor, which can use required-opps property to
+derive devfreq from cpufreq.
+
+Suggested-by: Chanwoo Choi <cw00.choi@samsung.com>
+Signed-off-by: Hsin-Yi Wang <hsinyi@chromium.org>
+---
+This is tested with the non genpd case mt8183-cci with passive
+governor[1].
+[1] https://patchwork.kernel.org/project/linux-mediatek/patch/1616499241-4906-2-git-send-email-andrew-sh.cheng@mediatek.com/
+---
+ drivers/opp/of.c | 20 +-------------------
+ 1 file changed, 1 insertion(+), 19 deletions(-)
+
+diff --git a/drivers/opp/of.c b/drivers/opp/of.c
+index aa75a1caf08a3..9573facce53a5 100644
+--- a/drivers/opp/of.c
++++ b/drivers/opp/of.c
+@@ -201,17 +201,6 @@ static void _opp_table_alloc_required_tables(struct opp_table *opp_table,
+ 			lazy = true;
+ 			continue;
+ 		}
+-
+-		/*
+-		 * We only support genpd's OPPs in the "required-opps" for now,
+-		 * as we don't know how much about other cases. Error out if the
+-		 * required OPP doesn't belong to a genpd.
+-		 */
+-		if (!required_opp_tables[i]->is_genpd) {
+-			dev_err(dev, "required-opp doesn't belong to genpd: %pOF\n",
+-				required_np);
+-			goto free_required_tables;
+-		}
+ 	}
+ 
+ 	/* Let's do the linking later on */
+@@ -379,13 +368,6 @@ static void lazy_link_required_opp_table(struct opp_table *new_table)
+ 	struct dev_pm_opp *opp;
+ 	int i, ret;
+ 
+-	/*
+-	 * We only support genpd's OPPs in the "required-opps" for now,
+-	 * as we don't know much about other cases.
+-	 */
+-	if (!new_table->is_genpd)
+-		return;
+-
+ 	mutex_lock(&opp_table_lock);
+ 
+ 	list_for_each_entry_safe(opp_table, temp, &lazy_opp_tables, lazy) {
+@@ -873,7 +855,7 @@ static struct dev_pm_opp *_opp_add_static_v2(struct opp_table *opp_table,
+ 		return ERR_PTR(-ENOMEM);
+ 
+ 	ret = _read_opp_key(new_opp, opp_table, np, &rate_not_available);
+-	if (ret < 0 && !opp_table->is_genpd) {
++	if (ret < 0) {
+ 		dev_err(dev, "%s: opp key field not found\n", __func__);
+ 		goto free_opp;
+ 	}
+-- 
+2.32.0.272.g935e593368-goog
+

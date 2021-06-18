@@ -1,0 +1,61 @@
+From vireshk  Fri Jun 18 08:21:32 2021
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [172.217.194.109] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Fri, 18 Jun 2021 08:21:32 +0530 (IST)
+Received: by 2002:a6b:e802:0:0:0:0:0 with SMTP id f2csp651443ioh;         Thu, 17 Jun 2021 06:50:22 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJyYazzHrep4ie9F6P1wgo6Qhr6zIyki0eXWg5Sat+Wo9HnAzsSfkhP3XVR5frWuz58r8S2I
+X-Received: by 2002:aa7:9706:0:b029:2f2:4481:1e17 with SMTP id a6-20020aa797060000b02902f244811e17mr5517899pfg.53.1623937822709;         Thu, 17 Jun 2021 06:50:22 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1623937822; cv=none;         d=google.com; s=arc-20160816;         b=yk7puTrjBcpLZc03r0YzTFFvceJJdVEwJzKBhuG4st0C0y2c5bik0IrcUG74Tr64p6          scP1BnKQGTfc9fHEYK9rRGvmOSJyGr4mai72rsWRTdZbSPi0g4vOnJQFz7zuwmFljVMH          1PPini8K1R8LRBc5inyUWB1eoyg/KrgNYucVioocxUG/jrFl0UieEgT04bg7dBmsSFND          u7vlgwD6I9VXjlDe9V+HW8ZXwjQjyIiTf3ohOpco9179eJBZ0EaSDyuB6xFgHpTXmpX3          P1UN6XdD1cK0r2digyBfq/mH7SQSeCYbKBqCwxnjqxSuM8LZhmSe1wM7RhCStot5bCtk          45dQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from:dmarc-filter:delivered-to;         bh=PeXJhoQwwuPF5WX/5GcWqg6PLrkCLs/WyLPeg/oS2WQ=;         b=tOUQPoFjK2vKGKkNBcynzuB4vuTjaFs+5x+A3xwSOhJFThNnBMTakb237bV8oaiv9H          8VkPdaZx1ODrk3ELKi9KtQp2/u2q5m/Hh+2/XZOq7WG6IrFgItArR32ti4soyCeVqWWV          lFDvDfdld4PYR6dGk7eMwuNOaCFElkIZm1DCS01tleJvTC366ijImHSN0IlS2Gbf9t2x          ddZf7Z5wT0ERtsm1fsYLAhPr9xD4I/K0hsHl/jZrDhREmYBHTqXGAphFchhCtzi1EeyP          cf2lJSWV4hJroVUZIEgvGLb6CL4xjvG4oJ3UGokQVCXDzJ14XNKIOjYmmSEz5UPth/XY          dRDw==
+ARC-Authentication-Results: i=1; mx.google.com;        spf=pass (google.com: domain of srs0=kxrq=ll=canonical.com=colin.king@kernel.org designates 198.145.29.99 as permitted sender) smtp.mailfrom="SRS0=KxRq=LL=canonical.com=colin.king@kernel.org";        dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=canonical.com
+Return-Path: <SRS0=KxRq=LL=canonical.com=colin.king@kernel.org>
+Received: from mail.kernel.org (mail.kernel.org. [198.145.29.99])         by mx.google.com with ESMTPS id 129si5816262pff.298.2021.06.17.06.50.22         for <viresh.kumar@linaro.org>         (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);         Thu, 17 Jun 2021 06:50:22 -0700 (PDT)
+Received-SPF: pass (google.com: domain of srs0=kxrq=ll=canonical.com=colin.king@kernel.org designates 198.145.29.99 as permitted sender) client-ip=198.145.29.99;
+Authentication-Results: mx.google.com;        spf=pass (google.com: domain of srs0=kxrq=ll=canonical.com=colin.king@kernel.org designates 198.145.29.99 as permitted sender) smtp.mailfrom="SRS0=KxRq=LL=canonical.com=colin.king@kernel.org";        dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=canonical.com
+Received: by mail.kernel.org (Postfix) 	id 6C25A610A3; Thu, 17 Jun 2021 13:50:22 +0000 (UTC)
+Delivered-To: vireshk@kernel.org
+Received: from youngberry.canonical.com (youngberry.canonical.com [91.189.89.112]) 	(using TLSv1.2 with cipher ECDHE-RSA-AES128-SHA (128/128 bits)) 	(No client certificate requested) 	by mail.kernel.org (Postfix) with ESMTPS id 013A2610A0; 	Thu, 17 Jun 2021 13:50:21 +0000 (UTC)
+DMARC-Filter: OpenDMARC Filter v1.3.2 mail.kernel.org 013A2610A0
+Authentication-Results: mail.kernel.org; dmarc=fail (p=none dis=none) header.from=canonical.com
+Authentication-Results: mail.kernel.org; spf=none smtp.mailfrom=colin.king@canonical.com
+Received: from 1.general.cking.uk.vpn ([10.172.193.212] helo=localhost) 	by youngberry.canonical.com with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 	(Exim 4.93) 	(envelope-from <colin.king@canonical.com>) 	id 1ltsPU-0007a3-GA; Thu, 17 Jun 2021 13:50:20 +0000
+From: Colin King <colin.king@canonical.com>
+To: Viresh Kumar <vireshk@kernel.org>, 	Nishanth Menon <nm@ti.com>, 	Stephen Boyd <sboyd@kernel.org>, 	linux-pm@vger.kernel.org
+Cc: kernel-janitors@vger.kernel.org, 	linux-kernel@vger.kernel.org
+Subject: [PATCH][next] opp: remove redundant continue statement
+Date: Thu, 17 Jun 2021 14:50:20 +0100
+Message-Id: <20210617135020.16415-1-colin.king@canonical.com>
+X-Mailer: git-send-email 2.31.1
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+From: Colin Ian King <colin.king@canonical.com>
+
+The continue statement at the end of a for-loop has no effect,
+remove it.
+
+Addresses-Coverity: ("Continue has no effect")
+Signed-off-by: Colin Ian King <colin.king@canonical.com>
+---
+ drivers/opp/of.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+diff --git a/drivers/opp/of.c b/drivers/opp/of.c
+index 9573facce53a..d298e38aaf7e 100644
+--- a/drivers/opp/of.c
++++ b/drivers/opp/of.c
+@@ -197,10 +197,8 @@ static void _opp_table_alloc_required_tables(struct opp_table *opp_table,
+ 		required_opp_tables[i] = _find_table_of_opp_np(required_np);
+ 		of_node_put(required_np);
+ 
+-		if (IS_ERR(required_opp_tables[i])) {
++		if (IS_ERR(required_opp_tables[i]))
+ 			lazy = true;
+-			continue;
+-		}
+ 	}
+ 
+ 	/* Let's do the linking later on */
+-- 
+2.31.1
+

@@ -115,7 +115,6 @@ alias myspatch='echo "spatch -in_place -include_headers -sp_file setmode.cocci -
 # Gitmail
 alias gitmail='git send-email *.patch --cc vireshk'
 alias gitmailsuppress='git -c sendemail.tocmd=true send-email *.patch --suppress-cc=all --cc vireshk'
-alias gitmaillinaro='gitmail --cc linaro'
 alias gitmailpmbase='gitmail --cc pm --cc vingu'
 alias gitmailpm='gitmailpmbase --to rafael'
 alias gitmailopp='gitmailpmbase --cc rafael --cc sboyd --cc "Nishanth Menon <nm@ti.com>"'

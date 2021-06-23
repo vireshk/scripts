@@ -70115,3 +70115,78 @@ fatal: not a git repository (or any parent up to mount point /mnt)
 Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
 
 Entering /home/vireshk/scripts
+[master f9228fdfaf86] updates
+ 1 file changed, 71 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   6fa0c5b32c8c..f9228fdfaf86  master -> master
+   ef4d86d2a150..6fa0c5b32c8c  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wednesday 23 June 2021 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   cppc/fi
+   9821a195d4e2..8cf958d05d3a  cpufreq/arm/linux-next -> cpufreq/arm/linux-next
+ + b86bbd6dd04b...138afc61f6ad cpufreq/cppc -> cpufreq/cppc (forced update)
+ - [deleted]                   cpufreq/cppc-v2
+ + 59cc67270408...b86bbd6dd04b bkp/cpufreq/cppc -> bkp/cpufreq/cppc (forced update)
+ + be017033bc1a...a51c80057a88 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   1b02478a82ab..a51c80057a88  pm/linux-next -> pm/linux-next
+   1b02478a82ab..a51c80057a88  pm/testing -> pm/testing
+   9821a195d4e2..8cf958d05d3a  pmko/cpufreq/arm/linux-next -> pmko/cpufreq/arm/linux-next
+ + f963d09e5711...0ba5f8a8896f pmko/cpufreq/cppc -> pmko/cpufreq/cppc (forced update)
+ * [new branch]                cpufreq/stop-cpu -> cpufreq/stop-cpu
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/virtio/rust
+fatal: not a git repository (or any parent up to mount point /mnt)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+Entering /home/vireshk/scripts

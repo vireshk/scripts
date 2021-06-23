@@ -1554,3 +1554,21 @@ From vireshk  Thu Jun 17 15:11:52 2021
 From vireshk  Fri Jun 18 08:21:32 2021
  Subject: [PATCH][next] opp: remove redundant continue statement
   Folder: PATCHnext_opp_remove_redundant_continue_statement.mbox	   5224
+From vireshk  Wed Jun 23 08:38:07 2021
+ Subject: [PATCH v2] cpufreq: Make cpufreq_online() call driver->offline() on e
+  Folder: PATCH_v2_cpufreq_Make_cpufreq_online__call_driver->offline__	   4810
+From rafael.j.wysocki@intel.com  Wed Jun 23 09:37:24 2021
+ Subject: [PATCH] cpufreq: Make cpufreq_online() call driver->offline() on erro
+  Folder: PATCH_cpufreq_Make_cpufreq_online__call_driver->offline__on_	   1998
+From vireshk  Wed Jun 23 08:38:07 2021
+ Subject: [PATCH v2] cpufreq: Make cpufreq_online() call driver->offline() on e
+  Folder: PATCH_v2_cpufreq_Make_cpufreq_online__call_driver->offline__	   4810
+From rafael.j.wysocki@intel.com  Wed Jun 23 09:38:44 2021
+ Subject: [PATCH] cpufreq: Make cpufreq_online() call driver->offline() on erro
+  Folder: PATCH_cpufreq_Make_cpufreq_online__call_driver->offline__on_	   1998
+From vireshk  Wed Jun 23 08:38:07 2021
+ Subject: [PATCH v2] cpufreq: Make cpufreq_online() call driver->offline() on e
+  Folder: PATCH_v2_cpufreq_Make_cpufreq_online__call_driver->offline__	   4810
+From rafael.j.wysocki@intel.com  Wed Jun 23 09:39:24 2021
+ Subject: [PATCH] cpufreq: Make cpufreq_online() call driver->offline() on erro
+  Folder: PATCH_cpufreq_Make_cpufreq_online__call_driver->offline__on_	   1998

@@ -136,6 +136,25 @@ source ~/.vim/plugin/taglist.vim
 source ~/.vim/doc/sketch.vim
 source ~/.vim/colors/pyte.vim
 
+" Plugins (Rust)
+call plug#begin('~/.vim/plugged')
+
+" Make sure you use single quotes
+
+Plug 'prabirshrestha/vim-lsp'
+
+" Initialize plugin system
+call plug#end()
+
+" Rust specific
+if executable('rust-analyzer')
+  au User lsp_setup call lsp#register_server({
+        \   'name': 'Rust Language Server',
+        \   'cmd': {server_info->['rust-analyzer']},
+        \   'whitelist': ['rust'],
+        \ })
+endif
+
 "set guioptions-=m
 "set guioptions-=agimrLtT
 

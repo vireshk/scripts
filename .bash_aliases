@@ -232,7 +232,7 @@ alias qvim="vim -c 'set expandtab' -c 'set shiftwidth=4'"
 alias mountqemu="echo \"mount -t 9p -o trans=virtio r /mnt\""
 alias i2ccreate="echo \"echo ds1338 0x20 > /sys/bus/i2c/devices/i2c-1/new_device\""
 alias smbuscreate="echo \"echo al3320a 0x20 > /sys/class/i2c-adapter/i2c-1/new_device\""
-alias rustcoverage="echo \"pytest  rust-vmm-ci/integration_tests/test_coverage.py --no-cleanup\"; msudo docker run --device=/dev/kvm -it --security-opt seccomp=unconfined --volume $rustpath/vhost-device:/vhost-device rustvmm/dev:v11"
+alias rustcoverage="echo \"cd vhost-device; pytest  rust-vmm-ci/integration_tests/test_coverage.py --no-cleanup\"; msudo docker run --device=/dev/kvm -it --security-opt seccomp=unconfined --volume $rustpath/vhost-device:/vhost-device rustvmm/dev:v11"
 alias rustchecks="cargo fmt --all -- --check; cargo clippy --workspace --bins --examples --benches --all-features -- -D warnings"
 
 

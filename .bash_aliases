@@ -237,7 +237,7 @@ alias rustchecks="cargo fmt --all -- --check; cargo clippy --workspace --bins --
 
 
 export qemufs=" -fsdev local,id=r,path=$qemupath/../,security_model=none -device virtio-9p-device,fsdev=r,mount_tag=r"
-export qemui2c="-chardev socket,path=vi2c.sock,id=vi2c -device vhost-user-i2c-pci,chardev=vi2c,id=i2c"
+export qemui2c="-chardev socket,path=vi2c.sock0,id=vi2c -device vhost-user-i2c-pci,chardev=vi2c,id=i2c"
 export qemurtc="-device ds1338,address=0x20"
 
 alias qemuarm=" $qemupath/buildarm64/qemu-system-aarch64 -M virt -machine virtualization=true -machine virt,gic-version=3 -cpu max -smp 12 -m 4096 -drive if=virtio,format=qcow2,file=$qemupath/../host-qemu/disk.img -device virtio-scsi-pci,id=scsi0 -object rng-random,filename=/dev/urandom,id=rng0 -device virtio-rng-pci,rng=rng0 -device virtio-net-pci,netdev=net0 -netdev user,id=net0,hostfwd=tcp::8022-:22 -nographic -kernel ~/work/repos/kernel/barm64/arch/arm64/boot/Image --append \"earlycon root=/dev/vda2\" $qemurtc $qemufs"

@@ -1,29 +1,33 @@
-From vireshk  Mon Jul  5 12:26:44 2021
+From vireshk  Sun Jul  4 09:41:50 2021
 Delivered-To: viresh.kumar@linaro.org
-Received: from pop.gmail.com [172.217.194.109] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Mon, 05 Jul 2021 12:26:44 +0530 (IST)
-Received: by 2002:a5d:9ac8:0:0:0:0:0 with SMTP id x8csp3883145ion;         Sun, 4 Jul 2021 23:55:57 -0700 (PDT)
-X-Google-Smtp-Source: ABdhPJzEMbRY6HOEfdUsYLMn3LUG62UGTyY/D7uxEGEt1qzRE5e99CENLx/AOE6x2XzlzNMuIrFk
-X-Received: by 2002:a17:902:8f8c:b029:128:eb35:30ca with SMTP id z12-20020a1709028f8cb0290128eb3530camr11395446plo.56.1625468157448;         Sun, 04 Jul 2021 23:55:57 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1625468157; cv=none;         d=google.com; s=arc-20160816;         b=wfrMTp9i9ukV1QJTmBAUQR8m+e6k8j0FGu0FVxET/IaVPtdy3fTDOiNlTKy8JRGRg/          w1CtB2YritwwEBgZ9SYTEcxQuVByGkm3vCOwQeLtnvzN34X7ch9Woi0Z14vuJunwIFML          0PtsbGsQJtSZ2CkFzvjEsCrQhWMvGxXNysIEVEVilkqT6KNE2VZSIFJrSjp4n7xthlk+          AbzjPowKcrmSeiq5WuLjXDTcrCPgbChTPQreCzdFggQucmo1j5eV2S+3F4NB8Of9hnA1          kZCdMi/nq1M1qJV2am29J1uDE3G9dvV3H4XhS1KYDRWZGXI6QsM8SKr8Z3ni8ZRNyXs4          vdtQ==
-ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=message-id:date:subject:cc:to:from;         bh=wl2LrlJpWK0ZxcQDjkav/DhxIyVytpv3ctjxvoCWFoc=;         b=ee5IzkXfk3gg9mn2PFjKgYu4Zl3vU0sMkxVGLT/CGnZYPucwDlS4vdDYfWeW2WduLH          A3oNyzL+Hh/XTdyHhYSfwKvghsWAcYcUpGQkvwEuX50bgPOJJ590JGs8nPEOdZ4AkHel          dKegRUQgs2SaPsZpVZ3fz6RVzOvu+mYNWIeMqtmX4fNQ9rWgnC6M0yXWtS9OZPiG9ZqI          vnQai1oRHXKGaGm8pdV17rq3yJyW5QnWNsZIoszTa9LJO/cYBiecG6ERMl6SNr2GI6fZ          dQLRcC3Ms9NTHiJPRZvghW5qvMzlOXhIOXj948AujJZk15MyvGijF2zcoivHMaxZ1M/w          02Cw==
-ARC-Authentication-Results: i=1; mx.google.com;        spf=pass (google.com: domain of jie.deng@intel.com designates 192.55.52.120 as permitted sender) smtp.mailfrom=jie.deng@intel.com;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=intel.com
+Received: from pop.gmail.com [172.217.194.109] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Sun, 04 Jul 2021 09:41:50 +0530 (IST)
+Received: by 2002:a5d:9ac8:0:0:0:0:0 with SMTP id x8csp1425197ion;         Fri, 2 Jul 2021 01:47:46 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJz+8y5nExcu1cu50kSwLKTBdC/oqMJzocBHFFfHrAy4XAPbhd02LGy2UvRB3EZ8WN0CCsI+
+X-Received: by 2002:aa7:9409:0:b029:303:1db:94d5 with SMTP id x9-20020aa794090000b029030301db94d5mr4268333pfo.72.1625215666044;         Fri, 02 Jul 2021 01:47:46 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1625215666; cv=none;         d=google.com; s=arc-20160816;         b=uZZgYrHfSaTUtlxeRKHBDPxja3hkU6qF7wAlJQF7hZNaCVz+j52LS1LzyOVnOJm9gP          N3mpJBOqf2xFKAAE6lbAHdJdc/5XSHDbtFh7659w0v/qla1EJ8HIWhKocBTziRVCD84J          mDI3bW0ZTi1jtTUxOz2kH5lNT7PVURmJ4sk6Btii6f7CHs6EDhKv7n+MmdB6E1FDcT0Y          2geLZB2BpKbG4LBxDUo45MikU2nO8L0pigGh+ScPSduuo5gEXaD3BE0JMlcnReRvHKL7          eYaN+CJIBbLt6P8RomKuVK0xQpLZadTGPZtUhtJiV3QgSdbD23SuvjBJcJ0I/Gqrca2C          9uJQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=message-id:date:subject:cc:to:from;         bh=8L9DxTgSZdY2+7kKAyNx9axzygCGNv1GevdcRtq9+1M=;         b=cZiXXdg4Bp5p/M7Jz8R8oPbcE0QIdGyvrF0IISuvoXauepr9+AhVzkJ300zwFyfGXY          fW2GMPP82b4akVM4W1hisrXgzDHAx+VYfYN4/LCkzESdgh4J5eIoCQpsdTVQGLKKFnnI          2DPh6a7PP0jQ76ND33bkG0nm4+lGsL8UOzvf9eFx3ugz39MLyk9UL5tupgvxoMlpKQb2          2S2nYOuu4od0iJJL2KcRAOg25zT7dUQLxXKY07MD5KCDe83eOI9Il4JKD6PkLutxvU1z          iDHuGloIl0zEg6RNnvCQkPfFm+H3jtbNCdXn6KEMmXlPyYZIrBHPnkZo0V493IzfK0w9          y5FA==
+ARC-Authentication-Results: i=1; mx.google.com;        spf=pass (google.com: domain of jie.deng@intel.com designates 192.55.52.93 as permitted sender) smtp.mailfrom=jie.deng@intel.com;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=intel.com
 Return-Path: <jie.deng@intel.com>
-Received: from mga04.intel.com (mga04.intel.com. [192.55.52.120])         by mx.google.com with ESMTPS id q2si16948918pfu.167.2021.07.04.23.55.57         for <viresh.kumar@linaro.org>         (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);         Sun, 04 Jul 2021 23:55:57 -0700 (PDT)
-Received-SPF: pass (google.com: domain of jie.deng@intel.com designates 192.55.52.120 as permitted sender) client-ip=192.55.52.120;
-Authentication-Results: mx.google.com;        spf=pass (google.com: domain of jie.deng@intel.com designates 192.55.52.120 as permitted sender) smtp.mailfrom=jie.deng@intel.com;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=intel.com
-X-IronPort-AV: E=McAfee;i="6200,9189,10035"; a="207105040"
-X-IronPort-AV: E=Sophos;i="5.83,325,1616482800";     d="scan'208";a="207105040"
-Received: from fmsmga001.fm.intel.com ([10.253.24.23])   by fmsmga104.fm.intel.com with ESMTP/TLS/ECDHE-RSA-AES256-GCM-SHA384; 04 Jul 2021 23:55:55 -0700
+Received: from mga11.intel.com (mga11.intel.com. [192.55.52.93])         by mx.google.com with ESMTPS id g7si1784494pll.294.2021.07.02.01.47.45         for <viresh.kumar@linaro.org>         (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);         Fri, 02 Jul 2021 01:47:46 -0700 (PDT)
+Received-SPF: pass (google.com: domain of jie.deng@intel.com designates 192.55.52.93 as permitted sender) client-ip=192.55.52.93;
+Authentication-Results: mx.google.com;        spf=pass (google.com: domain of jie.deng@intel.com designates 192.55.52.93 as permitted sender) smtp.mailfrom=jie.deng@intel.com;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=intel.com
+X-IronPort-AV: E=McAfee;i="6200,9189,10032"; a="205691582"
+X-IronPort-AV: E=Sophos;i="5.83,316,1616482800";     d="scan'208";a="205691582"
+Received: from fmsmga002.fm.intel.com ([10.253.24.26])   by fmsmga102.fm.intel.com with ESMTP/TLS/ECDHE-RSA-AES256-GCM-SHA384; 02 Jul 2021 01:47:45 -0700
 X-ExtLoop1: 1
-X-IronPort-AV: E=Sophos;i="5.83,325,1616482800";     d="scan'208";a="562441954"
-Received: from jiedeng-optiplex-7050.sh.intel.com ([10.239.154.104])   by fmsmga001.fm.intel.com with ESMTP; 04 Jul 2021 23:55:51 -0700
+X-IronPort-AV: E=Sophos;i="5.83,316,1616482800";     d="scan'208";a="493880551"
+Received: from jiedeng-optiplex-7050.sh.intel.com ([10.239.154.104])   by fmsmga002.fm.intel.com with ESMTP; 02 Jul 2021 01:47:41 -0700
 From: Jie Deng <jie.deng@intel.com>
 To: linux-i2c@vger.kernel.org, 	virtualization@lists.linux-foundation.org, 	linux-kernel@vger.kernel.org
-Cc: wsa@kernel.org, 	wsa+renesas@sang-engineering.com, 	jie.deng@intel.com, 	mst@redhat.com, 	arnd@arndb.de, 	jasowang@redhat.com, 	andriy.shevchenko@linux.intel.com, 	yu1.wang@intel.com, 	shuo.a.liu@intel.com, 	conghui.chen@intel.com, 	viresh.kumar@linaro.org, 	stefanha@redhat.com, 	gregkh@linuxfoundation.org
-Subject: [PATCH v13] i2c: virtio: add a virtio i2c frontend driver
-Date: Mon,  5 Jul 2021 14:53:37 +0800
-Message-Id: <8908f35a741e25a630d521e1012494e67d31ea64.1625466616.git.jie.deng@intel.com>
+Cc: wsa@kernel.org, 	wsa+renesas@sang-engineering.com, 	jie.deng@intel.com, 	mst@redhat.com, 	arnd@arndb.de, 	jasowang@redhat.com, 	andriy.shevchenko@linux.intel.com, 	yu1.wang@intel.com, 	shuo.a.liu@intel.com, 	conghui.chen@intel.com, 	viresh.kumar@linaro.org, 	stefanha@redhat.com
+Subject: [PATCH v12] i2c: virtio: add a virtio i2c frontend driver
+Date: Fri,  2 Jul 2021 16:46:47 +0800
+Message-Id: <f229cd761048bc143f88f33a3437bdbf891c39fd.1625214435.git.jie.deng@intel.com>
 X-Mailer: git-send-email 2.7.4
+Status: RO
+X-Status: A
+Content-Length: 11514
+Lines: 409
 
 Add an I2C bus driver for virtio para-virtualization.
 
@@ -41,11 +45,6 @@ Co-developed-by: Conghui Chen <conghui.chen@intel.com>
 Signed-off-by: Conghui Chen <conghui.chen@intel.com>
 Signed-off-by: Jie Deng <jie.deng@intel.com>
 ---
-Changes v12 -> v13
-	- Use _BITUL() instead of BIT()
-	- Rename "virtio_i2c_send_reqs" to "virtio_i2c_prepare_reqs"
-	- Optimize the return value of "virtio_i2c_complete_reqs"
-
 Changes v11 -> v12
 	- Do not sent msg_buf for zero-length request.
 	- Send requests to host only if all the number of transfers requested prepared successfully.
@@ -64,9 +63,9 @@ Changes v10 -> v11
  drivers/i2c/busses/Kconfig      |  11 ++
  drivers/i2c/busses/Makefile     |   3 +
  drivers/i2c/busses/i2c-virtio.c | 269 ++++++++++++++++++++++++++++++++++++++++
- include/uapi/linux/virtio_i2c.h |  41 ++++++
+ include/uapi/linux/virtio_i2c.h |  40 ++++++
  include/uapi/linux/virtio_ids.h |   1 +
- 5 files changed, 325 insertions(+)
+ 5 files changed, 324 insertions(+)
  create mode 100644 drivers/i2c/busses/i2c-virtio.c
  create mode 100644 include/uapi/linux/virtio_i2c.h
 
@@ -106,7 +105,7 @@ index 69e9963..9843756 100644
  ccflags-$(CONFIG_I2C_DEBUG_BUS) := -DDEBUG
 diff --git a/drivers/i2c/busses/i2c-virtio.c b/drivers/i2c/busses/i2c-virtio.c
 new file mode 100644
-index 0000000..731267d
+index 0000000..45746b5
 --- /dev/null
 +++ b/drivers/i2c/busses/i2c-virtio.c
 @@ -0,0 +1,269 @@
@@ -164,9 +163,9 @@ index 0000000..731267d
 +	complete(&vi->completion);
 +}
 +
-+static int virtio_i2c_prepare_reqs(struct virtqueue *vq,
-+				   struct virtio_i2c_req *reqs,
-+				   struct i2c_msg *msgs, int nr)
++static int virtio_i2c_send_reqs(struct virtqueue *vq,
++				struct virtio_i2c_req *reqs,
++				struct i2c_msg *msgs, int nr)
 +{
 +	struct scatterlist *sgs[3], out_hdr, msg_buf, in_hdr;
 +	int i, outcnt, incnt, err = 0;
@@ -235,10 +234,10 @@ index 0000000..731267d
 +
 +		i2c_put_dma_safe_msg_buf(reqs[i].buf, &msgs[i], !failed);
 +		if (!failed)
-+			j++;
++			++j;
 +	}
 +
-+	return fail ? 0 : j;
++	return (fail ? -ETIMEDOUT : j);
 +}
 +
 +static int virtio_i2c_xfer(struct i2c_adapter *adap, struct i2c_msg *msgs, int num)
@@ -253,21 +252,21 @@ index 0000000..731267d
 +	if (!reqs)
 +		return -ENOMEM;
 +
-+	ret = virtio_i2c_prepare_reqs(vq, reqs, msgs, num);
++	ret = virtio_i2c_send_reqs(vq, reqs, msgs, num);
 +	if (ret != num) {
-+		ret = virtio_i2c_complete_reqs(vq, reqs, msgs, ret, true);
++		virtio_i2c_complete_reqs(vq, reqs, msgs, ret, true);
++		ret = 0;
 +		goto err_free;
 +	}
 +
 +	reinit_completion(&vi->completion);
 +	virtqueue_kick(vq);
-+	time_left = wait_for_completion_timeout(&vi->completion, adap->timeout);
-+	ret = virtio_i2c_complete_reqs(vq, reqs, msgs, num, !time_left);
 +
-+	if (!time_left) {
-+		ret = -ETIMEDOUT;
++	time_left = wait_for_completion_timeout(&vi->completion, adap->timeout);
++	if (!time_left)
 +		dev_err(&adap->dev, "virtio i2c backend timeout.\n");
-+	}
++
++	ret = virtio_i2c_complete_reqs(vq, reqs, msgs, num, !time_left);
 +
 +err_free:
 +	kfree(reqs);
@@ -381,10 +380,10 @@ index 0000000..731267d
 +MODULE_LICENSE("GPL");
 diff --git a/include/uapi/linux/virtio_i2c.h b/include/uapi/linux/virtio_i2c.h
 new file mode 100644
-index 0000000..df936a2
+index 0000000..1b1754e
 --- /dev/null
 +++ b/include/uapi/linux/virtio_i2c.h
-@@ -0,0 +1,41 @@
+@@ -0,0 +1,40 @@
 +/* SPDX-License-Identifier: GPL-2.0-or-later WITH Linux-syscall-note */
 +/*
 + * Definitions for virtio I2C Adpter
@@ -396,10 +395,9 @@ index 0000000..df936a2
 +#define _UAPI_LINUX_VIRTIO_I2C_H
 +
 +#include <linux/types.h>
-+#include <linux/const.h>
 +
 +/* The bit 0 of the @virtio_i2c_out_hdr.@flags, used to group the requests */
-+#define VIRTIO_I2C_FLAGS_FAIL_NEXT	_BITUL(0)
++#define VIRTIO_I2C_FLAGS_FAIL_NEXT	BIT(0)
 +
 +/**
 + * struct virtio_i2c_out_hdr - the virtio I2C message OUT header

@@ -126,6 +126,7 @@ alias gitmailgenpdsuppress='gitmailsuppress --cc rafael --cc pm --cc vingu --cc 
 alias gitmailbootconstraint='gitmailsuppress --cc vingu --to greg --cc sboyd --cc rnayak --cc lkml --cc lakml --cc robdclark@gmail.com --cc s.hauer@pengutronix.de --cc l.stach@pengutronix.de --cc shawnguo@kernel.org --cc fabio.estevam@nxp.com --cc nm@ti.com --cc xuwei5@hisilicon.com --cc robh+dt@kernel.org --cc olof@lixom.net'
 alias gitmailqemu='gitmail --cc vingu --cc "Mike Holmes <mike.holmes@linaro.org>" --cc "Bill Mills <bill.mills@linaro.org>" --to qemu-devel@nongnu.org --to "Alex Bennée <alex.bennee@linaro.org>" --cc "Arnd Bergmann <arnd.bergmann@linaro.com>" --cc stratos-dev@op-lists.linaro.org --cc "Jie Deng <jie.deng@intel.com>"'
 
+alias gitmailvirtio='gitmail --cc vingu --to "Jason Wang <jasowang@redhat.com>" --to "\"Michael S. Tsirkin\" <mst@redhat.com>" --to "Rob Herring <robh+dt@kernel.org>" --to "Arnd Bergmann <arnd@kernel.org>" --to "Jean-Philippe Brucker <jean-philippe@linaro.org>" --cc "Bill Mills <bill.mills@linaro.org>" --cc "Alex Bennée <alex.bennee@linaro.org>" --cc "\"Enrico Weigelt, metux IT consult\" <info@metux.net>" --cc "Jie Deng <jie.deng@intel.com>" --cc devicetree@vger.kernel.org --cc lkml --cc virtualization@lists.linux-foundation.org'
 
 # fetch remotes
 alias gitsyncpmko='ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/pm.git next;ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/pm.git linus;'

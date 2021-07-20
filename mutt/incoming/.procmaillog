@@ -1596,3 +1596,13 @@ From vireshk  Fri Jul  9 08:55:17 2021
 From vireshk  Wed Jun 30 17:29:31 2021
  Subject: [virtio-comment] [PATCH v2] virtio-gpio: add formal specification
   Folder: virtio-comment_PATCH_v2_virtio-gpio_add_formal_specification	  21634
+From vireshk  Tue Jul 20 09:39:37 2021
+ Subject: [PATCH v2] dt-bindings: opp: Convert to DT schema
+  Folder: PATCH_v2_dt-bindings_opp_Convert_to_DT_schema.mbox		   4738
+From foo@bar  Tue Jul 20 09:51:47 2021
+  Folder: .mbox								  46701
+From vireshk  Tue Jul 20 09:39:37 2021
+ Subject: [PATCH v2] dt-bindings: opp: Convert to DT schema
+  Folder: PATCH_v2_dt-bindings_opp_Convert_to_DT_schema.mbox		   4738
+From foo@bar  Tue Jul 20 09:52:11 2021
+  Folder: .mbox								  46701

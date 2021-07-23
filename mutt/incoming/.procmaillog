@@ -1606,3 +1606,6 @@ From vireshk  Tue Jul 20 09:39:37 2021
   Folder: PATCH_v2_dt-bindings_opp_Convert_to_DT_schema.mbox		   4738
 From foo@bar  Tue Jul 20 09:52:11 2021
   Folder: .mbox								  46701
+From vireshk  Fri Jul 23 10:56:25 2021
+ Subject: [PATCH] virtio: i2c: Allow buffer less transactions
+  Folder: PATCH_virtio_i2c_Allow_buffer_less_transactions.mbox		   8526

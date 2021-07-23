@@ -231,11 +231,11 @@ alias configqemu="../configure --python=/usr/bin/python3.8 --target-list=aarch64
 alias buildqemu="configqemu; make"
 
 # I2C
-alias vui2c="hjunk;unlink vi2c.sock; $qemupath/buildarm64/tools/vhost-user-i2c/vhost-user-i2c --socket-path=vi2c.sock -l 5:20"
+alias vui2c="hjunk;unlink vi2c.sock; $qemupath/buildarm64/tools/vhost-user-i2c/vhost-user-i2c --socket-path=vi2c.sock -l 6:20"
 alias rusti2c="hjunk;unlink vi2c.sock; $rustpath/vhost-device/target/debug/vhost-device-i2c --socket-path=vi2c.sock -c=1 -l 6:32"
 alias i2ccreate="echo \"echo ds1338 0x20 > /sys/bus/i2c/devices/i2c-1/new_device\""
 alias smbuscreate="echo \"echo al3320a 0x20 > /sys/class/i2c-adapter/i2c-1/new_device\""
-export qemui2c="-chardev socket,path=vi2c.sock,id=vi2c -device vhost-user-i2c-pci,chardev=vi2c,id=i2c"
+export qemui2c="-chardev socket,path=vi2c.sock0,id=vi2c -device vhost-user-i2c-device,chardev=vi2c,id=i2c"
 
 # GPIO
 alias vugpio="hjunk;unlink vgpio.sock; $qemupath/buildarm64/tools/vhost-user-gpio/vhost-user-gpio --socket-path=vgpio.sock"

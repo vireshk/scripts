@@ -1609,3 +1609,6 @@ From foo@bar  Tue Jul 20 09:52:11 2021
 From vireshk  Fri Jul 23 10:56:25 2021
  Subject: [PATCH] virtio: i2c: Allow buffer less transactions
   Folder: PATCH_virtio_i2c_Allow_buffer_less_transactions.mbox		   8526
+From vireshk  Mon Jul 26 08:37:55 2021
+ Subject: [PATCH] cpufreq: blacklist Qualcomm sc8180x in cpufreq-dt-platdev
+  Folder: PATCH_cpufreq_blacklist_Qualcomm_sc8180x_in_cpufreq-dt-platd	   6049

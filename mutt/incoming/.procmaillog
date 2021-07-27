@@ -1612,3 +1612,6 @@ From vireshk  Fri Jul 23 10:56:25 2021
 From vireshk  Mon Jul 26 08:37:55 2021
  Subject: [PATCH] cpufreq: blacklist Qualcomm sc8180x in cpufreq-dt-platdev
   Folder: PATCH_cpufreq_blacklist_Qualcomm_sc8180x_in_cpufreq-dt-platd	   6049
+From vireshk  Mon Jul 26 14:07:20 2021
+ Subject: [PATCH] opp: remove WARN when no valid OPPs remain
+  Folder: PATCH_opp_remove_WARN_when_no_valid_OPPs_remain.mbox		   5887

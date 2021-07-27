@@ -1,0 +1,61 @@
+From vireshk  Mon Jul 26 14:07:20 2021
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [142.250.4.109] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Mon, 26 Jul 2021 14:07:20 +0530 (IST)
+Received: by 2002:a05:6602:3352:0:0:0:0 with SMTP id c18csp3647277ioz;         Mon, 26 Jul 2021 01:37:17 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJyuPogzCiSLlR91MZHhlJWVv/u2o1ZOS5MsByFMjY37Ak2pYMqdVnIF+cADqA8Y0uosMvqc
+X-Received: by 2002:aa7:9a42:0:b029:333:a3d2:8d8f with SMTP id x2-20020aa79a420000b0290333a3d28d8fmr16481986pfj.45.1627288637400;         Mon, 26 Jul 2021 01:37:17 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1627288637; cv=none;         d=google.com; s=arc-20160816;         b=WqMBmHtopMxsW0RmkdGQgb4Z3UrF574y0sRo94rNzM6cNtI5ovkQLvfNX7DFnomD4Y          lleol9HMpPFPdLswtP9+kChOkPD8/6thLvWWjFvh+S+EEgCQy0cuddtvOoNzfJ3YGMqD          oM63DW+P2qHgFfEi14Miegz9l/5rsYE9BEGNUGFdaC2/nJp56+AfydvDfR3BghKVNwOo          2JA5+OV9YRnvd5bBJM1gXeVwScp6s58m8a0qkqiAyf2Zpp4venigLTQXXgLCEok1K+8f          paSIA38fgq5HiGf/Px8XaTOFeYrlhnfnMtHXNaJZntpyVU7CVdaOmsdTgnUU2soFOsxV          oYjg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=cc:to:content-transfer-encoding:mime-version:subject:from          :message-id:date:dkim-signature:dmarc-filter:delivered-to;         bh=h039ZfL2uaoqt+5/fIU7/qvXDcccOdw56bpnR1QOOis=;         b=BsOsu4qoOzXk92RZ1qan/rIs6KHkrGoulJX4gB59Cw9csbVtnc8ynrwK4NY2NgnSLJ          PNNcZx4Ht6aBMA1Sj4A0fbimkhQqm7X6xIqKM9FkBvHAY+0En/wWvEpccjix6fOy8uTl          wUXSJYM7uFzyILxU/T/4OM/eEchjTi2Z2ujKEqkqytxAKkNrCn64NzUIh044g275FuTJ          xXxigZNdssTS3zM+DI2OsSuBiuBYwYbuAAYvVCkEIi9lf8LVfsezOxkHVCnNtT/lBaS1          kwIA22jaKOjZg5qB2OI7Hx2dN4TmsVyRjQGlwuBLJ+NWsm+NBxMrq9epwi9nypVk8YmS          sQ6w==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@rere.qmqm.pl header.s=1 header.b="Trev/yMf";        spf=pass (google.com: domain of srs0=gr6t=ms=rere.qmqm.pl=mirq-linux@kernel.org designates 198.145.29.99 as permitted sender) smtp.mailfrom="SRS0=gr6T=MS=rere.qmqm.pl=mirq-linux@kernel.org";        dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=rere.qmqm.pl
+Return-Path: <SRS0=gr6T=MS=rere.qmqm.pl=mirq-linux@kernel.org>
+Received: from mail.kernel.org (mail.kernel.org. [198.145.29.99])         by mx.google.com with ESMTPS id l17si10601062pjg.86.2021.07.26.01.37.16         for <viresh.kumar@linaro.org>         (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);         Mon, 26 Jul 2021 01:37:17 -0700 (PDT)
+Received-SPF: pass (google.com: domain of srs0=gr6t=ms=rere.qmqm.pl=mirq-linux@kernel.org designates 198.145.29.99 as permitted sender) client-ip=198.145.29.99;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@rere.qmqm.pl header.s=1 header.b="Trev/yMf";        spf=pass (google.com: domain of srs0=gr6t=ms=rere.qmqm.pl=mirq-linux@kernel.org designates 198.145.29.99 as permitted sender) smtp.mailfrom="SRS0=gr6T=MS=rere.qmqm.pl=mirq-linux@kernel.org";        dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=rere.qmqm.pl
+Received: by mail.kernel.org (Postfix) 	id C8C706024A; Mon, 26 Jul 2021 08:37:16 +0000 (UTC)
+Delivered-To: vireshk@kernel.org
+X-Greylist: delayed 376 seconds by postgrey-1.37 at mail.kernel.org; Mon, 26 Jul 2021 08:37:15 UTC
+DMARC-Filter: OpenDMARC Filter v1.4.1 mail.kernel.org 29F5460F4B
+Authentication-Results: mail.kernel.org; dmarc=pass (p=reject dis=none) header.from=rere.qmqm.pl
+Authentication-Results: mail.kernel.org; spf=pass smtp.mailfrom=rere.qmqm.pl
+Received: from rere.qmqm.pl (rere.qmqm.pl [91.227.64.183]) 	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) 	(No client certificate requested) 	by mail.kernel.org (Postfix) with ESMTPS id 29F5460F4B; 	Mon, 26 Jul 2021 08:37:14 +0000 (UTC)
+Received: from remote.user (localhost [127.0.0.1]) 	by rere.qmqm.pl (Postfix) with ESMTPSA id 4GYCmw5268z4w; 	Mon, 26 Jul 2021 10:30:56 +0200 (CEST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=rere.qmqm.pl; s=1; 	t=1627288256; bh=UYfafvj7oW9lU+0ORYDLk6ttWEkFxJ3q5XJgf0F0aVU=; 	h=Date:From:Subject:To:Cc:From; 	b=Trev/yMf+9El35wMFvypcyf88ShLCs5n34obJZ86pTVQnrwZ5WY75a2MKbe7bT2sX 	 IY8TEYiG5xyVDfs/I0StT/EQpl91WdxlUvYaON+tEj2Ob9EQZjUhrdvJ3upf90ZMEJ 	 lDdx0HL0BAGMcKNM4/HrWhQILGF7grdQ1VMFACC67zKnNi0Z2jMFfrqEXj1dYbPpY6 	 gJ47/ZicoEb/Emotv6c6PfMrcy0Gg/aLhmxqFaSZi6eWFMTujRd/DVPNI1ZW+ovpM6 	 bnyMyCaQQUJ0L+Se+zg1/WWonAcwIZF154ylQvnuzjBuAwQDZDmVaP6cGOSbzKdpea 	 zUl28RkURvJrg==
+X-Virus-Status: Clean
+X-Virus-Scanned: clamav-milter 0.103.2 at mail
+Date: Mon, 26 Jul 2021 10:30:56 +0200
+Message-Id: <aae042425e7a55d7d0f873cdfc3712953fb0df10.1627288191.git.mirq-linux@rere.qmqm.pl>
+From: =?UTF-8?q?Micha=C5=82=20Miros=C5=82aw?= <mirq-linux@rere.qmqm.pl>
+Subject: [PATCH] opp: remove WARN when no valid OPPs remain
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+To:	Viresh Kumar <vireshk@kernel.org>, 	Nishanth Menon <nm@ti.com>, 	Stephen Boyd <sboyd@kernel.org>
+Cc:	linux-pm@vger.kernel.org, 	linux-kernel@vger.kernel.org
+
+This WARN can be triggered per-core and the stack trace is not useful.
+Replace it with plain dev_err(). Fix a comment while at it.
+
+Signed-off-by: Michał Mirosław <mirq-linux@rere.qmqm.pl>
+---
+ drivers/opp/of.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+diff --git a/drivers/opp/of.c b/drivers/opp/of.c
+index c582a9ca397b..01feeba78426 100644
+--- a/drivers/opp/of.c
++++ b/drivers/opp/of.c
+@@ -985,8 +985,9 @@ static int _of_add_opp_table_v2(struct device *dev, struct opp_table *opp_table)
+ 		}
+ 	}
+ 
+-	/* There should be one of more OPP defined */
+-	if (WARN_ON(!count)) {
++	/* There should be one or more OPPs defined */
++	if (!count) {
++		dev_err(dev, "%s: no supported OPPs", __func__);
+ 		ret = -ENOENT;
+ 		goto remove_static_opp;
+ 	}
+-- 
+2.30.2
+

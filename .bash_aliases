@@ -62,6 +62,7 @@ alias hwltest="hlisa; cd tools/wltests"
 alias hboards="cd /home/vireshk/work/repos/tools/boards"
 alias hhikey="cd /home/vireshk/work/repos/tools/boards/hikey"
 alias htest="cd /home/vireshk/work/repos/tools/test-definitions/"
+export junkpath=/home/vireshk/junk
 alias hjunk="cd /home/vireshk/junk/"
 alias hmdownload="cd /home/vireshk/mdownload"
 alias haastha="cd /home/vireshk/junk/aastha"
@@ -231,16 +232,18 @@ alias configqemu="../configure --python=/usr/bin/python3.8 --target-list=aarch64
 alias buildqemu="configqemu; make"
 
 # I2C
-alias vui2c="hjunk;unlink vi2c.sock; $qemupath/buildarm64/tools/vhost-user-i2c/vhost-user-i2c --socket-path=vi2c.sock -l 6:20"
-alias rusti2c="hjunk;unlink vi2c.sock; $rustpath/vhost-device/target/debug/vhost-device-i2c --socket-path=vi2c.sock -c=1 -l 6:32"
+export i2csock="$junkpath/vi2c.sock"
+alias vui2c="unlink $i2csock; $qemupath/buildarm64/tools/vhost-user-i2c/vhost-user-i2c --socket-path=$i2csock -l 6:20"
+alias rusti2c="unlink $i2csock; $rustpath/vhost-device/target/debug/vhost-device-i2c --socket-path=$i2csock -c=1 -l 6:32"
 alias i2ccreate="echo \"echo ds1338 0x20 > /sys/bus/i2c/devices/i2c-1/new_device\""
 alias smbuscreate="echo \"echo al3320a 0x20 > /sys/class/i2c-adapter/i2c-1/new_device\""
 export qemui2c="-chardev socket,path=vi2c.sock0,id=vi2c -device vhost-user-i2c-device,chardev=vi2c,id=i2c"
 
 # GPIO
-alias vugpio="hjunk;unlink vgpio.sock; $qemupath/buildarm64/tools/vhost-user-gpio/vhost-user-gpio --socket-path=vgpio.sock"
-alias rustgpio="hjunk;unlink vgpio.sock; $rustpath/vhost-device/target/debug/vhost-device-gpio --socket-path=vgpio.sock -c=1 -l 6:32"
-export qemugpio="-chardev socket,path=vgpio.sock,id=vgpio -device vhost-user-gpio-pci,chardev=vgpio,id=gpio"
+export gpiosock="$junkpath/vgpio.sock"
+alias vugpio="unlink $gpiosock; $qemupath/buildarm64/tools/vhost-user-gpio/vhost-user-gpio --socket-path=$gpiosock"
+alias rustgpio="unlink $gpiosock; $rustpath/vhost-device/target/debug/vhost-device-gpio --socket-path=$gpiosock -c=1 -l 6:32"
+export qemugpio="-chardev socket,path=$gpiosock,id=vgpio -device vhost-user-gpio-pci,chardev=vgpio,id=gpio"
 
 # Rust
 alias rustcoverage="echo \"cd vhost-device; pytest  rust-vmm-ci/integration_tests/test_coverage.py --no-cleanup\"; msudo docker run --device=/dev/kvm -it --security-opt seccomp=unconfined --volume $rustpath/vhost-device:/vhost-device rustvmm/dev:v11"
@@ -251,13 +254,13 @@ export qemufs=" -fsdev local,id=r,path=$qemupath/../,security_model=none -device
 export qemuobj=" -object memory-backend-file,id=mem,size=4G,mem-path=/dev/shm,share=on -numa node,memdev=mem"
 export qemurtc="-device ds1338,address=0x20"
 
-alias qemuarm="hjunk; $qemupath/buildarm64/qemu-system-aarch64 -M virt -machine virtualization=true -machine virt,gic-version=3 -cpu max -smp 12 -m 4096 -drive if=virtio,format=qcow2,file=$qemupath/../host-qemu/disk.img -device virtio-scsi-pci,id=scsi0 -object rng-random,filename=/dev/urandom,id=rng0 -device virtio-rng-pci,rng=rng0 -device virtio-net-pci,netdev=net0 -netdev user,id=net0,hostfwd=tcp::8022-:22 -nographic -kernel ~/work/repos/kernel/barm64/arch/arm64/boot/Image --append \"earlycon root=/dev/vda2\" $qemuobj"
+alias qemuarm="$qemupath/buildarm64/qemu-system-aarch64 -M virt -machine virtualization=true -machine virt,gic-version=3 -cpu max -smp 12 -m 4096 -drive if=virtio,format=qcow2,file=$qemupath/../host-qemu/disk.img -device virtio-scsi-pci,id=scsi0 -object rng-random,filename=/dev/urandom,id=rng0 -device virtio-rng-pci,rng=rng0 -device virtio-net-pci,netdev=net0 -netdev user,id=net0,hostfwd=tcp::8022-:22 -nographic -kernel ~/work/repos/kernel/barm64/arch/arm64/boot/Image --append \"earlycon root=/dev/vda2\" $qemuobj"
 alias qemuarmi2c="qemuarm $qemui2c $qemufs $qemurtc"
 alias qemuarmgpio="qemuarm $qemugpio"
 
 alias qemuarmold="$qemupath/buildarm64/qemu-system-aarch64 -M virt -machine virtualization=true -machine virt,gic-version=3 -cpu max -smp 2 -m 4096 -drive if=pflash,format=raw,file=$qemupath/../host-qemu/efi.img,readonly -drive if=pflash,format=raw,file=$qemupath/../host-qemu/varstore.img  -drive if=virtio,format=qcow2,file=$qemupath/../host-qemu/disk.img -device virtio-scsi-pci,id=scsi0 -object rng-random,filename=/dev/urandom,id=rng0 -device virtio-rng-pci,rng=rng0 -device virtio-net-pci,netdev=net0 -netdev user,id=net0,hostfwd=tcp::8022-:22 -nographic -kernel ~/work/repos/kernel/barm64/arch/arm64/boot/Image --append \"earlycon root=/dev/vda2\""
 
-alias qemuarmf="hjunk; $qemupath/buildarm64/qemu-system-aarch64 -machine virt,virtualization=on,gic-version=max -cpu cortex-a57 -machine type=virt -nographic -smp 4 -m 4G -kernel ~/work/repos/kernel/barm64/arch/arm64/boot/Image  --append \"console=ttyAMA0\" $qemuobj"
+alias qemuarmf="$qemupath/buildarm64/qemu-system-aarch64 -machine virt,virtualization=on,gic-version=max -cpu cortex-a57 -machine type=virt -nographic -smp 4 -m 4G -kernel ~/work/repos/kernel/barm64/arch/arm64/boot/Image  --append \"console=ttyAMA0\" $qemuobj"
 alias qemuarmfi2c="qemuarmf $qemui2c $qemufs"
 alias qemuarmfgpio="qemuarmf $qemugpio $qemufs"
 

@@ -1621,3 +1621,6 @@ From vireshk  Wed Jul 28 08:49:11 2021
 From vireshk  Fri Jul 30 08:41:57 2021
  Subject: [PATCH] ARM: move the (z/u)install rules to arch/arm/Makefile
   Folder: PATCH_ARM_move_the_z-u_install_rules_to_arch-arm-Makefile.mb	   6540
+From vireshk  Thu Aug  5 09:03:18 2021
+ Subject: [Patch v2] cpufreq: blocklist Qualcomm sm8150 in cpufreq-dt-platdev
+  Folder: Patch_v2_cpufreq_blocklist_Qualcomm_sm8150_in_cpufreq-dt-pla	   6157

@@ -1,0 +1,87 @@
+From vireshk  Thu Jul  1 07:24:00 2021
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [172.217.194.109] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Thu, 01 Jul 2021 07:24:00 +0530 (IST)
+Received: by 2002:a5d:9ac8:0:0:0:0:0 with SMTP id x8csp40375ion;         Wed, 30 Jun 2021 15:56:08 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJwqMA2xWbWku7uEKUWDgHi4c3dgPADQzDTHwvoMNd7uosxAasnshyfIWt0EfpU5s+p4tyK9
+X-Received: by 2002:a63:d90b:: with SMTP id r11mr36221761pgg.81.1625093768293;         Wed, 30 Jun 2021 15:56:08 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1625093768; cv=none;         d=google.com; s=arc-20160816;         b=qmR6PM7d5SKsD1+yJv6m3FGEyfWJfcwhoGS0p4huYn390ZqXVZpiGNQ9A8LTTv90Wl          fFRMHsXsr80114Rp0t2ZV5JP0mwCOLtHqr3/cjUi/TwfYnKTL5HD+uchyUhQyCc7cVYX          i5jqT6KsDq8ONz8Z4fmS0bRqF92w+/W01D8Y9XpP82HjllVkQ0CktU9oL3BLiW94/F2G          3uXuUeb8RiwWrr87NJ0JwD0QT+cq8DkeS2c3+9GoHvmiGsjkeRnd7vkINhe6uYUlYVBK          nPhe9cciqxBHbg9MIm8qdw4pkX4V81uSJ6swFYEGSAyP62U+gnAUAgeEyO9DUAemmh+h          EIGg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:references:in-reply-to          :message-id:date:subject:cc:to:from:dkim-signature;         bh=ulN/yy64W0BhCsoOfSFsWleScjhEGOwTqu3kU4uL+wo=;         b=qlN9J1BiBjd7vS3oLIhpW/DsmbyUhVSmxasb9QPrxoYKRccMfqW1VvFG2tvUoN0ta3          skNbcdaQlW4Z5JNLe5GxTZvaRT+rR55rJC2c2zAwG+JxPD+hddBnISGBc76p1UyoZUKO          6gqCrc1EcfhzYB6RaUQ7dsjk1pfNVHOSlL8gVKL5Mdau4Pb58+88ZUvpdhKPKJmblFKH          sRWJxZd4vDRk4wX/F6CHtlUtOpq6tiabCn05/GoiWdctkiCCFVk0bPCrynu3/9FXQ3Ci          IRRzrQvXogw++1kWCZzjar+B2ixHSIZT1XU6RSxTmSedeJUNcj35hvpndOToU6EQJlN1          5rUQ==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@kernel.org header.s=k20201202 header.b=Gg1GriXG;        spf=pass (google.com: domain of kabel@kernel.org designates 198.145.29.99 as permitted sender) smtp.mailfrom=kabel@kernel.org;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=kernel.org
+Return-Path: <kabel@kernel.org>
+Received: from mail.kernel.org (mail.kernel.org. [198.145.29.99])         by mx.google.com with ESMTPS id s21si25382517pgl.154.2021.06.30.15.56.07         for <viresh.kumar@linaro.org>         (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);         Wed, 30 Jun 2021 15:56:08 -0700 (PDT)
+Received-SPF: pass (google.com: domain of kabel@kernel.org designates 198.145.29.99 as permitted sender) client-ip=198.145.29.99;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@kernel.org header.s=k20201202 header.b=Gg1GriXG;        spf=pass (google.com: domain of kabel@kernel.org designates 198.145.29.99 as permitted sender) smtp.mailfrom=kabel@kernel.org;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=kernel.org
+Received: by mail.kernel.org (Postfix) with ESMTPSA id D3F54613D1; 	Wed, 30 Jun 2021 22:56:04 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=kernel.org; 	s=k20201202; t=1625093767; 	bh=1XbpMrAHLknLLoDhzLADpsI4YXpwMU7vvfhNLq5DXh8=; 	h=From:To:Cc:Subject:Date:In-Reply-To:References:From; 	b=Gg1GriXGY/N+rrmX/YSR1NIBzGTRhex6grbfuCbGsS6L6q2SqsXM358PqRyWjLxZ5 	 BflxoiOroAxRzWQKMbH2C+RkkuTWE3nwdn5WYL/Cz4g6Dz+qmzC/TJ17plQq3iqTM+ 	 87fQuZOABInlaf0b4jUMep1lOaAv0YzKr4U58J24rScMqI8vUcoZVuQdrz0wMddd3+ 	 bwEeXbhY4NHPISSA8PxEOmlzK5k4/tNzWHijTkB7OgBmzoI9uDu5Wu3hbdtVmGn9PK 	 W1jV216OcTVSPfxfv0is6LuaWRd1I24Wr8Wuok/c9n5S+InXTOqY8MWinIrsB4FqlM 	 MkyTrTnahYjKw==
+From: =?UTF-8?q?Marek=20Beh=C3=BAn?= <kabel@kernel.org>
+To: Viresh Kumar <viresh.kumar@linaro.org>, 	Gregory CLEMENT <gregory.clement@bootlin.com>, 	Ken Ma <make@marvell.com>, 	Victor Gu <xigu@marvell.com>
+Cc: Robert Marko <robert.marko@sartura.hr>, 	=?UTF-8?q?Pali=20Roh=C3=A1r?= <pali@kernel.org>, 	Tomasz Maciej Nowak <tmn505@gmail.com>, 	Anders Trier Olesen <anders.trier.olesen@gmail.com>, 	Philip Soares <philips@netisense.com>, 	linux-pm@vger.kernel.org, 	Sebastian Hesselbarth <sebastian.hesselbarth@gmail.com>, 	linux-arm-kernel@lists.infradead.org, 	Konstantin Porotchkin <kostap@marvell.com>, 	nnet <nnet@fastmail.fm>, 	Nadav Haklai <nadavh@marvell.com>, 	=?UTF-8?q?Marek=20Beh=C3=BAn?= <kabel@kernel.org>
+Subject: [PATCH v2] cpufreq: armada-37xx: forbid cpufreq for 1.2 GHz variant
+Date: Thu,  1 Jul 2021 00:56:01 +0200
+Message-Id: <20210630225601.6372-1-kabel@kernel.org>
+X-Mailer: git-send-email 2.31.1
+In-Reply-To: <20210630135942.29730-1-kabel@kernel.org>
+References: 
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+Status: RO
+X-Status: A
+Content-Length: 2322
+Lines: 54
+
+The 1.2 GHz variant of the Armada 3720 SOC is unstable with DVFS: when
+the SOC boots, the WTMI firmware sets clocks and AVS values that work
+correctly with 1.2 GHz CPU frequency, but random crashes occur once
+cpufreq driver starts scaling.
+
+We do not know currently what is the reason:
+- it may be that the voltage value for L0 for 1.2 GHz variant provided
+  by the vendor in the OTP is simply incorrect when scaling is used,
+- it may be that some delay is needed somewhere,
+- it may be something else.
+
+The most sane solution now seems to be to simply forbid the cpufreq
+driver on 1.2 GHz variant.
+
+Signed-off-by: Marek Behún <kabel@kernel.org>
+Fixes: 92ce45fb875d ("cpufreq: Add DVFS support for Armada 37xx")
+---
+If someone from Marvell could look into this, it would be great since
+basically 1.2 GHz variant cannot scale, which is a feature that was
+claimed to be supported by the SOC.
+
+Ken Ma / Victor Gu, you have worked on commit
+https://github.com/MarvellEmbeddedProcessors/linux-marvell/commit/d6719fdc2b3cac58064f41b531f86993c919aa9a
+in linux-marvell.
+Your patch takes away the 1202 mV constant for 1.2 GHz base CPU
+frequency and instead adds code that computes the voltages from the
+voltage found in L0 AVS register (which is filled in by WTMI firmware).
+
+Do you know why the code does not work correctly for some 1.2 GHz
+boards? Do we need to force the L0 voltage to 1202 mV if it is lower,
+or something?
+---
+ drivers/cpufreq/armada-37xx-cpufreq.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+diff --git a/drivers/cpufreq/armada-37xx-cpufreq.c b/drivers/cpufreq/armada-37xx-cpufreq.c
+index 3fc98a3ffd91..c10fc33b29b1 100644
+--- a/drivers/cpufreq/armada-37xx-cpufreq.c
++++ b/drivers/cpufreq/armada-37xx-cpufreq.c
+@@ -104,7 +104,11 @@ struct armada_37xx_dvfs {
+ };
+ 
+ static struct armada_37xx_dvfs armada_37xx_dvfs[] = {
+-	{.cpu_freq_max = 1200*1000*1000, .divider = {1, 2, 4, 6} },
++	/*
++	 * The cpufreq scaling for 1.2 GHz variant of the SOC is currently
++	 * unstable because we do not know how to configure it properly.
++	 */
++	/* {.cpu_freq_max = 1200*1000*1000, .divider = {1, 2, 4, 6} }, */
+ 	{.cpu_freq_max = 1000*1000*1000, .divider = {1, 2, 4, 5} },
+ 	{.cpu_freq_max = 800*1000*1000,  .divider = {1, 2, 3, 4} },
+ 	{.cpu_freq_max = 600*1000*1000,  .divider = {2, 4, 5, 6} },
+-- 
+2.31.1
+

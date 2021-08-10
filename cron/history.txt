@@ -72196,3 +72196,88 @@ fatal: not a git repository (or any parent up to mount point /mnt)
 Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
 
 Entering /home/vireshk/scripts
+[master 6d4b3d3c98e6] updates
+ 4 files changed, 158 insertions(+), 56 deletions(-)
+ create mode 100644 mutt/incoming/PATCH_v2_cpufreq_armada-37xx_forbid_cpufreq_for_1.2_GHz_variant.mbox
+ delete mode 100644 mutt/incoming/Patch_v2_cpufreq_blocklist_Qualcomm_sm8150_in_cpufreq-dt-platdev.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   5f63cda915d2..6d4b3d3c98e6  master -> master
+   55d8b160644a..5f63cda915d2  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Tuesday 10 August 2021 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + fc33d7bee22b...beaeac42124e virtio/devices -> virtio/devices (forced update)
+   5d79e5ce5489..484f2b7c61b9  bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next
+   5f35dad1848f..fc33d7bee22b  bkp/virtio/devices -> bkp/virtio/devices
+   64f9111dd622..6511a8b5b7a6  pm/acpi -> pm/acpi
+ - [deleted]                   pm/acpi-scan
+ - [deleted]                   pm/acpica
+ + 54e91db567d8...228706e6d423 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   349a2d52ffe5..9ac32de19606  pm/linux-next -> pm/linux-next
+   349a2d52ffe5..c500bee1c5b2  pm/master -> pm/master
+   22b65d31ad9d..4adae7dd10db  pm/pm -> pm/pm
+ + e132b9a1079c...9ac32de19606 pm/testing -> pm/testing (forced update)
+ * [new branch]                cpufreq/em -> cpufreq/em
+ * [new reference]             pmko/cpufreq/em -> pmko/cpufreq/em
+ * [new tag]                   acpi-5.14-rc1-2 -> acpi-5.14-rc1-2
+ * [new tag]                   acpi-5.14-rc3 -> acpi-5.14-rc3
+ * [new tag]                   acpi-5.14-rc4 -> acpi-5.14-rc4
+ * [new tag]                   acpi-5.14-rc5 -> acpi-5.14-rc5
+ * [new tag]                   pm-5.14-rc1-2 -> pm-5.14-rc1-2
+ * [new tag]                   pm-5.14-rc5 -> pm-5.14-rc5
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/virtio/rust
+fatal: not a git repository (or any parent up to mount point /mnt)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+Entering /home/vireshk/scripts

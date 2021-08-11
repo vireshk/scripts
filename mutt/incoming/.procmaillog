@@ -1627,3 +1627,6 @@ From vireshk  Thu Aug  5 09:03:18 2021
 From vireshk  Thu Jul  1 07:24:00 2021
  Subject: [PATCH v2] cpufreq: armada-37xx: forbid cpufreq for 1.2 GHz variant
   Folder: PATCH_v2_cpufreq_armada-37xx_forbid_cpufreq_for_1.2_GHz_vari	   6994
+From vireshk  Wed Aug 11 09:07:17 2021
+ Subject: [PATCH v1] cpufreq: qcom-hw: Set dvfs_possible_from_any_cpu cpufreq d
+  Folder: PATCH_v1_cpufreq_qcom-hw_Set_dvfs_possible_from_any_cpu_cpuf	   6176

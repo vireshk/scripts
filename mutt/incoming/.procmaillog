@@ -1630,3 +1630,6 @@ From vireshk  Thu Jul  1 07:24:00 2021
 From vireshk  Wed Aug 11 09:07:17 2021
  Subject: [PATCH v1] cpufreq: qcom-hw: Set dvfs_possible_from_any_cpu cpufreq d
   Folder: PATCH_v1_cpufreq_qcom-hw_Set_dvfs_possible_from_any_cpu_cpuf	   6176
+From vireshk  Mon Aug 16 07:58:18 2021
+ Subject: [PATCH v1] opp: Drop empty-table checks from _put functions
+  Folder: PATCH_v1_opp_Drop_empty-table_checks_from_put_functions.mbox	   8665

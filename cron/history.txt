@@ -72503,3 +72503,75 @@ fatal: not a git repository (or any parent up to mount point /mnt)
 Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
 
 Entering /home/vireshk/scripts
+[master 563b85553de1] updates
+ 5 files changed, 188 insertions(+), 61 deletions(-)
+ delete mode 100644 mutt/incoming/PATCH_v1_cpufreq_qcom-hw_Set_dvfs_possible_from_any_cpu_cpufreq_driver_flag.mbox
+ create mode 100644 mutt/incoming/PATCH_v1_opp_Drop_empty-table_checks_from_put_functions.mbox
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   59ec6d08302d..563b85553de1  master -> master
+   60f488b8ee5f..59ec6d08302d  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Tuesday 17 August 2021 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   17f9d3546a56..553e3955e54f  virtio/devices -> virtio/devices
+ + 4e3391c52983...e122d7edf1a2 bkp/opp/linux-next -> bkp/opp/linux-next (forced update)
+ + 6046629582d9...17f9d3546a56 bkp/virtio/devices -> bkp/virtio/devices (forced update)
+   fbb31cb805fd..484f2b7c61b9  pmko/cpufreq/arm/fixes -> pmko/cpufreq/arm/fixes
+ * [new branch]                cpufreq/arm/fixes -> cpufreq/arm/fixes
+ * [new reference]             bkp/opp/fixes -> bkp/opp/fixes
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/virtio/rust
+fatal: not a git repository (or any parent up to mount point /mnt)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+Entering /home/vireshk/scripts

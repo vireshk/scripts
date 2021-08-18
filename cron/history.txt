@@ -72575,3 +72575,158 @@ fatal: not a git repository (or any parent up to mount point /mnt)
 Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
 
 Entering /home/vireshk/scripts
+[master 4413738e7d86] updates
+ 1 file changed, 72 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   563b85553de1..4413738e7d86  master -> master
+   59ec6d08302d..563b85553de1  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wednesday 18 August 2021 01:00:02 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   8158488baa1e..86afc1df661a  cpufreq/arm/linux-next -> cpufreq/arm/linux-next
+   17f9d3546a56..553e3955e54f  bkp/virtio/devices -> bkp/virtio/devices
+ + 52275cd68d7e...83a6f7913a93 lnext/akpm -> lnext/akpm (forced update)
+ + 2260fa2839f9...f56c57648978 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 92d00774360d...9803fb968c8c lnext/master -> lnext/master (forced update)
+ + f964daf5c0ee...898ee1d3a2b1 lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   36a21d51725a..a2824f19e606  lnext/stable -> lnext/stable
+   8158488baa1e..86afc1df661a  pmko/cpufreq/arm/linux-next -> pmko/cpufreq/arm/linux-next
+ * [new branch]                i2c-fix -> i2c-fix
+ * [new reference]             bkp/cpufreq/arm/fixes -> bkp/cpufreq/arm/fixes
+ * [new reference]             i2c/coccinelle/get_drvdata -> i2c/coccinelle/get_drvdata
+ * [new reference]             i2c/coccinelle/xfer_no_check -> i2c/coccinelle/xfer_no_check
+ * [new reference]             i2c/i2c/for-current -> i2c/i2c/for-current
+ * [new reference]             i2c/i2c/for-mergewindow -> i2c/i2c/for-mergewindow
+ * [new reference]             i2c/i2c/for-next -> i2c/i2c/for-next
+ * [new reference]             i2c/i2c/no_to_adapter -> i2c/i2c/no_to_adapter
+ * [new reference]             i2c/master -> i2c/master
+ * [new reference]             i2c/mmc/retune-test -> i2c/mmc/retune-test
+ * [new reference]             i2c/renesas/gpio-logic-analyzer-v2 -> i2c/renesas/gpio-logic-analyzer-v2
+ * [new reference]             i2c/renesas/gpio-logic-analyzer-v3 -> i2c/renesas/gpio-logic-analyzer-v3
+ * [new reference]             i2c/renesas/i2c/recovery-sda-output -> i2c/renesas/i2c/recovery-sda-output
+ * [new reference]             i2c/renesas/i2c/recv_len -> i2c/renesas/i2c/recv_len
+ * [new reference]             i2c/renesas/i2c/slave-testunit -> i2c/renesas/i2c/slave-testunit
+ * [new reference]             i2c/renesas/iic-arbitration-lost -> i2c/renesas/iic-arbitration-lost
+ * [new reference]             i2c/renesas/iic-refactor -> i2c/renesas/iic-refactor
+ * [new reference]             i2c/renesas/ip-switch-rework -> i2c/renesas/ip-switch-rework
+ * [new reference]             i2c/renesas/ip-switch-rework-2018 -> i2c/renesas/ip-switch-rework-2018
+ * [new reference]             i2c/renesas/logic-analyzer-for-geert -> i2c/renesas/logic-analyzer-for-geert
+ * [new reference]             i2c/renesas/mmc-get-supply-docs -> i2c/renesas/mmc-get-supply-docs
+ * [new reference]             i2c/renesas/mmc/refactor_fault_injection-experimental -> i2c/renesas/mmc/refactor_fault_injection-experimental
+ * [new reference]             i2c/renesas/pretimeout-with-userspace-gov -> i2c/renesas/pretimeout-with-userspace-gov
+ * [new reference]             i2c/renesas/proper_bitshift -> i2c/renesas/proper_bitshift
+ * [new reference]             i2c/renesas/remove_unneeded_debugfs -> i2c/renesas/remove_unneeded_debugfs
+ * [new reference]             i2c/renesas/sdhi-emmc-hs-dma -> i2c/renesas/sdhi-emmc-hs-dma
+ * [new reference]             i2c/renesas/sdhi/busy_timeout -> i2c/renesas/sdhi/busy_timeout
+ * [new reference]             i2c/renesas/sdhi/for-5.15 -> i2c/renesas/sdhi/for-5.15
+ * [new reference]             i2c/renesas/sdhi/new_manual_calib-for-5.10 -> i2c/renesas/sdhi/new_manual_calib-for-5.10
+ * [new reference]             i2c/renesas/sdhi/set_max_seg -> i2c/renesas/sdhi/set_max_seg
+ * [new reference]             i2c/renesas/sdhihackfest -> i2c/renesas/sdhihackfest
+ * [new reference]             i2c/renesas/sdio-uhs -> i2c/renesas/sdio-uhs
+ * [new reference]             i2c/renesas/terminate_sync -> i2c/renesas/terminate_sync
+ * [new reference]             i2c/renesas/topc/ip-switch-rework-2017 -> i2c/renesas/topc/ip-switch-rework-2017
+ * [new reference]             i2c/renesas/topic/emmc-drive-strength -> i2c/renesas/topic/emmc-drive-strength
+ * [new reference]             i2c/renesas/topic/emmc-drive-strength-with_dbg -> i2c/renesas/topic/emmc-drive-strength-with_dbg
+ * [new reference]             i2c/renesas/topic/gen3-sdio -> i2c/renesas/topic/gen3-sdio
+ * [new reference]             i2c/renesas/topic/gpio-logic-analyzer -> i2c/renesas/topic/gpio-logic-analyzer
+ * [new reference]             i2c/renesas/topic/h3-pfc-set-voltage -> i2c/renesas/topic/h3-pfc-set-voltage
+ * [new reference]             i2c/renesas/topic/i2c-core-dma -> i2c/renesas/topic/i2c-core-dma
+ * [new reference]             i2c/renesas/topic/i2c-core-dma-rfc-v5 -> i2c/renesas/topic/i2c-core-dma-rfc-v5
+ * [new reference]             i2c/renesas/topic/i2c-core-dma-v3 -> i2c/renesas/topic/i2c-core-dma-v3
+ * [new reference]             i2c/renesas/topic/i2c-core-dma-v6 -> i2c/renesas/topic/i2c-core-dma-v6
+ * [new reference]             i2c/renesas/topic/i2c-fault-injection -> i2c/renesas/topic/i2c-fault-injection
+ * [new reference]             i2c/renesas/topic/i2c_alias_device -> i2c/renesas/topic/i2c_alias_device
+ * [new reference]             i2c/renesas/topic/i2c_alias_device_v2 -> i2c/renesas/topic/i2c_alias_device_v2
+ * [new reference]             i2c/renesas/topic/i2c_sdhi_maintenance -> i2c/renesas/topic/i2c_sdhi_maintenance
+ * [new reference]             i2c/renesas/topic/ip-switch-rework-2017 -> i2c/renesas/topic/ip-switch-rework-2017
+ * [new reference]             i2c/renesas/topic/la-prototype-experimental -> i2c/renesas/topic/la-prototype-experimental
+ * [new reference]             i2c/renesas/topic/mmc-delay-refactor -> i2c/renesas/topic/mmc-delay-refactor
+ * [new reference]             i2c/renesas/topic/mmc-delay-refactor-for-geert -> i2c/renesas/topic/mmc-delay-refactor-for-geert
+ * [new reference]             i2c/renesas/topic/pretimeout -> i2c/renesas/topic/pretimeout
+ * [new reference]             i2c/renesas/topic/rcar-i2c-recovery -> i2c/renesas/topic/rcar-i2c-recovery
+ * [new reference]             i2c/renesas/topic/sdhi-8bit-emmc -> i2c/renesas/topic/sdhi-8bit-emmc
+ * [new reference]             i2c/renesas/topic/sdhi-autocmd12-resp -> i2c/renesas/topic/sdhi-autocmd12-resp
+ * [new reference]             i2c/renesas/topic/sdhi-cmd23 -> i2c/renesas/topic/sdhi-cmd23
+ * [new reference]             i2c/renesas/topic/sdhi-dma-sync -> i2c/renesas/topic/sdhi-dma-sync
+ * [new reference]             i2c/renesas/topic/sdhi-emmc-hs -> i2c/renesas/topic/sdhi-emmc-hs
+ * [new reference]             i2c/renesas/topic/sdhi-manual-calib -> i2c/renesas/topic/sdhi-manual-calib
+ * [new reference]             i2c/renesas/topic/v3u-io-initial -> i2c/renesas/topic/v3u-io-initial
+ * [new reference]             i2c/renesas/v3u/avb-v2 -> i2c/renesas/v3u/avb-v2
+ * [new reference]             i2c/renesas/v3u/devel -> i2c/renesas/v3u/devel
+ * [new reference]             i2c/renesas/v3u/devel-v2 -> i2c/renesas/v3u/devel-v2
+ * [new reference]             i2c/renesas/v3u/devel-v3 -> i2c/renesas/v3u/devel-v3
+ * [new reference]             i2c/renesas/v3u/hacks -> i2c/renesas/v3u/hacks
+ * [new reference]             i2c/renesas/v3u/i2c-v2 -> i2c/renesas/v3u/i2c-v2
+ * [new reference]             i2c/renesas/v3u/scif-v2 -> i2c/renesas/v3u/scif-v2
+ * [new reference]             i2c/renesas/v3u/sdhi-v2 -> i2c/renesas/v3u/sdhi-v2
+ * [new reference]             i2c/renesas/v3u/timers-v1 -> i2c/renesas/v3u/timers-v1
+ * [new reference]             i2c/renesas/v3u/timers-v1-minimal -> i2c/renesas/v3u/timers-v1-minimal
+ * [new reference]             i2c/renesas/v3u/wdt-v2 -> i2c/renesas/v3u/wdt-v2
+ * [new reference]             i2c/renesas/v8-sdr104 -> i2c/renesas/v8-sdr104
+ * [new reference]             i2c/renesas/watchdog-fixes -> i2c/renesas/watchdog-fixes
+ * [new reference]             i2c/renesas/wdt-suppress-attr -> i2c/renesas/wdt-suppress-attr
+ * [new reference]             i2c/renesas/wdt/register_device -> i2c/renesas/wdt/register_device
+ * [new reference]             i2c/strings/bloat-o-meter -> i2c/strings/bloat-o-meter
+ * [new reference]             i2c/strings/i2c -> i2c/strings/i2c
+ * [new reference]             i2c/strings/rtc-no-func -> i2c/strings/rtc-no-func
+ * [new reference]             i2c/strings/usb_base -> i2c/strings/usb_base
+ * [new reference]             i2c/wsa/renesas/v3u/sdhi-v3 -> i2c/wsa/renesas/v3u/sdhi-v3
+ * [new tag]                   i2c-software-nodes-20210410 -> i2c-software-nodes-20210410
+ * [new tag]                   next-20210817 -> next-20210817
+ * [new tag]                   v5.14-rc6 -> v5.14-rc6
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/virtio/rust
+fatal: not a git repository (or any parent up to mount point /mnt)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+Entering /home/vireshk/scripts

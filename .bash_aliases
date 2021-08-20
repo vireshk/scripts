@@ -246,7 +246,7 @@ alias rustgpio="unlink $gpiosock*; $rustpath/vhost-device/target/debug/vhost-dev
 export qemugpio="-chardev socket,path=$junkpath/vgpio.sock0,id=vgpio -device vhost-user-gpio-pci,chardev=vgpio,id=gpio"
 
 # Rust
-alias rustcoverage="echo \"cd vhost-device; pytest  rust-vmm-ci/integration_tests/test_coverage.py --no-cleanup\"; msudo docker run --device=/dev/kvm -it --security-opt seccomp=unconfined --volume $rustpath/vhost-device:/vhost-device rustvmm/dev:v11"
+alias rustcoverage="echo \"cd vhost-device; pytest  rust-vmm-ci/integration_tests/test_coverage.py --no-cleanup\"; msudo docker run --device=/dev/kvm -it --security-opt seccomp=unconfined --volume $rustpath/vhost-device:/vhost-device rustvmm/dev:v12"
 alias rustchecks="cargo fmt --all -- --check; cargo clippy --workspace --bins --examples --benches --all-features -- -D warnings"
 
 

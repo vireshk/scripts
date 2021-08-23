@@ -1636,3 +1636,12 @@ From vireshk  Mon Aug 16 07:58:18 2021
 From vireshk  Tue Aug 10 07:55:43 2021
  Subject: [Patch v5 3/6] cpufreq: qcom-cpufreq-hw: Add dcvs interrupt support
   Folder: Patch_v5_3-6_cpufreq_qcom-cpufreq-hw_Add_dcvs_interrupt_supp	  13804
+From vireshk  Mon Aug 23 08:28:46 2021
+ Subject: [PATCH] cpufreq: blocklist more Qualcomm platforms in cpufreq-dt-plat
+  Folder: PATCH_cpufreq_blocklist_more_Qualcomm_platforms_in_cpufreq-d	   6472
+From vireshk  Mon Aug 23 08:28:46 2021
+ Subject: [PATCH] cpufreq: blocklist more Qualcomm platforms in cpufreq-dt-plat
+  Folder: PATCH_cpufreq_blocklist_more_Qualcomm_platforms_in_cpufreq-d	   6472
+From vireshk  Mon Aug 23 08:29:03 2021
+ Subject: [PATCH] opp: core: Check for pending links before reading required_op
+  Folder: PATCH_opp_core_Check_for_pending_links_before_reading_requir	   6584

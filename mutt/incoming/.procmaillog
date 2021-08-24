@@ -1645,3 +1645,12 @@ From vireshk  Mon Aug 23 08:28:46 2021
 From vireshk  Mon Aug 23 08:29:03 2021
  Subject: [PATCH] opp: core: Check for pending links before reading required_op
   Folder: PATCH_opp_core_Check_for_pending_links_before_reading_requir	   6584
+From vireshk  Mon Aug 23 15:46:39 2021
+ Subject: [PATCH v3] cpufreq: qcom-hw: Set dvfs_possible_from_any_cpu cpufreq d
+  Folder: PATCH_v3_cpufreq_qcom-hw_Set_dvfs_possible_from_any_cpu_cpuf	   6295
+From vireshk  Mon Aug 23 15:46:39 2021
+ Subject: [PATCH v3] cpufreq: qcom-hw: Set dvfs_possible_from_any_cpu cpufreq d
+  Folder: PATCH_v3_cpufreq_qcom-hw_Set_dvfs_possible_from_any_cpu_cpuf	   6295
+From vireshk  Mon Aug 23 15:46:39 2021
+ Subject: [PATCH v3] cpufreq: qcom-hw: Set dvfs_possible_from_any_cpu cpufreq d
+  Folder: PATCH_v3_cpufreq_qcom-hw_Set_dvfs_possible_from_any_cpu_cpuf	   6295

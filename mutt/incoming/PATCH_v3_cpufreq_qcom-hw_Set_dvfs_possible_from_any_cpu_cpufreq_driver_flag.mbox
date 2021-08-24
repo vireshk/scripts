@@ -1,0 +1,63 @@
+From vireshk  Mon Aug 23 15:46:39 2021
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [142.250.4.109] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Mon, 23 Aug 2021 15:46:39 +0530 (IST)
+Received: by 2002:a5e:a712:0:0:0:0:0 with SMTP id b18csp2032379iod;         Mon, 23 Aug 2021 03:16:07 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJwV0NMsBNCCHAI/rvafhEcsfNOyoy9Hwf4dUCsX61CsOgYxnfabgzFMFdEmLcBiYXWq5TyC
+X-Received: by 2002:a25:d751:: with SMTP id o78mr6564835ybg.34.1629713767758;         Mon, 23 Aug 2021 03:16:07 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1629713767; cv=none;         d=google.com; s=arc-20160816;         b=hvzvDoMQ/0Lc6oJd7AEeJo3ZWaUtK1NnJENRiR0wFviTxl0bluzhXb4UYE6pWD/DQa          fLpfoFOLSULFlTT9kK32M3KM2wkAJrHLQ2SJqTokBq3MI4gh2Omgi5yZuUh/cg3deFED          ZwZvZtiofOLjoBNrMs8pzEYYCFfLg2BIumipsNaY3iVN18fXSm/SJ5WVD0J7ttiRHPrK          JA2G+obECZHSShx7l22RZPPHvPGt5zYJQqlcRBO3L+5PFjW32YSjF51g0S7EZDIuHWZa          eIPdh1vxDuES5zGDpQWW69kIKUXvP3l7IglUBAg1hwFp23o0qpC2CE9g1n7yX+NDUc3w          c4+w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=message-id:date:subject:cc:to:from:dmarc-filter:sender          :dkim-signature;         bh=fNL5/uRZT3gAsMbmBThWEibZUiAf9+mkPhDIiyK7x8E=;         b=nau/heylr7DlyLFyNU1LS2rKOPTSXltEb1PUw2sLWEaO5SFzCK5IbhoHX2cetMmblZ          rMs5PpV7j6fIi7qmvmsBfa+ZGsq1M4rDIR6w6NnpC0eM9XJYdo2CGvLJMk2/8Qr48SFA          dcVRJEeff+YXszX6eHs003qE/9+wkdrIjar+hi+NNL/LKiK2TvC99O7KW0Lq+uZcXrXc          7qkGWjyWf9Ia/eH6pE+n03zWORfuoHbZfUpoj+mLK0rfR1WcEkyvQyvZVoU4GKOKUG8y          /DvcCgwY4tePJc7VySiiWSPHklW2lH4wU6+JASrDvuYBdGG3SSrwR/QyHYkmFCq6J5/k          iffw==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@mg.codeaurora.org header.s=smtp header.b=C9Mu4hZf;        spf=pass (google.com: domain of bounce+41d485.be9e4a-viresh.kumar=linaro.org@mg.codeaurora.org designates 69.72.43.7 as permitted sender) smtp.mailfrom="bounce+41d485.be9e4a-viresh.kumar=linaro.org@mg.codeaurora.org"
+Return-Path: <bounce+41d485.be9e4a-viresh.kumar=linaro.org@mg.codeaurora.org>
+Received: from m43-7.mailgun.net (m43-7.mailgun.net. [69.72.43.7])         by mx.google.com with UTF8SMTPS id z88si19022533ybh.76.2021.08.23.03.16.06         for <viresh.kumar@linaro.org>         (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);         Mon, 23 Aug 2021 03:16:07 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce+41d485.be9e4a-viresh.kumar=linaro.org@mg.codeaurora.org designates 69.72.43.7 as permitted sender) client-ip=69.72.43.7;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@mg.codeaurora.org header.s=smtp header.b=C9Mu4hZf;        spf=pass (google.com: domain of bounce+41d485.be9e4a-viresh.kumar=linaro.org@mg.codeaurora.org designates 69.72.43.7 as permitted sender) smtp.mailfrom="bounce+41d485.be9e4a-viresh.kumar=linaro.org@mg.codeaurora.org"
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mg.codeaurora.org; q=dns/txt;  s=smtp; t=1629713767; h=Message-Id: Date: Subject: Cc: To: From:  Sender; bh=fNL5/uRZT3gAsMbmBThWEibZUiAf9+mkPhDIiyK7x8E=; b=C9Mu4hZfNURtmRWLC/LcC0+9S7zxuIZqMadXGFg1yzc58UJCOaIrHIJsk13kQr22FDirTY1w  xsiHi1b0dfRNb6Vhl7ci9BbYKgb+vxF34baMzRJ2hKVpEMg8gks9JniTBONbDXACEaW+HzH7  hlin3r9VenqE3V/w3u73F6j+9qE=
+X-Mailgun-Sending-Ip: 69.72.43.7
+X-Mailgun-Sid: WyI3OWY0YiIsICJ2aXJlc2gua3VtYXJAbGluYXJvLm9yZyIsICJiZTllNGEiXQ==
+Received: from smtp.codeaurora.org  (ec2-35-166-182-171.us-west-2.compute.amazonaws.com [35.166.182.171]) by  smtp-out-n02.prod.us-east-1.postgun.com with SMTP id  6123755f89fbdf3ffe99380f (version=TLS1.2,  cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256); Mon, 23 Aug 2021 10:15:59  GMT
+Sender: tdas=codeaurora.org@mg.codeaurora.org
+Received: by smtp.codeaurora.org (Postfix, from userid 1001) 	id C7644C43616; Mon, 23 Aug 2021 10:15:58 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.0 (2014-02-07) on 	aws-us-west-2-caf-mail-1.web.codeaurora.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.9 required=2.0 tests=ALL_TRUSTED,BAYES_00,SPF_FAIL 	autolearn=no autolearn_force=no version=3.4.0
+Received: from tdas-linux.qualcomm.com (unknown [202.46.22.19]) 	(using TLSv1.2 with cipher ECDHE-RSA-AES128-SHA256 (128/128 bits)) 	(No client certificate requested) 	(Authenticated sender: tdas) 	by smtp.codeaurora.org (Postfix) with ESMTPSA id CF3E3C43460; 	Mon, 23 Aug 2021 10:15:54 +0000 (UTC)
+DMARC-Filter: OpenDMARC Filter v1.4.1 smtp.codeaurora.org CF3E3C43460
+Authentication-Results: aws-us-west-2-caf-mail-1.web.codeaurora.org; dmarc=none (p=none dis=none) header.from=codeaurora.org
+Authentication-Results: aws-us-west-2-caf-mail-1.web.codeaurora.org; spf=fail smtp.mailfrom=codeaurora.org
+From: Taniya Das <tdas@codeaurora.org>
+To: "Rafael J . Wysocki" <rjw@rjwysocki.net>, 	Viresh Kumar <viresh.kumar@linaro.org>, 	linux-pm@vger.kernel.org
+Cc: linux-arm-msm@vger.kernel.org, 	linux-kernel@vger.kernel.org, 	Douglas Anderson <dianders@chromium.org>, 	Rajendra Nayak <rnayak@codeaurora.org>, 	Stephen Boyd <swboyd@chromium.org>, 	Taniya Das <tdas@codeaurora.org>
+Subject: [PATCH v3] cpufreq: qcom-hw: Set dvfs_possible_from_any_cpu cpufreq driver flag
+Date: Mon, 23 Aug 2021 15:45:46 +0530
+Message-Id: <1629713746-18360-1-git-send-email-tdas@codeaurora.org>
+X-Mailer: git-send-email 2.7.4
+
+As remote cpufreq updates are supported on QCOM platforms, set
+dvfs_possible_from_any_cpu cpufreq driver flag.
+
+Signed-off-by: Taniya Das <tdas@codeaurora.org>
+---
+[v3]
+  * update the dvfs_possible_from_any_cpu always from qcom_cpufreq_hw_cpu_init
+[v2]
+  * update the dvfs_possible_from_any_cpu always.
+
+ drivers/cpufreq/qcom-cpufreq-hw.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/drivers/cpufreq/qcom-cpufreq-hw.c b/drivers/cpufreq/qcom-cpufreq-hw.c
+index f86859b..4dd77ac 100644
+--- a/drivers/cpufreq/qcom-cpufreq-hw.c
++++ b/drivers/cpufreq/qcom-cpufreq-hw.c
+@@ -348,6 +348,7 @@ static int qcom_cpufreq_hw_cpu_init(struct cpufreq_policy *policy)
+ 	}
+
+ 	policy->driver_data = data;
++	policy->dvfs_possible_from_any_cpu = true;
+
+ 	ret = qcom_cpufreq_hw_read_lut(cpu_dev, policy);
+ 	if (ret) {
+--
+Qualcomm INDIA, on behalf of Qualcomm Innovation Center, Inc.is a member
+of the Code Aurora Forum, hosted by the  Linux Foundation.
+

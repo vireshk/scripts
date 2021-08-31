@@ -73171,3 +73171,98 @@ fatal: not a git repository (or any parent up to mount point /mnt)
 Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
 
 Entering /home/vireshk/scripts
+[master 1588141a944c] updates
+ 3 files changed, 70 insertions(+)
+ create mode 100644 .bash_aliases.swp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   baac321f280d..1588141a944c  master -> master
+   c14c51efa624..baac321f280d  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/mock-gpio
+[master 331119417af6] updates
+ 1 file changed, 2 insertions(+)
+ create mode 100644 gpio-mock.mod
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/mock-gpio.git
+   bfc38c5e5629..331119417af6  master -> master
+ * [new reference]             bkp/master -> bkp/master
+
+
+
+ 
+Tuesday 31 August 2021 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 05bc63618a5b...f0712ace7fe0 cpufreq/arm/linux-next -> cpufreq/arm/linux-next (forced update)
+   56ca9b1fc803..76305b7e8900  virtio-gpio-base -> virtio-gpio-base
+ + 652afd45cf13...ea90a18882aa lnext/akpm -> lnext/akpm (forced update)
+ + 165b836a69b3...99af617e3b77 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + 86ed57fd8c93...93717cde744f lnext/master -> lnext/master (forced update)
+ + b8431df39851...50a532577e29 lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   f87d64319e6f..7d2a07b76933  lnext/stable -> lnext/stable
+   0f09f4c48118..294c34e704e7  pm/acpi -> pm/acpi
+ + 10bc7fbefe3a...a93c0039d89d pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 10bc7fbefe3a...a93c0039d89d pm/linux-next -> pm/linux-next (forced update)
+   7c60610d4767..e22ce8eb631b  pm/master -> pm/master
+   f2963c7ec7cc..7ee5fd12e8ca  pm/pm -> pm/pm
+ + 10bc7fbefe3a...a93c0039d89d pm/testing -> pm/testing (forced update)
+ + 05bc63618a5b...f0712ace7fe0 pmko/cpufreq/arm/linux-next -> pmko/cpufreq/arm/linux-next (forced update)
+ + e122d7edf1a2...94274f20f6bf pmko/opp/linux-next -> pmko/opp/linux-next (forced update)
+ * [new reference]             bkp/gpio-x86 -> bkp/gpio-x86
+ * [new tag]                   acpi-5.14-rc8 -> acpi-5.14-rc8
+ * [new tag]                   next-20210830 -> next-20210830
+ * [new tag]                   pm-5.14-rc8 -> pm-5.14-rc8
+ * [new tag]                   v5.14 -> v5.14
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/virtio/rust
+fatal: not a git repository (or any parent up to mount point /mnt)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+Entering /home/vireshk/scripts

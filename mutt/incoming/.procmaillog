@@ -1654,3 +1654,6 @@ From vireshk  Mon Aug 23 15:46:39 2021
 From vireshk  Mon Aug 23 15:46:39 2021
  Subject: [PATCH v3] cpufreq: qcom-hw: Set dvfs_possible_from_any_cpu cpufreq d
   Folder: PATCH_v3_cpufreq_qcom-hw_Set_dvfs_possible_from_any_cpu_cpuf	   6295
+From vireshk  Tue Aug 31 15:55:01 2021
+ Subject: [PATCH v6 5/7] cpufreq: Add an interface to mark inefficient frequenc
+  Folder: PATCH_v6_5-7_cpufreq_Add_an_interface_to_mark_inefficient_fr	   8768

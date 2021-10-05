@@ -1666,3 +1666,15 @@ From vireshk  Mon Aug 16 07:58:18 2021
 From vireshk  Mon Oct  4 08:49:28 2021
  Subject: [PATCH 4/5] cpufreq: tegra186/tegra194: Handle errors in BPMP respons
   Folder: PATCH_4-5_cpufreq_tegra186-tegra194_Handle_errors_in_BPMP_re	   7010
+From vireshk  Mon Oct  4 08:56:22 2021
+ Subject: [PATCH v13 01/35] opp: Change type of dev_pm_opp_attach_genpd(names) 
+  Folder: PATCH_v13_01-35_opp_Change_type_of_dev_pm_opp_attach_genpd_n	  10798
+From vireshk  Mon Oct  4 08:51:55 2021
+ Subject: [PATCH v2 1/4] opp: Add more resource-managed variants of dev_pm_opp_
+  Folder: PATCH_v2_1-4_opp_Add_more_resource-managed_variants_of_dev_p	  10663
+From vireshk  Tue Oct  5 09:28:28 2021
+ Subject: [PATCH v1 1/1] cpufreq:Fix parameter in parse_perf_domain
+  Folder: PATCH_v1_1-1_cpufreq-Fix_parameter_in_parse_perf_domain.mbox	   5035
+From vireshk  Mon Oct  4 10:13:49 2021
+ Subject: [PATCH] dt-bindings: cpufreq: cpufreq-qcom-hw: Convert to YAML bindin
+  Folder: PATCH_dt-bindings_cpufreq_cpufreq-qcom-hw_Convert_to_YAML_bi	  16365

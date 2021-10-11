@@ -1684,3 +1684,6 @@ From vireshk  Wed Oct  6 16:11:01 2021
 From vireshk  Wed Oct  6 16:11:01 2021
  Subject: Dump of my current Xen notes
   Folder: Dump_of_my_current_Xen_notes.mbox				  16908
+From vireshk  Fri Oct  8 13:17:29 2021
+ Subject: [PATCH -next] opp: Fix return in _opp_add_static_v2()
+  Folder: PATCH_-next_opp_Fix_return_in_opp_add_static_v2_.mbox		   5603

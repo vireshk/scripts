@@ -67,8 +67,8 @@ alias hjunk="cd /home/vireshk/junk/"
 alias hmdownload="cd /home/vireshk/mdownload"
 alias haastha="cd /home/vireshk/junk/aastha"
 alias hisol="cd /home/vireshk/work/repos/tools/isolation/"
-alias hwork="cd /home/vireshk/work/repos/kernel/linux/"
-alias handroid="cd /home/vireshk/work/repos/kernel/worktree/"
+alias hlinux="cd /home/vireshk/work/repos/kernel/linux/"
+alias hwork="cd /home/vireshk/work/repos/kernel/worktree/"
 alias haosp="cd /media/vireshk/*/android/"
 alias hpatches="cd /home/vireshk/scripts/mutt/incoming/"
 alias hmodule="cd /home/vireshk/work/repos/tools/module/"
@@ -174,19 +174,19 @@ alias myfetch="fetchmail -d 60 -L ~/.fetchmaillog"
 
 # qcom-board: skales
 PATH="$htools/skales:$PATH"
-alias qcomdtimg="hwork; cd ../qcom/; /home/vireshk/work/repos/tools/skales/dtbTool -o dt.img -s 2048 arch/arm64/boot/dts/qcom/"
-alias qcomimg="hwork; cd ../qcom/; /home/vireshk/work/repos/tools/skales/mkbootimg --kernel arch/arm64/boot/Image --ramdisk /home/vireshk/work/repos/tools/boards/qcom-820c/initrd.img-* --output boot-db820c.img --dt dt.img --pagesize 2048 --base 0x80000000 --cmdline \"root=/dev/sda9 rw rootwait console=ttyMSM0,115200n8\""
-alias qcomboot="hwork; cd ../qcom/; msudo fastboot boot boot-db820c.img"
-alias qcomupdate="hwork; nimage qcom; dtbs qcom; qcomdtimg; qcomimg; qcomboot"
-alias qcomflash="hwork; cd ../qcom/; msudo fastboot flash boot boot-db820c.img"
+alias qcomdtimg="hlinux; cd ../qcom/; /home/vireshk/work/repos/tools/skales/dtbTool -o dt.img -s 2048 arch/arm64/boot/dts/qcom/"
+alias qcomimg="hlinux; cd ../qcom/; /home/vireshk/work/repos/tools/skales/mkbootimg --kernel arch/arm64/boot/Image --ramdisk /home/vireshk/work/repos/tools/boards/qcom-820c/initrd.img-* --output boot-db820c.img --dt dt.img --pagesize 2048 --base 0x80000000 --cmdline \"root=/dev/sda9 rw rootwait console=ttyMSM0,115200n8\""
+alias qcomboot="hlinux; cd ../qcom/; msudo fastboot boot boot-db820c.img"
+alias qcomupdate="hlinux; nimage qcom; dtbs qcom; qcomdtimg; qcomimg; qcomboot"
+alias qcomflash="hlinux; cd ../qcom/; msudo fastboot flash boot boot-db820c.img"
 
 alias mounthikey="hhikey; msudo mount -o loop,rw,sync boot_fat.uefi.img boot-fat"
 
 #alias recoverhikey="hhikey; cd binaries/157; msudo python hisi-idt.py -d /dev/ttyUSB1 --img1=l-loader.bin"
 #alias flashhikey="hhikey; msudo fastboot flash boot boot_fat.uefi.img; fastboot reboot"
-#alias updatehikeya="hhikey; msudo cp ~/work/repos/kernel/bhikey/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb boot-fat/hi6220-hikey.dtb; msudo cp ~/work/repos/kernel/bhikey/arch/arm64/boot/Image boot-fat/kernel; sync; flashhikey; hwork; cd ../android"
-#alias updatehikeyac="hhikey; msudo cp ~/work/repos/kernel/bhikeyc/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb boot-fat/hi6220-hikey.dtb; msudo cp ~/work/repos/kernel/bhikeyc/arch/arm64/boot/Image boot-fat/kernel; sync; flashhikey; hwork; cd ../android"
-#alias updatehikeyu="hhikey; msudo cp ~/work/repos/kernel/barm64/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb boot-fat/hi6220-hikey-u.dtb; msudo cp ~/work/repos/kernel/barm64/arch/arm64/boot/Image boot-fat/kernel-u; sync; flashhikey; hwork"
+#alias updatehikeya="hhikey; msudo cp ~/work/repos/kernel/bhikey/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb boot-fat/hi6220-hikey.dtb; msudo cp ~/work/repos/kernel/bhikey/arch/arm64/boot/Image boot-fat/kernel; sync; flashhikey; hlinux; cd ../android"
+#alias updatehikeyac="hhikey; msudo cp ~/work/repos/kernel/bhikeyc/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb boot-fat/hi6220-hikey.dtb; msudo cp ~/work/repos/kernel/bhikeyc/arch/arm64/boot/Image boot-fat/kernel; sync; flashhikey; hlinux; cd ../android"
+#alias updatehikeyu="hhikey; msudo cp ~/work/repos/kernel/barm64/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb boot-fat/hi6220-hikey-u.dtb; msudo cp ~/work/repos/kernel/barm64/arch/arm64/boot/Image boot-fat/kernel-u; sync; flashhikey; hlinux"
 
 alias makehikey960bootimg="haosp; abootimg --create out/target/product/hikey960/boot.img -k ~/work/repos/kernel/bhikey960/arch/arm64/boot/Image-dtb -r out/target/product/hikey960/ramdisk.img -f /home/vireshk/work/repos/tools/boards/hikey/config/config-hikey960-bootimg"
 alias flashhikey960="haosp; fastboot flash boot out/target/product/hikey960/boot.img; fastboot reboot"
@@ -272,5 +272,5 @@ alias xenarm="/home/vireshk/work/repos/virtio/qemu//buildarm64/qemu-system-aarch
 alias myxenarm="xenarm $qemufs $qemurtc"
 
 # go to linux on shell startup
-hwork
+hlinux
 #clear

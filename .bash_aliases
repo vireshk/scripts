@@ -226,6 +226,7 @@ alias mountrouterdrive="curlftpfs vireshk:123456@192.168.1.1 ~/Videos/routerdriv
 alias ltpbuild="make clean;make autotools;./configure;make"
 
 #qemu
+alias sshqemu="ssh vireshk@localhost -p8022"
 alias qvim="vim -c 'set expandtab' -c 'set shiftwidth=4'"
 alias mountqemu="echo \"mount -t 9p -o trans=virtio r /mnt\""
 alias configqemu="../configure --python=/usr/bin/python3.8 --target-list=aarch64-softmmu --enable-virtfs"

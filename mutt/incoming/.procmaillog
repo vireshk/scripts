@@ -1687,3 +1687,6 @@ From vireshk  Wed Oct  6 16:11:01 2021
 From vireshk  Fri Oct  8 13:17:29 2021
  Subject: [PATCH -next] opp: Fix return in _opp_add_static_v2()
   Folder: PATCH_-next_opp_Fix_return_in_opp_add_static_v2_.mbox		   5603
+From vireshk  Fri Oct 29 08:23:02 2021
+ Subject: [PATCH v4] dt-bindings: opp: Allow multi-worded OPP entry name
+  Folder: PATCH_v4_dt-bindings_opp_Allow_multi-worded_OPP_entry_name.m	   7776

@@ -164,6 +164,11 @@ linaro/misc
 * ^(To|Cc):.*linux-pm@lists\.linux-foundation\.org
 linux-pm
 
+# linux-gpio
+:0:
+* ^(To|Cc):.*linux-gpio@vger\.kernel\.org
+linux-gpio
+
 # lwn
 :0:
 * ^(To|Cc):.*lwn@lwn\.net

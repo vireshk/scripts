@@ -76806,3 +76806,283 @@ fatal: not a git repository (or any parent up to mount point /mnt)
 Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
 
 Entering /home/vireshk/scripts
+[master c49c33bc98d0] updates
+ 3 files changed, 156 insertions(+), 4 deletions(-)
+Traceback (most recent call last):
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 103, in <module>
+    print(get_groups(sys.argv[1]))
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 55, in get_groups
+    user = get_crowd_user(user)
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 41, in get_crowd_user
+    base_dn, ldap.SCOPE_SUBTREE, search_filter, attrlist=['cn'])
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 852, in search_s
+    return self.search_ext_s(base,scope,filterstr,attrlist,attrsonly,None,None,timeout=self.timeout)
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 846, in search_ext_s
+    return self.result(msgid,all=1,timeout=timeout)[1]
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 738, in result
+    resp_type, resp_data, resp_msgid = self.result2(msgid,all,timeout)
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 742, in result2
+    resp_type, resp_data, resp_msgid, resp_ctrls = self.result3(msgid,all,timeout)
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 749, in result3
+    resp_ctrl_classes=resp_ctrl_classes
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 756, in result4
+    ldap_result = self._ldap_call(self._l.result4,msgid,all,timeout,add_ctrls,add_intermediates,add_extop)
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 329, in _ldap_call
+    reraise(exc_type, exc_value, exc_traceback)
+  File "/usr/lib/python3/dist-packages/ldap/compat.py", line 44, in reraise
+    raise exc_value
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 313, in _ldap_call
+    result = func(*args,**kwargs)
+ldap.SERVER_DOWN: {'desc': "Can't contact LDAP server"}
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 103, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 55, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 41, in get_crowd_user        
+remote:     base_dn, ldap.SCOPE_SUBTREE, search_filter, attrlist=['cn'])        
+remote:   File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 852, in search_s        
+remote:     return self.search_ext_s(base,scope,filterstr,attrlist,attrsonly,None,None,timeout=self.timeout)        
+remote:   File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 846, in search_ext_s        
+remote:     return self.result(msgid,all=1,timeout=timeout)[1]        
+remote:   File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 738, in result        
+remote:     resp_type, resp_data, resp_msgid = self.result2(msgid,all,timeout)        
+remote:   File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 742, in result2        
+remote:     resp_type, resp_data, resp_msgid, resp_ctrls = self.result3(msgid,all,timeout)        
+remote:   File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 749, in result3        
+remote:     resp_ctrl_classes=resp_ctrl_classes        
+remote:   File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 756, in result4        
+remote:     ldap_result = self._ldap_call(self._l.result4,msgid,all,timeout,add_ctrls,add_intermediates,add_extop)        
+remote:   File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 329, in _ldap_call        
+remote:     reraise(exc_type, exc_value, exc_traceback)        
+remote:   File "/usr/lib/python3/dist-packages/ldap/compat.py", line 44, in reraise        
+remote:     raise exc_value        
+remote:   File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 313, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'desc': "Can't contact LDAP server"}        
+remote: Traceback (most recent call last):        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 103, in <module>        
+remote:     print(get_groups(sys.argv[1]))        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 55, in get_groups        
+remote:     user = get_crowd_user(user)        
+remote:   File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 41, in get_crowd_user        
+remote:     base_dn, ldap.SCOPE_SUBTREE, search_filter, attrlist=['cn'])        
+remote:   File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 852, in search_s        
+remote:     return self.search_ext_s(base,scope,filterstr,attrlist,attrsonly,None,None,timeout=self.timeout)        
+remote:   File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 846, in search_ext_s        
+remote:     return self.result(msgid,all=1,timeout=timeout)[1]        
+remote:   File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 738, in result        
+remote:     resp_type, resp_data, resp_msgid = self.result2(msgid,all,timeout)        
+remote:   File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 742, in result2        
+remote:     resp_type, resp_data, resp_msgid, resp_ctrls = self.result3(msgid,all,timeout)        
+remote:   File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 749, in result3        
+remote:     resp_ctrl_classes=resp_ctrl_classes        
+remote:   File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 756, in result4        
+remote:     ldap_result = self._ldap_call(self._l.result4,msgid,all,timeout,add_ctrls,add_intermediates,add_extop)        
+remote:   File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 329, in _ldap_call        
+remote:     reraise(exc_type, exc_value, exc_traceback)        
+remote:   File "/usr/lib/python3/dist-packages/ldap/compat.py", line 44, in reraise        
+remote:     raise exc_value        
+remote:   File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 313, in _ldap_call        
+remote:     result = func(*args,**kwargs)        
+remote: ldap.SERVER_DOWN: {'desc': "Can't contact LDAP server"}        
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   36451649a242..c49c33bc98d0  master -> master
+   d8828fdf9689..36451649a242  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+Traceback (most recent call last):
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 103, in <module>
+    print(get_groups(sys.argv[1]))
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 55, in get_groups
+    user = get_crowd_user(user)
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 41, in get_crowd_user
+    base_dn, ldap.SCOPE_SUBTREE, search_filter, attrlist=['cn'])
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 852, in search_s
+    return self.search_ext_s(base,scope,filterstr,attrlist,attrsonly,None,None,timeout=self.timeout)
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 846, in search_ext_s
+    return self.result(msgid,all=1,timeout=timeout)[1]
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 738, in result
+    resp_type, resp_data, resp_msgid = self.result2(msgid,all,timeout)
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 742, in result2
+    resp_type, resp_data, resp_msgid, resp_ctrls = self.result3(msgid,all,timeout)
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 749, in result3
+    resp_ctrl_classes=resp_ctrl_classes
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 756, in result4
+    ldap_result = self._ldap_call(self._l.result4,msgid,all,timeout,add_ctrls,add_intermediates,add_extop)
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 329, in _ldap_call
+    reraise(exc_type, exc_value, exc_traceback)
+  File "/usr/lib/python3/dist-packages/ldap/compat.py", line 44, in reraise
+    raise exc_value
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 313, in _ldap_call
+    result = func(*args,**kwargs)
+ldap.SERVER_DOWN: {'desc': "Can't contact LDAP server"}
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+Traceback (most recent call last):
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 103, in <module>
+    print(get_groups(sys.argv[1]))
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 55, in get_groups
+    user = get_crowd_user(user)
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 41, in get_crowd_user
+    base_dn, ldap.SCOPE_SUBTREE, search_filter, attrlist=['cn'])
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 852, in search_s
+    return self.search_ext_s(base,scope,filterstr,attrlist,attrsonly,None,None,timeout=self.timeout)
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 846, in search_ext_s
+    return self.result(msgid,all=1,timeout=timeout)[1]
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 738, in result
+    resp_type, resp_data, resp_msgid = self.result2(msgid,all,timeout)
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 742, in result2
+    resp_type, resp_data, resp_msgid, resp_ctrls = self.result3(msgid,all,timeout)
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 749, in result3
+    resp_ctrl_classes=resp_ctrl_classes
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 756, in result4
+    ldap_result = self._ldap_call(self._l.result4,msgid,all,timeout,add_ctrls,add_intermediates,add_extop)
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 329, in _ldap_call
+    reraise(exc_type, exc_value, exc_traceback)
+  File "/usr/lib/python3/dist-packages/ldap/compat.py", line 44, in reraise
+    raise exc_value
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 313, in _ldap_call
+    result = func(*args,**kwargs)
+ldap.SERVER_DOWN: {'desc': "Can't contact LDAP server"}
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+Traceback (most recent call last):
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 103, in <module>
+    print(get_groups(sys.argv[1]))
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 55, in get_groups
+    user = get_crowd_user(user)
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 41, in get_crowd_user
+    base_dn, ldap.SCOPE_SUBTREE, search_filter, attrlist=['cn'])
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 852, in search_s
+    return self.search_ext_s(base,scope,filterstr,attrlist,attrsonly,None,None,timeout=self.timeout)
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 846, in search_ext_s
+    return self.result(msgid,all=1,timeout=timeout)[1]
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 738, in result
+    resp_type, resp_data, resp_msgid = self.result2(msgid,all,timeout)
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 742, in result2
+    resp_type, resp_data, resp_msgid, resp_ctrls = self.result3(msgid,all,timeout)
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 749, in result3
+    resp_ctrl_classes=resp_ctrl_classes
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 756, in result4
+    ldap_result = self._ldap_call(self._l.result4,msgid,all,timeout,add_ctrls,add_intermediates,add_extop)
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 329, in _ldap_call
+    reraise(exc_type, exc_value, exc_traceback)
+  File "/usr/lib/python3/dist-packages/ldap/compat.py", line 44, in reraise
+    raise exc_value
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 313, in _ldap_call
+    result = func(*args,**kwargs)
+ldap.SERVER_DOWN: {'desc': "Can't contact LDAP server"}
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+Traceback (most recent call last):
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 103, in <module>
+    print(get_groups(sys.argv[1]))
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 55, in get_groups
+    user = get_crowd_user(user)
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 41, in get_crowd_user
+    base_dn, ldap.SCOPE_SUBTREE, search_filter, attrlist=['cn'])
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 852, in search_s
+    return self.search_ext_s(base,scope,filterstr,attrlist,attrsonly,None,None,timeout=self.timeout)
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 846, in search_ext_s
+    return self.result(msgid,all=1,timeout=timeout)[1]
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 738, in result
+    resp_type, resp_data, resp_msgid = self.result2(msgid,all,timeout)
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 742, in result2
+    resp_type, resp_data, resp_msgid, resp_ctrls = self.result3(msgid,all,timeout)
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 749, in result3
+    resp_ctrl_classes=resp_ctrl_classes
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 756, in result4
+    ldap_result = self._ldap_call(self._l.result4,msgid,all,timeout,add_ctrls,add_intermediates,add_extop)
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 329, in _ldap_call
+    reraise(exc_type, exc_value, exc_traceback)
+  File "/usr/lib/python3/dist-packages/ldap/compat.py", line 44, in reraise
+    raise exc_value
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 313, in _ldap_call
+    result = func(*args,**kwargs)
+ldap.SERVER_DOWN: {'desc': "Can't contact LDAP server"}
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/mock-gpio
+On branch master
+nothing to commit, working tree clean
+Traceback (most recent call last):
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 103, in <module>
+    print(get_groups(sys.argv[1]))
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 55, in get_groups
+    user = get_crowd_user(user)
+  File "/srv/linaro-git-tools/gitolite-tools/gitolite-groups", line 41, in get_crowd_user
+    base_dn, ldap.SCOPE_SUBTREE, search_filter, attrlist=['cn'])
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 852, in search_s
+    return self.search_ext_s(base,scope,filterstr,attrlist,attrsonly,None,None,timeout=self.timeout)
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 846, in search_ext_s
+    return self.result(msgid,all=1,timeout=timeout)[1]
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 738, in result
+    resp_type, resp_data, resp_msgid = self.result2(msgid,all,timeout)
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 742, in result2
+    resp_type, resp_data, resp_msgid, resp_ctrls = self.result3(msgid,all,timeout)
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 749, in result3
+    resp_ctrl_classes=resp_ctrl_classes
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 756, in result4
+    ldap_result = self._ldap_call(self._l.result4,msgid,all,timeout,add_ctrls,add_intermediates,add_extop)
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 329, in _ldap_call
+    reraise(exc_type, exc_value, exc_traceback)
+  File "/usr/lib/python3/dist-packages/ldap/compat.py", line 44, in reraise
+    raise exc_value
+  File "/usr/lib/python3/dist-packages/ldap/ldapobject.py", line 313, in _ldap_call
+    result = func(*args,**kwargs)
+ldap.SERVER_DOWN: {'desc': "Can't contact LDAP server"}
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wednesday 01 December 2021 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   ffbe650c6d60..55ac5848f1ae  bkp/virtio/devices -> bkp/virtio/devices
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/virtio/rust
+fatal: not a git repository (or any parent up to mount point /mnt)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+Entering /home/vireshk/scripts

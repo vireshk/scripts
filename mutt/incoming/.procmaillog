@@ -1693,3 +1693,6 @@ From vireshk  Fri Oct 29 08:23:02 2021
 From vireshk  Tue Oct 19 20:19:40 2021
  Subject: [PATCH v8 8/8] selftests: gpio: add test cases for gpio-sim
   Folder: PATCH_v8_8-8_selftests_gpio_add_test_cases_for_gpio-sim.mbox	  14022
+From vireshk  Wed Nov 17 08:25:07 2021
+ Subject: [PATCH] cpufreq: qcom-hw: Use optional irq API
+  Folder: PATCH_cpufreq_qcom-hw_Use_optional_irq_API.mbox		   6427

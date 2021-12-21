@@ -78,6 +78,7 @@ export rustpath="/home/vireshk/work/repos/virtio/rust/"
 alias hqemu="cd $qemupath"
 alias hvirtio="cd $qemupath/../"
 alias hrust="cd $rustpath/vhost-device"
+alias hlibgpiod="cd $rustpath/libgpiod"
 
 updatepkglist() { echo "$*" >> ~/scripts/pkglist-install; }
 

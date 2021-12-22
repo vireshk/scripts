@@ -248,7 +248,7 @@ alias rustgpio="unlink $gpiosock*; $rustpath/vhost-device/target/debug/vhost-dev
 export qemugpio="-chardev socket,path=$junkpath/vgpio.sock0,id=vgpio -device vhost-user-gpio-pci,chardev=vgpio,id=gpio"
 
 # Rust
-alias rustcoverage="echo -e \"apt-get install libclang-dev clang musl-tools \ncd vhost-device; ./rust-vmm-ci/test_run.py; \ncd vhost-device; pytest rust-vmm-ci/integration_tests/test_coverage.py --no-cleanup\"; msudo docker run --device=/dev/kvm -it --security-opt seccomp=unconfined --volume $rustpath/vhost-device:/vhost-device --volume ~/.ssh:/root/.ssh rustvmm/dev:v13"
+alias rustcoverage="echo -e \"apt-get install libclang-dev clang musl-tools \ncd vhost-device; ./rust-vmm-ci/test_run.py; \ncd vhost-device; pytest rust-vmm-ci/integration_tests/test_coverage.py --no-cleanup\"; msudo docker run --device=/dev/kvm -it --security-opt seccomp=unconfined --volume $rustpath/vhost-device:/vhost-device --volume ~/.ssh:/root/.ssh rustvmm/dev:v14"
 alias rustchecks="cargo fmt --all -- --check; cargo clippy --workspace --bins --examples --benches --all-features -- -D warnings"
 
 

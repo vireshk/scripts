@@ -1696,3 +1696,12 @@ From vireshk  Tue Oct 19 20:19:40 2021
 From vireshk  Wed Nov 17 08:25:07 2021
  Subject: [PATCH] cpufreq: qcom-hw: Use optional irq API
   Folder: PATCH_cpufreq_qcom-hw_Use_optional_irq_API.mbox		   6427
+From vireshk  Mon Nov  1 21:45:07 2021
+ Subject: [PATCH v1 1/1] cpufreq: mediatek-hw: Fix double devm_remap in hotplug
+  Folder: PATCH_v1_1-1_cpufreq_mediatek-hw_Fix_double_devm_remap_in_ho	   7131
+From vireshk  Mon Dec 27 09:35:29 2021
+ Subject: [PATCH] Documentation: power: Update outdated contents in opp.rst
+  Folder: PATCH_Documentation_power_Update_outdated_contents_in_opp.rs	   7001
+From vireshk  Mon Dec 27 09:35:29 2021
+ Subject: [PATCH] Documentation: power: Update outdated contents in opp.rst
+  Folder: PATCH_Documentation_power_Update_outdated_contents_in_opp.rs	   7001

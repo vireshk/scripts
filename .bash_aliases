@@ -41,7 +41,7 @@ PATH="/home/vireshk/work/repos/tools/icdiff:$PATH"
 # coccinelle
 # PATH="/home/vireshk/work/repos/tools/cocci-bin:$PATH"
 
-alias myasciidoc="asciidoc -b html4 "
+alias myasciidoc="asciidoc -b html5 -a max-width=60em"
 
 #export CROSS_COMPILE="ccache arm-linux-gnueabihf-"
 #ARMV8C="CROSS_COMPILE=ccache aarch64-linux-gnu-"

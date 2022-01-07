@@ -78645,3 +78645,189 @@ fatal: not a git repository (or any parent up to mount point /mnt)
 Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
 
 Entering /home/vireshk/scripts
+[master cf13dc3bc25c] updates
+ 2 files changed, 72 insertions(+), 1 deletion(-)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   53e2b03bf37e..cf13dc3bc25c  master -> master
+   5619870fc357..53e2b03bf37e  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+[master 47c1c3285dbe] updates
+ 5 files changed, 1248 insertions(+), 460 deletions(-)
+ delete mode 100644 rust/.gpio.txt.swp
+ delete mode 100644 rust/gpio.html
+ delete mode 100644 rust/gpio.txt
+ create mode 100644 rust/i2c.html
+ create mode 100644 rust/i2c.txt
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/lwn.git
+   051fc0d5e4ba..47c1c3285dbe  master -> master
+   c8208ea70f88..051fc0d5e4ba  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/gpio-mock
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Friday 07 January 2022 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + 8833cc27bdfd...4519d515357b virtio/devices -> virtio/devices (forced update)
+ + 801cefa1c7a8...90211350337e lnext/akpm -> lnext/akpm (forced update)
+ + f06785129987...b44b8ab46d39 lnext/akpm-base -> lnext/akpm-base (forced update)
+ + ea586a076e8a...7a769a3922d8 lnext/master -> lnext/master (forced update)
+ + f3c3fc1577d6...4774f91d5489 lnext/pending-fixes -> lnext/pending-fixes (forced update)
+   76657eaef4a7..c9e6606c7fe9  lnext/stable -> lnext/stable
+   fc74e0a40e4f..75acfdb6fd92  origin/HEAD -> origin/HEAD
+   fc74e0a40e4f..75acfdb6fd92  origin/master -> origin/master
+ * [new branch]                gpio/sim -> gpio/sim
+ * [new reference]             gpio/at24/for-current -> gpio/at24/for-current
+ * [new reference]             gpio/at24/for-next -> gpio/at24/for-next
+ * [new reference]             gpio/gpio/devel -> gpio/gpio/devel
+ * [new reference]             gpio/gpio/for-current -> gpio/gpio/for-current
+ * [new reference]             gpio/gpio/for-next -> gpio/gpio/for-next
+ * [new reference]             gpio/gpio/gpio-sim -> gpio/gpio/gpio-sim
+ * [new reference]             gpio/master -> gpio/master
+ * [new tag]                   at24-4.15-fixes-for-wolfram -> at24-4.15-fixes-for-wolfram
+ * [new tag]                   at24-4.15-rc3-fixes-for-wolfram -> at24-4.15-rc3-fixes-for-wolfram
+ * [new tag]                   at24-4.16-rc4-for-wolfram -> at24-4.16-rc4-for-wolfram
+ * [new tag]                   at24-4.16-updates-for-wolfram -> at24-4.16-updates-for-wolfram
+ * [new tag]                   at24-4.17-rc5-fixes-for-wolfram -> at24-4.17-rc5-fixes-for-wolfram
+ * [new tag]                   at24-4.17-updates-for-wolfram -> at24-4.17-updates-for-wolfram
+ * [new tag]                   at24-4.18-updates-for-wolfram -> at24-4.18-updates-for-wolfram
+ * [new tag]                   at24-4.19-updates-for-wolfram -> at24-4.19-updates-for-wolfram
+ * [new tag]                   at24-4.20-updates-for-wolfram -> at24-4.20-updates-for-wolfram
+ * [new tag]                   at24-4.21-updates-for-wolfram -> at24-4.21-updates-for-wolfram
+ * [new tag]                   at24-5.1-updates-for-wolfram -> at24-5.1-updates-for-wolfram
+ * [new tag]                   at24-fixes-for-v5.10 -> at24-fixes-for-v5.10
+ * [new tag]                   at24-fixes-for-v5.14 -> at24-fixes-for-v5.14
+ * [new tag]                   at24-fixes-for-v5.6-rc6 -> at24-fixes-for-v5.6-rc6
+ * [new tag]                   at24-fixes-for-v5.9-rc5 -> at24-fixes-for-v5.9-rc5
+ * [new tag]                   at24-updates-for-v5.10 -> at24-updates-for-v5.10
+ * [new tag]                   at24-updates-for-v5.12 -> at24-updates-for-v5.12
+ * [new tag]                   at24-updates-for-v5.16 -> at24-updates-for-v5.16
+ * [new tag]                   at24-updates-for-v5.17 -> at24-updates-for-v5.17
+ * [new tag]                   at24-updates-for-v5.6 -> at24-updates-for-v5.6
+ * [new tag]                   at24-updates-for-v5.7 -> at24-updates-for-v5.7
+ * [new tag]                   at24-v5.2-updates-for-wolfram -> at24-v5.2-updates-for-wolfram
+ * [new tag]                   at24-v5.3-rc3-fixes-for-wolfram -> at24-v5.3-rc3-fixes-for-wolfram
+ * [new tag]                   at24-v5.3-updates-for-wolfram -> at24-v5.3-updates-for-wolfram
+ * [new tag]                   at24-v5.4-updates-for-wolfram -> at24-v5.4-updates-for-wolfram
+ * [new tag]                   at24-v5.5-updates-for-wolfram -> at24-v5.5-updates-for-wolfram
+ * [new tag]                   gpio-5.0-rc4-fixes-for-linus -> gpio-5.0-rc4-fixes-for-linus
+ * [new tag]                   gpio-5.1-rc2-fixes-for-linus -> gpio-5.1-rc2-fixes-for-linus
+ * [new tag]                   gpio-fixes-for-v5.10-rc3 -> gpio-fixes-for-v5.10-rc3
+ * [new tag]                   gpio-fixes-for-v5.10-rc7 -> gpio-fixes-for-v5.10-rc7
+ * [new tag]                   gpio-fixes-for-v5.11 -> gpio-fixes-for-v5.11
+ * [new tag]                   gpio-fixes-for-v5.11-rc5 -> gpio-fixes-for-v5.11-rc5
+ * [new tag]                   gpio-fixes-for-v5.11-rc7 -> gpio-fixes-for-v5.11-rc7
+ * [new tag]                   gpio-fixes-for-v5.12 -> gpio-fixes-for-v5.12
+ * [new tag]                   gpio-fixes-for-v5.12-rc3 -> gpio-fixes-for-v5.12-rc3
+ * [new tag]                   gpio-fixes-for-v5.12-rc4 -> gpio-fixes-for-v5.12-rc4
+ * [new tag]                   gpio-fixes-for-v5.12-rc8 -> gpio-fixes-for-v5.12-rc8
+ * [new tag]                   gpio-fixes-for-v5.13 -> gpio-fixes-for-v5.13
+ * [new tag]                   gpio-fixes-for-v5.13-rc3 -> gpio-fixes-for-v5.13-rc3
+ * [new tag]                   gpio-fixes-for-v5.13-rc6 -> gpio-fixes-for-v5.13-rc6
+ * [new tag]                   gpio-fixes-for-v5.15 -> gpio-fixes-for-v5.15
+ * [new tag]                   gpio-fixes-for-v5.15-rc3 -> gpio-fixes-for-v5.15-rc3
+ * [new tag]                   gpio-fixes-for-v5.15-rc4 -> gpio-fixes-for-v5.15-rc4
+ * [new tag]                   gpio-fixes-for-v5.15-rc6 -> gpio-fixes-for-v5.15-rc6
+ * [new tag]                   gpio-fixes-for-v5.16 -> gpio-fixes-for-v5.16
+ * [new tag]                   gpio-fixes-for-v5.16-rc2 -> gpio-fixes-for-v5.16-rc2
+ * [new tag]                   gpio-fixes-for-v5.16-rc7 -> gpio-fixes-for-v5.16-rc7
+ * [new tag]                   gpio-fixes-for-v5.5-rc5 -> gpio-fixes-for-v5.5-rc5
+ * [new tag]                   gpio-fixes-for-v5.6-rc2 -> gpio-fixes-for-v5.6-rc2
+ * [new tag]                   gpio-fixes-for-v5.7 -> gpio-fixes-for-v5.7
+ * [new tag]                   gpio-fixes-for-v5.7-rc3 -> gpio-fixes-for-v5.7-rc3
+ * [new tag]                   gpio-fixes-for-v5.7-rc6 -> gpio-fixes-for-v5.7-rc6
+ * [new tag]                   gpio-fixes-for-v5.8-rc3 -> gpio-fixes-for-v5.8-rc3
+ * [new tag]                   gpio-fixes-for-v5.9 -> gpio-fixes-for-v5.9
+ * [new tag]                   gpio-fixes-for-v5.9-rc4 -> gpio-fixes-for-v5.9-rc4
+ * [new tag]                   gpio-fixes-for-v5.9-rc6 -> gpio-fixes-for-v5.9-rc6
+ * [new tag]                   gpio-fixes-for-v5.9-rc7 -> gpio-fixes-for-v5.9-rc7
+ * [new tag]                   gpio-sim-for-v5.16 -> gpio-sim-for-v5.16
+ * [new tag]                   gpio-updates-for-v5.10-part1 -> gpio-updates-for-v5.10-part1
+ * [new tag]                   gpio-updates-for-v5.10-part2 -> gpio-updates-for-v5.10-part2
+ * [new tag]                   gpio-updates-for-v5.11 -> gpio-updates-for-v5.11
+ * [new tag]                   gpio-updates-for-v5.12 -> gpio-updates-for-v5.12
+ * [new tag]                   gpio-updates-for-v5.13-v2 -> gpio-updates-for-v5.13-v2
+ * [new tag]                   gpio-updates-for-v5.14 -> gpio-updates-for-v5.14
+ * [new tag]                   gpio-updates-for-v5.14-rc5 -> gpio-updates-for-v5.14-rc5
+ * [new tag]                   gpio-updates-for-v5.15 -> gpio-updates-for-v5.15
+ * [new tag]                   gpio-updates-for-v5.16 -> gpio-updates-for-v5.16
+ * [new tag]                   gpio-updates-for-v5.6-part1 -> gpio-updates-for-v5.6-part1
+ * [new tag]                   gpio-updates-for-v5.6-part2 -> gpio-updates-for-v5.6-part2
+ * [new tag]                   gpio-updates-for-v5.7-part1 -> gpio-updates-for-v5.7-part1
+ * [new tag]                   gpio-updates-for-v5.7-part2 -> gpio-updates-for-v5.7-part2
+ * [new tag]                   gpio-updates-for-v5.7-part4 -> gpio-updates-for-v5.7-part4
+ * [new tag]                   gpio-updates-for-v5.8-part1 -> gpio-updates-for-v5.8-part1
+ * [new tag]                   gpio-updates-for-v5.8-part2 -> gpio-updates-for-v5.8-part2
+ * [new tag]                   gpio-updates-for-v5.9-part1 -> gpio-updates-for-v5.9-part1
+ * [new tag]                   gpio-updates-for-v5.9-part2 -> gpio-updates-for-v5.9-part2
+ * [new tag]                   gpio-v5.1-rc3-fixes-for-linus -> gpio-v5.1-rc3-fixes-for-linus
+ * [new tag]                   gpio-v5.1-updates-for-linus -> gpio-v5.1-updates-for-linus
+ * [new tag]                   gpio-v5.1-updates-for-linus-part-2 -> gpio-v5.1-updates-for-linus-part-2
+ * [new tag]                   gpio-v5.2-updates-for-linus-part1 -> gpio-v5.2-updates-for-linus-part1
+ * [new tag]                   gpio-v5.3-rc1-fixes-for-linus -> gpio-v5.3-rc1-fixes-for-linus
+ * [new tag]                   gpio-v5.3-rc3-fixes-for-linus -> gpio-v5.3-rc3-fixes-for-linus
+ * [new tag]                   gpio-v5.3-rc7-fixes-for-linus -> gpio-v5.3-rc7-fixes-for-linus
+ * [new tag]                   gpio-v5.3-updates-for-linus -> gpio-v5.3-updates-for-linus
+ * [new tag]                   gpio-v5.4-fixes-for-linus -> gpio-v5.4-fixes-for-linus
+ * [new tag]                   gpio-v5.4-rc2-fixes-for-linus -> gpio-v5.4-rc2-fixes-for-linus
+ * [new tag]                   gpio-v5.4-rc5-fixes-for-linus -> gpio-v5.4-rc5-fixes-for-linus
+ * [new tag]                   gpio-v5.4-rc8-fixes-for-linus -> gpio-v5.4-rc8-fixes-for-linus
+ * [new tag]                   gpio-v5.4-updates-for-linus -> gpio-v5.4-updates-for-linus
+ * [new tag]                   gpio-v5.5-rc2-fixes-for-linus -> gpio-v5.5-rc2-fixes-for-linus
+ * [new tag]                   gpio-v5.5-updates-for-linus-part-1 -> gpio-v5.5-updates-for-linus-part-1
+ * [new tag]                   gpio-v5.5-updates-for-linus-part-2 -> gpio-v5.5-updates-for-linus-part-2
+ * [new tag]                   next-20220105 -> next-20220105
+ * [new tag]                   v5.16-rc8 -> v5.16-rc8
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/virtio/rust
+fatal: not a git repository (or any parent up to mount point /mnt)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+Entering /home/vireshk/scripts

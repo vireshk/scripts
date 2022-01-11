@@ -236,7 +236,7 @@ alias buildqemu="configqemu; make"
 # I2C
 export i2csock="$junkpath/vi2c.sock"
 alias vui2c="unlink $i2csock; $qemupath/buildarm64/tools/vhost-user-i2c/vhost-user-i2c --socket-path=$i2csock -l 6:20"
-alias rusti2c="unlink $i2csock; $rustpath/vhost-device/target/debug/vhost-device-i2c --socket-path=$i2csock -c=1 -l 6:32"
+alias rusti2c="unlink $i2csock; $rustpath/vhost-device/target/debug/vhost-device-i2c -s $i2csock -c 1 -l 6:32"
 alias i2ccreate="echo \"echo ds1338 0x20 > /sys/bus/i2c/devices/i2c-1/new_device\""
 alias smbuscreate="echo \"echo al3320a 0x20 > /sys/class/i2c-adapter/i2c-1/new_device\""
 export qemui2c="-chardev socket,path=$junkpath/vi2c.sock0,id=vi2c -device vhost-user-i2c-device,chardev=vi2c,id=i2c"
@@ -244,7 +244,7 @@ export qemui2c="-chardev socket,path=$junkpath/vi2c.sock0,id=vi2c -device vhost-
 # GPIO
 export gpiosock="$junkpath/vgpio.sock"
 alias vugpio="unlink $gpiosock; $qemupath/buildarm64/tools/vhost-user-gpio/vhost-user-gpio --socket-path=$gpiosock"
-alias rustgpio="unlink $gpiosock*; $rustpath/vhost-device/target/debug/vhost-device-gpio --socket-path=$gpiosock -c=1 -l 0"
+alias rustgpio="unlink $gpiosock*; $rustpath/vhost-device/target/debug/vhost-device-gpio -s $gpiosock -c 1 -l 0"
 export qemugpio="-chardev socket,path=$junkpath/vgpio.sock0,id=vgpio -device vhost-user-gpio-pci,chardev=vgpio,id=gpio"
 
 # Rust

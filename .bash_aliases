@@ -231,7 +231,7 @@ alias sshqemu="ssh vireshk@localhost -p8022"
 alias qvim="vim -c 'set expandtab' -c 'set shiftwidth=4'"
 alias mountqemu="echo \"mount -t 9p -o trans=virtio r /mnt\""
 alias configqemu="../configure --python=/usr/bin/python3.8 --target-list=aarch64-softmmu --enable-virtfs"
-alias buildqemu="configqemu; make"
+alias buildqemu="configqemu; make -j 64"
 
 # I2C
 export i2csock="$junkpath/vi2c.sock"

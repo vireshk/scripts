@@ -1711,3 +1711,9 @@ From vireshk  Wed Feb  9 09:38:19 2022
 From vireshk  Wed Feb  9 09:41:46 2022
  Subject: [PATCH] cpufreq: qcom-cpufreq-nvmem: fix reading of PVS Valid fuse
   Folder: PATCH_cpufreq_qcom-cpufreq-nvmem_fix_reading_of_PVS_Valid_fu	   5068
+From vireshk  Wed Feb  9 09:49:36 2022
+ Subject: [PATCH v3] cpufreq: CPPC: Fix performance/frequency conversion
+  Folder: PATCH_v3_cpufreq_CPPC_Fix_performance-frequency_conversion.m	   7877
+From vireshk  Wed Feb  9 09:37:58 2022
+ Subject: [RFC PATCH] tests/qtest: attempt to enable tests for virtio-gpio (!wo
+  Folder: RFC_PATCH_tests-qtest_attempt_to_enable_tests_for_virtio-gpi	  13371

@@ -73,18 +73,21 @@ alias haosp="cd /media/vireshk/*/android/"
 alias hpatches="cd /home/vireshk/scripts/mutt/incoming/"
 alias hmodule="cd /home/vireshk/work/repos/tools/module/"
 alias hlwn="cd /home/vireshk/work/repos/tools/lwn"
-export qemupath="/home/vireshk/work/repos/virtio/qemu/"
+export QEMUPATH="/home/vireshk/work/repos/virtio/qemu/"
+export QEMUAARCH64="$QEMUPATH/build/aarch64-softmmu/qemu-system-aarch64"
+alias hqemu="cd $QEMUPATH"
+alias hvirtio="cd $QEMUPATH/../"
 export rustpath="/home/vireshk/work/repos/virtio/rust/"
-alias hqemu="cd $qemupath"
-alias hvirtio="cd $qemupath/../"
 alias hrust="cd $rustpath/vhost-device"
 alias hlibgpiod="cd $rustpath/libgpiod"
+export AARCH64BUILD="/home/vireshk/work/repos/kernel/barm64/arch/arm64/boot"
 
 updatepkglist() { echo "$*" >> ~/scripts/pkglist-install; }
 
 alias linarogit='ssh viresh.kumar@git.linaro.org'
 alias sshbbone="ssh root@192.168.0.4"
 alias sshdesktop="ssh vireshk@192.168.0.2"
+alias sshhikey="ssh root@192.168.0.162"
 alias sshlinaro='echo "scp test.txt  viresh.kumar@git.linaro.org:/home/vireshk/work"'
 alias lmc="echo msudo linaro-media-create --mmc /dev/sdb --dev arndale --hwpack-force-yes --hwpack /home/vireshk/work/boards/arndale/hwpack_linaro-arndale_20140417-630_armhf_supported.tar.gz --binary /home/vireshk/work/rootfs/linaro/linaro-saucy-developer-20140410-652.tar.gz"
 
@@ -187,18 +190,16 @@ alias mounthikey="hhikey; msudo mount -o loop,rw,sync boot_fat.uefi.img boot-fat
 #alias flashhikey="hhikey; msudo fastboot flash boot boot_fat.uefi.img; fastboot reboot"
 #alias updatehikeya="hhikey; msudo cp ~/work/repos/kernel/bhikey/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb boot-fat/hi6220-hikey.dtb; msudo cp ~/work/repos/kernel/bhikey/arch/arm64/boot/Image boot-fat/kernel; sync; flashhikey; hlinux; cd ../android"
 #alias updatehikeyac="hhikey; msudo cp ~/work/repos/kernel/bhikeyc/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb boot-fat/hi6220-hikey.dtb; msudo cp ~/work/repos/kernel/bhikeyc/arch/arm64/boot/Image boot-fat/kernel; sync; flashhikey; hlinux; cd ../android"
-#alias updatehikeyu="hhikey; msudo cp ~/work/repos/kernel/barm64/arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb boot-fat/hi6220-hikey-u.dtb; msudo cp ~/work/repos/kernel/barm64/arch/arm64/boot/Image boot-fat/kernel-u; sync; flashhikey; hlinux"
+#alias updatehikeyu="hhikey; msudo cp $AARCH64BUILD/dts/hisilicon/hi6220-hikey.dtb boot-fat/hi6220-hikey-u.dtb; msudo cp $AARCH64BUILD/Image boot-fat/kernel-u; sync; flashhikey; hlinux"
 
 alias makehikey960bootimg="haosp; abootimg --create out/target/product/hikey960/boot.img -k ~/work/repos/kernel/bhikey960/arch/arm64/boot/Image-dtb -r out/target/product/hikey960/ramdisk.img -f /home/vireshk/work/repos/tools/boards/hikey/config/config-hikey960-bootimg"
 alias flashhikey960="haosp; fastboot flash boot out/target/product/hikey960/boot.img; fastboot reboot"
 alias updatehikey960="makehikey960bootimg; flashhikey960;"
 alias buildupdatehikey960="handroid; nimage hikey960; makehikey960bootimg; flashhikey960; handroid"
 
-ARMBOOTU="~/work/repos/kernel/barm64/arch/arm64/boot"
-
-alias makehikeydtbimg="cat $ARMBOOTU/Image $ARMBOOTU/dts/hisilicon/hi6220-hikey.dtb > $ARMBOOTU/Image-dtb"
-alias makehikeybootimg="makehikeydtbimg; abootimg --create $ARMBOOTU/boot.img -k $ARMBOOTU/Image-dtb -r /home/vireshk/work/repos/tools/boards/hikey/boot-fat/ramdisk.img -f /home/vireshk/work/repos/tools/boards/hikey/config/config-hikey6220-bootimg-ubuntu"
-alias flashhikey="fastboot flash boot $ARMBOOTU/boot.img; fastboot reboot"
+alias makehikeydtbimg="cat $AARCH64BUILD/Image $AARCH64BUILD/dts/hisilicon/hi6220-hikey.dtb > $AARCH64BUILD/Image-dtb"
+alias makehikeybootimg="makehikeydtbimg; abootimg --create $AARCH64BUILD/boot.img -k $AARCH64BUILD/Image-dtb -r /home/vireshk/work/repos/tools/boards/hikey/boot-fat/ramdisk.img -f /home/vireshk/work/repos/tools/boards/hikey/config/config-hikey6220-bootimg-ubuntu"
+alias flashhikey="fastboot flash boot $AARCH64BUILD/boot.img; fastboot reboot"
 alias updatehikey="makehikeybootimg; flashhikey;"
 
 ARMBOOTA="~/work/repos/kernel/bhikeyc/arch/arm64/boot"
@@ -235,7 +236,7 @@ alias buildqemu="configqemu; make -j 64"
 
 # I2C
 export i2csock="$junkpath/vi2c.sock"
-alias vui2c="unlink $i2csock; $qemupath/buildarm64/tools/vhost-user-i2c/vhost-user-i2c --socket-path=$i2csock -l 6:20"
+alias vui2c="unlink $i2csock; $QEMUPATH/build/aarch64-softmmu/tools/vhost-user-i2c/vhost-user-i2c --socket-path=$i2csock -l 6:20"
 alias rusti2c="unlink $i2csock; $rustpath/vhost-device/target/debug/vhost-device-i2c -s $i2csock -c 1 -l 6:32"
 alias i2ccreate="echo \"echo ds1338 0x20 > /sys/bus/i2c/devices/i2c-1/new_device\""
 alias smbuscreate="echo \"echo al3320a 0x20 > /sys/class/i2c-adapter/i2c-1/new_device\""
@@ -243,7 +244,7 @@ export qemui2c="-chardev socket,path=$junkpath/vi2c.sock0,id=vi2c -device vhost-
 
 # GPIO
 export gpiosock="$junkpath/vgpio.sock"
-alias vugpio="unlink $gpiosock; $qemupath/buildarm64/tools/vhost-user-gpio/vhost-user-gpio --socket-path=$gpiosock"
+alias vugpio="unlink $gpiosock; $QEMUPATH/build/aarch64-softmmu/tools/vhost-user-gpio/vhost-user-gpio --socket-path=$gpiosock"
 alias rustgpio="unlink $gpiosock*; $rustpath/vhost-device/target/debug/vhost-device-gpio -s $gpiosock -c 1 -l 0"
 export qemugpio="-chardev socket,path=$junkpath/vgpio.sock0,id=vgpio -device vhost-user-gpio-pci,chardev=vgpio,id=gpio"
 
@@ -251,27 +252,39 @@ export qemugpio="-chardev socket,path=$junkpath/vgpio.sock0,id=vgpio -device vho
 alias rustcoverage="echo -e \"apt-get install libclang-dev clang musl-tools \ncd vhost-device; ./rust-vmm-ci/test_run.py; \ncd vhost-device; pytest rust-vmm-ci/integration_tests/test_coverage.py --no-cleanup\"; msudo docker run --device=/dev/kvm -it --security-opt seccomp=unconfined --volume $rustpath/vhost-device:/vhost-device --volume ~/.ssh:/root/.ssh rustvmm/dev:v15"
 alias rustchecks="cargo fmt --all -- --check; cargo clippy --workspace --bins --examples --benches --all-features -- -D warnings"
 
-
-export qemufs=" -fsdev local,id=r,path=$qemupath/../,security_model=none -device virtio-9p-device,fsdev=r,mount_tag=r"
+export qemufs=" -fsdev local,id=r,path=$QEMUPATH/../,security_model=none -device virtio-9p-device,fsdev=r,mount_tag=r"
 export qemuobj=" -object memory-backend-file,id=mem,size=4G,mem-path=/dev/shm,share=on -numa node,memdev=mem"
 export qemurtc="-device ds1338,address=0x20"
 
-alias qemuarm="$qemupath/buildarm64/qemu-system-aarch64 -M virt -machine virtualization=true -machine virt,gic-version=3 -cpu max -smp 12 -m 4096 -drive if=virtio,format=qcow2,file=$qemupath/../host-qemu/disk.img -device virtio-scsi-pci,id=scsi0 -object rng-random,filename=/dev/urandom,id=rng0 -device virtio-rng-pci,rng=rng0 -device virtio-net-pci,netdev=net0 -netdev user,id=net0,hostfwd=tcp::8022-:22 -nographic -kernel ~/work/repos/kernel/barm64/arch/arm64/boot/Image --append \"earlycon root=/dev/vda2\" $qemuobj"
+alias qemuarm="$QEMUAARCH64 -M virt -machine virtualization=true -machine virt,gic-version=3 -cpu max -smp 12 -m 4096 -drive if=virtio,format=qcow2,file=$QEMUPATH/../host-qemu/disk.img -device virtio-scsi-pci,id=scsi0 -object rng-random,filename=/dev/urandom,id=rng0 -device virtio-rng-pci,rng=rng0 -device virtio-net-pci,netdev=net0 -netdev user,id=net0,hostfwd=tcp::8022-:22 -nographic -kernel $AARCH64BUILD/Image --append \"earlycon root=/dev/vda2\" $qemuobj"
 alias qemuarmi2c="qemuarm $qemui2c $qemufs $qemurtc"
 alias qemuarmgpio="qemuarm $qemugpio"
 
-alias qemuarmold="$qemupath/buildarm64/qemu-system-aarch64 -M virt -machine virtualization=true -machine virt,gic-version=3 -cpu max -smp 2 -m 4096 -drive if=pflash,format=raw,file=$qemupath/../host-qemu/efi.img,readonly -drive if=pflash,format=raw,file=$qemupath/../host-qemu/varstore.img  -drive if=virtio,format=qcow2,file=$qemupath/../host-qemu/disk.img -device virtio-scsi-pci,id=scsi0 -object rng-random,filename=/dev/urandom,id=rng0 -device virtio-rng-pci,rng=rng0 -device virtio-net-pci,netdev=net0 -netdev user,id=net0,hostfwd=tcp::8022-:22 -nographic -kernel ~/work/repos/kernel/barm64/arch/arm64/boot/Image --append \"earlycon root=/dev/vda2\""
+alias qemuarmold="$QEMUAARCH64 -M virt -machine virtualization=true -machine virt,gic-version=3 -cpu max -smp 2 -m 4096 -drive if=pflash,format=raw,file=$QEMUPATH/../host-qemu/efi.img,readonly -drive if=pflash,format=raw,file=$QEMUPATH/../host-qemu/varstore.img  -drive if=virtio,format=qcow2,file=$QEMUPATH/../host-qemu/disk.img -device virtio-scsi-pci,id=scsi0 -object rng-random,filename=/dev/urandom,id=rng0 -device virtio-rng-pci,rng=rng0 -device virtio-net-pci,netdev=net0 -netdev user,id=net0,hostfwd=tcp::8022-:22 -nographic -kernel $AARCH64BUILD/Image --append \"earlycon root=/dev/vda2\""
 
-alias qemuarmf="$qemupath/buildarm64/qemu-system-aarch64 -machine virt,virtualization=on,gic-version=max -cpu cortex-a57 -machine type=virt -nographic -smp 4 -m 4G -kernel ~/work/repos/kernel/barm64/arch/arm64/boot/Image  --append \"console=ttyAMA0\" $qemuobj"
+alias qemuarmf="$QEMUAARCH64 -machine virt,virtualization=on,gic-version=max -cpu cortex-a57 -machine type=virt -nographic -smp 4 -m 4G -kernel $AARCH64BUILD/Image  --append \"console=ttyAMA0\" $qemuobj"
 alias qemuarmfi2c="qemuarmf $qemui2c $qemufs"
 alias qemuarmfgpio="qemuarmf $qemugpio $qemufs"
 
-#alias myqemuvexp="$qemupath/buildarm64/qemu-system-aarch64 -machine vexpress-a15 -nographic -smp 4 -m 2G -kernel ~/work/repos/kernel/barm/arch/arm/boot/zImage -dtb ~/work/repos/kernel/barm/arch/arm/boot/dts/vexpress-v2p-ca15-tc1.dtb --append \"console=ttyAMA0\" -object memory-backend-file,id=mem,size=2G,mem-path=/dev/shm,share=on $qemufs"
+#alias myqemuvexp="$QEMUAARCH64 -machine vexpress-a15 -nographic -smp 4 -m 2G -kernel ~/work/repos/kernel/barm/arch/arm/boot/zImage -dtb ~/work/repos/kernel/barm/arch/arm/boot/dts/vexpress-v2p-ca15-tc1.dtb --append \"console=ttyAMA0\" -object memory-backend-file,id=mem,size=2G,mem-path=/dev/shm,share=on $qemufs"
 
-alias qemux86="$qemupath/buildx86/qemu-system-x86_64  -smp 12 -kernel ~/work/repos/kernel/bx86/arch/x86_64/boot/bzImage -boot c -m 2049M -drive file=$qemupath/../buildroot/buildx86/images/rootfs.ext2,format=raw -append \"root=/dev/sda rw console=ttyS0,115200 acpi=off nokaslr\" -nographic -display none"
+alias qemux86="$QEMUPATH/buildx86/qemu-system-x86_64  -smp 12 -kernel ~/work/repos/kernel/bx86/arch/x86_64/boot/bzImage -boot c -m 2049M -drive file=$QEMUPATH/../buildroot/buildx86/images/rootfs.ext2,format=raw -append \"root=/dev/sda rw console=ttyS0,115200 acpi=off nokaslr\" -nographic -display none"
 
-alias xenarm="/home/vireshk/work/repos/virtio/qemu//buildarm64/qemu-system-aarch64 -machine virt,virtualization=on -cpu cortex-a57 -machine type=virt -serial mon:stdio -device virtio-net-pci,netdev=net0 -netdev user,id=net0,hostfwd=tcp::8022-:22 -display none -m 8192 -kernel /home/vireshk/work/repos/virtio/xen/xen/xen -append \"dom0_max_vcpus=8 loglvl=all guest_loglvl=all\" -device guest-loader,addr=0x46000000,kernel=/home/vireshk/work/repos/kernel/barm64/arch/arm64/boot/Image,bootargs=\"root=/dev/sda2 console=hvc0 earlyprintk=xen\" -smp 8 -device virtio-scsi-pci -drive id=hd0,index=0,if=none,format=qcow2,file=/home/vireshk/work/repos/virtio/host-qemu/debian-buster-arm64.qcow2 -device scsi-hd,drive=hd0"
-alias myxenarm="xenarm $qemufs $qemurtc"
+#alias xenarm="$QEMUAARCH64 -machine virt,virtualization=on -cpu cortex-a57 -machine type=virt -serial mon:stdio -device virtio-net-pci,netdev=net0 -netdev user,id=net0,hostfwd=tcp::8022-:22 -display none -m 8192 -kernel /home/vireshk/work/repos/virtio/xen/xen/xen -append \"dom0_max_vcpus=8 loglvl=all guest_loglvl=all\" -device guest-loader,addr=0x46000000,kernel=$AARCH64BUILD/Image,bootargs=\"root=/dev/sda2 console=hvc0 earlyprintk=xen\" -smp 8 -device virtio-scsi-pci -drive id=hd0,index=0,if=none,format=qcow2,file=/home/vireshk/work/repos/virtio/host-qemu/debian-buster-arm64.qcow2 -device scsi-hd,drive=hd0"
+
+alias xenarm="$QEMUAARCH64 \
+	-machine virt,virtualization=on \
+	-cpu cortex-a57 -serial mon:stdio \
+	-device virtio-net-pci,netdev=net0				\
+	-netdev user,id=net0,hostfwd=tcp::8022-:22			\
+	-device virtio-scsi-pci \
+	-drive file=/home/vireshk/work/repos/virtio/host-qemu/debian-buster-arm64.qcow2,index=0,id=hd0,if=none,format=qcow2 \
+	-device scsi-hd,drive=hd0 \
+	-display none \
+	-m 8192 -smp 4\
+	-kernel /home/vireshk/work/repos/virtio/xen/xen/xen \
+	-append \"dom0_mem=2G,max:2G dom0_max_vcpus=4 loglvl=all guest_loglvl=all\" \
+	-device guest-loader,addr=0x46000000,kernel=$AARCH64BUILD/Image,bootargs=\"root=/dev/sda2 console=hvc0 earlyprintk=xen\""
 
 # go to linux on shell startup
 hlinux

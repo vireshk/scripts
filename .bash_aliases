@@ -273,18 +273,20 @@ alias qemux86="$QEMUPATH/buildx86/qemu-system-x86_64  -smp 12 -kernel ~/work/rep
 #alias xenarm="$QEMUAARCH64 -machine virt,virtualization=on -cpu cortex-a57 -machine type=virt -serial mon:stdio -device virtio-net-pci,netdev=net0 -netdev user,id=net0,hostfwd=tcp::8022-:22 -display none -m 8192 -kernel /home/vireshk/work/repos/virtio/xen/xen/xen -append \"dom0_max_vcpus=8 loglvl=all guest_loglvl=all\" -device guest-loader,addr=0x46000000,kernel=$AARCH64BUILD/Image,bootargs=\"root=/dev/sda2 console=hvc0 earlyprintk=xen\" -smp 8 -device virtio-scsi-pci -drive id=hd0,index=0,if=none,format=qcow2,file=/home/vireshk/work/repos/virtio/host-qemu/debian-buster-arm64.qcow2 -device scsi-hd,drive=hd0"
 
 alias xenarm="$QEMUAARCH64 \
-	-machine virt,virtualization=on \
-	-cpu cortex-a57 -serial mon:stdio \
-	-device virtio-net-pci,netdev=net0				\
-	-netdev user,id=net0,hostfwd=tcp::8022-:22			\
-	-device virtio-scsi-pci \
-	-drive file=/home/vireshk/work/repos/virtio/host-qemu/debian-buster-arm64.qcow2,index=0,id=hd0,if=none,format=qcow2 \
-	-device scsi-hd,drive=hd0 \
-	-display none \
-	-m 8192 -smp 4\
-	-kernel /home/vireshk/work/repos/virtio/xen/xen/xen \
-	-append \"dom0_mem=2G,max:2G dom0_max_vcpus=4 loglvl=all guest_loglvl=all\" \
-	-device guest-loader,addr=0x46000000,kernel=$AARCH64BUILD/Image,bootargs=\"root=/dev/sda2 console=hvc0 earlyprintk=xen\""
+ 	-machine virt,virtualization=on \
+ 	-cpu cortex-a57 -serial mon:stdio \
+ 	-device virtio-net-pci,netdev=net0				\
+ 	-netdev user,id=net0,hostfwd=tcp::8022-:22			\
+ 	-device virtio-scsi-pci \
+ 	-drive file=/home/vireshk/work/repos/virtio/host-qemu/debian-bullseye-arm64.qcow2,index=0,id=hd0,if=none,format=qcow2 \
+ 	-device scsi-hd,drive=hd0 \
+ 	-display none \
+ 	-m 8192 -smp 4\
+ 	-kernel /home/vireshk/work/repos/virtio/xen/xen/xen \
+ 	-append \"dom0_mem=2G,max:2G dom0_max_vcpus=4 loglvl=all guest_loglvl=all\" \
+ 	-device guest-loader,addr=0x46000000,kernel=$AARCH64BUILD/Image,bootargs=\"root=/dev/sda2 console=hvc0 earlyprintk=xen\""
+
+alias xenbuild="echo -e \"cd work/repos/virtio/xen; make clean; ./configure --libdir=/usr/lib --build=x86_64-unknown-linux-gnu --host=aarch64-linux-gnu --disable-docs --disable-golang --disable-ocamltools --with-system-qemu=/usr/bin/qemu-system-i386; make -j9 debball CROSS_COMPILE=aarch64-linux-gnu- XEN_TARGET_ARCH=arm64;\"; docker run --rm -it -u $(id -u) -v ~/work:/work -v $HOME:$HOME vireshk:bullseye-arm64 /usr/bin/fish"
 
 # go to linux on shell startup
 hlinux

@@ -231,7 +231,7 @@ alias ltpbuild="make clean;make autotools;./configure;make"
 alias sshqemu="ssh vireshk@localhost -p8022"
 alias qvim="vim -c 'set expandtab' -c 'set shiftwidth=4'"
 alias mountqemu="echo \"mount -t 9p -o trans=virtio r /mnt\""
-alias configqemu="../configure --python=/usr/bin/python3.8 --target-list=aarch64-softmmu --enable-virtfs"
+alias configqemu="./configure --python=/usr/bin/python3.8 --target-list=aarch64-softmmu --enable-virtfs"
 alias buildqemu="configqemu; make -j 64"
 
 # I2C
@@ -281,9 +281,9 @@ alias xenarm="$QEMUAARCH64 \
  	-drive file=/home/vireshk/work/repos/virtio/host-qemu/debian-bullseye-arm64.qcow2,index=0,id=hd0,if=none,format=qcow2 \
  	-device scsi-hd,drive=hd0 \
  	-display none \
- 	-m 8192 -smp 4\
+ 	-m 8192 -smp 8\
  	-kernel /home/vireshk/work/repos/virtio/xen/xen/xen \
- 	-append \"dom0_mem=2G,max:2G dom0_max_vcpus=4 loglvl=all guest_loglvl=all\" \
+ 	-append \"dom0_mem=5G,max:5G dom0_max_vcpus=6 loglvl=all guest_loglvl=all\" \
  	-device guest-loader,addr=0x46000000,kernel=$AARCH64BUILD/Image,bootargs=\"root=/dev/sda2 console=hvc0 earlyprintk=xen\""
 
 alias xenbuild="echo -e \"cd work/repos/virtio/xen; make clean; ./configure --libdir=/usr/lib --build=x86_64-unknown-linux-gnu --host=aarch64-linux-gnu --disable-docs --disable-golang --disable-ocamltools --with-system-qemu=/usr/bin/qemu-system-i386; make -j9 debball CROSS_COMPILE=aarch64-linux-gnu- XEN_TARGET_ARCH=arm64;\"; docker run --rm -it -u $(id -u) -v ~/work:/work -v $HOME:$HOME vireshk:bullseye-arm64 /usr/bin/fish"

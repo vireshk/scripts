@@ -80238,3 +80238,102 @@ fatal: not a git repository (or any parent up to mount point /mnt)
 Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
 
 Entering /home/vireshk/scripts
+[master 9673e77e08ff] updates
+ 1 file changed, 72 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   bcb49c505a36..9673e77e08ff  master -> master
+   1f3899203767..bcb49c505a36  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is ahead of 'origin/master' by 6 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/gpio-mock
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Thursday 24 February 2022 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+   ec1c7ad47664..c377d4ba86e9  cpufreq/arm/linux-next -> cpufreq/arm/linux-next
+   e6251ab4551f..23d04328444a  origin/HEAD -> origin/HEAD
+   e6251ab4551f..23d04328444a  origin/master -> origin/master
+   11f8cb8903ba..8292656464e5  pm/acpi -> pm/acpi
+ + 8d681a5245f0...2ecb866af004 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   5aeb05b27f81..3a571fc19673  pm/devprop -> pm/devprop
+ + 63b95bce9ea4...2ecb866af004 pm/linux-next -> pm/linux-next (forced update)
+   fc74e0a40e4f..cfb92440ee71  pm/master -> pm/master
+   544e737dea5a..33569ef3c754  pm/pm -> pm/pm
+ + 63b95bce9ea4...2ecb866af004 pm/testing -> pm/testing (forced update)
+   125521addcd6..e5b54867f47f  pm/thermal -> pm/thermal
+   021dbecabc93..8acf5cb92d9d  pmko/opp/linux-next -> pmko/opp/linux-next
+ * [new reference]             pm/thermal-hfi -> pm/thermal-hfi
+ * [new tag]                   acpi-5.17-rc1 -> acpi-5.17-rc1
+ * [new tag]                   acpi-5.17-rc1-2 -> acpi-5.17-rc1-2
+ * [new tag]                   acpi-5.17-rc1-3 -> acpi-5.17-rc1-3
+ * [new tag]                   acpi-5.17-rc3 -> acpi-5.17-rc3
+ * [new tag]                   acpi-5.17-rc4 -> acpi-5.17-rc4
+ * [new tag]                   acpi-5.17-rc5 -> acpi-5.17-rc5
+ * [new tag]                   devprop-5.17-rc1 -> devprop-5.17-rc1
+ * [new tag]                   pm-5.17-rc1 -> pm-5.17-rc1
+ * [new tag]                   pm-5.17-rc1-2 -> pm-5.17-rc1-2
+ * [new tag]                   pm-5.17-rc2 -> pm-5.17-rc2
+ * [new tag]                   thermal-5.17-rc1 -> thermal-5.17-rc1
+ * [new tag]                   thermal-5.17-rc1-2 -> thermal-5.17-rc1-2
+ * [new tag]                   v5.17-rc4 -> v5.17-rc4
+ * [new tag]                   v5.17-rc5 -> v5.17-rc5
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/virtio/rust
+fatal: not a git repository (or any parent up to mount point /mnt)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+Entering /home/vireshk/scripts

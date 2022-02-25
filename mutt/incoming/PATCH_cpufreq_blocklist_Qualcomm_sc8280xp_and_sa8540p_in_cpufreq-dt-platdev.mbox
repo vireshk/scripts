@@ -1,0 +1,57 @@
+From vireshk  Fri Feb 25 09:25:58 2022
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [142.251.12.108] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Fri, 25 Feb 2022 09:25:58 +0530 (IST)
+Received: by 2002:a5e:de41:0:0:0:0:0 with SMTP id e1csp2088634ioq;         Thu, 24 Feb 2022 19:55:08 -0800 (PST)
+X-Received: by 2002:a05:6870:ed4d:b0:d2:48b5:8185 with SMTP id ex13-20020a056870ed4d00b000d248b58185mr613061oab.120.1645761308108;         Thu, 24 Feb 2022 19:55:08 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1645761308; cv=none;         d=google.com; s=arc-20160816;         b=pqCYY8Q7FPBicPgmEmw4DMj5zVzC7KBKyNk4gs49X8O4gcgJbLbvCCA3zlZ52h+zIu          Y9pJ6RIyh7LCzfMVuHpHeCKiNbUMCfyPOl6yY6SWIG98jLlQjJaUPWmHUF8Ml+IT4okm          hBvWsVCoo2qLnGEeg+LYLHFQ4mlSj9xOgoVRPzMKiBbThdeV3Lt8JR6RcCPL/3gORYJt          ZjpTpyZGwrNxhVus2DvGbWX8cuAYGEK/Tkg4RR/P209wc/SvKsI6T9x1GR6qjNyjZE39          BGf0o+DFVjzAsevBsfHZnIItsLpoacnKt0VZcZmzw/hungQ70qOr7P9lCSmqhwCdWhmc          PyMA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from:dkim-signature;         bh=T81mSR+1Zj6dq+bi59Tjjq785xia/vTXg7pvxWMZP5Q=;         b=qISutFK3X2XRcN6T3vQf0DsIwDhVVuVz+TrxwcKOnNj2rjGUeMbkxC+kyW4nb1tqSr          TGOLuK10FNp8EumwOMKNwFFHVHPMFbs+ERX8JTMbAB+o6uBBbjqvWe0DG00tBz/r1W+8          fm+MQyWrnswc6A/TbnmQMOhCk7RMN/aG6JBxKmiCxvLKnScT//LgJhu5SOuHsow2ehaR          5I7miTh3kC4cCdzG2USftAWCiVG3yRCbQPXn4i/0Y1kZr8SbSwCMrt1eHZJ64zifWSpE          tTSbLd9DQg7qSlpAywmF4Iqg45ZWLFVRWo7TD3CS8tvk4Q5nQx0AOo4gCD83vZ96ZeAU          ikpg==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@linaro.org header.s=google header.b=o16kuWGD;        spf=pass (google.com: domain of bjorn.andersson@linaro.org designates 209.85.220.41 as permitted sender) smtp.mailfrom=bjorn.andersson@linaro.org;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=linaro.org
+Return-Path: <bjorn.andersson@linaro.org>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])         by mx.google.com with SMTPS id c5-20020a9d2785000000b005afb14cee37sor135683otb.32.2022.02.24.19.55.07         for <viresh.kumar@linaro.org>         (Google Transport Security);         Thu, 24 Feb 2022 19:55:08 -0800 (PST)
+Received-SPF: pass (google.com: domain of bjorn.andersson@linaro.org designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@linaro.org header.s=google header.b=o16kuWGD;        spf=pass (google.com: domain of bjorn.andersson@linaro.org designates 209.85.220.41 as permitted sender) smtp.mailfrom=bjorn.andersson@linaro.org;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=linaro.org
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=linaro.org; s=google;         h=from:to:cc:subject:date:message-id:mime-version          :content-transfer-encoding;         bh=T81mSR+1Zj6dq+bi59Tjjq785xia/vTXg7pvxWMZP5Q=;         b=o16kuWGDe1xIM6p5Qh4ZTO0litiSY/rbImF0+oFdMVX2+yt9qmuK9zz0xXULvLnsKu          uptVQyLcN7CsYjkhMJbTHp3tYAjsBAGgRlZZK5MgwDj0sL15yRTzpXzL7xwTuZ83rj2K          4WGob+PVQsLpPRsz4hIyu0qj8R3vsghgczYgxVJ0JVsQMnN5boCGKwvGOBiEip+pbKJK          Z9lFo+nzSrgq5cfV5NRUiK5dwiW4bzbY2YGpS+4jZJPs5PKaj11kQN15EdZP/GIsmR6X          74JnHDIzTmj4C+RHUWjPcr2mqLJKKzR4C2ZKol5FhjC7jpjnJSX2gbpIzSoXC1cGXOvm          VV5A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=1e100.net; s=20210112;         h=x-gm-message-state:from:to:cc:subject:date:message-id:mime-version          :content-transfer-encoding;         bh=T81mSR+1Zj6dq+bi59Tjjq785xia/vTXg7pvxWMZP5Q=;         b=l/19wYykWBqk1zN+0QJRbnLJvriE4FKVRpIWeOfzfZcbMTfmETXg6eU4kX4bZMuCES          xwLVRxeT98Ss7rqUbx2oihCAUDsYvRLa7lxenAOfnQAtELV5oW68wnuzjE2LteMF/cvT          Hv2iAYm7Y42u7vqOebFOaY9DZH+/OhYXJJFOr+Yh9NpjubRLi1siFSk1g45D5ycwpIPr          5BBiztv68emoz3gJFWP41Zqn+WbBVAudBN1Gfjn+yGUM0EX03O8eR+GkPthfeJLT3/zX          3cZ93g1galwRBWWRsEgYk4+spvFpF6xXOIHOfPYQ8eu48SH1/BIHQnEVOeXOcpgVGGxp          lUqw==
+X-Gm-Message-State: AOAM531Uo6lI/yL1RK/XwdOZb18I0NuBKkb3EQsMsN447tP/YgH+8Eqw 	MjymfElR78Me1vReITckmzTn/3PA
+X-Google-Smtp-Source: ABdhPJwjiRwYy0dfCxWbhMkzKq6Ypu051JtDF3urnqLidlyDli33zRyaG/hBtJccsM7+t70CD5R+XA==
+X-Received: by 2002:a05:6830:154b:b0:5ad:3e5b:4356 with SMTP id l11-20020a056830154b00b005ad3e5b4356mr2071041otp.176.1645761307715;         Thu, 24 Feb 2022 19:55:07 -0800 (PST)
+Return-Path: <bjorn.andersson@linaro.org>
+Received: from ripper.. ([2600:1700:a0:3dc8:205:1bff:fec0:b9b3])         by smtp.gmail.com with ESMTPSA id q6-20020a9d57c6000000b005ad5a1edd4csm595170oti.22.2022.02.24.19.55.07         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Thu, 24 Feb 2022 19:55:07 -0800 (PST)
+From: Bjorn Andersson <bjorn.andersson@linaro.org>
+To: "Rafael J. Wysocki" <rafael@kernel.org>, 	Viresh Kumar <viresh.kumar@linaro.org>
+Cc: linux-pm@vger.kernel.org, 	linux-kernel@vger.kernel.org, 	linux-arm-msm@vger.kernel.org
+Subject: [PATCH] cpufreq: blocklist Qualcomm sc8280xp and sa8540p in cpufreq-dt-platdev
+Date: Thu, 24 Feb 2022 19:57:06 -0800
+Message-Id: <20220225035706.2294842-1-bjorn.andersson@linaro.org>
+X-Mailer: git-send-email 2.33.1
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+The Qualcomm sc8280xp and sa8540p platforms also uses the
+qcom-cpufreq-hw driver, so add them to the cpufreq-dt-platdev driver's
+blocklist.
+
+Signed-off-by: Bjorn Andersson <bjorn.andersson@linaro.org>
+---
+ drivers/cpufreq/cpufreq-dt-platdev.c | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/drivers/cpufreq/cpufreq-dt-platdev.c b/drivers/cpufreq/cpufreq-dt-platdev.c
+index 6b808f805eab..96de1536e1cb 100644
+--- a/drivers/cpufreq/cpufreq-dt-platdev.c
++++ b/drivers/cpufreq/cpufreq-dt-platdev.c
+@@ -139,9 +139,11 @@ static const struct of_device_id blocklist[] __initconst = {
+ 	{ .compatible = "qcom,msm8996", },
+ 	{ .compatible = "qcom,qcs404", },
+ 	{ .compatible = "qcom,sa8155p" },
++	{ .compatible = "qcom,sa8540p" },
+ 	{ .compatible = "qcom,sc7180", },
+ 	{ .compatible = "qcom,sc7280", },
+ 	{ .compatible = "qcom,sc8180x", },
++	{ .compatible = "qcom,sc8280xp", },
+ 	{ .compatible = "qcom,sdm845", },
+ 	{ .compatible = "qcom,sm6350", },
+ 	{ .compatible = "qcom,sm8150", },
+-- 
+2.33.1
+

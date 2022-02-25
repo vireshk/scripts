@@ -1717,3 +1717,6 @@ From vireshk  Wed Feb  9 09:49:36 2022
 From vireshk  Wed Feb  9 09:37:58 2022
  Subject: [RFC PATCH] tests/qtest: attempt to enable tests for virtio-gpio (!wo
   Folder: RFC_PATCH_tests-qtest_attempt_to_enable_tests_for_virtio-gpi	  13371
+From vireshk  Fri Feb 25 09:25:58 2022
+ Subject: [PATCH] cpufreq: blocklist Qualcomm sc8280xp and sa8540p in cpufreq-d
+  Folder: PATCH_cpufreq_blocklist_Qualcomm_sc8280xp_and_sa8540p_in_cpu	   6395

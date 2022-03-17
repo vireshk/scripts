@@ -155,6 +155,13 @@ elif [ $2 = arm ]; then
 	carch="arm64"
 	IMAGE=
 	MERGE_CONFIG="KCONFIG_CONFIG=$dir/.config scripts/kconfig/merge_config.sh -m $dir/.config ~/junk/config"
+elif [ $2 = armqf ]; then
+	dir=../barm64-base-qemuf/
+	cfg=defconfig
+	CROSS_COMPILE="aarch64-linux-gnu-"
+	carch="arm64"
+	IMAGE=
+	MERGE_CONFIG="KCONFIG_CONFIG=$dir/.config scripts/kconfig/merge_config.sh -m $dir/.config ~/junk/config"
 elif [ $2 = qcom ]; then
 	dir=../qcom/
 	cfg="defconfig distro.config"

@@ -239,7 +239,7 @@ alias buildqemu="configqemu; make -j 64"
 # I2C
 export i2csock="$junkpath/vi2c.sock"
 alias vui2c="unlink $i2csock; $QEMUPATH/build/aarch64-softmmu/tools/vhost-user-i2c/vhost-user-i2c --socket-path=$i2csock -l 6:20"
-alias rusti2c="unlink $i2csock; RUST_LOG=debug $rustpath/vhost-device/target/debug/vhost-device-i2c -s $i2csock -c 1 -l 6:32"
+alias rusti2c="unlink $i2csock"0"; RUST_LOG=debug $rustpath/vhost-device/target/debug/vhost-device-i2c -s $i2csock -c 1 -l 6:32"
 alias i2ccreate="echo \"echo ds1338 0x20 > /sys/bus/i2c/devices/i2c-1/new_device\""
 alias smbuscreate="echo \"echo al3320a 0x20 > /sys/class/i2c-adapter/i2c-1/new_device\""
 export qemui2c="-chardev socket,path=$junkpath/vi2c.sock0,id=vi2c -device vhost-user-i2c-device,chardev=vi2c,id=i2c"

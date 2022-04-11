@@ -1720,3 +1720,30 @@ From vireshk  Wed Feb  9 09:37:58 2022
 From vireshk  Fri Feb 25 09:25:58 2022
  Subject: [PATCH] cpufreq: blocklist Qualcomm sc8280xp and sa8540p in cpufreq-d
   Folder: PATCH_cpufreq_blocklist_Qualcomm_sc8280xp_and_sa8540p_in_cpu	   6395
+From vireshk  Wed Apr  6 12:11:23 2022
+ Subject: [PATCH] OPP: call of_node_put() on error path in  _bandwidth_supporte
+  Folder: PATCH_OPP_call_of_node_put__on_error_path_in_bandwidth_suppo	  15276
+From vireshk  Fri Apr  8 16:41:48 2022
+ Subject: [PATCH] PM: opp: simplify with dev_err_probe()
+  Folder: PATCH_PM_opp_simplify_with_dev_err_probe_.mbox		   8223
+From vireshk  Thu Mar 24 12:49:03 2022
+ Subject: [PATCH] opp: replace usage of found with dedicated list iterator vari
+  Folder: PATCH_opp_replace_usage_of_found_with_dedicated_list_iterato	   8573
+From vireshk  Thu Mar 31 14:00:58 2022
+ Subject: [PATCH v2] opp: use list iterator only inside the loop
+  Folder: PATCH_v2_opp_use_list_iterator_only_inside_the_loop.mbox	   8185
+From vireshk  Fri Apr  8 10:30:26 2022
+ Subject: [PATCH V2 02/15] cpufreq: mediatek: Use module_init and add module_ex
+  Folder: PATCH_V2_02-15_cpufreq_mediatek_Use_module_init_and_add_modu	   5429
+From vireshk  Fri Apr  8 10:30:20 2022
+ Subject: [PATCH V2 03/15] cpufreq: mediatek: Cleanup variables and error handl
+  Folder: PATCH_V2_03-15_cpufreq_mediatek_Cleanup_variables_and_error_	   9767
+From vireshk  Fri Apr  8 10:30:22 2022
+ Subject: [PATCH V2 04/15] cpufreq: mediatek: Remove unused headers
+  Folder: PATCH_V2_04-15_cpufreq_mediatek_Remove_unused_headers.mbox	   5316
+From vireshk  Fri Apr  8 10:30:18 2022
+ Subject: [PATCH V2 05/15] cpufreq: mediatek: Enable clocks and regulators
+  Folder: PATCH_V2_05-15_cpufreq_mediatek_Enable_clocks_and_regulators	   8470
+From vireshk  Fri Apr  8 10:30:33 2022
+ Subject: [PATCH V2 15/15] cpufreq: mediatek: Use device print to show logs
+  Folder: PATCH_V2_15-15_cpufreq_mediatek_Use_device_print_to_show_log	   8782

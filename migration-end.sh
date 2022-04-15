@@ -3,7 +3,7 @@
 if [ ! $1 ]; then
 	echo "insufficient number of arguments passed"
 	exit
-elif [ $1 = "mac" ]; then
+elif [ $1 = "laptop" ]; then
 	repo=mac
 elif [ $1 = "pc" ]; then
 	repo=origin

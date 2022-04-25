@@ -1747,3 +1747,30 @@ From vireshk  Fri Apr  8 10:30:18 2022
 From vireshk  Fri Apr  8 10:30:33 2022
  Subject: [PATCH V2 15/15] cpufreq: mediatek: Use device print to show logs
   Folder: PATCH_V2_15-15_cpufreq_mediatek_Use_device_print_to_show_log	   8782
+From vireshk  Mon Apr 25 08:30:20 2022
+ Subject: [PATCH v2] cpufreq:fix memory leak in sun50i_cpufreq_nvmem_probe
+  Folder: PATCH_v2_cpufreq-fix_memory_leak_in_sun50i_cpufreq_nvmem_pro	   7693
+From vireshk  Mon Apr 25 08:27:16 2022
+ Subject: [PATCH V4 02/14] cpufreq: mediatek: Use device print to show logs
+  Folder: PATCH_V4_02-14_cpufreq_mediatek_Use_device_print_to_show_log	  10925
+From vireshk  Mon Apr 25 08:27:20 2022
+ Subject: [PATCH V4 03/14] cpufreq: mediatek: Replace old_* with pre_*
+  Folder: PATCH_V4_03-14_cpufreq_mediatek_Replace_old_*_with_pre_*.mbo	  12114
+From vireshk  Mon Apr 25 08:27:24 2022
+ Subject: [PATCH V4 04/14] cpufreq: mediatek: Record previous target vproc valu
+  Folder: PATCH_V4_04-14_cpufreq_mediatek_Record_previous_target_vproc	   7245
+From vireshk  Mon Apr 25 08:27:15 2022
+ Subject: [PATCH V4 06/14] cpufreq: mediatek: Move voltage limits to platform d
+  Folder: PATCH_V4_06-14_cpufreq_mediatek_Move_voltage_limits_to_platf	  13359
+From vireshk  Mon Apr 25 08:27:15 2022
+ Subject: [PATCH V4 06/14] cpufreq: mediatek: Move voltage limits to platform d
+  Folder: PATCH_V4_06-14_cpufreq_mediatek_Move_voltage_limits_to_platf	  13359
+From vireshk  Mon Apr 25 08:27:18 2022
+ Subject: [PATCH V4 05/14] cpufreq: mediatek: Add opp notification support
+  Folder: PATCH_V4_05-14_cpufreq_mediatek_Add_opp_notification_support	  10554
+From vireshk  Mon Apr 25 08:27:23 2022
+ Subject: [PATCH V4 08/14] cpufreq: mediatek: Make sram regulator optional
+  Folder: PATCH_V4_08-14_cpufreq_mediatek_Make_sram_regulator_optional	   6384
+From vireshk  Mon Apr 25 08:27:19 2022
+ Subject: [PATCH V4 09/14] cpufreq: mediatek: Refine mtk_cpufreq_voltage_tracki
+  Folder: PATCH_V4_09-14_cpufreq_mediatek_Refine_mtk_cpufreq_voltage_t	  13221

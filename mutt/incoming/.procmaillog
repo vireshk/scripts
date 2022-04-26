@@ -1774,3 +1774,12 @@ From vireshk  Mon Apr 25 08:27:23 2022
 From vireshk  Mon Apr 25 08:27:19 2022
  Subject: [PATCH V4 09/14] cpufreq: mediatek: Refine mtk_cpufreq_voltage_tracki
   Folder: PATCH_V4_09-14_cpufreq_mediatek_Refine_mtk_cpufreq_voltage_t	  13221
+From vireshk  Tue Apr 26 08:30:22 2022
+ Subject: [PATCH v3 1/2] cpufreq: CPPC: Add per_cpu efficiency_class
+  Folder: PATCH_v3_1-2_cpufreq_CPPC_Add_per_cpu_efficiency_class.mbox	   8226
+From vireshk  Tue Apr 26 08:30:22 2022
+ Subject: [PATCH v3 2/2] cpufreq: CPPC: Register EM based on efficiency class i
+  Folder: PATCH_v3_2-2_cpufreq_CPPC_Register_EM_based_on_efficiency_cl	  11120
+From vireshk  Fri Apr  8 08:43:22 2022
+ Subject: [PATCH v3] cpufreq: qcom-cpufreq-hw: Clear dcvs interrupts
+  Folder: PATCH_v3_cpufreq_qcom-cpufreq-hw_Clear_dcvs_interrupts.mbox	   7501

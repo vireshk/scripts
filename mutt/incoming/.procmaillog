@@ -1783,3 +1783,6 @@ From vireshk  Tue Apr 26 08:30:22 2022
 From vireshk  Fri Apr  8 08:43:22 2022
  Subject: [PATCH v3] cpufreq: qcom-cpufreq-hw: Clear dcvs interrupts
   Folder: PATCH_v3_cpufreq_qcom-cpufreq-hw_Clear_dcvs_interrupts.mbox	   7501
+From vireshk  Wed Apr 27 08:23:56 2022
+ Subject: [PATCH] cpufreq: mediatek: Fix NULL pointer dereference in mediatek-c
+  Folder: PATCH_cpufreq_mediatek_Fix_NULL_pointer_dereference_in_media	  12195

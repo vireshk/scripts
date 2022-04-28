@@ -1786,3 +1786,15 @@ From vireshk  Fri Apr  8 08:43:22 2022
 From vireshk  Wed Apr 27 08:23:56 2022
  Subject: [PATCH] cpufreq: mediatek: Fix NULL pointer dereference in mediatek-c
   Folder: PATCH_cpufreq_mediatek_Fix_NULL_pointer_dereference_in_media	  12195
+From vireshk  Thu Apr 28 07:15:55 2022
+ Subject: [PATCH 1/2] xfm: Move to xen-sys::xenforeignmemory_map_resource() int
+  Folder: PATCH_1-2_xfm_Move_to_xen-sys--xenforeignmemory_map_resource	   8785
+From vireshk  Thu Apr 28 07:15:56 2022
+ Subject: [PATCH 2/2] Fix how xen-ioctls crate exports are referenced
+  Folder: PATCH_2-2_Fix_how_xen-ioctls_crate_exports_are_referenced.mb	   6811
+From vireshk  Thu Apr 28 07:15:55 2022
+ Subject: [PATCH 1/2] xfm: Move to xen-sys::xenforeignmemory_map_resource() int
+  Folder: PATCH_1-2_xfm_Move_to_xen-sys--xenforeignmemory_map_resource	   8785
+From vireshk  Thu Apr 28 07:15:56 2022
+ Subject: [PATCH 2/2] Fix how xen-ioctls crate exports are referenced
+  Folder: PATCH_2-2_Fix_how_xen-ioctls_crate_exports_are_referenced.mb	   6811

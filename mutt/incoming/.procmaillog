@@ -1801,3 +1801,18 @@ From vireshk  Thu Apr 28 07:15:56 2022
 From vireshk  Wed May  4 13:48:11 2022
  Subject: [PATCH v2 2/5] opp: Add apis to retrieve opps with interconnect bandw
   Folder: PATCH_v2_2-5_opp_Add_apis_to_retrieve_opps_with_interconnect	  13175
+From vireshk  Fri May  6 08:36:49 2022
+ Subject: [PATCH v6 05/10] cpufreq: mediatek: Add opp notification support
+  Folder: PATCH_v6_05-10_cpufreq_mediatek_Add_opp_notification_support	  10894
+From vireshk  Fri May  6 08:36:56 2022
+ Subject: [PATCH v6 02/10] cpufreq: mediatek: Add platform_device_unregister wh
+  Folder: PATCH_v6_02-10_cpufreq_mediatek_Add_platform_device_unregist	   7102
+From vireshk  Fri May  6 08:36:53 2022
+ Subject: [PATCH v6 03/10] cpufreq: mediatek: Move voltage limits to platform d
+  Folder: PATCH_v6_03-10_cpufreq_mediatek_Move_voltage_limits_to_platf	  12945
+From vireshk  Fri May  6 08:36:56 2022
+ Subject: [PATCH v6 04/10] cpufreq: mediatek: Refine mtk_cpufreq_voltage_tracki
+  Folder: PATCH_v6_04-10_cpufreq_mediatek_Refine_mtk_cpufreq_voltage_t	  13280
+From vireshk  Fri May  6 08:36:49 2022
+ Subject: [PATCH v6 05/10] cpufreq: mediatek: Add opp notification support
+  Folder: PATCH_v6_05-10_cpufreq_mediatek_Add_opp_notification_support	  10937

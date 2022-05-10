@@ -1819,3 +1819,6 @@ From vireshk  Fri May  6 08:36:49 2022
 From vireshk  Mon May  9 08:44:24 2022
  Subject: [PATCH] cpufreq: fix double unlock when cpufreq online
   Folder: PATCH_cpufreq_fix_double_unlock_when_cpufreq_online.mbox	   7276
+From vireshk  Mon May  9 14:19:52 2022
+ Subject: [PATCH v1] drivers: cpufreq: sun8i-r40: Add cpufreq support
+  Folder: PATCH_v1_drivers_cpufreq_sun8i-r40_Add_cpufreq_support.mbox	   7321

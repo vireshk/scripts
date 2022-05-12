@@ -1828,3 +1828,15 @@ From vireshk  Tue May 10 14:36:30 2022
 From vireshk  Wed May 11 07:48:27 2022
  Subject: [PATCH v3] cpufreq: fix race on cpufreq online
   Folder: PATCH_v3_cpufreq_fix_race_on_cpufreq_online.mbox		   9030
+From vireshk  Fri May  6 08:36:48 2022
+ Subject: [PATCH v6 01/10] dt-bindings: cpufreq: mediatek: Add MediaTek CCI pro
+  Folder: PATCH_v6_01-10_dt-bindings_cpufreq_mediatek_Add_MediaTek_CCI	   7011
+From vireshk  Fri May  6 08:36:48 2022
+ Subject: [PATCH v6 01/10] dt-bindings: cpufreq: mediatek: Add MediaTek CCI pro
+  Folder: PATCH_v6_01-10_dt-bindings_cpufreq_mediatek_Add_MediaTek_CCI	   7011
+From vireshk  Fri May  6 08:36:53 2022
+ Subject: [PATCH v6 06/10] cpufreq: mediatek: Link CCI device to CPU
+  Folder: PATCH_v6_06-10_cpufreq_mediatek_Link_CCI_device_to_CPU.mbox	  11418
+From vireshk  Fri May  6 08:36:49 2022
+ Subject: [PATCH v6 07/10] cpufreq: mediatek: Add support for MT8186
+  Folder: PATCH_v6_07-10_cpufreq_mediatek_Add_support_for_MT8186.mbox	   6943

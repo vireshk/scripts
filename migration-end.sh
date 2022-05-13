@@ -4,7 +4,7 @@ if [ ! $1 ]; then
 	echo "insufficient number of arguments passed"
 	exit
 elif [ $1 = "laptop" ]; then
-	repo=mac
+	repo=laptop
 elif [ $1 = "pc" ]; then
 	repo=origin
 fi

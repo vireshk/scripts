@@ -23,11 +23,11 @@ set move=no			# Don't move mail from the spool.
 # Watch these mailboxes for new mail:
 # mailboxes ! +sent
 mailboxes +me +inbox +korg \
-	+linaro +linaro/gitlab +linaro/moderator +linaro/pmwg +linaro/discuss +linaro/eas +linaro/schedtools +linaro/kernel \
+	+linaro/gitlab +linaro/moderator +linaro/pmwg +linaro/discuss +linaro/eas +linaro/schedtools +linaro/kernel \
 	+linaro/build +linaro/kernelci +linaro/toolchain +linaro/everyone +linaro/wiki +linaro/android +linaro/announce  +linaro/dev +linaro/payslip\
 	+linaro/lng +linaro/releases +linaro/switchers +linaro/tech +linaro/conf \
-	+ara +ara/greybus +ara/list +ara/jira \
-	+sent +draft +lwn +linux-pm +linux-gpio +virtio +bkp +bkp/me-bkp-jan16
+	+ara/greybus +ara/list +ara/jira \
+	+sent +draft +lwn +linux-pm +linux-gpio +virtio +bkp/me-bkp-jan16
 #mailboxes ! +Fetchmail +slrn +mutt
 set sort_browser=alpha		# Sort mailboxes by alpha(bet)
 

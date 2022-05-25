@@ -1840,3 +1840,6 @@ From vireshk  Fri May  6 08:36:53 2022
 From vireshk  Fri May  6 08:36:49 2022
  Subject: [PATCH v6 07/10] cpufreq: mediatek: Add support for MT8186
   Folder: PATCH_v6_07-10_cpufreq_mediatek_Add_support_for_MT8186.mbox	   6943
+From vireshk  Wed May 25 09:48:39 2022
+ Subject: [PATCH] opp: Fix error check in dev_pm_opp_attach_genpd()
+  Folder: PATCH_opp_Fix_error_check_in_dev_pm_opp_attach_genpd_.mbox	   5723

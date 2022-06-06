@@ -164,7 +164,7 @@ endif
 set tabstop=8
 set ic
 set shiftwidth=8
-set textwidth=100
+set textwidth=80
 au FileType gitcommit set textwidth=72
 au FileType diff set textwidth=72
 set hls
@@ -184,13 +184,13 @@ nmap <C-J> vip=                         " forces (re)indentation of a block of c
 
 "syn match ErrorLeadSpace /^ \+/         " highlight any leading spaces
 "syn match ErrorTailSpace / \+$/         " highlight any trailing spaces
-"syn match Error100        /\%>100v.\+/    " highlight anything past 100 in red
+"syn match Error80        /\%>80v.\+/    " highlight anything past 80 in red
 
-au FileType c match error /\s\+$\|\%>100v.\+\|[ ][ ]\+\|\n\n\n\+\|,[^ ]\|^[ ]\+[^\*]\|(\s\+\|\s\+)/
+au FileType c match error /\s\+$\|\%>80v.\+\|[ ][ ]\+\|\n\n\n\+\|,[^ ]\|^[ ]\+[^\*]\|(\s\+\|\s\+)/
 au FileType c highlight error ctermbg=red guibg=red ctermfg=blue guifg=blue
-au FileType h match error /\s\+$\|\%>100v.\+\|[ ][ ]\+\|\n\n\n\+\|,[^ ]\|^[ ]\+[^\*]\|(\s\+\|\s\+)/
+au FileType h match error /\s\+$\|\%>80v.\+\|[ ][ ]\+\|\n\n\n\+\|,[^ ]\|^[ ]\+[^\*]\|(\s\+\|\s\+)/
 au FileType h highlight error ctermbg=red guibg=red ctermfg=blue guifg=blue
-"au FileType sh match error /\s\+$\|\%>100v.\+\|[ ][ ]\+\|\n\n\n\+\|,[^ ]\|^[ ]\+[^\*]\|(\s\+\|\s\+)/
+"au FileType sh match error /\s\+$\|\%>80v.\+\|[ ][ ]\+\|\n\n\n\+\|,[^ ]\|^[ ]\+[^\*]\|(\s\+\|\s\+)/
 "au FileType sh highlight error ctermbg=red guibg=red ctermfg=blue guifg=blue
 set spell spelllang=en_us
 highlight SpellCap term=reverse ctermbg=white gui=undercurl guisp=lightyellow

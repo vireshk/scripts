@@ -162,22 +162,22 @@ linaro/misc
 # linux-pm
 :0:
 * ^(To|Cc):.*linux-pm@lists\.linux-foundation\.org
-linux-pm
+linux/pm
 
 # linux-gpio
 :0:
 * ^(To|Cc):.*linux-gpio@vger\.kernel\.org
-linux-gpio
+linux/gpio
 
 # lwn
 :0:
 * ^(To|Cc):.*lwn@lwn\.net
-lwn
+linux/lwn
 
 # lwn
 :0:
 * ^(To|Cc):.*users@linux\.kernel\.org
-korg
+linux/korg
 
 # gitlab
 :0:
@@ -187,7 +187,7 @@ linaro/gitlab
 # pmwg
 :0:
 * ^(To|Cc):.*(virtio-dev@lists\.oasis-open\.or|virtio-comment@lists\.oasis-open\.org)
-virtio
+linux/virtio
 
 
 # Everything else to inbox

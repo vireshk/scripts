@@ -11,18 +11,11 @@ LOGFILE=$HOME/.procmaillog		# Keep a log for troubleshooting.
 * ^From:.*viresh\.kumar@linaro\.org
 | formail -I"Status: R"
 
-# Payslips
-:0:
-* ^From:.*gayle\.carberry@linaro\.org
-* ^Subject:.*Payslip
-linaro/payslip
-
 # me
 :0:
 * ^(From|To|Cc):.*(viresh)
-#* ^(From|To|Cc):.*(viresh\.kumar@linaro\.org|viresh\.nitj@gmail\.com|vireshk@kernel\.org|viresh\.linux@gmail\.com|kumar_viresh@projectara\.com|viresh\.kumar@linaro\.com|viresh)
 me
-#
+
 # me - spear-heroes 
 :0:
 * ^(From|To|Cc):.*spear-heroes@googlegroups.com
@@ -41,15 +34,10 @@ linaro/pmwg
 
 
 #==============LINARO==================================#
-# ARA/kernel:
-:0:
-* ^(From|To|Cc):.*(project-ara-kernel@lists\.linaro\.org|greybus-dev@lists\.linaro\.org)
-ara/greybus
-
 # ARA:
 :0:
-* ^(From|To|Cc):.*(projectara-software-dev@linaro\.org|project-ara-internal@linaro\.org|ara-all@projectara\.com|linaro@projectara.com|ara-eng-external@google\.com|project-ara-security@leaflabs\.com|ara-sw-core-external@google\.com)
-ara/list
+* ^(From|To|Cc):.*(project-ara-kernel@lists\.linaro\.org|greybus-dev@lists\.linaro\.org|projectara-software-dev@linaro\.org|project-ara-internal@linaro\.org|ara-all@projectara\.com|linaro@projectara.com|ara-eng-external@google\.com|project-ara-security@leaflabs\.com|ara-sw-core-external@google\.com)
+ara/greybus
 
 # EAS
 :0:
@@ -61,45 +49,20 @@ linaro/eas
 * ^(To|Cc):.*(sched-tools@lists\.linaro.org)
 linaro/schedtools
 
-# Y2038
-:0:
-* ^(To|Cc):.*y2038@lists\.linaro\.org
-linaro/y2038
-
-# build-bot
-:0:
-* ^(To|Cc):.*kernel-build-reports@lists\.linaro\.org
-linaro/build
-
 # kernelci-bot
 :0:
 * ^(From):.*bot@kernelci\.org
 linaro/kernelci
 
-# moderator
-:0:
-* ^(To|Cc):.*(linaro-dev-owner@lists\.linaro\.org|linaro-kernel-owner@lists\.linaro\.org|greybus-dev-owner@lists\.linaro\.org)
-linaro/moderator
-
 # Everyone
 :0:
-* ^(To|Cc):.*everyone@linaro\.org
+* ^(To|Cc):.*(everyone@linaro\.org|employees@linaro\.org)
 linaro/everyone
-
-# announce
-:0:
-* ^(To|Cc):.*linaro-announce@lists\.linaro\.org
-linaro/announce
 
 # tech
 :0:
 * ^(To|Cc):.*tech@lists\.linaro\.org
 linaro/tech
-
-# conf
-:0:
-* ^(To|Cc):.*conf@lists\.linaro\.org
-linaro/conf
 
 # linaro-kernel
 :0:
@@ -111,35 +74,10 @@ linaro/kernel
 * ^(To|Cc):.*linaro-dev@lists\.linaro\.org
 linaro/dev
 
-# wiki
-:0:
-* ^(To|Cc):.*devnull@linaro\.org
-linaro/wiki
-
-# android
-:0:
-* ^(To|Cc):.*linaro-android@lists\.linaro\.org
-linaro/android
-
-# lng
-:0:
-* ^(To|Cc):.*(linaro-networking@linaro\.org|lng-odp@linaro\.org)
-linaro/lng
-
 # pmwg
 :0:
 * ^(To|Cc):.*(linaro-pm-wg@lists\.launchpad\.net|private-pmwg@linaro\.org|private-big-little@linaro\.org|private-pmwg@lists\.linaro\.org|kwg-team-private@linaro\.org|private-kwg@linaro\.org)
 linaro/pmwg
-
-# releases
-:0:
-* ^(To|Cc):.*linaro-release@lists\.linaro\.org
-linaro/releases
-
-# switchers
-:0:
-* ^(To|Cc):.*private-linaro-switchers@linaro\.org
-linaro/switchers
 
 # toolchain
 :0:
@@ -148,15 +86,10 @@ linaro/toolchain
 
 # others
 :0:
-* ^(To|Cc):.*(lava-lab-team@linaro\.org|employees@linaro\.org)
+* ^(To|Cc):.*(lava-lab-team@linaro\.org|linaro-android@lists\.linaro\.org|linaro-announce@lists\.linaro\.org|kernel-build-reports@lists\.linaro\.org|conf@lists\.linaro\.org|linaro-dev-owner@lists\.linaro\.org|linaro-kernel-owner@lists\.linaro\.org|greybus-dev-owner@lists\.linaro\.org|linaro-release@lists\.linaro\.org)
 linaro/misc
 
 
-
-# wiki
-#:0:
-#* ^Subject:.*[Blueprint
-#linaro/wiki
 
 #===============OTHERS=================================#
 # linux-pm

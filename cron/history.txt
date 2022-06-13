@@ -85130,3 +85130,84 @@ fatal: not a git repository (or any parent up to mount point /mnt)
 Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
 
 Entering /home/vireshk/scripts
+[master 64b34bbbf173] updates
+ 1 file changed, 82 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   549a1928171e..64b34bbbf173  master -> master
+   90c59a013513..549a1928171e  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is ahead of 'origin/master' by 6 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/gpio-mock
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Monday 13 June 2022 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ + fe8d7fc96caf...9295eb372e6f opp/clk -> opp/clk (forced update)
+ + fe8d7fc96caf...9295eb372e6f opp/linux-next -> opp/linux-next (forced update)
+ + acf77c478ca4...10630adca5a0 bkp/opp/ceil -> bkp/opp/ceil (forced update)
+ + 9a1ab8ccee84...fe8d7fc96caf bkp/opp/clk -> bkp/opp/clk (forced update)
+ + 3ae889058e39...811c0002fc44 bkp/opp/config -> bkp/opp/config (forced update)
+ + 810aec76d1f2...00ef02b3ab35 bkp/opp/config-regulators -> bkp/opp/config-regulators (forced update)
+ + acf77c478ca4...fe8d7fc96caf bkp/opp/linux-next -> bkp/opp/linux-next (forced update)
+ + fe8d7fc96caf...9295eb372e6f pmko/opp/clk -> pmko/opp/clk (forced update)
+ + fe8d7fc96caf...9295eb372e6f pmko/opp/linux-next -> pmko/opp/linux-next (forced update)
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/virtio/rust
+fatal: not a git repository (or any parent up to mount point /mnt)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+Entering /home/vireshk/scripts

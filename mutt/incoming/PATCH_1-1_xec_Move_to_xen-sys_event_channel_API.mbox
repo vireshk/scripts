@@ -1,0 +1,185 @@
+From vireshk  Fri Jun 10 07:26:40 2022
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [142.251.12.109] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Fri, 10 Jun 2022 07:26:40 +0530 (IST)
+Received: by 2002:a59:ad12:0:b0:2c5:8d2:9a68 with SMTP id w18csp1008491vqy;         Thu, 9 Jun 2022 12:53:30 -0700 (PDT)
+X-Received: by 2002:a63:3ce:0:b0:3fc:6a52:8668 with SMTP id 197-20020a6303ce000000b003fc6a528668mr36352133pgd.424.1654804410271;         Thu, 09 Jun 2022 12:53:30 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1654804410; cv=none;         d=google.com; s=arc-20160816;         b=Snh5hpmvjhzeYQgTzB01C6eNbKlwN2Qp1g78SIw+lGmnv5/AezoN9OeXINlyf+J4Q2          BLpCBI6aEFjL80W6OkXCD+tEtSLGHgItze4h7cJmF8dziVUhxLUnQZv2GkAiggKGUQaq          B5z318y/ELPgyhn5iAofqON5uJOzW1n23DkjI3Yh7vRJnUmhdSb8CkK03zxR5CmU4fLL          DVhGmsys2VhcNk3Bo6FreNfxXTDzecpTmAkuhcdC6JvEY0IHIhQdTVhcOzdtfNzlMQce          HC0g26kDlWpkmaYKdQkWQcVKYoEe2A5VWJfMtVcPP9/DUpTJxRNK/AFydYSmb6gjLda0          GFWg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:references:in-reply-to          :message-id:date:subject:cc:to:from:dkim-signature;         bh=10i849f6hgeqtQEg4pZVHnMZFVZ9HlKAf3egOw8r4+A=;         b=l3Vh+NygcR3AnNfjqL9Ol9DkgSp3GoRCJarshyUCY1FxAc6mh86aRM3Bs+pkHHbwgc          kNScauGxsKMdeOan+dznwKIK55asMdFDSbu3a6drZpi4Xrst52p+UyFZkB33P6pyTOUK          qKul9zy5tVxlYu7oi1+vgs1utqxClvmEJbcXtQEo0I8p8qbgSx4TaUE9EFHVQtnulTDi          wi6/a6YU5xVE8G02JUgtpJ3ulpRpNDPw85XuZvUxyro63sk0m7rh8E9bbALa5Q5uXIwf          /IJeENbcW+C0gktKON8/HhNhhJGHDEHGWACHr7WRvFLqV7m3DNrgw0ZH6xrRP6zb/3Hv          r8iA==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@linaro.org header.s=google header.b=ESwnoMuh;        spf=pass (google.com: domain of mathieu.poirier@linaro.org designates 209.85.220.41 as permitted sender) smtp.mailfrom=mathieu.poirier@linaro.org;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=linaro.org
+Return-Path: <mathieu.poirier@linaro.org>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])         by mx.google.com with SMTPS id x188-20020a6263c5000000b0050d686540cesor13362099pfb.94.2022.06.09.12.53.30         for <viresh.kumar@linaro.org>         (Google Transport Security);         Thu, 09 Jun 2022 12:53:30 -0700 (PDT)
+Received-SPF: pass (google.com: domain of mathieu.poirier@linaro.org designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@linaro.org header.s=google header.b=ESwnoMuh;        spf=pass (google.com: domain of mathieu.poirier@linaro.org designates 209.85.220.41 as permitted sender) smtp.mailfrom=mathieu.poirier@linaro.org;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=linaro.org
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=linaro.org; s=google;         h=from:to:cc:subject:date:message-id:in-reply-to:references          :mime-version:content-transfer-encoding;         bh=10i849f6hgeqtQEg4pZVHnMZFVZ9HlKAf3egOw8r4+A=;         b=ESwnoMuhIn5QvytDPvE+OwDpGvXYVuInpYoc4/N0AuZrHPENq6sedo655eqj8kYh9L          uqifDsdUoP2EwBi0S8cmU83bpqe/+SQo72VAPl4SXMFSFrh2qK9ROhm1h3oD6i1tUO1C          xp/O59IDnQXBz3Y7MK0ruGIDAWUX16wayr9w1eY1NhrCdryU//TnkRlvwSH4opM7WQV9          Yz5c6fPz62FvDONauNbb65x5HkRwdipComul58l5KKeuSgXz/mzHM2HRVz0wVN43rdHc          WGLeRqiXS3ayDFKn5qvAHNGGeMsc9Jbcwvpq+0sQYpYf8uKo6+glFvx8pxDvmlHZwHff          SpGQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=1e100.net; s=20210112;         h=x-gm-message-state:from:to:cc:subject:date:message-id:in-reply-to          :references:mime-version:content-transfer-encoding;         bh=10i849f6hgeqtQEg4pZVHnMZFVZ9HlKAf3egOw8r4+A=;         b=c68hkBdODPHUygRxfWUcKEm7nGvTfOXdW4yqRofpG3jPFttMYuIksFmaqmTUIhM4Hn          ekAfRa37PuvsJ90ExU6FWXh3V7A4nfOZ2mn8V++u+Y1WbPkpdtAS5Kvg+q2wWNZDQMM/          qx07vFxdK4sOrFit6juakuZaCK/tjbveC1X5Pzlf2q3asAn52dzYLe+uOeizwr+JonoA          ILImvywVYswCZWo/8ik9xAIeuC3l00kyDhD++NrgYhPok7ppcJrE/BpfRRiXCeYKkhWR          hM/6oeejjPxNCaGPN877XgXi7yYVT41RPDaaswUFLGYQnif6zrRc4qQtTO45jB0kHD1w          TjHg==
+X-Gm-Message-State: AOAM5308IerlHIJbEiOAzxCOxOS4onPsJKzSbuiMAWeoZKPAgq1idp6m 	FHJ5o9NCBT6BLr0WNvvw10nVTXvy2f571tZ1
+X-Google-Smtp-Source: ABdhPJwX/+Fp6Y90aUaprdxTUVxIaUmfC9MHsuzvVo6FmRwQByLTNszJ6FOEPRdBUprh0dvgS+MMnw==
+X-Received: by 2002:a05:6a00:b51:b0:51c:1219:569d with SMTP id p17-20020a056a000b5100b0051c1219569dmr24012528pfo.2.1654804409350;         Thu, 09 Jun 2022 12:53:29 -0700 (PDT)
+Return-Path: <mathieu.poirier@linaro.org>
+Received: from p14s.cg.shawcable.net (S0106889e681aac74.cg.shawcable.net. [68.147.0.187])         by smtp.gmail.com with ESMTPSA id k17-20020a170902d59100b0016242b71e9fsm17159876plh.158.2022.06.09.12.53.27         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Thu, 09 Jun 2022 12:53:28 -0700 (PDT)
+From: Mathieu Poirier <mathieu.poirier@linaro.org>
+To: viresh.kumar@linaro.org
+Cc: mathieu.poirier@linaro.org
+Subject: [PATCH 1/1] xec: Move to xen-sys event channel API
+Date: Thu,  9 Jun 2022 13:53:25 -0600
+Message-Id: <20220609195325.1043510-2-mathieu.poirier@linaro.org>
+X-Mailer: git-send-email 2.25.1
+In-Reply-To: <20220609195325.1043510-1-mathieu.poirier@linaro.org>
+References: <20220609195325.1043510-1-mathieu.poirier@linaro.org>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Status: RO
+Content-Length: 4753
+Lines: 150
+
+Signed-off-by: Mathieu Poirier <mathieu.poirier@linaro.org>
+---
+ src/xec.rs | 92 ++++++++++++++++++++++--------------------------------
+ 1 file changed, 37 insertions(+), 55 deletions(-)
+
+diff --git a/src/xec.rs b/src/xec.rs
+index 83b5ce3349c0..17011e7ad605 100644
+--- a/src/xec.rs
++++ b/src/xec.rs
+@@ -3,43 +3,39 @@
+ //
+ // SPDX-License-Identifier: Apache-2.0
+ 
+-use std::ptr;
+-
+ use super::{xfm::XenForeignMemory, Error, Result};
+-use libxen_sys::{
+-    domid_t, evtchn_port_t, xenevtchn_bind_interdomain, xenevtchn_close, xenevtchn_fd,
+-    xenevtchn_handle, xenevtchn_notify, xenevtchn_open, xenevtchn_pending, xenevtchn_unbind,
+-    xenevtchn_unmask, xentoollog_logger,
+-};
++use xen_ioctls::XenEventChannel;
+ 
+ pub struct XenEvtChnHandle {
+-    xeh: *mut xenevtchn_handle,
+-    ports: Vec<evtchn_port_t>,
++    channel: XenEventChannel,
++    ports: Vec<u32>,
+ }
+ 
+ impl XenEvtChnHandle {
+     pub fn new() -> Result<Self> {
+-        let xeh = unsafe { xenevtchn_open(ptr::null_mut::<xentoollog_logger>(), 0) };
+-
+-        if xeh.is_null() {
+-            return Err(Error::XenEvtChnHandleFailure);
+-        }
++        let channel = XenEventChannel::new()
++            .map_err(|_| {
++                return Error::XenEvtChnHandleFailure;
++            })
++            .unwrap();
+ 
+         Ok(Self {
+-            xeh,
++            channel,
+             ports: Vec::new(),
+         })
+     }
+ 
+-    pub fn bind(&mut self, xfm: &XenForeignMemory, domid: domid_t, vcpus: u32) -> Result<()> {
++    pub fn bind(&mut self, xfm: &XenForeignMemory, domid: u16, vcpus: u32) -> Result<()> {
+         for cpu in 0..vcpus {
+             let ioreq = xfm.ioreq(cpu)?;
+-            let local_port =
+-                unsafe { xenevtchn_bind_interdomain(self.xeh, domid as u32, ioreq.vp_eport) };
+-            if local_port < 0 {
+-                return Err(Error::XenEvtChnHandleFailure);
+-            } else {
+-                self.ports.push(local_port as evtchn_port_t);
++
++            match self.channel.bind_interdomain(domid as u32, ioreq.vp_eport) {
++                Ok(local_port) => {
++                    self.ports.push(local_port);
++                }
++                Err(_) => {
++                    return Err(Error::XenEvtChnHandleFailure);
++                }
+             }
+         }
+         Ok(())
+@@ -47,47 +43,37 @@ impl XenEvtChnHandle {
+ 
+     pub fn unbind(&self) {
+         for port in &self.ports {
+-            let ret = unsafe { xenevtchn_unbind(self.xeh, *port) };
+-            if ret < 0 {
+-                println!("XenEvtChnHandle: Failed to unbind port: {}", port);
++            if let Err(_) = self.channel.unbind(*port) {
++                println!("XenEvtChnHandle: Failed to unbind port: {}", *port);
+             }
+         }
+     }
+ 
+     pub fn fd(&self) -> Result<u32> {
+-        let fd = unsafe { xenevtchn_fd(self.xeh) };
+-        if fd < 0 {
+-            Err(Error::XenEvtChnHandleFailure)
+-        } else {
+-            Ok(fd as u32)
+-        }
++        self.channel
++            .fd()
++            .map_or(Err(Error::XenEvtChnHandleFailure), |fd| Ok(fd as u32))
+     }
+ 
+-    pub fn pending(&self) -> Result<(u32, u32)> {
+-        let port = unsafe { xenevtchn_pending(self.xeh) };
+-        if port < 0 {
+-            Err(Error::XenEvtChnHandleFailure)
+-        } else {
+-            let cpu = self.ports.iter().position(|&x| x == port as u32).unwrap();
+-            Ok((port as u32, cpu as u32))
+-        }
++    pub fn pending(&mut self) -> Result<(u32, u32)> {
++        self.channel
++            .pending()
++            .map_or(Err(Error::XenEvtChnHandleFailure), |port| {
++                let cpu = self.ports.iter().position(|&x| x == port).unwrap();
++                Ok((port, cpu as u32))
++            })
+     }
+ 
+-    pub fn unmask(&self, port: u32) -> Result<()> {
+-        let ret = unsafe { xenevtchn_unmask(self.xeh, port) };
+-        if ret < 0 {
+-            Err(Error::XenEvtChnHandleFailure)
+-        } else {
+-            Ok(())
+-        }
++    pub fn unmask(&mut self, port: u32) -> Result<()> {
++        self.channel
++            .unmask(port)
++            .map_err(|_| Error::XenEvtChnHandleFailure)
+     }
+ 
+     pub fn notify(&self, port: u32) -> Result<()> {
+-        let ret = unsafe { xenevtchn_notify(self.xeh, port) };
+-        if ret < 0 {
+-            Err(Error::XenEvtChnHandleFailure)
+-        } else {
+-            Ok(())
++        match self.channel.notify(port) {
++            Ok(_) => Ok(()),
++            Err(_) => Err(Error::XenEvtChnHandleFailure),
+         }
+     }
+ }
+@@ -95,9 +81,5 @@ impl XenEvtChnHandle {
+ impl Drop for XenEvtChnHandle {
+     fn drop(&mut self) {
+         self.unbind();
+-
+-        unsafe {
+-            xenevtchn_close(self.xeh);
+-        }
+     }
+ }
+-- 
+2.25.1
+

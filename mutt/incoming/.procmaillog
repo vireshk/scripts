@@ -1849,3 +1849,15 @@ From vireshk  Fri May 27 07:58:03 2022
 From vireshk  Fri Jun 10 07:26:40 2022
  Subject: [PATCH 1/1] xec: Move to xen-sys event channel API
   Folder: PATCH_1-1_xec_Move_to_xen-sys_event_channel_API.mbox		  10300
+From vireshk  Wed Jun 15 15:19:08 2022
+ Subject: [PATCH] drivers: cpufreq: Add missing of_node_put() in qoriq-cpufreq.
+  Folder: PATCH_drivers_cpufreq_Add_missing_of_node_put__in_qoriq-cpuf	   4925
+From vireshk  Wed Jun 15 15:19:08 2022
+ Subject: [PATCH] drivers: cpufreq: Add missing of_node_put() in qoriq-cpufreq.
+  Folder: PATCH_drivers_cpufreq_Add_missing_of_node_put__in_qoriq-cpuf	   4966
+From vireshk  Thu Jun 16 11:20:02 2022
+ Subject: [PATCH 1/2] xec: Replace XenEventChannel with XenEventChannelHandle
+  Folder: PATCH_1-2_xec_Replace_XenEventChannel_with_XenEventChannelHa	   6452
+From vireshk  Thu Jun 16 11:20:04 2022
+ Subject: [PATCH 2/2] xec: Replace XenEvtChnHandle with XenEventChannel
+  Folder: PATCH_2-2_xec_Replace_XenEvtChnHandle_with_XenEventChannel.m	   7764

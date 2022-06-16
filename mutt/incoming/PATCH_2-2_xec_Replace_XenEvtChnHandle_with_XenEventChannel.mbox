@@ -1,0 +1,113 @@
+From vireshk  Thu Jun 16 11:20:04 2022
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [142.251.12.108] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Thu, 16 Jun 2022 11:20:04 +0530 (IST)
+Received: by 2002:a59:ad12:0:b0:2c5:8d2:9a68 with SMTP id w18csp874036vqy;         Wed, 15 Jun 2022 16:09:12 -0700 (PDT)
+X-Received: by 2002:a17:902:c941:b0:164:14cb:ce5f with SMTP id i1-20020a170902c94100b0016414cbce5fmr1972363pla.127.1655334551966;         Wed, 15 Jun 2022 16:09:11 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1655334551; cv=none;         d=google.com; s=arc-20160816;         b=M2yTn0q2FxV/EpvPTrQOAr74Iw7n13Uk26Sw38N3TiWrvRf2KxT27QKe1w6owXWiet          PspRPVV6I9efkebopPu22d8f5vO1RruQNo/OzHfkd9vSBAQuW7W9sz/uVhLOmC6s9t3B          Y2/uJQYHt/EiI9pHst2N8J3YT5ym4CUT0F60T4LWFr243zaLY20WhQEvsL5cbNHWrPAY          y6Rm9J14+/0xwuMffTnS/heodl2/c/Q7XLDW9wHkEehWEknM3I7zljQN8MhgUGYS2/6W          i0B4CzFa7rn/zaFGdOyzaHsOiCxRpMwubZeJYgZhVkzT85QqY971GNWq2ZXXRtW6ndr2          k1Rg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:references:in-reply-to          :message-id:date:subject:cc:to:from:dkim-signature;         bh=Wps819T7cS66/mqtNjNd3kxJ4FrKVfTBsu+qxbIcC/I=;         b=a+bs5ZAmjaeqdkFBsRKefSHtuDQyXvyxws6dMG7hk60eu6nGHAONxVPDtRiIaKut+c          k5jKwW0fbp62pQIDb5Ny+FhIxgiHRe2yJiURq7CuH52yBi96CSJV55EDQltIXqimIbFX          gV9+z33pyo+znhiqm7soSVRl338Xu9C7Ytw1e3tjJQydc6AXr3RC+kp8X3gVh/ZgyQId          vB1JhI7tbWFvYbcta5qpptgrS9/ryxtKOP71L02nMfUtX58uIqDfONUKp9rjzphvffKy          hQ+Ab2VGfajQith+wAY93TUb9mWmkehalekwkzMh9VDnbK2Ha7NAornWl11fytNy33HA          5nxA==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@linaro.org header.s=google header.b=jfpSHqZo;        spf=pass (google.com: domain of mathieu.poirier@linaro.org designates 209.85.220.41 as permitted sender) smtp.mailfrom=mathieu.poirier@linaro.org;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=linaro.org
+Return-Path: <mathieu.poirier@linaro.org>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])         by mx.google.com with SMTPS id m11-20020a63580b000000b004052d64a9a6sor113553pgb.71.2022.06.15.16.09.11         for <viresh.kumar@linaro.org>         (Google Transport Security);         Wed, 15 Jun 2022 16:09:11 -0700 (PDT)
+Received-SPF: pass (google.com: domain of mathieu.poirier@linaro.org designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@linaro.org header.s=google header.b=jfpSHqZo;        spf=pass (google.com: domain of mathieu.poirier@linaro.org designates 209.85.220.41 as permitted sender) smtp.mailfrom=mathieu.poirier@linaro.org;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=linaro.org
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=linaro.org; s=google;         h=from:to:cc:subject:date:message-id:in-reply-to:references          :mime-version:content-transfer-encoding;         bh=Wps819T7cS66/mqtNjNd3kxJ4FrKVfTBsu+qxbIcC/I=;         b=jfpSHqZogzuBENUvWFZHPeD/SNMFF7ySH4gAyOjoH0H44i4v+dTXIVPEiHqF97DQST          bRKpLEU/jhthoScri8IlV1uRvosA+A8vJuRLQpxy8dJQA3aSo+Hm8oWoRidgcPwA+KCQ          Sm3G2tCngAGsn8L4B2zQO96slyVFLwbPCisJm2INxT6wT3HA8Yn3dis0ZCF3CmiS0F5F          Iso/inVXacr8obd16p55EmGeT6sWFifGe8YKkUCoBCKacjHwsXMbd+YygBr/OvJ8/CGa          G+nkPLUObeWr2Ueh3mELTjY9L5BVNc+84uceQkzIk5b1SvxiY8CCMX5PEKDSwOJWPttL          wlNQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=1e100.net; s=20210112;         h=x-gm-message-state:from:to:cc:subject:date:message-id:in-reply-to          :references:mime-version:content-transfer-encoding;         bh=Wps819T7cS66/mqtNjNd3kxJ4FrKVfTBsu+qxbIcC/I=;         b=NmTv3ZdqR4QSbUSV/HDfpyXCeM7yWAtYxY4AF3AZAi165tGTAue1IarjgO35D99kEc          mbVJD3CqmZx1DvUiq67FDGfj7pBI2WiataqWWv1He80qs0pP/DyzCSbfIL6xWE9ZsYFs          jEtW84v65Y7LIMobkiWS5je13/YTSmjcM5BAmj3k48vFm/WvMCm9irhqirVE3WyuO7dc          uVKfZuYJ0IZO/Z+Mm8ng5HbKr0d0fi+tcCqJeb63/hNsDNgWoVD7KXJOmUsgc3lnm7ij          UUFjSzcYZM0VNGuF8WiPfkPFtPG99A/Qfbrssn6CgXots5zq6q9OdoODoXkYlRH0vxMm          zC0g==
+X-Gm-Message-State: AJIora+/nF8xZaDeLLFDrR9zJyO663klcQury84yugoJqoMB1c10Qlwg 	GH/6SUce2hKY/oTThXsTIAtAaNtUT6JlY8SC
+X-Google-Smtp-Source: AGRyM1sN8I9OYMwvsg4BtdXVixlAxYwiOe0x2MwMVYamxTxtQc2/luMWOVdLa6AT9Txy1B9BI0oIag==
+X-Received: by 2002:a63:a50c:0:b0:3fe:3f58:93be with SMTP id n12-20020a63a50c000000b003fe3f5893bemr1797002pgf.265.1655334551005;         Wed, 15 Jun 2022 16:09:11 -0700 (PDT)
+Return-Path: <mathieu.poirier@linaro.org>
+Received: from localhost.localdomain ([192.77.111.2])         by smtp.gmail.com with ESMTPSA id k11-20020a170902d58b00b00167729dfe0bsm157418plh.168.2022.06.15.16.09.08         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Wed, 15 Jun 2022 16:09:09 -0700 (PDT)
+From: Mathieu Poirier <mathieu.poirier@linaro.org>
+To: viresh.kumar@linaro.org
+Cc: mathieu.poirier@linaro.org
+Subject: [PATCH 2/2] xec: Replace XenEvtChnHandle with XenEventChannel
+Date: Wed, 15 Jun 2022 17:09:02 -0600
+Message-Id: <20220615230902.1272260-3-mathieu.poirier@linaro.org>
+X-Mailer: git-send-email 2.25.1
+In-Reply-To: <20220615230902.1272260-1-mathieu.poirier@linaro.org>
+References: <20220615230902.1272260-1-mathieu.poirier@linaro.org>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Content-Length: 2259
+Lines: 79
+
+Replace XenEvtChnHandle with XenEventChannel to follow the convention
+found in xdm.rs.
+
+Signed-off-by: Mathieu Poirier <mathieu.poirier@linaro.org>
+---
+ src/main.rs | 6 +++---
+ src/xec.rs  | 8 ++++----
+ 2 files changed, 7 insertions(+), 7 deletions(-)
+
+diff --git a/src/main.rs b/src/main.rs
+index 32e571c0042d..0460768452b6 100644
+--- a/src/main.rs
++++ b/src/main.rs
+@@ -35,7 +35,7 @@ use libxen_sys::{
+ };
+ use mmio::XenMmio;
+ use xdm::XenDeviceModel;
+-use xec::XenEvtChnHandle;
++use xec::XenEventChannel;
+ use xfm::XenForeignMemory;
+ use xgm::XenGuestMem;
+ use xs::{XsDev, XsReadWatch};
+@@ -128,7 +128,7 @@ fn create_device() -> Result<Generic> {
+ pub struct XenState {
+     mmio: XenMmio,
+     xdm: XenDeviceModel,
+-    xec: XenEvtChnHandle,
++    xec: XenEventChannel,
+     xfm: XenForeignMemory,
+     xgm: XenGuestMem,
+     xsd: XsDev,
+@@ -157,7 +157,7 @@ impl XenState {
+         xfm.map_resource(xsd.fe_domid(), xdm.ioserver_id())?;
+         xdm.set_ioreq_server_state(1)?;
+ 
+-        let mut xec = XenEvtChnHandle::new()?;
++        let mut xec = XenEventChannel::new()?;
+         xec.bind(&xfm, xsd.fe_domid(), xdm.vcpus())?;
+ 
+         let xgm = XenGuestMem::new(&mut xfm, xsd.fe_domid())?;
+diff --git a/src/xec.rs b/src/xec.rs
+index 8ae81afb9ef3..7329870b1118 100644
+--- a/src/xec.rs
++++ b/src/xec.rs
+@@ -6,12 +6,12 @@
+ use super::{xfm::XenForeignMemory, Error, Result};
+ use xen_ioctls::XenEventChannelHandle;
+ 
+-pub struct XenEvtChnHandle {
++pub struct XenEventChannel {
+     channel: XenEventChannelHandle,
+     ports: Vec<u32>,
+ }
+ 
+-impl XenEvtChnHandle {
++impl XenEventChannel {
+     pub fn new() -> Result<Self> {
+         let channel = XenEventChannelHandle::new().map_err(Error::XenIoctlError)?;
+ 
+@@ -37,7 +37,7 @@ impl XenEvtChnHandle {
+     pub fn unbind(&self) {
+         for port in &self.ports {
+             if let Err(_) = self.channel.unbind(*port) {
+-                println!("XenEvtChnHandle: Failed to unbind port: {}", *port);
++                println!("XenEventChannel: Failed to unbind port: {}", *port);
+             }
+         }
+     }
+@@ -62,7 +62,7 @@ impl XenEvtChnHandle {
+     }
+ }
+ 
+-impl Drop for XenEvtChnHandle {
++impl Drop for XenEventChannel {
+     fn drop(&mut self) {
+         self.unbind();
+     }
+-- 
+2.25.1
+

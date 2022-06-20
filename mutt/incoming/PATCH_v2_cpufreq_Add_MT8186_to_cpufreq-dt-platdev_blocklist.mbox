@@ -1,0 +1,56 @@
+From vireshk  Mon Jun 20 09:39:12 2022
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [142.251.12.108] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Mon, 20 Jun 2022 09:39:12 +0530 (IST)
+Received: by 2002:a59:ad12:0:b0:2c5:8d2:9a68 with SMTP id w18csp146128vqy;         Fri, 17 Jun 2022 04:09:33 -0700 (PDT)
+X-Google-Smtp-Source: AGRyM1sjO8QN2uozbYialBKCn/boy7SZHWY7Lb1y6f2CtfzXn+qIKVrXZ34bwemJVZaUgf/W8wJS
+X-Received: by 2002:a05:622a:1048:b0:305:89c:3ec4 with SMTP id f8-20020a05622a104800b00305089c3ec4mr7720124qte.582.1655464173266;         Fri, 17 Jun 2022 04:09:33 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1655464173; cv=none;         d=google.com; s=arc-20160816;         b=HhiLijGgX2DIf2taBlItuog/L6kJtobQpw9TYGztytgX68et36iQcdmwVrRQxnFbzP          0MKsL5tvk7zVza5jR31jDXVnpIJKe4lX0ZMiATlEAXKeQ4e3q6sDgEnvV4sKDzssVSC9          pihfJGLMzape/Qut40OYD8NLQfJgtQ9aWZJ1GFNEXGSQnsRCAduI6usPMcbEYykA9EHh          So9i5XZbnl7gwJ6lJ3EpIXGCu6oafdhGQDOc361BDD9BxWwFzvuDA5Gbw3CWpi8pud8/          j0bYtsFDz5ja2qTSjNzMwMEBFs6KztLmOZykk42TgNGUU8XLjr+5mB+0SO/euLVjEqJn          MB9g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from:dkim-signature;         bh=NAaOwbX+swrOlidOTZ9jHlcB0JPpGX+hIgT3Uz2GcqU=;         b=SfmfevFUIizn7oZkGo1KEPKecZCsuyo1R5fnZ+11hkCbw3Lnk+QIB80I6bmrgg9oru          Z/hVHfUCwWmVXvBzU6R3xA7X6sx0TUdGCmPYW+AMhzPnrBloLxr7a1FSwsXIa3hgNfp+          0iomkQKIP+Cv/JxMM7f2i+rzrYsXQWo4y0ddFTB7xMW1m2nwo6YAZfsUGa1VBaxO2nNV          rH9XJK1BJ7bzpIppFJCDY22yvf42XAdwRM7L18s2XXKqfNVZFxKRQUVcEmB9+5Pr1jfF          J3n8jTQ/JJXOpDnGh22dVKrxs1hRGd9uzGd7OfmzPNi3i0hjO5o4GJvPXj8WVLIkGcq8          QiOA==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@collabora.com header.s=mail header.b=SzZc7AaV;        spf=pass (google.com: domain of angelogioacchino.delregno@collabora.com designates 2a00:1098:0:82:1000:25:2eeb:e5ab as permitted sender) smtp.mailfrom=angelogioacchino.delregno@collabora.com;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=collabora.com
+Return-Path: <angelogioacchino.delregno@collabora.com>
+Received: from madras.collabora.co.uk (madras.collabora.co.uk. [2a00:1098:0:82:1000:25:2eeb:e5ab])         by mx.google.com with ESMTPS id v184-20020a372fc1000000b0069fcf7580e8si2389718qkh.260.2022.06.17.04.09.33         for <viresh.kumar@linaro.org>         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Fri, 17 Jun 2022 04:09:33 -0700 (PDT)
+Received-SPF: pass (google.com: domain of angelogioacchino.delregno@collabora.com designates 2a00:1098:0:82:1000:25:2eeb:e5ab as permitted sender) client-ip=2a00:1098:0:82:1000:25:2eeb:e5ab;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@collabora.com header.s=mail header.b=SzZc7AaV;        spf=pass (google.com: domain of angelogioacchino.delregno@collabora.com designates 2a00:1098:0:82:1000:25:2eeb:e5ab as permitted sender) smtp.mailfrom=angelogioacchino.delregno@collabora.com;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=collabora.com
+Received: from IcarusMOD.eternityproject.eu (2-237-20-237.ip236.fastwebnet.it [2.237.20.237]) 	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits) 	 key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) 	(No client certificate requested) 	(Authenticated sender: kholk11) 	by madras.collabora.co.uk (Postfix) with ESMTPSA id B9199660179A; 	Fri, 17 Jun 2022 12:09:31 +0100 (BST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=collabora.com; 	s=mail; t=1655464172; 	bh=kG26VQ8Q/x/unvWddSRifHSxyfpmVSj9DL0msaHnGTk=; 	h=From:To:Cc:Subject:Date:From; 	b=SzZc7AaVQv6BGAz6/bQTRF7VdL+oQJ8Y+4L3ENHmaHaPTpwWr6CByK1pWvczLCZnK 	 IHUHYfhfRL11eAzIUyL2O14QTYYXPON3437DiCYM+GxwQZAyjp6eTY5EIvyP/fcNka 	 GE0dZFrn171c5+7rG9c5AUQgbh3n5HOCNoO0GZOPQYyB5N+T2CbbekkVEbIIj2we+w 	 upQN7isUtnaH/rYvaLaxI19tinmeuCXhzHUOaY8CVo0scHEAGLhryv8qlpn2ez3FEV 	 DLHOkp7fxRC8f6Krl28Yk/sQCsf0J7x6KA43UjHCHSkcQD5Ac9O1463VtNmWq/fg6z 	 R45l4D5zWADKw==
+From: AngeloGioacchino Del Regno <angelogioacchino.delregno@collabora.com>
+To: rafael@kernel.org
+Cc: viresh.kumar@linaro.org, 	matthias.bgg@gmail.com, 	angelogioacchino.delregno@collabora.com, 	rex-bc.chen@mediatek.com, 	jia-wei.chang@mediatek.com, 	linux-pm@vger.kernel.org, 	linux-kernel@vger.kernel.org, 	linux-arm-kernel@lists.infradead.org, 	linux-mediatek@lists.infradead.org
+Subject: [PATCH v2] cpufreq: Add MT8186 to cpufreq-dt-platdev blocklist
+Date: Fri, 17 Jun 2022 13:09:26 +0200
+Message-Id: <20220617110926.90313-1-angelogioacchino.delregno@collabora.com>
+X-Mailer: git-send-email 2.35.1
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Content-Length: 1050
+Lines: 28
+
+This SoC shall use the mediatek-cpufreq driver, or the system will
+crash upon any clock scaling request: add it to the cpufreq-dt-platdev
+blocklist.
+
+Fixes: 39b360102f3a ("cpufreq: mediatek: Add support for MT8186")
+Signed-off-by: AngeloGioacchino Del Regno <angelogioacchino.delregno@collabora.com>
+Reviewed-by: Matthias Brugger <matthias.bgg@gmail.com>
+---
+
+v2: Moved fixes tag on top of SoB (oops!), added Matthias' R-b
+
+ drivers/cpufreq/cpufreq-dt-platdev.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/drivers/cpufreq/cpufreq-dt-platdev.c b/drivers/cpufreq/cpufreq-dt-platdev.c
+index 96de1536e1cb..2c96de3f2d83 100644
+--- a/drivers/cpufreq/cpufreq-dt-platdev.c
++++ b/drivers/cpufreq/cpufreq-dt-platdev.c
+@@ -127,6 +127,7 @@ static const struct of_device_id blocklist[] __initconst = {
+ 	{ .compatible = "mediatek,mt8173", },
+ 	{ .compatible = "mediatek,mt8176", },
+ 	{ .compatible = "mediatek,mt8183", },
++	{ .compatible = "mediatek,mt8186", },
+ 	{ .compatible = "mediatek,mt8365", },
+ 	{ .compatible = "mediatek,mt8516", },
+ 
+-- 
+2.35.1
+

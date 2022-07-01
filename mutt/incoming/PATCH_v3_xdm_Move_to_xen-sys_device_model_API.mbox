@@ -1,0 +1,273 @@
+From vireshk  Fri Jul  1 11:45:22 2022
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [142.251.12.108] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Fri, 01 Jul 2022 11:45:22 +0530 (IST)
+Received: by 2002:a59:d191:0:b0:2d0:6965:aa67 with SMTP id bn17csp817151vqb;         Thu, 30 Jun 2022 13:09:50 -0700 (PDT)
+X-Received: by 2002:a17:90b:3596:b0:1ec:f563:d64c with SMTP id mm22-20020a17090b359600b001ecf563d64cmr13826074pjb.88.1656619789977;         Thu, 30 Jun 2022 13:09:49 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1656619789; cv=none;         d=google.com; s=arc-20160816;         b=ci39QKnni7yr4pGwiiWkqIzETryt/mqGwKF8ng195llJU5m6rXl2y/ZM2grBAX56Pa          xGJ+KYh2tGbYJ8NQ1bpkbk9qJKue7sNhPyuiOXwsA+kTIH3eg9YBbAiC3Ftxq47xPwuz          T3NWJ8uJ57DCbbYegPm8gtqybefjZCNwiDWx/xZUU751W/LaO7TWQXLf5P0fHvIHjtAH          jCNMgYAhNcr6fQFkDi4rBb5QWOF9POMNB4yLTrX9DAH0Gs9oHHrm+a/J4RC12ujSBcDO          7TDX+QfaWlL1063o86zr3BRlSaPCRJfrYpnb2VSD5w3fdD9iH+r4dBITIq6XZBxwQZ1M          MBVw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from:dkim-signature;         bh=WJwcRk9dqBNaK2iJCFfuUz7qydg+QjiZXnWf79OqYTs=;         b=dhz0t17PsnmCnr3IVAdOxtG3zIUoBDOFtgbdUtV1ceFJDj9HxPF9xR1Wm+8Xz3+xlT          1hC603hCZq8QAWXeHt9T2YYlph+6luQecHxH/ulW5l5aN50729PaEXdTAoFpqtzsdNsQ          Q7g3nQ7Mrpl/kWDGg7tLhSudcyJYXNcaraA3QzCMwmpyQcCu3R7gqP8ZklT8qtQgtUI0          KT0Scvfkk+IxmEqGWBBPF55njas3pBYZnpXvqAihgPhMo0HrHuwDgenbPfxq/C3eeuxe          PAbNTTgOKlT7T43naCi6ewW+k+IY0pf/ES2SqjJiCmhopxkj8SzGdy3tjhN4XP7vTLFC          oUVw==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@linaro.org header.s=google header.b=roElHbZG;        spf=pass (google.com: domain of mathieu.poirier@linaro.org designates 209.85.220.41 as permitted sender) smtp.mailfrom=mathieu.poirier@linaro.org;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=linaro.org
+Return-Path: <mathieu.poirier@linaro.org>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])         by mx.google.com with SMTPS id y6-20020a17090aa40600b001ed12b499f8sor2600077pjp.36.2022.06.30.13.09.49         for <viresh.kumar@linaro.org>         (Google Transport Security);         Thu, 30 Jun 2022 13:09:49 -0700 (PDT)
+Received-SPF: pass (google.com: domain of mathieu.poirier@linaro.org designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@linaro.org header.s=google header.b=roElHbZG;        spf=pass (google.com: domain of mathieu.poirier@linaro.org designates 209.85.220.41 as permitted sender) smtp.mailfrom=mathieu.poirier@linaro.org;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=linaro.org
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=linaro.org; s=google;         h=from:to:cc:subject:date:message-id:mime-version          :content-transfer-encoding;         bh=WJwcRk9dqBNaK2iJCFfuUz7qydg+QjiZXnWf79OqYTs=;         b=roElHbZGBvwV//NyJXrjQER/0Ba7Bv6KZxblwDQG+LAJocDbCaTF8vFT9kQHpO+yla          U6IRwGFOi8mtoSnU1hMefynWMROni5yZIa9nnZAw9mXw55fRazHX5Gip8M0GiVuzpqtx          JO+4pjbHzYn3TAEMH955kQpzGatbpV0xbWxY1Xz/FnO39yHjib2ePpPBi38N3VG/yFrV          ycA4AAU0+wo8V3vbiKAOxIFHv9uXxlva68MZRCTFhoFvMNxDRVyjCXT2F0qFflz+tz0o          j/efaDcKv1IbDw9KZLQex1+KkSjQId7xkEhyo7fBjb0t7wkEpXcL1zcUZltaYVQsD/r+          PerA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=1e100.net; s=20210112;         h=x-gm-message-state:from:to:cc:subject:date:message-id:mime-version          :content-transfer-encoding;         bh=WJwcRk9dqBNaK2iJCFfuUz7qydg+QjiZXnWf79OqYTs=;         b=LzwlhZ+lUBWvE2QWFwXJXCop2Jlf11X5dFyoHfHEjy8pN3gDAZt5AcSwDtwlkTz7Oa          5VHSeAJkY5fJBpexoBrWmHFQUo/VBvdfjhIgjfsPfmj1y0qybqMcTYO8tJQ0Es1MRP4i          yTDk9f+PokDePAV98RyU3e1CObPiXLZXq6jo9KfR2G9t7Gs2qjqYZPZdnEtsHlinNW1+          LGPY6RvlnXmPQ7CSoMVfxUyOounYwJCpwY1s437781KehWxc1QILLasN0BDQItPl8f2H          HXhqngWR/s4aH57LX6XKduAJis1lZ1bYijgURrZp1ZozjCGwyW2D7CwnAlHcHidxSUcJ          PjZg==
+X-Gm-Message-State: AJIora9zpSFFhzvr40CPKf23VVGUpwNh0ZiJbN6VjPOCIIBhlo3JrdSY 	GprLMOQEyQk6bsFo1o6oh+cVOmAwplaTslke
+X-Google-Smtp-Source: AGRyM1uiotzRRnyBdk3jPQMACZRxHj5fCSdVOJpU2SsHKEX5yrRD/y3sCG5PRkp5kARB0hdFyJ4P0A==
+X-Received: by 2002:a17:90a:ea07:b0:1ec:fe4f:f850 with SMTP id w7-20020a17090aea0700b001ecfe4ff850mr11882317pjy.59.1656619787964;         Thu, 30 Jun 2022 13:09:47 -0700 (PDT)
+Return-Path: <mathieu.poirier@linaro.org>
+Received: from p14s.cg.shawcable.net (S0106889e681aac74.cg.shawcable.net. [68.147.0.187])         by smtp.gmail.com with ESMTPSA id q5-20020a170902bd8500b001640beeebf1sm13721675pls.268.2022.06.30.13.09.45         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Thu, 30 Jun 2022 13:09:46 -0700 (PDT)
+From: Mathieu Poirier <mathieu.poirier@linaro.org>
+To: viresh.kumar@linaro.org
+Cc: mathieu.poirier@linaro.org
+Subject: [PATCH v3] xdm: Move to xen-sys device model API
+Date: Thu, 30 Jun 2022 14:09:44 -0600
+Message-Id: <20220630200944.2181356-1-mathieu.poirier@linaro.org>
+X-Mailer: git-send-email 2.25.1
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+Signed-off-by: Mathieu Poirier <mathieu.poirier@linaro.org>
+---
+New for v3: 
+- Replaced all occurences of map_or_else() with map_err().
+---
+ Cargo.lock |   2 +-
+ build.rs   |   1 -
+ src/xdm.rs | 136 +++++++++++++++--------------------------------------
+ 3 files changed, 40 insertions(+), 99 deletions(-)
+
+diff --git a/Cargo.lock b/Cargo.lock
+index d6e6e6c8e899..2ce02dbcee73 100644
+--- a/Cargo.lock
++++ b/Cargo.lock
+@@ -435,7 +435,7 @@ checksum = "712e227841d057c1ee1cd2fb22fa7e5a5461ae8e48fa2ca79ec42cfc1931183f"
+ [[package]]
+ name = "xen-ioctls"
+ version = "0.0.0-pre1"
+-source = "git+https://gitlab.com/mathieupoirier/oxerun/?branch=xen-ioctls#69d3684d69032abb490591c23a5b9b44af6d8638"
++source = "git+https://gitlab.com/mathieupoirier/oxerun/?branch=xen-ioctls#e9f1b6301ce6763abdc405fef3e8aa949bb129e4"
+ dependencies = [
+  "libc",
+  "vmm-sys-util",
+diff --git a/build.rs b/build.rs
+index a6869a286fbc..1f6d20065779 100644
+--- a/build.rs
++++ b/build.rs
+@@ -1,7 +1,6 @@
+ fn main() {
+     println!("cargo:rustc-link-search=/opt/xen-arm/dist/install/usr/lib/");
+     println!("cargo:rustc-link-lib=xenstore");
+-    println!("cargo:rustc-link-lib=xendevicemodel");
+     println!("cargo:rustc-link-lib=xentoolcore");
+     println!("cargo:rustc-link-lib=xentoollog");
+     println!("cargo:rustc-link-lib=xencall");
+diff --git a/src/xdm.rs b/src/xdm.rs
+index 73f52c924d24..0b5e4a7b40c2 100644
+--- a/src/xdm.rs
++++ b/src/xdm.rs
+@@ -4,52 +4,37 @@
+ // SPDX-License-Identifier: Apache-2.0
+ 
+ use super::{Error, Result};
+-use libxen_sys::{
+-    domid_t, ioservid_t, xendevicemodel_close, xendevicemodel_create_ioreq_server,
+-    xendevicemodel_destroy_ioreq_server, xendevicemodel_handle,
+-    xendevicemodel_map_io_range_to_ioreq_server, xendevicemodel_nr_vcpus, xendevicemodel_open,
+-    xendevicemodel_set_ioreq_server_state, xendevicemodel_set_irq_level,
+-    xendevicemodel_unmap_io_range_from_ioreq_server, xentoollog_logger, HVM_IOREQSRV_BUFIOREQ_OFF,
+-};
++use xen_ioctls::{XenDeviceModelHandle, HVM_IOREQSRV_BUFIOREQ_OFF};
+ 
+ pub const VIRTIO_IRQ_HIGH: u32 = 1;
+ 
+ pub struct XenDeviceModel {
+-    xdh: *mut xendevicemodel_handle,
+-    id: Option<ioservid_t>,
+-    domid: domid_t,
++    xdmh: XenDeviceModelHandle,
++    id: Option<u16>,
++    domid: u16,
+     vcpus: u32,
+     map_range: Option<(u64, u64)>,
+ }
+ 
+ impl XenDeviceModel {
+-    pub fn new(domid: domid_t) -> Result<Self> {
+-        let xdh = unsafe { xendevicemodel_open(std::ptr::null_mut::<xentoollog_logger>(), 0) };
+-
+-        if xdh.is_null() {
+-            return Err(Error::XenDeviceModelFailure);
+-        }
++    pub fn new(domid: u16) -> Result<Self> {
++        let xdmh = XenDeviceModelHandle::new().map_err(Error::XenIoctlError)?;
+ 
+         // Create the domain struct earlier so Drop can be called in case of errors.
+         let mut xdm = Self {
+-            xdh,
++            xdmh,
+             id: None,
+             domid,
+             vcpus: 0,
+             map_range: None,
+         };
+ 
+-        let mut num = 0;
+-        let ret = unsafe { xendevicemodel_nr_vcpus(xdm.xdh, domid, &mut num) };
+-        if ret < 0 {
+-            return Err(Error::XenDeviceModelFailure);
+-        }
++        xdm.vcpus = xdm.xdmh.nr_vcpus(domid).map_err(Error::XenIoctlError)?;
+ 
+-        xdm.vcpus = num;
+         Ok(xdm)
+     }
+ 
+-    pub fn ioserver_id(&self) -> ioservid_t {
++    pub fn ioserver_id(&self) -> u16 {
+         self.id.unwrap()
+     }
+ 
+@@ -58,22 +43,13 @@ impl XenDeviceModel {
+     }
+ 
+     pub fn create_ioreq_server(&mut self) -> Result<()> {
+-        let mut id = 0;
+-
+-        let ret = unsafe {
+-            xendevicemodel_create_ioreq_server(
+-                self.xdh,
+-                self.domid,
+-                HVM_IOREQSRV_BUFIOREQ_OFF as i32,
+-                &mut id,
+-            )
+-        };
+-        if ret < 0 {
+-            Err(Error::XenDeviceModelFailure)
+-        } else {
+-            self.id = Some(id);
+-            Ok(())
+-        }
++        self.id = Some(
++            self.xdmh
++                .create_ioreq_server(self.domid, HVM_IOREQSRV_BUFIOREQ_OFF as u8)
++                .map_err(Error::XenIoctlError)?,
++        );
++
++        Ok(())
+     }
+ 
+     fn destroy_ioreq_server(&mut self) -> Result<()> {
+@@ -81,76 +57,46 @@ impl XenDeviceModel {
+             return Ok(());
+         }
+ 
+-        let ret = unsafe {
+-            xendevicemodel_destroy_ioreq_server(self.xdh, self.domid, self.ioserver_id())
+-        };
+-        if ret < 0 {
+-            Err(Error::XenDeviceModelFailure)
+-        } else {
+-            self.id = None;
+-            Ok(())
+-        }
++        self.xdmh
++            .destroy_ioreq_server(self.domid, self.ioserver_id())
++            .map_err(Error::XenIoctlError)?;
++
++        self.id = None;
++        Ok(())
+     }
+ 
+     pub fn set_ioreq_server_state(&self, enabled: i32) -> Result<()> {
+-        let ret = unsafe {
+-            xendevicemodel_set_ioreq_server_state(self.xdh, self.domid, self.ioserver_id(), enabled)
+-        };
+-        if ret < 0 {
+-            Err(Error::XenDeviceModelFailure)
+-        } else {
+-            Ok(())
+-        }
++        self.xdmh
++            .set_ioreq_server_state(self.domid, self.ioserver_id(), enabled)
++            .map_err(Error::XenIoctlError)
+     }
+ 
+     pub fn map_io_range_to_ioreq_server(&mut self, start: u64, size: u64) -> Result<()> {
+         let end = start + size - 1;
+-        let ret = unsafe {
+-            xendevicemodel_map_io_range_to_ioreq_server(
+-                self.xdh,
+-                self.domid,
+-                self.ioserver_id(),
+-                1,
+-                start,
+-                end,
+-            )
+-        };
+-        if ret < 0 {
+-            Err(Error::XenDeviceModelFailure)
+-        } else {
+-            self.map_range = Some((start, end));
+-            Ok(())
+-        }
++
++        self.xdmh
++            .map_io_range_to_ioreq_server(self.domid, self.ioserver_id(), 1, start, end)
++            .map_err(Error::XenIoctlError)?;
++
++        self.map_range = Some((start, end));
++        Ok(())
+     }
+ 
+     fn ummap_io_range_from_ioreq_server(&self) -> Result<()> {
+         if let Some((start, end)) = self.map_range {
+-            let ret = unsafe {
+-                xendevicemodel_unmap_io_range_from_ioreq_server(
+-                    self.xdh,
+-                    self.domid,
+-                    self.ioserver_id(),
+-                    1,
+-                    start,
+-                    end,
+-                )
+-            };
+-            if ret < 0 {
+-                return Err(Error::XenDeviceModelFailure);
+-            }
++            return self
++                .xdmh
++                .unmap_io_range_from_ioreq_server(self.domid, self.ioserver_id(), 1, start, end)
++                .map_err(Error::XenIoctlError);
+         }
+ 
+         Ok(())
+     }
+ 
+     pub fn set_irq(&self, irq: u32) -> Result<()> {
+-        let ret =
+-            unsafe { xendevicemodel_set_irq_level(self.xdh, self.domid, irq, VIRTIO_IRQ_HIGH) };
+-        if ret < 0 {
+-            Err(Error::XenDeviceModelFailure)
+-        } else {
+-            Ok(())
+-        }
++        self.xdmh
++            .set_irq_level(self.domid, irq, VIRTIO_IRQ_HIGH)
++            .map_err(Error::XenIoctlError)
+     }
+ }
+ 
+@@ -159,9 +105,5 @@ impl Drop for XenDeviceModel {
+         self.ummap_io_range_from_ioreq_server().unwrap();
+         self.set_ioreq_server_state(0).unwrap();
+         self.destroy_ioreq_server().unwrap();
+-
+-        unsafe {
+-            xendevicemodel_close(self.xdh);
+-        }
+     }
+ }
+-- 
+2.25.1
+

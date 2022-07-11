@@ -140,7 +140,7 @@ alias gitmailvirtiorg='gitmail --to "Miguel Ojeda <miguel.ojeda.sandonis@gmail.c
 
 alias gitmailgpiod='gitmail --cc vingu --to "Linus Walleij <linus.walleij@linaro.org>" --to "Bartosz Golaszewski <brgl@bgdev.pl>" --cc "linux-gpio@vger.kernel.org" --cc vingu --cc "Kent Gibson <warthog618@gmail.com>"'
 
-alias gitmailgpiodrust='gitmail --cc vingu --to "Linus Walleij <linus.walleij@linaro.org>" --to "Bartosz Golaszewski <brgl@bgdev.pl>" --cc "linux-gpio@vger.kernel.org" --cc vingu --cc "Kent Gibson <warthog618@gmail.com>" --cc "Miguel Ojeda <miguel.ojeda.sandonis@gmail.com>" --cc "Wedson Almeida Filho <wedsonaf@google.com>" --cc "Alex Bennée <alex.bennee@linaro.org>" --cc "stratos-dev@op-lists.linaro.org" --cc "Gerard Ryan <g.m0n3y.2503@gmail.com>"'
+alias gitmailgpiodrust='gitmail --cc vingu --to "Linus Walleij <linus.walleij@linaro.org>" --to "Bartosz Golaszewski <brgl@bgdev.pl>" --cc "linux-gpio@vger.kernel.org" --cc "Kent Gibson <warthog618@gmail.com>" --cc "Miguel Ojeda <miguel.ojeda.sandonis@gmail.com>" --cc "Wedson Almeida Filho <wedsonaf@google.com>" --cc "Alex Bennée <alex.bennee@linaro.org>" --cc "stratos-dev@op-lists.linaro.org" --cc "Gerard Ryan <g.m0n3y.2503@gmail.com>"'
 
 # fetch remotes
 alias gitsyncpmko='ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/pm.git next;ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/pm.git linus;'

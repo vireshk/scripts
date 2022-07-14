@@ -1879,3 +1879,6 @@ From vireshk  Fri Jul  1 11:45:22 2022
 From vireshk  Fri Jul  1 11:45:22 2022
  Subject: [PATCH v3] xdm: Move to xen-sys device model API
   Folder: PATCH_v3_xdm_Move_to_xen-sys_device_model_API.mbox		  12839
+From vireshk  Wed Jul 13 16:45:55 2022
+ Subject: [PATCH] cpufreq: mediatek: Handle sram regulator probe deferral
+  Folder: PATCH_cpufreq_mediatek_Handle_sram_regulator_probe_deferral.	   5999

@@ -1,0 +1,59 @@
+From vireshk  Wed Jul 13 16:45:55 2022
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [142.251.12.108] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Wed, 13 Jul 2022 16:45:55 +0530 (IST)
+Received: by 2002:a59:d191:0:b0:2d0:6965:aa67 with SMTP id bn17csp484991vqb;         Wed, 13 Jul 2022 04:15:44 -0700 (PDT)
+X-Google-Smtp-Source: AGRyM1tsoTD5O8/zn2rR2RwBzlUb+PgG1VIpj5HvekzlqxqKl5kHthtNTUAXa9Wm7KjSqkpBWX1g
+X-Received: by 2002:a7b:c381:0:b0:3a2:fe96:2ce4 with SMTP id s1-20020a7bc381000000b003a2fe962ce4mr212423wmj.70.1657710944570;         Wed, 13 Jul 2022 04:15:44 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1657710944; cv=none;         d=google.com; s=arc-20160816;         b=Z2UcWqMq2MDUTVIL/qBgY0sbk7HWh5MMD9TZhP6tkJq6iMMRbMHqLm4S4wgB9Eommx          kYHshiYm5snQu/IjlZqRct2qklGI8720b0vhNZ048XOVlMpz0RZ6+61vnA9LpfjLl/8h          j3Rq5ePB2MoI3qz1kl4Q/B+yL+3BOClFO8blHz7g4+AmPI70S7wrFg34QQeP+BR5xc7o          EqlD8Nr33hNfUsiqI6FzKxUSjAUlHj7FDyMY9h/VyXSieZ7vXsVyFMDYznL2pN+GaYe6          iDlAxx/AITiYkFo6RdGfUAqiC/VTgRlnjJ+jHXDZn0nELs/AWGPNxTx6gm0V/cSEWi5m          38kQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from:dkim-signature;         bh=3RMzsF5N/lzfi6ERfS7Qwvrz694jHMUn2cSr77/YNAk=;         b=RGnszE3lDB4ty3DSXPgd8t6ApvRYZI9UoqrvrfSMjHlBfFSfbFx0oUPWc0Mk2jY+n+          qWWOqX07H4g9RyP/1fi3BAzp6ZcV8kHJtqsfs7L4tyhtJwd+kBqLbZKxOkSfOKs6l/S3          4B54VohsFWi706gSexNF+RzWLljS+qoQ+Gv30MLGNSVNrHALc2XtZ5buXbkLQDjL3Jfz          H8UakfVq5oEXXysutvYp6dR4j/pb0PN4lSHfajkEJZu84H6zJGZOOD8lS73UIBrvi/mX          S5N7a/f9Mlo8R9uZKMsAmBl2ejWclOELtdVUOOqY9xV03/GfoX981nfT5wWQ5msJ93R4          dYyw==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@collabora.com header.s=mail header.b=HyVpqpit;        spf=pass (google.com: domain of angelogioacchino.delregno@collabora.com designates 46.235.227.172 as permitted sender) smtp.mailfrom=angelogioacchino.delregno@collabora.com;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=collabora.com
+Return-Path: <angelogioacchino.delregno@collabora.com>
+Received: from madras.collabora.co.uk (madras.collabora.co.uk. [46.235.227.172])         by mx.google.com with ESMTPS id i16-20020a05600c401000b0039c7a770277si1775561wmm.194.2022.07.13.04.15.44         for <viresh.kumar@linaro.org>         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Wed, 13 Jul 2022 04:15:44 -0700 (PDT)
+Received-SPF: pass (google.com: domain of angelogioacchino.delregno@collabora.com designates 46.235.227.172 as permitted sender) client-ip=46.235.227.172;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@collabora.com header.s=mail header.b=HyVpqpit;        spf=pass (google.com: domain of angelogioacchino.delregno@collabora.com designates 46.235.227.172 as permitted sender) smtp.mailfrom=angelogioacchino.delregno@collabora.com;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=collabora.com
+Received: from IcarusMOD.eternityproject.eu (2-237-20-237.ip236.fastwebnet.it [2.237.20.237]) 	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits) 	 key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) 	(No client certificate requested) 	(Authenticated sender: kholk11) 	by madras.collabora.co.uk (Postfix) with ESMTPSA id 85C0C66015AE; 	Wed, 13 Jul 2022 12:15:43 +0100 (BST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=collabora.com; 	s=mail; t=1657710944; 	bh=he62TNO8XhfyzG98GzZOCha5TyM78B31K/Jr/Qt68kI=; 	h=From:To:Cc:Subject:Date:From; 	b=HyVpqpitt+9SP9MGnE9dBIeE1RmtbmliD1qYbJ8mpfhAhmubKxRw7b0LkxBwdcRYU 	 aqs/grOUGGtnLCjBIEZVYSB40GrtfCFOu2u6K+GsNsdVN+ERco8WLbHCHIXVHn3NFo 	 VeYI35zsVDzkPudMYLNTTOq/EHG25AGJR8GvkWpxj4ZNizpO2+VXNTAg9P79gB8X8p 	 fc6qJDEkjDCvT7KxKCW5GYPIxSDL/i5oRM5ymltOlVlIxTn8M4Dq9kSB8lCEGgQrDO 	 w2yy1QOKl38cXNRRimqK2CkhRz1F9gE1xfDZm3bMfbgcF3RtMOcPIYZ7wbBcu5uSIf 	 rjoJHB3qAq5Pw==
+From: AngeloGioacchino Del Regno <angelogioacchino.delregno@collabora.com>
+To: rafael@kernel.org
+Cc: viresh.kumar@linaro.org, 	lgirdwood@gmail.com, 	broonie@kernel.org, 	matthias.bgg@gmail.com, 	angelogioacchino.delregno@collabora.com, 	rex-bc.chen@mediatek.com, 	jia-wei.chang@mediatek.com, 	linux-pm@vger.kernel.org, 	linux-kernel@vger.kernel.org, 	linux-arm-kernel@lists.infradead.org, 	linux-mediatek@lists.infradead.org
+Subject: [PATCH] cpufreq: mediatek: Handle sram regulator probe deferral
+Date: Wed, 13 Jul 2022 13:15:36 +0200
+Message-Id: <20220713111536.115097-1-angelogioacchino.delregno@collabora.com>
+X-Mailer: git-send-email 2.35.1
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+If the regulator_get_optional() call for the SRAM regulator returns
+a probe deferral, we must bail out and retry probing later: failing
+to do this will produce unstabilities on platforms requiring the
+handling for this regulator.
+
+Fixes: ffa7bdf7f344 ("cpufreq: mediatek: Make sram regulator optional")
+Signed-off-by: AngeloGioacchino Del Regno <angelogioacchino.delregno@collabora.com>
+---
+ drivers/cpufreq/mediatek-cpufreq.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+
+diff --git a/drivers/cpufreq/mediatek-cpufreq.c b/drivers/cpufreq/mediatek-cpufreq.c
+index 3a2be4552020..7f2680bc9a0f 100644
+--- a/drivers/cpufreq/mediatek-cpufreq.c
++++ b/drivers/cpufreq/mediatek-cpufreq.c
+@@ -439,9 +439,13 @@ static int mtk_cpu_dvfs_info_init(struct mtk_cpu_dvfs_info *info, int cpu)
+ 
+ 	/* Both presence and absence of sram regulator are valid cases. */
+ 	info->sram_reg = regulator_get_optional(cpu_dev, "sram");
+-	if (IS_ERR(info->sram_reg))
++	if (IS_ERR(info->sram_reg)) {
++		ret = PTR_ERR(info->sram_reg);
++		if (ret == -EPROBE_DEFER)
++			goto out_free_resources;
++
+ 		info->sram_reg = NULL;
+-	else {
++	} else {
+ 		ret = regulator_enable(info->sram_reg);
+ 		if (ret) {
+ 			dev_warn(cpu_dev, "cpu%d: failed to enable vsram\n", cpu);
+-- 
+2.35.1
+

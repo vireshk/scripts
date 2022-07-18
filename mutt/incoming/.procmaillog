@@ -1882,3 +1882,6 @@ From vireshk  Fri Jul  1 11:45:22 2022
 From vireshk  Wed Jul 13 16:45:55 2022
  Subject: [PATCH] cpufreq: mediatek: Handle sram regulator probe deferral
   Folder: PATCH_cpufreq_mediatek_Handle_sram_regulator_probe_deferral.	   5999
+From vireshk  Mon Jul 18 05:57:37 2022
+ Subject: [PATCH 5/6] dt-bindings: cpufreq: cpufreq-qcom-hw: Add SM6375 compati
+  Folder: PATCH_5-6_dt-bindings_cpufreq_cpufreq-qcom-hw_Add_SM6375_com	   4737

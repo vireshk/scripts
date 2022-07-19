@@ -1885,3 +1885,12 @@ From vireshk  Wed Jul 13 16:45:55 2022
 From vireshk  Mon Jul 18 05:57:37 2022
  Subject: [PATCH 5/6] dt-bindings: cpufreq: cpufreq-qcom-hw: Add SM6375 compati
   Folder: PATCH_5-6_dt-bindings_cpufreq_cpufreq-qcom-hw_Add_SM6375_com	   4737
+From vireshk  Tue Jul 19 09:23:38 2022
+ Subject: [PATCH v2 1/2] OPP: Fix refcount leak bug for opp_table
+  Folder: PATCH_v2_1-2_OPP_Fix_refcount_leak_bug_for_opp_table.mbox	   6780
+From vireshk  Tue Jul 19 09:23:38 2022
+ Subject: [PATCH v2 1/2] OPP: Fix refcount leak bug for opp_table
+  Folder: PATCH_v2_1-2_OPP_Fix_refcount_leak_bug_for_opp_table.mbox	   6780
+From vireshk  Tue Jul 19 09:23:40 2022
+ Subject: [PATCH v2 2/2] OPP: Fix refcount leak bug for opp
+  Folder: PATCH_v2_2-2_OPP_Fix_refcount_leak_bug_for_opp.mbox		   6978

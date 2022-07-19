@@ -1,0 +1,84 @@
+From vireshk  Tue Jul 19 09:23:38 2022
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [142.251.12.108] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Tue, 19 Jul 2022 09:23:38 +0530 (IST)
+Received: by 2002:a05:612c:2314:b0:2d4:ac35:96af with SMTP id fr20csp2733207vqb;         Mon, 18 Jul 2022 07:07:05 -0700 (PDT)
+X-Google-Smtp-Source: AGRyM1vTztOvgZne/kDl3PSW0w4JANCbBcFZgUm+lIL5w3pHofzScR1wHyJQDmRfgY6XEbaD3J4q
+X-Received: by 2002:a37:27c2:0:b0:6b5:df3c:996b with SMTP id n185-20020a3727c2000000b006b5df3c996bmr5885793qkn.152.1658153224941;         Mon, 18 Jul 2022 07:07:04 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1658153224; cv=none;         d=google.com; s=arc-20160816;         b=w2xJXvwCputMWA0xL4zjbfBNIAo6ZE1zIFJUuv7f1MSIxlalv1SyXH2SHBOg7FooLM          dFX0Yj59yX2IvHgbLDzLst709wq2eKvzRYZazBnOSRdvjFeGz5wobb02R1JMEC8M9Hfq          1fepUHVFOXkxyChRiG2UYBgb/sOFbR9XWK6qL47HVdPrB63TSMoDuES3PUVfDoWg0Xt7          vy32ThoiIe8gECEqHhhgz8XwjttQC5a/0yJqm/dXqTopm2bykGoJF1anGxd8weeRSmLR          uLC0pITiK5jbj2u0hq5+EKoSMeb1RNmKzaguzEgAz4FqXeOd8GeYW+f3tQ5Q1mJY+2n9          OoAA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:message-id:date:subject:to          :from:dkim-signature:dmarc-filter:delivered-to;         bh=qiii+ijtDUpLXuKUfT/gct0Y4qtxlMum/HdyRii7+OE=;         b=J3JZvh7x2W0HDWy5ixUJxL9bFWTsvixFS4psQUW5PeXvYfB4sisB6Qeu0lk+NpMwPu          nbO92TTUpxm1O2PqLRkEfEEn4vinFtHIAg6A+UNaalWOGPyARai4mWhojC5I/q8b8LAn          MrfD157/kiYeT9v7xbcxjpYoo19uZnLTzUhtRp/rNUEL5Y2AmvtQW9hpPWaTOBbStkFH          HnkzUKCTfpz8tZugq17ECZrTIjtpOh2ZFU0N6bIFRCuzCRejenONuFW/OI7XHvLQvVh4          kdkLGjk2fpSsvO1nnKIu/n9D1MBAi6RIDCD+0baulpNp7xHCuP1n3WWwEvkPu9r7Wagk          avHg==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@126.com header.s=s110527 header.b="p9de7dN/";        spf=pass (google.com: domain of srs0=ipsm=xx=126.com=windhl@kernel.org designates 139.178.84.217 as permitted sender) smtp.mailfrom="SRS0=IpSm=XX=126.com=windhl@kernel.org";        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=126.com
+Return-Path: <SRS0=IpSm=XX=126.com=windhl@kernel.org>
+Received: from dfw.source.kernel.org (dfw.source.kernel.org. [139.178.84.217])         by mx.google.com with ESMTPS id p11-20020ad45f4b000000b00472fefa1ed2si5716684qvg.126.2022.07.18.07.07.04         for <viresh.kumar@linaro.org>         (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);         Mon, 18 Jul 2022 07:07:04 -0700 (PDT)
+Received-SPF: pass (google.com: domain of srs0=ipsm=xx=126.com=windhl@kernel.org designates 139.178.84.217 as permitted sender) client-ip=139.178.84.217;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@126.com header.s=s110527 header.b="p9de7dN/";        spf=pass (google.com: domain of srs0=ipsm=xx=126.com=windhl@kernel.org designates 139.178.84.217 as permitted sender) smtp.mailfrom="SRS0=IpSm=XX=126.com=windhl@kernel.org";        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=126.com
+Received: from smtp.kernel.org (relay.kernel.org [52.25.139.140]) 	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) 	(No client certificate requested) 	by dfw.source.kernel.org (Postfix) with ESMTPS id 92BFE61697 	for <viresh.kumar@linaro.org>; Mon, 18 Jul 2022 14:07:04 +0000 (UTC)
+Received: by smtp.kernel.org (Postfix) 	id E021EC341CF; Mon, 18 Jul 2022 14:07:03 +0000 (UTC)
+Delivered-To: vireshk@kernel.org
+Received: from mail-m963.mail.126.com (mail-m963.mail.126.com [123.126.96.3]) 	by smtp.kernel.org (Postfix) with ESMTP id F2302C341C0; 	Mon, 18 Jul 2022 14:07:01 +0000 (UTC)
+DMARC-Filter: OpenDMARC Filter v1.4.1 smtp.kernel.org F2302C341C0
+Authentication-Results: smtp.kernel.org; dmarc=pass (p=none dis=none) header.from=126.com
+Authentication-Results: smtp.kernel.org; spf=pass smtp.mailfrom=126.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=126.com; 	s=s110527; h=From:Subject:Date:Message-Id:MIME-Version; bh=qiii+ 	ijtDUpLXuKUfT/gct0Y4qtxlMum/HdyRii7+OE=; b=p9de7dN/DVTk5mq1PeV/8 	IZhL8Dm3QMSJ1vNcOoCWHPQ7FogT0WLDpU4vgEhJpMOBWf3QZUYqT3q9H9raOVeb 	HA/5BmjiLAXoKRe9pln+clSAHPYV0c6k0tcba5KCYw64aI6zeXy5vdKsnnf5Hmp3 	AEB0YJpTouUKLtVRH5OgkY=
+Received: from localhost.localdomain (unknown [124.16.139.61]) 	by smtp8 (Coremail) with SMTP id NORpCgBX6IThYdVigvlWIA--.52604S2; 	Mon, 18 Jul 2022 21:36:33 +0800 (CST)
+From: Liang He <windhl@126.com>
+To: vireshk@kernel.org, 	nm@ti.com, 	sboyd@kernel.org, 	linux-pm@vger.kernel.org, 	windhl@126.com
+Subject: [PATCH v2 1/2] OPP: Fix refcount leak bug for opp_table
+Date: Mon, 18 Jul 2022 21:36:31 +0800
+Message-Id: <20220718133632.937290-1-windhl@126.com>
+X-Mailer: git-send-email 2.25.1
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+X-CM-TRANSID:NORpCgBX6IThYdVigvlWIA--.52604S2
+X-Coremail-Antispam: 1Uf129KBjvJXoW7ZrW7KrykJr4rWw1kJryxXwb_yoW8XFW3pr 	15JrZ0yFW3X3yqyr47Jan29a4YyanFqrykK3s5C34Yvw1qya4UXFW2q343AFykJas5XFWa 	qF1qqr4UWa1xJ37anT9S1TB71UUUUUUqnTZGkaVYY2UrUUUUjbIjqfuFe4nvWSU5nxnvy2 	9KBjDUYxBIdaVFxhVjvjDU0xZFpf9x07UYjgxUUUUU=
+X-Originating-IP: [124.16.139.61]
+X-CM-SenderInfo: hzlqvxbo6rjloofrz/1tbizgJCF18RPhBXjAAAsi
+Content-Length: 1473
+Lines: 45
+
+In _of_init_opp_table(), of_put_node() in the last line is not
+needed as the 'opp_np' is escaped out into 'opp_table->np' and
+’opp_table' is an out parameter. We should call the of_node_put()
+when the 'opp_table' is released in _opp_table_kref_release().
+
+Signed-off-by: Liang He <windhl@126.com>
+---
+ changelog:
+
+ v2: (1) add the of_node_put() in _opp_table_kref_release()
+     (2) rebase on linux-next/master
+     (3) split v1 into two commits, opp_table->np and opp->np
+ v1: https://lore.kernel.org/all/20220715144712.444104-1-windhl@126.com/
+
+
+ drivers/opp/core.c | 1 +
+ drivers/opp/of.c   | 1 -
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/drivers/opp/core.c b/drivers/opp/core.c
+index 4f4a285886fa..cc2671322e41 100644
+--- a/drivers/opp/core.c
++++ b/drivers/opp/core.c
+@@ -1499,6 +1499,7 @@ static void _opp_table_kref_release(struct kref *kref)
+ 		dev_pm_opp_put(opp_table->current_opp);
+ 
+ 	_of_clear_opp_table(opp_table);
++	of_node_put(opp_table->np);
+ 
+ 	/* Release automatically acquired single clk */
+ 	if (!IS_ERR(opp_table->clk))
+diff --git a/drivers/opp/of.c b/drivers/opp/of.c
+index 8367823a2001..374544afe9e4 100644
+--- a/drivers/opp/of.c
++++ b/drivers/opp/of.c
+@@ -242,7 +242,6 @@ void _of_init_opp_table(struct opp_table *opp_table, struct device *dev,
+ 	opp_table->np = opp_np;
+ 
+ 	_opp_table_alloc_required_tables(opp_table, dev, opp_np);
+-	of_node_put(opp_np);
+ }
+ 
+ void _of_clear_opp_table(struct opp_table *opp_table)
+-- 
+2.25.1
+

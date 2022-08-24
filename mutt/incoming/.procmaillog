@@ -1906,3 +1906,6 @@ From vireshk  Tue Aug 16 10:13:09 2022
 From vireshk  Tue Aug 16 10:12:58 2022
  Subject: [PATCH 4/7] cpufreq: Add SM6115 to cpufreq-dt-platdev blocklist
   Folder: PATCH_4-7_cpufreq_Add_SM6115_to_cpufreq-dt-platdev_blocklist	   7291
+From vireshk  Tue Aug 23 20:28:21 2022
+ Subject: [PATCH] dt-bindings: opp: Add missing (unevaluated|additional)Propert
+  Folder: PATCH_dt-bindings_opp_Add_missing_unevaluated|additional_Pro	   7387

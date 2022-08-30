@@ -1909,3 +1909,6 @@ From vireshk  Tue Aug 16 10:12:58 2022
 From vireshk  Tue Aug 23 20:28:21 2022
  Subject: [PATCH] dt-bindings: opp: Add missing (unevaluated|additional)Propert
   Folder: PATCH_dt-bindings_opp_Add_missing_unevaluated|additional_Pro	   7387
+From vireshk  Tue Aug 30 08:16:08 2022
+ Subject: [PATCH] cpufreq: bmips-cpufreq: Use module_init and add module_exit
+  Folder: PATCH_cpufreq_bmips-cpufreq_Use_module_init_and_add_module_e	   5142

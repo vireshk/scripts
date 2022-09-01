@@ -1912,3 +1912,9 @@ From vireshk  Tue Aug 23 20:28:21 2022
 From vireshk  Tue Aug 30 08:16:08 2022
  Subject: [PATCH] cpufreq: bmips-cpufreq: Use module_init and add module_exit
   Folder: PATCH_cpufreq_bmips-cpufreq_Use_module_init_and_add_module_e	   5142
+From vireshk  Tue Aug 30 13:41:33 2022
+ Subject: [PATCH -next v2] cpufreq: bmips-cpufreq: Use module_init and add modu
+  Folder: PATCH_-next_v2_cpufreq_bmips-cpufreq_Use_module_init_and_add	   5237
+From vireshk  Thu Sep  1 09:28:22 2022
+ Subject: [PATCH linux-next] cpufreq: tegra194: Remove the unneeded result vari
+  Folder: PATCH_linux-next_cpufreq_tegra194_Remove_the_unneeded_result	   6444

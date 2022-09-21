@@ -1918,3 +1918,6 @@ From vireshk  Tue Aug 30 13:41:33 2022
 From vireshk  Thu Sep  1 09:28:22 2022
  Subject: [PATCH linux-next] cpufreq: tegra194: Remove the unneeded result vari
   Folder: PATCH_linux-next_cpufreq_tegra194_Remove_the_unneeded_result	   6444
+From vireshk  Tue Sep 20 16:37:40 2022
+ Subject: [Patch v2] cpufreq: tegra194: Add support for Tegra239
+  Folder: Patch_v2_cpufreq_tegra194_Add_support_for_Tegra239.mbox	  14175

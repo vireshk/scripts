@@ -1921,3 +1921,15 @@ From vireshk  Thu Sep  1 09:28:22 2022
 From vireshk  Tue Sep 20 16:37:40 2022
  Subject: [Patch v2] cpufreq: tegra194: Add support for Tegra239
   Folder: Patch_v2_cpufreq_tegra194_Add_support_for_Tegra239.mbox	  14175
+From vireshk  Sat Sep 24 11:19:36 2022
+ Subject: [PATCH -next] cpufreq: tegra194: change tegra239_cpufreq_soc to stati
+  Folder: PATCH_-next_cpufreq_tegra194_change_tegra239_cpufreq_soc_to_	   5048
+From vireshk  Sat Sep 24 11:19:36 2022
+ Subject: [PATCH -next] cpufreq: tegra194: change tegra239_cpufreq_soc to stati
+  Folder: PATCH_-next_cpufreq_tegra194_change_tegra239_cpufreq_soc_to_	   5048
+From vireshk  Mon Sep 26 11:06:17 2022
+ Subject: [PATCH] cpufreq: Add __init annotation to module init funcs
+  Folder: PATCH_cpufreq_Add__init_annotation_to_module_init_funcs.mbox	   5485
+From vireshk  Tue Sep 20 14:26:34 2022
+ Subject: [PATCH] cpufreq: qcom-cpufreq-hw: Add cpufreq qos for LMh
+  Folder: PATCH_cpufreq_qcom-cpufreq-hw_Add_cpufreq_qos_for_LMh.mbox	   5867

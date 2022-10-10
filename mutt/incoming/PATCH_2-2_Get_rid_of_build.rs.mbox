@@ -1,0 +1,59 @@
+From vireshk  Mon Oct 10 08:57:58 2022
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [74.125.24.109] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Mon, 10 Oct 2022 08:57:58 +0530 (IST)
+Received: by 2002:a05:600c:378b:0:0:0:0 with SMTP id o11csp1487571wmr;         Thu, 29 Sep 2022 14:24:22 -0700 (PDT)
+X-Received: by 2002:a05:6a00:1892:b0:540:acee:29e8 with SMTP id x18-20020a056a00189200b00540acee29e8mr5359566pfh.1.1664486662000;         Thu, 29 Sep 2022 14:24:22 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1664486661; cv=none;         d=google.com; s=arc-20160816;         b=eOLDKCo7/tE5JOTp3LLHi9Jj4AlHX6qkYki+hUlkEhS5Ih2BvOmPWxsp8WDvXO0A9/          5DWJgDb7AjwVkdYntMMjlAF9+EV+ckVTLscTg5DkzKEIcrQFXYC1ngFITax7oE2iCg40          QF9EPRq89T3vWfVsZ/wsfeZvxKHJej+gPEC8JYNpJ3+FOOI9cE7fOnL6e0T3yi01vbEO          b3cN9rfHRk1qOFQSnxitqWakPqOwnq3qa+1XHR0T+5EfPEFrBaiy+1K4Ee1NW6eeUjhD          lqK/IJgGvrNIc+x262jKpa1AoMtoesx0/l4bZGvpNzBjTWdKWQm4iUzXXYHpa1GfAoFG          LzAQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:references:in-reply-to          :message-id:date:subject:cc:to:from:dkim-signature;         bh=pC6xG9PAD/R8MqGUnwz9PcuABAJpSAqoCj+Xp5t36WY=;         b=WEIkT/++FslHGB22sPE0ulNYZ2FF9PLnB+si+KP6k1/Nfj4Yw8pYRVVvnuT7m5aS36          C/SMZNRCFzK6MWLJatIJxTXwkIqAbmE2yI+/5bhjwaxCHIV0Z5eai0Qi5K5UPUIOIwEQ          A3+/+GsAoJkguNmrqYGBS/fVT3u6zZ9mACLbq0Mac6RxfiqUiGo3vl4A32CzarQhbaLE          P3svoO6mKqHKIQCU2k+crP9gUD9iIGsI3Q8xs+it/B+HWXHfJb/hyGfOg/XPTVc+FqyK          uTYifQEYh50bNFbRrasEgiLWbTBuuVvM5Fpq3GmniMoodTH5tjq4XyPAHB30v9WaKLux          FNTA==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@linaro.org header.s=google header.b=rAUeLLzh;        spf=pass (google.com: domain of mathieu.poirier@linaro.org designates 209.85.220.41 as permitted sender) smtp.mailfrom=mathieu.poirier@linaro.org;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=linaro.org
+Return-Path: <mathieu.poirier@linaro.org>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])         by mx.google.com with SMTPS id p12-20020a170902f08c00b001729289b0a9sor355046pla.105.2022.09.29.14.24.21         for <viresh.kumar@linaro.org>         (Google Transport Security);         Thu, 29 Sep 2022 14:24:21 -0700 (PDT)
+Received-SPF: pass (google.com: domain of mathieu.poirier@linaro.org designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@linaro.org header.s=google header.b=rAUeLLzh;        spf=pass (google.com: domain of mathieu.poirier@linaro.org designates 209.85.220.41 as permitted sender) smtp.mailfrom=mathieu.poirier@linaro.org;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=linaro.org
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=linaro.org; s=google;         h=content-transfer-encoding:mime-version:references:in-reply-to          :message-id:date:subject:cc:to:from:from:to:cc:subject:date;         bh=pC6xG9PAD/R8MqGUnwz9PcuABAJpSAqoCj+Xp5t36WY=;         b=rAUeLLzhEscKBwfcog6eg5wEEya4HCP0FtdvZI//r4QvhMb6V4xAzE5fdaZHDrxYbM          xnHP1rPNYQcx8Cz13yur9Q1HE1cnhCWSODXEuJ6TtDhL73NAwlhVUrKjHhHxypZEM5P2          jMYqPww5uRl/dhvgTfuX9roDzeiEbhf0LUFDb1Ujqv91mnk5XLty1/uwswlnLT9ZblxC          4ht5GZhfVSW8ZBHbMM75Dw5lUnFFXF753avXTF5hFIPjnRr8DHZCGL8khlt2mPiJsO3d          zZqT4tHfRWw2BVSSik9zkIG0trVy3cIgxcx+qSfGD5qztOuXYcR08sNCcu6FsECCSWgk          XfJQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=1e100.net; s=20210112;         h=content-transfer-encoding:mime-version:references:in-reply-to          :message-id:date:subject:cc:to:from:x-gm-message-state:from:to:cc          :subject:date;         bh=pC6xG9PAD/R8MqGUnwz9PcuABAJpSAqoCj+Xp5t36WY=;         b=e4Q6kOo0ODMsoc1MsyacJV8EmqKQyiO+ZNmw0Igak+jE3N0Pq2uDzL2rK8drKkhUvk          l3eH2A2rff6X8ArtybG6yU+m5i094okFved/QfcITUyZ7gb4jleFOpAcQauz8sUe+bHv          MLvJpZoxasRQEVciZs0rLklLq0P0LcGeyPHtzpOlDW4sNNofw6YPOG8aUt9TVURsNNoA          c2Au96JA4n7opRHSMR5ooDcjE0wExAsCu8ZTZhD/ogPo+8fofdjagIgI0ikOBpu7LckO          Ty7JbSfGj5hIELm/Xujkn7Qo49yeV3BQtFP51uKVHGPxcMHjIjpa33W5d5wkkFT756p4          G4WQ==
+X-Gm-Message-State: ACrzQf2CPCDN8zutbLnUesMjQ+e6rdlYbaa8a0NAjF8hqWc27YRBYTED 	Vdbgd5/Tp1vanPdCGuouyBQovVQedY2NMyQx
+X-Google-Smtp-Source: AMsMyM5yIzmdmdOlz2nJH2DNBNuKVTmFMGhwOwwUUJNrXiHfUWZ1woO7O57dvxFVg5CclAKR9UFK1Q==
+X-Received: by 2002:a17:902:7795:b0:178:897e:16b2 with SMTP id o21-20020a170902779500b00178897e16b2mr5222022pll.153.1664486660929;         Thu, 29 Sep 2022 14:24:20 -0700 (PDT)
+Return-Path: <mathieu.poirier@linaro.org>
+Received: from p14s.cg.shawcable.net (S0106889e681aac74.cg.shawcable.net. [68.147.0.187])         by smtp.gmail.com with ESMTPSA id n6-20020a170903110600b0016ee3d7220esm372611plh.24.2022.09.29.14.24.18         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Thu, 29 Sep 2022 14:24:19 -0700 (PDT)
+From: Mathieu Poirier <mathieu.poirier@linaro.org>
+To: viresh.kumar@linaro.org
+Cc: alex.bennee@linaro.org
+Subject: [PATCH 2/2] Get rid of build.rs
+Date: Thu, 29 Sep 2022 15:24:12 -0600
+Message-Id: <20220929212412.3125480-3-mathieu.poirier@linaro.org>
+X-Mailer: git-send-email 2.25.1
+In-Reply-To: <20220929212412.3125480-1-mathieu.poirier@linaro.org>
+References: <20220929212412.3125480-1-mathieu.poirier@linaro.org>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Content-Length: 710
+Lines: 25
+
+It is no longer required to link with the libraries, hence
+removing build.rs
+
+Signed-off-by: Mathieu Poirier <mathieu.poirier@linaro.org>
+---
+ build.rs | 8 --------
+ 1 file changed, 8 deletions(-)
+ delete mode 100644 build.rs
+
+diff --git a/build.rs b/build.rs
+deleted file mode 100644
+index 1f6d20065779..000000000000
+--- a/build.rs
++++ /dev/null
+@@ -1,8 +0,0 @@
+-fn main() {
+-    println!("cargo:rustc-link-search=/opt/xen-arm/dist/install/usr/lib/");
+-    println!("cargo:rustc-link-lib=xenstore");
+-    println!("cargo:rustc-link-lib=xentoolcore");
+-    println!("cargo:rustc-link-lib=xentoollog");
+-    println!("cargo:rustc-link-lib=xencall");
+-    println!("cargo:rustc-link-lib=xenctrl");
+-}
+-- 
+2.25.1
+

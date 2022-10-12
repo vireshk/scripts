@@ -1945,3 +1945,6 @@ From vireshk  Mon Oct 10 08:57:57 2022
 From vireshk  Mon Oct 10 08:57:58 2022
  Subject: [PATCH 2/2] Get rid of build.rs
   Folder: PATCH_2-2_Get_rid_of_build.rs.mbox				   6270
+From vireshk  Wed Oct 12 08:18:30 2022
+ Subject: [PATCH] cpufreq: tegra194: Fix module loading
+  Folder: PATCH_cpufreq_tegra194_Fix_module_loading.mbox		  10944

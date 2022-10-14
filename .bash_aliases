@@ -251,7 +251,7 @@ alias rustgpio="unlink $gpiosock*; RUST_LOG=debug $rustpath/vhost-device/target/
 export qemugpio="-chardev socket,path=$junkpath/vgpio.sock0,id=vgpio -device vhost-user-gpio-pci,chardev=vgpio,id=gpio"
 
 # Rust
-alias rustcoverage="echo -e \"apt-get install libclang-dev clang musl-tools \ncd vhost-device; ./rust-vmm-ci/test_run.py; \ncd vhost-device; pytest rust-vmm-ci/integration_tests/test_coverage.py --no-cleanup\"; msudo docker run --device=/dev/kvm -it --security-opt seccomp=unconfined --volume $rustpath/vhost-device:/vhost-device --volume ~/.ssh:/root/.ssh rustvmm/dev:v15"
+alias rustcoverage="echo -e \"apt-get install libclang-dev clang musl-tools \ncd vhost-device; ./rust-vmm-ci/test_run.py; \ncd vhost-device; pytest rust-vmm-ci/integration_tests/test_coverage.py --no-cleanup\"; msudo docker run --device=/dev/kvm -it --security-opt seccomp=unconfined --volume $rustpath/vhost-device:/vhost-device --volume ~/.ssh:/root/.ssh rustvmm/dev:v16"
 alias rustchecks="cargo fmt --all -- --check; cargo clippy --workspace --bins --examples --benches --all-features -- -D warnings"
 alias buildgpiod="make clean; ./autogen.sh --enable-tools=yes --enable-bindings-rust --enable-examples --enable-tests; make"
 

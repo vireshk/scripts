@@ -1948,3 +1948,24 @@ From vireshk  Mon Oct 10 08:57:58 2022
 From vireshk  Wed Oct 12 08:18:30 2022
  Subject: [PATCH] cpufreq: tegra194: Fix module loading
   Folder: PATCH_cpufreq_tegra194_Fix_module_loading.mbox		  10944
+From vireshk  Tue Oct 25 09:57:52 2022
+ Subject: [PATCH v3 3/5] cpufreq: Generalize of_perf_domain_get_sharing_cpumask
+  Folder: PATCH_v3_3-5_cpufreq_Generalize_of_perf_domain_get_sharing_c	   9009
+From vireshk  Tue Oct 25 09:57:53 2022
+ Subject: [PATCH v3 4/5] cpufreq: apple-soc: Add new driver to control Apple So
+  Folder: PATCH_v3_4-5_cpufreq_apple-soc_Add_new_driver_to_control_App	  18057
+From vireshk  Fri Oct 28 09:34:31 2022
+ Subject: [PATCH] Use definitions from xen-bindings
+  Folder: PATCH_Use_definitions_from_xen-bindings.mbox			  21062
+From vireshk  Fri Oct 28 09:34:31 2022
+ Subject: [PATCH] Use definitions from xen-bindings
+  Folder: PATCH_Use_definitions_from_xen-bindings.mbox			  21062
+From vireshk  Tue Oct 25 13:04:34 2022
+ Subject: [PATCH v2 4/7] cpufreq: qcom-hw: Allocate qcom_cpufreq_data during pr
+  Folder: PATCH_v2_4-7_cpufreq_qcom-hw_Allocate_qcom_cpufreq_data_duri	  10912
+From vireshk  Tue Oct 25 13:04:35 2022
+ Subject: [PATCH v2 5/7] cpufreq: qcom-hw: Use cached dev pointer in probe()
+  Folder: PATCH_v2_5-7_cpufreq_qcom-hw_Use_cached_dev_pointer_in_probe	   8511
+From vireshk  Mon Oct 31 10:18:59 2022
+ Subject: [PATCH v2] OPP: decouple dt properties in opp_parse_supplies()
+  Folder: PATCH_v2_OPP_decouple_dt_properties_in_opp_parse_supplies_.m	  16301

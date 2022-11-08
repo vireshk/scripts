@@ -1996,3 +1996,6 @@ From vireshk  Wed Nov  2 14:31:22 2022
 From vireshk  Wed Nov  2 14:31:23 2022
  Subject: [PATCH v2 3/3] cpufreq: qcom-hw: Move soc_data to struct qcom_cpufreq
   Folder: PATCH_v2_3-3_cpufreq_qcom-hw_Move_soc_data_to_struct_qcom_cp	  10446
+From vireshk  Tue Nov  8 09:33:46 2022
+ Subject: [PATCH] dt-bindings: opp-v2: Fix clock-latency-ns prop in example
+  Folder: PATCH_dt-bindings_opp-v2_Fix_clock-latency-ns_prop_in_exampl	   6496

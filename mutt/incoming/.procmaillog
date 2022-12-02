@@ -2005,3 +2005,9 @@ From vireshk  Thu Nov 24 09:47:24 2022
 From vireshk  Tue Nov 29 09:11:52 2022
  Subject: [PATCH v5 3/4] cpufreq: apple-soc: Add new driver to control Apple So
   Folder: PATCH_v5_3-4_cpufreq_apple-soc_Add_new_driver_to_control_App	  18125
+From vireshk  Mon Nov 21 09:27:10 2022
+ Subject: [PATCH] cpufreq: tegra186: Use flexible array to simplify memory allo
+  Folder: PATCH_cpufreq_tegra186_Use_flexible_array_to_simplify_memory	   6319
+From vireshk  Mon Nov 21 09:26:46 2022
+ Subject: [PATCH] dt-bindings: cpufreq: cpufreq-qcom-hw: Add QDU1000/QRU1000 cp
+  Folder: PATCH_dt-bindings_cpufreq_cpufreq-qcom-hw_Add_QDU1000-QRU100	   7344

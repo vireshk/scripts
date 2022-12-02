@@ -1,0 +1,68 @@
+From vireshk  Mon Nov 21 09:26:46 2022
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [172.217.194.109] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Mon, 21 Nov 2022 09:26:46 +0530 (IST)
+Received: by 2002:a59:c9b0:0:b0:32a:eec5:a8f2 with SMTP id n16csp580946vqt;         Fri, 18 Nov 2022 10:24:36 -0800 (PST)
+X-Google-Smtp-Source: AA0mqf7KHMPsOvk++BJaKTKGHdknpdU4euvOQrHfCTw5wvPSWK1QfrUFU+y3WDMZa8fTyfGgF1xy
+X-Received: by 2002:a05:622a:18aa:b0:3a5:1dcf:40f6 with SMTP id v42-20020a05622a18aa00b003a51dcf40f6mr7549136qtc.513.1668795875972;         Fri, 18 Nov 2022 10:24:35 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1668795875; cv=none;         d=google.com; s=arc-20160816;         b=A2rBHTJyXN0fK2HU9nbUuPNqJk5QGqyQIGjP+569e4/us4oISKZhVu5wRobJXc80i4          ZSNCgLajrhs8lQSffV4gk2XG7VI0giU3hPagEbQnq7dPF2+jM0BleKSIfvOsm2CjKaR0          2vSWRgFp04jPa4A9lLzqPyRlFWP9rKK6hdTUSzAvgiUDJwocJo+10MTvcEt0EOFsu+bl          SFHSERLRFtIZpd76Slt/tSeXSZRBWCfEMtl9twQ09r99QDtE9pqM1iVAD8sfuiz+3LvC          thUtNhXkk1ztGjmkswwAtRblyw5XEWhVojximJybNBKmIz1FPXVNWcF9lqscofB9jjjz          gB+w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from:dkim-signature;         bh=iBFz8VbLM173zxJpLjTImoNVRNfvkMbj4lpHnJkkH+I=;         b=AlbOIj1eDgfrIEVzphqkeDYHUcgYEIZ4SFC370jyhVqFowwAR67xqaAzLfG6fcpU+w          AQHKpA5pgdjMoqOB1E8B3elBaZRvoqPWGmgjbMwh8JvydQm9xs0KOOG4qdGKK+pTQ7dQ          JPsmSOLW3n30pkN7PEkklZGVoMbH18u1tHXzH4ShxounEP9zbnwHHCmBzeqoMVOFF4oo          bP/Wmc7x08aN/+4yKF1GoaAT5fM6KrxQpiaymv9hLrxL+xHJ4RakE3TWsSljufFc+mP3          M+GtiCupAhGbKE9+1oW1WP5Y2PdpQQQ3VPmcMEgotPApdhzQz2/T2hWhsYGvZw9n+00L          Z/tA==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@quicinc.com header.s=qcppdkim1 header.b=ozPE8G9p;        spf=pass (google.com: domain of quic_molvera@quicinc.com designates 205.220.168.131 as permitted sender) smtp.mailfrom=quic_molvera@quicinc.com;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=quicinc.com
+Return-Path: <quic_molvera@quicinc.com>
+Received: from mx0a-0031df01.pphosted.com (mx0a-0031df01.pphosted.com. [205.220.168.131])         by mx.google.com with ESMTPS id x2-20020ac84d42000000b003a560057db0si2113982qtv.51.2022.11.18.10.24.35         (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);         Fri, 18 Nov 2022 10:24:35 -0800 (PST)
+Received-SPF: pass (google.com: domain of quic_molvera@quicinc.com designates 205.220.168.131 as permitted sender) client-ip=205.220.168.131;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@quicinc.com header.s=qcppdkim1 header.b=ozPE8G9p;        spf=pass (google.com: domain of quic_molvera@quicinc.com designates 205.220.168.131 as permitted sender) smtp.mailfrom=quic_molvera@quicinc.com;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=quicinc.com
+Received: from pps.filterd (m0279864.ppops.net [127.0.0.1]) 	by mx0a-0031df01.pphosted.com (8.17.1.19/8.17.1.19) with ESMTP id 2AIDmeYT019263; 	Fri, 18 Nov 2022 18:24:33 GMT
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=quicinc.com; h=from : to : cc :  subject : date : message-id : mime-version : content-transfer-encoding :  content-type; s=qcppdkim1;  bh=iBFz8VbLM173zxJpLjTImoNVRNfvkMbj4lpHnJkkH+I=;  b=ozPE8G9pFjmdG8TuH0cACYQuIOCbQ5cOuLMHXwBzH3hMiXkg8Dhdt4IB0rxaiobKg+9i  UHBeqpx7hSIDsMSigxIXburDiCTwn6+PnUOyhjVToir9I+K2upaa2/JrjOvh7WeLzkdi  a+atcQQ/7dTCiGMQB6Srjx+sPxv5zh/n8yiNUBG5tGzsdAD71+FItdLdG/QitGiNEPvh  Jg92LzeObK5YWdSFMDNAOFqvqyyF4kx8L5/56++XpwGnM/VIbmeduOH12/L46r4o/G+H  NSZ7jIsjJB9xpaNHD4DnYieUUo70Tgu39ZkivSxetxm53x7AMvcPGcA7aoEnJuTvsgBJ gA== 
+Received: from nasanppmta01.qualcomm.com (i-global254.qualcomm.com [199.106.103.254]) 	by mx0a-0031df01.pphosted.com (PPS) with ESMTPS id 3kx0mvaj9w-1 	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT); 	Fri, 18 Nov 2022 18:24:33 +0000
+Received: from nasanex01b.na.qualcomm.com (corens_vlan604_snip.qualcomm.com [10.53.140.1]) 	by NASANPPMTA01.qualcomm.com (8.17.1.5/8.17.1.5) with ESMTPS id 2AIIOWkk007685 	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT); 	Fri, 18 Nov 2022 18:24:32 GMT
+Received: from hu-molvera-sd.qualcomm.com (10.80.80.8) by  nasanex01b.na.qualcomm.com (10.46.141.250) with Microsoft SMTP Server  (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id  15.2.986.36; Fri, 18 Nov 2022 10:24:32 -0800
+From: Melody Olvera <quic_molvera@quicinc.com>
+To: "Rafael J. Wysocki" <rafael@kernel.org>,         Viresh Kumar 	<viresh.kumar@linaro.org>,         Rob Herring <robh+dt@kernel.org>,         "Krzysztof  Kozlowski" <krzysztof.kozlowski+dt@linaro.org>,         Manivannan Sadhasivam 	<mani@kernel.org>
+CC: Melody Olvera <quic_molvera@quicinc.com>,         "open list:CPU FREQUENCY SCALING  FRAMEWORK" <linux-pm@vger.kernel.org>,         "open list:OPEN FIRMWARE AND FLATTENED  DEVICE TREE BINDINGS" <devicetree@vger.kernel.org>,         open list 	<linux-kernel@vger.kernel.org>
+Subject: [PATCH] dt-bindings: cpufreq: cpufreq-qcom-hw: Add QDU1000/QRU1000 cpufreq
+Date: Fri, 18 Nov 2022 10:24:16 -0800
+Message-ID: <20221118182416.4920-1-quic_molvera@quicinc.com>
+X-Mailer: git-send-email 2.38.1
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain
+X-Originating-IP: [10.80.80.8]
+X-ClientProxiedBy: nasanex01b.na.qualcomm.com (10.46.141.250) To  nasanex01b.na.qualcomm.com (10.46.141.250)
+X-QCInternal: smtphost
+X-Proofpoint-Virus-Version: vendor=nai engine=6200 definitions=5800 signatures=585085
+X-Proofpoint-ORIG-GUID: V_Ykujsj6PWjVgoSwx3L_wfxNXtbujsu
+X-Proofpoint-GUID: V_Ykujsj6PWjVgoSwx3L_wfxNXtbujsu
+X-Proofpoint-Virus-Version: vendor=baseguard  engine=ICAP:2.0.219,Aquarius:18.0.895,Hydra:6.0.545,FMLib:17.11.122.1  definitions=2022-11-18_06,2022-11-18_01,2022-06-22_01
+X-Proofpoint-Spam-Details: rule=outbound_notspam policy=outbound score=0 malwarescore=0  impostorscore=0 bulkscore=0 adultscore=0 mlxscore=0 phishscore=0  clxscore=1011 suspectscore=0 mlxlogscore=798 spamscore=0  priorityscore=1501 lowpriorityscore=0 classifier=spam adjust=0 reason=mlx  scancount=1 engine=8.12.0-2210170000 definitions=main-2211180109
+X-Label: apply
+Status: RO
+Content-Length: 1000
+Lines: 27
+
+Add cpufreq epss for QDU1000 and QRU1000 SoCs.
+
+Signed-off-by: Melody Olvera <quic_molvera@quicinc.com>
+---
+This patch comes from a discussion on this series
+https://lore.kernel.org/all/ae4b2333-d243-17ee-1ebd-6b1c89eef9f3@linaro.org/
+
+ Documentation/devicetree/bindings/cpufreq/cpufreq-qcom-hw.yaml | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/Documentation/devicetree/bindings/cpufreq/cpufreq-qcom-hw.yaml b/Documentation/devicetree/bindings/cpufreq/cpufreq-qcom-hw.yaml
+index e58c55f78aaa..1516327c7f74 100644
+--- a/Documentation/devicetree/bindings/cpufreq/cpufreq-qcom-hw.yaml
++++ b/Documentation/devicetree/bindings/cpufreq/cpufreq-qcom-hw.yaml
+@@ -25,6 +25,7 @@ properties:
+       - description: v2 of CPUFREQ HW (EPSS)
+         items:
+           - enum:
++              - qcom,qdu1000-cpufreq-epss
+               - qcom,sm6375-cpufreq-epss
+               - qcom,sm8250-cpufreq-epss
+           - const: qcom,cpufreq-epss
+
+base-commit: 147307c69ba4441ee90c1f8ce8edf5df4ea60f67
+-- 
+2.38.1
+

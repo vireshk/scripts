@@ -2011,3 +2011,6 @@ From vireshk  Mon Nov 21 09:27:10 2022
 From vireshk  Mon Nov 21 09:26:46 2022
  Subject: [PATCH] dt-bindings: cpufreq: cpufreq-qcom-hw: Add QDU1000/QRU1000 cp
   Folder: PATCH_dt-bindings_cpufreq_cpufreq-qcom-hw_Add_QDU1000-QRU100	   7344
+From vireshk  Tue Dec  6 09:02:44 2022
+ Subject: [PATCH] dt-bindings: opp: opp-v2-kryo-cpu: Add missing 'cache-unified
+  Folder: PATCH_dt-bindings_opp_opp-v2-kryo-cpu_Add_missing_'cache-uni	   7225

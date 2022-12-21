@@ -2014,3 +2014,12 @@ From vireshk  Mon Nov 21 09:26:46 2022
 From vireshk  Tue Dec  6 09:02:44 2022
  Subject: [PATCH] dt-bindings: opp: opp-v2-kryo-cpu: Add missing 'cache-unified
   Folder: PATCH_dt-bindings_opp_opp-v2-kryo-cpu_Add_missing_'cache-uni	   7225
+From vireshk  Wed Dec 21 09:47:16 2022
+ Subject: [PATCH] cpufreq: CPPC: Add u64 casts to avoid overflowing
+  Folder: PATCH_cpufreq_CPPC_Add_u64_casts_to_avoid_overflowing.mbox	   5271
+From vireshk  Wed Dec 21 09:47:34 2022
+ Subject: [PATCH v2] cpufreq: qcom-hw: Fix reading "reg" with address/size-cell
+  Folder: PATCH_v2_cpufreq_qcom-hw_Fix_reading_reg_with_address-size-c	   7887
+From vireshk  Wed Dec 21 09:47:52 2022
+ Subject: [Patch v1 07/10] cpufreq: Add Tegra234 to cpufreq-dt-platdev blocklis
+  Folder: Patch_v1_07-10_cpufreq_Add_Tegra234_to_cpufreq-dt-platdev_bl	  11127

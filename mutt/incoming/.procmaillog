@@ -2023,3 +2023,9 @@ From vireshk  Wed Dec 21 09:47:34 2022
 From vireshk  Wed Dec 21 09:47:52 2022
  Subject: [Patch v1 07/10] cpufreq: Add Tegra234 to cpufreq-dt-platdev blocklis
   Folder: Patch_v1_07-10_cpufreq_Add_Tegra234_to_cpufreq-dt-platdev_bl	  11127
+From vireshk  Wed Jan  4 09:51:52 2023
+ Subject: [PATCH] cpufreq: Add SM6375 to cpufreq-dt-platdev blocklist
+  Folder: PATCH_cpufreq_Add_SM6375_to_cpufreq-dt-platdev_blocklist.mbo	   6460
+From vireshk  Wed Dec 28 10:32:34 2022
+ Subject: [PATCH] dt-bindings: cpufreq: cpufreq-qcom-hw: document interrupts
+  Folder: PATCH_dt-bindings_cpufreq_cpufreq-qcom-hw_document_interrupt	   7039

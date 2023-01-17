@@ -2044,3 +2044,6 @@ From vireshk  Mon Oct 17 10:19:59 2022
 From vireshk  Mon Oct 17 10:19:59 2022
  Subject: [PATCH 1/5] dt-bindings: cpufreq: cpufreq-qcom-hw: Add missing compat
   Folder: PATCH_1-5_dt-bindings_cpufreq_cpufreq-qcom-hw_Add_missing_co	   5206
+From vireshk  Mon Jan 16 15:10:20 2023
+ Subject: [PATCH v9 3/6] dt-bindings: opp: v2-qcom-level: Let qcom,opp-fuse-lev
+  Folder: PATCH_v9_3-6_dt-bindings_opp_v2-qcom-level_Let_qcom,opp-fuse	   8743

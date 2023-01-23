@@ -43,6 +43,7 @@ alias cgamp='dos2unix ~/Downloads/patches/*'
 alias dgamp='rm -rf ~/Downloads/patches/*'
 alias mgamp='git am -s -3 ~/scripts/mutt/incoming/*.mbox'
 
+
 alias gr='git rebase -i'
 alias tgr='GIT_EDITOR=cat gr'
 alias gra='gr --autosquash'
@@ -56,6 +57,7 @@ alias grhmm='git reset --hard origin/main'
 alias grs='git rebase --skip'
 alias grc='git rebase --continue'
 alias tgrc='GIT_EDITOR=cat grc'
+alias gclean='rm -rf `pwd`/*; grh HEAD'
 
 alias grv='git remote -v'
 

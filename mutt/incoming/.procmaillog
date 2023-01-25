@@ -2047,3 +2047,6 @@ From vireshk  Mon Oct 17 10:19:59 2022
 From vireshk  Mon Jan 16 15:10:20 2023
  Subject: [PATCH v9 3/6] dt-bindings: opp: v2-qcom-level: Let qcom,opp-fuse-lev
   Folder: PATCH_v9_3-6_dt-bindings_opp_v2-qcom-level_Let_qcom,opp-fuse	   8743
+From vireshk  Wed Jan 25 09:25:19 2023
+ Subject: [PATCH] cpufreq: tegra194: Enable CPUFREQ thermal cooling
+  Folder: PATCH_cpufreq_tegra194_Enable_CPUFREQ_thermal_cooling.mbox	  11144

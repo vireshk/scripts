@@ -2050,3 +2050,6 @@ From vireshk  Mon Jan 16 15:10:20 2023
 From vireshk  Wed Jan 25 09:25:19 2023
  Subject: [PATCH] cpufreq: tegra194: Enable CPUFREQ thermal cooling
   Folder: PATCH_cpufreq_tegra194_Enable_CPUFREQ_thermal_cooling.mbox	  11144
+From vireshk  Fri Jan 27 09:29:54 2023
+ Subject: [PATCH] cpufreq: mediatek-hw: Register to module device table
+  Folder: PATCH_cpufreq_mediatek-hw_Register_to_module_device_table.mb	   5658

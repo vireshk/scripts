@@ -277,6 +277,7 @@ alias qemux86="$QEMUPATH/buildx86/qemu-system-x86_64  -smp 12 -kernel ~/work/rep
 
 #alias xenarm="$QEMUAARCH64 -machine virt,virtualization=on -cpu cortex-a57 -machine type=virt -serial mon:stdio -device virtio-net-pci,netdev=net0 -netdev user,id=net0,hostfwd=tcp::8022-:22 -display none -m 8192 -kernel /home/vireshk/work/repos/virtio/xen/xen/xen -append \"dom0_max_vcpus=8 loglvl=all guest_loglvl=all\" -device guest-loader,addr=0x44000000,kernel=$AARCH64BUILD/Image,bootargs=\"root=/dev/sda2 console=hvc0 earlyprintk=xen\" -smp 8 -device virtio-scsi-pci -drive id=hd0,index=0,if=none,format=qcow2,file=/home/vireshk/work/repos/virtio/host-qemu/debian-buster-arm64.qcow2 -device scsi-hd,drive=hd0"
 
+export AARCH64XENHOSTBUILD="/home/vireshk/work/repos/kernel/barm64_host/arch/arm64/boot"
 alias xenarm="$QEMUAARCH64 \
  	-machine virt,virtualization=on \
  	-cpu cortex-a57 -serial mon:stdio \
@@ -289,7 +290,7 @@ alias xenarm="$QEMUAARCH64 \
  	-m 8192 -smp 8\
  	-kernel /home/vireshk/work/repos/virtio/xen/xen/xen \
  	-append \"dom0_mem=5G,max:5G dom0_max_vcpus=7 loglvl=all guest_loglvl=all\" \
- 	-device guest-loader,addr=0x44000000,kernel=$AARCH64BUILD/Image,bootargs=\"root=/dev/sda2 console=hvc0 earlyprintk=xen\" \
+ 	-device guest-loader,addr=0x44000000,kernel=$AARCH64XENHOSTBUILD/Image,bootargs=\"root=/dev/sda2 console=hvc0 earlyprintk=xen\" \
 	-device ds1338,address=0x10 \
 	-device ds1338,address=0x20"
 

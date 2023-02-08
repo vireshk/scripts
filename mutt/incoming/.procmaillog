@@ -2053,3 +2053,6 @@ From vireshk  Wed Jan 25 09:25:19 2023
 From vireshk  Fri Jan 27 09:29:54 2023
  Subject: [PATCH] cpufreq: mediatek-hw: Register to module device table
   Folder: PATCH_cpufreq_mediatek-hw_Register_to_module_device_table.mb	   5658
+From vireshk  Wed Feb  8 09:57:55 2023
+ Subject: [PATCH RESEND] PM/OPP: fix error checking in opp_migrate_dentry()
+  Folder: PATCH_RESEND_PM-OPP_fix_error_checking_in_opp_migrate_dentry	   7882

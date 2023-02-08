@@ -1,0 +1,65 @@
+From vireshk  Wed Feb  8 09:57:55 2023
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [74.125.24.109] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Wed, 08 Feb 2023 09:57:55 +0530 (IST)
+Received: by 2002:a05:7208:2215:b0:61:e91b:3f5 with SMTP id s21csp4554419rbb;         Tue, 7 Feb 2023 20:00:49 -0800 (PST)
+X-Google-Smtp-Source: AK7set8sdMiP14olXg8JI9dWpyYv5gCUjCU07pBs61GwVmnn6JsfGlwyokio0i2xYS61ps7vxO0B
+X-Received: by 2002:a05:6808:a97:b0:378:1aab:54a8 with SMTP id q23-20020a0568080a9700b003781aab54a8mr2503420oij.40.1675828849760;         Tue, 07 Feb 2023 20:00:49 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1675828849; cv=none;         d=google.com; s=arc-20160816;         b=JWfXlRDYu1nLa+Vt8rqOBJPOmUBeJ3rf0h7JYb7Vq73mW+GnsjfTMLlMRCF/BbeEBA          /8NfL0Q5aGLq2q5JRscu2RI+WPfSEucl6MtZUMpJHgjn1Vc5SWs7sCo3R/a88YfbC9Im          3A1JlDTP9/JLnja+Aqkqei+/8rOGE7uRroU0eW4tCpNUCJsOMSvBlYIcbHPv4E6mlYEV          2ue6G057tC9OxIvlIHAi++k1Pp1TqCGU9AJoju+6deGbZrXVd39Ee3WlCdXgK4Ftc6un          JAs8My7kftBLqRVJUNEHbS/2fga54HMJMoX2b3BQpdoqXMg0DKzD7Ygbf5P6IPoDvHx3          OpDw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from:dkim-signature:dmarc-filter:delivered-to;         bh=HrSasTHUWHyknm8t+OqzpF7esMFl5X5VPv7s+9gtrSQ=;         b=ptyh0SPu1mklhhn5UAxl6OW1O1CoW/1y9ZjJybkZNGW1UlnT02KHwA4yzksi7v+AI1          gKJHYfcykLPhjno7eCxgtTQ9QEX3Q8L2lWA59F1qzBtecaT5riBbJce4riudJb0g/qCz          CqGwbHQtI8x71d413CFUx2GE42Tft43piDbQJArmubq25zaDZHRCnL9QH/i9dBKN3HzH          f7Y5Yjidmvp0fmhKDuCdEv7xTcSNGjQzP/Q+A+NPGuXtPu9fK4viBwsnY5kpJcfffHVn          hurXxB/0UW8bm8vILtr1g+tYN9U3Csr03aufrSUeMzaJiPhdJmuQ9pUFOQigG2m8G7Kx          cNzw==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@bytedance-com.20210112.gappssmtp.com header.s=20210112 header.b=yYLsC+a9;        spf=pass (google.com: domain of srs0=zqjg=6e=bytedance.com=zhengqi.arch@kernel.org designates 2604:1380:4641:c500::1 as permitted sender) smtp.mailfrom="SRS0=ZqJG=6E=bytedance.com=zhengqi.arch@kernel.org";        dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=bytedance.com
+Return-Path: <SRS0=ZqJG=6E=bytedance.com=zhengqi.arch@kernel.org>
+Received: from dfw.source.kernel.org (dfw.source.kernel.org. [2604:1380:4641:c500::1])         by mx.google.com with ESMTPS id j3-20020a544803000000b003649caa325asi15637711oij.178.2023.02.07.20.00.49         for <viresh.kumar@linaro.org>         (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);         Tue, 07 Feb 2023 20:00:49 -0800 (PST)
+Received-SPF: pass (google.com: domain of srs0=zqjg=6e=bytedance.com=zhengqi.arch@kernel.org designates 2604:1380:4641:c500::1 as permitted sender) client-ip=2604:1380:4641:c500::1;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@bytedance-com.20210112.gappssmtp.com header.s=20210112 header.b=yYLsC+a9;        spf=pass (google.com: domain of srs0=zqjg=6e=bytedance.com=zhengqi.arch@kernel.org designates 2604:1380:4641:c500::1 as permitted sender) smtp.mailfrom="SRS0=ZqJG=6E=bytedance.com=zhengqi.arch@kernel.org";        dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=bytedance.com
+Received: from smtp.kernel.org (relay.kernel.org [52.25.139.140]) 	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) 	(No client certificate requested) 	by dfw.source.kernel.org (Postfix) with ESMTPS id 5C3116148B 	for <viresh.kumar@linaro.org>; Wed,  8 Feb 2023 04:00:49 +0000 (UTC)
+Received: by smtp.kernel.org (Postfix) 	id D46EBC4339B; Wed,  8 Feb 2023 04:00:48 +0000 (UTC)
+Delivered-To: vireshk@kernel.org
+Received: from mail-pl1-f176.google.com (mail-pl1-f176.google.com [209.85.214.176]) 	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) 	(No client certificate requested) 	by smtp.kernel.org (Postfix) with ESMTPS id EA0C4C433EF 	for <vireshk@kernel.org>; Wed,  8 Feb 2023 04:00:46 +0000 (UTC)
+DMARC-Filter: OpenDMARC Filter v1.4.1 smtp.kernel.org EA0C4C433EF
+Authentication-Results: smtp.kernel.org; dmarc=pass (p=none dis=none) header.from=bytedance.com
+Authentication-Results: smtp.kernel.org; spf=pass smtp.mailfrom=bytedance.com
+Received: by mail-pl1-f176.google.com with SMTP id g13so13119013ple.10         for <vireshk@kernel.org>; Tue, 07 Feb 2023 20:00:46 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=bytedance-com.20210112.gappssmtp.com; s=20210112;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from:from:to:cc:subject:date:message-id:reply-to;         bh=HrSasTHUWHyknm8t+OqzpF7esMFl5X5VPv7s+9gtrSQ=;         b=yYLsC+a9foAgx0/qG8Tynxa2rhnjlf4m5wChT5u7ipx2Pv7z7GJg7Fhuaj+HXPgLmc          IK93iXYHKD3TDgXWyIh/N1lLqhMwjwXdcVe4e6UQiRxWpB4HvvcU7F6z24IHrBr/jq1q          sJRBVKkXc+Jx9FMfiMdVQcXgJ5kDOPZ6U7VNISWtNtFidCktQCxbHPnen/2hWNCpuZAJ          Tn/qQOS1joFqlima6k1jSIKJF28c79UJSGv2ZXdNNIyM/xSTD2h88B4Mmoa19A/9s+sG          i0z6m7moGYBvsxE6dNc2uVDxvDYKW50H+sc4Wl7V2t3On7dbKLK3og4TskrjE/FZM2rn          Suzg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=1e100.net; s=20210112;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from:x-gm-message-state:from:to:cc:subject:date:message-id          :reply-to;         bh=HrSasTHUWHyknm8t+OqzpF7esMFl5X5VPv7s+9gtrSQ=;         b=7Jtc4iVOx3Ef3MrrreU+1lzxdPh5MiYdz9nkvFrnqiyMeb4r81FxU+lFAHR6DwEPlh          YBgfoW4LexTxwEXj46Q6MKpGJyJD2eMEgnRL+FRUFA/9grzLXuuIs4Hm6aOat/ucjv2s          /LIVQftQ/z8JMwFP/JMosbGH/+3cx3CyzuVV0Z5yt0QydKAq16JZeou97O9iPv77ilgR          BCsgmAwKtTHWrSgJmdlspNuTCX1dMwaXqagpnqP0sYfmsh42u94Zzf9JIbZwngFVu1Kb          WhkvIHk8lBrvcbYIebcHTrmVN8kiHrhBrXNq/klYKnUvIupbRv3Zmj5PL6GpOiJWa6gZ          rhaA==
+X-Gm-Message-State: AO0yUKV7rPUgG7BxLlvdxWDASQIrKv2Uodp3SOSwXVzb0jRcevBS0J29 	mxId4AqnQxIu4/DN3qqdldkY4EFLht9hQsr+
+X-Received: by 2002:a17:902:d505:b0:198:e8c6:859a with SMTP id b5-20020a170902d50500b00198e8c6859amr5908845plg.0.1675828846121;         Tue, 07 Feb 2023 20:00:46 -0800 (PST)
+Received: from C02DW0BEMD6R.bytedance.net ([139.177.225.226])         by smtp.gmail.com with ESMTPSA id p6-20020a170903248600b00198b0fd363bsm9753879plw.45.2023.02.07.20.00.42         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Tue, 07 Feb 2023 20:00:45 -0800 (PST)
+From: Qi Zheng <zhengqi.arch@bytedance.com>
+To: vireshk@kernel.org, 	nm@ti.com, 	sboyd@kernel.org, 	gregkh@linuxfoundation.org
+Cc: linux-pm@vger.kernel.org, 	linux-kernel@vger.kernel.org, 	Qi Zheng <zhengqi.arch@bytedance.com>
+Subject: [PATCH RESEND] PM/OPP: fix error checking in opp_migrate_dentry()
+Date: Wed,  8 Feb 2023 12:00:37 +0800
+Message-Id: <20230208040037.60305-1-zhengqi.arch@bytedance.com>
+X-Mailer: git-send-email 2.24.3 (Apple Git-128)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+Since commit ff9fb72bc077 ("debugfs: return error values,
+not NULL") changed return value of debugfs_rename() in
+error cases from %NULL to %ERR_PTR(-ERROR), we should
+also check error values instead of NULL.
+
+Fixes: ff9fb72bc077 ("debugfs: return error values, not NULL")
+Signed-off-by: Qi Zheng <zhengqi.arch@bytedance.com>
+---
+Resend as a separate patch.
+
+ drivers/opp/debugfs.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/drivers/opp/debugfs.c b/drivers/opp/debugfs.c
+index 96a30a032c5f..2c7fb683441e 100644
+--- a/drivers/opp/debugfs.c
++++ b/drivers/opp/debugfs.c
+@@ -235,7 +235,7 @@ static void opp_migrate_dentry(struct opp_device *opp_dev,
+ 
+ 	dentry = debugfs_rename(rootdir, opp_dev->dentry, rootdir,
+ 				opp_table->dentry_name);
+-	if (!dentry) {
++	if (IS_ERR(dentry)) {
+ 		dev_err(dev, "%s: Failed to rename link from: %s to %s\n",
+ 			__func__, dev_name(opp_dev->dev), dev_name(dev));
+ 		return;
+-- 
+2.20.1
+

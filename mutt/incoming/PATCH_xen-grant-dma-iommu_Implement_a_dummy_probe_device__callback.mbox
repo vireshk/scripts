@@ -1,0 +1,77 @@
+From vireshk  Thu Feb  9 08:33:55 2023
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [74.125.24.109] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Thu, 09 Feb 2023 08:33:55 +0530 (IST)
+Received: by 2002:a05:7208:2215:b0:61:e91b:3f5 with SMTP id s21csp4974162rbb;         Wed, 8 Feb 2023 07:39:56 -0800 (PST)
+X-Received: by 2002:a05:600c:319e:b0:3dc:506e:6559 with SMTP id s30-20020a05600c319e00b003dc506e6559mr6776884wmp.37.1675870796876;         Wed, 08 Feb 2023 07:39:56 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1675870796; cv=none;         d=google.com; s=arc-20160816;         b=q+u+ZsV2S1NFeoGF9b0jvtA9IGs+fdAEbgBAoIBaLFCsMJKZfD7XbdCYzUU56btPUj          rHAlGaKqH0V7kznSb1Wpox7iUR8R/c9laWDaaYdUpGBkEkbAq9WLL5WWwxOwv5dwMKOI          Z2Bxvokkm8AKIC5/8zqBoi1bxXW534MmWVIfZIftvcY4i6VJ1yjxpo+OUy0SxdghG1XG          ClsRCaupqYP+2EdOCvU/0ydP4s0DENm+fkDxPgx/cUYzXUyFGwjhzQ//PGXsPxwhpahm          YXI8owtR31YM/zz7NyhcoVvM7RbhiQOtQmYvZWh3vQwTGMMk+ZrW85CN1HEF0nrpJBjL          W7hg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from:dkim-signature;         bh=oGWuGjSyAolvIuh2gpF30/sfRfWcmW0ukeqiTc1FZg4=;         b=Ehfm3BDzHB7pnc3XNE/SL7En5iX9OZ5wibFsfJwLAjqf2s2hmkJkfrhgcLYU1nppj6          yyFlCZVhYPXFPtSOFWi5r6qHItgDPFtQ/aKRIckJppbj5F5rOkkAOsTMCJHddEqHRt0W          +uYpuShEogGZICWpzG/k/zvurrkZk0FY0lzW3wCbeGzzL4m4CnbicvqIG14VzY/7lYEh          4k0nEJLdbP81ou3+7eo4LsfvYl6hN15cBS9ZU2spxzQcyEBcOU51izL2Fk3KV0KSHGU0          EBGYX6xNBuV6w8luKjvm23Q+IR5UiKxGtj2KOFIoQwdTRwtNJR110fGDww9fD6bQ5kpI          uUag==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@gmail.com header.s=20210112 header.b=oJLgmWwO;        spf=pass (google.com: domain of olekstysh@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=olekstysh@gmail.com;        dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <olekstysh@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])         by mx.google.com with SMTPS id l14-20020a1c790e000000b003d065dcae25sor867411wme.13.2023.02.08.07.39.56         for <viresh.kumar@linaro.org>         (Google Transport Security);         Wed, 08 Feb 2023 07:39:56 -0800 (PST)
+Received-SPF: pass (google.com: domain of olekstysh@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@gmail.com header.s=20210112 header.b=oJLgmWwO;        spf=pass (google.com: domain of olekstysh@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=olekstysh@gmail.com;        dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=gmail.com; s=20210112;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from:from:to:cc:subject:date:message-id:reply-to;         bh=oGWuGjSyAolvIuh2gpF30/sfRfWcmW0ukeqiTc1FZg4=;         b=oJLgmWwOA/fWnsZRLlXi0D7IB41vvMVwDk7qIp/hPO/I0Cu28Q2i4d0DPXkgCMMGW7          SdzZx2e3lqC+DVRz/VlUF+Pk6ZB+kB9aSgjpLPKWsIw6CQBDEbkGyHNWz4UyfDWYca53          K34F4fo3Rdk5I9CATRq9b+kuSOPothxpM0z/dhRzc7xKpmGW2aUP7qLS5v26HcIzsXml          uRi3XbYZNSXIYEpwwPGuh8OTovAuQ7No2yybmDgLJaO+R3upLfKBHWlDm2zvJPPCTQlz          8uTHL68LY/yG++GRdkvszu7ZgdscE3xE0++V0ywwduDPIPSfpmd/Xpn8oL10Dt/+8xS3          XurQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=1e100.net; s=20210112;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from:x-gm-message-state:from:to:cc:subject:date:message-id          :reply-to;         bh=oGWuGjSyAolvIuh2gpF30/sfRfWcmW0ukeqiTc1FZg4=;         b=OyhjDWsJVuU/mwKua2JficMexeraKmicV7404kDMBFStYHZUxU+JH9ENWlgj1E+Ijz          qDKCB++/3slEru6WfYw+HsaTdMkhnyOavKM4g41QypcAs3PXkkYhSRZMvX1p1jVq9FTE          fEO1Aa3NaFl7VCdhGXTF8+bFvxIeQn8rG4gaWqM9bmUGU48aqOCwyCTmpqYqQR9vRiAZ          UHGrIxCHxMrULowRtrN7/LPDgk4aAZbB/fXgJ9OkBk76QdHAaGWe0KGGZlrfb4u1mPZp          AVvCYQRKmKQoy5Otf/8SH5/Y2y4aOtzu492OKbgR8f8/FDbgd0EV2q6nBSKgK7MjhmG+          0YWQ==
+X-Gm-Message-State: AO0yUKWvtrrfcIc4Y9pN6QBKqqb0PP5M0Za0LW3XSPTL4qyfwUBKUPEp 	tK0joQP3PZRzdSAMXmFjzZU=
+X-Google-Smtp-Source: AK7set/9TBqIZGKiBgGkbYehMHhv5R4xqumCMXaSzOW6dO7LsQm45M+8qsR9emWP/44RWI8GFW0KSA==
+X-Received: by 2002:a05:600c:1613:b0:3df:b5ae:5289 with SMTP id m19-20020a05600c161300b003dfb5ae5289mr6782149wmn.8.1675870796500;         Wed, 08 Feb 2023 07:39:56 -0800 (PST)
+Return-Path: <olekstysh@gmail.com>
+Received: from work-hp.. ([91.123.148.245])         by smtp.gmail.com with ESMTPSA id d8-20020adfe2c8000000b002bfe08c566fsm13958034wrj.106.2023.02.08.07.39.55         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Wed, 08 Feb 2023 07:39:55 -0800 (PST)
+From: Oleksandr Tyshchenko <olekstysh@gmail.com>
+To: xen-devel@lists.xenproject.org, 	linux-kernel@vger.kernel.org
+Cc: Oleksandr Tyshchenko <oleksandr_tyshchenko@epam.com>, 	Juergen Gross <jgross@suse.com>, 	Stefano Stabellini <sstabellini@kernel.org>, 	Viresh Kumar <viresh.kumar@linaro.org>
+Subject: [PATCH] xen/grant-dma-iommu: Implement a dummy probe_device() callback
+Date: Wed,  8 Feb 2023 17:36:49 +0200
+Message-Id: <20230208153649.3604857-1-olekstysh@gmail.com>
+X-Mailer: git-send-email 2.34.1
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Content-Length: 1685
+Lines: 45
+
+From: Oleksandr Tyshchenko <oleksandr_tyshchenko@epam.com>
+
+Update stub IOMMU driver (which main purpose is to reuse generic
+IOMMU device-tree bindings by Xen grant DMA-mapping layer on Arm)
+according to the recent changes done in the following
+commit 57365a04c921 ("iommu: Move bus setup to IOMMU device registration").
+
+With probe_device() callback being called during IOMMU device registration,
+the uninitialized callback just leads to the "kernel NULL pointer
+dereference" issue during boot. Fix that by adding a dummy callback.
+
+Looks like the release_device() callback is not mandatory to be
+implemented as IOMMU framework makes sure that callback is initialized
+before dereferencing.
+
+Reported-by: Viresh Kumar <viresh.kumar@linaro.org>
+Signed-off-by: Oleksandr Tyshchenko <oleksandr_tyshchenko@epam.com>
+---
+ drivers/xen/grant-dma-iommu.c | 11 +++++++++--
+ 1 file changed, 9 insertions(+), 2 deletions(-)
+
+diff --git a/drivers/xen/grant-dma-iommu.c b/drivers/xen/grant-dma-iommu.c
+index 16b8bc0c0b33..6a9fe02c6bfc 100644
+--- a/drivers/xen/grant-dma-iommu.c
++++ b/drivers/xen/grant-dma-iommu.c
+@@ -16,8 +16,15 @@ struct grant_dma_iommu_device {
+ 	struct iommu_device iommu;
+ };
+ 
+-/* Nothing is really needed here */
+-static const struct iommu_ops grant_dma_iommu_ops;
++static struct iommu_device *grant_dma_iommu_probe_device(struct device *dev)
++{
++	return ERR_PTR(-ENODEV);
++}
++
++/* Nothing is really needed here except a dummy probe_device callback */
++static const struct iommu_ops grant_dma_iommu_ops = {
++	.probe_device = grant_dma_iommu_probe_device,
++};
+ 
+ static const struct of_device_id grant_dma_iommu_of_match[] = {
+ 	{ .compatible = "xen,grant-dma" },
+-- 
+2.34.1
+

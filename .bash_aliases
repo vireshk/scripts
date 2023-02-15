@@ -89,6 +89,7 @@ export AARCH64BUILD="/home/vireshk/work/repos/kernel/barm64/arch/arm64/boot"
 updatepkglist() { echo "$*" >> ~/scripts/pkglist-install; }
 
 alias linarogit='ssh viresh.kumar@git.linaro.org'
+alias sshhack="ssh viresh.kumar@hackbox2.linaro.org"
 alias sshbbone="ssh root@192.168.0.4"
 alias sshdesktop="ssh vireshk@192.168.0.2"
 alias sshhikey="ssh root@192.168.0.162"

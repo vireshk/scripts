@@ -236,7 +236,7 @@ alias ltpbuild="make clean;make autotools;./configure;make"
 alias sshqemu="ssh root@localhost -p8022"
 alias qvim="vim -c 'set expandtab' -c 'set shiftwidth=4'"
 alias mountqemu="echo \"mount -t 9p -o trans=virtio r /mnt\""
-alias configqemu="./configure --python=/usr/bin/python3.8 --target-list=aarch64-softmmu --enable-virtfs"
+alias configqemu="./configure --python=/usr/bin/python3.8 --target-list=aarch64-softmmu --enable-virtfs --enable-docs"
 alias buildqemu="configqemu; make -j 64"
 
 # I2C

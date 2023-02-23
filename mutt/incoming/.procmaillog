@@ -2062,3 +2062,15 @@ From vireshk  Wed Feb  8 14:57:22 2023
 From vireshk  Thu Feb  9 08:33:55 2023
  Subject: [PATCH] xen/grant-dma-iommu: Implement a dummy probe_device() callbac
   Folder: PATCH_xen-grant-dma-iommu_Implement_a_dummy_probe_device__ca	   7217
+From vireshk  Wed Feb 22 08:54:22 2023
+ Subject: [PATCH 1/2] dt-bindings: cpufreq: qcom-hw: add a compatible for sa877
+  Folder: PATCH_1-2_dt-bindings_cpufreq_qcom-hw_add_a_compatible_for_s	   6868
+From vireshk  Thu Feb 23 09:02:29 2023
+ Subject: [PATCH 14/27] kbuild, cpufreq: tegra124: remove MODULE_LICENSE in non
+  Folder: PATCH_14-27_kbuild,_cpufreq_tegra124_remove_MODULE_LICENSE_i	  15889
+From vireshk  Thu Feb 23 09:02:30 2023
+ Subject: [PATCH 15/27] kbuild, cpufreq: remove MODULE_LICENSE in non-modules
+  Folder: PATCH_15-27_kbuild,_cpufreq_remove_MODULE_LICENSE_in_non-mod	  15551
+From vireshk  Thu Feb 16 16:22:19 2023
+ Subject: [PATCH v2] cpufreq: qcom-hw: Simplify counting frequency domains
+  Folder: PATCH_v2_cpufreq_qcom-hw_Simplify_counting_frequency_domains	   7984

@@ -158,7 +158,7 @@ endif
 "set guioptions-=m
 "set guioptions-=agimrLtT
 
-"map <F1> :call ToggleSketch()<CR>
+map <F2> :call ToggleSketch()<CR>
 "map <F2> :TlistToggle<CR>
 
 set tabstop=8

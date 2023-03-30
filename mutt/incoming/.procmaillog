@@ -2080,3 +2080,6 @@ From vireshk  Sun Mar 12 09:52:10 2023
 From vireshk  Sun Mar 12 09:52:12 2023
  Subject: [PATCH] opp: Use of_property_present() for testing DT property presen
   Folder: PATCH_opp_Use_of_property_present__for_testing_DT_property_p	   7437
+From vireshk  Mon Mar 27 11:08:20 2023
+ Subject: [PATCH] cpufreq: Add SM7225 to cpufreq-dt-platdev blocklist
+  Folder: PATCH_cpufreq_Add_SM7225_to_cpufreq-dt-platdev_blocklist.mbo	   6843

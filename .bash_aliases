@@ -16,7 +16,7 @@ export COVER_CC=1
 #export PS1='['"$BOLD"'\W'"$RESET\$(git ps1)"']\$ '
 
 #Misc
-export mypaste="| curl -F 'f:1=<-' ix.io"
+alias pasteix="curl -F 'f:1=<-' ix.io"
 
 # git
 source /home/vireshk/scripts/git_alias

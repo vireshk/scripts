@@ -98257,3 +98257,100 @@ fatal: not a git repository (or any parent up to mount point /mnt)
 Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
 
 Entering /home/vireshk/scripts
+[master c717ec55d547] updates
+ 1 file changed, 72 insertions(+)
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/scripts
+   8bdddf9f661c..c717ec55d547  master -> master
+   67cf4366a8e6..8bdddf9f661c  bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/vireshk-linux
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is ahead of 'origin/master' by 6 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/gpio-mock
+On branch master
+nothing to commit, working tree clean
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+
+
+ 
+Wednesday 12 April 2023 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+To ssh://git.linaro.org/people/viresh.kumar/backup/linux.git
+ - [deleted]                   cpufreq/fix
+   e6b3086fddc0..a5b2781dcab2  pm/acpi -> pm/acpi
+ + 2f07b45d9824...580b585ebfbb pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + dfe08e56df2e...c4895dfd200d pm/linux-next -> pm/linux-next (forced update)
+   ceaa837f96ad..09a9639e56c0  pm/master -> pm/master
+   6f098cde9df2..1fa9d47baa9e  pm/pm -> pm/pm
+ + dfe08e56df2e...c4895dfd200d pm/testing -> pm/testing (forced update)
+ + d3879c17493b...75f74a907164 pm/thermal -> pm/thermal (forced update)
+ * [new branch]                cpufreq/sparc -> cpufreq/sparc
+ * [new reference]             lko/cpufreq/sparc -> lko/cpufreq/sparc
+ * [new reference]             pm/thermal-fixes -> pm/thermal-fixes
+ * [new tag]                   acpi-6.3-rc1 -> acpi-6.3-rc1
+ * [new tag]                   acpi-6.3-rc1-2 -> acpi-6.3-rc1-2
+ * [new tag]                   acpi-6.3-rc3 -> acpi-6.3-rc3
+ * [new tag]                   acpi-6.3-rc4 -> acpi-6.3-rc4
+ * [new tag]                   acpi-6.3-rc5 -> acpi-6.3-rc5
+ * [new tag]                   acpi-6.3-rc6 -> acpi-6.3-rc6
+ * [new tag]                   pm-6.3-rc1 -> pm-6.3-rc1
+ * [new tag]                   pm-6.3-rc1-2 -> pm-6.3-rc1-2
+ * [new tag]                   pm-6.3-rc3 -> pm-6.3-rc3
+ * [new tag]                   thermal-6.3-rc1 -> thermal-6.3-rc1
+ * [new tag]                   thermal-6.3-rc1-2 -> thermal-6.3-rc1-2
+ * [new tag]                   thermal-6.3-rc2 -> thermal-6.3-rc2
+ * [new tag]                   thermal-6.3-rc4 -> thermal-6.3-rc4
+ * [new tag]                   thermal-6.3-rc5 -> thermal-6.3-rc5
+
+Entering /home/vireshk/work/repos/tools/ltp
+post-git trigger: updating grokmirror
+Updating local grokmirror with changes on master
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/virtio/rust
+fatal: not a git repository (or any parent up to mount point /mnt)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+Entering /home/vireshk/scripts

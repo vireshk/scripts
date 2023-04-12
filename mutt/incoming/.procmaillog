@@ -2083,3 +2083,6 @@ From vireshk  Sun Mar 12 09:52:12 2023
 From vireshk  Mon Mar 27 11:08:20 2023
  Subject: [PATCH] cpufreq: Add SM7225 to cpufreq-dt-platdev blocklist
   Folder: PATCH_cpufreq_Add_SM7225_to_cpufreq-dt-platdev_blocklist.mbo	   6843
+From vireshk  Tue Apr 11 09:01:46 2023
+ Subject: Re: [v2] cpufreq: sparc: Fix exception handling in two functions
+  Folder: Re_v2_cpufreq_sparc_Fix_exception_handling_in_two_functions.	   5467

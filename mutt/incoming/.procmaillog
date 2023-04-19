@@ -2086,3 +2086,9 @@ From vireshk  Mon Mar 27 11:08:20 2023
 From vireshk  Tue Apr 11 09:01:46 2023
  Subject: Re: [v2] cpufreq: sparc: Fix exception handling in two functions
   Folder: Re_v2_cpufreq_sparc_Fix_exception_handling_in_two_functions.	   5467
+From vireshk  Tue Apr 11 16:32:24 2023
+ Subject: [Patch v6 6/9] cpufreq: tegra194: add OPP support and set bandwidth
+  Folder: Patch_v6_6-9_cpufreq_tegra194_add_OPP_support_and_set_bandwi	  19268
+From vireshk  Tue Apr 11 16:32:24 2023
+ Subject: [Patch v6 6/9] cpufreq: tegra194: add OPP support and set bandwidth
+  Folder: Patch_v6_6-9_cpufreq_tegra194_add_OPP_support_and_set_bandwi	  19268

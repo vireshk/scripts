@@ -2092,3 +2092,6 @@ From vireshk  Tue Apr 11 16:32:24 2023
 From vireshk  Tue Apr 11 16:32:24 2023
  Subject: [Patch v6 6/9] cpufreq: tegra194: add OPP support and set bandwidth
   Folder: Patch_v6_6-9_cpufreq_tegra194_add_OPP_support_and_set_bandwi	  19268
+From vireshk  Fri Apr 21 12:16:01 2023
+ Subject: [PATCH v3 2/3] cpufreq: dt-platdev: Add JH7110 SOC to the allowlist
+  Folder: PATCH_v3_2-3_cpufreq_dt-platdev_Add_JH7110_SOC_to_the_allowl	   5339

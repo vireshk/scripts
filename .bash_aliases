@@ -259,7 +259,7 @@ alias rustcoverage="echo -e \"apt-get install libclang-dev clang musl-tools \ncd
 alias rustchecks="cargo fmt --all -- --check; cargo clippy --release --workspace --bins --examples --tests --benches --all-features --all-targets -- -D warnings -D clippy::undocumented_unsafe_blocks"
 alias buildgpiod="make clean; ./autogen.sh --enable-tools=yes --enable-bindings-rust --enable-examples --enable-tests; make"
 alias cargobuild="clear;cargo build --release"
-alias cargobuildarm="clear;cargo build --release --target aarch64-unknown-linux-gnu"
+alias cargobuildarm="clear;cargo build --release --all-features --target aarch64-unknown-linux-gnu"
 alias cargobuildall='clear;cargo build --release --all-features --tests'
 alias cargobuildallarm='clear;cargo build --release --target aarch64-unknown-linux-gnu --all-features --tests'
 

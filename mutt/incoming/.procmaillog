@@ -2098,3 +2098,6 @@ From vireshk  Fri Apr 21 12:16:01 2023
 From vireshk  Mon May 15 08:56:23 2023
  Subject: [PATCH V2] cpufreq: imx6q: No warning output when disabling a non-exi
   Folder: PATCH_V2_cpufreq_imx6q_No_warning_output_when_disabling_a_no	   8233
+From vireshk  Mon May 22 08:33:26 2023
+ Subject: [PATCH] OPP: rate-limit debug messages when no change in OPP is requi
+  Folder: PATCH_OPP_rate-limit_debug_messages_when_no_change_in_OPP_is	   6553

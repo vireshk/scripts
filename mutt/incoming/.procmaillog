@@ -2101,3 +2101,9 @@ From vireshk  Mon May 15 08:56:23 2023
 From vireshk  Mon May 22 08:33:26 2023
  Subject: [PATCH] OPP: rate-limit debug messages when no change in OPP is requi
   Folder: PATCH_OPP_rate-limit_debug_messages_when_no_change_in_OPP_is	   6553
+From vireshk  Mon May 29 08:59:46 2023
+ Subject: [PATCH 1/2] dt-bindings: cpufreq: qcom-cpufreq-nvmem: document IPQ807
+  Folder: PATCH_1-2_dt-bindings_cpufreq_qcom-cpufreq-nvmem_document_IP	   6456
+From vireshk  Mon May 29 08:59:46 2023
+ Subject: [PATCH 1/2] dt-bindings: cpufreq: qcom-cpufreq-nvmem: document IPQ807
+  Folder: PATCH_1-2_dt-bindings_cpufreq_qcom-cpufreq-nvmem_document_IP	   6456

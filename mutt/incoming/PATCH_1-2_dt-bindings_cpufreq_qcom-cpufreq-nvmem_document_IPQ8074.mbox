@@ -1,0 +1,51 @@
+From vireshk  Mon May 29 08:59:46 2023
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [74.125.200.109] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Mon, 29 May 2023 08:59:46 +0530 (IST)
+Received: by 2002:a05:7208:5487:b0:6b:5e3d:220e with SMTP id y7csp189600rbe;         Sat, 27 May 2023 02:52:33 -0700 (PDT)
+X-Received: by 2002:a17:907:3ea9:b0:967:13a3:d82c with SMTP id hs41-20020a1709073ea900b0096713a3d82cmr1575505ejc.26.1685181153662;         Sat, 27 May 2023 02:52:33 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1685181153; cv=none;         d=google.com; s=arc-20160816;         b=IJm2NgNDq2WSnQbp0EUcUrHilAdy8iVRdL8i+1ZBHfMpBteVIztPrYK8F8B79h+mQY          UiBEc3TZZKYwagFjT4T+0du2yIT/oocRXWcUgfir1k99wz+9uVuqC+G08KwFwuajUoTR          yeX01R+gJ2RXxRpT/8EORQJhUg4YKiWSqOE5F3mY1FDUkEVIX7W1Pq30D7tBdLf/XHZ4          DYuVgnM3DLq95sviefBG/4BhD0TmORWr8wydc5y1xD0F6+LFg8w5+nugqZyUfk3db2QG          6slsqupdvO+4QYK8mnnCny4J8twJw1p/kAN+YTdZ8xAxzJQcb0N00ZXyUZFfffUSetFQ          of0A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from:dkim-signature;         bh=Na6Txrt2hFh+fWwveerBgJHyXpffGPNv4qohRE1MaYg=;         b=ZQtadp6H9aIq0pJ9FPABoXXgi31Xt+Qfx5i1ydm3kaT58+9aYqOVHdMqIL+FMDGIIx          yHIjEFRXnZns6XrJp9lCML9tvvpfe3144NuK+dVSe1/NIEk6qUYEKWhMAiO4sgru2LvK          Yj/+DUTPJUDSG++cgPZpqsFJUTMQ/66Y7KUNh7ml+bYRCurbyuVFoS/Zjd/CSRpzpuZw          eab+3a+Tn1EXM+hhgdwsWQlGJmx/G/20o8a8h+pRIDhFHLdEOG4G5sabxzFNOEYnElT4          AiudE5+rdFBh0B7qHBvPyr1ePi8OvAi4h07cdIparDTX2NDCR1ZeHlmYOGrS4qhZbXum          MN5Q==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@gmail.com header.s=20221208 header.b=V+s71H6T;        spf=pass (google.com: domain of robimarko@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=robimarko@gmail.com;        dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <robimarko@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])         by mx.google.com with SMTPS id tl26-20020a170907c31a00b00973901effdasor197604ejc.1.2023.05.27.02.52.33         (Google Transport Security);         Sat, 27 May 2023 02:52:33 -0700 (PDT)
+Received-SPF: pass (google.com: domain of robimarko@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@gmail.com header.s=20221208 header.b=V+s71H6T;        spf=pass (google.com: domain of robimarko@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=robimarko@gmail.com;        dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=gmail.com; s=20221208; t=1685181153; x=1687773153;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from:from:to:cc:subject:date:message-id:reply-to;         bh=Na6Txrt2hFh+fWwveerBgJHyXpffGPNv4qohRE1MaYg=;         b=V+s71H6TjO/HhMt4HfHThkprHxIaiCIwYBezKbGdNwVjoG6TWOilANBd7iOeb7I/di          cLfoOhLT4T4U7sp0hqat1o6D/LVCtW+ycJAELRF1Po3rXbdlT9Y5/jDI9V2lJBTIDBQT          TunOnUuxnX2kqiolWh52N178srlVEYj7O3LPuXPuHEz4WezrVh6KSqeri3KCRLqY2SGX          4tQ5KCbF91Wi2QDdfekWueRH5WUeibkrsfR3ocKH+f2JJYhVywvbENjodj8FJIrnIHBf          5mm91uUPTwLaMCQRuvSoERhyf13dxva5R+ct0akm1W61MxAEjLkPSTNqWzDGchnRc36Y          QX+Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=1e100.net; s=20221208; t=1685181153; x=1687773153;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from:x-gm-message-state:from:to:cc:subject:date:message-id          :reply-to;         bh=Na6Txrt2hFh+fWwveerBgJHyXpffGPNv4qohRE1MaYg=;         b=Xhva/jmDpL3Xv66VlelgQNjC5kQeHXZlcWv00Zjy3yigdrLY8Nwn0vjbEK9qZNYOJy          Q3cJOY0OI3wujTY3Uv9V+V4lWFIPDwhGgSExezLeC+t5Fa3JysjYx5Q5J02M1N4NeVLW          QomQ75Py7W+CsETyTjFWfqhQfsGtrPoGMnUiAjv+GAaK1rxzOWmeuPCXu0ngKiZlYr9e          Gxp3otig26MLsYpzGGW0pLbXpq64UDt1Ldow6Ihaf7TwQIK6SJcQj6Sf2Vdd2TcxXYsb          fGKTYdWs9st5Ae+UF/qvNw5a4KKqAv2OGDQV0WtKVtdnj9tFeofKp3PCTRcHzwxJ797c          xxNg==
+X-Gm-Message-State: AC+VfDySH1YTqnlp+IloGS2OwQsoRmO8+W9m0/DCl2bIqEFmwtpFtM3v 	xEOZZ7/Ur5l5smVk8VIHELw=
+X-Google-Smtp-Source: ACHHUZ5ZUCSqPzYpjsoHWRdlMUw62ces7+jeMttuscdSulYOdCoZgfBsxlriuni6BF0Qzvui1E1PNQ==
+X-Received: by 2002:a17:907:980c:b0:966:5fac:2e52 with SMTP id ji12-20020a170907980c00b009665fac2e52mr1378960ejc.9.1685181152973;         Sat, 27 May 2023 02:52:32 -0700 (PDT)
+Return-Path: <robimarko@gmail.com>
+Received: from fedora.. (dh207-98-6.xnet.hr. [88.207.98.6])         by smtp.googlemail.com with ESMTPSA id kq10-20020a170906abca00b00960005e09a3sm3218262ejb.61.2023.05.27.02.52.31         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Sat, 27 May 2023 02:52:32 -0700 (PDT)
+From: Robert Marko <robimarko@gmail.com>
+To: ilia.lin@kernel.org, 	agross@kernel.org, 	andersson@kernel.org, 	konrad.dybcio@linaro.org, 	rafael@kernel.org, 	viresh.kumar@linaro.org, 	robh+dt@kernel.org, 	krzysztof.kozlowski+dt@linaro.org, 	conor+dt@kernel.org, 	linux-pm@vger.kernel.org, 	linux-arm-msm@vger.kernel.org, 	devicetree@vger.kernel.org, 	linux-kernel@vger.kernel.org
+Cc: ansuelsmth@gmail.com, 	Robert Marko <robimarko@gmail.com>
+Subject: [PATCH 1/2] dt-bindings: cpufreq: qcom-cpufreq-nvmem: document IPQ8074
+Date: Sat, 27 May 2023 11:52:28 +0200
+Message-Id: <20230527095229.12019-1-robimarko@gmail.com>
+X-Mailer: git-send-email 2.40.1
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+Document IPQ8074 compatible for Qcom NVMEM CPUFreq driver.
+
+Signed-off-by: Robert Marko <robimarko@gmail.com>
+---
+ .../devicetree/bindings/cpufreq/qcom-cpufreq-nvmem.yaml          | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/Documentation/devicetree/bindings/cpufreq/qcom-cpufreq-nvmem.yaml b/Documentation/devicetree/bindings/cpufreq/qcom-cpufreq-nvmem.yaml
+index 6f5e7904181f..7e1bb992ce90 100644
+--- a/Documentation/devicetree/bindings/cpufreq/qcom-cpufreq-nvmem.yaml
++++ b/Documentation/devicetree/bindings/cpufreq/qcom-cpufreq-nvmem.yaml
+@@ -28,6 +28,7 @@ select:
+           - qcom,apq8064
+           - qcom,apq8096
+           - qcom,ipq8064
++          - qcom,ipq8074
+           - qcom,msm8939
+           - qcom,msm8960
+           - qcom,msm8974
+-- 
+2.40.1
+

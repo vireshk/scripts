@@ -256,7 +256,7 @@ export qemugpio="-chardev socket,path=$junkpath/vgpio.sock0,id=vgpio -device vho
 
 # Rust
 alias rustcoverage="echo -e \"apt-get install libclang-dev clang musl-tools \ncd vhost-device; ./rust-vmm-ci/test_run.py; \ncd vhost-device; pytest rust-vmm-ci/integration_tests/test_coverage.py --no-cleanup\"; msudo docker run --device=/dev/kvm -it --security-opt seccomp=unconfined --volume $rustpath/vhost-device:/vhost-device --volume ~/.ssh:/root/.ssh rustvmm/dev:v18"
-alias rustchecks="cargo fmt --all -- --check; cargo clippy --release --workspace --bins --examples --tests --benches --all-features --all-targets -- -D warnings -D clippy::undocumented_unsafe_blocks"
+alias rustchecks="cargo fmt --all -- --check --config format_code_in_doc_comments=true; cargo clippy --release --workspace --bins --examples --tests --benches --all-features --all-targets -- -D warnings -D clippy::undocumented_unsafe_blocks"
 alias buildgpiod="make clean; ./autogen.sh --enable-tools=yes --enable-bindings-rust --enable-examples --enable-tests; make"
 alias cargobuild="clear;cargo build --release"
 alias cargobuildarm="clear;cargo build --release --all-features --target aarch64-unknown-linux-gnu"

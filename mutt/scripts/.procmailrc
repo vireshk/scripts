@@ -21,10 +21,12 @@ me
 * ^(From|To|Cc):.*spear-heroes@googlegroups.com
 me
 
+
+#==============LINARO==================================#
 # linaro-open-discussions@op-lists.linaro.org
 :0:
 * ^(From|To|Cc):.*(linaro-open-discussions@op-lists\.linaro.org|stratos-dev@op-lists\.linaro\.org)
-linaro/discuss
+linaro/misc
 
 # pmwg-weeklies
 :0:
@@ -32,8 +34,6 @@ linaro/discuss
 * ^(Subject):.*\[.*-[wW]eekly\]
 linaro/pmwg
 
-
-#==============LINARO==================================#
 # ARA:
 :0:
 * ^(From|To|Cc):.*(project-ara-kernel@lists\.linaro\.org|greybus-dev@lists\.linaro\.org|projectara-software-dev@linaro\.org|project-ara-internal@linaro\.org|ara-all@projectara\.com|linaro@projectara.com|ara-eng-external@google\.com|project-ara-security@leaflabs\.com|ara-sw-core-external@google\.com)
@@ -42,37 +42,37 @@ ara/greybus
 # EAS
 :0:
 * ^(To|Cc):.*(eas-dev@lists\.linaro\.org)
-linaro/eas
+linaro/misc
 
 # Schedtools
 :0:
 * ^(To|Cc):.*(sched-tools@lists\.linaro.org)
-linaro/schedtools
+linaro/misc
 
 # kernelci-bot
 :0:
 * ^(From):.*bot@kernelci\.org
-linaro/kernelci
+linaro/misc
 
 # Everyone
 :0:
 * ^(To|Cc):.*(everyone@linaro\.org|employees@linaro\.org)
-linaro/everyone
+inbox
 
 # tech
 :0:
 * ^(To|Cc):.*tech@lists\.linaro\.org
-linaro/tech
+linaro/misc
 
 # linaro-kernel
 :0:
 * ^(To|Cc):.*linaro-kernel@lists\.linaro\.org
-linaro/kernel
+linaro/misc
 
 # dev
 :0:
 * ^(To|Cc):.*linaro-dev@lists\.linaro\.org
-linaro/dev
+linaro/misc
 
 # pmwg
 :0:
@@ -82,14 +82,17 @@ linaro/pmwg
 # toolchain
 :0:
 * ^(To|Cc):.*linaro-toolchain@lists\.linaro\.org
-linaro/toolchain
+linaro/misc
 
 # others
 :0:
 * ^(To|Cc):.*(lava-lab-team@linaro\.org|linaro-android@lists\.linaro\.org|linaro-announce@lists\.linaro\.org|kernel-build-reports@lists\.linaro\.org|conf@lists\.linaro\.org|linaro-dev-owner@lists\.linaro\.org|linaro-kernel-owner@lists\.linaro\.org|greybus-dev-owner@lists\.linaro\.org|linaro-release@lists\.linaro\.org)
 linaro/misc
 
-
+# gitlab
+:0:
+* ^From:.*gitlab@mg\.gitlab\.com
+linaro/misc
 
 #===============OTHERS=================================#
 # linux-pm
@@ -111,11 +114,6 @@ linux/lwn
 :0:
 * ^(To|Cc):.*users@linux\.kernel\.org
 linux/korg
-
-# gitlab
-:0:
-* ^From:.*gitlab@mg\.gitlab\.com
-linaro/gitlab
 
 # pmwg
 :0:

@@ -25,10 +25,7 @@ set move=no			# Don't move mail from the spool.
 # mailboxes ! +sent
 mailboxes +me +inbox +sent +draft \
 	"=-linux-" +linux/gpio +linux/korg +linux/lwn +linux/pm +linux/virtio \
-	"=-linaro-" +linaro/dev \
-	+linaro/discuss +linaro/eas +linaro/everyone +linaro/gitlab +linaro/kernel \
-	+linaro/kernelci +linaro/misc +linaro/pmwg \
-	+linaro/schedtools +linaro/tech +linaro/toolchain \
+	"=-linaro-" +linaro/misc +linaro/pmwg \
 	"=-ara-" +ara/greybus \
 	"=-bkp-" +bkp/me-bkp-jan16
 #mailboxes ! +Fetchmail +slrn +mutt

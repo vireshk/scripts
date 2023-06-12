@@ -105,12 +105,7 @@ linux/pm
 * ^(To|Cc):.*linux-gpio@vger\.kernel\.org
 linux/gpio
 
-# lwn
-:0:
-* ^(To|Cc):.*lwn@lwn\.net
-linux/lwn
-
-# lwn
+# korg
 :0:
 * ^(To|Cc):.*users@linux\.kernel\.org
 linux/korg

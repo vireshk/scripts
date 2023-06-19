@@ -2116,3 +2116,9 @@ From vireshk  Wed May 24 13:07:03 2023
 From vireshk  Wed May 24 13:07:05 2023
  Subject: [PATCH 2/2] cpufreq: dt-platdev: Support building cpufreq platdev dri
   Folder: PATCH_2-2_cpufreq_dt-platdev_Support_building_cpufreq_platde	  11418
+From vireshk  Mon Jun 19 09:16:30 2023
+ Subject: [PATCH] cpufreq: armada-8k: add ap807 support
+  Folder: PATCH_cpufreq_armada-8k_add_ap807_support.mbox		   7138
+From vireshk  Tue Jun  6 09:26:47 2023
+ Subject: [PATCH] cpufreq: mediatek: correct voltages for MT7622 and MT7623
+  Folder: PATCH_cpufreq_mediatek_correct_voltages_for_MT7622_and_MT762	   6004

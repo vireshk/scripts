@@ -76,7 +76,7 @@ alias hlwn="cd /home/vireshk/work/repos/tools/lwn"
 export VIRTIOPATH="/home/vireshk/work/repos/virtio"
 export QEMUPATH="$VIRTIOPATH/qemu/"
 export QEMUAARCH64="$QEMUPATH/build/aarch64-softmmu/qemu-system-aarch64"
-export rustpath="$VIRTIOPATH/rust/"
+export rustpath="$VIRTIOPATH/rust"
 alias hqemu="cd $QEMUPATH"
 alias hvirtio="cd $VIRTIOPATH"
 alias hxen="cd $VIRTIOPATH/xen"
@@ -303,6 +303,13 @@ alias xenarm="$QEMUAARCH64 \
 alias xenbuild="echo -e \"cd work/repos/virtio/xen; make clean; ./configure --libdir=/usr/lib --build=x86_64-unknown-linux-gnu --host=aarch64-linux-gnu --enable-docs --disable-golang --disable-ocamltools --with-system-qemu=/root/qemu/build/i386-softmmu/qemu-system-i386; make -j9 debball CROSS_COMPILE=aarch64-linux-gnu- XEN_TARGET_ARCH=arm64;\"; docker run --rm -it -u $(id -u) -v ~/work:/work -v $HOME:$HOME vireshk:bullseye-arm64 /usr/bin/fish"
 
 alias xenbuildarm="echo -e \"cd work/repos/virtio/xen; make clean; ./configure --libdir=/usr/lib --build=x86_64-unknown-linux-gnu --host=arm-linux-gnueabihf --enable-docs --disable-golang --disable-ocamltools --with-system-qemu=/root/qemu/build/i386-softmmu/qemu-system-i386; make -j9 debball CROSS_COMPILE=arm-linux-gnueabihf- XEN_TARGET_ARCH=arm32;\"; docker run --rm -it -u $(id -u) -v ~/work:/work -v $HOME:$HOME vireshk:bullseye-armhf /usr/bin/fish"
+
+# libgpiod paths
+export LD_LIBRARY_PATH="$rustpath/libgpiod/lib/.libs/"
+export SYSTEM_DEPS_LIBGPIOD_NO_PKG_CONFIG=1
+export SYSTEM_DEPS_LIBGPIOD_SEARCH_NATIVE="$rustpath/libgpiod/lib/.libs/"
+export SYSTEM_DEPS_LIBGPIOD_LIB=gpiod
+export SYSTEM_DEPS_LIBGPIOD_INCLUDE="$rustpath/libgpiod/include/"
 
 # go to linux on shell startup
 hlinux

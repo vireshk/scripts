@@ -136,11 +136,17 @@ source ~/.vim/plugin/taglist.vim
 source ~/.vim/doc/sketch.vim
 source ~/.vim/colors/pyte.vim
 
+" suppress warning
+let g:coc_disable_startup_warning = 1
+let g:coc_node_path = '/home/vireshk/.vim/node-v18.16.1-linux-x64/bin/node'
+
 " Plugins (Rust)
 call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
 
+Plug 'rust-lang/rust.vim'
+Plug 'neoclide/coc.nvim'
 Plug 'prabirshrestha/vim-lsp'
 
 " Initialize plugin system

@@ -2122,3 +2122,6 @@ From vireshk  Mon Jun 19 09:16:30 2023
 From vireshk  Tue Jun  6 09:26:47 2023
  Subject: [PATCH] cpufreq: mediatek: correct voltages for MT7622 and MT7623
   Folder: PATCH_cpufreq_mediatek_correct_voltages_for_MT7622_and_MT762	   6004
+From vireshk  Mon Jun 26 10:58:51 2023
+ Subject: [PATCH] OPP: Use dev_err_probe() when failing to get icc_path
+  Folder: PATCH_OPP_Use_dev_err_probe__when_failing_to_get_icc_path.mb	   8410

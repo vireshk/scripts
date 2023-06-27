@@ -2125,3 +2125,6 @@ From vireshk  Tue Jun  6 09:26:47 2023
 From vireshk  Mon Jun 26 10:58:51 2023
  Subject: [PATCH] OPP: Use dev_err_probe() when failing to get icc_path
   Folder: PATCH_OPP_Use_dev_err_probe__when_failing_to_get_icc_path.mb	   8410
+From vireshk  Tue Jun 27 07:02:42 2023
+ Subject: [PATCH] OPP: Properly propagate error along when failing to get icc_p
+  Folder: PATCH_OPP_Properly_propagate_error_along_when_failing_to_get	   9188

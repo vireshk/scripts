@@ -2128,3 +2128,6 @@ From vireshk  Mon Jun 26 10:58:51 2023
 From vireshk  Tue Jun 27 07:02:42 2023
  Subject: [PATCH] OPP: Properly propagate error along when failing to get icc_p
   Folder: PATCH_OPP_Properly_propagate_error_along_when_failing_to_get	   9188
+From vireshk  Thu Jul 20 11:12:48 2023
+ Subject: [PATCH v2 07/15] OPP: Introduce dev_pm_opp_find_freq_{ceil/floor}_ind
+  Folder: PATCH_v2_07-15_OPP_Introduce_dev_pm_opp_find_freq_{ceil-floo	  13179

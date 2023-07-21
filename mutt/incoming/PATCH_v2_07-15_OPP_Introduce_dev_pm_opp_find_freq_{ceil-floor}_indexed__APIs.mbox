@@ -1,0 +1,179 @@
+From vireshk  Thu Jul 20 11:12:48 2023
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [64.233.170.109] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Thu, 20 Jul 2023 11:12:48 +0530 (IST)
+Received: by 2002:a05:7208:5b05:b0:6d:a1b7:b892 with SMTP id gx5csp1604341rbb;         Wed, 19 Jul 2023 22:42:27 -0700 (PDT)
+X-Google-Smtp-Source: APBJJlF/HqZ24eO1JsgewpsRNHXtJbPvAotl8Ey3Qh3jV8Von9nDo6JdIq3iSY8LpsUzrojtUNfZ
+X-Received: by 2002:a05:6808:23c2:b0:3a2:ee9b:4262 with SMTP id bq2-20020a05680823c200b003a2ee9b4262mr983759oib.52.1689831747729;         Wed, 19 Jul 2023 22:42:27 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1689831747; cv=none;         d=google.com; s=arc-20160816;         b=ptwKJRvHYQ2bZMvUKKLR0qT3ojNwk58XZ/dJPBNxvSAWrn4kSVK5E3Yx4ErNjCRKD3          TEtdQ7hOtGltpvOJh+Uv+1u1Zxcct0Q/f+hEiFWcMAAcJKZxTWbGvn1DJAS8SFTHN+jD          s1CrSt1z7rjOM/v1t5E0YCT4AUMYtoKL8WNuzge+Pz+TF6rcsa7cXGnu3CpaxT1jjbgA          Hk0UMHaP3tix9+TtX1b9WbFVRbm6rG457+O/3KYPTGS07K34V5XZquUQH43SQ1velaAw          bfxLm8uuMJDV/vj4tPEIoK4peAL3y2wlt/bO/9GE69unouBuRl0CQ1QIDJRMp2zcrHtM          Vp7Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:references:in-reply-to          :message-id:date:subject:cc:to:from:dkim-signature:dmarc-filter          :delivered-to;         bh=9Da5r3Jfw26dVyORzvrEm8qPAG9eUA105lcs0ZwlGe4=;         fh=3109qC6i7dREPMf79CsN/jl+9zRd4/rV6IOQmZMqsxU=;         b=o3uxOpJO7cinkF4DABnOFHQ8D0rZbo7ku1GPefeByd0JFrn3MebJjuM7wTf79ye7Sp          UBsfLxRjsEA6+5EBMYN9xK3DsmytrEZGXSd8FN3fVWmE8wGo/6elJyJs45nTZd0iKyxK          oPii5/YuEz9CqsLFB0KhMycw6JHRvIHGCjrCoylGxfybPKrGxKcUnI4dN1FDndrtZQX3          ErsVWTHC4doKbxVRQf5JbErI0riHR6cnfsFrUUYSgOEhdCzloSvIcGCStDDVBHbExvE5          zAhgtOczdYKZ1agMGsQ4rU/QMp/orT4YakHYM4INPoB1PoR3vJzepAfYSkbhLx0sBkp+          vd9Q==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@linaro.org header.s=google header.b=OLXiRlHJ;        spf=pass (google.com: domain of srs0=c2ao=dg=linaro.org=manivannan.sadhasivam@kernel.org designates 2604:1380:4641:c500::1 as permitted sender) smtp.mailfrom="SRS0=c2ao=DG=linaro.org=manivannan.sadhasivam@kernel.org";        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=linaro.org
+Return-Path: <SRS0=c2ao=DG=linaro.org=manivannan.sadhasivam@kernel.org>
+Received: from dfw.source.kernel.org (dfw.source.kernel.org. [2604:1380:4641:c500::1])         by mx.google.com with ESMTPS id e13-20020aca230d000000b003a4125a7f0fsi55291oie.225.2023.07.19.22.42.27         for <viresh.kumar@linaro.org>         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Wed, 19 Jul 2023 22:42:27 -0700 (PDT)
+Received-SPF: pass (google.com: domain of srs0=c2ao=dg=linaro.org=manivannan.sadhasivam@kernel.org designates 2604:1380:4641:c500::1 as permitted sender) client-ip=2604:1380:4641:c500::1;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@linaro.org header.s=google header.b=OLXiRlHJ;        spf=pass (google.com: domain of srs0=c2ao=dg=linaro.org=manivannan.sadhasivam@kernel.org designates 2604:1380:4641:c500::1 as permitted sender) smtp.mailfrom="SRS0=c2ao=DG=linaro.org=manivannan.sadhasivam@kernel.org";        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=linaro.org
+Received: from smtp.kernel.org (relay.kernel.org [52.25.139.140]) 	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits) 	 key-exchange X25519 server-signature RSA-PSS (2048 bits)) 	(No client certificate requested) 	by dfw.source.kernel.org (Postfix) with ESMTPS id 63D3461889 	for <viresh.kumar@linaro.org>; Thu, 20 Jul 2023 05:42:27 +0000 (UTC)
+Received: by smtp.kernel.org (Postfix) 	id B6301C433C8; Thu, 20 Jul 2023 05:42:26 +0000 (UTC)
+Delivered-To: vireshk@kernel.org
+Received: from mail-pf1-f174.google.com (mail-pf1-f174.google.com [209.85.210.174]) 	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits) 	 key-exchange X25519 server-signature RSA-PSS (2048 bits) server-digest SHA256) 	(No client certificate requested) 	by smtp.kernel.org (Postfix) with ESMTPS id 97325C433CC 	for <vireshk@kernel.org>; Thu, 20 Jul 2023 05:42:24 +0000 (UTC)
+DMARC-Filter: OpenDMARC Filter v1.4.1 smtp.kernel.org 97325C433CC
+Authentication-Results: smtp.kernel.org; dmarc=pass (p=none dis=none) header.from=linaro.org
+Authentication-Results: smtp.kernel.org; spf=pass smtp.mailfrom=linaro.org
+Received: by mail-pf1-f174.google.com with SMTP id d2e1a72fcca58-6686a05bc66so235549b3a.1         for <vireshk@kernel.org>; Wed, 19 Jul 2023 22:42:24 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=linaro.org; s=google; t=1689831744; x=1690436544;         h=content-transfer-encoding:mime-version:references:in-reply-to          :message-id:date:subject:cc:to:from:from:to:cc:subject:date          :message-id:reply-to;         bh=9Da5r3Jfw26dVyORzvrEm8qPAG9eUA105lcs0ZwlGe4=;         b=OLXiRlHJkgIxd6h4nL1TG2KyNnXeFfkoIfTpn0CRa8X37aS02UlHpPRkJhdkr9IN35          erU2FU6jqK4k/wAvHhZqqODxcw3WsxABVWS6ocm7vjBXFp7lg2gFfB89GUX38dBp4Uba          kVXedomdrYOUMenpqUQye7EQWfZITNsN3tc059hob/Bp15DOEwjn0c+cs7cupU6Oi48E          gmb9C9xl7Rjnk2OjV3z4gzb010tLzipXyhaEkJdSKEux6cacYUB+96l4WrIFCe9wEJ4q          dnxis8d2zAamlt54BNqsSDoimj6iZoj0kngQq+CFCQpiWwjMebe2w+oa0RZ3kpLbHG54          sm5w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=1e100.net; s=20221208; t=1689831744; x=1690436544;         h=content-transfer-encoding:mime-version:references:in-reply-to          :message-id:date:subject:cc:to:from:x-gm-message-state:from:to:cc          :subject:date:message-id:reply-to;         bh=9Da5r3Jfw26dVyORzvrEm8qPAG9eUA105lcs0ZwlGe4=;         b=MB6MeVyBNXZ4Z+liyibUobbWUZo5dBPCj9Zsk9jMVU7RhE0TE+9C5tTEf9IVfOvGj6          X+1Sl3fk1ZN+jCSOSd99uOj7PScArDpvKJr0OAGw7Rq0EB++9HI/EXzBy7PJoxcLckzO          zgbbpJkj76lI1/h9GNvOv7nQZ18IAxAR1ngteJsRpg9l0+4fxbRVAf3oZjS52Sa86fDj          aI0az+MJCAViFCCkTYRJoPtJa80EdJ+w6vcK+wMjXz05Kj6Zc95zNEiqktkqwgGsfCBp          0gmGglgK+uBYhrsVLxaLUlixcWwDg90/LpwSuzjEHwRekWNbSl+h0AXM2khMoEWXcMqU          Gl3g==
+X-Gm-Message-State: ABy/qLb+AJpuGN/JUdmti9ar1PelAfKGdpP703Db+KroSscH8BEDJCmh 	IDgNuogtmcgfjHFg01SJ+pRujJz5gpPyEbs5oA==
+X-Received: by 2002:a05:6a20:a10f:b0:126:a771:b792 with SMTP id q15-20020a056a20a10f00b00126a771b792mr7718694pzk.14.1689831743710;         Wed, 19 Jul 2023 22:42:23 -0700 (PDT)
+Received: from localhost.localdomain ([117.206.119.70])         by smtp.gmail.com with ESMTPSA id r2-20020a170902be0200b001b85bb5fd77sm263367pls.119.2023.07.19.22.42.15         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Wed, 19 Jul 2023 22:42:23 -0700 (PDT)
+From: Manivannan Sadhasivam <manivannan.sadhasivam@linaro.org>
+To: vireshk@kernel.org, 	nm@ti.com, 	sboyd@kernel.org, 	myungjoo.ham@samsung.com, 	kyungmin.park@samsung.com, 	cw00.choi@samsung.com, 	andersson@kernel.org, 	konrad.dybcio@linaro.org, 	robh+dt@kernel.org, 	krzysztof.kozlowski+dt@linaro.org, 	conor+dt@kernel.org, 	jejb@linux.ibm.com, 	martin.petersen@oracle.com
+Cc: alim.akhtar@samsung.com, 	avri.altman@wdc.com, 	bvanassche@acm.org, 	linux-scsi@vger.kernel.org, 	linux-pm@vger.kernel.org, 	linux-arm-msm@vger.kernel.org, 	devicetree@vger.kernel.org, 	quic_asutoshd@quicinc.com, 	quic_cang@quicinc.com, 	quic_nitirawa@quicinc.com, 	quic_narepall@quicinc.com, 	quic_bhaskarv@quicinc.com, 	quic_richardp@quicinc.com, 	quic_nguyenb@quicinc.com, 	quic_ziqichen@quicinc.com, 	bmasney@redhat.com, 	krzysztof.kozlowski@linaro.org, 	linux-kernel@vger.kernel.org, 	Manivannan Sadhasivam <manivannan.sadhasivam@linaro.org>
+Subject: [PATCH v2 07/15] OPP: Introduce dev_pm_opp_find_freq_{ceil/floor}_indexed() APIs
+Date: Thu, 20 Jul 2023 11:10:52 +0530
+Message-Id: <20230720054100.9940-8-manivannan.sadhasivam@linaro.org>
+X-Mailer: git-send-email 2.25.1
+In-Reply-To: <20230720054100.9940-1-manivannan.sadhasivam@linaro.org>
+References: <20230720054100.9940-1-manivannan.sadhasivam@linaro.org>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Status: RO
+Content-Length: 5069
+Lines: 137
+
+In the case of devices with multiple clocks, drivers need to specify the
+clock index for the OPP framework to find the OPP corresponding to the
+floor/ceil of the supplied frequency. So let's introduce the two new APIs
+accepting the clock index as an argument.
+
+These APIs use the exising _find_key_ceil() helper by supplying the clock
+index to it.
+
+Signed-off-by: Manivannan Sadhasivam <manivannan.sadhasivam@linaro.org>
+---
+ drivers/opp/core.c     | 54 ++++++++++++++++++++++++++++++++++++++++++
+ include/linux/pm_opp.h | 18 ++++++++++++++
+ 2 files changed, 72 insertions(+)
+
+diff --git a/drivers/opp/core.c b/drivers/opp/core.c
+index 3f46e499d615..a6d0b6b18e0e 100644
+--- a/drivers/opp/core.c
++++ b/drivers/opp/core.c
+@@ -658,6 +658,33 @@ struct dev_pm_opp *dev_pm_opp_find_freq_ceil(struct device *dev,
+ }
+ EXPORT_SYMBOL_GPL(dev_pm_opp_find_freq_ceil);
+ 
++/**
++ * dev_pm_opp_find_freq_ceil_indexed() - Search for a rounded ceil freq for the
++ *					 clock corresponding to the index
++ * @dev:	Device for which we do this operation
++ * @freq:	Start frequency
++ * @index:	Clock index
++ *
++ * Search for the matching ceil *available* OPP for the clock corresponding to
++ * the specified index from a starting freq for a device.
++ *
++ * Return: matching *opp and refreshes *freq accordingly, else returns
++ * ERR_PTR in case of error and should be handled using IS_ERR. Error return
++ * values can be:
++ * EINVAL:	for bad pointer
++ * ERANGE:	no match found for search
++ * ENODEV:	if device not found in list of registered devices
++ *
++ * The callers are required to call dev_pm_opp_put() for the returned OPP after
++ * use.
++ */
++struct dev_pm_opp *dev_pm_opp_find_freq_ceil_indexed(struct device *dev,
++					     unsigned long *freq, u32 index)
++{
++	return _find_key_ceil(dev, freq, index, true, _read_freq, NULL);
++}
++EXPORT_SYMBOL_GPL(dev_pm_opp_find_freq_ceil_indexed);
++
+ /**
+  * dev_pm_opp_find_freq_floor() - Search for a rounded floor freq
+  * @dev:	device for which we do this operation
+@@ -683,6 +710,33 @@ struct dev_pm_opp *dev_pm_opp_find_freq_floor(struct device *dev,
+ }
+ EXPORT_SYMBOL_GPL(dev_pm_opp_find_freq_floor);
+ 
++/**
++ * dev_pm_opp_find_freq_floor_indexed() - Search for a rounded floor freq for the
++ *					  clock corresponding to the index
++ * @dev:	Device for which we do this operation
++ * @freq:	Start frequency
++ * @index:	Clock index
++ *
++ * Search for the matching floor *available* OPP for the clock corresponding to
++ * the specified index from a starting freq for a device.
++ *
++ * Return: matching *opp and refreshes *freq accordingly, else returns
++ * ERR_PTR in case of error and should be handled using IS_ERR. Error return
++ * values can be:
++ * EINVAL:	for bad pointer
++ * ERANGE:	no match found for search
++ * ENODEV:	if device not found in list of registered devices
++ *
++ * The callers are required to call dev_pm_opp_put() for the returned OPP after
++ * use.
++ */
++struct dev_pm_opp *dev_pm_opp_find_freq_floor_indexed(struct device *dev,
++					      unsigned long *freq, u32 index)
++{
++	return _find_key_floor(dev, freq, index, true, _read_freq, NULL);
++}
++EXPORT_SYMBOL_GPL(dev_pm_opp_find_freq_floor_indexed);
++
+ /**
+  * dev_pm_opp_find_level_exact() - search for an exact level
+  * @dev:		device for which we do this operation
+diff --git a/include/linux/pm_opp.h b/include/linux/pm_opp.h
+index dc1fb5890792..991f54da79b5 100644
+--- a/include/linux/pm_opp.h
++++ b/include/linux/pm_opp.h
+@@ -124,6 +124,9 @@ struct dev_pm_opp *dev_pm_opp_find_freq_exact(struct device *dev,
+ struct dev_pm_opp *dev_pm_opp_find_freq_floor(struct device *dev,
+ 					      unsigned long *freq);
+ 
++struct dev_pm_opp *dev_pm_opp_find_freq_floor_indexed(struct device *dev,
++					      unsigned long *freq, u32 index);
++
+ struct dev_pm_opp *dev_pm_opp_find_level_exact(struct device *dev,
+ 					       unsigned int level);
+ struct dev_pm_opp *dev_pm_opp_find_level_ceil(struct device *dev,
+@@ -132,6 +135,9 @@ struct dev_pm_opp *dev_pm_opp_find_level_ceil(struct device *dev,
+ struct dev_pm_opp *dev_pm_opp_find_freq_ceil(struct device *dev,
+ 					     unsigned long *freq);
+ 
++struct dev_pm_opp *dev_pm_opp_find_freq_ceil_indexed(struct device *dev,
++					     unsigned long *freq, u32 index);
++
+ struct dev_pm_opp *dev_pm_opp_find_bw_ceil(struct device *dev,
+ 					   unsigned int *bw, int index);
+ 
+@@ -271,12 +277,24 @@ static inline struct dev_pm_opp *dev_pm_opp_find_freq_floor(struct device *dev,
+ 	return ERR_PTR(-EOPNOTSUPP);
+ }
+ 
++static inline struct dev_pm_opp *dev_pm_opp_find_freq_floor_indexed(struct device *dev,
++					unsigned long *freq, u32 index)
++{
++	return ERR_PTR(-EOPNOTSUPP);
++}
++
+ static inline struct dev_pm_opp *dev_pm_opp_find_freq_ceil(struct device *dev,
+ 					unsigned long *freq)
+ {
+ 	return ERR_PTR(-EOPNOTSUPP);
+ }
+ 
++static inline struct dev_pm_opp *dev_pm_opp_find_freq_ceil_indexed(struct device *dev,
++					unsigned long *freq, u32 index)
++{
++	return ERR_PTR(-EOPNOTSUPP);
++}
++
+ static inline struct dev_pm_opp *dev_pm_opp_find_bw_ceil(struct device *dev,
+ 					unsigned int *bw, int index)
+ {
+-- 
+2.25.1
+

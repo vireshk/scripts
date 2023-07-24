@@ -2131,3 +2131,6 @@ From vireshk  Tue Jun 27 07:02:42 2023
 From vireshk  Thu Jul 20 11:12:48 2023
  Subject: [PATCH v2 07/15] OPP: Introduce dev_pm_opp_find_freq_{ceil/floor}_ind
   Folder: PATCH_v2_07-15_OPP_Introduce_dev_pm_opp_find_freq_{ceil-floo	  13179
+From vireshk  Thu Jul 20 11:13:53 2023
+ Subject: [PATCH v2 08/15] OPP: Introduce dev_pm_opp_get_freq_indexed() API
+  Folder: PATCH_v2_08-15_OPP_Introduce_dev_pm_opp_get_freq_indexed__AP	  10472

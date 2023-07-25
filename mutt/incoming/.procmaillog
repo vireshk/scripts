@@ -2134,3 +2134,12 @@ From vireshk  Thu Jul 20 11:12:48 2023
 From vireshk  Thu Jul 20 11:13:53 2023
  Subject: [PATCH v2 08/15] OPP: Introduce dev_pm_opp_get_freq_indexed() API
   Folder: PATCH_v2_08-15_OPP_Introduce_dev_pm_opp_get_freq_indexed__AP	  10472
+From vireshk  Sat Jul 22 10:18:17 2023
+ Subject: [PATCH 1/2] OPP: Fix potential null ptr dereference in dev_pm_opp_get
+  Folder: PATCH_1-2_OPP_Fix_potential_null_ptr_dereference_in_dev_pm_o	   8972
+From vireshk  Sat Jul 22 10:18:18 2023
+ Subject: [PATCH 2/2] OPP: Fix passing 0 to PTR_ERR in _opp_attach_genpd()
+  Folder: PATCH_2-2_OPP_Fix_passing_0_to_PTR_ERR_in_opp_attach_genpd_.	   8431
+From vireshk  Thu Jul 20 11:12:42 2023
+ Subject: [PATCH v2 02/15] dt-bindings: opp: Increase maxItems for opp-hz prope
+  Folder: PATCH_v2_02-15_dt-bindings_opp_Increase_maxItems_for_opp-hz_	   9342

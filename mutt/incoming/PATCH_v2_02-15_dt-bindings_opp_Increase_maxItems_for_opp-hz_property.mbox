@@ -1,0 +1,82 @@
+From vireshk  Thu Jul 20 11:12:42 2023
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [64.233.170.109] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Thu, 20 Jul 2023 11:12:42 +0530 (IST)
+Received: by 2002:a05:7208:5b05:b0:6d:a1b7:b892 with SMTP id gx5csp1604123rbb;         Wed, 19 Jul 2023 22:41:47 -0700 (PDT)
+X-Google-Smtp-Source: APBJJlH+tUzKqBluGKU4WGQsAaZ/8ajin+a0dLbgy2D6k4V4+he0qg6OQG2pY7Y93g3HtFMlLTIu
+X-Received: by 2002:a05:6870:b522:b0:18d:4738:33fc with SMTP id v34-20020a056870b52200b0018d473833fcmr587196oap.37.1689831707443;         Wed, 19 Jul 2023 22:41:47 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1689831707; cv=none;         d=google.com; s=arc-20160816;         b=zWEXfjRLsDGf6fMHFtFHIh4T+0mgr1Gxz7fDRPAecLcFHKFug850LA6LGfJ3SIRXkY          vM3c5pJpUQpnOhk3H2VgJbKKDQHttYGjFwJWdlmHyrMFLXOpuMQAeYAvLbL9Nf/JvvkA          uNff6ihQ9nGU3iYqRf2XDAfrKHu05NQqNe4UAOS3zIv3J7zAo8++L/vsI9iKv4RRRTFd          zAiLM4ft1wVDCzbJBg+Y7w09u+mIMJLA1Eipvh2SA3ZltbuQJgEsoGeVrfi/aaQ2KpJq          rnjfNlPqCmBmNgGoyn/e62eOJBhf5+yWewPtB17mt1e6onyeyvkVQnNFAKPYC1N46l1j          R2yA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:references:in-reply-to          :message-id:date:subject:cc:to:from:dkim-signature:dmarc-filter          :delivered-to;         bh=3XqdszzNXl0iGLUqn70eMf6bYl+0XxF6aThipavUI1U=;         fh=3109qC6i7dREPMf79CsN/jl+9zRd4/rV6IOQmZMqsxU=;         b=og46tluxBsjJPVD2BkZRWLbsv9dyqoQdUF8xgxyLgXWztgJ5R/ouL8dY5qfSYmqCMg          f8mbBNu2iRliTmpWKxKznnLqmCiLwlxxstGcfPHC+9MmgxFRMlWZC6Z0vgfxX28rohg4          XLOCfepxQWyb5HYVtpdfY05El/FUc2oAN0xDKOMwBM/q7MH2MmXQ081KmlsfGmC0uVNx          bKfx3or7ijIzuZnSpTFCxxEJOCvK3j9UIbVQFM39eh/pQyhETUBdLpXL8KgiaSp1xtHE          KrLE8DC8iLW9aSDPqDig3dFPB+XDeJw9isVMideV3Ww0FZ30xCmANdjVvJ8dXoT60Swq          e2zQ==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@linaro.org header.s=google header.b=CCpuZSLA;        spf=pass (google.com: domain of srs0=c2ao=dg=linaro.org=manivannan.sadhasivam@kernel.org designates 139.178.84.217 as permitted sender) smtp.mailfrom="SRS0=c2ao=DG=linaro.org=manivannan.sadhasivam@kernel.org";        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=linaro.org
+Return-Path: <SRS0=c2ao=DG=linaro.org=manivannan.sadhasivam@kernel.org>
+Received: from dfw.source.kernel.org (dfw.source.kernel.org. [139.178.84.217])         by mx.google.com with ESMTPS id j8-20020a056870020800b001b066a5f6cesi191731oad.183.2023.07.19.22.41.47         for <viresh.kumar@linaro.org>         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Wed, 19 Jul 2023 22:41:47 -0700 (PDT)
+Received-SPF: pass (google.com: domain of srs0=c2ao=dg=linaro.org=manivannan.sadhasivam@kernel.org designates 139.178.84.217 as permitted sender) client-ip=139.178.84.217;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@linaro.org header.s=google header.b=CCpuZSLA;        spf=pass (google.com: domain of srs0=c2ao=dg=linaro.org=manivannan.sadhasivam@kernel.org designates 139.178.84.217 as permitted sender) smtp.mailfrom="SRS0=c2ao=DG=linaro.org=manivannan.sadhasivam@kernel.org";        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=linaro.org
+Received: from smtp.kernel.org (relay.kernel.org [52.25.139.140]) 	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits) 	 key-exchange X25519 server-signature RSA-PSS (2048 bits)) 	(No client certificate requested) 	by dfw.source.kernel.org (Postfix) with ESMTPS id 1E2AC61889 	for <viresh.kumar@linaro.org>; Thu, 20 Jul 2023 05:41:47 +0000 (UTC)
+Received: by smtp.kernel.org (Postfix) 	id 232B4C433D9; Thu, 20 Jul 2023 05:41:46 +0000 (UTC)
+Delivered-To: vireshk@kernel.org
+Received: from mail-pl1-f182.google.com (mail-pl1-f182.google.com [209.85.214.182]) 	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits) 	 key-exchange X25519 server-signature RSA-PSS (2048 bits) server-digest SHA256) 	(No client certificate requested) 	by smtp.kernel.org (Postfix) with ESMTPS id 08624C433C7 	for <vireshk@kernel.org>; Thu, 20 Jul 2023 05:41:45 +0000 (UTC)
+DMARC-Filter: OpenDMARC Filter v1.4.1 smtp.kernel.org 08624C433C7
+Authentication-Results: smtp.kernel.org; dmarc=pass (p=none dis=none) header.from=linaro.org
+Authentication-Results: smtp.kernel.org; spf=pass smtp.mailfrom=linaro.org
+Received: by mail-pl1-f182.google.com with SMTP id d9443c01a7336-1b8ad8383faso2964395ad.0         for <vireshk@kernel.org>; Wed, 19 Jul 2023 22:41:45 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=linaro.org; s=google; t=1689831704; x=1690436504;         h=content-transfer-encoding:mime-version:references:in-reply-to          :message-id:date:subject:cc:to:from:from:to:cc:subject:date          :message-id:reply-to;         bh=3XqdszzNXl0iGLUqn70eMf6bYl+0XxF6aThipavUI1U=;         b=CCpuZSLAv4mIw9enQakiM7AssvWm2KvtnySDXhurdzO2yRaaciCQ9Fvyg+f8c6iB2b          l6pV4U7qiwHYGlO7vQLop7oWoZHnFLMA0HmPyOEsdcu09qdcYRsMgbAoz8egb84mGA/n          CGopBFTVmnixaUK9NAm0C/ygM/dkjB+dc5P3Z91CMcP5oTu/SZYB8Nd5VpDwChUKX9gn          KUnyxkG8kLMkKq2/zkz/pD2YTJhvopag/Ebptwz5aE/ihHdgHM0MaQ01HVnE6xJQdld+          2BpVhylFSAecPrswhy1Kiu3vcvcWEDcmrYhiqTaAIhfqK9XM5+1tw0ACl8Eb7d3/2sbY          bSOA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=1e100.net; s=20221208; t=1689831704; x=1690436504;         h=content-transfer-encoding:mime-version:references:in-reply-to          :message-id:date:subject:cc:to:from:x-gm-message-state:from:to:cc          :subject:date:message-id:reply-to;         bh=3XqdszzNXl0iGLUqn70eMf6bYl+0XxF6aThipavUI1U=;         b=Pks1Xfxi9Bt/hXAgZAtS2pkP2BPaBMt8am8v6n2xgsaWodL9fc4q+kcaN/KsPk4Yyx          VD34QQNqKtS5HJrLfY2Y/bLSqKwUHf4ciXZSIGeNWD1gXFF3U+VXhxVYBCrIlm5YZ4Hf          7946S/MhBYoyZk6uiPiFiK9gJgc6OZf6A3J8XFmsGWvUGjWSnIzBeWEM9py4j5VhOY7J          lkkjLLtV+CCALCGPALAgNZZxHTNGxW6K69EQeKm6iBgjO3PL/AE1Ctpq80PGeIfMPQld          1VycRgL32/kaiQHU1YMtwDux4bhBlUGtGTtFVJXMI1aGnjLTWxdTQ+YPdkFi2urQ8om9          RYLw==
+X-Gm-Message-State: ABy/qLZqbhwjihkkS3Sx9QE5LeMUa+/fAey1HAq57diAHPyOJ6IgtSTM 	QkbDnqC9i+5VlRNoU85qUR9erlYepvfveppbWw==
+X-Received: by 2002:a17:902:8a8a:b0:1b9:e913:b5b7 with SMTP id p10-20020a1709028a8a00b001b9e913b5b7mr1035999plo.44.1689831704434;         Wed, 19 Jul 2023 22:41:44 -0700 (PDT)
+Received: from localhost.localdomain ([117.206.119.70])         by smtp.gmail.com with ESMTPSA id r2-20020a170902be0200b001b85bb5fd77sm263367pls.119.2023.07.19.22.41.36         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Wed, 19 Jul 2023 22:41:44 -0700 (PDT)
+From: Manivannan Sadhasivam <manivannan.sadhasivam@linaro.org>
+To: vireshk@kernel.org, 	nm@ti.com, 	sboyd@kernel.org, 	myungjoo.ham@samsung.com, 	kyungmin.park@samsung.com, 	cw00.choi@samsung.com, 	andersson@kernel.org, 	konrad.dybcio@linaro.org, 	robh+dt@kernel.org, 	krzysztof.kozlowski+dt@linaro.org, 	conor+dt@kernel.org, 	jejb@linux.ibm.com, 	martin.petersen@oracle.com
+Cc: alim.akhtar@samsung.com, 	avri.altman@wdc.com, 	bvanassche@acm.org, 	linux-scsi@vger.kernel.org, 	linux-pm@vger.kernel.org, 	linux-arm-msm@vger.kernel.org, 	devicetree@vger.kernel.org, 	quic_asutoshd@quicinc.com, 	quic_cang@quicinc.com, 	quic_nitirawa@quicinc.com, 	quic_narepall@quicinc.com, 	quic_bhaskarv@quicinc.com, 	quic_richardp@quicinc.com, 	quic_nguyenb@quicinc.com, 	quic_ziqichen@quicinc.com, 	bmasney@redhat.com, 	krzysztof.kozlowski@linaro.org, 	linux-kernel@vger.kernel.org, 	Manivannan Sadhasivam <manivannan.sadhasivam@linaro.org>
+Subject: [PATCH v2 02/15] dt-bindings: opp: Increase maxItems for opp-hz property
+Date: Thu, 20 Jul 2023 11:10:47 +0530
+Message-Id: <20230720054100.9940-3-manivannan.sadhasivam@linaro.org>
+X-Mailer: git-send-email 2.25.1
+In-Reply-To: <20230720054100.9940-1-manivannan.sadhasivam@linaro.org>
+References: <20230720054100.9940-1-manivannan.sadhasivam@linaro.org>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Status: RO
+Content-Length: 1282
+Lines: 40
+
+Current limit of 16 will be exhausted by platforms specifying the frequency
+for 9 clocks using opp-hz, like Qcom SDM845 SoC. For instance, specifying
+the frequency for 9 clocks with 64bit specifier as below would consume
+(9 * 2 = 18) items.
+
+	opp-50000000 {
+		opp-hz = /bits/ 64 <50000000>,
+			 /bits/ 64 <0>,
+			 /bits/ 64 <0>,
+			 /bits/ 64 <37500000>,
+			 /bits/ 64 <0>,
+			 /bits/ 64 <0>,
+			 /bits/ 64 <0>,
+			 /bits/ 64 <0>,
+			 /bits/ 64 <75000000>;
+	};
+
+So let's increase the limit to 32 which should be enough for most platforms
+(hopefully).
+
+Signed-off-by: Manivannan Sadhasivam <manivannan.sadhasivam@linaro.org>
+---
+ Documentation/devicetree/bindings/opp/opp-v2-base.yaml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Documentation/devicetree/bindings/opp/opp-v2-base.yaml b/Documentation/devicetree/bindings/opp/opp-v2-base.yaml
+index 47e6f36b7637..e2f8f7af3cf4 100644
+--- a/Documentation/devicetree/bindings/opp/opp-v2-base.yaml
++++ b/Documentation/devicetree/bindings/opp/opp-v2-base.yaml
+@@ -56,7 +56,7 @@ patternProperties:
+           need to be configured and that is left for the implementation
+           specific binding.
+         minItems: 1
+-        maxItems: 16
++        maxItems: 32
+         items:
+           maxItems: 1
+ 
+-- 
+2.25.1
+

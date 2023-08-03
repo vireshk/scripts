@@ -2143,3 +2143,9 @@ From vireshk  Sat Jul 22 10:18:18 2023
 From vireshk  Thu Jul 20 11:12:42 2023
  Subject: [PATCH v2 02/15] dt-bindings: opp: Increase maxItems for opp-hz prope
   Folder: PATCH_v2_02-15_dt-bindings_opp_Increase_maxItems_for_opp-hz_	   9342
+From vireshk  Wed Aug  2 19:33:19 2023
+ Subject: [PATCH v13 01/10] cpufreq: blocklist MSM8998 in cpufreq-dt-platdev
+  Folder: PATCH_v13_01-10_cpufreq_blocklist_MSM8998_in_cpufreq-dt-plat	   8070
+From vireshk  Tue Aug  1 09:06:16 2023
+ Subject: [PATCH v3] cpufreq: brcmstb-avs-cpufreq: Fix -Warray-bounds bug
+  Folder: PATCH_v3_cpufreq_brcmstb-avs-cpufreq_Fix_-Warray-bounds_bug.	   7653

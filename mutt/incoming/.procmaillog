@@ -2149,3 +2149,6 @@ From vireshk  Wed Aug  2 19:33:19 2023
 From vireshk  Tue Aug  1 09:06:16 2023
  Subject: [PATCH v3] cpufreq: brcmstb-avs-cpufreq: Fix -Warray-bounds bug
   Folder: PATCH_v3_cpufreq_brcmstb-avs-cpufreq_Fix_-Warray-bounds_bug.	   7653
+From vireshk  Wed Aug  9 09:17:38 2023
+ Subject: [PATCH] cpufreq: blocklist more Qualcomm platforms in  cpufreq-dt-pla
+  Folder: PATCH_cpufreq_blocklist_more_Qualcomm_platforms_in_cpufreq-d	   8111

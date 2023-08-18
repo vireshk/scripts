@@ -2158,3 +2158,12 @@ From vireshk  Fri Aug 11 05:48:37 2023
 From vireshk  Thu Aug  3 08:56:54 2023
  Subject: [PATCH V2] cpufreq: amd-pstate-ut: Modify the function to get the hig
   Folder: PATCH_V2_cpufreq_amd-pstate-ut_Modify_the_function_to_get_th	  11659
+From vireshk  Wed Aug 16 08:43:33 2023
+ Subject: [PATCH 1/2] cpufreq: Prefer to print cpuid in MIN/MAX QoS register er
+  Folder: PATCH_1-2_cpufreq_Prefer_to_print_cpuid_in_MIN-MAX_QoS_regis	   5336
+From vireshk  Wed Aug 16 08:43:34 2023
+ Subject: [PATCH 2/2] cpufreq: cppc: cppc_cpufreq_get_rate() returns zero in al
+  Folder: PATCH_2-2_cpufreq_cppc_cppc_cpufreq_get_rate__returns_zero_i	   5634
+From vireshk  Thu Aug 17 13:21:25 2023
+ Subject: [PATCH v3] cpufreq: cppc: Set fie_disabled to FIE_DISABLED if fails t
+  Folder: PATCH_v3_cpufreq_cppc_Set_fie_disabled_to_FIE_DISABLED_if_fa	   5496

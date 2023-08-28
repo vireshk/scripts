@@ -1,0 +1,58 @@
+From vireshk  Sun Aug 27 12:31:37 2023
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [142.251.12.108] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Sun, 27 Aug 2023 12:31:37 +0530 (IST)
+Received: by 2002:a05:7208:8798:b0:6d:a1b7:b892 with SMTP id hc24csp2083576rbb;         Sat, 26 Aug 2023 02:53:43 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IEv/oOqU10qVWWKYc+sLq5pGZx816BD2Mc0vtbqdY7Tz/1/v2CGZgJAYBXYdcmhYWeej1Y2
+X-Received: by 2002:a9d:5904:0:b0:6b9:f1d3:160 with SMTP id t4-20020a9d5904000000b006b9f1d30160mr7418890oth.11.1693043622783;         Sat, 26 Aug 2023 02:53:42 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1693043622; cv=none;         d=google.com; s=arc-20160816;         b=Hsp/pbXZzSGpZiYtSpyVuO3tneGmFGheneKyVV5Sjbu41dGJwpZTOf9MEH4GXwp36z          F1qFZgWABpDOiNm84zCtH1ZZylvanA7Nk5rJzuxigpPx3dR29F+j5P/Vb4pH6JthL2gQ          BLycAwfInf+ePnshX3YsE2WxVXHQmVWk+XjCnD6ojm+HZu0+aji62JqFU3W3dc2Z+U2V          CsSKrZ18E4Z3keY0VNhPG9W5Ov41d9G/8xDoQZ94nIFkHz9arit+iamO+xSN7zZvBCZ/          LPZj2mpExX8hIg7YPMlJEwPhjPI5X2wTrtg6cAAxt4GTA7tXY+Ue4r+B4QTpe3u5mk8C          VX5A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from;         bh=kBTzhCz+8dGL0R2rbnApXV970T9DH4GAQrcgE5MsvWM=;         fh=K23wg4EVF23R1OZ+xeLqze7bN7tXX7tibn8/sdYKuVo=;         b=Zfvui2kTXLFKuJXhFsnG6FaFttJk17g0HDjWZQWigO7zkziJhJsp2ELaHvU/gWD1MK          Ysoz7NGXIqDXqE4Dy4kwD5kJSfNeFT0q7osbahY/lfn5q0WdkLTN5AaBBxChin7AMMne          6D+6BxJCIET/E3y2OycX04qr9/mTRkTsr52XEaR3UqRGDyKvKpMRRopHSPRjpItb+f2F          1OG315VFap2o3EkBphxdTZd0suSjlzBRgEm0AvAXskAQxqJXkEV0OCTQql6fPXrT9aEU          gd+47OkHCtaKiHYSY4wjlF2v39+9ycBk4jvLcYS3GEcVM3nJS3nC6PblBsFVP0S9/3Tj          /6qw==
+ARC-Authentication-Results: i=1; mx.google.com;        spf=pass (google.com: domain of liaochang1@huawei.com designates 45.249.212.187 as permitted sender) smtp.mailfrom=liaochang1@huawei.com;        dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=huawei.com
+Return-Path: <liaochang1@huawei.com>
+Received: from szxga01-in.huawei.com (szxga01-in.huawei.com. [45.249.212.187])         by mx.google.com with ESMTPS id i26-20020a9d4a9a000000b006b8a69c3973si1646904otf.13.2023.08.26.02.53.42         for <viresh.kumar@linaro.org>         (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);         Sat, 26 Aug 2023 02:53:42 -0700 (PDT)
+Received-SPF: pass (google.com: domain of liaochang1@huawei.com designates 45.249.212.187 as permitted sender) client-ip=45.249.212.187;
+Authentication-Results: mx.google.com;        spf=pass (google.com: domain of liaochang1@huawei.com designates 45.249.212.187 as permitted sender) smtp.mailfrom=liaochang1@huawei.com;        dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=huawei.com
+Received: from kwepemd100002.china.huawei.com (unknown [172.30.72.53]) 	by szxga01-in.huawei.com (SkyGuard) with ESMTP id 4RXsVB0L45ztS5W; 	Sat, 26 Aug 2023 17:49:22 +0800 (CST)
+Received: from huawei.com (10.67.174.28) by kwepemd100002.china.huawei.com  (7.221.188.184) with Microsoft SMTP Server (version=TLS1_2,  cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id 15.2.1258.23; Sat, 26 Aug  2023 17:53:09 +0800
+From: Liao Chang <liaochang1@huawei.com>
+To: <rafael@kernel.org>, <viresh.kumar@linaro.org>, 	<srivatsa.bhat@linux.vnet.ibm.com>
+CC: <linux-pm@vger.kernel.org>, <linux-kernel@vger.kernel.org>
+Subject: [PATCH] cpufreq: powernow-k8: Use related_cpus instead of cpus in driver.exit()
+Date: Sat, 26 Aug 2023 09:51:13 +0000
+Message-ID: <20230826095113.1137177-1-liaochang1@huawei.com>
+X-Mailer: git-send-email 2.34.1
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain
+X-Originating-IP: [10.67.174.28]
+X-ClientProxiedBy: dggems705-chm.china.huawei.com (10.3.19.182) To  kwepemd100002.china.huawei.com (7.221.188.184)
+X-CFilter-Loop: Reflected
+Content-Length: 902
+Lines: 26
+
+Since the 'cpus' field of policy structure will become empty in the
+cpufreq core API, it is better to use 'related_cpus' in the exit()
+callback of driver.
+
+Fixes: c3274763bfc3 ("cpufreq: powernow-k8: Initialize per-cpu data-structures properly")
+Signed-off-by: Liao Chang <liaochang1@huawei.com>
+---
+ drivers/cpufreq/powernow-k8.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/drivers/cpufreq/powernow-k8.c b/drivers/cpufreq/powernow-k8.c
+index d289036beff2..b10f7a1b77f1 100644
+--- a/drivers/cpufreq/powernow-k8.c
++++ b/drivers/cpufreq/powernow-k8.c
+@@ -1101,7 +1101,8 @@ static int powernowk8_cpu_exit(struct cpufreq_policy *pol)
+ 
+ 	kfree(data->powernow_table);
+ 	kfree(data);
+-	for_each_cpu(cpu, pol->cpus)
++	/* pol->cpus will be empty here, use related_cpus instead. */
++	for_each_cpu(cpu, pol->related_cpus)
+ 		per_cpu(powernow_data, cpu) = NULL;
+ 
+ 	return 0;
+-- 
+2.34.1
+

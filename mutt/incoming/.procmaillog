@@ -2188,3 +2188,9 @@ From vireshk  Fri Aug 18 09:05:18 2023
 From vireshk  Sun Aug 27 12:31:37 2023
  Subject: [PATCH] cpufreq: powernow-k8: Use related_cpus instead of cpus in dri
   Folder: PATCH_cpufreq_powernow-k8_Use_related_cpus_instead_of_cpus_i	   4907
+From vireshk  Fri Aug 25 16:47:10 2023
+ Subject: [Patch v2] cpufreq: tegra194: remove opp table in exit hook
+  Folder: Patch_v2_cpufreq_tegra194_remove_opp_table_in_exit_hook.mbox	  12194
+From vireshk  Mon Aug 28 17:41:17 2023
+ Subject: [Patch] cpufreq: tegra194: fix warning due to missing opp_put
+  Folder: Patch_cpufreq_tegra194_fix_warning_due_to_missing_opp_put.mb	  11643

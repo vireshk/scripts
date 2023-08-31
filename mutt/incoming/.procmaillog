@@ -2194,3 +2194,9 @@ From vireshk  Fri Aug 25 16:47:10 2023
 From vireshk  Mon Aug 28 17:41:17 2023
  Subject: [Patch] cpufreq: tegra194: fix warning due to missing opp_put
   Folder: Patch_cpufreq_tegra194_fix_warning_due_to_missing_opp_put.mb	  11643
+From vireshk  Tue Aug 29 14:14:28 2023
+ Subject: [Patch v2] cpufreq: tegra194: fix warning due to missing opp_put
+  Folder: Patch_v2_cpufreq_tegra194_fix_warning_due_to_missing_opp_put	  11633
+From vireshk  Wed Aug 30 19:23:41 2023
+ Subject: [PATCH 09/11] cpufreq: Add QCM6490 to cpufreq-dt-platdev blocklist
+  Folder: PATCH_09-11_cpufreq_Add_QCM6490_to_cpufreq-dt-platdev_blockl	   7269

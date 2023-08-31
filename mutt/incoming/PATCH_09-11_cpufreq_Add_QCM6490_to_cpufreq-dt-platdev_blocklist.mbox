@@ -1,0 +1,56 @@
+From vireshk  Wed Aug 30 19:23:41 2023
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [142.251.12.108] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Wed, 30 Aug 2023 19:23:41 +0530 (IST)
+Received: by 2002:a05:7208:8798:b0:6d:a1b7:b892 with SMTP id hc24csp4282593rbb;         Wed, 30 Aug 2023 02:58:55 -0700 (PDT)
+X-Received: by 2002:a19:8c1a:0:b0:500:8512:c7de with SMTP id o26-20020a198c1a000000b005008512c7demr1072361lfd.28.1693389534795;         Wed, 30 Aug 2023 02:58:54 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1693389534; cv=none;         d=google.com; s=arc-20160816;         b=0xyJE1y72GUGijAE39uV3+ZcY7WGs4QcadXr3eDp6OaUrJIWX1yH3dGe6Wp7K/OMct          6+osPuX0yd3bmnXnuyZ1NMdX7d/4K3G65jYMZuHtdrj1c0r8jP0esnX6Jeqen4Vxk0oz          k8dZlm05BNF50uZ/PExsNpXmIJKhK+M5QlaylN8B68ktL6hYs1eBnkAv6kJEGYiPAWZW          IceSgKnFcTYoA0qMVajyIYOKqc5zz8dWHg6qZ6fnrNxhdFfcP/CeHG/ECWBNgHYhMyt1          hus1/k00Zlq7n+zt46vj98OmLQqD+RdnNK807LSNkNU4tPFrvH0thH2js9IsBt3uPzGT          DASw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=cc:to:in-reply-to:references:message-id:content-transfer-encoding          :mime-version:subject:date:from:dkim-signature;         bh=NMaT33TMEcSdAqEfjzHnfiZm0MHlTu0tg8DNCHLNy/4=;         fh=57Ku0CTLA12Md3K6sQXAemFuM2rYfMcgUlRGEKAlkzM=;         b=aEsUMiPzNtmDuF78gS1zYneeJ2olRxdrns/jZFSez4P174/4xj1pfDFP+wwQWVU3Ug          3Bb6v2ngo9zVll2AJPCLmgcGI2V2m4x5PAH0CVYSuI/0GP+EZE9ILN5bK8bSqWZ21NzK          C38DwsJM5ocasBzCzTSwgYfFor+WLBJUxz0nVzhmhTj0vMd75moAVaptM+oFqJU+xeen          Ud6TOxluBhDUHktGnNuxNMJsunGgcHC9gCqIx4b1wOM9XdHsahaQXOh9FkkhNJ0xi7di          cGOeRBmxDy7hhvMlRYL0ePRCT23HPHo9uBrLlRyO9cG79u4Fv/REbhw+qhVImWMTCnja          ye1Q==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@fairphone.com header.s=fair header.b=huJgLdmN;        spf=pass (google.com: domain of luca.weiss@fairphone.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=luca.weiss@fairphone.com;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=fairphone.com
+Return-Path: <luca.weiss@fairphone.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])         by mx.google.com with SMTPS id og2-20020a1709071dc200b009a1e2d8a81bsor3856692ejc.6.2023.08.30.02.58.54         for <viresh.kumar@linaro.org>         (Google Transport Security);         Wed, 30 Aug 2023 02:58:54 -0700 (PDT)
+Received-SPF: pass (google.com: domain of luca.weiss@fairphone.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@fairphone.com header.s=fair header.b=huJgLdmN;        spf=pass (google.com: domain of luca.weiss@fairphone.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=luca.weiss@fairphone.com;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=fairphone.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=fairphone.com; s=fair; t=1693389534; x=1693994334; darn=linaro.org;         h=cc:to:in-reply-to:references:message-id:content-transfer-encoding          :mime-version:subject:date:from:from:to:cc:subject:date:message-id          :reply-to;         bh=NMaT33TMEcSdAqEfjzHnfiZm0MHlTu0tg8DNCHLNy/4=;         b=huJgLdmNoQf5afIl1F2G2e6qFMFn2DFqpbUW5rOtnSKShgqkabLjvMg5jAB0itEZ1x          5GfhphuOCKOMmnkZeeHsuvEKoMuED9jM2LOTqRu4G4L+93LX0EQdgF/B2G75Vx7tpNwZ          fqHA7lGpXYclxI5jERIrqgwy3tWuF/ZscTBMaw1E6wysqNddUuxbK07rl1akcP8BKXMR          3wOtNm+cFFYebrIosCi/dQB/StR4IZPv0B3LXkRLljpyQRHjYpnsuKbyPkh2Yi0q+tPl          cLTn6+boIojUi8mYhnS4JD2cV3hagXAAQhw20jUXFJMlhY3GSSDmBlrv5y0J1jnQP34/          sM1w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=1e100.net; s=20221208; t=1693389534; x=1693994334;         h=cc:to:in-reply-to:references:message-id:content-transfer-encoding          :mime-version:subject:date:from:x-gm-message-state:from:to:cc          :subject:date:message-id:reply-to;         bh=NMaT33TMEcSdAqEfjzHnfiZm0MHlTu0tg8DNCHLNy/4=;         b=Zy0kqJFw/IcLZhtGSGHPNvIqX+9srJyJYvAjXGKlNsTGWMXWSzqEQr2tobFAVdguFZ          jHmNshgFO460X94QSAtPRWnCjuCXWQqnwM/Fq/mbG/dz8ONSXHrW7YMM98jD0rvXH7sX          u/CWE/M0gA5oCEU3KeQ4fMDynfFClA8kTbMaU7L9AwlxK7R7wfyiqnBkOJjohUyfoHKI          UnHT3SZDa/Npy7maPh+PFVVNagnXR7Vn6pObZY4jnGmr/lVmBa0DrHHj/tDExWRfWNvU          o+IcHAWwiBwqwqcbEk+TRQFXSJ6mVuTO6GRmq3Q+E1bEysKGs9RG+iSNUyCz2StXmYIS          nc0A==
+X-Gm-Message-State: AOJu0Yzmlzf67/5mk+nTJdZowTtpl092iz+xNF+RizWpKI0n/neH5zrr 	2u788h+tdOyw/LrcYx/kXBwlEA==
+X-Google-Smtp-Source: AGHT+IEsayzgtGNMlFizdpOnfPYW6WrLF+nLZTrAoohOtQ7FLTkln95jhDk+INqp8xVX4Gj4B65n1A==
+X-Received: by 2002:a17:906:20dd:b0:9a1:c89a:9260 with SMTP id c29-20020a17090620dd00b009a1c89a9260mr1229467ejc.51.1693389534562;         Wed, 30 Aug 2023 02:58:54 -0700 (PDT)
+Return-Path: <luca.weiss@fairphone.com>
+Received: from otso.luca.vpn.lucaweiss.eu (5073ED84.static.ziggozakelijk.nl. [80.115.237.132])         by smtp.gmail.com with ESMTPSA id i15-20020a1709064ecf00b009a2202bfce5sm6957130ejv.118.2023.08.30.02.58.53         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Wed, 30 Aug 2023 02:58:54 -0700 (PDT)
+From: Luca Weiss <luca.weiss@fairphone.com>
+Date: Wed, 30 Aug 2023 11:58:34 +0200
+Subject: [PATCH 09/11] cpufreq: Add QCM6490 to cpufreq-dt-platdev blocklist
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Message-Id: <20230830-fp5-initial-v1-9-5a954519bbad@fairphone.com>
+References: <20230830-fp5-initial-v1-0-5a954519bbad@fairphone.com>
+In-Reply-To: <20230830-fp5-initial-v1-0-5a954519bbad@fairphone.com>
+To: cros-qcom-dts-watchers@chromium.org, Andy Gross <agross@kernel.org>,   Bjorn Andersson <andersson@kernel.org>,   Konrad Dybcio <konrad.dybcio@linaro.org>, Rob Herring <robh+dt@kernel.org>,   Krzysztof Kozlowski <krzysztof.kozlowski+dt@linaro.org>,   Conor Dooley <conor+dt@kernel.org>,   Srinivas Kandagatla <srinivas.kandagatla@linaro.org>,   Linus Walleij <linus.walleij@linaro.org>,   "Rafael J. Wysocki" <rafael@kernel.org>,   Viresh Kumar <viresh.kumar@linaro.org>
+Cc: ~postmarketos/upstreaming@lists.sr.ht, phone-devel@vger.kernel.org,   linux-arm-msm@vger.kernel.org, devicetree@vger.kernel.org,   linux-kernel@vger.kernel.org, linux-gpio@vger.kernel.org,   linux-pm@vger.kernel.org, Luca Weiss <luca.weiss@fairphone.com>
+X-Mailer: b4 0.12.3
+
+The Qualcomm QCM6490 platform uses the qcom-cpufreq-hw driver, so add it
+to the cpufreq-dt-platdev driver's blocklist.
+
+Signed-off-by: Luca Weiss <luca.weiss@fairphone.com>
+---
+ drivers/cpufreq/cpufreq-dt-platdev.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/drivers/cpufreq/cpufreq-dt-platdev.c b/drivers/cpufreq/cpufreq-dt-platdev.c
+index fb2875ce1fdd..02ec58a8603b 100644
+--- a/drivers/cpufreq/cpufreq-dt-platdev.c
++++ b/drivers/cpufreq/cpufreq-dt-platdev.c
+@@ -145,6 +145,7 @@ static const struct of_device_id blocklist[] __initconst = {
+ 	{ .compatible = "qcom,msm8996", },
+ 	{ .compatible = "qcom,msm8998", },
+ 	{ .compatible = "qcom,qcm2290", },
++	{ .compatible = "qcom,qcm6490", },
+ 	{ .compatible = "qcom,qcs404", },
+ 	{ .compatible = "qcom,qdu1000", },
+ 	{ .compatible = "qcom,sa8155p" },
+
+-- 
+2.42.0
+

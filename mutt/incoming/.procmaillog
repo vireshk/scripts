@@ -2200,3 +2200,6 @@ From vireshk  Tue Aug 29 14:14:28 2023
 From vireshk  Wed Aug 30 19:23:41 2023
  Subject: [PATCH 09/11] cpufreq: Add QCM6490 to cpufreq-dt-platdev blocklist
   Folder: PATCH_09-11_cpufreq_Add_QCM6490_to_cpufreq-dt-platdev_blockl	   7269
+From vireshk  Tue Sep 26 09:34:26 2023
+ Subject: [PATCH v5 3/5] opp: Add dev_pm_opp_find_level_floor()
+  Folder: PATCH_v5_3-5_opp_Add_dev_pm_opp_find_level_floor_.mbox	  10722

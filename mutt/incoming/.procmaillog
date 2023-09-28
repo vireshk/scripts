@@ -2203,3 +2203,21 @@ From vireshk  Wed Aug 30 19:23:41 2023
 From vireshk  Tue Sep 26 09:34:26 2023
  Subject: [PATCH v5 3/5] opp: Add dev_pm_opp_find_level_floor()
   Folder: PATCH_v5_3-5_opp_Add_dev_pm_opp_find_level_floor_.mbox	  10722
+From vireshk  Tue Sep 26 12:27:42 2023
+ Subject: [PATCH v2] cpufreq: pmac32: Use of_property_read_reg() to parse "reg"
+  Folder: PATCH_v2_cpufreq_pmac32_Use_of_property_read_reg__to_parse_r	   6200
+From vireshk  Tue Sep 26 09:35:40 2023
+ Subject: [PATCH v1 08/10] dt-bindings: cpufreq: qcom-cpufreq-nvmem: document I
+  Folder: PATCH_v1_08-10_dt-bindings_cpufreq_qcom-cpufreq-nvmem_docume	   7292
+From vireshk  Tue Sep 26 09:35:40 2023
+ Subject: [PATCH v1 08/10] dt-bindings: cpufreq: qcom-cpufreq-nvmem: document I
+  Folder: PATCH_v1_08-10_dt-bindings_cpufreq_qcom-cpufreq-nvmem_docume	   7292
+From vireshk  Tue Sep 26 10:30:38 2023
+ Subject: [PATCH 2/4] cpufreq: dt: platdev: Add MSM8909 to blocklist
+  Folder: PATCH_2-4_cpufreq_dt_platdev_Add_MSM8909_to_blocklist.mbox	   5913
+From vireshk  Tue Sep 26 10:39:45 2023
+ Subject: [PATCH 3/4] dt-bindings: cpufreq: qcom-nvmem: Document MSM8909
+  Folder: PATCH_3-4_dt-bindings_cpufreq_qcom-nvmem_Document_MSM8909.mb	   6006
+From vireshk  Thu Aug 17 08:36:10 2023
+ Subject: [PATCH v2 2/3] dt-bindings: cpufreq: cpufreq-qcom-hw: add SDM670 comp
+  Folder: PATCH_v2_2-3_dt-bindings_cpufreq_cpufreq-qcom-hw_add_SDM670_	   7477

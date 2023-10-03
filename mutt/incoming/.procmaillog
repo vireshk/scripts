@@ -2221,3 +2221,24 @@ From vireshk  Tue Sep 26 10:39:45 2023
 From vireshk  Thu Aug 17 08:36:10 2023
  Subject: [PATCH v2 2/3] dt-bindings: cpufreq: cpufreq-qcom-hw: add SDM670 comp
   Folder: PATCH_v2_2-3_dt-bindings_cpufreq_cpufreq-qcom-hw_add_SDM670_	   7477
+From vireshk  Tue Sep 26 12:22:50 2023
+ Subject: [PATCH 3/9] OPP: Add dev_pm_opp_add_dynamic() to allow more flexibili
+  Folder: PATCH_3-9_OPP_Add_dev_pm_opp_add_dynamic__to_allow_more_flex	  14510
+From vireshk  Tue Sep 26 12:22:48 2023
+ Subject: [PATCH 4/9] OPP: Extend dev_pm_opp_data with a level
+  Folder: PATCH_4-9_OPP_Extend_dev_pm_opp_data_with_a_level.mbox	   8793
+From vireshk  Tue Sep 26 12:22:49 2023
+ Subject: [PATCH 5/9] OPP: Switch to use dev_pm_domain_set_performance_state()
+  Folder: PATCH_5-9_OPP_Switch_to_use_dev_pm_domain_set_performance_st	   8392
+From vireshk  Tue Sep 26 12:22:50 2023
+ Subject: [PATCH 3/9] OPP: Add dev_pm_opp_add_dynamic() to allow more flexibili
+  Folder: PATCH_3-9_OPP_Add_dev_pm_opp_add_dynamic__to_allow_more_flex	  14510
+From vireshk  Tue Sep 26 12:22:49 2023
+ Subject: [PATCH 5/9] OPP: Switch to use dev_pm_domain_set_performance_state()
+  Folder: PATCH_5-9_OPP_Switch_to_use_dev_pm_domain_set_performance_st	   8392
+From vireshk  Tue Sep 26 12:22:48 2023
+ Subject: [PATCH 4/9] OPP: Extend dev_pm_opp_data with a level
+  Folder: PATCH_4-9_OPP_Extend_dev_pm_opp_data_with_a_level.mbox	   8793
+From vireshk  Tue Sep 26 12:24:29 2023
+ Subject: [PATCH 6/9] OPP: Extend support for the opp-level beyond required-opp
+  Folder: PATCH_6-9_OPP_Extend_support_for_the_opp-level_beyond_requir	  10015

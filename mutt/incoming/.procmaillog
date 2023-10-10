@@ -2242,3 +2242,33 @@ From vireshk  Tue Sep 26 12:22:48 2023
 From vireshk  Tue Sep 26 12:24:29 2023
  Subject: [PATCH 6/9] OPP: Extend support for the opp-level beyond required-opp
   Folder: PATCH_6-9_OPP_Extend_support_for_the_opp-level_beyond_requir	  10015
+From vireshk  Mon Oct  9 13:55:47 2023
+ Subject: [Patch] cpufreq: tegra194: remove redundant AND with cpu_online_mask
+  Folder: Patch_cpufreq_tegra194_remove_redundant_AND_with_cpu_online_	  11154
+From vireshk  Thu Oct  5 08:54:20 2023
+ Subject: [Patch v3 1/2] cpufreq: tegra194: save CPU data to avoid repeated SMP
+  Folder: Patch_v3_1-2_cpufreq_tegra194_save_CPU_data_to_avoid_repeate	  16851
+From vireshk  Thu Oct  5 08:53:08 2023
+ Subject: [Patch v3 2/2] cpufreq: tegra194: use refclk delta based loop instead
+  Folder: Patch_v3_2-2_cpufreq_tegra194_use_refclk_delta_based_loop_in	  16766
+From vireshk  Mon Oct  9 13:55:47 2023
+ Subject: [Patch] cpufreq: tegra194: remove redundant AND with cpu_online_mask
+  Folder: Patch_cpufreq_tegra194_remove_redundant_AND_with_cpu_online_	  11207
+From vireshk  Tue Oct  3 08:54:35 2023
+ Subject: [PATCH v5 1/6] dt-bindings: opp: opp-v2-kryo-cpu: support Qualcomm Kr
+  Folder: PATCH_v5_1-6_dt-bindings_opp_opp-v2-kryo-cpu_support_Qualcom	   9678
+From vireshk  Tue Oct  3 08:54:36 2023
+ Subject: [PATCH v5 2/6] cpufreq: qcom-nvmem: create L2 cache device
+  Folder: PATCH_v5_2-6_cpufreq_qcom-nvmem_create_L2_cache_device.mbox	   9475
+From vireshk  Tue Oct  3 08:55:44 2023
+ Subject: [PATCH v5 3/6] cpufreq: qcom-nvmem: also accept operating-points-v2-k
+  Folder: PATCH_v5_3-6_cpufreq_qcom-nvmem_also_accept_operating-points	   8869
+From vireshk  Tue Oct  3 08:55:45 2023
+ Subject: [PATCH v5 4/6] cpufreq: qcom-nvmem: drop pvs_ver for format a fuses
+  Folder: PATCH_v5_4-6_cpufreq_qcom-nvmem_drop_pvs_ver_for_format_a_fu	   8943
+From vireshk  Tue Oct  3 08:55:45 2023
+ Subject: [PATCH v5 5/6] cpufreq: qcom-nvmem: provide separate configuration da
+  Folder: PATCH_v5_5-6_cpufreq_qcom-nvmem_provide_separate_configurati	  11120
+From vireshk  Tue Oct  3 08:55:47 2023
+ Subject: [PATCH v5 6/6] cpufreq: qcom-nvmem: enable core voltage scaling for M
+  Folder: PATCH_v5_6-6_cpufreq_qcom-nvmem_enable_core_voltage_scaling_	   8617

@@ -1,0 +1,100 @@
+From vireshk  Tue Oct  3 08:54:36 2023
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [142.251.175.108] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Tue, 03 Oct 2023 08:54:36 +0530 (IST)
+Received: by 2002:a05:7208:960b:b0:6d:a1b7:b892 with SMTP id gt11csp1441030rbb;         Mon, 2 Oct 2023 11:59:52 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IGH26Kamdv7ZjhCHdSBKAI2LnSVoTjNS14duqfOtKPmwP2JeuTBjyffTo7Yl7JQ4GKaroFM
+X-Received: by 2002:a05:6808:9a7:b0:3ab:83fe:e18f with SMTP id e7-20020a05680809a700b003ab83fee18fmr12232991oig.35.1696273191949;         Mon, 02 Oct 2023 11:59:51 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1696273191; cv=none;         d=google.com; s=arc-20160816;         b=amtLXAvfXde0PmG2Ma6L6zDaz7iMakuAZg5miZa7fHW56OX1RfHD70BokKuOZ6Wywd          qmyNMyfpWy06KQLNoW8/yAfqeEHenGng08AMalKeoiXwB58SpLqsrD6O6VMx17GCFDKm          ptctSCHkNvpe7/2Lroi5J3xlDWUFYPI0yT1nGNCRGxQukXHXQgSafT2309QiUrhvcuBj          TWrGBPgznMGafz55itMHiDNCD9kU0xiH6ZjEiRECkhbn5iZa6eitW09TF2YJG3aNDwap          acvPg1hb+1ir21kTgGSgtVDFr/34ahxhTBi0L2b1khJTAWhPQm56XEW3QwdNIKxyA/fw          Ercg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:references:in-reply-to          :message-id:date:subject:cc:to:from:dkim-signature:dmarc-filter          :delivered-to;         bh=uUMMYHvgPHC3FfvjsnckoOJeoQiZG6ia/eSTyXFZQWY=;         fh=fk0xVtUSBSBe5KQKUmBR//55zl86YIXssijK9fd20lU=;         b=QwQl2E5CH3G1k5MLS4k26dxqcTU23+SeZQhpW2d9R6JawRAHdEHA4NlLy/nGlMAb9+          LPQGNtrB5ot4wDvWzxidLoXBmn1vxLCoLiD5CAvir/MscV9Y8qNOxfsWkMoZknzXBNK6          FXSHUSx5HPLjK6xOdl2oxIvxBj9aPS9Gjyw6TYA93zmSeB516pPvux9HokpOfQSZd/yG          Zzo+O8wnOqY/nCHna3Ic8XQVrMFQW2xlofEU89R+X6l71O+qsLOwn8lkjLe6H0dTtGZI          wVH1YknhW42xjSTxwy48a9LmyNahsryk8028WSZHy5ymvONJj+O7FQLoU7fhlMruFlao          Ex9Q==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@linaro.org header.s=google header.b=Saf9niqZ;        spf=pass (google.com: domain of srs0=/w69=fq=linaro.org=dmitry.baryshkov@kernel.org designates 139.178.84.217 as permitted sender) smtp.mailfrom="SRS0=/w69=FQ=linaro.org=dmitry.baryshkov@kernel.org";        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=linaro.org
+Return-Path: <SRS0=/w69=FQ=linaro.org=dmitry.baryshkov@kernel.org>
+Received: from dfw.source.kernel.org (dfw.source.kernel.org. [139.178.84.217])         by mx.google.com with ESMTPS id bx39-20020a0568081b2700b003ab823d5d6fsi11117902oib.294.2023.10.02.11.59.51         for <viresh.kumar@linaro.org>         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Mon, 02 Oct 2023 11:59:51 -0700 (PDT)
+Received-SPF: pass (google.com: domain of srs0=/w69=fq=linaro.org=dmitry.baryshkov@kernel.org designates 139.178.84.217 as permitted sender) client-ip=139.178.84.217;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@linaro.org header.s=google header.b=Saf9niqZ;        spf=pass (google.com: domain of srs0=/w69=fq=linaro.org=dmitry.baryshkov@kernel.org designates 139.178.84.217 as permitted sender) smtp.mailfrom="SRS0=/w69=FQ=linaro.org=dmitry.baryshkov@kernel.org";        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=linaro.org
+Received: from smtp.kernel.org (transwarp.subspace.kernel.org [100.75.92.58]) 	by dfw.source.kernel.org (Postfix) with ESMTP id 93F9360FF4 	for <viresh.kumar@linaro.org>; Mon,  2 Oct 2023 18:59:51 +0000 (UTC)
+Received: by smtp.kernel.org (Postfix) 	id 73A76C433A9; Mon,  2 Oct 2023 18:59:51 +0000 (UTC)
+Delivered-To: vireshk@kernel.org
+Received: from mail-lf1-f45.google.com (mail-lf1-f45.google.com [209.85.167.45]) 	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits) 	 key-exchange X25519 server-signature RSA-PSS (2048 bits) server-digest SHA256) 	(No client certificate requested) 	by smtp.kernel.org (Postfix) with ESMTPS id DD5F7C433BB 	for <vireshk@kernel.org>; Mon,  2 Oct 2023 18:59:44 +0000 (UTC)
+DMARC-Filter: OpenDMARC Filter v1.4.1 smtp.kernel.org DD5F7C433BB
+Authentication-Results: smtp.kernel.org; dmarc=pass (p=none dis=none) header.from=linaro.org
+Authentication-Results: smtp.kernel.org; spf=pass smtp.mailfrom=linaro.org
+Received: by mail-lf1-f45.google.com with SMTP id 2adb3069b0e04-502e7d66c1eso38690e87.1         for <vireshk@kernel.org>; Mon, 02 Oct 2023 11:59:44 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=linaro.org; s=google; t=1696273182; x=1696877982; darn=kernel.org;         h=content-transfer-encoding:mime-version:references:in-reply-to          :message-id:date:subject:cc:to:from:from:to:cc:subject:date          :message-id:reply-to;         bh=uUMMYHvgPHC3FfvjsnckoOJeoQiZG6ia/eSTyXFZQWY=;         b=Saf9niqZtmDJxItbfqS9ZhslNORC7EJImPVrIse4AjzfCh4De0bs0jc1HQmqluBimb          mrUYphpwCitkLbtZxG2dJDEvQYtkK4uDvVasdFnvd8hLbeD85Ek6i1Ghmms19DKzzSl1          KKODOxBhyJIHPd3Gnb2H9D6W79E8EtwIAMVcicVVnIDuOCjxNacxswc/ARRLMlfs0V0Q          1oN4QllN2WHu8aGuHjCpeY2nr09GseS6urqnUgiBYQat+Dwg7YPZSBINCcBTKgHZBIBQ          b2mUG9za+KhQGEqUoBKhOR/1TkXHq+32vFzehHNq1WzUA5AnL31Rvm0Od9AvXu9p+Wgw          w6sQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=1e100.net; s=20230601; t=1696273183; x=1696877983;         h=content-transfer-encoding:mime-version:references:in-reply-to          :message-id:date:subject:cc:to:from:x-gm-message-state:from:to:cc          :subject:date:message-id:reply-to;         bh=uUMMYHvgPHC3FfvjsnckoOJeoQiZG6ia/eSTyXFZQWY=;         b=QE8DE/Hdb2p7FztS223M2oTj0Yot8HpcCnofoXp4WMep8A+nVSLTQmmDPdtfQKPsKB          dXj+pwj17zaliqZ/GDpXPBbx6zDhTgSGivk6DX1jpeiq9x80y74aezVxlw0MnPVgnH3H          eDR9EQVrkJGjRM3AZdzMOYUGITFPHH3yF00+/t3yQ8gHIi1XzjfgoNkewhTOehjFK1fE          IDj3ArAdZcfodVW9ZDQm+jUFyVntb1mePeafMTcvMG8QJRkf08d+XbCUrZmmSRj1Tfbb          d29sOm7mVb5zAt8SL3IPkGmxln8g7ARnMENggzNwe6sOyN1SFR8EwIMZ0s1qyhy0R7y/          DoWA==
+X-Gm-Message-State: AOJu0Yy24p4mgVVAXI4IisG1CYC5bslv8M/+o6PA5cruXmHroYjJBUzY 	YsBkCx4f4jIbwI1Qg1dKWsX8bw==
+X-Received: by 2002:a19:f814:0:b0:503:343a:829f with SMTP id a20-20020a19f814000000b00503343a829fmr9526676lff.23.1696273182683;         Mon, 02 Oct 2023 11:59:42 -0700 (PDT)
+Received: from umbar.unikie.fi ([192.130.178.91])         by smtp.gmail.com with ESMTPSA id t6-20020a19ad06000000b00502d7365e8fsm2443981lfc.137.2023.10.02.11.59.42         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Mon, 02 Oct 2023 11:59:42 -0700 (PDT)
+From: Dmitry Baryshkov <dmitry.baryshkov@linaro.org>
+To: Rob Herring <robh+dt@kernel.org>, 	Krzysztof Kozlowski <krzysztof.kozlowski+dt@linaro.org>, 	Conor Dooley <conor+dt@kernel.org>, 	Andy Gross <agross@kernel.org>, 	Bjorn Andersson <andersson@kernel.org>, 	Konrad Dybcio <konrad.dybcio@linaro.org>, 	Ilia Lin <ilia.lin@kernel.org>, 	Viresh Kumar <vireshk@kernel.org>, 	Nishanth Menon <nm@ti.com>, 	Stephen Boyd <sboyd@kernel.org>, 	Michael Turquette <mturquette@baylibre.com>, 	"Rafael J. Wysocki" <rafael@kernel.org>, 	Georgi Djakov <djakov@kernel.org>
+Cc: linux-arm-msm@vger.kernel.org, 	devicetree@vger.kernel.org, 	linux-pm@vger.kernel.org, 	linux-clk@vger.kernel.org, 	Christian Marangi <ansuelsmth@gmail.com>, 	Stephan Gerhold <stephan@gerhold.net>
+Subject: [PATCH v5 2/6] cpufreq: qcom-nvmem: create L2 cache device
+Date: Mon,  2 Oct 2023 21:59:36 +0300
+Message-Id: <20231002185940.1271800-3-dmitry.baryshkov@linaro.org>
+X-Mailer: git-send-email 2.39.2
+In-Reply-To: <20231002185940.1271800-1-dmitry.baryshkov@linaro.org>
+References: <20231002185940.1271800-1-dmitry.baryshkov@linaro.org>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Status: RO
+Content-Length: 1784
+Lines: 58
+
+Scaling the frequencies on some of Qualcomm Krait platforms (e.g.
+APQ8064) also requires scaling of the L2 cache frequency. As the
+l2-cache device node is places under /cpus/ path, it is not created by
+default by the OF code. Create corresponding device here.
+
+Signed-off-by: Dmitry Baryshkov <dmitry.baryshkov@linaro.org>
+---
+ drivers/cpufreq/qcom-cpufreq-nvmem.c | 21 +++++++++++++++++++++
+ 1 file changed, 21 insertions(+)
+
+diff --git a/drivers/cpufreq/qcom-cpufreq-nvmem.c b/drivers/cpufreq/qcom-cpufreq-nvmem.c
+index 84d7033e5efe..919f2ee9cafe 100644
+--- a/drivers/cpufreq/qcom-cpufreq-nvmem.c
++++ b/drivers/cpufreq/qcom-cpufreq-nvmem.c
+@@ -22,6 +22,7 @@
+ #include <linux/module.h>
+ #include <linux/nvmem-consumer.h>
+ #include <linux/of.h>
++#include <linux/of_platform.h>
+ #include <linux/platform_device.h>
+ #include <linux/pm_domain.h>
+ #include <linux/pm_opp.h>
+@@ -377,6 +378,7 @@ static int __init qcom_cpufreq_init(void)
+ {
+ 	struct device_node *np = of_find_node_by_path("/");
+ 	const struct of_device_id *match;
++	unsigned int cpu;
+ 	int ret;
+ 
+ 	if (!np)
+@@ -387,6 +389,25 @@ static int __init qcom_cpufreq_init(void)
+ 	if (!match)
+ 		return -ENODEV;
+ 
++	for_each_possible_cpu(cpu) {
++		struct device *dev = get_cpu_device(cpu);
++		struct platform_device *pdev;
++		struct device_node *cache;
++
++		cache = of_find_next_cache_node(dev->of_node);
++		if (!cache)
++			continue;
++
++		if (of_device_is_compatible(cache, "qcom,krait-l2-cache")) {
++			pdev = of_platform_device_create(cache, NULL, NULL);
++			/* ignore, this error is not fatal */
++			if (!pdev)
++				pr_err("%s: %pe, failed to create L2 cache node\n", __func__, pdev);
++		}
++
++		of_node_put(cache);
++	}
++
+ 	ret = platform_driver_register(&qcom_cpufreq_driver);
+ 	if (unlikely(ret < 0))
+ 		return ret;
+-- 
+2.39.2
+

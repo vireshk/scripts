@@ -1,0 +1,64 @@
+From vireshk  Tue Oct  3 08:55:47 2023
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [142.251.175.108] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Tue, 03 Oct 2023 08:55:47 +0530 (IST)
+Received: by 2002:a05:7208:960b:b0:6d:a1b7:b892 with SMTP id gt11csp1441062rbb;         Mon, 2 Oct 2023 11:59:56 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IEu73PsIXh0eZRj+JFck7AUr0wJzQrAfazHT5hD4NJPvkys5yB1uNmGjcYhNzFxgn762BkG
+X-Received: by 2002:a5d:6101:0:b0:317:3d6c:5b27 with SMTP id v1-20020a5d6101000000b003173d6c5b27mr9007066wrt.46.1696273196355;         Mon, 02 Oct 2023 11:59:56 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1696273196; cv=none;         d=google.com; s=arc-20160816;         b=KdUxniEzRqBLS53Unj3V6hyiutm0nOWXAmK7S45hXTkaYVBxYgL1fxNjfJE7un4wqs          O73OjwwOcjuNu1Hq3Su9AwT7p2XAaX+5q+I2sDEF2SqsJZNK/w7NHTyTgLqOqm15ZM8c          KbUHbjXUTBw9AR8xslBmDJsFNXJZsanr+gXgc1tXGRM7m1IjrSe+Wjawiz2Ei/HZDTwG          7/MvEuAZ8nRQicWq1ccPnteXDNUqaAdx7E20qfNi/lmLYdxgXhnZZyeEhyT39zCJ4eA3          y707TZimJDxtZnyK+Pz3958tyTFwgSaNuElqkRK7PWJlgwv1W74QDxBQIk5F0EV0uE+m          5ILg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:references:in-reply-to          :message-id:date:subject:cc:to:from:dkim-signature:dmarc-filter          :delivered-to;         bh=ETmrOyXpzkFbupwItSkBNFCMqm+cnfW5vWqiMF83MgM=;         fh=fk0xVtUSBSBe5KQKUmBR//55zl86YIXssijK9fd20lU=;         b=qDfG37cYKWJIdZ8a6VEyWVrcEz4smI1/CilZ99KDb4ZibqkSHefkUK6Eci3+YhhaHr          Vfe27wIdmTRdvBdhzdad+eDdj7Z3JZZ6blwI8zuTzivXyMgc8eOsPCM0fxApW1kn13nu          aRZWsTtxdRuog3dKCHiZz8uTlEy4CBXgIlzFKPQaynzrGbpbI5Y8M5lW6Uta2WPFZv6m          v2RM8IjHh6lbL8wrp1iEkL8SIm7/1wPr17n2OWSLlnKKZJwafqhrSQJ3LsuvXo6ZIjxZ          v6+cCxFg2w8+wMk0fc+89fCo8veMO8ON2oYxxcaHC11nf2BgKcSHXtoywgU10L2AJQnf          2drA==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@linaro.org header.s=google header.b=g1KDAnAw;        spf=pass (google.com: domain of srs0=/w69=fq=linaro.org=dmitry.baryshkov@kernel.org designates 145.40.68.75 as permitted sender) smtp.mailfrom="SRS0=/w69=FQ=linaro.org=dmitry.baryshkov@kernel.org";        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=linaro.org
+Return-Path: <SRS0=/w69=FQ=linaro.org=dmitry.baryshkov@kernel.org>
+Received: from ams.source.kernel.org (ams.source.kernel.org. [145.40.68.75])         by mx.google.com with ESMTPS id z2-20020a5d4d02000000b00325c22e34f4si3828806wrt.999.2023.10.02.11.59.56         for <viresh.kumar@linaro.org>         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Mon, 02 Oct 2023 11:59:56 -0700 (PDT)
+Received-SPF: pass (google.com: domain of srs0=/w69=fq=linaro.org=dmitry.baryshkov@kernel.org designates 145.40.68.75 as permitted sender) client-ip=145.40.68.75;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@linaro.org header.s=google header.b=g1KDAnAw;        spf=pass (google.com: domain of srs0=/w69=fq=linaro.org=dmitry.baryshkov@kernel.org designates 145.40.68.75 as permitted sender) smtp.mailfrom="SRS0=/w69=FQ=linaro.org=dmitry.baryshkov@kernel.org";        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=linaro.org
+Received: from smtp.kernel.org (transwarp.subspace.kernel.org [100.75.92.58]) 	by ams.source.kernel.org (Postfix) with ESMTP id 121F3B815CB 	for <viresh.kumar@linaro.org>; Mon,  2 Oct 2023 18:59:56 +0000 (UTC)
+Received: by smtp.kernel.org (Postfix) 	id 74E5FC433C8; Mon,  2 Oct 2023 18:59:55 +0000 (UTC)
+Delivered-To: vireshk@kernel.org
+Received: from mail-lf1-f51.google.com (mail-lf1-f51.google.com [209.85.167.51]) 	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits) 	 key-exchange X25519 server-signature RSA-PSS (2048 bits) server-digest SHA256) 	(No client certificate requested) 	by smtp.kernel.org (Postfix) with ESMTPS id E9027C32778 	for <vireshk@kernel.org>; Mon,  2 Oct 2023 18:59:48 +0000 (UTC)
+DMARC-Filter: OpenDMARC Filter v1.4.1 smtp.kernel.org E9027C32778
+Authentication-Results: smtp.kernel.org; dmarc=pass (p=none dis=none) header.from=linaro.org
+Authentication-Results: smtp.kernel.org; spf=pass smtp.mailfrom=linaro.org
+Received: by mail-lf1-f51.google.com with SMTP id 2adb3069b0e04-50437c618b4so31698e87.2         for <vireshk@kernel.org>; Mon, 02 Oct 2023 11:59:48 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=linaro.org; s=google; t=1696273186; x=1696877986; darn=kernel.org;         h=content-transfer-encoding:mime-version:references:in-reply-to          :message-id:date:subject:cc:to:from:from:to:cc:subject:date          :message-id:reply-to;         bh=ETmrOyXpzkFbupwItSkBNFCMqm+cnfW5vWqiMF83MgM=;         b=g1KDAnAwFkMz+AlSQCpoSZmVM94juN6XHrZxuZ8Ma22zU5V+ZS4aMrsgfQAGExGbrw          ewRSV41EPF14Mvh6urqu+Q3YFfvQDhXHYSd9GGB4aWtz9koMdhbk/B/3wJStN7NCWXNh          rAKKkoNJOtgyMA5BXoOstgoHVTUiLJjvGUKq2NYnzCLyXklbjLokl+ZsOwgUFqo/NLT0          8PzgJ9WZ28v/VLvpySL0eTC3by/LYzC+TnTAv07YqPXIiR2eojtc+NjltV9S+BRsfJBz          qo5FHA1W+lZoRO8/3a0r6rVNsaP/gNzOZSFvxt3X03M8bKBiRHwjsmqGjvlZABphWVg9          GA8g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=1e100.net; s=20230601; t=1696273186; x=1696877986;         h=content-transfer-encoding:mime-version:references:in-reply-to          :message-id:date:subject:cc:to:from:x-gm-message-state:from:to:cc          :subject:date:message-id:reply-to;         bh=ETmrOyXpzkFbupwItSkBNFCMqm+cnfW5vWqiMF83MgM=;         b=J6zWR9lKrjgX8eENXvhgWz1k8WzEbNaDnjH1hFrjeriCGe1yW0ea1AHGHr68mBPhm2          rZtxcQ9M9qS5zbsnRaKcz3xJOgeRBUU+Z904hKi7pECeRMnQ9q+eBMocaBzgvLA4AIeY          rjOW8qWBWHABm3hWjiwZo0lcQcdHAeqenoWoEEq7m0FZOcqlm38S+w4jAOpG+kpEK8VO          cGtaOuE68J6kub92CKRkZwKaEx9dvgCIG/f85RabN1yD3GijgpBOt7FVWHk/l9rF827f          td2shbcwfwP47u19q5R4XM6rhLG914ZOzPjs9oCoblXYyXS6OGuNmuVw5ybP+Ls7K+7y          3s1Q==
+X-Gm-Message-State: AOJu0Yz/TRDiWLU7DdzKvQgCF1s10tQKkMqOzvSXgB3SAtI41MGRzvso 	uMK/HHDpfYbC3owAohbHHsBR1w==
+X-Received: by 2002:a19:8c47:0:b0:500:9524:f733 with SMTP id i7-20020a198c47000000b005009524f733mr9981048lfj.20.1696273186047;         Mon, 02 Oct 2023 11:59:46 -0700 (PDT)
+Received: from umbar.unikie.fi ([192.130.178.91])         by smtp.gmail.com with ESMTPSA id t6-20020a19ad06000000b00502d7365e8fsm2443981lfc.137.2023.10.02.11.59.45         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Mon, 02 Oct 2023 11:59:45 -0700 (PDT)
+From: Dmitry Baryshkov <dmitry.baryshkov@linaro.org>
+To: Rob Herring <robh+dt@kernel.org>, 	Krzysztof Kozlowski <krzysztof.kozlowski+dt@linaro.org>, 	Conor Dooley <conor+dt@kernel.org>, 	Andy Gross <agross@kernel.org>, 	Bjorn Andersson <andersson@kernel.org>, 	Konrad Dybcio <konrad.dybcio@linaro.org>, 	Ilia Lin <ilia.lin@kernel.org>, 	Viresh Kumar <vireshk@kernel.org>, 	Nishanth Menon <nm@ti.com>, 	Stephen Boyd <sboyd@kernel.org>, 	Michael Turquette <mturquette@baylibre.com>, 	"Rafael J. Wysocki" <rafael@kernel.org>, 	Georgi Djakov <djakov@kernel.org>
+Cc: linux-arm-msm@vger.kernel.org, 	devicetree@vger.kernel.org, 	linux-pm@vger.kernel.org, 	linux-clk@vger.kernel.org, 	Christian Marangi <ansuelsmth@gmail.com>, 	Stephan Gerhold <stephan@gerhold.net>
+Subject: [PATCH v5 6/6] cpufreq: qcom-nvmem: enable core voltage scaling for MSM8960
+Date: Mon,  2 Oct 2023 21:59:40 +0300
+Message-Id: <20231002185940.1271800-7-dmitry.baryshkov@linaro.org>
+X-Mailer: git-send-email 2.39.2
+In-Reply-To: <20231002185940.1271800-1-dmitry.baryshkov@linaro.org>
+References: <20231002185940.1271800-1-dmitry.baryshkov@linaro.org>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Status: RO
+Content-Length: 926
+Lines: 22
+
+Reuse APQ8064 config for MSM8960 to enable core voltage scaling.
+
+Signed-off-by: Dmitry Baryshkov <dmitry.baryshkov@linaro.org>
+---
+ drivers/cpufreq/qcom-cpufreq-nvmem.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/drivers/cpufreq/qcom-cpufreq-nvmem.c b/drivers/cpufreq/qcom-cpufreq-nvmem.c
+index e1cf677b0c6f..6b54a674e9ea 100644
+--- a/drivers/cpufreq/qcom-cpufreq-nvmem.c
++++ b/drivers/cpufreq/qcom-cpufreq-nvmem.c
+@@ -408,7 +408,7 @@ static const struct of_device_id qcom_cpufreq_match_list[] __initconst = {
+ 	{ .compatible = "qcom,ipq8064", .data = &match_data_krait },
+ 	{ .compatible = "qcom,apq8064", .data = &match_data_apq8064 },
+ 	{ .compatible = "qcom,msm8974", .data = &match_data_krait },
+-	{ .compatible = "qcom,msm8960", .data = &match_data_krait },
++	{ .compatible = "qcom,msm8960", .data = &match_data_apq8064 },
+ 	{},
+ };
+ MODULE_DEVICE_TABLE(of, qcom_cpufreq_match_list);
+-- 
+2.39.2
+

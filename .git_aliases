@@ -19,6 +19,7 @@ alias robh	Rob Herring <robh+dt@kernel.org>
 alias broonie	Mark Brown <broonie@kernel.org>
 alias rnayak	Rajendra Nayak <rnayak@codeaurora.org>
 alias arnd	Arnd Bergmann <arnd@kernel.org>
+alias ulf	Ulf Hansson <ulf.hansson@linaro.org>
 
 alias armsoc	arm@kernel.org
 alias lakml	linux-arm-kernel@lists.infradead.org

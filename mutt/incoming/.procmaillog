@@ -2278,3 +2278,12 @@ From vireshk  Mon Oct  2 16:20:33 2023
 From vireshk  Thu Oct 12 08:40:32 2023
  Subject: [PATCH v2] cpufreq: ARM_BRCMSTB_AVS_CPUFREQ cannot be used with ARM_S
   Folder: PATCH_v2_cpufreq_ARM_BRCMSTB_AVS_CPUFREQ_cannot_be_used_with	  12855
+From vireshk  Mon Jun 12 09:18:35 2023
+ Subject: [PATCH v4 4/5] dt-bindings: cpufreq: cpufreq-qcom-hw: Add SDX75 compa
+  Folder: PATCH_v4_4-5_dt-bindings_cpufreq_cpufreq-qcom-hw_Add_SDX75_c	   7555
+From vireshk  Mon Jun 12 09:18:35 2023
+ Subject: [PATCH v4 4/5] dt-bindings: cpufreq: cpufreq-qcom-hw: Add SDX75 compa
+  Folder: PATCH_v4_4-5_dt-bindings_cpufreq_cpufreq-qcom-hw_Add_SDX75_c	   7555
+From vireshk  Mon Oct 16 08:22:28 2023
+ Subject: [PATCH v6] cpufreq: qcom-nvmem: add support for IPQ8074
+  Folder: PATCH_v6_cpufreq_qcom-nvmem_add_support_for_IPQ8074.mbox	   9567

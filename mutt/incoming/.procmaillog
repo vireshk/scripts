@@ -2287,3 +2287,21 @@ From vireshk  Mon Jun 12 09:18:35 2023
 From vireshk  Mon Oct 16 08:22:28 2023
  Subject: [PATCH v6] cpufreq: qcom-nvmem: add support for IPQ8074
   Folder: PATCH_v6_cpufreq_qcom-nvmem_add_support_for_IPQ8074.mbox	   9567
+From vireshk  Tue Oct 17 09:15:30 2023
+ Subject: [PATCH 1/3] dt-bindings: cpufreq: qcom-cpufreq-nvmem: document IPQ601
+  Folder: PATCH_1-3_dt-bindings_cpufreq_qcom-cpufreq-nvmem_document_IP	   6552
+From vireshk  Tue Oct 17 09:16:43 2023
+ Subject: [PATCH 2/3] cpufreq: qcom-nvmem: add support for IPQ6018
+  Folder: PATCH_2-3_cpufreq_qcom-nvmem_add_support_for_IPQ6018.mbox	   9981
+From vireshk  Mon Oct 16 08:22:31 2023
+ Subject: [PATCH v6 1/4] dt-bindings: cpufreq: qcom-cpufreq-nvmem: Document kra
+  Folder: PATCH_v6_1-4_dt-bindings_cpufreq_qcom-cpufreq-nvmem_Document	   7301
+From vireshk  Mon Oct 16 08:22:31 2023
+ Subject: [PATCH v6 1/4] dt-bindings: cpufreq: qcom-cpufreq-nvmem: Document kra
+  Folder: PATCH_v6_1-4_dt-bindings_cpufreq_qcom-cpufreq-nvmem_Document	   7301
+From vireshk  Mon Oct 16 08:22:33 2023
+ Subject: [PATCH v6 3/4] cpufreq: qcom-nvmem: add support for IPQ8064
+  Folder: PATCH_v6_3-4_cpufreq_qcom-nvmem_add_support_for_IPQ8064.mbox	  10432
+From vireshk  Mon Oct 16 08:22:32 2023
+ Subject: [PATCH v6 2/4] dt-bindings: opp: opp-v2-kryo-cpu: Document named opp-
+  Folder: PATCH_v6_2-4_dt-bindings_opp_opp-v2-kryo-cpu_Document_named_	   8651

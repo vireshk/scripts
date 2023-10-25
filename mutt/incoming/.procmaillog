@@ -2308,3 +2308,18 @@ From vireshk  Mon Oct 16 08:22:32 2023
 From vireshk  Fri Oct 20 08:40:52 2023
  Subject: [PATCH v7 0/4] cpufreq: qcom-nvmem: add support for ipq806x
   Folder: PATCH_v7_0-4_cpufreq_qcom-nvmem_add_support_for_ipq806x.mbox	   7310
+From vireshk  Tue Oct 24 17:18:26 2023
+ Subject: [PATCH 1/1] cpufreq: arm: Kconfig: Add i.MX7 to supported SoC for ARM
+  Folder: PATCH_1-1_cpufreq_arm_Kconfig_Add_i.MX7_to_supported_SoC_for	   5657
+From vireshk  Fri Oct 20 11:52:03 2023
+ Subject: [PATCH v5 6/9] cpufreq: qti: Enable cpufreq for ipq53xx
+  Folder: PATCH_v5_6-9_cpufreq_qti_Enable_cpufreq_for_ipq53xx.mbox	   9183
+From vireshk  Fri Oct 20 11:53:13 2023
+ Subject: [PATCH v5 8/9] cpufreq: qti: Introduce cpufreq for ipq95xx
+  Folder: PATCH_v5_8-9_cpufreq_qti_Introduce_cpufreq_for_ipq95xx.mbox	   9049
+From vireshk  Fri Oct 20 11:53:13 2023
+ Subject: [PATCH v5 8/9] cpufreq: qti: Introduce cpufreq for ipq95xx
+  Folder: PATCH_v5_8-9_cpufreq_qti_Introduce_cpufreq_for_ipq95xx.mbox	   9049
+From vireshk  Fri Oct 20 11:52:03 2023
+ Subject: [PATCH v5 6/9] cpufreq: qti: Enable cpufreq for ipq53xx
+  Folder: PATCH_v5_6-9_cpufreq_qti_Enable_cpufreq_for_ipq53xx.mbox	   9183

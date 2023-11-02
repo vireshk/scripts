@@ -2332,3 +2332,12 @@ From vireshk  Wed Oct 25 13:58:47 2023
 From vireshk  Wed Oct 25 13:58:47 2023
  Subject: [PATCH v2] dt-bindings: cpufreq: qcom-hw: document SM8650 CPUFREQ  Ha
   Folder: PATCH_v2_dt-bindings_cpufreq_qcom-hw_document_SM8650_CPUFREQ	   8642
+From vireshk  Tue Oct 31 12:43:26 2023
+ Subject: [PATCH v6 1/2] cpufreq: qti: Enable cpufreq for ipq53xx
+  Folder: PATCH_v6_1-2_cpufreq_qti_Enable_cpufreq_for_ipq53xx.mbox	   9209
+From vireshk  Tue Oct 31 12:43:27 2023
+ Subject: [PATCH v6 2/2] cpufreq: qti: Introduce cpufreq for ipq95xx
+  Folder: PATCH_v6_2-2_cpufreq_qti_Introduce_cpufreq_for_ipq95xx.mbox	   9067
+From vireshk  Thu Nov  2 09:08:17 2023
+ Subject: [PATCH v2] opp: ti: Use device_get_match_data()
+  Folder: PATCH_v2_opp_ti_Use_device_get_match_data_.mbox		   7696

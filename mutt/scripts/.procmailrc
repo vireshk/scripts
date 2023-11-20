@@ -105,6 +105,11 @@ linux/pm
 * ^(To|Cc):.*linux-gpio@vger\.kernel\.org
 linux/gpio
 
+# rust-for-linux
+:0:
+* ^(To|Cc):.*rust-for-linux@vger\.kernel\.org
+linux/rust
+
 # korg
 :0:
 * ^(To|Cc):.*users@linux\.kernel\.org

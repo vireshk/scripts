@@ -278,6 +278,8 @@ alias qemuarmold="$QEMUAARCH64 -M virt -machine virtualization=true -machine vir
 alias qemuarmf="$QEMUAARCH64 -machine virt,virtualization=on,gic-version=max -cpu cortex-a57 -machine type=virt -nographic -smp 4 -m 4G -kernel $AARCH64BUILD/Image  --append \"console=ttyAMA0\" $qemuobj"
 alias qemuarmfi2c="qemuarmf $qemui2c $qemufs"
 alias qemuarmfgpio="qemuarmf $qemugpio $qemufs"
+alias qemuarmfdumpdtb="qemuarmf -machine dumpdtb=/home/vireshk/junk/qemu.dtb"
+alias qemuarmfdtb="qemuarmf -dtb /home/vireshk/junk/qemu.dtb"
 
 #alias myqemuvexp="$QEMUAARCH64 -machine vexpress-a15 -nographic -smp 4 -m 2G -kernel ~/work/repos/kernel/barm/arch/arm/boot/zImage -dtb ~/work/repos/kernel/barm/arch/arm/boot/dts/vexpress-v2p-ca15-tc1.dtb --append \"console=ttyAMA0\" -object memory-backend-file,id=mem,size=2G,mem-path=/dev/shm,share=on $qemufs"
 

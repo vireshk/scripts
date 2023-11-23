@@ -1,0 +1,80 @@
+From vireshk  Wed Nov 22 19:12:58 2023
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [172.253.118.109] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Wed, 22 Nov 2023 19:12:58 +0530 (IST)
+Received: by 2002:a05:7208:90d6:b0:79:813c:d7da with SMTP id v22csp1321803rbe;         Wed, 22 Nov 2023 05:42:19 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IFyLuU7uGaUONwLuKKo89fEMIk8DRjfQVespkqUtnBLRgGLyT7R0fjqYvwAcbPfbNYfmbDJ
+X-Received: by 2002:adf:fccd:0:b0:32d:ad4a:bced with SMTP id f13-20020adffccd000000b0032dad4abcedmr1484707wrs.23.1700660539325;         Wed, 22 Nov 2023 05:42:19 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1700660539; cv=none;         d=google.com; s=arc-20160816;         b=K/zAB0ELbiBSxn9Y1tkhCQwJb1AnxxyW68Ak5LjdahAK7QC0+QQ+fEo2TaiusH8FRg          s5xu2REDTXAUjjc4cj2vJZbs/YpEL/x5Dk8/NCKL3/InuZtg7IkWTGcV57m83hDHfc+j          qlmhcWd5foe6+B6JZLIg8/fGcW2+jGYpN6AlLxzAJRth18X3/fBDW59IwS99yFOHYf+D          frUZKosnGsF+HxV9RMrxX1nQuPNIIrbwN2pm/yto3uJ2hx6vTBI2TCbovyOsJ/PEETeg          /0k423jpukF9yefIsRe0mtNOlge7+F0HADa3g9BeO+VscAIpxnQif3sRWgKXLuqCdh8+          b3Hw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from:dkim-signature;         bh=YWU5KKna9LF+cw9m3t3tNTIYdzG8MPLSctxria30Q7Q=;         fh=K6aTgN9RY2sXoia6N3m9igrU3y0IB6rkI7XcnmixEMo=;         b=XZVXljQGD2xbFJvUbck8ziguZdvHrJxreGRdSPpVvDfl8vJhsiGljmS5fMRZDpI+xS          pszCu2T3W9QbY3ockoN4nKuUoWI9Y4mz1OJOvbO0kxQqEQ9rIpy9Tntm6EQzZgwf1YUN          cAc+gZ5TPLQCObZQA4GGH/0WN6MP842XXhKLYgOnlX1dGsNVl7D0gQ1jRQ3tqu/vH9eu          EhAMoPEWlYLy8Kfgt9yNQsfKYc+N+yYEDa5q6J3N3HtjrgDqkBR9cSq8xzCn49y5+7UQ          LV1126QcVsfTcV6Rc5uT9KykPEaTS7Eb/vlF1b9U6c2/lnHJbFp4lb20X5GopiMWk8dq          2y/Q==
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@dh-electronics.com header.s=dhelectronicscom header.b="xp/xdxve";        spf=pass (google.com: domain of cniedermaier@dh-electronics.com designates 2a03:4000:13:6c7::1 as permitted sender) smtp.mailfrom=cniedermaier@dh-electronics.com;        dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=dh-electronics.com
+Return-Path: <cniedermaier@dh-electronics.com>
+Received: from mx2.securetransport.de (mx2.securetransport.de. [2a03:4000:13:6c7::1])         by mx.google.com with ESMTP id d2-20020a5d6dc2000000b0032dd785e443si7344325wrz.12.2023.11.22.05.42.19         for <viresh.kumar@linaro.org>;         Wed, 22 Nov 2023 05:42:19 -0800 (PST)
+Received-SPF: pass (google.com: domain of cniedermaier@dh-electronics.com designates 2a03:4000:13:6c7::1 as permitted sender) client-ip=2a03:4000:13:6c7::1;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@dh-electronics.com header.s=dhelectronicscom header.b="xp/xdxve";        spf=pass (google.com: domain of cniedermaier@dh-electronics.com designates 2a03:4000:13:6c7::1 as permitted sender) smtp.mailfrom=cniedermaier@dh-electronics.com;        dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=dh-electronics.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=dh-electronics.com; 	s=dhelectronicscom; t=1700660501; 	bh=YWU5KKna9LF+cw9m3t3tNTIYdzG8MPLSctxria30Q7Q=; 	h=From:To:CC:Subject:Date:From; 	b=xp/xdxvem75my776Lxc2/FpgqkD6OY6JZg/mLbFV/5iX42prIvXoCo81ocDoLPn5K 	 dacD5xhLLmyitNIgpSkyAnPt6dNe1/J4VVGUEVqblLLFqiaPiIE9F7fWa7yuqoB3yp 	 JBAaeb8AeKqePwlppZGeiEUMT9ON40dBkUJCJ17MTfuTNpES594M4ApxkNbHZaUgco 	 QdDXZ2+AJ81T6WpvfVURa+bQtxzMtTUMfpDFpYjTG10p0UuuChupTKcl+8HDVa7aRY 	 MOCNw8/HD/MZQ3NYqeOwMAEZxzDM4LwwKca3hnde5/af3uqspAuAqqjQF83g4rDAKR 	 S1tQc6ln2/1CA==
+From: Christoph Niedermaier <cniedermaier@dh-electronics.com>
+To: <linux-arm-kernel@lists.infradead.org>
+CC: Christoph Niedermaier <cniedermaier@dh-electronics.com>, Viresh Kumar 	<viresh.kumar@linaro.org>, "Rafael J. Wysocki" <rafael@kernel.org>, 	=?UTF-8?q?S=C3=A9bastien=20Szymanski?= <sebastien.szymanski@armadeus.com>, 	Stefan Agner <stefan@agner.ch>, Shawn Guo <shawnguo@kernel.org>, Marek Vasut 	<marex@denx.de>, Fabio Estevam <festevam@denx.de>, NXP Linux Team 	<linux-imx@nxp.com>, <linux-pm@vger.kernel.org>, 	<linux-kernel@vger.kernel.org>
+Subject: [PATCH V2] cpufreq: imx6q: Only disabling 792MHz OPP for i.MX6ULL types below 792MHz
+Date: Wed, 22 Nov 2023 14:41:13 +0100
+Message-ID: <20231122134113.63670-1-cniedermaier@dh-electronics.com>
+X-klartext: yes
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+Content-Length: 2054
+Lines: 52
+
+For a 900MHz i.MX6ULL CPU the 792MHz OPP is disabled. There is no
+convincing reason to disable this OPP. If a CPU can run at 900MHz,
+it should also be able to cope with 792MHz. Looking at the voltage
+level of 792MHz in [1] (page 24, table 10. "Operating Ranges") the
+current defined OPP is above the minimum. So the voltage level
+shouldn't be a problem. However in [2] (page 24, table 10.
+"Operating Ranges"), it is not mentioned that 792MHz OPP isn't
+allowed. Change it to only disable 792MHz OPP for i.MX6ULL types
+below 792 MHz.
+
+[1] https://www.nxp.com/docs/en/data-sheet/IMX6ULLIEC.pdf
+[2] https://www.nxp.com/docs/en/data-sheet/IMX6ULLCEC.pdf
+
+Fixes: 0aa9abd4c212 ("cpufreq: imx6q: check speed grades for i.MX6ULL")
+Signed-off-by: Christoph Niedermaier <cniedermaier@dh-electronics.com>
+Reviewed-by: Marek Vasut <marex@denx.de>
+Reviewed-by: Fabio Estevam <festevam@denx.de>
+---
+V2: - Improve the commit message
+    - Add Fixes tag
+    - Add Reviewed-by tag
+---
+Cc: Viresh Kumar <viresh.kumar@linaro.org>
+Cc: "Rafael J. Wysocki" <rafael@kernel.org>
+Cc: Sébastien Szymanski <sebastien.szymanski@armadeus.com>
+Cc: Stefan Agner <stefan@agner.ch>
+Cc: Shawn Guo <shawnguo@kernel.org>
+Cc: Marek Vasut <marex@denx.de>
+Cc: Fabio Estevam <festevam@denx.de>
+Cc: NXP Linux Team <linux-imx@nxp.com>
+Cc: linux-pm@vger.kernel.org
+Cc: linux-kernel@vger.kernel.org
+To: linux-arm-kernel@lists.infradead.org
+---
+ drivers/cpufreq/imx6q-cpufreq.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/drivers/cpufreq/imx6q-cpufreq.c b/drivers/cpufreq/imx6q-cpufreq.c
+index 494d044b9e72..33728c242f66 100644
+--- a/drivers/cpufreq/imx6q-cpufreq.c
++++ b/drivers/cpufreq/imx6q-cpufreq.c
+@@ -327,7 +327,7 @@ static int imx6ul_opp_check_speed_grading(struct device *dev)
+ 			imx6x_disable_freq_in_opp(dev, 696000000);
+ 
+ 	if (of_machine_is_compatible("fsl,imx6ull")) {
+-		if (val != OCOTP_CFG3_6ULL_SPEED_792MHZ)
++		if (val < OCOTP_CFG3_6ULL_SPEED_792MHZ)
+ 			imx6x_disable_freq_in_opp(dev, 792000000);
+ 
+ 		if (val != OCOTP_CFG3_6ULL_SPEED_900MHZ)
+-- 
+2.11.0
+

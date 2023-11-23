@@ -2341,3 +2341,6 @@ From vireshk  Tue Oct 31 12:43:27 2023
 From vireshk  Thu Nov  2 09:08:17 2023
  Subject: [PATCH v2] opp: ti: Use device_get_match_data()
   Folder: PATCH_v2_opp_ti_Use_device_get_match_data_.mbox		   7696
+From vireshk  Wed Nov 22 19:12:58 2023
+ Subject: [PATCH V2] cpufreq: imx6q: Only disabling 792MHz OPP for i.MX6ULL typ
+  Folder: PATCH_V2_cpufreq_imx6q_Only_disabling_792MHz_OPP_for_i.MX6UL	   6618

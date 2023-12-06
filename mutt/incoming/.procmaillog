@@ -2344,3 +2344,6 @@ From vireshk  Thu Nov  2 09:08:17 2023
 From vireshk  Wed Nov 22 19:12:58 2023
  Subject: [PATCH V2] cpufreq: imx6q: Only disabling 792MHz OPP for i.MX6ULL typ
   Folder: PATCH_V2_cpufreq_imx6q_Only_disabling_792MHz_OPP_for_i.MX6UL	   6618
+From vireshk  Wed Dec  6 09:11:32 2023
+ Subject: [PATCH v2] cpufreq: scmi: process the result of devm_of_clk_add_hw_pr
+  Folder: PATCH_v2_cpufreq_scmi_process_the_result_of_devm_of_clk_add_	   5779

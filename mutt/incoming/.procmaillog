@@ -2347,3 +2347,6 @@ From vireshk  Wed Nov 22 19:12:58 2023
 From vireshk  Wed Dec  6 09:11:32 2023
  Subject: [PATCH v2] cpufreq: scmi: process the result of devm_of_clk_add_hw_pr
   Folder: PATCH_v2_cpufreq_scmi_process_the_result_of_devm_of_clk_add_	   5779
+From vireshk  Fri Dec 15 09:17:28 2023
+ Subject: [PATCH] kbuild: rust: add `rustupoverride` target
+  Folder: PATCH_kbuild_rust_add_`rustupoverride`_target.mbox		   8829

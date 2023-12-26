@@ -31,7 +31,7 @@ linaro/misc
 # pmwg-weeklies
 :0:
 * ^(To|Cc):.*(private-pmwg@lists\.linaro\.org|private-pmwg@linaro\.org|kwg-team-private@linaro\.org|private-kwg@linaro\.org|team-vt@linaro\.org)
-* ^(Subject):.*\[.*-[wW]eekly\]
+* ^(Subject):.*(\[.*[wW]eekly\]|[sS]tatus)
 linaro/pmwg
 
 # ARA:

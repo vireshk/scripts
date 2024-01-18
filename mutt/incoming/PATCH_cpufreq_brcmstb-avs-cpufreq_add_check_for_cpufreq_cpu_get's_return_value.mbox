@@ -1,0 +1,62 @@
+From vireshk  Wed Jan 17 12:43:27 2024
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [74.125.24.109] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Wed, 17 Jan 2024 12:43:27 +0530 (IST)
+Received: by 2002:a05:7208:d203:b0:7c:6a84:9124 with SMTP id c3csp340318rbd;         Tue, 16 Jan 2024 23:13:02 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IEzJQUr+z3uaWKmHK5+/YkcYCTLRQYwNk7bVjIT9usHkBxY4q1/QTD12g5EsEmQROBMTscL
+X-Received: by 2002:a05:6000:1755:b0:337:c076:d4c with SMTP id m21-20020a056000175500b00337c0760d4cmr276494wrf.242.1705475582455;         Tue, 16 Jan 2024 23:13:02 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1705475582; cv=none;         d=google.com; s=arc-20160816;         b=c0m3BMqnVPaRrszstjltRQ7LvA0ODZ1C9jrkSCZVvVqkO/E/5jNuOKACpOVqUnR/YK          3m3BYou2veA/zp3MBpOrcz4EvXuwC0CrhdSS2/H5oXvK3Ot6I/JGgfLhtYGSJHaB3yyT          bCAW0FYTfQSaDJ3DDTYagcizdsSpT4IgYAGJBY0CbYOIH4yaXorDEVfjuzRMk27eCUW3          C8s6PCQ967E7OhjeIaICdKxR1dSclcE8sHBLI9IJn57gMHBk9JmCTxGwgrBrVEeb1tYt          b85ByCDnWJqFiy8vynS7a+t6IC0AOh5KgxCvlyi4i+kAH6WLS6nwt5niMI/6XYmC3BLg          ePsQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from;         bh=CJQ64ujng0KJ4KJtdfMf846dTRikhUQKYVpwHlZz9y4=;         fh=5p01H8v6zH+vD5bPumEXFEdiDn1cFGV0FPuLwH94Y/c=;         b=MEPUuTUajbc86cgBa98L9niX6y8VLSTdgtOFUojXIVdt5bkLibjPO9tNeU9mSTMIA8          mT1rYFeylnKFIVwrUItm/Lfa5i09RUQiXfF3VLSf9/bv7AWX1ivikUu18gQMFMUwm3SK          u/uOVJIiuxOuhGTVKUXC6dwZwBI0ZwM30sig9pGBtT6eRBxJ3mPpGfoSc/A0Zk/RZJTw          qjR5+GvdwYk8JFZlvOyOD5XrZn7WN7tGXbgrmoM64ix7wvd1DJs1Ep0SPTwS8IjK46E9          KTMN8bjt8tYmz1ozunhhINfLkjFPJ5l5MG39TwcHWQ4LG3WEcvzmdHKYJKueancPzoy3          2xUw==
+ARC-Authentication-Results: i=1; mx.google.com;        spf=pass (google.com: domain of abelova@astralinux.ru designates 217.74.38.119 as permitted sender) smtp.mailfrom=abelova@astralinux.ru
+Return-Path: <abelova@astralinux.ru>
+Received: from mail.astralinux.ru (mail.astralinux.ru. [217.74.38.119])         by mx.google.com with ESMTPS id d17-20020adfe851000000b00337af1fd9c9si466742wrn.454.2024.01.16.23.13.02         for <viresh.kumar@linaro.org>         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Tue, 16 Jan 2024 23:13:02 -0800 (PST)
+Received-SPF: pass (google.com: domain of abelova@astralinux.ru designates 217.74.38.119 as permitted sender) client-ip=217.74.38.119;
+Authentication-Results: mx.google.com;        spf=pass (google.com: domain of abelova@astralinux.ru designates 217.74.38.119 as permitted sender) smtp.mailfrom=abelova@astralinux.ru
+Received: from localhost (localhost.localdomain [127.0.0.1]) 	by mail.astralinux.ru (Postfix) with ESMTP id 506861867522; 	Wed, 17 Jan 2024 10:13:01 +0300 (MSK)
+Received: from mail.astralinux.ru ([127.0.0.1]) 	by localhost (rbta-msk-vsrv-mail01.astralinux.ru [127.0.0.1]) (amavisd-new, port 10032) 	with ESMTP id DHjOdtHDzmxA; Wed, 17 Jan 2024 10:13:01 +0300 (MSK)
+Received: from localhost (localhost.localdomain [127.0.0.1]) 	by mail.astralinux.ru (Postfix) with ESMTP id 0096D1866B46; 	Wed, 17 Jan 2024 10:13:01 +0300 (MSK)
+X-Virus-Scanned: amavisd-new at astralinux.ru
+Received: from mail.astralinux.ru ([127.0.0.1]) 	by localhost (rbta-msk-vsrv-mail01.astralinux.ru [127.0.0.1]) (amavisd-new, port 10026) 	with ESMTP id z5YQWJPYpUoM; Wed, 17 Jan 2024 10:13:00 +0300 (MSK)
+Received: from rbta-msk-lt-106062.astralinux.ru (unknown [62.217.185.39]) 	by mail.astralinux.ru (Postfix) with ESMTPSA id ED2A91863E43; 	Wed, 17 Jan 2024 10:12:59 +0300 (MSK)
+From: Anastasia Belova <abelova@astralinux.ru>
+To: Markus Mayer <mmayer@broadcom.com>
+Cc: Anastasia Belova <abelova@astralinux.ru>, 	Broadcom internal kernel review list <bcm-kernel-feedback-list@broadcom.com>, 	"Rafael J. Wysocki" <rafael@kernel.org>, 	Viresh Kumar <viresh.kumar@linaro.org>, 	Florian Fainelli <florian.fainelli@broadcom.com>, 	linux-pm@vger.kernel.org, 	linux-arm-kernel@lists.infradead.org, 	linux-kernel@vger.kernel.org, 	lvc-project@linuxtesting.org
+Subject: [PATCH] cpufreq: brcmstb-avs-cpufreq: add check for cpufreq_cpu_get's return value
+Date: Wed, 17 Jan 2024 10:12:20 +0300
+Message-Id: <20240117071220.26855-1-abelova@astralinux.ru>
+X-Mailer: git-send-email 2.30.2
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+X-Label: apply
+Content-Length: 960
+Lines: 30
+
+cpufreq_cpu_get may return NULL. To avoid NULL-dereference check it
+and return 0 in case of error.
+
+Found by Linux Verification Center (linuxtesting.org) with SVACE.
+
+Fixes: de322e085995 ("cpufreq: brcmstb-avs-cpufreq: AVS CPUfreq driver fo=
+r Broadcom STB SoCs")
+Signed-off-by: Anastasia Belova <abelova@astralinux.ru>
+---
+ drivers/cpufreq/brcmstb-avs-cpufreq.c | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/drivers/cpufreq/brcmstb-avs-cpufreq.c b/drivers/cpufreq/brcm=
+stb-avs-cpufreq.c
+index 35fb3a559ea9..1a1857b0a6f4 100644
+--- a/drivers/cpufreq/brcmstb-avs-cpufreq.c
++++ b/drivers/cpufreq/brcmstb-avs-cpufreq.c
+@@ -481,6 +481,8 @@ static bool brcm_avs_is_firmware_loaded(struct privat=
+e_data *priv)
+ static unsigned int brcm_avs_cpufreq_get(unsigned int cpu)
+ {
+ 	struct cpufreq_policy *policy =3D cpufreq_cpu_get(cpu);
++	if (!policy)
++		return 0;
+ 	struct private_data *priv =3D policy->driver_data;
+=20
+ 	cpufreq_cpu_put(policy);
+--=20
+2.30.2
+

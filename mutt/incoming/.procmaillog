@@ -2356,3 +2356,6 @@ From vireshk  Fri Dec 15 16:52:07 2023
 From vireshk  Sat Dec 23 14:55:20 2023
  Subject: [PATCH] OPP: Fix _set_required_opps when opp is NULL
   Folder: PATCH_OPP_Fix_set_required_opps_when_opp_is_NULL.mbox		  10110
+From vireshk  Wed Jan 17 12:43:27 2024
+ Subject: [PATCH] cpufreq: brcmstb-avs-cpufreq: add check for cpufreq_cpu_get's
+  Folder: PATCH_cpufreq_brcmstb-avs-cpufreq_add_check_for_cpufreq_cpu_	   5437

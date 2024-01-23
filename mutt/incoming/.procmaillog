@@ -2359,3 +2359,12 @@ From vireshk  Sat Dec 23 14:55:20 2023
 From vireshk  Wed Jan 17 12:43:27 2024
  Subject: [PATCH] cpufreq: brcmstb-avs-cpufreq: add check for cpufreq_cpu_get's
   Folder: PATCH_cpufreq_brcmstb-avs-cpufreq_add_check_for_cpufreq_cpu_	   5437
+From vireshk  Tue Jan  9 17:16:43 2024
+ Subject: [PATCH] cpufreq: imx6: use regmap to read ocotp register
+  Folder: PATCH_cpufreq_imx6_use_regmap_to_read_ocotp_register.mbox	   6611
+From vireshk  Wed Jan 17 12:43:27 2024
+ Subject: [PATCH] cpufreq: brcmstb-avs-cpufreq: add check for cpufreq_cpu_get's
+  Folder: PATCH_cpufreq_brcmstb-avs-cpufreq_add_check_for_cpufreq_cpu_	   5448
+From vireshk  Thu Jan 11 08:42:21 2024
+ Subject: [PATCH v2 2/2] cpufreq: mediatek-hw: Wait for CPU supplies before pro
+  Folder: PATCH_v2_2-2_cpufreq_mediatek-hw_Wait_for_CPU_supplies_befor	   7210

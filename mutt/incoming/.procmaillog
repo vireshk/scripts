@@ -2368,3 +2368,6 @@ From vireshk  Wed Jan 17 12:43:27 2024
 From vireshk  Thu Jan 11 08:42:21 2024
  Subject: [PATCH v2 2/2] cpufreq: mediatek-hw: Wait for CPU supplies before pro
   Folder: PATCH_v2_2-2_cpufreq_mediatek-hw_Wait_for_CPU_supplies_befor	   7210
+From vireshk  Thu Jan 25 09:17:28 2024
+ Subject: [PATCH] cpufreq: mediatek-hw: Don't error out if supply is not  found
+  Folder: PATCH_cpufreq_mediatek-hw_Don't_error_out_if_supply_is_not_f	   6879

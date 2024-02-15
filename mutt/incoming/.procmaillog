@@ -2377,3 +2377,6 @@ From vireshk  Mon Feb 12 12:37:35 2024
 From elder@ieee.org  Mon Feb 12 12:48:12 2024
  Subject: Speaking for the U of MN
   Folder: Speaking_for_the_U_of_MN.mbox					   1958
+From vireshk  Mon Feb 12 08:54:10 2024
+ Subject: [PATCH] cpufreq: dt-platdev: block SDM670 in cpufreq-dt-platdev
+  Folder: PATCH_cpufreq_dt-platdev_block_SDM670_in_cpufreq-dt-platdev.	   6820

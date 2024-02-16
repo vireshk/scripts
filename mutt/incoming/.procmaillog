@@ -2380,3 +2380,6 @@ From elder@ieee.org  Mon Feb 12 12:48:12 2024
 From vireshk  Mon Feb 12 08:54:10 2024
  Subject: [PATCH] cpufreq: dt-platdev: block SDM670 in cpufreq-dt-platdev
   Folder: PATCH_cpufreq_dt-platdev_block_SDM670_in_cpufreq-dt-platdev.	   6820
+From vireshk  Thu Feb 15 14:04:32 2024
+ Subject: [PATCH] cpufreq: qcom-hw: add CONFIG_COMMON_CLK dependency
+  Folder: PATCH_cpufreq_qcom-hw_add_CONFIG_COMMON_CLK_dependency.mbox	   6175

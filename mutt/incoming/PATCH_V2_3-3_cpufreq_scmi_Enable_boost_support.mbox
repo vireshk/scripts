@@ -1,0 +1,114 @@
+From vireshk  Wed Feb 28 09:01:06 2024
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [74.125.68.109] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Wed, 28 Feb 2024 09:01:06 +0530 (IST)
+Received: by 2002:a05:7208:878a:b0:7f:29ee:139 with SMTP id hc10csp487509rbb;         Tue, 27 Feb 2024 09:35:23 -0800 (PST)
+X-Forwarded-Encrypted: i=2; AJvYcCWmSaLYrJJOirAaNzkhxLRjgyyNI4VIvajrwXJ9WKOxI8EVm8UKnWTS5olWHK+uNc7/b5lRftlE5vlmaJPA6rgcV3CS7YzaAA==
+X-Google-Smtp-Source: AGHT+IFQU5Z5z+420gT6ZFbMwDKqosVueOonicGBa6fJbetQNny4VEZ3VTJTLRoyA/CnmDxJtNny
+X-Received: by 2002:a5b:b06:0:b0:dc7:46fd:4998 with SMTP id z6-20020a5b0b06000000b00dc746fd4998mr21892ybp.13.1709055323494;         Tue, 27 Feb 2024 09:35:23 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1709055323; cv=none;         d=google.com; s=arc-20160816;         b=Efm0JndBuOEHTAvmmuy1AkdgK2C17RLfQMNbiSAS8ho9uKxiq2hixaPyypsuGXFtoW          YK6lCH537vAOPFT1O+E5b7fnOTBB0Ia9EShuhbjt5/vV+VkRMUBsCeM+TKtjAw2DRoP9          CRr2Ltnb6gv4Y2tWzDwehGsJvoEfyI7nb4scXLFcYY2gCXTjgghPj1IZQJOxFbTJKz/n          0NHfFfHdKfbhvkjcfaUXsTHQRuT4HGCbRpSVcNAbM/TjYma4Nwjs7On7w6qSQOnxSKFG          YceTpunjJ8G37/U3pSS2aBQoimCAEWkMvq7IJ6Ld70LeRddQaVstWuANUIjoYBuqedY/          H4Gg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:references:in-reply-to          :message-id:date:subject:cc:to:from:dkim-signature;         bh=1OY4o7F0FOht28QF76HQLbP3x9dSbq2zNxyAKtI6AO8=;         fh=JXeAHL/pEiwIRpJuFmm5HWdAyyckOo6ArR8j/crYxoY=;         b=wFpzgmKxVe8P172qRbHza3ykojlKvZUK5Hl6LFtlFzGuTvhUR2juFno/EJk5+Wi0Xe          K8GuAURMNq+7o6MhopYmKPUkk0sPqLjbnx2HQ/AxFnNAh6ojptTAUBxLCNWZ0+gaxY2u          t1k9ivFkbcM3nzTMiQbn6zDletm3HF/AJ8NjDBqpwaDi5I9VQE4OPFT+u8XN+XwbLOU6          WZdxobnqq4adStGMuTZTIm+BMmKv88T2pEJ8rJuPuOPmuZzXdb/LXaYFuoMrKbk2I+Tm          GZCFFjtwN/ZDyq3m7DkxKvjt7nGt13O0n7aUDPqHcCTt/N/MkpzpCf70tvPR5DqdoFEF          Es1g==;         dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@quicinc.com header.s=qcppdkim1 header.b=Sgn41tWr;        spf=pass (google.com: domain of quic_sibis@quicinc.com designates 205.220.180.131 as permitted sender) smtp.mailfrom=quic_sibis@quicinc.com;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=quicinc.com
+Return-Path: <quic_sibis@quicinc.com>
+Received: from mx0b-0031df01.pphosted.com (mx0b-0031df01.pphosted.com. [205.220.180.131])         by mx.google.com with ESMTPS id g32-20020a25b120000000b00dc7487642c1si2658159ybj.235.2024.02.27.09.35.23         for <viresh.kumar@linaro.org>         (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);         Tue, 27 Feb 2024 09:35:23 -0800 (PST)
+Received-SPF: pass (google.com: domain of quic_sibis@quicinc.com designates 205.220.180.131 as permitted sender) client-ip=205.220.180.131;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@quicinc.com header.s=qcppdkim1 header.b=Sgn41tWr;        spf=pass (google.com: domain of quic_sibis@quicinc.com designates 205.220.180.131 as permitted sender) smtp.mailfrom=quic_sibis@quicinc.com;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=quicinc.com
+Received: from pps.filterd (m0279872.ppops.net [127.0.0.1]) 	by mx0a-0031df01.pphosted.com (8.17.1.24/8.17.1.24) with ESMTP id 41R9ZMe6017235; 	Tue, 27 Feb 2024 17:35:18 GMT
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=quicinc.com; h= 	from:to:cc:subject:date:message-id:in-reply-to:references 	:mime-version:content-transfer-encoding:content-type; s= 	qcppdkim1; bh=1OY4o7F0FOht28QF76HQLbP3x9dSbq2zNxyAKtI6AO8=; b=Sg 	n41tWrMor3zJZziknelNrIYLX8d/h5CCuCg6GeFrgkpQwr77qTX987vtApfL1hsc 	XdCU1kDWVzuoejiGBOWJFZRgLGRvNPrNNLmj0xCDF3ITEZ/QpuiWBTrMy7HSlnV8 	DfMC/E356zliwcWHdHbHKYBIZnJLgp1sk4wL6hGwAJvkmR7rPTlbmX9gCR0FJPf0 	Wc54diebEttrxsRgblD3UFWrNyPkaVRSzO1fsdm4q1YWS6NpApVo3jylM2NuSOfU 	cZGQZK4lZohHSLTlTIy8drbU1upyhxUgOhEDEwAW4lmcjSiVYwWA51DqHHYMxtco 	78anya4ZH4faQsh5/y7w==
+Received: from nalasppmta03.qualcomm.com (Global_NAT1.qualcomm.com [129.46.96.20]) 	by mx0a-0031df01.pphosted.com (PPS) with ESMTPS id 3wh64h23kh-1 	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT); 	Tue, 27 Feb 2024 17:35:18 +0000 (GMT)
+Received: from nalasex01a.na.qualcomm.com (nalasex01a.na.qualcomm.com [10.47.209.196]) 	by NALASPPMTA03.qualcomm.com (8.17.1.5/8.17.1.5) with ESMTPS id 41RHZHLD029872 	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT); 	Tue, 27 Feb 2024 17:35:17 GMT
+Received: from hu-sibis-blr.qualcomm.com (10.80.80.8) by  nalasex01a.na.qualcomm.com (10.47.209.196) with Microsoft SMTP Server  (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id  15.2.1118.40; Tue, 27 Feb 2024 09:35:12 -0800
+From: Sibi Sankar <quic_sibis@quicinc.com>
+To: <sudeep.holla@arm.com>, <cristian.marussi@arm.com>, <rafael@kernel.org>,         <viresh.kumar@linaro.org>, <morten.rasmussen@arm.com>,         <dietmar.eggemann@arm.com>, <lukasz.luba@arm.com>, <sboyd@kernel.org>
+CC: <linux-arm-kernel@lists.infradead.org>, <linux-pm@vger.kernel.org>,         <linux-kernel@vger.kernel.org>, <quic_mdtipton@quicinc.com>,         <linux-arm-msm@vger.kernel.org>, <nm@ti.com>,         Sibi Sankar 	<quic_sibis@quicinc.com>
+Subject: [PATCH V2 3/3] cpufreq: scmi: Enable boost support
+Date: Tue, 27 Feb 2024 23:04:34 +0530
+Message-ID: <20240227173434.650334-4-quic_sibis@quicinc.com>
+X-Mailer: git-send-email 2.34.1
+In-Reply-To: <20240227173434.650334-1-quic_sibis@quicinc.com>
+References: <20240227173434.650334-1-quic_sibis@quicinc.com>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain
+X-Originating-IP: [10.80.80.8]
+X-ClientProxiedBy: nasanex01a.na.qualcomm.com (10.52.223.231) To  nalasex01a.na.qualcomm.com (10.47.209.196)
+X-QCInternal: smtphost
+X-Proofpoint-Virus-Version: vendor=nai engine=6200 definitions=5800 signatures=585085
+X-Proofpoint-ORIG-GUID: ZbU3IqkLuiNQcg-qyN_AWXTb_ccc-Xxl
+X-Proofpoint-GUID: ZbU3IqkLuiNQcg-qyN_AWXTb_ccc-Xxl
+X-Proofpoint-Virus-Version: vendor=baseguard  engine=ICAP:2.0.272,Aquarius:18.0.1011,Hydra:6.0.619,FMLib:17.11.176.26  definitions=2024-02-27_03,2024-02-27_01,2023-05-22_02
+X-Proofpoint-Spam-Details: rule=outbound_notspam policy=outbound score=0 suspectscore=0 clxscore=1015  bulkscore=0 spamscore=0 lowpriorityscore=0 impostorscore=0 malwarescore=0  mlxlogscore=999 priorityscore=1501 adultscore=0 phishscore=0 mlxscore=0  classifier=spam adjust=0 reason=mlx scancount=1 engine=8.19.0-2402120000  definitions=main-2402270135
+Status: RO
+Content-Length: 2098
+Lines: 70
+
+The X1E80100 SoC hosts a number of cpu boost frequencies, so let's enable
+boost support if the freq_table has any opps marked as turbo in it.
+
+Signed-off-by: Sibi Sankar <quic_sibis@quicinc.com>
+---
+
+v2:
+* fix default per-policy state. [Dietmar]
+* fix typo in commit message.
+
+ drivers/cpufreq/scmi-cpufreq.c | 23 ++++++++++++++++++++++-
+ 1 file changed, 22 insertions(+), 1 deletion(-)
+
+diff --git a/drivers/cpufreq/scmi-cpufreq.c b/drivers/cpufreq/scmi-cpufreq.c
+index 4ee23f4ebf4a..76a0ddbd9d24 100644
+--- a/drivers/cpufreq/scmi-cpufreq.c
++++ b/drivers/cpufreq/scmi-cpufreq.c
+@@ -30,6 +30,7 @@ struct scmi_data {
+ 
+ static struct scmi_protocol_handle *ph;
+ static const struct scmi_perf_proto_ops *perf_ops;
++static struct cpufreq_driver scmi_cpufreq_driver;
+ 
+ static unsigned int scmi_cpufreq_get_rate(unsigned int cpu)
+ {
+@@ -144,6 +145,12 @@ scmi_get_cpu_power(struct device *cpu_dev, unsigned long *power,
+ 	return 0;
+ }
+ 
++static struct freq_attr *scmi_cpufreq_hw_attr[] = {
++	&cpufreq_freq_attr_scaling_available_freqs,
++	NULL,
++	NULL,
++};
++
+ static int scmi_cpufreq_init(struct cpufreq_policy *policy)
+ {
+ 	int ret, nr_opp, domain;
+@@ -250,6 +257,20 @@ static int scmi_cpufreq_init(struct cpufreq_policy *policy)
+ 	policy->fast_switch_possible =
+ 		perf_ops->fast_switch_possible(ph, domain);
+ 
++	if (policy_has_boost_freq(policy)) {
++		ret = cpufreq_enable_boost_support();
++		if (ret) {
++			dev_warn(cpu_dev, "failed to enable boost: %d\n", ret);
++			goto out_free_opp;
++		} else {
++			scmi_cpufreq_hw_attr[1] = &cpufreq_freq_attr_scaling_boost_freqs;
++			scmi_cpufreq_driver.boost_enabled = true;
++			policy->boost_enabled = true;
++		}
++	}
++
++	priv->policy = policy;
++
+ 	return 0;
+ 
+ out_free_opp:
+@@ -308,7 +329,7 @@ static struct cpufreq_driver scmi_cpufreq_driver = {
+ 		  CPUFREQ_NEED_INITIAL_FREQ_CHECK |
+ 		  CPUFREQ_IS_COOLING_DEV,
+ 	.verify	= cpufreq_generic_frequency_table_verify,
+-	.attr	= cpufreq_generic_attr,
++	.attr	= scmi_cpufreq_hw_attr,
+ 	.target_index	= scmi_cpufreq_set_target,
+ 	.fast_switch	= scmi_cpufreq_fast_switch,
+ 	.get	= scmi_cpufreq_get_rate,
+-- 
+2.34.1
+

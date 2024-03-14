@@ -2395,3 +2395,6 @@ From vireshk  Wed Feb 28 09:01:04 2024
 From vireshk  Wed Feb 28 09:01:06 2024
  Subject: [PATCH V2 3/3] cpufreq: scmi: Enable boost support
   Folder: PATCH_V2_3-3_cpufreq_scmi_Enable_boost_support.mbox		   8721
+From vireshk  Tue Mar 12 15:18:14 2024
+ Subject: [PATCH V4 0/2] cpufreq: scmi: Add boost frequency support
+  Folder: PATCH_V4_0-2_cpufreq_scmi_Add_boost_frequency_support.mbox	   7414

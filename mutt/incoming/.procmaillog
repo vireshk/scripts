@@ -2401,3 +2401,9 @@ From vireshk  Tue Mar 12 15:18:14 2024
 From vireshk  Thu Mar 14 18:26:51 2024
  Subject: [PATCH] cpufreq: dt: always allocate zeroed cpumask
   Folder: PATCH_cpufreq_dt_always_allocate_zeroed_cpumask.mbox		  10308
+From vireshk  Mon Apr  8 01:46:39 2024
+ Subject: [PATCH next] cpupfreq: tegra124: eliminate uses of of_node_put()
+  Folder: PATCH_next_cpupfreq_tegra124_eliminate_uses_of_of_node_put_.	   9710
+From vireshk  Mon Apr  8 15:09:40 2024
+ Subject: [PATCH v2] cppc_cpufreq: Fix possible null pointer dereference
+  Folder: PATCH_v2_cppc_cpufreq_Fix_possible_null_pointer_dereference.	   7652

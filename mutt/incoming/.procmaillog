@@ -2407,3 +2407,6 @@ From vireshk  Mon Apr  8 01:46:39 2024
 From vireshk  Mon Apr  8 15:09:40 2024
  Subject: [PATCH v2] cppc_cpufreq: Fix possible null pointer dereference
   Folder: PATCH_v2_cppc_cpufreq_Fix_possible_null_pointer_dereference.	   7652
+From vireshk  Fri Apr 19 22:30:09 2024
+ Subject: [PATCH] cpufreq: mediatek: Add support for MT7988A
+  Folder: PATCH_cpufreq_mediatek_Add_support_for_MT7988A.mbox		   5448

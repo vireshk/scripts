@@ -22,6 +22,7 @@ alias pasteix="curl -F 'f:1=<-' ix.io"
 source /home/vireshk/scripts/git_alias
 PATH="/home/vireshk/work/repos/tools/git/contrib/workdir/:/home/vireshk/.local/bin/:/home/vireshk/work/repos/tools/binaries/:$PATH"
 #alias python3="python"
+alias python="python3"
 alias b4="/home/vireshk/work/repos/tools/b4/b4.sh"
 
 

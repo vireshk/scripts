@@ -2422,3 +2422,6 @@ From vireshk  Tue Apr 23 13:59:13 2024
 From vireshk  Wed Apr 24 10:38:08 2024
  Subject: [PATCH] cpufreq: brcmstb-avs-cpufreq: ISO C90 forbids mixed declarati
   Folder: PATCH_cpufreq_brcmstb-avs-cpufreq_ISO_C90_forbids_mixed_decl	   7676
+From vireshk  Mon May 20 12:08:40 2024
+ Subject: [PATCH V2] cpufreq: scmi: Avoid overflow of target_freq in fast switc
+  Folder: PATCH_V2_cpufreq_scmi_Avoid_overflow_of_target_freq_in_fast_	   7847

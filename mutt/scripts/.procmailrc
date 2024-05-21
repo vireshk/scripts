@@ -117,7 +117,7 @@ linux/korg
 
 # pmwg
 :0:
-* ^(To|Cc):.*(virtio-dev@lists\.oasis-open\.or|virtio-comment@lists\.oasis-open\.org)
+* ^(To|Cc):.*(virtio-dev@lists\.linux\.dev|virtio-comment@lists\.linux\.dev)
 linux/virtio
 
 

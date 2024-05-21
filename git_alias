@@ -127,14 +127,12 @@ alias gitmailschedutil='gitmailpm --to ingo --to peterz --cc vingu'
 alias gitmailstratos='gitmail -cc vingu --cc "Alex Bennée <alex.bennee@linaro.org>" --cc stratos-dev@op-lists.linaro.org --cc "Manos Pitsidianakis <manos.pitsidianakis@linaro.org>"'
 alias gitmailgenpd='gitmailopp --to ulf.hansson@linaro.org --to "Kevin Hilman <khilman@kernel.org>" --cc rnayak@codeaurora.org'
 alias gitmailqemu='gitmailstratos --cc vingu --to qemu-devel@nongnu.org'
-alias gitmailqemuvd='gitmailstratos --cc vingu --to qemu-devel@nongnu.org --to "virtio-dev@lists.oasis-open.org" --cc "Michael S. Tsirkin <mst@redhat.com>" --cc "Oleksandr Tyshchenko <olekstysh@gmail.com>" --cc "xen-devel@lists.xen.org" --cc "Andrew Cooper <andrew.cooper3@citrix.com>" --cc "Juergen Gross <jgross@suse.com>" --cc "Sebastien Boeuf <sebastien.boeuf@intel.com>" --cc "Liu Jiang <gerry@linux.alibaba.com>" --to "Stefan Hajnoczi <stefanha@redhat.com>"'
+alias gitmailqemuvd='gitmailstratos --cc vingu --to qemu-devel@nongnu.org --to "virtio-dev@lists.linux.dev" --cc "Michael S. Tsirkin <mst@redhat.com>" --cc "Oleksandr Tyshchenko <olekstysh@gmail.com>" --cc "xen-devel@lists.xen.org" --cc "Andrew Cooper <andrew.cooper3@citrix.com>" --cc "Juergen Gross <jgross@suse.com>" --cc "Sebastien Boeuf <sebastien.boeuf@intel.com>" --cc "Liu Jiang <gerry@linux.alibaba.com>" --to "Stefan Hajnoczi <stefanha@redhat.com>"'
 
 
 alias gitmailxen='gitmailstratos --to xen-devel@lists.xen.org --cc "Oleksandr Tyshchenko <olekstysh@gmail.com>" --to "Juergen Gross <jgross@suse.com>" --to "Julien Grall <julien@xen.org>" --to "Anthony PERARD <anthony.perard@citrix.com>"'
 
-alias gitmailvirtioli='gitmailstratos --cc cohuck@redhat.com --to "Wolfram Sang <wsa@kernel.org>" --cc "Vincent Whitchurch <vincent.whitchurch@axis.com>"'
-
-alias gitmailvirtiorg='gitmailstratos --to "Miguel Ojeda <miguel.ojeda.sandonis@gmail.com>" --to "Linus Walleij <linus.walleij@linaro.org>" --to "Bartosz Golaszewski <bgolaszewski@baylibre.com>" --cc "Wedson Almeida Filho <wedsonaf@google.com>" --cc "Kent Gibson <warthog618@gmail.com>"'
+alias gitmailvirtiospec='gitmailstratos --to "virtio-comment@lists.linux.dev" --cc "Cornelia Huck <cohuck@redhat.com>", --cc "\"Michael S. Tsirkin\" <mst@redhat.com>"'
 
 alias gitmailgpiod='gitmail --cc vingu --to "Linus Walleij <linus.walleij@linaro.org>" --to "Bartosz Golaszewski <brgl@bgdev.pl>" --cc "linux-gpio@vger.kernel.org" --cc vingu --cc "Kent Gibson <warthog618@gmail.com>"'
 alias gitmailgpiodrust='gitmailstratos --to "Linus Walleij <linus.walleij@linaro.org>" --to "Bartosz Golaszewski <brgl@bgdev.pl>" --cc "linux-gpio@vger.kernel.org"'

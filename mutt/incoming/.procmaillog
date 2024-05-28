@@ -2425,3 +2425,12 @@ From vireshk  Wed Apr 24 10:38:08 2024
 From vireshk  Mon May 20 12:08:40 2024
  Subject: [PATCH V2] cpufreq: scmi: Avoid overflow of target_freq in fast switc
   Folder: PATCH_V2_cpufreq_scmi_Avoid_overflow_of_target_freq_in_fast_	   7847
+From vireshk  Sat May 25 14:43:34 2024
+ Subject: [PATCH 1/2] cpufreq: qcom-nvmem: fix memory leaks in probe error  pat
+  Folder: PATCH_1-2_cpufreq_qcom-nvmem_fix_memory_leaks_in_probe_error	   8437
+From vireshk  Sat May 25 14:43:35 2024
+ Subject: [PATCH 2/2] cpufreq: qcom-nvmem: eliminate uses of of_node_put()
+  Folder: PATCH_2-2_cpufreq_qcom-nvmem_eliminate_uses_of_of_node_put_.	   9793
+From vireshk  Sat May 25 14:43:41 2024
+ Subject: [PATCH -next] cpufreq: longhaul: Fix kernel-doc param for longhaul_se
+  Folder: PATCH_-next_cpufreq_longhaul_Fix_kernel-doc_param_for_longha	   5385

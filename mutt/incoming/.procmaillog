@@ -2434,3 +2434,6 @@ From vireshk  Sat May 25 14:43:35 2024
 From vireshk  Sat May 25 14:43:41 2024
  Subject: [PATCH -next] cpufreq: longhaul: Fix kernel-doc param for longhaul_se
   Folder: PATCH_-next_cpufreq_longhaul_Fix_kernel-doc_param_for_longha	   5385
+From vireshk  Mon Jun  3 09:52:10 2024
+ Subject: [PATCH] cpufreq: dt-platdev: add missing MODULE_DESCRIPTION()  macro
+  Folder: PATCH_cpufreq_dt-platdev_add_missing_MODULE_DESCRIPTION__mac	   7339

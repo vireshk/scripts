@@ -1,0 +1,63 @@
+From vireshk  Thu Jun  6 12:29:31 2024
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [142.251.12.108] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Thu, 06 Jun 2024 12:29:31 +0530 (IST)
+Received: by 2002:a05:7208:b318:b0:86:4085:4771 with SMTP id cw24csp166203rbb;         Wed, 5 Jun 2024 23:58:49 -0700 (PDT)
+X-Forwarded-Encrypted: i=2; AJvYcCWR5MHvoRDGQaWUslf40udQ+k/6YXemDtfzkykg56KoBE9CAkWuApduYjRDhnmOVwydj6SPJOmpITmPaq4rY0c27BlExyojAw==
+X-Google-Smtp-Source: AGHT+IEcgItuFff0JQDPm8yLABqLT1nLQGzPXuHBSsNW4/mRh9ndcczW/VboDn9zOOFctWO6LUm3
+X-Received: by 2002:a05:600c:a03:b0:421:1d8:add4 with SMTP id 5b1f17b1804b1-4215634e602mr42913315e9.35.1717657128757;         Wed, 05 Jun 2024 23:58:48 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1717657128; cv=none;         d=google.com; s=arc-20160816;         b=yN/vMwcLGv6dA/bdqoq4y/2taiD4XfXKKUpbvB1seNXeH5QHGqZBBFety1GXSRM5Xm          9tFFO2pIhhbb5KJO7GdnvnJnzRE+NYKjHM92VX0sOzrr97wqZjmW5PmRqnDCvX3HhTNH          AdtOjMPF5y6Gfokb1iJNUj39nbDgZwB3zFdlcRTXER8+I1AIDtz8GokTHJS0cWnDIKiI          Zq2dbTvuMKgSUaJqWPnBYGComazlDxBEX+6Xzj6vjLGDebaiDSPiWFHJGT2M6fQvQY7u          fYG4PoDKyoJJ7DYFf0j2v/67RQUCFageZHPAhgT+5hJqAqp9lKv5CwDzvik1Hxx1A5Iv          +cSw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from:dkim-signature;         bh=2w3JhfpwL0Tvop0IRVooZ6F1QlwSS/l8vdkwdoCQSuk=;         fh=fW5BkP66xQTx4KGm/BmcDuvkGFpbKy27N2gWQKTvmIw=;         b=c6rKwYyvsKcbBFWBnq+rzzRKfjgd2Fd6g8Y1O8+YmWsvd5+KUQpVdIbymiNXWOKZBQ          JD0Nr10WzMcnt3xmy9qIONMHytgwvVZbtKOisPgZP/Z7WxxCpFo1B06Vs1MypR06kGJA          DtsQ5Gr1O/iFkR3R8rzcD5tI4wj2B5/rXup3egSTu1paYVbEQaf6krhLXVSBWafihSY5          ljVIvJprVMUdnBRweQW4gz32M+fBledrXZrA/PCoGDeDpKPcu1+PtG5sX4d+tK+4mDXc          AHTDysTjpIu/hw7qkoXYALOmuilh8kT/3XO9QMPRrxqvI9NzKN4lpagBlqaG1kebD6Y5          CJ6Q==;         dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@norik.com header.s=default header.b=gc02nB3m;        spf=pass (google.com: domain of primoz.fiser@norik.com designates 46.19.9.99 as permitted sender) smtp.mailfrom=primoz.fiser@norik.com
+Return-Path: <primoz.fiser@norik.com>
+Received: from cpanel.siel.si (cpanel.siel.si. [46.19.9.99])         by mx.google.com with ESMTPS id 5b1f17b1804b1-4215c18bc1asi4649455e9.158.2024.06.05.23.58.48         for <viresh.kumar@linaro.org>         (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);         Wed, 05 Jun 2024 23:58:48 -0700 (PDT)
+Received-SPF: pass (google.com: domain of primoz.fiser@norik.com designates 46.19.9.99 as permitted sender) client-ip=46.19.9.99;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@norik.com header.s=default header.b=gc02nB3m;        spf=pass (google.com: domain of primoz.fiser@norik.com designates 46.19.9.99 as permitted sender) smtp.mailfrom=primoz.fiser@norik.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=norik.com; 	s=default; h=Content-Transfer-Encoding:MIME-Version:Message-Id:Date:Subject: 	Cc:To:From:Sender:Reply-To:Content-Type:Content-ID:Content-Description: 	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID: 	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe: 	List-Post:List-Owner:List-Archive; 	bh=2w3JhfpwL0Tvop0IRVooZ6F1QlwSS/l8vdkwdoCQSuk=; b=gc02nB3mxbwZZjvNel5sOKAvHz 	Uq61HZWhCMY4KlHGmkl87C2s2N9Qhqana3xNSWZAAvuQo0bdotXV7e3OeXxL7O+mGpzkSBo84zzh/ 	Ycad7ATmYdxsASaroMgps1HAALNI3R/7OhX9kMCxIT+ETJqgu+1K68Y0Yd3bNpiyb30XGvkq3VyqC 	6QXrm2MPYMgQYom7JRcctVvTrdaAVqDhj4Jsdde9e9xs24ebeTMaPvoEI12BYGwCWJCcnDrFBX3r3 	CAtjVeI5kXYL9Psbly50khY/Gx+y1r803cq1lrs9/JpZZCAVqNKZFLbChMc/Ly+cLYqqEcAi6I2h8 	Q33eVyaA==;
+Received: from [89.212.21.243] (port=47232 helo=localhost.localdomain) 	by cpanel.siel.si with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 	(Exim 4.96.2) 	(envelope-from <primoz.fiser@norik.com>) 	id 1sF75E-00BLkc-39; 	Thu, 06 Jun 2024 08:58:48 +0200
+From: Primoz Fiser <primoz.fiser@norik.com>
+To: "Rafael J . Wysocki" <rafael@kernel.org>, 	Viresh Kumar <viresh.kumar@linaro.org>, 	linux-pm@vger.kernel.org, 	linux-kernel@vger.kernel.org
+Cc: upstream@lists.phytec.de
+Subject: [PATCH] cpufreq: ti-cpufreq: Handle deferred probe with dev_err_probe()
+Date: Thu,  6 Jun 2024 08:58:47 +0200
+Message-Id: <20240606065847.3499145-1-primoz.fiser@norik.com>
+X-Mailer: git-send-email 2.25.1
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - cpanel.siel.si
+X-AntiAbuse: Original Domain - linaro.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - norik.com
+X-Get-Message-Sender-Via: cpanel.siel.si: authenticated_id: primoz.fiser@norik.com
+X-Authenticated-Sender: cpanel.siel.si: primoz.fiser@norik.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+Content-Length: 840
+Lines: 24
+
+Handle deferred probing gracefully by using dev_err_probe() to not
+spam console with unnecessary error messages.
+
+Fixes: f88d152dc739 ("cpufreq: ti: Migrate to dev_pm_opp_set_config()")
+Signed-off-by: Primoz Fiser <primoz.fiser@norik.com>
+---
+ drivers/cpufreq/ti-cpufreq.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/drivers/cpufreq/ti-cpufreq.c b/drivers/cpufreq/ti-cpufreq.c
+index 714ed53753fa..5af85c4cbad0 100644
+--- a/drivers/cpufreq/ti-cpufreq.c
++++ b/drivers/cpufreq/ti-cpufreq.c
+@@ -417,7 +417,7 @@ static int ti_cpufreq_probe(struct platform_device *pdev)
+ 
+ 	ret = dev_pm_opp_set_config(opp_data->cpu_dev, &config);
+ 	if (ret < 0) {
+-		dev_err(opp_data->cpu_dev, "Failed to set OPP config\n");
++		dev_err_probe(opp_data->cpu_dev, ret, "Failed to set OPP config\n");
+ 		goto fail_put_node;
+ 	}
+ 
+-- 
+2.25.1
+

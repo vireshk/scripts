@@ -2437,3 +2437,6 @@ From vireshk  Sat May 25 14:43:41 2024
 From vireshk  Mon Jun  3 09:52:10 2024
  Subject: [PATCH] cpufreq: dt-platdev: add missing MODULE_DESCRIPTION()  macro
   Folder: PATCH_cpufreq_dt-platdev_add_missing_MODULE_DESCRIPTION__mac	   7339
+From vireshk  Thu Jun  6 12:29:31 2024
+ Subject: [PATCH] cpufreq: ti-cpufreq: Handle deferred probe with dev_err_probe
+  Folder: PATCH_cpufreq_ti-cpufreq_Handle_deferred_probe_with_dev_err_	   5930

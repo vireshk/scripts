@@ -2440,3 +2440,6 @@ From vireshk  Mon Jun  3 09:52:10 2024
 From vireshk  Thu Jun  6 12:29:31 2024
  Subject: [PATCH] cpufreq: ti-cpufreq: Handle deferred probe with dev_err_probe
   Folder: PATCH_cpufreq_ti-cpufreq_Handle_deferred_probe_with_dev_err_	   5930
+From vireshk  Thu Jun  6 12:31:44 2024
+ Subject: [PATCH] OPP: ti: Fix ti_opp_supply_probe wrong return values
+  Folder: PATCH_OPP_ti_Fix_ti_opp_supply_probe_wrong_return_values.mbo	   7157

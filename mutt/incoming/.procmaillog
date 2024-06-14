@@ -2443,3 +2443,6 @@ From vireshk  Thu Jun  6 12:29:31 2024
 From vireshk  Thu Jun  6 12:31:44 2024
  Subject: [PATCH] OPP: ti: Fix ti_opp_supply_probe wrong return values
   Folder: PATCH_OPP_ti_Fix_ti_opp_supply_probe_wrong_return_values.mbo	   7157
+From vireshk  Wed Jun 12 17:17:16 2024
+ Subject: [PATCH v4] cpufreq/cppc: Remove the desired_perf compare when set tar
+  Folder: PATCH_v4_cpufreq-cppc_Remove_the_desired_perf_compare_when_s	  11820

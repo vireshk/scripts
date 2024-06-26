@@ -2458,3 +2458,12 @@ From vireshk  Fri Jun 21 22:10:56 2024
 From vireshk  Fri Jun 21 22:10:57 2024
  Subject: [PATCH v3 2/5] cpufreq: ti: update OPP table for AM62Px SoCs
   Folder: PATCH_v3_2-5_cpufreq_ti_update_OPP_table_for_AM62Px_SoCs.mbo	   9260
+From vireshk  Wed Jun 19 19:40:24 2024
+ Subject: [PATCH 2/7] OPP: Drop a redundant in-parameter to _set_opp_level()
+  Folder: PATCH_2-7_OPP_Drop_a_redundant_in-parameter_to_set_opp_level	   9439
+From vireshk  Wed Jun 26 07:51:39 2024
+ Subject: [PATCH] cpufreq: sti: add missing MODULE_DEVICE_TABLE entry for stih4
+  Folder: PATCH_cpufreq_sti_add_missing_MODULE_DEVICE_TABLE_entry_for_	   6662
+From vireshk  Wed Jun 19 19:40:24 2024
+ Subject: [PATCH 4/7] OPP: Introduce an OF helper function to inform if require
+  Folder: PATCH_4-7_OPP_Introduce_an_OF_helper_function_to_inform_if_r	  10511

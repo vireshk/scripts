@@ -2467,3 +2467,6 @@ From vireshk  Wed Jun 26 07:51:39 2024
 From vireshk  Wed Jun 19 19:40:24 2024
  Subject: [PATCH 4/7] OPP: Introduce an OF helper function to inform if require
   Folder: PATCH_4-7_OPP_Introduce_an_OF_helper_function_to_inform_if_r	  10511
+From vireshk  Mon Jul  1 09:11:19 2024
+ Subject: [PATCH] cpufreq: mediatek: Use dev_err_probe in every error path  in 
+  Folder: PATCH_cpufreq_mediatek_Use_dev_err_probe_in_every_error_path	  11903

@@ -2470,3 +2470,9 @@ From vireshk  Wed Jun 19 19:40:24 2024
 From vireshk  Mon Jul  1 09:11:19 2024
  Subject: [PATCH] cpufreq: mediatek: Use dev_err_probe in every error path  in 
   Folder: PATCH_cpufreq_mediatek_Use_dev_err_probe_in_every_error_path	  11903
+From vireshk  Fri Jul  5 11:38:44 2024
+ Subject: [PATCH V3 1/2] LoongArch: Add architectural preparation for CPUFreq
+  Folder: PATCH_V3_1-2_LoongArch_Add_architectural_preparation_for_CPU	   6581
+From vireshk  Fri Jul  5 11:38:45 2024
+ Subject: [PATCH V3 2/2] cpufreq: Add Loongson-3 CPUFreq driver support
+  Folder: PATCH_V3_2-2_cpufreq_Add_Loongson-3_CPUFreq_driver_support.m	  16824

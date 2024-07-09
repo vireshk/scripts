@@ -2482,3 +2482,6 @@ From vireshk  Fri Jul  5 11:38:45 2024
 From vireshk  Fri Jul  5 21:25:29 2024
  Subject: [PATCH v2] cpufreq: mediatek: Use dev_err_probe in every error  path 
   Folder: PATCH_v2_cpufreq_mediatek_Use_dev_err_probe_in_every_error_p	  12568
+From vireshk  Tue Jul  9 08:24:28 2024
+ Subject: [PATCH] cpufreq: sti: fix build warning
+  Folder: PATCH_cpufreq_sti_fix_build_warning.mbox			   7442

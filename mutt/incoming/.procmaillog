@@ -2485,3 +2485,12 @@ From vireshk  Fri Jul  5 21:25:29 2024
 From vireshk  Tue Jul  9 08:24:28 2024
  Subject: [PATCH] cpufreq: sti: fix build warning
   Folder: PATCH_cpufreq_sti_fix_build_warning.mbox			   7442
+From vireshk  Thu Aug  1 08:58:15 2024
+ Subject: [PATCH] cpufreq: Use of_property_present()
+  Folder: PATCH_cpufreq_Use_of_property_present_.mbox			   8049
+From vireshk  Thu Aug  1 08:58:24 2024
+ Subject: [PATCH] cpufreq: spear: Use of_property_for_each_u32() instead of ope
+  Folder: PATCH_cpufreq_spear_Use_of_property_for_each_u32__instead_of	   6458
+From vireshk  Thu Aug  1 08:58:24 2024
+ Subject: [PATCH] cpufreq: spear: Use of_property_for_each_u32() instead of ope
+  Folder: PATCH_cpufreq_spear_Use_of_property_for_each_u32__instead_of	   6458

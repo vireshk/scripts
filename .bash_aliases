@@ -31,7 +31,7 @@ export MAIL=/var/mail/viresh
 alias muttman="zcat /usr/share/doc/mutt/manual.txt.gz | sensible-pager"
 
 # toolchains
-PATH="/home/vireshk/work/repos/tools/toolchain/gcc-linaro-7.5.0-2019.12-x86_64_aarch64-linux-gnu/bin:/home/vireshk/work/repos/tools/toolchain/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin:/usr/bin:$PATH"
+#PATH="/home/vireshk/work/repos/tools/toolchain/gcc-linaro-7.5.0-2019.12-x86_64_aarch64-linux-gnu/bin:/home/vireshk/work/repos/tools/toolchain/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin:/usr/bin:$PATH"
 PATH="/home/vireshk/work/repos/tools/toolchain/gcc-10.1.0-nolibc/ia64-linux/bin:$PATH"
 PATH="/media/vireshk/bb4fad4d-8860-4037-8d08-02291222001e/android/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/:$PATH"
 PATH="/media/vireshk/bb4fad4d-8860-4037-8d08-02291222001e/android/prebuilts/clang/host/linux-x86/clang-r346389b/bin:$PATH"
@@ -240,8 +240,8 @@ alias ltpbuild="make clean;make autotools;./configure;make"
 alias sshqemu="ssh root@localhost -p8022"
 alias qvim="vim -c 'set expandtab' -c 'set shiftwidth=4'"
 alias mountqemu="echo \"mount -t 9p -o trans=virtio r /mnt\""
-alias configqemu="./configure --python=/usr/bin/python3.8 --target-list=aarch64-softmmu --enable-virtfs"
-#alias configqemu="./configure --python=/usr/bin/python3.8 --target-list=aarch64-softmmu --enable-virtfs --enable-docs"
+#alias configqemu="./configure --python=/usr/bin/python3.8 --target-list=aarch64-softmmu --enable-virtfs"
+alias configqemu="./configure --python=/usr/bin/python3.8 --target-list=aarch64-softmmu --enable-virtfs --enable-docs"
 alias buildqemu="configqemu; make -j 64"
 
 # I2C
@@ -317,6 +317,14 @@ export SYSTEM_DEPS_LIBGPIOD_NO_PKG_CONFIG=1
 export SYSTEM_DEPS_LIBGPIOD_SEARCH_NATIVE="$rustpath/libgpiod/lib/.libs/"
 export SYSTEM_DEPS_LIBGPIOD_LIB=gpiod
 export SYSTEM_DEPS_LIBGPIOD_INCLUDE="$rustpath/libgpiod/include/"
+
+# Virtio-msg
+export QEMUWPATH="$VIRTIOPATH/qemu-work/build"
+alias vmsgqemu="cd $QEMUWPATH && rm -fr queue-linux-user-d* && ./qemu-system-aarch64 -M x-virtio-msg -m 2G -cpu cortex-a72      -object memory-backend-file,id=mem,size=2G,mem-path=/dev/shm/qemu-ram,share=on      -machine memory-backend=mem      -chardev socket,id=chr0,path=linux-user.socket,server=on,wait=false      -serial mon:stdio -display none      -device virtio-msg-bus-linux-user,name=linux-user,chardev=chr0,memdev=mem,mem-offset=0x40000000      -device virtio-net-device,netdev=net0,iommu_platform=on      -netdev user,id=net0      -object filter-dump,id=f0,netdev=net0,file=net.pcap"
+
+alias vmsgqemuguestpci="cd $QEMUWPATH && ./qemu-system-aarch64 -M virt -m 2G -cpu cortex-a72      -object memory-backend-file,id=mem,size=2G,mem-path=/dev/shm/qemu-ram,share=on      -machine memory-backend=mem      -chardev socket,id=chr0,path=linux-user.socket      -serial mon:stdio -display none      -kernel ~/work/repos/kernel/barm64/arch/arm64/boot/Image      -initrd /home/vireshk/work/repos/virtio/buildroot/buildarm64/images/rootfs.cpio      -append \"rdinit=/sbin/init console=ttyAMA0 lpj=100\"      -device virtio-msg-proxy-driver-pci,virtio-id=0x1      -device virtio-msg-bus-linux-user,name=linux-user,chardev=chr0"
+
+alias vmsgqemuguest="cd $QEMUWPATH && ./qemu-system-aarch64 -M virt -m 2G -cpu cortex-a72      -object memory-backend-file,id=mem,size=2G,mem-path=/dev/shm/qemu-ram,share=on      -machine memory-backend=mem      -chardev socket,id=chr0,path=linux-user.socket      -serial mon:stdio -display none      -kernel ~/work/repos/kernel/barm64/arch/arm64/boot/Image      -initrd /home/vireshk/work/repos/virtio/buildroot/buildarm64/images/rootfs.cpio      -append \"rdinit=/sbin/init console=ttyAMA0 lpj=100\"      --device virtio-msg-proxy-driver,iommu_platform=on,virtio-id=0x1 -global virtio-mmio.force-legacy=false      -device virtio-msg-bus-linux-user,name=linux-user,chardev=chr0"
 
 # go to linux on shell startup
 hlinux

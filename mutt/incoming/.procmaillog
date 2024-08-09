@@ -2497,3 +2497,12 @@ From vireshk  Thu Aug  1 08:58:24 2024
 From vireshk  Wed Aug  7 17:21:59 2024
  Subject: [PATCH] KVM: arm64: Enforce dependency on an ARMv8.4-aware toolchain
   Folder: PATCH_KVM_arm64_Enforce_dependency_on_an_ARMv8.4-aware_toolc	   6197
+From vireshk  Thu Aug  8 18:08:27 2024
+ Subject: [PATCH v2] cpufreq/amd-pstate: Add the missing cpufreq_cpu_put()
+  Folder: PATCH_v2_cpufreq-amd-pstate_Add_the_missing_cpufreq_cpu_put_	  11578
+From vireshk  Fri Aug  9 11:41:00 2024
+ Subject: [PATCH v3] cpufreq/amd-pstate: Add the missing cpufreq_cpu_put()
+  Folder: PATCH_v3_cpufreq-amd-pstate_Add_the_missing_cpufreq_cpu_put_	  11738
+From vireshk  Fri Aug  9 11:41:00 2024
+ Subject: [PATCH v3] cpufreq/amd-pstate: Add the missing cpufreq_cpu_put()
+  Folder: PATCH_v3_cpufreq-amd-pstate_Add_the_missing_cpufreq_cpu_put_	  11738

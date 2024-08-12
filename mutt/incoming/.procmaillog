@@ -2506,3 +2506,6 @@ From vireshk  Fri Aug  9 11:41:00 2024
 From vireshk  Fri Aug  9 11:41:00 2024
  Subject: [PATCH v3] cpufreq/amd-pstate: Add the missing cpufreq_cpu_put()
   Folder: PATCH_v3_cpufreq-amd-pstate_Add_the_missing_cpufreq_cpu_put_	  11738
+From vireshk  Fri Aug  9 22:55:49 2024
+ Subject: [PATCH] cpufreq: Fix warning on unused of_device_id tables for !CONFI
+  Folder: PATCH_cpufreq_Fix_warning_on_unused_of_device_id_tables_for_	   8238

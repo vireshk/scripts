@@ -2509,3 +2509,6 @@ From vireshk  Fri Aug  9 11:41:00 2024
 From vireshk  Fri Aug  9 22:55:49 2024
  Subject: [PATCH] cpufreq: Fix warning on unused of_device_id tables for !CONFI
   Folder: PATCH_cpufreq_Fix_warning_on_unused_of_device_id_tables_for_	   8238
+From vireshk  Fri Aug  9 08:51:12 2024
+ Subject: [PATCH v2 03/11] cpufreq: Add SM7325 to cpufreq-dt-platdev blocklist
+  Folder: PATCH_v2_03-11_cpufreq_Add_SM7325_to_cpufreq-dt-platdev_bloc	   8352

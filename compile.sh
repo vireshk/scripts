@@ -169,6 +169,20 @@ elif [ $2 = armh ]; then
 	carch="arm64"
 	IMAGE=
 	MERGE_CONFIG="KCONFIG_CONFIG=$dir/.config scripts/kconfig/merge_config.sh -m $dir/.config ~/junk/config"
+elif [ $2 = armvg ]; then
+	dir=../barm64_vguest/
+	cfg=defconfig
+	CROSS_COMPILE="aarch64-linux-gnu-"
+	carch="arm64"
+	IMAGE=
+	MERGE_CONFIG="KCONFIG_CONFIG=$dir/.config scripts/kconfig/merge_config.sh -m $dir/.config ~/junk/config"
+elif [ $2 = armvh ]; then
+	dir=../barm64_vhost/
+	cfg=defconfig
+	CROSS_COMPILE="aarch64-linux-gnu-"
+	carch="arm64"
+	IMAGE=
+	MERGE_CONFIG="KCONFIG_CONFIG=$dir/.config scripts/kconfig/merge_config.sh -m $dir/.config ~/junk/config"
 elif [ $2 = armqf ]; then
 	dir=../barm64-base-qemuf/
 	cfg=defconfig

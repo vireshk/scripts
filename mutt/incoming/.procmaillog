@@ -2512,3 +2512,22 @@ From vireshk  Fri Aug  9 22:55:49 2024
 From vireshk  Fri Aug  9 08:51:12 2024
  Subject: [PATCH v2 03/11] cpufreq: Add SM7325 to cpufreq-dt-platdev blocklist
   Folder: PATCH_v2_03-11_cpufreq_Add_SM7325_to_cpufreq-dt-platdev_bloc	   8352
+From vireshk  Wed Aug 28 11:56:11 2024
+ Subject: [PATCH] cpufreq: loongson3: Use raw_smp_processor_id() in do_service_
+  Folder: PATCH_cpufreq_loongson3_Use_raw_smp_processor_id__in_do_serv	   5216
+From vireshk  Mon Sep  2 13:59:26 2024
+ Subject: [PATCH] cpufreq: Fix the cacography in powernv-cpufreq.c
+  Folder: PATCH_cpufreq_Fix_the_cacography_in_powernv-cpufreq.c.mbox	   4669
+From vireshk  Mon Sep  2 14:52:26 2024
+ Subject: [PATCH] cpufreq: ti-cpufreq: Use socinfo to get revision in AM62 fami
+  Folder: PATCH_cpufreq_ti-cpufreq_Use_socinfo_to_get_revision_in_AM62	   5842
+From foo@bar  Tue Sep  3 14:33:39 2024
+  Folder: .mbox								   1903
+From vireshk  Mon Sep  2 14:52:26 2024
+ Subject: [PATCH] cpufreq: ti-cpufreq: Use socinfo to get revision in AM62 fami
+  Folder: PATCH_cpufreq_ti-cpufreq_Use_socinfo_to_get_revision_in_AM62	   5842
+From foo@bar  Tue Sep  3 14:38:18 2024
+  Folder: .mbox								   1903
+From vireshk  Tue Sep  3 16:02:02 2024
+ Subject: [PATCH 2/2] dt-bindings: opp: operating-points-v2-ti-cpu: Update  mai
+  Folder: PATCH_2-2_dt-bindings_opp_operating-points-v2-ti-cpu_Update_	   6726

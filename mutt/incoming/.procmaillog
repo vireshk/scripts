@@ -2531,3 +2531,9 @@ From foo@bar  Tue Sep  3 14:38:18 2024
 From vireshk  Tue Sep  3 16:02:02 2024
  Subject: [PATCH 2/2] dt-bindings: opp: operating-points-v2-ti-cpu: Update  mai
   Folder: PATCH_2-2_dt-bindings_opp_operating-points-v2-ti-cpu_Update_	   6726
+From vireshk  Tue Oct  1 08:26:44 2024
+ Subject: [PATCH] OPP: Remove unused declarations in header file
+  Folder: PATCH_OPP_Remove_unused_declarations_in_header_file.mbox	   6507
+From vireshk  Tue Oct  1 08:27:03 2024
+ Subject: [PATCH v2] cpufreq: mediatek: Fix resource leaks on mtk_cpu_create_fr
+  Folder: PATCH_v2_cpufreq_mediatek_Fix_resource_leaks_on_mtk_cpu_crea	   7299

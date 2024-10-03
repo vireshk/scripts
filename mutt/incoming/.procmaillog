@@ -2537,3 +2537,12 @@ From vireshk  Tue Oct  1 08:26:44 2024
 From vireshk  Tue Oct  1 08:27:03 2024
  Subject: [PATCH v2] cpufreq: mediatek: Fix resource leaks on mtk_cpu_create_fr
   Folder: PATCH_v2_cpufreq_mediatek_Fix_resource_leaks_on_mtk_cpu_crea	   7299
+From vireshk  Tue Oct  1 08:52:28 2024
+ Subject: [PATCH v5] dt-bindings: opp: operating-points-v2-ti-cpu: Describe  op
+  Folder: PATCH_v5_dt-bindings_opp_operating-points-v2-ti-cpu_Describe	   9474
+From vireshk  Tue Oct  1 09:04:31 2024
+ Subject: [PATCH v4 1/2] cppc_cpufreq: Use desired perf if feedback ctrs are 0 
+  Folder: PATCH_v4_1-2_cppc_cpufreq_Use_desired_perf_if_feedback_ctrs_	   8482
+From vireshk  Tue Oct  1 09:04:30 2024
+ Subject: [PATCH v4 2/2] cppc_cpufreq: Remove HiSilicon CPPC workaround
+  Folder: PATCH_v4_2-2_cppc_cpufreq_Remove_HiSilicon_CPPC_workaround.m	   8392

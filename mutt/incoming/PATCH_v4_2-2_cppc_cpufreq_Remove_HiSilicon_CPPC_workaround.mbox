@@ -1,0 +1,159 @@
+From vireshk  Tue Oct  1 09:04:30 2024
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [142.251.175.108] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Tue, 01 Oct 2024 09:04:30 +0530 (IST)
+Received: by 2002:a05:7208:108:b0:8b:2085:db5e with SMTP id 8csp1146343rbe;         Sat, 28 Sep 2024 20:38:20 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IGghBLHLViVRu+qkgAenbUQf+fLRmqnrddoweMDwdGJQ+1S5IIMjmMk9z8kbUmjcWC1rpRb
+X-Received: by 2002:a05:6a00:174c:b0:717:945e:effd with SMTP id d2e1a72fcca58-71b25f29138mr11983143b3a.1.1727581100057;         Sat, 28 Sep 2024 20:38:20 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1727581100; cv=none;         d=google.com; s=arc-20240605;         b=jyg06qSULClzsXf1/9oz475HVkruMMoi/6D7okkvkTx9MerarhEc2cZiWqxQCw4Dp7          9U5F1BO5gZIonTqd2ryk+Wbxdk8T+EXjU6hg8JcSX5MRcXaWlSUADbJWUgg3Q0uouKbt          slTXBLHGbbXcfV0NKbz46qtOS1EreZpF/CHpE82khDXxgG5y1QFxQU/HtqJaag2RnnMg          KH2r/66LmBPvDXJVEiFWszERBgl1TUyXROu86CAudw6R2o3O260/lP2PUyf1qtzsxlVs          8AMijs4O4M1BhoYWEW27s6Upn15an2IC2QKpe93ZCqVJiH5ZcxOpEd7tnprcgSPPBd+p          198w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;         h=content-transfer-encoding:mime-version:references:in-reply-to          :message-id:date:subject:cc:to:from;         bh=bXEaQ6GMRVO6xVGMatsTamPgz1ctGOWZB9SFtOKNomU=;         fh=ZbLkHnH4EQSWTWm5mPvoamIDBa1EVSWiWvVXJ/SePXY=;         b=YXr+CiiNtT9r9bktAOpUXrLesAH2t7/W8C8bOs1TkIRxckW9XzNZo/YG/ethm6yJvo          EZuZTn+dwrH+KnCf41kUTNic2o2JVbxUeIX4exa23zTU4aOKyYKp6TMQZsTxl+3O0NAE          eaRncBYyNuS2h+YA15N4h6+yAh6KyQ/8AJ3nEWayAp1/1wWqM5zkSs34a67J6lRKh0Kw          VQ2rQApcqMme+VWJl46B8SQdjy7kwJPEFtCtjVISsCTm2JlDXh15IQDqco2ij27hd8lg          aWouBX7jBtS4lQOgTmC42Pwpo+8rUokec9z45E9KaSsIzcSmJHl4zQGA9fLmyRlxr506          D4Gw==;         dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;        spf=pass (google.com: domain of zhanjie9@hisilicon.com designates 45.249.212.191 as permitted sender) smtp.mailfrom=zhanjie9@hisilicon.com;        dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=hisilicon.com
+Return-Path: <zhanjie9@hisilicon.com>
+Received: from szxga05-in.huawei.com (szxga05-in.huawei.com. [45.249.212.191])         by mx.google.com with ESMTPS id d2e1a72fcca58-71b264aa9basi5680375b3a.103.2024.09.28.20.38.19         for <viresh.kumar@linaro.org>         (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);         Sat, 28 Sep 2024 20:38:19 -0700 (PDT)
+Received-SPF: pass (google.com: domain of zhanjie9@hisilicon.com designates 45.249.212.191 as permitted sender) client-ip=45.249.212.191;
+Authentication-Results: mx.google.com;        spf=pass (google.com: domain of zhanjie9@hisilicon.com designates 45.249.212.191 as permitted sender) smtp.mailfrom=zhanjie9@hisilicon.com;        dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=hisilicon.com
+Received: from mail.maildlp.com (unknown [172.19.88.163]) 	by szxga05-in.huawei.com (SkyGuard) with ESMTP id 4XGVJN4FCmz2QTwJ; 	Sun, 29 Sep 2024 11:37:24 +0800 (CST)
+Received: from dggpeml500019.china.huawei.com (unknown [7.185.36.137]) 	by mail.maildlp.com (Postfix) with ESMTPS id 8269B180041; 	Sun, 29 Sep 2024 11:38:16 +0800 (CST)
+Received: from localhost.localdomain (10.90.30.45) by  dggpeml500019.china.huawei.com (7.185.36.137) with Microsoft SMTP Server  (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id  15.1.2507.39; Sun, 29 Sep 2024 11:38:16 +0800
+From: Jie Zhan <zhanjie9@hisilicon.com>
+To: <viresh.kumar@linaro.org>, <rafael@kernel.org>, <ionela.voinescu@arm.com>, 	<beata.michalska@arm.com>, <wangxiongfeng2@huawei.com>
+CC: <linux-pm@vger.kernel.org>, <linux-acpi@vger.kernel.org>, 	<linux-arm-kernel@lists.infradead.org>, <linuxarm@huawei.com>, 	<zhanjie9@hisilicon.com>, <jonathan.cameron@huawei.com>, 	<wanghuiqiang@huawei.com>, <zhenglifeng1@huawei.com>, <lihuisong@huawei.com>, 	<yangyicong@huawei.com>, <liaochang1@huawei.com>, <zengheng4@huawei.com>
+Subject: [PATCH v4 2/2] cppc_cpufreq: Remove HiSilicon CPPC workaround
+Date: Sun, 29 Sep 2024 11:32:14 +0800
+Message-ID: <20240929033214.1039485-3-zhanjie9@hisilicon.com>
+X-Mailer: git-send-email 2.30.0
+In-Reply-To: <20240929033214.1039485-1-zhanjie9@hisilicon.com>
+References: <20240929033214.1039485-1-zhanjie9@hisilicon.com>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain
+X-Originating-IP: [10.90.30.45]
+X-ClientProxiedBy: dggems703-chm.china.huawei.com (10.3.19.180) To  dggpeml500019.china.huawei.com (7.185.36.137)
+Content-Length: 3778
+Lines: 125
+
+Since commit 6c8d750f9784 ("cpufreq / cppc: Work around for Hisilicon CPPC
+cpufreq"), we introduce a workround for HiSilicon platforms that do not
+support performance feedback counters, whereas they can get the actual
+frequency from the desired perf register.  Later on, FIE is disabled in
+that workaround as well.
+
+Now the workround can be handled by the common code.  Desired perf would be
+read and converted to frequency if feedback counters don't change.  FIE
+would be disabled if the CPPC regs are in PCC region.
+
+Hence, the workaround is no longer needed and can be safely removed, in an
+effort to consolidate the driver procedure.
+
+Signed-off-by: Jie Zhan <zhanjie9@hisilicon.com>
+Reviewed-by: Xiongfeng Wang <wangxiongfeng2@huawei.com>
+Reviewed-by: Huisong Li <lihuisong@huawei.com>
+---
+ drivers/cpufreq/cppc_cpufreq.c | 71 ----------------------------------
+ 1 file changed, 71 deletions(-)
+
+diff --git a/drivers/cpufreq/cppc_cpufreq.c b/drivers/cpufreq/cppc_cpufreq.c
+index 646b466002c6..ae3424cb3335 100644
+--- a/drivers/cpufreq/cppc_cpufreq.c
++++ b/drivers/cpufreq/cppc_cpufreq.c
+@@ -36,24 +36,6 @@ static LIST_HEAD(cpu_data_list);
+ 
+ static bool boost_supported;
+ 
+-struct cppc_workaround_oem_info {
+-	char oem_id[ACPI_OEM_ID_SIZE + 1];
+-	char oem_table_id[ACPI_OEM_TABLE_ID_SIZE + 1];
+-	u32 oem_revision;
+-};
+-
+-static struct cppc_workaround_oem_info wa_info[] = {
+-	{
+-		.oem_id		= "HISI  ",
+-		.oem_table_id	= "HIP07   ",
+-		.oem_revision	= 0,
+-	}, {
+-		.oem_id		= "HISI  ",
+-		.oem_table_id	= "HIP08   ",
+-		.oem_revision	= 0,
+-	}
+-};
+-
+ static struct cpufreq_driver cppc_cpufreq_driver;
+ 
+ static enum {
+@@ -78,7 +60,6 @@ struct cppc_freq_invariance {
+ static DEFINE_PER_CPU(struct cppc_freq_invariance, cppc_freq_inv);
+ static struct kthread_worker *kworker_fie;
+ 
+-static unsigned int hisi_cppc_cpufreq_get_rate(unsigned int cpu);
+ static int cppc_perf_from_fbctrs(struct cppc_cpudata *cpu_data,
+ 				 struct cppc_perf_fb_ctrs *fb_ctrs_t0,
+ 				 struct cppc_perf_fb_ctrs *fb_ctrs_t1);
+@@ -847,57 +828,6 @@ static struct cpufreq_driver cppc_cpufreq_driver = {
+ 	.name = "cppc_cpufreq",
+ };
+ 
+-/*
+- * HISI platform does not support delivered performance counter and
+- * reference performance counter. It can calculate the performance using the
+- * platform specific mechanism. We reuse the desired performance register to
+- * store the real performance calculated by the platform.
+- */
+-static unsigned int hisi_cppc_cpufreq_get_rate(unsigned int cpu)
+-{
+-	struct cpufreq_policy *policy = cpufreq_cpu_get(cpu);
+-	struct cppc_cpudata *cpu_data;
+-	u64 desired_perf;
+-	int ret;
+-
+-	if (!policy)
+-		return -ENODEV;
+-
+-	cpu_data = policy->driver_data;
+-
+-	cpufreq_cpu_put(policy);
+-
+-	ret = cppc_get_desired_perf(cpu, &desired_perf);
+-	if (ret < 0)
+-		return -EIO;
+-
+-	return cppc_perf_to_khz(&cpu_data->perf_caps, desired_perf);
+-}
+-
+-static void cppc_check_hisi_workaround(void)
+-{
+-	struct acpi_table_header *tbl;
+-	acpi_status status = AE_OK;
+-	int i;
+-
+-	status = acpi_get_table(ACPI_SIG_PCCT, 0, &tbl);
+-	if (ACPI_FAILURE(status) || !tbl)
+-		return;
+-
+-	for (i = 0; i < ARRAY_SIZE(wa_info); i++) {
+-		if (!memcmp(wa_info[i].oem_id, tbl->oem_id, ACPI_OEM_ID_SIZE) &&
+-		    !memcmp(wa_info[i].oem_table_id, tbl->oem_table_id, ACPI_OEM_TABLE_ID_SIZE) &&
+-		    wa_info[i].oem_revision == tbl->oem_revision) {
+-			/* Overwrite the get() callback */
+-			cppc_cpufreq_driver.get = hisi_cppc_cpufreq_get_rate;
+-			fie_disabled = FIE_DISABLED;
+-			break;
+-		}
+-	}
+-
+-	acpi_put_table(tbl);
+-}
+-
+ static int __init cppc_cpufreq_init(void)
+ {
+ 	int ret;
+@@ -905,7 +835,6 @@ static int __init cppc_cpufreq_init(void)
+ 	if (!acpi_cpc_valid())
+ 		return -ENODEV;
+ 
+-	cppc_check_hisi_workaround();
+ 	cppc_freq_invariance_init();
+ 	populate_efficiency_class();
+ 
+-- 
+2.33.0
+

@@ -71,6 +71,7 @@ alias haastha="cd /home/vireshk/junk/aastha"
 alias hisol="cd /home/vireshk/work/repos/tools/isolation/"
 alias hlinux="cd /home/vireshk/work/repos/kernel/linux/"
 alias hwork="cd /home/vireshk/work/repos/kernel/worktree/"
+alias hmsg="cd /home/vireshk/work/repos/virtio-msg/"
 alias haosp="cd /media/vireshk/*/android/"
 alias hpatches="cd /home/vireshk/scripts/mutt/incoming/"
 alias hmodule="cd /home/vireshk/work/repos/tools/module/"
@@ -325,6 +326,9 @@ alias vmsgqemu="cd $QEMUWPATH && rm -fr queue-linux-user-d* && ./qemu-system-aar
 alias vmsgqemuguestpci="cd $QEMUWPATH && ./qemu-system-aarch64 -M virt -m 2G -cpu cortex-a72      -object memory-backend-file,id=mem,size=2G,mem-path=/dev/shm/qemu-ram,share=on      -machine memory-backend=mem      -chardev socket,id=chr0,path=linux-user.socket      -serial mon:stdio -display none      -kernel ~/work/repos/kernel/barm64/arch/arm64/boot/Image      -initrd /home/vireshk/work/repos/virtio/buildroot/buildarm64/images/rootfs.cpio      -append \"rdinit=/sbin/init console=ttyAMA0 lpj=100\"      -device virtio-msg-proxy-driver-pci,virtio-id=0x1      -device virtio-msg-bus-linux-user,name=linux-user,chardev=chr0"
 
 alias vmsgqemuguest="cd $QEMUWPATH && ./qemu-system-aarch64 -M virt -m 2G -cpu cortex-a72      -object memory-backend-file,id=mem,size=2G,mem-path=/dev/shm/qemu-ram,share=on      -machine memory-backend=mem      -chardev socket,id=chr0,path=linux-user.socket      -serial mon:stdio -display none      -kernel ~/work/repos/kernel/barm64/arch/arm64/boot/Image      -initrd /home/vireshk/work/repos/virtio/buildroot/buildarm64/images/rootfs.cpio      -append \"rdinit=/sbin/init console=ttyAMA0 lpj=100\"      --device virtio-msg-proxy-driver,iommu_platform=on,virtio-id=0x1 -global virtio-mmio.force-legacy=false      -device virtio-msg-bus-linux-user,name=linux-user,chardev=chr0"
+
+# virtio-msg
+PATH="/home/vireshk/work/repos/virtio-msg/clang_hafnium/clang+llvm-15.0.6-x86_64-linux-gnu-ubuntu-18.04/bin:$PATH"
 
 # go to linux on shell startup
 hlinux

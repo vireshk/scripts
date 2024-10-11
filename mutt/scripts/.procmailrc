@@ -120,6 +120,11 @@ linux/korg
 * ^(To|Cc):.*(virtio-dev@lists\.linux\.dev|virtio-comment@lists\.linux\.dev)
 linux/virtio
 
+# virtio-msg
+:0:
+* ^(To|Cc):.*(virtio-msg@lists\.linaro\.org)
+virtio-msg
+
 
 # Everything else to inbox
 :0:

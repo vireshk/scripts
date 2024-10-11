@@ -23,7 +23,7 @@ set move=no			# Don't move mail from the spool.
 # Watch these mailboxes for new mail:
 
 # mailboxes ! +sent
-mailboxes +me +inbox +sent +draft \
+mailboxes +me +inbox +virtio-msg +sent +draft \
 	"=-linux-" +linux/rust +linux/gpio +linux/korg +linux/pm +linux/virtio \
 	"=-linaro-" +linaro/misc +linaro/pmwg \
 	"=-ara-" +ara/greybus \

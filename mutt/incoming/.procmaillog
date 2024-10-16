@@ -2546,3 +2546,6 @@ From vireshk  Tue Oct  1 09:04:31 2024
 From vireshk  Tue Oct  1 09:04:30 2024
  Subject: [PATCH v4 2/2] cppc_cpufreq: Remove HiSilicon CPPC workaround
   Folder: PATCH_v4_2-2_cppc_cpufreq_Remove_HiSilicon_CPPC_workaround.m	   8392
+From vireshk  Wed Oct 16 10:09:42 2024
+ Subject: [PATCH] cpufreq: loongson2: Unregister platform_driver on failure
+  Folder: PATCH_cpufreq_loongson2_Unregister_platform_driver_on_failur	   5015

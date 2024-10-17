@@ -2549,3 +2549,6 @@ From vireshk  Tue Oct  1 09:04:30 2024
 From vireshk  Wed Oct 16 10:09:42 2024
  Subject: [PATCH] cpufreq: loongson2: Unregister platform_driver on failure
   Folder: PATCH_cpufreq_loongson2_Unregister_platform_driver_on_failur	   5015
+From vireshk  Wed Oct 16 14:41:37 2024
+ Subject: [PATCH v2] cpufreq: loongson2: Unregister platform_driver on failure
+  Folder: PATCH_v2_cpufreq_loongson2_Unregister_platform_driver_on_fai	   5201

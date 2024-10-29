@@ -2552,3 +2552,9 @@ From vireshk  Wed Oct 16 10:09:42 2024
 From vireshk  Wed Oct 16 14:41:37 2024
  Subject: [PATCH v2] cpufreq: loongson2: Unregister platform_driver on failure
   Folder: PATCH_v2_cpufreq_loongson2_Unregister_platform_driver_on_fai	   5201
+From vireshk  Tue Oct  1 08:45:17 2024
+ Subject: [PATCH v7 1/2] dt-bindings: cpufreq: add virtual cpufreq device
+  Folder: PATCH_v7_1-2_dt-bindings_cpufreq_add_virtual_cpufreq_device.	   9554
+From vireshk  Tue Oct  1 08:45:18 2024
+ Subject: [PATCH v7 2/2] cpufreq: add virtual-cpufreq driver
+  Folder: PATCH_v7_2-2_cpufreq_add_virtual-cpufreq_driver.mbox		  20543

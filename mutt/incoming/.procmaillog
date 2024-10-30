@@ -2558,3 +2558,6 @@ From vireshk  Tue Oct  1 08:45:17 2024
 From vireshk  Tue Oct  1 08:45:18 2024
  Subject: [PATCH v7 2/2] cpufreq: add virtual-cpufreq driver
   Folder: PATCH_v7_2-2_cpufreq_add_virtual-cpufreq_driver.mbox		  20543
+From vireshk  Wed Oct 30 08:41:18 2024
+ Subject: [PATCH] cpufreq: CPPC: Fix possible null-ptr-deref for cpufreq_cpu_ge
+  Folder: PATCH_cpufreq_CPPC_Fix_possible_null-ptr-deref_for_cpufreq_c	   5136

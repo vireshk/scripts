@@ -2561,3 +2561,24 @@ From vireshk  Tue Oct  1 08:45:18 2024
 From vireshk  Wed Oct 30 08:41:18 2024
  Subject: [PATCH] cpufreq: CPPC: Fix possible null-ptr-deref for cpufreq_cpu_ge
   Folder: PATCH_cpufreq_CPPC_Fix_possible_null-ptr-deref_for_cpufreq_c	   5136
+From vireshk  Wed Oct 30 13:55:54 2024
+ Subject: [PATCH] cpufreq: CPPC: Fix possible null-ptr-deref for cppc_get_cpu_c
+  Folder: PATCH_cpufreq_CPPC_Fix_possible_null-ptr-deref_for_cppc_get_	   5136
+From vireshk  Sat Nov  2 12:58:46 2024
+ Subject: [PATCH V7 1/2] cpufreq: scmi: Fix cleanup path when boost enablement 
+  Folder: PATCH_V7_1-2_cpufreq_scmi_Fix_cleanup_path_when_boost_enable	   7748
+From vireshk  Mon Nov 11 08:45:58 2024
+ Subject: [PATCH] cpufreq: loongson3: Check error for devm_mutex_init()
+  Folder: PATCH_cpufreq_loongson3_Check_error_for_devm_mutex_init_.mbo	   5367
+From vireshk  Sat Nov  2 12:58:50 2024
+ Subject: [PATCH v2 1/1] cpufreq: loongson3: Check for error code from devm_mut
+  Folder: PATCH_v2_1-1_cpufreq_loongson3_Check_for_error_code_from_dev	   6363
+From vireshk  Mon Nov 11 08:46:26 2024
+ Subject: [PATCH -next] cpufreq: CPPC: Fix wrong return value in cppc_get_cpu_p
+  Folder: PATCH_-next_cpufreq_CPPC_Fix_wrong_return_value_in_cppc_get_	   5342
+From vireshk  Mon Nov 11 08:46:27 2024
+ Subject: [PATCH -next] cpufreq: CPPC: Fix wrong return value in cppc_get_cpu_c
+  Folder: PATCH_-next_cpufreq_CPPC_Fix_wrong_return_value_in_cppc_get_	   5482
+From vireshk  Mon Nov 11 08:51:19 2024
+ Subject: [PATCH v2 RESEND] cpufreq: mediatek-hw: Fix wrong return value in mtk
+  Folder: PATCH_v2_RESEND_cpufreq_mediatek-hw_Fix_wrong_return_value_i	   5708

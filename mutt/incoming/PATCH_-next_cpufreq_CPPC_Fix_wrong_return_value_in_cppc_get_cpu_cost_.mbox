@@ -1,0 +1,63 @@
+From vireshk  Mon Nov 11 08:46:27 2024
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [74.125.200.109] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Mon, 11 Nov 2024 08:46:27 +0530 (IST)
+Received: by 2002:a05:7208:9011:b0:92:10b5:baa3 with SMTP id j17csp3187004rbd;         Tue, 5 Nov 2024 17:13:09 -0800 (PST)
+X-Forwarded-Encrypted: i=2; AJvYcCXP3R77oGnB12cXTRznPg8GqorftfP7TtE9GLfa07lrNjy24o3toUyxZF+Z8jhct8tcYnMmj9qLeAlxBUk=@linaro.org
+X-Google-Smtp-Source: AGHT+IF8hjiRTckhmJCWzPnyrQHudkV5+bdWDRS4joqoNDTdmVfvIrF2yUdRkE5bcLayQkU6+wmv
+X-Received: by 2002:a05:6a21:9994:b0:1db:ec6b:ba13 with SMTP id adf61e73a8af0-1dbec6bbacdmr8049571637.12.1730855588979;         Tue, 05 Nov 2024 17:13:08 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1730855588; cv=none;         d=google.com; s=arc-20240605;         b=Yx3jGWUxmvaiVbWd1m5Lcq591TNI5cxlTcAgFvx88jEs4L9YKCW9rx3Squk6Cz0X3c          YqL6ZPB5ZWXxigS6t31geMMxdTJHCW4T/G8hikV5hI/WEpbXAfK4vqvkSPXDd5bDhGAF          6ssvYg9Q5ZsKdgzdfRIUC7VEJSOq6d0wKvTwCpkP2sIw3MjZfRnyRilYyJ7kPABnfwuA          GRyii/LJYsikbIBxzAlpaCB20+8LX0K2tZhdm2waUfG4XVqq+/1GRUuy8KyhyACmKkgY          kCR73uHtWzRktAkd7jgECKGYkC2iTj/Q6ZePYDd5x7FyGInnc6AphyHcVunTLHfqs41K          lIcw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from;         bh=1ZqN3TjYxQnNsnVqZw2HlgtM2rYsoCokKZ3uML9P6H8=;         fh=16GPrtA8JZXxEQe0gtQppuOojBlIv7NDAaYM5yXL7Fo=;         b=g1GbI7+5w1lZ7N868TXvCRRZaOUVTjYt3a3hwDsSadKVL1CACzt4Rgr8FqMZtBrNpR          5kMRpx04mERwgYep+cqRT4TojEz6c4baxpSwPr7xgOoNcJO0msHtP2xzbzOhjnxS+5W7          18XipasC8Wp05VfxyVymqiJ4bxkFRgNIrtM+dFlJQTURSwm8FS0kT6W/PkjPIhczaRXy          JcmcGDnleAUU2wS3q8POZG8nzSHkSWBRodmZGryWrG4RAw4eCHm5GDhs2v32gad8egZu          JvvSzd+agIJ3IAUPmZCaDbP0pxYTWKAdTWXO5fc1yEXxhSF4NKJqi0rHImG3VY4LZNZr          e1CA==;         dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;        spf=pass (google.com: domain of ruanjinjie@huawei.com designates 45.249.212.255 as permitted sender) smtp.mailfrom=ruanjinjie@huawei.com;        dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=huawei.com
+Return-Path: <ruanjinjie@huawei.com>
+Received: from szxga08-in.huawei.com (szxga08-in.huawei.com. [45.249.212.255])         by mx.google.com with ESMTPS id 41be03b00d2f7-7ee45a132c5si14899625a12.455.2024.11.05.17.13.08         for <viresh.kumar@linaro.org>         (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);         Tue, 05 Nov 2024 17:13:08 -0800 (PST)
+Received-SPF: pass (google.com: domain of ruanjinjie@huawei.com designates 45.249.212.255 as permitted sender) client-ip=45.249.212.255;
+Authentication-Results: mx.google.com;        spf=pass (google.com: domain of ruanjinjie@huawei.com designates 45.249.212.255 as permitted sender) smtp.mailfrom=ruanjinjie@huawei.com;        dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=huawei.com
+Received: from mail.maildlp.com (unknown [172.19.88.105]) 	by szxga08-in.huawei.com (SkyGuard) with ESMTP id 4XjnFd2ds4z1T7vQ; 	Wed,  6 Nov 2024 09:10:45 +0800 (CST)
+Received: from kwepemg200008.china.huawei.com (unknown [7.202.181.35]) 	by mail.maildlp.com (Postfix) with ESMTPS id C869D140155; 	Wed,  6 Nov 2024 09:13:04 +0800 (CST)
+Received: from huawei.com (10.90.53.73) by kwepemg200008.china.huawei.com  (7.202.181.35) with Microsoft SMTP Server (version=TLS1_2,  cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.2.1544.11; Wed, 6 Nov  2024 09:13:04 +0800
+From: Jinjie Ruan <ruanjinjie@huawei.com>
+To: <rafael@kernel.org>, <viresh.kumar@linaro.org>, 	<linux-pm@vger.kernel.org>, <linux-kernel@vger.kernel.org>
+CC: <qperret@google.com>, <ruanjinjie@huawei.com>
+Subject: [PATCH -next] cpufreq: CPPC: Fix wrong return value in cppc_get_cpu_cost()
+Date: Wed, 6 Nov 2024 09:12:38 +0800
+Message-ID: <20241106011238.2407104-1-ruanjinjie@huawei.com>
+X-Mailer: git-send-email 2.34.1
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain
+X-Originating-IP: [10.90.53.73]
+X-ClientProxiedBy: dggems701-chm.china.huawei.com (10.3.19.178) To  kwepemg200008.china.huawei.com (7.202.181.35)
+Content-Length: 1208
+Lines: 30
+
+cppc_get_cpu_cost() return 0 if the policy is NULL. Then in
+em_compute_costs(), the later zero check for cost is not valid
+as cost is uninitialized. As Quentin pointed out, kernel energy model
+core check the return value of get_cost() first, so if the callback
+failed it should tell the core. Return -EINVAL to fix it.
+
+Fixes: 1a1374bb8c59 ("cpufreq: CPPC: Fix possible null-ptr-deref for cppc_get_cpu_cost()")
+Reported-by: Dan Carpenter <dan.carpenter@linaro.org>
+Closes: https://lore.kernel.org/all/c4765377-7830-44c2-84fa-706b6e304e10@stanley.mountain/
+Signed-off-by: Jinjie Ruan <ruanjinjie@huawei.com>
+Suggested-by: Quentin Perret <qperret@google.com>
+---
+ drivers/cpufreq/cppc_cpufreq.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/drivers/cpufreq/cppc_cpufreq.c b/drivers/cpufreq/cppc_cpufreq.c
+index aa5dd194fc5b..cdc569cf7743 100644
+--- a/drivers/cpufreq/cppc_cpufreq.c
++++ b/drivers/cpufreq/cppc_cpufreq.c
+@@ -475,7 +475,7 @@ static int cppc_get_cpu_cost(struct device *cpu_dev, unsigned long KHz,
+ 
+ 	policy = cpufreq_cpu_get_raw(cpu_dev->id);
+ 	if (!policy)
+-		return 0;
++		return -EINVAL;
+ 
+ 	cpu_data = policy->driver_data;
+ 	perf_caps = &cpu_data->perf_caps;
+-- 
+2.34.1
+

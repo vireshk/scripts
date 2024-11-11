@@ -1,0 +1,70 @@
+From vireshk  Mon Nov 11 08:51:19 2024
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [74.125.200.109] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Mon, 11 Nov 2024 08:51:19 +0530 (IST)
+Received: by 2002:a05:7208:9011:b0:92:10b5:baa3 with SMTP id j17csp4127309rbd;         Thu, 7 Nov 2024 03:39:52 -0800 (PST)
+X-Forwarded-Encrypted: i=2; AJvYcCXpJMM+Fz8Mh6e+TbEq53vHosWW1BVfQ//IuwQ8jWBi+/zolplzfp2fJFwc1or9tYpb6onhFup66pphw6M=@linaro.org
+X-Google-Smtp-Source: AGHT+IG0OaJH+6nLz0nxT+XB6Jpu/h0MxyPAapNsb1LdOwOq0TOz19n0x8uhjfcdt1Tzp3TtYMkw
+X-Received: by 2002:a05:6a20:a10e:b0:1db:e49a:d54a with SMTP id adf61e73a8af0-1dbe49ad638mr16363450637.19.1730979591982;         Thu, 07 Nov 2024 03:39:51 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1730979591; cv=none;         d=google.com; s=arc-20240605;         b=YqSepIMwQUvU0vEMOTUrT5IQQTYf2HBiEDKioSXNEb/ZfO6jpro3bM9ZCAm+kMarJq          shdA8/QWbOPcCwjNNZY7H6ZoN2vKKg8wD/gi5tyJpx2kwAFPm3vrUuBm5NqTgLm/nbdV          Civ1tFmoM64ZQG1ZQA1PizmPeKZQKxbZvi/41DAk3oZ0z42epC044/YC4Ms0I6CERLuw          wClGWvEoLjCg0rh1Ak9P5cctVQhPjYDTHnezvx5GVDf6cC4H0aUUwPrfTdufqCNrmYn3          zuxr/walAHYok7m9HoRb2SHgdzAGAmUgWCg1+GgWtZnPegG8rWdExGIX87nj7G5VxT7B          mhmg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from;         bh=ZlIBFOsYN9kU93kG4tpJYbrFXMYNlrQHqo4dDcDZtRA=;         fh=IxgKPWQOLD7hFu1MBQ6pPipgGYgCDZpgp7IiYGL4A2Y=;         b=EHLcd/Efxx+oNtHTTOFyC953zA9Yd3I7H69OhG8cdWi2+mtuu1xqKV5cmkE1epxdP4          mqe+pCbwTyHt9flcX8vJkidXufLG6t3Ay1C//k2Jb7TJbr3uZQ+bYJiKgOMQAWb77u1O          AKhGmLcJHSBMcZf00/odi08/+4GnkM5FSrT447ZuUcGspq0Jg73gPyKaswZpiCE/Ojz0          zp5KGQgliYAKvZAp2awsRBKS6m1wefiZOwyX4srjW0V3TfTI+o269pzd7JVDl5ZsKLnv          cV5kixtZgicbwEGhA/TTnvPIgT1xDxKLCX98uL6oA3tXDcqoXtciHrf2bMh1mkC2wKe9          PcWw==;         dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;        spf=pass (google.com: domain of ruanjinjie@huawei.com designates 45.249.212.187 as permitted sender) smtp.mailfrom=ruanjinjie@huawei.com;        dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=huawei.com
+Return-Path: <ruanjinjie@huawei.com>
+Received: from szxga01-in.huawei.com (szxga01-in.huawei.com. [45.249.212.187])         by mx.google.com with ESMTPS id d2e1a72fcca58-72407970ddesi1527263b3a.151.2024.11.07.03.39.50         for <viresh.kumar@linaro.org>         (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);         Thu, 07 Nov 2024 03:39:51 -0800 (PST)
+Received-SPF: pass (google.com: domain of ruanjinjie@huawei.com designates 45.249.212.187 as permitted sender) client-ip=45.249.212.187;
+Authentication-Results: mx.google.com;        spf=pass (google.com: domain of ruanjinjie@huawei.com designates 45.249.212.187 as permitted sender) smtp.mailfrom=ruanjinjie@huawei.com;        dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=huawei.com
+Received: from mail.maildlp.com (unknown [172.19.88.194]) 	by szxga01-in.huawei.com (SkyGuard) with ESMTP id 4Xkg6D11v4z10N3T; 	Thu,  7 Nov 2024 19:37:24 +0800 (CST)
+Received: from kwepemg200008.china.huawei.com (unknown [7.202.181.35]) 	by mail.maildlp.com (Postfix) with ESMTPS id B867D1401F3; 	Thu,  7 Nov 2024 19:39:45 +0800 (CST)
+Received: from huawei.com (10.90.53.73) by kwepemg200008.china.huawei.com  (7.202.181.35) with Microsoft SMTP Server (version=TLS1_2,  cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.2.1544.11; Thu, 7 Nov  2024 19:39:45 +0800
+From: Jinjie Ruan <ruanjinjie@huawei.com>
+To: <rafael@kernel.org>, <viresh.kumar@linaro.org>, <matthias.bgg@gmail.com>, 	<angelogioacchino.delregno@collabora.com>, <hector.yuan@mediatek.com>, 	<linux-pm@vger.kernel.org>, <linux-kernel@vger.kernel.org>, 	<linux-arm-kernel@lists.infradead.org>, <linux-mediatek@lists.infradead.org>
+CC: <ruanjinjie@huawei.com>
+Subject: [PATCH v2 RESEND] cpufreq: mediatek-hw: Fix wrong return value in mtk_cpufreq_get_cpu_power()
+Date: Thu, 7 Nov 2024 19:38:41 +0800
+Message-ID: <20241107113841.989475-1-ruanjinjie@huawei.com>
+X-Mailer: git-send-email 2.34.1
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain
+X-Originating-IP: [10.90.53.73]
+X-ClientProxiedBy: dggems706-chm.china.huawei.com (10.3.19.183) To  kwepemg200008.china.huawei.com (7.202.181.35)
+Content-Length: 1261
+Lines: 37
+
+mtk_cpufreq_get_cpu_power() return 0 if the policy is NULL. Then in
+em_create_perf_table(), the later zero check for power is not invalid
+as power is uninitialized. As Lukasz suggested, it must return -EINVAL when
+the 'policy' is not found. So return -EINVAL to fix it.
+
+Cc: stable@vger.kernel.org
+Fixes: 4855e26bcf4d ("cpufreq: mediatek-hw: Add support for CPUFREQ HW")
+Reviewed-by: Lukasz Luba <lukasz.luba@arm.com>
+Suggested-by: Lukasz Luba <lukasz.luba@arm.com>
+Signed-off-by: Jinjie Ruan <ruanjinjie@huawei.com>
+---
+v2 -> v2 RESEND:
+- Update the commit subject and Cc Viresh.
+- Add Reviewed-by.
+v2:
+- Fix the driver instead of em_create_perf_table() as suggested.
+- Update the commit message.
+- Add Suggested-by.
+---
+ drivers/cpufreq/mediatek-cpufreq-hw.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/drivers/cpufreq/mediatek-cpufreq-hw.c b/drivers/cpufreq/mediatek-cpufreq-hw.c
+index 8925e096d5b9..aeb5e6304542 100644
+--- a/drivers/cpufreq/mediatek-cpufreq-hw.c
++++ b/drivers/cpufreq/mediatek-cpufreq-hw.c
+@@ -62,7 +62,7 @@ mtk_cpufreq_get_cpu_power(struct device *cpu_dev, unsigned long *uW,
+ 
+ 	policy = cpufreq_cpu_get_raw(cpu_dev->id);
+ 	if (!policy)
+-		return 0;
++		return -EINVAL;
+ 
+ 	data = policy->driver_data;
+ 
+-- 
+2.34.1
+

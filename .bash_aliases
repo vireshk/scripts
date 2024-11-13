@@ -293,7 +293,7 @@ alias qemux86="$QEMUPATH/buildx86/qemu-system-x86_64  -smp 12 -kernel ~/work/rep
 
 export AARCH64XENHOSTBUILD="/home/vireshk/work/repos/kernel/barm64_vhost/arch/arm64/boot"
 alias xenarm="$QEMUAARCH64 \
- 	-machine virt,virtualization=on \
+	-machine type=virt,virtualization=on,gic-version=3 \
  	-cpu cortex-a57 -serial mon:stdio \
  	-device virtio-net-pci,netdev=net0				\
  	-netdev user,id=net0,hostfwd=tcp::8022-:22			\

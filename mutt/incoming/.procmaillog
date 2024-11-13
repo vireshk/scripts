@@ -2582,3 +2582,6 @@ From vireshk  Mon Nov 11 08:46:27 2024
 From vireshk  Mon Nov 11 08:51:19 2024
  Subject: [PATCH v2 RESEND] cpufreq: mediatek-hw: Fix wrong return value in mtk
   Folder: PATCH_v2_RESEND_cpufreq_mediatek-hw_Fix_wrong_return_value_i	   5708
+From vireshk  Tue Nov 12 14:22:49 2024
+ Subject: [PATCH] cpufreq: maple: Remove maple driver
+  Folder: PATCH_cpufreq_maple_Remove_maple_driver.mbox			  13759

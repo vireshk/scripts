@@ -330,6 +330,8 @@ alias vmsgqemuguest="cd $QEMUWPATH && ./qemu-system-aarch64 -M virt -m 2G -cpu c
 # virtio-msg
 PATH="/home/vireshk/work/repos/virtio-msg/clang_hafnium/clang+llvm-15.0.6-x86_64-linux-gnu-ubuntu-18.04/bin:$PATH"
 
+alias mysuspend='systemd-run --user /bin/systemctl suspend'
+
 # go to linux on shell startup
 hlinux
 #clear

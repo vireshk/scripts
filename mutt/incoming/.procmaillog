@@ -2591,3 +2591,6 @@ From vireshk  Mon Nov 18 07:46:58 2024
 From vireshk  Mon Nov 18 07:46:59 2024
  Subject: [PATCH 2/2] arm64: dts: qcom: sc8180x: Add a SoC-specific  compatible
   Folder: PATCH_2-2_arm64_dts_qcom_sc8180x_Add_a_SoC-specific_compatib	   6698
+From vireshk  Thu Nov 14 08:12:53 2024
+ Subject: [PATCH V8 1/1] cpufreq: scmi: Register for limit change notifications
+  Folder: PATCH_V8_1-1_cpufreq_scmi_Register_for_limit_change_notifica	  10636

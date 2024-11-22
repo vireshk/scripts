@@ -1,6 +1,4 @@
-alias amit	Amit Kucheria <amit.kucheria@linaro.org>
 alias daniel	Daniel Lezcano <daniel.lezcano@linaro.org>
-alias fw	Frederic Weisbecker <fweisbec@gmail.com>
 alias ingo	Ingo Molnar <mingo@redhat.com>
 alias khilman   Kevin Hilman <khilman@kernel.org>
 alias peterz	Peter Zijlstra <peterz@infradead.org>
@@ -8,27 +6,18 @@ alias rafael	"Rafael J. Wysocki" <rafael@kernel.org>
 alias tglx	Thomas Gleixner <tglx@linutronix.de>
 alias vireshk	Viresh Kumar <viresh.kumar@linaro.org>
 alias greg	Greg Kroah-Hartman <gregkh@linuxfoundation.org>
-alias gregl	Greg Kroah-Hartman <gregkh@google.com>
-alias alex	Alex Elder <elder@linaro.org>
-alias johan	Johan Hovold <johan@hovoldconsulting.com>
+alias alex	Alex Bennée <alex.bennee@linaro.org>
+alias bill	Bill Mills <bill.mills@linaro.org>
 alias sboyd	Stephen Boyd <sboyd@kernel.org>
 alias vingu	Vincent Guittot <vincent.guittot@linaro.org>
 alias juri	Juri Lelli <Juri.Lelli@gmail.com>
-alias robin	Robin Randhawa <robin.randhawa@arm.com>
 alias robh	Rob Herring <robh+dt@kernel.org>
 alias broonie	Mark Brown <broonie@kernel.org>
-alias rnayak	Rajendra Nayak <rnayak@codeaurora.org>
 alias arnd	Arnd Bergmann <arnd@kernel.org>
 alias ulf	Ulf Hansson <ulf.hansson@linaro.org>
 
 alias armsoc	arm@kernel.org
 alias lakml	linux-arm-kernel@lists.infradead.org
-alias linaro	linaro-kernel@lists.linaro.org
 alias lkml	linux-kernel@vger.kernel.org
-alias lng	linaro-networking@linaro.org
-alias pdsw	pdsw-power-team@arm.com
 alias pm	linux-pm@vger.kernel.org
-alias spear	spear-devel@list.st.com
-alias ara	projectara-software-dev@linaro.org
-alias arak	project-ara-kernel@lists.linaro.org
 alias pmwg	private-pmwg@linaro.org

@@ -2594,3 +2594,9 @@ From vireshk  Mon Nov 18 07:46:59 2024
 From vireshk  Thu Nov 14 08:12:53 2024
  Subject: [PATCH V8 1/1] cpufreq: scmi: Register for limit change notifications
   Folder: PATCH_V8_1-1_cpufreq_scmi_Register_for_limit_change_notifica	  10636
+From vireshk  Mon Nov 11 08:44:45 2024
+ Subject: [PATCH] cpufreq: fix using cpufreq-dt as module
+  Folder: PATCH_cpufreq_fix_using_cpufreq-dt_as_module.mbox		   5913
+From vireshk  Tue Nov 19 23:28:00 2024
+ Subject: [PATCH v2 01/11] opp: core: implement dev_pm_opp_get_bw
+  Folder: PATCH_v2_01-11_opp_core_implement_dev_pm_opp_get_bw.mbox	  12163

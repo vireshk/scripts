@@ -39,6 +39,10 @@ PATH="/media/vireshk/bb4fad4d-8860-4037-8d08-02291222001e/android/prebuilts/clan
 # icdiff
 PATH="/home/vireshk/work/repos/tools/icdiff:$PATH"
 
+# Shrinkwrap
+PATH="/home/vireshk/work/repos/tools/shrinkwrap/shrinkwrap:$PATH"
+
+
 # coccinelle
 # PATH="/home/vireshk/work/repos/tools/cocci-bin:$PATH"
 

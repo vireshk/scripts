@@ -1,0 +1,67 @@
+From vireshk  Mon Dec  2 08:31:09 2024
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [74.125.200.109] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Mon, 02 Dec 2024 08:31:09 +0530 (IST)
+Received: by 2002:a05:7208:c0e:b0:92:10b5:baa3 with SMTP id ix14csp1191183rbb;         Sat, 30 Nov 2024 02:08:03 -0800 (PST)
+X-Forwarded-Encrypted: i=2; AJvYcCUJS5UlI+6BZQ+fqz9tF7e2dJfASTJa5lPL+PlkafjWsYwzqwOyboeOxL4tk16MDPOuzTKRMccsIgsZOBk=@linaro.org
+X-Google-Smtp-Source: AGHT+IHj5yimDUnHv7JzKpG5NGswHBjINknnxAQzDS+D8epw3W20wH+9EY8r78RkCAop40F1t2a3
+X-Received: by 2002:a05:620a:4686:b0:7a9:b2dc:99a6 with SMTP id af79cd13be357-7b67c294dafmr2128033685a.24.1732961283268;         Sat, 30 Nov 2024 02:08:03 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1732961283; cv=none;         d=google.com; s=arc-20240605;         b=kLTKnq0vyOY/T390Y6qx5Lpygr079i12DvScmtF585fCqoHO5PdhJDOjei8W3fbdI9          /rI00gx69KT/RncUV4x7M6/jkDaDFYFs5x3MwkJ2Yq9P8gDJ6oLbODQ91Fj37nKsRqem          6Ifor2gg5pBrn6i48+Po2YjyBcs6nYzRc/aP7mtVBUuipo/hNNxzFe5jFZswGvdX+IQe          5MmqqIaFKYATNYfHrRq2X7AuoOgWutBdWPUwQTjXr+uV8BUrzQMUGi1jUXCSkKnevBV+          fEzoapcexl+GCRYPGZBcuvMagOHu9Co6IwIiJIW/VFEL9mk81L3Z6Nkc0APeYYVi+llM          Gtnw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;         h=content-disposition:mime-version:message-id:subject:cc:to:from:date          :dkim-signature:dmarc-filter:delivered-to;         bh=bF1qKdUD6G82UToWOeQ2OIejZEXXxD5wyzBbKqaeajo=;         fh=Cv7Gwslp3hlwaDsm3RrINQvsReJVxgoT+jf8uv+23XY=;         b=Uk7BCk1Uu5rA8acf0ke5yPx6vejC1DRI2S7n75OlQwmz04DULRsDF9Vd4DDi7KAzu/          SEAXdpY4deSaECOMHcVkre8coCBE202Gb8aaarJgnQWzZMKBzOQag/OijLhWue1rcrwQ          RmRrWu18Vqk5FV0/vMgYWsNjSNIGL42OsjRLJvCC3NUwEE27pnVyVsCVQsXVVkcExVaa          oHOr766pSVxz1JTzfdFCUZaILaKPvkB3fZGKnRa+lI/6YuhcNzNLXuO+jBLfv33pKIMa          nhsRUp2qBNYTxSnvKnA3jvqTwH6C/swVqP4Qcloe3wiAVyZClERIRTP8EjgvxfwDziO6          h0JA==;         dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@linaro.org header.s=google header.b=zVdusWqf;        spf=pass (google.com: domain of srs0=xugu=sz=linaro.org=dan.carpenter@kernel.org designates 147.75.193.91 as permitted sender) smtp.mailfrom="SRS0=XUGU=SZ=linaro.org=dan.carpenter@kernel.org";        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=linaro.org;        dara=neutral header.i=@linaro.org
+Return-Path: <SRS0=XUGU=SZ=linaro.org=dan.carpenter@kernel.org>
+Received: from nyc.source.kernel.org (nyc.source.kernel.org. [147.75.193.91])         by mx.google.com with ESMTPS id af79cd13be357-7b6849b269fsi688499685a.217.2024.11.30.02.08.03         for <viresh.kumar@linaro.org>         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Sat, 30 Nov 2024 02:08:03 -0800 (PST)
+Received-SPF: pass (google.com: domain of srs0=xugu=sz=linaro.org=dan.carpenter@kernel.org designates 147.75.193.91 as permitted sender) client-ip=147.75.193.91;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@linaro.org header.s=google header.b=zVdusWqf;        spf=pass (google.com: domain of srs0=xugu=sz=linaro.org=dan.carpenter@kernel.org designates 147.75.193.91 as permitted sender) smtp.mailfrom="SRS0=XUGU=SZ=linaro.org=dan.carpenter@kernel.org";        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=linaro.org;        dara=neutral header.i=@linaro.org
+Received: from smtp.kernel.org (transwarp.subspace.kernel.org [100.75.92.58]) 	by nyc.source.kernel.org (Postfix) with ESMTP id 361A3A404A2 	for <viresh.kumar@linaro.org>; Sat, 30 Nov 2024 10:06:10 +0000 (UTC)
+Received: by smtp.kernel.org (Postfix) 	id 8C1F4C4CED7; Sat, 30 Nov 2024 10:08:02 +0000 (UTC)
+Delivered-To: vireshk@kernel.org
+Received: from mail-ej1-f41.google.com (mail-ej1-f41.google.com [209.85.218.41]) 	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits) 	 key-exchange X25519 server-signature RSA-PSS (2048 bits) server-digest SHA256) 	(No client certificate requested) 	by smtp.kernel.org (Postfix) with ESMTPS id 9509BC4CED4 	for <vireshk@kernel.org>; Sat, 30 Nov 2024 10:08:01 +0000 (UTC)
+DMARC-Filter: OpenDMARC Filter v1.4.1 smtp.kernel.org 9509BC4CED4
+Authentication-Results: smtp.kernel.org; dmarc=pass (p=none dis=none) header.from=linaro.org
+Authentication-Results: smtp.kernel.org; spf=pass smtp.mailfrom=linaro.org
+Received: by mail-ej1-f41.google.com with SMTP id a640c23a62f3a-aa51d32fa69so390583666b.2         for <vireshk@kernel.org>; Sat, 30 Nov 2024 02:08:01 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=linaro.org; s=google; t=1732961280; x=1733566080; darn=kernel.org;         h=content-disposition:mime-version:message-id:subject:cc:to:from:date          :from:to:cc:subject:date:message-id:reply-to;         bh=bF1qKdUD6G82UToWOeQ2OIejZEXXxD5wyzBbKqaeajo=;         b=zVdusWqf54f5VlEvI5vhtnSwXiN/TupqXUTh2L0VXj/44Vmsmj2EU7Q+ETonLIbZ0u          yzZGFn26ARJ77p3UH24hFs77kzvyT/s/xh/KwGfoJ4JdOLv/V+wqO0dgPUeG7ntW4UlC          /EQdeXcQsbtqh8rC0RsJqk/J9BXsFnCJTZAERzk+yUe+uveQOaElVxOsHTYLB24JO55Y          Pu52kp5UEZRmtS6b80iMp+z28PQmMHf53cw7/Cwi1NhcECtyeCpBxapLa9JKxhmuG4nh          EK1QOOdAz1WMETYBUjfp3omRQKPWAwj0KXA/BU6LZwsXbN3F/dXY62k3rN9wvXUIaHcc          pJrA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=1e100.net; s=20230601; t=1732961280; x=1733566080;         h=content-disposition:mime-version:message-id:subject:cc:to:from:date          :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;         bh=bF1qKdUD6G82UToWOeQ2OIejZEXXxD5wyzBbKqaeajo=;         b=Bllqr6rXc7PznIet4mabv4/Bmt0krf0ixAhStU9nJ5wAUNk9U1jd4Rz6lxNCwglpr7          uJc04UOy+TAhMRzR88QvcAVGLKLr/pa/PcF426qN4vOFfnfvbz28c5hdBzGgNqWNB3qs          qE+g0dujJpSsIIJQ1VK0efRVsPibgDnpVrSe3K3rlW+blpcuUcwJLn4cPSf9Muuh7qbz          sQVFSG3gmb/uzWXaezCvZ3BdY0yhi0n0PWAL5aK/wYnWxc55Qe4gCdWKUI9qlAOHJp2b          ESMB07JqH/AeLmZzBfecBeH1ZN4rRhzR4Hsst9L3jtBG1xWesgs2kp+tp5uq0P3X7hkF          CHQw==
+X-Gm-Message-State: AOJu0YzDX7f+80VqtWKKjuZlHUzGSj2XM/I3NY4cKaCPPcEMzcmif3RL 	Gd4ZWzvpBq86OifIVDqrViF3MgxjkZI3IJRKmZWmtXqAlXDYIFfXAaqEEposZzY=
+X-Gm-Gg: ASbGnctptwljd7BLSb4V5VF8HkGdDhVzt2NB91BGBoXQD3j71PIiZNp1duWtmXZkIdy 	/Rktk5yEyaAtrRBtj1z6tYRmYt7jyhDsbi85dEwVCl/gRkPnO6gfui1oCYdk6fiXPLn2ZQhwX9+ 	4VOzWe/de52iGd/HKmFghuAEn3tZWC3ZKr0MfiwaNkcUHuPxH3YQn+OKfPLLo+vK20LAAApFC90 	+rhFW0UGwgoXB0pJLqx5qrECxnJ2/DIPmpvha+xgpkOS2egRSQBgukJ1721Rm7s5HL6MKJb
+X-Received: by 2002:a17:907:7819:b0:aa5:b2b:f236 with SMTP id a640c23a62f3a-aa580f353f3mr1240877266b.28.1732961280003;         Sat, 30 Nov 2024 02:08:00 -0800 (PST)
+Received: from localhost (h1109.n1.ips.mtn.co.ug. [41.210.145.9])         by smtp.gmail.com with ESMTPSA id a640c23a62f3a-aa5996de7e7sm264394866b.71.2024.11.30.02.07.58         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Sat, 30 Nov 2024 02:07:59 -0800 (PST)
+Date: Sat, 30 Nov 2024 13:07:56 +0300
+From: Dan Carpenter <dan.carpenter@linaro.org>
+To: Neil Armstrong <neil.armstrong@linaro.org>
+Cc: Viresh Kumar <vireshk@kernel.org>, Nishanth Menon <nm@ti.com>, 	Stephen Boyd <sboyd@kernel.org>, linux-pm@vger.kernel.org, 	linux-kernel@vger.kernel.org, kernel-janitors@vger.kernel.org
+Subject: [PATCH] opp: core: Fix off by one in dev_pm_opp_get_bw()
+Message-ID: <41ae307c-f6ff-49fb-a962-eb488152de71@stanley.mountain>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+X-Mailer: git-send-email haha only kidding
+Content-Length: 771
+Lines: 25
+
+The "opp->bandwidth" array has "opp->opp_table->path_count" number of
+elements.  It's allocated in _opp_allocate().  So this > needs to be >=
+to prevent an out of bounds access.
+
+Fixes: d78653dcd8bf ("opp: core: implement dev_pm_opp_get_bw")
+Signed-off-by: Dan Carpenter <dan.carpenter@linaro.org>
+---
+ drivers/opp/core.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/drivers/opp/core.c b/drivers/opp/core.c
+index d4a0030a0228..09a1432561f6 100644
+--- a/drivers/opp/core.c
++++ b/drivers/opp/core.c
+@@ -121,7 +121,7 @@ unsigned long dev_pm_opp_get_bw(struct dev_pm_opp *opp, bool peak, int index)
+ 		return 0;
+ 	}
+ 
+-	if (index > opp->opp_table->path_count)
++	if (index >= opp->opp_table->path_count)
+ 		return 0;
+ 
+ 	if (!opp->bandwidth)
+-- 
+2.45.2
+

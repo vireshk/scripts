@@ -40,7 +40,7 @@ PATH="/media/vireshk/bb4fad4d-8860-4037-8d08-02291222001e/android/prebuilts/clan
 PATH="/home/vireshk/work/repos/tools/icdiff:$PATH"
 
 # Shrinkwrap
-PATH="/home/vireshk/work/repos/tools/shrinkwrap/shrinkwrap:$PATH"
+PATH="/home/vireshk/work/repos/virtio-msg/shrinkwrap/shrinkwrap:$PATH"
 
 
 # coccinelle
@@ -333,7 +333,8 @@ alias vmsgqemuguest="cd $QEMUWPATH && ./qemu-system-aarch64 -M virt -m 2G -cpu c
 
 # virtio-msg
 PATH="/home/vireshk/work/repos/virtio-msg/clang_hafnium/clang+llvm-15.0.6-x86_64-linux-gnu-ubuntu-18.04/bin:$PATH"
-
+alias shrinktf="shrinkwrap -I docker.io/shrinkwraptool/base-full:latest run --rtvar=KERNEL=/home/vireshk/work/repos/kernel/barm64/arch/arm64/boot/Image ffa-tftf.yaml"
+alias shrinktfbuild="shrinkwrap -I docker.io/shrinkwraptool/base-full:latest  build ffa-tftf.yaml"
 alias mysuspend='systemd-run --user /bin/systemctl suspend'
 
 # go to linux on shell startup

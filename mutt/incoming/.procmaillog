@@ -2627,3 +2627,9 @@ From vireshk  Tue Dec  3 13:44:09 2024
 From vireshk  Tue Dec  3 13:44:11 2024
  Subject: [PATCH v3 2/2] OPP: fix dev_pm_opp_find_bw_*() when bandwidth  table 
   Folder: PATCH_v3_2-2_OPP_fix_dev_pm_opp_find_bw_*__when_bandwidth_ta	   9948
+From vireshk  Mon Dec 23 20:12:04 2024
+ Subject: [PATCH] cpufreq: sparc: change kzalloc to kcalloc
+  Folder: PATCH_cpufreq_sparc_change_kzalloc_to_kcalloc.mbox		   6124
+From vireshk  Mon Dec 23 20:12:04 2024
+ Subject: [PATCH] cpufreq: sparc: change kzalloc to kcalloc
+  Folder: PATCH_cpufreq_sparc_change_kzalloc_to_kcalloc.mbox		   6124

@@ -2639,3 +2639,6 @@ From vireshk  Mon Dec 30 20:00:21 2024
 From vireshk  Fri Aug 16 08:05:51 2024
  Subject: [RFC PATCH 4/6] rust: cpufreq: Add methods to struct Cpufreq
   Folder: RFC_PATCH_4-6_rust_cpufreq_Add_methods_to_struct_Cpufreq.mbo	   8233
+From vireshk  Tue Jan  7 11:15:53 2025
+ Subject: [PATCH] OPP: OF: Fix an OF node leak in _opp_add_static_v2()
+  Folder: PATCH_OPP_OF_Fix_an_OF_node_leak_in_opp_add_static_v2_.mbox	   8655

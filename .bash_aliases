@@ -336,8 +336,9 @@ PATH="/home/vireshk/work/repos/virtio-msg/clang_hafnium/clang+llvm-15.0.6-x86_64
 alias shrinktf="shrinkwrap -I docker.io/shrinkwraptool/base-full:latest run --rtvar=KERNEL=/home/vireshk/work/repos/kernel/barm64/arch/arm64/boot/Image ffa-tftf.yaml"
 alias shrinktfbuild="shrinkwrap -I docker.io/shrinkwraptool/base-full:latest  build --force-sync scp ffa-tftf.yaml"
 alias shrinktfbuilda="shrinkwrap -I docker.io/shrinkwraptool/base-full:latest  clean ffa-tftf.yaml; shrinktfbuild"
-alias mysuspend='systemd-run --user /bin/systemctl suspend'
 alias fixscpfirm="cd /home/vireshk/work/repos/virtio-msg/SCP-firmware/product/secure-partition/common/tee; gfo; gco origin/virtio-msg; cd ../../../../; ga .; tgca; gp me master; cd /home/vireshk/work/repos/virtio-msg/tf-a-tests"
+
+alias mysuspend='systemd-run --user /bin/systemctl suspend'
 
 # go to linux on shell startup
 hlinux

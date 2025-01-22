@@ -2651,3 +2651,9 @@ From vireshk  Thu Jan  9 18:44:41 2025
 From vireshk  Fri Jan 17 15:36:56 2025
  Subject: [PATCH] firmware: arm_ffa: Set dma_mask for ffa devices
   Folder: PATCH_firmware_arm_ffa_Set_dma_mask_for_ffa_devices.mbox	   2022
+From vireshk  Thu Jan 16 15:22:54 2025
+ Subject: Re: [PATCH] firmware: arm_ffa: Add ffa_add_partition_info()
+  Folder: Re_PATCH_firmware_arm_ffa_Add_ffa_add_partition_info_.mbox	   4455
+From vireshk  Wed Jan 22 12:25:59 2025
+ Subject: [PATCH] cpufreq: airoha: add CONFIG_OF dependency
+  Folder: PATCH_cpufreq_airoha_add_CONFIG_OF_dependency.mbox		   5805

@@ -2660,3 +2660,15 @@ From vireshk  Wed Jan 22 12:25:59 2025
 From vireshk  Wed Jan 22 19:10:16 2025
  Subject: [PATCH v2] rust: macros: enable use of hyphens in module names
   Folder: PATCH_v2_rust_macros_enable_use_of_hyphens_in_module_names.m	  11687
+From vireshk  Wed Jan 22 12:25:59 2025
+ Subject: [PATCH] cpufreq: airoha: add CONFIG_OF dependency
+  Folder: PATCH_cpufreq_airoha_add_CONFIG_OF_dependency.mbox		   5859
+From vireshk  Thu Jan 30 14:24:27 2025
+ Subject: [PATCH] cpufreq/amd-pstate: Remove unnecessary driver_lock in set_boo
+  Folder: PATCH_cpufreq-amd-pstate_Remove_unnecessary_driver_lock_in_s	  11898
+From vireshk  Mon Jan 20 10:21:23 2025
+ Subject: [PATCH] cpufreq: s3c64xx: Fix compilation warning
+  Folder: PATCH_cpufreq_s3c64xx_Fix_compilation_warning.mbox		   3169
+From vireshk  Mon Jan 27 08:45:47 2025
+ Subject: [PATCH v2] cpufreq: scpi: compare kHz instead of Hz
+  Folder: PATCH_v2_cpufreq_scpi_compare_kHz_instead_of_Hz.mbox		   8181

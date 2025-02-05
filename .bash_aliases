@@ -338,6 +338,10 @@ alias shrinktfbuild="shrinkwrap -I docker.io/shrinkwraptool/base-full:latest  bu
 alias shrinktfbuilda="shrinkwrap -I docker.io/shrinkwraptool/base-full:latest  clean ffa-tftf.yaml; shrinktfbuild"
 alias fixscpfirm="cd /home/vireshk/work/repos/virtio-msg/SCP-firmware/product/secure-partition/common/tee; gfo; gco origin/virtio-msg; cd ../../../../; ga .; tgca; gp me master; cd /home/vireshk/work/repos/virtio-msg/tf-a-tests"
 
+alias vmsggooglesync="repo sync -j$(nproc) -c --no-tags"
+alias vmsggooglebuild="LOG_LEVEL_KERNEL_RUST=5 ./trusty/vendor/google/aosp/scripts/build.py qemu-generic-arm64-gicv3-hafnium-test-debug --skip-tests"
+alias vmsggooglerun="./build-root/build-qemu-generic-arm64-gicv3-hafnium-test-debug/run --verbose"
+
 alias mysuspend='systemd-run --user /bin/systemctl suspend'
 
 # go to linux on shell startup

@@ -2672,3 +2672,6 @@ From vireshk  Mon Jan 20 10:21:23 2025
 From vireshk  Mon Jan 27 08:45:47 2025
  Subject: [PATCH v2] cpufreq: scpi: compare kHz instead of Hz
   Folder: PATCH_v2_cpufreq_scpi_compare_kHz_instead_of_Hz.mbox		   8181
+From vireshk  Fri Feb  7 09:30:07 2025
+ Subject: [PATCH] cpufreq: Use str_enable_disable() helper
+  Folder: PATCH_cpufreq_Use_str_enable_disable__helper.mbox		   5285

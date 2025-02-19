@@ -2675,3 +2675,6 @@ From vireshk  Mon Jan 27 08:45:47 2025
 From vireshk  Fri Feb  7 09:30:07 2025
  Subject: [PATCH] cpufreq: Use str_enable_disable() helper
   Folder: PATCH_cpufreq_Use_str_enable_disable__helper.mbox		   5285
+From vireshk  Tue Nov 26 08:34:59 2024
+ Subject: [PATCH] cpufreq: enable 1200Mhz clock speed for armada-37xx
+  Folder: PATCH_cpufreq_enable_1200Mhz_clock_speed_for_armada-37xx.mbo	   8347

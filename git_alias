@@ -121,6 +121,8 @@ alias gitmail='git send-email *.patch --cc vireshk'
 alias gitmailsuppress='git -c sendemail.tocmd=true send-email *.patch --suppress-cc=all --cc vireshk'
 alias gitmailpmbase='gitmail --cc pm --cc vingu'
 alias gitmailpm='gitmailpmbase --to rafael'
+alias gitmailclk='gitmail --cc "Russell King <linux@armlinux.org.uk>" --cc linux-clk@vger.kernel.org --cc lkml --cc "Michael Turquette <mturquette@baylibre.com>" --cc sboyd --cc rust-for-linux@vger.kernel.org'
+alias gitmailcpumask='gitmail --cc lkml --to rust-for-linux@vger.kernel.org --cc "Yury Norov <yury.norov@gmail.com>" --cc "Rasmus Villemoes <linux@rasmusvillemoes.dk>"'
 alias gitmailpmrust='gitmailpm --cc sboyd --cc "Nishanth Menon <nm@ti.com>" --to "Miguel Ojeda <miguel.ojeda.sandonis@gmail.com>" --cc rust-for-linux@vger.kernel.org --cc "Manos Pitsidianakis <manos.pitsidianakis@linaro.org>" --cc "Erik Schilling <erik.schilling@linaro.org>" --cc alex --cc "Joakim Bech <joakim.bech@linaro.org>" --cc "Rob Herring <robh@kernel.org>" --to "Danilo Krummrich <dakr@redhat.com>" --cc "Yury Norov <yury.norov@gmail.com>"'
 alias gitmailopp='gitmailpmbase --cc rafael --cc sboyd --cc "Nishanth Menon <nm@ti.com>"'
 alias gitmailschedutil='gitmailpm --to ingo --to peterz --cc vingu'
@@ -135,7 +137,6 @@ alias gitmailxen='gitmailstratos --to xen-devel@lists.xen.org --cc "Oleksandr Ty
 alias gitmailvirtiospec='gitmailstratos --to "virtio-comment@lists.linux.dev" --cc "Cornelia Huck <cohuck@redhat.com>", --cc "\"Michael S. Tsirkin\" <mst@redhat.com>"'
 
 alias gitmailgpiod='gitmail --cc vingu --to "Linus Walleij <linus.walleij@linaro.org>" --to "Bartosz Golaszewski <brgl@bgdev.pl>" --cc "linux-gpio@vger.kernel.org" --cc vingu --cc "Kent Gibson <warthog618@gmail.com>"'
-alias gitmailgpiodrust='gitmailstratos --to "Linus Walleij <linus.walleij@linaro.org>" --to "Bartosz Golaszewski <brgl@bgdev.pl>" --cc "linux-gpio@vger.kernel.org"'
 
 # fetch remotes
 alias gitsyncpmko='ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/pm.git next;ssh git@gitolite.kernel.org track fetch pub/scm/linux/kernel/git/vireshk/pm.git linus;'

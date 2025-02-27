@@ -2678,3 +2678,6 @@ From vireshk  Fri Feb  7 09:30:07 2025
 From vireshk  Tue Nov 26 08:34:59 2024
  Subject: [PATCH] cpufreq: enable 1200Mhz clock speed for armada-37xx
   Folder: PATCH_cpufreq_enable_1200Mhz_clock_speed_for_armada-37xx.mbo	   8347
+From vireshk  Wed Feb 26 19:31:17 2025
+ Subject: Re: [PATCH 1/2] rust: Add initial cpumask abstractions
+  Folder: Re_PATCH_1-2_rust_Add_initial_cpumask_abstractions.mbox	  16074

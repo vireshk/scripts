@@ -93,7 +93,7 @@ alias hrustvmm="cd $rustvmmpath"
 alias hvhostd="cd $rustvmmpath/vhost-device"
 alias hxenf="cd $rustpath/xen-vhost-frontend"
 alias hlibgpiod="cd $rustpath/libgpiod"
-export AARCH64BUILD="/home/vireshk/work/repos/kernel/barm64/arch/arm64/boot"
+export AARCH64BUILD="/home/vireshk/work/repos/kernel/barm64t/arch/arm64/boot"
 
 updatepkglist() { echo "$*" >> ~/scripts/pkglist-install; }
 

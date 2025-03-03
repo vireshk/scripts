@@ -2681,3 +2681,6 @@ From vireshk  Tue Nov 26 08:34:59 2024
 From vireshk  Wed Feb 26 19:31:17 2025
  Subject: Re: [PATCH 1/2] rust: Add initial cpumask abstractions
   Folder: Re_PATCH_1-2_rust_Add_initial_cpumask_abstractions.mbox	  16074
+From vireshk  Fri Nov 22 11:42:36 2024
+ Subject: [PATCH] firmware: arm_ffa: Add ffa_add_partition_info()
+  Folder: PATCH_firmware_arm_ffa_Add_ffa_add_partition_info_.mbox	   3706

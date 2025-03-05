@@ -2684,3 +2684,6 @@ From vireshk  Wed Feb 26 19:31:17 2025
 From vireshk  Fri Nov 22 11:42:36 2024
  Subject: [PATCH] firmware: arm_ffa: Add ffa_add_partition_info()
   Folder: PATCH_firmware_arm_ffa_Add_ffa_add_partition_info_.mbox	   3706
+From vireshk  Thu Feb 27 08:39:19 2025
+ Subject: [PATCH v2] cpufreq: tegra194: Allow building for Tegra234
+  Folder: PATCH_v2_cpufreq_tegra194_Allow_building_for_Tegra234.mbox	   7124

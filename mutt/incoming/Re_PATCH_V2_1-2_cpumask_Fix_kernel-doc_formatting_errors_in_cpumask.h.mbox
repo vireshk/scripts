@@ -1,0 +1,91 @@
+From vireshk  Fri Mar  7 16:48:25 2025
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [74.125.200.109] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Fri, 07 Mar 2025 16:48:25 +0530 (IST)
+Received: by 2002:a05:7208:6016:b0:99:7835:b11c with SMTP id l22csp2356384rba;         Fri, 7 Mar 2025 03:17:32 -0800 (PST)
+X-Received: by 2002:a05:6a00:2d01:b0:732:1ce5:4a4c with SMTP id d2e1a72fcca58-736a96b5cb8mr4729677b3a.1.1741346252184;         Fri, 07 Mar 2025 03:17:32 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1741346252; cv=none;         d=google.com; s=arc-20240605;         b=Jpj43F4LNR+clVEc+gmDQtUjpwKUqRyD/uYS+ZL4QnK78iM5gMzTPHThFdpFnlU+Of          k+8d98SRPrfgL6KSalmPBSY5QhXFjYcP335GiXMONO6tKxbOvLRPja/QwmgXAorI0PjT          E+BdHeSOXwxGA7LSvoZy0jh8XhaUDhgon1WeboyF5GAjO9sm0yQ+tFWvgEJWJhWHG6eW          YRtWkCQSW0BDpU8Vw/BNSKqLIcLKJhLWucDHTfScClIi94UtYJLxDwrVNDcbAfud1MRV          2pZJxCWdRXePhWk9/aETgHE8G27GA3TkqBJpLbiUuVNPkxdtEd3TFHOzrlWIftnl3eL7          VQSw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;         h=content-transfer-encoding:in-reply-to:from:content-language          :references:cc:to:subject:user-agent:mime-version:date:message-id          :dkim-signature;         bh=9WDU/0AiPCuXExkzik2v+BtrRa6yZzdzICrZw+6l4Ag=;         fh=MxZgZtnMzFdgFtY1FuiUJscWXhqTn1HbSdjgQaIcfq0=;         b=LZYyd62Li4xH2U9+suOj9GUGJWuL4X/Fh73WG4CqvNtmh8vwFyOQU6z0E1qzVEJxTb          SE2fdplPRt5/JqR5tjgzKM0HtIdrypVg4gpOARlm0A7YXD2mK78mz6cQG7wVYcU5y4qv          8OhZ5H7K97NBDbLC/08GSqxdy+njkV1+T5/Ns9XLLPa10UGt3mCtXDHvUCc6qfQVIw7c          Zu3dBhUxnWvWB56DJbCNOzNijdSzNpr+Vi7flM9gM77doyEdVr49zDvfosCM//EzccM1          +Nnf285zD0S1hAOQcK8X/WLMWxeEjmvfcoVhxAhTwSxS8SV+7z/HKW1lsO95gzw2JuOr          kdGg==;         dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@gmail.com header.s=20230601 header.b=GK+7oWGG;        spf=pass (google.com: domain of akiyks@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=akiyks@gmail.com;        dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;        dara=neutral header.i=@linaro.org
+Return-Path: <akiyks@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])         by mx.google.com with SMTPS id d2e1a72fcca58-736a00e8ce4sor1726511b3a.5.2025.03.07.03.17.31         (Google Transport Security);         Fri, 07 Mar 2025 03:17:32 -0800 (PST)
+Received-SPF: pass (google.com: domain of akiyks@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@gmail.com header.s=20230601 header.b=GK+7oWGG;        spf=pass (google.com: domain of akiyks@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=akiyks@gmail.com;        dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;        dara=neutral header.i=@linaro.org
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=gmail.com; s=20230601; t=1741346251; x=1741951051; darn=linaro.org;         h=content-transfer-encoding:in-reply-to:from:content-language          :references:cc:to:subject:user-agent:mime-version:date:message-id          :from:to:cc:subject:date:message-id:reply-to;         bh=9WDU/0AiPCuXExkzik2v+BtrRa6yZzdzICrZw+6l4Ag=;         b=GK+7oWGGDZvbMpvw8H5v9X1Z88R/ZM7bdwh1xEWmS0xFJV+RylKzZL8Rd7QtWrSwjP          /RhJBCa6nB7/o2UdeAnnX3v5alKX0HIVP2JFt5vNGkl7ZMQql8tRhJvEgn2NxDE0YYAT          Cl0WOOyp2BwVSlX5W6QfmfjG6d5U7rtyViknHkDwmUDcmqXHUPpOQ681lj7zHuII8yQu          uhuw49uB0JEfvIpqx/gtb37nZDeVT3KT2R+vXKia1mUFZRYKpGYHyvfCUHksd7KgrCWx          OUpZyisNCcgLq2uY8w/M+UwVZv06Msxu4tY2H/DcQ1l9a+PeubrVkBxEGPva0spAd9e4          u3WQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=1e100.net; s=20230601; t=1741346251; x=1741951051;         h=content-transfer-encoding:in-reply-to:from:content-language          :references:cc:to:subject:user-agent:mime-version:date:message-id          :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;         bh=9WDU/0AiPCuXExkzik2v+BtrRa6yZzdzICrZw+6l4Ag=;         b=kklWbuInxx7aYG9180ZhPjtxojaoMMaW8/o+lKaV7Ug4HMqZ3oN+erP4cYS3J43/dX          cA57uX9NJ+PnMqonWanHSv053e3Vk5CG6ft1gd54pUuX6gX7doRivoZa2v2ZSqA2U7pv          CbdSnBsQ5Uj/pYrDAQHV5Rp6nDzzSxPM7EOftiVeDRN0W3MEN2HbhtoTnD6bCqVTlLtU          nFRftPOzLe7AQI7kJJZ9TTRS1WNcNNHy5BnQOrc8GziKcnFRDa0+7m/Ejj83YDeOkn2T          17WALXXojqnBpE27Fy0zyuWU/mL8eTG+8yWdL6yEtXAo6ThcPySZfQm2B2tjUUiSENmc          FXcQ==
+X-Gm-Message-State: AOJu0YyCdj5DRk9e8Va3ZmBLYnnVUJCZmXb9l8fxI7CuUebOpyOxWL2E 	0ymhav3RaqZD5BWv2HhpzERlrknQQvY066BGjOth4VzylAlklJR+1qQmWQ==
+X-Gm-Gg: ASbGncuOyXCKAVueVFPZOEomSkhcvTulhhsiwLYxp17eQK7I24FYUw1lH+FX1xHGPxV 	miLRaxr+UprwCRG57dwV1kw3y169klZBzErgV0I5lbH35MBVAlryPS0MNSpik4Mca3shkDqqrph 	5BIsIOO7qbNXidBpsb28HH8m9eDN2oSY9v82cQpNgMUpRDRPpFRaRpvPrjnj234LsFX+TLYFHag 	telfZl1S//W1DH7E6+bxcuZoZRv2wd0hooAM3nUYjFOvqfFzsE41Vq9gFVuHTpFnRjC5Ma/H2yp 	UI50Z/rGgx0YxDCco16W/SY32LczD1Q9XNFTEmoP6No0WNCvovb5Zf0XQxnR0ya/Kr7IvvtMLLK 	kZMBfVLoQ6Go6FsY=
+X-Google-Smtp-Source: AGHT+IGLMqL97eIZaqRXzhmsR4cnq0XXC/PM8jbkeUNyeHsw1h0hQd26hi42sAz14nYj3gGZ9el5iQ==
+X-Received: by 2002:a05:6a00:3d52:b0:736:9f2e:1357 with SMTP id d2e1a72fcca58-736a97e4239mr4650047b3a.12.1741346251281;         Fri, 07 Mar 2025 03:17:31 -0800 (PST)
+Return-Path: <akiyks@gmail.com>
+Received: from [10.0.2.15] (KD106167137155.ppp-bb.dion.ne.jp. [106.167.137.155])         by smtp.gmail.com with ESMTPSA id d2e1a72fcca58-73698514f4dsm2971364b3a.124.2025.03.07.03.17.28         (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);         Fri, 07 Mar 2025 03:17:30 -0800 (PST)
+Message-ID: <e3637b13-1f51-445b-8d9d-bd53a691eca3@gmail.com>
+Date: Fri, 7 Mar 2025 19:57:54 +0900
+MIME-Version: 1.0
+User-Agent: Mozilla Thunderbird
+Subject: Re: [PATCH V2 1/2] cpumask: Fix kernel-doc formatting errors in  cpumask.h
+To: Viresh Kumar <viresh.kumar@linaro.org>
+Cc: Vincent Guittot <vincent.guittot@linaro.org>, linux-doc@vger.kernel.org,  Jonathan Corbet <corbet@lwn.net>, linux-kernel@vger.kernel.org,  Akira Yokosawa <akiyks@gmail.com>,  Rasmus Villemoes <linux@rasmusvillemoes.dk>,  Yury Norov <yury.norov@gmail.com>
+References: <cover.1741332579.git.viresh.kumar@linaro.org>  <f4ad81150eaa00b43c161f0d1f811f8ecfe21889.1741332579.git.viresh.kumar@linaro.org>
+Content-Language: en-US
+From: Akira Yokosawa <akiyks@gmail.com>
+In-Reply-To: <f4ad81150eaa00b43c161f0d1f811f8ecfe21889.1741332579.git.viresh.kumar@linaro.org>
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: A
+Content-Length: 2041
+Lines: 52
+
+Hi again, 
+
+Viresh Kumar wrote:
+> This fixes various kernel-doc formatting errors in cpumask.h:
+> 
+> - WARNING: Inline literal start-string without end-string.
+> - ERROR: Unexpected indentation.
+> - ERROR: Unknown target name: "gfp".
+> 
+> Signed-off-by: Viresh Kumar <viresh.kumar@linaro.org>
+> ---
+>  include/linux/cpumask.h | 65 +++++++++++++++++++++--------------------
+>  1 file changed, 34 insertions(+), 31 deletions(-)
+> 
+
+Didn't come up in your diff, but you need additional changes shown below:
+
+diff --git a/include/linux/cpumask.h b/include/linux/cpumask.h
+index 656d2208467e..a6c1961cc535 100644
+--- a/include/linux/cpumask.h
++++ b/include/linux/cpumask.h
+@@ -285,10 +285,10 @@ unsigned int cpumask_next_and(int n, const struct cpumask *src1p,
+ }
+ 
+ /**
+- * cpumask_next_and_wrap - get the next cpu in *src1p & *src2p, starting from
+- *                        @n+1. If nothing found, wrap around and start from
++ * cpumask_next_and_wrap - get the next cpu in *@src1p & *@src2p, starting from
++ *                        @n+ 1. If nothing found, wrap around and start from
+  *                        the beginning
+- * @n: the cpu prior to the place to search (i.e. search starts from @n+1)
++ * @n: the cpu prior to the place to search (i.e. search starts from @n +1)
+  * @src1p: the first cpumask pointer
+  * @src2p: the second cpumask pointer
+  *
+@@ -306,9 +306,9 @@ unsigned int cpumask_next_and_wrap(int n, const struct cpumask *src1p,
+ }
+ 
+ /**
+- * cpumask_next_wrap - get the next cpu in *src, starting from @n+1. If nothing
++ * cpumask_next_wrap - get the next cpu in *@src, starting from @n +1. If nothing
+  *                    found, wrap around and start from the beginning
+- * @n: the cpu prior to the place to search (i.e. search starts from @n+1)
++ * @n: the cpu prior to the place to search (i.e. search starts from @n +1)
+  * @src: cpumask pointer
+  *
+  * Return: next set bit, wrapped if needed, or >= nr_cpu_ids if @src is empty.
+
+Feel free to squash into your 1/2.
+My R-b tag still stands.
+
+        Thanks, Akira
+

@@ -28,6 +28,11 @@ me
 * ^(From|To|Cc):.*(linaro-open-discussions@op-lists\.linaro.org|stratos-dev@op-lists\.linaro\.org)
 linaro/misc
 
+# nxp
+:0:
+* ^(From|To|Cc):.*(linaro-s32@linaro\.org)
+linaro/nxp
+
 # pmwg-weeklies
 :0:
 * ^(To|Cc):.*(private-pmwg@lists\.linaro\.org|private-pmwg@linaro\.org|kwg-team-private@linaro\.org|private-kwg@linaro\.org|team-vt@linaro\.org)

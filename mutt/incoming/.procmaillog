@@ -2699,3 +2699,9 @@ From vireshk  Fri Mar  7 16:48:25 2025
 From vireshk  Thu Mar 13 07:09:32 2025
  Subject: [PATCH v3] cpufreq: Init cpufreq only for present CPUs
   Folder: PATCH_v3_cpufreq_Init_cpufreq_only_for_present_CPUs.mbox	  20542
+From vireshk  Tue Apr  8 10:55:48 2025
+ Subject: [PATCH] cpufreq: Do not enable by default during compile testing
+  Folder: PATCH_cpufreq_Do_not_enable_by_default_during_compile_testin	   9137
+From vireshk  Tue Apr  8 10:56:17 2025
+ Subject: [PATCH] cpufreq: Add SM8650 to cpufreq-dt-platdev blocklist
+  Folder: PATCH_cpufreq_Add_SM8650_to_cpufreq-dt-platdev_blocklist.mbo	   7322

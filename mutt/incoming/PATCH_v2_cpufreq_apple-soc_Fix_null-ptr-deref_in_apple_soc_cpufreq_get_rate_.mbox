@@ -1,0 +1,73 @@
+From vireshk  Thu Apr 10 09:18:07 2025
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [142.251.10.108] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Thu, 10 Apr 2025 09:18:07 +0530 (IST)
+Received: by 2002:a05:7208:c256:b0:99:7835:b11c with SMTP id w22csp7885451rbd;         Wed, 9 Apr 2025 05:48:24 -0700 (PDT)
+X-Forwarded-Encrypted: i=2; AJvYcCUjX1G7uB6M3WXOOp3z7ODt+3HfrKbKyUaLPuHhGM5HAoYxVMvh0ZFn+ve/+AM3xMuGIwRhl1tUHtmnL8U=@linaro.org
+X-Received: by 2002:a05:6a00:2186:b0:736:57cb:f2b6 with SMTP id d2e1a72fcca58-73bafc12b1amr3091976b3a.12.1744202903940;         Wed, 09 Apr 2025 05:48:23 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1744202903; cv=none;         d=google.com; s=arc-20240605;         b=jJ+sJuziT+/w2+xmlDSYn2VbMuMV4A3nbaJjw7H/XufSZkBFnII7LmZ3itydt3YLDL          O0DNv7S+qnGowa7GMUU/6PurtAQT3A/Vlb+8EhBpbSyss6LHNehjM0TxY1taGUjCwPil          Mw8jsLUfD3OV0zj+M2v2E9gTsbxsscGEEgKJpAICytudxrWroClhAoIe8Bl5lWcu2+64          BDyfJ94Sqd2IMDx4COjnx8S2GvPj+V11p3jE7/tOLPTOW8qOCsill0YkZdx5c3o+czwV          fSTHQ0upZ+aPlHFdg8GNaG9qp/Ayr488lME4HMYNpHnRJXbgGPjZozDnQY6nXC5Tbebg          KYwg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from:dkim-signature;         bh=3gcS051l6b/8O+Is0vrcSeaFJGvMI4gz5XJTgTf8jE8=;         fh=85m+Ibj1sO/PioLdrO6C/fsq127W+ax/eeluq/77T8M=;         b=IXM/rKL4arwv1fy3MetuT4oO1ZaHHHz5WCmoimPTAFhR8k868K7u7Z99qOcXzWDF7e          0wzWgc7+PXnYnbOn3HITnloY7T5Rr7tsRxobqmbR9LcoBV19d7S3yrdxBYKjo5VMVFHA          B5A3NXH/UTtcWXF1CXrd9Qo6LbgBuiPggsLMbjMGgztU5bYG6b1MT/KBZd3Xpm3Z7UPb          nT4SqemCNU67Np3ltX1kJgwoXyNnZJcuQNC3KGby9y5GNEHSc3qJwnI5jCME7kvC5kMn          fOXJFqnNDal+d9ySjAh2IfrTsieamcVS2c3I3fak+H7l8b/KK0ZaP6S5uYcidBAUfbP3          dX2w==;         dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@gmail.com header.s=20230601 header.b=jpIH1RmL;        spf=pass (google.com: domain of bsdhenrymartin@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=bsdhenrymartin@gmail.com;        dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;        dara=neutral header.i=@linaro.org
+Return-Path: <bsdhenrymartin@gmail.com>
+Received: from mail-sor-f65.google.com (mail-sor-f65.google.com. [209.85.220.65])         by mx.google.com with SMTPS id d2e1a72fcca58-73bb1e66bc8sor868166b3a.9.2025.04.09.05.48.23         for <viresh.kumar@linaro.org>         (Google Transport Security);         Wed, 09 Apr 2025 05:48:23 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bsdhenrymartin@gmail.com designates 209.85.220.65 as permitted sender) client-ip=209.85.220.65;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@gmail.com header.s=20230601 header.b=jpIH1RmL;        spf=pass (google.com: domain of bsdhenrymartin@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=bsdhenrymartin@gmail.com;        dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;        dara=neutral header.i=@linaro.org
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=gmail.com; s=20230601; t=1744202903; x=1744807703; darn=linaro.org;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from:from:to:cc:subject:date:message-id:reply-to;         bh=3gcS051l6b/8O+Is0vrcSeaFJGvMI4gz5XJTgTf8jE8=;         b=jpIH1RmLjuukCAw4GpFsr4dGjDqqGJe/kZWBDW0VsrXqrahqItyI7KMMZbJh6D4th6          gj4Es/vKlfHDn0foM3sE7CtMW+psCFJ9tYgrnYk+dh+dB/m1FRY8YkA1JOu0Acku2HYP          C6Xm75UAw3zEGeLUVkaVxTR2X1AaIAdjolTtqE2Tn3fGhnjhzCr0y0frg8bT7oE8ufuF          HweE7z5QwEvG7Vh9bcnJeryb6zwcB48T4bpeZHT5nL1w6cpEUFJbBQYlSpaUZPWir2h3          3jlwbNpil3LCjFQa90IrIiW4zvBbQf+zUMhxLXSZlwDhqwwTettxRQPQCbu9VnlFwTuQ          LccA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=1e100.net; s=20230601; t=1744202903; x=1744807703;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from:x-gm-message-state:from:to:cc:subject:date:message-id          :reply-to;         bh=3gcS051l6b/8O+Is0vrcSeaFJGvMI4gz5XJTgTf8jE8=;         b=PChwXNP9ik3rl0SBFH+r1+ByXwEAoOmnndmEB6m4EbuKGdYhPZZFPilBgMcsEPGd91          QcqIZTA8tQqpWE2dTm+gUJmXq0OAQEEoqsOJjTjKUqABlEP/9xblMQ+jq20SEtL016LZ          yQTF3xjSJ+3FZveA1W+bEOUtiTEWYKmf3GmQE93+lWKGRTeUXAd17cay/b53pKLDPQNu          nhRp118YsZ2YtYk2xOPhTZwckwfkBIRYR3FXSZvDZNlwljE5aA3RfL3/hv3Cq5WvBhSr          E87E0PoYggRVql0TVC852nEshcKCdmVZrCI53PD3NeXqdUrY+cfnGXmSxYb2nlI6udep          Hlyw==
+X-Forwarded-Encrypted: i=1; AJvYcCWnFe1rK1xFlEwbnw53u6Tw5MrIkjHojo4Ko/3g2jIyUo4Y1FksfpueDeGQebRwTZSGAdS96LXttJvndbA=@linaro.org
+X-Gm-Message-State: AOJu0Yxrkrw9BFopeC0dPv+z9g5svwuXHWe8K68d13o/+AEtyW760qWY 	N9+c4RXicJaztmg7okv5yiv6/OX3clDZcieo5IEYtUF9giLqZcDh
+X-Gm-Gg: ASbGncvoVjYih12j/JQo1kZkOGhCRdIubsEZNYP7bYdv0TrUL4xW9JHpvJ+wAHIKeBa 	1aaryVa11OUWnSTew7SIlY8oBZ7FnEj4NpRy8cDSCQm+xqetC8Fe/yldd8L+0xT/CQHnuvsUB53 	cmOvRzX0hfbEnOyFjtUjWh0DWHdfN5GFK9baSE4flqHgw55b+sKItVRk7++U3Z2akgnmusO9bSW 	SQu8uE4K1wE5iQw6E32ySpLu6eXpW0G5mbouUokiPXF6agy9IX6hbfu9eI2cqZqceOjglNjTc56 	QgXEKcJV55y/E3Z6NO4HOVD2UADRQNeCj64gbHJpNXhKJOypF0F9R0YAZnFPYrXudqw=
+X-Google-Smtp-Source: AGHT+IFsp1KO7SpkI4Baqzu+PaivIakGq5Ke0rYEIizxnBYl7OLpEKVhaHzNjOfd00JduABwQS6jww==
+X-Received: by 2002:a05:6a20:d490:b0:1f0:e3df:fe1 with SMTP id adf61e73a8af0-2015ae8f37amr3086206637.4.1744202902625;         Wed, 09 Apr 2025 05:48:22 -0700 (PDT)
+Return-Path: <bsdhenrymartin@gmail.com>
+Received: from henry.localdomain ([111.202.148.133])         by smtp.gmail.com with ESMTPSA id 41be03b00d2f7-b02a11d2654sm1103588a12.35.2025.04.09.05.48.18         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Wed, 09 Apr 2025 05:48:22 -0700 (PDT)
+From: Henry Martin <bsdhenrymartin@gmail.com>
+To: sven@svenpeter.dev, 	j@jannau.net, 	alyssa@rosenzweig.io, 	neal@gompa.dev, 	rafael@kernel.org, 	viresh.kumar@linaro.org
+Cc: asahi@lists.linux.dev, 	linux-arm-kernel@lists.infradead.org, 	linux-pm@vger.kernel.org, 	linux-kernel@vger.kernel.org, 	Henry Martin <bsdhenrymartin@gmail.com>
+Subject: [PATCH v2] cpufreq: apple-soc: Fix null-ptr-deref in apple_soc_cpufreq_get_rate()
+Date: Wed,  9 Apr 2025 20:48:13 +0800
+Message-Id: <20250409124813.47193-1-bsdhenrymartin@gmail.com>
+X-Mailer: git-send-email 2.34.1
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Content-Length: 1372
+Lines: 38
+
+cpufreq_cpu_get_raw() can return NULL when the target CPU is not present
+in the policy->cpus mask. apple_soc_cpufreq_get_rate() does not check
+for this case, which results in a NULL pointer dereference.
+
+Fixes: 6286bbb40576 ("cpufreq: apple-soc: Add new driver to control Apple SoC CPU P-states")
+Signed-off-by: Henry Martin <bsdhenrymartin@gmail.com>
+---
+V1 -> V2: Use `if (unlikely(!policy))` instead of `if (!policy)`
+
+ drivers/cpufreq/apple-soc-cpufreq.c | 10 ++++++++--
+ 1 file changed, 8 insertions(+), 2 deletions(-)
+
+diff --git a/drivers/cpufreq/apple-soc-cpufreq.c b/drivers/cpufreq/apple-soc-cpufreq.c
+index 4994c86feb57..b1d29b7af232 100644
+--- a/drivers/cpufreq/apple-soc-cpufreq.c
++++ b/drivers/cpufreq/apple-soc-cpufreq.c
+@@ -134,11 +134,17 @@ static const struct of_device_id apple_soc_cpufreq_of_match[] __maybe_unused = {
+ 
+ static unsigned int apple_soc_cpufreq_get_rate(unsigned int cpu)
+ {
+-	struct cpufreq_policy *policy = cpufreq_cpu_get_raw(cpu);
+-	struct apple_cpu_priv *priv = policy->driver_data;
++	struct cpufreq_policy *policy;
++	struct apple_cpu_priv *priv;
+ 	struct cpufreq_frequency_table *p;
+ 	unsigned int pstate;
+ 
++	policy = cpufreq_cpu_get_raw(cpu);
++	if (unlikely(!policy))
++		return 0;
++
++	priv = policy->driver_data;
++
+ 	if (priv->info->cur_pstate_mask) {
+ 		u32 reg = readl_relaxed(priv->reg_base + APPLE_DVFS_STATUS);
+ 
+-- 
+2.34.1
+

@@ -2705,3 +2705,6 @@ From vireshk  Tue Apr  8 10:55:48 2025
 From vireshk  Tue Apr  8 10:56:17 2025
  Subject: [PATCH] cpufreq: Add SM8650 to cpufreq-dt-platdev blocklist
   Folder: PATCH_cpufreq_Add_SM8650_to_cpufreq-dt-platdev_blocklist.mbo	   7322
+From vireshk  Thu Apr 10 09:18:07 2025
+ Subject: [PATCH v2] cpufreq: apple-soc: Fix null-ptr-deref in apple_soc_cpufre
+  Folder: PATCH_v2_cpufreq_apple-soc_Fix_null-ptr-deref_in_apple_soc_c	   7860

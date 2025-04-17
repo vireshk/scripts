@@ -2708,3 +2708,6 @@ From vireshk  Tue Apr  8 10:56:17 2025
 From vireshk  Thu Apr 10 09:18:07 2025
  Subject: [PATCH v2] cpufreq: apple-soc: Fix null-ptr-deref in apple_soc_cpufre
   Folder: PATCH_v2_cpufreq_apple-soc_Fix_null-ptr-deref_in_apple_soc_c	   7860
+From vireshk  Thu Apr 17 09:03:19 2025
+ Subject: [PATCH] cpufreq: fix compile-test defaults
+  Folder: PATCH_cpufreq_fix_compile-test_defaults.mbox			   8821

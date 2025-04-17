@@ -30,7 +30,7 @@ linaro/misc
 
 # nxp
 :0:
-* ^(From|To|Cc):.*(linaro-s32@linaro\.org)
+* ^(From|To|Cc):.*(linaro-s32@linaro\.org|s32@nxp\.com)
 linaro/nxp
 
 # pmwg-weeklies

@@ -2711,3 +2711,6 @@ From vireshk  Thu Apr 10 09:18:07 2025
 From vireshk  Thu Apr 17 09:03:19 2025
  Subject: [PATCH] cpufreq: fix compile-test defaults
   Folder: PATCH_cpufreq_fix_compile-test_defaults.mbox			   8821
+From vireshk  Wed Apr 16 12:10:04 2025
+ Subject: [PATCH V10 00/15] Rust abstractions for clk, cpumask, cpufreq, OPP
+  Folder: PATCH_V10_00-15_Rust_abstractions_for_clk,_cpumask,_cpufreq,	   9160

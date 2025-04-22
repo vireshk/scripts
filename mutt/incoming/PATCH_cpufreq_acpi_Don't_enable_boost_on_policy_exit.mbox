@@ -1,0 +1,113 @@
+From vireshk  Wed Apr 16 11:00:25 2025
+Return-Path: <viresh.kumar@linaro.org>
+Received: from pop.gmail.com [74.125.24.108] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Wed, 16 Apr 2025 11:00:25 +0530 (IST)
+Received: from localhost ([122.172.83.32])         by smtp.gmail.com with ESMTPSA id 41be03b00d2f7-b0b220aa259sm474466a12.3.2025.04.15.22.29.50         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Tue, 15 Apr 2025 22:29:51 -0700 (PDT)
+From: Viresh Kumar <viresh.kumar@linaro.org>
+To: "Rafael J. Wysocki" <rafael@kernel.org>, 	Viresh Kumar <viresh.kumar@linaro.org>, 	Lifeng Zheng <zhenglifeng1@huawei.com>
+Cc: linux-pm@vger.kernel.org, 	Vincent Guittot <vincent.guittot@linaro.org>, 	Nicholas Chin <nic.c3.14@gmail.com>, 	"Rafael J. Wysocki" <rafael.j.wysocki@intel.com>, 	linux-kernel@vger.kernel.org
+Subject: [PATCH] cpufreq: acpi: Don't enable boost on policy exit
+Date: Wed, 16 Apr 2025 10:59:37 +0530
+Message-Id: <2c788c2ca0cab09a8ef4e384f272af928a880b0e.1744781329.git.viresh.kumar@linaro.org>
+X-Mailer: git-send-email 2.31.1.272.g89b43f80a514
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+X-Label: pen
+Status: RO
+Content-Length: 2955
+Lines: 94
+
+The boost-related code in cpufreq has undergone several changes over the
+years, but this particular piece remained unchanged and is now outdated.
+
+The cpufreq core currently manages boost settings during initialization,
+and only when necessary. As such, there's no longer a need to enable
+boost explicitly when entering system suspend.
+
+Previously, this wasn’t causing issues because boost settings were
+force-updated during policy initialization. However, commit 2b16c631832d
+("cpufreq: ACPI: Remove set_boost in acpi_cpufreq_cpu_init()") changed
+that behavior—correctly—by avoiding unnecessary updates.
+
+As a result of this change, if boost was disabled prior to suspend, it
+remains disabled on resume—as expected. But due to the current code
+forcibly enabling boost at suspend time, the system ends up with boost
+frequencies enabled after resume, even if the global boost flag was
+disabled. This contradicts the intended behavior.
+
+Fix this by not enabling boost on policy exit.
+
+Fixes: 2b16c631832d ("cpufreq: ACPI: Remove set_boost in acpi_cpufreq_cpu_init()")
+Closes: https://bugzilla.kernel.org/show_bug.cgi?id=220013
+Reported-by: Nicholas Chin <nic.c3.14@gmail.com>
+Signed-off-by: Viresh Kumar <viresh.kumar@linaro.org>
+---
+ drivers/cpufreq/acpi-cpufreq.c | 23 +++--------------------
+ 1 file changed, 3 insertions(+), 20 deletions(-)
+
+diff --git a/drivers/cpufreq/acpi-cpufreq.c b/drivers/cpufreq/acpi-cpufreq.c
+index 924314cdeebc..85b5a88f723f 100644
+--- a/drivers/cpufreq/acpi-cpufreq.c
++++ b/drivers/cpufreq/acpi-cpufreq.c
+@@ -89,8 +89,9 @@ static bool boost_state(unsigned int cpu)
+ 	return false;
+ }
+ 
+-static int boost_set_msr(bool enable)
++static void boost_set_msr_each(void *p_en)
+ {
++	bool enable = (bool) p_en;
+ 	u32 msr_addr;
+ 	u64 msr_mask, val;
+ 
+@@ -107,7 +108,7 @@ static int boost_set_msr(bool enable)
+ 		msr_mask = MSR_K7_HWCR_CPB_DIS;
+ 		break;
+ 	default:
+-		return -EINVAL;
++		return;
+ 	}
+ 
+ 	rdmsrl(msr_addr, val);
+@@ -118,14 +119,6 @@ static int boost_set_msr(bool enable)
+ 		val |= msr_mask;
+ 
+ 	wrmsrl(msr_addr, val);
+-	return 0;
+-}
+-
+-static void boost_set_msr_each(void *p_en)
+-{
+-	bool enable = (bool) p_en;
+-
+-	boost_set_msr(enable);
+ }
+ 
+ static int set_boost(struct cpufreq_policy *policy, int val)
+@@ -532,15 +525,6 @@ static void free_acpi_perf_data(void)
+ 	free_percpu(acpi_perf_data);
+ }
+ 
+-static int cpufreq_boost_down_prep(unsigned int cpu)
+-{
+-	/*
+-	 * Clear the boost-disable bit on the CPU_DOWN path so that
+-	 * this cpu cannot block the remaining ones from boosting.
+-	 */
+-	return boost_set_msr(1);
+-}
+-
+ /*
+  * acpi_cpufreq_early_init - initialize ACPI P-States library
+  *
+@@ -931,7 +915,6 @@ static void acpi_cpufreq_cpu_exit(struct cpufreq_policy *policy)
+ 
+ 	pr_debug("%s\n", __func__);
+ 
+-	cpufreq_boost_down_prep(policy->cpu);
+ 	policy->fast_switch_possible = false;
+ 	policy->driver_data = NULL;
+ 	acpi_processor_unregister_performance(data->acpi_perf_cpu);
+-- 
+2.31.1.272.g89b43f80a514
+

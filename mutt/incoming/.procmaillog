@@ -2714,3 +2714,6 @@ From vireshk  Thu Apr 17 09:03:19 2025
 From vireshk  Wed Apr 16 12:10:04 2025
  Subject: [PATCH V10 00/15] Rust abstractions for clk, cpumask, cpufreq, OPP
   Folder: PATCH_V10_00-15_Rust_abstractions_for_clk,_cpumask,_cpufreq,	   9160
+From vireshk  Wed Apr 16 11:00:25 2025
+ Subject: [PATCH] cpufreq: acpi: Don't enable boost on policy exit
+  Folder: PATCH_cpufreq_acpi_Don't_enable_boost_on_policy_exit.mbox	   4220

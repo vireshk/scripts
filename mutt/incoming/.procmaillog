@@ -2723,3 +2723,9 @@ From vireshk  Fri May  2 09:19:39 2025
 From vireshk  Mon Apr 21 12:53:38 2025
  Subject: [PATCH V11 00/15] Rust abstractions for clk, cpumask, cpufreq, OPP
   Folder: PATCH_V11_00-15_Rust_abstractions_for_clk,_cpumask,_cpufreq,	   9650
+From vireshk  Mon May 19 09:18:14 2025
+ Subject: =?UTF-8?B?W1BBVENIXSBPUFA6IHN3aXRjaCB0byB1c2Uga21lbWR1cF9hcnJheSgp?=
+  Folder: =?UTF-8?B?W1BBVENIXSBPUFA6IHN3aXRjaCB0byB1c2Uga21lbWR1cF9hcn	   6113
+From vireshk  Mon May 19 09:16:58 2025
+ Subject: [PATCH v4] cpufreq: scmi: Skip SCMI devices that aren't used by the C
+  Folder: PATCH_v4_cpufreq_scmi_Skip_SCMI_devices_that_aren't_used_by_	  10259

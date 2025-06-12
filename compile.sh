@@ -7,7 +7,7 @@ run_cmd() {
 	echo;
 
 	if [ -z $is_debug ]; then
-		$*;
+		eval "$*"
 	fi
 }
 
@@ -16,7 +16,7 @@ run_cmd_dn() {
 	echo;
 
 	if [ -z $is_debug ]; then
-		$* > /dev/null;
+		eval "$* > /dev/null"
 	fi
 }
 
@@ -144,56 +144,56 @@ elif [ $2 = arma ]; then
 elif [ $2 = arm ]; then
 	dir=../barm64/
 	cfg=defconfig
-	CROSS_COMPILE="aarch64-linux-gnu-"
+	CROSS_COMPILE=aarch64-linux-gnu-
 	carch="arm64"
 	IMAGE=
 	MERGE_CONFIG="KCONFIG_CONFIG=$dir/.config scripts/kconfig/merge_config.sh -m $dir/.config ~/junk/config"
 elif [ $2 = armt ]; then
 	dir=../barm64t/
 	cfg=defconfig
-	CROSS_COMPILE="aarch64-linux-gnu-"
+	CROSS_COMPILE=aarch64-linux-gnu-
 	carch="arm64"
 	IMAGE=
 	MERGE_CONFIG="KCONFIG_CONFIG=$dir/.config scripts/kconfig/merge_config.sh -m $dir/.config ~/junk/config"
 elif [ $2 = armg ]; then
 	dir=../barm64_guest/
 	cfg=defconfig
-	CROSS_COMPILE="aarch64-linux-gnu-"
+	CROSS_COMPILE=aarch64-linux-gnu-
 	carch="arm64"
 	IMAGE=
 	MERGE_CONFIG="KCONFIG_CONFIG=$dir/.config scripts/kconfig/merge_config.sh -m $dir/.config ~/junk/config"
 elif [ $2 = armh ]; then
 	dir=../barm64_host/
 	cfg=defconfig
-	CROSS_COMPILE="aarch64-linux-gnu-"
+	CROSS_COMPILE=aarch64-linux-gnu-
 	carch="arm64"
 	IMAGE=
 	MERGE_CONFIG="KCONFIG_CONFIG=$dir/.config scripts/kconfig/merge_config.sh -m $dir/.config ~/junk/config"
 elif [ $2 = armvg ]; then
 	dir=../barm64_vguest/
 	cfg=defconfig
-	CROSS_COMPILE="aarch64-linux-gnu-"
+	CROSS_COMPILE=aarch64-linux-gnu-
 	carch="arm64"
 	IMAGE=
 	MERGE_CONFIG="KCONFIG_CONFIG=$dir/.config scripts/kconfig/merge_config.sh -m $dir/.config ~/junk/config"
 elif [ $2 = armvh ]; then
 	dir=../barm64_vhost/
 	cfg=defconfig
-	CROSS_COMPILE="aarch64-linux-gnu-"
+	CROSS_COMPILE=aarch64-linux-gnu-
 	carch="arm64"
 	IMAGE=
 	MERGE_CONFIG="KCONFIG_CONFIG=$dir/.config scripts/kconfig/merge_config.sh -m $dir/.config ~/junk/config"
 elif [ $2 = armqf ]; then
 	dir=../barm64-base-qemuf/
 	cfg=defconfig
-	CROSS_COMPILE="aarch64-linux-gnu-"
+	CROSS_COMPILE=aarch64-linux-gnu-
 	carch="arm64"
 	IMAGE=
 	MERGE_CONFIG="KCONFIG_CONFIG=$dir/.config scripts/kconfig/merge_config.sh -m $dir/.config ~/junk/config"
 elif [ $2 = qcom ]; then
 	dir=../qcom/
 	cfg="defconfig distro.config"
-	CROSS_COMPILE="aarch64-linux-gnu-"
+	CROSS_COMPILE=aarch64-linux-gnu-
 	carch="arm64"
 #	FLAGS="KCFLAGS=-fno-pic TEXT_OFFSET=0x00280000"
 #	FLAGS="KCFLAGS=-fno-pic TEXT_OFFSET=0x0080000"
@@ -201,7 +201,7 @@ elif [ $2 = qcom ]; then
 elif [ $2 = marvell ]; then
 	dir=../bmarvell/
 	cfg=defconfig
-	CROSS_COMPILE="ccache aarch64-linux-gnu-"
+	CROSS_COMPILE=aarch64-linux-gnu-
 	carch="arm64"
 #	FLAGS="KCFLAGS=-fno-pic TEXT_OFFSET=0x00280000"
 	FLAGS="KCFLAGS=-fno-pic TEXT_OFFSET=0x0080000"
@@ -241,8 +241,8 @@ elif [ $2 = modx86 ]; then
 elif [ $2 = x86 ]; then
 	dir=../bx86/
 	cfg=x86_64_defconfig
-#	CROSS_COMPILE="\"ccache gcc\""
-	CROSS_COMPILE=
+	CROSS_COMPILE=gcc
+#	CROSS_COMPILE=
 	MISMATCH=
 	FLAGS="LOCALVERSION=-buggy2"
 	carch="x86"
@@ -259,7 +259,7 @@ fi
 
 #mk="make ARCH=$carch O=$dir -j4"
 #mk="ARCH=$carch O=$dir -j4"
-mk="make CLIPPY=1 ARCH=$carch O=$dir -j8 $FLAGS CROSS_COMPILE=$CROSS_COMPILE $MISMATCH $MISC"
+mk="make CLIPPY=1 ARCH=$carch O=$dir -j8 $FLAGS CROSS_COMPILE=\"ccache $CROSS_COMPILE\" $MISMATCH $MISC"
 
 if [ ! -z $is_debug ]; then
 	echo ""

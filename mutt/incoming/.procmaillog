@@ -2729,3 +2729,9 @@ From vireshk  Mon May 19 09:18:14 2025
 From vireshk  Mon May 19 09:16:58 2025
  Subject: [PATCH v4] cpufreq: scmi: Skip SCMI devices that aren't used by the C
   Folder: PATCH_v4_cpufreq_scmi_Skip_SCMI_devices_that_aren't_used_by_	  10259
+From vireshk  Mon Jun 16 19:52:28 2025
+ Subject: [PATCH] MAINTAINERS: adjust file entry in CPU HOTPLUG
+  Folder: PATCH_MAINTAINERS_adjust_file_entry_in_CPU_HOTPLUG.mbox	   8266
+From vireshk  Fri Jun 13 06:44:16 2025
+ Subject: [PATCH 06/11] cpufreq: apple: drop default ARCH_APPLE in Kconfig
+  Folder: PATCH_06-11_cpufreq_apple_drop_default_ARCH_APPLE_in_Kconfig	   7347

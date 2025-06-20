@@ -2735,3 +2735,6 @@ From vireshk  Mon Jun 16 19:52:28 2025
 From vireshk  Fri Jun 13 06:44:16 2025
  Subject: [PATCH 06/11] cpufreq: apple: drop default ARCH_APPLE in Kconfig
   Folder: PATCH_06-11_cpufreq_apple_drop_default_ARCH_APPLE_in_Kconfig	   7347
+From vireshk  Mon Jun 16 19:44:05 2025
+ Subject: [PATCH v3] rust: cpufreq: Ensure C ABI compatibility in all unsafe
+  Folder: PATCH_v3_rust_cpufreq_Ensure_C_ABI_compatibility_in_all_unsa	  11727

@@ -81,7 +81,7 @@ alias hpatches="cd /home/vireshk/scripts/mutt/incoming/"
 alias hmodule="cd /home/vireshk/work/repos/tools/module/"
 alias hlwn="cd /home/vireshk/work/repos/tools/lwn"
 export VIRTIOPATH="/home/vireshk/work/repos/virtio"
-export QEMUPATH="$VIRTIOPATH/qemu/"
+export QEMUPATH="$VIRTIOPATH/qemu"
 export QEMUAARCH64="$QEMUPATH/build/aarch64-softmmu/qemu-system-aarch64"
 export rustpath="$VIRTIOPATH/rust"
 export rustvmmpath="$VIRTIOPATH/rust/rust-vmm"
@@ -241,14 +241,6 @@ alias mountrouterdrive="curlftpfs vireshk:123456@192.168.1.1 ~/Videos/routerdriv
 #ltp
 alias ltpbuild="make clean;make autotools;./configure;make"
 
-#qemu
-alias sshqemu="ssh root@localhost -p8022"
-alias qvim="vim -c 'set expandtab' -c 'set shiftwidth=4'"
-alias mountqemu="echo \"mount -t 9p -o trans=virtio r /mnt\""
-#alias configqemu="./configure --python=/usr/bin/python3.8 --target-list=aarch64-softmmu --enable-virtfs"
-alias configqemu="./configure --python=/usr/bin/python3.8 --target-list=aarch64-softmmu --enable-virtfs --enable-docs"
-alias buildqemu="configqemu; make -j 64"
-
 # I2C
 export i2csock="$junkpath/vi2c.sock"
 alias vui2c="unlink $i2csock; $QEMUPATH/build/aarch64-softmmu/tools/vhost-user-i2c/vhost-user-i2c --socket-path=$i2csock -l 6:20"
@@ -256,13 +248,11 @@ alias rusti2c="unlink $i2csock"0"; RUST_LOG=debug $rustvmmpath/vhost-device/targ
 alias i2ccreate="echo \"echo ds1338 0x20 > /sys/bus/i2c/devices/i2c-0/new_device\""
 alias i2ccreate1="echo \"echo ds1338 0x20 > /sys/bus/i2c/devices/i2c-1/new_device\""
 alias smbuscreate="echo \"echo al3320a 0x20 > /sys/class/i2c-adapter/i2c-0/new_device\""
-export qemui2c="-chardev socket,path=$junkpath/vi2c.sock0,id=vi2c -device vhost-user-i2c-device,chardev=vi2c,id=i2c"
 
 # GPIO
 export gpiosock="$junkpath/vgpio.sock"
 alias vugpio="unlink $gpiosock; $QEMUPATH/build/aarch64-softmmu/tools/vhost-user-gpio/vhost-user-gpio --socket-path=$gpiosock"
 alias rustgpio="unlink $gpiosock*; RUST_LOG=debug $rustvmmpath/vhost-device/target/debug/vhost-device-gpio -s $gpiosock -c 1 -l 0"
-export qemugpio="-chardev socket,path=$junkpath/vgpio.sock0,id=vgpio -device vhost-user-gpio-pci,chardev=vgpio,id=gpio"
 
 # Rust
 alias rustcoverage="echo -e \"apt-get install libclang-dev clang musl-tools \ncd vhost-device; ./rust-vmm-ci/test_run.py; \ncd vhost-device; pytest rust-vmm-ci/integration_tests/test_coverage.py --no-cleanup\"; msudo docker run --device=/dev/kvm -it --security-opt seccomp=unconfined --volume $rustvmmpath/vhost-device:/vhost-device --volume ~/.ssh:/root/.ssh rustvmm/dev:v26"
@@ -273,45 +263,70 @@ alias cargobuildarm="clear;cargo build --release --all-features --target aarch64
 alias cargobuildall='clear;cargo build --release --all-features --tests'
 alias cargobuildallarm='clear;cargo build --release --target aarch64-unknown-linux-gnu --all-features --tests'
 
+#qemu
+alias sshqemu="ssh root@localhost -p8022"
+alias qvim="vim -c 'set expandtab' -c 'set shiftwidth=4'"
+alias mountqemu="echo \"mount -t 9p -o trans=virtio r /mnt\""
+#alias configqemu="./configure --python=/usr/bin/python3.8 --target-list=aarch64-softmmu --enable-virtfs"
+alias configqemu="./configure --python=/usr/bin/python3.8 --target-list=aarch64-softmmu --enable-virtfs --enable-docs"
+alias buildqemu="configqemu; make -j 64"
+
+export qemui2c="-chardev socket,path=$junkpath/vi2c.sock0,id=vi2c -device vhost-user-i2c-device,chardev=vi2c,id=i2c"
+export qemugpio="-chardev socket,path=$junkpath/vgpio.sock0,id=vgpio -device vhost-user-gpio-pci,chardev=vgpio,id=gpio"
 export qemufs=" -fsdev local,id=r,path=$QEMUPATH/../,security_model=none -device virtio-9p-device,fsdev=r,mount_tag=r"
-export qemuobj=" -object memory-backend-file,id=mem,size=4G,mem-path=/dev/shm,share=on -numa node,memdev=mem"
+export qemuobj=" -object memory-backend-file,id=mem,size=8G,mem-path=/dev/shm,share=on -numa node,memdev=mem"
 export qemurtc="-device ds1338,address=0x20"
 
-alias qemuarm="$QEMUAARCH64 -M virt -machine virtualization=true -machine virt,gic-version=3 -cpu max -smp 12 -m 4096 -drive if=virtio,format=qcow2,file=$QEMUPATH/../host-qemu/disk.img -device virtio-scsi-pci,id=scsi0 -object rng-random,filename=/dev/urandom,id=rng0 -device virtio-rng-pci,rng=rng0 -device virtio-net-pci,netdev=net0 -netdev user,id=net0,hostfwd=tcp::8022-:22 -nographic -kernel $AARCH64BUILD/Image --append \"earlycon root=/dev/vda2\" $qemuobj"
+export QEMUARMCOMMON="$QEMUAARCH64 \
+	-M virt,virtualization=true,gic-version=3 \
+	-cpu cortex-a57 \
+	-smp 8 \
+	-m 8G \
+	-nographic \
+	-device virtio-net-pci,netdev=net0 \
+	-netdev user,id=net0,hostfwd=tcp::8022-:22"
+
+alias qemuarm="$QEMUARMCOMMON \
+	-kernel $AARCH64BUILD/Image \
+	-append \"earlycon root=/dev/vda2\" \
+	-drive if=virtio,format=qcow2,file=$QEMUPATH/../host-qemu/disk.img \
+	$qemuobj"
+
+alias qemuarmnoxen="$QEMUARMCOMMON \
+	-kernel /home/vireshk/work/repos/kernel/barm64_vhost/arch/arm64/boot/Image \
+	-append \"earlycon root=/dev/sda2\" \
+	-device virtio-scsi-pci \
+	-drive file=/home/vireshk/work/repos/virtio/host-qemu/debian-bullseye-arm64.qcow2,index=0,id=hd0,if=none,format=qcow2 \
+	-device scsi-hd,drive=hd0 \
+	$qemurtc"
+
 alias qemuarmi2c="qemuarm $qemui2c $qemufs $qemurtc"
 alias qemuarmgpio="qemuarm $qemugpio"
 
-alias qemuarmold="$QEMUAARCH64 -M virt -machine virtualization=true -machine virt,gic-version=3 -cpu max -smp 2 -m 4096 -drive if=pflash,format=raw,file=$QEMUPATH/../host-qemu/efi.img,readonly -drive if=pflash,format=raw,file=$QEMUPATH/../host-qemu/varstore.img  -drive if=virtio,format=qcow2,file=$QEMUPATH/../host-qemu/disk.img -device virtio-scsi-pci,id=scsi0 -object rng-random,filename=/dev/urandom,id=rng0 -device virtio-rng-pci,rng=rng0 -device virtio-net-pci,netdev=net0 -netdev user,id=net0,hostfwd=tcp::8022-:22 -nographic -kernel $AARCH64BUILD/Image --append \"earlycon root=/dev/vda2\""
+alias qemuarmf="$QEMUARMCOMMON \
+	-kernel $AARCH64BUILD/Image \
+	-append "console=ttyAMA0" \
+	$qemuobj"
 
-alias qemuarmf="$QEMUAARCH64 -machine virt,virtualization=on,gic-version=max -cpu cortex-a57 -machine type=virt -nographic -smp 4 -m 4G -kernel $AARCH64BUILD/Image  --append \"console=ttyAMA0\" $qemuobj"
 alias qemuarmfi2c="qemuarmf $qemui2c $qemufs"
 alias qemuarmfgpio="qemuarmf $qemugpio $qemufs"
 alias qemuarmfdumpdtb="qemuarmf -machine dumpdtb=/home/vireshk/junk/qemu.dtb"
-alias qemudtbdts="dtc -I dtb ~/junk/qemu.dtb  -o ~/junk/qemu.dts; dtc -I dts ~/junk/qemu.dts -o ~/junk/qemu.dtb"
 alias qemuarmfdtb="qemuarmf -dtb /home/vireshk/junk/qemu.dtb"
+alias qemudtbdts="dtc -I dtb ~/junk/qemu.dtb  -o ~/junk/qemu.dts; dtc -I dts ~/junk/qemu.dts -o ~/junk/qemu.dtb"
 
 #alias myqemuvexp="$QEMUAARCH64 -machine vexpress-a15 -nographic -smp 4 -m 2G -kernel ~/work/repos/kernel/barm/arch/arm/boot/zImage -dtb ~/work/repos/kernel/barm/arch/arm/boot/dts/vexpress-v2p-ca15-tc1.dtb --append \"console=ttyAMA0\" -object memory-backend-file,id=mem,size=2G,mem-path=/dev/shm,share=on $qemufs"
 
 alias qemux86="$QEMUPATH/buildx86/qemu-system-x86_64  -smp 12 -kernel ~/work/repos/kernel/bx86/arch/x86_64/boot/bzImage -boot c -m 2049M -drive file=$QEMUPATH/../buildroot/buildx86/images/rootfs.ext2,format=raw -append \"root=/dev/sda rw console=ttyS0,115200 acpi=off nokaslr\" -nographic -display none"
 
-#alias xenarm="$QEMUAARCH64 -machine virt,virtualization=on -cpu cortex-a57 -machine type=virt -serial mon:stdio -device virtio-net-pci,netdev=net0 -netdev user,id=net0,hostfwd=tcp::8022-:22 -display none -m 8192 -kernel /home/vireshk/work/repos/virtio/xen/xen/xen -append \"dom0_max_vcpus=8 loglvl=all guest_loglvl=all\" -device guest-loader,addr=0x44000000,kernel=$AARCH64BUILD/Image,bootargs=\"root=/dev/sda2 console=hvc0 earlyprintk=xen\" -smp 8 -device virtio-scsi-pci -drive id=hd0,index=0,if=none,format=qcow2,file=/home/vireshk/work/repos/virtio/host-qemu/debian-buster-arm64.qcow2 -device scsi-hd,drive=hd0"
-
 export AARCH64XENHOSTBUILD="/home/vireshk/work/repos/kernel/barm64_vhost/arch/arm64/boot"
-alias xenarm="$QEMUAARCH64 \
-	-machine type=virt,virtualization=on,gic-version=3 \
- 	-cpu cortex-a57 -serial mon:stdio \
- 	-device virtio-net-pci,netdev=net0				\
- 	-netdev user,id=net0,hostfwd=tcp::8022-:22			\
- 	-device virtio-scsi-pci \
- 	-drive file=/home/vireshk/work/repos/virtio/host-qemu/debian-bullseye-arm64.qcow2,index=0,id=hd0,if=none,format=qcow2 \
- 	-device scsi-hd,drive=hd0 \
- 	-display none \
- 	-m 8192 -smp 8\
- 	-kernel /home/vireshk/work/repos/virtio/xen/xen/xen \
- 	-append \"dom0_mem=5G,max:5G dom0_max_vcpus=7 loglvl=all guest_loglvl=all\" \
- 	-device guest-loader,addr=0x44000000,kernel=$AARCH64XENHOSTBUILD/Image,bootargs=\"root=/dev/sda2 console=hvc0 earlyprintk=xen\" \
-	-device ds1338,address=0x10 \
-	-device ds1338,address=0x20"
+alias xenarm="$QEMUARMCOMMON \
+	-kernel /home/vireshk/work/repos/virtio/xen/xen/xen \
+	-append \"dom0_mem=5G,max:5G dom0_max_vcpus=7 loglvl=all guest_loglvl=all\" \
+	-device guest-loader,addr=0x44000000,kernel=$AARCH64XENHOSTBUILD/Image,bootargs=\"root=/dev/sda2 console=hvc0 earlyprintk=xen\" \
+	-device virtio-scsi-pci \
+	-drive file=/home/vireshk/work/repos/virtio/host-qemu/debian-bullseye-arm64.qcow2,index=0,id=hd0,if=none,format=qcow2 \
+	-device scsi-hd,drive=hd0 \
+	$qemurtc"
 
 alias xenbuild="echo -e \"cd work/repos/virtio/xen; make clean; ./configure --libdir=/usr/lib --build=x86_64-unknown-linux-gnu --host=aarch64-linux-gnu --enable-docs --disable-golang --disable-ocamltools --with-system-qemu=/root/qemu/build/i386-softmmu/qemu-system-i386; make -j9 debball CROSS_COMPILE=aarch64-linux-gnu- XEN_TARGET_ARCH=arm64;\"; docker run --rm -it -u $(id -u) -v ~/work:/work -v $HOME:$HOME vireshk:bullseye-arm64 /usr/bin/fish"
 

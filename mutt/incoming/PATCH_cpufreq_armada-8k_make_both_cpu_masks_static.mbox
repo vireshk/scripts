@@ -1,0 +1,72 @@
+From vireshk  Mon Jun 23 09:09:03 2025
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [142.251.175.108] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Mon, 23 Jun 2025 09:09:03 +0530 (IST)
+Received: by 2002:a05:7208:2349:b0:a0:f8d7:dbd1 with SMTP id f9csp928634rbe;         Fri, 20 Jun 2025 04:15:04 -0700 (PDT)
+X-Forwarded-Encrypted: i=2; AJvYcCXbxIRN6fyrqAq3VuJaAEDzy8Gu3BpQfqqIzoJU3jrKpL6nlfHlRhso2PxbZnV0AfCTdPTXWhQH4CPLrHg=@linaro.org
+X-Google-Smtp-Source: AGHT+IHbKLL5xS4+tjMcqwP1g6onrTTQ+74wUL6LUguEQqDI68Mca5q1cIW384dnFKSwV3Z5D2LC
+X-Received: by 2002:a05:6808:218b:b0:403:5150:c351 with SMTP id 5614622812f47-40ac6fcf83amr1527294b6e.6.1750418104753;         Fri, 20 Jun 2025 04:15:04 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750418104; cv=none;         d=google.com; s=arc-20240605;         b=RBlvyJQbRBWUzXkTkz/fGqFTCHudAO8jey/XOPvgac5vf5kTToo6P9koQ2Kp7e3j+2          Jy3p3OiNHqWGaGQp2O+kBboieQSkuo4Pb8KNJtOJz19nhc4WiWuMRotHR8aGeB8skBfi          cpWcI26nDp/xONlMgR7FZ1yE1jebXszM00clQBzClTLMzcoMwMKDdNcLTZkc3UQYZgA9          /XbPvjAX4/iLHdw4qcRX49/TGDQIRilbtqA0v8T1RSPL0sYy6QsTJi54BFmDWLF7Cd1S          vUbAPT9+dRY2XPNwGtOGoGqLPgzZToWhPmFEpZo9jmdRgR3f5eEk8LiFpojtSqbe+mgj          a0YQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from:dkim-signature;         bh=jbJHVcoq7NiQABs8ZlPrmxzrxAeRD2HALcHntXvIP84=;         fh=GfLxqTFn+nqd8kNZd5W/Wehzs2ksILbjfrhAYj3NR2M=;         b=L9YDQXRZy7qaGSPzZo58lica2xheTRrAw+5FeDADq3UybfkFoTJ3qaaXqTCym4tOmG          t4hLc7vi/D1Tkkd8idsiHvXiRD9wLZUHkseoJ53hhHuB1q7WjPdIAaTL/eCs6sxeWr4r          WFEae/NcMWvv3kNR+RKM8tF8tciPIXqJpX4KavI+hlZwtewrbdiZn4iBqia01sn77qO2          SGNtDLDRv3DEkdPBoj9fu7xxpK+HY7lLGe6Y26U07BrZU0FBaAc/9+3jq/szFtpwi9EZ          i64h0Dv/5vSduzTAzSdjtNOoGOBKPb3Uo2tu7BvWq4KwPCt/VzuEetiSFKKQL/T5Mt+c          rjhA==;         dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@kernel.org header.s=k20201202 header.b=uGab8+3s;        spf=pass (google.com: domain of arnd@kernel.org designates 139.178.84.217 as permitted sender) smtp.mailfrom=arnd@kernel.org;        dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=kernel.org
+Return-Path: <arnd@kernel.org>
+Received: from dfw.source.kernel.org (dfw.source.kernel.org. [139.178.84.217])         by mx.google.com with ESMTPS id 5614622812f47-40ac6d23d0csi1026504b6e.142.2025.06.20.04.15.04         for <viresh.kumar@linaro.org>         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Fri, 20 Jun 2025 04:15:04 -0700 (PDT)
+Received-SPF: pass (google.com: domain of arnd@kernel.org designates 139.178.84.217 as permitted sender) client-ip=139.178.84.217;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@kernel.org header.s=k20201202 header.b=uGab8+3s;        spf=pass (google.com: domain of arnd@kernel.org designates 139.178.84.217 as permitted sender) smtp.mailfrom=arnd@kernel.org;        dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=kernel.org
+Received: from smtp.kernel.org (transwarp.subspace.kernel.org [100.75.92.58]) 	by dfw.source.kernel.org (Postfix) with ESMTP id A86D95C46ED; 	Fri, 20 Jun 2025 11:12:47 +0000 (UTC)
+Received: by smtp.kernel.org (Postfix) with ESMTPSA id 8B40FC4CEE3; 	Fri, 20 Jun 2025 11:15:01 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=kernel.org; 	s=k20201202; t=1750418103; 	bh=fHGPT6U5lkOL40pG3L6uGrMxMnoD5rKHLmnMjGJM4HY=; 	h=From:To:Cc:Subject:Date:From; 	b=uGab8+3sBVTk65V/vppELrITzxhLlKqt/PCYK2f5nMEGtMUyW+WIkJqwPgnLVFOyD 	 0fOKKPXlQl2KqwX26lksY/qNWuHp64d58okXUTeKO05KvGbmxfxtujqIg7djsQItzi 	 X/UCt4M8DmP71vRTg/TgUNm3J0KZ/Ha5+XWyfIdRrErxW4igRLUx073rB392UUO+Q7 	 BqLkXJWXWW8bkrS+QlHFwcj25XZECy2qpTtzvpB8exo60fWc736uctEizzutPd5tvj 	 DNmipNK8nm9LkGqS4yzR1xjYBgdOqe4pWSX9mdNFpOYuTbW/3q2qerphMxmEB3CxcZ 	 khkyzLPXi98Ew==
+From: Arnd Bergmann <arnd@kernel.org>
+To: Andrew Lunn <andrew@lunn.ch>, 	Gregory Clement <gregory.clement@bootlin.com>, 	Sebastian Hesselbarth <sebastian.hesselbarth@gmail.com>, 	"Rafael J. Wysocki" <rafael@kernel.org>, 	Viresh Kumar <viresh.kumar@linaro.org>, 	"Rob Herring (Arm)" <robh@kernel.org>
+Cc: Arnd Bergmann <arnd@arndb.de>, 	Jacky Bai <ping.bai@nxp.com>, 	Sudeep Holla <sudeep.holla@arm.com>, 	linux-arm-kernel@lists.infradead.org, 	linux-pm@vger.kernel.org, 	linux-kernel@vger.kernel.org
+Subject: [PATCH] cpufreq: armada-8k: make both cpu masks static
+Date: Fri, 20 Jun 2025 13:14:53 +0200
+Message-Id: <20250620111459.3366195-1-arnd@kernel.org>
+X-Mailer: git-send-email 2.39.5
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Content-Length: 1600
+Lines: 42
+
+From: Arnd Bergmann <arnd@arndb.de>
+
+An earlier patch marked one of the two CPU masks as 'static' to reduce stack
+usage, but if CONFIG_NR_CPUS is large enough, the function still produces
+a warning for compile testing:
+
+drivers/cpufreq/armada-8k-cpufreq.c: In function 'armada_8k_cpufreq_init':
+drivers/cpufreq/armada-8k-cpufreq.c:203:1: error: the frame size of 1416 bytes is larger than 1408 bytes [-Werror=frame-larger-than=]
+
+Normally this should be done using alloc_cpumask_var(), but since the
+driver already has a static mask and the probe function is not called
+concurrently, use the same trick for both.
+
+Fixes: 1ffec650d07f ("cpufreq: armada-8k: Avoid excessive stack usage")
+Signed-off-by: Arnd Bergmann <arnd@arndb.de>
+---
+ drivers/cpufreq/armada-8k-cpufreq.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+diff --git a/drivers/cpufreq/armada-8k-cpufreq.c b/drivers/cpufreq/armada-8k-cpufreq.c
+index 5a3545bd0d8d..006f4c554dd7 100644
+--- a/drivers/cpufreq/armada-8k-cpufreq.c
++++ b/drivers/cpufreq/armada-8k-cpufreq.c
+@@ -132,7 +132,7 @@ static int __init armada_8k_cpufreq_init(void)
+ 	int ret = 0, opps_index = 0, cpu, nb_cpus;
+ 	struct freq_table *freq_tables;
+ 	struct device_node *node;
+-	static struct cpumask cpus;
++	static struct cpumask cpus, shared_cpus;
+ 
+ 	node = of_find_matching_node_and_match(NULL, armada_8k_cpufreq_of_match,
+ 					       NULL);
+@@ -154,7 +154,6 @@ static int __init armada_8k_cpufreq_init(void)
+ 	 * divisions of it).
+ 	 */
+ 	for_each_cpu(cpu, &cpus) {
+-		struct cpumask shared_cpus;
+ 		struct device *cpu_dev;
+ 		struct clk *clk;
+ 
+-- 
+2.39.5
+

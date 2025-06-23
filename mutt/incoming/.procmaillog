@@ -2738,3 +2738,9 @@ From vireshk  Fri Jun 13 06:44:16 2025
 From vireshk  Mon Jun 16 19:44:05 2025
  Subject: [PATCH v3] rust: cpufreq: Ensure C ABI compatibility in all unsafe
   Folder: PATCH_v3_rust_cpufreq_Ensure_C_ABI_compatibility_in_all_unsa	  11727
+From vireshk  Mon Jun 23 09:08:59 2025
+ Subject: [PATCH] rust: opp: use c_* types via kernel prelude
+  Folder: PATCH_rust_opp_use_c_*_types_via_kernel_prelude.mbox		   8209
+From vireshk  Mon Jun 23 09:09:03 2025
+ Subject: [PATCH] cpufreq: armada-8k: make both cpu masks static
+  Folder: PATCH_cpufreq_armada-8k_make_both_cpu_masks_static.mbox	   6359

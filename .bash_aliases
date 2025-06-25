@@ -286,22 +286,21 @@ export QEMUARMCOMMON="$QEMUAARCH64 \
 	-device virtio-net-pci,netdev=net0 \
 	-netdev user,id=net0,hostfwd=tcp::8022-:22"
 
-alias qemuarm="$QEMUARMCOMMON \
+alias qemuarmold="$QEMUARMCOMMON \
 	-kernel $AARCH64BUILD/Image \
 	-append \"earlycon root=/dev/vda2\" \
-	-drive if=virtio,format=qcow2,file=$QEMUPATH/../host-qemu/disk.img \
-	$qemuobj"
+	-drive if=virtio,format=qcow2,file=$QEMUPATH/../host-qemu/disk.img"
 
-alias qemuarmnoxen="$QEMUARMCOMMON \
+alias qemuarm="$QEMUARMCOMMON \
 	-kernel /home/vireshk/work/repos/kernel/barm64_vhost/arch/arm64/boot/Image \
 	-append \"earlycon root=/dev/sda2\" \
 	-device virtio-scsi-pci \
 	-drive file=/home/vireshk/work/repos/virtio/host-qemu/debian-bullseye-arm64.qcow2,index=0,id=hd0,if=none,format=qcow2 \
-	-device scsi-hd,drive=hd0 \
-	$qemurtc"
+	-device scsi-hd,drive=hd0"
 
-alias qemuarmi2c="qemuarm $qemui2c $qemufs $qemurtc"
-alias qemuarmgpio="qemuarm $qemugpio"
+alias qemuarmi2c="qemuarm $qemuobj $qemui2c $qemufs $qemurtc"
+alias qemuarmgpio="qemuarm $qemuobj $qemugpio"
+alias qemuarmrtc="qemuarm $qemurtc"
 
 alias qemuarmf="$QEMUARMCOMMON \
 	-kernel $AARCH64BUILD/Image \

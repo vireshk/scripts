@@ -2744,3 +2744,6 @@ From vireshk  Mon Jun 23 09:08:59 2025
 From vireshk  Mon Jun 23 09:09:03 2025
  Subject: [PATCH] cpufreq: armada-8k: make both cpu masks static
   Folder: PATCH_cpufreq_armada-8k_make_both_cpu_masks_static.mbox	   6359
+From vireshk  Wed Jul  2 08:41:48 2025
+ Subject: [PATCH] cpufreq: armada-8k: Fix off by one in  armada_8k_cpufreq_free
+  Folder: PATCH_cpufreq_armada-8k_Fix_off_by_one_in_armada_8k_cpufreq_	   7714

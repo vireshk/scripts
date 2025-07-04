@@ -5,6 +5,10 @@ set autolist
 set autologout=0
 umask 002
 
+if [ -f ~/.bash_functions ]; then
+    . ~/.bash_functions
+fi
+
 # Environment variables
 #export PS1="\[\e]0;\u@\h: \a\]${debian_chroot:+($debian_chroot)}\u@\h:\$ "
 export PS1="$ "

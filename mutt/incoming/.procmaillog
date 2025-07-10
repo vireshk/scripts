@@ -2747,3 +2747,6 @@ From vireshk  Mon Jun 23 09:09:03 2025
 From vireshk  Wed Jul  2 08:41:48 2025
  Subject: [PATCH] cpufreq: armada-8k: Fix off by one in  armada_8k_cpufreq_free
   Folder: PATCH_cpufreq_armada-8k_Fix_off_by_one_in_armada_8k_cpufreq_	   7714
+From vireshk  Tue Jul  8 09:02:24 2025
+ Subject: [PATCH v6 3/3] cpufreq: tegra124: Allow building as a module
+  Folder: PATCH_v6_3-3_cpufreq_tegra124_Allow_building_as_a_module.mbo	  10152

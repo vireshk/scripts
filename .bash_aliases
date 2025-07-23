@@ -228,7 +228,7 @@ alias flashhikeya="fastboot flash boot $ARMBOOTA/boot.img; fastboot reboot"
 alias updatehikeya="makehikeybootimga; flashhikeya;"
 
 # Android
-export ANDROID_HOME=/home/vireshk/Android/Sdk
+# export ANDROID_HOME=/home/vireshk/Android/Sdk
 export CLANG_TRIPLE=aarch64-linux-gnu-
 export LD_LIBRARY_PATH="/media/vireshk/bb4fad4d-8860-4037-8d08-02291222001e/android/prebuilts/clang/host/linux-x86/clang-r346389b/lib64/"
 
@@ -363,6 +363,10 @@ alias vmsggooglebuild="LOG_LEVEL_KERNEL_RUST=5 ./trusty/vendor/google/aosp/scrip
 alias vmsggooglerun="./build-root/build-qemu-generic-arm64-gicv3-hafnium-test-debug/run --verbose"
 
 alias mysuspend='systemd-run --user /bin/systemctl suspend'
+alias freezechrome='pkill -STOP chrome'
+alias resumechrome='pkill -CONT chrome'
+alias mybeep='beep -f 2000 -l 300'
+export ANDROID_ROOT=/home/vireshk/work/repos/virtio-msg/google/widevine_oemcrypto
 
 # go to linux on shell startup
 hlinux

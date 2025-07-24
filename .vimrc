@@ -256,6 +256,7 @@ set guifont=Monospace\ 12
 :let @r = "\nReviewed-by: Viresh Kumar <viresh.kumar@linaro.org>\n"
 :let @s = "\nSigned-off-by: Viresh Kumar <viresh.kumar@linaro.org>\n"
 :let @t = "\nTested-by: Viresh Kumar <viresh.kumar@linaro.org>\n"
+:let @u = "\n[ Upstream commit  ]\n"
 :let @d = "	pr_info(\"%s: %d\\n\", __func__, __LINE__);\n"
 :let @p = "\n-------------------------8<-------------------------\n"
 :let @m = "\nApplied. Thanks.\n"

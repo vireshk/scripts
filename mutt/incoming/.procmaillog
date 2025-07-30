@@ -2756,3 +2756,6 @@ From vireshk  Mon Jul 14 08:38:11 2025
 From vireshk  Mon Jul 14 13:48:53 2025
  Subject: [PATCH v2 1/3] drivers: cpufreq: add Tegra114 support
   Folder: PATCH_v2_1-3_drivers_cpufreq_add_Tegra114_support.mbox	   8349
+From vireshk  Wed Jul 30 10:24:11 2025
+ Subject: [PATCH] rust: clk: use the type-state pattern
+  Folder: PATCH_rust_clk_use_the_type-state_pattern.mbox		  28333

@@ -2759,3 +2759,15 @@ From vireshk  Mon Jul 14 13:48:53 2025
 From vireshk  Wed Jul 30 10:24:11 2025
  Subject: [PATCH] rust: clk: use the type-state pattern
   Folder: PATCH_rust_clk_use_the_type-state_pattern.mbox		  28333
+From vireshk  Sun Aug 10 12:22:24 2025
+ Subject: [PATCH] cpufreq: airoha: Add support for AN7583 SoC
+  Folder: PATCH_cpufreq_airoha_Add_support_for_AN7583_SoC.mbox		   7849
+From vireshk  Sun Aug 10 12:22:31 2025
+ Subject: [PATCH 1/1] cpufreq: armada-37xx: use max() to calculate target_vm
+  Folder: PATCH_1-1_cpufreq_armada-37xx_use_max__to_calculate_target_v	   7225
+From vireshk  Wed Jul 30 10:24:17 2025
+ Subject: [PATCH] cpufreq: Remove unused parameter in cppc_perf_from_fbctrs()
+  Folder: PATCH_cpufreq_Remove_unused_parameter_in_cppc_perf_from_fbct	   6181
+From vireshk  Wed Aug  6 20:08:47 2025
+ Subject: [PATCH v6 3/4] cpufreq: qcom-nvmem: Enable cpufreq for ipq5424
+  Folder: PATCH_v6_3-4_cpufreq_qcom-nvmem_Enable_cpufreq_for_ipq5424.m	  10416

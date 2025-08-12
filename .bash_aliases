@@ -166,6 +166,7 @@ alias imagex86deb='imagex86 deb-pkg'
 alias installx86="nimage x86; nmodule x86; msudo make O=../bx86 CROSS_COMPILE= -j8 LOCALVERSION=-$X86IMAGENAME modules_install; msudo make O=../bx86 CROSS_COMPILE= -j8 LOCALVERSION=-$X86IMAGENAME install;"
 
 #fixes
+alias fixkeyboardvol="killall mate-settings-daemon && nohup mate-settings-daemon >/dev/null 2>&1 &"
 alias fixsound1="pulseaudio -k"
 alias fixsoundbose="msudo alsa force-reload"
 alias fixsound2="pactl load-module module-bluetooth-discover"
@@ -237,7 +238,7 @@ export LD_LIBRARY_PATH="/media/vireshk/bb4fad4d-8860-4037-8d08-02291222001e/andr
 export JIRA_USERNAME="Viresh.kumar@linaro.org"
 #export JIRA_PASSWORD=`cat ~/all/criticalinfo/.jirapassword`
 PATH="/home/vireshk/work/repos/tools/jipdate/:$PATH"
-alias updatejiramail="git send-email --confirm=always --cc-cmd=true --to-cmd=true pmwg-weekly-status.txt --to kwg-team-private@linaro.org --cc vireshk --cc 'Alex Bennée <alex.bennee@linaro.org>' --cc 'Lei Zhou <lei.zhou@linaro.org>'"
+alias updatejiramail="git send-email --confirm=always --cc-cmd=true --to-cmd=true pmwg-weekly-status.txt --to kwg-team-private@linaro.org --cc vireshk --cc 'Alex Bennée <alex.bennee@linaro.org>' --cc sumit.semwal@linaro.org --cc lina.iyer@linaro.org --cc peter.griffin@linaro.org"
 alias updatejira="hjunk; cd jira; jipdate -q --all -f pmwg-weekly-status.txt; updatejiramail"
 
 alias mountrouterdrive="curlftpfs vireshk:123456@192.168.1.1 ~/Videos/routerdrive/"

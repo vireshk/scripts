@@ -2771,3 +2771,9 @@ From vireshk  Wed Jul 30 10:24:17 2025
 From vireshk  Wed Aug  6 20:08:47 2025
  Subject: [PATCH v6 3/4] cpufreq: qcom-nvmem: Enable cpufreq for ipq5424
   Folder: PATCH_v6_3-4_cpufreq_qcom-nvmem_Enable_cpufreq_for_ipq5424.m	  10416
+From vireshk  Tue Aug 12 09:02:28 2025
+ Subject: [PATCH] MAINTAINERS: Add myself as virtual-cpufreq maintainer
+  Folder: PATCH_MAINTAINERS_Add_myself_as_virtual-cpufreq_maintainer.m	   6924
+From vireshk  Wed Jul  2 14:44:00 2025
+ Subject: [PATCH v5 1/3] dt-bindings: cpufreq: cpufreq-qcom-hw: Add QCS615  com
+  Folder: PATCH_v5_1-3_dt-bindings_cpufreq_cpufreq-qcom-hw_Add_QCS615_	   8898

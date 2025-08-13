@@ -344,6 +344,7 @@ export SYSTEM_DEPS_LIBGPIOD_LIB=gpiod
 export SYSTEM_DEPS_LIBGPIOD_INCLUDE="$rustpath/libgpiod/include/"
 
 # Virtio-msg
+PATH="/home/vireshk/work/repos/virtio-msg/clang_hafnium/clang+llvm-15.0.6-x86_64-linux-gnu-ubuntu-18.04/bin:$PATH"
 export QEMUWPATH="$VIRTIOPATH/qemu-work/build"
 alias vmsgqemu="cd $QEMUWPATH && rm -fr queue-linux-user-d* && ./qemu-system-aarch64 -M x-virtio-msg -m 2G -cpu cortex-a72      -object memory-backend-file,id=mem,size=2G,mem-path=/dev/shm/qemu-ram,share=on      -machine memory-backend=mem      -chardev socket,id=chr0,path=linux-user.socket,server=on,wait=false      -serial mon:stdio -display none      -device virtio-msg-bus-linux-user,name=linux-user,chardev=chr0,memdev=mem,mem-offset=0x40000000      -device virtio-net-device,netdev=net0,iommu_platform=on      -netdev user,id=net0      -object filter-dump,id=f0,netdev=net0,file=net.pcap"
 
@@ -351,17 +352,21 @@ alias vmsgqemuguestpci="cd $QEMUWPATH && ./qemu-system-aarch64 -M virt -m 2G -cp
 
 alias vmsgqemuguest="cd $QEMUWPATH && ./qemu-system-aarch64 -M virt -m 2G -cpu cortex-a72      -object memory-backend-file,id=mem,size=2G,mem-path=/dev/shm/qemu-ram,share=on      -machine memory-backend=mem      -chardev socket,id=chr0,path=linux-user.socket      -serial mon:stdio -display none      -kernel ~/work/repos/kernel/barm64/arch/arm64/boot/Image      -initrd /home/vireshk/work/repos/virtio/buildroot/buildarm64/images/rootfs.cpio      -append \"rdinit=/sbin/init console=ttyAMA0 lpj=100\"      --device virtio-msg-proxy-driver,iommu_platform=on,virtio-id=0x1 -global virtio-mmio.force-legacy=false      -device virtio-msg-bus-linux-user,name=linux-user,chardev=chr0"
 
-# virtio-msg
-PATH="/home/vireshk/work/repos/virtio-msg/clang_hafnium/clang+llvm-15.0.6-x86_64-linux-gnu-ubuntu-18.04/bin:$PATH"
+
 alias shrinktf="shrinkwrap -I docker.io/shrinkwraptool/base-full:latest run --rtvar=KERNEL=/home/vireshk/work/repos/kernel/barm64/arch/arm64/boot/Image ffa-tftf.yaml"
 alias shrinktfbuild="shrinkwrap -I docker.io/shrinkwraptool/base-full:latest  build --force-sync scp ffa-tftf.yaml"
 alias shrinktfbuilda="shrinkwrap -I docker.io/shrinkwraptool/base-full:latest  clean ffa-tftf.yaml; shrinktfbuild"
 alias fixscpfirm="cd /home/vireshk/work/repos/virtio-msg/SCP-firmware/product/secure-partition/common/tee; gfo; gco origin/virtio-msg; cd ../../../../; ga .; tgca; gp me master; cd /home/vireshk/work/repos/virtio-msg/tf-a-tests"
 
 alias vmsggooglesync="repo sync -j$(nproc) -c --no-tags"
-alias vmsggoogleclean="rm -rf build-root/build-qemu-generic-arm64-gicv3-hafnium-test-debug/linux-build/arch/arm64/boot/Image"
-alias vmsggooglebuild="LOG_LEVEL_KERNEL_RUST=5 ./trusty/vendor/google/aosp/scripts/build.py qemu-generic-arm64-gicv3-hafnium-test-debug --skip-tests"
-alias vmsggooglerun="./build-root/build-qemu-generic-arm64-gicv3-hafnium-test-debug/run --verbose"
+#alias vmsggoogleclean="rm -rf build-root/build-qemu-generic-arm64-gicv3-hafnium-test-debug/linux-build/arch/arm64/boot/Image"
+#alias vmsggooglebuild="LOG_LEVEL_KERNEL_RUST=5 ./trusty/vendor/google/aosp/scripts/build.py qemu-generic-arm64-gicv3-hafnium-test-debug --skip-tests"
+#alias vmsggooglerun="./build-root/build-qemu-generic-arm64-gicv3-hafnium-test-debug/run --verbose"
+alias vmsggooglekbuild='tools/bazel run //common:kernel_aarch64_dist -- --destdir $ANDROID_ROOT/kernel/prebuilts/6.12/arm64'
+alias vmsggooglevdevbuild='tools/bazel run //common-modules/virtual-device:virtual_device_aarch64_dist -- --destdir $ANDROID_ROOT/kernel/prebuilts/common-modules/virtual-device/6.12/arm64'
+alias vmsggoogletrustybuild='tools/bazel run //common-modules/trusty/build/main-kernel-build-2025:trusty_aarch64_dist -- --destdir $ANDROID_ROOT/kernel/prebuilts/common-modules/trusty/6.12/arm64'
+alias vmsggooglevmsgbuild='tools/bazel run //common-modules/virtio-msg:virtio_msg_aarch64_dist -- --destdir $ANDROID_ROOT/kernel/prebuilts/common-modules/virtio-msg/6.12/arm64'
+alias vmsggooglekcopy='mv $ANDROID_ROOT/kernel/prebuilts/6.12/arm64/Image $ANDROID_ROOT/kernel/prebuilts/6.12/arm64/kernel-6.12'
 
 alias mysuspend='systemd-run --user /bin/systemctl suspend'
 alias freezechrome='pkill -STOP chrome'

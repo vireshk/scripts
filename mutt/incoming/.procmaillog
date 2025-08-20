@@ -2780,3 +2780,9 @@ From vireshk  Wed Jul  2 14:44:00 2025
 From vireshk  Tue Aug 19 08:47:29 2025
  Subject: [PATCH v3] cpufreq: scmi: Account for malformed DT in scmi_dev_used_b
   Folder: PATCH_v3_cpufreq_scmi_Account_for_malformed_DT_in_scmi_dev_u	   7437
+From vireshk  Wed Aug 20 09:10:41 2025
+ Subject: [PATCH] cpufreq: mediatek-hw: don't use error path on NULL fdvfs
+  Folder: PATCH_cpufreq_mediatek-hw_don't_use_error_path_on_NULL_fdvfs	   7771
+From vireshk  Mon Aug 18 08:34:39 2025
+ Subject: [PATCH v2] rust: opp: update ARef and AlwaysRefCounted imports from s
+  Folder: PATCH_v2_rust_opp_update_ARef_and_AlwaysRefCounted_imports_f	  11697

@@ -2786,3 +2786,9 @@ From vireshk  Wed Aug 20 09:10:41 2025
 From vireshk  Mon Aug 18 08:34:39 2025
  Subject: [PATCH v2] rust: opp: update ARef and AlwaysRefCounted imports from s
   Folder: PATCH_v2_rust_opp_update_ARef_and_AlwaysRefCounted_imports_f	  11697
+From vireshk  Wed Aug 20 14:04:34 2025
+ Subject: [PATCH 3/4] cpufreq: dt-platdev: Blacklist ti,am62d2 SoC
+  Folder: PATCH_3-4_cpufreq_dt-platdev_Blacklist_ti,am62d2_SoC.mbox	   6346
+From vireshk  Wed Aug 20 14:05:42 2025
+ Subject: [PATCH 4/4] cpufreq: ti: Add support for AM62D2
+  Folder: PATCH_4-4_cpufreq_ti_Add_support_for_AM62D2.mbox		   6799

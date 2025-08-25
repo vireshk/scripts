@@ -2792,3 +2792,21 @@ From vireshk  Wed Aug 20 14:04:34 2025
 From vireshk  Wed Aug 20 14:05:42 2025
  Subject: [PATCH 4/4] cpufreq: ti: Add support for AM62D2
   Folder: PATCH_4-4_cpufreq_ti_Add_support_for_AM62D2.mbox		   6799
+From vireshk  Thu Aug 21 14:47:18 2025
+ Subject: [PATCH] rust: opp: use to_result for error handling
+  Folder: PATCH_rust_opp_use_to_result_for_error_handling.mbox		   7691
+From vireshk  Tue Aug 19 08:47:55 2025
+ Subject: [PATCH 1/3] cpufreq: ti: Support more speed grades on AM62Px SoC
+  Folder: PATCH_1-3_cpufreq_ti_Support_more_speed_grades_on_AM62Px_SoC	   6747
+From vireshk  Tue Aug 19 08:47:51 2025
+ Subject: [PATCH 2/3] cpufreq: ti: Allow all silicon revisions to support OPPs
+  Folder: PATCH_2-3_cpufreq_ti_Allow_all_silicon_revisions_to_support_	   6583
+From vireshk  Tue Aug 19 08:47:56 2025
+ Subject: [PATCH 3/3] arm64: dts: ti: k3-am62p: Fix supported hardware for 1GHz
+  Folder: PATCH_3-3_arm64_dts_ti_k3-am62p_Fix_supported_hardware_for_1	   6503
+From vireshk  Wed Aug 20 13:59:57 2025
+ Subject: [PATCH v4 1/7] OPP: Add support to find OPP for a set of keys
+  Folder: PATCH_v4_1-7_OPP_Add_support_to_find_OPP_for_a_set_of_keys.m	  18070
+From vireshk  Wed Aug 20 13:59:58 2025
+ Subject: [PATCH v4 2/7] OPP: Move refcount and key update for readability  in 
+  Folder: PATCH_v4_2-7_OPP_Move_refcount_and_key_update_for_readabilit	  12302

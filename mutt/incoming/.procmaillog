@@ -2813,3 +2813,27 @@ From vireshk  Wed Aug 20 13:59:58 2025
 From vireshk  Thu Aug 28 09:22:54 2025
  Subject: [PATCH 1/1] dt-bindings: cpufreq-dt: Remove redundant cpufreq-dt.txt
   Folder: PATCH_1-1_dt-bindings_cpufreq-dt_Remove_redundant_cpufreq-dt	  14371
+From vireshk  Fri Aug 29 09:08:18 2025
+ Subject: [PATCH RESEND] cpufreq/longhaul: handle NULL policy in longhaul_exit
+  Folder: PATCH_RESEND_cpufreq-longhaul_handle_NULL_policy_in_longhaul	   7638
+From vireshk  Thu Aug 28 09:19:12 2025
+ Subject: [PATCH v2 04/18] cpufreq: brcmstb-avs-cpufreq: Use __free(put_cpufreq
+  Folder: PATCH_v2_04-18_cpufreq_brcmstb-avs-cpufreq_Use__free_put_cpu	   8252
+From vireshk  Thu Aug 28 09:19:13 2025
+ Subject: [PATCH v2 05/18] cpufreq: CPPC: Use __free(put_cpufreq_policy) for po
+  Folder: PATCH_v2_05-18_cpufreq_CPPC_Use__free_put_cpufreq_policy_for	   8321
+From vireshk  Thu Aug 28 09:19:17 2025
+ Subject: [PATCH v2 08/18] cpufreq: mediatek: Use __free(put_cpufreq_policy) fo
+  Folder: PATCH_v2_08-18_cpufreq_mediatek_Use__free_put_cpufreq_policy	   8364
+From vireshk  Thu Aug 28 09:19:19 2025
+ Subject: [PATCH v2 10/18] cpufreq: s5pv210: Use __free(put_cpufreq_policy) for
+  Folder: PATCH_v2_10-18_cpufreq_s5pv210_Use__free_put_cpufreq_policy_	   8203
+From vireshk  Thu Aug 28 09:19:17 2025
+ Subject: [PATCH v2 08/18] cpufreq: mediatek: Use __free(put_cpufreq_policy) fo
+  Folder: PATCH_v2_08-18_cpufreq_mediatek_Use__free_put_cpufreq_policy	   8364
+From vireshk  Thu Aug 28 09:19:17 2025
+ Subject: [PATCH v2 08/18] cpufreq: mediatek: Use __free(put_cpufreq_policy) fo
+  Folder: PATCH_v2_08-18_cpufreq_mediatek_Use__free_put_cpufreq_policy	   8364
+From vireshk  Thu Aug 28 09:19:20 2025
+ Subject: [PATCH v2 11/18] cpufreq: tegra186: Use __free(put_cpufreq_policy) fo
+  Folder: PATCH_v2_11-18_cpufreq_tegra186_Use__free_put_cpufreq_policy	   8367

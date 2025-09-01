@@ -2837,3 +2837,6 @@ From vireshk  Thu Aug 28 09:19:17 2025
 From vireshk  Thu Aug 28 09:19:20 2025
  Subject: [PATCH v2 11/18] cpufreq: tegra186: Use __free(put_cpufreq_policy) fo
   Folder: PATCH_v2_11-18_cpufreq_tegra186_Use__free_put_cpufreq_policy	   8367
+From vireshk  Mon Sep  1 09:22:21 2025
+ Subject: [PATCH v2] cpufreq/longhaul: handle NULL policy in longhaul_exit
+  Folder: PATCH_v2_cpufreq-longhaul_handle_NULL_policy_in_longhaul_exi	   7318

@@ -1,0 +1,66 @@
+From vireshk  Mon Sep 29 09:27:25 2025
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [142.250.4.108] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Mon, 29 Sep 2025 09:27:25 +0530 (IST)
+Received: by 2002:a05:651c:1501:b0:336:6d85:2630 with SMTP id e1csp926134ljf;         Mon, 15 Sep 2025 07:01:49 -0700 (PDT)
+X-Forwarded-Encrypted: i=2; AJvYcCWlHszSyxhzBB3+lYj7nSC2cJ8hIlVc8dspd/jq/fNhSIOukYBazTrpSY5gDzE0LF5RUXR2btIzo0Iq+Zs=@linaro.org
+X-Google-Smtp-Source: AGHT+IHfUlHB/KN2ooZgV8B7DpIJ67t/mBLBBYzfry9mIOPQtFhs64f0UDxmgU1yoBjQRLaUr7UP
+X-Received: by 2002:a5d:5f91:0:b0:3cd:ef83:a9a1 with SMTP id ffacd0b85a97d-3e7659c4a7dmr11005926f8f.20.1757944908330;         Mon, 15 Sep 2025 07:01:48 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1757944908; cv=none;         d=google.com; s=arc-20240605;         b=DZFGNQ3BB82iQzadWi7FbTWfAXZ2uxUkZunfjqwFUChGeehfQEztnkttr2MfRKE5hh          uX2kNieEPEV6rQLntdQo2db6ZBQAzo8Ox45gIAYM6vFR+IZ66JaWEjSwpmeYfGN3tpAJ          bY42hRan7j7PLw9B3wiQGfq3iH/aTIrc00i64FiN0ec+Wi65c28fggzAYN/rKosiPaYD          /syhctmc5ad4ZScZqJBea4Ck1ifk8jqkaEf9Mh6Sucm0If3t2Xq5mUM/5/a6PNPuewmL          RZQ/l7CISc0Jt5X8vDezkm/9CdGhh0tY1PLdDYzK3XeEt0IZPkRyGKwIUaFKeqgEEgQb          O2Kg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from:dkim-signature;         bh=AhJ4pkDiJ0lWkmhamxXqTKU3eDM1TJhpY4CZ/P9eJwI=;         fh=65F1ckw70BAIw9OPO1XIX12BMQADrUeMuLQAP0Ot8QU=;         b=Cr+qoCsUjqmIdqLmODdNJN9O0BIW+RY14LeATAEivVYpo4z4XMR8bh5HO2bulzZ10+          iAAVj1jwe7MCjXJJWpzKg6B11fJ5wh5cWzA4n177Fqqb3RQi3KfpoBwxWKrLTEVs1Tw6          EL7rsK+sJBHqBmdfLyMq+huYBAXdIcx1Ol9o787ufeqk+A+TYtV6mQTRLFTHUpYeMpsZ          ZKdUOn7sGIse13+5cpXhBTIp2CnfCR4OMwRyAiBH1Wtm2dfTB0AqLBh64P0ihvIar0kd          6FS9Lw+ArD6Jlu89EyGfUhqpuh6tvRWnKL1o0++rT2WO+XQM5NssnNMHD09hnWXGDtSj          k10Q==;         dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@linux.dev header.s=key1 header.b=h7SWvRLo;        spf=pass (google.com: domain of thorsten.blum@linux.dev designates 91.218.175.188 as permitted sender) smtp.mailfrom=thorsten.blum@linux.dev;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=linux.dev
+Return-Path: <thorsten.blum@linux.dev>
+Received: from out-188.mta0.migadu.com (out-188.mta0.migadu.com. [91.218.175.188])         by mx.google.com with ESMTPS id ffacd0b85a97d-3eb604983d2si1050742f8f.470.2025.09.15.07.01.46         for <viresh.kumar@linaro.org>         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Mon, 15 Sep 2025 07:01:47 -0700 (PDT)
+Received-SPF: pass (google.com: domain of thorsten.blum@linux.dev designates 91.218.175.188 as permitted sender) client-ip=91.218.175.188;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@linux.dev header.s=key1 header.b=h7SWvRLo;        spf=pass (google.com: domain of thorsten.blum@linux.dev designates 91.218.175.188 as permitted sender) smtp.mailfrom=thorsten.blum@linux.dev;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=linux.dev
+X-Report-Abuse: Please report any abuse attempt to abuse@migadu.com and include these headers.
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=linux.dev; s=key1; 	t=1757944905; 	h=from:from:reply-to:subject:subject:date:date:message-id:message-id: 	 to:to:cc:cc:mime-version:mime-version: 	 content-transfer-encoding:content-transfer-encoding; 	bh=AhJ4pkDiJ0lWkmhamxXqTKU3eDM1TJhpY4CZ/P9eJwI=; 	b=h7SWvRLorPI/hS+JB+Q5OH1c0BtLwcdyC1iqMl/fC/0e6SMC/9ih8/4d4iySxlDt58aOsW 	GE43IfUiziAt0TrrZ5P7OsJE+575EuEad6mh1NNL17DeLS4bJbIf+dhJA6H38TuOWMRE9p 	g0P3cavDxaeaC6BHAOthYONZlIltqKs=
+From: Thorsten Blum <thorsten.blum@linux.dev>
+To: "Rafael J. Wysocki" <rafael@kernel.org>, 	Viresh Kumar <viresh.kumar@linaro.org>, 	Miguel Ojeda <ojeda@kernel.org>, 	Alex Gaynor <alex.gaynor@gmail.com>, 	Boqun Feng <boqun.feng@gmail.com>, 	Gary Guo <gary@garyguo.net>, 	=?UTF-8?q?Bj=C3=B6rn=20Roy=20Baron?= <bjorn3_gh@protonmail.com>, 	Benno Lossin <lossin@kernel.org>, 	Andreas Hindborg <a.hindborg@kernel.org>, 	Alice Ryhl <aliceryhl@google.com>, 	Trevor Gross <tmgross@umich.edu>, 	Danilo Krummrich <dakr@kernel.org>
+Cc: Thorsten Blum <thorsten.blum@linux.dev>, 	linux-pm@vger.kernel.org, 	linux-kernel@vger.kernel.org, 	rust-for-linux@vger.kernel.org
+Subject: [PATCH] rust: cpufreq: streamline find_supply_names
+Date: Mon, 15 Sep 2025 15:59:54 +0200
+Message-ID: <20250915135954.2329723-2-thorsten.blum@linux.dev>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+X-Migadu-Flow: FLOW_OUT
+X-Label: apply
+Content-Length: 1311
+Lines: 37
+
+Remove local variables from find_supply_names() and use .and_then() with
+the more concise kernel::kvec![] macro, instead of KVec::with_capacity()
+followed by .push() and Some().
+
+No functional changes intended.
+
+Signed-off-by: Thorsten Blum <thorsten.blum@linux.dev>
+---
+ drivers/cpufreq/rcpufreq_dt.rs | 10 +++-------
+ 1 file changed, 3 insertions(+), 7 deletions(-)
+
+diff --git a/drivers/cpufreq/rcpufreq_dt.rs b/drivers/cpufreq/rcpufreq_dt.rs
+index 7e1fbf9a091f..224d063c7cec 100644
+--- a/drivers/cpufreq/rcpufreq_dt.rs
++++ b/drivers/cpufreq/rcpufreq_dt.rs
+@@ -28,15 +28,11 @@ fn find_supply_name_exact(dev: &Device, name: &str) -> Option<CString> {
+ /// Finds supply name for the CPU from DT.
+ fn find_supply_names(dev: &Device, cpu: cpu::CpuId) -> Option<KVec<CString>> {
+     // Try "cpu0" for older DTs, fallback to "cpu".
+-    let name = (cpu.as_u32() == 0)
++    (cpu.as_u32() == 0)
+         .then(|| find_supply_name_exact(dev, "cpu0"))
+         .flatten()
+-        .or_else(|| find_supply_name_exact(dev, "cpu"))?;
+-
+-    let mut list = KVec::with_capacity(1, GFP_KERNEL).ok()?;
+-    list.push(name, GFP_KERNEL).ok()?;
+-
+-    Some(list)
++        .or_else(|| find_supply_name_exact(dev, "cpu"))
++        .and_then(|name| kernel::kvec![name].ok())
+ }
+ 
+ /// Represents the cpufreq dt device.
+-- 
+2.51.0
+

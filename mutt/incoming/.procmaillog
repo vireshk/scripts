@@ -2846,3 +2846,6 @@ From vireshk  Wed Sep  3 20:16:32 2025
 From vireshk  Mon Sep 29 09:27:25 2025
  Subject: [PATCH] rust: cpufreq: streamline find_supply_names
   Folder: PATCH_rust_cpufreq_streamline_find_supply_names.mbox		   6004
+From vireshk  Mon Oct  6 10:03:08 2025
+ Subject: [PATCH] cpufreq: s5pv210: fix refcount leak
+  Folder: PATCH_cpufreq_s5pv210_fix_refcount_leak.mbox			   6352

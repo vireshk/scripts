@@ -1,0 +1,83 @@
+From vireshk  Mon Oct  6 10:03:08 2025
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [142.250.4.108] 	by vireshk-i7 with POP3 (fetchmail-6.4.2) 	for <vireshk@localhost> (single-drop); Mon, 06 Oct 2025 10:03:08 +0530 (IST)
+Received: by 2002:a2e:bd84:0:b0:36a:2d52:2535 with SMTP id o4csp4487097ljq;         Sun, 5 Oct 2025 12:31:45 -0700 (PDT)
+X-Forwarded-Encrypted: i=3; AJvYcCXjjlh4OwZJp/FwnuUOjoe5Eld9E8//yC47xZMUyBt5y92BEhTj2jk01KThc6Q3VaPh4uKGqnMdOul5uhE=@linaro.org
+X-Google-Smtp-Source: AGHT+IE03iiJpFNrX6A5UZi4qQBprvWwBkroonc0AgPxlQdwk//ZBcBOaITUQudo705/zgZNFJlq
+X-Received: by 2002:a05:6a20:bfc7:b0:32b:727f:5fbb with SMTP id adf61e73a8af0-32b727f60b9mr8467905637.20.1759692704806;         Sun, 05 Oct 2025 12:31:44 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1759692704; cv=pass;         d=google.com; s=arc-20240605;         b=O1D0vijTiLBlzDHnIYIjFN6NLcQJM4vxs5OvsYc3UD1iAhVeUMtxO88G3ZPXyIJhHL          3rCiaCoTrlEpaZI0E3dVc/64+OWYMs0wT2bS+UgpdQzNEBHMnEfoTn14N3rtrK64t7lK          qhRlDt/5VdSd2KH2usmgjffqvMbOK1eZZw0IAW3Ei4bQAKxjuxMaKZ2XmqPHQXHDSs8q          MG9spwUvmsdNDjFkqvzBQah06kdJailW7vzoUrrg16IY7mLXS6fcBiQ67UImcwyM2txd          hMJ6RIkkYdh1+k78GcxGc/qLYs3+g1EFJgHUjH+vZT05fqrVkMsRHitcez81/a3m9X5B          Hglg==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;         h=content-disposition:mime-version:message-id:subject:cc:to:from:date          :dkim-signature;         bh=0wcSvbdNGgWcP52EV7fjh4f9vXQFwnt3v62Btpojfco=;         fh=f5wbhM5mgp6ewgM6mrQdcgO0SuypnVRMwUFOjwHE7YA=;         b=Zb6bbSG1KdvqGdj37yIAjq6N7FbL+d98ZmVjvHHLF0ZL0bEa4gxg2TCOlDBytKDSXa          IxE/qLrwF3ji4b4iZLGAQUIoAVNwKNA8yyBoBKVUZYDuntRnOInF3dX+uiRnXjKRGO9K          dpNICl8lDMo37wvse4jZHWfop1opcFZ5xSn73LRVFwhDFRD2fgl05pakd0K6ATiu0Nn+          PxfpaCio3dttwDrjTlPks+WOm+/W4Rthtzg2lwaFbaSLW+/wOtim/U5/CZes/Z3f+GDw          /XWQVRciwrAexKjcXka59j4m18WeYQmS0UbEC/OcamGGHDip8172SAe1aUKiVXPlbT3T          PuOQ==;         dara=google.com
+ARC-Authentication-Results: i=2; mx.google.com;        dkim=pass header.i=@cse.ust.hk header.s=cseusthk header.b=gzwfupRk;        arc=pass (i=1);        spf=pass (google.com: domain of sfual@cse.ust.hk designates 143.89.41.157 as permitted sender) smtp.mailfrom=sfual@cse.ust.hk;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=cse.ust.hk
+Return-Path: <sfual@cse.ust.hk>
+Received: from cse.ust.hk (cssvr7.cse.ust.hk. [143.89.41.157])         by mx.google.com with ESMTPS id 41be03b00d2f7-b6099f3d05dsi6475151a12.527.2025.10.05.12.31.43         for <viresh.kumar@linaro.org>         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Sun, 05 Oct 2025 12:31:44 -0700 (PDT)
+Received-SPF: pass (google.com: domain of sfual@cse.ust.hk designates 143.89.41.157 as permitted sender) client-ip=143.89.41.157;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@cse.ust.hk header.s=cseusthk header.b=gzwfupRk;        arc=pass (i=1);        spf=pass (google.com: domain of sfual@cse.ust.hk designates 143.89.41.157 as permitted sender) smtp.mailfrom=sfual@cse.ust.hk;        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=cse.ust.hk
+Received: from homelab ([58.82.196.128]) 	(authenticated bits=0) 	by cse.ust.hk (8.18.1/8.12.5) with ESMTPSA id 595JVMve1489727 	(version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384 bits=256 verify=NOT); 	Mon, 6 Oct 2025 03:31:29 +0800
+ARC-Seal: i=1; a=rsa-sha256; d=cse.ust.hk; s=arccse; t=1759692689; cv=none; 	b=iUDGMQsohSFIpgDPmULqJeoiFwYAIRjrUlnMgqvRxFiwm2XZL2P6UnLdblClHkN5rmC2i+fROVcjTVNjQrE2Qxnv3uGJVgWXJq1kAdO8aa6TyQfMsLKrgCp33ih1Aad1zDaP4KzTWXDik5WY0q/A8+SyE5AA3Z8LRlt1UbnibyA=
+ARC-Message-Signature: i=1; a=rsa-sha256; d=cse.ust.hk; s=arccse; 	t=1759692689; c=relaxed/relaxed; 	bh=0wcSvbdNGgWcP52EV7fjh4f9vXQFwnt3v62Btpojfco=; 	h=DKIM-Signature:Date:From:To:Subject:Message-ID:MIME-Version; b=jD5xUIsgsY6mfUvp/hMR0k58WMr/aFKFTsOkDHybq0FK14MjcHGdoSqyCRmRyMg58N+f5gkinM7pqw2mLEEr0wkXT/UzZaOOXYU1BYCwi5STsYwD8yr833jbZ7lhUJNXCtpzL2eBPoBtUkyCrsAN7ruf10epqFGnBat7Ow6sjZU=
+ARC-Authentication-Results: i=1; cse.ust.hk
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=cse.ust.hk; 	s=cseusthk; t=1759692689; 	bh=0wcSvbdNGgWcP52EV7fjh4f9vXQFwnt3v62Btpojfco=; 	h=Date:From:To:Cc:Subject:From; 	b=gzwfupRk+Bg9csLM/0jHEntriSYZ/mG0x7Eq85L3Et64H0W5DzwtDabkBzms+WoZa 	 nCEJMYk+dMirp8ZLVK0mFv5z5378Bb4RGUtWYbDeXiznTJyqSo/m266zFHhK7tSYK+ 	 LiobuK/P/AF050cwYZxviEd7kHEalqTMb4YbXfmo=
+Date: Mon, 6 Oct 2025 03:31:17 +0800
+From: Shuhao Fu <sfual@cse.ust.hk>
+To: "Rafael J. Wysocki" <rafael@kernel.org>,         Viresh Kumar <viresh.kumar@linaro.org>
+Cc: linux-pm@vger.kernel.org
+Subject: [PATCH] cpufreq: s5pv210: fix refcount leak
+Message-ID: <aOLHhZNWnPY03Jqe@homelab>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+X-Env-From: sfual
+Content-Length: 1496
+Lines: 50
+
+In function `s5pv210_cpu_init`, a possible refcount inconsistency has
+been identified, causing a resource leak.
+
+Why it is a bug:
+1. For every clk_get, there should be a matching clk_put on every
+successive error handling path.
+2. After calling `clk_get(dmc1_clk)`, variable `dmc1_clk` will not be
+freed even if any error happens.
+
+How it is fixed: For every failed path, an extra goto label is added to
+ensure `dmc1_clk` will be freed regardlessly.
+
+Signed-off-by: Shuhao Fu <sfual@cse.ust.hk>
+---
+ drivers/cpufreq/s5pv210-cpufreq.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+diff --git a/drivers/cpufreq/s5pv210-cpufreq.c b/drivers/cpufreq/s5pv210-cpufreq.c
+index 4215621de..ba8a1c964 100644
+--- a/drivers/cpufreq/s5pv210-cpufreq.c
++++ b/drivers/cpufreq/s5pv210-cpufreq.c
+@@ -518,7 +518,7 @@ static int s5pv210_cpu_init(struct cpufreq_policy *policy)
+ 
+ 	if (policy->cpu != 0) {
+ 		ret = -EINVAL;
+-		goto out_dmc1;
++		goto out;
+ 	}
+ 
+ 	/*
+@@ -530,7 +530,7 @@ static int s5pv210_cpu_init(struct cpufreq_policy *policy)
+ 	if ((mem_type != LPDDR) && (mem_type != LPDDR2)) {
+ 		pr_err("CPUFreq doesn't support this memory type\n");
+ 		ret = -EINVAL;
+-		goto out_dmc1;
++		goto out;
+ 	}
+ 
+ 	/* Find current refresh counter and frequency each DMC */
+@@ -544,6 +544,8 @@ static int s5pv210_cpu_init(struct cpufreq_policy *policy)
+ 	cpufreq_generic_init(policy, s5pv210_freq_table, 40000);
+ 	return 0;
+ 
++out:
++	clk_put(dmc1_clk);
+ out_dmc1:
+ 	clk_put(dmc0_clk);
+ out_dmc0:
+-- 
+2.39.5
+

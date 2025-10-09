@@ -104,7 +104,7 @@ updatepkglist() { echo "$*" >> ~/scripts/pkglist-install; }
 alias linarogit='ssh viresh.kumar@git.linaro.org'
 alias sshhack="ssh viresh.kumar@hackbox2.linaro.org"
 alias sshbbone="ssh root@192.168.0.4"
-alias sshdesktop="ssh vireshk@192.168.0.2"
+alias sshdesktop="ssh vireshk@192.168.68.100"
 alias sshhikey="ssh root@192.168.0.162"
 alias sshlinaro='echo "scp test.txt  viresh.kumar@git.linaro.org:/home/vireshk/work"'
 alias lmc="echo msudo linaro-media-create --mmc /dev/sdb --dev arndale --hwpack-force-yes --hwpack /home/vireshk/work/boards/arndale/hwpack_linaro-arndale_20140417-630_armhf_supported.tar.gz --binary /home/vireshk/work/rootfs/linaro/linaro-saucy-developer-20140410-652.tar.gz"

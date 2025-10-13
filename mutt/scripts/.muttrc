@@ -100,6 +100,11 @@ macro index \Cy "<limit>~y pen|~y apply\n" "Limit view to label"
 macro index \Ca "<limit>all\n<collapse-all>" "Limit view to label"
 
 
+# Restore old $ behavior: remove deleted messages and sync mailbox
+#macro index $ "<sync-mailbox><collapse-all>" "Cleanup + collapse threads"
+# Cleanup deleted messages but keep threading
+macro index $ "<sync-mailbox><enter><enter-command>set sort=threads<enter>" "Cleanup deleted messages, preserve threading"
+
 #-----------------------------------------#
 # Save patches
 
@@ -169,12 +174,18 @@ set date_format="!%d-%m-%y, %H:%M"
 set index_format="%Z %d %-25.25n (%M) %?y?[%.20Y] ?%s"
 # set index_format="%4C %Z %d %-25.25n (%M) %?y?[%.20Y] ?%s"
 
+# Always enable threading on folder open
+folder-hook . "set sort=threads"
 folder-hook . "exec collapse-all"
-set sort=threads
 set sort_aux=last-date-received
 unset mark_old
 set menu_scroll          # scroll menu a page on last line
 set pager_stop           # don't go to next message at end of message
+
+# Enable threading
+set sort=threads
+set strict_threads=yes
+set header_cache=~/.mutt/cache/headers
 
 #======================================================#
 # Sidebar

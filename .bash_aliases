@@ -86,7 +86,7 @@ alias hmodule="cd /home/vireshk/work/repos/tools/module/"
 alias hlwn="cd /home/vireshk/work/repos/tools/lwn"
 export VIRTIOPATH="/home/vireshk/work/repos/virtio"
 export QEMUPATH="$VIRTIOPATH/qemu"
-export QEMUAARCH64="$QEMUPATH/build/aarch64-softmmu/qemu-system-aarch64"
+export QEMUAARCH64="$QEMUPATH/build/qemu-system-aarch64"
 export rustpath="$VIRTIOPATH/rust"
 export rustvmmpath="$VIRTIOPATH/rust/rust-vmm"
 alias hqemu="cd $QEMUPATH"
@@ -178,8 +178,6 @@ alias fixvbox="msudo /etc/init.d/vboxdrv setup"
 #alias uprvi="msudo /home/vireshk/work/utils/ARM/DS-5/bin/rviusbserver"
 #alias utorrent="utserver -settingspath /home/vireshk/tools/utorrent-server-v3_0/"
 
-scpfrom() { scp -r root@10.162.5.15:/work/trace/$1 /home/vireshyyk/junk; }
-
 alias startvnc="vncviewer 10.162.5.156:1"
 alias sshminicom="ssh user@10.162.5.156"
 alias mypicupload="trickle -s -u 2048 -d 2048 firefox"
@@ -193,7 +191,7 @@ export USE_CCACHE=1
 
 alias myfetch="fetchmail -d 60 -L ~/.fetchmaillog"
 
-#PATH="/usr/lib/ccache:$PATH"
+PATH="/usr/lib/ccache:$PATH"
 
 # qcom-board: skales
 PATH="$htools/skales:$PATH"
@@ -273,7 +271,7 @@ alias sshqemu="ssh root@localhost -p8022"
 alias qvim="vim -c 'set expandtab' -c 'set shiftwidth=4'"
 alias mountqemu="echo \"mount -t 9p -o trans=virtio r /mnt\""
 #alias configqemu="./configure --python=/usr/bin/python3.8 --target-list=aarch64-softmmu --enable-virtfs"
-alias configqemu="./configure --python=/usr/bin/python3.8 --target-list=aarch64-softmmu --enable-virtfs --enable-docs"
+alias configqemu="./configure --target-list=aarch64-softmmu --enable-virtfs --enable-docs"
 alias buildqemu="configqemu; make -j 64"
 
 export qemui2c="-chardev socket,path=$junkpath/vi2c.sock0,id=vi2c -device vhost-user-i2c-device,chardev=vi2c,id=i2c"
@@ -314,9 +312,9 @@ alias qemuarmf="$QEMUARMCOMMON \
 
 alias qemuarmfi2c="qemuarmf $qemui2c $qemufs"
 alias qemuarmfgpio="qemuarmf $qemugpio $qemufs"
-alias qemuarmfdumpdtb="qemuarmf -machine dumpdtb=/home/vireshk/junk/qemu.dtb"
-alias qemuarmfdtb="qemuarmf -dtb /home/vireshk/junk/qemu.dtb"
-alias qemudtbdts="echo -e \"dtc -I dtb ~/junk/qemu.dtb  -o ~/junk/qemu.dts; dtc -I dts ~/junk/qemu.dts -o ~/junk/qemu.dtb\""
+alias qemuarmfdumpdtb="qemuarmf -machine dumpdtb=/home/vireshk/junk/code/qemu.dtb"
+alias qemuarmfdtb="qemuarmf -dtb /home/vireshk/junk/code/qemu.dtb"
+alias qemudtbdts="echo -e \"dtc -I dtb ~/junk/code/qemu.dtb  -o ~/junk/code/qemu.dts; dtc -I dts ~/junk/code/qemu.dts -o ~/junk/code/qemu.dtb\""
 
 #alias myqemuvexp="$QEMUAARCH64 -machine vexpress-a15 -nographic -smp 4 -m 2G -kernel ~/work/repos/kernel/barm/arch/arm/boot/zImage -dtb ~/work/repos/kernel/barm/arch/arm/boot/dts/vexpress-v2p-ca15-tc1.dtb --append \"console=ttyAMA0\" -object memory-backend-file,id=mem,size=2G,mem-path=/dev/shm,share=on $qemufs"
 

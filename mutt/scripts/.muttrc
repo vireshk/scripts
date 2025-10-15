@@ -103,7 +103,11 @@ macro index \Ca "<limit>all\n<collapse-all>" "Limit view to label"
 # Restore old $ behavior: remove deleted messages and sync mailbox
 #macro index $ "<sync-mailbox><collapse-all>" "Cleanup + collapse threads"
 # Cleanup deleted messages but keep threading
-macro index $ "<sync-mailbox><enter><enter-command>set sort=threads<enter>" "Cleanup deleted messages, preserve threading"
+#macro index $ "<sync-mailbox><enter><enter-command>set sort=threads<enter>" "Cleanup deleted messages, preserve threading"
+macro index $ "<sync-mailbox><enter><enter-command>set sort=threads<enter><collapse-all>" \
+    "Sync mailbox, restore thread sort, and collapse all"
+macro pager $ "<sync-mailbox><enter><enter-command>set sort=threads<enter><collapse-all>" \
+    "Sync mailbox, restore thread sort, and collapse all"
 
 #-----------------------------------------#
 # Save patches
@@ -186,6 +190,7 @@ set pager_stop           # don't go to next message at end of message
 set sort=threads
 set strict_threads=yes
 set header_cache=~/.mutt/cache/headers
+set delete=ask-yes
 
 #======================================================#
 # Sidebar

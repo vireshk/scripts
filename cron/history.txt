@@ -2623,3 +2623,25 @@ and the repository exists.
 
 
 
+ 
+Friday 17 October 2025 04:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+remote: warning: object 254cc2c3d0745835f73f5c9a76482b691668a738: missingTaggerEntry: invalid format - expected 'tagger' line        
+remote: warning: object 279c674f31885b18fd312149e7938850f7bd13bb: missingTaggerEntry: invalid format - expected 'tagger' line        
+remote: warning: object ea5a02080269424e629de1e7f1f385ba9be337ba: missingTaggerEntry: invalid format - expected 'tagger' line        
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+Connection to github.com closed by remote host.
+
+Entering /home/vireshk/work/repos/kernel/linux
+On branch virtio/msg-vsock
+nothing to commit, working tree clean
+remote: warning: object 254cc2c3d0745835f73f5c9a76482b691668a738: missingTaggerEntry: invalid format - expected 'tagger' line        
+remote: warning: object 279c674f31885b18fd312149e7938850f7bd13bb: missingTaggerEntry: invalid format - expected 'tagger' line        
+remote: warning: object ea5a02080269424e629de1e7f1f385ba9be337ba: missingTaggerEntry: invalid format - expected 'tagger' line        
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+Connection to github.com closed by remote host.
+
+Entering /home/vireshk/scripts

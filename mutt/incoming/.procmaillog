@@ -2849,3 +2849,9 @@ From vireshk  Mon Sep 29 09:27:25 2025
 From vireshk  Mon Oct  6 10:03:08 2025
  Subject: [PATCH] cpufreq: s5pv210: fix refcount leak
   Folder: PATCH_cpufreq_s5pv210_fix_refcount_leak.mbox			   6352
+From vireshk  Thu Oct 16 13:31:55 2025
+ Subject: [PATCH v1 1/7] cpufreq: dt-platdev: Add JH7110S SOC to the allowlist
+  Folder: PATCH_v1_1-7_cpufreq_dt-platdev_Add_JH7110S_SOC_to_the_allow	  11549
+From vireshk  Thu Oct 16 13:31:55 2025
+ Subject: [PATCH v1 1/7] cpufreq: dt-platdev: Add JH7110S SOC to the allowlist
+  Folder: PATCH_v1_1-7_cpufreq_dt-platdev_Add_JH7110S_SOC_to_the_allow	  11549

@@ -265,6 +265,7 @@ alias cargobuild="clear;cargo build --release"
 alias cargobuildarm="clear;cargo build --release --all-features --target aarch64-unknown-linux-gnu"
 alias cargobuildall='clear;cargo build --release --all-features --tests'
 alias cargobuildallarm='clear;cargo build --release --target aarch64-unknown-linux-gnu --all-features --tests'
+alias vhostdbuild="docker start -ai vhost-build"
 
 #qemu
 alias sshqemu="ssh root@localhost -p8022"

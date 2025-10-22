@@ -2645,3 +2645,57 @@ fatal: the remote end hung up unexpectedly
 Connection to github.com closed by remote host.
 
 Entering /home/vireshk/scripts
+[main 27bc64ce37b4] updates
+ 1 file changed, 22 insertions(+)
+To github.com:vireshk/scripts
+   18e528e7c8eb..27bc64ce37b4  main -> main
+ + c7e8b16807a3...18e528e7c8eb bkp/main -> bkp/main (forced update)
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+To github.com:vireshk/module
+ * [new reference]             bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/kernel-utils
+On branch main
+nothing to commit, working tree clean
+To github.com:vireshk/kernel-utils
+ * [new reference]             origin/main -> origin/main
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+To github.com:vireshk/lwn
+ * [new reference]             bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+nothing to commit, working tree clean
+To github.com:vireshk/cpufreq-tests
+ * [new reference]             bkp/master -> bkp/master
+
+Entering /home/vireshk/work/repos/tools/gpio-mock
+On branch master
+nothing to commit, working tree clean
+To github.com:vireshk/gpio-mock
+ * [new reference]             bkp/master -> bkp/master
+
+
+
+ 
+Wednesday 22 October 2025 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+Connection to github.com closed by remote host.
+
+Entering /home/vireshk/all/criticalinfo
+[main b1b198c9b48c] updates
+ 18 files changed, 3223 insertions(+)
+ create mode 100644 hexchat/logs/ircproxy.linaro.org.oftc/ircproxy.linaro.org.oftc.log
+To github.com:vireshk/criticalinfo
+   586bce27709e..b1b198c9b48c  main -> main
+
+Entering /home/vireshk/scripts

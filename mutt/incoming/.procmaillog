@@ -2855,3 +2855,9 @@ From vireshk  Thu Oct 16 13:31:55 2025
 From vireshk  Thu Oct 16 13:31:55 2025
  Subject: [PATCH v1 1/7] cpufreq: dt-platdev: Add JH7110S SOC to the allowlist
   Folder: PATCH_v1_1-7_cpufreq_dt-platdev_Add_JH7110S_SOC_to_the_allow	  11549
+From vireshk  Sun Oct 19 00:48:19 2025
+ Subject: [RESEND PATCH v18 11/16] rust: opp: fix broken rustdoc link
+  Folder: RESEND_PATCH_v18_11-16_rust_opp_fix_broken_rustdoc_link.mbox	   8121
+From vireshk  Wed Oct 22 07:55:41 2025
+ Subject: [PATCH v3] cpufreq: tegra186: add OPP support and set bandwidth
+  Folder: PATCH_v3_cpufreq_tegra186_add_OPP_support_and_set_bandwidth.	  14732

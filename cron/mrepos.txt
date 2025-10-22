@@ -1,4 +1,4 @@
-criticalinfo
+all/criticalinfo
 scripts
 work/repos/tools/module
 work/repos/tools/kernel-utils

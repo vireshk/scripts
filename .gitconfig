@@ -23,6 +23,7 @@
 	editor = "vim -c 'setlocal spell'"
 	gitproxy = none for "arm.com"
 	abbrev = 12
+	compression = 9
 #	gitproxy = ~/gitproxy.sh
 #	gitproxy = gitproxy-socat
 [receive]
@@ -39,3 +40,6 @@
 [alias]
 	ps1=!test -d .git && echo -n : && git branch --show-current
 	mylg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[pack]
+	windowMemory = 512m
+	packSizeLimit = 512m

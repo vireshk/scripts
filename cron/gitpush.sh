@@ -11,6 +11,9 @@ update_repo()
 	if [ $2 ]; then
 		git add .
 		git commit -s -m "updates"
+	else
+		git push bkp --all &>> $file
+		git push bkp --tags &>> $file
 	fi
 
 	git push --mirror bkp &>> $file

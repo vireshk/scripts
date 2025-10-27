@@ -2861,3 +2861,9 @@ From vireshk  Sun Oct 19 00:48:19 2025
 From vireshk  Wed Oct 22 07:55:41 2025
  Subject: [PATCH v3] cpufreq: tegra186: add OPP support and set bandwidth
   Folder: PATCH_v3_cpufreq_tegra186_add_OPP_support_and_set_bandwidth.	  14732
+From vireshk  Wed Oct 22 07:46:45 2025
+ Subject: [PATCH] rust: opp: simplify callers of `to_c_str_array`
+  Folder: PATCH_rust_opp_simplify_callers_of_`to_c_str_array`.mbox	   7787
+From vireshk  Thu Oct 23 20:31:55 2025
+ Subject: [PATCH v2] rust: opp: simplify callers of `to_c_str_array`
+  Folder: PATCH_v2_rust_opp_simplify_callers_of_`to_c_str_array`.mbox	  11985

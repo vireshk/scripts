@@ -155,6 +155,14 @@ elif [ $2 = armt ]; then
 	carch="arm64"
 	IMAGE=
 	MERGE_CONFIG="KCONFIG_CONFIG=$dir/.config scripts/kconfig/merge_config.sh -m $dir/.config ~/junk/config"
+elif [ $2 = armr ]; then
+	dir=../barm64r/
+	cfg=defconfig
+	CROSS_COMPILE=aarch64-linux-gnu-
+	MISMATCH=
+	carch="arm64"
+	IMAGE=
+	MERGE_CONFIG="KCONFIG_CONFIG=$dir/.config scripts/kconfig/merge_config.sh -m $dir/.config ~/junk/config"
 elif [ $2 = armg ]; then
 	dir=../barm64_guest/
 	cfg=defconfig

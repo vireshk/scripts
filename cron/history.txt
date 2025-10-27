@@ -2758,3 +2758,65 @@ To github.com:vireshk/criticalinfo
    586bce27709e..b1b198c9b48c  bkp/main -> bkp/main
 
 Entering /home/vireshk/scripts
+[main 424f361edb02] updates
+ 3 files changed, 66 insertions(+)
+To github.com:vireshk/scripts
+   8afb05feec88..424f361edb02  main -> main
+   27bc64ce37b4..8afb05feec88  bkp/main -> bkp/main
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/kernel-utils
+On branch main
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/gpio-mock
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+
+
+ 
+Monday 27 October 2025 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+To github.com:vireshk/linux-bkp.git
+   173e02d67494..33ffb0aa8ce8  opp/linux-next -> opp/linux-next
+ ! [rejected]                  bkp/rust/configs -> bkp/rust/configs (non-fast-forward)
+ ! [rejected]                  cpufreq/arm/linux-next -> cpufreq/arm/linux-next (non-fast-forward)
+ ! [rejected]                  virtio/msg -> virtio/msg (non-fast-forward)
+ ! [rejected]                  virtio/msg-vsock -> virtio/msg-vsock (non-fast-forward)
+ ! [rejected]                  virtio/msg-xen -> virtio/msg-xen (non-fast-forward)
+error: failed to push some refs to 'github.com:vireshk/linux-bkp.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+Everything up-to-date
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+Connection to github.com closed by remote host.
+
+Entering /home/vireshk/all/criticalinfo
+[main f2a53375e285] updates
+ 25 files changed, 2665 insertions(+), 1248 deletions(-)
+To github.com:vireshk/criticalinfo
+   e4a7a9fbc17c..f2a53375e285  main -> main
+   b1b198c9b48c..e4a7a9fbc17c  bkp/main -> bkp/main
+
+Entering /home/vireshk/scripts

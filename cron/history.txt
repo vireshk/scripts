@@ -2820,3 +2820,60 @@ To github.com:vireshk/criticalinfo
    b1b198c9b48c..e4a7a9fbc17c  bkp/main -> bkp/main
 
 Entering /home/vireshk/scripts
+[main f079c0602c93] updates
+ 4 files changed, 271 insertions(+)
+ create mode 100644 mutt/incoming/PATCH_v2_rust_opp_simplify_callers_of_`to_c_str_array`.mbox
+To github.com:vireshk/scripts
+   424f361edb02..f079c0602c93  main -> main
+   8afb05feec88..424f361edb02  bkp/main -> bkp/main
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/kernel-utils
+On branch main
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/gpio-mock
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+
+
+ 
+Tuesday 28 October 2025 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+To github.com:vireshk/linux-bkp.git
+ + 435252c0793c...dd224527c335 bkp/rust/configs -> bkp/rust/configs (forced update)
+ + 164257fd8644...1971b18785d1 cpufreq/arm/linux-next -> cpufreq/arm/linux-next (forced update)
+ + 5dcae431db45...fd82b1499469 virtio/msg -> virtio/msg (forced update)
+ + 896aebf79e35...afe530c4172a virtio/msg-vsock -> virtio/msg-vsock (forced update)
+ + 803d3d54c0d2...afe530c4172a virtio/msg-xen -> virtio/msg-xen (forced update)
+Everything up-to-date
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+Connection to github.com closed by remote host.
+
+Entering /home/vireshk/all/criticalinfo
+[main 844227f3a042] updates
+ 19 files changed, 2251 insertions(+)
+To github.com:vireshk/criticalinfo
+   f2a53375e285..844227f3a042  main -> main
+   e4a7a9fbc17c..f2a53375e285  bkp/main -> bkp/main
+
+Entering /home/vireshk/scripts

@@ -2876,3 +2876,12 @@ From vireshk  Mon Oct 27 20:35:33 2025
 From vireshk  Thu Aug 28 16:40:47 2025
  Subject: [PATCH v2 1/2] cpufreq: CPPC: Don't warn if FIE init fails to read co
   Folder: PATCH_v2_1-2_cpufreq_CPPC_Don't_warn_if_FIE_init_fails_to_re	   5733
+From vireshk  Wed Nov  5 20:14:38 2025
+ Subject: [PATCH v4 1/1] cpufreq: qcom-nvmem: add compatible fallback for ipq80
+  Folder: PATCH_v4_1-1_cpufreq_qcom-nvmem_add_compatible_fallback_for_	   9594
+From vireshk  Wed Nov  5 20:14:38 2025
+ Subject: [PATCH v4 1/1] cpufreq: qcom-nvmem: add compatible fallback for ipq80
+  Folder: PATCH_v4_1-1_cpufreq_qcom-nvmem_add_compatible_fallback_for_	   9594
+From vireshk  Mon Nov 10 14:15:13 2025
+ Subject: [PATCH] cpufreq: add WQ_PERCPU to alloc_workqueue users
+  Folder: PATCH_cpufreq_add_WQ_PERCPU_to_alloc_workqueue_users.mbox	   9087

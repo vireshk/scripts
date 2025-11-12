@@ -3143,3 +3143,61 @@ To github.com:vireshk/criticalinfo
    c192f9d6fa10..da174b3078e4  bkp/main -> bkp/main
 
 Entering /home/vireshk/scripts
+[main eb7ce6d5a10c] updates
+ 2 files changed, 64 insertions(+)
+To github.com:vireshk/scripts
+   ddaf154f99ff..eb7ce6d5a10c  main -> main
+   77b508958541..ddaf154f99ff  bkp/main -> bkp/main
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/kernel-utils
+On branch main
+nothing to commit, working tree clean
+To github.com:vireshk/kernel-utils
+   c4207c1aac59..c9635605c3f8  bkp/main -> bkp/main
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/gpio-mock
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+
+
+ 
+Wednesday 12 November 2025 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+To github.com:vireshk/linux-bkp.git
+ + b6a69cf2996b...eef4db93d4fd virtio/msg -> virtio/msg (forced update)
+ + 3d95e9dc6f8c...6dd03c98aa1d virtio/msg-xen -> virtio/msg-xen (forced update)
+To github.com:vireshk/linux-bkp.git
+ * [new tag]                   v6.18-rc3 -> v6.18-rc3
+ * [new tag]                   v6.18-rc4 -> v6.18-rc4
+ * [new tag]                   v6.18-rc5 -> v6.18-rc5
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+Connection to github.com closed by remote host.
+
+Entering /home/vireshk/all/criticalinfo
+[main f603c8d4bd6b] updates
+ 23 files changed, 16224 insertions(+), 5205 deletions(-)
+ rewrite hexchat/scrollback/ircproxy.linaro.org.tinc/*status.txt (66%)
+To github.com:vireshk/criticalinfo
+   5b7712e323a7..f603c8d4bd6b  main -> main
+   da174b3078e4..5b7712e323a7  bkp/main -> bkp/main
+
+Entering /home/vireshk/scripts

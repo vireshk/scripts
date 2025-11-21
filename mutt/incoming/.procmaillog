@@ -2885,3 +2885,6 @@ From vireshk  Wed Nov  5 20:14:38 2025
 From vireshk  Mon Nov 10 14:15:13 2025
  Subject: [PATCH] cpufreq: add WQ_PERCPU to alloc_workqueue users
   Folder: PATCH_cpufreq_add_WQ_PERCPU_to_alloc_workqueue_users.mbox	   9087
+From vireshk  Thu Nov 20 20:22:03 2025
+ Subject: [PATCH] cpufreq: qcom-nvmem: fix compilation warning for qcom_cpufreq
+  Folder: PATCH_cpufreq_qcom-nvmem_fix_compilation_warning_for_qcom_cp	   8150

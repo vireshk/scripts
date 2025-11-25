@@ -3624,3 +3624,56 @@ To github.com:vireshk/criticalinfo
    86eac1c48a6f..99a6f068495b  bkp/main -> bkp/main
 
 Entering /home/vireshk/scripts
+[main 2b27df17c168] updates
+ 1 file changed, 54 insertions(+)
+To github.com:vireshk/scripts
+   52078ad38d34..2b27df17c168  main -> main
+   6fe978d2b361..52078ad38d34  bkp/main -> bkp/main
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/kernel-utils
+[main fa9eda9fc7ad] updates
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+To github.com:vireshk/kernel-utils
+   f736d8bbc30b..fa9eda9fc7ad  main -> main
+   5e5d7e17ebd7..f736d8bbc30b  bkp/main -> bkp/main
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/gpio-mock
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+
+
+ 
+Tuesday 25 November 2025 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+Everything up-to-date
+Everything up-to-date
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+Connection to github.com closed by remote host.
+
+Entering /home/vireshk/all/criticalinfo
+[main 7d101bb03560] updates
+ 19 files changed, 1385 insertions(+)
+To github.com:vireshk/criticalinfo
+   87a135c94bce..7d101bb03560  main -> main
+   99a6f068495b..87a135c94bce  bkp/main -> bkp/main
+
+Entering /home/vireshk/scripts

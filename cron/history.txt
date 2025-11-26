@@ -3677,3 +3677,74 @@ To github.com:vireshk/criticalinfo
    99a6f068495b..87a135c94bce  bkp/main -> bkp/main
 
 Entering /home/vireshk/scripts
+[main 07d82fc3c7af] updates
+ 1 file changed, 53 insertions(+)
+To github.com:vireshk/scripts
+   2b27df17c168..07d82fc3c7af  main -> main
+   52078ad38d34..2b27df17c168  bkp/main -> bkp/main
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/kernel-utils
+On branch main
+nothing to commit, working tree clean
+To github.com:vireshk/kernel-utils
+   f736d8bbc30b..fa9eda9fc7ad  bkp/main -> bkp/main
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/gpio-mock
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+
+
+ 
+Wednesday 26 November 2025 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+To github.com:vireshk/linux-bkp.git
+ + 2197fe2e7981...55a1096feb17 virtio/msg -> virtio/msg (forced update)
+ + c5ae228c89ed...56410ffc5569 virtio/msg-xen -> virtio/msg-xen (forced update)
+To github.com:vireshk/linux-bkp.git
+ * [new tag]                   acpi-6.18-rc1 -> acpi-6.18-rc1
+ * [new tag]                   acpi-6.18-rc1-2 -> acpi-6.18-rc1-2
+ * [new tag]                   acpi-6.18-rc3 -> acpi-6.18-rc3
+ * [new tag]                   acpi-6.18-rc4 -> acpi-6.18-rc4
+ * [new tag]                   acpi-6.18-rc5 -> acpi-6.18-rc5
+ * [new tag]                   acpi-6.18-rc6 -> acpi-6.18-rc6
+ * [new tag]                   acpi-6.18-rc7 -> acpi-6.18-rc7
+ * [new tag]                   cpufreq-arm-updates-6.19 -> cpufreq-arm-updates-6.19
+ * [new tag]                   opp-updates-6.19 -> opp-updates-6.19
+ * [new tag]                   pm-6.18-rc1 -> pm-6.18-rc1
+ * [new tag]                   pm-6.18-rc1-2 -> pm-6.18-rc1-2
+ * [new tag]                   pm-6.18-rc3 -> pm-6.18-rc3
+ * [new tag]                   pm-6.18-rc4 -> pm-6.18-rc4
+ * [new tag]                   pm-6.18-rc6 -> pm-6.18-rc6
+ * [new tag]                   pm-6.18-rc7 -> pm-6.18-rc7
+ * [new tag]                   thermal-6.18-rc1 -> thermal-6.18-rc1
+ * [new tag]                   thermal-6.18-rc1-2 -> thermal-6.18-rc1-2
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+Connection to github.com closed by remote host.
+
+Entering /home/vireshk/all/criticalinfo
+[main 1c44ccad6010] updates
+ 19 files changed, 1718 insertions(+)
+To github.com:vireshk/criticalinfo
+   7d101bb03560..1c44ccad6010  main -> main
+   87a135c94bce..7d101bb03560  bkp/main -> bkp/main
+
+Entering /home/vireshk/scripts

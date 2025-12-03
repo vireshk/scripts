@@ -2891,3 +2891,6 @@ From vireshk  Thu Nov 20 20:22:03 2025
 From vireshk  Fri Nov 28 09:07:13 2025
  Subject: [PATCH v2 3/7] rust: cpufreq: always inline functions using  build_as
   Folder: PATCH_v2_3-7_rust_cpufreq_always_inline_functions_using_buil	  14955
+From vireshk  Wed Dec  3 09:14:31 2025
+ Subject: [PATCH 11/46] rust: cpufreq: add __rust_helper to helpers
+  Folder: PATCH_11-46_rust_cpufreq_add__rust_helper_to_helpers.mbox	   8315

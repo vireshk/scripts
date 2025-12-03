@@ -3962,3 +3962,57 @@ To github.com:vireshk/criticalinfo
    6735469d5e2c..58c5ea190e87  bkp/main -> bkp/main
 
 Entering /home/vireshk/scripts
+[main 980419a967d2] updates
+ 1 file changed, 52 insertions(+)
+To github.com:vireshk/scripts
+   d3e2a69e0b05..980419a967d2  main -> main
+   6a5485b12ee7..d3e2a69e0b05  bkp/main -> bkp/main
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/kernel-utils
+On branch main
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/gpio-mock
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+
+
+ 
+Wednesday 03 December 2025 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+To github.com:vireshk/linux-bkp.git
+   f872db1f3297..49505d17fe59  cpufreq/arm/linux-next -> cpufreq/arm/linux-next
+ + 66ccf8f87a4f...089df70815b2 virtio/msg -> virtio/msg (forced update)
+ + cead52afbe43...72d37edfb092 virtio/msg-xen -> virtio/msg-xen (forced update)
+Everything up-to-date
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+Connection to github.com closed by remote host.
+
+Entering /home/vireshk/all/criticalinfo
+[main da55acbb268f] updates
+ 23 files changed, 1999 insertions(+)
+To github.com:vireshk/criticalinfo
+   8e2c87a3010d..da55acbb268f  main -> main
+   58c5ea190e87..8e2c87a3010d  bkp/main -> bkp/main
+
+Entering /home/vireshk/scripts

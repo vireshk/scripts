@@ -2897,3 +2897,6 @@ From vireshk  Wed Dec  3 09:14:31 2025
 From vireshk  Wed Dec 10 08:26:22 2025
  Subject: [PATCH v4 1/9] dt-bindings: cpufreq: qcom-hw: document Milos  CPUFREQ
   Folder: PATCH_v4_1-9_dt-bindings_cpufreq_qcom-hw_document_Milos_CPUF	   9012
+From vireshk  Fri Dec 19 08:41:04 2025
+ Subject: [PATCH] cpufreq: Add Tegra186 and Tegra194 to cpufreq-dt-platdev  blo
+  Folder: PATCH_cpufreq_Add_Tegra186_and_Tegra194_to_cpufreq-dt-platde	   6872

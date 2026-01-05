@@ -2900,3 +2900,6 @@ From vireshk  Wed Dec 10 08:26:22 2025
 From vireshk  Fri Dec 19 08:41:04 2025
  Subject: [PATCH] cpufreq: Add Tegra186 and Tegra194 to cpufreq-dt-platdev  blo
   Folder: PATCH_cpufreq_Add_Tegra186_and_Tegra194_to_cpufreq-dt-platde	   6872
+From vireshk  Mon Jan  5 08:27:25 2026
+ Subject: [PATCH] OPP: of: Simplify with scoped for each OF child loop
+  Folder: PATCH_OPP_of_Simplify_with_scoped_for_each_OF_child_loop.mbo	  13085

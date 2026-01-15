@@ -2903,3 +2903,6 @@ From vireshk  Fri Dec 19 08:41:04 2025
 From vireshk  Mon Jan  5 08:27:25 2026
  Subject: [PATCH] OPP: of: Simplify with scoped for each OF child loop
   Folder: PATCH_OPP_of_Simplify_with_scoped_for_each_OF_child_loop.mbo	  13085
+From vireshk  Wed Jan 14 09:10:33 2026
+ Subject: [PATCH v2] cpufreq: dt-platdev: Block the driver from probing on  mor
+  Folder: PATCH_v2_cpufreq_dt-platdev_Block_the_driver_from_probing_on	   6875

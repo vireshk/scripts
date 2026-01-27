@@ -2915,3 +2915,6 @@ From vireshk  Thu Jan 22 08:44:27 2026
 From vireshk  Thu Jan 22 12:48:31 2026
  Subject: [PATCH v2] cpufreq: qcom-nvmem: add sentinel to qcom_cpufreq_ipq806x_
   Folder: PATCH_v2_cpufreq_qcom-nvmem_add_sentinel_to_qcom_cpufreq_ipq	   6597
+From vireshk  Sat Jan 24 10:53:27 2026
+ Subject: [PATCH v1] OPP: Return correct value in dev_pm_opp_get_level
+  Folder: PATCH_v1_OPP_Return_correct_value_in_dev_pm_opp_get_level.mb	   7037

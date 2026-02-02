@@ -2918,3 +2918,6 @@ From vireshk  Thu Jan 22 12:48:31 2026
 From vireshk  Sat Jan 24 10:53:27 2026
  Subject: [PATCH v1] OPP: Return correct value in dev_pm_opp_get_level
   Folder: PATCH_v1_OPP_Return_correct_value_in_dev_pm_opp_get_level.mb	   7037
+From vireshk  Fri Jan 30 12:50:37 2026
+ Subject: [PATCH v2] OPP: debugfs: Use performance level if available to distin
+  Folder: PATCH_v2_OPP_debugfs_Use_performance_level_if_available_to_d	  12823

@@ -1,0 +1,109 @@
+From vireshk  Fri Jan 30 12:50:37 2026
+Delivered-To: viresh.kumar@linaro.org
+Received: from pop.gmail.com [172.217.194.108] 	by vireshk-i7 with POP3 (fetchmail-6.4.38) 	for <vireshk@localhost> (single-drop); Fri, 30 Jan 2026 12:50:37 +0530 (IST)
+Received: by 2002:a05:651c:2106:b0:383:7a2:ac5b with SMTP id a6csp770129ljq;         Thu, 29 Jan 2026 23:19:52 -0800 (PST)
+X-Forwarded-Encrypted: i=2; AJvYcCXo+B9flb/nSDjj3jqn1CRax3B8XYYdxtvosYE41a4GyZTiUfPVyNjheyG09es5V/uaiDPru1n6TvN/5VM=@linaro.org
+X-Received: by 2002:ac8:5812:0:b0:502:f26f:1388 with SMTP id d75a77b69052e-505d22b2802mr26782961cf.65.1769757592414;         Thu, 29 Jan 2026 23:19:52 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1769757592; cv=none;         d=google.com; s=arc-20240605;         b=CdkUheHc22PVgNDG1HnuUklFiEySTYkgtMvsVWErQZlBf8nGhT/n5iJ/fPErwsZTEP          WrC/yn5sq1iKTsGynFDaoqL0oJR2w5y48uMXsBV8pp67NIRNty79QzexvQVGGzWUY5FE          aG7bivzNuCW0yRfyp0s/W2FXEp0EP8zXwQAu6eiX+qzd2WEplnWr3674GHwjtS9G9Te1          J+g/WyrLOqvit2WfGiDFjxcmZK28NGs0UCn16tU4EV4df4G2WNCtZ7rq3B8icTpYwLMq          UrW2UWB5ShSp1vfaagEi7jlAugMsF/lF2QxwRxxWmEV8gt1odEIWahafS/3CaJs8ij2m          Knzg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from:dkim-signature:dkim-signature:dmarc-filter:delivered-to;         bh=efUT9YVinjOUDB9FWngFq5/PMyszXgXdXErrMvlcZCs=;         fh=FftrfoR4Ffjv7FMHGLako0EsJ+bgxbS8pc7i+Tkp0oM=;         b=BSi6VD93w+nmIbGVajUyKzQKHJQ4DIrJEtmgytXzlNkYA6hTPSojdyRBy6wZkY310F          Wdx4qwc4L0Vv2/bxtIAeBpi/wx7tr5MdLhfllDNJ0BIYDFqNp4/NciokoFRxGkS/70xR          dwsFgZtRk3jVPexVh3qOSkq84Brv+tHZ6/IIHEuIXNhHHJk8/RMfAUEGVOlAJXpXY/wn          52k3umkWoug40Cv0LWlI+s2GVKrhSsp9Q+ZBqqwA+n6snjbH6vvax+Krr3qOL48erP27          zYnBnFhT3Ok1VJLngcNQgnwDhc6BU11cyZm2V64Wxt8iPezwh008NNOD2ezQZo6JRem2          Tosg==;         dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;        dkim=pass header.i=@qualcomm.com header.s=qcppdkim1 header.b=RkkK08jf;        dkim=pass header.i=@oss.qualcomm.com header.s=google header.b=MTJk4dio;        spf=pass (google.com: domain of srs0=aeje=ad=oss.qualcomm.com=manivannan.sadhasivam@kernel.org designates 172.105.4.254 as permitted sender) smtp.mailfrom="SRS0=AEJe=AD=oss.qualcomm.com=manivannan.sadhasivam@kernel.org";        dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=qualcomm.com;        dara=neutral header.i=@linaro.org
+Return-Path: <SRS0=AEJe=AD=oss.qualcomm.com=manivannan.sadhasivam@kernel.org>
+Received: from tor.source.kernel.org (tor.source.kernel.org. [172.105.4.254])         by mx.google.com with ESMTPS id d75a77b69052e-5033810b1fasi83798421cf.366.2026.01.29.23.19.52         for <viresh.kumar@linaro.org>         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Thu, 29 Jan 2026 23:19:52 -0800 (PST)
+Received-SPF: pass (google.com: domain of srs0=aeje=ad=oss.qualcomm.com=manivannan.sadhasivam@kernel.org designates 172.105.4.254 as permitted sender) client-ip=172.105.4.254;
+Authentication-Results: mx.google.com;        dkim=pass header.i=@qualcomm.com header.s=qcppdkim1 header.b=RkkK08jf;        dkim=pass header.i=@oss.qualcomm.com header.s=google header.b=MTJk4dio;        spf=pass (google.com: domain of srs0=aeje=ad=oss.qualcomm.com=manivannan.sadhasivam@kernel.org designates 172.105.4.254 as permitted sender) smtp.mailfrom="SRS0=AEJe=AD=oss.qualcomm.com=manivannan.sadhasivam@kernel.org";        dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=qualcomm.com;        dara=neutral header.i=@linaro.org
+Received: from smtp.kernel.org (transwarp.subspace.kernel.org [100.75.92.58]) 	by tor.source.kernel.org (Postfix) with ESMTP id E76526012B 	for <viresh.kumar@linaro.org>; Fri, 30 Jan 2026 07:19:51 +0000 (UTC)
+Received: by smtp.kernel.org (Postfix) 	id B520EC16AAE; Fri, 30 Jan 2026 07:19:51 +0000 (UTC)
+Delivered-To: vireshk@kernel.org
+Received: from mx0b-0031df01.pphosted.com (mx0b-0031df01.pphosted.com [205.220.180.131]) 	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits) 	 key-exchange X25519 server-signature RSA-PSS (2048 bits) server-digest SHA256) 	(No client certificate requested) 	by smtp.kernel.org (Postfix) with ESMTPS id C2295C19425 	for <vireshk@kernel.org>; Fri, 30 Jan 2026 07:19:50 +0000 (UTC)
+DMARC-Filter: OpenDMARC Filter v1.4.1 smtp.kernel.org C2295C19425
+Authentication-Results: smtp.kernel.org; dmarc=pass (p=reject dis=none) header.from=oss.qualcomm.com
+Authentication-Results: smtp.kernel.org; spf=pass smtp.mailfrom=oss.qualcomm.com
+Received: from pps.filterd (m0279871.ppops.net [127.0.0.1]) 	by mx0a-0031df01.pphosted.com (8.18.1.11/8.18.1.11) with ESMTP id 60U52ctB555356 	for <vireshk@kernel.org>; Fri, 30 Jan 2026 07:19:50 GMT
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=qualcomm.com; h= 	cc:content-transfer-encoding:date:from:message-id:mime-version 	:subject:to; s=qcppdkim1; bh=efUT9YVinjOUDB9FWngFq5/PMyszXgXdXEr 	rMvlcZCs=; b=RkkK08jfUFzmo/UaHmZy0S/mALQWROnwi4sfPRmoMA+d1Jxafpg 	+ZsWaJGdtHoSHCr+2VHVpw8D1t7Hck0PLuH5Hmo746V+ekZzrEgYlJ38eQtzyPWk 	q9JDwrwSp1T1iXHRLtTR9OAfsPkfBh4+y/G1wsl8yVSuiWYsMRzeVWE6CuN2p0pW 	FCQvhJpGRVFUpbx8vVQa8j1qVVYJYlqyys65x87YuFLcHAQb7qBYUPcxjqyIqfF0 	rnTavZVa4DHc36LFdR4aEIGgnhUbKpMXubfufyjUVGXi0Od2rmr92x1S/takiUKb 	ke72ywqvYUH55Z6HHOsVGkzx4dYoxzTerQQ==
+Received: from mail-pg1-f199.google.com (mail-pg1-f199.google.com [209.85.215.199]) 	by mx0a-0031df01.pphosted.com (PPS) with ESMTPS id 4c0p59gc7r-1 	(version=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 bits=128 verify=NOT) 	for <vireshk@kernel.org>; Fri, 30 Jan 2026 07:19:49 +0000 (GMT)
+Received: by mail-pg1-f199.google.com with SMTP id 41be03b00d2f7-c5269fcecdeso1177379a12.0         for <vireshk@kernel.org>; Thu, 29 Jan 2026 23:19:49 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=oss.qualcomm.com; s=google; t=1769757589; x=1770362389; darn=kernel.org;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from:from:to:cc:subject:date:message-id:reply-to;         bh=efUT9YVinjOUDB9FWngFq5/PMyszXgXdXErrMvlcZCs=;         b=MTJk4diozR0itOzOXdKOYC3ISjmuiD7lC5RuMoy6mxEOHoOTzYJrRiq9+HHOL+hiT6          f+GLcb1gesPVtMeMKxY4S9T1O1aQwvLm4YtyzpZAH3xXXB3Y3LmADRce7H/eO3cmw0r/          yGwDqkfw2XYUTT2HshjjfNVZ9jxXq2G2ZJToFx52PGHqxbUVnhQVX4d5uJx0jJA42k9r          0hDmfMxMnK6ZOOO5ezDlGzzOJaVOAJCgCQ8rdEU8aqtTi45QxodhOJWrAJ0RWCoxDYVF          oeAvXEnErLqrSeF4B8tXi6tpQHOsaoEzJGrU3pqc2be4FFSMf4CBW49wmPVT/jQe4zZm          sQcQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;         d=1e100.net; s=20230601; t=1769757589; x=1770362389;         h=content-transfer-encoding:mime-version:message-id:date:subject:cc          :to:from:x-gm-gg:x-gm-message-state:from:to:cc:subject:date          :message-id:reply-to;         bh=efUT9YVinjOUDB9FWngFq5/PMyszXgXdXErrMvlcZCs=;         b=n/PI4qcQ2Ek5MrOAjiiCLDFll48ME0cj+d9C5yCocrNbCrmFwZ4lFXgEebqsKgASyS          NYugU3U4J69JRHfGpQ2cJdoxFLx1Cm+kWKsG+MMM8OLnHnA1H52LCDrwP2i85bil8Kc+          ewA+SGDkseL4hbVqK9h7JsIcTexDmh2RDY4Jp538E72pNl1QwPUtWNB+sskFfs1wPo4x          9dQAmNqONxZcO+GR5c4AfV2K23Nfcx+GQtlfeW+kDWZQh2TWztMc6/c8CMZTZaiZ3mik          2d+vZBunHMzP6agODmdUYBQEhpdd1IGmsixKAJOdqhFWN4Akpg1cFipG1T3KRyva6sIl          OkYg==
+X-Gm-Message-State: AOJu0YxyU97zY5PXO4WsEMbzg7MmYdr7nbRhenn+3wlm8Pdd1WlxY3Cg 	11kdsrecemN7r+WXg9nXyMorUfwY0jywxnfQ5LR0dBZvRRcMOc+99uyWg/7nppf26gzITtW3l2J 	pyc27Q3G3lWDiFzREU03pi8n0i7Fw3blxM6oT2n7tkLPUwJmJHM9X0NNe49EM5A==
+X-Gm-Gg: AZuq6aIlUbqzyVzZyeejkobPev/mZ337DhGHnLew4p9NllLzsa581nqbNAYjfs/44kP 	HrxceWt9Mr4z/KVqFS0GlrcgW39OMsP/5UY0rl7yLEUuEpnszoL2l0OJONDjA82C/LkyZP2S8J9 	3UEw+jWUHmMpDykyONYQGtf1ePlZFavoSTD/KtALBCLqSFX5FYiYoLHunOsbEgI1I07AJDi/0SR 	MS0HCyBsjP5s6MH1hwKaNDoA6NzNPfnztiVhZCJSYPKw3BJt3ZjTZL+kJ4ODyOlIyg8e60H1MsB 	C+iE0EdAmUuHWALdJntDf8dafguQ7k32GAXsoGhxLlWVmkK8rZWOpSRJoBuremR46MtBUvdmXC/ 	qt+lUhDb//70NW1PZxwNseXfysA==
+X-Received: by 2002:a05:6a20:7491:b0:35e:86d3:88ca with SMTP id adf61e73a8af0-392e015d37amr1825918637.59.1769757588522;         Thu, 29 Jan 2026 23:19:48 -0800 (PST)
+X-Received: by 2002:a05:6a20:7491:b0:35e:86d3:88ca with SMTP id adf61e73a8af0-392e015d37amr1825891637.59.1769757587969;         Thu, 29 Jan 2026 23:19:47 -0800 (PST)
+Received: from work ([120.60.134.148])         by smtp.gmail.com with ESMTPSA id 41be03b00d2f7-c6432e27aa5sm6627128a12.6.2026.01.29.23.19.45         (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);         Thu, 29 Jan 2026 23:19:47 -0800 (PST)
+From: Manivannan Sadhasivam <manivannan.sadhasivam@oss.qualcomm.com>
+To: vireshk@kernel.org, nm@ti.com, sboyd@kernel.org
+Cc: linux-pm@vger.kernel.org, linux-kernel@vger.kernel.org,         Manivannan Sadhasivam <manivannan.sadhasivam@oss.qualcomm.com>,         Bjorn Andersson <andersson@kernel.org>
+Subject: [PATCH v2] OPP: debugfs: Use performance level if available to distinguish between rates
+Date: Fri, 30 Jan 2026 12:49:40 +0530
+Message-ID: <20260130071940.6949-1-manivannan.sadhasivam@oss.qualcomm.com>
+X-Mailer: git-send-email 2.51.0
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+X-Proofpoint-ORIG-GUID: ojrDOJyTBklPeTbcSDLhDsgZIOD4Kxax
+X-Proofpoint-Spam-Details-Enc: AW1haW4tMjYwMTMwMDA1NiBTYWx0ZWRfX5u0k75aPoxGv  4oLkwkB+Tn2Vd/VKSg4RaybAGwGYHeuE6t/q70VHmtj0nQi0nLuGp8ZzLEy7XrUceBpgv715E4I  HUp4iRJFD5MbVAB0xCtk1O7uDdXghLp0AuJq23u7Gr4vdwjK/nSf7Qow4F1NBcbSeBgwJFpsK8I  xF3zngDTATEUhOGAC3MRtzBcPh5RGHiRrICQIuBhjty/5BIiU0IWccevxl8LPQro8/mb3oo1P6w  Np+ob92xEoI4vw5ecvpfw4X3BOEmzAu/KklZSUfow0uhZWOAJZnOwz9YOYH2M1sG3pYefRxDXSU  M36aIYkwEkPnwmLoMUhMiov9418JKdjsqmi6/3V+K9tluFYJ3fq0Y5cUhaJG+mFS7firy03NwHp  ogKQlaTj94sLQIHljihU0fg0LdYj/F1/YqT7lsEuzs6Iou8rEpbz85GMhid0PiYAb9ZN/LBHbUZ  VqKl5erbcYdONMYspRw==
+X-Proofpoint-GUID: ojrDOJyTBklPeTbcSDLhDsgZIOD4Kxax
+X-Authority-Analysis: v=2.4 cv=Re+dyltv c=1 sm=1 tr=0 ts=697c5b95 cx=c_pps  a=Oh5Dbbf/trHjhBongsHeRQ==:117 a=2V1Ify4SBoSVV1xbfEOURw==:17  a=vUbySO9Y5rIA:10 a=s4-Qcg_JpJYA:10 a=VkNPw1HP01LnGYTKEx00:22  a=VwQbUJbxAAAA:8 a=EUspDBNiAAAA:8 a=UdqTqlS5sJmFKW4WO-8A:9  a=_Vgx9l1VpLgwpw_dHYaR:22
+X-Proofpoint-Virus-Version: vendor=baseguard  engine=ICAP:2.0.293,Aquarius:18.0.1121,Hydra:6.1.51,FMLib:17.12.100.49  definitions=2026-01-29_03,2026-01-29_01,2025-10-01_01
+X-Proofpoint-Spam-Details: rule=outbound_notspam policy=outbound score=0  spamscore=0 malwarescore=0 suspectscore=0 clxscore=1015 bulkscore=0  adultscore=0 impostorscore=0 priorityscore=1501 lowpriorityscore=0  phishscore=0 classifier=typeunknown authscore=0 authtc= authcc=  route=outbound adjust=0 reason=mlx scancount=1 engine=8.22.0-2601150000  definitions=main-2601300056
+
+Some OPP tables have entries with same rate and different performance
+level. For these entries, using only the rate as the debugfs directory name
+causes below error:
+
+debugfs: 'opp:5000000' already exists in 'soc@0-1c00000.pci'
+
+Fix it by appending the performance level to the dir name if available.
+
+Reported-by: Bjorn Andersson <andersson@kernel.org>
+Closes: https://lore.kernel.org/linux-arm-msm/75lzykd37zdvrks5i2bb4zb2yzjtm25kv3hegmikndkbr772mz@w2ykff3ny45u/
+Fixes: 05db35963eef ("OPP: Add support to find OPP for a set of keys")
+Signed-off-by: Manivannan Sadhasivam <manivannan.sadhasivam@oss.qualcomm.com>
+---
+
+Changes in v2:
+
+- Used OPP_LEVEL_UNSET check
+
+ drivers/opp/debugfs.c | 20 +++++++++++---------
+ 1 file changed, 11 insertions(+), 9 deletions(-)
+
+diff --git a/drivers/opp/debugfs.c b/drivers/opp/debugfs.c
+index 8fc6238b1728..61506d30d5ff 100644
+--- a/drivers/opp/debugfs.c
++++ b/drivers/opp/debugfs.c
+@@ -130,22 +130,24 @@ void opp_debug_create_one(struct dev_pm_opp *opp, struct opp_table *opp_table)
+ {
+ 	struct dentry *pdentry = opp_table->dentry;
+ 	struct dentry *d;
+-	unsigned long id;
+-	char name[25];	/* 20 chars for 64 bit value + 5 (opp:\0) */
++	char name[36];	/* "opp:"(4) + u64(20) + "-" (1) + u32(10) + NULL(1) */
+ 
+ 	/*
+ 	 * Get directory name for OPP.
+ 	 *
+-	 * - Normally rate is unique to each OPP, use it to get unique opp-name.
++	 * - Normally rate is unique to each OPP, use it to get unique opp-name,
++	 *   together with performance level if available.
+ 	 * - For some devices rate isn't available or there are multiple, use
+ 	 *   index instead for them.
+ 	 */
+-	if (likely(opp_table->clk_count == 1 && opp->rates[0]))
+-		id = opp->rates[0];
+-	else
+-		id = _get_opp_count(opp_table);
+-
+-	snprintf(name, sizeof(name), "opp:%lu", id);
++	if (likely(opp_table->clk_count == 1 && opp->rates[0])) {
++		if (opp->level == OPP_LEVEL_UNSET)
++			snprintf(name, sizeof(name), "opp:%lu", opp->rates[0]);
++		else
++			snprintf(name, sizeof(name), "opp:%lu-%u", opp->rates[0], opp->level);
++	} else {
++		snprintf(name, sizeof(name), "opp:%u", _get_opp_count(opp_table));
++	}
+ 
+ 	/* Create per-opp directory */
+ 	d = debugfs_create_dir(name, pdentry);
+-- 
+2.51.0
+

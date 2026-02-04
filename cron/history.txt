@@ -5935,3 +5935,54 @@ To github.com:vireshk/criticalinfo
    50d7c481269a..eaa832f2a242  bkp/main -> bkp/main
 
 Entering /home/vireshk/scripts
+[main 4113c27d9e47] updates
+ 1 file changed, 52 insertions(+)
+To github.com:vireshk/scripts
+   576920fb0320..4113c27d9e47  main -> main
+   907f429b115b..576920fb0320  bkp/main -> bkp/main
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/kernel-utils
+On branch main
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/gpio-mock
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+
+
+ 
+Wednesday 04 February 2026 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+Everything up-to-date
+Everything up-to-date
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+Connection to github.com closed by remote host.
+
+Entering /home/vireshk/all/criticalinfo
+[main 08e78841be00] updates
+ 20 files changed, 1907 insertions(+)
+To github.com:vireshk/criticalinfo
+   f4b84ac1dfc2..08e78841be00  main -> main
+   eaa832f2a242..f4b84ac1dfc2  bkp/main -> bkp/main
+
+Entering /home/vireshk/scripts

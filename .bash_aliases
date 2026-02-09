@@ -44,7 +44,7 @@ PATH="/media/vireshk/bb4fad4d-8860-4037-8d08-02291222001e/android/prebuilts/clan
 PATH="/home/vireshk/work/repos/tools/icdiff:$PATH"
 
 # Shrinkwrap
-PATH="/home/vireshk/work/repos/virtio-msg/vingu-setup/shrinkwrap/shrinkwrap:$PATH"
+#PATH="/home/vireshk/work/repos/virtio-msg/vingu-setup/shrinkwrap/shrinkwrap:$PATH"
 
 # coccinelle
 # PATH="/home/vireshk/work/repos/tools/cocci-bin:$PATH"

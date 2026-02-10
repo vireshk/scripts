@@ -46,6 +46,15 @@ PATH="/home/vireshk/work/repos/tools/icdiff:$PATH"
 # Shrinkwrap
 #PATH="/home/vireshk/work/repos/virtio-msg/vingu-setup/shrinkwrap/shrinkwrap:$PATH"
 
+hcca() {
+    cd /home/vireshk/work/repos/cca/alp12-qemu || return
+
+    export PATH="$PWD/shrinkwrap/shrinkwrap:$PATH"
+    export WORKSPACE="$PWD/workspace"
+    export SHRINKWRAP_BUILD="$PWD/workspace"
+    export SHRINKWRAP_PACKAGE="$PWD/workspace/package"
+}
+
 # coccinelle
 # PATH="/home/vireshk/work/repos/tools/cocci-bin:$PATH"
 

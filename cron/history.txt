@@ -8202,3 +8202,63 @@ To github.com:vireshk/criticalinfo
    f07fb9b7c4c2..84bc7c6f53a6  bkp/main -> bkp/main
 
 Entering /home/vireshk/scripts
+[main af7e829554db] updates
+ 1 file changed, 49 insertions(+)
+To github.com:vireshk/scripts
+   11157cd02a8d..af7e829554db  main -> main
+   ed370aa92581..11157cd02a8d  bkp/main -> bkp/main
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/kernel-utils
+On branch main
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/gpio-mock
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+
+
+ 
+Monday 23 February 2026 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+To github.com:vireshk/linux-bkp.git
+   0b7fbf9333fa..6de23f81a5e0  cpufreq/arm/linux-next -> cpufreq/arm/linux-next
+ + fc72a587c6c9...3d2398f44a2d opp/linux-next -> opp/linux-next (forced update)
+To github.com:vireshk/linux-bkp.git
+ * [new tag]                   v6.19 -> v6.19
+ * [new tag]                   v6.19-rc8 -> v6.19-rc8
+ * [new tag]                   v7.0-rc1 -> v7.0-rc1
+To github.com:vireshk/linux-bkp.git
+   0b7fbf9333fa..6de23f81a5e0  bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next
+ + fc72a587c6c9...3d2398f44a2d bkp/opp/linux-next -> bkp/opp/linux-next (forced update)
+   fcb70a56f4d8..6de23f81a5e0  origin/HEAD -> origin/HEAD
+   fcb70a56f4d8..6de23f81a5e0  origin/master -> origin/master
+   0b7fbf9333fa..6de23f81a5e0  pmko/cpufreq/arm/linux-next -> pmko/cpufreq/arm/linux-next
+ + fc72a587c6c9...3d2398f44a2d pmko/opp/linux-next -> pmko/opp/linux-next (forced update)
+
+Entering /home/vireshk/all/criticalinfo
+[main 50a475245a8b] updates
+ 19 files changed, 2001 insertions(+)
+To github.com:vireshk/criticalinfo
+   81fbaa1694f2..50a475245a8b  main -> main
+   84bc7c6f53a6..81fbaa1694f2  bkp/main -> bkp/main
+
+Entering /home/vireshk/scripts

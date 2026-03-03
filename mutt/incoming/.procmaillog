@@ -2921,3 +2921,6 @@ From vireshk  Sat Jan 24 10:53:27 2026
 From vireshk  Fri Jan 30 12:50:37 2026
  Subject: [PATCH v2] OPP: debugfs: Use performance level if available to distin
   Folder: PATCH_v2_OPP_debugfs_Use_performance_level_if_available_to_d	  12823
+From vireshk  Mon Feb 23 14:21:11 2026
+ Subject: [PATCH] dt-bindings: cpufreq: qcom-hw: document Eliza cpufreq  hardwa
+  Folder: PATCH_dt-bindings_cpufreq_qcom-hw_document_Eliza_cpufreq_har	  12240

@@ -8509,3 +8509,53 @@ To github.com:vireshk/criticalinfo
    7124518ff88c..ce0583d8d6fa  bkp/main -> bkp/main
 
 Entering /home/vireshk/scripts
+[main a2bd7faf2955] updates
+ 3 files changed, 54 insertions(+), 109 deletions(-)
+ delete mode 100644 mutt/incoming/PATCH_v2_OPP_debugfs_Use_performance_level_if_available_to_distinguish_between_rates.mbox
+To github.com:vireshk/scripts
+   198777f45deb..a2bd7faf2955  main -> main
+   c7ff1aa746d1..198777f45deb  bkp/main -> bkp/main
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/kernel-utils
+On branch main
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/gpio-mock
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+
+
+ 
+Thursday 05 March 2026 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+Everything up-to-date
+Everything up-to-date
+Everything up-to-date
+
+Entering /home/vireshk/all/criticalinfo
+[main 86b5640345ab] updates
+ 24 files changed, 3007 insertions(+), 65 deletions(-)
+To github.com:vireshk/criticalinfo
+   623de604b7f8..86b5640345ab  main -> main
+   ce0583d8d6fa..623de604b7f8  bkp/main -> bkp/main
+
+Entering /home/vireshk/scripts

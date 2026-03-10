@@ -46,13 +46,23 @@ PATH="/home/vireshk/work/repos/tools/icdiff:$PATH"
 # Shrinkwrap
 #PATH="/home/vireshk/work/repos/virtio-msg/vingu-setup/shrinkwrap/shrinkwrap:$PATH"
 
-hcca() {
+hcca12() {
     cd /home/vireshk/work/repos/cca/alp12-qemu || return
 
     export PATH="$PWD/shrinkwrap/shrinkwrap:$PATH"
-    export WORKSPACE="$PWD/workspace"
-    export SHRINKWRAP_BUILD="$PWD/workspace"
-    export SHRINKWRAP_PACKAGE="$PWD/workspace/package"
+    export WORKSPACE="${PWD}/workspace"
+    export SHRINKWRAP_BUILD=${WORKSPACE}
+    export SHRINKWRAP_PACKAGE=${SHRINKWRAP_BUILD}/package
+}
+
+hcca17() {
+    cd /home/vireshk/work/repos/cca/alp17-fvp || return
+
+    export PATH="${PWD}/shrinkwrap/shrinkwrap:$PATH"
+    export SHRINKWRAP_CONFIG=${PWD}/tf-rmm/tools/shrinkwrap/configs
+    export WORKSPACE=${PWD}/workspace
+    export SHRINKWRAP_BUILD=${WORKSPACE}
+    export SHRINKWRAP_PACKAGE=${SHRINKWRAP_BUILD}/package
 }
 
 # coccinelle

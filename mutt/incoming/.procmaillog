@@ -2924,3 +2924,6 @@ From vireshk  Fri Jan 30 12:50:37 2026
 From vireshk  Mon Feb 23 14:21:11 2026
  Subject: [PATCH] dt-bindings: cpufreq: qcom-hw: document Eliza cpufreq  hardwa
   Folder: PATCH_dt-bindings_cpufreq_qcom-hw_document_Eliza_cpufreq_har	  12240
+From vireshk  Mon Mar  9 13:58:01 2026
+ Subject: Re: [PATCH 0/2] cpufreq: governor: Apply limits with target_freq  ins
+  Folder: Re_PATCH_0-2_cpufreq_governor_Apply_limits_with_target_freq_	   6598

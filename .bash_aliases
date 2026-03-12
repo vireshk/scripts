@@ -68,19 +68,21 @@ hcca17() {
 cca17rootbuild() {
 	pushd $PWD/workspace/package/cca-3world
 
+	cp ../../source/cca-3world/linux/tools/tsm/tsm_obj_read .
 	e2fsck -fp rootfs.ext2
 	resize2fs rootfs.ext2 256M
 
 	sudo -A mkdir -p mnt
 
 	sudo -A mount -o loop,offset=$((65*1024*1024)) guest-disk.img mnt
-	sudo -A cp ../../source/cca-3world/linux/tools/tsm/tsm_obj_read mnt/usr/bin/
+	sudo -A cp tsm_obj_read mnt/usr/bin/
 	sync
 	sudo -A umount mnt
 
 	sudo -A mount -o loop rootfs.ext2 mnt
 	sudo -A mkdir -p mnt/cca
 	sudo -A cp guest-disk.img KVMTOOL_EFI.fd Image lkvm mnt/cca/
+	sudo -A cp tsm_obj_read mnt/usr/bin/
 
 	sync
 	sudo -A umount mnt

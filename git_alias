@@ -120,7 +120,7 @@ alias myspatch='echo "spatch -in_place -include_headers -sp_file setmode.cocci -
 # Gitmail
 alias gitmail='git send-email *.patch --cc vireshk'
 alias gitmailsuppress='git -c sendemail.tocmd=true send-email *.patch --suppress-cc=all --cc vireshk'
-alias gitmailpmbase='gitmail --cc pm --cc vingu'
+alias gitmailpmbase='gitmail --cc pm --cc vingu --cc sumit'
 alias gitmailpm='gitmailpmbase --to rafael'
 alias gitmailclk='gitmail --cc "Russell King <linux@armlinux.org.uk>" --cc linux-clk@vger.kernel.org --cc lkml --cc "Michael Turquette <mturquette@baylibre.com>" --cc sboyd --cc rust-for-linux@vger.kernel.org --cc vingu'
 alias gitmailcpumask='gitmail --cc lkml --cc "Danilo Krummrich <dakr@redhat.com>" --cc rust-for-linux@vger.kernel.org --to "Yury Norov <yury.norov@gmail.com>" --to "Rasmus Villemoes <linux@rasmusvillemoes.dk>" --cc vingu --cc "Burak Emir <bqe@google.com>"'

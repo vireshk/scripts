@@ -2927,3 +2927,6 @@ From vireshk  Mon Feb 23 14:21:11 2026
 From vireshk  Mon Mar  9 13:58:01 2026
  Subject: Re: [PATCH 0/2] cpufreq: governor: Apply limits with target_freq  ins
   Folder: Re_PATCH_0-2_cpufreq_governor_Apply_limits_with_target_freq_	   6598
+From vireshk  Thu Mar 19 09:06:23 2026
+ Subject: [PATCH] cpufreq: tegra194: remove COMPILE_TEST
+  Folder: PATCH_cpufreq_tegra194_remove_COMPILE_TEST.mbox		   7082

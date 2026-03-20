@@ -9011,3 +9011,55 @@ To github.com:vireshk/criticalinfo
    5c96380742fd..23fdfa18e8e3  bkp/main -> bkp/main
 
 Entering /home/vireshk/scripts
+[main 155c923caf3c] updates
+ 1 file changed, 49 insertions(+)
+To github.com:vireshk/scripts
+   1f91048b720d..155c923caf3c  main -> main
+   d73ab4bae897..1f91048b720d  bkp/main -> bkp/main
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/kernel-utils
+On branch main
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/gpio-mock
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+
+
+ 
+Friday 20 March 2026 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+To github.com:vireshk/linux-bkp.git
+   d6f8e0e06dee..8655a4e35cda  cpufreq/arm/linux-next -> cpufreq/arm/linux-next
+Everything up-to-date
+To github.com:vireshk/linux-bkp.git
+   d6f8e0e06dee..8655a4e35cda  bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next
+   db5e64651a1b..8655a4e35cda  pmko/cpufreq/arm/linux-next -> pmko/cpufreq/arm/linux-next
+
+Entering /home/vireshk/all/criticalinfo
+[main d235b453e55d] updates
+ 19 files changed, 1754 insertions(+)
+To github.com:vireshk/criticalinfo
+   8fa12b6c7830..d235b453e55d  main -> main
+   23fdfa18e8e3..8fa12b6c7830  bkp/main -> bkp/main
+
+Entering /home/vireshk/scripts

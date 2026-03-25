@@ -9167,3 +9167,85 @@ To github.com:vireshk/criticalinfo
    d235b453e55d..337c22fd43a3  bkp/main -> bkp/main
 
 Entering /home/vireshk/scripts
+[main 0a6164cace32] updates
+ 1 file changed, 49 insertions(+)
+To github.com:vireshk/scripts
+   25128c33e8a9..0a6164cace32  main -> main
+   ed57d9a464b5..25128c33e8a9  bkp/main -> bkp/main
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/kernel-utils
+On branch main
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/gpio-mock
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+
+
+ 
+Wednesday 25 March 2026 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+To github.com:vireshk/linux-bkp.git
+ + d846a141a98a...55b6d9ecf2cb cpufreq/arm/linux-next-test -> cpufreq/arm/linux-next-test (forced update)
+To github.com:vireshk/linux-bkp.git
+ * [new tag]                   acpi-6.20-rc1 -> acpi-6.20-rc1
+ * [new tag]                   acpi-7.0-rc1-2 -> acpi-7.0-rc1-2
+ * [new tag]                   acpi-7.0-rc2 -> acpi-7.0-rc2
+ * [new tag]                   acpi-7.0-rc3 -> acpi-7.0-rc3
+ * [new tag]                   acpi-7.0-rc4 -> acpi-7.0-rc4
+ * [new tag]                   acpi-7.0-rc5 -> acpi-7.0-rc5
+ * [new tag]                   pm-6.19-rc8 -> pm-6.19-rc8
+ * [new tag]                   pm-6.20-rc1 -> pm-6.20-rc1
+ * [new tag]                   pm-7.0-rc1-2 -> pm-7.0-rc1-2
+ * [new tag]                   pm-7.0-rc2 -> pm-7.0-rc2
+ * [new tag]                   pm-7.0-rc4 -> pm-7.0-rc4
+ * [new tag]                   pm-7.0-rc5 -> pm-7.0-rc5
+ * [new tag]                   thermal-6.20-rc1 -> thermal-6.20-rc1
+ * [new tag]                   thermal-7.0-rc1-2 -> thermal-7.0-rc1-2
+ * [new tag]                   v7.0-rc2 -> v7.0-rc2
+ * [new tag]                   v7.0-rc3 -> v7.0-rc3
+ * [new tag]                   v7.0-rc4 -> v7.0-rc4
+ * [new tag]                   v7.0-rc5 -> v7.0-rc5
+To github.com:vireshk/linux-bkp.git
+ + d846a141a98a...55b6d9ecf2cb bkp/cpufreq/arm/linux-next-test -> bkp/cpufreq/arm/linux-next-test (forced update)
+   7edf6f7ef534..5cbcd6c0742a  pm/acpi -> pm/acpi
+ - [deleted]                   pm/acpi-driver
+ + 4345a8f2c8d5...877556758cf5 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+   24d479d26b25..4354f16141fb  pm/fixes -> pm/fixes
+ + 8d94a210b132...f7258274a4b6 pm/linux-next -> pm/linux-next (forced update)
+   63804fed149a..c369299895a5  pm/master -> pm/master
+   d51e68b7007b..963337065315  pm/pm -> pm/pm
+ - [deleted]                   pm/pm-runtime-cleanup
+ + 8d94a210b132...7418867996ed pm/testing -> pm/testing (forced update)
+   d113735421da..15176b818e04  pm/thermal -> pm/thermal
+ - [deleted]                   pm/thermal-fixes
+ * [new reference]             pm/acpi-tad-next -> pm/acpi-tad-next
+ * [new reference]             pm/experimental/acpi-driver-conversion -> pm/experimental/acpi-driver-conversion
+
+Entering /home/vireshk/all/criticalinfo
+[main 2b7676c23993] updates
+ 25 files changed, 2067 insertions(+), 184 deletions(-)
+To github.com:vireshk/criticalinfo
+   3368fed96863..2b7676c23993  main -> main
+   337c22fd43a3..3368fed96863  bkp/main -> bkp/main
+
+Entering /home/vireshk/scripts

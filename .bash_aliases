@@ -355,6 +355,13 @@ alias qemuarmf="$QEMUARMCOMMON \
 	-append "console=ttyAMA0" \
 	$qemuobj"
 
+alias qemuarmamp="$QEMUARMCOMMON \
+	-kernel $AARCH64BUILD/Image \
+	-append "console=ttyAMA0" \
+	-device virtio-msg-amp-pci \
+	-device virtio-net-device,netdev=n1,bus=/gpex-pcihost/pcie.0/virtio-msg-amp-pci/fifo0/virtio-msg/bus0/virtio-msg-dev \
+	-netdev user,id=n1,net=10.0.3.0/24,hostfwd=tcp:127.0.0.1:2223-10.0.3.15:22,hostfwd=tcp:127.0.0.1:5202-10.0.3.15:5201"
+
 alias qemuarmfi2c="qemuarmf $qemui2c $qemufs"
 alias qemuarmfgpio="qemuarmf $qemugpio $qemufs"
 alias qemuarmfdumpdtb="qemuarmf -machine dumpdtb=/home/vireshk/junk/code/qemu.dtb"

@@ -9403,3 +9403,71 @@ To github.com:vireshk/criticalinfo
    4a1da291f1f2..da99b0338a5b  bkp/main -> bkp/main
 
 Entering /home/vireshk/scripts
+[main 5b64dfbf1a45] updates
+ 2 files changed, 57 insertions(+)
+To github.com:vireshk/scripts
+   eba2933f1ada..5b64dfbf1a45  main -> main
+   325e6e3723aa..eba2933f1ada  bkp/main -> bkp/main
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/kernel-utils
+On branch main
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/gpio-mock
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+
+
+ 
+Tuesday 31 March 2026 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+To github.com:vireshk/linux-bkp.git
+ + 13a88ad7b8a8...8b8d7ae72a83 0/opp/myhacks -> 0/opp/myhacks (forced update)
+ + 55b6d9ecf2cb...a293f29d841b cpufreq/arm/linux-next-test -> cpufreq/arm/linux-next-test (forced update)
+ + 7a6577a59a1a...4f66f52e918b virtio/msg-edgar-arm -> virtio/msg-edgar-arm (forced update)
+To github.com:vireshk/linux-bkp.git
+ * [new tag]                   acpi-7.0-rc6 -> acpi-7.0-rc6
+ * [new tag]                   pm-7.0-rc6 -> pm-7.0-rc6
+ * [new tag]                   thermal-7.0-rc6 -> thermal-7.0-rc6
+ * [new tag]                   v7.0-rc6 -> v7.0-rc6
+To github.com:vireshk/linux-bkp.git
+ + 13a88ad7b8a8...8b8d7ae72a83 bkp/0/opp/myhacks -> bkp/0/opp/myhacks (forced update)
+ + 55b6d9ecf2cb...a293f29d841b bkp/cpufreq/arm/linux-next-test -> bkp/cpufreq/arm/linux-next-test (forced update)
+ + 7a6577a59a1a...4f66f52e918b bkp/virtio/msg-edgar-arm -> bkp/virtio/msg-edgar-arm (forced update)
+   5cbcd6c0742a..f6484cadbcaf  pm/acpi -> pm/acpi
+ + 877556758cf5...0df1f65a01d8 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 3df1d0c823dc...2b29b67aa5a3 pm/experimental/acpi-driver-conversion -> pm/experimental/acpi-driver-conversion (forced update)
+ + 4354f16141fb...4692232fdf05 pm/fixes -> pm/fixes (forced update)
+ + f7258274a4b6...ed38d3ff049d pm/linux-next -> pm/linux-next (forced update)
+   c369299895a5..7aaa8047eafd  pm/master -> pm/master
+   963337065315..042f99c493c2  pm/pm -> pm/pm
+ + 7418867996ed...4fa3503d4567 pm/testing -> pm/testing (forced update)
+   15176b818e04..7dfe9846016b  pm/thermal -> pm/thermal
+
+Entering /home/vireshk/all/criticalinfo
+[main 83281e94f423] updates
+ 19 files changed, 1443 insertions(+)
+To github.com:vireshk/criticalinfo
+   0fba0fc34ae6..83281e94f423  main -> main
+   da99b0338a5b..0fba0fc34ae6  bkp/main -> bkp/main
+
+Entering /home/vireshk/scripts

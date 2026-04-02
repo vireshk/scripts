@@ -9522,3 +9522,54 @@ To github.com:vireshk/criticalinfo
    0fba0fc34ae6..83281e94f423  bkp/main -> bkp/main
 
 Entering /home/vireshk/scripts
+[main b367dcb087b0] updates
+ 1 file changed, 51 insertions(+)
+To github.com:vireshk/scripts
+   1b203bde4f5c..b367dcb087b0  main -> main
+   5b64dfbf1a45..1b203bde4f5c  bkp/main -> bkp/main
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/kernel-utils
+On branch main
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/gpio-mock
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+
+
+ 
+Thursday 02 April 2026 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+To github.com:vireshk/linux-bkp.git
+ + 94ba048e4872...b7c64ceff91b virtio/msg-edgar-arm -> virtio/msg-edgar-arm (forced update)
+Everything up-to-date
+To github.com:vireshk/linux-bkp.git
+ + 94ba048e4872...b7c64ceff91b bkp/virtio/msg-edgar-arm -> bkp/virtio/msg-edgar-arm (forced update)
+
+Entering /home/vireshk/all/criticalinfo
+[main 37ab056648aa] updates
+ 19 files changed, 2069 insertions(+)
+To github.com:vireshk/criticalinfo
+   ba3ba1751b76..37ab056648aa  main -> main
+   83281e94f423..ba3ba1751b76  bkp/main -> bkp/main
+
+Entering /home/vireshk/scripts

@@ -9573,3 +9573,52 @@ To github.com:vireshk/criticalinfo
    83281e94f423..ba3ba1751b76  bkp/main -> bkp/main
 
 Entering /home/vireshk/scripts
+[main db7a8d76aecb] updates
+ 1 file changed, 51 insertions(+)
+To github.com:vireshk/scripts
+   b367dcb087b0..db7a8d76aecb  main -> main
+   1b203bde4f5c..b367dcb087b0  bkp/main -> bkp/main
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/kernel-utils
+On branch main
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/gpio-mock
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+
+
+ 
+Monday 06 April 2026 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+Everything up-to-date
+Everything up-to-date
+Everything up-to-date
+
+Entering /home/vireshk/all/criticalinfo
+[main b6cab547de59] updates
+ 19 files changed, 2412 insertions(+)
+To github.com:vireshk/criticalinfo
+   37ab056648aa..b6cab547de59  main -> main
+   ba3ba1751b76..37ab056648aa  bkp/main -> bkp/main
+
+Entering /home/vireshk/scripts

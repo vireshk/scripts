@@ -9706,3 +9706,64 @@ To github.com:vireshk/criticalinfo
    37ab056648aa..b6cab547de59  bkp/main -> bkp/main
 
 Entering /home/vireshk/scripts
+[main 3af75513c515] updates
+ 1 file changed, 84 insertions(+)
+To github.com:vireshk/scripts
+   8647d00dda25..3af75513c515  main -> main
+   db7a8d76aecb..8647d00dda25  bkp/main -> bkp/main
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/kernel-utils
+On branch main
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/gpio-mock
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+
+
+ 
+Wednesday 08 April 2026 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+To github.com:vireshk/linux-bkp.git
+ + c94ce1567e36...fb453701285b virtio/msg-amp -> virtio/msg-amp (forced update)
+Everything up-to-date
+To github.com:vireshk/linux-bkp.git
+ - [deleted]                   bkp/cpufreq/arm/linux-next-test
+ - [deleted]                   bkp/scmi/ffa-transport
+ + c94ce1567e36...fb453701285b bkp/virtio/msg-amp -> bkp/virtio/msg-amp (forced update)
+ - [deleted]                   bkp/virtio/msg-edgar-arm
+ - [deleted]                   bkp/virtio/msg-v1
+ - [deleted]                   bkp/virtio/msg-v1-xen
+ - [deleted]                   bkp/virtio/msg-v1-xen-tf
+ - [deleted]                   bkp/virtio/msg-xen-18
+ - [deleted]                   bkp/xen/guest
+ - [deleted]                   bkp/xen/host
+ + c94ce1567e36...fb453701285b lko/virtio/msg-amp -> lko/virtio/msg-amp (forced update)
+
+Entering /home/vireshk/all/criticalinfo
+[main 7ad2f146ba03] updates
+ 19 files changed, 1703 insertions(+)
+To github.com:vireshk/criticalinfo
+   7c8fb277d918..7ad2f146ba03  main -> main
+   b6cab547de59..7c8fb277d918  bkp/main -> bkp/main
+
+Entering /home/vireshk/scripts

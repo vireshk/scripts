@@ -10399,3 +10399,55 @@ To github.com:vireshk/criticalinfo
    7c8fb277d918..7ad2f146ba03  bkp/main -> bkp/main
 
 Entering /home/vireshk/scripts
+[main c395f8237d2c] updates
+ 1 file changed, 632 insertions(+)
+To github.com:vireshk/scripts
+   0e722a18875f..c395f8237d2c  main -> main
+   3af75513c515..0e722a18875f  bkp/main -> bkp/main
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/kernel-utils
+On branch main
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/gpio-mock
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+
+
+ 
+Friday 10 April 2026 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+To github.com:vireshk/linux-bkp.git
+ + ef901f947694...6947c264fc7b virtio/msg-amp -> virtio/msg-amp (forced update)
+Everything up-to-date
+To github.com:vireshk/linux-bkp.git
+ + ef901f947694...6947c264fc7b bkp/virtio/msg-amp -> bkp/virtio/msg-amp (forced update)
+ + ef901f947694...6947c264fc7b lko/virtio/msg-amp -> lko/virtio/msg-amp (forced update)
+
+Entering /home/vireshk/all/criticalinfo
+[main d7685e2ec1c6] updates
+ 19 files changed, 1632 insertions(+)
+To github.com:vireshk/criticalinfo
+   239acac4ce90..d7685e2ec1c6  main -> main
+   7ad2f146ba03..239acac4ce90  bkp/main -> bkp/main
+
+Entering /home/vireshk/scripts

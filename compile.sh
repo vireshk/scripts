@@ -267,7 +267,7 @@ fi
 
 #mk="make ARCH=$carch O=$dir -j4"
 #mk="ARCH=$carch O=$dir -j4"
-mk="make CLIPPY=1 ARCH=$carch O=$dir -j8 $FLAGS CROSS_COMPILE=\"ccache $CROSS_COMPILE\" $MISMATCH $MISC"
+mk="make C=1 CLIPPY=1 ARCH=$carch O=$dir -j8 $FLAGS CROSS_COMPILE=\"ccache $CROSS_COMPILE\" $MISMATCH $MISC"
 
 if [ ! -z $is_debug ]; then
 	echo ""

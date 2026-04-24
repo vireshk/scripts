@@ -10903,3 +10903,60 @@ To github.com:vireshk/criticalinfo
    d662936bac9b..20f195e97faf  bkp/main -> bkp/main
 
 Entering /home/vireshk/scripts
+[main 01fcb37f73de] updates
+ 1 file changed, 52 insertions(+)
+To github.com:vireshk/scripts
+   8e364bb7e198..01fcb37f73de  main -> main
+   d5b9d41c5953..8e364bb7e198  bkp/main -> bkp/main
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/kernel-utils
+On branch main
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/gpio-mock
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+
+
+ 
+Friday 24 April 2026 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+To github.com:vireshk/linux-bkp.git
+ + 584d22cc7d40...7dbc213fbb69 cpufreq/arm/linux-next -> cpufreq/arm/linux-next (forced update)
+ + 7f602c5223b1...6514c5b1294c virtio/msg-amp -> virtio/msg-amp (forced update)
+To github.com:vireshk/linux-bkp.git
+ * [new tag]                   v7.0 -> v7.0
+To github.com:vireshk/linux-bkp.git
+ + 584d22cc7d40...7dbc213fbb69 bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next (forced update)
+ + 7f602c5223b1...6514c5b1294c bkp/virtio/msg-amp -> bkp/virtio/msg-amp (forced update)
+   bfe62a454542..dd6c438c3e64  origin/HEAD -> origin/HEAD
+   bfe62a454542..dd6c438c3e64  origin/master -> origin/master
+ - [deleted]                   origin/nocache-cleanup
+
+Entering /home/vireshk/all/criticalinfo
+[main 0b5af4ef072c] updates
+ 21 files changed, 1605 insertions(+)
+To github.com:vireshk/criticalinfo
+   5f56655d5641..0b5af4ef072c  main -> main
+   20f195e97faf..5f56655d5641  bkp/main -> bkp/main
+
+Entering /home/vireshk/scripts

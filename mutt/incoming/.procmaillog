@@ -2930,3 +2930,6 @@ From vireshk  Mon Mar  9 13:58:01 2026
 From vireshk  Thu Mar 19 09:06:23 2026
  Subject: [PATCH] cpufreq: tegra194: remove COMPILE_TEST
   Folder: PATCH_cpufreq_tegra194_remove_COMPILE_TEST.mbox		   7082
+From vireshk  Fri Apr 24 09:00:28 2026
+ Subject: [PATCH] cpufreq: qcom: Unify user-visible "Qualcomm" name
+  Folder: PATCH_cpufreq_qcom_Unify_user-visible_Qualcomm_name.mbox	  11880

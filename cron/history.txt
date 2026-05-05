@@ -11163,3 +11163,64 @@ To github.com:vireshk/criticalinfo
    f4ab56527883..b17f792cb8ff  bkp/main -> bkp/main
 
 Entering /home/vireshk/scripts
+[main daf011dd80e1] updates
+ 2 files changed, 50 insertions(+), 1 deletion(-)
+To github.com:vireshk/scripts
+   600a1479197b..daf011dd80e1  main -> main
+   da134cd57f22..600a1479197b  bkp/main -> bkp/main
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/kernel-utils
+On branch main
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/gpio-mock
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+
+
+ 
+Tuesday 05 May 2026 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+To github.com:vireshk/linux-bkp.git
+ + 7dbc213fbb69...bcb8889c4981 cpufreq/arm/linux-next -> cpufreq/arm/linux-next (forced update)
+   3d2398f44a2d..81cb5b64a2e0  opp/linux-next -> opp/linux-next
+ + 6514c5b1294c...66aa892981e7 virtio/msg-amp -> virtio/msg-amp (forced update)
+To github.com:vireshk/linux-bkp.git
+ * [new tag]                   v7.1-rc1 -> v7.1-rc1
+ * [new tag]                   v7.1-rc2 -> v7.1-rc2
+To github.com:vireshk/linux-bkp.git
+ + 7dbc213fbb69...bcb8889c4981 bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next (forced update)
+   3d2398f44a2d..81cb5b64a2e0  bkp/opp/linux-next -> bkp/opp/linux-next
+ + 6514c5b1294c...66aa892981e7 bkp/virtio/msg-amp -> bkp/virtio/msg-amp (forced update)
+   dd6c438c3e64..a293ec25d59d  origin/HEAD -> origin/HEAD
+   dd6c438c3e64..a293ec25d59d  origin/master -> origin/master
+   8655a4e35cda..bcb8889c4981  pmko/cpufreq/arm/linux-next -> pmko/cpufreq/arm/linux-next
+   3d2398f44a2d..81cb5b64a2e0  pmko/opp/linux-next -> pmko/opp/linux-next
+
+Entering /home/vireshk/all/criticalinfo
+[main 99bcc3aa1ad8] updates
+ 21 files changed, 3635 insertions(+)
+To github.com:vireshk/criticalinfo
+   13621cf0b26f..99bcc3aa1ad8  main -> main
+   b17f792cb8ff..13621cf0b26f  bkp/main -> bkp/main
+
+Entering /home/vireshk/scripts

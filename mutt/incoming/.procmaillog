@@ -2939,3 +2939,9 @@ From vireshk  Tue Apr 28 08:04:11 2026
 From vireshk  Tue May  5 08:12:52 2026
  Subject: [PATCH] cpufreq: qcom-cpufreq-hw: Fix possible double free
   Folder: PATCH_cpufreq_qcom-cpufreq-hw_Fix_possible_double_free.mbox	   7973
+From vireshk  Wed May 20 09:12:07 2026
+ Subject: [PATCH] OPP: of: Fix potential memory leak in opp_parse_supplies()
+  Folder: PATCH_OPP_of_Fix_potential_memory_leak_in_opp_parse_supplies	   9015
+From vireshk  Wed May 20 09:27:35 2026
+ Subject: [PATCH v5] cpufreq: cppc: mask Desired_Excursion when autonomous sele
+  Folder: PATCH_v5_cpufreq_cppc_mask_Desired_Excursion_when_autonomous	   7683

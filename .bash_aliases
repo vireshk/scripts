@@ -357,7 +357,7 @@ alias qemuarmf="$QEMUARMCOMMON \
 
 alias qemuarmamp="$QEMUARMCOMMON \
 	-kernel $AARCH64BUILD/Image \
-	-append \"console=ttyAMA0 virtio_msg_amp.ping_ms=10\" \
+	-append \"console=ttyAMA0 virtio_msg_amp.ping_ms=1000\" \
 	-device virtio-msg-amp-pci \
 	-device virtio-net-device,netdev=n1,bus=/gpex-pcihost/pcie.0/virtio-msg-amp-pci/fifo0/virtio-msg/bus0/virtio-msg-dev \
 	-netdev user,id=n1,net=10.0.3.0/24,hostfwd=tcp:127.0.0.1:2223-10.0.3.15:22,hostfwd=tcp:127.0.0.1:5202-10.0.3.15:5201"

@@ -11537,3 +11537,57 @@ To github.com:vireshk/criticalinfo
    4c4b300c4b31..8c0a1b435bee  bkp/main -> bkp/main
 
 Entering /home/vireshk/scripts
+[main 0ff7dba91629] updates
+ 2 files changed, 55 insertions(+), 1 deletion(-)
+To github.com:vireshk/scripts
+   ca7c554166fd..0ff7dba91629  main -> main
+   b9c9173300bb..ca7c554166fd  bkp/main -> bkp/main
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/kernel-utils
+On branch main
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/gpio-mock
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+
+
+ 
+Monday 25 May 2026 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+To github.com:vireshk/linux-bkp.git
+ + 292e6d937890...9a303892acac cpufreq/arm/linux-next -> cpufreq/arm/linux-next (forced update)
+   69f888381d2e..b59020834b2d  opp/linux-next -> opp/linux-next
+Everything up-to-date
+To github.com:vireshk/linux-bkp.git
+ + 292e6d937890...9a303892acac bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next (forced update)
+   69f888381d2e..b59020834b2d  bkp/opp/linux-next -> bkp/opp/linux-next
+   69f888381d2e..b59020834b2d  pmko/opp/linux-next -> pmko/opp/linux-next
+
+Entering /home/vireshk/all/criticalinfo
+[main 332ed3543b46] updates
+ 19 files changed, 1547 insertions(+)
+To github.com:vireshk/criticalinfo
+   f6c05bd57b7a..332ed3543b46  main -> main
+   8c0a1b435bee..f6c05bd57b7a  bkp/main -> bkp/main
+
+Entering /home/vireshk/scripts

@@ -2945,3 +2945,6 @@ From vireshk  Wed May 20 09:12:07 2026
 From vireshk  Wed May 20 09:27:35 2026
  Subject: [PATCH v5] cpufreq: cppc: mask Desired_Excursion when autonomous sele
   Folder: PATCH_v5_cpufreq_cppc_mask_Desired_Excursion_when_autonomous	   7683
+From vireshk  Mon May 25 08:58:35 2026
+ Subject: [PATCH] opp: rust: mark OPP methods as inline
+  Folder: PATCH_opp_rust_mark_OPP_methods_as_inline.mbox		  11757

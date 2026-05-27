@@ -11641,3 +11641,56 @@ To github.com:vireshk/criticalinfo
    f6c05bd57b7a..332ed3543b46  bkp/main -> bkp/main
 
 Entering /home/vireshk/scripts
+[main f3e39fc9faae] updates
+ 1 file changed, 50 insertions(+)
+To github.com:vireshk/scripts
+   fc628153dad5..f3e39fc9faae  main -> main
+   0ff7dba91629..fc628153dad5  bkp/main -> bkp/main
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/kernel-utils
+On branch main
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+[master cf8283e17b6e] updates
+ 1 file changed, 254 insertions(+), 205 deletions(-)
+ rewrite virtio-msg/virtio-msg-intro.md (93%)
+To github.com:vireshk/lwn
+   4ada2ceb5920..cf8283e17b6e  master -> master
+   a61b9fa20960..4bc34461f7e7  bkp/master -> bkp/master
+ * [new reference]             origin/master -> origin/master
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/gpio-mock
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+
+
+ 
+Wednesday 27 May 2026 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+Everything up-to-date
+Everything up-to-date
+Everything up-to-date
+
+Entering /home/vireshk/all/criticalinfo
+[main 412cd862dff6] updates
+ 19 files changed, 1713 insertions(+)
+To github.com:vireshk/criticalinfo
+   5b1f17f75891..412cd862dff6  main -> main
+   332ed3543b46..5b1f17f75891  bkp/main -> bkp/main
+
+Entering /home/vireshk/scripts

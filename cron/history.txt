@@ -11799,3 +11799,62 @@ To github.com:vireshk/criticalinfo
    412cd862dff6..269460005f33  bkp/main -> bkp/main
 
 Entering /home/vireshk/scripts
+[main 7a03c2092dd4] updates
+ 2 files changed, 54 insertions(+), 1 deletion(-)
+To github.com:vireshk/scripts
+   63cf561cfc86..7a03c2092dd4  main -> main
+   77671a550fcf..63cf561cfc86  bkp/main -> bkp/main
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/kernel-utils
+On branch main
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+To github.com:vireshk/lwn
+ + 682e37cbede5...1f811f785026 bkp/master -> bkp/master (forced update)
+ + 1f811f785026...a3eb75836e22 origin/master -> origin/master (forced update)
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/gpio-mock
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+
+
+ 
+Tuesday 02 June 2026 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+remote: 
+remote: Create a pull request for 'virtio/bertrand-v2' on GitHub by visiting:        
+remote:      https://github.com/vireshk/linux-bkp/pull/new/virtio/bertrand-v2        
+remote: 
+To github.com:vireshk/linux-bkp.git
+ * [new branch]                virtio/bertrand-v2 -> virtio/bertrand-v2
+Everything up-to-date
+To github.com:vireshk/linux-bkp.git
+ * [new reference]             bkp/virtio/bertrand-v2 -> bkp/virtio/bertrand-v2
+
+Entering /home/vireshk/all/criticalinfo
+[main 5bc3c12fd667] updates
+ 19 files changed, 1437 insertions(+)
+To github.com:vireshk/criticalinfo
+   8abe5c588a80..5bc3c12fd667  main -> main
+   269460005f33..8abe5c588a80  bkp/main -> bkp/main
+
+Entering /home/vireshk/scripts

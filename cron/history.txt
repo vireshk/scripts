@@ -11967,3 +11967,96 @@ To github.com:vireshk/criticalinfo
    5bc3c12fd667..669880af3342  bkp/main -> bkp/main
 
 Entering /home/vireshk/scripts
+[main a21198751f86] updates
+ 1 file changed, 54 insertions(+)
+To github.com:vireshk/scripts
+   38e7099f8f9c..a21198751f86  main -> main
+   03bd5f9ffce4..38e7099f8f9c  bkp/main -> bkp/main
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/kernel-utils
+On branch main
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/gpio-mock
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+
+
+ 
+Monday 08 June 2026 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+To github.com:vireshk/linux-bkp.git
+   9a303892acac..b7a76f38ef35  cpufreq/arm/linux-next -> cpufreq/arm/linux-next
+ + 1378760d6d7f...f970eb5655ad virtio/msg -> virtio/msg (forced update)
+ * [new branch]                virtio/msg-dnu -> virtio/msg-dnu
+To github.com:vireshk/linux-bkp.git
+ * [new tag]                   acpi-7.1-rc1 -> acpi-7.1-rc1
+ * [new tag]                   acpi-7.1-rc1-2 -> acpi-7.1-rc1-2
+ * [new tag]                   acpi-7.1-rc2 -> acpi-7.1-rc2
+ * [new tag]                   acpi-7.1-rc4 -> acpi-7.1-rc4
+ * [new tag]                   acpi-7.1-rc5 -> acpi-7.1-rc5
+ * [new tag]                   acpi-7.1-rc6 -> acpi-7.1-rc6
+ * [new tag]                   cpufreq-arm-updates-7.2 -> cpufreq-arm-updates-7.2
+ * [new tag]                   opp-updates-7.2 -> opp-updates-7.2
+ * [new tag]                   pm-7.1-rc1 -> pm-7.1-rc1
+ * [new tag]                   pm-7.1-rc5 -> pm-7.1-rc5
+ * [new tag]                   pm-7.1-rc6 -> pm-7.1-rc6
+ * [new tag]                   thermal-7.1-rc1 -> thermal-7.1-rc1
+ * [new tag]                   v7.1-rc3 -> v7.1-rc3
+ * [new tag]                   v7.1-rc4 -> v7.1-rc4
+ * [new tag]                   v7.1-rc5 -> v7.1-rc5
+ * [new tag]                   v7.1-rc6 -> v7.1-rc6
+To github.com:vireshk/linux-bkp.git
+ - [deleted]                   virtio/msg-amp
+ - [deleted]                   virtio/msg-xen
+   9a303892acac..b7a76f38ef35  bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next
+ + 1378760d6d7f...f970eb5655ad bkp/virtio/msg -> bkp/virtio/msg (forced update)
+ + 1378760d6d7f...f970eb5655ad lko/virtio/msg -> lko/virtio/msg (forced update)
+ - [deleted]                   lko/virtio/msg-amp
+ - [deleted]                   lko/virtio/msg-xen
+   a293ec25d59d..ba3e43a9e601  origin/HEAD -> origin/HEAD
+   a293ec25d59d..ba3e43a9e601  origin/master -> origin/master
+   f6484cadbcaf..3109f9f38800  pm/acpi -> pm/acpi
+ - [deleted]                   pm/acpi-tad-next
+ + 6a1d42932a97...af69594f56f1 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ - [deleted]                   pm/experimental/acpi-driver-conversion
+ + 3cc0b373bfce...8fde5d1d47f6 pm/fixes -> pm/fixes (forced update)
+ + 33674603bfb0...3b7a18a34e8d pm/linux-next -> pm/linux-next (forced update)
+   3aae9383f42f..e43ffb69e043  pm/master -> pm/master
+   744d5721d2d7..df488cac6140  pm/pm -> pm/pm
+ + 230b0166c6ce...62a56a51f964 pm/testing -> pm/testing (forced update)
+   9e07e3b81807..21c315342b81  pm/thermal -> pm/thermal
+   9a303892acac..b7a76f38ef35  pmko/cpufreq/arm/linux-next -> pmko/cpufreq/arm/linux-next
+ * [new reference]             bkp/virtio/msg-dnu -> bkp/virtio/msg-dnu
+ * [new reference]             lko/virtio/msg-dnu -> lko/virtio/msg-dnu
+ * [new reference]             pm/experimental/acpi-driver-work -> pm/experimental/acpi-driver-work
+
+Entering /home/vireshk/all/criticalinfo
+[main 074937dab60b] updates
+ 21 files changed, 3600 insertions(+)
+To github.com:vireshk/criticalinfo
+   ecafccb64c01..074937dab60b  main -> main
+   669880af3342..ecafccb64c01  bkp/main -> bkp/main
+
+Entering /home/vireshk/scripts

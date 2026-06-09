@@ -2957,3 +2957,6 @@ From vireshk  Mon May 25 08:54:52 2026
 From vireshk  Wed Jun  3 12:55:19 2026
  Subject: [PATCH v5 1/1] cpufreq: ti: Add EPROBE_DEFER for K3 SoCs
   Folder: PATCH_v5_1-1_cpufreq_ti_Add_EPROBE_DEFER_for_K3_SoCs.mbox	  13171
+From vireshk  Tue Jun  9 08:47:36 2026
+ Subject: [PATCH v2] i2c: virtio: retain xfer with kref to fix UAF on interrupt
+  Folder: PATCH_v2_i2c_virtio_retain_xfer_with_kref_to_fix_UAF_on_inte	  13737

@@ -12578,3 +12578,220 @@ To github.com:vireshk/criticalinfo
    6be39fbc49f3..bc4534d42cdd  bkp/main -> bkp/main
 
 Entering /home/vireshk/scripts
+[main fbba293a22af] updates
+ 1 file changed, 51 insertions(+)
+To github.com:vireshk/scripts
+   47d7f06f7bae..fbba293a22af  main -> main
+   6b2a8800686a..47d7f06f7bae  bkp/main -> bkp/main
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/kernel-utils
+On branch main
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/gpio-mock
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+
+
+ 
+Wednesday 24 June 2026 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+remote: 
+remote: Create a pull request for 'kvm/planes' on GitHub by visiting:        
+remote:      https://github.com/vireshk/linux-bkp/pull/new/kvm/planes        
+remote: 
+To github.com:vireshk/linux-bkp.git
+ * [new branch]                kvm/planes -> kvm/planes
+To github.com:vireshk/linux-bkp.git
+ * [new tag]                   amd-force-enable -> amd-force-enable
+ * [new tag]                   iommu-drivers-move-v5.8 -> iommu-drivers-move-v5.8
+ * [new tag]                   iommu-fix-v4.11-rc0 -> iommu-fix-v4.11-rc0
+ * [new tag]                   iommu-fix-v4.11-rc0-2 -> iommu-fix-v4.11-rc0-2
+ * [new tag]                   iommu-fix-v5.0-rc8 -> iommu-fix-v5.0-rc8
+ * [new tag]                   iommu-fix-v5.1-rc1 -> iommu-fix-v5.1-rc1
+ * [new tag]                   iommu-fix-v5.1-rc5 -> iommu-fix-v5.1-rc5
+ * [new tag]                   iommu-fix-v5.10 -> iommu-fix-v5.10
+ * [new tag]                   iommu-fix-v5.2-rc5 -> iommu-fix-v5.2-rc5
+ * [new tag]                   iommu-fix-v5.8-rc6 -> iommu-fix-v5.8-rc6
+ * [new tag]                   iommu-fixes-5.4-rc1 -> iommu-fixes-5.4-rc1
+ * [new tag]                   iommu-fixes-for-v3.13-rc4 -> iommu-fixes-for-v3.13-rc4
+ * [new tag]                   iommu-fixes-v4.10-rc2 -> iommu-fixes-v4.10-rc2
+ * [new tag]                   iommu-fixes-v4.11-rc3 -> iommu-fixes-v4.11-rc3
+ * [new tag]                   iommu-fixes-v4.12-rc1 -> iommu-fixes-v4.12-rc1
+ * [new tag]                   iommu-fixes-v4.12-rc4 -> iommu-fixes-v4.12-rc4
+ * [new tag]                   iommu-fixes-v4.12-rc7 -> iommu-fixes-v4.12-rc7
+ * [new tag]                   iommu-fixes-v4.13-rc3 -> iommu-fixes-v4.13-rc3
+ * [new tag]                   iommu-fixes-v4.13-rc4 -> iommu-fixes-v4.13-rc4
+ * [new tag]                   iommu-fixes-v4.13-rc6 -> iommu-fixes-v4.13-rc6
+ * [new tag]                   iommu-fixes-v4.14-rc1 -> iommu-fixes-v4.14-rc1
+ * [new tag]                   iommu-fixes-v4.14-rc2 -> iommu-fixes-v4.14-rc2
+ * [new tag]                   iommu-fixes-v4.14-rc4 -> iommu-fixes-v4.14-rc4
+ * [new tag]                   iommu-fixes-v4.17-rc4 -> iommu-fixes-v4.17-rc4
+ * [new tag]                   iommu-fixes-v4.18-rc5 -> iommu-fixes-v4.18-rc5
+ * [new tag]                   iommu-fixes-v4.19-rc5 -> iommu-fixes-v4.19-rc5
+ * [new tag]                   iommu-fixes-v4.19-rc6 -> iommu-fixes-v4.19-rc6
+ * [new tag]                   iommu-fixes-v4.20-rc3 -> iommu-fixes-v4.20-rc3
+ * [new tag]                   iommu-fixes-v4.3-rc5 -> iommu-fixes-v4.3-rc5
+ * [new tag]                   iommu-fixes-v4.3-rc7 -> iommu-fixes-v4.3-rc7
+ * [new tag]                   iommu-fixes-v4.4-rc5 -> iommu-fixes-v4.4-rc5
+ * [new tag]                   iommu-fixes-v4.4-rc8 -> iommu-fixes-v4.4-rc8
+ * [new tag]                   iommu-fixes-v4.5-rc1 -> iommu-fixes-v4.5-rc1
+ * [new tag]                   iommu-fixes-v4.5-rc6 -> iommu-fixes-v4.5-rc6
+ * [new tag]                   iommu-fixes-v4.6-rc2 -> iommu-fixes-v4.6-rc2
+ * [new tag]                   iommu-fixes-v4.6-rc4 -> iommu-fixes-v4.6-rc4
+ * [new tag]                   iommu-fixes-v4.7-rc3 -> iommu-fixes-v4.7-rc3
+ * [new tag]                   iommu-fixes-v4.7-rc5 -> iommu-fixes-v4.7-rc5
+ * [new tag]                   iommu-fixes-v4.7-rc6 -> iommu-fixes-v4.7-rc6
+ * [new tag]                   iommu-fixes-v4.8-rc2 -> iommu-fixes-v4.8-rc2
+ * [new tag]                   iommu-fixes-v4.8-rc3 -> iommu-fixes-v4.8-rc3
+ * [new tag]                   iommu-fixes-v4.9-rc4 -> iommu-fixes-v4.9-rc4
+ * [new tag]                   iommu-fixes-v5.0-rc3 -> iommu-fixes-v5.0-rc3
+ * [new tag]                   iommu-fixes-v5.0-rc4 -> iommu-fixes-v5.0-rc4
+ * [new tag]                   iommu-fixes-v5.0-rc5 -> iommu-fixes-v5.0-rc5
+ * [new tag]                   iommu-fixes-v5.1-rc2 -> iommu-fixes-v5.1-rc2
+ * [new tag]                   iommu-fixes-v5.1-rc3 -> iommu-fixes-v5.1-rc3
+ * [new tag]                   iommu-fixes-v5.10-rc2 -> iommu-fixes-v5.10-rc2
+ * [new tag]                   iommu-fixes-v5.11-rc5 -> iommu-fixes-v5.11-rc5
+ * [new tag]                   iommu-fixes-v5.11-rc6 -> iommu-fixes-v5.11-rc6
+ * [new tag]                   iommu-fixes-v5.12-rc1 -> iommu-fixes-v5.12-rc1
+ * [new tag]                   iommu-fixes-v5.12-rc3 -> iommu-fixes-v5.12-rc3
+ * [new tag]                   iommu-fixes-v5.2-rc4 -> iommu-fixes-v5.2-rc4
+ * [new tag]                   iommu-fixes-v5.3-rc1 -> iommu-fixes-v5.3-rc1
+ * [new tag]                   iommu-fixes-v5.3-rc4 -> iommu-fixes-v5.3-rc4
+ * [new tag]                   iommu-fixes-v5.3-rc7 -> iommu-fixes-v5.3-rc7
+ * [new tag]                   iommu-fixes-v5.4-rc3 -> iommu-fixes-v5.4-rc3
+ * [new tag]                   iommu-fixes-v5.4-rc5 -> iommu-fixes-v5.4-rc5
+ * [new tag]                   iommu-fixes-v5.4-rc7 -> iommu-fixes-v5.4-rc7
+ * [new tag]                   iommu-fixes-v5.5-rc2 -> iommu-fixes-v5.5-rc2
+ * [new tag]                   iommu-fixes-v5.5-rc5 -> iommu-fixes-v5.5-rc5
+ * [new tag]                   iommu-fixes-v5.5-rc7 -> iommu-fixes-v5.5-rc7
+ * [new tag]                   iommu-fixes-v5.6-rc2 -> iommu-fixes-v5.6-rc2
+ * [new tag]                   iommu-fixes-v5.6-rc5 -> iommu-fixes-v5.6-rc5
+ * [new tag]                   iommu-fixes-v5.7-rc3 -> iommu-fixes-v5.7-rc3
+ * [new tag]                   iommu-fixes-v5.7-rc4 -> iommu-fixes-v5.7-rc4
+ * [new tag]                   iommu-fixes-v5.7-rc6 -> iommu-fixes-v5.7-rc6
+ * [new tag]                   iommu-fixes-v5.7-rc7 -> iommu-fixes-v5.7-rc7
+ * [new tag]                   iommu-fixes-v5.8-rc2 -> iommu-fixes-v5.8-rc2
+ * [new tag]                   iommu-fixes-v5.8-rc5 -> iommu-fixes-v5.8-rc5
+ * [new tag]                   iommu-fixes-v5.9-rc3 -> iommu-fixes-v5.9-rc3
+ * [new tag]                   iommu-fixes-v5.9-rc5 -> iommu-fixes-v5.9-rc5
+ * [new tag]                   iommu-fixes-v5.9-rc7 -> iommu-fixes-v5.9-rc7
+ * [new tag]                   iommu-updates-v4.10 -> iommu-updates-v4.10
+ * [new tag]                   iommu-updates-v4.11 -> iommu-updates-v4.11
+ * [new tag]                   iommu-updates-v4.12 -> iommu-updates-v4.12
+ * [new tag]                   iommu-updates-v4.13 -> iommu-updates-v4.13
+ * [new tag]                   iommu-updates-v4.14 -> iommu-updates-v4.14
+ * [new tag]                   iommu-updates-v4.16 -> iommu-updates-v4.16
+ * [new tag]                   iommu-updates-v4.17 -> iommu-updates-v4.17
+ * [new tag]                   iommu-updates-v4.18 -> iommu-updates-v4.18
+ * [new tag]                   iommu-updates-v4.19 -> iommu-updates-v4.19
+ * [new tag]                   iommu-updates-v4.20 -> iommu-updates-v4.20
+ * [new tag]                   iommu-updates-v4.21 -> iommu-updates-v4.21
+ * [new tag]                   iommu-updates-v4.4 -> iommu-updates-v4.4
+ * [new tag]                   iommu-updates-v4.5 -> iommu-updates-v4.5
+ * [new tag]                   iommu-updates-v4.6 -> iommu-updates-v4.6
+ * [new tag]                   iommu-updates-v4.7 -> iommu-updates-v4.7
+ * [new tag]                   iommu-updates-v4.8 -> iommu-updates-v4.8
+ * [new tag]                   iommu-updates-v4.9 -> iommu-updates-v4.9
+ * [new tag]                   iommu-updates-v5.1 -> iommu-updates-v5.1
+ * [new tag]                   iommu-updates-v5.10 -> iommu-updates-v5.10
+ * [new tag]                   iommu-updates-v5.12 -> iommu-updates-v5.12
+ * [new tag]                   iommu-updates-v5.2 -> iommu-updates-v5.2
+ * [new tag]                   iommu-updates-v5.3 -> iommu-updates-v5.3
+ * [new tag]                   iommu-updates-v5.4 -> iommu-updates-v5.4
+ * [new tag]                   iommu-updates-v5.5 -> iommu-updates-v5.5
+ * [new tag]                   iommu-updates-v5.6 -> iommu-updates-v5.6
+ * [new tag]                   iommu-updates-v5.7 -> iommu-updates-v5.7
+ * [new tag]                   iommu-updates-v5.8 -> iommu-updates-v5.8
+ * [new tag]                   iommu-updates-v5.9 -> iommu-updates-v5.9
+ * [new tag]                   iommu-v4.15-rc1 -> iommu-v4.15-rc1
+ * [new tag]                   iommu-v4.15-rc3 -> iommu-v4.15-rc3
+ * [new tag]                   iommu-v4.15-rc7 -> iommu-v4.15-rc7
+ * [new tag]                   kvm-3.20-1 -> kvm-3.20-1
+ * [new tag]                   kvm-4.1-1 -> kvm-4.1-1
+ * [new tag]                   kvm-4.1-2 -> kvm-4.1-2
+ * [new tag]                   next-20141125 -> next-20141125
+ * [new tag]                   staging-3.20-rc1 -> staging-3.20-rc1
+ * [new tag]                   staging-4.0-rc3 -> staging-4.0-rc3
+ * [new tag]                   staging-4.0-rc5 -> staging-4.0-rc5
+To github.com:vireshk/linux-bkp.git
+   ef0c9f75a195..840ef6c78e6a  origin/HEAD -> origin/HEAD
+   ef0c9f75a195..840ef6c78e6a  origin/master -> origin/master
+ * [new reference]             bkp/kvm/planes -> bkp/kvm/planes
+ * [new reference]             joro/amd-iommu -> joro/amd-iommu
+ * [new reference]             joro/amd-iommu-fixes -> joro/amd-iommu-fixes
+ * [new reference]             joro/amd-iommu-iova -> joro/amd-iommu-iova
+ * [new reference]             joro/amd-iommu-v2 -> joro/amd-iommu-v2
+ * [new reference]             joro/early-exceptions -> joro/early-exceptions
+ * [new reference]             joro/hibernate -> joro/hibernate
+ * [new reference]             joro/intel-iommu -> joro/intel-iommu
+ * [new reference]             joro/iommu-default-domains -> joro/iommu-default-domains
+ * [new reference]             joro/iommu-fixes -> joro/iommu-fixes
+ * [new reference]             joro/iommu-force-enable -> joro/iommu-force-enable
+ * [new reference]             joro/iommu-page-tables -> joro/iommu-page-tables
+ * [new reference]             joro/iommu-probe-device -> joro/iommu-probe-device
+ * [new reference]             joro/iommu-probe-device-v2 -> joro/iommu-probe-device-v2
+ * [new reference]             joro/iommu-probe-device-v3 -> joro/iommu-probe-device-v3
+ * [new reference]             joro/kvm-planes-common-for-paolo -> joro/kvm-planes-common-for-paolo
+ * [new reference]             joro/kvm-planes-v7.1 -> joro/kvm-planes-v7.1
+ * [new reference]             joro/master -> joro/master
+ * [new reference]             joro/mmu-notifier -> joro/mmu-notifier
+ * [new reference]             joro/pti-x32 -> joro/pti-x32
+ * [new reference]             joro/pti-x32-v2 -> joro/pti-x32-v2
+ * [new reference]             joro/pti-x32-v3 -> joro/pti-x32-v3
+ * [new reference]             joro/pti-x32-v4 -> joro/pti-x32-v4
+ * [new reference]             joro/pti-x32-v5 -> joro/pti-x32-v5
+ * [new reference]             joro/pti-x32-v6 -> joro/pti-x32-v6
+ * [new reference]             joro/pti-x32-v7 -> joro/pti-x32-v7
+ * [new reference]             joro/pti-x32-v8 -> joro/pti-x32-v8
+ * [new reference]             joro/sev-es-booting -> joro/sev-es-booting
+ * [new reference]             joro/sev-es-client -> joro/sev-es-client
+ * [new reference]             joro/sev-es-client-tip -> joro/sev-es-client-tip
+ * [new reference]             joro/sev-es-client-tip-5.9 -> joro/sev-es-client-tip-5.9
+ * [new reference]             joro/sev-es-client-tip-5.9-shrinked -> joro/sev-es-client-tip-5.9-shrinked
+ * [new reference]             joro/sev-es-client-v5.5 -> joro/sev-es-client-v5.5
+ * [new reference]             joro/sev-es-client-v5.6-rc1 -> joro/sev-es-client-v5.6-rc1
+ * [new reference]             joro/sev-es-client-v5.6-rc3 -> joro/sev-es-client-v5.6-rc3
+ * [new reference]             joro/sev-es-client-v5.6-rc5 -> joro/sev-es-client-v5.6-rc5
+ * [new reference]             joro/sev-es-client-v5.6-rc6 -> joro/sev-es-client-v5.6-rc6
+ * [new reference]             joro/sev-es-client-v5.7-rc2 -> joro/sev-es-client-v5.7-rc2
+ * [new reference]             joro/sev-es-client-v5.7-rc3 -> joro/sev-es-client-v5.7-rc3
+ * [new reference]             joro/sev-es-client-v5.8-rc4 -> joro/sev-es-client-v5.8-rc4
+ * [new reference]             joro/sev-es-client-v5.8-rc5 -> joro/sev-es-client-v5.8-rc5
+ * [new reference]             joro/sev-es-fixes -> joro/sev-es-fixes
+ * [new reference]             joro/sev-es-kexec -> joro/sev-es-kexec
+ * [new reference]             joro/sev-es-tip-updates -> joro/sev-es-tip-updates
+ * [new reference]             joro/sev-es-updates-5.11 -> joro/sev-es-updates-5.11
+ * [new reference]             joro/vmalloc-sync -> joro/vmalloc-sync
+ * [new reference]             joro/vt-d-kdump -> joro/vt-d-kdump
+ * [new reference]             joro/x86-testing -> joro/x86-testing
+
+Entering /home/vireshk/all/criticalinfo
+[main 32a62a19a3c8] updates
+ 19 files changed, 1499 insertions(+)
+To github.com:vireshk/criticalinfo
+   544ca3a95a96..32a62a19a3c8  main -> main
+   bc4534d42cdd..544ca3a95a96  bkp/main -> bkp/main
+
+Entering /home/vireshk/scripts

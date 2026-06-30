@@ -55,6 +55,15 @@ hcca12() {
     export SHRINKWRAP_PACKAGE=${SHRINKWRAP_BUILD}/package
 }
 
+hcca13() {
+    cd /home/vireshk/work/repos/cca/cca-v13 || return
+
+    export PATH="$PWD/shrinkwrap/shrinkwrap:$PATH"
+    export WORKSPACE="${PWD}/workspace"
+    export SHRINKWRAP_BUILD=${WORKSPACE}
+    export SHRINKWRAP_PACKAGE=${SHRINKWRAP_BUILD}/package
+}
+
 hcca17() {
     cd /home/vireshk/work/repos/cca/alp17-fvp || return
 

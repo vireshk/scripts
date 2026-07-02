@@ -2960,3 +2960,6 @@ From vireshk  Wed Jun  3 12:55:19 2026
 From vireshk  Tue Jun  9 08:47:36 2026
  Subject: [PATCH v2] i2c: virtio: retain xfer with kref to fix UAF on interrupt
   Folder: PATCH_v2_i2c_virtio_retain_xfer_with_kref_to_fix_UAF_on_inte	  13737
+From vireshk  Wed Jul  1 14:16:58 2026
+ Subject: [PATCH 2/2] cpufreq: qcom-nvmem: Add IPQ5210 support
+  Folder: PATCH_2-2_cpufreq_qcom-nvmem_Add_IPQ5210_support.mbox		  12896

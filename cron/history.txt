@@ -13114,3 +13114,59 @@ To github.com:vireshk/criticalinfo
    ebbcfc0d697c..6c1167558a9e  bkp/main -> bkp/main
 
 Entering /home/vireshk/scripts
+[main 4fd1ca9cf662] updates
+ 3 files changed, 167 insertions(+)
+ create mode 100644 mutt/incoming/PATCH_2-2_cpufreq_qcom-nvmem_Add_IPQ5210_support.mbox
+To github.com:vireshk/scripts
+   012a488d04b6..4fd1ca9cf662  main -> main
+   93f64c7f86fe..012a488d04b6  bkp/main -> bkp/main
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/kernel-utils
+On branch main
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/gpio-mock
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+
+
+ 
+Monday 06 July 2026 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+To github.com:vireshk/linux-bkp.git
+   80652b0de257..f45617829035  cpufreq/arm/linux-next -> cpufreq/arm/linux-next
+Everything up-to-date
+To github.com:vireshk/linux-bkp.git
+   80652b0de257..f45617829035  bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next
+   80652b0de257..f45617829035  pmko/cpufreq/arm/linux-next -> pmko/cpufreq/arm/linux-next
+
+Entering /home/vireshk/all/criticalinfo
+[main 5113a54d24b4] updates
+ 19 files changed, 3121 insertions(+)
+To github.com:vireshk/criticalinfo
+   876373e98a86..5113a54d24b4  main -> main
+   6c1167558a9e..876373e98a86  bkp/main -> bkp/main
+
+Entering /home/vireshk/scripts

@@ -2963,3 +2963,9 @@ From vireshk  Tue Jun  9 08:47:36 2026
 From vireshk  Wed Jul  1 14:16:58 2026
  Subject: [PATCH 2/2] cpufreq: qcom-nvmem: Add IPQ5210 support
   Folder: PATCH_2-2_cpufreq_qcom-nvmem_Add_IPQ5210_support.mbox		  12896
+From vireshk  Fri Jul  3 11:51:54 2026
+ Subject: [PATCH v3] cpufreq: apple-soc: Fix OPP table cleanup
+  Folder: PATCH_v3_cpufreq_apple-soc_Fix_OPP_table_cleanup.mbox		   8142
+From vireshk  Mon Jul  6 09:04:53 2026
+ Subject: [PATCH] rust: rcpufreq_dt: use vertical import style
+  Folder: PATCH_rust_rcpufreq_dt_use_vertical_import_style.mbox		   6685

@@ -2969,3 +2969,6 @@ From vireshk  Fri Jul  3 11:51:54 2026
 From vireshk  Mon Jul  6 09:04:53 2026
  Subject: [PATCH] rust: rcpufreq_dt: use vertical import style
   Folder: PATCH_rust_rcpufreq_dt_use_vertical_import_style.mbox		   6685
+From vireshk  Tue Jul 14 08:59:43 2026
+ Subject: [PATCH] cpufreq: Remove redundant dev_err()
+  Folder: PATCH_cpufreq_Remove_redundant_dev_err_.mbox			  12372

@@ -2972,3 +2972,6 @@ From vireshk  Mon Jul  6 09:04:53 2026
 From vireshk  Tue Jul 14 08:59:43 2026
  Subject: [PATCH] cpufreq: Remove redundant dev_err()
   Folder: PATCH_cpufreq_Remove_redundant_dev_err_.mbox			  12372
+From vireshk  Wed Jul 15 09:13:12 2026
+ Subject: [PATCH v2] cpufreq: spear: Fix an IS_ERR() vs NULL bug in  spear1340_
+  Folder: PATCH_v2_cpufreq_spear_Fix_an_IS_ERR__vs_NULL_bug_in_spear13	   7392

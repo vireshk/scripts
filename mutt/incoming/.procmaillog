@@ -2975,3 +2975,6 @@ From vireshk  Tue Jul 14 08:59:43 2026
 From vireshk  Wed Jul 15 09:13:12 2026
  Subject: [PATCH v2] cpufreq: spear: Fix an IS_ERR() vs NULL bug in  spear1340_
   Folder: PATCH_v2_cpufreq_spear_Fix_an_IS_ERR__vs_NULL_bug_in_spear13	   7392
+From vireshk  Wed Jul 15 13:07:02 2026
+ Subject: [PATCH] OPP: Fix cleanup ordering
+  Folder: PATCH_OPP_Fix_cleanup_ordering.mbox				   8207

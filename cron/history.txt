@@ -13599,3 +13599,55 @@ To github.com:vireshk/criticalinfo
    af71632249cb..9dece8ceec97  bkp/main -> bkp/main
 
 Entering /home/vireshk/scripts
+[main 7713a39a7d0e] updates
+ 2 files changed, 58 insertions(+)
+To github.com:vireshk/scripts
+   0d267d3f2392..7713a39a7d0e  main -> main
+   1cdd17fcbcd2..0d267d3f2392  bkp/main -> bkp/main
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/kernel-utils
+On branch main
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/gpio-mock
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+
+
+ 
+Friday 17 July 2026 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+Everything up-to-date
+Everything up-to-date
+Everything up-to-date
+
+Entering /home/vireshk/all/criticalinfo
+[main 5dc0ec1aa14c] updates
+ 19 files changed, 1540 insertions(+)
+To github.com:vireshk/criticalinfo
+   9be624eee74f..5dc0ec1aa14c  main -> main
+   9dece8ceec97..9be624eee74f  bkp/main -> bkp/main
+
+Entering /home/vireshk/scripts

@@ -13759,3 +13759,57 @@ To github.com:vireshk/criticalinfo
    5dc0ec1aa14c..66b79bca6440  bkp/main -> bkp/main
 
 Entering /home/vireshk/scripts
+[main 578b11aeb4d1] updates
+ 1 file changed, 55 insertions(+)
+To github.com:vireshk/scripts
+   13267e940240..578b11aeb4d1  main -> main
+   b4253df1d295..13267e940240  bkp/main -> bkp/main
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/kernel-utils
+On branch main
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/gpio-mock
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+
+
+ 
+Thursday 23 July 2026 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+To github.com:vireshk/linux-bkp.git
+ + 2a0e6a19bf48...391b4b1d5476 cpufreq/arm/linux-next -> cpufreq/arm/linux-next (forced update)
+Everything up-to-date
+To github.com:vireshk/linux-bkp.git
+ + 2a0e6a19bf48...391b4b1d5476 bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next (forced update)
+ + 2a0e6a19bf48...391b4b1d5476 pmko/cpufreq/arm/linux-next -> pmko/cpufreq/arm/linux-next (forced update)
+
+Entering /home/vireshk/all/criticalinfo
+[main a18a28916f6e] updates
+ 22 files changed, 1827 insertions(+)
+To github.com:vireshk/criticalinfo
+   12c80103f21e..a18a28916f6e  main -> main
+   66b79bca6440..12c80103f21e  bkp/main -> bkp/main
+
+Entering /home/vireshk/scripts

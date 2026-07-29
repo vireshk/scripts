@@ -2988,3 +2988,12 @@ From vireshk  Tue Jul 28 09:02:39 2026
   Folder: PATCH_v4_opp_Use_clk_get_optional__to_avoid_leaving_opp_tabl	  17678
 From foo@bar  Tue Jul 28 10:00:10 2026
   Folder: .mbox								   3381
+From vireshk  Tue Jul 21 09:01:39 2026
+ Subject: [PATCH v3] rust: cpufreq: Fix temporary write in Registration::bios_l
+  Folder: PATCH_v3_rust_cpufreq_Fix_temporary_write_in_Registration--b	   8884
+From vireshk  Tue Jul 21 09:01:39 2026
+ Subject: [PATCH v3] rust: cpufreq: Fix temporary write in Registration::bios_l
+  Folder: PATCH_v3_rust_cpufreq_Fix_temporary_write_in_Registration--b	   8884
+From vireshk  Tue Jul 21 09:01:48 2026
+ Subject: [PATCH v2] rust: cpufreq: Add CPUFREQ_TABLE_END as last table entry i
+  Folder: PATCH_v2_rust_cpufreq_Add_CPUFREQ_TABLE_END_as_last_table_en	   9024

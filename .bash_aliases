@@ -46,15 +46,6 @@ PATH="/home/vireshk/work/repos/tools/icdiff:$PATH"
 # Shrinkwrap
 #PATH="/home/vireshk/work/repos/virtio-msg/vingu-setup/shrinkwrap/shrinkwrap:$PATH"
 
-hcca12() {
-    cd /home/vireshk/work/repos/cca/alp12-qemu || return
-
-    export PATH="$PWD/shrinkwrap/shrinkwrap:$PATH"
-    export WORKSPACE="${PWD}/workspace"
-    export SHRINKWRAP_BUILD=${WORKSPACE}
-    export SHRINKWRAP_PACKAGE=${SHRINKWRAP_BUILD}/package
-}
-
 hcca13() {
     cd /home/vireshk/work/repos/cca/cca-v13 || return
 
@@ -64,12 +55,11 @@ hcca13() {
     export SHRINKWRAP_PACKAGE=${SHRINKWRAP_BUILD}/package
 }
 
-hcca17() {
-    cd /home/vireshk/work/repos/cca/alp17-fvp || return
+hcca14() {
+    cd /home/vireshk/work/repos/cca/cca-v14 || return
 
-    export PATH="${PWD}/shrinkwrap/shrinkwrap:$PATH"
-    export SHRINKWRAP_CONFIG=${PWD}/tf-rmm/tools/shrinkwrap/configs
-    export WORKSPACE=${PWD}/workspace
+    export PATH="$PWD/shrinkwrap/shrinkwrap:$PATH"
+    export WORKSPACE="${PWD}/workspace"
     export SHRINKWRAP_BUILD=${WORKSPACE}
     export SHRINKWRAP_PACKAGE=${SHRINKWRAP_BUILD}/package
 }

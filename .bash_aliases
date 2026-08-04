@@ -64,6 +64,15 @@ hcca14() {
     export SHRINKWRAP_PACKAGE=${SHRINKWRAP_BUILD}/package
 }
 
+hcca14bs() {
+    cd /home/vireshk/work/repos/cca/cca-v14-bootsync || return
+
+    export PATH="$PWD/shrinkwrap/shrinkwrap:$PATH"
+    export WORKSPACE="${PWD}/workspace"
+    export SHRINKWRAP_BUILD=${WORKSPACE}
+    export SHRINKWRAP_PACKAGE=${SHRINKWRAP_BUILD}/package
+}
+
 cca17rootbuild() {
 	pushd $PWD/workspace/package/cca-3world
 

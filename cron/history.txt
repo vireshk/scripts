@@ -14136,3 +14136,84 @@ To github.com:vireshk/criticalinfo
    f9f1db01305e..f34f3eb13061  bkp/main -> bkp/main
 
 Entering /home/vireshk/scripts
+[main 2aed42bd107f] updates
+ 1 file changed, 51 insertions(+)
+To github.com:vireshk/scripts
+   16cc31054917..2aed42bd107f  main -> main
+   ad4ce2562ccf..16cc31054917  bkp/main -> bkp/main
+
+Entering /home/vireshk/work/repos/tools/module
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/kernel-utils
+On branch main
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/lwn
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/cpufreq-tests
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+Entering /home/vireshk/work/repos/tools/gpio-mock
+On branch master
+nothing to commit, working tree clean
+Everything up-to-date
+
+
+
+ 
+Thursday 06 August 2026 01:00:01 PM IST
+
+Entering /home/vireshk/work/repos/kernel/linux
+To github.com:vireshk/linux-bkp.git
+ + 1a531cc0d97c...8c3afcf27fa4 cpufreq/arm/linux-next -> cpufreq/arm/linux-next (forced update)
+   ce46fede7792..84f05af0975c  opp/linux-next -> opp/linux-next
+To github.com:vireshk/linux-bkp.git
+ * [new tag]                   acpi-7.2-rc1 -> acpi-7.2-rc1
+ * [new tag]                   acpi-7.2-rc1-2 -> acpi-7.2-rc1-2
+ * [new tag]                   acpi-7.2-rc2 -> acpi-7.2-rc2
+ * [new tag]                   cpufreq-arm-updates-7.3 -> cpufreq-arm-updates-7.3
+ * [new tag]                   opp-updates-7.3 -> opp-updates-7.3
+ * [new tag]                   pm-7.1-rc8 -> pm-7.1-rc8
+ * [new tag]                   pm-7.2-rc1 -> pm-7.2-rc1
+ * [new tag]                   pm-7.2-rc1-2 -> pm-7.2-rc1-2
+ * [new tag]                   pm-7.2-rc4 -> pm-7.2-rc4
+ * [new tag]                   pm-7.2-rc6 -> pm-7.2-rc6
+ * [new tag]                   thermal-7.2-rc1 -> thermal-7.2-rc1
+ * [new tag]                   thermal-7.2-rc1-2 -> thermal-7.2-rc1-2
+To github.com:vireshk/linux-bkp.git
+ + 1a531cc0d97c...8c3afcf27fa4 bkp/cpufreq/arm/linux-next -> bkp/cpufreq/arm/linux-next (forced update)
+   ce46fede7792..84f05af0975c  bkp/opp/linux-next -> bkp/opp/linux-next
+   3109f9f38800..973772c7cf64  pm/acpi -> pm/acpi
+ + af69594f56f1...77acf59d7cf1 pm/bleeding-edge -> pm/bleeding-edge (forced update)
+ + 2aaa371598a8...462729a014eb pm/experimental/acpi-driver-work -> pm/experimental/acpi-driver-work (forced update)
+ - [deleted]                   pm/experimental/intel_idle/lpi
+   8fde5d1d47f6..39cd7b5ec8fe  pm/fixes -> pm/fixes
+ + 3b7a18a34e8d...4d823c9d06aa pm/linux-next -> pm/linux-next (forced update)
+   e43ffb69e043..075b74841bd0  pm/master -> pm/master
+   df488cac6140..d5f8e5f6040d  pm/pm -> pm/pm
+ + 62a56a51f964...c632324692ca pm/testing -> pm/testing (forced update)
+   21c315342b81..795f1b1a91ae  pm/thermal -> pm/thermal
+ + 1a531cc0d97c...8c3afcf27fa4 pmko/cpufreq/arm/linux-next -> pmko/cpufreq/arm/linux-next (forced update)
+   ce46fede7792..84f05af0975c  pmko/opp/linux-next -> pmko/opp/linux-next
+ * [new reference]             pm/experimental/cpufreq_adjust_perf -> pm/experimental/cpufreq_adjust_perf
+ * [new reference]             pm/experimental/intel_pstate/desired_perf -> pm/experimental/intel_pstate/desired_perf
+
+Entering /home/vireshk/all/criticalinfo
+[main ba568a74b9d6] updates
+ 19 files changed, 1848 insertions(+)
+To github.com:vireshk/criticalinfo
+   0ddd612552bb..ba568a74b9d6  main -> main
+   f34f3eb13061..0ddd612552bb  bkp/main -> bkp/main
+
+Entering /home/vireshk/scripts

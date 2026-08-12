@@ -315,8 +315,8 @@ alias rustchecks="cargo fmt --all -- --check --config format_code_in_doc_comment
 alias buildgpiod="make clean; ./autogen.sh --enable-tools=yes --enable-bindings-rust --enable-examples --enable-tests; make"
 alias cargobuild="clear;cargo build --release"
 alias cargobuildarm="clear;cargo build --release --all-features --target aarch64-unknown-linux-gnu"
-alias cargobuildall='clear;cargo build --release --all-features --tests'
-alias cargobuildallarm='clear;cargo build --release --target aarch64-unknown-linux-gnu --all-features --tests'
+alias cargobuildtests='clear;cargo build --release --all-features --tests'
+alias cargobuildtestsarm='clear;cargo build --release --target aarch64-unknown-linux-gnu --all-features --tests'
 alias vhostdbuild="docker start -ai vhost-build"
 
 #qemu
